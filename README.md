@@ -94,6 +94,22 @@ stays the reference.
   is an extract of its 709 half-lives.
 - ORNL/TM-2010/220 and ORNL/TM-2022/2602 (ORNL's documentation and run of the 1979 code): cited, not included.
 
-The transcription and tools were made by Kotnyek József with Claude (Anthropic), Oct 2026. No licence has been
-chosen yet for the tools and notes; the transcribed DELFIC code is from a US government report approved for
-public release.
+The transcription and tools were made by Kotnyek József with Claude (Anthropic), Oct 2026.
+
+## Licence and how to credit
+
+Free to use, share and adapt, for any purpose including commercial, **as long as you credit the author**:
+
+- **Transcription, data, notes and review sheets** (everything not listed below): [CC BY 4.0](LICENSE).
+- **Tools and scripts** (`tools/`, the `*.py` and `*.sh` files under `run/`, and the Fortran we wrote: the drivers
+  `run/*driver*.f`, `run/cdclib.f` and the helper programs such as `bt.f`, `dumpn.f`, `resp.f`): [MIT](LICENSE-CODE).
+
+Suggested credit:
+
+> Kotnyek József (2026). *DELFIC 1979: a transcription of the DoD fallout code from the printed listing.*
+> https://github.com/JoeHun0/delfic-1979
+
+Not covered by these licences: the DELFIC program itself, as written by its 1979 authors, comes from a US government
+report approved for public release (DNA 5159F-2, DTIC ADA088512). The licences cover our transcription work and
+additions, not rights in the original. Third-party material keeps its own terms and should be credited to its
+source: the ENDF/B-IV extract (IAEA Nuclear Data Section) and the small crops of DTIC reports in the review sheets.
