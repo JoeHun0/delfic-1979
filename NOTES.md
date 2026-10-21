@@ -9,7 +9,7 @@ Fortran source of DELFIC for the CDC 6600 (about 7,600 cards, sequence IDs in co
 **Pilot scope (20 Oct 2026): the Initialization and Cloud Rise Module (ICRM)** — PDF pp. 55–107, 23 routines
 (TRPL, ERROR, SETTLE, ICRMEX, ICM, AIRBRS, DSTBN, MASS, VAPOR, TEMP, TIMEE, ATMR, SHWIND, CPFR, CRM, CRMINT,
 CRMW, CXPN, DBG, DCSN, DERIV, RKGILL, RSTR, RSXP, WNDSFT), 2,818 cards, 1,606 code cards. The transport
-(DTM) and output (OPM) modules, PDF pp. 107–194, are not transcribed.
+(DTM) and output (OPM) modules, PDF pp. 107–194, were transcribed next (see "DTM and OPM" below).
 
 ## Result
 
