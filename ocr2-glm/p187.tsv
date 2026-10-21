@@ -1,0 +1,5 @@
+55	2875	OK	      COMMON /FISHIN/ A8EGN(700),A9JNOC(702),3KANCH(137),CAPFIS,                	COMMON /FISHIN/ A8EGN(700),A9JNOC(702),3KANCH(137),CAPFIS,
+56	2919	COUNT 49/48	                                                                                	1 OCON(7:0),1994,INUC,MAXNUC,NULT(1:1),NUCL10(7:2)
+57	2963	COUNT 29/28	                                                                                	COMMON / UTILITY / KOUT.APRNT(15)
+58	3006	OK	      LOGICAL IGO.JD.KOOS.APENT                                                 	LOGICAL IGO . JD . KOOS . APENT
+61	3137	COUNT 14/17	                                                                                	2. 50 (11) 50 (11)

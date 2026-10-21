@@ -1,0 +1,63 @@
+1	0	COUNT 0/18;COUNT 21/1	                                                                                	 || ![image](image_1.png)
+2	536	OK	C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE      BATHA121	C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE || BATHA121
+3	583	COUNT 0/11	                                                                        BATHA122	 || BATHA122
+4	624	COUNT 23/22	                                                                        BATMA123	IF (LSUB8.GT.11) GO TC 1301 || BATMA123
+5	668	COUNT 0/15	                                                                        BATHA124	 || BATHA124
+6	712	OK	      GO TO 12                                                          BATHA125	GO TO 12 || BATHA125
+7	755	OK	C                                                                       BATHA126	C || BATHA126
+8	797	OK	CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO           BATHA127	CC A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO || BATHA127
+9	841	OK	C   ELIMINATE  UNI-MEMBERED SUBCHAIN                                    BATHA120	C ELIMINATE UNI-MEMBERED SUBCHAIN || BATHA120
+10	883	OK	   21 IF (LSUB.EQ.1) GO TO 500                                          BATHA129	21 IF (LSUB.EQ.1) GO TO 500 || BATHA129
+11	925	OK	C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS        84TMA130	C     RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS || 84TMA130
+12	970	OK	      ASSIGN 23 TO LGU                                                  BATHA131	ASSIGN 23 TO LGU || BATHA131
+13	1012	COUNT 0/4	                                                                        BATHA1J2	 || BATHA1J2
+14	1055	COUNT 0/13	                                                                        BATHA133	 || BATHA133
+15	1099	OK	      LAST = LSUB + 1                                                   BATHA134	LAST = LSUB + 1 || BATHA134
+16	1141	COUNT 13/12	                                                                        BATMA135	00 22 L = 2.0LSUB || BATMA135
+17	1184	COUNT 0/12	                                                                        BATHA136	 || BATHA136
+18	1228	OK	      SCA(LBACK) = 1.0                                                  BATHA137	SCA(LBACK) = 1.0 || BATHA137
+19	1270	OK	      GO TO LGO,(22,23)                                                 BATHA138	GO TO LGO, (22, 23) || BATHA138
+20	1312	OK	C   FIND THE LAST BRANCH IN THE SUBCHAIN                                BATHA139	C   FIND THE LAST BRANCH IN THE SUBCHAIN || BATHA139
+21	1357	OK	   23 IM = LIM(LBACK)                                                   BATHA140	23 IM = LIM(LBACK) || BATHA140
+22	1398	OK	      IF (MOD(INFORM(LBACK),MULT(IM))/MULT(IM-1))22,22,24               BATMA141	IF (MOD (INFORM (LBACK), MULT (IM)) / MULT (IM-1)) 22, 22, 24 || BATMA141
+23	1442	OK	   24 JL = LBACK                                                        BATMA142	24 JL = LBACK || BATMA142
+24	1486	OK	      ASSIGN 2? TO LGO                                                  BATMA:43	ASSIGN 2? TO LGO || BATMA:43
+25	1527	COUNT 18/8	   22 SCA(LBACK) = SBR(LBACK)*SCA(LBACK+1)                                      	22 SCA(LBACK) = SBR(LBACK) * SCA(LBACK+1) || \mathcal{B}ATMA144
+26	1571	COUNT 0/13	                                                                        BATHA145	 || BATHA145
+27	1615	COUNT 12/8	CORRECT FISSION YIELDS FOR BRANCHING                                            	CORRECT FISSION YIELDS FOR BRANCHING || B.A.T.M.A146
+28	1657	OK	      FLAG = .FALSE.                                                    BATMA147	FLAG = .FALSE. || BATMA147
+29	1700	OK	      00 25 J = 1,LSUB                                                  GATMA148	00 25 J = 1,LSUB || GATMA148
+30	1744	COUNT 0/9	                                                                        BATMA149	 || BATMA149
+31	1785	COUNT 0/23	                                                                        BATHA150	 || BATHA150
+32	1830	COUNT 27/8	      IF (FLAG) GO TO 25                                                        	IF (FLAG) GO TO 25 || B \hat{A} T \hat{r} 1A \hat{i} 51
+33	1871	OK	C   MAKE A NOTE IF A; LEAST ONE VALUE CF SCA IS NONTRIVIAL              BATHA152	C MAKE A NOTE IF A; LEAST ONE VALUE CF SCA IS NONTRIVIAL || BATHA152
+34	1915	OK	      IF (SCA(J))25,25,27                                               EAfMA153	IF (SCA(J)) 25,25,27 || EAfMA153
+35	1958	OK	   27 FLAG = .TRUE.                                                     GATMA154	27 FLAG = .TRUE. || GATMA154
+36	2002	COUNT 18/8	   25 CONTINUE                                                                  	25 CONTINUE || \mathcal{D}ATMA155
+37	2045	COUNT 23/8	C                                                                               	C || \dot{B}A\bar{7}MA_{1}56
+38	2087	OK	C   CMIT COMPUTATIONS FOR TRIVIAL SUBCHAIN                              BATMA157	C CMIT COMPUTATIONS FOR TRIVIAL SUBCHAIN || BATMA157
+39	2131	COUNT 18/8	      IF (.NOT.FLAG) GO TO 3C                                                   	IF (.NOT.FLAG) GO TO 3C || \mathcal{B}ATMA158
+40	2174	COUNT 18/8	C                                                                               	C || \mathcal{B}ATMA159
+41	2215	OK	CC  THE CENTRAL COMPUTATIONS BEGIN AT THIS PCIN?                        BATHA160	CC THE CENTRAL COMPUTATIONS BEGIN AT THIS PCIN? || BATHA160
+42	2261	OK	C                                                                       8ATMA161	C || 8ATMA161
+43	2302	OK	      00 200 N=1,LSU9                                                   BATMA162	00 200 N=1,LSU9 || BATMA162
+44	2344	OK	      IF(JO) TENTER=TIME                                                84TMA163	IF(JO) TENTER=TIME || 84TMA163
+45	2387	OK	      EFAC(N)=EXP(-SDC(N)*TENTER)                                       8ATMA1E4	EFAC(N) = EXP(-SDC(N) * TENTER) || 8ATMA1E4
+46	2428	OK	      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)*TEXIT)                     3ATMA1E5	IF(KDOS) EFAC(N) = EFAC(N) - EXP(-SDC(N) * TEXIT) || 3ATMA1E5
+47	2474	COUNT 0/5	                                                                        BATHA1E6	 || BATHA1E6
+48	2518	COUNT 24/11	                                                                        BATHA1E7	DO 163 \dot{K}_1 = 1, \dot{K} || BATHA1E7
+49	2560	OK	      CNIJ=1,0                                                          9ATHA168	CNI J=1,0 || 9ATHA168
+50	2604	COUNT 0/5	                                                                        BATMA169	 || BATMA169
+51	2647	COUNT 16/10	                                                                        BATHA170	00 162 \kappa'=1,N || BATHA170
+52	2690	COUNT 23/8	                                                                        BATHA171	K2 \approx N - K \downarrow 1 || BATHA171
+53	2731	OK	      IF(K2.NE.N) CNIJ=CNIJ*SOC(K2)                                     BATHA172	IF(K2.NE.N) CNIJ=CNIJ*SOC(K2) || BATHA172
+54	2776	OK	      IF(K2.EQ.K1) GO TO 1E2                                            947MA173	IF(K2.EQ.K1) GO TO 1E2 || 947MA173
+55	2818	COUNT 0/21;COUNT 22/8	                                                                                	 || \partial \partial T M A 1 7 4
+56	2860	COUNT 51/48	                                                                        B4T4A175	If (A \geq S1FACTC).LT.1.E-15) FACTC = SIGN(1.E-15.FACTC) || B4T4A175
+57	2905	COUNT 15/14;COUNT 15/8	                                                                                	CNI J→CNI J/F AC?C || \text{BAY4A17E}
+58	2947	COUNT 30/29	                                                                        98THA177	162 IF(K2.LE.K1) = 0 ◊ CN: J ◊ SCA (K2) || 98THA177
+59	2990	COUNT 10/12;COUNT 74/8	                                                                                	E91 7C 09 101 || \mathcal{B}_{\mathcal{M}} \mathcal{T} \mathcal{M} \mathcal{A}_{1} ? \mathcal{O}
+60	3034	COUNT 27/25;COUNT 16/8	                                                                                	IF (S7C(41)).LE.0.):i GC TC 15J || \text{M A T . M A 1 7 9}
+61	3079	COUNT 26/10;COUNT 88/7	                                                                                	0 = 2 / 50C \left( \kappa \right) || \mathcal{O} \mathcal{C} \mathcal{T} \mathcal{M} \mathcal{A} \mathcal{I} \mathcal{9} \mathcal{O}
+62	3127	COUNT 33/3	                                                                                	\mathcal{C} \mathcal{H} \mathcal{M}
+63	3301	COUNT 178/49;COUNT 18/2	                                                                                	7.5.5. 7.4.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7.5.5.5. 7. || \text{الشَّمْعَةُ}

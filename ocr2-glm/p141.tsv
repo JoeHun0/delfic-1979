@@ -1,0 +1,5 @@
+43	2268	OK	      L=NAD(J)                                                                  	L=NAD(J)
+57	2880	OK	      VYKNL=VYKNL+SY(L)*D2(L)                                                   	VYKNL=VYKNL+SY(L)*D2(L)
+58	2922	OK	 216  VZKNL=VZKNL+SZ(L)*D2(L)                                                   	216 VZKNL=VZKNL+SZ(L)*D2(L)
+61	3053	OK	      VZKNL=VZKNL/SUM                                                           	VZKNL=VZKNL/SUM
+63	3284	COUNT 3/43	                                                                                	---

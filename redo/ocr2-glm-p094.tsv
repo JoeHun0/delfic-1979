@@ -1,0 +1,8 @@
+1	41	COUNT 3/2	                                                                                	---
+23	1423	COUNT 17/16	                                                                                	3. DPST (KC, KQ) = 0.0
+29	1678	OK	    6 00 7 KD=1.MCX                                                             	6 00 7 KD=1.MCX
+30	1715	OK	      IF(CX(KD,7)-CX(KD,0))53,53,54                                             	IF(CX(KD,7)-CX(KD,0))53,53,54
+33	1852	COUNT 52/51	                                                                                	54. OPX（1，K0）=（CX（KD，7）-CX（KD，6））/（CX（KD，4）-CX（KD，3））
+35	1930	COUNT 16/15	                                                                                	56. DPX(2,KD)=0.0
+39	2103	COUNT 71/26	                                                                                	58  \mathrm {O P X} (2, \mathrm {K D}) = \mathrm {C X} (\mathrm {K D}, 6) / \mathrm {D E N O M}
+46	2404	COUNT 8/7	                                                                                	76.  8 7=0。

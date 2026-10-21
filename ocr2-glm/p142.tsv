@@ -1,0 +1,8 @@
+2	23	COUNT 3/19	                                                                                	---
+3	420	COUNT 28/29	                                                                                	2090 VX(K9H,NDATA,LTIM) = VXKNL
+4	465	OK	      VY(K9H,NOATA,LTIH) = VYKNL                                                	VY(K9H, NOATA, LTIH) = VYKNL
+6	552	OK	      VZ(KBH,NOATA,LTIH) = VZKNL                                                	VZ(KBH, NOATA, LTIH) = VZKNL
+7	595	OK	 905  CONTINUE                                                                  	905 CONTINUE
+44	2528	OK	      COMMON /CNTRCL/ IPOL1,ISIN,ISOUT,JPARN,MC(20),NSEQO                       	COMMON /CNTRCL/ IPOL1,ISIN,ISOUT,JPARN,MC(20),NSEQO
+47	2655	OK	      DIMENSION OXSUM(KBHF,NDATF,LTIMF),GYSUM(KBHF,NDATF,LTIMF)                 	DIMENSION OXSUM(KBHF,NDATF,LTIMF),GYSUM(KBHF,NDATF,LTIMF)
+58	3288	COUNT 8/17	                                                                                	markdown

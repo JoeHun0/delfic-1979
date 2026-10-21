@@ -1,0 +1,8 @@
+33	1897	OK	       COMMON /INDEX/ ICX,JCX,PBHX,LTIMX,NAT,NCX,NDATX                          	COMMON /INDEX/ ICX, JCX, PBHX, LTIMX, NAT, NCX, NDATX
+43	2326	OK	      DATA PROGRM   , EPSILO   , EPSZ    , QBRT      , VARL                     	DATA PROGRM , EPSILO , EPSZ , QBRT , VARL
+44	2371	OK	     1   /6HTRANP   , .0005    , 0.1     ,.3333333333, 1.0E9   /                	1 /6HTRANP , .0005 , 0.1 , .3333333333, 1.0E9 /
+54	2798	OK	      EPST=EPSILO*TMAX                                                          	EPST = EPSILO * TMAX
+55	2843	OK	      X0=XP                                                                     	X0 = XP
+57	2930	OK	      Z0=ZP                                                                     	Z0 = ZP
+61	3102	OK	      R0=0.                                                                     	R0 = 0.
+63	3294	COUNT 15/3	                                                                                	\text{الجَمْعِ}

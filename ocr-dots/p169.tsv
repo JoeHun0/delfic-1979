@@ -1,0 +1,58 @@
+1	17	COUNT 0/13;COUNT 0/2	                                                                                	 || 
+2	487	COUNT 12/7	                                                                                	230 KTR (IP) = 0
+3	530	COUNT 25/20;COUNT 8/7	                                                                                	240 CALL CALC(IP,ONAP,NMNP) || P0HEC131
+4	569	COUNT 11/8;COUNT 0/1	                                                                                	777 CONTINUE || 
+5	615	COUNT 0/1	                                                                                	
+6	661	OK	      RETURN                                                                    	RETURN
+7	700	COUNT 0/1	                                                                                	
+8	748	OK	      END                                                                       	END
+9	1087	OK	*DECK,POMP                                                                      	* DECK, POMP
+10	1133	COUNT 0/1	      SUBROUTINE PDHP                                                           	SUBROUTINE PDHP || 
+11	1175	COUNT 0/1	C                                                                               	C || 
+12	1216	COUNT 52/53	                                                                        PUMP   3	THIS SUBROUTINE SORTS OUT THOSE PARCELS THAT WILL CONTRIBUTE || PUMP 3
+13	1260	COUNT 48/49	                                                                        PUMP   4	TO SUBSEQUENT MAP CORE LOADS, AND DUMPS THEM ON TO TAPE FOR || PUMP 4
+14	1304	COUNT 17/18;COUNT 0/1	                                                                                	C TEMPORARY STORAGE || 
+15	1341	COUNT 1/4	C                                                                               	C || 6
+16	1390	COUNT 12/23	                                                                        PUMP   ,	C H.G.NORMENT || PUMP ,
+17	1432	OK	C                                                                               	C
+18	1475	COUNT 8/70;COUNT 5/6	                                                                                	GLOSSARY || PUMP 9
+19	1518	OK	C                                                                               	C
+20	1562	COUNT 39/42	                                                                        PUMP  11	COUNT OF PARCELS MOVED FROM UPPER TO LOWER CORE || PUMP 11
+21	1607	COUNT 10/11;COUNT 6/5	                                                                                	(JL.LE.KP) || PUMP 12
+22	1642	COUNT 44/47	                                                                        PUMP  13	COUNT OF AVAILABLE PARCEL STORAGE LOCATIONS PASSED || PUMP 13
+23	1692	COUNT 31/32	                                                                        PUMP  14	IN THE PARCEL CORE STORAGE BLOCK SORT || PUMP 14
+24	1735	COUNT 23/24	                                                                        PUMP  15	(JP.LE.NE.AND.JP.LE.KP) || PUMP 15
+25	1776	COUNT 38/41	                                                                        PUMP  10	NUMBER OF FARCELS IN COKE THAT ARE TO BE DUMPED || PUMP 10
+26	1820	COUNT 8/9;COUNT 6/4	                                                                                	ONTO TAPE || PUMP 17
+27	1859	COUNT 11/12;COUNT 6/4	                                                                                	(KP=NIJ-NE) || 'JMP' 1
+28	1901	COUNT 40/43	                                                                        PUMP  19	COUNT OF AVAILABLE PARCEL STORAGE LOCATIONS IN || PUMP 19
+29	1950	COUNT 37/38	                                                                        PUMP  20	CORE. THIS IS THE NUMBER OF PARCELS REJECTED || PUMP 20
+30	1993	COUNT 9/10;COUNT 6/5	                                                                                	IN PCHECK. || PUMP CI
+31	2030	COUNT 1/45	                                                                        PUMP  22	C || PUMP 22
+32	2078	COUNT 0/2	                                                                                	
+33	2120	COUNT 1/20;COUNT 0/4	                                                                                	C || 
+34	2158	COUNT 0/3	C                                                                               	C || 
+35	2207	COUNT 0/71	                                                                        PUMP  26	 || PUMP 26
+36	2248	OK	C                                                                               	C
+37	2295	COUNT 14/38	                                                                        PUMP  29	COMMON /CONCAT/ || PUMP 29
+38	2340	COUNT 5/35	                                                                        PUMP  25	11SIN || PUMP 25
+39	2380	COUNT 43/30	                                                                        PUMP  31	2HARRAY ,M8TAPE ,MXREQ ,SO ,IN FAN ,OUT FAN ,OUT FAN || PUMP 31
+40	2423	OK	      COMMON /PARDAT/       ASC       ,BSQ       ,COSA      ,F          PUMP  31	COMMON /PARDAT/ ASC ,BSQ ,COSA ,F || PUMP 31
+41	2466	COUNT 0/54	                                                                        PUMP  33	 || PUMP 33
+42	2511	COUNT 54/53	                                                                        POMP  34	2SIGVO(173),SINA ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML ,1 || POMP 34
+43	2553	COUNT 6/16;COUNT 0/6	                                                                                	3 V P R M U || 
+44	2589	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR       PUMP  55	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR || PUMP 55
+45	2638	COUNT 32/31;COUNT 5/6	                                                                                	1 MAPRUN ,NE ,NIJ ,VORO ,NREG ,NTASK ,1 || RUN      00
+46	2682	COUNT 16/27	                                                                        PUMP  38	20PMID(12) ,T1 ,T2 || PUMP 38
+47	2725	COUNT 6/3	      DATA PROGRH/6HPOHP  /                                                     	DATA PROGRH/6HPOHP / || PUMP 30
+48	2759	COUNT 0/5	C                                                                               	C || 
+49	2811	COUNT 0/1	      KP=NIJ-NE                                                                 	KP=NIJ-NE || 
+50	2854	COUNT 2/4	      IF(NE.EQ.0) GO TO 1000                                                    	IF (NE.EQ.0) GO TO 1000 || 41
+51	2891	COUNT 0/4;COUNT 0/2	                                                                                	 || 
+52	2940	COUNT 0/7;COUNT 0/1	                                                                                	 || 
+53	2986	COUNT 0/3	                                                                                	
+54	3028	OK	      JL=0                                                                      	JL = 0
+55	3068	OK	C                                                                               	C
+56	3113	COUNT 1/48	                                                                        PUMP  4"	C || PUMP 4"
+57	3194	COUNT 3/2	                                                                                	166
+58	3310	COUNT 0/14;COUNT 0/5	                                                                                	 || 

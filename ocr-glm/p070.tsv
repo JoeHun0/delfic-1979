@@ -1,0 +1,59 @@
+1	43	COUNT 3/9;COUNT 3/2	                                                                                	--- || ---
+2	460	OK	*DECK,MASS                                                              HASS   1	* DECK, MASS || HASS 1
+3	505	OK	      SUBROUTINE HASS                                                   MASS   2	SUBROUTINE HASS || MASS 2
+4	547	OK	C                                                                       MASS   3	C || MASS 3
+5	590	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     MASS   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || MASS 4
+6	633	OK	C                                                                       MASS   5	C || MASS 5
+7	674	COUNT 1/71	                                                                        MASS   6	C || MASS 6
+8	719	OK	C                                                                       MASS   7	C || MASS 7
+9	761	OK	C     ESTIMATES  MASS OF FALLOUT IN THE FIREBALL FCR A SURFACE, LOW     MASS   8	C ESTIMATES MASS OF FALLOUT IN THE FIREBALL FCR A SURFACE, LOW || MASS 8
+10	803	OK	C     AIRBURST OR SHALLOW SUBSURFACE BURST.                             MASS   9	C AIRBURST OR SHALLOW SUBSURFACE BURST. || MASS 9
+11	847	OK	C                                                                       MASS  10	C || MASS 10
+12	891	COUNT 1/71	                                                                        MASS  11	C || MASS 11
+13	934	OK	C                                                                       MASS  12	C || MASS 12
+14	976	COUNT 61/60	                                                                        MASS  13	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ. || MASS 13
+15	1020	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 MASS  14	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR || MASS 14
+16	1063	OK	C                                                                       MASS  15	C || MASS 15
+17	1104	COUNT 2/71	                                                                        MASS  16	C G || MASS 16
+18	1148	OK	C                                                                       MASS  17	C || MASS 17
+19	1190	OK	C     H08  OR D08                                                       MASS  18	C H08 OR D08 || MASS 18
+20	1233	OK	      IF（HEIGHT）230.240.240                                             MASS  19	IF（HEIGHT）230.240.240 || MASS 19
+21	1277	OK	 230  D=2.181595                                                        MASS  20	230 D=2.181595 || MASS 20
+22	1319	OK	      Q=-2SCL                                                           MASS  21	Q=-2SCL || MASS 21
+23	1362	OK	      R=1.125E+02+(7.55E-01)*Q-(9.6E-06)*(Q**3.0)-(9.11E-12)*(Q**5.0)   MASS  22	R=1.125E+02+(7.55E-01)*Q-(9.6E-06)*(Q**3.0)-(9.11E-12)*(Q**5.0) || MASS 22
+24	1406	OK	      S=3.27E+01+（8.51E-01）*Q-(2.52E-05)*（Q**3.0）+（1.78E-10）*（Q**5.0）   MASS  23	S=3.27E+01+（8.51E-01）*Q-(2.52E-05)*（Q**3.0）+（1.78E-10）*（Q**5.0） || MASS 23
+25	1447	OK	      SSAM= D*((W)**(3.0/3.4))*(R**2.0)*S                               MASS  24	SSAM= D*((W)**(3.0/3.4))*(R**2.0)*S || MASS 24
+26	1491	OK	      GO TO 250                                                         MASS  25	GO TO 250 || MASS 25
+27	1533	OK	 240  E=0.07740685                                                      MASS  26	240 E=0.07740685 || MASS 26
+28	1575	OK	      SSAM=E*((W)**(3.0/3.4))*((180.0-ZSCL)**2.0)*(360.0+ZSCL)          MASS  27	SSAM=E*((W)**(3.0/3.4))*((180.0-ZSCL)**2.0)*(360.0+ZSCL) || MASS 27
+29	1619	OK	 250  RETURN                                                            HASS  28	250 RETURN || HASS 28
+30	1662	OK	      END                                                               MASS  29	END || MASS 29
+31	2005	OK	*DECK,VAPOR                                                             VAPOR  1	*DECK, VAPOR || VAPOR 1
+32	2050	OK	      SUBROUTINE VAPOR                                                  VAPOR  2	SUBROUTINE VAPOR || VAPOR 2
+33	2092	OK	C                                                                       VAPOR  3	C || VAPOR 3
+34	2134	OK	C     H. G. NORMENT. ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978     VAPOR  4	C H. G. NORMENT. ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || VAPOR 4
+35	2178	OK	C                                                                       VAPOR  5	C || VAPOR 5
+36	2219	COUNT 1/71	                                                                        VAPOR  6	C || VAPOR 6
+37	2263	OK	C                                                                       VAPOR  7	C || VAPOR 7
+38	2306	OK	C     ESTIMATES PORTION CF FALLOUT MASS (CALC. BY SR PASS) IN THE       VAPOR  8	C ESTIMATES PORTION CF FALLOUT MASS (CALC. BY SR PASS) IN THE || VAPOR 8
+39	2349	OK	C     VAPOR STATE AT THE INITIAL TIME                                   VAPOR  9	C VAPOR STATE AT THE INITIAL TIME || VAPOR 9
+40	2392	OK	C                                                                       VAPOR 10	C || VAPOR 10
+41	2435	COUNT 1/71	                                                                        VAPOR 11	C || VAPOR 11
+42	2478	OK	C                                                                       VAPOR 12	C || VAPOR 12
+43	2520	OK	      COMMON /BASIC/ W.FW.Z8RSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ    VAPOR 13	COMMON/BASIC/W.FW.Z8RSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ || VAPOR 13
+44	2564	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI  VAPOR 14	COMMON /CONTRL/ DETIO(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI || VAPOR 14
+45	2607	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 VAPOR 15	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || VAPOR 15
+46	2642	OK	C                                                                       VAPOR 16	C || VAPOR 16
+47	2691	COUNT 1/71	                                                                        VAPOR 17	C || VAPOR 17
+48	2724	COUNT 1/2	                                                                        VAPOR 18	C || VAPOR 18
+49	2777	COUNT 47/46	                                                                        VAPOR 19	C BRANCH ON THE BASIS CF SOIL CATEGORY -SILICEOUS TO 100, || VAPOR 19
+50	2821	OK	C     CALCAREOUS TO 200                                                 VAPOR 20	C CALCAREOUS TO 200 || VAPOR 20
+51	2864	OK	      IF(1C(2))100,100,200                                              VAPOR 21	IF(1C(2))100,100,200 || VAPOR 21
+52	2907	OK	C                                                                       VAPOK 22	C || VAPOK 22
+53	2951	OK	C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL  VAPOR 23	C IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL || VAPOR 23
+54	2995	OK	C     BOILING TEMPERATURE                                               VAPOR 24	C BOILING TEMPERATURE || VAPOR 24
+55	3037	OK	 100  IF（TMPG-3000.0）120,120,110                                        VAPOR 25	100 IF（TMPG-3000.0）120,120,110 || VAPOR 25
+56	3082	OK	 110  VPR=SSA4*0.00015*(TMPG-3000.0)                                    VAPOR 26	110 VPR=SSA4*0.00015*(TMPG-3000.0) || VAPOR 26
+57	3141	OK	                                       67                                       	67
+58	3274	COUNT 3/17;COUNT 3/6	                                                                                	--- || ---
+59	3333	COUNT 3/14	                                                                                	---

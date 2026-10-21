@@ -1,0 +1,47 @@
+1	0	28	NOISE	                                                                        			
+2	770	803	AGREE	     1 OMAP,NMAP)                                                       		lighton=     1 OMAP,NMAP) ## dots=     1 OMAP,NMAP) ## glm=     1 OMAP,NMAP)	OPM2227
+3	814	848	AGREE	      CALL MAP(OMAP,NMAP)                                               		lighton=      CALL MAP(OMAP,NMAP) ## dots=      CALL MAP(OMAP,NMAP) ## glm=      CALL MAP(OMAP,NMAP)	OPM2228
+4	856	887	AGREE	      GO TO 1211                                                        		lighton=      GO TO 1211 ## dots=      GO TO 1211 ## glm=      GO TO 1211	OPM2229
+5	898	931	COMMENT	COMPUTE A MULTIPLE CORE-LCAD MAP                                        		lighton=COMPUTE A MULTIPLE CORE-LCAD MAP ## dots=COMPUTE A MULTIPLE CORE-LCAD MAP ## glm=COMPUTE A MULTIPLE CORE-LCAD MAP	OPM2230
+6	943	973	AGREE	  207 REWIND JPOUT                                                      		dots=  207 REWIND JPOUT ## glm=  207 REWIND JPOUT	UPM2231
+7	985	1016	AGREE	      REWIND KPOUT                                                      		lighton=      REWIND KPOUT ## dots=      REWIND KPOUT ## glm=      REWIND KPOUT	OPM2232
+8	1028	1058	AGREE	      KTAPE=IPOUT                                                       		dots=      KTAPE=IPOUT ## glm=      KTAPE=IPOUT	OPM2233
+9	1071	1102	AGREE	      LTAPE=JPOUT                                                       		lighton=      LTAPE=JPOUT ## dots=      LTAPE=JPOUT ## glm=      LTAPE=JPOUT	OPM2234
+10	1114	1148	VOTED	      CALL GOGO(OMAP,NHAP)                                              		lighton=      CALL GOGÚ(OMAP,NHAP) ## dots=      CALL GOGO(OMAP,NMAP) ## glm=      CALL GOGO(OMAP,NHAP)	OPH2235
+11	1158	1188	AGREE	      REWIND KTAPE                                                      		lighton=      REWIND KTAPE ## dots=      REWIND KTAPE ## glm=      REWIND KTAPE	OPM2256
+12	1201	1234	AGREE	      WRITE(LTAPE)NUL                                                   		lighton=      WRITE(LTAPE)NUL ## dots=      WRITE(LTAPE)NUL ## glm=      WRITE(LTAPE)NUL	OPM2237
+13	1243	1274	AGREE	      REWIND LTAPE                                                      		lighton=      REWIND LTAPE ## dots=      REWIND LTAPE ## glm=      REWIND LTAPE	UPM2238
+14	1286	1320	VOTED	      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 208                       		lighton=      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 208 ## dots=      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 208 ## glm=      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 308	UPM2239
+15	1330	1365	VOTED	      00 306 IMAP=1,NMAP                                                		lighton=      00 316 IMAP=1,NMAP ## dots=      00 306 IMAP=1,NMAP ## glm=      00 306 IMAP=1，NMAP	OPM2240
+16	1365	1405	AGREE	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0                            		lighton=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0 ## dots=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0 ## glm=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0	OPM2241
+17	1416	1447	AGREE	  306 CONTINUE                                                          		lighton=  306 CONTINUE ## dots=  306 CONTINUE ## glm=  306 CONTINUE	OPM2242
+18	1459	1494	VOTED	  308 CALL MAP(OMAP,NMAP)                                               		lighton=  308 CALL MAP(OMAP,NMAP) ## dots=  308 CALL MAP(OMAP,NMAP) ## glm=  308 CALL MAP(OMAP.NMAP)	OPM2243
+19	1502	1536	AGREE	      00 220 INDEX=1,NZ                                                 		lighton=      00 220 INDEX=1,NZ ## dots=      00 220 INDEX=1,NZ ## glm=      00 220 INDEX=1,NZ	UPM2244
+20	1545	1578	COMMENT	CLEAR OUT THE OHAP ARRAY                                                		lighton=CLEAR OUT THE OMAP ARRAY ## dots=CLEAR OUT THE OHAP ARRAY ## glm=CLEAR OUT THE OHAP ARRAY	OPM2245
+21	1589	1620	AGREE	      CLROT=0.0                                                         		dots=      CLROT=0.0 ## glm=      CLROT=0.0	UPM2246
+22	1630	1664	VOTED	      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.t30                      		lighton=      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.t30 ## dots=      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.t30 ## glm=      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.E30	OPH2247
+23	1675	1708	VOTED	      00 702 IMAP=1,NMAP                                                		lighton=      00 702 IMAP=1,NMAP ## dots=      00 702 IMAP=1,NMAP ## glm=      00 702 IMAP=1，NMAP	OPM2248
+24	1717	1749	AGREE	  702 OMAP(IMAP)=CLROT                                                  		lighton=  702 OMAP(IMAP)=CLROT ## dots=  702 OMAP(IMAP)=CLROT ## glm=  702 OMAP(IMAP)=CLROT	OPM2249
+25	1761	1794	VOTED	      IF(MOD(INDEX,2).EQ.1) GO TO 208                                   		lighton=      IF(MOD(INDEX,2).EQ.1) GO TO 208 ## dots=      IF(MOD(INDEX,2)*EQ,1) GO TO 208 ## glm=      IF(MOD(INDEX,2).EQ.1) GO TO 208	OPM2250
+26	1803	1833	VOTED	      KTAPE=KPOUT                                                       		lighton=      KTAPE=KPOUT ## dots=      KTAPE=KPOUT ## glm=      KTAPE=KPOU↑	UPM2251
+27	1847	1877	AGREE	      LTAPE=JPOUT                                                       		lighton=      LTAPE=JPOUT ## dots=      LTAPE=JPOUT ## glm=      LTAPE=JPOUT	OPM2252
+28	1889	1918	AGREE	      GO TO 209                                                         		lighton=      GO TO 209 ## dots=      GO TO 209 ## glm=      GO TO 209	OPM2253
+29	1932	1963	AGREE	  208 KTAPE=JPOUT                                                       		lighton=  208 KTAPE=JPOUT ## dots=  208 KTAPE=JPOUT ## glm=  208 KTAPE=JPOUT	UPM2254
+30	1977	2007	AGREE	      LTAPE=KPOUT                                                       		lighton=      LTAPE=KPOUT ## dots=      LTAPE=KPOUT ## glm=      LTAPE=KPOUT	OPM2255
+31	2017	2047	AGREE	  209 ICTR=INDEX                                                        		lighton=  209 ICTR=INDEX ## dots=  209 ICTR=INDEX ## glm=  209 ICTR=INDEX	UPM2256
+32	2061	2092	AGREE	      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP                            		lighton=      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP ## dots=      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP ## glm=      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP	OPM2257
+33	2105	2134	AGREE	      X1=X2                                                             		dots=      X1=X2 ## glm=      X1=X2	UPM2258
+34	2146	2176	VOTED	      X2=X1+NXMAP*OGX                                                   		lighton2=      X2=X1+NXMAP*DGX ## dots2=      X2=X1+NXMAP*OGX ## glm=      X2=X1+NXMAP*OGX ## glm2=      X2=X1+NXMAP*OGX	OPM2259
+35	2189	2223	AGREE	  210 CALL GOGO(OMAP,NMAP)                                              		lighton=  210 CALL GOGO(OMAP,NMAP) ## dots=  210 CALL GOGO(OMAP,NMAP) ## glm=  210 CALL GOGO(OMAP,NMAP)	OPM2260
+36	2233	2263	VOTED	      REWIND KTAPE                                                      		lighton=      REHIND KTAPE ## lighton2=      REWIND KTAPE ## dots2=      REWIND KTAPE ## glm=      REWIND KTAPE ## glm2=      REWIND KTAPE	UPM22E1
+37	2275	2306	AGREE	      WRITE(LTAPE)NUL                                                   		lighton=      WRITE(LTAPE)NUL ## dots=      WRITE(LTAPE)NUL ## glm=      WRITE(LTAPE)NUL	OPM2262
+38	2319	2348	AGREE	      REWIND LTAPE                                                      		lighton=      REWIND LTAPE ## dots=      REWIND LTAPE ## glm=      REWIND LTAPE	OPM2263
+39	2362	2393	AGREE	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220                       		lighton=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220 ## dots=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220 ## glm=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220	OPM22E4
+40	2404	2437	VOTED	      00 215.IMAP=1,NMAP                                                		lighton=      00 215.IMAP=1,NMAP ## dots=      00 215.IMAP=1,NMAP ## glm=      00 215.IMAP=1，NMAP	UPM2265
+41	2447	2479	VOTED	      IF(OMAP(IMAP).GE.1.E20) OMAP(IMAP)=0.0                            		lighton=      IF(OMAP(IMAP).GE.1.E3G) OMAP(IMAP)=0.0 ## dots=      IF(OMAP(IMAP).GE.1.E20) OMAP(IMAP)=U.D ## glm=      IF(OMAP(IMAP).GE.1.E20) OMAP(IMAP)=0.0	UPM22E6
+42	2491	2521	AGREE	  215 CONTINUE                                                          		lighton=  215 CONTINUE ## dots=  215 CONTINUE ## glm=  215 CONTINUE	OPM2267
+43	2533	2566	VOTED	  220 CALL MAP(OMAP,NMAP)                                               		lighton=  227 CALL MAP(OMAP,NMAP) ## dots=  220 CALL MAP(OMAP,NMAP) ## glm=  220 CALL MAP(OMAP,NMAP)	0PM2268
+44	2576	2606	AGREE	      GO TO 1211                                                        		lighton=      GO TO 1211 ## dots=      GO TO 1211 ## glm=      GO TO 1211	UPM22E9
+45	2620	2649	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	UPM2270
+46	3118	3149	NOISE	                                                                        		lighton=                                       160 ## dots=                                       160 ## glm=                                       160	
+47	3277	3303	NOISE	                                                                        			

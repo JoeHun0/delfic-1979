@@ -1,0 +1,10 @@
+1	1	COUNT 0/27	                                                                                	
+17	1164	OK	     1        RHO(256), ETA(256), NHODO, ZV(100),  VX(100), VY(100)             	1 RHO(256), ETA(256), NHODO, ZV(100), VX(100), VY(100)
+23	1424	COUNT 44/45	                                                                                	1 / 999999. .0174532925, 6HSHWIND, 4HMETE , 4HRESO /
+30	1725	OK	    4 F0D14T( 1H+, 47X, 3(2X,1PE12.5))                                          	4 F0D14T ( 1H+, 47X, 3(2X, 1PE12.5) )
+31	1766	COUNT 51/53	                                                                                	5 FORMAT ( 1H , 9X , 39SHUT-TIME WINDS HAVE NOT BEEN SPECIFIED)
+32	1808	OK	    6 FORMAT( AF10.?)                                                           	6 FORMAT (AF10.?)
+58	2925	OK	      7V(NHODO) = ( AP(N1)   + SCALE(41)*SCALE(1)                               	7V(NHODO) = ( AP(N1) + SCALE(41)*SCALE(1)
+60	3013	COUNT 0/58	                                                                                	
+61	3055	COUNT 124/58	                                                                                	\text{VY(NHODO)} = \text{AP(N3)} \cdot \text{SCALE(2)} \cdot \cos(\text{RAOC} \cdot (\text{AP(N2)} \cdot \text{SCALE(3)} + \text{TRNS}))
+63	3301	COUNT 0/25	                                                                                	

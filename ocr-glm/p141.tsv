@@ -1,0 +1,63 @@
+1	4	COUNT 3/45	                                                                        - -    -	--- || ---
+2	512	OK	 208  DM=02(KL)                                                         TRIDI181	208 DM=02(KL) || TRIDI181
+3	556	OK	      NADT=J                                                            TRIDI182	NADT=J || TRIDI182
+4	598	OK	 207  CONTINUE                                                          TRIDI183	207 CONTINUE || TRIDI183
+5	641	OK	C     AT THIS POINT. DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN)       TR101184	C AT THIS POINT. DM IS THE LARGEST D2(J) FCR J=NAD(J), NAD(NN) || TR101184
+6	687	OK	C                                                                       TR10I185	C || TR10I185
+7	727	OK	      IF (NN1-JTOPV)2072,2072,2073                                      TRIDI186	IF (NN1-JTOPV)2072,2072,2073 || TRIDI186
+8	772	OK	C                                                                       TRIDI187	C || TRIDI187
+9	815	OK	C2072 NOW SELECT DEST NN POINTS                                         TR10I168	C2072 NOW SELECT DEST NN POINTS || TR10I168
+10	856	OK	C     SCAN THE SET D2(J),J=NAD(NN+1,JTOPV) UNTIL A D2(J) LESS THAN DM   TRIOI189	C SCAN THE SET D2(J), J=NAD(NN+1, JTOPV) UNTIL A D2(J) LESS THAN DM || TRIOI189
+11	899	OK	C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NAOT) WITH THE SELECTED NADTRIOI190	C IS FOUND. IF ONE IS FOUND, SWITCH NAD(NAOT) WITH THE SELECTED NAD || TRIOI190
+12	943	COUNT 54/53	                                                                        TRIDI191	C THEN RESET DM AND NACT TO INDICATE THE MCST KENCTE OF THE NEAREST || TRIDI191
+13	986	OK	C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN    TRIOI192	CNN POINTS. WHEN THE FULL SET D2(J), J=NAC(NN+1,JTOPV) HAS BEEN || TRIOI192
+14	1027	OK	C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY  TRIDI193	C SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED. ONLY || TRIDI193
+15	1073	OK	C     ONE SCAN IS REQUIRED.                                             TRIDI194	C ONE SCAN IS REQUIRED. || TRIDI194
+16	1115	OK	 2072 DO 210 J=NN1,JT0PV                                                TRIDI195	2072 DO 210 J=NN1,JT0PV || TRIDI195
+17	1159	OK	      KL=NAD（J）                                                         TRIDI196	KL=NAD（J） || TRIDI196
+18	1202	COUNT 24/25	                                                                        TRIOI197	IF(DM-02(KL))210,210,211 || TRIOI197
+19	1245	OK	 211  NTEMP=NAO(J)                                                      TRIDI198	211 NTEMP=NAO(J) || TRIDI198
+20	1288	OK	      NAD（J）=NAD（NADT）                                                  TRIDI199	NAD（J）=NAD（NADT） || TRIDI199
+21	1332	OK	      NAD(NADT)=NTEMP                                                   TRIDI200	NAD(NADT) = NTEMP || TRIDI200
+22	1375	OK	C                                                                       TR101201	C || TR101201
+23	1416	OK	C     NOW RESET DM AND NADT TO THE NEW NOST REMOTE POINT                TRI01202	C NOW RESET DM AND NADT TO THE NEW NOST REMOTE POINT || TRI01202
+24	1462	OK	      DM=D2(KL)                                                         TR10I203	DM=D2(KL) || TR10I203
+25	1504	OK	      00 212 KKK=1，NN                                                   TR1DI2J4	00 212 KKK=1，NN || TR1DI2J4
+26	1547	OK	      KL=NAD（KKK）                                                       TR101215	KL=NAD（KKK） || TR101215
+27	1589	OK	      IF（DM=02（KL））213，212，212                                          TRIOI2J6	IF（DM=02（KL））213，212，212 || TRIOI2J6
+28	1632	OK	 213  DM=02(KL)                                                         TR1012J7	213 DM=02(KL) || TR1012J7
+29	1676	OK	      NADT=KKK                                                          TRIDI2J8	NADT=KKK || TRIDI2J8
+30	1720	OK	C                                                                       TRIDI2J9	C || TRIDI2J9
+31	1760	OK	C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF     TRIOI210	C DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF || TRIOI210
+32	1805	OK	C     THE NEAREST NN POINTS                                             TRIDI211	C THE NEAREST NN POINTS || TRIDI211
+33	1849	OK	 212  CONTINUE                                                          TR10I212	212 CONTINUE || TR10I212
+34	1890	OK	 210  CONTINUE                                                          TR101213	210 CONTINUE || TR101213
+35	1934	OK	 2073 CONTINUE                                                          TRIDI214	2073 CONTINUE || TRIDI214
+36	1978	OK	C                                                                       TRI01215	C || TRI01215
+37	2020	OK	C     THE NEAREST NN HAVE BEEN FOUND                                    TRIDI216	C THE NEAREST NN HAVE BEEN FOUND || TRIDI216
+38	2063	OK	C                                                                       TR101217	C || TR101217
+39	2107	OK	C                                                                       TRIDI218	C || TRIDI218
+40	2147	OK	C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS                            TRIDI219	C2080 COMPUTE AND SUM THE WEIGHTING FACTORS || TRIDI219
+41	2191	OK	 2080 SUM=0.0                                                           TR101220	2080 SUM=0.0 || TR101220
+42	2234	OK	      00 214 J=1，NN                                                     TR101221	00214 J=1，NN || TR101221
+43	2268	OK	      L=NAD(J)                                                          TR101222	L=NAD(J) || TR101222
+44	2319	OK	      C2(L)=1.0/D2(L)                                                   TR101223	C2(L)=1.0/D2(L) || TR101223
+45	2350	OK	 214  SUM=SUM+D2(L)                                                     TR101224	214 SUM=SUM+D2(L) || TR101224
+46	2403	OK	      IF(SUM/FLOAT(NN) .LE. GI8) WRITE(ISOUT,24) NN,XG,YG,ZG            TR101225	IF(SUM/FLOAT(NN) .LE. GI8) WRITE(ISOUT,24) NN,XG,YG,ZG || TR101225
+47	2449	OK	C                                                                       TR101226	C || TR101226
+48	2491	OK	C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT.              TR10I227	C NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT. || TR10I227
+49	2534	OK	C     COMPUTE STORAGE INDEX                                             TRIDI228	C COMPUTE STORAGE INDEX || TRIDI228
+50	2576	COUNT 50/51	                                                                        TR101229	COMPUTE AND STORE VECTOR ESTIMATE AT LATTICE CENTER POINT. || TR101229
+51	2623	OK	      VXKNL=0.0                                                         TR101230	VXKNL=0.0 || TR101230
+52	2665	OK	      VYKNL=0.0                                                         TRIOI231	VYKNL=0.0 || TRIOI231
+53	2709	OK	      VZKNL=0.3                                                         TR101232	VZKNL=0.3 || TR101232
+54	2752	OK	      DO 216 J=1，NN                                                     TR101233	DO 216 J=1，NN || TR101233
+55	2794	OK	      L=NAD(J)                                                          TRIDI234	L=NAD(J) || TRIDI234
+56	2836	OK	      VXKNL=VXKNL+SX(L)*02(L)                                           TR101235	VXKNL=VXKNL+SX(L)*02(L) || TR101235
+57	2880	OK	      VYKNL=VYKNL+SY(L)*D2(L)                                           TRIDI236	VYKNL=VYKNL+SY(L)*D2(L) || TRIDI236
+58	2922	OK	 216  VZKNL=VZKNL+SZ（L）*D2（L）                                           TRIDI237	216 VZKNL=VZKNL+SZ（L）*D2（L） || TRIDI237
+59	2965	OK	      VXKNL=VXKNL/SUM                                                   TR10I238	VXKNL=VXKNL/SUM || TR10I238
+60	3010	OK	      VYKNL=VYKNL/SUM                                                   TR101239	VYKNL=VYKNL/SUM || TR101239
+61	3053	OK	      VZKNL=VZKNL/SUM                                                   TR101240	VZKNL=VZKNL/SUM || TR101240
+62	3101	OK	                                       138                                      	138
+63	3284	COUNT 3/43;COUNT 3/8	                                                                                	--- || ---

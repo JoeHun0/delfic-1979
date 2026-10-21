@@ -1,0 +1,8 @@
+10	1135	OK	      L=4-K                                                                     	L = 4 - K
+12	1224	COUNT 8/7	                                                                                	JL = JL + 1.
+21	1607	COUNT 0/17	                                                                                	
+31	2036	OK	  26( J=KK+1                                                                    	26 ( J=KK+1
+37	2297	OK	  510'ERROR=-510                                                                	510 'ERROR=-510
+38	2340	OK	 2000 CALL ERROR(PROGRM,IFFCR,ISOUT)                                            	2000 CALL ERROR(PROGRM, IFFCR, ISOUT)
+40	2414	OK	      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),           	WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),
+45	3295	COUNT 27/9	                                                                                	\text{اللغة: } \text{العربية}

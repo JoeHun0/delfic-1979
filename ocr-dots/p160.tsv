@@ -1,0 +1,63 @@
+1	22	COUNT 0/8	                                                                                	
+2	522	OK	 41   FORMAT (//25X, 19MMASCHN SET EQUAL TO15)                          UPM2  47	41 FORMAT (//25X, 19MMASCHN SET EQUAL TO15) || UPM2 47
+3	566	OK	 44   FORMAT( 8F10.3/A10)                                               CPM2  48	44 FORMAT ( 8F 10.3/A 10) || CPM2 48
+4	607	COUNT 59/60	                                                                        OPM2  49	45 FORMAT(15X, 93FCCATOURS ARE NOT DETERMINED BECAUSE THE REQUESTED || OPM2 49
+5	651	COUNT 41/40	                                                                        OPM2  50	1. MAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY) || OPM2 50
+6	693	COUNT 62/59;COUNT 0/6	                                                                                	46 FORMAT(/15X, 56HTHE SPECIFIED NAF GRID INCREMENTS PRODUCE DISTORTED || 
+7	737	OK	     10 MAPS)                                                           OPK2  52	10 MAPS) || OPK2 52
+8	779	OK	 47   FORMAT(15X,6 6HUNDISTORTEDM APSA REP ROCUCEDB YT HEG RIDI NCREMENTOPM2  53	47 FORMAT(15X, 66HUNDISTORTED MAPS ARE PROCUCED BY THE GRID INCREMENT || OPM2 53
+9	824	COUNT 17/16	                                                                        UPM2  54	# ITS PRINTED ABOVE) || UPM2 54
+10	866	OK	C                                                                       OPM2  55	C || OPM2 55
+11	909	OK	      IGO=.TRUE.                                                        CPM2  56	IGO = .TRUE. || CPM2 56
+12	954	OK	C                                                                       OPM2  57	C || OPM2 57
+13	992	COUNT 60/59	                                                                        OPM2  58	COPY IN MAP LIMITING COORDINATES, GRID INTERVALS, AND COMBINED GROUND || OPM2 58
+14	1036	OK	C     ROUGHNESS-SURVEY INSTRUMENT RESPONSE FACTOR.                      OPM2  59	C ROUGHNESS-SURVEY INSTRUMENT RESPONSE FACTOR. || OPM2 59
+15	1080	OK	 1191 READ(ISIN,9)XMIN,XMAX,YMIN,YMAX,CGX,OGY,GRUFF                     OPM2  60	1191 READ(ISIN, 9)XMIN, XMAX, YMIN, YMAX, CGX, OGY, GRUFF || OPM2 60
+16	1122	OK	      IF(GRUFF .EQ. 0.0) GRUFF=1.0                                      OPM2  61	IF (GRUFF .EQ. 0.0) GRUFF=1.0 || OPM2 61
+17	1163	COUNT 0/6	 16U3 IF(AES(DGX) + ABS(DGY))120,121,121                                        	16U3 IF(AES(DGX) + ABS(DGY))120,121,121 || 
+18	1208	OK	 120  WRITE (ISOUT,17)                                                  OPM2  63	120 WRITE (ISOUT,17) || OPM2 63
+19	1251	OK	      REWIND IPOUT                                                      OPM2  b4	REWIND IPOUT || OPM2 b4
+20	1296	OK	      RETURN                                                            OPM2  65	RETURN || OPM2 65
+21	1341	OK	C                                                                       UPM2  66	C || UPM2 66
+22	1379	OK	COMMENCE PROCESSING FOR NAFS OF THIS DESCRIPTION                        OPM2  67	COMMENCE PROCESSING FOR NAFS OF THIS DESCRIPTION || OPM2 67
+23	1424	OK	  121 NTASK=NTASK+1                                                     UPM2  68	121 NTASK=NTASK+1 || UPM2 68
+24	1468	OK	      FSUM=0.0                                                          OPM2  69	FSUM=0.0 || OPM2 69
+25	1511	OK	C                                                                       OPM2  7C	C || OPM2 7C
+26	1554	OK	      NRQ=0                                                             UPM2  71	NRQ=0 || UPM2 71
+27	1595	OK	CALCULATE ADJUSTED MAP GRID INCREMENTS TO ASSURE AN UNCISTORTED MAP     CPM2  72	CALCULATE ADJUSTED MAP GRID INCREMENTS TO ASSURE AN UNCISTORTED MAP || CPM2 72
+28	1639	OK	      NSP=1                                                             UPM2  73	NSP = 1 || UPM2 73
+29	1682	OK	      IF(DGY .GT. J.G) GO TO 1300                                       UPM2  74	IF (DGY .GT. J.G) GO TO 1300 || UPM2 74
+30	1724	COUNT 0/17	                                                                        OPM2  75	 || OPM2 75
+31	1765	OK	 1300 IF(DGX .EQ. 2.0*IV*OGY/IH) NSP=0                                  OPM2  76	1300 IF(DGX .EQ. 2.0*IV*OGY/IH) NSP=0 || OPM2 76
+32	1808	OK	CALCULATE NUMBER OF MAF CORE LOADS BEYOND THE FIRST, AZ.                GPM2  77	CALCULATE NUMBER OF MAF CORE LOADS BEYOND THE FIRST, AZ. || GPM2 77
+33	1855	OK	      NZ=0                                                              OPM2  78	NZ = 0 || OPM2 78
+34	1894	COUNT 42/21	                                                                        OPM2  79	\text{NYMAP} = (\text{YNAX} - \text{YHIN})/CGY || OPM2 79
+35	1940	OK	      NOX=(XMAX-XMIN)/DGX                                               OPM2  80	NOX = (XMAX - XMIN) / DGX || OPM2 80
+36	1982	OK	      NXMAP=NOX                                                         OPM2  61	NXMAP=NOX || OPM2 61
+37	2022	COUNT 35/14	                                                                        UPM2  &2	\text{NST} = \text{NMAP} / \text{NYHAP} || UPM2 & 2
+38	2066	COUNT 7/6	      IF(NXMAP .LE. NST) GO TO 1401                                             	IF(NXMAP .LE. NST) GO TO 1401 || UPM:2 83
+39	2111	OK	      NXMAP=NST                                                         UPM2  84	NXMAP=NST || UPM2 84
+40	2151	OK	 1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14LU,ISOUT)                   OPM2  05	1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14LU,ISOUT) || OPM2 05
+41	2195	COUNT 38/12	                                                                        OPM2  c6	\text{NZ} = \text{NOX}/\text{NXHA} \cdot P || OPM2 c6
+42	2237	OK	 1401 NO 1121 J=1,NDSTR                                                 UPM2  97	1401 NO 1121 J=1,NDSTR || UPM2 97
+43	2279	COUNT 44/23	                                                                        OPM2  88	\text{WFMAS}(J) = \text{FMASS}(J) / \text{GRUFF} || OPM2 88
+44	2323	COUNT 0/6	      IF(SD .GT. C.D) WFNAS(J)=WFNAS(J)*SSAM                                    	IF(SD .GT. C.D) WFNAS(J)=WFNAS(J)*SSAM || 
+45	2368	COUNT 0/6	 1121 CONTINUE                                                                  	1121 CONTINUE || 
+46	2409	OK	COPY OUT A LOCAL HEADING                                                OPM2  91	COPY OUT A LOCAL HEADING || OPM2 91
+47	2456	OK	      WRITE (ISOUT,23)NTASK                                             OPM2  92	WRITE (ISOUT,23)NTASK || OPM2 92
+48	2496	OK	      WRITE(ISOUT,24) XHIN,XPAY,YHIN,YPAX,OGX,CGY                       OPM2  93	WRITE (ISOUT,24) XHIN,XPAY,YHIN,YPAX,OGX,CGY || OPM2 93
+49	2539	OK	      WRITE (ISOUT,4)  GRUFF ,ZMIN                                      OPM2  v4	WRITE (ISOUT,4) GRUFF ,ZMIN || OPM2 v4
+50	2582	OK	      IF(NSP)1123.1123.1122                                             OPM2  95	IF (NSP) 1123.1123.1122 || OPM2 95
+51	2626	COUNT 20/19	                                                                        OPM2  96	1122 WRITE(ISOOUT,46) || OPM2 96
+52	2669	OK	      GO TO 1211                                                        UPM2  37	GO TO 1211 || UPM2 37
+53	2712	OK	 1123 WRITE(1SOUT,47)                                                   JPM2  38	1123 WRITE(1SOUT,47) || JPM2 38
+54	2756	COUNT 0/6	C                                                                               	C || 
+55	2796	OK	 1211 CONTINUE                                                          OPM2 1.0	1211 CONTINUE || OPM2 1.0
+56	2840	OK	C                                                                       NPM2 1.1	C || NPM2 1.1
+57	2882	OK	 1209 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM                              CPM2 1.2	1209 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM || CPM2 1.2
+58	2924	OK	      IF(N7 .GT. 0) NXHAF=NST                                           OPM2 1:3	IF (N7 .GT. 0) NXHAF=NST || OPM2 1:3
+59	2969	COUNT 17/18	                                                                        OPM2 1.4	COPY IN A 4AP REQUEST || OPM2 1.4
+60	3011	OK	      READ(ISIN,32)NREQ,JC,ICONT,MASCHN,T1,T2,CCUT,CUTMAP               UPM2 1:5	READ(ISIN,32)NREQ,JC,ICONT,MASCHN,T1,T2,CCUT,CUTMAP || UPM2 1:5
+61	3054	OK	      IF(ICONT .NE. 0) READ(ISIN,44 ) CONTUR,OROL9L                     OPM2 1.6	IF(ICONT.NE.0) READ(ISIN,44) CONTUR,OROL9L || OPM2 1.6
+62	3106	OK	                                      157                                       	157
+63	3279	COUNT 0/11	                                                                                	

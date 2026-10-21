@@ -1,0 +1,4 @@
+1	11	COUNT 320/16	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}
+2	792	OK	      IF(EOF(INTP) .NE. J.C)  GO TO 307                                         	IF (EOF(INTP) .NE. J.C) GO TO 307
+12	1224	OK	      IF (EMITN.LE.0.0) GC TO 10)                                               	IF (EMITN.LE.0.0) GC TO 10)
+16	1398	OK	      HOB=HOB*3.28C84                                                           	HOB = HOB * 3.28C84

@@ -1,0 +1,64 @@
+1	4	COUNT 0/18;COUNT 26/3	                                                                                	 || \text{الإيثش-خن حا ل مكن فنخن}
+2	28	COUNT 0/54;COUNT 1/8	                                                                                	 || -
+3	583	OK	*DECK,ICRMEX                                                            ICRME  1	*DECK, ICRMEX || ICRME 1
+4	626	OK	      SUBROUTINE ICRMEX(NUMTAP)                                         ICRME  2	SUBROUTINE ICRMEX(NUMTAP) || ICRME 2
+5	668	OK	C                                                                       ICRME  3	C || ICRME 3
+6	710	COUNT 7/6	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976             	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 || ICRME. 4
+7	754	COUNT 7/6	C                                                                               	C || ICR.MÈ 5
+8	795	COUNT 496/71	                                                                        ICRME  6	C \quad \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star \star || ICRME 6
+9	839	OK	C                                                                       ICRME  7	C || ICRME 7
+10	883	COUNT 1/33	                                                                        ICRME  8	C || ICRME 8
+11	926	OK	C                                                                       ICRME  9	C || ICRME 9
+12	969	OK	C     DETERMINES INITIAL VALUES OF -                                    ICRME 10	C DETERMINES INITIAL VALUES OF - || ICRME 10
+13	1011	COUNT 58/57	                                                                        ICRME 11	C TIME, TEMPERATURE, TCTAL SOIL MASS, FRACTION OF THE SOIL BURDEN IN. || ICRME 11
+14	1048	OK	C     THE VAPOR PHASE, AND THE SIZE FREQUENCY DISTRIBUTION OF THE       ICRME 12	C THE VAPOR PHASE, AND THE SIZE FREQUENCY DISTRIBUTION OF THE || ICRME 12
+15	1097	OK	C     FALLOUT PARTICLES.  NEXT IT PERFCRMS A DYNAMIC CLOUD RISE AND     ICRME 13	C    FALLOUT PARTICLES. NEXT IT PERFCRMS A DYNAMIC CLOUD RISE AND || ICRME 13
+16	1140	OK	C     STABILIZATION SIMULATION.  THEN IT ESTABLISHES AN                 ICRME 14	C STABILIZATION SIMULATION. THEN IT ESTABLISHES AN || ICRME 14
+17	1182	OK	C     AXISYMMETRIC DISTRIBUTION OF FALLOUT PARCELS ABOVE GZ.   FINALLY  ICRME 15	C AXISYMMETRIC DISTRIBUTION OF FALLOUT PARCELS ABOVE GZ. FINALLY || ICRME 15
+18	1225	OK	C     THE COORDINATES OF THESE PARCELS ARE ADJUSTED TO ACCOUNT FOR      ICRME 16	C THE COORDINATES OF THESE PARCELS ARE ADJUSTED TO ACCOUNT FOR || ICRME 16
+19	1268	OK	C     WIND TRANSPORT DURING THE PERIOD OF CLOUD RISE AND STABILIZATION  ICRME 17	C WIND TRANSPORT DURING THE PERIOD OF CLOUD RISE AND STABILIZATION || ICRME 17
+20	1311	OK	C     AND A TRANSLATION OF THE COORDINATES OF GZ AND  LETONATION TIME.  ICRME 18	C AND A TRANSLATION OF THE COORDINATES OF GZ AND LETONATION TIME. || ICRME 18
+21	1347	COUNT 3/7	C                                                                               	C || ---
+22	1398	COUNT 50/67	                                                                        ICRNE 20	C ******************** GLOSSARY ********************. || ICRNE 20
+23	1441	OK	C                                                                       ICRME 21	C || ICRME 21
+24	1484	COUNT 61/60	                                                                        ICRME 22	C ALT - ARRAY(256), ATMOSPHERE ALTITUDE IN METERS(MSL) CORRESPONDING. || ICRME 22
+25	1526	OK	C           TO ATP, PRS, RLH, RHO, ETA                                  ICRME 23	C TO ATP, PRS, RLH, RHO, ETA || ICRME 23
+26	1561	OK	C  ATMR   - SUBROUTINE, READS IN TABLES OF ALT,ATP,PKS,RLH,KHO,ETA      ICRME 24	C ATMR - SUBROUTINE, READS IN TABLES OF ALT,ATP,PKS,RLH,KHO,ETA || ICRME 24
+27	1611	COUNT 8/7	C  ATID   - ARRAY(12), 72 ALPHANUMERIC CHARACTERS FOR ATMOSPHERE IDENT.         	C ATID - ARRAY(12), 72 ALPHANUMERIC CHARACTERS FOR ATMOSPHERE IDENT. || ICRME. 25
+28	1654	OK	C  ATP    - ARRAY(256), ATMOSPHERE TEMPERATURE (K) MATCHES ALT          ICRME 26	C ATP - ARRAY(256), ATMOSPHERE TEMPERATURE (K) MATCHES ALT || ICRME 26
+29	1689	COUNT 3/7	C  BARMU  - MEDIAN DIAMETER OF THE LOGNORMAL PARTICLE SIZE VS. VOLUME           	C BARMU - MEDIAN DIAMETER OF THE LOGNORMAL PARTICLE SIZE VS. VOLUME || ---
+30	1740	COUNT 1/26	                                                                        ICRME 28	C || ICRME 28
+31	1783	OK	C  82     - DEPOSIT INCREMENT LINEAR DIMENSION(CX(5,MCX)/IRAD)          ICRME 29	C 82 - DEPOSIT INCREMENT LINEAR DIMENSION (CX(5, MCX)/IRAD) || ICRME 29
+32	1825	OK	C  CAYM   -  K-TO-MASS RATIO PARAMETER OF THE POWER-LAW PARTICLE DISTBN.1CRME 30	C CAYM - K-TO-MASS RATIO PARAMETER OF THE POWER-LAW PARTICLE DISTBN. || 1CRME 30
+33	1868	OK	C  CG     - ARRAY(200), FALLING SPEEDS OF PARTICLES IN THE CLOUD (M/SEC)ICRME 31	C CG - ARRAY(200), FALLING SPEEDS OF PARTICLES IN THE CLOUD (M/SEC) || ICRME 31
+34	1913	OK	C  CHANGE - CLOUD TIME AFTER WHICH STEP LENGTH CHANGES TO DST2          ICRME 32	C CHANGE - CLOUD TIME AFTER WHICH STEP LENGTH CHANGES TO DST2 || ICRME 32
+35	1956	OK	C  CL     - LATENT HEAT OF VAPORIZATION OF WATER                        ICRME 33	C  CL  - LATENT HEAT OF VAPORIZATION OF WATER || ICRME 33
+36	1999	OK	C  CMLR   - CLOUD MASS LOSS RATE OF PARTICULATE FALLOUT                 ICRME 34	C CMLR - CLOUD MASS LOSS RATE OF PARTICULATE FALLOUT || ICRME 34
+37	2042	OK	C  CP     - SPECIFIC HEAT OF AIR                                        ICRME 35	C CP - SPECIFIC HEAT OF AIR || ICRME 35
+38	2083	COUNT 18/7	C  CPAI   - SPECIFIC HEAT OF AIR INTEGRATED FROM TE TO T                        	C CPAI - SPECIFIC HEAT OF AIR INTEGRATED FROM TE TO T || \mathcal{I}CRME\ 36
+39	2127	OK	C  CPFP   - SUBROUTINE, COMPUTES PARTICLE FALLCUT RATE DURING CLOUD     ICRME 37	C CPFP - SUBROUTINE, COMPUTES PARTICLE FALLCUT RATE DURING CLOUD || ICRME 37
+40	2169	OK	C           RISE CALCULATIONS                                           ICRME 38	C RISE CALCULATIONS || ICRME 38
+41	2212	OK	C  CR     - WEIGHTED AVERAGE SPECIFIC HEAT FOR AIR AND SOIL             ICRME 39	C CR - WEIGHTED AVERAGE SPECIFIC HEAT FOR AIR AND SOIL || ICRME 39
+42	2256	COUNT 52/51	                                                                        ICRME 40	C CRM - SUBROUTINE, COMPUTES DYNAMIC CLOUD RISE AND EXPANSION || ICRME 40
+43	2298	OK	C  CRMINT - SUBROUTINE, COMPUTES INITIAL CRM VARIABLES                  ICRME 41	C CRMINT - SUBROUTINE, COMPUTES INITIAL CRM VARIABLES || ICRME 41
+44	2340	OK	C  CRMW   - SUBROUTINE, PRINTS CRM OUTPUT                               ICRME 42	C CRMW - SUBROUTINE, PRINTS CRM OUTPUT || ICRME 42
+45	2383	COUNT 8/7	C  CX     - ARRAY(50,10), CLOUD PROPERTIES VS. TIME COMPILED DURING CRM         	C CX - ARRAY(50,10), CLOUD PROPERTIES VS. TIME COMPILED DURING CRM || ICRME .43
+46	2427	OK	C           CALCULATIONS AND USED BY RSXP AND WNDSFT                    ICRME 44	C CALCULATIONS AND USED BY RSXP AND WNDSFT || ICRME 44
+47	2462	COUNT 1/26	                                                                        ICRME 45	C || ICRME 45
+48	2513	OK	C           (J,2) - GLOUD TIME INTERVAL(SEC) BEGINNING AT CX(J,1)       ICRME 46	C (J,2) - GLOUD TIME INTERVAL(SEC) BEGINNING AT CX(J,1) || ICRME 46
+49	2557	COUNT 1/28	                                                                        ICRME 47	C || ICRME 47
+50	2591	COUNT 1/27	                                                                        ICRME 48	C || ICRME 48
+51	2640	OK	C           (J,5) - CLOUD RADIUS(M) AT CX(J,1)                          ICRME 49	C (J,5) - CLOUD RADIUS(M) AT CX(J,1) || ICRME 49
+52	2684	OK	C           (J,6) - CLOUD EASE RATE (M/SEC) DURING CX(J,2)              ICRME 50	C (J,6) - CLOUD EASE RATE (M/SEC) DURING CX(J,2) || ICRME 50
+53	2726	OK	C           (J,7) - CLOUD TOP  RATE (M/SEC) CURING CX(J,2)              ICRME 51	C (J,7) - CLOUD TOP RATE (M/SEC) CURING CX(J,2) || ICRME 51
+54	2768	OK	C           (J,8) - CLOUD RADIAL RATE(M/SEC) DURING CX(J,2)             ICRME 52	C (J,8) - CLOUD RADIAL RATE(M/SEC) DURING CX(J,2) || ICRME 52
+55	2812	OK	C           (J,9) - CLCUD TEMPERATURE (K) AT CX(J,1)                    ICRME 53	C (J,9) - CLCUD TEMPERATURE (K) AT CX(J,1) || ICRME 53
+56	2854	COUNT 47/44	                                                                        ICKME 54	C (J,10) - IN-CLCUD GAS DENSITY (KG/M^{**3}) AT CX(J,1) || ICKME 54
+57	2898	COUNT 0/7	C  CXPN   - SUBROUTINE, TABULATES CX ARRAY                                      	C  CXPN  - SUBROUTINE, TABULATES CX ARRAY || 
+58	2941	OK	C  C2     - CONSTANT USED IN EDDY VISCOSITY MOMENTUM GENERATION         ICRME 56	C C2 - CONSTANT USED IN EDDY VISCOSITY MOMENTUM GENERATION || ICRME 56
+59	2985	OK	C           (YIELD DEPENCENT)                                           ICRME 57	C (YIELD DEPENCENT) || ICRME 57
+60	3027	OK	C  C3     - CONSTANT USED IN COMPUTING TURBULENT ENERGY DISSIPATION RATEICRME 58	C  C3  - CONSTANT USED IN COMPUTING TURBULENT ENERGY DISSIPATION RATE || ICRME 58
+61	3072	OK	C  C6     - CONSTANT USED IN COMPUTING AIR ENTRAINMENT RATE INTO CLOUD  JCRME 59	C C6 - CONSTANT USED IN COMPUTING AIR ENTRAINMENT RATE INTO CLOUD || JCRME 59
+62	3109	OK	C           CAUSED BY WIND SHEAR                                        ICRME 6U	C CAUSED BY WIND SHEAR || ICRME 6U
+63	3148	OK	                                        55                                      	55
+64	3324	COUNT 0/38	                                                                                	

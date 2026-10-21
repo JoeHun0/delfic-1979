@@ -1,0 +1,64 @@
+1	13	48	NOISE	                                                                        			
+2	59	78	NOISE	                                                                        			
+3	556	589	AGREE	 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    		lighton= 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) ## dots= 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) ## glm= 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)	WNDSF3J1
+4	601	630	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF3J2
+5	641	673	COMMENT	C     CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE---- 		lighton=C     CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE---- ## glm=C     CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE----	WNDSF303
+6	685	716	COMMENT	C             YES TO 250                                                		glm=C             YES TO 250	WNDSF304
+7	728	759	COMMENT	C          NO TO 315                                                    			WNDSF305
+8	770	801	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF3J6
+9	815	845	VOTED	      IF(( Z80TOM-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250        		lighton=      IF(( Z80TOM-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250 ## lighton2=      IF(( Z80TOM-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250 ## dots2=      IF(( ZB0T0M-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250 ## glm=      IF(( Z80TOM-ZCUR+10.0).LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250	WNDSF3J7
+10	858	889	VOTED	  225 DELTEE=0.                                                         		lighton=  225 OELTEE=0. ## dots=  225 DELTEE=0. ## glm=  225 DELTEE=0.	WNDSF338
+11	900	931	AGREE	      GO TO 315                                                         		lighton=      GO TO 315 ## dots=      GO TO 315 ## glm=      GO TO 315	WNDSF309
+12	943	974	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF310
+13	986	1018	COMMENT	C    INDEX  MM IDENTIFIES THE WIND HODOGRAPH STRATUM IN WHICH THE       		lighton=C    INDEX  MM IDENTIFIES THE WIND HODOGRAPH STRATUM IN WHICH THE	WNDSF311
+14	1028	1059	COMMENT	C     PARTICLE IS CURRENTLY DEFINED.                                    		lighton=C     PARTICLE IS CURRENTLY DEFINED. ## glm=C     PARTICLE IS CURRENTLY DEFINED.	WNOSF312
+15	1073	1103	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF313
+16	1116	1148	COMMENT	C     INDEX LL   IDENTFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH     		dots=C     INDEX LL   IDENTFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH ## glm=C     INDEX LL   IDENTFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH	WNDSF314
+17	1158	1189	COMMENT	C     REPRESENTS THE RISE IN CREMEN TDURING WHICH THE PARTICLE IS       		lighton=C     REPRESENTS THE RISE IN CREMEN TDURING WHICH THE PARTICLE IS	WNDSF315
+18	1201	1232	COMMENT	C     CURRENTLY DEFINED.                                                		lighton=C     CURRENTLY DEFINED. ## dots=C     CURRENTLY DEFINED. ## glm=C     CURRENTLY DEFINED.	WNDSF316
+19	1245	1275	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF317
+20	1286	1317	COMMENT	C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      		lighton=C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE ## dots=C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE ## glm=C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE	WNDSF318
+21	1330	1361	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF319
+22	1374	1407	HAND	  245 DO 246 K=1,MHODO                                                  	20,22	lighton=  245 00 246 K=1,MH000 ## lighton2=  245 00 246 K=1,MHODO ## dots2=  245 00 246 K=1,MHODO ## glm=  245 00 246 K=1，MH0D0	WNDSF320
+23	1415	1447	AGREE	      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247                		lighton=      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247 ## dots=      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247 ## glm=      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247	WNDSF321
+24	1458	1490	AGREE	  246 CONTINUE                                                          		lighton=  246 CONTINUE ## dots=  246 CONTINUE ## glm=  246 CONTINUE	WNOSF322
+25	1502	1532	VOTED	      MM=NHODO                                                          		lighton=      MM=NH000 ## dots=      MM=NHODO ## glm=      MM=NHODO	WNDSF323
+26	1544	1575	AGREE	      GO TO 250                                                         		lighton=      GO TO 250 ## dots=      GO TO 250 ## glm=      GO TO 250	HNDSF324
+27	1588	1618	AGREE	  247 MM=K                                                              		lighton=  247 MM=K ## dots=  247 MM=K ## glm=  247 MM=K	WNOSF325
+28	1631	1662	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF326
+29	1673	1705	AGREE	  250 CONTINUE                                                          		lighton=  250 CONTINUE ## dots=  250 CONTINUE ## glm=  250 CONTINUE	WNDSF327
+30	1718	1747	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF328
+31	1761	1791	COMMENT	C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD.           		lighton=C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD. ## dots=C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD. ## glm=C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD.	WNDSF329
+32	1803	1834	COMMENT	C                   UPWARC TO 251                                       		glm=C                   UPWARC TO 251	WNUSF330
+33	1846	1880	AGREE	      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    		lighton=      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) ## dots=      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) ## glm=      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)	WNDSF331
+34	1890	1921	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF332
+35	1932	1963	COMMENT	C                  DOWNWARC TO 253                                      		glm=C                  DOWNWARC TO 253	WNDSF333
+36	1976	2006	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF334
+37	2018	2049	AGREE	      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298                            		lighton=      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298 ## dots=      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298 ## glm=      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298	WNDSF335
+38	2060	2091	AGREE	 2297 RV=0.                                                             		lighton= 2297 RV=0. ## dots= 2297 RV=0. ## glm= 2297 RV=0.	WNDSF336
+39	2104	2133	AGREE	      GO TO 2299                                                        		lighton=      GO TO 2299 ## dots=      GO TO 2299 ## glm=      GO TO 2299	WNOSF337
+40	2147	2179	VOTED	 2298 RV=VB(LL)*( 1.0+( ZCUR-ZBOTOM)/( ZBOTOM-ZBRSTZ))                  		lighton= 2298 RV=VB(LL)*( 1.0+( ZCUR-ZBOTOM)/( ZBOTOM-ZBRSTZ)) ## dots= 2298 RV=VB(LL)*( 1.0+( ZCUR-ZBOTOM)/( ZBOTOM-ZBRSTZ)) ## glm= 2298 RV=V8(LL)*( 1.0+（ ZCUR-ZBOTOM）/（ ZBOTOM-ZBRSTZ）)	WNOSF338
+41	2190	2222	VOTED	      IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL)                          		lighton=      IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL) ## dots=      IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL) ## glm=      IF( ABS(RV) .GT. ABS(V8(LL)) ) RV=V8(LL)	WNOSF339
+42	2233	2264	AGREE	 2299 IF(FV-RV .GE.0.0)GO TO 253                                        		lighton= 2299 IF(FV-RV .GE.0.0)GO TO 253 ## glm= 2299 IF(FV-RV .GE.0.0)GO TO 253	WNDSF340
+43	2276	2307	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF341
+44	2317	2349	COMMENT	C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE        		lighton=C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE ## dots=C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE ## glm=C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO PCVE TO THE	WNOSF342
+45	2359	2393	COMMENT	C     BOTTOM OF THE HODOGRAPH STRATUM IN WHICH IT RESIDES,AND TO THE    		lighton=C     BOTTOM OF THE HODOGRAPH STRATUM IN WHICH IT RESIDES,AND TO THE ## glm=C     BOTTOM OF THE HODOGRAPH STRATUM IN WHICH IT RESICES,AND TO THE	WNDSF343
+46	2404	2436	COMMENT	C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TIMES.               		lighton=C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TIMES. ## dots=C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TINES. ## glm=C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TIMES.	WNOSF344
+47	2446	2477	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF345
+48	2489	2520	AGREE	  251 IF((MM-1).GT.0) GO TO 252                                         		lighton=  251 IF((MM-1).GT.0) GO TO 252 ## dots=  251 IF((MM-1).GT.0) GO TO 252 ## glm=  251 IF((MM-1).GT.0) GO TO 252	WNDSF346
+49	2532	2564	VOTED	      DELZEE= ZBRSTZ-ZCUR                                               		lighton=      DELZEE= ZBRSTZ-ZCUR ## dots=      DELZEE= ZBRSTZ-ZCUR ## glm=      DELZEE= Z8RSTZ-ZCUR	WNOSF347
+50	2575	2605	AGREE	      GO TO 1253                                                        		lighton=      GO TO 1253 ## dots=      GO TO 1253 ## glm=      GO TO 1253	WNDSF348
+51	2617	2649	VOTED	  252 DELZEE= (ZV(MM) +ZV(PM-1))/ 2.0-ZCUR                              		lighton=  252 DELZEE= (ZV(MM) +ZV(PM-1))/ 2.0-ZCUR ## dots=  252 DELZEE= (ZV(MM) +ZV(MM-1))/ 2.0-ZCUR ## glm=  252 DELZEE= (ZV(MM) +ZV(PM-1))/ 2.0-ZCUR	WNDSF349
+52	2661	2693	VOTED	      IF(OELZEE .LT. -0.01)GO TO 1253                                   		lighton=      IF(OELZEE .LT. -0.C1)GO TO 1253 ## dots=      IF(DELZEE .LT. -0.01)GO TO 1253 ## glm=      IF(OELZEE .LT. -0.01)GO TO 1253	WNDSF350
+53	2705	2736	AGREE	      MM=MM-1                                                           		lighton=      MM=MM-1 ## dots=      MM=MM-1 ## glm=      MM=MM-1	WNOSF351
+54	2748	2779	AGREE	      GO TO 251                                                         		lighton=      GO TO 251 ## dots=      GO TO 251 ## glm=      GO TO 251	WNDSF352
+55	2792	2823	VOTED	 1253 DELTEP= DELZEE/(FV-FV)                                            		lighton= 1253 DELTSP= DELZEE/(FV-RV) ## dots= 1253 DELTEP= DELZEE/(FV-FV) ## glm= 1253 DELTEP= DELZEE/(FV-FV)	HNDSF353
+56	2832	2864	VOTED	  254 DELTEE=(ZBOTOM-ZCUR)/(FV-RV+V3(LL))                               		lighton=  254 DELTEE=(ZBOTOM-ZCUR)/(FV-RV+V3(LL)) ## dots=  254 DELTEE=(ZBOTON-ZCUR)/(FV-RV+V3(LL)) ## glm=  254 DELTEE=（ZBOTOM-ZCUR）/（FV-RV+V9（LL））	WNOSF354
+57	2877	2908	AGREE	      IF( DELTEE.LT. DELTEF) GO TO 255                                  		lighton=      IF( DELTEE.LT. DELTEF) GO TO 255 ## dots=      IF( DELTEE.LT. DELTEF) GO TO 255 ## glm=      IF( DELTEE.LT. DELTEF) GO TO 255	WNDSF355
+58	2921	2951	AGREE	      DELTEE= DELTEP                                                    		lighton=      DELTEE= DELTEP ## dots=      DELTEE= DELTEP ## glm=      DELTEE= DELTEP	WNDSF356
+59	2963	2994	AGREE	  255 IF(DELTEE.GE.0.0) GC TO 278                                       		lighton=  255 IF(DELTEE.GE.0.0) GC TO 278 ## dots=  255 IF(DELTEE.GE.0.0) GC TO 278 ## glm=  255 IF(DELTEE.GE.0.0) GC TO 278	HNDSF357
+60	3005	3036	AGREE	  256 IRROR=-256                                                        		lighton=  256 IRROR=-256 ## dots=  256 IRROR=-256 ## glm=  256 IRROR=-256	HNUSF358
+61	3050	3081	AGREE	      GO TO 7734                                                        		lighton=      GO TO 7734 ## dots=      GO TO 7734 ## glm=      GO TO 7734	WNOSF359
+62	3092	3123	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	HNOSF360
+63	3138	3169	NOISE	                                                                        			
+64	3299	3321	NOISE	                                                                        			

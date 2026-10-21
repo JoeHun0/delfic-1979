@@ -1,0 +1,12 @@
+1	19	COUNT 0/21	                                                                                	
+2	96	COUNT 0/18	                                                                                	
+4	522	COUNT 44/42	                                                                                	VBL(J) = VBL(J) + 1.7071068 * \exp(DVBL(J) - RKG(J))
+8	691	COUNT 45/46	                                                                                	8 VBL(J)=VBL(J)+.1666667*H*(DVBL(J)-2.*RKG(J))
+13	907	OK	      U=VBL(3)                                                                  	U=VBL(3)
+14	948	COUNT 14/8	                                                                                	x=\sqrt{8L}(4)
+15	992	OK	      T=V9L(5)                                                                  	T=V9L(5)
+16	1035	OK	      Z=VBL(6)                                                                  	Z=VBL(6)
+18	1120	OK	      S=VBL(8)                                                                  	S=VBL(8)
+20	1198	COUNT 82/58	                                                                                	V=287. \cdot T \cdot RM \cdot (1. \cdot X) / PQR / (1. \cdot X + S + WT) \cdot (1.0 + X + 29. / 18.) / (1.0 + X)
+38	2279	OK	     2 OZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,        	2 OZ ,ED ,EK ,EPS ,ES ,HLF ,KS ,KSV ,MWYA ,
+39	2313	OK	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    ,        	3 N ,NNN ,P ,PW ,R ,RA ,RL ,KM ,RZT ,

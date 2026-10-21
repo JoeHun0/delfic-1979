@@ -1,0 +1,35 @@
+1	3	COUNT 0/47;COUNT 41/7	                                                                                	 || \text{الخطاء المُستَمِّلَةُ لِمَنْ تَعْتَدُ}
+2	42	COUNT 0/21	                                                                                	
+3	67	COUNT 3/45;COUNT 35/8	                                                                                	--- || \text{الإدراك للإدراك للإدراك للإدراك}
+4	834	OK	*DECK,CRMW                                                              CRMW   1	*DECK, CRMW || CRMW 1
+5	880	OK	      SUBROUTINE CRMM                                                   CRMH   2	SUBROUTINE CRMM || CRMH 2
+6	922	OK	C                                                                       CRMM   3	C || CRMM 3
+7	965	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     CRMW   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || CRMW 4
+8	1007	OK	C                                                                       CRHW   5	C || CRHW 5
+9	1048	COUNT 199/71	                                                                        CRHW   6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || CRHW 6
+10	1092	OK	C                                                                       CRMH   7	C || CRMH 7
+11	1136	OK	C     CR4W PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE.           CRMW   8	C     CR4W PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE. || CRMW 8
+12	1179	OK	C                                                                       CRMH   9	C || CR MH 9
+13	1222	COUNT 100/71	                                                                        CRMW  10	C  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | || CRMW 10
+14	1267	OK	C                                                                       CRMW  11	C || CRMW 11
+15	1306	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  CRMM  12	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || CRMM 12
+16	1352	OK	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     CRMN  13	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || CRMN 13
+17	1396	OK	C                                                                       CRMH  14	C || CRMH 14
+18	1436	COUNT 58/59	                                                                        CRMW  15	8 FORMAT(1H1//8X,42HCLOUD RISE AND GROWTH HISTORY FOR RUN *** 12A6) || CRMW 15
+19	1481	COUNT 9/10	                                                                        CRMW  16	20 FORMAT( || CRMW 16
+20	1523	OK	     1  49X19HCLOUD HISTORY TABLE//                                     CRMW  17	1 49X19HCLOUD HISTORY TABLE// || CRMW 17
+21	1565	OK	     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL,              CRMM  18	1  5X5 (3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL, || CRMM 18
+22	1608	OK	     2  3X11HTEMPERATURE,4X, 3+GAS/                                     CRMW  19	2 3X11HTEMPERATURE, 4X, 3+GAS/ || CRMW 19
+23	1651	OK	     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS,          CRMH  20	3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS, || CRMH 20
+24	1686	OK	     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/                              CRMH  21	4 3X3(3X4HRATE, 4X), 14X, 7HOENSITY/ || CRMH 21
+25	1737	OK	     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X,      CRMH  22	5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X), 4X, || CRMH 22
+26	1780	OK	     6  3H(K),5X1:H (K6/M**3)// (1X12, 1H), 1X,   1:511.4))             CRMW  :3	6  3H(K), 5X1: H (K6/M**3)// (1X12, 1H), 1X,  1:511.4)) || C R M W : 3
+27	1824	OK	C                                                                       СРММ  24	C || СРММ 24
+28	1865	COUNT 319/71;COUNT 12/6	                                                                                	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{ || L \hat{R} MW 25
+29	1909	OK	C                                                                       CRMH  26	C || CRMH 26
+30	1950	OK	      WRITE(ISOUT,6) DETID                                              CRMW  27	WRITE(ISOUT,6) DETID || CRMW 27
+31	1994	OK	      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)                       CRMH  28	WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) || CRMH 28
+32	2037	OK	      RETURN                                                            CRMW  29	RETURN || CRMW 29
+33	2078	OK	      ENO                                                               CRMW  30	ENO || CRMW 30
+34	3164	COUNT 2/1	                                                                                	79
+35	3303	COUNT 14/4	                                                                        \text{S}	\text{الشريعة} || \text{S}

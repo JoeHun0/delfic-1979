@@ -1,0 +1,16 @@
+# regenerable or machine-local
+pages/
+*.log
+__pycache__/
+*.pyc
+*.o
+run/ddtm
+run/dopm
+run/dicrm
+run/*.bin
+run/fort.*
+run/*.err
+run/*.prev
+run/*.prev-*
+run/k-residual/side-session-scripts/__pycache__/
+tools/build.py.bak

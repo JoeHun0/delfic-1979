@@ -1,0 +1,12 @@
+361	p108	57	TIE	69	2	 1450 CALL OUMPER(XOUTN,YCLTN,ZOUTN,TCUTN,SXOTN,SYCTN,PMAS,PSI7,ROUTN,J,
+362	p109	36	NONE	32	3	raw: 1.04 \text{ YC} = \text{YO} + ( \text{YT} - \text{YO} ) \cdot ( \text{XC} - \text{XO} ) / ( \text{XT} - \text{XO} )
+363	p109	50	TIE	32	3	  110 XC=XO+(XT-XO)*(YC-YO)/(YT-YO)
+364	p109	52	TIE	14	3	  11 1XC=XC+A0ISP
+365	p110	1	NONE	13	14	raw: ---
+366	p110	28	NONE	48	7	raw: SUBROUTINE CNTR(NET,NETSU,NDATA,XG,YG,ICF,JCF, \mathcal{N} CCF)
+367	p110	39	SINGLE	18	7	      DATA PROGRAM/6HCNT  R
+368	p110	52	TIE	11	7	      DO 3 NC=1,NIX
+369	p110	56	TIE	26	7	      CALL ERROR(PROGRM,-3,ISOUT)
+370	p111	48	TIE	44	7	      DIMENSION TIMUP(LTIMF),USUM(KBHF,NDATF,LTIMF)
+371	p111	58	NONE	32	29	raw: \text{1. } \text{2. } \text{3. } \text{4. } \text{5. } \text{6. } \text{7. } \text{8. } \text{9. } \text{10. } \text{11. } \text{12. } \text{13. } \text{14. } \text{15. } \text{16. } \text{17. } \text{18. } \text{19. } \text{20. } \text{21. } \text{22. } \text{23. } \text{24. } \text{25. } \text{26. } \text{27. } \text{28. } \text{29. } \text{30.
+372	p112	4	SINGLE	58	4	   10 FORMAT(//15X17HATHCSPHEREU PDATE14,2 2HF ORT INESL ATERT HAN, I

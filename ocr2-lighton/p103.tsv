@@ -1,0 +1,10 @@
+1	1	COUNT 15/37	                                                                                	# 1. Introduction
+4	636	OK	      RETURN                                                                    	RETURN
+8	809	OK	     1,OWAF(J).ZLOW(J),VHAF(J),J=1,N)                                           	1,OWAF(J).ZLOW(J),VHAF(J),J=1,N)
+20	1327	COUNT 10/9	                                                                                	OL\,T = -1.3
+24	1496	OK	  1J5 IF(TP(J)-OLDT)1C6,1C51,1C6                                                	1J5 IF(TP(J)-OLDT)1C6,1C51,1C6
+38	2097	COUNT 19/18	                                                                                	193 TP(.J) = TP(J) + TGZ
+39	2141	OK	 109  XPAR(J)=XPAR(J)+DX+XGZ                                                    	109  XPAR(J) = XPAR(J) + DX + XGZ
+45	2400	OK	      IF(J-N)105,105,110                                                        	IF(J-N) 105,105,110
+51	2655	COUNT 34/35	                                                                                	1(J), DWAF(J), 7LOW(J), VHAF(J), J=1,N
+57	2915	OK	 106  OLDPS=PSIZ(J)                                                             	106  OLDPS=PSIZ(J)

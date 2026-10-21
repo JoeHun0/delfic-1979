@@ -1,0 +1,60 @@
+1	24	60	NOISE	                                                                        			
+2	70	83	NOISE	                                                                        			
+3	744	773	AGREE	  100 XP = X(1)                                                         		dots=  100 XP = X(1) ## glm=  100 XP = X(1)	SRTCN61
+4	788	819	AGREE	      YP = Y(1)                                                         		dots2=      YP = Y(1) ## glm=      YP = Y(1) ## glm2=      YP = Y(1)	SRICN62
+5	830	859	AGREE	      XX = X(1)                                                         		dots=      XX = X(1) ## glm=      XX = X(1)	SRTCN63
+6	874	905	AGREE	      YY = Y(1)                                                         		glm=      YY = Y(1) ## glm2=      YY = Y(1)	SRTCN64
+7	918	948	AGREE	      KK = 1                                                            		lighton=      KK = 1 ## glm=      KK = 1	SRTCN65
+8	959	992	HANDFREE	      VEM = VEC(XP, YP, X(2), Y(2))                                     		dots=      VEH = VEC(XP, YP, X(2), Y(2)) ## glm=      VEH = VEC(XP, YP, X(2), Y(2))	SRTCN66
+9	1003	1032	VOTED	      M = 2                                                             		lighton2=      M = 2 ## dots=      M = 2 ## glm=      H = 2 ## glm2=      M = 2	SRTCN67
+10	1046	1081	AGREE	      WRITE(ISOUT, 3000)                                                		lighton=      WRITE(ISOUT, 3000) ## dots=      WRITE(ISOUT, 3000) ## glm=      WRITE(ISOUT, 3000)	SRTCN68
+11	1090	1123	AGREE	      WRITE( ISOUT, 1000) CNT, XP, YP                                   		lighton=      WRITE( ISOUT, 1000) CNT, XP, YP ## dots=      WRITE( ISOUT, 1000) CNT, XP, YP ## glm=      WRITE( ISOUT, 1000) CNT, XP, YP	SRTCN59
+12	1133	1167	HANDFREE	      IF(IPNCH .GT. 0) WRITE(IPNCH,2000)CNT, XP,  YP,  CROLBL, CODE     		lighton=      IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XF,  YP,  CRDLBL, CODE ## dots=      IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XP,  YP,  CHOLBL, CODE ## glm=      IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT， XP，  YP，  CRDLBL， CODE	SRTCN70
+13	1178	1207	AGREE	      L = 3                                                             		dots=      L = 3 ## glm=      L = 3	
+14	1220	1252	VOTED	  600 00 700 I=L,K                                                      		lighton2=  600 DO 700 I=L,K ## dots2=  600 00 700 I=L,K ## glm=  600 00 700 I=L,K ## glm2=  600 00 700 I=L,K	SRTCN72
+15	1261	1293	AGREE	      IF(X(I) .EQ. CLR) GO TO 700                                       		lighton=      IF(X(I) .EQ. CLR) GO TO 700 ## dots=      IF(X(I) .EQ. CLR) GO TO 700 ## glm=      IF(X(I) .EQ. CLR) GO TO 700	SRTCN73
+16	1304	1338	HANDFREE	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 700                 	55	lighton=      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70: ## lighton2=      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70: ## dots=      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 700 ## dots2=      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 700 ## glm=      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70L	SRTCN74
+17	1349	1378	AGREE	      M = I                                                             		dots=      M = I ## glm=      M = I	SRTCN75
+18	1390	1424	AGREE	      VEM = VEC( XP, YP, X(I), Y(I))                                    		dots=      VEM = VEC( XP, YP, X(I), Y(I)) ## glm=      VEM = VEC( XP, YP, X(I), Y(I))	SRTCN76
+19	1434	1465	AGREE	  700 CONTINUE                                                          		lighton=  700 CONTINUE ## dots=  700 CONTINUE ## glm=  700 CONTINUE	SRTCN77
+20	1476	1507	AGREE	  701 XP = X(M)                                                         		lighton=  701 XP = X(M) ## dots=  701 XP = X(M) ## glm=  701 XP = X(M)	SRTCN78
+21	1519	1548	AGREE	      YP = Y(M)                                                         		glm=      YP = Y(M) ## glm2=      YP = Y(M)	SRTCN79
+22	1562	1592	AGREE	      X(M) = CLR                                                        		dots=      X(M) = CLR ## glm=      X(M) = CLR	SRTCN50
+23	1605	1638	VOTED	      WRITE( ISOUT, 1000) CNT, XP, YP                                   		lighton=      WRITE( ISOUT, 1G00) CNT, XP, YP ## dots=      WRITE( ISOUT, 1000) CNT, XP, YP ## glm=      WRITE( ISOUT, 1000) CNT, XP, YP	SRTCN81
+24	1649	1682	HANDFREE	      IF(IPNCH .GT. 0) WRITE(IPNCH,2000)CNT, XP,  YP,  CROLBL, CODE     	39,44,48,53,58,62	lighton=      IF(IPNCH .GT. 0) WRITE(IFNCH,20JU)CNT, XP,  YP,  CROLBL, COUE ## lighton2=      IF(IPNCH .GT. 0) WRITE(IPNCH,20JU)CNT, XP,  YP,  CROLBL, COUE ## glm=      IF(IPNCH .GT. 0) WRITE(IPNCH,20JJ)CNT， XP，  YP，  CRDLBL， COUE ## glm2=      IF(IPNCH .GT. 0) WRITE(IPNCH,20JJ)CNT， XP，  YP，  CRDLBL， COUE	
+25	1692	1726	VOTED	  702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 750                     		lighton=  702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 75L ## dots=  702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 750 ## glm=  702 IF（ VEC（ XP， YP， XX， YY ） .EQ. J.0） GO TC 750	SRTCN83
+26	1735	1764	AGREE	      L= 1                                                              		lighton=      L= 1 ## dots=      L= 1 ## glm=      L= 1	SRTCN84
+27	1779	1809	AGREE	      KK = KK + 1                                                       		lighton=      KK = KK + 1 ## glm=      KK = KK + 1	SRTCN35
+28	1821	1853	VOTED	  765 00 710 I=1.K                                                      		lighton=  745 00 710 I=1,K ## lighton2=  765 00 710 I=1,K ## dots=  765 00 710 I=1.K ## dots2=  765 00 710 I=1.K ## glm=  705 00 710 I=1.K ## glm2=  765 00 710 I=1.K	SRTCN36
+29	1862	1894	AGREE	      IF( X(I) .EQ. CLR) GC TO 710                                      		lighton=      IF( X(I) .EQ. CLR) GC TO 710 ## dots=      IF( X(I) .EQ. CLR) GC TO 710 ## glm=      IF( X(I) .EQ. CLR) GC TO 710	SRTCN87
+30	1905	1938	AGREE	      VEM= VEC( XP, YP, X(I), Y(I))                                     		dots=      VEM= VEC( XP, YP, X(I), Y(I)) ## glm=      VEM= VEC( XP, YP, X(I), Y(I))	SRTCN88
+31	1949	1979	AGREE	      M = I                                                             		dots=      M = I ## glm=      M = I	SRTON69
+32	1991	2021	AGREE	      GO TO 600                                                         		lighton=      GO TO 600 ## dots=      GO TO 600 ## glm=      GO TO 600	
+33	2034	2064	AGREE	  710 CONTINUE                                                          		lighton=  710 CONTINUE ## dots=  710 CONTINUE ## glm=  710 CONTINUE	SRTCN91
+34	2077	2111	AGREE	      CALL ERROR( PROGRM, -710, ISOUT)                                  		lighton=      CALL ERROR( PROGRM, -710, ISOUT) ## dots=      CALL ERROR( PROGRM, -710, ISOUT) ## glm=      CALL ERROR( PROGRM, -710, ISOUT)	SRTCN92
+35	2119	2150	AGREE	  750 IF( KK .EQ. K) RETURN                                             		lighton=  750 IF( KK .EQ. K) RETURN ## dots=  750 IF( KK .EQ. K) RETURN ## glm=  750 IF( KK .EQ. K) RETURN	SRTCN93
+36	2161	2193	COMMENT	COMMENCE INITIALIZATION FOR ANOTHER CLOSURE.                            		lighton=COMMENCE INITIALIZATION FOR ANOTHER CLOSURE. ## dots=COMMENCE INITIALIZATION FOR ANOTHER CLOSURE. ## glm=COMMENCE INITIALIZATION FOR ANOTHER CLOSURE.	SRTON94
+37	2206	2237	COMMENT	CONDENSE REMAINING POINTS INTO LOWER CORE.                              		lighton=CONDENSE REMAINING POINTS INTO LOWER CORE. ## dots=CONDENSE REMAINING POINTS INTO LOWER CORE. ## glm=CONDENSE REMAINING POINTS INTO LOWER CORE.	SRTCN95
+38	2249	2278	AGREE	      KP=K-KK                                                           		lighton=      KP=K-KK ## dots=      KP=K-KK ## glm=      KP=K-KK	SRTCN96
+39	2294	2323	AGREE	      KKP=KP+1                                                          		lighton=      KKP=KP+1 ## dots=      KKP=KP+1 ## glm=      KKP=KP+1	SRTCN37
+40	2336	2368	AGREE	      DO 770 I=1,KP                                                     		lighton=      DO 770 I=1,KP ## dots=      DO 770 I=1,KP ## glm=      DO 770 I=1,KP	SRTCN98
+41	2376	2407	VOTED	      IF(X(I) .NE. CLR) GC TO 770                                       		lighton=      IF(X(I) .NE. CLR) GC TO 77) ## dots=      IF(X(I) .NE. CLR) GC TO 770 ## glm=      IF(X(I) .NE. CLR) GC TO 770	SRTCN99
+42	2421	2453	VOTED	      DO 760 J=KKP,K                                                    		lighton=      DO 76C J=KKP,K ## dots=      00 760 J=KKP,K ## glm=      DO 760 J=KKP,K	
+43	2465	2497	AGREE	      IF(X(J) .EQ. CLR) GC TO 76.                                       		lighton=      IF(X(J) .EQ. CLR) GC TO 76. ## dots=      IF(X(J) .EQ. CLR) GC TO 76. ## glm=      IF(X(J) .EQ. CLR) GC TO 76.	
+44	2507	2536	HANDFREE	      X(I)=X(J)                                                         	8,10,13,15	dots=      X(I)=X(J) ## dots2=      X(I)=X(J) ## glm=      X（I）=X（J） ## glm2=      X（I）=X（J）	
+45	2551	2580	VOTED	      Y(I)=Y(J)                                                         		dots=      Y(I)=Y(J) ## dots2=      Y(I)=Y(J) ## glm=      Y（I）=Y（J） ## glm2=      Y(I)=Y(J)	
+46	2594	2624	VOTED	      X(J)=CLR                                                          		lighton2=      X(J)=CLR ## dots=      x(j)=CLR ## dots2=      X(J)=CLR ## glm=      X（J）=CLR ## glm2=      X（J）=CLR	
+47	2636	2665	AGREE	      GO TO 758                                                         		lighton=      GO TO 758 ## dots=      GO TO 758 ## glm=      GO TO 758	
+48	2680	2710	AGREE	  760 CONTINUE                                                          		lighton=  760 CONTINUE ## dots=  760 CONTINUE ## glm=  760 CONTINUE	
+49	2724	2756	HANDFREE	  765 CALL ERROR(PROGRM,-765,ISOUT)                                     	27	lighton=  765 CALL ERROR(PROGRM,-755,ISOUT) ## lighton2=  765 CALL ERROR(PROGRM,-755,ISOUT) ## dots=  765 CALL ERROR(PROGRN,-745,ISOUT) ## dots2=  765 CALL ERROR(PROGRN,-745,ISOUT) ## glm=  765 CALL ERROR(PROGRM,-765,ISOUT) ## glm2=  765 CALL ERROR(PROGRM,-755,ISOUT)	SRTCNI17
+50	2768	2798	AGREE	  768 KKP=J+1                                                           		lighton=  768 KKP=J+1 ## dots=  768 KKP=J+1 ## glm=  768 KKP=J+1	SRTCN1J8
+51	2812	2842	VOTED	  77C CONTINUE                                                          		lighton=  77C CONTINUE ## dots=  770 CONTINUE ## glm=  77C CONTINUE	SRTCN109
+52	2854	2883	AGREE	      ILOOP=0                                                           		lighton=      ILOOP=0 ## dots=      ILOOP=0 ## glm=      ILOOP=0	
+53	2895	2924	AGREE	      K=KP                                                              		lighton=      K=KP ## glm=      K=KP	SRTCN111
+54	2937	2967	AGREE	      GO TO 40                                                          		lighton=      GO TO 40 ## dots=      GO TO 40 ## glm=      GO TO 40	DRTCN112
+55	2980	3011	VOTED	 1000 FORMAT( 5X, 3F10.0)                                               		lighton= 1000 FORMAT( 5X, 3F10.0) ## dots= 1000 FORMAT( 5X. 3F10.0) ## glm= 1600 FORMAT( 5X, 3F10.0)	SRTCN113
+56	3021	3054	HANDFREE	 2000 FORMAT( 3F10.0, 10X, A10, 10X, A6)                                	3	lighton= 2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6) ## lighton2= 2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6) ## dots= 2600 FORMAT( 3F10.0, 10X, A10, 10X, A6) ## dots2= 2600 FORMAT( 3F10.0, 10X, A10, 10X, A6) ## glm= 2000 FORMAT( 3F10.0, 10X, A1C, 10X, A6) ## glm2= 2000 FORMAT( 3F10.0, 10X, A1C, 10X, A6)	SRTCN114
+57	3064	3096	VOTED	 3CC0 FORMAT(1H0)                                                       		lighton= 3CCO FORMAT(1H0) ## dots= 3000 FORMAT(1H0) ## glm= 3CC0 FORMAT(1H0)	SRTUN115
+58	3112	3140	HANDFREE	      END                                                               	9	lighton=      ENÜ ## lighton2=      ENG ## dots=      END ## dots2=      END ## glm=      ENG ## glm2=      ENG	SRTCN116
+59	3153	3184	NOISE	                                                                        			
+60	3289	3334	NOISE	                                                                        			

@@ -1,0 +1,34 @@
+1	18	COUNT 0/63;COUNT 0/8	                                                                                	 || 
+2	88	COUNT 0/44;COUNT 0/8	                                                                                	 || 
+3	822	OK	*DECK,CRMW                                                                      	* DECK, CRMW
+4	870	COUNT 0/1	      SUBROUTINE CRHW                                                           	SUBROUTINE CRHW || 
+5	905	COUNT 1/5	C                                                                               	C || 2
+6	953	COUNT 53/54;COUNT 8/5	                                                                                	H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || | CKMN | 5 |
+7	997	OK	C                                                                               	C
+8	1037	COUNT 0/71	                                                                        CKMW   5	 || CKMW 5
+9	1081	OK	C                                                                               	C
+10	1125	COUNT 1/47;COUNT 0/5	                                                                                	C || 
+11	1169	OK	C                                                                               	C
+12	1211	COUNT 0/71;COUNT 5/6	                                                                                	 || CRMW 9
+13	1255	COUNT 0/1	C                                                                               	C || 
+14	1299	COUNT 62/61;COUNT 2/6	                                                                                	COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI || 11
+15	1342	COUNT 41/42	                                                                        CRMW  12	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || CRMW 12
+16	1386	OK	C                                                                               	C
+17	1428	COUNT 57/59;COUNT 2/6	                                                                                	8 FORMAT(1H1//8X,42HCLOUD RISE AND GROWTH HISTORY FOR RUN *** 1A6) || 14
+18	1475	COUNT 0/2	   20 FORMAT(/                                                                  	20 FORMAT(/ || 
+19	1514	COUNT 6/5	     1  49X19HCLOUD HISTORY TABLE//                                             	1 49X19HCLOUD HISTORY TABLE// || UKZN 20
+20	1554	OK	     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL,              UKMW  17	1 5X5 (3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL, || UKMW 17
+21	1601	COUNT 2/6	     2  3X11HTEMPERATURE,4X, 3FGAS/                                             	2 3X11HTEMPERATURE, 4X, 3FGAS/ || 10
+22	1639	OK	     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS.          UKMW  14	3 8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS. || UKMW 14
+23	1685	OK	     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/                              UKMW  CU	4 3X3(3X4HRATE, 4X), 14X, 7HOENSITY/ || UKMW CU
+24	1726	OK	     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X       UKMW  61	5 5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X), 4X || UKMW 61
+25	1770	COUNT 45/44;COUNT 0/4	                                                                                	6 3H(K), 5X13H (KG/M**3)// (1X12, 1H), 1X, 11E11.4)) || 
+26	1809	COUNT 0/7;COUNT 0/6	                                                                                	 || 
+27	1854	COUNT 0/71	                                                                        L4MW  44	 || L4MW 44
+28	1897	COUNT 0/1	C                                                                               	C || 
+29	1941	OK	      WRITE(ISOUT,6) DETID                                                      	WRITE (ISOUT, 6) DETID
+30	1978	OK	      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)                       CRMW  27	WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) || CRMW 27
+31	2028	OK	      RETURN                                                                    	RETURN
+32	2071	OK	      END                                                                       	END
+33	3166	COUNT 0/1	                                                                                	
+34	3322	COUNT 0/6;COUNT 0/8	                                                                                	 || 

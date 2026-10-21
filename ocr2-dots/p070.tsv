@@ -1,0 +1,7 @@
+1	43	COUNT 0/9	                                                                                	
+14	976	OK	      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSO,XGZ,YGZ,TGZ            	COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSO,XGZ,YGZ,TGZ
+22	1319	OK	      Q=-2SCL                                                                   	Q=-2SCL
+24	1406	COUNT 65/63	                                                                                	S=3.27E+01+(8.51E-01)*Q-(2.52E-05)*((Q**3.0)+(1.78E-10)*(Q**5.0))
+28	1575	COUNT 57/56	                                                                                	SSAM=E*((W)**(3.0/3.4))**((180.0-ZSCL)**2.0)*(360.0+ZSCL)
+58	3274	COUNT 0/17	                                                                                	
+59	3333	COUNT 0/14	                                                                                	

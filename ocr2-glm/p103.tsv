@@ -1,0 +1,5 @@
+4	636	OK	      PETURN                                                                    	PETURN
+20	1327	COUNT 8/9	                                                                                	OLT = -1.3
+24	1496	OK	  1J5 IF(TP(J)-OLDT)106,1451,106                                                	1J5 IF(TP(J)-OLDT)106,1451,106
+45	2400	OK	      IF(J-H)105,105,110                                                        	IF (J-H) 105,105,110
+51	2655	OK	     1(J),OWAF(J),7LOW(J),VWAF(J),J=1,N;                                        	1 (J) , OWAF (J) , 7 LOW (J) , VWAF (J) , J=1, N;

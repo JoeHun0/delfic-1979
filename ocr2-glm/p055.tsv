@@ -1,0 +1,3 @@
+26	1794	COUNT 14/15	                                                                                	C24 VRB = ARB (MB)
+29	1925	COUNT 27/28	                                                                                	IF (ARG - PARA (MA)) 048, 044, 054
+32	2059	OK	  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /               	048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /

@@ -1,0 +1,12 @@
+10	1048	OK	      DATA    ICF   ,JCF   ,NARF  ,NCF   ,NOATF ,KOHF  ,LTIMF                   	DATA ICF ,JCF ,NARF ,NCF ,NOATF ,KOHF ,LTIMF
+11	1091	COUNT 15/17	                                                                                	1 / 1 , 1 , 1 , 1 , 35 , 6 /
+22	1565	OK	      DO 3 M=1,MARF                                                             	DO 3 M=1,MARF
+26	1734	COUNT 17/10	                                                                                	\text{TSUM}(K) = 0.
+27	1779	OK	      %BH(K)=0.                                                                 	%BH (K) = 0.
+30	1907	OK	      HDAV(L)=J.                                                                	HDAV(L)=J.
+37	2208	OK	      WFZ(K,N,L)=C.                                                             	WFZ(K,N,L) = C.
+38	2249	OK	      USUM(K,N,L)=0.                                                            	USUM(K,N,L)=0.
+39	2291	OK	      VSUM(K,N,L)=0.                                                            	VSUM(K,N,L)=0.
+40	2337	OK	      DYSUM(K,N,L)=0.                                                           	DYSUM(K,N,L)=0.
+48	2680	OK	     10X5UM,DYSUM,CAVS,NARY,ICF,JCF,NGF,MARF,KBHF,NDATF,LTINF)                  	10X5UM,DYSUM,CAVS,NARY,ICF,JCF,NGF,MARF,KBHF,NDATF,LTINF)
+60	3264	COUNT 0/8	                                                                                	

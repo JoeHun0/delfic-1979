@@ -1,0 +1,12 @@
+349	p106	55	TIE	19	7	      DY=DY+VY( MM) *DELTEE
+350	p106	63	NONE	7	37	raw: . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+351	p107	7	TIE	49	6	     1                 J,LL,MM,LLL,DELTEE:ZBOTOM,RV,FV,TCUR,ZCUR,TMIUOT
+352	p107	15	TIE	35	7	      DELTEE=(ZBOTOM-ZCUR)/(VB( LL)-RV+FV)
+353	p107	23	TIE	54	3	  322 DX=DX+VX( MM)*DELTEE + XC( LL)  + (XC( LL^1) -XC( LL))*DELTRF
+354	p107	24	TIE	51	7	      DY=DY+VY( 4M)*DELTEE + YC( LL)  + (YC( LL+1) -YC( LL))*DELTRF
+355	p107	54	TIE	55	7	      DIMENSION DYSUM(KBHF,NDATF,LTIMF!,TIMUF(LTIMF),ZCH(KBHF)
+356	p108	35	TIE	30	6	     2ICF,JCF,NCF,KBHF,NCA1F,LTIMF)
+357	p108	48	TIE	48	7	      SXL=1./SQRT((COS(R)/SIGXL)**2+(SIN(R)/SIGYL)**2)
+358	p108	53	SINGLE	50	7	      SXOTN=（SXU+SXL+SQRT（（XOU-XOL）**2+（YOU-YOL）**2））/2.
+359	p108	55	TIE	32	7	      XOUTN=XOL+(SXOTN-SXL)*COS(ROUTN)
+360	p108	56	TIE	32	7	      YOUTN=YOL+(SXOTN-SXL)*SIN(ROUTN)

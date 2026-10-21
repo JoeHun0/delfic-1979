@@ -1,0 +1,58 @@
+1	1	COUNT 0/21;COUNT 0/1	                                                                                	 || 
+2	23	COUNT 0/19;COUNT 0/4	                                                                                	 || 
+3	420	COUNT 28/29	                                                                         R101241	2090 VX(KBH, NDATA, LTIM) = VXKNL || R101241
+4	465	OK	      VY(KSH,NDATA,LTIM) = VYKNL                                        TRI01242	VY(KSH,NDATA,LTIM) = VYKNL || TRI01242
+5	500	OK	      IF(FORM .EQ. TURB) GO TO 905                                      TRIDI243	IF (FORM .EQ. TURB) GO TO 905 || TRIDI243
+6	552	OK	      VZ(KBH,NDATA,LTIM) = VZKNL                                        TRI01244	VZ(KBH, NDATA, LTIM) = VZKNL || TRI01244
+7	595	COUNT 8/11	                                                                        TRI01245	CONTINUE || TRI01245
+8	636	OK	 906  CONTINUE                                                          TRI01246	906 CONTINUE || TRI01246
+9	681	OK	      RETURN                                                            TRI01247	RETURN || TRI01247
+10	726	OK	      END                                                               TR101248	END || TR101248
+11	1068	OK	*DECK,WILKNS                                                            WILKN  1	* DECK, WILKNS || WILKN 1
+12	1101	COUNT 7/6	      SUBROUTINE WILKNS (ZCH,DXSUM,DYSUM,CAVS,TIMUP,KBHF,NOATF,LTIMF,L)         	SUBROUTINE WILKNS (ZCH,DXSUM,DYSUM,CAVS,TIMUP,KBHF,NOATF,LTIMF,L) || WILKN 12
+13	1194	COUNT 0/6	C     H. G. NORHENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NORHENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || 
+14	1241	COUNT 0/6	C                                                                               	C || 
+15	1280	COUNT 0/71	                                                                        WILKN  6	 || WILKN 6
+16	1326	OK	C                                                                       WILKN  7	C || WILKN 7
+17	1366	COUNT 0/6	C  WILKINS FUNCTION (JAS 20, 473(1963)) IN THE FCRM BELOW IS USED TO            	C WILKINS FUNCTION (JAS 20, 473(1963)) IN THE FCRM BELOW IS USED TO || 
+18	1402	COUNT 56/57	                                                                        WILKN  9	COMPUTE TURBULENT KINETIC ENERGY DENSITY DISSIPATION RATE, EPS, || WILKN 9
+19	1455	OK	C                                                                       WILKN 10	C || WILKN 10
+20	1497	OK	C     EPS=USTAR**3 / (0.35*(Z+20))                                      WILKN 11	C EPS=USTAR**3 / (0.35*(Z+20)) || WILKN 11
+21	1539	OK	C                                                                       WILKN 12	C || WILKN 12
+22	1582	COUNT 6/7	                                                                        WILKN 13	WHERE = || WILKN 13
+23	1625	OK	C     USTAR IS SURFACE LAYER FRICTION VELOCITY                          WILKN 14	C USTAR IS SURFACE LAYER FRICTION VELOCITY || WILKN 14
+24	1667	OK	C     ZO    IS SURFACE ROUGHNESS LENGTH                                 WILKN 15	C ZO IS SURFACE ROUGHNESS LENGTH || WILKN 15
+25	1710	OK	C     Z     IS ALTITUDE ABOVE GZ.                                       WILKN 16	C      Z      IS ALTITUDE ABOVE GZ. || WILKN 16
+26	1756	OK	C                                                                       WILKN 17	C || WILKN 17
+27	1794	COUNT 56/55	                                                                        WILKN 18	C USTAR IS COMPUTED FROM SURFACE WIND SPEED (U), HEIGHT AT WHICH U IS || WILKN 18
+28	1840	COUNT 8/7	C  MEASURED (ZM, USUALLY ZP=10 METERS), ROUGHNESS LENGTH (ZO), AND              	C MEASURED (ZM, USUALLY ZP=10 METERS), ROUGHNESS LENGTH (ZO), AND || W'ILKN 19
+29	1884	OK	C  RECIPROCAL MONIN-OBUKHOV LENGTH (RL), VIA THE EQUATION               WILKN 20	C RECIPROCAL MONIN-OBUKHOV LENGTH (RL), VIA THE EQUATION || WILKN 20
+30	1926	OK	C                                                                       WILKN 21	C || WILKN 21
+31	1970	OK	C     USTAR=0.35*U / (ALCG(ZM/Z0)+CHI)                                  WILKN 22	C USTAR=0.35*U / (ALCG(ZM/Z0)+CHI) || WILKN 22
+32	2014	OK	C                                                                       WILKN 23	C || WILKN 23
+33	2054	OK	C  WHERE CHI IS CALCULATED BY EXPRESSIONS GIVEN BY BARKER AND BAXTER,   WILKN 24	C WHERE CHI IS CALCULATED BY EXPRESSIONS GIVEN BY BARKER AND BAXTER, || WILKN 24
+34	2099	OK	C  JAS 14, 620(1975).                                                   WILKN 25	C JAS 14, 620(1975). || WILKN 25
+35	2143	OK	C                                                                       WILKN 26	C || WILKN 26
+36	2184	OK	C  IF U, ZM, ZO, AND RL ARE NOT INPUT, THE EQUATION                     WILKN 27	C IF U, ZM, ZO, AND RL ARE NOT INPUT, THE EQUATION || WILKN 27
+37	2227	OK	C                                                                       WILKN 28	C || WILKN 28
+38	2271	OK	C     EPS=0.03/Z     (M**2/SEC**3)                                      WILKN 29	C EPS=0.03/Z (M**2/SEC**3) || WILKN 29
+39	2314	OK	C                                                                       WILKN 30	C || WILKN 30
+40	2358	COUNT 8/7	C  IS USED.                                                                     	C IS USED. || WII.KN 31
+41	2403	OK	C                                                                       WILKN 32	C || WILKN 32
+42	2439	COUNT 0/71	                                                                        WILKN 33	 || WILKN 33
+43	2486	OK	C                                                                       WILKN 34	C || WILKN 34
+44	2528	OK	      COMMON /CNTROL/ IPOL1,ISIN,ISOUT,JPARN,MC(20),NSEQO               WILKN 35	COMMON /CNTROL/ IPOL1,ISIN,ISOUT,JPARN,MC(20),NSEQO || WILKN 35
+45	2570	COUNT 0/7	       COMMON /INDEX/ ICX,JCX,KBHX,LTIPX,NAT,NCX,NDATX                          	COMMON /INDEX/ ICX,JCX,KBHX,LTIPX,NAT,NCX,NDATX || 
+46	2613	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     WILKN 37	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || WILKN 37
+47	2655	OK	      DIMENSION OXSUM(KBKF,NDATF,LTINF),OYSUM(KBHF,NDATF,LTINF)         WILKN 38	DIMENSION OXSUM(KBKF,NDATF,LTINF), OYSUM(KBHF,NDATF,LTINF) || WILKN 38
+48	2697	OK	      DIMENSION CAVS(KBHF),ZCH(KBHF),TIMUP(LTIMF)                       WILKN 39	DIMENSION CAVS(KBHF),ZCH(KBHF),TIMUP(LTIMF) || WILKN 39
+49	2743	OK	C                                                                       WILKN 40	C || WILKN 40
+50	2786	OK	      DATA PROGRM , VKK   , WILK   , ALIMIT                             WILKN 41	DATA PROGRM , VKK , WILK , ALIMIT || WILKN 41
+51	2828	COUNT 28/29	                                                                        WILKN 42	1 /6HWILKNS , 0.35 , 0.03 , 99999./ || WILKN 42
+52	2874	OK	C                                                                       WILKN 43	C || WILKN 43
+53	2916	COUNT 0/7	 1000 FORMAT(4F10.0)                                                            	1000 FORMAT (4F10.0) || 
+54	2958	OK	 5000 FORMAT(      19X, 1HK, 8X, 3HZCH, 12X, 5HOXSUM,10X, 5HOYSUM)      WILKN 45	5000 FORMAT ( 19X, 1HK, 8X, 3HZCH, 12X, 5HOXSUM, 10X, 5HOYSUM) || WILKN 45
+55	3003	OK	 5100 FORMAT( 15X, 15, 3(3X,E12.5))                                     WILKN 46	5100 FORMAT ( 15X, 15, 3(3X,E12.5)) || WILKN 46
+56	3036	OK	 5200 FORMAT(    15X76HTURBULENCE PARAMETERS ARE CALCULATED BY WILKINS RWILKN 47	5200 FORMAT ( 15X76HTURBULENCE PARAMETERS ARE CALCULATED BY WILKINS R || WILKN 47
+57	3110	OK	                                        139                                     	139
+58	3288	COUNT 0/17;COUNT 0/1	                                                                                	 || 

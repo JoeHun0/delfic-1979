@@ -1,0 +1,7 @@
+17	1410	COUNT 0/13	                                                                                	
+19	1494	OK	      MCHN = MCHN + 1                                                           	MCHN = MCHN + 1
+24	1711	COUNT 0/24	                                                                                	
+25	1753	OK	      POWER = 8SUBK(L)                                                          	POWER = 8SUBK(L)
+35	2184	COUNT 7/6	                                                                                	G0 TO 1.9
+39	2355	OK	5'1   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))             	5'1  FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))
+41	2440	COUNT 42/43	                                                                                	5)3    FORMAT(//5(6X,4HMCHA,4X,5HBSUBK,2X),)//

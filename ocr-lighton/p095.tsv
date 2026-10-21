@@ -1,0 +1,63 @@
+1	1	COUNT 0/24;COUNT 80/3	                                                                                	 || \text{S} \text{M} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S}
+2	47	COUNT 17/4;COUNT 27/1	                                                                                	\text{[Redacted]} || \mathcal{H} \cdot \mathcal{H}
+3	561	OK	C     WITH ZERO.                                                        RSXP  92	C WITH ZERO. || RSXP 92
+4	606	OK	C                                                                       RSXP  93	C || RSXP 93
+5	650	COUNT 0/42	                                                                        RSXP  94	 || RSXP 94
+6	685	OK	C                                                                       RSXP  95	C || RSXP 95
+7	728	OK	C     ENTER OUTSIDE WAFER CALCULATION LOOP.  THIS LOOP DEFINES PARTICLE RSXP  96	C ENTER OUTSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES PARTICLE || RSXP 96
+8	770	COUNT 1/13	                                                                        RSXP  97	C || RSXP 97
+9	812	OK	C                                                                       RSXP  98	C || RSXP 98
+10	863	OK	  200 DO 278 MA=1,NDSTR                                                 RSXP  99	200  DO  278  MA=1,NDSTR || RSXP 99
+11	899	COUNT 0/12	                                                                        RSXP 1J0	 || RSXP 1J0
+12	941	OK	C                                                                       RSXP 101	C || RSXP 101
+13	992	OK	C                                                                       KSXP 102	C || KSXP 102
+14	1029	COUNT 54/53	                                                                        RSXP 1:3	C     ENTER MIDDLE WAFER CALCULATION LOOP. THIS 1.00P CEFINES CLOUD || RSXP 1:3
+15	1078	OK	C     WAFER SUBDIVISIONS.                                               RSXP 114	C WAFER SUBDIVISIONS. || RSXP 114
+16	1121	OK	C                                                                       RSXP 105	C || RSXP 105
+17	1158	OK	      DO 258 H8=1,KOPS                                                  RSXP 106	DO 258 H8=1,KOPS || RSXP 106
+18	1208	OK	C                                                                       RSXP 107	C || RSXP 107
+19	1252	OK	C     COMPUTE WAFER TOP OR BOTTOM INDICATOR, MBT                        RSXP 1J8	C     COMPUTE WAFER TOP OR BOTTOM INDICATOR, MBT || RSXP 1J8
+20	1287	OK	C         IF MB IS 00D, MBT=2       THIS SPECIFIES A WAFER BOTTOM       RSXP 109	C IF MB IS 00D, MBT=2 THIS SPECIFIES A WAFER BOTTOM || RSXP 109
+21	1337	OK	C         IF MB IS EVEN, MET=1      THIS SPECIFIES A WAFER TOP          RSXP 110	C IF MB IS EVEN, MET=1 THIS SPECIFIES A WAFER TOP || RSXP 110
+22	1382	OK	C                                                                       RSXP 111	C || RSXP 111
+23	1424	COUNT 0/21	                                                                        RSXP 112	 || RSXP 112
+24	1466	OK	C                                                                       RSXP 113	C || RSXP 113
+25	1510	OK	C     INITIAL DPST VARIABLES                                            RSXP 114	C INITIAL DPST VARIABLES || RSXP 114
+26	1544	COUNT 22/7	C                                                                               	C || \mathcal{R}SXP \quad 115
+27	1595	COUNT 0/19	                                                                        KSXP 116	 || KSXP 116
+28	1638	COUNT 0/21	                                                                        RSXP 117	 || RSXP 117
+29	1680	OK	      GO TO (202,201),MBT                                               RSXP 118	GO TO (202, 201), MBT || RSXP 118
+30	1724	OK	  2C1 OP3T(4,M3T)=DIAM(MA)                                              RSXP 119	2C1 OP3T(4, M3T) = DIAM(MA) || RSXP 119
+31	1769	OK	      GO TO 2J3                                                         RSXP 12C	GO TO 2J3 || RSXP 12C
+32	1810	COUNT 26/25	                                                                        RSXP 121	202 DPST(4, MBT) = 0.TAM(MA + 1) || RSXP 121
+33	1853	OK	  203 DPST(5,MBT)=FMASS(MA)/DPSTK                                       RSXP 122	203 DPST(5,MBT)=FMASS(MA)/DPSTK || RSXP 122
+34	1895	OK	      IF(SD .GT. 0.C)DPST(5,MBT)=DPST(5,MBT)*SSAM                       RSXP 123	IF(SD . GT. 0.C) DPST(5,MBT) = DPST(5,MBT) * SSAM || RSXP 123
+35	1938	OK	      8M=M3/2                                                           RSXP 124	8M = M3/2 || RSXP 124
+36	1980	COUNT 0/44;COUNT 14/7	                                                                                	 || \hat{R}SXP\ 125
+37	2024	OK	      ZLST=OPST(2,M8T)                                                  RSXP 126	ZLST = OPST(2, M8T) || RSXP 126
+38	2066	OK	      KBASE=1                                                           RSXP 127	KBASE=1 || RSXP 127
+39	2111	OK	      J94SE=1                                                           RSXP 128	J94SE=1 || RSXP 128
+40	2154	OK	C                                                                       R:XP 129	C || R:XP 129
+41	2195	OK	C     ENTER.INSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES CLOUD      RSXP 130	C     ENTER. INSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES CLOUD || RSXP 130
+42	2239	OK	C     PISE HISTORY TIMES IN THE CX ARRAY                                RSXP 131	C PISE HISTORY TIMES IN THE CX ARRAY || RSXP 131
+43	2284	OK	C                                                                       RSXP 132	C || RSXP 132
+44	2325	OK	C                                                                       RSXP 133	C || RSXP 133
+45	2368	OK	C     COMPUTE OPST TRAVEL                                               RSXP 134	C COMPUTE OPST TRAVEL || RSXP 134
+46	2411	OK	C                                                                       KSXP 135	C || KSXP 135
+47	2453	OK	      DO 238 MC=1,KCX                                                   RSXP 136	DO 238 MC=1,KCX || RSXP 136
+48	2495	COUNT 0/25	                                                                        RSXP 137	 || RSXP 137
+49	2539	OK	      IF( ABS( ZVSB ) .LT.   .1 ) ZVSB = 0.0                            RSXP 138	IF( ABS( ZVSB ) .LT. .1 ) ZVSB = 0.0 || RSXP 138
+50	2580	OK	      IF(ZVS8)204,210,210                                               RSXP 139	IF(ZVS8) 204,210,210 || RSXP 139
+51	2624	OK	  204 GO TO (2J6,20E),KBASE                                             RSXP 140	204 GO TO (2J6,20E),KBASE || RSXP 140
+52	2668	OK	C                                                                       RSXP 141	C || RSXP 141
+53	2708	COUNT 42/43;COUNT 14/7	                                                                                	C ADJUST DPST RADIUS AND ALTITUDE FOR LEAVING CLOD || \dot{R}SXP\ 142
+54	2753	COUNT 8/7	C                                                                               	C || R.SXP 143
+55	2798	OK	  206 KBASE=2                                                           RSXP 144	206 KBASE=2 || RSXP 144
+56	2840	COUNT 0/7	                                                                        RSXP 145	 || RSXP 145
+57	2884	OK	  207 EXTM=(ZLST-CX(MD,3))/(CX(MD,6)-UP+DN)                             RSXP 146	207 EXT M = (ZLST - CX(MD, 3)) / (CX(MD, 6) - UP + DN) || RSXP 146
+58	2926	OK	 1207 DPST(3,MBT)=CX(MO,5)+EXTM*CX(MO,8)                                RSXP 147	1207 DPST(3, MBT) = CX(MO, 5) + EXT M * CX(MO, 8) || RSXP 147
+59	2968	COUNT 0/29	                                                                        PSXP 148	 || PSXP 148
+60	3012	COUNT 8/7	C                                                                               	C || kSXP\ 149
+61	3055	OK	C     IF THE WAFER IS ON THE GROUND, JUMP THE INNER LCCP.  IF NOT,      RSXP 150	C IF THE WAFER IS ON THE GROUND, JUMP THE INNER LCCP. IF NOT, || RSXP 150
+62	3098	COUNT 47/46	                                                                        RSXP 151	C     COMPUTE THE POSITION OF THE WAFER BELOW THE CLOCC BASE. || RSXP 151
+63	3161	COUNT 11/2	                                                                                	\mathcal{Y}

@@ -1,0 +1,63 @@
+1	13	COUNT 3/21	                                                                                	---
+2	506	OK	COMMENCE READING IPOUT HEACER DATA                                      OPM1  88	COMMENCE READING IPOUT HEACER DATA || OPM1 88
+3	549	OK	      READ (IPOUT)FW,SSAM,SLDTMP,TMSO,SD,W,HEIGHT,RHCF,RADMAX,ZMIN      OPM1  89	READ (IPOUT)FW,SSAM,SLDTMP,TMSO,SD,W,HEIGHT,RHCF,RADMAX,ZMIN || OPM1 89
+4	584	OK	      READ (IPOUT)XGZ,YGZ,1GZ                                           OPM1  90	READ (I POUT)XGZ,YGZ,1GZ || OPM1 90
+5	635	OK	      READ  （IPOUT） （DETID（J），J=1，12）                                   OPM1  91	READ （IPOUT）（DETID（J），J=1，12） || OPM1 91
+6	678	OK	      READ  (IPOUT) (DTMID(J),J=1,12)                                   OPM1  92	READ (IPOUT) (DTMID(J), J=1,12) || OPM1 92
+7	720	OK	      READ  (IPOUT)NDSTR                                                OPM1  93	READ (IPOUT)NDSTR || OPM1 93
+8	763	OK	      READ  （IPOUT）（PS(J)，OIAM(J)，F4ASS(J)，J=1，NOSTR）                   OPH1  94	READ （IPOUT）（PS(J)，OIAM(J)，F4ASS(J)，J=1，NO STR） || OPH1 94
+9	806	OK	CONVERT HEIGHT IN METERS TC HOB IN FEET                                 OPM1  95	CONVERT HEIGHT IN METERS TC HOB IN FEET || OPM1 95
+10	851	COUNT 15/16	                                                                        OPM1  96	HOB=HEIGHT/3048 || OPM1 96
+11	894	OK	COMMENCE READING CARO INPUT                                             OPM1  97	COMMENCE READING CARO INPUT || OPM1 97
+12	938	OK	      READ (ISIN,1)OPHID                                                OPH1  98	READ (ISIN,1) OPHID || OPH1 98
+13	980	OK	      READ (ISIN.15)IC                                                  OPM1  99	READ (ISIN.15)IC || OPM1 99
+14	1022	OK	      READ(ISIN.3)NPRNT(6),NPRNT(7),(NPRNT(I),I=9,13),NPRNT(15)         OPM1 1J0	READ ( IS IN. 3) NPRNT(6), NPRNT(7), (NPRNT(I), I=9,13), NPRNT(15) || OPM1 1J0
+15	1068	OK	      READ(ISIN,4)FISSID,EMITN,CAPFIS                                   OPM1 101	READ(ISIN,4)FISSID,EMITN,CAPFIS || OPM1 101
+16	1102	OK	COPY OUT HEADER AND CRITICAL DATA                                       OPM1 102	COPY OUT HEADER AND CRITICAL DATA || OPM1 102
+17	1152	OK	      WRITE (ISOUT,28)                                                  OPM1 103	WRITE (ISOUT,28) || OPM1 103
+18	1195	OK	      WRITE (ISOUT,10) OPHID,DETID,DTMID                                OPM1 1J4	WRITE (ISOUT,10) OPHID,DETID,DTMID || OPM1 1J4
+19	1238	OK	      WRITE (ISOUT,16) IC                                               OPH1 105	WRITE (ISOUT,16) IC || OPH1 105
+20	1282	OK	      WRITE (ISOUT,9)W,FH                                               OPM1 1J6	WRITE (ISOUT,9)W,FH || OPM1 1J6
+21	1325	OK	      WRITE (ISOUT,7)FISSID                                             OPM1 107	WRITE (ISOUT,7)FISSID || OPM1 107
+22	1368	OK	      WRITE (ISOUT,18)HEIGHT                                            OPM1 108	WRITE (ISOUT,18) HEIGHT || OPM1 108
+23	1402	OK	CHECK SCALED HOB TO SEE IF THIS IS AN AIRBURST                          OPM1 109	CHECK SCALED HOB TO SEE IF THIS IS AN AIRBURST || OPM1 109
+24	1456	OK	      IHOB=0                                                            OPM1 110	IHOB=0 || OPM1 110
+25	1497	OK	      ZSCL=HOB/W**(1.0/3.4)                                             OPM1 111	ZSCL=HOB/W**(1.0/3.4) || OPM1 111
+26	1540	OK	      IF(ZSCL .GE. 180.) IHOB=1                                         OPM1 112	IF(ZSCL .GE. 180.) IHOB=1 || OPM1 112
+27	1584	OK	      IF(IHOB .GT. 0) GO TO 75                                          OPH1 113	IF(IHOB .GT. 0) GO TO 75 || OPH1 113
+28	1615	OK	COMPUTE FRACTION-DOWN  ADJUSTMENT FACTOR FOR FISSION YIELD              OPM1 114	COMPUTE FRACTION-DOWN ADJUSTMENT FACTOR FOR FISSION YIELD || OPM1 114
+29	1668	OK	      IF(ZSCL .LE. 0.0) GO TO 60                                        OPM1 115	IF(ZSCL .LE. 0.0) GO TO 60 || OPM1 115
+30	1711	COUNT 25/26	                                                                        OPM1 116	ZSCM = H0B/W** (0.333333333) || OPM1 116
+31	1753	OK	      FD = (0.45345)**(ZSCM/65.0)                                       OPM1 117	FD = (0.45345)**(ZSCM/65.0) || OPM1 117
+32	1796	OK	      WRITE(ISOUT,42) FD, ZSCM                                          OPM1 118	WRITE(ISOUT,42) FD, ZSCM || OPM1 118
+33	1841	OK	      FW=FW*FO                                                          OPM1 119	FW=FW*FO || OPM1 119
+34	1881	OK	   60 IF(SO .LE. 0.0) GO TO 75                                          OPM1 120	60 IF(SO .LE. 0.0) GO TO 75 || OPM1 120
+35	1923	OK	      IF(CAPFIS .GT. 0.0) WRITE(ISOUT.5)CAPFIS                          UPM1 121	IF(CAPFIS .GT. 0.0) WRITE(ISOUT.5)CAPFIS || UPM1 121
+36	1967	OK	      IF( EMITN .GT. 0.0) WRITE(ISOUT,6) EMITN                          OPM1 122	IF( EMITN .GT. 0.0) WRITE(ISOUT,6) EMITN || OPM1 122
+37	2010	OK	      IF(EMITN .EQ. 0.0) WRITE(ISOUT,41)                                OPM1 123	IF(EMITN .EQ. 0.0) WRITE(ISOUT,41) || OPM1 123
+38	2056	OK	      WRITE (ISOUT,8)SLDTMP,TMSO                                        OPM1 124	WRITE (ISOUT,8)SLDTMP,TMSO || OPM1 124
+39	2099	OK	   75 WRITE(ISOUT,17) NDSTR                                             OPM1 125	75 WRITE(ISOUT,17) NDSTR || OPM1 125
+40	2142	OK	  100 WRITE (ISOUT,21)IH,IV                                             OPM1 126	100 WRITE (ISOUT,21) IH,IV || OPM1 126
+41	2185	OK	      IF(IC(2))501,501,500                                              OPM1 127	IF(IC(2))501,501,500 || OPM1 127
+42	2226	OK	COPY OUT CONTENTS OF TAPE IPOUT                                         OPM1 128	COPY OUT CONTENTS OF TAPE IPOUT || OPM1 128
+43	2269	OK	  500 NST = 0                                                           OPM1 129	500 NST = 0 || OPM1 129
+44	2313	OK	      WRITE (ISOUT,29)                                                  OPM1 130	WRITE (ISOUT,29) || OPM1 130
+45	2356	OK	  600 READ (IPOUT)NIJ                                                   OPM1 131	600 READ (IPOUT)NIJ || OPM1 131
+46	2398	OK	      NST=NST+1                                                         OPM1 132	NST=NST+1 || OPM1 132
+47	2442	OK	      IF(NIJ) 503,501,504                                               OPM1 133	IF(NIJ) 503,501,504 || OPM1 133
+48	2484	OK	  503 CALL ERROR(PROGRM,-5C3,ISOUT)                                     OPM1 134	503 CALL ERROR(PROGRM,-5C3,ISOUT) || OPM1 134
+49	2519	OK	  504 READ(IPOUT)(XPAR(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I),    OPM1 135	504 READ(IPOUT)(XPAR(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I), || OPM1 135
+50	2569	COUNT 32/31	                                                                        OPM1 136	1. RO（I），PSIZ（I），PMAS（I），I=1，NIJ) || OPM1 136
+51	2614	OK	      WRITE (ISOUT,30)NST                                               OPM1 137	WRITE (ISOUT,30)NST || OPM1 137
+52	2657	OK	      WRITE (ISOUT,37)NIJ                                               OPM1 138	WRITE (ISOUT,37) NIJ || OPM1 138
+53	2699	OK	      WRITE (ISOUT,26)                                                  OPM1 139	WRITE (ISOUT,26) || OPM1 139
+54	2731	OK	      WRITE(ISOUT,36)(XPAR(I),YPAR(I),ZPAK(I),TPAR(I),SIGXC(I),SIGYO(I),OPM1 140	WRITE (ISOUT,36) (XPAR(I),YPAR(I),ZPAK(I),TPAR(I),SIGXC(I),SIGYO(I), || OPM1 140
+55	2783	OK	     1 RO(I),PSIZ(I),PMAS(1),I=1,NIJ)                                   OPM1 141	1 RO(I),PSIZ(I),PMAS(1),I=1,NIJ) || OPM1 141
+56	2828	OK	      GO TO 600                                                         OPM1 142	GO TO 600 || OPM1 142
+57	2871	OK	  501 REWIND IPOUT                                                      OPM1 143	501 REWIND IPOUT || OPM1 143
+58	2902	OK	CHECK IC(1).  A POSITIVE VALUE TERMINATES RUN WITHOUT PAM OR MAP CALCS. OPM1 144	CHECK IC(1). A POSITIVE VALUE TERMINATES RUN WITHOUT PAM OR MAP CALCS. || OPM1 144
+59	2954	OK	      IF(IC(1) .LE. 0) GO TO 511                                        OPM1 145	IF(IC(1) .LE. 0) GO TO 511 || OPM1 145
+60	3000	OK	  510 WRITE (ISOUT,39)                                                  OPM1 146	510 WRITE (ISOUT,39) || OPM1 146
+61	3043	OK	      CALL EXIT                                                         OPM1 147	CALL EXIT || OPM1 147
+62	3104	OK	                                       155                                      	155
+63	3285	COUNT 3/5	                                                                                	---

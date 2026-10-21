@@ -1,0 +1,17 @@
+14	1211	OK	      SUBROUTINE OPH2(OMAF,NPAP)                                                	SUBROUTINE OPH2(OMAF, NPAP)
+25	1685	COUNT 14/38	                                                                                	COMMON /CONDAT/
+26	1719	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,        	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,LTAPE ,
+27	1770	OK	     2MARRAY    ,MRTAPE    ,NYREQ     ,SD        ,INFAN                         	2 MARRAY , MRTAPE , NYREQ , SD , INFAN
+28	1813	OK	      COMMON /MAPOAT/ CAYF .CUTMAP    .OGX       .OGY       .IH  .IV   .        	COMMON /MAPOAT/ CAYF .CUTMAP .OGX .OGY .IH .IV .
+29	1855	OK	     1JC        ,NXHAP     ,NYHAP     ,NZ        ,QCUT      ,SSAM      ,        	1 JC ,NXHAP ,NYHAP ,NZ ,QCUT ,SSAM ,
+33	2028	OK	     1MAPRUN    •NE        •NIJ       •NORO      •NREG      •NTASK     •        	1 MAPRUN • NE • NIJ • NORO • NREG • NTASK •
+35	2113	COUNT 41/42	                                                                                	COMMON /DECAY, IGC,JC,KDCS,TENTER,EXIT,TIME
+39	2286	OK	      LOGICAL IGO,JD,KDOS,APRNT                                                 	LOGICAL IGO,JD,KDOS,APRNT
+45	2541	COUNT 27/29	                                                                                	3 FORMAT (1H1///54X.11+* * * * *)
+46	2584	OK	 4    FORMAT(// 15X, 52HCCABINED GROUND ROUGHNESS-INSTRUMENT RESPONSE FA        	4 FORMAT(// 15X, 52HCCABINED GROUND ROUGHNESS-INSTRUMENT RESPONSE FA
+48	2672	OK	 9    FORMAT(7F10.3)                                                            	9 FORMAT(7F10.3)
+50	2756	COUNT 52/54	                                                                                	23 FORMAT(1H1//39X27H*+++ OUTPUT PROCESSOR TASK15,6H *++)
+51	2799	COUNT 64/65	                                                                                	24 FORMAT(//15X25HGRIO LIMITS AND INTERVALS/20X4HXMIN10X4HXMAX10X4HY
+56	3016	COUNT 60/63	                                                                                	34 FORMAT(//15X,15HREQUEST NUMBER I+//15X8HMAP TYPE13,10X5HT1 = F1
+57	3060	OK	     10.2.10X.5HT2 = F10.2.10X.YHMASCHN = I4// 15X.6HCCUT= .L12.5.10X.6H        	10.2.10X.5HT2 = F10.2.10X.YHMASCHN = I4//15X.6HCCUT= .L12.5.10X.6H
+58	3106	COUNT 16/15	                                                                                	2CUTMAP= (.E12.5)

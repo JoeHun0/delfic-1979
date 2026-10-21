@@ -1,0 +1,24 @@
+1	20	COUNT 3/25	                                                                                	---
+3	578	OK	 7202 EX=BZ2                                                                    	7202 EX=BZ2
+8	794	OK	      LL=L000+3                                                                 	LL=L000+3
+9	837	OK	      DO 1959 J=LODD,LL                                                         	DO 1959 J=LODD,LL
+10	880	OK	      GDPST(9,J)=DPST(7:MET)                                                    	GDPST(9,J) = DPST(7:MET)
+11	913	OK	      GDPST(10,J)=DPST(8,YBT)/CNT                                               	GDPST(10,J)=DPST(8,YBT)/CNT
+12	965	OK	      GOPST(7,J)=BZ2                                                            	GOPST(7,J)=BZ2
+13	1008	OK	      GDPST（8，J）=DPST（6，MET）                                                    	GDPST（8，J）=DPST（6，MET）
+14	1050	OK	      GDPST（6，J）=DPST（2，MST）                                                    	GDPST（6，J）=DPST（2，MST）
+15	1094	OK	      GDPST（4，J）=DPST（4，MBT）                                                    	GDPST（4，J）=DPST（4，MBT）
+16	1137	OK	      GDPST（3，J）=DPST（1，MBT）                                                    	GDPST（3，J）=DPST（1，MBT）
+18	1223	OK	      GDPST(1，LODD)=XR                                                          	GDPST(1，LODD)=XR
+19	1267	OK	      GDPST（2，LODD）=YR                                                          	GDPST（2，LODD）=YR
+21	1354	OK	      GOPST(1，LOOD)=XR                                                          	GOPST(1，LOOD) = XR
+22	1396	OK	      GDPST(2,LODD)=-YR                                                         	GDPST(2,LODD)=-YR
+24	1482	OK	      GDPST(1，LODD)=-XR                                                         	GDPST(1，LODD)=-XR
+25	1526	OK	      GDPST(2,L0DD)=-YR                                                         	GDPST(2,L0DD)=-YR
+27	1610	OK	      GDPST(1，LODC)=-XR                                                         	GDPST(1，LODC)=-XR
+28	1655	OK	      GDPST(2，LODD)=YR                                                          	GDPST(2，LODD)=YR
+33	1869	OK	 1002 YR=YR+8Z                                                                  	1002 YR=YR+8Z
+43	2299	OK	      LODD=0                                                                    	LODD=0
+56	2856	OK	      LOOD=C                                                                    	LOOD = C
+59	2985	OK	      FEWIND IRISE                                                              	FEWIND IRISE
+63	3301	COUNT 3/34	                                                                                	---

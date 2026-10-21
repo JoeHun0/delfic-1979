@@ -1,0 +1,63 @@
+1	22	COUNT 0/26;COUNT 17/1	                                                                                	 || \text{[Redacted]}
+2	41	COUNT 0/18	                                                                                	
+3	573	OK	 7202 EX=8Z2                                                            RSXP 332	7202 EX=8Z2 || RSXP 332
+4	614	COUNT 0/8	                                                                        RSXP 333	 || RSXP 333
+5	657	OK	      IF(EX**2+EY**2-RAO2)7201,7201,7203                                RSXP 334	IF(EX**2+EY**2-RAO2) 7201, 7201, 7203 || RSXP 334
+6	700	OK	 7203 CMA=DPST(5,MBT)/CNT                                               RSXP 335	7203 CMA=DPST(5,MBT)/CNT || RS XP 335
+7	743	OK	 1031 L000=L000+1                                                       RSXP 336	1031 L000=L000+1 || RSXP 336
+8	788	COUNT 0/9	                                                                        RSXP 337	 || RSXP 337
+9	830	OK	      00 1757 J=LOOO,LL                                                 RSXP 338	00 1757 J=LOOO,LL || RSXP 338
+10	873	COUNT 0/22	                                                                        KSXP 339	 || KSXP 339
+11	914	COUNT 0/27	                                                                        RSXP 340	 || RSXP 340
+12	958	OK	      GDPST(7,J)=BZ2                                                    RSXP 341	GDPST(7, J) = BZ2 || RSXP 341
+13	1001	OK	      GDPST(8,J)=OPST(6,MET)                                            RSXP 342	GDPST(8, J) = OPST(6, MET) || RSXP 342
+14	1044	COUNT 0/22	                                                                        RSXP 343	 || RSXP 343
+15	1085	COUNT 0/22	                                                                        RSXP 344	 || RSXP 344
+16	1130	COUNT 0/22	                                                                        RSXP 345	 || RSXP 345
+17	1172	COUNT 19/18	                                                                        RSXP 346	10:50 GDPST(5,J)=CMA || RSXP 346
+18	1214	COUNT 0/16	                                                                        RSXP 347	 || RSXP 347
+19	1259	COUNT 0/16	                                                                        RSXP 348	 || RSXP 348
+20	1302	COUNT 0/11	                                                                        RSXP 349	 || RSXP 349
+21	1345	COUNT 0/16	                                                                        RSXP 350	 || RSXP 350
+22	1389	COUNT 0/17	                                                                        RSXP 351	 || RSXP 351
+23	1430	COUNT 0/11	                                                                        RSXP 352	 || RSXP 352
+24	1473	COUNT 0/17	                                                                        RŠXP 353	 || RŠXP 353
+25	1517	COUNT 0/17	                                                                        RSXP 354	 || RSXP 354
+26	1560	COUNT 0/11;COUNT 14/7	                                                                                	 || \text{RSXP 355}
+27	1602	COUNT 0/17	                                                                        RSXP 356	 || RSXP 356
+28	1646	COUNT 0/16	                                                                        RSXP 357	 || RSXP 357
+29	1689	OK	 5C30 IF(LODD- 97)1150,1010,1010                                        RSXP 358	5C30 IF(LODD- 97) 1150,1010,1010 || RSXP 358
+30	1730	OK	 1100 IF(IRAD)2585,2585,1101                                            RSXP 359	1100 IF(IRAD)2585,2585,1101 || RS XP 359
+31	1774	OK	 1101 XR=XR+8Z                                                          RSXP 3ED	1101 XR = XR + 8Z || RSXP 3ED
+32	1817	OK	      GO TO 1003                                                        RSXP 361	GO TO 1003 || RSXP 361
+33	1860	OK	 1002 YR=YR+8Z                                                          RSXP 362	1002 YR=YR+8Z || RSXP 362
+34	1903	COUNT 0/6	                                                                        RSXP 363	 || RSXP 363
+35	1946	OK	      IF(YR-RADIUS)1063,1003,2585                                       RSXP 364	IF (YR-RADIUS) 1063,1003,2585 || RSXP 364
+36	1988	OK	C                                                                       RSXP 365	C || RSXP 365
+37	2031	OK	C     LOAD THE GOPST ARRAYS ON THE CRM OUTPUT TAPE                      RSXP 366	C LOAD THE GOPST ARRAYS ON THE CRM OUTPUT TAPE || RSXP 366
+38	2073	OK	C                                                                       RSXP 367	C || RSXP 367
+39	2117	OK	 1010 WRITE(IRISE)L000                                                  RSXP 368	1010 WRITE (IRISE) L000 || RSXP 368
+40	2167	COUNT 68/66	                                                                        RSXP 369	WRITE (IRISE) (GDPST(1,J), GDPST(2,J), GDPST(3,J), GDPST(4,J), GDPST(5,J), || RSXP 369
+41	2205	COUNT 68/67	                                                                        RSXP 370	1), GCPST(6, J), GDPST(7, J), GDPST(8, J), GOPST(9, J), GCPST(10, J), J=1, LODD! || RSXP 370
+42	2247	OK	     21                                                                 RSXP 371	21 || RSXP 371
+43	2289	COUNT 0/6	                                                                        RSXP 372	 || RSXP 372
+44	2333	OK	      GO TO 1130                                                        RSXP 373	GO TO 1130 || RSXP 373
+45	2375	OK	 2585 GO TO (258 ,2586),IFLAG                                           RSXP 374	2585 GO TO (258 ,2586),IFLAG || RSXP 374
+46	2418	OK	 2586 IF(IP-KDIP)5445,258,258                                           RSXP 375	2586 IF(IP-KDIP) 5445, 258, 258 || RSXP 375
+47	2461	OK	  258 CONTINUE                                                          RSXP 376	258 CONTINUE || RSXP 376
+48	2502	OK	  278 CONTINUE                                                          RSXP 377	278 CONTINUE || RS XP 377
+49	2546	OK	C                                                                       R5XP 378	C || R5XP 378
+50	2589	OK	C     LOAD FINAL RESIDUE CF GDPST DATA ON THE CRM CUTFUT TAPE           RSXP 379	C LOAD FINAL RESIDUE CF GDPST DATA ON THE CRM CUTFUT TAPE || RSXP 379
+51	2632	OK	C                                                                       RSXP 386	C || RSXP 386
+52	2675	OK	 1030 WRITE(IRISE)LOOD                                                  RSXP 381	1030 WRITE (IRISE)LOOD || RSXP 381
+53	2717	COUNT 68/66	                                                                        RSXP 382	WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GUPST(3,J),GDFST(4,J),GDPST(5,J)) || RSXP 382
+54	2760	COUNT 68/67	                                                                        RSXP 363	1), GDPST(6, J), GDPST(7, J), GDPST(8, J), GDPST(9, J), GCFST(10, J), J=1, LOCOI || RSXP 363
+55	2802	COUNT 0/2	                                                                        RSXP 364	 || RSXP 364
+56	2847	COUNT 0/6	                                                                        RSXP 365	 || RSXP 365
+57	2889	OK	      WRITE(IRISE)LOOO                                                  RSXP 386	WRITE(IRISE)LOOO || RSXP 386
+58	2932	OK	      ENO FILE IRISE                                                    RSXP 387	ENO FILE IRISE || RSXP 387
+59	2976	COUNT 12/11	                                                                        RSXP 358	FEHIND J.RISE || RSXP 358
+60	3018	OK	      RETURN                                                            RSXP 339	RETURN || RS XP 339
+61	3061	OK	      END                                                               RSXP 390	END || RSXP 390
+62	3149	OK	                                         96                                     	96
+63	3296	COUNT 203/35;COUNT 0/8	                                                                                	\text{12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567 || 

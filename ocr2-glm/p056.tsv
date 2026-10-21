@@ -1,0 +1,4 @@
+25	1735	COUNT 45/46	                                                                                	1 NUMBER I6.40H . PLEASE REFER TO THE PROGRAM LISTING.
+30	1949	OK	      IRR= IA8S(IRROR)                                                          	IRR= IA8S(IRROR)
+31	1993	COUNT 25/24	                                                                                	WRITE(ISOUT,1)PROGRAM,IRR
+37	3292	COUNT 3/8	                                                                                	---

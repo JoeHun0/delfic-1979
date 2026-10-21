@@ -1,0 +1,10 @@
+8	849	OK	      CALL ERROR(PROGRM,IRROR,ISGUT)                                            	CALL ERROR(PROGRM, IRROR, ISGUT)
+12	1020	OK	      IF(T1 .GT. 0.0) GO TO 404                                                 	IF(T1 .GT. 0.0) GO TO 404
+13	1062	COUNT 0/18	                                                                                	
+15	1149	OK	  404 QCUT  = QCUTA*1.CE-4                                                      	404 QCUT = QCUTA*1.CE-4
+35	2009	OK	      IF(NREQ .EQ. 3 .AND. T1 .GT. 1.0) CUTMAP=CLTMAP*T1**(-1.26)               	IF(NREQ .EQ. 3 .AND. T1 .GT. 1.0) CUTMAP=CLTMAP*T1**(-1.26)
+38	2138	OK	      IF((NREQ.EQ. 6 .OR. NREQ .EQ. 7 .OR. NREQ .EG. 10).AND.(T1.GT. 1.0        	IF((NREQ.EQ. 6 .OR. NREQ .EQ. 7 .OR. NREQ .EG. 10).AND.(T1.GT. 1.0
+39	2170	OK	     1   .AND. T2 .NE. 0.0))CUTMAP=CUTMAP*(1.C-(T1/T2)**(0.2E))                 	1 .AND. T2 .NE. 0.0))CUTMAP=CUTMAP*(1.C-(T1/T2)**(0.2E))
+42	2308	COUNT 53/54	                                                                                	600 IF(IHOB .EQ. 0 .ANC. SC .GT. 0.0) IF(NREQ-14)1210,69,1210
+54	2826	COUNT 44/43	                                                                                	IF ((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKROT=1.£30
+62	3295	COUNT 51/21	                                                                                	The following is a transcript of a computer program listing:

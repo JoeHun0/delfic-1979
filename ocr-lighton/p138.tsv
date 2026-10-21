@@ -1,0 +1,64 @@
+1	0	COUNT 0/46;COUNT 371/5	                                                                                	 || \text{ア} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た} \quad \text{た
+2	65	COUNT 4/32	                                                                                	text
+3	572	OK	*OECK,TRIOIN                                                            TRIDI  1	*OECK, TRIOIN || TRIDI 1
+4	616	OK	      SUBROUTINE TRIDIN(NET,NETSU,ZCH,VX   ,VY   ,VZ ,LTIM,ICF,JCF,NCF, TRIOI  2	SUBROUTINE TRIDIN(NET,NETSU,ZCH,VX ,VY ,VZ ,LTIM,ICF,JCF,NCF, || TRIOI 2
+5	659	OK	     1KBHF,NDATF,LTIMF,FCRM,SPEC)                                       TRIDI  3	1KBHF,NDATF,LTIMF,FCRM,SPEC) || TRIDI 3
+6	703	OK	C                                                                       TRIOI  4	C || TRIOI 4
+7	745	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     TRIOI  5	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || TRIOI 5
+8	788	OK	C                                                                       TRIDI  6	C || TRIDI 6
+9	832	COUNT 199/71	                                                                        TRIOI  7	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || TRIOI 7
+10	876	OK	C                                                                       TRIDI  8	C || TRIDI 8
+11	916	OK	C     THIS SUBROUTINE FORMS A HORIZONTALLY AND VERTICALLY VARIANT WIND  TRIDI  9	C THIS SUBROUTINE FORMS A HORIZONTALLY AND VERTICALLY VARIANT WIND || TRIDI 9
+12	961	OK	C     OR TURBULENCE FIELO.    INPUTS ARE -                              TRIOI 10	C OR TURBULENCE FIELO. INPUTS ARE - || TRIOI 10
+13	1004	OK	C     ALPHA      A WEIGHTING FACTOR FOR THE VERTICAL DISTANCES          TRIDI 11	C ALPHA A WEIGHTING FACTOR FOR THE VERTICAL DISTANCES || TRIDI 11
+14	1046	OK	C     BETA       A WEIGHTING FACTOR FOR THE HORIZONTAL DISTANCES        TRIOI 12	C     BETA     A WEIGHTING FACTOR FOR THE HORIZONTAL DISTANCES || TRIOI 12
+15	1091	OK	C     FMT        OBJECT TIME FCRMAT                                     TRIDI 13	C FMT OBJECT TIME FCRMAT || TRIDI 13
+16	1133	COUNT 50/49	                                                                        TRIDI 14	C     NN     THE NUMBER OF NEAREST DATA VECTORS THAT THE USER WISHES' || TRIDI 14
+17	1175	COUNT 1/23	                                                                        TRIOI 15	C || TRIOI 15
+18	1218	OK	C     N1,N2,ETC  INPUT DATA POINTERS                                    TRIDI 16	C     N1,N2,ETC     INPUT DATA POINTERS || TRIDI 16
+19	1261	OK	C     SCALE      FACTORS USED TO TRANSLATE AND SCALE THE INPUT DATA     TRIOI 17	C SCALE FACTORS USED TO TRANSLATE AND SCALE THE INPUT DATA || TRIOI 17
+20	1304	OK	C     ZS(J)      HEIGHT OF THE J-TH VECTOR                              TRIOI 18	C ZS(J) HEIGHT OF THE J-TH VECTOR || TRIOI 18
+21	1347	OK	C     XS(J)      WEST-EAST COORDINATE OF THE J-TH VECTOR                TRIDI 19	C     XS(J)     WEST-EAST COORDINATE OF THE J-TH VECTOR || TRIDI 19
+22	1392	OK	C     YS(J)      SOUTH-NORTH COORDINATE OF THE J-TH VECTOR              TRIDI 20	C     YS(J)     SOUTH-NORTH COORDINATE OF THE J-TH VECTOR || TRIDI 20
+23	1433	OK	C     SX(J)      EASTWARD POINTING COMPONENT OF THE J-TH VECTOR         TRIDI 21	C     SX(J)     EASTWARD POINTING COMPONENT OF THE J-TH VECTOR || TRIDI 21
+24	1475	COUNT 47/48	                                                                        TRIDI 22	C     SY(J)     NORTHWARD POINTING COMPONENT OF THE J-TH VECTOR || TRIDI 22
+25	1511	OK	C     SZ(J)      UPWARD POINTING COMPONENT OF THE J-TH VECTOR           TRIDI 23	C     SZ(J)     UPWARD POINTING COMPONENT OF THE J-TH VECTOR || TRIDI 23
+26	1561	OK	C     THE VECTOR READING OPERATION IS TERMINATED WHEN ZS(J).GE.999999.  TRIDI 24	C     THE VECTOR READING OPERATION IS TERMINATED WHEN ZS(J).GE.999999. || TRIDI 24
+27	1605	OK	C                                                                       TRIDI 25	C || TRIDI 25
+28	1645	COUNT 56/64	                                                                        TR101 26	C ******************** OTHER PARAMETERS ******************** || TR101 26
+29	1690	OK	C                                                                       TRIDI 27	C || TRIDI 27
+30	1732	OK	C     BIG        AN ARBITRARILY LARGE NUMBER                            TRIOI 28	C BIG AN ARBITRARILY LARGE NUMBER || TRIOI 28
+31	1775	OK	C     DM         DISTANCE BETWEEN THE CURRENT GRID POINT AND THE MOST   TRIOI 29	C     DM     DISTANCE BETWEEN THE CURRENT GRID POINT AND THE MOST || TRIOI 29
+32	1817	COUNT 1/31	                                                                        TRIDI 30	C || TRIDI 30
+33	1860	OK	C     G13        AN ARBITRARILY SMALL NUMBER                            TRIDI 31	C    G13    AN ARBITRARILY SMALL NUMBER || TRIDI 31
+34	1905	OK	C     JTOPV      THE TOTAL NUMBER OF WIND DATA POINTS BEING USED        TRIOI 32	C    JTOPV    THE TOTAL NUMBER OF WIND DATA POINTS BEING USED || TRIOI 32
+35	1946	OK	C     NAD(J)     INDICES CF DISTANCES BETWEEN THE CURRENT GRID POINT    TRIDI 33	C     NAD(J)     INDICES CF DISTANCES BETWEEN THE CURRENT GRID POINT || TRIDI 33
+36	1990	COUNT 1/19	                                                                        TRIOI 34	C || TRIOI 34
+37	2034	COUNT 46/47	                                                                        TRIDI 35	C     NADT     INDEX OF THE NAD THAT CONTAINS THE ACCESS OF THE D2 || TRIDI 35
+38	2076	COUNT 1/39	                                                                        TRIOI 36	C || TRIOI 36
+39	2119	COUNT 8/7	C     XG,YG,ZG   COORDINATES  OF A SPACE LATTICE CENTER POINT                   	C    XG,YG,ZG    COORDINATES OF A SPACE LATTICE CENTER POINT || TRIONI 3?
+40	2164	OK	C                                                                       TRIDI 38	C || TRIDI 38
+41	2204	COUNT 199/71	                                                                        TRIOI 39	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || TRIOI 39
+42	2248	OK	C                                                                       TRIDI 40	C || TRIDI 40
+43	2291	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               TRIOI 41	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || TRIOI 41
+44	2332	OK	       COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NOATX                  TRIDI 42	COMMON /INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NOATX || TRIDI 42
+45	2378	OK	C                                                                       TRINI 43	C || TRINI 43
+46	2421	OK	      INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORM                         TRIDI 44	INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORM || TRIDI 44
+47	2462	OK	      DIMENSION ZCH(KBHF),NET(ICF,JCF),NETSU(NCF),VX(KBHF,NDATF,LTIMF)  TRIDI 45	DIMENSION ZCH(KBHF), NET(ICF, JCF), NETSU(NCF), VX(KBHF, NDATF, LTIMF) || TRIDI 45
+48	2506	OK	      DIMENSION VY(KBHF,NCATF,LTIMF),VZ(KBHF,NDATF,LTIMF)               TRIDI 46	DIMENSION VY(KBHF, NCATF, LTIMF), VZ(KBHF, NDATF, LTIMF) || TRIDI 46
+49	2549	OK	      DIMENSION XS(200),YS(200),ZS(200),SX(200),SY(200),SZ(200)         TRIDI 47	DIMENSION XS(200),YS(200),ZS(200),SX(200),SY(200),SZ(200) || TRIDI 47
+50	2591	OK	      DIMENSION D2(200),NAC(200),SCALE( 8),AP(6),FMT(12)                TRIO1 48	DIMENSION D2(200),NAC(200),SCALE( 8),AP(6),FMT(12) || TRIO1 48
+51	2635	OK	C                                                                       TRIOI 49	C || TRIOI 49
+52	2676	COUNT 46/47	                                                                        TRIDI 50	DATA ALIMIT , RADC , PROGRM , METEOR ,RESCLV, WIND , TURB || TRIDI 50
+53	2718	OK	     1  /  999999. ..0174532925, 6HTRIDIN, 4HMETE ,4HRFSO,4HWIND,4HTUR3/TRIOI 51	1 / 999999. ..0174532925, 6HTRIDIN, 4HMETE ,4HRFSO,4HWIND,4HTUR3/ || TRIOI 51
+54	2762	OK	      DATA  JİOPF , SIG     , CIB                                       TRIOI 52	DATA JİOPF, SIG, CIB || TRIOI 52
+55	2806	OK	     i     / 200  ,1.0E+37  s 1.0E-37  /                                TRIOI 53	i / 200 , 1.0E+37 s 1.0E-37 / || TRIOI 53
+56	2850	OK	C                                                                       TRIDI 54	C || TRIDI 54
+57	2889	OK	   1  FORMAT(/18X, 5HALPHA, 8X, 4HβETA, 14X, 2HNN/ 15X, 2E12.4, I12)    TRIOI 55	1 FORMAT(/18X, 5HALPHA, 8X, 4HβETA, 14X, 2HNN/ 15X, 2E12.4, I12) || TRIOI 55
+58	2936	OK	    3 FORMAT(8X,I8,6E16.4)                                              TR10I 56	3 FORMAT(8X,I8,6E16.4) || TR10I 56
+59	2977	COUNT 8/7	    4 FORMAT(.5X, 62HTHE DATA VECTOR AT EACH SPACE LATTICE CENTER IS COM        	4 FORMAT(.5X, 62HTHE DATA VECTOR AT EACH SPACE LATTICE CENTER IS COM || |TR10I 57
+60	3019	OK	     1PUTED USINGI4,  7H OUT OFI4, 15H INPUT VECTORS./)                 TRIGI 58	1PUTED USINGI4, 7H OUT OFI4, 15H INPUT VECTORS./) || TRIGI 58
+61	3066	OK	 8    FORMAT(20I4)                                                      TRIOI 54	8 FORMAT(20I4) || TRIOI 54
+62	3109	OK	   10 FORMAT(8F10.0)                                                    TRIOI 60	10 FORMAT(8F10.0) || TRIOI 60
+63	3150	COUNT 3/2	                                                                                	135
+64	3299	COUNT 0/38;COUNT 11/1	                                                                                	 || \mathcal{S}

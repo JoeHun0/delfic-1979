@@ -1,0 +1,10 @@
+1	5	COUNT 0/18	                                                                                	
+2	60	COUNT 0/10	                                                                                	
+15	1051	COUNT 11/10	                                                                                	TCU_R=TP(J)
+16	1094	COUNT 14/5	                                                                                	\mathrm{DX}=0.
+44	2295	OK	      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225                           	IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225
+48	2467	OK	      00 222 K=1.HCX                                                            	00 222 K=1.HCX
+56	2810	COUNT 22/9	                                                                                	\beta V = V \beta (L \cdot L)
+58	2898	OK	 3224 BV=0.                                                                     	3224 BV=0.
+59	2939	OK	      00 3225 K=NN,LL                                                           	00 3225 K=NN,LL
+61	3025	COUNT 29/31	                                                                                	3225 BV = BV + VB(K)*TC(K+1) - TC(K)

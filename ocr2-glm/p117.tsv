@@ -1,0 +1,16 @@
+1	6	COUNT 3/7	                                                                                	---
+19	1243	OK	      COMMON /PARCL/  CROSS,DOWN,DHAF,EDOY,NUATP,PMAS,PSIZ,RHOP,RWAF,           	COMMON /PARCL/ CROSS,DOWN,DHAF,EDOY,NUATP,PMA S,PSIZ,RHOP,RWAF,
+27	1587	COUNT 21/20	                                                                                	DATA PROGRAM/6HDYNINT/
+30	1714	OK	    2 FORMAT(   10X, 54HINITIALIZATION AND CLOLD RISE MODULE IDENTIFICAT        	2 FORMAT( 10X, 54HINITIALIZATION AND CLOLD RISE MODULE IDENTIFICAT
+41	2180	COUNT 58/60	                                                                                	1 2H，E12.5.2H，E12.5.10H （METERS）/42X16DETONATION TIME ISE12.5.
+44	2316	COUNT 49/50	                                                                                	23 FORMAT( 1H1,///51X, 19H * * * * * * * * ///55 X, 11HD E L F I C//
+45	2360	COUNT 15/16	                                                                                	1 12X，101HT HE DEP
+46	2395	COUNT 30/32	                                                                                	2 ARTMENT OF DEFENSE FALLOUT PREDIC
+47	2443	COUNT 43/47	                                                                                	3T I O N S Y S T E // 51X19H * * * * * * * // // 48X, 26H0IFFUSI
+48	2488	COUNT 45/46	                                                                                	4VE TRANSPORT MODULE// 55X. 11HPREPARED 8Y/ 46X. 30H
+50	2574	COUNT 44/46	                                                                                	6//// 41X. 40H**** SUMMARY OF RUN IDENTIFIERS ****)
+53	2704	COUNT 38/39	                                                                                	2ION NET SPACING IS E12.5, 16H (ALL IN METERS)
+55	2790	COUNT 58/57	                                                                                	43 FORMAT(/15X,28HFALLOUT PARTICLE DENSITY IS E12.5.8H KG/M  ^{+ + }
+56	2834	COUNT 38/39	                                                                                	1 12H THERE ARE I5, 22H PARTICLE SIZE CLASSES)
+57	2869	COUNT 58/59	                                                                                	45 FORMAT(/ 15X, 36HPARTICLE PROCESSING BEGINS WITH THE I6, 12H TH P4
+62	3091	COUNT 41/42	                                                                                	49 FORMAT(1H+，34X，21PLAYER-BY-LAYER METHOD)

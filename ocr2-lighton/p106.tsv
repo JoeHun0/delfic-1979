@@ -1,0 +1,12 @@
+1	78	COUNT 47/9	                                                                                	The following is a sample of a computer program listing:
+6	740	OK	  253 DELTEP= ((ZV(MM)+ ZV(MM+1))/2.0 -ZCUR)/(FV-RV)                            	253 DELTEP= ((ZV(MM) + ZV(MM+1)) / 2.0 - ZCUR) / (FV-RV)
+14	1084	OK	 2310 FORMAT:I5/                                                                	2310 FORMAT: I5/
+15	1126	OK	     1          4I5/7(3X,E12.5))                                                	1 4I5/7(3X,E12.5))
+20	1341	OK	  28C IF(TC(LL).LE.TMIUDT) GO TO 290                                            	28C IF(TC(LL).LE.TMIUDT) GO TO 290
+21	1384	OK	      LL=LL-1                                                                   	LL = LL - 1
+37	2070	OK	      IF(ABS(TMP0Z).LE.5.0) GO TO 320                                           	IF(ABS(TMP0Z).LE.5.0) GO TO 320
+48	2543	OK	      ZBOTOM=ZB(LL)                                                             	ZBOTOM = ZB(LL)
+49	2584	COUNT 0/32	                                                                                	
+55	2833	COUNT 0/19	                                                                                	
+57	2929	COUNT 25/24	                                                                                	ZCUR = ZCUR + (FV - RV) * DEL.TEE
+63	3252	COUNT 25/7	                                                                                	\mathcal{L}_{\mathcal{L}}

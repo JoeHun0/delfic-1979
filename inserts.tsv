@@ -1,0 +1,19 @@
+# page	after_line	card (exact 72 columns, 1-based layout as typed)	note
+p083	59	      TSTR = ABS(CX(MCX,5) - CX(MCX-1,5)) /	RECONSTRUCTED: CXPN 59-60 are missing from the scan (page break); rebuilt from vol. I eq. (2.2.14a), |dR|/dt <= R*TSRD
+p083	59	     1       ((CX(MCX,1) - CX(MCX-1,1)) * CX(MCX,5))	RECONSTRUCTED (see above)
+p194	62	      ABNDM = ABNDM*FISNUM	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      DO 134 LD = 1,ITAB	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      DSR = (RADIAL*PSIZE(LD)**BNEX + STRAIT)*ABNDM*FMASS(LD)	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	  134 FP(LD) =  FP(LD) + DSR	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      IF (.NOT.NPRNT(13)) GO TO 9	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      WRITE (KOUT,903)	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	     1     (PSIZE(I),FP(I),I=1,ITAB)	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	    9 WRITE (KOUT,FMTA) MASCHN,ABNDM	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      RETURN	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	C * * * * * * *  CODE INSERTION POINT  * * * * * * * * * * *	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	C	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	   11 TMINUS = .TRUE.	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      RETURN	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	C	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	C * * * * * * * * * * * * * * * * * * * * * * * * * * * * *	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan
+p194	62	      END	p. 195 (MCHDE 61-76), outside the OCR page range; transcribed by hand from the scan

@@ -1,0 +1,65 @@
+1	11	COUNT 15/5	                                                                                	\text{2/3/2020}
+2	39	COUNT 0/11;COUNT 10/1	                                                                                	 || \mathbf{a}
+3	562	OK	   11 FORMAT(12A6)                                                      TRIDI 61	11 FORMAT(12A6) || TRIDI 61
+4	607	OK	 17   FORMAT(2F10.0,  I4)                                               TRIOI 62	17 FORMAT(2F10.0, I4) || TRIOI 62
+5	648	OK	   20 FORMAT( //53X, 22HSCALED WIND DATA      / 11X, 5HINDEX, 11X,      TRIDI 63	20 FORMAT(//53X, 22HSCALED WIND DATA / 11X, 5HINDEX, 11X, || TRIDI 63
+6	692	OK	     1 1HZ, 15X, 1HX, 15X, 1HY, 14X, 2HVX, 14X 2HVY, 14X, 2HVZ)         TRIOI 64	1 1HZ, 15X, 1HX, 15X, 1HY, 14X, 2HVX, 14X 2HVY, 14X, 2HVZ) || TRIOI 64
+7	735	OK	   21 FORMAT( //50X, 22HSCALED TURBULENCE DATA/ 11X, 5HINDEX, 11X,      TRIDI 65	21 FORMAT(//50X, 22HSCALED TURBULENCE DATA/ 11X, 5HINDEX, 11X, || TRIDI 65
+8	770	OK	     1 1HZ, 15X, 1HX, 15X, 1HY, 12X, 4HEPSX, 10X, 4HEPSY)               TRIDI 66	1 1HZ, 15X, 1HX, 15X, 1HY, 12X, 4HEPSX, 10X, 4HEPSY) || TRIDI 66
+9	819	COUNT 60/59	                                                                        TRIDI 67	24    FORMAT(// 78H NO VECTORS LIE WITHIN THE SPECIFIEC WEIGHTING REGION' || TRIDI 67
+10	862	OK	     1.  A RANDOM SELECTION OF ,I4, 30H VECTORS ARE EQUALLY WEIGHTED ,  TRIDI 68	1. A RANDOM SELECTION OF ,I4, 30H VECTORS ARE EQUALLY WEIGHTED , || TRIDI 68
+11	907	OK	     2/ 5X, 15H FOR GRID PCINT,                                         TRIDI 69	2/ 5X, 15H FOR GRID PCINT, || TRIDI 69
+12	948	OK	     3     5X, 9H(X,Y,Z)=(, F12.3,1H,,F12.3,1H,,F12.3,1H))              TRIDI 70	3 5X, 9H(X,Y,Z) = (, F12.3,1H,,F12.3,1H,,F12.3,1H)) || TRIDI 70
+13	991	OK	   31 FORMAT( //50X, 22H   RAW WIND DATA      / 11X, 5HINDEX, 11X,      TRIDI 71	31 FORMAT(//50X, 22H RAW WIND DATA / 11X, 5HINDEX, 11X, || TRIDI 71
+14	1034	OK	     1 1HZ, 15X, 1HX, 15X, 1HY, 10X, 10HVX OR CIR., 6X, 11HVY OR SPEED, TRIOI 72	1 1HZ, 15X, 1HX, 15X, 1HY, 10X, 10HVX OR CIR., 6X, 11HVY OR SPEED, || TRIOI 72
+15	1079	OK	     2 9X, 2HVZ)                                                        TRIOI 73	2 9X, 2HVZ) || TRIOI 73
+16	1121	OK	   32 FORMAT( //47X, 22H   RAW TURBULENCE DATA/ 11X, 5HINDEX, 11X,      TRIOI 74	32 FORMAT( //47X, 22H RAW TURBULENCE DATA/ 11X, 5HINDEX, 11X, || TRIOI 74
+17	1163	OK	     1 1HZ, 15X, 1HX, 15X, 1HY, 12X, 4HEPSX, 10X, 4HEPSY)               TRIDI 75	1 1HZ, 15X, 1HX, 15X, 1HY, 12X, 4HEPSX, 10X, 4HEPSY) || TRIDI 75
+18	1208	OK	   33 FORMAT(8X,I8,5E16.4)                                              TRIOI 76	33 FORMAT(8X,I8,5E16.4) || TRIOI 76
+19	1254	OK	C                                                                       TRICI 77	C || TRICI 77
+20	1293	COUNT 199/71	                                                                        TRIDI 78	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || TRIDI 78
+21	1339	OK	C                                                                       TRIDI 79	C || TRIDI 79
+22	1381	OK	COPY IN CONTROL PARAMETERS                                              TRIDI 80	COPY IN CONTROL PARAMETERS || TRIDI 80
+23	1422	OK	      READ(ISIN,17)ALPHA,BETA,NN                                        TRIDI 81	READ(ISIN,17)ALPHA,BETA,NN || TRIDI 81
+24	1465	OK	      ALFA2=ALPHA**2                                                    TRIDI 82	ALFA2=ALPHA**2 || TRIDI 82
+25	1509	COUNT 0/13	                                                                        TRIDI 83	 || TRIDI 83
+26	1552	OK	      IF(NN .EQ. 0) NN=1                                                TRIDI 84	IF(NN .EQ. 0) NN=1 || TRIDI 84
+27	1594	OK	      READ(ISIN,11)FMT                                                  TRIDI 85	READ(ISIN, 11) FMT || TRIDI 85
+28	1638	OK	      READ(ISIN,10) SCALE                                               TRIDI 86	READ(ISIN, 10) SCALE || TRIDI 86
+29	1681	OK	      00 9 I=1,3                                                        TRIDI 87	00 9 I=1,3 || TRIDI 87
+30	1724	OK	   9  IF( SCALE(I) .EQ. 0.C ) SCALE(I) = 1.0                            1R10I d8	9  IF( SCALE(I) .EQ. 0.C ) SCALE(I) = 1.0 || 1R10I d8
+31	1768	OK	      IF( SCALE( 6).EQ. 0.0 ) SCALE( 6)= 1.0                            TRIDI 89	IF( SCALE( 6).EQ. 0.0 ) SCALE( 6)= 1.0 || TRIDI 89
+32	1810	OK	      WRITE(ISOUT,1) ALPHA,BETA,NN                                      TRIDI 90	WRITE(ISOUT,1) ALPHA,BETA,NN || TRIDI 90
+33	1853	OK	      READ(ISIN,8)N1,N2,N3,N4,N5,N6                                     TRIOI 91	READ(ISIN, 8) N1, N2, N3, N4, N5, N6 || TRIOI 91
+34	1896	COUNT 57/56	                                                                        TRIOI 92	13 IF(N1+N2+N3+N4+N5+N6 .LT. 21) CALL ERROR(PROGK,M,-13,ISOUT) || TRIOI 92
+35	1938	OK	      IF( FORM .EQ. METEOR) TRNS = SCALE(5)*SCALE(3) - 180.             TRIDI 93	IF( FORM .EQ. METEOR) TRNS = SCALE(5)*SCALE(3) - 180. || TRIDI 93
+36	1981	OK	      IF(MC(2) .NE. 1  .AND.  SPEC .EQ. WIND) WRITE(ISCUT,31)           TRIDI 94	IF(MC(2) .NE. 1 .AND. SPEC .EQ. WIND) WRITE(ISCUT,31) || TRIDI 94
+37	2025	OK	      IF(MC(2) .NE. 1  .ANC.  SPEC .EQ. TURB) WRITE(ISCUT,32)           TRIOI 95	IF(MC(2) .NE. 1 .ANC. SPEC .EQ. TURB) WRITE(ISCUT,32) || TRIOI 95
+38	2068	COUNT 0/3	                                                                        TRIOI 96	 || TRIOI 96
+39	2111	OK	COPY IN ATMOSPHERE DATA VECTORS                                         TRIOI 97	COPY IN ATMOSPHERE DATA VECTORS || TRIOI 97
+40	2155	OK	  100 READ(ISIN,FMT)AP                                                  TRIOI 98	100 READ(ISIN, FMT) AP || TRIOI 98
+41	2196	COUNT 28/27	                                                                        TR10I 99	IF(AP.(N1).GE. ALIMIT) GO TO 101 || TR10I 99
+42	2242	COUNT 0/5	                                                                        TRIDI1J0	 || TRIDI1J0
+43	2285	OK	COPY OUT RAW DATA                                                       TR10I101	COPY OUT RAW DATA || TR10I101
+44	2327	OK	      IF(MC(2) .NE. 1  .ANC.  SPEC .EQ. WIND) WRITE(ISCUT, 3)J,AP(N1),  TRIOI1C2	IF(MC(2) .NE. 1 .ANC. SPEC .EQ. WIND) WRITE(ISCUT, 3)J,AP(N1), || TRIOI1C2
+45	2370	OK	     1 AP(N5),AP(N6),AP(N2),AP(N3),AP(N4)                               TR10I1:3	1 AP(N5), AP(N6), AP(N2), AP(N3), AP(N4) || TR10I1:3
+46	2405	OK	      IF(MC(2) .NE. 1  .ANC.  SPEC .EQ. TURB) WRITE(ISCUT,33)J,AP(N1),  TR1011J4	IF(MC(2).NE.1.ANC.SPEC.EQ.TURB) WRITE(ISCUT,33)J,AP(N1), || TR1011J4
+47	2454	OK	     1 AP(N5),AP(N6),AP(N2),AP(N3)                                      TRIOI1J5	1 AP(N5), AP(N6), AP(N2), AP(N3) || TRIOI1J5
+48	2498	OK	      IF(J.GT.JTOPF) CALL ERROR(PROGRM,-100,ISCUT)                      TRIOI106	IF(J.GT.JTOPF) CALL ERROR(PROGRM,-100,ISCUT) || TRIOI106
+49	2540	COUNT 0/32	                                                                        TRIOI137	 || TRIOI137
+50	2583	COUNT 0/32	                                                                        TRIDI198	 || TRIDI198
+51	2626	COUNT 0/32;COUNT 7/8	                                                                                	 || TRID109
+52	2670	OK	      SZ(J) = AP(N4) * SCALE( 2)                                        TRIDI110	SZ(J) = AP(N4) * SCALE(2) || TRIDI110
+53	2711	OK	      IF( FORM .EQ. RESOLV  .OR.  SPEC .EQ. TURB ) GO TO 50             TRIDI111	IF( FORM .EQ. RESOLV .OR. SPEC .EQ. TURB ) GO TO 50 || TRIDI111
+54	2754	COUNT 0/54	                                                                        TRIOI112	 || TRIOI112
+55	2799	COUNT 0/54	                                                                        TRIDI113	 || TRIDI113
+56	2841	COUNT 8/7	                                                                        TRIOI114	GU TO 1.73 || TRIOI114
+57	2885	COUNT 24/23	                                                                        rRIOI115	50 SX(J) = AP(N2i) + SCALE(2) || rRIOI115
+58	2928	COUNT 0/21	                                                                        TRIDI116	 || TRIDI116
+59	2971	OK	      GO TO 100                                                         TRIOI117	GO TO 100 || TRIOI117
+60	3013	OK	  101 JTOPV=J                                                           TRIO1118	101 JTOPV=J || TRIO1118
+61	3058	OK	      IF(4C(2).EQ.1) GO TO 102                                          TRIOI119	IF(4C(2).EQ.1) GO TO 102 || TRIOI119
+62	3100	OK	COPY OUT SCALED INPUT DATA                                              TRIOI129	COPY OUT SCALED INPUT DATA || TRIOI129
+63	3130	COUNT 3/2	                                                                                	136
+64	3294	COUNT 54/40;COUNT 14/7	                                                                                	In the following section, we will discuss the following topics: || \text{العربية}
+65	3316	COUNT 0/41;COUNT 11/1	                                                                                	 || \mathcal{L}

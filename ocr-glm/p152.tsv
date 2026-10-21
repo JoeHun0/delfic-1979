@@ -1,0 +1,64 @@
+1	16	COUNT 3/41	                                                                               1	--- || 1
+2	56	COUNT 3/7	                                                                                	---
+3	534	COUNT 19/68	                                                                        MAP  181	CODE INSERTION POINTS || MAP 181
+4	577	COUNT 11/12	                                                                                	178 CONTINUE
+5	618	COUNT 11/9;COUNT 2/1	                                                                                	179 CONTINUE || 27
+6	663	COUNT 19/67	                                                                        MAP  109	CODE INSERTION POINT: || MAP 109
+7	706	COUNT 2/1	C                                                                               	C || 15
+8	747	OK	 170  WRITE (ISOUT,20) XGZ,YGZ                                          MAP  107	170 WRITE (ISOUT,20) XGZ,YGZ || MAP 107
+9	787	COUNT 29/28	                                                                        MAR  106	1702 IF（LEFT-NX）1021，1022，1022 || MAR 106
+10	830	COUNT 4/2	 1021 NX=LEFT                                                                   	1021 NX=LEFT || 1F 25
+11	876	COUNT 3/2	 1022 MM=NX/（INC）                                                               	1022 MM=NX/（INC） || MAF
+12	921	OK	      M=MM+1                                                                    	M=MM+1
+13	964	OK	C     LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST      MAP  190	C LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST || MAP 190
+14	1007	COUNT 6/3	C     PRINTER STRIP                                                             	C PRINTER STRIP || IMT 171
+15	1052	OK	      LEFT=NX-MM*(INC)                                                  MAP     	LEFT=NX-MM* (INC) || MAP
+16	1094	OK	      IF (LEFT.NE.0) GO TC 2023                                         MAP  194	IF (LEFT.NE.0) GO TC 2023 || MAP 194
+17	1130	OK	      M = MM                                                                 1  	M = MM || 1
+18	1179	COUNT 3/2	      LEFT = INC                                                                	LEFT = INC || F 19
+19	1221	COUNT 2/1	C     STRIPS                                                                    	C STRIPS || 9.
+20	1263	OK	 2023 DO 110 ISTRIP=1,H                                                 MAP  19 	2023 DO 110 ISTRIP=1,H || MAP 19
+21	1301	COUNT 6/4	      MAPRUN=MAPRUN+1                                                           	MAPRUN=MAPRUN+1 || МАР 198
+22	1350	OK	      IF (JC   .EQ.3)  GO TO 1023                                       MAP  200	IF (JC .EQ.3) GO TO 1023 || MAP 200
+23	1388	OK	      ABSSA(1)=XCOORD                                                           	ABSSA(1)=XCOORD
+24	1437	OK	      DO 3023 IA8=2,10                                                  MΔP  2  	DO 3023 IA8=2,10 || MΔP 2
+25	1479	OK	 3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC                                      MAP  LV2	3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC || MAP LV2
+26	1517	COUNT 7/6	      WRITE (ISOUT,1)MAPRUN,CPMID,NREQ                                          	WRITE (ISOUT,1) MAPRUN, CPMID, NREQ || MAP 6.13
+27	1562	COUNT 5/4	      WRITE (ISOUT,16)ABSSA                                                     	WRITE (ISOUT,16) ABSSA || MAR 20
+28	1600	OK	 1023 KL=KKL+（NYMAP-1）*NXMAP                                              P  205	1023 KL=KKL+（NYMAP-1）*NXMAP || P 205
+29	1642	OK	      IF(ISTRIF-M)103,104,103                                           MAP  206	IF (ISTRIF-M)103,104,103 || MAP 206
+30	1689	COUNT 3/1	 104  KINC=LEFT-1                                                               	104 KINC=LEFT-1 || ---
+31	1737	COUNT 3/2	      VLEFT=LEFT                                                                	VLEFT=LEFT || 2.1
+32	1779	OK	      XCIN=VLEFT<DGX                                                         62 	XCIN=VLEFT<DGX || 62
+33	1821	OK	      GO TO 1031                                                          P     	GO TO 1031 || P
+34	1864	OK	 1C3  KINC=INC-1                                                               ;	1C3 KINC=INC-1 || ;
+35	1907	OK	      XCIN=XCINC                                                                	XCIN=XCINC
+36	1949	OK	 1031 CONTINUE                                                                  	1031 CONTINUE
+37	1994	OK	      KLINK = KINC+1                                                            	KLINK = KINC+1
+38	2036	OK	      IF(JC   .EQ.3) WRITE(MBTAPC)NYMAF,KLINK                           MAP  217	IF(JC .EQ.3) WRITE(MBTAPC)NYMAF,KLINK || MAP 217
+39	2077	OK	C                                                                            :  	C || :
+40	2121	OK	C     ROWS                                                                      	C ROWS
+41	2165	COUNT 3/2	      YY=YMIN+DGY*FLOAT(NYMAP)                                                  	YY=YMIN+DGY*FLOAT(NYMAP) || MAP
+42	2208	OK	      00 200 J=1，NYHAP                                                          	00200 J=1，NYHAP
+43	2251	OK	      KH=KL+KING                                                          5     	KH=KL+KING || 5
+44	2295	OK	      KDC=0                                                                     	KDC=0
+45	2338	OK	      DO 701 K=KL,KH                                                      P     	DO 701 K=KL,KH || P
+46	2381	COUNT 6/5	      IF(OMAP(K).LT.CUTNAF)OMAP(K)=0.0                                          	IF(OMAP(K).LT.CUTNAF)OMAP(K)=0.0 || MAP 221
+47	2419	OK	 201  FSUM=FSUM+OMAP(K)                                                       24	201 FSUM=FSUM+OMAP(K) || 24
+48	2466	OK	C                                                                               	C
+49	2508	COUNT 6/3	C     NUMBERS WITHIN ROWS                                                       	C NUMBERS WITHIN ROWS || НАГ ССІ
+50	2553	COUNT 4/2	      DO 390 K=KL，KH                                                            	DO 390 K=KL，KH || AP 21
+51	2596	OK	      KDC=KDC+1                                                                 	KDC=KDC+1
+52	2637	OK	C     TRANSFER TO CODE FOR SELECTED PRESENTATION                        MAP  230	C TRANSFER TO CODE FOR SELECTED PRESENTATION || MAP 230
+53	2679	COUNT 6/4	      GO TO N2.（150，151，301）                                                    	GO TO N2.（150，151，301） || MAF 231
+54	2718	OK	C                                                                            231	C || 231
+55	2764	COUNT 6/5	C 150 CODE FOR POWER OF TEN DISPLAY                                             	C 150 CODE FOR POWER OF TEN DISPLAY || MAR 202
+56	2802	COUNT 6/5	 150  IF(OHAP(K))105,106,107                                                    	150 IF(OHAP(K))105,106,107 || MAP 234
+57	2844	OK	 105  ASSIGN 121 TO N3                                                       234	105 ASSIGN 121 TO N3 || 234
+58	2897	COUNT 3/1	      OMAP(K)=-OMAP(K)                                                          	OMAP(K) = -OMAP(K) || ---
+59	2928	COUNT 7/8	                                                                        MAP  256	GO TO 109 || MAP 256
+60	2978	COUNT 2/1	 1C7  ASSIGN 300 TO N3                                                          	1C7 ASSIGN 300 TO N3 || 24
+61	3012	COUNT 20/21	                                                                        MAP  238	109 H = ALOG10(OHAP(K)) || MAP 238
+62	3060	COUNT 14/15;COUNT 6/5	                                                                                	H1=AMOD（H,1,0） || 1AP 239
+63	3133	OK	                                       149                                      	149
+64	3309	COUNT 3/31	                                                                                	---

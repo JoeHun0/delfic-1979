@@ -1,0 +1,7 @@
+24	1710	COUNT 29/30	                                                                                	G20 IF (ARG - PARA (1)) 022, 022, 040
+26	1794	COUNT 22/15	                                                                                	\text{r.24 VRB = ARB (MB)}
+29	1925	COUNT 27/28	                                                                                	IF (ARG - PARA (MA)) 048, 044, 054
+30	1967	OK	  C44 MB = N1                                                                   	C 44 MB = N1
+32	2059	OK	  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /               	048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /
+36	2224	COUNT 6/7	                                                                                	MB = NPR
+40	3290	COUNT 0/37	                                                                                	

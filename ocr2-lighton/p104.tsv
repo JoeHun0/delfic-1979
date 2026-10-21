@@ -1,0 +1,10 @@
+1	5	COUNT 0/18	                                                                                	
+2	60	COUNT 0/10	                                                                                	
+15	1051	OK	      TCUR=TP(J)                                                                	TCUR=TP(J)
+16	1094	OK	      DX=0.                                                                     	DX = 0.
+44	2295	OK	      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225                           	IF: (ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225
+48	2467	OK	      DO 222 K=1,MCX                                                            	DO 222 K=1,MCX
+56	2810	OK	      BV=V3(LL)                                                                 	BV = V3(LL)
+58	2898	OK	 3224 BV=0.                                                                     	3224 BV=0.
+59	2939	OK	      DO 3225 K=NN,LL                                                           	DO 3225 K=NN,LL
+61	3025	OK	 3225 BV=BV +VB(K)*(TC(K+1)- TC(K))                                             	3225  BV = BV + VB(K) * (TC(K+1) - TC(K))

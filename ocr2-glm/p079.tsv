@@ -1,0 +1,9 @@
+1	1	COUNT 3/18	                                                                                	---
+2	73	COUNT 1/11	                                                                                	.
+4	838	COUNT 30/24	                                                                                	35  P W=P^{*}X^{*}2 9. /(1 8. +2 9. * X)
+8	1008	OK	      ES=611.*(T/273.)**(-5.13)*EXP((25.*(T-473.))/T)                           	ES=611. * (T/273.) * * (-5.13) * EXP((25. * (T-473.))/T)
+34	2127	OK	      SMALLT=SMALLT+DST                                                         	SMALLT = SMALLT + DST
+39	2341	OK	   87 DST=DST1                                                                  	87 DST=DST1
+40	2384	OK	   88 R=SQRT(3.*√/(RZT*12.56637U5E0))                                           	88 R=SQRT(3. *√/(RZT*12.56637U5E0))
+41	2427	COUNT 7/6	                                                                                	GC T3.45
+50	2812	OK	      GO TO (724,724,148),MHYA                                                  	GO TO (724,724,148), MHYA

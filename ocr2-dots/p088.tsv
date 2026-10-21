@@ -1,0 +1,13 @@
+1	2	COUNT 0/15	                                                                                	
+7	749	COUNT 117/64	                                                                                	\text{XE} = 109.98 * \text{HLR} * (\text{TE}/273.15) * (-5.13) * \text{EXP}((25. * (\text{TE} - 273.15)) / \text{TE}) / (\text{P} * 29.0)
+17	1180	COUNT 46/40	                                                                                	TAO = -3587.5 * (T - TPR) + 1.0625 * (T^{**2} - TPR^{**2})
+19	1266	COUNT 54/39	                                                                                	17 \text{ CP} = \frac{(CP + X^* (1697.66 + 1.144174 * T))}{1.0 + X}
+24	1482	COUNT 31/23	                                                                                	\text{RMIX} = (1.0 + X) / (1.0 + X + S + W)
+32	1823	OK	  380 QXE=(1.+XE)/(1.+29.*XE/18.)                                               	380 QXE=(1.+XE)/(1.+29.*XE/18.)
+33	1866	COUNT 28/24	                                                                                	QX = (1.0 + 29.2 * X / 18.0) / (1.0 + X)
+38	2082	COUNT 33/31	                                                                                	R=\sqrt{3.5*(RZT^{12.5663706EQ})}
+46	2424	OK	 1100 OZ=0.                                                                     	1100 OZ=0.
+51	2642	OK	 11v1 NNN=1                                                                     	11v1 NNN=1
+55	2809	COUNT 23/24	                                                                                	1:02 SV=12.56037;6*κ*2/V
+59	2980	COUNT 22/23	                                                                                	EPS=C3*(2. *EK; *1. E/RZT
+61	3069	OK	      QQ=QT*QX*QXE*(1.+X+WT)/(1.+X+S+WT)                                        	QQ = QT * QX * QXE * (1. + X + WT) / (1. + X + S + WT)

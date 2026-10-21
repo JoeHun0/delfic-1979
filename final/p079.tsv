@@ -1,0 +1,57 @@
+1	1	44	NOISE	                                                                        			
+2	73	83	NOISE	                                                                        			
+3	795	827	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM36
+4	838	873	HAND	   35 PW=P*X*29./(18.+29.*X)                                            		dots=   35 PW=P*X*29./(18.*29.*X)	CRM37
+5	873	913	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM38
+6	923	956	COMMENT	C     COMPUTE SATURATION WATER VAPOR PRESSURE AND CLOUD AIR MASS        		lighton=C     COMPUTE SATURATION WATER VAPOR PRESSURE AND CLOUD AIR MASS	CRM39
+7	968	999	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM40
+8	1008	1041	HAND	      ES=611.*(T/273.)**(-5.13)*EXP((25.*(T-273.))/T)                   	45	dots=      ES=611.*(T/273.)**(-5.13)*EXP((25.*(T-273.))/T) ## dots2=      E5=611.*(T/273.)**(-5.13)*EXP((25.*(T-273.))/T) ## glm=      ES=611.*(T/273.)**(-5.13)*EXP((25.*(T-<73.))/T) ## glm2=      ES=611.*(T/273.)**(-5.13)*EXP((25.*(T-473.))/T)	CRM41
+9	1052	1084	HAND	      PA=RM/V*(1.+X)/(1.+X+S+WT)                                        		glm=      PA-RM/V*(1.+X)/(1.+X+S+WT)	CRM42
+10	1095	1127	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM43
+11	1136	1169	COMMENT	C     WET OR DRY EQUATIONS                                              		lighton=C     WET OR DRY EQUATIONS ## dots=C     WET OR DRY EQUATIONS ## glm=C     WET OR ORY EQUATIONS	CRM44
+12	1182	1213	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM45
+13	1226	1258	AGREE	      GO TO (150,1531,1531),N                                           		lighton=      GO TO (150,1531,1531),N ## dots=      GO TO (150,1531,1531),N ## glm=      GO TO (150,1531,1531),N	CRM46
+14	1267	1300	VOTED	  150 IF(ES-PW)152,152,1531                                             		lighton=  150 IF(ES-PW)152,152,1531 ## dots=  150 IF(ES-PW)152,152,1531 ## glm=  150 IF(ES-PW)152.152.1531	CRM47
+15	1311	1343	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM48
+16	1352	1385	COMMENT	C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2)   		lighton=C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2) ## dots=C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2) ## glm=C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2)	CRM49
+17	1396	1427	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM50
+18	1440	1469	AGREE	  152 KSV=2                                                             		lighton=  152 KSV=2 ## dots=  152 KSV=2 ## glm=  152 KSV=2	CPM51
+19	1484	1514	AGREE	 1532 CALL RSTR                                                         		lighton= 1532 CALL RSTR ## dots= 1532 CALL RSTR ## glm= 1532 CALL RSTR	CRM52
+20	1526	1557	AGREE	    9 VTEMPY=V                                                          		lighton=    9 VTEMPY=V ## glm=    9 VTEMPY=V	CRM53
+21	1571	1601	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM54
+22	1613	1644	COMMENT	C     INTEGRATE                                                         		lighton=C     INTEGRATE ## glm=C     INTEGRATE	CRM55
+23	1655	1685	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM56
+24	1700	1730	AGREE	      CALL RKGILL                                                       		lighton=      CALL RKGILL ## dots=      CALL RKGILL ## glm=      CALL RKGILL	CRM57
+25	1743	1772	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM58
+26	1784	1816	COMMENT	C         ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH 		lighton=C         ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH ## dots=C         ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH ## glm=C         ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH	CRM59
+27	1827	1858	COMMENT	C     CLOUD VOLUME CHANGE                                               		lighton=C     CLOUD VOLUME CHANGE ## dots=C     CLOUD VOLUME CHANGE ## glm=C     CLOUD VOLUME CHANGE	CRM60
+28	1871	1901	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM61
+29	1913	1946	VOTED	      00 96 J=1,NOSTR                                                   		lighton=      00 96 J=1,NOSTR ## dots=      00 96 J=1,NOSTR ## glm=      DO 96 J=1,NDSTR	CRM62
+30	1955	1986	AGREE	   86 Y(J)=Y(J)*VTEMPY/V                                                		lighton=   86 Y(J)=Y(J)*VTEMPY/V ## dots=   86 Y(J)=Y(J)*VTEMPY/V ## glm=   86 Y(J)=Y(J)*VTEMPY/V	CRM53
+31	2000	2029	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM64
+32	2041	2072	COMMENT	C     ACCUMULATE CLOUD TIME                                             		lighton=C     ACCUMULATE CLOUD TIME ## dots=C     ACCUMULATE CLOUD TIME ## glm=C     ACCUMULATE CLOUD TIME	CRM65
+33	2085	2115	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM66
+34	2127	2158	HAND	      SMALLT=SMALLT+DST                                                 	21	lighton2=      SMALLT=SMALLT+DST ## dots2=      SMALLT=SMALLT+0ST ## glm=      SMALLT=SMALLT+OST ## glm2=      SMALLT=SMALLT+DST	CRM67
+35	2169	2199	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM68
+36	2212	2243	COMMENT	C     TEST FOR TIME STEP CHANGE                                         		lighton=C     TEST FOR TIME STEP CHANGE ## glm=C     TEST FOR TIME STEP CHANGE	CRM69
+37	2255	2286	VOTED	      IF(A9S(SMALLT-1.0).LT.0.001)GO TO 87                              		lighton=      IF(A9S(SMALLT-1.0).LT.0.001)GO TO 87 ## dots=      IF(ABS(SMALLT-1.0).LT.0.001)GO TO 87 ## glm=      IF(A9S(SMALLT-1.0).LT.0.001)GO TO 87	
+38	2297	2331	HAND	      IF(SMALLT-1.0)8,87,88                                             	19	lighton2=      IF(SMALLT-1.C)8,87,88 ## dots=      IF(SMALLT-1.()8,87,88 ## dots2=      IF(SMALLT-1.()8,87,88 ## glm=      IF(SMALLT-1.C)8,87,88	CRM71
+39	2341	2372	HAND	   87 DST=DST1                                                          	11	lighton=   87 DST=OST1 ## lighton2=   87 DST=DST1 ## dots=   87 DST=0ST1 ## dots2=   87 DST=0ST1 ## glm=   87 DST=DST1 ## glm2=   87 DST=DST1	CRM72
+40	2384	2417	HAND	   88 R=SQRT(3.*V/(RZT*12.5663706E0))                                   	17	lighton=   88 R=SQRT(3.*√/(RZT*12.566370620)) ## lighton2=   88 R=SQRT(3.*V/(RZT*12.5663705E0)) ## glm=   88 R=SQRT(3.*V/(RZT*12.5663705E0)) ## glm2=   88 R=SQRT(3.*√/(RZT*12.56637U5E0))	CRM73
+41	2427	2456	HAND	      GO TO 45                                                          			
+42	2456	2501	HAND	C                                                                       		glm=c	
+43	2513	2543	COMMENT	(     COMPUTE PARTICLE FALLCUT RATI                                     		lighton=(     COMPUTE PARTICLE FALLCUT RATI	CR1111
+44	2555	2585	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	C2H77
+45	2600	2630	AGREE	 1531 CALL CPFR                                                         		lighton= 1531 CALL CPFR ## dots= 1531 CALL CPFR ## glm= 1531 CALL CPFR	LRM78
+46	2642	2674	VOTED	      GO TO (931,901,8),MWY.                                            		lighton=      GO TO (9J1,901,8),MWY. ## dots=      GO TO (931,901,8),HWY. ## glm=      GO TO (931,901,8),MWY.	CRM79
+47	2684	2715	VOTED	  901 IF(IC(6) .NE. 0) CALI DBG                                         		lighton=  901 IF(IC(6) .NE. 0) CALI DBG ## dots=  901 IF(IC(6) .NE. 0) CALI DBG ## glm=  901 IF(IC(6) .NE. 0) CAL1 DBG	CRM80
+48	2727	2758	AGREE	      CALL DCSN                                                         		lighton=      CALL DCSN ## dots=      CALL DCSN ## glm=      CALL DCSN	CRM81
+49	2771	2802	AGREE	    8 CALL CXPN                                                         		lighton=    8 CALL CXPN ## dots=    8 CALL CXPN ## glm=    8 CALL CXPN	CRM82
+50	2812	2846	HAND	      GO TO (724,724,148),MWYA                                          	27	lighton=      GO TO (724,724,148),PHYA ## lighton2=      GO TO (724,724,148),MWYA ## dots=      GO TO (724,724,148),NWYA ## dots2=      GO TO (724,724,148),NWYA ## glm=      GO TO (724,724,148),MWYA ## glm2=      GO TO (724,724,148),MHYA	CRM83
+51	2856	2888	AGREE	  724 KSV=1                                                             		lighton=  724 KSV=1 ## dots=  724 KSV=1 ## glm=  724 KSV=1	CRM84
+52	2900	2931	AGREE	      GO TO 1532                                                        		lighton=      GO TO 1532 ## dots=      GO TO 1532 ## glm=      GO TO 1532	CRM85
+53	2940	2974	AGREE	  148 CALL CRMW                                                         		lighton=  148 CALL CRMW ## dots=  148 CALL CRMW ## glm=  148 CALL CRMW	CRM86
+54	2983	3015	VOTED	      PETURN                                                            		lighton=      PETERN ## dots=      RETURN ## glm=      PETURN	CRM87
+55	3029	3061	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	CRM68
+56	3137	3167	NOISE	                                                                        		lighton=                                        76 ## dots=                                        76 ## glm=                                        76	
+57	3280	3322	NOISE	                                                                        			

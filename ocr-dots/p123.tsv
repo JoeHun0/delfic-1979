@@ -1,0 +1,64 @@
+1	1	COUNT 0/36;COUNT 0/1	                                                                                	 || 
+2	25	COUNT 0/17	                                                                                	
+3	530	OK	*DECK,LAYERS                                                            LAYER  1	* DECK, LAYERS || LAYER 1
+4	572	COUNT 30/31	                                                                        LAYER  2	SUBROUTINE LAYERS(ZCH,ZBH,KBHF) || LAYER 2
+5	614	OK	C                                                                       LAYER  3	C || LAYER 3
+6	657	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     LAYER  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || LAYER 4
+7	702	OK	C                                                                       LAYER  5	C || LAYER 5
+8	743	COUNT 0/71	                                                                        LAYER  6	 || LAYER 6
+9	788	COUNT 0/2	                                                                        LAYER  7	 || LAYER 7
+10	830	OK	C     CONSTRUCTS THE ATMOSPHERE STRATIFICATION ARRAYS ZBH AND ZCH FOR   LAYER  8	C CONSTRUCTS THE ATMOSPHERE STRATIFICATION ARRAYS ZBH AND ZCH FOR || LAYER 8
+11	872	COUNT 1/42	                                                                        LAYER  9	C || LAYER 9
+12	914	COUNT 8/7	C     ZBH CONTAINS STRATA BASE ALTITUDES AND ZCH CONTAINS STRATA CENTER         	C ZBH CONTAINS STRATA BASE ALTITUDES AND ZCH CONTAINS STRATA CENTER || # LAYER 10
+13	958	OK	C     ALTITUDES (BOTH RELATIVE TO MEAN SEA LEVEL)(METERS)               LAYER 11	C ALTITUDES (BOTH RELATIVE TO MEAN SEA LEVEL) (METERS) || LAYER 11
+14	1002	OK	C                                                                       LAYER 12	C || LAYER 12
+15	1043	COUNT 0/71	                                                                        LAYER 13	 || LAYER 13
+16	1090	OK	C                                                                       LAYER 14	C || LAYER 14
+17	1130	OK	      COMMON /CNTROL/ IPOCT,ISIN,ISOUT,JPARN,MC(20),NSEQO               LAYER 15	COMMON /CNTROL/ IPOCT,ISIN,ISOUT,JPARN,MC(20),NSEQO || LAYER 15
+18	1173	OK	       COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX                  LAYER 16	COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX || LAYER 16
+19	1217	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     LAYER 17	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || LAYER 17
+20	1261	OK	C                                                                       LAYER 18	C || LAYER 18
+21	1304	OK	      INTEGER BASALT,CNTALT,TLAYR                                       LAYER 19	INTEGER BASALT, CNTALT, TLAYR || LAYER 19
+22	1347	OK	      DIMENSION ZBH(KBHF),ZCH(KBHF), ENTRY(8)                           LAYER 20	DIMENSION ZBH(KBHF), ZCH(KBHF), ENTRY(8) || LAYER 20
+23	1387	OK	      DATA PROGRM   ,BASALT   ,CNTALT   ,EPSZ     ,ALIMIT   ,IREC       LAYER 21	DATA PROGRM ,BASALT ,CNTALT ,EPSZ ,ALIMIT ,IREC || LAYER 21
+24	1430	COUNT 38/39	                                                                        LAYER 22	1 /6HLAYERS ,4HBASE ,4HCENT , 0.1 , 99999. , 8 / || LAYER 22
+25	1476	OK	C                                                                       LAYER 23	C || LAYER 23
+26	1517	OK	    1 FORMAT( 10X,  6HLEVELS,I4, 5H THRU,I4/25X, 8F12.5)                LAYER 24	1 FORMAT ( 10X, 6HLEVELS, I4, 5H THRU, I4/25X, 8F12.5) || LAYER 24
+27	1561	OK	    2 FORMAT(8F10.0)                                                    LAYER 25	2 FORMAT(8F10.0) || LAYER 25
+28	1603	OK	    3 FORMAT(1H0, 48X, 25HWIND LAYER BASE ALTITUDES/)                   LAYER 26	3 FORMAT(1H0, 48X, 25HWIND LAYER BASE ALTITUDES/) || LAYER 26
+29	1637	OK	    4 FORMAT(1HO, 43X, 27HWINC LAYER CENTER ALTITUDES/)                 LAYER 27	4 FORMAT(1HO, 43X, 27HWINC LAYER CENTER ALTITUDES/) || LAYER 27
+30	1689	OK	    5 FORMAT( 11XA4)                                                    LAYER 28	5 FORMAT ( 11XA4 ) || LAYER 28
+31	1731	OK	   6  FORMAT(1HD,25X,31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS) LAYER 29	6 FORMAT(1HD,25X,31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS) || LAYER 29
+32	1773	COUNT 58/59	                                                                        LAYER 30	8 FORMAT(1HC,10X, 45HZBP(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE ± || LAYER 30
+33	1820	OK	     112.5)                                                             LAYER 31	112.5) || LAYER 31
+34	1863	OK	C                                                                       LAYER 32	C || LAYER 32
+35	1902	OK	COPY IN DATA TYPE (LAYER BASE OR CENTER ALTITUDE) INDICATOR             LAYER 33	COPY IN DATA TYPE (LAYER BASE OR CENTER ALTITUDE) INDICATOR || LAYER 33
+36	1947	OK	      READ(ISIN,5)TLAYR                                                 LAYER 34	READ(ISIN,5)TLAYR || LAYER 34
+37	1990	OK	COPY WIND LAYER ALTITUDES INTO ARRAY ZCH                                LAYER 35	COPY WIND LAYER ALTITUDES INTO ARRAY ZCH || LAYER 35
+38	2033	COUNT 0/3	                                                                        LAYER 36	 || LAYER 36
+39	2076	OK	  20C READ(ISIN,2)(ENTRY(I),I=1,IREC)                                   LAYER 37	20C READ(ISIN,2) (ENTRY(I),I=1,IREC) || LAYER 37
+40	2120	OK	      DC 201 I=1,IREC                                                   LAYER 38	DC 201 I=1, IREC || LAYER 38
+41	2161	OK	      IF(ENTRY(I),GE,ALIMIT) GO TO 202                                  LAYER 39	IF(ENTRY(I),GE,ALIMIT) GO TO 202 || LAYER 39
+42	2204	OK	      IF(ENTRY(I) .LT. 0.0) GO TO 201                                   LAYER 40	IF(ENTRY(I) .LT. 0.0) GO TO 201 || LAYER 40
+43	2249	OK	      k=k+1                                                             LAYER 41	k=k+1 || LAYER 41
+44	2289	OK	      IF(K.GT.KBHF) CALL ERROR(PROGRM,-201,ISOUT)                       LAYER 42	IF(K.GT.KBHF) CALL ERROR(PROGRM,-201,ISOUT) || LAYER 42
+45	2334	OK	      ZCH(K)=ENTRY(I)                                                   LAYER 43	ZCH(K)=ENTRY(I) || LAYER 43
+46	2377	OK	  201 CONTINUE                                                          LAYER 44	201 CONTINUE || LAYER 44
+47	2418	OK	      GO TO 200                                                         LAYER 45	GO TO 200 || LAYER 45
+48	2462	OK	  202 KAHX=K                                                            LAYER 46	202 KAHX=K || LAYER 46
+49	2505	COUNT 43/44	                                                                        LAYER 47	COMINGLE THE LAYER ALTITUDES INTO ASCENDING ORDER || LAYER 47
+50	2548	COUNT 0/12	                                                                        LAYER 48	 || LAYER 48
+51	2591	OK	      DO 210 I=1,KBHM1                                                  LAYER 49	DO 210 I=1,KBHM1 || LAYER 49
+52	2636	COUNT 8/7	                                                                        LAYER 50	IP_1 = I + 1 || LAYER 50
+53	2677	OK	      00 210 J=IP1,KBHX                                                 LAYER 51	00 210 J=IP1,KBHX || LAYER 51
+54	2720	OK	      IF(ZCH(I).LE.ZCH(J))GO TO 210                                     LAYER 52	IF (ZCH(I).LE.ZCH(J)) GO TO 210 || LAYER 52
+55	2764	OK	      TE4P=7CH(I)                                                       LAYER 53	TE4P=7CH(I) || LAYER 53
+56	2805	OK	      ZCH(I)=ZCH(J)                                                     LAYER 54	ZCH(I) = ZCH(J) || LAYER 54
+57	2849	OK	      ?CH(J)=TEMP                                                       LAYER 55	?CH(J)=TEMP || LAYER 55
+58	2893	OK	 210  CONTINUE                                                          LAYER 56	210 CONTINUE || LAYER 56
+59	2930	COUNT 58/59	                                                                        LAYER 57	COMPUTE LAYER CENTER OR BASE ALTITUDES DEPENDING ON WHICH WERE INPUT || LAYER 57
+60	2977	OK	      IF(ILAYR.EQ.CNTALT)GC TO 250                                      LAYER 58	IF (ILAYR.EQ.CNTALT)GC TO 250 || LAYER 58
+61	3020	COUNT 52/50	                                                                        LAYER 59	230 IF(TLAYR,NE,BASALT)CALL ERRORS(PROGRAM,-230,ISCUT) || LAYER 59
+62	3063	OK	      IF(ABS(ZCH(1)-ZMIN).LE.EPSZ)GO TO 235                             LAYER 60	IF (ABS(ZCH(1)-ZMIN).LE.EPSZ)GO TO 235 || LAYER 60
+63	3112	COUNT 3/2	                                                                                	120
+64	3273	COUNT 0/50;COUNT 0/8	                                                                                	 || 

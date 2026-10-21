@@ -1,0 +1,65 @@
+1	18	COUNT 0/34;COUNT 0/1	                                                                                	 || 
+2	82	COUNT 0/27	                                                                                	
+3	555	OK	       NRQ=NRQ+1                                                                	NRQ = NRQ + 1
+4	599	COUNT 0/2	       IF(NRQ .NE. 1) WRITE(ISOUT,3)                                            	IF(NRQ .NE. 1) WRITE(ISOUT,3) || 
+5	639	OK	       WRITE (ISOUT,34)NRG,NREQ.T1,T2,MASCHN ,QCUT,CUTMAP                OPM2 16	WRITE (ISOUT,34) NRG,NREQ.T1,T2,MASCHN,QCUT,CUTMAP || OPM2 16
+6	688	OK	       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUT,45)                OPM2 17	IF(ICONT .NE. 0 .ANC. NZ .GT. 0) WRITE(ISOUT,45) || OPM2 17
+7	730	OK	       MAPRUN=C                                                                 	MAPRUN=C
+8	770	OK	       FSUM = 0.0                                                               	FSUM = 0.0
+9	814	OK	       J60=1                                                                    	J60=1
+10	857	OK	       JO=,TRUE.                                                                	JO=,TRUE.
+11	900	OK	       KDO3=.FALSE.                                                             	KDO3=.FALSE.
+12	943	OK	       FISNUM=FW*1.45E15                                                        	FISNUM=FW*1.45E15
+13	986	OK	       NORD=1                                                                   	NORD=1
+14	1030	OK	       C=1.0                                                                    	C=1.0
+15	1075	OK	       CF6=1.7                                                                  	CF6=1.7
+16	1117	COUNT 38/43	                                                                         URMC 17	IF(NREQ EQ 9 OR NREQ EQ 10) NPRINT(15)=.TRUE. || URMC 17
+17	1163	COUNT 6/5	       IF(NREQ .NE. 13  .AND.  NREQ .NE. 4) GO TO 980                           	IF (NREQ .NE. 13 .AND. NREQ .NE. 4) GO TO 980 || OPM2 18
+18	1202	COUNT 0/12;COUNT 0/1	                                                                                	 || 
+19	1243	COUNT 0/4	       T2=T2*1.0E-6                                                             	T2=T2*1.0E-6 || 
+20	1278	COUNT 0/7	                                                                         OPM2 18	 || OPM2 18
+21	1328	COUNT 17/18	                                                                                	980 T1=T1*360. + TGZ
+22	1374	COUNT 14/15	                                                                                	T2=T2*360. + TGZ
+23	1408	COUNT 7/6	       TIME=T1-TGZ                                                              	TIME=T1-TGZ || OPM2 180
+24	1458	COUNT 0/1	       TENTER=TIME                                                              	TENTER=TIME || 
+25	1501	COUNT 12/11;COUNT 0/1	                                                                                	TEXIT=T2-TGZ || 
+26	1535	COUNT 68/49;COUNT 7/6	                                                                                	C NREQ = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150, 160, 170, 180 || OPM2 189
+27	1590	COUNT 67/58;COUNT 0/7	                                                                                	985 GO TO (90, 70, 79, 70, 69, 68, 73, 78, 78, 73, 80, 80, 80, 71, 80, 60, 80, 80).NREC || 
+28	1632	COUNT 33/34	                                                                         UPM2   	CF6=CF6*(1.0 - (TIME/EXIT)**(0.26)) || UPM2
+29	1671	COUNT 33/27;COUNT 6/4	                                                                                	69 CF6=32.3344*CF6*(TIME)**(-0.26) || PM2 198
+30	1713	COUNT 13/12;COUNT 6/4	                                                                                	70 TIME=3600.0 || UPM2 1%
+31	1759	COUNT 0/2	      GO TO 79                                                                  	GO TO 79 || 
+32	1792	COUNT 0/6;COUNT 7/6	                                                                                	 || DPM2 19!
+33	1843	COUNT 19/18	                                                                                	FISNUM=FISNUM*1.E+4
+34	1888	COUNT 40/37;COUNT 7/5	                                                                                	IF( IHOB .GT. G ) CALL ERROR( PROGRM, -71, ISCUT ) || 4PM2 191
+35	1930	COUNT 0/2	      GO TO 791                                                                 	GO TO 791 || 
+36	1972	COUNT 13/12;COUNT 0/2	                                                                                	73 KOO S=.TRUE. || 
+37	2015	OK	 78   JO=.FALSE.                                                                	78 JO=.FALSE.
+38	2059	COUNT 0/2	      FISNUM=FISNUM/3600.                                                       	FISNUM=FISNUM/3600. || 
+39	2094	COUNT 0/6	 79   CONTINLE                                                                  	79 CONTINLE || 
+40	2146	COUNT 0/6	      IF(  JHOB .EQ. G .ANC.  SD .GT. J.J ) GO TO 790                           	IF ( JHOB .EQ. G .ANC. SD .GT. J.J ) GO TO 790 || 
+41	2190	OK	      CALL  AM2A                                                                	CALL AM2A
+42	2234	COUNT 0/1	      GO TO 8)                                                                  	GO TO 8) || 
+43	2273	COUNT 0/1	 790  CALL PAM2                                                                 	790 CALL PAM2 || 
+44	2315	COUNT 4/3	 60   NORD=NORD+1                                                               	60 NORD=NORD+1 || 2.11
+45	2358	COUNT 6/4	 90   NORD=MAX3(NORD,NORD+NREQ-14)                                              	90 NORD=MAX3(NORD,NORD+NREQ-14) || UPMC CU
+46	2399	COUNT 0/5	C                                                                               	C || 
+47	2443	COUNT 0/71	                                                                        UPM2 210	 || UPM2 210
+48	2487	OK	C                                                                               	C
+49	2535	COUNT 0/7;COUNT 0/2	                                                                                	 || 
+50	2575	COUNT 0/15	                                                                                	
+51	2618	OK	      ICTR=0                                                                    	ICTR=0
+52	2662	COUNT 0/1	      IF(NZ)203,204,207                                                         	IF (NZ) 203, 204, 207 || 
+53	2697	OK	  203 CALL ERROR(PROGRM,-2(3,ISOUT)                                     0PM2 216	203 CALL ERROR(PROGRM,-2(3,ISOUT) || 0PM2 216
+54	2741	COUNT 7/5	COMPUTE A SINGLE CORE-LOAD MAP                                                  	COMPUTE A SINGLE CORE-LOAD MAP || UPM2 217
+55	2790	OK	  204 KTAPE=IPOUT                                                               	204 KTAPE=IPOUT
+56	2832	COUNT 0/2	      CALL GOGO(OM&P,NMAP)                                                      	CALL GOGO(OM&P,NMAP) || 
+57	2868	COUNT 12/11;COUNT 7/6	                                                                                	REWIND TO TAPE || UPM2 220
+58	2919	OK	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305                       UPMC CCL	IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305 || UPMC CCL
+59	2961	COUNT 0/1	      00 302 IMAP=1,NNAP                                                        	00 302 IMAP=1,NNAP || 
+60	3004	OK	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0                            OPM2 224	IF (OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0 || OPM2 224
+61	3044	COUNT 0/2	  302 CONTINUE                                                                  	302 CONTINUE || 
+62	3088	COUNT 0/1	  305 TF                                                                        	305 TF || 
+63	3106	OK	        (ICONT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL,OPM2 226	(ICONT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL, || OPM2 226
+64	3167	COUNT 3/2	                                                                                	159
+65	3302	COUNT 0/39;COUNT 0/5	                                                                                	 || 

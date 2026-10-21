@@ -1,0 +1,7 @@
+24	1710	OK	  G20 IF (ARG - PARA (1)) 022, 022, 040            .                            	G20 IF (ARG - PARA (1)) 022, 022, 040.
+26	1794	COUNT 16/15	                                                                                	024 VRB = :>ARB (MB)
+29	1925	COUNT 27/28	                                                                                	IF (ARG - PARA (MA)) 048, 044, 054
+30	1967	COUNT 0/8	                                                                                	
+32	2059	OK	  048 VRO = (ARG - PARA (NA - 1)) * (PARB (NA) - PARB (NA - 1)) /               	048 VRO = (ARG - PARA (NA - 1)) * (PARB (NA) - PARB (NA - 1)) /
+36	2224	COUNT 0/7	                                                                                	
+40	3290	COUNT 0/37	                                                                                	

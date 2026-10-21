@@ -1,0 +1,15 @@
+1	1	COUNT 0/24	                                                                                	
+2	47	COUNT 0/4	                                                                                	
+5	650	COUNT 0/42	                                                                                	
+11	899	OK	      KOPS=2*KDPST                                                              	KOPS = 2 * KDPST
+17	1158	OK	      DO 258 MB=1,KDPS                                                          	DO 258 MB=1,KDPS
+23	1424	COUNT 0/21	                                                                                	
+27	1595	COUNT 0/19	                                                                                	
+28	1638	OK	      OPST(3,MBT)=CX(MCX,5)                                                     	OPST(3, MBT) = CX(MCX, 5)
+32	1810	COUNT 26/25	                                                                                	202 DPST(4, MBT) = D.TAM(MA + 1)
+35	1938	OK	      BM=M3/2                                                                   	BM = M3/2
+36	1980	COUNT 0/44	                                                                                	
+48	2495	COUNT 0/25	                                                                                	
+51	2624	OK	  204 GO TO (206,208),KBASE                                                     	204 GO TO (206,208),KBASE
+59	2968	COUNT 0/29	                                                                                	
+63	3161	COUNT 11/2	                                                                                	\mathcal{Y}

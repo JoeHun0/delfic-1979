@@ -1,0 +1,8 @@
+2	39	COUNT 0/11	                                                                                	
+10	862	COUNT 52/53	                                                                                	1. A RANDOM SELECTION OF 14, 30H VECTORS ARE EQUALLY WEIGHTED.
+34	1896	COUNT 55/56	                                                                                	13 IF(N1+N2+N3+N4+N5+NE .LT. 21) CALL ERROR(PROGM,-13,ISOUT)
+41	2196	COUNT 28/27	                                                                                	IF (AP.(N1).GE. ALIMIT) GO TO 101
+50	2583	COUNT 0/32	                                                                                	
+54	2754	COUNT 96/54	                                                                                	\text{SX(J)} = \text{AP(N3)} * \text{SCALE(2)} * \text{SIN(RADC * (AP(N2)} * \text{SCALE(3)} + \text{TRNS}))
+55	2799	COUNT 104/54	                                                                                	\text{SY(J)} = \text{AP(NF)} * \text{SCALE(2)} * \cos(\text{RADC} * (\text{AP(N2)} * \text{SCALE(3)} + \text{TRNS}))
+56	2841	OK	      GO TO 100                                                                 	GO TO 100

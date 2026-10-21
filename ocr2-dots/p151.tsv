@@ -1,0 +1,8 @@
+2	55	COUNT 0/11	                                                                                	
+4	560	COUNT 43/19	                                                                                	\text{LEFT} = (X_{\text{MAX}} - X_1) / \text{DGX}
+8	733	COUNT 17/16	                                                                                	102 WRITE (ISOUT,8)
+10	823	COUNT 64/65	                                                                                	GO TO 161, 162, 163, 177, 164, 165, 168, 169, 164, 165, 166, 167, 176, 171, 172,
+40	2101	COUNT 7/8	                                                                                	GO TO 170
+54	2714	COUNT 0/8	                                                                                	
+59	2929	COUNT 23/24	                                                                                	177 WRITE (ISOUT,28) T1,T2
+61	3016	COUNT 7/8	                                                                                	GO TO 179

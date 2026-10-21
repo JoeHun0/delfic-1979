@@ -1,0 +1,12 @@
+433	p126	42	TIE	16	6	     2 2HVX, 12X, 2HVY/)
+434	p126	46	TIE	54	6	     1//3X, 1HZ, 10X, 4HEPSX, 10X, 4HEPSY, 17X, 1HZ, 11X 4HEPSX, 10X,
+435	p126	48	TIE	59	2	 1700  FORMAT( 1H0, 5X, 63HNUMBER OF WIND OR TURBULENCE INPUT DATA INCON
+436	p126	50	TIE	62	2	 1800 FORMAT( 1H0, 5X, 5S)HIND OR TURBULENCE STRATA ALTITUDES INCONSISTE
+437	p127	14	TIE	51	7	      IF(MC( 2 )  .NE. 1   ) WRITE(ISOUT, 140J)AP(N1), AP(N2), AP(N3)
+438	p127	18	NONE	63	7	raw: \text{OX(KBH, 1, LTIH)} = \text{AP(N3)} \cdot \text{SCALE(2)} \cdot \text{SIN(RADC} \cdot \text{AP(N2)} \cdot \text{SCALE(3)} + \text{TRNS})^{-1}
+439	p127	19	NONE	62	7	raw: \text{DY(KBH, 1, LTIM)} = \text{AP(N3)} \cdot \text{SCALE}(2) \cdot \cos(\text{RADC} \cdot (\text{AP(N2)} \cdot \text{SCALE}(3) + \text{TRNS}))
+440	p127	21	TIE	33	2	 150  DX(K9H,1,LTIM) = AP(12)*SCALE(2)
+441	p127	26	TIE	24	3	  250 IF(LTIY .EQ. 1) KBHX=KBH
+442	p128	1	NONE	11	48	raw: \text{[Image of a black and white, pixelated, and distorted image of a city skyline or street scene]}
+443	p128	8	TIE	47	3	  270 WRITE(ISOUT,1)IGC,ISTOP,(ZUH(K),K=IGO,ISTOP)
+444	p128	49	TIE	60	7	      DIMENSION WFZ(KBHF,NCATF,LTIMF),HAVG(KBHF,LTIMF),TIMLP(LTIMF)

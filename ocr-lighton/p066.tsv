@@ -1,0 +1,51 @@
+1	78	COUNT 302/16;COUNT 33/1	                                                                                	\text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text || \text{[Image of a black and white car]}
+2	119	COUNT 0/20;COUNT 8/1	                                                                                	 || \text{C}
+3	875	OK	      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302                         ICH  181	IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302 || ICH 181
+4	919	COUNT 7/6	      WRITE(ISOUT,12)                                                           	WRITE(ISOUT,12) || <table>
+5	958	COUNT 34/6	      WRITE( ISOUT, 14 ) TME, TMPG, SSAM                                        	WRITE( ISOUT, 14 ) TME, TMPG, SSAM || <table border="1" class="dataframe">
+6	1005	COUNT 34/4	      GO TO 118                                                                 	GO TO 118 || <table border="1" class="dataframe">
+7	1047	COUNT 34/6	 3f1  WRITE (ISOUT,5)                                                           	3f1 WRITE (ISOUT, 5) || <table border="1" class="dataframe">
+8	1086	COUNT 7/5	      GO TO 108                                                                 	GO TO 108 || <table>
+9	1134	COUNT 7/6	 3C2  WRITE (ISOUT,6)                                                           	3C2 WRITE (ISOUT,6) || <table>
+10	1171	COUNT 7/6	 108  WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM                                     	108 WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM || <table>
+11	1217	COUNT 34/6	  118 Z5CM=ZSCL*0.3048                                                          	118 Z5CM=ZSCL*0.3048 || <table border="1" class="dataframe">
+12	1265	OK	      WRITE(ISOUT,20)ZSCL,ZSCM                                          ICH  190	WRITE(ISOUT,20)ZSCL,ZSCM || ICH 190
+13	1304	COUNT 39/40;COUNT 7/6	                                                                                	C SET FRACTION OF EXPLOSION ENERGY IN THE CLOUD || <table>
+14	1349	COUNT 34/4	      F3.45                                                                     	F3.45 || <table border="1" class="dataframe">
+15	1393	COUNT 0/12;COUNT 34/6	                                                                                	 || <table border="1" class="dataframe">
+16	1436	COUNT 18/6	      WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP                                       	WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP || \text{ICM} \quad 194
+17	1477	COUNT 34/6	      WRITE(ISOUT,1800)XGZ,YCZ,TGZ                                              	WRITE(ISOUT,1800)XGZ,YCZ,TGZ || <table border="1" class="dataframe">
+18	1518	COUNT 34/6	      WRITE(ISOUT,19) RHOF                                                      	WRITE(ISOUT,19) RHOF || <table border="1" class="dataframe">
+19	1558	COUNT 7/6	      IF(IC(1)-1)309,310,311                                                    	IF(IC(1)-1) 309, 310, 311 || <table>
+20	1604	COUNT 7/6	  309 WRITE(ISOUT,7)DMEAN,SD                                                    	309 WRITE(ISOUT,7)DMEAN,SD || <table>
+21	1647	COUNT 34/6	      IF (IS)102,103,102                                                        	IF (IS) 102, 103, 102 || <table border="1" class="dataframe">
+22	1687	COUNT 34/6	 103  WRITE (ISOUT,8)                                                           	103 WRITE (ISOUT, 8) || <table border="1" class="dataframe">
+23	1731	COUNT 7/5	      GO TO 105                                                                 	GO TO 105 || <table>
+24	1776	COUNT 34/6	 102  WRITE (ISOUT,9)                                                           	102 WRITE (ISOUT, 9) || <table border="1" class="dataframe">
+25	1823	COUNT 34/6	  105 BARMU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2)                                	105 BARMU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2) || <table border="1" class="dataframe">
+26	1864	COUNT 34/6	      WRITE(ISOUT,24)BARMU,SD                                                   	WRITE(ISOUT,24)BARMU,SD || <table border="1" class="dataframe">
+27	1904	COUNT 14/15;COUNT 34/6	                                                                                	WRITE ISOUT, 250 || <table border="1" class="dataframe">
+28	1945	COUNT 34/6	      GO TO 315                                                                 	GO TO 315 || <table border="1" class="dataframe">
+29	1993	COUNT 7/6	  310 WRITE(ISOUT,27) CAYM, EXPO                                                	310 WRITE(ISOUT,27) CAYM, EXPO || <table>
+30	2031	COUNT 7/4	      GO TO 315                                                                 	GO TO 315 || <table>
+31	2079	COUNT 7/6	  311 WRITE(ISOUT,18)                                                           	311 WRITE(ISOUT,18) || <table>
+32	2116	OK	C                                                                               	C
+33	2165	COUNT 34/6	C     PRINT PARTICLE SIZE DISTRIBUTION TABLE                                    	C PRINT PARTICLE SIZE DISTRIBUTION TABLE || <table border="1" class="dataframe">
+34	2205	OK	C                                                                               	C
+35	2251	COUNT 7/6	  315 WRITE(ISOUT,193)NOSTR                                                     	315 WRITE(ISOUT,193)NOSTR || <table>
+36	2296	COUNT 7/6	      00 602 J=1,NOSTR                                                          	00 602 J=1, NOSTR || <table>
+37	2339	COUNT 7/6	  602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J)                        	602 WRITE(ISOUT,194) J,PS(J),DIAM(J+1),FMASS(J),DIAM(J) || <table>
+38	2379	COUNT 7/6	C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE               	C CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE || <table>
+39	2423	COUNT 34/6	      IF(IC(5) .EG. 0) GO TO 603                                                	IF(IC(5).EG.0) GO TO 603 || <table border="1" class="dataframe">
+40	2462	COUNT 0/7	                                                                        JUN     	 || JUN
+41	2508	COUNT 7/6	      WRITE(ISOUT,28)                                                           	WRITE(ISOUT,28) || <table>
+42	2552	COUNT 7/6	  603 WRITE(ISOUT,1700)KCI,IRAD                                                 	603 WRITE(ISOUT,1700)KCI,IRAD || <table>
+43	2588	COUNT 34/6	      WRITE(ISOUT,192)                                                          	WRITE(ISOUT,192) || <table border="1" class="dataframe">
+44	2631	COUNT 34/6	  200 WRITE(ISOUT,15)                                                           	200 WRITE(ISOUT,15) || <table border="1" class="dataframe">
+45	2682	COUNT 7/4	      RETURN                                                                    	RETURN || <table>
+46	2725	COUNT 7/6	 143  WRITE (ISOLT,11)                                                          	143 WRITE (ISOLT,11) || <table>
+47	2762	COUNT 7/6	      GO TO 200                                                                 	GO TO 200 || <table>
+48	2811	COUNT 6/5	      END                                                                       	END || ICM 221
+49	3225	OK	                                      63                                        	63
+50	3366	COUNT 9/2;COUNT 320/5	                                                                                	\text{1.} || \text{S} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t} \text{e} \text{t}
+51	3391	COUNT 320/10	                                                                                	\text{شخ } \text{نخ } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{م } \text{

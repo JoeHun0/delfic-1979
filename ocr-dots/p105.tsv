@@ -1,0 +1,64 @@
+1	13	COUNT 0/25;COUNT 0/1	                                                                                	 || 
+2	59	COUNT 0/20;COUNT 0/8	                                                                                	 || 
+3	556	OK	 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    WNDSF3j1	3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) || WNDSF3j1
+4	601	OK	C                                                                       WNOSF3j2	C || WNOSF3j2
+5	641	COUNT 56/57	                                                                        WNDSF303	C CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE--- || WNDSF303
+6	685	COUNT 1/9	                                                                        WNOSF304	C || WNOSF304
+7	728	COUNT 1/9	                                                                        'NDSF305	C || 'NDSF305
+8	770	OK	C                                                                       WNOSF3J6	C || WNOSF3J6
+9	815	COUNT 55/54	                                                                        WNDSF3J7	IF(( ZBOTOM-ZCUR+10.().LT.(TP(J)-TC(1))*((FV+BV)) GO TO 250 || WNDSF3J7
+10	858	OK	  225 DELTEE=0.                                                         WNDSF308	225 DELTEE=0. || WNDSF308
+11	900	OK	      GO TO 315                                                         WNDSF309	GO TO 315 || WNDSF309
+12	943	OK	C                                                                       WNDSF310	C || WNDSF310
+13	986	COUNT 50/51	                                                                        WNOSF311	C INDEX MM IDENTIFIES THE WIND HODGRAPH STRATUM IN WHICH THE || WNOSF311
+14	1028	COUNT 1/28	                                                                        WNOSF312	C || WNOSF312
+15	1073	OK	C                                                                       WNDSF313	C || WNDSF313
+16	1116	OK	C     INDEX LL   IDENTFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH     WNDSF314	C      INDEX LL      IDENTFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH || WNDSF314
+17	1158	COUNT 52/51	                                                                        WNDSF315	C REPRESENTS THE RISE INCREMENT DURNING WHICH THE PARTICLE IS || WNDSF315
+18	1201	OK	C     CURRENTLY DEFINED.                                                WNOSF316	C CURRENTLY DEFINED. || WNOSF316
+19	1245	OK	C                                                                       WNDSF317	C || WNDSF 317
+20	1286	OK	C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      WNOSF318	C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE || WNOSF318
+21	1330	OK	C                                                                       WNOSF319	C || WNOSF319
+22	1374	COUNT 18/17	                                                                        WNOSF320	245 DO 246 K=1,MHODOO || WNOSF320
+23	1415	OK	      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247                WNDSF321	IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247 || WNDSF321
+24	1458	OK	  246 CONTINUE                                                          WNOSF322	246 CONTINUE || WNOSF 322
+25	1502	OK	      MM=NHODO                                                          WNOSF323	MM=NHODO || WNOSF323
+26	1544	OK	      GO TO 250                                                         HNDSF324	GO TO 250 || HNDSF324
+27	1588	OK	  247 MM=K                                                              WNOSF325	247 MM=K || WNOSF325
+28	1631	OK	C                                                                       WNOSF326	C || WNOSF326
+29	1673	OK	  250 CONTINUE                                                          WNDSF327	250 CONTINUE || WNDSF 327
+30	1718	OK	C                                                                       WNOSF328	C || WNOSF328
+31	1761	OK	C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD.           WNOSF329	C DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD. || WNOSF 329
+32	1803	COUNT 1/12	                                                                        WNUSF330	C || WNUSF330
+33	1846	OK	      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    WNOSF331	CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) || WNOSF 331
+34	1890	OK	C                                                                       WNOSF332	C || WNOSF332
+35	1932	COUNT 1/14	                                                                        WNOSF333	C || WNOSF333
+36	1976	OK	C                                                                       WNOSF334	C || WNOSF 334
+37	2018	OK	      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298                            WNOSF335	IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298 || WNOSF335
+38	2060	OK	 2297 RV=0.                                                             WNOSF336	2297 RV=0. || WNOSF 336
+39	2104	OK	      GO TO 2299                                                        WNOSF337	GO TO 2299 || WNOSF337
+40	2147	OK	 2298 RV=VB(LL)*( 1.0+( ZCUR-ZBOTOM)/( ZBOTOM-ZBRSTZ))                  WNOSF338	2298 RV=VB(LL)*(1.0+(ZCUR-ZBOTOM)/(ZBOTOM-ZBRSTZ)) || WNOSF 338
+41	2190	OK	      IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL)                          WNOSF339	IF ( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL) || WNOSF339
+42	2233	COUNT 25/27	                                                                        WN05F340	2299 IF(FV-RV .GE.0)GO TO 253 || WN05F340
+43	2276	OK	C                                                                       WNOSF341	C || WNOSF341
+44	2317	OK	C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE        WNOSF342	C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE || WNOSF342
+45	2359	COUNT 1/53	                                                                        WNOSF343	C || WNOSF343
+46	2404	OK	C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TINES.               WNOSF344	C BASE OF THE CLOUC. USE THE SMALLER OF THESE TINES. || WNOSF344
+47	2446	OK	C                                                                       WNOSF345	C || WNOSF345
+48	2489	OK	  251 IF((MM-1).GT.0) GO TO 252                                         WNOSF346	251 IF((MM-1).GT.0) GO TO 252 || WNOSF346
+49	2532	OK	      DELZEE= ZBRSTZ-ZCUR                                               WNOSF347	DEL ZEE= ZBRSTZ-ZCUR || WNOSF347
+50	2575	OK	      GO TO 1253                                                        WNOSF348	GO TO 1253 || WNOSF348
+51	2617	OK	  252 DELZEE= (ZV(MM) +ZV(MM-1))/ 2.0-ZCUR                              WN05F349	252 DELZEE = (ZV(MM) + ZV(MM-1)) / 2.0-ZCUR || WN05F349
+52	2661	OK	      IF(DELZEE .LT. -0.01)GO TO 1253                                   WNOSF350	IF (DELZEE .LT. -0.01) GO TO 1253 || WNOSF350
+53	2705	OK	      MM=MM-1                                                           WNOSF351	MM=MM-1 || WNOSF351
+54	2748	OK	      GO TO 251                                                         WNDSF352	GO TO 251 || WNDSF352
+55	2792	OK	 1253 DELTEP= DELZEE/(FV-FV)                                            WNOSF353	1253 DELTEP= DELZEE/(FV-FV) || WNOSF353
+56	2832	OK	  254 DELTEE=(ZBOTON-ZCUR)/(FV-RV+V3(LL))                               WNOSF354	254 DELTEE = (ZBOTON - ZCUR) / (FV - RV + V3(LL)) || WNOSF354
+57	2877	OK	      IF( DELTEE.LT. DELTEF) GO TO 255                                  WNOSF355	IF ( DELTEE.LT. DELTEF) GO TO 255 || WNOSF355
+58	2921	OK	      DELTEE= DELTEP                                                    WNDSF356	DELTEE= DELTEP || WNDSF356
+59	2963	OK	  255 IF(DELTEE.GE.0.0) GC TO 278                                       WNOSF357	255 IF (DELTEE.GE.0.0) GC TO 278 || WNOSF357
+60	3005	OK	  256 IRROR=-256                                                        WNUSF358	256 IRROR=-256 || WNUSF358
+61	3050	OK	      GO TO 7734                                                        WNOSF359	GO TO 7734 || WNOSF359
+62	3092	OK	C                                                                       WNOSF360	C || WNOSF360
+63	3138	COUNT 3/2	                                                                                	102
+64	3299	COUNT 0/22;COUNT 0/7	                                                                                	 || 

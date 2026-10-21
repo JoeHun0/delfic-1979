@@ -1,0 +1,9 @@
+9	921	COUNT 57/58	                                                                                	COMMON /OUTPUT/ FISNUM,FP(20),FW,ITAB,JGO,MASCHN,PSIZE(20),
+11	1007	OK	      COMMON /UTILTY/  KOUT,NPONT(15)                                           	COMMON /UTILTY/ KOUT,NPONT(15)
+16	1222	COUNT 49/47	                                                                                	2 SOIL CONTRIBUTES 1P \geq 2.4, 23H TO EACH PARTICLE SIZE.)
+23	1523	OK	      00 22 i = 1,IS                                                            	00 22 i = 1,IS
+24	1565	COUNT 0/15	                                                                                	
+26	1649	COUNT 0/45	                                                                                	
+30	1822	COUNT 0/59	                                                                                	
+39	2210	OK	      SDRE = SDRE*ALDFOM*FISNUM                                                 	SDRE = SDRE*ALDFOM*FISNUM
+42	2338	OK	   26 FP(HA) = FP(MA) + S)RE*FMASS(MA)                                          	26 FP(HA) = FP(MA) + S)RE*FMASS(MA)

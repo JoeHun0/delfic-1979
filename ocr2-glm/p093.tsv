@@ -1,0 +1,4 @@
+53	2906	COUNT 59/60	                                                                                	COMMON /BASIC/ W, FW, ZBRSTZ, HEIGHT, GLL, SLDTMP, TMSD, XGZ, YGZ, TGZ
+54	2950	COUNT 63/62	                                                                                	COMMON / CONTROL / OETIO(12), IC(20), IKA0, IRISE, ISIN, ISOUT, JPARC, KOI
+55	2992	OK	      COMMON /INITL/ F, PHI, SSAM, TME, .MPG, TMFS, VPA                         	COMMON / INITL/ F, PHI, SSAM, TME, .MPG, TMFS, VPA
+56	3035	COUNT 61/62	                                                                                	COMMON /PARTC/ NDSTF,RHCP,OMEAN,SU,PS(2:0),D1AP(201),FMASS(200)

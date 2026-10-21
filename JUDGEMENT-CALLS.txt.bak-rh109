@@ -1,0 +1,65 @@
+p075	?	ATMR: card 'IF(ALT(1) .LE. 0.0(1)GO TO 200' printed with a stray '(1'; read as IF(ALT(1).LE.0.0) GO TO 200
+CRMINT: CHANGE=1?0. printed with a broken middle digit; read 100. (J-like glyph = 0 elsewhere)
+CXPN: DLTM = ?.? both digits the same broken glyph as the 0 after the point; read 0.0 (check against printed CX time intervals)
+DCSN: DATA statement has a faded gap between WORD1, and WORD3 (probably WORD2 and its value); WORD2 is not used in DCSN, so the visible 3 names/3 values are kept
+CRMW: 'WRITE(ISOUT,6) DETID' printed; read FORMAT 8 (the run-title format; 6 is only a continuation digit in CRMW) - CHECK
+CRM and DERIV: 'PA=RM/V*...' read RA= (cloud air density; RA is in COMMON /CLOUD/, used by CPFR and stored as CX(,10); PA appears nowhere else; R/P look alike in this print)
+RSXP: 'BM=M3/2' read BM=MB/2 (MB is the wafer loop index of DO 258; B prints like 3)
+RSXP: label targets 1150/1130/1063 do not exist; read 1100, 1100, 1003 (0/5/3/6 glyph damage)
+WNDSFT: '320 DELTRP =' read DELTRF (the variable used in the next two statements; P/F alike)
+RSXP: label of 'GDPST(5,J)=CMA' printed 1050-like; it must be 1759 (DO 1759 J=LODD,LL ends there)
+CRM: faded 'GO TO ?5' read GO TO 35 (label 35 is the loop head PW=...; no label 45 exists)
+DCSN: 'IF(ABS(T)-10.)114,20,2?' read 114,20,20 (no label 25)
+RSXP: label printed '76' on 'BZ=0.' read 78 (IF(IRAD)78,78,79 branches there; no other 78)
+RSXP: GO TO (240,25?),MBT read 258 (label 258 CONTINUE; no 256)
+WNDSFT: label '113' on WRITE(JPARN)N read 110 (IF(J-N)105,105,110 branches there)
+ICM FORMAT 198: 56H count does not match the text as transcribed (58 chars incl. spacing); set 58H. Error-message format only.
+CRMINT: SOILHT card '1.3?1E+7' read 1.881E+7 — the second digit is a 3/8 glyph; 1.881E7 is the constant of the soil heat capacity CS=781.6+0.5612*T-1.881E7/T**2 in DERIV, whose integral CRMINT computes, and it reproduces the printed test output exactly (was the 0.55% volume offset)
+p190 L56 FORMAT faded: 13 cells after METERS read as 10H(R*M**2)//) (Hollerith count fits)
+p174/p187/p190 DCON(730)/(7:0) = DCON(700): four clean copies print 700
+p194 L28 UNITC/UNITF Hollerith = 'CURIES  /)' and 'FISSIONS/)': cell grid shows 10 chars each ending in /) — the unit word closes FMTB's 9H field and the format
+p113 L37 TRIDIN 6th arg read DUM (glyph between DUP/DUM; scalar dummy either way, not declared)
+p135 L17 label 1?0 = 160 (GO TO 160 on same page); p137 L22 626 NDTC1=NDATC (last glyph faded; NDTC1 pairs with NDATC)
+p143 L51-54: labels print 6J0 / 610 / 6?0 (DO N, DO K, terminal); read all as 600 (one shared terminal) — DO 610 has no 610 anywhere; semantics identical either way. L56 WRITE(ISOUT,50?0) = 5000 (only 5000/5100/5200/5300/5900 FORMATs exist)
+p162 L27 computed GO TO targets 8L/6J/8u/6U = 80 (no label 60 in OPMEX; 80 NORD=NORD+1 prints as '6C'); L35 GO TO 79) = 790 (no label 791); L50 X2=X1+NXMAP*DGX (printed glyph Y-like; X extent uses DGX)
+p165 L29 continuation mark in col 6 faded: forced '2' (MAPDAT third card); p167 L23 computed GO TO 1)1/1J5 = 101/105 (labels on page: 101 103 104 105 106 107 112 113 120)
+p167 L49 / p162 L28 exponent (0.26): glyph broken; 0.26 = 1.26-1 from integrating t^-1.26, and p162 L29 32.3344 = 3600^0.26/0.26 confirms
+p184 L56 CAYFAC= ).0 read 0.0 (it is the accumulator of the DO 7 sum); p185 L31 BOIL 8th value 331.8 (Br b.p. 332 K; OCR 351.8); p184 L47/p193 L4 routine INDCD2 (deck card and format text '1OUTPUT OF INDCD2')
+TABLES p174 L52 f5 DCON 1.7?3901E-5: 3rd digit broken (0 or 2) — UNRESOLVED, settle from nuclide half-life
+TABLES p175 L5 f4 DCON 3.650017E-3: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L15 f2 DCON 1.001150E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L56 f1 DCON 1.865736E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L56 f3 DCON 4.260100E-5: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L59 f5 DCON 2.507210E-4: broken glyph, kept the reading — resolved: 2.567211E-4 (45 min; same digits as p175 L61 f3 2.567211E-3)
+TABLES p176 L3 f4 DCON 3.274714E-8: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L7 f3 DCON 8.705801E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L32 f4 DCON 0.351169E-3: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L33 f1 DCON 6.171180E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L34 f2 DCON 7.522050E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L49 f4 DCON 6.447086E-9: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L55 f1 DCON 8.436500E-4: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L55 f3 DCON 2.745553E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES DCON resolved by nuclide half-life (NUCLID same index, decoded AAA ZZZ M): Ge-77 1.703901E-5 (11.3 h); Br-85 3.850817E-3 (3 min, print 3.65L017);
+  Kr-87 1.481083E-4 (78 min); Sr-89 1.588621E-7 (50.5 d, print 1.5o8621); Sr-90 7.844465E-10 and Cs-137 7.522050E-10 (two-digit exponents, 28/29.2 y);
+  Y-91 1.383196E-7 (58 d, faded); Cd-115m 1.865706E-7 (43 d); Sn-119m 3.274504E-8 (245 d); Sn-121m 8.785801E-10 (25 y); Cs-136 6.171181E-7 (13 d);
+  A=145 card p176 L46 Ba 2 s/La 9 s/Ce 3 min/Pr 5.98 h/Nd stable (faded); Pm-147 8.447886E-9 (2.6 y); Sm-151 2.745553E-10 (80 y, print as is);
+  Ba-137m 4.443250E-3 (156 s); Y-91m 2.310490E-4 (50 min); p176 L32 f4 8.351169E-3 (83 s).
+  STILL UNRESOLVED (minor): In-115m p175 L56 f3 4.26?13?E-5 -> 4.268130E-5; Nd-151 p176 L55 f1 8.4965??E-4 -> 8.496507E-4.
+TABLES DCON p175 L29 Tc-99 1.045929E-13 (2.1e5 y, E-13 two-digit exponent); p175 L42 Pd-107 3.137786E-15 (7e6 y), Rh-107 5.251114E-4 (22 min); p175 L41 Ru-107 2.511402E-3 (4.6 min); p175 L43 Rh-108 3.850817E-2 (18 s)
+TABLES NUCLID: faint/garbled entries rebuilt from the packing (A*8^9+Z*8^6+M*8^5+low) with A/Z/M from chain neighbours and DCON half-lives; low code assumed 10004 (radioactive) / 00004 (stable) where the print is unreadable — A=109 chain p180 L61-62, A=72/73 p179 L60-61, A=142-145 p181. DCON Ce-144 p176 L45 f1 = 2.814924E-8 (285 d; exponent glyph broken, read E-6).
+TABLES NUCLID low codes 07760/04064/07722/10314/07474/07772/06510/07775/10002 normalised to 10004 (each one digit away; 6/8 and broken-0 confusions). Kept: x1042 (Br-87..90, I-137..139, I-128 11042), isomer codes 12301/13201/30004, Eu-152 12042/21042, Sb-122 20532.
+TABLES ISO(18) faint (p179 L55-58): set to the number of non-zero XLAM entries per isotope = 4 7 3 3 1 1 5 2 4 2 7 1 3 2 2 4 1 1 (legible glyphs: 1st = 4, 11th = 7). MULT = 8**1..8**11 (exact powers of 8, print agrees).
+TABLES ERM p177 L24 f3 printed -?.6?E-6 with broken first and third digits: read -8.660000E-6 (first glyph same shape as the 8 of L26 f4 8.900000E-7; OCR 66/68) — UNCERTAIN
+TABLES ERM uncertain glyphs (3-significant-digit prior): p177 L39 f2 -1.560000E-5 (4th char broken, could be -1.565), L42 f4 -4.950000E-6 (print -4.95?000), L47 f5 -3.360000E-6 (6 or 8), L48 f5 -2.030000E-6 (first decimal broken)
+TABLES XLAM uses ln2 = 0.693: confirmed K-40 1.689219E-17 (1.3e9 y), Cl-36 7.129820E-14 (3.08e5 y), Fe-59 1.743659E-7 (46 d), Si-31 7.347328E-5 (2.62 h), Ti-51 1.991379E-3 (5.8 min), 5.276864E-8 (152 d), 1.358824E-3 (8.5 min), Cl-38 3.080000E-4, 2.005208E-8 (400 d)
+TABLES XLAM p179 L3 f5 printed 1.28333E-34 (XLAM(1,13)); 0.693/1.28333E-4 would be a round 1.5 h, so possibly a deck typo — kept as printed
+TABLES JRM: strictly increasing nuclide indices: 46->48, -268->268, 49?->493 (Xe-133, completes A=133 set), 678->638, 601->691 (last of KRM=181). p179 L43 f5 printed '51?' with the third digit faded: 514 (I-136) chosen among 512-514 — UNCERTAIN
+OPM1 (p156 L57) /PARDAT/ prints GAMA,IP,PMAS(100) where CALC/PDMP print GAMA,KTR(100),PMAS(100): transcribed as printed (members after IP are offset by 99 words in OPM1)
+p188 L59 BATMAN  20 LBR = LBR + 4 - IABS(MOD(NUCLID(K),MULT(1))) : subscript smeared on the scan (OCR "2"). MULT(1)
+  is the low octal digit = 4 - number of branch entries, as in statement 499 and the .LT.4 test; MULT(2) sends LBR
+  negative on the x1042 delayed-neutron precursors (BRANCH(-97) crash). Taken as MULT(1).
+p137 L10 TRANP   V3AR=VBARC kept as printed: the scan clearly shows 3 (open) next to B (closed) in VBARC. Original bug:
+  VBAR is not raised to VBARC during channelling.
+p134 L4  TRANP   header dummy XC (not XO) kept as printed: TRANP ends each segment with XO=XC, so it returns the same value.
+20 Oct: the 10002 (Se-84, p180 L19) and 07760 (Sm-159, p182 L22) normalisations had not reached tablefix; applied now (11283206148, 21356875780 = previous entry + 8**6). The 07760 one made BATMAN loop Sm-159 onto itself.
+p183 L3 PAM1 READ(INTP,14) (ABEGN(J),J=1,692): middle digit ambiguous 3/9 on the scan; INUC=692 and the P239HE block is 139 cards (692/5).

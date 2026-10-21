@@ -1,0 +1,63 @@
+1	1	COUNT 3/37	                                                                         -- -   	--- || ---
+2	550	OK	      RETURN                                                            WNDSF181	RETURN || WNDSF181
+3	593	OK	 7734 CALL ERROR(PROGRM,IRROR,ISOUT)                                    WNDSF182	7734 CALL ERROR(PROGRM,IRROR,ISOUT) || WNDSF182
+4	636	OK	      PETURN                                                            WNDSF183	PETURN || WNDSF183
+5	680	OK	C                                                                       WNDSF184	C || WNDSF184
+6	722	OK	C 103 READ A BLOCK OF N PARTICLE DESCRIPTIONS                           WNDSF185	C 103 READ A BLOCK OF N PARTICLE DESCRIPTIONS || WNDSF185
+7	764	OK	  103 READ(IRISE )(XPAR(J),YPAR(J),TP(J),PSIZ(J),PMAS(J),ZPAR(J),RWAF(J)WNDSF186	103 READ(IRISE )(XPAR(J),YPAR(J),TP(J),PSIZ(J),PMAS(J),ZPAR(J),RWAF(J) || WNDSF186
+8	809	OK	     1,DWAF(J).ZLOW(J).VWAF(J).J=1,N)                                   WNDSF187	1, DWAF(J). ZLOW(J). VWAF(J). J=1,N) || WNDSF187
+9	852	OK	      IF(IC(7))2015，2010，2015                                           WNDSF188	IF(IC(7))2015，2010，2015 || WNDSF188
+10	893	OK	 2015 WRITE(ISOUT,3013)N                                                WNDSF189	2015 WRITE(ISOUT,3013)N || WNDSF189
+11	936	OK	      WRITE(ISOUT,1012)(XPAR(I),YPAR(I),TP(I),PSIZ(I),PMAS(I),ZPAR(I),  WNDSF190	WRITE (ISOUT,1012) (XPAR(I),YPAR(I),TP(I),PSIZ(I),PMAS(I),ZPAR(I), || WNDSF190
+12	979	OK	     1RWAF(I),OWAF(I),ZLCW(I),VWAF(I),I=1,N)                            WNDSF191	1RWAF(I),OWAF(I),ZLCW(I),VWAF(I),I=1,N) || WNDSF191
+13	1022	OK	C                                                                       WNDSF192	C || WNDSF192
+14	1065	OK	C     NEW PREPARE TO SHIFT FARTICLES HORIZONTALLY IN ACCORDANCE WITH THEWNDSF193	C NEW PREPARE TO SHIFT FARTICLES HORIZONTALLY IN ACCORDANCE WITH THE || WNDSF193
+15	1109	COUNT 56/55	                                                                        WNDSF194	C PCSITION OF THE CLOUD AT THE TIME WHEN THE PARTICLE LEFT THE CLOUD! || WNDSF194
+16	1151	OK	C                                                                       WNDSF195	C || WNDSF195
+17	1194	OK	C        FIRST INITIALIZE FOR ENTERING A LOOP CN PARTICLES              HNDSF196	C FIRST INITIALIZE FOR ENTERING A LOOP CN PARTICLES || HNDSF196
+18	1238	OK	 2010 OLDZ=-99999.0                                                     WNDSF197	2010 OLDZ=-99999.0 || WNDSF197
+19	1281	OK	      OLDPS=-1.0                                                        WNDSF199	OLDPS=-1.0 || WNDSF199
+20	1327	COUNT 8/9	                                                                        WNDSF199	OLT=-1.0 || WNDSF199
+21	1371	OK	      j=1                                                               WNDSF200	j=1 || WNDSF200
+22	1409	OK	C 105 WAS THE CURRENT (J-TH) PARTICLE DEFINED AT THE SAME TIME AS THE   WN0SF201	C 105 WAS THE CURRENT (J-TH) PARTICLE DEFINED AT THE SAME TIME AS THE || WN0SF201
+23	1453	OK	C     PREVIOUS ONE.   YES TO 1051                                       HNDSF2C2	C PREVIOUS ONE. YES TO 1051 || HNDSF2C2
+24	1496	OK	  135 IF(TP(J)-OLDT)106,1051,106                                        HNDSF293	135 IF(TP(J)-OLDT)106,1051,106 || HNDSF293
+25	1538	OK	C                                                                       WNDSF204	C || WNDSF204
+26	1581	OK	C1051 IS THE CURRENT (J-TH) PAFTICLE THE SAME SIZE AS THE PREVIOUS ONE. WNDSF205	C1051 IS THE CURRENT (J-TH) PAFTICLE THE SAME SIZE AS THE PREVIOUS ONE. || WNDSF205
+27	1625	OK	C     YES TO 107                                                        WNDSF206	C YES TO 107 || WNDSF206
+28	1668	OK	 1051 IF(PSIZ(J)-OLDPS)108,107,106                                      HNDSF207	1051 IF(PSIZ(J)-OLDPS)108,107,106 || HNDSF207
+29	1712	OK	C                                                                       HNDSF208	C || HNDSF208
+30	1754	OK	C 107 IS THE J-TH PARTICLE AT THE SAME ALTITUDE AS THE PREVIOUS ONE.    HNDSF2J9	C 107 IS THE J-TH PARTICLE AT THE SAME ALTITUDE AS THE PREVIOUS ONE. || HNDSF2J9
+31	1796	OK	C     YES TO 108                                                        WNDSF210	C YES TO 108 || WNDSF210
+32	1840	OK	 107  IF(ZPAR(J)-OLDZ)106.108.106                                       WNDSF211	107 IF(ZPAR(J)-OLDZ)106.108.106 || WNDSF211
+33	1885	OK	C                                                                       WNDSF212	C || WNDSF212
+34	1925	OK	C 108 THE PARTICLE WILL HAVE THE SAME HORIZONTAL DISPLACEMENTS AS THE   WNDSF213	C 108 THE PARTICLE WILL HAVE THE SAME HORIZONTAL DISPLACEMENTS AS THE || WNDSF213
+35	1967	OK	C     PREVIOUS ONE AND WILL LEAVE THE CLOUD AT THE SAME TIME AND ALTI-  WNDSF214	C PREVIOUS ONE AND WILL LEAVE THE CLOUD AT THE SAME TIME AND ALTI- || WNDSF214
+36	2011	OK	C     TUDE AS THE PREVIOUS ONE. ADDITION OF XGZ,YGZ MAKES XPAR, YPAR    WNDSF215	C TUDE AS THE PREVIOUS ONE. ADDITION OF XGZ,YGZ MAKES XPAR,YPAR || WNDSF215
+37	2053	OK	C     PELATIVE TO COORCINATE SYSTEM ORIGIN                              WN0SF216	C PELATIVE TO COORCINATE SYSTEM ORIGIN || WN0SF216
+38	2097	OK	  108 TP(J)=TP(J)+TGZ                                                   WNUSF217	108 TP(J) = TP(J) + TGZ || WNUSF217
+39	2141	OK	 1C9  XPAR(J)=XPAR(J)+DX+XGZ                                            WNDSF218	1C9 XPAR(J) = XPAR(J) + DX + XGZ || WNDSF218
+40	2182	OK	      YPAR(J)=YPAR(J)+DY+YGZ                                            WNUSF219	YPAR(J) = YPAR(J) + DY + YGZ || WNUSF219
+41	2227	OK	C                                                                       WNDSF220	C || WNDSF220
+42	2268	OK	C     INCREMENT AND TEST J TO CONSIDER THE NEXT PARTICLE OR RETURN TO   WN05F221	C INCREMENT AND TEST J TO CONSIDER THE NEXT PARTICLE OR RETURN TO || WN05F221
+43	2310	OK	C     FETCH THE NEXT BLOCK OF FARTICLE DATA.                            WNDSF222	C FETCH THE NEXT BLOCK OF FARTICLE DATA. || WNDSF222
+44	2356	OK	      J=J+1                                                             WNDSF223	J=J+1 || WNDSF223
+45	2400	OK	      IF(J-H)105,105,110                                                HNDSF224	IF (J-H) 105,105,110 || HNDSF224
+46	2444	OK	C                                                                       WNDSF225	C || WNDSF225
+47	2484	OK	C 110 PUT THE MODIFIED DATA ON THE TAPE JPAPIN AND THEN RETURN TJ       WNOSF226	C 110 PUT THE MODIFIED DATA ON THE TAPE JPAPIN AND THEN RETURN TJ || WNOSF226
+48	2528	OK	C     FETCH THE NEXT DATA BLOCK.                                        WNDSF227	C FETCH THE NEXT DATA BLOCK. || WNDSF227
+49	2570	OK	  113 WRITE(JPARN )N                                                    WNDSF228	113 WRITE(JPARN)N || WNDSF228
+50	2611	OK	      WRITE (JPARN )(XPAR(J),YFAR(J),ZFAR(J),TF(J),PSIZ(J),PMAS(J),RWAF WNDSF229	WRITE (JPARN ) (XPAR(J), YFAR(J), ZFAR(J), TF(J), PSIZ(J), PMAS(J), RWAF || WNDSF229
+51	2655	OK	     1(J),DWAF(J),7LOW(J),VHAF(J),J=1,N;                                WNDSF230	1 (J) , DWAF (J) , 7LOW (J) , VHAF (J) , J=1, N; || WNDSF230
+52	2696	OK	      IF(IC(7))185,104,185                                              WNDSF231	IF(IC(7))185,104,185 || WNDSF231
+53	2741	OK	  185 WRITE (ISCUT,4)N                                                  WNDSF232	185 WRITE (ISCUT,4)N || WNDSF232
+54	2783	OK	      WRITE(ISOUT,3)(XPAR(I),YPAR(I),TF(I),PSIZ(I),PMAS(I),ZPAR(I),     WNDSF233	WRITE (ISOUT,3) (XPAR(I),YPAR(I),TF(I),PSIZ(I),PMAS(I),ZPAR(I), || WNDSF233
+55	2827	OK	     1RWAF(I),DWAF(I),ZLCW(I),VWAF(I),I=1,N)                            HNDSF234	1RWAF(I),DWAF(I),ZLCW(I),VWAF(I),I=1,N) || HNDSF234
+56	2871	OK	  190 GO TO 104                                                         WNDSF235	190 GO TO 104 || WNDSF235
+57	2915	OK	 106  OLDPS=PSIZ(J)                                                     HNDSF236	106 OLDPS=PSIZ(J) || HNDSF236
+58	2957	OK	      OLDZ=ZPAR(J)                                                      WN0SF237	OLD Z=ZP AR(J) || WN0SF237
+59	2999	OK	      OLDT=TP(J)                                                        WNDSF238	OLDT=TP(J) || WNDSF238
+60	3044	OK	C                                                                       WNDSF239	C || WNDSF239
+61	3086	OK	C     DIO J-TH PARTICLE LEAVE THE CLOUD.   NC TO 115                    WNDSF240	C DIO J-TH PARTICLE LEAVE THE CLOUD. NC TO 115 || WNDSF240
+62	3151	OK	                                      100                                       	100
+63	3278	COUNT 3/71;COUNT 3/8	                                                                                	--- || ---

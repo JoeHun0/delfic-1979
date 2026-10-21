@@ -1,0 +1,7 @@
+1	1	COUNT 0/14	                                                                                	
+3	491	OK	      VIS=1.458E-6*T**1.5/(110.4*T)                                             	VIS=1.458E-6*T**1.5/(110.4*T)
+13	914	COUNT 19/20	                                                                                	A=3.1415927+3+2+0ST
+16	1042	OK	      D=A*CG(J)                                                                 	D=A*CG(J)
+17	1093	OK	      CHLR=CHLR+C*D*Y(J)                                                        	CHLR=CHLR+C*D*Y(J)
+43	2510	OK	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,        	2 DZ ,ED ,EK ,EPS ,ES ,HLR ,KS ,KSV ,MWYA ,
+44	2554	OK	     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    ,        	3 N ,NNN ,P ,PH ,R ,RA ,RL ,RM ,RZT ,

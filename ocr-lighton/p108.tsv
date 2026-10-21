@@ -1,0 +1,62 @@
+1	19	COUNT 0/28	                                                                                	
+2	565	OK	C                                                                       ADVEC 27	C || ADVEC 27
+3	608	OK	      DATA EPS/0.1/                                                     ADVEC 28	DATA EPS/0.1/ || ADVEC 28
+4	650	OK	C                                                                       ADVEC 29	C || ADVEC 29
+5	695	OK	      MC3=MC(3)                                                         ADVEC 30	MC3 = MC(3) || ADVEC 30
+6	737	OK	CHANGE ZP FROM PARCEL CENTER TO PARCEL BASE ALTITUDE.                   ADVEC 31	CHANGE ZP FROM PARCEL CENTER TO PARCEL BASE ALTITUDE. || ADVEC 31
+7	780	OK	      ZP=ZLOW                                                           ADVEC 32	ZP = ZLOW || ADVEC 32
+8	822	OK	CALCULATE TRANSPORT OF PARCEL BASE.                                     ADVEC 33	CALCULATE TRANSPORT OF PARCEL BASE. || ADVEC 33
+9	866	OK	      IF (   (ZP-ZMIN).GT.EPS) GO TO 1411                               ADVEC 34	IF ( (ZP-ZMIN).GT.EPS) GO TO 1411 || ADVEC 34
+10	907	OK	      TOL=TP                                                            ADVEL 35	TOL = TP || ADVEL 35
+11	951	COUNT 0/6	                                                                        ADVEC 36	 || ADVEC 36
+12	995	OK	      YOL=YP                                                            ADVEC 37	YOL = YP || ADVEC 37
+13	1036	COUNT 0/6;COUNT 10/7	                                                                                	 || AD \vee EC 38
+14	1079	COUNT 13/6	                                                                        ADVEC 39	RGL = 0. \bullet || ADVEC 39
+15	1123	OK	      SIGXL=RWAF                                                        ADVEC 40	SIGXL = RWA F || ADVEC 40
+16	1165	OK	      SIGYL=RWAF                                                        ADVEC 41	SIGYL=RWA F || ADVEC 41
+17	1209	COUNT 9/7	      GO TO 1412                                                                	GO TO 1412 || \mu D VEC 42
+18	1252	OK	 1411 CALL       TRANP(NET,NETSU,ZBH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM,  ADVEC 43	1411 CALL TRANP (NET, NETSU, ZBH, TIMUP, USUM, VSUM, DXSUM, DYSUM, RSUM, || ADVEC 43
+19	1295	OK	     1HFZ,CAVS,TSUM,TMAX,XCL,YOL,ZOL,TOL,SIGXL,SIGYL,RCL,NDATL,         ADVEC 44	1HFZ,CAVS,TSUM,TMAX,XCL,YOL,ZOL,TOL,SIGXL,SIGYL,RCL,NDATL, || ADVEC 44
+20	1337	OK	     2ICF,JCF,NCF,KBHF,NDATF,LTIMF)                                     AOVEC 45	2ICF,JCF,NCF,KBHF,NDATF,LTIMF) || AOVEC 45
+21	1380	OK	CHANGE ZP FROM PARCEL BASE TO PARCEL TOP ALTITUDE.                      ADVEC 46	CHANGE ZP FROM PARCEL BASE TO PARCEL TOP ALTITUDE. || ADVEC 46
+22	1423	OK	 1412 ZP=ZLON+DHAF                                                      ADVEC 47	1412 ZP = ZLON + DHA F || ADVEC 47
+23	1466	OK	CALCULATE TRANSPORT OF PARCEL TOP.                                      ADVEC 48	CALCULATE TRANSPORT OF PARCEL TOP. || ADVEC 48
+24	1510	OK	      IF( ZP-ZMIN .GT.EPS) GO TO 1414                                   ADVEC 49	IF( ZP-ZMIN .GT.EPS) GO TO 1414 || ADVEC 49
+25	1553	OK	      TOU=TP                                                            ADVEC 50	TOU = TP || ADVEC 50
+26	1597	OK	      XOU=XP                                                            ADVEC 51	XOU = XP || ADVEC 51
+27	1640	OK	      YOU=YP                                                            ADVEC 52	YOU=YP || ADVEC 52
+28	1681	OK	      Z0U=ZP                                                            ADVEC 53	Z0U = ZP || ADVEC 53
+29	1725	COUNT 0/6	                                                                        ADVEC 54	 || ADVEC 54
+30	1768	OK	      SIGXU=RWAF                                                        ADVEC 55	SIG XU=R WAF || ADVEC 55
+31	1810	OK	      SIGYU=RWAF                                                        ADVEC 56	SIGYU=RWA F || ADVEC 56
+32	1853	OK	      GO TO 1415                                                        ADVEC 57	GO TO 1415 || ADVEC 57
+33	1895	OK	 1414 CALL       TRANP(NET,NETSU,ZBH,TIMUP,USUM,VSUM,CXSLM,DYSUM,RSUM,  ADVEC 58	1414 CALL TRANP(NET,NETSU,ZBH,TIMUP,USUM,VSUM,CXSLM,DYSUM,RSUM, || ADVEC 58
+34	1929	OK	     1WFZ,CAVS,TSUM,TMAX,XCU,YOU,ZOU,TOU,SIGXU,SIGYU,RCU,NDATU,         ADVEC 59	1 WFZ, CAVS, TSUM, TMAX, XCU, YOU, ZOU, TOU, SIGXU, SIGYU, RCU, NDATU, || ADVEC 59
+35	1980	OK	     2ICF,JCF,NCF,KBHF,NCAIF,LTIMF)                                     ADVEC 60	2ICF, JCF, NCF, KBHF, NCAIF, LTIMF) || ADVEC 60
+36	2024	OK	CALCULATE SMEAR OF PARCEL TOP AND BASE RESULTS.                         AOVEC 61	CALCULATE SMEAR OF PARCEL TOP AND BASE RESULTS. || AOVEC 61
+37	2067	OK	 1415 ZOUTN=(ZOL+ZOU)/2.                                                ADVEL 62	1415 ZOUTN = (ZOL + ZOU) / 2. || ADVEL 62
+38	2109	OK	      TOUTN=(TOL+TOU)/2.                                                ADVEC 63	TOUTN = (TOL + TOU) / 2. || ADVEC 63
+39	2154	OK	      IF(ABS(XOU-XOL).GE.1.0E-30) GO TO 1404                            AOVEC 64	IF(ABS(XOU-XOL).GE.1.0E-30) GO TO 1404 || AOVEC 64
+40	2195	OK	      IF(ABS(YOU-YOL).GE.1.0E-30) GO TO 1403                            ADVEC 65	IF(ABS(YOU-YOL).GE.1.0E-30) GO TO 1403 || ADVEC 65
+41	2239	OK	      ROUTN=0.                                                          ADVEC 66	ROUTN=0. || ADVEC 66
+42	2283	OK	      GO TO 1405                                                        ADVEC 67	GO TO 1405 || ADVEC 67
+43	2324	OK	 1403 ROUTN=1.57079633                                                  ADVEC 68	1403 ROUTN=1.57079633 || ADVEC 68
+44	2368	OK	      GO TO 1405                                                        ADVEC 69	GO TO 1405 || ADVEC 69
+45	2411	OK	 1404 ROUTN=ATAN((YOU-YOL)/(XOU-XOL))                                   ADVEC 70	1404 ROUTN=ATAN((YOU-YOL)/(XOU-XOL)) || ADVEC 70
+46	2452	OK	      IF(XOU-XOL .LT. 0.0) ROUTN=ROUTN - SIGN(3.141592E54,ROUTN)        AOVEC 71	IF(XOU-XOL .LT. 0.0) ROUTN=ROUTN - SIGN(3.141592E54,ROUTN) || AOVEC 71
+47	2498	OK	 1405 R=ROUTN-ROL                                                       ADVEC 72	1405 R=ROUTN-ROL || ADVEC 72
+48	2540	COUNT 0/48	                                                                        ADVEC 73	 || ADVEC 73
+49	2583	COUNT 0/48	                                                                        ADVEC 74	 || ADVEC 74
+50	2626	COUNT 12/11	                                                                        ADVEC 75	R = ROUTN - R.OU || ADVEC 75
+51	2669	COUNT 0/48	                                                                        ADVEC 76	 || ADVEC 76
+52	2711	COUNT 0/48	                                                                        ADVEC 77	 || ADVEC 77
+53	2753	COUNT 0/50	                                                                        ADVEC 78	 || ADVEC 78
+54	2796	COUNT 40/19	                                                                        ADVEC 79	SYOTN = S\sqrt{T\left(SYU \times SYL\right)} || ADVEC 79
+55	2838	COUNT 0/32	                                                                        ADVEC 80	 || ADVEC 80
+56	2881	COUNT 0/32	                                                                        ADVEC 81	 || ADVEC 81
+57	2925	COUNT 70/69	                                                                        ADVEC 82	1450 CALL DUMPER(XOUTN,YCLTN,ZOUTN,TCOUTN,SXOTN,SYCTN,FMAS,PSIZ,ROUTN,J, || ADVEC 82
+58	2968	OK	     1ISOUT,IPCUT,MC3)                                                  ADVEC 53	1ISOUT,IPCUT,MC3) || ADVEC 53
+59	3010	OK	      RETURN                                                            ADVEC 84	RETURN || ADVEC 84
+60	3056	OK	      END                                                               ADVEC 85	END || ADVEC 85
+61	3129	OK	                                       105                                      	105
+62	3311	COUNT 0/36	                                                                                	

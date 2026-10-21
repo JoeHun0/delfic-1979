@@ -1,0 +1,43 @@
+1	5	40	NONE	                                                                        			
+2	64	76	NONE	                                                                        			
+3	769	799	NONE	                                                                        			DST8N61
+4	813	843	SINGLE	      PS(1)=BARMU+APX(PRB)*SIGMA                                        		glm=      PS(1)=BARMU+APX(PRB)*SIGMA	DSTBN62
+5	855	885	VOTED	      PS(NDSTR)=BARMU-APX(FRB)*SIGMA                                    		lighton=      PS(NDSTR)=BARMU-APX(FRB)*SIGMA ## dots=      PS(NOSTR)=BARMU-APX(FRB)*SIGMA ## glm=      PS(NDSTR)=BARMU-APX(FRB)*SIGMA	DSTBN63
+6	899	928	AGREE	      DIAM(1)=2.*PS(1)-DIAM(2)                                          		dots=      DIAM(1)=2.*PS(1)-DIAM(2) ## glm=      DIAM(1)=2.*PS(1)-DIAM(2)	DSTBN64
+7	941	972	TIE	      DIAM(LD)=2.*PS(NOSTR)-DIAM(NOSTR)                                 	23,35	dots=      DIAM(LD)=2.*PS(NOSTR)-DIAM(NOSTR) ## glm=      DIAM(LD)=2.*PS(NDSTR)-DIAM(NDSTR)	DSTBN65
+8	984	1014	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OST8N66
+9	1027	1058	COMMENT	C     CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES                     		lighton=C     CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES ## dots=C     CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES	DSTBN67
+10	1058	1100	COMMENT	C                                                                       			DSTBN68
+11	1113	1142	AGREE	      J=NOSTR-1                                                         		lighton=      J=NOSTR-1 ## dots=      J=NOSTR-1 ## glm=      J=NOSTR-1	OST8N69
+12	1156	1189	VOTED	      IF(J-1)107,107,105                                                		lighton=      IF(J-1)107,107,105 ## dots=      IF(J-1)107,107,105 ## glm=      IF（J-1）107，107，105	DST8N70
+13	1198	1231	VOTED	  105 00 106 I=2,J                                                      		lighton=  1C5 00 106 I=2,J ## dots=  105 00 106 I=2,J ## glm=  105 00 106 I=2，J	DSTBN71
+14	1240	1271	TIE	  106 PS(I)=0.5*(DIAM(I)+CJAM(I+1))                                     	27	lighton=  106 PS(I)=0.5*(DIAM(I)+CJAM(I+1)) ## glm=  106 PS(I)=0.5*(DIAM(I)+CIAM(I+1))	OSTBN72
+15	1283	1317	VOTED	  107 00 108 I=1,NDSTR                                                  		lighton=  107 00 108 I=1,NDSTR ## dots=  107 00 108 I=1,NDSTR ## glm=  107 DO 108 I=1,NDSTR	DSTBN73
+16	1328	1360	AGREE	      DIAM(I)=EXP(DIAM(I)) *1.0E-6                                      		dots=      DIAM(I)=EXP(DIAM(I)) *1.0E-6 ## glm=      DIAM(I)=EXP(DIAM(I)) *1.0E-6	DSTBN74
+17	1370	1401	AGREE	  106 PS(I)=EXP(PS(I))*1.0E-6                                           		lighton=  106 PS(I)=EXP(PS(I))*1.0E-6 ## dots=  106 PS(I)=EXP(PS(I))*1.0E-6 ## glm=  106 PS(I)=EXP(PS(I))*1.0E-6	OSTBN75
+18	1414	1444	TIE	      DIAM(LD)=EXP(DIAM(LC)) *1.0E-6                                    	13	dots=      DIAM(LD)=EXP(DIAM(LC)) *1.0E-6 ## glm=      DIAM(LO)=EXP(DIAM(LC)) *1.0E-6	DSTBN76
+19	1456	1487	AGREE	      GO TO 400                                                         		lighton=      GO TO 400 ## dots=      GO TO 400 ## glm=      GO TO 400	OST9N77
+20	1498	1531	AGREE	  200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT)                 		lighton=  200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT) ## glm=  200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT)	DSTBN78
+21	1541	1572	VOTED	      AN=FLOAT(NDSTR)                                                   		lighton=      AN=FLOAT(NDSTR) ## dots=      AN=FLOAT(NOSTR) ## glm=      AN=FLOAT(NDSTR)	DSTBN79
+22	1584	1621	AGREE	      FRAC=1.0/AN                                                       		lighton=      FRAC=1.0/AN ## dots=      FRAC=1.0/AN ## glm=      FRAC=1.0/AN	DSTBN80
+23	1621	1660	VOTED	      00 205 I=1,NDSTR                                                  		lighton=      00 205 I=1,NOSTR ## dots=      00 205 I=1,NDSTR ## glm=      00 205 I=1,NDSTR	OST8N81
+24	1670	1702	AGREE	  205 FMASS(I)=FRAC                                                     		lighton=  205 FMASS(I)=FRAC ## dots=  205 FMASS(I)=FRAC ## glm=  205 FMASS(I)=FRAC	OSTON32
+25	1714	1746	SINGLE	      POW=1.0/(4.0-EXPO)                                                		glm=      POW=1.0/(4.0-EXPO)	OSTBN63
+26	1756	1787	SINGLE	      DMIN = (6.J*FRAC/(PI*RHOF*CAYM*POW))**P0k                         		glm=      DMIN = (6.J*FRAC/(PI*RHOF*CAYM*POW))**P0k	OSTBN84
+27	1799	1832	AGREE	      DO 2J6 IJ=1,NDSTR                                                 		lighton=      DO 2J6 IJ=1,NDSTR ## dots=      DO 2J6 IJ=1,NDSTR ## glm=      DO 2J6 IJ=1,NDSTR	OSTBN85
+28	1843	1874	TIE	      AJ=IJ-1                                                           	12	lighton=      AJ=IJ-1 ## glm=      AJ=IJ=1	OSTBN86
+29	1885	1917	SINGLE	  206 DIAM(IJ:-/2N-AJ)**PCW*DMIN                                        		glm=  206 DIAM(IJ:-/2N-AJ)**PCW*DMIN	DSTBN87
+30	1917	1960	TIE	      PS(NOSTR)=OMIN*0.5**POW                                           	11,17	dots=      PS(NOSTR)=OMIN*0.5**POW ## glm=      PS(NDSTR)=0MIN*0.5**POW	DSTBN88
+31	1972	2003	SINGLE	      DIAM(LO)=PS(NOSTR)**2/DIAM(NOSTR)                                 		glm=      DIAM(LO)=PS(NOSTR)**2/DIAM(NOSTR)	OST8N89
+32	2014	2046	TIE	      NO=NDSTR-1                                                        	11	dots=      NO=NDSTR-1 ## glm=      NO=NOSTR-1	OST8N90
+33	2056	2091	VOTED	      DO 207 IJ=1,ND                                                    		lighton=      00 207 IJ=1,ND ## dots=      DO 207 IJ=1,ND ## glm=      DO 207 IJ=1,ND	DSTBN91
+34	2100	2132	AGREE	  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1))                                  		lighton=  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1)) ## dots=  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1)) ## glm=  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1))	OSTBN92
+35	2143	2174	AGREE	      GO TO 400                                                         		lighton=      GO TO 400 ## dots=      GO TO 400 ## glm=      GO TO 400	OSTBN93
+36	2187	2220	VOTED	  300 00 301 I=1,NDSTR                                                  		lighton=  309 00 301 I=1,NDSTR ## dots=  300 00 301 I=1,NDSTR ## glm=  300 00 301 I=1,NDSTR	OSTRN94
+37	2229	2263	VOTED	  3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.0E-6                              		lighton=  3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.0E-6 ## dots=  301 PS(I)=SORT(DIAM(I)*DIAM(I+1))*1.0E-6 ## glm=  3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.QE-6	OSTBN95
+38	2271	2305	VOTED	      DO 308 IJ=1,LD                                                    		lighton=      DO 308 IJ=1,LO ## dots=      DO 308 IJ=1,LD ## glm=      DO 308 IJ=1,LD	CSTBN96
+39	2313	2350	AGREE	  308 DIAM(IJ)=1.0E-6*DIAM(IJ)                                          		dots=  308 DIAM(IJ)=1.0E-6*DIAM(IJ) ## glm=  308 DIAM(IJ)=1.0E-6*DIAM(IJ)	DST8N97
+40	2350	2390	AGREE	  400 RETURN                                                            		lighton=  400 RETURN ## dots=  400 RETURN ## glm=  400 RETURN	DOSTAN98
+41	2400	2431	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	OSTBN99
+42	3131	3161	TIE	                                        56                              	41	lighton=                                        56 ## glm=                                        66	
+43	3296	3335	NONE	                                                                        			

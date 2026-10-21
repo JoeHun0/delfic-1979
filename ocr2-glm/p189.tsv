@@ -1,0 +1,20 @@
+1	0	COUNT 3/18	                                                                                	---
+4	624	OK	      IF （LSU8.GT.11） GO TC 1301                                                	IF（LSU8.GT.11）GO TC 1301
+5	668	COUNT 16/15	                                                                                	NUC (1.SU8) = NDAUT
+14	1055	OK	      SCA（LSUB） = 1.0                                                           	SCA（LSUB）=1.0
+15	1099	OK	      LAST = LSUB + 1                                                           	LAST = LSUB + 1
+17	1184	OK	      LBACK = LAST - L                                                          	LBACK = LAST - L
+26	1571	COUNT 14/13	                                                                                	SCA（L.SUB）= 0.0
+31	1785	OK	      SCA(J) = SCA(J)*ABEGN(JN)                                                 	SCA(J) = SCA(J) * ABEGN(JN)
+46	2428	OK	      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)·TEXIT)                             	IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)·TEXIT)
+47	2474	OK	      B=J.0                                                                     	B=J.0
+48	2518	OK	      DO 163 K1=1，N                                                             	DO 163 K1=1，N
+51	2647	COUNT 9/10	                                                                                	00 162 K=1 N
+52	2690	OK	      K2=N=K+1                                                                  	K2=N=K+1
+55	2818	OK	      FACTC=SDC(K2)-SDC(K1)                                                     	FACTC=SDC(K2)-SDC(K1)
+56	2860	OK	      IF(A>S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15.FACTC)                         	IF (A>S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15.FACTC)
+57	2905	COUNT 15/14	                                                                                	CN1J=CN1J/F AC?C
+58	2947	COUNT 31/29	                                                                                	162 IF ( K2 . LE . K1 ) Q = Q • CN2 J • SCA ( K2 )
+59	2990	COUNT 13/12	                                                                                	IF(J0) GO TO 163
+60	3034	COUNT 24/25	                                                                                	IF (SRC(K1).LE.J1.GC TC 15J
+61	3079	COUNT 11/10	                                                                                	0*2/50C (K1)

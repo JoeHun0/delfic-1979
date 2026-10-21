@@ -1,0 +1,21 @@
+2	41	COUNT 0/22	                                                                                	
+3	77	COUNT 0/14	                                                                                	
+9	824	OK	      DO 5444 J=1,8                                                             	DO 5444 J=1,8
+16	1129	COUNT 0/37	                                                                                	
+17	1171	COUNT 0/37	                                                                                	
+18	1214	OK	      OPST(7,MBT)=OPST(2,2)                                                     	OPST(7, MBT) = OPST(2, 2)
+19	1256	COUNT 0/46	                                                                                	
+39	2106	OK	      GDPST(6,LODO)=DPST(2,MBT)                                                 	GDPST(6,LODO)=DPST(2,MBT)
+40	2157	COUNT 32/25	                                                                                	GDPST(4,LODO) = DPS \tilde{} (4,MBT)
+41	2200	OK	      GDPST(3,LODO)=DPST( 1,MBT)                                                	GDPST(3,LODO)=DPST( 1,MBT)
+42	2236	OK	      GDPST(5,LOOO)=DPST(5,MBT)                                                 	GDPST(5,LOOO)=DPST(5,MBT)
+43	2286	OK	      GDPST(1,LODD)=0.                                                          	GDPST(1,LODD)=0.
+44	2329	OK	      GDPST(2,L000)=0.                                                          	GDPST(2, L000) = 0.
+45	2371	OK	      GDPST(7,LODD)=UPST(3,MBT)                                                 	GDPST(7,LODD)=UPST(3,MBT)
+46	2414	OK	      GDPST(8,LODD)=DPST(6,MBT)                                                 	GDPST(8,LODD)=DPST(6,MBT)
+47	2457	OK	      GDPST(9,LODC)=DPST(7,MAT)                                                 	GDPST(9,LODC)=DPST(7,MAT)
+48	2493	OK	      GDPST(10,LODD)=DPST(8,MBT)                                                	GDPST(10,LODD)=DPST(8,MBT)
+50	2586	OK	 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002                                    	1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002
+60	3013	COUNT 12/13	                                                                                	721C  EX=EX+8Z
+65	3292	COUNT 25/33	                                                                                	\text{الخطاء المُستَفَدَة}
+66	3344	COUNT 13/31	                                                                                	\text{الدالة}

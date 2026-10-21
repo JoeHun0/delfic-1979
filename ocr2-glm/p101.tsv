@@ -1,0 +1,9 @@
+2	533	OK	      COMMON /TABLES/ MCX， CX(50,10)， GDPST(10,100)                             	COMMON / TABLES/ MCX，CX(50,10)，GDPST(10,100)
+5	663	OK	     1  Z8(50)，  V8(50)，  VT(50)， XPAR(1JU)， YPAR(1JU)， TP(1U0)，                	1 Z8(50)，V8(50)，VT(50)，XPAR(1JU)，YPAR(1JU)，TP(1U0)，
+26	1566	OK	     2//(1X.10E12.5))                                                           	2//(1X.10E12.5))
+29	1694	OK	     2//（1X，10E12.5))                                                           	2//（1X，10E12.5))
+34	1909	COUNT 13/14	                                                                                	100 IRROR=-100
+41	2208	OK	      WRITE(JPARN)XG7=YCZ,TGZ                                                   	WRITE (JPARN)XG7=YCZ,TGZ
+43	2288	COUNT 18/17	                                                                                	WRITE (JPARN) ND STP.
+52	2681	OK	      ZC(I) = (Z8(I)+ZT(I))/2.0                                                 	ZC(I) = (Z8(I) + ZT(I))/2.0
+63	3281	COUNT 3/45	                                                                                	---

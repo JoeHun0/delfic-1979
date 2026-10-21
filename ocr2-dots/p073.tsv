@@ -1,0 +1,13 @@
+1	12	COUNT 0/9	                                                                                	
+3	570	COUNT 14/13	                                                                                	30 FORMAT (12A6)
+8	778	COUNT 26/27	                                                                                	LHRLH, 11X, 3HRHO, 11X, 3FETA)
+19	1252	COUNT 34/24	                                                                                	\text{WATCOR} = (1.0 - 18.0/29.0) / 100.
+43	2285	OK	      IF(AP(N1) .GE. ALIMIT) GO TO 105                                          	IF (AP(N1) .GE. ALIMIT) GO TO 105
+44	2334	OK	      I = I+1                                                                   	I = I + 1
+45	2376	COUNT 66/33	                                                                                	\text{ALT}(I) = (\text{AP}(N1) + \text{SCALE}(7)) \times \text{SCALE}(1)
+46	2418	COUNT 66/33	                                                                                	\text{ATP(I)} = (\text{AP(N2)} + \text{SCALE(8)}) \times \text{SCALE(2)}
+47	2462	COUNT 49/22	                                                                                	\mathrm{PRS}(I) = \mathrm{AP}(N3) * \mathrm{SCALE}(I)
+50	2590	COUNT 43/22	                                                                                	\text{ETA}(I) = \text{AP}(N6) * \text{SCALE}(E)
+60	3022	COUNT 72/41	                                                                                	\text{ETA(I)} = 1.458E-6 \times \text{ATP(I)}^{**} + 1.5 / (110.4 + \text{ATP(I)})
+61	3065	COUNT 27/26	                                                                                	1070 IF (PRS(I).GT.0.0) GC TO 73
+63	3268	COUNT 0/33	                                                                                	

@@ -1,0 +1,57 @@
+1	1	COUNT 0/18;COUNT 17/1	                                                                                	 || \text{1234567890}
+2	73	COUNT 133/11;COUNT 18/4	                                                                                	- 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. || \text{M. A. B. - - - - -}
+3	795	OK	C                                                                       CRM   36	C || CRM 36
+4	838	COUNT 34/24	                                                                        CRM   37	35 P\mathcal{W} = P * X * 29. / (18. + 29. * X) || CRM 37
+5	873	OK	C                                                                       CRM   38	C || CRM 38
+6	923	OK	C     COMPUTE SATURATION WATER VAPOR PRESSURE AND CLOUD AIR MASS        CRM   39	C     COMPUTE SATURATION WATER VAPOR PRESSURE AND CLOUD AIR MASS || CRM 39
+7	968	OK	C                                                                       CRM   40	C || CRM 40
+8	1008	COUNT 0/47	                                                                        CRM   41	 || CRM 41
+9	1052	COUNT 27/26	                                                                        CRM   42	PA..RM/V*(1.+X)/(1.+X+S+WT) || CRM 42
+10	1095	OK	C                                                                       CRM   43	C || CRM 43
+11	1136	OK	C     WET OR DRY EQUATIONS                                              CRM   44	C WET OR DRY EQUATIONS || CRM 44
+12	1182	OK	C                                                                       CRM   45	C || CRM 45
+13	1226	OK	      GO TO (150,1531,1531),N                                           CRM   46	GO TO (150,1531,1531),N || CRM 46
+14	1267	OK	  150 IF(ES-PW)152,152,1531                                             CRM   47	150 IF (ES-PW) 152, 152, 1531 || CRM 47
+15	1311	OK	C                                                                       CRM   48	C || CRM 48
+16	1352	OK	C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2)   CRM   49	C     STORE VARIABLES(KSV=1) OR RESTART AT PREVIOUS TIME STEP (KSV=2) || CRM 49
+17	1396	OK	C                                                                       CRM   50	C || CRM 50
+18	1440	OK	  152 KSV=2                                                             CPM   51	152 KSV=2 || CPM 51
+19	1484	OK	 1532 CALL RSTR                                                         CRM   52	1532 CALL RSTR || CRM 52
+20	1526	OK	    9 VTEMPY=V                                                          CRM   53	9 VTEMPY=V || CRM 53
+21	1571	OK	C                                                                       CRM   54	C || CRM 54
+22	1613	OK	C     INTEGRATE                                                         CRM   55	C INTEGRATE || CRM 55
+23	1655	OK	C                                                                       CRM   56	C || CRM 56
+24	1700	OK	      CALL RKGILL                                                       CRM   57	CALL RKGILL || CRM 57
+25	1743	OK	C                                                                       CRM   58	C || CRM 58
+26	1784	OK	C         ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH CRM   59	C ADJUST IN-CLOUD PARTICLE CONCENTRATIONS TO BE CONSISTENT WITH || CRM 59
+27	1827	OK	C     CLOUD VOLUME CHANGE                                               CRM   60	C CLOUD VOLUME CHANGE || CRM 60
+28	1871	OK	C                                                                       CRM   61	C || CRM 61
+29	1913	OK	      00 96 J=1,NOSTR                                                   CRM   62	00 96 J=1,NOSTR || CRM 62
+30	1955	OK	   86 Y(J)=Y(J)*VTEMPY/V                                                CRM   53	86 Y(J) = Y(J) * VTEMPY/V || CRM 53
+31	2000	COUNT 12/5	C                                                                               	C || CRM: \dot{e}4
+32	2041	OK	C     ACCUMULATE CLOUD TIME                                             CRM   65	C ACCUMULATE CLOUD TIME || CRM 65
+33	2085	OK	C                                                                       CRM   66	C || CRM 66
+34	2127	COUNT 0/17	                                                                        CRM   67	 || CRM 67
+35	2169	OK	C                                                                       CRM   68	C || CRM 68
+36	2212	OK	C     TEST FOR TIME STEP CHANGE                                         CRM   69	C TEST FOR TIME STEP CHANGE || CRM 69
+37	2255	COUNT 28/5	      IF(A9S(SMALLT-1.0).LT.0.001)GO TO 87                                      	IF (A9S(SMALLT-1.0).LT.0.001) GO TO 87 || \text{LR}^{\text{''}} \quad 7U
+38	2297	COUNT 22/21	                                                                        CRM   71	IF(SMALLT-1.(C)8,87,88 || CRM 71
+39	2341	OK	   87 DST=OST1                                                          CRM   72	87 DST=OST1 || CRM 72
+40	2384	OK	   88 R=SQRT(3.*√/(RZT*12.566370620))                                   CRM   73	88 R=SQRT(3.*√/(RZT*12.566370620)) || CRM 73
+41	2427	COUNT 7/6;COUNT 49/5	                                                                                	GUTT.15 || \downarrow \quad \text{?} \quad \text{?} \quad \text{?}
+42	2456	COUNT 11/2;COUNT 16/5	                                                                                	\mathcal{L} || \begin{array}{c}
+43	2513	COUNT 6/5	(     COMPUTE PARTICLE FALLCUT RATI                                             	( COMPUTE PARTICLE FALLCUT RATI || C R 11  1 1
+44	2555	COUNT 7/5	C                                                                               	C || C 2.11 77
+45	2600	OK	 1531 CALL CPFR                                                         LRM   78	1531 CALL CPFR || LRM 78
+46	2642	OK	      GO TO (9J1,901,8),MWY.                                            CRM   79	GO TO (9J1,901,8),MWY. || CRM 79
+47	2684	OK	  901 IF(IC(6) .NE. 0) CALI DBG                                         CRM   80	901 IF(IC(6) .NE. 0) CAL I DBG || CRM 80
+48	2727	OK	      CALL DCSN                                                         CRM   81	CALL DCSN || CRM 81
+49	2771	OK	    8 CALL CXPN                                                         CRM   82	8 CALL CX PN || CRM 82
+50	2812	OK	      GO TO (724,724,148),PHYA                                          CRM   83	GO TO (724,724,148),PHYA || CRM 83
+51	2856	OK	  724 KSV=1                                                             CRM   84	724 KSV=1 || CRM 84
+52	2900	OK	      GO TO 1532                                                        CRM   85	GO TO 1532 || CRM 85
+53	2940	OK	  148 CALL CRMW                                                         CRM   86	148 CALL CRMW || CRM 86
+54	2983	OK	      PETERN                                                            CRM   87	PETER N || CRM 87
+55	3029	OK	      END                                                               CRM   t8	END || CRM t8
+56	3137	OK	                                        76                                      	76
+57	3280	COUNT 0/22;COUNT 21/4	                                                                                	 || ![image](image_1.png)

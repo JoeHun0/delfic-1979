@@ -1,0 +1,65 @@
+1	19	COUNT 133/7	                                                                                	\text{[Image content: A black-and-white, low-resolution, pixelated image showing a line of text or code. The text is not legible due to the image quality.]}
+2	38	COUNT 0/39	                                                                                	
+3	564	OK	      IF(SPEC .EQ. HINO) WRITE( ISOUT,20)                               TR101121	IF(SPEC .EQ. HINO) WRITE( ISOUT,20) || TR101121
+4	607	OK	      IF(SPEC .EQ. TURB) WRITE( ISOUT,21)                               TRIOI122	IF(SPEC .EQ. TURB) WRITE( ISOUT,21) || TRIOI122
+5	642	OK	      IF(SPEC .EQ. WIND)WRITE(ISOUT, 3)(J,ZS(J),XS(J),YS(J),SX(J),SY(J),TRIDI123	IF(SPEC .EQ. WIND)WRITE(ISOUT, 3)(J,ZS(J),XS(J),YS(J),SX(J),SY(J), || TRIDI123
+6	692	OK	     1 SZ(J),J=1,JTOPW)                                                 TRIOI124	1 SZ(J), J=1, JTOPW) || TRIOI124
+7	735	COUNT 64/63	                                                                        TRIDI125	IF(SPEC .EQ. TURB) WRITE(ISOUT,33) (J,ZS(J),XS(J),YS(J),SX(J),SY(J)) || TRIDI125
+8	777	OK	     1 ,J=1,JTOPV)                                                      TRIOI126	1 ,J=1,JTOPV) || TRIOI126
+9	819	OK	  102 IF(NN.GT.JTOPV .OR. AN.LT. 0) NN=JTOPV                            TRIOI127	102 IF(NN.GT.JTOPV .OR. AN.LT. 0) NN=JTOPV || TRIOI127
+10	863	OK	  115 IF(NN.LT.1) CALL ERRCR(PROGRM,-115,ISOUT)                         TRIOI128	115 IF(NN.LT.1) CALL ERRCR(PROGRM,-115,ISOUT) || TRIOI128
+11	899	COUNT 9/8	      WRITE(ISOUT,4)NN,JTOFV                                                    	WRITE(ISOUT,4)NN,JTOFV || 621101129
+12	949	OK	COMMENCE CALCULATION OF DATA VECTOR AT EACH SPACE LATTICE CENTER POINT  TRIDI130	COMMENCE CALCULATION OF DATA VECTOR AT EACH SPACE LATTICE CENTER POINT || TRIDI130
+13	992	OK	C     USING NN NEAREST IMPLT VECTORS                                    TRID1131	C USING NN NEAREST IMPLT VECTORS || TRID1131
+14	1034	OK	      NN1=NN+1                                                          TRIOI1J2	NN1 = NN + 1 || TRIOI1J2
+15	1078	OK	COMMENCE LOOP ON LATTICE CENTER POINTS IN THE HORIZONTAL PLANE.         TRIDI133	COMMENCE LOOP ON LATTICE CENTER POINTS IN THE HORIZONTAL PLANE. || TRIDI133
+16	1122	OK	      DO 906 NDATA=1,NDATX                                              TRIDI134	DO 906 NDATA=1,NDATX || TRIDI134
+17	1164	OK	      CALL CNTR(NET,NETSU,NDATA,XG,YG,ICF,JCF,NCF)                      TRIOI135	CALL CNTR(NET,NETSU,NDATA,XG,YG,ICF,JCF,NCF) || TRIOI135
+18	1207	OK	COMMENCE LOOP ON ATMOSPHERIC STRATA.                                    TRIOI136	COMMENCE LOOP ON ATMOSPHERIC STRATA. || TRIOI136
+19	1251	OK	      DO 905 KBH=1,KBHX                                                 TRIOI137	DO 905 KBH=1,KBHX || TRIOI137
+20	1292	COUNT 0/11	                                                                        TRIDI138	 || TRIDI138
+21	1336	OK	      DO 273 J=1,JTOPV                                                  TR10I139	DO 273 J=1, JTOPV || TR10I139
+22	1381	OK	C                                                                       TRIOI140	C || TRIOI140
+23	1422	OK	C     SET ALL NAD(J) EQUAL TO J TO PROVIDE INDICES FOR THE FULL SET OF  TRIOI141	C     SET ALL NAD(J) EQUAL TO J TO PROVIDE INDICES FOR THE FULL SET OF || TRIOI141
+24	1465	OK	C     DATA POINTS AND TO PROVIDE AN INITIAL SET OF -NEAREST- DATA POINTSTRIDI142	C DATA POINTS AND TO PROVIDE AN INITIAL SET OF -NEAREST- DATA POINTS || TRIDI142
+25	1508	COUNT 0/8	                                                                        TR101143	 || TR101143
+26	1552	OK	C                                                                       TRIOI144	C || TRIOI144
+27	1595	OK	C     COMPUTE DISTANCES BETWEEN THE CURRENT LATTICE CENTER POINT        TR10I145	C     COMPUTE DISTANCES BETWEEN THE CURRENT LATTICE CENTER POINT || TR10I145
+28	1639	OK	C     (XG,YG,ZG) AND EACH CF THE INPUT DATA VECTOR LOCATIONS.           TRIDI146	C (XG,YG,ZG) AND EACH CF THE INPUT DATA VECTOR LOCATIONS. || TRIDI146
+29	1674	OK	C     EACH OF THE DATA VECTOR LOCATIONS                                 TRID1147	C EACH OF THE DATA VECTOR LOCATIONS || TRID1147
+30	1725	OK	      TX=XS(J)-XG                                                       TRIDI148	TX = XS(J) - XG || TRIDI148
+31	1766	OK	      TY=YS(J)-YG                                                       TR10I149	TY = YS(J) - YG || TR10I149
+32	1808	COUNT 0/11	                                                                        TRIDI150	 || TRIDI150
+33	1852	COUNT 0/12	                                                                        TRIOI151	 || TRIOI151
+34	1896	OK	      CUTOFF=ALFA2-CRESSZ                                               TR10I152	CUTOFF=ALFA2-CRESSZ || TR10I152
+35	1937	OK	      IF(CUTOFF.LE.0) GO TO 202                                         TRIOI153	IF(CUTOFF.LE.0) GO TO 202 || TRIOI153
+36	1981	COUNT 0/28	                                                                        TRIDI154	 || TRIDI154
+37	2025	COUNT 0/18	                                                                        TRIDI155	 || TRIDI155
+38	2066	OK	      CUTOFF=BETA2-CRESSR                                               TRID1156	CUTOFF = BETA2 - CRESSR || TRID1156
+39	2109	OK	      IF(CUTOFF.LE.D) GO TO 202                                         TRIDI157	IF(CUTOFF.LE.D) GO TO 202 || TRIDI157
+40	2153	COUNT 0/28	                                                                        TRIDI158	 || TRIDI158
+41	2196	COUNT 0/20	                                                                        TRIDI159	 || TRIDI159
+42	2238	OK	      IF(CRESS?.LE.GIB) GC TO 202                                       TRIDI160	IF(CRESS?.LE.GIB) GC TO 202 || TRIDI160
+43	2282	COUNT 0/16	                                                                        TRIDI161	 || TRIDI161
+44	2324	OK	      GO TO 203                                                         TRID1162	GO TO 203 || TRID1162
+45	2367	COUNT 9/8	  202 02(J)=8IG                                                                 	202 02(J)=8IG || TRIOJ.163
+46	2411	OK	 203  CONTINUE                                                          TRIDI164	203 CONTINUE || TRIDI164
+47	2454	OK	C                                                                       TRIDI165	C || TRIDI165
+48	2498	OK	C     SET NADT=1 TO BEGIN THE SORT PROCEDURE THAT SELECTS THE MOST      TRI0I166	C     SET NADT=1 TO BEGIN THE SORT PROCEDURE THAT SELECTS THE MOST || TRI0I166
+49	2541	COUNT 9/8	C     REMOTE OF THE SET OF -NEAREST- DATA POINTS.  NOTE THAT FOR THE 1ST        	C REMOTE OF THE SET OF -NEAREST- DATA POINTS. NOTE THAT FOR THE 1ST || TRIOI1.57
+50	2584	OK	C     PASS ALL THE NN -NEAREST- POINTS ARE EQUALLY LIKELY TO BE THE MOSTTR10I168	C PASS ALL THE NN -NEAREST- POINTS ARE EQUALLY LIKELY TO BE THE MOST || TR10I168
+51	2627	OK	C     REMOTE OF THE SET.                                                TRIOI1E9	C REMOTE OF THE SET. || TRIOI1E9
+52	2671	OK	      NADT=1                                                            TRIOI170	NADT=1 || TRIOI170
+53	2714	OK	C                                                                       TRIOI171	C || TRIOI171
+54	2756	OK	C     FIND THE ADDRESS OF AND DISTANCE TO THE MOST REMOTE POINT OF THE  TRID1172	C     FIND THE ADDRESS OF AND DISTANCE TO THE MOST REMOTE POINT OF THE || TRID1172
+55	2799	OK	C     NN -NEAREST- POINTS (THE POINTS WHOSE ADDRESSES ARE GIVEN BY      TR10I173	C     NN -NEAREST- POINTS (THE POINTS WHOSE ADDRESSES ARE GIVEN BY || TR10I173
+56	2840	OK	C     NAD(1),NAD(NN).) STORE THAT MAXIMUM DISTANCE IN THE WORD DM AND   TRIOI174	C     NAD(1),NAD(NN).) STORE THAT MAXIMUM DISTANCE IN THE WORD DM AND || TRIOI174
+57	2882	OK	C     SET NADT SUCH THAT DP=02(NAD(NADT)).                              TRIOI175	C SET NADT SUCH THAT DP=02(NAD(NADT)). || TRIOI175
+58	2927	COUNT 0/12	                                                                        TRIOI176	 || TRIOI176
+59	2968	COUNT 0/9	                                                                        TR10I177	 || TR10I177
+60	3012	OK	      00 207 J=1,NN                                                     TRIOI178	00 207 J=1, NN || TRIOI178
+61	3057	OK	      KL=NAD(J)                                                         TRIOI179	KL = NAD(J) || TRIOI179
+62	3099	COUNT 15/8	      IF(DM-02(KL))208,207,207                                                  	IF(DM-02(KL)) 208, 207, 207 || \text{TRIDI180}
+63	3141	OK	                                        137                                     	137
+64	3296	COUNT 152/9;COUNT 20/7	                                                                                	\text{S. 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. || \text{مُتَقَدَّمَةٌ}
+65	3330	COUNT 21/12	                                                                                	\text{[Redacted text]}

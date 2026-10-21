@@ -1,0 +1,35 @@
+1	7	17	NOISE	                                                                        			
+2	28	66	NOISE	                                                                        			
+3	81	93	NOISE	                                                                        			
+4	800	831	AGREE	      WRITE(ISOUT,8)EPSZ                                                		lighton=      WRITE(ISOUT,8)EPSZ ## dots=      WRITE(ISOUT,8)EPSZ ## glm=      WRITE(ISOUT,8)EPSZ	LAYER61
+5	842	876	AGREE	  234 CALL ERROR(PROGRM,-234,ISOUT)                                     		lighton=  234 CALL ERROR(PROGRM,-234,ISOUT) ## dots=  234 CALL ERROR(PROGRM,-234,ISOUT) ## glm=  234 CALL ERROR(PROGRM,-234,ISOUT)	LAYER62
+6	884	914	AGREE	  235 ZCH(1)=ZMIN                                                       		lighton=  235 ZCH(1)=ZMIN ## dots=  235 ZCH(1)=ZMIN ## glm=  235 ZCH(1)=ZMIN	LAYER63
+7	927	959	COMMENT	CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH AND LOAD BASE        		lighton=CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH ANC LOAD BASE ## dots=CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH AND LOAD BASE ## glm=CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH AND LOAD BASE	LAYER64
+8	971	1001	COMMENT	C     ALTITUDES INTO ZBH                                                		lighton=C     ALTITUDES INTO ZBH ## dots=C     ALTITUDES INTO ZBH ## glm=C     ALTITUDES INTO Z8H	LAYER65
+9	1012	1044	VOTED	      00 240 K=1,KBHM1                                                  		lighton=      DO 240 K=1,K8HM1 ## dots=      00 240 K=1,KBHM1 ## glm=      00 240 K=1，KBHM1	LAYER66
+10	1056	1086	VOTED	      7BH(K)=2CH(K)                                                     		lighton2=      7BH(K)=2CH(K) ## dots=      7BH(K)=2CH(K) ## dots2=      7BH(K)=2CH(K) ## glm=      ZBH（K）=ZCH（K） ## glm2=      ZBH(K)=ZCH(K)	LAYER67
+11	1099	1131	VOTED	  240 ZCH(K)= (ZCH(K) + ZCF(K+1))/2.0                                   		lighton=  240 ZCH(K)= (ZCH(K) + ZCF(K+1))/2.0 ## dots=  240 ZCH(K)= (ZCH(K) + ZCH(K+1))/2.0 ## glm=  240 ZCH(K)= (ZCH(K) + ZCF(K+1))/2.0	LAYER68
+12	1142	1172	VOTED	      Z9H(KBHX)=ZCH(KBHX)                                               		lighton2=      Z9H(K8HX)=ZCH(K8HX) ## dots=      ZBH(KBHX)=ZCH(KBHX) ## dots2=      ZBH(KBHX)=ZCH(KBHX) ## glm=      Z9H(KBHX)=ZCH(KBHX) ## glm2=      Z9H(KBHX)=ZCH(KBHX)	LAYER69
+13	1185	1217	TIE	      ZCH(KBHX)= 2.0*%BH(KBHX) - ZCH(KBHX-1)                            	22	dots=      ZCH(KBHX)= 2.0*%BH(KBHX) - ZCH(KBHX-1) ## dots2=      ZCH(KBHX)= 2.0*%BH(KBHX) - ZCH(KBHX-1) ## glm=      ZCH(KBHX)= 2.0*ZBH(KBHX) - ZCH(KBHX-1) ## glm2=      ZCH(KBHX)= 2.0*ZBH(KBHX) - ZCH(KBHX-1)	LAYER70
+14	1228	1260	AGREE	      GO TO 300                                                         		lighton=      GO TO 300 ## dots=      GO TO 300 ## glm=      GO TO 300	LAYER71
+15	1270	1301	COMMENT	CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZBH                      		lighton=CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZBH ## dots=CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZBH ## glm=CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZBH	LAYER72
+16	1314	1345	VOTED	 250  ZBH(1)=ZMIN                                                       		lighton2= 250  ZBH(1)=ZMIN ## dots= 250  ZBH(1)=ZMIN ## dots2= 250  ZBH(1)=ZMIN ## glm= 250  ZBH（1）=ZMIN ## glm2= 250  ZBH(1)=ZMIN	LAYER73
+17	1358	1389	VOTED	      DO 260 I=2,K8HX                                                   		lighton=      DO 260 I=2,K8HX ## dots=      DO 260 I=2,K8HX ## glm=      DO 260 I=2，K8HX	LAYER74
+18	1398	1431	VOTED	 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1)                                    		lighton2= 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1) ## dots2= 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1) ## glm= 260  ZBH（I）=2.0*ZCH（I-1） - ZBH（I-1） ## glm2= 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1)	LAYER75
+19	1443	1473	AGREE	 300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX)                                      		lighton= 300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX) ## dots= 300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX) ## glm= 300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX)	LAYER76
+20	1486	1516	COMMENT	COPY OUT WIND LAYER DATA                                                		lighton=COPY OUT WIND LAYER DATA ## dots=COPY OUT WIND LAYER DATA ## glm=COPY OUT WIND LAYER DATA	LAYER77
+21	1528	1559	AGREE	      WRITE (ISOUT,6)ZMAX                                               		lighton=      WRITE (ISOUT,6)ZMAX ## dots=      WRITE (ISOUT,6)ZMAX ## glm=      WRITE (ISOUT,6)ZMAX	LAYER78
+22	1571	1604	AGREE	      WRITE(ISOUT,3)                                                    		lighton=      WRITE(ISOUT,3) ## dots=      WRITE(ISOUT,3) ## glm=      WRITE(ISOUT,3)	LAYER79
+23	1615	1648	VOTED	      00 301 IGO=1,KBHX,IREC                                            		lighton=      00 301 IGO=1,KDHX,IREC ## dots=      00 301 IGO=1,KBHX,IREC ## glm=      00 301 IGO=1,KBHX,IREC	LAYER80
+24	1657	1688	VOTED	      ISTOP=IGO+IREC=1                                                  		lighton2=      ISTOP=IGO+IREC-1 ## dots=      ISTOP=IGO+IREC-1 ## dots2=      ISTOP=IGO+IREC=1 ## glm=      ISTOP=IGO+IREC=1 ## glm2=      ISTOP=IGO+IREC=1	LAYER81
+25	1700	1731	VOTED	      IF(ISTOP.GT.KBHX) IS10P=KBHX                                      		lighton=      IF(ISTOP.GT.KBHX) IS10P=KBHX ## dots=      IF(ISTOP.GT.KBHX) IS10P=KBHX ## glm=      IF（ISTOP.GT.KBHX） IS10P=KBHX	LAYER82
+26	1745	1778	NONE	                                                                        			LAYER83
+27	1786	1819	NONE	                                                                        			LAYER84
+28	1829	1862	VOTED	      00 313 IGO=1,KBHX,IREC                                            		lighton=      00 313 IGO=1,K8HX,IREC ## dots=      00 313 IGQ=1,KBHX,IREC ## glm=      DO 313 IGO=1,KBHX,IREC	LAYER5
+29	1862	1903	NONE	                                                                        			LAYER86
+30	1914	1945	VOTED	      IF(ISTOP.GT.KBHX) ISTOP=KBHX                                      		lighton=      IF(ISTOP.GT.KBHX) ISTOP=KBHX ## dots=      IF(ISTOP.GT.KBHX) ISTOP=KBHX ## glm=      IF（ISTOP.GT.KBHX） ISTOP=KBHX	LAYER87
+31	1957	1991	VOTED	  303 WRITE(ISOUT,1)IGO,ISTOP,(ZCH(K),K=IGO,ISTOP)                      		lighton=  303 WRITE(ISOUT,1)IGC,ISTOP,(ZCH(K),K=IGO,ISTOP) ## dots=  303 WRITE(ISOUT,1)IGO,ISTOP,(ZCH(K),K=IGO,ISTOP) ## glm=  303 WRITE(ISOUT,1)IGO,ISTOP,(ZCH(K),K=IGO,ISTOP)	LAYER8
+32	2001	2031	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	LAYER89
+33	2042	2071	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	LAYER90
+34	3146	3178	NOISE	                                                                        			
+35	3293	3337	NOISE	                                                                        			

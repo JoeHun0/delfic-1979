@@ -1,0 +1,8 @@
+17	1030	COUNT 0/52	                                                                                	
+23	1289	COUNT 32/31	                                                                                	400 CALL ERROR(PROGRM, IRROR, T SOUT)
+26	1717	OK	      SUBROUTINE CONTOR( CCNTUR, CROLBL ,UMAP ,NMAP)                            	SUBROUTINE CONTOR( CCNTUR, CROLBL ,UMAP ,NMAP)
+40	2317	OK	      COMMON /CONCAT/       IC(20)    ,IHOB      ,IPACH     ,IPJUT     ,        	COMMON /CONCAT/ IC(20) ,IHOB ,IPACH ,IPJUT ,
+44	2490	OK	     1JC        ,NXMAP     ,NYMAP     ,NZ        ,QCUT      ,SSAM      ,        	1 JC  , NXMAP  , NYMAP  , NZ  , QCUT  , SSAM  ,
+45	2526	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,        	2TGZ  ,XGZ  ,X1  ,X2  ,YGZ  ,XMAX  ,
+48	2662	OK	      DATA PROGRM/6HCONTOR/                                                     	DATA PROGRM/6HCONTOR/
+53	2881	OK	      K = ?                                                                     	K = ?

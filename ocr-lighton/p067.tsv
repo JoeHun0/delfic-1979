@@ -1,0 +1,50 @@
+1	6	COUNT 8/6	                                                                                	\text{S}
+2	767	OK	*DECK,AIRARS                                                            AIROR  1	*DECK, AIRARS || AIROR 1
+3	811	OK	      SUBROUTINE AIRBRS                                                 AIRBR  2	SUBROUTINE AIRBRS || AIRBR 2
+4	854	OK	C                                                                       AIRBR  3	C || AIRBR 3
+5	896	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     AIRBR  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || AIRBR 4
+6	940	COUNT 7/6	C                                                                               	C || AIRBOR 5
+7	981	COUNT 319/71	                                                                        AIRBR  6	C  \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{ || AIRBR 6
+8	1025	OK	C                                                                       AIFBR  7	C || AIFBR 7
+9	1068	OK	C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR     AIRBR  8	C COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR || AIRBR 8
+10	1110	COUNT 50/49	                                                                        AIRBR  9	C FOR AN AIRBURST. ALSO SETS LOGNCRMAL DEBRIS PARTICLE SIZE || AIRBR 9
+11	1152	OK	C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GEOMETRIC STANDARD   AIRBR 10	C DISTRIBUTION PARAMETERS FOR AN AIRBURST. A GEOMETRIC STANDARD || AIRBR 10
+12	1195	OK	C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS   AIKBR 11	C    DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS || AIKBR 11
+13	1237	OK	C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL., JGR75, 7565   AIRBR 12	C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS, ET AL., JGR75, 7565 || AIRBR 12
+14	1282	OK	C     (1971) (FOR BROWNIAN MOTION)                                      AIR8R 13	C (1971) (FOR BROWNIAN MOTION) || AIR8R 13
+15	1326	OK	C                                                                       AIKBR 14	C || AIKBR 14
+16	1367	COUNT 319/71	                                                                        AIRBR 15	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{ || AIRBR 15
+17	1412	OK	C                                                                       AIŘBR 16	C || AIŘBR 16
+18	1454	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    AIRBR 17	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ || AIRBR 17
+19	1497	OK	      COMMON /CONTRL/ CETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  AIRBR 18	COMMON /CONTRL/ CETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || AIRBR 18
+20	1541	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 AIKBR 19	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || AIKBR 19
+21	1585	OK	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(260),DIAM(201),FMASS(200)  AIR8R 20	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(260),DIAM(201),FMASS(200) || AIR8R 20
+22	1628	COUNT 8/7	C                                                                               	C || AIRBOR 21
+23	1670	COUNT 319/71	                                                                        AIKBR 22	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{ || AIKBR 22
+24	1714	OK	C                                                                       AIRBR 23	C || AIRBR 23
+25	1754	OK	C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL     AIKBR 24	C SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL || AIKBR 24
+26	1797	OK	C     TIME (SEC)                                                        AIR8R 25	C TIME (SEC) || AIR8R 25
+27	1842	OK	C                                                                       AIROR 26	C || AIROR 26
+28	1883	COUNT 0/19	                                                                        AIRBR 27	 || AIRBR 27
+29	1927	COUNT 12/7	      TME = 56. * 12M * W**(-0.30)                                              	TME = 56. * 12M * W**(-0.30) || AI \kappa BR 28
+30	1971	OK	C                                                                       AIRBR 29	C || AIRBR 29
+31	2012	OK	C     SET INITIAL CLOUD TEMPERATURE                                     AIRBR 30	C SET INITIAL CLOUD TEMPERATURE || AIRBR 30
+32	2056	OK	C                                                                       AIKBR 31	C || AIKBR 31
+33	2100	COUNT 0/20	                                                                        AIRBR 32	 || AIRBR 32
+34	2141	COUNT 0/21	                                                                        AIRBR 33	 || AIRBR 33
+35	2185	COUNT 0/25	                                                                        AIKBR 34	 || AIKBR 34
+36	2228	COUNT 0/9	                                                                        AIRBR 35	 || AIRBR 35
+37	2270	OK	C                                                                       AIRSR 36	C || AIRSR 36
+38	2312	COUNT 46/47	                                                                        AIKBR 37	C SET MASS OF CONDENSEC PHASE MATERIAL IN THE CLOLC (KG) || AIKBR 37
+39	2357	COUNT 0/11	                                                                        AIRBR 36	 || AIRBR 36
+40	2400	COUNT 0/7	                                                                        AIRBR 39	 || AIRBR 39
+41	2443	OK	      IF(IC(1) .NE. 0  .OR.  DMEAN .NE. J.0) RETURN                     AIRBR 40	IF(IC(1) .NE. 0 .OR. DMEAN .NE. J.0) RETURN || AIRBR 40
+42	2488	OK	C                                                                       AIRBR 41	C || AIRBR 41
+43	2528	OK	C     SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS                  AIK8R 42	C SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS || AIK8R 42
+44	2572	OK	C                                                                       AIRBR 43	C || AIRBR 43
+45	2616	COUNT 0/6	                                                                        AIKBR 44	 || AIKBR 44
+46	2657	COUNT 0/10	                                                                        AIR9R 45	 || AIR9R 45
+47	2701	OK	      RETURN                                                            AIRBR 46	RETURN || AIRBR 46
+48	2746	OK	      END                                                               AIhBK 47	END || AIhBK 47
+49	3124	OK	                                       64                                       	64
+50	3290	COUNT 0/45;COUNT 371/6	                                                                                	 || \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?} \quad \text{?

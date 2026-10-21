@@ -1,0 +1,8 @@
+1	41	COUNT 0/2	                                                                                	
+23	1423	OK	    3 DPST(KC,KQ)=U.O                                                           	3 DPST(KC,KQ)=U.O
+29	1678	OK	    6 00 7 KD=1,MCX                                                             	6 00 7 KD=1,MCX
+30	1715	OK	      IF(CX(KD,7)-CX(KD,0))53.53,54                                             	IF(CX(KD,7)-CX(KD,0))53.53,54
+33	1852	COUNT 0/51	                                                                                	
+35	1930	OK	   56 DPX(2,KO)=0.0                                                             	56 DPX (2, KO) = 0.0
+39	2103	COUNT 77/26	                                                                                	\text{58} \ \text{DPX}(2, \text{KD}) = \frac{\text{CX}(\text{KD}, 6)}{\text{DENOM}}
+46	2404	COUNT 0/7	                                                                                	

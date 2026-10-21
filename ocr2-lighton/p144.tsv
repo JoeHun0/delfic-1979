@@ -1,0 +1,14 @@
+1	9	COUNT 320/6	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}
+4	598	OK	      SUBROUTINE CALC(IP,CPAP,NMAP)                                             	SUBROUTINE CALC(IP,CPAP,NMAP)
+40	2143	OK	     2YAPRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM                         	2YAPRAY ,MBTAPE ,MXREQ ,SD ,INPAM
+41	2184	OK	      COMMON /MAPDAT/ CAYF ,CUTMAP    ,DGX       ,CGY       ,IH  ,IV   ,        	COMMON /MAPDAT/ CAYF ,CUTMAP ,DGX ,CGY ,IH ,IV ,
+44	2313	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN , YMAX , YMIN , ZMIN
+46	2399	COUNT 55/54	                                                                                	1GAMA ,KTR(100) ,PMAS(100) ,PSIZ(100) ,F.O(100) ,SIGXO(100),
+47	2441	OK	     2SIGYO(100),SINA      ,TPAR(133) ,XPAR(150) ,YPAF(150) ,YPRML     ,        	2SIGYO(100),SINA ,TPAR(133) ,XPAR(150) ,YPAF(150) ,YPRML ,
+48	2487	OK	     3YPRMU     ,ZPAR(100)                                                      	3 YPRMU    , ZPAR(100)
+50	2572	OK	     1MAPRUN    ,NE        ,NIJ       ,VORD      ,NREG      ,NTASK     ,        	1MAPRUN  ,NE  ,NIJ  ,VORD  ,NREG  ,NTASK  ,
+51	2615	COUNT 28/27	                                                                                	20PMID(12) ,T1          ,T2          ,WFMAS( \leq )
+59	2957	COUNT 0/37	                                                                                	
+60	3000	COUNT 0/17	                                                                                	
+61	3045	COUNT 35/36	                                                                                	CC = (COSA**2/VARX2 + SINA**2/VARY2)*2.
+62	3086	COUNT 0/13	                                                                                	

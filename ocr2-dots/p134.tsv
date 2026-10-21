@@ -1,0 +1,8 @@
+33	1897	OK	       COMMON /INDEX/ ICX,ICX,FBHX,LTINX,NAT,NCX,NOATX                          	COMMON /INDEX/ ICX, ICX, FBHX, LTINX, NAT, NCX, NOATX
+43	2326	OK	      DATA PROGRM   , EPSILO   , EPSZ    , QBRT      , VARL                     	DATA PROGRM , EPSILO , EPSZ , QBRT , VARL
+44	2371	COUNT 37/38	                                                                                	1 /6HTRANP , .0005 , 0.1 , .333333333, 1.0E9 /
+54	2798	COUNT 17/16	                                                                                	EPST=EPSILO*THMAX
+55	2843	OK	      XO=XP                                                                     	XO=XP
+57	2930	OK	      20=2P                                                                     	20 = 2P
+61	3102	OK	      RQ=0.                                                                     	RQ=0.
+63	3294	COUNT 0/3	                                                                                	

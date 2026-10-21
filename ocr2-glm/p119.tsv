@@ -1,0 +1,6 @@
+1	7	COUNT 3/34	                                                                                	---
+29	1965	OK	      XOUT(N)=X0                                                                	XOUT(N) = X0
+37	2307	OK	      ROUT(N)=RO                                                                	ROUT(N) = RO
+38	2352	OK	      IF(N.LT.N8LK) RETURN                                                      	IF(N.LT.N8LK) RETURN
+43	2566	COUNT 60/61	                                                                                	WRITE (IPOUT) （XCLT(M),YOUT(M),ZOUT(M),TOUT(M),SXOT(M),SYOT(M)
+44	2610	OK	     1ROUT(M),PSOT(M),PDEP(M),F=1,N)                                            	1 ROUT(M),PSOT(M),PDEP(M),F=1,N)

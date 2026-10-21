@@ -1,0 +1,50 @@
+1	6	16	NOISE	                                                                        			
+2	767	800	COMMENT	*DECK,AIRARS                                                            		lighton=*DECK,AIRARS ## glm=*DECK,AIRBRS	AIROR1
+3	811	842	AGREE	      SUBROUTINE AIRBRS                                                 		lighton=      SUBROUTINE AIRBRS ## dots=      SUBROUTINE AIRBRS ## glm=      SUBROUTINE AIRBRS	AIRBR2
+4	854	884	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR3
+5	896	932	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORHENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	AIRBR4
+6	940	970	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBOR5
+7	981	1013	NOISE	                                                                        			AIRBR6
+8	1025	1055	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIFBR7
+9	1068	1101	COMMENT	C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR     		lighton=C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR ## dots=C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR ## glm=C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR	AIRBR8
+10	1110	1142	COMMENT	C FOR AN AIRBURST. ALSO SETS LOGNCRMAL DEBRIS PARTICLE SIZE             			AIRBR9
+11	1152	1185	COMMENT	C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GEOMETRIC STANDARD   		lighton=C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GEOMETRIC STANDARD ## dots=C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GEOMETRIC STANDARD ## glm=C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GECMETRIC STANDARD	AIRBR10
+12	1195	1227	COMMENT	C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS   		lighton=C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS ## dots=C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS ## glm=C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS	AIKBR11
+13	1237	1272	COMMENT	C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL., JGR75, 7565   		lighton=C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL., JGR75, 7565 ## glm=C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL., JGR75, 7565	AIRBR12
+14	1282	1314	COMMENT	C     (1971) (FOR BROWNIAN MOTION)                                      		lighton=C     (1971) (FOR BROWNIAN MOTION) ## dots=C     (197)) (FOR BROWNIAN MOTION) ## glm=C     (1973) (FOR BROWNIAN MOTION)	AIR8R13
+15	1326	1357	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIKBR14
+16	1367	1399	NOISE	                                                                        			AIRBR15
+17	1412	1443	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR16
+18	1454	1489	AGREE	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    		lighton=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ ## glm=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ	AIRBR17
+19	1497	1533	HAND	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  	23	lighton=      COMMON /CONTRL/ CETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## lighton2=      COMMON /CONTRL/ OETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## dots=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## dots2=      COMMON /CONTRL/ DETID(12),IC(20),IҚАД,IRISE,ISIN,ISOUT,JPARN,KDI ## glm=      COMMON /CONTRL/ OETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## glm2=      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI	AIRBR18
+20	1541	1574	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR ## dots=      COMMON /INITL/ F, PHI, SSAN, THE, TMPG, TMPS, VPR ## glm=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR	AIKBR19
+21	1585	1619	VOTED	      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(260),DIAM(201),FMASS(200)  		lighton=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(260),DIAM(201),FMASS(200) ## dots=      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(200),DIAM(201),FMASS(200) ## glm=      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(260),UIAM(201),FMASS(200)	AIR8R20
+22	1628	1659	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR21
+23	1670	1701	NOISE	                                                                        			AIRBR22
+24	1714	1744	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR23
+25	1754	1786	COMMENT	C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL     		lighton=C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL ## dots=C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE CELFIC INITIAL ## glm=C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL	AIKBR24
+26	1797	1828	COMMENT	C     TIME (SEC)                                                        		lighton=C     TIME (SEC) ## dots=C     TIME (SEC) ## glm=C     TIME (SEC)	AIR8R25
+27	1842	1872	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIROR26
+28	1883	1915	HAND	      T2M = 0.045 * W**(0.42)                                           		glm=      T2M = 0.045 * H**(0.42)	AIRBR27
+29	1927	1957	VOTED	      TME = 56. * T2M * W**(-0.30)                                      		lighton=      TME = 56. * 12M * W**(-0.30) ## dots=      TME = 56. * T2M * W**(-0.30) ## glm=      TME = 56. * T2M * W**(-0.30)	AIKBK28
+30	1971	2001	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR29
+31	2012	2043	COMMENT	C     SET INITIAL CLOUD TEMPERATURE                                     		lighton=C     SET INITIAL CLOUD TEMPERATURE ## dots=C     SET INITIAL CLOUD TEMPERATURE ## glm=C     SET INITIAL CLOUD TEMPERATURE	AIRBR30
+32	2056	2086	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIKBR31
+33	2100	2130	HAND	      A = 6847. * W**(-0.0131)                                          	13	lighton2=      A = 6847. * W**(-0.0131) ## dots=      A = 68¼7. * W**(-0.0131) ## dots2=      A = 68/7. * W**(-0.0131) ## glm=      A = 6847. * H**(-0.0131)	AIRBR32
+34	2141	2172	HAND	      B = -0.4473 * W**(0.0436)                                         		glm=      B = -0.4473 * H**(0.0436)	AIRBR33
+35	2185	2216	HAND	      TMPG = A * (TME / T2M)**B + 1500.                                 	20	glm=      TMPG = A * (THE / T2M)**8 + 1500. ## glm2=      TMPG = A * (TME / T2M)**8 + 1500.	AIKBR34
+36	2228	2257	HAND	      TMPS = TMPG                                                       		glm=      TMPS = TMPG	AIRBR35
+37	2270	2300	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRSR36
+38	2312	2343	COMMENT	C SET MASS OF CONDENSEC PHASE MATERIAL IN THE CLOLC (KG)                			AIRBR37
+39	2357	2388	VOTED	      SSAM = 90.718                                                     		lighton2=      SSAM = 90.718 ## dots=      SSAM = 90.718 ## dots2=      SSAM = 90.718 ## glm=      SSAM = 9J.718	AIRBR36
+40	2400	2430	AGREE	      VPR = 0.0                                                         		dots=      VPR = 0.0 ## glm=      VPR = 0.0	AIRBR39
+41	2443	2475	AGREE	      IF(IC(1) .NE. 0  .OR.  DMEAN .NE. J.0) RETURN                     		lighton=      IF(IC(1) .NE. 0  .OR.  DMEAN .NE. J.0) RETURN ## glm=      IF(IC(1) .NE. 0  .OR.  DMEAN .NE. J.0) RETURN	AIRBR40
+42	2488	2517	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR41
+43	2528	2559	COMMENT	C     SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS                  		lighton=C     SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS ## glm=C     SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS	AIK8R42
+44	2572	2602	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	AIRBR43
+45	2616	2645	AGREE	      SD = 2.0                                                          		dots=      SD = 2.0 ## glm=      SD = 2.0	AIKBR44
+46	2657	2688	AGREE	      DMEAN = 0.15                                                      		dots=      DMEAN = 0.15 ## glm=      DMEAN = 0.15	AIR9R45
+47	2701	2732	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	AIRBR46
+48	2746	2774	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	AIKBK47
+49	3124	3154	NOISE	                                                                        		lighton=                                       64 ## dots=                                       64 ## glm=                                       64	
+50	3290	3321	NOISE	                                                                        			

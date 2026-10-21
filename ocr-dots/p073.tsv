@@ -1,0 +1,64 @@
+1	12	COUNT 0/9	                                                                                	
+2	527	COUNT 15/14;COUNT 0/5	                                                                                	20 FORMAT (2014) A || 
+3	570	COUNT 15/13;COUNT 6/4	                                                                                	3D FORMAT (12A6) A || ATMR 35
+4	606	COUNT 17/16	                                                                         TMR  36	40 FORMAT(8F10.0) A || TMR 36
+5	659	OK	   44 FORMAT(1H1)                                                       ATMR  37	44 FORMAT (1H1) || ATMR 37
+6	693	OK	   46 FORMAT( 20X,20HATHOSFHERE IDENTIFICATION - 12A6//)                ATMR  38	46 FORMAT( 20X,20HATHOSFHERE IDENTIFICATION - 12A6//) || ATMR 38
+7	737	COUNT 67/66	                                                                        ATMR  39	47 FORMAT( 37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3A || ATMR 39
+8	778	COUNT 26/27	                                                                        ATHR  40	1HRLH,11X,3HRHO,11X,3FETA) || ATHR 40
+9	822	OK	   48 FORMAT( /(6(2X,E12.5)))                                           ATMR  41	48 FORMAT ( / (6(2X,E12.5))) || ATMR 41
+10	864	OK	C                                                                       ATMR  42	C || ATMR 42
+11	914	COUNT 0/71	                                                                        ATMR  43	 || AT MR 43
+12	959	OK	C                                                                       ATMR  44	C || ATMR 44
+13	992	OK	      READ(ISIN,30)ATIO                                                 ATMR  45	READ (ISIN, 30) AT IO || ATMR 45
+14	1036	OK	      KATM = IC(4)                                                      ATMR  46	KATM = IC(4) || ATMR 46
+15	1087	COUNT 0/6	      IF(KATH .GT. 0) WRITE(ISCUT,44)                                           	IF(KATH .GT. 0) WRITE(ISCUT,44) || 
+16	1125	OK	      WRITE(ISOUT,46)ATID                                               ATMR  48	WRITE(ISOUT,46)ATID || ATMR 48
+17	1166	OK	      IGO=0                                                             ATMR  49	IGO=0 || ATMR 49
+18	1216	OK	      NBRNCH=1                                                          ATMR  50	NBRNCH=1 || ATMR 50
+19	1252	COUNT 23/24	                                                                        ATMR  51	WATCOR = (1 - 18. / 29. ) / 100. || ATMR 51
+20	1296	OK	C                                                                       ATHR  52	C || ATHR 52
+21	1345	OK	C     READ OBJECT-TIME FORMAT                                           ATMR  53	C      READ OBJECT-TIME FORMAT || ATMR 53
+22	1380	OK	C                                                                       ATMR  54	C || ATMR 54
+23	1431	COUNT 0/6	      READ(ISIN,30)FMT                                                          	READ (ISIN, 30) FMT || 
+24	1468	OK	C                                                                       ATMR  56	C || ATMR 56
+25	1509	COUNT 29/30	                                                                        ATMR  57	READ SCALE AND ADJUSTMENT FACTORS || ATMR 57
+26	1560	OK	C                                                                       ATMR  58	C || ATMR 58
+27	1595	OK	      READ(ISIN,40)SCALE                                                ATMR  59	READ(ISIN,40)SCALE || ATMR 59
+28	1640	OK	      00 90 I=1,6                                                       ATMR  60	00 90 I=1,6 || ATMR 60
+29	1683	OK	      IF(SCALE(I))90,91,90                                              ATMR  61	IF(SCALE(I))90,91,90 || ATMR 61
+30	1727	OK	   91 SCALE(I)=1.                                                       ATMR  62	91 SCALE(I)=1. || ATMR 62
+31	1771	OK	   90 CONTINUE                                                          ATMR  63	90 CONTINUE || ATMR 63
+32	1819	OK	C                                                                       ATMR  64	C || ATMR 64
+33	1854	OK	C     READ ATMOSPHERE DATA SEQUENCE INDICIES                            ATMR  65	C READ ATMOSPHERE DATA SEQUENCE INDICIES || AT MR 65
+34	1905	COUNT 0/6	      READ(ISIN,20)N1,N2,N3,N4,N5,N6                                            	READ(ISIN, 20) N1, N2, N3, N4, N5, N6 || 
+35	1941	OK	C                                                                       ATMR  67	C || ATMR 67
+36	1983	COUNT 53/54	                                                                        ATMR  68	READ ATMOSPHERE TABLE ENTRIES, SEQUENCE AND ADJUST THEM TO THE || ATMR 68
+37	2026	OK	C     PROPER "NITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT     ATMR  69	C PROPER "NITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT || AT MR 69
+38	2069	COUNT 51/52	                                                                        ATMR  70	C PROVIDE IN THE INPUT. ETA NEEC NOT BE INPUT. EITHER PRS OR RHZ || ATMR 70
+39	2118	COUNT 0/6	C     (BUT NOT BOTH) NEEDS TO BE INPUT.                                         	C (BUT NOT BOTH) NEEDS TO BE INPUT. || 
+40	2154	OK	C                                                                       ATMR  72	C || ATMR 72
+41	2205	OK	      I=0                                                               ATMR  73	I=0 || ATMR 73
+42	2249	OK	  100 READ(ISIN,FHT)AP                                                  ATMR  74	100 READ(ISIN,FHT)AP || AT MR 74
+43	2285	OK	      IF(AP(N1) .GE. ALIMIT) GO TO 105                                  ATMR  75	IF (AP(N1) .GE. ALIMIT) GO TO 105 || ATMR 75
+44	2334	COUNT 0/5	                                                                        ATMR  76	 || ATMR 76
+45	2376	COUNT 66/33	                                                                        ATMR  77	\text{ALT}(I) = (\text{AP}(N1) + \text{SCALE}(7)) \times \text{SCALE}(1) || ATMR 77
+46	2418	COUNT 61/33	                                                                        ATMR  78	\text{ATP(I)} = (\text{AP(N2)} + \text{SCALE(8)}) * \text{SCALE(2)} || ATMR 78
+47	2462	COUNT 49/22	                                                                        ATMR  79	\mathrm{PRS}(I) = \mathrm{AP}(N3) * \mathrm{SCALE}(3) || ATMR 79
+48	2505	OK	      RLH(I)=AP(N4)*SCALE(4)                                            ATMR  80	RLH(I) = AP(N4) * SCALE(4) || ATMR 80
+49	2547	OK	      RHO(I)=AP(N5)*SCALE(5)                                            ATMR  81	RHO(I) = AP(N5) * SCALE(5) || ATMR 81
+50	2590	COUNT 0/22;COUNT 0/6	                                                                                	 || 
+51	2634	COUNT 0/6	C                                                                               	C || 
+52	2669	COUNT 0/6	C     ARE SUCCESSIVE TABLE ENTRIES IN ORDER OF INCREASING ALTITUDE-             	C ARE SUCCESSIVE TABLE ENTRIES IN ORDER OF INCREASING ALTITUDE- || 
+53	2719	OK	C                                                                       ATMR  85	C || ATMR 85
+54	2765	COUNT 0/6	      IF(I.EQ.1) GO TO 70                                                       	IF (I.EQ.1) GO TO 70 || 
+55	2802	OK	      IF (ALT(I)-ALT(I-1)) 45,45,70                                     ATMR  87	IF (ALT(I)-ALT(I-1)) 45,45,70 || ATMR 87
+56	2851	OK	   45 IRROR=-45                                                         ATMR  38	45 IRROR=-45 || ATMR 38
+57	2886	OK	      WRITE(ISOUT,40) ALT(I), ALT(I-1)                                  ATMR  69	WRITE (ISOUT,40) ALT(I), ALT(I-1) || ATMR 69
+58	2929	OK	      GO TO 130                                                         ATMR  90	GO TO 130 || ATMR 90
+59	2969	OK	   70 IF(ETA(I) .GT.0.0) GC TO 1070                                     ATMR  91	70 IF (ETA(I) .GT. 0.0) GC TO 1070 || ATMR 91
+60	3022	COUNT 0/41	                                                                        ATMR  92	 || ATMR 92
+61	3065	COUNT 27/26	                                                                        ATMR  93	1070 IF (PRS(1).GT.0.0) GC TO 73 || ATMR 93
+62	3111	OK	                                          70                                    	70
+63	3268	COUNT 0/33	                                                                                	
+64	3285	COUNT 0/63	                                                                                	

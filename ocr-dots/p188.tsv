@@ -1,0 +1,63 @@
+1	34	COUNT 0/7	                                                                                	
+2	571	OK	C                                                                               	C
+3	618	OK	      LOGICAL FLAG                                                      BATMA 62	LOGICAL FLAG || BATMA 62
+4	657	COUNT 0/1	C                                                                               	C || 
+5	701	OK	CC  SET INITIAL VALUES                                                  BATMA 64	CC SET INITIAL VALUES || BATMA 64
+6	746	COUNT 0/11	                                                                        BATMA 65	 || BATMA 65
+7	780	OK	    1 ABUNDO(I) = C.O                                                   DAIMA OD	1 ABUNDO(I) = C.O || DAIMA OD
+8	830	COUNT 0/5	      IBR = 0                                                                   	IBR = 0 || 
+9	873	OK	C                                                                               	C
+10	915	COUNT 36/37	                                                                        BATMA 69	CC BEGIN MAIN LOOP THROUG THE NUCLIDE TABLE || BATMA 69
+11	954	OK	C                                                                               	C
+12	1002	OK	   10 DO 500 IN = 1,INLC                                                BATMA 71	10 DO 500 IN = 1,INLC || BATMA 71
+13	1039	COUNT 6/7	C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN                                	C FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN || 0414 71
+14	1083	OK	      IF (NUCLID(IN))11,500,499                                         BATMA 73	IF (NUCLID(IN)) 11,500,499 || BATMA 73
+15	1126	OK	C                                                                               	C
+16	1174	OK	C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN                          BATMA 75	C SET PARAMETERS FOR BEGINNING OF A SUBCHAIN || BATMA 75
+17	1214	COUNT 1/18	                                                                        BATNA 75	C || BATNA 75
+18	1260	OK	   11 LSUB = 1                                                          BATMA 77	11 LSUB = 1 || BATMA 77
+19	1301	OK	C         BRANCHING RATIC COUNTER                                       BATMA 78	C BRANCHING RATIC COUNTER || BATMA 78
+20	1346	OK	      LBR = IBR                                                         BATMA 79	LBR = IBR || BATMA 79
+21	1390	OK	      KBR(1) = LBR                                                      BATMA 80	KBR(1) = LBR || BATMA 80
+22	1431	COUNT 1/14	                                                                        BATMA 81	C || BATMA 81
+23	1475	OK	      NUC(1) = IN                                                       BATMA &2	NUC(1) = IN || BATMA &2
+24	1518	OK	   12 LIM(LSUB) = 4                                                     BATMA 13	12 LIM(LSUB) = 4 || BATMA 13
+25	1560	OK	C   PROCESS A SUBCHAIN MEMBER                                           BATMA 84	C PROCESS A SUBCHAIN MEMBER || BATMA 84
+26	1596	COUNT 6/7	   13 KP = NUC(LSUB)                                                            	13 KP = NUC(LSUB) || 0414 04
+27	1647	COUNT 5/4	      IM = LIM(LSUB)                                                            	IM = LIM(LSUB) || BATMA
+28	1689	OK	      INFO = MOD(IABS(NUCLID(KP)),MULT(5))                              BATMA 87	INFO = MOD(IABS(NUCLID(KP)), MULT(5)) || BATMA 87
+29	1729	OK	      INFORM(LSUB) = INFC                                               BATMA 88	INFORM(LSUB) = INFC || BATMA 88
+30	1776	COUNT 0/3	      INC = 1                                                                   	INC = 1 || 
+31	1816	OK	C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS                            JAN14 95	C SET UP SUBCHAIN DISINTEGRATION CONSTANTS || JAN 14 95
+32	1855	COUNT 32/18	                                                                        BATMA 41	\text{SOC(LSUB)} = \text{OCON}(KP) || BATMA 41
+33	1902	OK	CHECK FOR END OF SUBCHAIN                                               BATMA 92	CHECK FOR END OF SUBCHAIN || BATMA 92
+34	1945	OK	      IF (INFO.EQ.4) GO TO 21                                           BATMA 93	IF (INFO.EQ.4) GO TO 21 || BATMA 93
+35	1981	COUNT 6/7	CHECK FOR BRANCHING                                                             	CHECK FOR BRANCHING || 0114 93
+36	2032	OK	      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14                              BATMA 95	IF (MOD(INFO, MULT(1)).LT.4) GO TO 14 || BATMA 95
+37	2070	COUNT 20/13	                                                                        BATMA 33	\text{SBR(LSU3)} = 1.0 || BATMA 33
+38	2118	COUNT 0/5	      GO TO 15                                                                  	GO TO 15 || 
+39	2161	OK	C   SET UP SUBCHAIN BRANCHING RATIOS                                    BATMA 98	C SET UP SUBCHAIN BRANCHING RATIOS || BATMA 98
+40	2197	COUNT 34/13	                                                                        DAIMA 30	14 \text{ L8} = \text{L8R} + 5 - \text{IM} || DAIMA 30
+41	2248	OK	      SBR(LSUB) = BRANCH(LB)                                            BATMA1J0	SBR(LSUB) = BRANCH(LB) || BATMA1J0
+42	2282	COUNT 29/28;COUNT 7/8	                                                                                	C. EXTRACT THE DAUGHTER INCREMENT || BATMAJU
+43	2326	COUNT 7/8	   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM)                                        	15 ID = MOD(INFO, MULT(IM+1))/MULT(IM) || BATMAN I
+44	2368	COUNT 8/7	C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE                                    	C SEE IF THIS INCREMENT SHOULD BE NEGATIVE || BATH A 1.3
+45	2413	COUNT 40/41	                                                                        BATHA1C4	IF (MOD(INF0, MULT(2)/MULT(1), EQ, IM) GO TO 16 || BATHA1C4
+46	2458	OK	C   SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC OF DAUGHTER         BATMA1,5	C SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC OF DAUGHTER || BATMA 1,5
+47	2502	COUNT 0/5;COUNT 5/4	                                                                                	 || BATMA
+48	2550	COUNT 8/7	      GO TO 17                                                                  	GO TO 17 || BATMA 1 17
+49	2591	COUNT 9/8	C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO OF DAUGHTER                	C SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO OF DAUGHTER || BATMA 2. J 6
+50	2633	COUNT 0/6;COUNT 8/7	                                                                                	 || BATMA 1:9
+51	2678	COUNT 9/6	      LAR = 0                                                                   	LAR = 0 || RATNA 1:10
+52	2721	COUNT 10/6	      INC = -INC                                                                	INC = -INC || BATMAN 1994
+53	2763	COUNT 20/19;COUNT 0/6	                                                                                	COMPUTE DAUGHTER INDEX || 
+54	2806	OK	   17 NOAUT = KP ♦ INC*IO                                               BATHA1'3	17 NOAUT = KP ♦ INC*IO || BATHA1'3
+55	2848	OK	      KDA = NOAUT - 1                                                   SATMA114	KDA = NOAUT - 1 || S A T M A 1 1 4
+56	2890	COUNT 57/56	                                                                        8ATHA1:5	C. STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR || 8ATHA 1:5
+57	2933	OK	C   THE BRANCHING RATIO OF THE DAUGHTER                                 BATNA116	C THE BRANCHING RATIO OF THE DAUGHTER || BATNA116
+58	2971	COUNT 7/8	      DO  2C K = KI.KDA                                                         	DO 2C K = KI.KDA || 3414110
+59	3020	COUNT 41/40;COUNT 0/8	                                                                                	2? LBR = L8K + 4 - IAB (MOD (NUCLIU(K)), MULT (2,1)) || 
+60	3066	COUNT 0/15;COUNT 0/5	                                                                                	 || 
+61	3108	COUNT 0/4	C                                                                               	C || 
+62	3160	COUNT 0/3	                                                                                	
+63	3305	COUNT 0/55;COUNT 0/4	                                                                                	 || 

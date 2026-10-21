@@ -1,0 +1,12 @@
+373	p112	6	NONE	48	4	raw: 11 FORMAT(21X50H * * * * * * * WINDFIELD DATA * * * * * * * * / )
+374	p112	7	NONE	49	4	raw: 12 FORMAT(21X51H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+375	p112	8	TIE	57	3	  21  FORMAT(1HO,10X,  79HCOUNT OF UPDATA DATA SETS CCES NOT TALLY WITH
+376	p112	10	TIE	38	3	  22  FORMAT(1H0,10X, 22H A DATA SET IS MISSING)
+377	p112	11	SINGLE	58	4	   23 FORMAT(//20X,5   9HLCFOATE INDEX INCONSISTENT WITH UPDATE TIME ON
+378	p112	17	TIE	15	7	      TIMUP(L)=ALINIT
+379	p112	39	TIE	18	7	      TIMUP(LTIN)=OPTIMS
+380	p112	40	TIE	51	2	 1050 IF!MC(2) .NE. 1) WRITE(ISOUT,10) LTIM,UPTIMS,UPTIMH
+381	p112	52	NONE	49	3	raw: L060  IF(LTIMX.GT.LTIMF)CALL ERROR(PROGRM,-1.60,ISCUT)
+382	p112	53	NONE	21	7	raw: IF (MC (1) .NE. 0) GO TO 1107
+383	p112	59	NONE	20	3	raw: 1070 WFZ (K.N, LTIM) = 0.0
+384	p113	37	TIE	62	2	 2200 CALL       TRIDIN(NE7,NETSU,ZCH,DXSUM,DYSUM,DUP,LTIM,ICF,JCF,NCF,

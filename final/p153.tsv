@@ -1,0 +1,47 @@
+1	25	59	NOISE	                                                                        			
+2	783	815	HANDFREE	      JMAP(KDC)=H-H1                                                    		dots=      JMAP(KDC)=H-K1 ## glm=      JMAP(KDC)=H-K1	
+3	815	860	AGREE	      IF(JMAP(KDC).EQ.0)JMAP(KDC)=0                                     		lighton=      IF(JMAP(KDC).EQ.0)JMAP(KDC)=0 ## dots=      IF(JMAP(KDC).EQ.0)JMAP(KDC)=0 ## glm=      IF(JMAP(KDC).EQ.0)JMAP(KDC)=0	MAP242
+4	860	901	VOTED	      FMTEXP(KOC+1) = FMTI                                              		lighton2=      FMTEXP(KOC+1) = FMTI ## dots=      FMTEXP(KOC+1) = FMTI ## dots2=      FMTEXP(KOC+1) = FMTI ## glm=      FMTEXP(KDC+1) = FMTI ## glm2=      FMTEXP(KDC+1) = FMTI	MAP243
+5	910	946	HANDFREE	      FMTRUT(KDC+1) = FMTF                                              		glm=      FMTRUT(KDC+1) = FMTF	
+6	946	988	AGREE	      IF (JMAP(KDC).NE.0)GO TO 1090                                     		lighton=      IF (JMAP(KDC).NE.0)GO TO 1090 ## dots=      IF (JMAP(KDC).NE.0)GO TO 1090 ## glm=      IF (JMAP(KDC).NE.0)GO TO 1090	MAP245
+7	998	1029	HANDFREE	      JMAP(KDC)=0                                                       		dots=      JMAP(KDC)=0 ## glm=      JMAP(KDC)=0	
+8	1038	1073	AGREE	      FMTEXP(KDC+1) = FMTA                                              		dots=      FMTEXP(KDC+1) = FMTA ## glm=      FMTEXP(KDC+1) = FMTA	
+9	1083	1119	HANDFREE	 1090 OMAP(K) = 10.0**H1                                                		lighton= 1090 OMAP(K) = 10.0**H1 ## dots= 1090 OMAP(K) = 10.0**H1 ## glm= 1090 OMAP(K) = 10.0**H1	
+10	1119	1159	AGREE	      IF(OMAP(K)-9.999)115,115,1091                                     		lighton=      IF(OMAP(K)-9.999)115,115,1091 ## dots=      IF(OMAP(K)-9.999)115,115,1091 ## glm=      IF(OMAP(K)-9.999)115,115,1091	MAP249
+11	1167	1205	AGREE	 1091 OMAP(K)=OMAP(K)/10.0                                              		dots= 1091 OMAP(K)=OMAP(K)/10.0 ## glm= 1091 OMAP(K)=OMAP(K)/10.0	
+12	1205	1246	AGREE	      JMAP(KDC)=JMAP(KDC)+1                                             		glm=      JMAP(KDC)=JMAP(KDC)+1 ## glm2=      JMAP(KDC)=JMAP(KDC)+1	MAP25
+13	1246	1287	AGREE	      FMTEXP(KDC+1) = FM7I                                              		lighton2=      FMTEXP(KDC+1) = FM7I ## dots2=      FMTEXP(KDC+1) = FM7I ## glm=      FMTEXP(KDC+1) = FM7I ## glm2=      FMTEXP(KDC+1) = FM7I	MAP252
+14	1300	1331	AGREE	      GO TO 115                                                         		lighton=      GO TO 115 ## dots=      GO TO 115 ## glm=      GO TO 115	
+15	1343	1379	AGREE	  106 JMAP(KDC)=0                                                       		lighton=  106 JMAP(KDC)=0 ## dots=  106 JMAP(KDC)=0 ## glm=  106 JMAP(KDC)=0	IP265
+16	1379	1418	AGREE	      OMAP(K)=0.0                                                       		dots=      OMAP(K)=0.0 ## glm=      OMAP(K)=0.0	
+17	1426	1461	HANDFREE	      FMTEXP(KDC+1) = FMTA                                              		dots=      FMTEXP(KDC+1) = FMTA ## glm=      FMTEXP(KDC+1) = FMTA	
+18	1469	1505	HANDFREE	      FMTRUT(KDC+1) = FMTA                                              		glm=      FNTRUT(KDC+1) = FMTA	
+19	1515	1547	AGREE	      GO TO 300                                                         		lighton=      GO TO 300 ## dots=      GO TO 300 ## glm=      GO TO 300	
+20	1555	1592	HANDFREE	  115 GO TO N3,(300,121)                                                			
+21	1592	1637	COMMENT	C 121 RESET SIGN OF MAP CCORDINATE                                      			MAP260
+22	1637	1679	HANDFREE	  121 OMAP(K)=-OMAP(K)                                                  			
+23	1689	1720	HANDFREE	      GO TO 300                                                         			
+24	1736	1762	NOISE	                                                                        		lighton= C ## glm= C	
+25	1762	1808	HAND	C 151 CODE FOR TWO-LINE F11.3 DISPLAY                                   			MAP264
+26	1808	1851	VOTED	  151  JMAP(KDC)=GMAP(K)/10.0                                           		lighton=  151  JMAP(KDC)=GMAP(K)/10.0 ## dots=  151  JMAP(KDC)=CHAP(K)/10.0 ## glm=  151  JMAP(KDC)=GMAP(K)/10.0	MAP261
+27	1860	1893	HANDFREE	      ZMAP=JMAP(KDC)                                                    		lighton=       ZMAP=JMAP(KDC) ## dots=       ZMAP=JMAP(KDC) ## glm=       ZMAP=JMAP(KDC)	
+28	1893	1937	AGREE	       OMAP(K)=OMAP(K)-(ZMAP*10.0)                                      		lighton=       OMAP(K)=OMAP(K)-(ZMAP*10.0) ## dots=       OMAP(K)=OMAP(K)-(ZMAP*10.0) ## glm=       OMAP(K)=OMAP(K)-(ZMAP*10.0)	MAP267
+29	1937	1978	VOTED	       FMTEXP(KDC+1)= FMTI                                              		lighton2=       FMTEXP(KDC+1)= FMTI ## dots=       FHTEXP(KDC+1)= FMTI ## dots2=       FMTEXP(KDC+1)= FMTI ## glm=       FMTEXP(KDC+1)= FMTI ## glm2=       FMTEXP(KDC+1)= FMTI	MAP261
+30	1986	2022	HANDFREE	      FMTRUT(KDC+1) = FMTF                                              		dots=       FMTRUT(KDC+1) = FMTF ## glm=       FMTRUT(KDC+1) = FMTF	
+31	2022	2062	VOTED	       FMTEXP(KOC+1)=FMTA                                               		lighton2=       FMTEXP(KOC+1)=FMTA ## dots=       FMTEXP(KDC+1)=FHTA ## dots2=       FMTEXP(KOC+1)=FNTA ## glm=       FMTEXP(KDC+1)=FMTA ## glm2=       FMTEXP(KOC+1)=FMTA	MAP271
+32	2074	2108	HANDFREE	      FMTRUT(KDC+1)=FMTA                                                		glm=       FMTRUT(KUC+1)=FMTA	
+33	2120	2151	AGREE	  300  CONTINUE                                                         		lighton=  300  CONTINUE ## dots=  300  CONTINUE ## glm=  300  CONTINUE	
+34	2151	2192	HANDFREE	      WRITE(ISOUT,2     ) (JMAP(K),K=1,KDC)                             	15,28	lighton=       WRITE(I,OUT,2     ) (JMAF(K),K=1,KDC) ## dots2=       WRITE(J,OUT,2     ) (JMAF(K),K=1,KDC) ## glm=       WRITE(ISOUT,2     ) （JMAF(K),K=1,KDC) ## glm2=       WRITE(ISOUT,2     ) （JMAF(K),K=1,KDC)	
+35	2192	2235	AGREE	       WRITE(ISOUT,4   )YY,(OMAP(K),K=KL,KH)                            		lighton=       WRITE(ISOUT,4   )YY,(OMAP(K),K=KL,KH) ## glm=       WRITE(ISOUT,4   )YY,(OMAP(K),K=KL,KH)	MAP27
+36	2248	2278	HANDFREE	      YY=YY-DGY                                                         		dots=       YY=YY-DGY ## glm=       YY=YY=DGY	
+37	2289	2321	HANDFREE	      GO TO 200                                                         		lighton=       GO TO 200 ## dots=       GO TO 200 ## glm=       GO TO 200	
+38	2321	2366	VOTED	  301  WRITE (MBTAPE) (OHAP(K),K=KL,KH)                                 		lighton=  301  WRITE (MBTAPE) (OMAP(K),K=KL,KH) ## dots=  301  WRITE (MBTAPE) (OHAP(K),K=KL,KH) ## glm=  301  WRITE (MBTAPE) (OHAP(K),K=KL,KH)	MAP27
+39	2376	2411	VOTED	  200  KL=KL-NXMAP                                                      		lighton=  200  KL≈KL-NXMAP ## dots=  200  KL=KL-NXMAP ## glm=  200  KL=KL-NXMAP	APR27
+40	2411	2450	AGREE	       IF (JC   .EQ.3)  GO TO 110                                       		lighton=       IF (JC   .EQ.3)  GO TO 110 ## dots=       IF (JC   .EQ.3)  GO TO 110 ## glm=       IF (JC   .EQ.3)  GO TO 110	
+41	2458	2494	HANDFREE	      WRITE (ISOUT,16)ABSSA                                             		lighton=       WRITE (ISOUT,16)ABSSA ## dots=       WRITE (ISOUT,16)ABSSA ## glm=       WRITE (ISOUT,16)ABSSA	
+42	2502	2536	HANDFREE	      XCOORD=XCOORD+XCIN                                                		dots=       XCOORD=XCOORD+XCIN ## glm=       XCOORD=XCOORD+XCIN	
+43	2546	2581	AGREE	  110  KKL=KKL+INC                                                      		dots=  110  KKL=KKL+INC ## glm=  110  KKL=KKL+INC	MAR20
+44	2591	2624	AGREE	  111  RETURN                                                           		lighton=  111  RETURN ## dots=  111  RETURN ## glm=  111  RETURN	APR28
+45	2636	2665	HANDFREE	      END                                                               		lighton=       ENO ## dots=       END ## glm=       END	
+46	3116	3148	NOISE	                                                                        			
+47	3295	3307	NOISE	                                                                        			

@@ -1,0 +1,14 @@
+1	9	COUNT 3/6	                                                                                	---
+4	598	OK	      SUBROUTINE CALC(IP,CPAP,NHAP)                                             	SUBROUTINE CALC(IP,CPAP,NHAP)
+40	2143	COUNT 25/29	                                                                                	2 YA?RAY MBTAPE MXREQ SD INPAM
+41	2184	COUNT 34/40	                                                                                	COMMON /MAPDAT/ CAYF CUTMAP DGX CGY IH IV
+44	2313	COUNT 17/20	                                                                                	3XMIN YMAX YMIN ZMIN
+46	2399	COUNT 48/54	                                                                                	1 GAMA KTR(100) PMAS(100) PSIZ(100) AO(100) SIGXO(100)
+47	2441	OK	     2SIGYO(100),SINA      ,TPAR(103) ,XPAR(100) ,YPAF(100) ,YPRML     ,        	2 SIGYO(100), SINA , TPAR(103) , XPAR(100) , YP AF(100) , YPRML ,
+48	2487	COUNT 15/16	                                                                                	3 YPRMU ZPAR(100)
+50	2572	COUNT 25/31	                                                                                	1 MAPRUN NE NIJ NORD NREG NTASK
+51	2615	COUNT 28/27	                                                                                	20PMID(12) ,T1 ,T2 ,HFMAS(21.1)
+59	2957	COUNT 36/37	                                                                                	A = SINA*COSA*(1.0/VARY2-1.0/VARX2)*2.
+60	3000	COUNT 33/17	                                                                                	\beta = 4. 0 / \sqrt {A R X 2} / \sqrt {A R Y 2}
+61	3045	COUNT 35/36	                                                                                	CC= (COSA**2/VARX2 + SINA**2/VARY2)*2.
+62	3086	OK	      D = 2.0*GAMA*CC                                                           	D = 2.0*GAMA*CC

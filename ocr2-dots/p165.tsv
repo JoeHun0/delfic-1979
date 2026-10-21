@@ -1,0 +1,14 @@
+29	1664	OK	      TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      .        	TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX .
+30	1710	OK	     .XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	.XMIN ,YMAX ,YMIN ,ZMIN
+31	1753	OK	      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20J),             	COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20J),
+33	1839	COUNT 29/28	                                                                                	COMMON /UTILITY/ KCLT,NPRNT(15)
+34	1883	COUNT 25/24	                                                                                	LOGICAL IGO, JO, KDOS, NPRINT
+39	2096	OK	     1  17H (R-M**2)/(HR-KT), 10X, 1PE11.4, 18H (R-MI**2)/(HR-KT))              	1 17H (R-M**2)/(HR-KT), 10X, 1PE11.4, 18H (R-MI**2)/(HR-KT))
+44	2311	OK	      IF( KDOS ) A = A*(1.0 - (TENTER/TEXIT)**(0.26))                           	IF ( KDOS ) A = A* (1.0 - (TENTER/TEXIT)**(0.26))
+47	2441	COUNT 34/24	                                                                                	A = A * (3600/\text{TIME})^{*\*(1.26)}
+49	2529	OK	      DO 390 I=1,ITAB                                                           	DO 390 I=1, ITAB
+51	2614	COUNT 20/19	                                                                                	IF ( NPRINT (15%) RETURN
+54	2743	COUNT 16/17	                                                                                	WRITE( KOUT ,1000 )
+55	2784	COUNT 57/56	                                                                                	WRITE (KOUT,2000) (PSIZE(I),FP(I),PSIZE(I+NTAP),FP(I+NTAB),
+56	2818	COUNT 50/62	                                                                                	1 PSIZE(I+2*NTAB),FF(I+2*NTAB),PSIZE(I+3*NTAB),I=1,
+61	3046	COUNT 1/3	                                                                                	C

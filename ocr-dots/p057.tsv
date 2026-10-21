@@ -1,0 +1,58 @@
+1	44	COUNT 0/36;COUNT 0/3	                                                                                	 || 
+2	111	COUNT 0/33;COUNT 0/8	                                                                                	 || 
+3	851	OK	*DECK,SETTLE                                                            SETTL  1	* DECK, SETTLE || SETTL 1
+4	895	OK	      SUBROUTINE SETTLE(O,RHOP,RHO,ETA,T,P,V,I)                         SETTL  2	SUBROUTINE SETTLE(O,RHOP,RHO,ETA,T,P,V,I) || SETTL 2
+5	931	OK	C                                                                       SETTL  3	C || SETTL 3
+6	980	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     SETTL  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || SETTL 4
+7	1023	OK	C                                                                       SETTL  5	C || SETTL 5
+8	1073	COUNT 55/56	                                                                        SETTL  6	COMPUTES STILL-AIR SETTLING SPEED OF RIGID SPHERES ACCORCING TO || SETTL 6
+9	1108	COUNT 51/52	                                                                        SETTL  7	THE EQUATIONS OF BEARD (JAS33,852(1976)) FOR SMALL SPHERES || SETTL 7
+10	1146	COUNT 64/63	                                                                        SETTL  8	C (CORR .LE. 84.175), AND DAVIES(PROC.PHYS.SOC.(LONDON)57,256(1945)). || SETTL 8
+11	1188	OK	C     FOR LARGER SPHERES.                                               SEITL  9	C FOR LARGER SPHERES. || SEITL 9
+12	1238	OK	C                                                                       SETTL 10	C || SETTL 10
+13	1282	COUNT 17/18	                                                                        SETTL 11	GLOSSARY (SI UNITS) || SETTL 11
+14	1317	COUNT 52/45	                                                                        SETTL 12	C = 4.0*G/3.0 \text{ WHERE G IS ACCELERATION OF GRAVITY (9.8)} || SETTL 12
+15	1366	OK	C     CORR    DAVIES NUMBER                                             SETTL 13	C CORR DAVIES NUMBER || SETTL 13
+16	1412	COUNT 1/16	                                                                        SETTL 14	C || SETTL 14
+17	1445	COUNT 2/13	                                                                        SETTL 15	CO || SETTL 15
+18	1496	OK	C     P       PRESSURE                                                  SETTL 16	C P PRESSURE || SETTL 16
+19	1540	COUNT 1/16	                                                                        SETTL 17	C || SETTL 17
+20	1583	COUNT 1/18	                                                                        SETTL 18	C || SETTL 18
+21	1625	OK	C     T       TEMPERATURE                                               SETTL 19	C T TEMPERATURE || SETTL 19
+22	1668	COUNT 1/15	                                                                        SETTL 20	C || SETTL 20
+23	1710	OK	C     I       ACCURACY INDICATOR                                        SETTL <1	C I ACCURACY INDICATOR || SETTL <1
+24	1755	COUNT 1/20	                                                                        SETTL 22	C || SETTL 22
+25	1797	COUNT 1/45	                                                                        SETTL 23	C || SETTL 23
+26	1839	OK	C                                                                       SETTL 24	C || SETTL 24
+27	1882	OK	      DATA C/13.066667/                                                 SETTL 25	DATA C/13.066667/ || SETTL 25
+28	1926	OK	C                                                                       SETTL 26	C || SETTL 26
+29	1969	COUNT 0/3	                                                                        SETTL 27	 || SETTL 27
+30	2012	OK	COMPUTE DAVIES NUMBER                                                   SETTL 28	COMPUTE DAVIES NUMBER || SETTL 28
+31	2056	COUNT 75/33	                                                                        SETTL 29	\text{CDRR} = C * (\text{RHOP} - \text{RHO}) * \text{RHO} * C^{**} * 3/\text{ETA}^{**2} || SETTL 29
+32	2097	OK	CHECK DAVIES NUMBER VALUE FOR ROUTING                                   SETTL 30	CHECK DAVIES NUMBER VALUE FOR ROUTING || SETTL 30
+33	2140	OK	      IF(CDRR.GT.  0.3261) IF(CDRR-84.175) 1(0,100.200                  SETTL 31	IF(CDRR.GT. 0.3261) IF(CDRR-84.175) 1(0,100.200 || SETTL 31
+34	2177	OK	COMPUTE VIA STOKES-LAW EQUATION                                         SETTL 32	COMPUTE VIA STOKES-LAW EQUATION || SETTL 32
+35	2217	COUNT 31/23	                                                                        SETTL 33	V = \frac{CDRR*ETA}{(24.0*RHO*D)} || SETTL 33
+36	2269	OK	      GO TO 530                                                         SETTL 34	GO TO 530 || SETTL 34
+37	2312	OK	COMPUTE VIA BEARDS EQUATION                                             SETTL 35	COMPUTE VIA BEARDS EQUATION || SETTL 35
+38	2354	COUNT 29/15	                                                                        SETTL 36	100 \text{ Y} = \text{ALOG(CORR)} || SETTL 36
+39	2397	COUNT 84/54	                                                                        SETTL 37	V = \text{ETA}/(\text{RHO} * \text{D}) * \text{EXP}(-3.18657 + Y*(0.992696 + Y*(-0.153193E-2)) || SETTL 37
+40	2441	OK	     1+y*(-0.987059E-3 + y*(-0.578878E-3 + y*(0.855176E-4               SETTL 38	1 + y*(-0.987059E-3 + y*(-0.578878E-3 + y*(0.855176E-4 || SETTL 38
+41	2484	COUNT 18/21;COUNT 8/7	                                                                                	2-Y*0.327615E-5))) || SETTL. 39
+42	2526	OK	      GO TO 500                                                         SETTL 40	GO TO 500 || SETTL 40
+43	2569	OK	COMPUTE VIA DAVIES EQUATIONS                                            SETTL 41	COMPUTE VIA DAVIES EQUATIONS || SETTL 41
+44	2612	OK	 200  IF(CORR.GT.140.)IF(CORR-4.5E7)400,400,300                         SETTL 42	200 IF(CORR.GT.140.)IF(CORR-4.5E7)400,400,300 || SETTL 42
+45	2654	COUNT 86/50	                                                                        SETTL 43	V = \text{ETA}/(\text{RHO}*\text{D})*\text{CORR}*(4.16666667E-2 + \text{CORR}*(-2.3363E-4) || SETTL 43
+46	2700	COUNT 34/35	                                                                        SETTL 44	1+CDRR*(2.0154E-6-CDRR*6.9105E-9)) || SETTL 44
+47	2732	OK	      GO TO 500                                                         SETTL 45	GO TO 500 || SETTL 45
+48	2784	OK	 300  I = 1                                                             SETTL 46	300 I = 1 || SETTL 46
+49	2828	COUNT 0/17	                                                                        SETTL 47	 || SETTL 47
+50	2870	COUNT 75/54	                                                                        SETTL 48	V = \text{ETA}/(\text{RHO}*\text{D})*(10.0)**(-1.29536 + Y*(0.986 + Y*(-0.046677+ || SETTL 48
+51	2914	COUNT 14/15	                                                                        SETTL 49	1Y*1.1235E-3)) || SETTL 49
+52	2957	OK	      RETURN                                                            SETTL 50	RETURN || SETTL 50
+53	2998	OK	CORRECT SETTLING SPEED FOR SLIP                                         SEITL 51	CORRECT SETTLING SPEED FOR SLIP || SEITL 51
+54	3043	COUNT 70/35	                                                                        SETTL 52	500 \text{ V} = \text{V*}(1.0 + 54.088*\text{ETA}*\text{SQRT}(T)/\text{F/D}) || SETTL 52
+55	3086	OK	      RETURN                                                            SETTL 53	RETURN || SETTL 53
+56	3129	OK	      END                                                               SETTL 54	END || SETTL 54
+57	3202	COUNT 0/1	                                                                                	
+58	3346	COUNT 0/42;COUNT 0/1	                                                                                	 || 

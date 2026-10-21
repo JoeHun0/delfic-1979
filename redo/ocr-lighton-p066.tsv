@@ -1,0 +1,51 @@
+1	93	COUNT 0/10;COUNT 8/2	                                                                                	 || \text{S}
+2	121	COUNT 0/16	                                                                                	
+3	879	OK	      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302                         ICH  181	IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302 || ICH 181
+4	918	COUNT 7/6	      WRITE(ISOUT,12)                                                           	WRITE(ISOUT,12) || <table>
+5	962	COUNT 28/29	                                                                        ICH  183	WRITE( ISOUT, 14 ) TME, TMPG, SSAM || ICH 183
+6	1005	COUNT 0/6	      GO TO 118                                                                 	GO TO 118 || 
+7	1048	OK	 301  WRITE (ISOUT,5)                                                   ICH  185	301 WRITE (ISOUT, 5) || ICH 185
+8	1090	OK	      GO TO 108                                                         ICH  186	GO TO 108 || ICH 186
+9	1133	COUNT 0/6	 3C2  WRITE (ISOUT,6)                                                           	3C2 WRITE (ISOUT,6) || 
+10	1175	COUNT 7/6	 108  WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM                                     	108 WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM || <table>
+11	1219	OK	  118 ZSOM=ZSCL*0.3048                                                  ICM  189	118 ZSOM=ZSCL*0.3048 || ICM 189
+12	1269	OK	      WRITE(ISOUT,20)ZSOL,ZSCH                                          ICM  190	WRITE(ISOUT,20)ZSOL,ZSCH || ICM 190
+13	1306	OK	C     SET FRACTION OF EXPLOSION ENERGY IN THE CLOUD                     ICM  191	C SET FRACTION OF EXPLOSION ENERGY IN THE CLOUD || ICM 191
+14	1349	COUNT 6/5	                                                                        ICM  192	F = 0.45 || ICM 192
+15	1391	COUNT 0/12	                                                                        ICH  193	 || ICH 193
+16	1433	OK	      WRITE(ISOUT,1400) F,PHI,RPHI,SLOTMP                               ICM  194	WRITE(ISOUT,1400) F,PHI,RPHI,SLOTMP || ICM 194
+17	1477	OK	      WRITE(ISOUT,1800)XGZ,YCZ,TGZ                                      ICM  195	WRITE(ISOUT,1800)XGZ,YCZ,TGZ || ICM 195
+18	1519	OK	      WRITE(ISOUT,19) RHOF                                              ICH  196	WRITE(ISOUT,19) RHOF || ICH 196
+19	1564	COUNT 0/6	      IF(IC(1)-1)309,310,311                                                    	IF(IC(1)-1) 309, 310, 311 || 
+20	1606	OK	  309 WRITE(ISOUT,7)DMEAN,SD                                            ICM  198	309 WRITE(ISOUT,7)DMEAN,SD || ICM 198
+21	1648	OK	      IF (IS)102,103,102                                                ICH  199	IF (IS) 102, 103, 102 || ICH 199
+22	1692	COUNT 7/6	 103  WRITE (ISOUT,8)                                                           	103 WRITE (ISOUT,8) || <table>
+23	1735	OK	      GO TO 105                                                         ICM  201	GO TO 105 || ICM 201
+24	1777	OK	 102  WRITE (ISOUT,9)                                                   ICH  202	102 WRITE (ISOUT, 9) || ICH 202
+25	1820	OK	  105 BARMU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2)                        ICM  203	105 BARMU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2) || ICM 203
+26	1863	COUNT 7/6	      WRITE(ISOUT,24)BARMU,SD                                                   	WRITE(ISOUT,24)BARMU,SD || ICM 2.04
+27	1907	COUNT 16/15	                                                                        ICM  205	WRITE (ISOUT, 250) || ICM 205
+28	1956	OK	      GO TO 315                                                         ICH  206	GO TO 315 || ICH 206
+29	1992	COUNT 7/6	  310 WRITE(ISOUT,27) CAYM, EXPO                                                	310 WRITE(ISOUT,27) CAYM, EXPO || <table>
+30	2041	OK	      GO TO 315                                                         ICM  208	GO TO 315 || ICM 208
+31	2077	OK	  311 WRITE(ISOUT,18)                                                   ICM  209	311 WRITE(ISOUT,18) || ICM 209
+32	2121	COUNT 7/6	C                                                                               	C || <table>
+33	2162	OK	C     PRINT PARTICLE SIZE DISTRIBUTION TABLE                            ICM  211	C PRINT PARTICLE SIZE DISTRIBUTION TABLE || ICM 211
+34	2215	OK	C                                                                       ICM  212	C || ICM 212
+35	2249	COUNT 7/6	  315 WRITE(ISOUT,193)NOSTR                                                     	315 WRITE(ISOUT,193)NOSTR || <table>
+36	2299	OK	      00 602 J=1,NOSTR                                                  ICM  214	00 602 J=1, NOSTR || ICM 214
+37	2335	OK	  602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J)                ICM  215	602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J) || ICM 215
+38	2381	OK	C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE       ICH  216	C CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE || ICH 216
+39	2429	OK	      IF(IC(5) .EC. 0) GO TO 603                                        ICM  217	IF(IC(5) .EC. 0) GO TO 603 || ICM 217
+40	2465	COUNT 0/7	                                                                        ICH  218	 || ICH 218
+41	2508	COUNT 7/6	      WRITE(ISOUT,28)                                                           	WRITE(ISOUT,28) || <table>
+42	2549	OK	  603 WRITE(ISOUT,1700)KCI,IRAD                                         ICM  220	603 WRITE(ISOUT,1700)KCI,IRAD || ICM 220
+43	2592	COUNT 7/6	      WRITE(ISOUT,192)                                                          	WRITE(ISOUT,192) || <table>
+44	2637	COUNT 7/6	  200 WRITE(ISOUT,15)                                                           	200 WRITE(ISOUT,15) || <table>
+45	2686	OK	      RETURN                                                            ICM  223	RETURN || ICM 223
+46	2725	COUNT 7/6	 143  WRITE (ISOLT,11)                                                          	143 WRITE (ISOLT,11) || <table>
+47	2765	OK	      GO TO 200                                                         ICM  225	GO TO 200 || ICM 225
+48	2815	OK	      END                                                               ICM  226	END || ICM 226
+49	3225	OK	                                      63                                        	63
+50	3361	COUNT 22/1;COUNT 20/5	                                                                                	\mathcal{L} \mathcal{A} || \text{الجَمْعِيَّةِ}
+51	3392	COUNT 350/11	                                                                                	\text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: }

@@ -1,0 +1,25 @@
+1	9	COUNT 0/17	                                                                                	
+2	51	COUNT 0/26	                                                                                	
+5	643	OK	 2401 IF(DPST(2,2)-ZBRSTZ)25(,259,2448                                          	2401 IF(DPST(2,2)-ZBRSTZ)25(,259,2448
+10	859	COUNT 35/34	                                                                                	IF (DPST (2, 1) - ZBRSTZ) E020,6020,2440 |
+33	1846	OK	      00 2445 I=1,KDIP                                                          	00 2445 I=1,KDIP
+35	1932	COUNT 23/22	                                                                                	A=0PST(2,2)+(FI-1.0)*0Z
+36	1975	COUNT 11/6	                                                                                	\beta = A + D'Z
+37	2018	COUNT 38/29	                                                                                	A1=AL^{**}(2.0^{*}(B-0.05PST(2,2))/20)
+38	2059	COUNT 50/29	                                                                                	A2 = AL^{**} \cdot (2.0^* \cdot (A - \text{DPST}(2,2))/20)
+39	2103	COUNT 97/43	                                                                                	\text{PPST}(2,1) = \text{ALL} \cdot (\text{ALOG}(0.5 \cdot (\text{A1} + \text{A2}))) \cdot \text{DPST}(2,2)
+42	2231	COUNT 63/35	                                                                                	\text{PPST}(4,1) = \text{SQRT}(\text{DPST}(4,1) * \text{DPST}(4,2))
+43	2275	COUNT 52/24	                                                                                	\text{PPST}(5, I) = \text{OPST}(5, \text{MBT}) / \text{FK}
+44	2318	OK	      PPST(6,1)=DZ                                                              	PPST(6, 1)=DZ
+45	2360	COUNT 20/11	                                                                                	\mathrm{PPST}(7, I) = A
+50	2575	OK	      IF(PPST(2,I).GT.Z0RSTZ) GO TO 3443                                        	IF(PPST(2,I).GT.Z0RSTZ) GO TO 3443
+51	2618	COUNT 86/49	                                                                                	\text{PPST}(1,1) = \text{CX(MCX,1)} - (\text{Z8RSTZ} - \text{PPST}(2,1))/(1 + \text{ONWAF}(2))
+52	2662	OK	     1 (DNWAF(1) - ONWAF(2))*(PPST(2,1) - DPST(2,2))/20)                        	1 (DNWAF(1) - ONWAF(2)) * (PPST(2,1) - DPST(2,2)) / 20)
+54	2748	OK	      PPST(6,1)=0.0                                                             	PPST(6,1)=0.0
+55	2791	OK	      PPST(7,1)=ZBRSTZ                                                          	PPST(7,1)=ZBRSTZ
+56	2833	OK	      PPST(8,1)=0.0                                                             	PPST(8,1)=0.0
+57	2877	COUNT 7/8	                                                                                	G TO 2445
+60	3003	COUNT 89/61	                                                                                	\text{PPST}(8,1) = \text{PPST}(8,1) - 3.1415927*(ZBRSTZ - \text{PPST}(7,1)) * \text{PPST}(3,1)**2
+61	3049	OK	      PPST(7,1)=ZBRSTZ                                                          	PPST(7,1)=ZBRSTZ
+62	3091	COUNT 15/11	                                                                                	2445 CONTINUE ...
+64	3276	COUNT 0/41	                                                                                	

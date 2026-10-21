@@ -1,0 +1,10 @@
+3	606	OK	  200 DO 210 I=1,NAT                                                            	200 DO 210 I=1,NAT
+26	1593	COUNT 10/9	                                                                                	A3 = PR.S(1)
+28	1678	OK	      A5=RHO(1)                                                                 	A5 = RHO(1)
+36	2022	COUNT 0/20	                                                                                	
+39	2152	OK	      NA=NA+1                                                                   	NA = NA + 1
+47	2495	COUNT 0/34	                                                                                	
+48	2539	COUNT 0/34	                                                                                	
+49	2579	COUNT 0/34	                                                                                	
+50	2620	COUNT 0/34	                                                                                	
+62	3272	COUNT 290/48	                                                                                	\text{1. } \text{2. } \text{3. } \text{4. } \text{5. } \text{6. } \text{7. } \text{8. } \text{9. } \text{10. } \text{11. } \text{12. } \text{13. } \text{14. } \text{15. } \text{16. } \text{17. } \text{18. } \text{19. } \text{20. } \text{21. } \text{22. } \text{23. } \text{24. } \text{25. } \text{26. } \text{27. } \text{28. } \text{29. } \text{30.

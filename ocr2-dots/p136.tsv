@@ -1,0 +1,14 @@
+8	762	OK	  405 CALL GETDA( USUM,ZBT,KBHA,KBHB,NDATO,LTIN, UBAR,KBHF,NDATF,LTIMF)         	405 CALL GETDA ( USUM, ZBT, KBHA, KBHB, NDATO, LTIN, UBAR, KBHF, NDATF, LTIMF)
+9	807	OK	      CALL GETDA( VSUM,ZBH,KBHA,KBHB,NDATO,LTIN, VBAR,KBHF,NDATF,LTINF)         	CALL GETDA( VSUM, ZBH, KBHA, KBHB, NDATO, LTIN, VBAR, KBHF, NDA TF, LTINF)
+16	1109	OK	      SIGXC=SIGXO+DXBAR*TSEG                                                    	SIGXC=SIGXO+DXBAR*TSEG
+17	1150	OK	      SIGYC=SIGYO+DYBAR+TSEG                                                    	SIGYC=SIGYO+DYBAR+TSEG
+33	1835	COUNT 59/56	                                                                                	ZC=\sqrt{RT((XT-XC)**2+(YT-YC)**2)/((XT-XO)**2+(YT-YO)**2)}
+34	1879	COUNT 17/16	                                                                                	ZC = ZT + ZC^* (Z0 - ZT)
+36	1963	COUNT 21/17	                                                                                	TSEG = (ZC \cdot ZO) / WBAR
+39	2094	OK	      TSEG=(XC-XO)/UBAR                                                         	TSEG=(XC-XO)/UBAR
+41	2178	COUNT 33/34	                                                                                	513 IF (ABS(VBAR) < LE.1.0E-3) GO TO 516
+48	2478	COUNT 50/22	                                                                                	\text{SIGXC}= \text{SIGXO} + \text{OXBAR} + \text{TSEG}
+49	2521	OK	      SIGYC=SIGYO+DYBAR*TSEG                                                    	SIGYC = SIGYO + DYBAR * TSEG
+51	2607	COUNT 56/55	                                                                                	CALL NEST(NET, I-ETSU, XC, YC, NDA1C, XL, XR, YL, YU, ICF, JCF, NCF)
+54	2735	OK	     1(NDTO1.NE.NOATO)) GO TO 626                                               	1 (NDTO1.NE.NOATO)) GO TO 626
+58	2909	OK	      YQ=YG                                                                     	YQ=YG

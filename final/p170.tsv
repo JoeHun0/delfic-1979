@@ -1,0 +1,45 @@
+1	51	90	NOISE	                                                                        			
+2	788	821	COMMENT	C     PARTICLE DATA TO BE CUMPED INTO LOWER CORE SO THAT IT IS          		lighton=C     PARTICLE DATA TO BE CUMPED INTO LOWER CORE SO THAT IT IS ## glm=C     PARTICLE DATA TO BE CUMPED INTO LOWER CORE SC THAT IT IS	POMP49
+3	831	865	COMMENT	C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO        		lighton=C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A CATA BLOCK WITH NO ## dots=C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO ## glm=C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO	PDMP50
+4	877	908	COMMENT	C     REJECTED PARTICLES IN IT)                                         		lighton=C     REJECTED PARTICLES IN IT) ## dots=C     REJECTED PARTICLES IN IT) ## glm=C     REJECTED PARTICLES IN IT)	PDMP51
+5	922	951	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	POMP52
+6	964	996	VOTED	      00 300 I=1,KP                                                     		lighton=      NO 300 I=1,KP ## dots=      00 300 I=1,KP ## glm=      00 300 I=1，KP	POMP53
+7	996	1037	AGREE	      IF(KTR(I).EQ.0) GO TO 300                                         		lighton=      IF(KTR(I).EQ.0) GO TO 300 ## dots=      IF(KTR(I).EQ.0) GO TO 300 ## glm=      IF(KTR(I).EQ.0) GO TO 300	POMP54
+8	1049	1080	AGREE	      JP=JP+1                                                           		dots=      JP=JP+1 ## glm=      JP=JP+1	PUMP55
+9	1093	1124	VOTED	      DO 2CC K=J,NE                                                     		lighton=      00 200 K=J,NE ## dots=      DO 2CC K=J,NE ## glm=      DO 2CC K=J.NE	FOMP56
+10	1135	1164	VOTED	      L=4-K                                                             		lighton2=      L=4-K ## dots=      L=4-k ## glm=      L=4-K ## glm2=      L=4-K	PUMP57
+11	1178	1210	VOTED	      IF(KTR(L).EQ.1)GO TC 10C                                          		lighton=      IF(KTR(L).EQ.1)GO TC 10C ## dots=      IF(KTR(L).EQ.1)GO TC 100 ## glm=      IF(KTR(L).EQ.1)GO TC 10C	POMP58
+12	1224	1252	HANDFREE	      JL=JL+1                                                           			POMP59
+13	1264	1294	AGREE	      KK=K                                                              		lighton=      KK=K ## glm=      KK=K	POMP60
+14	1308	1336	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	POMP51
+15	1348	1382	COMMENT	C     MOVE  PARCEL  DATA TC AVAILABLE STORAGE IN LOWER CORE             		lighton=C     MOVE  PARCEL  DATA TC AVAILABLE STORAGE IN LOWER CORE ## dots=C     MOVE  PARCEL  DATA TO AVAILABLE STORAGE IN LOWER CORE ## glm=C     MOVE  PARCEL  DATA TC AVAILABLE STORAGE IN LOWER CORE	POMP62
+16	1393	1424	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	POMP63
+17	1436	1468	AGREE	      XPAR(I)=XPAR(L)                                                   		dots=      XPAR(I)=XPAR(L) ## glm=      XPAR(I)=XPAR(L)	POMP64
+18	1479	1510	AGREE	      YPAR(I)=YPAR(L)                                                   		dots=      YPAR(I)=YPAR(L) ## glm=      YPAR(I)=YPAR(L)	POMP65
+19	1520	1551	AGREE	      ZPAR(I)=ZPAR(L)                                                   		lighton=      ZPAR(I)=ZPAR(L) ## dots=      ZPAR(I)=ZPAR(L) ## glm=      ZPAR(I)=ZPAR(L)	PDMP66
+20	1563	1594	AGREE	      TPAR(I)=TPAR(L)                                                   		lighton=      TPAR(I)=TPAR(L) ## dots=      TPAR(I)=TPAR(L) ## glm=      TPAR(I)=TPAR(L)	POMP67
+21	1607	1638	AGREE	      SIGXO(I)=SIGXO(L)                                                 		glm=      SIGXO(I)=SIGXO(L) ## glm2=      SIGXO(I)=SIGXO(L)	POMP68
+22	1650	1681	AGREE	      SIGYO(I)=SIGYO(L)                                                 		lighton=      SIGYO(I)=SIGYO(L) ## glm=      SIGYO(I)=SIGYO(L)	POMP69
+23	1693	1724	VOTED	      RO(I)=RO(L)                                                       		lighton=      RO(I)=RO(L) ## dots=      RO(I)=RO(L) ## glm=      RO（I）=RO（L）	POMP70
+24	1736	1768	AGREE	      PSIZ(I)=PSIZ(L)                                                   		dots=      PSIZ(I)=PSIZ(L) ## glm=      PSIZ(I)=PSIZ(L)	PDMP71
+25	1779	1809	AGREE	      PMAS(I)=PMAS(L)                                                   		lighton=      PMAS(I)=PMAS(L) ## dots=      PMAS(I)=PMAS(L) ## glm=      PMAS(I)=PMAS(L)	POMP72
+26	1822	1853	AGREE	      GO TO 260                                                         		lighton=      GO TO 260 ## dots=      GO TO 260 ## glm=      GO TO 260	POMP73
+27	1865	1896	AGREE	  100 JP=JP+1                                                           		lighton=  100 JP=JP+1 ## glm=  100 JP=JP+1	POMP74
+28	1907	1938	VOTED	  200 CONTINUE                                                          		lighton=  2J0 CONTINUE ## dots=  200 CONTINUE ## glm=  200 CONTINUE	POMP75
+29	1951	1982	AGREE	  250 IRROR=-250                                                        		lighton=  250 IRROR=-250 ## dots=  250 IRROR=-250 ## glm=  250 IRROR=-250	POMP76
+30	1994	2027	VOTED	      GO TO 2030                                                        		lighton=      GO TO 2030 ## dots=      GO TO 2030 ## glm=      GO TO 2000	POMP77
+31	2036	2068	VOTED	  26( J=KK+1                                                            		lighton=  26( J=KK+1 ## lighton2=  26( J=KK+1 ## glm=  26（ J=KK+1	POMP78
+32	2080	2111	VOTED	  500 CONTINUE                                                          		lighton=  500 CONTINUE ## dots=  500 CONTINUE ## glm=  300 CONTINUE	PDMP79
+33	2124	2155	AGREE	      IF(JP.LE.NE) GO TO 500                                            		lighton=      IF(JP.LE.NE) GO TO 500 ## dots=      IF(JP.LE.NE) GO TO 500 ## glm=      IF(JP.LE.NE) GO TO 500	POMP60
+34	2165	2197	AGREE	  310 IRROR=-310                                                        		lighton=  310 IRROR=-310 ## dots=  310 IRROR=-310 ## glm=  310 IRROR=-310	PQMP81
+35	2211	2242	VOTED	      GO TO 2030                                                        		lighton=      GO TO 2030 ## dots=      GO TO 2030 ## glm=      GO TO 2000	POMP82
+36	2253	2285	VOTED	  500 IF(JL.LE.KP)GO TO 100C                                            		lighton=  500 IF(JL.LE.KP)GO TO 100C ## dots=  500 IF(JL.LE.KP)GO TO 1000 ## glm=  50G IF(JL.LE.KP)GO TO 100C	POMP83
+37	2297	2328	HANDFREE	  510 IRROR=-510                                                        	6	lighton=  510·IRROR=-510 ## lighton2=  510'ERROR=-510 ## dots=  510'IRROR=-510 ## dots2=  510'IRROR=-510 ## glm=  510 IRROR=-510 ## glm2=  510 IRROR=-510	POMP4
+38	2340	2372	HANDFREE	 2000 CALL ERROR(PROGRM,IRROR,ISOUT)                                    	28	lighton2= 2000 CALL ERROR(PROGRM,IFFCR,ISOUT) ## glm= 2000 CALL ERROR(PROGRM,IFFOR,ISOUT) ## glm2= 2000 CALL ERROR(PROGRM,IKFRR,ISOUT)	POMP85
+39	2382	2414	VOTED	 1C00 WRITE(LTAPE)KP                                                    		lighton= 1C00 WRITE(LTAPE)KP ## dots= 1000 WRITE(LTAPE)KP ## glm= 1C00 WRITE(LTAPE)KP	PUMP86
+40	2414	2456	VOTED	      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),   		lighton=      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I), ## lighton2=      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I), ## dots=      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I), ## dots2=      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I), ## glm2=      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),	P3MP87
+41	2468	2501	AGREE	     1 RO(I),PSIZ(I),PMAS(I),I=1,KP)                                    		lighton=     1 RO(I),PSIZ(I),PMAS(I),I=1,KP) ## dots=     1 RO(I),PSIZ(I),PMAS(I),I=1,KP) ## glm=     1 RO(I),PSIZ(I),PMAS(I),I=1,KP)	POMP88
+42	2512	2542	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	POMP89
+43	2553	2582	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	POMP90
+44	3136	3168	NOISE	                                                                        		lighton=                                         167 ## dots=                                         167 ## glm=                                         167	
+45	3295	3327	NOISE	                                                                        			

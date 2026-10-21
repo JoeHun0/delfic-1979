@@ -1,0 +1,55 @@
+1	610	621	NOISE	                                                                        			
+2	763	799	VOTED	      IF(TMPS-848.)5,5,6                                                		lighton=      IF(TMP5-848.)5,5,6 ## lighton2=      IF(TMPS-848.)5,5,6 ## dots2=      IF(TMPS-848.)5,5,6 ## glm=      IF（TMPS-848.）5,5,6	CRMIN61
+3	799	839	AGREE	    5 TPR=TMPS                                                          		lighton=    5 TPR=TMPS ## dots=    5 TPR=TMPS ## glm=    5 TPR=TMPS	CRHIN62
+4	848	880	AGREE	      GO TO 7                                                           		lighton=      GO TO 7 ## dots=      GO TO 7 ## glm=      GO TO 7	CRMIN63
+5	893	926	AGREE	    6 TPR=848.                                                          		lighton=    6 TPR=848. ## dots=    6 TPR=848. ## glm=    6 TPR=848.	CRMIN64
+6	926	969	NONE	                                                                        			CRMIN65
+7	978	1011	VOTED	    7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+            		lighton=    7 SOILHT=SSAM*(TAD+701.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+ ## lighton2=    7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+ ## dots=    7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+ ## dots2=    7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+	CRMIN66
+8	1022	1056	AGREE	     11.381E+7*(1./TPR-1./TE))                                          		dots=     11.381E+7*(1./TPR-1./TE)) ## glm=     11.381E+7*(1./TPR-1./TE))	CRHIN67
+9	1065	1098	VOTED	      TAD=0.                                                            		lighton=      TAD=0. ## dots=      TAD=0. ## glm=      TAO=0.	CRMIN68
+10	1107	1140	AGREE	      TPR=T                                                             		lighton=      TPR=T ## glm=      TPR=T	CRMIN69
+11	1149	1186	AGREE	      IF(TPR-2300.)17,17,16                                             		lighton=      IF(TPR-2300.)17,17,16 ## dots=      IF(TPR-2300.)17,17,16 ## glm=      IF(TPR-2300.)17,17,16	CRMIN70
+12	1186	1226	VOTED	   16 TAD= -3587.5*(TPR-2300.) + 1.0625*(TPR**2-(2300.)**2)             		lighton=   16 TAD= -5587.5*(TPR-2300.) + 1.0625*(TPR**2-(2300.)**2) ## dots=   16 TAD= -3587.5*(TPR-2300.) + 1.0625*(TPR**2-(2300.)**2) ## glm=   16 TAO= -3587.5*（TPR-2300.） + 1.0625*（TPR**2-(2300.)**2)	CRHIN71
+13	1234	1267	VOTED	      TPR=23.0.                                                         		lighton=      TPR=23\%. ## lighton2=      TPR=23.0. ## glm=      TPR=23.0.	CRMIN72
+14	1278	1312	VOTED	   17 FQ=4.18E12*F*W-SOILHT                                             		lighton=   17 FQ=4.18E12*F*H-SOILHT ## lighton2=   17 FQ=4.18E12*F*W-SOILHT ## dots=   17 FQ=4.18E12*F*W-SOILHT ## dots2=   17 FQ=4.18E12*F*W-SOILHT	CRMIN73
+15	1320	1355	TIE	      RNA0=PHI*FQ/(TAD+946.6*(TPR-TE)+(0.19855*(TPR*2-TE*2)+XE*(1697.661	8,10,19,30,37,39,40,41,42,43,44,46,47,48,49,50,51,58,59,60,61,62,63,64,65,66,67,68,69,70,72	dots=      RNA0=PHI*FQ/(TAD+946.6*(TPR-TE)+(0.19855*(TPR*2-TE*2)+XE*(1697.661 ## glm=      RHAO=PHI*FQ/（TAD+946.6*（TPR-TE）+0.19855*（TPR**2-TE**2）+XE*(1697.66	CRMIN74
+16	1363	1398	NONE	                                                                        			CRHIN75
+17	1406	1441	TIE	      RNMO=FQ*(1.-PHI)/(1697.66*(T-TE)+0.572087*(T**2-TE**2)+2.5E6)     	8,9,15,22,24,33,38,49,60	dots=      RNMO=FQ*(1.-PHI)/(1697.66*(T-TE)+0.572087*(T**2-TE**2)+2.5E6) ## glm=      RHNO=FQ*（1.-PHI）/（1697.66*（T-TE）+0.572087*（T**2-TE**2）+2.5E6)	CRNIN76
+18	1452	1485	AGREE	     1  +RMAO*XE                                                        		lighton=     1  +RMAO*XE ## dots=     1  +RMAO*XE ## glm=     1  +RMAO*XE	CRMIN77
+19	1494	1527	VOTED	      X=RMWO/RMAO                                                       		lighton2=      X=RMWO/RMAO ## dots=      X=RMWD/RMAO ## dots2=      X=RMWO/RMAO ## glm=      X=RMWO/RMAO	CRMIN78
+20	1537	1569	VOTED	      RH=RMAO+RMWO+SSAM                                                 		lighton2=      RM=RMAO+RMWO+SSAM ## dots2=      RH=RMAO+RMWO+SSAM ## glm=      RH=RMAO+RMWO+SSAM	CRMIN79
+21	1579	1613	TIE	      S=SSAM/RMAO                                                       	15	lighton2=      S=SSAM/RMAO ## dots=      S=SSAM/RNAO ## dots2=      S=SSAN/RNAO ## glm=      S=SSAM/RMAO	
+22	1622	1655	TIE	      V=(RNAO+RHWO)*287.*T*(1.*29.*X/18.)/(P*(1.*X))                    	11,16,18,31,49	dots=      V=(RNAO+RHWQ)*287.*T*(1.*29.*X/18.)/(P*(1.*X)) ## dots2=      V=(RNAO+RHW0)*287.*T*(1.*29.*X/18.)/(P*(1.*X)) ## glm=      V=(RMAO+RMWO)*287.*T*(1.+29.*X/18.)/(P*(1.+X)) ## glm2=      V=(RMAO+RMWO)*287.*T*(1.+29.*X/18.)/(P*(1.+X))	CRMIN81
+23	1665	1698	AGREE	      R=0.                                                              		lighton=      R=0. ## dots=      R=0. ## glm=      R=0.	CRMIN82
+24	1707	1741	COMMENT	C SET SHAPE SO THAT THE CLOUD IS AN OBLATE ELLIPSOID WITH               			CRMIN83
+25	1749	1782	COMMENT	C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADII 		lighton=C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADII ## dots=C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADIi ## glm=C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADII	CRMIN84
+26	1793	1826	AGREE	      SHAPE = 0.66144                                                   		lighton=      SHAPE = 0.66144 ## dots=      SHAPE = 0.66144 ## glm=      SHAPE = 0.66144	CRMIN85
+27	1835	1869	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMIN86
+28	1878	1912	AGREE	      IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))**(1.0/3.0)             		lighton=      IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))**(1.0/3.0) ## lighton2=      IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))**(1.0/3.0)	CRMIN87
+29	1922	1956	AGREE	      RZT= SHAPE *R                                                     		lighton2=      RZT= SHAPE *R ## dots2=      RZT= SHAPE *R	CRMIN88
+30	1966	2000	COMMENT	C     COMPUTE INITIAL RISE VELOCITY                                     		lighton=C     COMPUTE INITIAL RISE VELOCITY ## glm=C     COMPUTE INITIAL RISE VELOCITY	CRMIN89
+31	2008	2041	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMIN90
+32	2051	2085	NONE	                                                                        			CRHIN41
+33	2094	2129	COMMENT	C     OMPUTEI NI TIAL TURBULENT KINETIC ENERGY DENSITY                  		dots=C     OMPUTEI NI TIAL TURBULENT KINETIC ENERGY DENSITY ## glm=C     OMPUTEI NI TIAL TURBULENT KINETIC ENERGY DENSITY	CRMIN92
+34	2129	2169	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMIN93
+35	2180	2213	AGREE	      EK=0.5*U**2                                                       		dots=      EK=0.5*U**2 ## glm=      EK=0.5*U**2	CRMIN94
+36	2223	2257	COMMENT	C     COMPUTE INITIAL TURBULENT ENERGY LOSS RATE                        		lighton=C     COMPUTE INITIAL TURBULENT ENERGY LOSS RATE ## glm=C     COMPUTE INITIAL TURBULENT ENERGY LOSS RATE	C2MIN95
+37	2265	2296	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMIN96
+38	2307	2342	AGREE	      EPS=C3'(2.*EK)**1.5/RZT                                           		dots=      EPS=C3'(2.*EK)**1.5/RZT ## glm=      EPS=C3'(2.*EK)**1.5/RZT	CRMIN97
+39	2352	2386	COMMENT	C     COMPUTE ENTRAINMENT PARAMETER                                     		lighton=C     COMPUTE ENTRAINMENT PARAMETER ## glm=C     COMPUTE ENTRAINMENT PARAMETER	GRIN98
+40	2394	2427	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRHIN59
+41	2438	2474	NONE	                                                                        			
+42	2474	2515	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMINIC1
+43	2523	2557	COMMENT	C     COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS                  		lighton=C     COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS ## dots=C     COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS ## glm=C     COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS	
+44	2566	2600	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRPINC3
+45	2610	2645	SINGLE	      Q=S/(1.0+X+S)*RM/（√*RHOP*0.5235988)                               		glm=      Q=S/(1.0+X+S)*RM/（√*RHOP*0.5235988)	
+46	2645	2688	AGREE	      DO 801 J=1,NDSTR                                                  		lighton=      DO 801 J=1,NDSTR ## dots=      DO 801 J=1,NDSTR ## glm=      DO 801 J=1,NDSTR	CRMINI105
+47	2688	2728	AGREE	      Y(J)=FMASS(J)*Q/PS(J)**3                                          		dots=      Y(J)=FMASS(J)*Q/PS(J)**3 ## dots2=      Y(J)=FMASS(J)*Q/PS(J)**3 ## glm=      Y(J)=FMASS(J)*Q/PS(J)**3	CRMINI106
+48	2737	2772	TIE	  801 CG(J)=0.                                                          	13	dots2=  801 CG(J)=0. ## glm=  801 CG(J)=ü.	CRMIN107
+49	2772	2813	COMMENT	C     UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY                      		lighton=C     UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY ## dots=C     UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY ## glm=C     UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY	CRMINI108
+50	2823	2855	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRHIN109
+51	2867	2900	SINGLE	      ZLMT=10000.0*W**C.25 + HEIGHT + ZBRSTZ                            		lighton2=      ZLMT=10000.0*W**C.25 + HEIGHT + ZBRSTZ	CRMIN110
+52	2909	2942	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	CRMIN111
+53	2952	2985	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	CRMIN112
+54	3110	3141	NOISE	                                                                        		lighton=                                       78 ## dots=                                       78 ## glm=                                       78	
+55	3261	3292	NOISE	                                                                        			

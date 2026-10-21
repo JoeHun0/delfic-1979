@@ -1,0 +1,61 @@
+1	3	43	NOISE	                                                                        			
+2	43	65	NOISE	                                                                        			
+3	78	112	NOISE	                                                                        			
+4	516	549	COMMENT	*DECK,TIMEE                                                             		lighton=*OECK,TIMEE ## dots=*DECK,TIMEE ## glm=*DECK,TIMEE	TIMEE1
+5	559	590	HAND	      SUBROUTINE TIMEE                                                  	22	lighton2=      SUBROUTINE TIMEF ## dots=      SUBROUTINE TIMER	TIMEE2
+6	601	633	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE3
+7	645	679	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORHENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	TIMEE4
+8	688	718	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE5
+9	729	766	NOISE	                                                                        			TIMEE6
+10	774	804	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE7
+11	816	848	COMMENT	C     SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS      		lighton=C     SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS ## dots=C     SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS ## glm=C     SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS	TIME8
+12	857	889	COMMENT	C     SPECIFICATIONS                                                    		lighton=C     SPECIFICATIONS ## glm=C     SPECIFICATIONS	TIMEE9
+13	902	933	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE10
+14	945	977	NOISE	                                                                        			TIMEE11
+15	988	1018	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE12
+16	1031	1064	HAND	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    	25,54	lighton=      COMMON /BASIC/ W,Fh,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ ## lighton2=      COMMON /BASIC/ W,Fh,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W,FA,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TNSD,XGZ,YGZ,TGZ ## dots2=      COMMON /BASIC/ W,FA,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TNSD,XGZ,YGZ,TGZ ## glm=      COMMON /BASIC/ W,FH,ZBRS1Z,HEIGHT,ZSCL,SLDTMP,TPSD,XGZ,YGZ,TGZ ## glm2=      COMMON /BASIC/ W,FH,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ	TIMEE13
+17	1073	1108	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMFG, TMFS, VFR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMFG, TMFS, VFR ## dots=      COMMON /INITL/ F, PHI, SSAH, TME, TMFG, TMFS, VFR ## glm=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMFS, VPR	TIMEE14
+18	1116	1146	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE15
+19	1158	1191	NOISE	                                                                        			TIMEE16
+20	1202	1233	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TIMEE17
+21	1245	1276	AGREE	      Q=ZSCL*W**(-.03921)                                               		dots2=      Q=ZSCL*W**(-.03921) ## glm=      Q=ZSCL*W**(-.03921)	TIMEE18
+22	1287	1320	HAND	      T2M=0.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.)))     	59	glm=      T2M=0.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*G/180.))) ## glm2=      T2M=0.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.)))	TIMEE19
+23	1332	1364	HAND	      TME=(56.0*T2M)/(W**(0.3))                                         		glm=      TME=(56.0*T2M)/(W**(C.3))	TIMEE20
+24	1374	1404	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	TIME21
+25	1418	1449	VOTED	      ENO                                                               		lighton=      ENO ## dots=      ENO ## glm=      END	TIMEE22
+26	1759	1792	COMMENT	*DECK,ATMR                                                              		lighton=*DECK,ATMR ## dots=*DECK,ATMR ## glm=*DECK.ATMR	ATMR1
+27	1803	1835	AGREE	      SUBROUTINE ATMR                                                   		lighton=      SUBROUTINE ATMR ## dots=      SUBROUTINE ATMR ## glm=      SUBROUTINE ATMR	ATMR2
+28	1848	1877	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR3
+29	1890	1924	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	ATMR4
+30	1924	1961	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATHR5
+31	1974	2005	NOISE	                                                                        			ATMR6
+32	2017	2048	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR7
+33	2059	2094	COMMENT	C     ATMR READS IN ATMOSPHERE TABLES                                   		lighton=C     ATMR READS IN ATMOSPHERE TABLES ## dots=C     ATMR READS IN ATMOSPHERE TABLES ## glm=C     ATMR READS IN ATMOSPHERE TABLES	ATMR8
+34	2104	2134	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR9
+35	2146	2177	COMMENT	C     ATMOSPHERE TABLE GLCSSARY- UNITS ARE FOR THE SCALED ENTRIES       		dots=C     ATMOSPHERE TABLE GLCSSARY- UNITS ARE FOR THE SCALED ENTRIES ## glm=C     ATMOSPHERE TABLE GLCSSARY- UNITS ARE FOR THE SCALED ENTRIES	ATMR10
+36	2189	2219	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR11
+37	2232	2263	COMMENT	C   1   ALT - ALTITUDE ABCVE MSL (METERS)                               		lighton=C   1   ALT - ALTITUDE ABCVE MSL (METERS) ## dots=C   1   ALT - ALTITUDE ABCVE MSL (METERS) ## glm=C   1   ALT - ALTITUDE ABCVE MSL (METERS)	ATMR12
+38	2274	2304	COMMENT	C   2   ATP - TEMPERATURE (DEGREES KELVIN)                              		lighton=C   2   ATP - TEMPERATURE (DEGREES KELVIN) ## dots=C   2   ATP - TEMPERATURE (DEGREES KELVIN) ## glm=C   2   ATP - TEMPERATURE (DEGREES KELVIN)	ATMR13
+39	2318	2349	COMMENT	C   3   PRS - PRESSURE (PASCALS)                                        		lighton=C   3   PRS - PRESSURE (PASCALS) ## dots=C   3   PRS - PRESSURE (PASCALS) ## glm=C   3   PRS - PRESSURE (PASCALS)	ATMR14
+40	2362	2392	COMMENT	C   4   RLH - RELATIVE HUMIDITY (PERCENT)                               		lighton=C   4   RLH - RELATIVE HUMIDITY (PERCENT) ## dots=C   4   RLH - RELATIVE HUMIDITY (PERCENT) ## glm=C   4   RLH - RELATIVE HUMIDITY (PERCENT)	ATMR15
+41	2403	2434	COMMENT	C   5   RHO - DENSITY (KGM/M**3)                                        		lighton=C   5   RHO - DENSITY (KGM/M**3) ## glm=C   5   RHO - DENSITY (KGM/M**3)	ATMR16
+42	2448	2477	COMMENT	C   6   ETA - VISCOSITY (KGM/(M-SEC))                                   		lighton=C   6   ETA - VISCOSITY (KGM/(M-SEC)) ## dots=C   6   ETA - VISCOSITY (KGM/(M-SEC)) ## glm=C   6   ETA - VISCOSITY (KGM/（M-SEC))	ATMR17
+43	2491	2519	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR18
+44	2532	2563	COMMENT	C   KATM=IC(4) IS THE ATMOSPHER DATA PRINT CONTROL                      		lighton=C   KATM=IC(4) IS THE ATMOSPHER DATA PRINT CONTROL ## dots=C   KATM=IC(4) IS THE ATMOSPHER DATA PRINT CONTROL ## glm=C   KATM=IC(4) IS THE ATMCSPHER DATA PRINT CONTROL	ATMR19
+45	2577	2606	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR20
+46	2620	2650	NOISE	                                                                        			ATMR21
+47	2663	2692	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR22
+48	2704	2736	VOTED	      COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), PLH(256),     		lighton=      COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), PLH(256), ## dots=      COMMON /ATHOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256), ## glm=      COMMON /ATMOS/ NAT， ALT(256)，  ATP(256)，  PRS(256)， PLH(256)，	ATMK23
+49	2747	2780	HAND	     1        RHO(256), ETA(256), NHODO, ZV(100),  VX(100), VY(100)     	37,38,39	lighton=     1        RHO(256), ETA(256), NHODO, ZV(100),  VX(100), VY(100) ## lighton2=     1        RHO(256), ETA(256), NHODO, ZV(100),  VX(100), VY(100) ## dots=     1        RHO(256), ETA(256), NH000, ZV(100),  VX(100), VY(100) ## dots2=     1        RHO(256), ETA(256), NH000, ZV(100),  VX(100), VY(100) ## glm=     1        RHO(256)， ETA(256)， NHODC， ZV(100)，  VX(1JC)， VY(1J0) ## glm2=     1        RHO(256)， ETA(256)， NH000， ZV(100)，  VX(1JL)， VY(1J0)	ATMR24
+50	2789	2822	VOTED	      COMMON /CONTRL/ DETID(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI  		lighton=      COMMON /CONTRL/ DETID(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI ## dots=      COMMON /CONTRL/ DETID(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI ## glm=      COMMON /CONTRL/ OETIO(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI	ATMR25
+51	2833	2863	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR26
+52	2877	2910	VOTED	      DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZKO(6),ATMMAX(6),AP(6)   		lighton=      DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZK0(6),ATMMAX(6),AP(6) ## dots=      DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZKO(6),ATMMAX(6),AP(6) ## glm=      DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZRO(6),ATMMAX(6),AP(6)	ATMR27
+53	2920	2951	VOTED	      DIMENSION ATIO(12)                                                		lighton=      DIMENSION ATIO(12) ## dots=      DIMENSION ATID(12) ## glm=      DIMENSION ATIO(12)	ATMR28
+54	2963	2995	VOTED	      DATA PROGRM/6H ATMR /, ALIMIT/999999./                            		lighton=      DATA PROGRM/6H ATMR /, ALIMIT/999999./ ## dots=      DATA PROGRM/6H ATNR /, ALIMIT/999999./ ## glm=      DATA PROGRM/6H ATMR /, ALIMIT/999999./	ATMR29
+55	3005	3038	AGREE	      DATA ATMSUB/-1J00.,294.65,.1139E6,77.,1.347,.18206E-4/            		lighton=      DATA ATMSUB/-1J00.,294.65,.1139E6,77.,1.347,.18206E-4/ ## dots=      DATA ATMSUB/-1J00.,294.65,.1139E6,77.,1.347,.18206E-4/	ATMR70
+56	3048	3080	HAND	      DATA ATMZRO/ 0.0,288.15,.10133E6, 77.,1.2250,.17894E-4/,          			ATMK1
+57	3091	3123	HAND	     1ATMMAX/50000.,270.65,.79779E2,4.0,.10269E-2,.17037E-4/            		dots2=     1ATM4AX/5.0JU..27C.6E..7977JE2.4.J..1C269E-2..17C37E-4/	ATMR32
+58	3137	3165	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR33
+59	3165	3202	NOISE	                                                                        		lighton=                                        69 ## glm=                                        69	
+60	3290	3318	NOISE	                                                                        			
+61	3318	3359	NOISE	                                                                        			

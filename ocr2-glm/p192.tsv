@@ -1,0 +1,17 @@
+3	97	COUNT 3/29	                                                                                	---
+14	1156	COUNT 40/42	                                                                                	COMMON / DECAY/ IGO, JD, KDOS, TENTER, TEXIT, TI
+15	1191	OK	      COMMON /FISHIN  A9E3N(700),A9UNDO(700),BRAVSH(133),CAPFIS,                	COMMON / FISHIN A9E3N(700), A9UNDO(700), BRAVSH(133), CAPFIS,
+16	1240	OK	     1 .DGON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                         	1. DGON(700), IBRA, INUC, MAXNUC, MULT(11), NUCLID(700)
+17	1277	OK	      COMMON /OUTPUT/ FISNUK,FP(2JJ),FW,ITAB,JGO,MASCHN,PSIZE(20)],             	COMMON /OUTPUT/ FISNUK,FP(2JJ),FW,ITAB,JGO,MASCHN,PSIZE(20)],
+18	1327	COUNT 22/21	                                                                                	1. FMASS(200), PACT(200)
+19	1369	OK	      COMMON /UTILTY/  KOUT,NPRNT(15)                                           	COMMON / UTILTY/ KOUT,NPRNT(15)
+25	1626	OK	      OLAM = 0.693147/（56.0*3600.1)                                             	OLAM = 0.693147/（56.0*3600.1)
+28	1755	OK	      GLMP = DLAM/（DLAM - PLAM）                                                 	GLMP = DLAM/（DLAM - PLAM）
+33	1968	COUNT 38/39	                                                                                	ABNEP : GLMP*ABURAN - GLUMP*EX (-DLAM*TIME)
+38	2185	COUNT 17/18	                                                                                	ABNEP = GLMP APURAY -
+42	2354	COUNT 35/36	                                                                                	4. ABURAN = AZERO/PLAM EXP (-PLAM TENTER)
+44	2441	COUNT 67/46	                                                                                	ABNEP = GLMP  ^{ \star}  AJURAN - GLU4P/GLAM  ^{ \star}  EXP (-DLAM  ^{ \star}  TENTER)
+45	2483	COUNT 47/43	                                                                                	7 ANCP : ( ABURAN  ^{*}  . 327E-6 + 43NE  ^{*}  . 966E-6) FISNUM
+46	2528	COUNT 10/11	                                                                                	00 J=1.ITAG
+47	2570	COUNT 27/26	                                                                                	8. FP(J) = FP(J) + ANEP+FMASS(J)
+51	2742	COUNT 51/48	                                                                                	1 (15H10OUTPUT OF JPAN/5X214MASS 239 CONTRIBUTES 1PE12.4.

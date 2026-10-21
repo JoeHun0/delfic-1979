@@ -1,0 +1,65 @@
+1	18	58	NOISE	                                                                        			
+2	82	100	NOISE	                                                                        			
+3	555	590	HANDFREE	      NRQ=NRQ+1                                                         		lighton=       NRQ=NRQ+1 ## dots=       NRQ=NRQ+1 ## glm=       NRQ=NRQ+1	
+4	599	639	AGREE	       IF(NRQ .NE. 1) WRITE(ISOUT,3)                                    		lighton=       IF(NRQ .NE. 1) WRITE(ISOUT,3) ## dots=       IF(NRQ .NE. 1) WRITE(ISOUT,3) ## glm=       IF(NRQ .NE. 1) WRITE(ISOUT,3)	IPMP2
+5	639	688	VOTED	       WRITE (ISOUT,34)NRQ,NREQ,T1,T2,MASCHN ,QCUT,CUTMAP               		lighton=       WRITE (ISOUT,34)NRQ,NREQ,T1,T2,MASCHN ,QCUT,CUTMAP ## dots=       WRITE (ISOUT,34)NRG,NREQ.T1,T2,MASCHN ,QCUT,CUTMAP ## glm=       WRITE (ISOUT,34)NRQ,NREQ,T1,T2,MASCHN ,QCUT,CUTMAP	OPM216
+6	688	730	VOTED	       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUT,45)               		lighton=       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUT,45) ## dots=       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUT,45) ## glm=       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUI,45)	OPM217
+7	730	760	HANDFREE	      MAPRUN=0                                                          		lighton=       MAPRUN=C ## dots=       MAPRUN=C ## glm=       MAPRUN=C	
+8	770	803	HANDFREE	      FSUM = 0.0                                                        		dots=       FSUM = 0.0 ## glm=       FSUM = 3.0	
+9	814	845	HANDFREE	      JGO=1                                                             		lighton=       JGO=1 ## dots=       J60=1 ## glm=       JGO=1	
+10	857	891	HANDFREE	      JD=.TRUE.                                                         		lighton=       JD=,TRUE. ## dots=       JO=,TRUE. ## glm=       JO=,TRUE.	
+11	900	934	HANDFREE	      KDOS=.FALSE.                                                      		lighton=       KDOS=.FALSE. ## dots=       KDO3=.FALSE. ## glm=       KDOS=.FALSE.	
+12	943	978	HANDFREE	      FISNUM=FW*1.45E15                                                 		lighton=       FISNUM=FW*1.45E15 ## dots=       FISNUM=FW*1.45E15 ## glm=       FISNUM=FW*1.45E15	
+13	986	1019	HANDFREE	      NORD=1                                                            		lighton=       NORD=1 ## dots=       NORD=1 ## glm=       NORD=1	
+14	1030	1059	HANDFREE	      C=1.0                                                             		lighton=       C=1.0 ## dots=       C=1.0 ## glm=       C=1.0	
+15	1075	1106	HANDFREE	      CF6=1.0                                                           		lighton=       CF6=1.7 ## dots=       CF6=1.7 ## glm=       CF6=1.7	
+16	1117	1163	AGREE	       IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 10) NPRNT(15)=.TRUE.             		lighton=       IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 10) NPRNT(15)=.TRUE. ## glm=       IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 10) NPRNT(15)=.TRUE.	URMC17
+17	1163	1202	AGREE	       IF(NREQ .NE. 13  .AND.  NREQ .NE. 4) GO TO 980                   		lighton=       IF(NREQ .NE. 13  .AND.  NREQ .NE. 4) GO TO 980 ## dots=       IF(NREQ .NE. 13  .AND.  NREQ .NE. 4) GO TO 980	OPM218
+18	1202	1235	VOTED	       T1=T1*1.0E-6                                                     		dots2=       r1=r1*1.0E-6 ## glm=       T1=T1*1.7E-6 ## glm2=       T1=T1*1.0E-6	
+19	1243	1278	VOTED	       T2=T2*1.0E-6                                                     		lighton2=       T2=T2*1.0E-6 ## dots=       T2=T2*1.0E-6 ## glm=       T2=T2*1.IE=6 ## glm2=       T2=T2*1.0E-6	PM216
+20	1278	1319	AGREE	       GO TO 985                                                        		lighton=       GO TO 985 ## glm=       GO TO 985	OPM218
+21	1328	1364	HANDFREE	  980 T1=T1*3600. + TGZ                                                 		lighton=   980 T1=T1*3640. ◆ TGZ ## glm=   980 T1=T1*3640. + TGZ	
+22	1374	1408	HANDFREE	      T2=T2*3600. + TGZ                                                 			
+23	1408	1448	VOTED	       TIME=T1-TGZ                                                      		lighton=       TIME=T1-T6Z ## dots=       TIME=T1-TGZ ## glm=       TIME=T1-TGZ	OPM2180
+24	1458	1491	AGREE	       TENTER=TIME                                                      		lighton=       TENTER=TIME ## dots=       TENTER=TIME ## glm=       TENTER=TIME	
+25	1501	1535	HANDFREE	      TEXIT=T2-TGZ                                                      			
+26	1535	1590	COMMENT	C NREQ = 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 15			OPM2189
+27	1590	1632	HANDFREE	  985 GO TO (90,70,79,70,69,68,73,78,78,73,80,80,80,71,80,80,80,80),NREQ			
+28	1632	1671	HANDFREE	   68 CF6=CF6*(1.0 - (TIME/TEXIT)**(0.26))                              		glm2=  68   CF6=CF 6*(1 .  0-(TIME/TEX IT)*(0.2                          6  )	UPM2
+29	1671	1713	HANDFREE	   69 CF6=32.3344*CF6*(TIME)**(-0.26)                                   			PM2198
+30	1713	1749	HANDFREE	   70 TIME=3600.0                                                       			
+31	1759	1792	AGREE	      GO TO 79                                                          		lighton=      GO TO 79 ## dots=      GO TO 79 ## glm=      GO TO 79	
+32	1792	1831	HANDFREE	   71 JGO=2                                                             			OPM2191
+33	1843	1879	HANDFREE	      FISNUM=FISNUM*1.E+4                                               			
+34	1888	1930	HANDFREE	      IF(  IHOB .GT. 0 ) CALL ERROR( PROGRM, -71, ISOUT )               			4PM2191
+35	1930	1963	HANDFREE	      GO TO 790                                                         		lighton=      GO TO 791 ## dots=      GO TO 791 ## glm=      GO TO 791	VFN2
+36	1972	2007	HANDFREE	   73 KDOS=.TRUE.                                                       			
+37	2015	2050	HANDFREE	   78 JD=.FALSE.                                                        		lighton= 78   JO=.FALSE. ## dots= 78   JO=.FALSE. ## glm= 78   JD=.FALSE.	
+38	2059	2094	AGREE	      FISNUM=FISNUM/3600.                                               		lighton=      FISNUM=FISNUM/3600. ## dots=      FISNUM=FISNUM/3600. ## glm=      FISNUM=FISNUM/3600.	
+39	2094	2133	VOTED	 79   CONTINUE                                                          		lighton= 79   CONTINUE ## dots= 79   CONTINLE ## glm= 79   CONTINUE	OPM2202
+40	2146	2190	HANDFREE	      IF(  IHOB .EQ. 0 .AND.  SD .GT. 0.0 ) GO TO 790                   		lighton=      IF(  JHOB .EQ. 0 .ANC.  SD .GT. 1.0 ) GO TO 790 ## dots=      IF(  JHOB .EQ. G .ANC.  SD .GT. J.J ) GO TO 790 ## glm=      IF(  JHOB .EQ. G .ANC.  SD .GT. 1.0 ) GO TO 790	OPM220
+41	2190	2221	HANDFREE	      CALL PAM2A                                                        		lighton=      CALL  AM2A ## dots=      CALL  AM2A ## glm=      CALL  AM2A	
+42	2234	2263	HANDFREE	      GO TO 80                                                          		lighton=      GO TO 8) ## dots=      GO TO 8) ## glm=      GO TO 81	
+43	2273	2306	HANDFREE	  790 CALL PAM2                                                         		lighton= 790  CALL P4M2 ## dots= 790  CALL PAM2 ## glm= 790  CALL P4M2	
+44	2315	2348	HANDFREE	   80 NORD=NORD+1                                                       		lighton2= 6c   NORD=NORD+1 ## dots= 60   NORD=NORD+1 ## dots2= 6C   NORD=NORD+1 ## glm= 6C   NORD=NORD+1 ## glm2= 6C   NORO=NORO+1	
+45	2358	2399	HANDFREE	   90 NORD=MAX0(NORD,NORD+NREQ-14)                                      		dots= 90   NORD=MAX3(NORD,NORD+NREQ-14) ## glm= 90   NORD=MAX3(NORD,NORD+NREQ-14)	OPM220
+46	2399	2432	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+47	2443	2487	HAND	C ****************************************************************      			UPM2210
+48	2487	2517	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+49	2535	2564	AGREE	      X1=X4IN                                                           		glm=      X1=X4IN ## glm2=      X1=X4IN	15M4
+50	2575	2607	HANDFREE	      X2=X1+NXMAP*DGX                                                   		glm=      X2=X1+NXMAP*DGY	
+51	2618	2648	HANDFREE	      ICTR=0                                                            		lighton=      ICTR=0 ## dots=      ICTR=0 ## glm=      ICTR=0	
+52	2662	2697	HANDFREE	      IF(NZ)203,204,207                                                 		lighton=      IF(NZ)203,204,20? ## dots=      IF(NZ)203,204,207 ## glm=      IF(NZ)203,204,20?	
+53	2697	2741	HANDFREE	  203 CALL ERROR(PROGRM,-203,ISOUT)                                     		lighton=  203 CALL ERROR(PROGRM,-2(3,ISOUT) ## dots=  203 CALL ERROR(PROGRM,-2(3,ISOUT) ## glm=  203 CALL ERROR(PROGRM,-2(3,ISOUT)	0PM2216
+54	2741	2782	COMMENT	COMPUTE A SINGLE CORE-LOAD MAP                                          		lighton=COMPUTE A SINGLE CORE-LOAD MAP ## dots=COMPUTE A SINGLE CORE-LOAD MAP ## glm=COMPUTE A SINGLE CORE-LOAD MAP	UPM2217
+55	2790	2822	HANDFREE	  204 KTAPE=IPOUT                                                       		lighton=  2C4 KTAPE=IPOUT ## dots=  204 KTAPE=IPOUT ## glm=  2C4 KTAPE=IPOUT	
+56	2832	2868	HANDFREE	      CALL GOGO(OMAP,NMAP)                                              		lighton=      CALL GOGO(OM&P,NMAP) ## dots=      CALL GOGO(OM&P,NMAP) ## glm=      CALL GOGO(OMAP,NMAP)	IPH2
+57	2868	2908	AGREE	      REWIND KTAPE                                                      		lighton2=      REWIND KTAPE ## glm=      REWIND KTAPE ## glm2=      REWIND KTAPE	UPM2220
+58	2919	2961	AGREE	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305                       		lighton=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305 ## dots=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305 ## glm=      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305	UPH2222
+59	2961	2996	HANDFREE	      DO 302 IMAP=1,NMAP                                                	11,22	lighton=      00 372 IMAP=1,NNAP ## lighton2=      00 392 IMAP=1,NMAP ## dots=      00 302 IMAP=1,NNAP ## dots2=      00 302 IMAP=1,NNAP ## glm=      00 392 IMAP=1,NMAP ## glm2=      00 302 IMAP=1,NMAP	
+60	3004	3044	VOTED	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0                            		lighton=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0 ## dots=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0 ## glm=      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAF)=0.0	OPM2224
+61	3044	3079	VOTED	  302 CONTINUE                                                          		lighton=  302 CONTINUE ## dots=  302 CONTINUE ## glm=  362 CONTINUE	
+62	3088	3106	AGREE	  305 TF                                                                		lighton=  305 TF ## dots=  305 TF ## glm=  305 TF	
+63	3106	3144	HANDFREE	  305 IF(ICONT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL,	12	lighton=        (IGUNT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL, ## lighton2=        (1CUNI .NE. U .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL, ## dots=        (ICONT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL, ## dots2=        TICONT •NE. 0 •AND. CROLBL •NE. BLANK)CALL CONTOR(CONTUR,CROLBL,	OPM2226
+64	3167	3198	NOISE	                                                                        			
+65	3302	3341	NOISE	                                                                        			

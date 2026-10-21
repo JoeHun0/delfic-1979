@@ -1,0 +1,15 @@
+4	788	COUNT 0/7	                                                                                	
+6	874	COUNT 0/7	                                                                                	
+9	1003	OK	      M = 2                                                                     	M = 2
+14	1220	OK	  600 DO 700 I=L,K                                                              	600 DO 700 I=L,K
+16	1304	OK	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70:                         	IF( VEC( XP, YP, X(I), Y(I)) .GT. VEM) GO TO 70:
+21	1519	COUNT 0/7	                                                                                	
+24	1649	OK	      IF(IPNCH .GT. 0) WRITE(IPNCH,20JU)CNT, XP,  YP,  CROLBL, COUE             	IF(IPNCH .GT. 0) WRITE(IPNCH,20JU)CNT, XP, YP, CROLBL, COUE
+28	1821	OK	  765 00 710 I=1,K                                                              	765 00 710 I=1,K
+44	2507	COUNT 0/9	                                                                                	
+45	2551	COUNT 0/9	                                                                                	
+46	2594	OK	      X(J)=CLR                                                                  	X(J) = CLR
+49	2724	OK	  765 CALL ERROR(PROGRM,-755,ISOUT)                                             	765 CALL ERROR(PROGRM,-755,ISOUT)
+56	3021	OK	 2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6)                                        	2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6)
+58	3112	OK	      ENG                                                                       	ENG
+60	3289	COUNT 0/19	                                                                                	

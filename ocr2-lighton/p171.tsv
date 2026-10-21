@@ -1,0 +1,24 @@
+26	1529	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SO        ,INFAM                         	2MARRAY ,MBTAPE ,MXREQ ,SO ,INFAM
+28	1617	COUNT 31/30	                                                                                	DATA CLR, PROGRAM/ 1.E3G, 6HSRTCNT/
+33	1829	COUNT 17/16	                                                                                	WRITE(ISOUT, 3000)
+34	1874	OK	      DO 5C I=1,K                                                               	DO 5C I=1,K
+41	2175	OK	   55 IL00P=IL00P+1                                                             	55  IL00P=IL00P+1
+42	2218	OK	      IF(ILOOF .GT. M) GO TO 10G                                                	IF(ILOOF .GT. M) GO TO 10G
+43	2261	OK	      VEY=VEC(X(1),Y(1),X(2),Y(2))                                              	VEY = VEC(X(1), Y(1), X(2), Y(2))
+44	2304	COUNT 7/3	                                                                                	M = \zeta
+45	2349	COUNT 16/9	                                                                                	\rho_0 \in^* I = 3, K
+46	2390	OK	      IF(VEC(X(1),Y(1),X(I),Y(I)) .GT. VEM) GO TO 60                            	IF(VEC(X(1),Y(1),X(I),Y(I)) .GT. VEM) GO TO 60
+48	2476	OK	      VE4=VE3(X(1),Y(1),X(I),Y(I))                                              	VE4 = VE3(X(1), Y(1), X(I), Y(I))
+49	2518	COUNT 9/10	                                                                                	6) CONTINU
+50	2560	OK	      00 65 I=2,K                                                               	00 65 I=2,K
+51	2604	OK	      IF(I .EQ. M) GO TO 65                                                     	IF(I .EQ. M) GO TO 65
+52	2648	OK	      IF(VEC(x(M),Y(M),X(I),Y(I)) .LE. VEM) GO TO 10]                           	IF (VEC(x(M),Y(M),X(I),Y(I)) .LE. VEM) GO TO 10]
+53	2690	OK	   65 CONTINU?                                                                  	65 CONTINU?
+54	2737	COUNT 0/7	                                                                                	
+55	2779	COUNT 0/7	                                                                                	
+56	2820	OK	      00 7. I=2.K                                                               	00 7. I=2.K
+57	2864	COUNT 0/11	                                                                                	
+58	2907	COUNT 25/13	                                                                                	7) \forall (I-1) = \forall (I)
+59	2950	COUNT 0/7	                                                                                	
+60	2991	COUNT 0/7	                                                                                	
+61	3035	OK	      GO TO 55                                                                  	GO TO 55

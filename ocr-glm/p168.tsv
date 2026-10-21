@@ -1,0 +1,64 @@
+1	532	OK	       J=J+1                                                                    	J=J+1
+2	575	OK	       IF(J.LE.NDSTR)GO TO 121                                          PCHEC121	IF(J.LE.NDSTR)GO TO 121 || PCHEC121
+3	616	COUNT 28/27	                                                                        PCHEC122	CALL ERROR(PROGRM , -120, ISOUT) || PCHEC122
+4	659	OK	   122 D0 123  I=1.NDSTR                                                PCHEC123	122 D0 123 I=1. NDSTR || PCHEC123
+5	699	OK	         K=NDSTP1-I                                                     PCHEC124	K=NDS TP1-I || PCHEC124
+6	740	COUNT 28/29	                                                                        PCHEC125	IF(DIAM(K) GE. PSIZ(IP)) GO TO 12 || PCHEC125
+7	787	OK	   123 CONTINUE                                                         PCHEC126	123 CONTINUE || PCHEC126
+8	834	COUNT 27/25;COUNT 7/8	                                                                                	CALL ERROR(PROGRM-123,ISOUT) || POHELIZ
+9	874	OK	   124 J=K                                                              PCHEC120	124 J=K || PCHEC120
+10	918	COUNT 38/36	                                                                        FGHEC129	125 IF(NREQ .EQ. 9 .OR. NREQ .EQ. 13) CALL PAM2 || FGHEC129
+11	965	COUNT 21/18;COUNT 7/5	                                                                                	IF(NREQ.NE.14)GO TO 130 || CHEC13L
+12	1002	COUNT 30/26	                                                                        PCHEC231	F=FP(J)*PMAS(IF)/FMASS(J)/SSAM || PCHEC231
+13	1048	OK	       GO TO 100                                                         GHEC132	GO TO 100 || GHEC132
+14	1091	COUNT 30/26;COUNT 8/7	                                                                                	130 F=FP( J )*PMAS( IP)/WFMAS( J ) * C || PCHEC133
+15	1133	OK	 C                                                                       CHEC134	C || CHEC134
+16	1173	COUNT 1/69	                                                                        PJHEC135	C || PJHEC135
+17	1218	OK	 C                                                                      PCHEC136	C || PCHEC136
+18	1261	COUNT 11/10	                                                                        PCHEC177	100 CONTINUE || PCHEC177
+19	1302	OK	 C                                                                      PCHEC158	C || PCHEC158
+20	1347	COUNT 50/48	                                                                        PUHEC159	COMPUTE GAMA AND DETERMINE THE LIMITING COCKDINATES OF THE || PUHEC159
+21	1392	COUNT 28/29	                                                                        PJHEU14C	C PARTICLE CONTRIBUTION ELLIPSE || PJHEU14C
+22	1434	OK	 C                                                                       CHEL141	C || CHEL141
+23	1480	COUNT 20/19	                                                                        PCHEG142	IF(F.LT.QCUT) GO TO 200 || PCHEG142
+24	1520	COUNT 48/46	                                                                        PCHEC143	GAMA = ALOG(F/SIGXC(IP)/SIGYO(IP)/QCUT/6.28318531) || PCHEC143
+25	1564	COUNT 22/25	                                                                         CH-C144	IF (GAMA .LT .0.0) GO TO 200 || CH-C144
+26	1605	OK	      COSA=COS（RO（IP））                                                  PGNEC1-5	COSA=COS（RO（IP）） || PGNEC1-5
+27	1642	COUNT 7/8	      SINA=SIN(RC(IP))                                                          	SINA=SIN(RC(IP)) || PCHEC16
+28	1685	OK	      ASQ= 2.J*GAMA*SIGXO(IP)**2                                        PCHEC147	ASQ= 2. J*GAMA*SIGXO(IP)**2 || PCHEC147
+29	1733	OK	      BSQ= 2.0*GAMA*SIGYC(IP)**2                                        PCHEC148	BSQ= 2.0*GAMA*SIGYC(IP)**2 || PCHEC148
+30	1774	OK	      YPRMU = YPAR(IP) + SCRT(ASQ*SINA**2 + OSQ*COSA**2)                PCHEL149	YPRMU = YPAR(IP) + SCRT(ASQ*SINA**2 + OSQ*COSA**2) || PCHEL149
+31	1819	OK	      YPRML = 2.0*YPAR(IF) - YPRMU                                      PCHEC15C	YPRML = 2.0*YPAR(IF) - YPRMU || PCHEC15C
+32	1860	OK	C                                                                       PCNEC151	C || PCNEC151
+33	1904	COUNT 8/7	C     DOES THE PARTICLE CONTRIBUTE TO THE MAP WITHIN ITS VERTICAL               	C DOES THE PARTICLE CONTRIBUTE TO THE MAP WITHIN ITS VERTICAL || PCHEC1÷2
+34	1948	OK	C     (Y AXIS) LIMITS -                                                  CHEC153	C (Y AXIS) LIMITS - || CHEC153
+35	1984	COUNT 1/2;COUNT 7/6	                                                                                	C || CHEC154
+36	2019	COUNT 8/7	      IF(YPRMU.GT.YNIN + CGY.AND.YPRML.LT .YMAX )G OT O22              5        	IF(YPRMU.GT.YNIN + CGY.AND.YPRML.LT.YMAX) GO TO 225 || PCHEC:55
+37	2071	COUNT 12/14;COUNT 8/6	                                                                                	200 KTR(IP) = 1 || PCHEC156
+38	2109	COUNT 7/8	                                                                        C HEC157	NE=NE+1 || CHEC157
+39	2152	COUNT 7/8;COUNT 8/6	                                                                                	GO TO 777 || PCHEC15J
+40	2193	COUNT 206/2;COUNT 8/7	                                                                                	205 XPDMU-VDAD LTRMASODT AAC0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 || -CHEC159
+41	2215	COUNT 6/7	  205 XPRMU=XPAR(IP)+SQRT(ASQ*COSA**2 + 3SQ*SINA**2                    )        	205 XPRMU=XPAR(IP)+SQRT(ASQ*COSA**2+3SQ*SINA**2) || CHELSE
+42	2259	COUNT 25/2;COUNT 7/5	                                                                                	C DOSES THE PARTICLES CONTROL || - CHELAS
+43	2297	COUNT 6/7	C     DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYONU TH ELEFT    P        	C DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYONU THE LEFT P || CHEC12
+44	2340	COUNT 24/28;COUNT 6/7	                                                                                	BOUNDRY OF THIS MAP CORE LOAD || HELIES
+45	2388	COUNT 4/2	C                                                                               	C || 16.4
+46	2419	COUNT 26/27;COUNT 2/4	                                                                                	IF(XPRMU.LT.X1+DGX) GO TO 200 || 16
+47	2461	COUNT 24/25;COUNT 4/3	                                                                                	XPRML = 2.0 * XPAR(IP) - XFRMU || 21 25
+48	2505	COUNT 1/2;COUNT 2/1	                                                                                	C || 2.
+49	2541	COUNT 57/55	                                                                        CH=C1   	C DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYOND THE RIGHT P P || CH=C1
+50	2598	COUNT 26/28;COUNT 7/6	                                                                                	C BOUNDRY OF THIS MAP CORE LOAD - || THE CITY
+51	2635	COUNT 3/2	                                                                        PMEC104 	C P. || PMEC104
+52	2664	COUNT 22/23	                                                                        CHEC170 	TF (XPRYL. LT. X2) GO TC 22C || CHEC170
+53	2719	COUNT 16/9	                                                                        CHEC171 	KT  \because  （IP）=0 || CHEC171
+54	2752	COUNT 7/8	                                                                        CHEL172 	GO TO 777 || CHEL172
+55	2795	COUNT 0/7	C                                                                      P        	C P || 
+56	2833	COUNT 48/13	                                                                        CHEC1/4 	C WILL THIS CONTRIBUTE ALSO CONTRIBUTES TO CLASS CONTENT || CHEC1/4
+57	2868	COUNT 57/48	                                                                        CHEC175 	WILL THIS CONTRIBUTE ALSO CONTRIBUTE TO SUBSEQUENT MAP CORE LOACSP || CHEC175
+58	2920	COUNT 25/26	                                                                        CHEC176 	22J IF(XPRMU.GT.X2) GO TO 23C || CHEC176
+59	2968	OK	      KTR(IP)=1                                                        PCHEC177 	KTR(IP) = 1 P || CHEC177
+60	3007	COUNT 7/8	                                                                        CHEC170 	NE=NE+1 || CHEC170
+61	3049	OK	                                                                       μCHEC179 	μ || CHEC179
+62	3079	COUNT 7/8	                                                                        CHEC102 	GO TO 240 || CHEC102
+63	3133	OK	                                       165                                      	165
+64	3302	COUNT 3/40	                                                                                	---

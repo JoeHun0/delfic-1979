@@ -1,0 +1,57 @@
+1	14	COUNT 0/30	                                                                                	
+2	56	COUNT 14/4	                                                                                	[Redacted text]
+3	830	OK	+DECK,8OUN                                                              BOUN   1	+DECK, 8OUN || BOUN 1
+4	873	OK	      SUBROUTINE BOUN(NET,NETSU,XT,YT,XU,YO,XC,YC,ICF,JCF,NCF)          BOUN   2	SUBROUTINE BOUN(NET,NETSU,XT,YT,XU,YO,XC,YC,ICF,JCF,NCF) || BOUN 2
+5	916	OK	C     MARCH, 1971                                                       BOUN   3	C MARCH, 1971 || BOUN 3
+6	959	OK	C     SUBROUTINE BOUN DETERMINES AN INTERPOLATED PARCEL POSITION        BOUN   4	C SUBROUTINE BOUN DETERMINES AN INTERPOLATED PARCEL POSITION || BOUN 4
+7	1001	OK	C     (INFINITESMALLY DISPLACED EXTERNAL TO A CELL B(UNDARY) GIVEN THE  BJUN   5	C (INFINITESMALLY DISPLACED EXTERNAL TO A CELL B (UNDARY) GIVEN THE || BJUN 5
+8	1037	OK	C     PREVIOUS PARCEL POSITION INTERNAL TO THIS CELL AND THE ANTICIPATEDBOUN   6	C PREVIOUS PARCEL POSITION INTERNAL TO THIS CELL AND THE ANTICIPATED || BOUN 6
+9	1089	OK	C     PARCEL POSITION EXTERNAL TO THIS CELL                             BOUN   7	C PARCEL POSITION EXTERNAL TO THIS CELL || BOUN 7
+10	1132	OK	C     XT    - ANTICIPATED FARCEL POSITION X COORDINATE                  BOUN   8	C     XT     - ANTICIPATED FARCEL POSITION X COORDINATE || BOUN 8
+11	1174	OK	C     YT    - ANTICIPATED PARCEL POSITION Y COORDINATE                  80UN   9	C    YT    - ANTICIPATED PARCEL POSITION Y COORDINATE || 80UN 9
+12	1216	OK	C     XO    - PREVIOUS PARCEL POSITION X COORDINATE                     BOUN  10	C     XO     - PREVIOUS PARCEL POSITION X COORDINATE || BOUN 10
+13	1260	OK	C     YO    - PREVIOUS PARCEL POSITION Y COORDINATE                     BOUN  11	C     YO     - PREVIOUS PARCEL POSITION Y COORDINATE || BOUN 11
+14	1302	OK	C     XC    - INTERPOLATED PARCEL POSITION X CCCRDINATE                 BOUN  12	C XC - INTERPOLATED PARCEL POSITION X CCCRDI NATE || BOUN 12
+15	1345	OK	C     YC    - INTERPOLATED PARCEL POSITION Y COORDINATE                 BOUN  13	C    YC    - INTERPOLATED PARCEL POSITION Y COORDINATE || BOUN 13
+16	1391	OK	C     ADISP - SMALL X DISPLACEMENT. + CR - EPS.                         BOUN  14	C ADISP - SMALL X DISPLACEMENT. + CR - EPS. || BOUN 14
+17	1433	OK	C     BDISP - SMALL Y DISPLACEMENT. + OR - EPS.                         BOUN  15	C     BDISP - SMALL Y DISPLACEMENT. + OR - EPS. || BOUN 15
+18	1475	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF)                                 BOUN  16	DIMENSION NET(ICF,JCF),NETSU(NCF) || BOUN 16
+19	1520	OK	      DATA EPS/0.5/                                                     BOUN  17	DATA EPS/0.5/ || BOUN 17
+20	1561	OK	CLEAR ADISP AND BDISP                                                   BOUN  18	CLEAR ADISP AND BDISP || BOUN 18
+21	1605	OK	      ADISP=0.                                                          BOUN  19	ADISP=0. || BOUN 19
+22	1649	OK	      80ISP=0.                                                          BOUN  20	80ISP=0. || BOUN 20
+23	1690	OK	COMPUTE XL,XR,YL, AND YU FCR (XO,YO)                                    83UN  21	COMPUTE XL, XR, YL, AND YU FCR (XO, YO) || 83UN 21
+24	1731	OK	      CALL NEST{NET,NETSU,XO,YO,NDATO,XL,XR,YL,YU, ICF,JCF,NCF}         BOUN  22	CALL NEST{NET,NETSU,XO,YO,NDATO,XL,XR,YL,YU, ICF,JCF,NCF} || BOUN 22
+25	1777	OK	CUT AND TRY XC                                                          BOUN  23	CUT AND TRY XC || BOUN 23
+26	1818	OK	CHECK IF XT LIES TO THE RIGHT OF XR                                     BOUN  24	CHECK IF XT LIES TO THE RIGHT OF XR || BOUN 24
+27	1862	OK	      IF(XT.LE.XR) GO TO 102                                            BOUN  25	IF(XT.LE.XR) GO TO 102 || BOUN 25
+28	1907	COUNT 0/5	                                                                        80UN  26	 || 80UN 26
+29	1949	OK	      ADISP=EPS                                                         BÜUN  27	ADISP=EPS || BÜUN 27
+30	1994	OK	      GO TO 104                                                         BOUN  28	GO TO 104 || BOUN 28
+31	2034	OK	CHECK IF XT LIES TO THE LEFT OF XL                                      BOUN  29	CHECK IF XT LIES TO THE LEFT OF XL || BOUN 29
+32	2078	OK	  102 XC=XL                                                             BOUN  30	102 XC=XL || BOUN 30
+33	2120	OK	      IF(XT.GE.XL) GO TO 106                                            BOUN  31	IF(XT.GE.XL) GO TO 106 || BOUN 31
+34	2163	COUNT 26/10	                                                                        BOUN  32	ADISP \rightleftharpoons EPS || BOUN 32
+35	2207	OK	CCMPUTE YC                                                              BOUN  33	C C M P U T E Y C || BOUN 33
+36	2248	COUNT 37/32	                                                                        BOUN  34	1.04  YC = YO + (YT - YO) \cdot (XC - XO) / (XT - XO) || BOUN 34
+37	2291	OK	CHECK IF YC LIES BETWEEN YL AND YU                                      BOUN  35	CHECK IF YC LIES BETWEEN YL AND YU || BOUN 35
+38	2332	OK	      IF((YU.GE.YC).AND.(YC.GE.YL)) GO TO 111                           BOUN  36	IF((YU.GE.YC).AND.(YC.GE.YL)) GO TO 111 || BOUN 36
+39	2376	OK	CUT AND TRY YC                                                          BOUN  37	CUT AND TRY YC || BOUN 37
+40	2421	OK	CHECK IF YT IIES ABOVE YU                                               80UN  38	CHECK IF YT I IES ABOVE YU || 80UN 38
+41	2463	COUNT 51/6	 106  IF(YT.LT.YU) GO TO 108                                                    	106 IF(YT.LT.YU) GO TO 108 || \mathcal{E} \mathcal{O} \mathcal{U} \mathcal{N} \quad 39
+42	2508	COUNT 0/5	                                                                        BOUN  49	 || BOUN 49
+43	2550	OK	  107 80ISP=EPS                                                         JOUN  41	107 80ISP=EPS || JOUN 41
+44	2592	OK	      GO TO 110                                                         BOUN  42	GO TO 110 || BOUN 42
+45	2633	OK	CHECK IF YT LIES BELON YL                                               8OUN  43	CHECK IF YT LIES BELON YL || 8OUN 43
+46	2679	OK	  108 YC=YL                                                             BOUN  44	108 YC=YL || BOUN 44
+47	2719	OK	      IF(YT.GT.YL) GO TO 111                                            80UN  45	IF(YT.GT.YL) GO TO 111 || 80UN 45
+48	2764	OK	      80ISP=-EPS                                                        BOUN  46	80ISP = -EPS || BOUN 46
+49	2808	OK	COMPUTE XC                                                              BOUN  47	COMPUTE XC || BOUN 47
+50	2847	COUNT 36/32	                                                                        BOUN  48	110  XC = XO + (XT - XO) \cdot (YC - YC) / (YT - YO) || BOUN 48
+51	2891	OK	CREATE INFINITESMAL DISPLACEMENT                                        80UN  49	CREATE INFINITESMAL DISPLACEMENT || 80UN 49
+52	2935	OK	  11 1XC=XC+ADISP                                                       81UN  50	111 XC=XC+ADISP || 81UN 50
+53	2978	COUNT 0/11	                                                                        BOUN  51	 || BOUN 51
+54	3023	OK	      RETURN                                                            BOUN  52	RETURN || BOUN 52
+55	3068	COUNT 6/7	      ENO                                                                       	ENO || BOUN 53
+56	3175	OK	                                       106                                      	106
+57	3308	COUNT 0/46;COUNT 16/5	                                                                                	 || \text{الشَّمْعِ}

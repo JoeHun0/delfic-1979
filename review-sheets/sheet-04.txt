@@ -1,0 +1,12 @@
+37	p064	30	TIE	53	6	     1    1H0.20X， 8HDIAMETER， 4X，13HLOWER BOUNDRY， 5X， 8HFRACTION，
+38	p064	35	TIE	11	6	     2ROERED////
+39	p064	36	SINGLE	25	2	 1400 FORMAT(                                            20X, 73HFRACT10
+40	p064	41	TIE	33	6	     5IFICATION TEMPERATURE = FB.3,  4H (K))
+41	p064	43	TIE	56	6	     1 CLOUC SUBDIVISIONS I^ THE VERTICAL (KDI) =I4/  23X, 48HPARCEL HOR
+42	p064	44	TIE	38	6	     2IZONTAL SUBDIVISION PARAMETER (IRAD) =I4)
+43	p064	58	TIE	20	7	      WRITE (ISOUT,16)DETID
+44	p064	61	TIE	41	7	      READ(ISIN,3)W, FW, HEIGHT, ZORSTZ, SLOTMF, PHI
+45	p064	65	NONE	7	64	raw: \text{العَلَيْهِ الرَّحْمَٰنِ الرَّحِيمِ}
+46	p066	1	NONE	16	13	raw: \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text{1. } \text
+47	p066	2	NONE	20	6	raw: ---
+48	p066	7	TIE	17	2	 3C1  WRITE (ISOUT,5)

@@ -1,0 +1,9 @@
+1	6	COUNT 320/6	                                                                                	\text{S} \text{C} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}
+19	1497	OK	      COMMON /CONTRL/ OETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI          	COMMON /CONTRL/ OETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI
+28	1883	COUNT 0/19	                                                                                	
+33	2100	OK	      A = 6847. * W**(-0.0131)                                                  	A = 6847. * W**(-0.0131)
+34	2141	COUNT 0/21	                                                                                	
+35	2185	COUNT 0/25	                                                                                	
+36	2228	COUNT 0/9	                                                                                	
+39	2357	OK	      SSAM = 90.718                                                             	SSAM = 90.718
+50	3290	COUNT 8/45	                                                                                	RECEIVED

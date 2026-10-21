@@ -1,0 +1,10 @@
+3	547	COUNT 33/34	                                                                                	Q = F/SIGXO(IP)/SIGY(IP)/6.28318531
+7	720	OK	      NOB = (YPRML - YMIN)/OGY                                                  	NOB = (YPRML - YMIN)/OGY
+8	763	OK	      NOB=NOB+1                                                                 	NOB=NOB+1
+9	807	OK	      IF(NOB.LT.1) NOB=1                                                        	IF (NOB.LT.1) NOB=1
+31	1752	COUNT 32/18	                                                                                	\text{RADIC} = -8 * \text{YREL} * * 2 + 0
+32	1794	COUNT 22/23	                                                                                	IF (RADIO.GEO.U) GO TO 160
+37	2010	COUNT 54/18	                                                                                	\mathrm{XR} = \mathrm{XL} + 2.3 * \mathrm{RADIC}/\mathrm{CC}
+43	2269	COUNT 18/17	                                                                                	IF(NOL.LT.1) NO!:=1
+53	2699	OK	  210 IRROR=-210                                                                	210 IRROR=-210
+59	2957	OK	      K = NOL + NCRHT                                                           	K = NOL + NCRHT

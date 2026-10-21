@@ -1,0 +1,24 @@
+# DELFIC 1979 test problem: our ICRM -> DTM -> OPM run vs the printed OPM output (PDF pp. 51-53)
+# and vs ORNL's run of their electronic 1979 code (ORNL/TM-2022/2602, Listing 22). 21 Oct 2026.
+                           book (CDC 1979)   ORNL 1979 code     ours            ours/book
+K factor (R-m2/hr-kt)      6.1020E+09        6.0830E+09         6.1026E+09      1.0001
+K factor (R-mi2/hr-kt)     2.3560E+03        2.3486E+03         2.3562E+03      1.0001
+sum of map ordinates       .285538E+05       .284241E+05        .285554E+05     1.0001
+FP by class                                  book - 3.2E+07     0.9993 .. 1.0001 of book
+PSIZE                      identical to 5 digits
+map row 27000:  book .111 4.778 9.957 2.039 1.837 1.825 1.103 2.837 2.654 .853(-1)
+                ours .112 4.791 9.965 2.038 1.837 1.825 1.109 2.836 2.653 .853(-1)
+
+ORNL's FP is a constant 3.2E+07 per class below the book: that is our soil-activation term per class (9.78E+08 x FMASS,
+about 1/30), so their electronic copy apparently runs without soil activity. Ours includes it, as the book does.
+
+Fixes that closed the activity gap (all in the PAM nuclide table, all checked on the scan): Rh-109 code 12002 (faint),
+Sb-122 code 21042 (broken 6/8), As-83 sign (no minus on the scan; a false chain head counted A=83 twice).
+Independent confirmations (ORNL/TM-2010/220): NUCLID decay-code frequencies match exactly; 24/24 listed 1979 ERMs match;
+the 1979 yields are divided by the number of decay paths (Fig. 3), as our BATMAN multiplicities show.
+
+P239HE yield block total 18793.03 = ORNL TAPE20 18793.03 (after the hand-checked Sn-130, Se-81m, Ge-84, Br-89 cells and Br-93).
+No single glyph explains it; the chains with structure outliers (A=80, A=130) carry no exposure-rate entries.
+Decay data checked against Crocker 1967 (run/period-data/): 104Tc and 131Sn DCON exponents fixed 21 Oct.
+Whole PAM tape checked against Tompkins 1968 (DASA-1800-V): Br-93 yield, Zr-106/Ru-116 DCON exponents, Y-93, Ga-74, Te-134 and Eu-157 ERMs
+  fixed 21 Oct (run/period-data/). Te-134 (6.94 for 6.84, a chain-start ERM) took K from 1.0007 to 1.0001 of the book.

@@ -1,0 +1,63 @@
+1	11	COUNT 0/34;COUNT 0/3	                                                                                	 || 
+2	576	OK	   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRH, -40, ISOUT)                ICM  121	40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRH, -40, ISOUT) || ICM 121
+3	616	OK	      IF(PHI .EQ. 0.0) PHI=1.0                                          ICM  122	IF (PHI .EQ. 0.0) PHI=1.0 || ICM 122
+4	654	COUNT 3/6	      READ(ISIN,10)NOSTR,KCI,IRAD                                               	READ(ISIN,10)NOSTR,KCI,IRAD || 10M
+5	698	OK	      IF( NOSTR .EQ. 0 ) NOSTR=100                                      104  124	IF ( NOSTR .EQ. 0 ) NOSTR=100 || 104 124
+6	747	COUNT 58/26	                                                                        10M  125	IF(\text{KDI} \cdot \text{EQ. 0}) \text{ KDI}=15+\text{ALOG}(W) || 10M 125
+7	782	OK	      READ(ISIN,3)XGZ,YGZ,TGZ                                           108  127	READ(ISIN,3)XGZ,YGZ,TGZ || 108 127
+8	834	OK	      IF(IC(1)-1)210,220,230                                            ICM  127	IF (IC (1) - 1) 210, 220, 230 || ICM 127
+9	871	OK	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED                    10M  128	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED || 10M 128
+10	914	OK	  210 READ(ISIN,3) DNS, OMEAN, SD                                       10"  120	210 READ(ISIN,3) DNS, OMEAN, SD || 10" 120
+11	954	OK	C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER                 107  125	C IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER || 107 125
+12	1000	COUNT 0/4;COUNT 7/6	                                                                                	 || 2011 400
+13	1047	OK	      IF(DMEAN.GT. 0.0) IS=1                                            ICM  132	IF (DMEAN .GT. 0.0) IS = 1 || ICM 132
+14	1091	OK	      GO TO 23                                                          ICM  133	GO TO 23 || ICM 133
+15	1134	OK	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED                    ICM  134	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED || ICM 134
+16	1173	OK	  220 READ(ISIN,J)ONS, CAYM, EXPO                                       ICM  135	220 READ(ISIN, J)ONS, CAYM, EXPO || ICM 135
+17	1214	OK	      GO TO 23                                                          10M  439	GO TO 23 || 10M 439
+18	1262	COUNT 3/6	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED                              	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED || 137
+19	1300	COUNT 9/6	  230 READ(ISIN,3)DNS                                                           	230 READ(ISIN, 3)DNS || 1947-1967
+20	1347	OK	      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR)                        ICM  130	READ(IS IN, 195) (DIAM(I), FMASS(I), I=1, NOSTR) || ICM 130
+21	1388	COUNT 8/6	      LD=NOSTR+1                                                                	LD=NOSTR+1 || 100, 100,
+22	1434	OK	      READ(ISIN,195)DIAM(LC)                                            ICM  141	READ(ISIN, 195) DIAM(LC) || ICM 141
+23	1477	OK	C                                                                       ICM  142	C || ICM 142
+24	1519	COUNT 3/6	C     CHECK ORDERING OF THE HISTOGRAM TABLE                                     	C CHECK ORDERING OF THE HISTOGRAM TABLE || 1 4 3
+25	1557	COUNT 7/6	      00 215 I=2,LD                                                             	00 215 I=2,LD || 10.. 17J
+26	1598	OK	      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215                              107  144	IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 || 107 144
+27	1650	OK	      WRITE( ISOUT,198)                                                 ICM  146	WRITE ( ISOUT, 198) || ICM 146
+28	1685	OK	      GO TO 200                                                         107  146	GO TO 200 || 107 146
+29	1735	OK	  215 CONTINUE                                                          ICM  148	215 CONTINUE || ICM 148
+30	1780	OK	   23 HOB =  HEIGHT/0.3048                                              ICN  149	23 HOB = HEIGHT/0.3048 || ICN 149
+31	1821	OK	      IF( DNS .EQ. 0.0 ) DNS = 2.6                                      ICM  150	IF ( DNS .EQ. 0.0 ) DNS = 2.6 || ICM 150
+32	1857	OK	      RHOP=ONS*1000.                                                    104  150	RHOP=ONS*1000. || 104 150
+33	1908	OK	C     ZSCL IS THE SCALED HCB  -  DOB                                    ICM  152	C ZSCL IS THE SCALED HCB - DOB || ICM 152
+34	1943	COUNT 3/6	      ZSCL = HOB /((W)**(1.0/3.4))                                              	ZSCL = HOB / ((W)**(1.0/3.4)) || 152
+35	1994	COUNT 6/5	C                                                                               	C || ICM 154
+36	2037	COUNT 51/52	                                                                        ICM  155	TEST THE SCALED HOB TO DETERMINE IF SUBSURFACE, LOW AIRBURST || ICM 155
+37	2077	OK	C     OR PURE AIRBURST                                                  ICM  156	C OR PURE AIRBURST || ICM 156
+38	2121	COUNT 31/27	                                                                        ICM  157	IF (ZSCL + 20.0 \cdot LT, 0.0) GO TO 143 || ICM 157
+39	2166	OK	      IF(ZSCL .LT. 180.0) GO TO 70                                      ICM  158	IF(ZSCL .LT. 180.0) GO TO 70 || ICM 158
+40	2209	OK	      CALL AIRBRS                                                       ICM  159	CALL AIRBRS || ICM 159
+41	2251	OK	      GO TO 95                                                          ICM  160	GO TO 95 || ICM 160
+42	2294	COUNT 10/11	                                                                        ICM  161	70 CALL TIME || ICM 161
+43	2335	OK	      CALL TEMP                                                         ICM  162	CALL TEMP || ICM 162
+44	2378	OK	      CALL MASS                                                         ICM  163	CALL MASS || ICM 163
+45	2422	OK	      CALL VAPOR                                                        ICM  164	CALL VAPOR || ICM 164
+46	2463	OK	      IF(JC(1)-1)90,95,95                                               ICM  165	IF(JC(1)-1)90,95,95 || ICM 165
+47	2502	COUNT 9/6	C                                                                               	C || 10.11 10.5
+48	2551	COUNT 3/6	#     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE             	# TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE || 107
+49	2589	COUNT 1/13	                                                                        ICM  168	C || ICM 168
+50	2637	OK	 90   IF(SD)91,92,92                                                    108  169	90 IF(SD)91,92,92 || 108 169
+51	2680	OK	 91   WRITE (ISOUT,2)                                                   ICM  170	91 WRITE (ISOUT,2) || ICM 170
+52	2724	OK	      GO TO 200                                                         ICM  171	GO TO 200 || ICM 171
+53	2767	OK	   92 IF(DMEAN)94,95,95                                                 ICM  172	92 IF (DMEAN) 94,95,95 || ICM 172
+54	2811	OK	 94   WRITE (ISOUT,17)                                                  ICM  173	94 WRITE (ISOUT, 17) || ICM 173
+55	2853	OK	      GO TO 200                                                         ICM  174	GO TO 200 || ICM 174
+56	2895	OK	C                                                                       ICM  175	C || ICM 175
+57	2938	OK	C     OMPUTEP ARTICLES IZE-VOLUME( MASS)F REQUENCYP ISTOGRAPH           ICM  176	COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY PISTOGRAPH || ICM 176
+58	2975	COUNT 7/6	 95   CALL DST8N                                                                	95 CALL DST8N || 10.. 1.0
+59	3024	COUNT 3/6	      SSAM = SSAM - VPR                                                         	SSAM = SSAM - VPR || 178
+60	3067	COUNT 1/30	                                                                        ICM  179	C || ICM 179
+61	3109	OK	      WRITE(ISOUT,4)W,FH, FEIGHT,HOB,ZBRSTZ                             ICM  180	WRITE(ISOUT,4)W,FH, FEIGHT,HOB,ZBRSTZ || ICM 180
+62	3177	COUNT 2/1	                                                                                	62
+63	3312	COUNT 0/29;COUNT 0/5	                                                                                	 || 

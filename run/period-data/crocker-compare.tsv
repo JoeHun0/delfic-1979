@@ -1,0 +1,123 @@
+page	nuclide	crocker_1967	delfic_1979	class	note
+p9	76Ga	32.0 S	30 S	vintage	
+p9	77Ga	13.0 S	15 S	vintage	
+p9	77mGe	59.0 S	54 S	vintage	
+p9	77mGe branch	0.25 IT / 0.75 b-	0.36 / 0.64	vintage	
+p9	73Ga	0.5 to 73mGe, 0.5 to 73Ge	all to 73mGe	structure	
+p9	77As	0.001 to 77mSe (from NDS)	none	structure	
+p15	103Mo	62 S	25 S	vintage	
+p15	103Tc	50 S	1.2 M	vintage	
+p15	103Ru	39.6 D	39.7 D	vintage	
+p15	104Mo	1.6 M	2.5 M	vintage	
+p15	104Tc	18.0 M	0.108 S	TRANSCRIPTION	DCON p175 L36 f2 6.418028E-0 -> E-4 (scan); fixed 21 Oct
+p15	105Mo	42 S	2 M	vintage	
+p15	105Tc	7.8 M	9 M	vintage	
+p15	105Ru branch	0.22 / 0.78	0.206 / 0.794	vintage	
+p15	105Rh	35.4 H	36 H	vintage	
+p15	106Tc	37 S	9 S	vintage	
+p15	106Ru	368.8 D	365.3 D	vintage	
+p10	78Ge	1.5 H	2.1 H	vintage	
+p10	78Ge branch	all to 78As (ref 84)	0.5 78mAs / 0.5 78As	structure	
+p10	80As	15 S	36 S	vintage	
+p10	82mBr	6.2 M (0.024 to Kr, 0.976 IT)	not in DELFIC	structure	
+p11	83mSe branch	all to 83Br	0.1 IT / 0.9 to 83Br	structure	
+p11	83Br	2.48 H	2.4 H	vintage	
+p11	84mBr	6.0 M	not in DELFIC	structure	
+p11	85As	0.11 b-n to 84Se, 0.89 to 85Se	all to 85Se	structure	
+p11	85Kr	10.76 Y	10.6 Y	vintage	
+p11	86Br	54 S	1 M	vintage	
+p12	87Br	55 S	54.5 S	vintage	
+p12	87Kr	76.4 M	78 M	vintage	
+p12	87Rb	5.22E10 Y	2.2E7 Y	design	DELFIC caps long-lived nuclides at lambda~1.0E-15/s (effectively stable)
+p12	89Rb	14.9 M	15.4 M	vintage	
+p12	89Sr	51.9 D	50.5 D	vintage	
+p12	90Rb	2.91 M	2.7 M	vintage	
+p12	90Sr	28.1 Y	28 Y	vintage	
+p12	90Y	64.5 H	64.3 H	vintage	
+p12	90mY	3.1 H	not in DELFIC	structure	
+p13	91mRb	14 M (0.5 from 91Kr)	not in DELFIC	structure	
+p13	91Y	58.8 D	58 D	vintage	
+p13	93Sr	7.8 M	8 M	vintage	
+p13	93Zr	8.5E5 Y	9.5E5 Y	vintage	DCON exact for 9.5E5 Y
+p13	93mNb	13.6 Y	3.7 Y	vintage	older measured value; DCON exact for 3.7 Y
+p13	94Rb	2.9 S	3 S	vintage	
+p13	94mNb/94Nb	6.6 M / 2E4 Y	not in DELFIC	structure	
+p13	95Sr	0.8 M	40 S	vintage	
+p13	95Zr	65.3 D	65 D	vintage	
+p13	95Nb	35.3 D	35 D	vintage	
+p14	97Zr branch	0.90 / 0.10 (approximate)	0.96 / 0.04	vintage	
+p14	99Zr	35 S	1.6 S	vintage	DELFIC value is the newer one (modern ~2.1 s); DCON exact for 1.6 s
+p14	99Tc	2.14E5 Y	2.1E5 Y	vintage	
+p14	99mNb	10 S (?)	not in DELFIC	structure	
+p16	107Tc	29 S	1 M	vintage	
+p16	107Ru	4.2 M	4.6 M	vintage	
+p16	107mRh	<10 S	45 S	vintage	Katcoff 45-s value (Crocker note a)
+p16	107Rh	21.7 M	22 M	vintage	
+p16	108Ru	4.5 M	4.3 M	vintage	
+p16	108Rh	16.8 S	18 S	vintage	
+p16	109Rh branch	0.5 109mPd / 0.5 109Pd	0.5 / 0.5 (after the Rh-109 fix)	same	confirms the Rh-109 NUCLID fix
+p16	111mPd branch	0.933 IT / 0.067 to 111mAg	0.68 / 0.32	original differs	scan p174 L26 prints 0.68/0.32 clearly; same values as 129mTe (where Crocker agrees)
+p16	111mCd	49 M	not in DELFIC	structure	
+p17	113mAg branch	0.9 / 0.005 113mCd / 0.095 113Cd	0.9 / 0.1 to 113Cd	same	Cd isomers merged
+p17	115 chain branches	0.5/0.5, 0.72/0.14/0.14, 0.09/0.91, 0.95/0.05	identical	same	confirms the branch-table alignment after Rh-109
+p17	115In	6E14 Y	2.2E7 Y	design	long-lived cap
+p18	117 chain	117Ag 42.2 S 0.20/0.80; 117mCd 3.1 H 0.44/0.49/0.07; 117Cd 2.7 H; 117mIn 1.9 H 0.47/0.529/0.001; 117In 38 M	117Ag 1.1 M 0.5/0.5; 117mCd 3 H 0.6/0.1/0.3; 117Cd 50 M; 117mIn 2 H 0.219/0.78/0.001; 117In 45 M	vintage	Crocker: other versions equally plausible
+p18	117Pd	4.5 S	5 S	vintage	
+p18	118 chain	Pd 2.5 S, Ag 3.5 S, Cd 49 M, 118mIn 4.7 M, 118In 5.7 S	Pd 4.5 S, Ag 25 S, Cd 50 M, 118mIn 4.5 M, 118In 5 S	vintage	
+p19	119Cd	3.9 M	9.5 M	vintage	DCON exact for 9.5 M
+p19	119mIn	22.6 M	18 M	vintage	
+p19	119In	2.8 M	2 M	vintage	
+p19	120In	47.75 S	50 S	vintage	
+p19	120mIn / 122mIn	3.2 S / 7.5 S	not in DELFIC	structure	
+p19	121Cd	12.8 S	10 S	vintage	
+p19	121mSn	76.3 Y	25 Y	vintage	
+p19	121Sn	26.85 H	27 H	vintage	
+p19	122Sb branch	0.03 EC to 122Sn / 0.97 to 122Te	identical	same	confirms the Sb-122 NUCLID fix
+p20	123mIn	6.0 S	36 S	vintage	
+p20	123mSn	129 D	1.25 D	ORIGINAL?	x100 with same digits: likely decimal-point slip in DELFIC data (125 d typed 1.25); DCON exact for 1.25 d; negligible activity
+p20	124m1Sb	1.6 M	1.3 M	vintage	
+p20	124Sb isomers	m2 -> m1 -> 0.20 Te / 0.80 g	both isomers straight to 124Te	structure	
+p20	124Sb	59 D	60 D	vintage	
+p20	125Sn	9.7 D	9.4 D	vintage	
+p20	125Sb	2.81 Y, 0.30 125mTe / 0.70	2.7 Y, 0.215 / 0.785	vintage	
+p20	126mSb branch	0.85 to 126Te / 0.15 IT	0.01 to Te / 0.99 IT	original differs	scan p174 L33 f5/L34 f1 prints 0.99, 0.01; modern ~0.86/0.14 agrees with Crocker
+p21	127mSn	4.1 M	4.2 M	vintage	
+p21	127mTe	109 D, 0.992 IT / 0.008	105 D, 0.98 / 0.02	vintage	
+p21	128mSb / 128Sb	7.0 M / 9.6 H	11 M / 8.6 H	vintage	
+p21	129Sn	2.0 M & 6.2 M isomers	1.8 H	vintage	Crocker note: 1.8 H is the NDS 1961 value
+p21	129Sb	4.5 H	4.589 H	vintage	
+p21	129mTe	32 D, 0.68 IT / 0.32	41 D, 0.68 / 0.32	same branch	branch pair is right here
+p21	129Te	68.7 M	72 M	vintage	
+p21	130Sb isomers	m 35.6 M (0.1), g 12.3 M (0.9)	m 6 M (0.9), g 37 M (0.1)	labels swapped	same physics, short state differs
+p21	130I	12.3 H	12.5 H	vintage	
+p22	131Sb	25.5 M	19.4 M	vintage	
+p22	131Te / 131mXe	25.0 M / 11.8 D	24 M / 12 D	vintage	
+p22	132Sn / 132I	1.0 M / 2.38 H	50 S / 2.3 H	vintage	
+p22	133Sn / 133Sb / 133I	55 S / 2.67 M / 20.3 H	39 S / 2.64 M / 20.8 H	vintage	
+p22	134Sn / 134Sb / 134I / 134Cs	20.0 S / 11.1 S / 52.0 M / 2.10 Y	unknown / 1.5 S / 53 M / 2.2 Y	vintage	
+p22	135Sb b-n	to 134Te	not in DELFIC	structure	
+p22	135Te / 135Xe	11.2 S / 9.14 H	1.4 M / 9.2 H	vintage	
+p22	131Sn	1.32 M	0.0066 S	TRANSCRIPTION	DCON p176 L23 f2 1.050223E+2 -> E-2 (scan: faint broken minus) = 66 s; fixed 21 Oct
+p23	136Te	33 S	6 S	vintage	
+p23	137Xe / 137Cs	4.2 M / 30.0 Y	3.9 M / 29.2 Y	vintage	
+p23	137Cs branch	0.952 137mBa / 0.048	0.92 / 0.08	vintage	
+p23	137mBa	2.55 M	2.6 M	vintage	
+p23	138La	1.1E10 Y	2.2E7 Y	design	long-lived cap
+p23	139Ba	82.9 M	85 M	vintage	
+p23	141La	3.90 H	3.8 H	vintage	
+p23	142Ba / 142La	11 M / 92.5 M	10 M / 84 M	vintage	
+p23	143Pr	13.6 D	13.8 D	vintage	
+p24	146Pm	5.53 Y (0.69 to 146Nd, 0.31 to 146Sm)	not in DELFIC	structure	
+p24	147Nd	11.0 D	11.1 D	vintage	
+p24	148mPm	43 D (from NDS)	not in DELFIC	structure	
+p24	149Nd	1.72 H	2 H	vintage	
+p24	147Ba	*10.0 S (estimate)	1 S	estimate differs	scan p176 L48 f4 prints 6.931470E-1 clearly
+p25	151Nd / 151Pm / 151Sm	13.0 M / 27.8 H / 84.0 Y	13.6 M / 28.4 H / 80 Y	vintage	
+p25	152mEu branch	0.25 EC to 152Sm / 0.75 b- to 152Gd	0.75 EC / 0.25 b-	ORIGINAL reversed	scan p174 L42 f5/L43 f1 prints 0.75, 0.25; ORNL code table gives 152mEu order EC, b-; modern ~0.28/0.72 agrees with Crocker; no yield in A=152, no effect
+p25	153Sm	46.5 H	47 H	vintage	
+p25	156Eu	15.11 D	15.4 D	vintage	
+p25	157Eu	15.15 H	15 H	vintage	
+p26	158Eu	45.7 M	1 H	vintage	
+p26	159Eu / 159Gd	19.0 M / 18.56 H	20 M / 18 H	vintage	
+p26	160Tb	72.1 D	73 D	vintage	
+p26	161Tb	7.3 D	6.9 D	vintage	

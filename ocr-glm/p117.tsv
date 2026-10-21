@@ -1,0 +1,64 @@
+1	6	COUNT 3/7;COUNT 3/4	                                                                                	--- || ---
+2	29	COUNT 3/16	                                                                                	---
+3	556	OK	*DECK,OTHINT                                                            DTMIN  1	* DECK, OTHINT || DTMIN 1
+4	598	OK	      SUBROUTINE DTMINT(ALI,ATP,PRS,RLH,RHO,ETA,NATF)                   DTMIN  2	SUBROUTINE DTMINT(ALI,ATP,PRS,RLH,RHO,ETA,NATF) || DTMIN 2
+5	643	OK	C                                                                       DTMIN  3	C || DTMIN 3
+6	685	OK	C     H. G. NORMENT, ATMCSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DTMIN  4	C H. G. NORMENT, ATMCSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DTMIN 4
+7	729	OK	C                                                                       OTMIN  5	C || OTMIN 5
+8	769	COUNT 1/71	                                                                        DTMIN  6	C || DT MIN 6
+9	815	OK	C                                                                       DTMIN  7	C || DTMIN 7
+10	856	OK	C     DIFFUSIVE TRANSPORT MODULE INITIALIZATION.  READS CARD INPUTS.    UTMIN  8	C DIFFUSIVE TRANSPORT MODULE INITIALIZATION. READS CARD INPUTS. || UTMIN 8
+11	897	OK	C     READS BASIC DATA ON THE BINARY TAPE WRITTEN BY SUBROUTINE WNOSFT  OTMIN  9	C READS BASIC DATA ON THE BINARY TAPE WRITTEN BY SUBROUTINE WNOSFT || OTMIN 9
+12	941	OK	C     OF THE INITIALIZATION AND CLOUD RISE MODULE.   PRINTS HEADER AND  OTMIN 10	C OF THE INITIALIZATION AND CLOUD RISE MODULE. PRINTS HEADER AND || OTMIN 10
+13	985	OK	C     BASIC DATA AND INITIALIZES THE OTM BINARY OUTPUT TAPE.            OTMIN 11	C BASIC DATA AND INITIALIZES THE OTM BINARY OUTPUT TAPE. || OTMIN 11
+14	1029	OK	C                                                                       OTMIN 12	C || OTMIN 12
+15	1069	COUNT 1/71	                                                                        DTMIN 13	C || DTMIN 13
+16	1116	COUNT 8/7	C                                                                               	C || OTMIN 1.4
+17	1156	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               OTHIN 15	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || OTHIN 15
+18	1199	OK	      COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NOATX                   DTMIN 16	COMMON / INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NOATX || DTMIN 16
+19	1243	OK	      COMMON /PARCL/  CROSS,DOWN,DHAF,EODY,NUATP,PMAS,PSJZ,RHOP,PWAF,   DTMIN 17	COMMON /PARCL/ CROSS,DOWN,DHAF,EODY,NUATP,PMA S,PSJZ,RHOP,PWAF, || DTMIN 17
+20	1287	OK	     1 TP,XP,YP,ZLOW,ZP                                                 DTMIN 18	1 TP,XP,YP,ZLOW,ZP || DTMIN 18
+21	1329	OK	      COMMON /SPACE/ WINT,XLLG,YLLC,ZMAX,ZMIN,TIMEX                     DTMIN 19	COMMON /SPACE/ WINT,XLLG,YLLC,ZMAX,ZMIN,TIMEX || DTMIN 19
+22	1375	OK	C                                                                       UTMIN 20	C || UTMIN 20
+23	1414	OK	      DIMENSION ALT(NATF),ATP(NATF),PRS(NATF),RLH(NATF),RHC(NATF)       OTMIN 21	DIMENSION ALT(NATF),ATP(NATF),PRS(NATF),RLH(NATF),RHC(NATF) || OTMIN 21
+24	1458	OK	      DIMENSION ETA(NATF),PS(200),OIAM(200),FMASS(200)                  DTMIN 22	DIMENSION ETA(NATF),PS(200),OIAM(200),FMASS(200) || DTMIN 22
+25	1502	OK	      DIMENSION DETIO(12),CTHIO(12)                                     D7MIN 23	DIMENSION DETIO(12),CTHIO(12) || D7MIN 23
+26	1546	OK	C                                                                       UTMIN 24	C || UTMIN 24
+27	1587	OK	      DATA PROGRM/6HDYNINT/                                             DTMIN 25	DATA PROGRM/6HDYNINT/ || DTMIN 25
+28	1634	OK	C                                                                       DYMIN 26	C || DYMIN 26
+29	1674	OK	    1 FORMAT(12A6)                                                      UTMIN 27	1 FORMAT(12A6) || UTMIN 27
+30	1714	COUNT 61/58	                                                                        DTMIN 28	2 FORMAT( 10X, 54HINITIALIZATION AND CLOLD RISE MODULE IDENTIFICATION || DTMIN 28
+31	1760	OK	     1ION - .1246/ 20X. 44FDIFFUSIVE TRANSPORT MODULE IDENTIFICATION - .DTMIN 29	1ION - .1246/20X. 44FDIFFUSIVE TRANSPORT MODULE IDENTIFICATION - . || DT MIN 29
+32	1804	OK	     2 12A6)                                                            DTMIN 30	2 12A6) || DTMIN 30
+33	1845	COUNT 60/59	                                                                        DTMIN 31	7 FORMAT(/15X6?HTHE CONTROL VARIABLE ARRAY, MC(J), HAS BEEN GIVEN THI || DTMIN 31
+34	1890	OK	     1E VALUES -)                                                       OTMIN 32	1E VALUES -) || OTMIN 32
+35	1931	OK	    8 FORMAT(15X,20I4)                                                  OTMIN 33	8 FORMAT(15X,20I4) || OTMIN 33
+36	1973	OK	    9 FORMAT(/28X20HTHE TRANSPORT TIME LIMIT IS F12.3, 7H SEC. (F10.5,  DYMIN 34	9 FORMAT(/28X20HTHE TRANSPORT TIME LIMIT IS F12.3, 7H SEC. (F10.5, || DYMIN 34
+37	2018	COUNT 9/10	                                                                        DTMIN 35	1 7H HOURS) || DTMIN 35
+38	2058	OK	   10 FORMAT( 15X, 39HA FLANE DEPOSITION SURFACE AT ALTITUDE F9.3,  30H DTMIN 36	10 FORMAT( 15X, 39HA FLANE DEPOSITION SURFACE AT ALTITUDE F9.3, 30H || DTMIN 36
+39	2103	OK	     1(METERS ABOVE MSL) IS ASSUMED)                                    DTMIN 37	1 (METERS ABOVE MSL) IS ASSUMED) || DTMIN 37
+40	2145	OK	   14 FORMAT(15X,46HCOORDINATES OF GROUND ZERO (XGZ,YGZ,ZGZ) ARE (E12.5,DTMIN 3.	14 FORMAT(15X,46HCOORDINATES OF GROUND ZERO (XGZ,YGZ,ZGZ) ARE (E12.5, || DTMIN 3.
+41	2180	COUNT 58/60	                                                                        DTMIN 39	1 2H，E12.5.2H，E12.5.10H（METERS）/42X16DETONATION TIME ISE12.5. || DTMIN 39
+42	2232	OK	     2 BH SECONDS/)                                                     DRMIN 40	2 BH SECONDS/) || DRMIN 40
+43	2277	OK	   21 FORMAT(20I4)                                                      OTMIN 41	21 FORMAT(20I4) || OTMIN 41
+44	2316	COUNT 49/50	                                                                        DTMIN 42	23 FORMAT( 1H1,////51X, 19H* * * * * * * * //55X,11HO E L F I G// || DTMIN 42
+45	2360	COUNT 15/16	                                                                        DTMIN 43	1 12X,101HT HE DEP || DTMIN 43
+46	2395	COUNT 30/32	                                                                        OTMIN 44	2 ARTMENT OF DEFENSE FALLOUT PREDIC || OTMIN 44
+47	2443	COUNT 44/47	                                                                        OTMIN 45	3T I O N S Y S T E F//51X19H * * * * * * * ////48X, 26H0IFFUSI || OTMIN 45
+48	2488	COUNT 45/46	                                                                        DIMIN 46	4VE TRANSPORT MODULE// 55X，11HPREPARED 8Y/ 46X，30H || DIMIN 46
+49	2532	OK	     5ATMOSPHERIC SCIENCE ASSOCIATES/  54X, 14HBEDFORC, MASS.           OTMIN 47	5ATMOSPHERIC SCIENCE ASSOCIATES/ 54X, 14HBEDFORC, MASS. || OTMIN 47
+50	2574	COUNT 45/46	                                                                        DTMIN 48	61111 41X. 40H**** SUMMARY OF RUN IDENTIFIERS *****) || DTMIN 48
+51	2616	OK	   27 FORMAT(15X, 76HHORIZONTAL COORDINATES OF THE SOUTH WEST CORNER OF DTMIN 49	27 FORMAT(15X, 76HHORIZONTAL COORDINATES OF THE SOUTH WEST CORNER OF || DTMIN 49
+52	2659	OK	     1THE TRANSPORT SPACE ARE (E12.5, 2H, E12.5,1H)/ 35X, 30HTHE RESOLUTDYMIN 50	1 THE TRANSPORT SPACE ARE (E12.5, 2H, E12.5,1H)/ 35X, 30HTHE RESOLUT || DYMIN 50
+53	2704	COUNT 38/39	                                                                        DTMIN 51	2ION NET SPACING IS E12.5, 16H (ALL IN METERS) || DTMIN 51
+54	2748	OK	   40 FORMAT(8F10.0)                                                    DTMIN 52	40 FORMAT(8F10.0) || DTMIN 52
+55	2790	COUNT 60/57	                                                                        DTMIN 53	43 FORMAT(/15X,28HFALLOUT PARTICLE DENSITY IS E12.5.8H KG/M  ^{+ + }  3. || DTMIN 53
+56	2834	COUNT 38/39	                                                                        DYMIN 54	1 12H THERE ARE I5, 22H PARTICLE SIZE CLASSES) || DYMIN 54
+57	2869	COUNT 58/59	                                                                        DYMIN 55	45 FORMAT(/ 15X, 36HPARTICLE PROCESSING BEGINS WITH THE I6. 12H TH P4 || DYMIN 55
+58	2924	OK	     1RTICLE)                                                           DTHIN 55	1RTICLE) || DTHIN 55
+59	2964	OK	   46 FORMAT(1H1)                                                       OTMIN 57	46 FORMAT(1H1) || OTMIN 57
+60	3005	OK	   47 FORMAT(/ 15X, 20HTRANSFORT IS BY THE )                            OFMIN 58	47 FORMAT(/ 15X, 20HTRANS FORT IS BY THE ) || OFMIN 58
+61	3049	OK	   48 FORMAT(1H+ 34X, 12HQUICK METHOD)                                  OTMIN 59	48 FORMAT(1H+ 34X, 12HQUICK METHOD) || OTMIN 59
+62	3091	COUNT 41/42	                                                                        OTMIN 60	49 FORMAT(1H+，34X，21PLAYER-BY-LAYER METHOD) || OTMIN 60
+63	3144	OK	                                        114                                     	114
+64	3297	COUNT 8/66	                                                                        markdown	markdown || markdown

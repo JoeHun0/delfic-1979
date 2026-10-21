@@ -1,0 +1,56 @@
+1	10	COUNT 0/31;COUNT 142/2	                                                                                	 || \text{[Image: A black and white pixelated graphic of a car]}\quad\text{[Image: A black and white pixelated graphic of a car with a black silhouette of a person inside]}
+2	49	COUNT 320/7	                                                                                	\text{S} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O}
+3	97	COUNT 203/29;COUNT 60/7	                                                                                	\text{14277-10777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777 || \text{الإجابة: } \text{الإجابة: } \text{الإجابة: } \text{الإجابة: }
+4	729	OK	*JECK,URAN                                                              UQAN   1	*JECK, URAN || UQAN 1
+5	764	OK	      SUBROUTINE URAN                                                   URAN   2	SUBROUTINE URAN || URAN 2
+6	816	OK	C                                                                       URAN   3	C || URAN 3
+7	856	OK	C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS                       URAN   4	C R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS || URAN 4
+8	901	OK	C     MAY 1906                                                          URAN   5	C MAY 1906 || URAN 5
+9	942	OK	CALLED BY PAM2                                                          URAN   6	CALLED BY PAM2 || URAN 6
+10	985	OK	C                                                                       URAN   7	C || URAN 7
+11	1026	COUNT 17/5	C   DLAM          DISINTEGRATION CONSTANT OF NP233                              	C DLAM DISINTEGRATION CONSTANT OF NP233 || \text{NTPU} \quad 8
+12	1067	OK	C   PLAM          DISINTEGRATION CONSTANT OF U233                       U7AN   9	C PLAM DISINTEGRATION CONSTANT OF U233 || U7 AN 9
+13	1114	OK	C                                                                       URAN  10	C || URAN 10
+14	1156	COUNT 41/42	                                                                        URAN  11	COMMON / DECAY/ IGO, JD, KDOS, TENTER, TEXT, TIME || URAN 11
+15	1191	COUNT 56/55	                                                                        UPON  12	COMMON /FISHIN/ A3E3N(700),ABUNDO(700),BRANCH(133),CAPFIS, || UPON 12
+16	1240	COUNT 48/49	                                                                        UPAN  13	1  DCON(700), IBRA, INUC, MAXNUC, MULT(11), NUCLTD(700) || UPAN 13
+17	1277	COUNT 58/59	                                                                        URAN  14	COMMON /OUTPUT/ FISNUM,FP(2)),FW,ITAB,JGO,MASCHN,PSIZE(20)), || URAN 14
+18	1327	COUNT 22/21	                                                                        URAN  15	1 F;HASS(2u0), PACT(200) || URAN 15
+19	1369	COUNT 29/28	                                                                        URAN  16	COMMON / UTILITY/ KOUT,NPRNT(15) || URAN 16
+20	1412	OK	      LOGICAL IGO,JD,KDOS,NPRNT                                         URAN  17	LOGICAL IGO, JD, KDOS, NPRNT || URAN 17
+21	1456	OK	C                                                                       URAN  18	C || URAN 18
+22	1496	COUNT 0/25	                                                                        UPAN  19	 || UPAN 19
+23	1541	OK	COMPUYE VP23J DISINTEGRATION CONSTANT                                   UPAN  20	COMPUYE VP23J DISINTEGRATION CONSTANT || UPAN 20
+24	1582	OK	COMPUTE U239 DISINTEGRATION CONSTANT                                    UPAN  21	COMPUTE U239 DISINTEGRATION CONSTANT || UPAN 21
+25	1626	COUNT 0/27	                                                                        URAN  22	 || URAN 22
+26	1672	OK	C                                                                       UPAN  23	C || UPAN 23
+27	1712	OK	    2 AZERO - CAPFIS'1.E4'PLAM                                          UPAN  24	2 AZERO - CAPFIS' 1.E4' PLAM || UPAN 24
+28	1755	COUNT 0/21	                                                                        UPAN  25	 || UPAN 25
+29	1799	COUNT 12/6	      GLUMP = AZERO*;LMP                                                        	GLUMP = AZERO*; LMP || \text{UAN 26}
+30	1843	OK	C                                                                       UPAN  27	C || UPAN 27
+31	1885	COUNT 15/16	                                                                        UPAN  28	IF (.NOT.J) GO TO 3 || UPAN 28
+32	1925	OK	      ABURAN = AZERO'EXP (-PLAM*TIME)                                   U?&N  29	ABURAN = AZERO' EXP (-PLAM*TIME) || U? & N 29
+33	1968	OK	      ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME)                      URAN  70	ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME) || URAN 70
+34	2013	COUNT 42/6	      GO TO 7                                                                   	GO TO 7 || \text{U}^{\text{P}} \text{A} \text{N} \quad 31
+35	2057	OK	C                                                                       UPAN  32	C || UPAN 32
+36	2098	COUNT 21/6	    3 IF (.NOT.KDOS) GO TO 4                                                    	3 IF (.NOT.KDOS) GO TO 4 || \text{117.4N} \quad .73
+37	2139	OK	      ABURAN = AZERO/PLAY'(EXP (-PLAY*TENTER) - EXP (-PLAY*TEXIT))      URAN  ?4	ABURAN = AZERO/PLAY' (EXP (-PLAY*TENTER) - EXP (-PLAY*TEXIT)) || URAN ? 4
+38	2185	OK	      ABNEP = GLMP^APURAY -                                             UPAN  35	ABNEP = GLMP^APURAY - || UPAN 35
+39	2226	OK	     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM               UPAN  36	1GLUMP*(EXP(-DLAM*TENTER) - EXP(-DLAM'TEXIT))/DLAM || UPAN 36
+40	2271	OK	      GO TO 7                                                           URAN  37	GO TO 7 || URAN 37
+41	2315	OK	C                                                                       URAN  38	C || URAN 38
+42	2354	COUNT 38/36;COUNT 11/6	                                                                                	4 ABURAN = AZERO/PLAM^*EXP (-PLAM^*TENTER) || \text{N 4 N 6}
+43	2401	OK	C                                                                       URAN  40	C || URAN 40
+44	2441	OK	      ABNEP = GLMP^AJURAN - GLUMP/OLAM^EXP (-OLAM^TENTER)               U=AN  41	ABNEP = GLMP^AJURAN - GLUMP/OLAM^EXP (-OLAM^TENTER) || U=AN 41
+45	2483	COUNT 57/43	                                                                        UPAN  42	7 AN\bar{c}P = (ABURAN^*.327E-6 + A3V\bar{e}P^*.966E-6)*FISNUM || UPAN 42
+46	2528	OK	      00 0 J=1,ITAE                                                     UPAN  L3	00 0 J=1,ITAE || UPAN L3
+47	2570	COUNT 0/26	                                                                        U?AN  L←	 || U?AN L←
+48	2614	OK	C                                                                       URAN  45	C || URAN 45
+49	2656	OK	      IF (NPRNT(12)) WRITE (KOUT,1JC) ANEP                              UPAN  46	IF (NPRNT(12)) WRITE (KOUT, 1JC) ANEP || UPAN 46
+50	2702	OK	  100 FORMAT                                                            UPAN  L7	100 FORMAT || UPAN L7
+51	2742	COUNT 50/48;COUNT 13/6	                                                                                	1  (1)H10UTPUT OF JPAN/5X214MASS 239 CONTRI^UTES 1^E12.4. || \text{ขั้ง 4 8}
+52	2786	COUNT 24/25	                                                                        U?4N  49	2 231 TO EACH PARTICLE SIZE.1 || U? 4 N 4 9
+53	2833	OK	      RETURN                                                            UPAN  c0	RETURN || UPAN c 0
+54	2875	COUNT 0/6	      END                                                                       	END || 
+55	3209	COUNT 1/2	                                                                                	-
+56	3328	COUNT 11/9	                                                                                	\mathcal{L}

@@ -1,0 +1,10 @@
+11	922	OK	      COMMON /FISHIN/ ABEGN(700),ABUNDG(700),BRANCH(130),CAPFIS,                	COMMON/FISHIN/ABEGN(700),ABUNDG(700),BRANCH(130),CAPFIS,
+16	1138	OK	      COMMON /UTILTY/  KCUT,NPRNT(15)                                           	COMMON /UTILTY/ KCUT, NPRNT(15)
+25	1523	OK	     2 .(FMT8(I),I=1,9)/10H(17H10UTPU ,10H TO FMCHDE ,1CHP//5X13HP,             	2. (FMT8(I), I=1,9)/10H(17H10UTPU, 10HT OF MCHDE, 1CHP//5X13HP,
+28	1652	COUNT 38/40	                                                                                	5 UNITC/10HCURIES //. UNITF/10HFISSIONS//
+37	2039	OK	      FMT8(10) = UNITC                                                          	FMT8(10) = UNITC
+43	2296	OK	      FMTA( 7) = UNITF                                                          	FMTA(7) = UNITF
+49	2555	OK	      ABNDY = 0.0                                                               	ABNDY = 0.0
+53	2724	OK	      ABNDM = ABNDM + ABUNCC(K1)                                                	ABNDM = ABNDM + ABUNCC(K1)
+61	3066	OK	      RADIAL = ECF(MASCHN-71)/(UNIT + CRISS*ECF(MASCHN-71))                     	RADIAL = ECF(MASCHN-71)/(UNIT + CRISS*ECF(MASCHN-71))
+64	3271	COUNT 3/17	                                                                                	---

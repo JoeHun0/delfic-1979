@@ -1,0 +1,56 @@
+1	10	COUNT 0/23;COUNT 0/1	                                                                                	 || 
+2	48	COUNT 0/11;COUNT 0/2	                                                                                	 || 
+3	458	OK	C                                                                       DCSN  61	C || DCSN 61
+4	502	OK	C                                                                       DCSN  62	C || DCSN 62
+5	543	OK	  014 IF(ABS(T)-10.)114,20,25                                           DCSN  63	014 IF (ABS(T)-10.)114,20,25 || DCSN 63
+6	587	OK	  114 NSTAT=14                                                          DCSN  64	114 NSTAT=14 || DCSN 64
+7	631	OK	      WORD=WORD1                                                        DCSN  65	WORD=WORD1 || DCSN 65
+8	673	OK	      GO TO 1                                                           DCSN  66	GO TO 1 || DCSN 66
+9	716	OK	C                                                                       DCSN  67	C || DCSN 67
+10	760	COUNT 1/21	                                                                        DCSN  68	C || DCSN 68
+11	802	OK	C                                                                       DCSN  69	C || DCSN 69
+12	846	OK	  020  IF(R-1.) 120,13,13                                               DCSN  70	020 IF (R-1.) 120,13,13 || DCSN 70
+13	888	OK	  120 NSTAT=20                                                          DCSN  71	120 NSTAT=20 || DCSN 71
+14	931	OK	      WORD=WORD4                                                        DCSN  72	WORD=WORD4 || DCSN 72
+15	975	OK	      GO TO 1                                                           DCSN  73	GO TO 1 || DCSN 73
+16	1019	OK	C                                                                       DCSN  74	C || DCSN 74
+17	1060	OK	C     TEST FOR ZLMT ANOMALY                                             DCSN  75	C TEST FOR ZLMT ANOMALY || DCSN 75
+18	1106	OK	C                                                                       DCSN  76	C || DCSN 76
+19	1147	OK	  013 IF (Z - ZLMF) 008, 008, 113                                       DCSN  77	013 IF (Z - ZLMF) 008, 008, 113 || DCSN 77
+20	1182	OK	  113 NSTAT=13                                                          DCSN  78	113 NSTAT=13 || DCSN 78
+21	1233	OK	      WORD=WORD3                                                        DCSN  79	WORD=WORD3 || DCSN 79
+22	1277	COUNT 1/16	                                                                        DCSN  80	C || DCSN 80
+23	1318	OK	  001 MWYA = 3                                                          DCSN  81	001 MWYA = 3 || DCS N 81
+24	1362	OK	      WRITE(ISOUT,88) NSTAT,WORD                                        DCSN  82	WRITE(ISOUT,88) NSTAT,WORD || DCSN 82
+25	1405	OK	  008 RETURN                                                            DCSN  83	008 RETURN || DCSN 83
+26	1447	OK	      END                                                               DCSN  84	END || DCSN 84
+27	1791	COUNT 10/11	                                                                        DERIV  1	DECK, DERIV || DERIV 1
+28	1832	OK	      SUBROUTINE DERIV                                                  DERIV  2	SUBROUTINE DERIV || DERIV 2
+29	1877	OK	C                                                                       DERIV  3	C || DERIV 3
+30	1920	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DEKIV  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DEKIV 4
+31	1963	OK	C                                                                       DERIV  5	C || DERIV 5
+32	2005	COUNT 0/71	                                                                        DERIV  6	 || DERIV 6
+33	2049	OK	C                                                                       DERIV  7	C || DERIV 7
+34	2091	OK	C     COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR DERIV  8	C COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR || DERIV 8
+35	2138	COUNT 1/25	                                                                        DERIV  9	C || DERIV 9
+36	2181	OK	C                                                                       DERIV 10	C || DERIV 10
+37	2220	COUNT 0/71	                                                                        DERIV 11	 || DERIV 11
+38	2265	OK	C                                                                       DERIV 12	C || DERIV 12
+39	2307	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),    DERIV 13	COMMON /ATMOS/ NAT, ALT (256), ATP (256), PRS (256), RLH (256), || DERIV 13
+40	2350	OK	     1        RHO(256), ETA(256), NHODO, ZV(1J0),  VX(100), VY(1J0)     DERIV 14	1 RHO(256), ETA(256), NHODO, ZV(1J0), VX(100), VY(1J0) || DERIV 14
+41	2393	COUNT 43/42	                                                                        DERIV 15	COMMON /CLOUD/ CHANGE,CHLR ,C2 ,C3 ,C6 ,DEK ,ORM ,I || DERIV 15
+42	2437	OK	     1 OS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,OU    ,DWT    ,OX     ,DERIV 16	1 OS ,DST ,DST0 ,DST1 ,DST2 ,DT ,OU ,DWT ,OX , || DERIV 16
+43	2479	OK	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,OERIV 17	2 DZ ,ED ,EK ,EPS ,ES ,HLF ,KS ,KSV ,MWYA , || OERIV 17
+44	2521	OK	     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    ,DERIV 18	3 N ,NNN ,P ,PH ,R ,RA ,RL ,RM ,RZT , || DERIV 18
+45	2565	OK	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,HT     ,DERIV 19	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,HT , || DERIV 19
+46	2607	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         DERIV 20	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE || DERIV 20
+47	2651	OK	      COMMON /INITL/ F, PHI, SSAM, THE, THPG, TNPS, VPR                 DÉRIV 21	COMMON /INITL/ F, PHI, SSAM, THE, THPG, TNPS, VPR || DÉRIV 21
+48	2696	OK	C                                                                       DERIV 22	C || DERIV 22
+49	2736	COUNT 0/71	                                                                        DERIV 23	 || DERIV 23
+50	2780	OK	C                                                                       DERIV 24	C || DERIV 24
+51	2824	OK	      DZ=U                                                              DERIV 25	DZ=U || DERIV 25
+52	2867	OK	C                                                                       07KIV 26	C || 07KIV 26
+53	2908	OK	C                                                                       DERIV :7	C || DERIV :7
+54	2951	COUNT 58/59;COUNT 0/7	                                                                                	C ORIGIN VALUE OF AMBIENT TEMPERATURE, HUMIDITY, RELATIVE HUMIDITY || 
+55	3037	COUNT 0/7	      CALL TROL(Z,NAT ,ALT,A)D,T=)                                              	CALL TROL(Z,NAT,ALT,A)D,T=) || 
+56	3082	COUNT 0/7	      CALL TRPL(Z.NAT .AIT.PRS.P)                                               	CALL TRPL(Z.NAT .AI T.PRS.P) || 

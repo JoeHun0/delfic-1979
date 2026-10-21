@@ -1,0 +1,16 @@
+1	5	COUNT 0/28	                                                                                	
+2	64	COUNT 0/22	                                                                                	
+3	769	COUNT 11/12	                                                                                	PRB=FRAC 2.0
+4	813	COUNT 27/26	                                                                                	PS(1)=BARAHU+APX(PR8)*SIGMA
+7	941	OK	      DIAM(LD)=2.*PS(NOSTR)-DIAM(NOSTR)                                         	DIAM(LD)=2.*PS(NOSTR)-DIAM(NOSTR)
+14	1240	COUNT 58/32	                                                                                	106 \text{ PS}(I)=0.5 \times (\text{DIAM}(I)+\text{CJAM}(I+1))
+18	1414	OK	      DIAM(LD)=EXP(DIAM(LC)) *1.0E-6                                            	DIAM(LD)=EXP(DIAM(LC)) *1.0E-6
+25	1714	OK	      POW=1.0/(4.0*EXPO)                                                        	POW=1.0/(4.0*EXPO)
+26	1756	COUNT 110/39	                                                                                	\mathrm{DMIN} = (6.7 * \frac{\mathrm{FRAC}}{(\mathrm{PI} * \mathrm{RHOF} * \mathrm{CAYM} * \mathrm{POW})}) * * \mathrm{POh}
+28	1843	COUNT 9/7	                                                                                	A_j = I_j = 1
+29	1885	OK	  206 DIAM(I.J:-'N-AJ)**PCW*DMIN                                                	206 DIAM(I.J:-'N-AJ)**PCW*DMIN
+30	1917	OK	      PS(NOSTR)=OMIN*0.5**POW                                                   	PS(NOSTR)=OMIN*0.5**POW
+31	1972	OK	      DIAM(LO)=PS(NOSTR)**2/DIAM(NOSTR)                                         	DIAM(LO)=PS(NOSTR)**2/DIAM(NOSTR)
+32	2014	OK	      NO=NOSTR-1                                                                	NO=NOSTR-1
+42	3131	COUNT 0/2	                                                                                	
+43	3296	COUNT 0/45	                                                                                	

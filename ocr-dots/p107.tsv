@@ -1,0 +1,59 @@
+1	1	COUNT 0/24	                                                                                	
+2	50	COUNT 0/27;COUNT 0/4	                                                                                	 || 
+3	437	OK	      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS)                                   WNOSF421	CALL TRPL(ZCUR,NAT,ALT,ETA,VIS) || WNOSF421
+4	481	OK	      IF(IC(8).EQ.0)GO TO 245                                           WNOSF422	IF (IC(8).EQ.0) GO TO 245 || WNOSF422
+5	524	OK	      IAC=300                                                           WNOSF423	IAC=300 || WNOSF423
+6	568	OK	      WRITE(ISOUT,2310)IAC,                                             WNOSF424	WRITE (ISOUT, 2310) IAC, || WNOSF424
+7	610	OK	     1                 J,LL,MM,LLL,DELTEE:ZBOTOM,RV,FV,TCUR,ZCUR,TPIUOT WNDSF425	1 J,LL,MM,LLL,DELTEE:ZBOTOM,RV,FV,TCUR,ZCUR,TPIUOT || WNDSF425
+8	645	OK	      GO TO 245                                                         WNDSF426	GO TO 245 || WNDSF426
+9	696	OK	C                                                                       WNOSF427	C || WNOSF427
+10	740	OK	C                                                                       WNOSF428	C || WNOSF428
+11	782	OK	C 310 MAKE FINAL ADJUSTMENTS TO PARTICE SHIFT PARAMETERS.               WNOSF429	C 310 MAKE FINAL ADJUSTMENTS TO PARTICE SHIFT PARAMETERS. || WNOSF429
+12	824	OK	C                                                                       WNOSF430	C || WNOSF430
+13	868	OK	C                                                                       WNOSF431	C || WNOSF431
+14	909	OK	  310 ZBOTOM=ZB( LL)+VB( LL)*(TCUR-TC( LL))                             WNOSF432	310 ZBOTOM=ZB( LL)+VB( LL)*(TCUR-TC( LL)) || WNOSF432
+15	953	COUNT 57/35	                                                                        WNOSF433	\text{DELTEE} = (Z\text{BOTOM} - Z\text{CUR}) / (VB \ (LL) - RV + FV) || WNOSF433
+16	996	OK	  311 IF(DELTEE.LT. 0.0)DELTEE=0.                                       WNOSF434	311 IF(DELTEE.LT. 0.0)DELTEE=0. || WNOSF434
+17	1038	OK	      IF((TCUR-DELTEE).LT. 0.0) DELTEE=J.0                              WNDSF435	IF((TCUR-DELTEE).LT. 0.0) DELTEE=J.0 || WNDSF435
+18	1082	OK	  315 IF(TC(LL) .LE. (TCUR-CELTEE-0.1)) GO TO 320                       WNDSF436	315 IF (TC(LL) .LE. (TCUR-CELTEE-0.1)) GO TO 320 || WNDSF436
+19	1125	COUNT 0/7	                                                                        WNOSF437	 || WNOSF437
+20	1169	OK	      IF(LL.GE.1) GO TO 315                                             WNOSF438	IF (LL.GE.1) GO TO 315 || WNOSF 438
+21	1212	COUNT 4/5	                                                                        WNOSF439	LL=1 || WNOSF439
+22	1255	COUNT 100/48	                                                                        WNOSF440	320 \text{ DELTRP} = (3000 \text{ DELTRP} - 3000 \text{ DELTEE} - 3000 \text{ LL}) / (3000 \text{ LL} + 1) - 3000 \text{ LL} || WNOSF440
+23	1298	COUNT 53/54	                                                                        WNOSF441	322 DX=DX+VX(M)*DELTEE + XC(LL) + (XC(LL+1)-XC(LL))*DELTRF || WNOSF 441
+24	1341	COUNT 111/51	                                                                        WNOSF442	\text{DY} = \text{DY} + \text{VY} + (4M) * \text{DELTEE} + \text{YC} * (LL) + ( \text{YC} * (LL+1) - \text{YC} * (LL) ) * \text{DELTRF} || WNOSF442
+25	1384	OK	      IF(IC(8).EQ.0)GO TO 108                                           WNOSF443	IF (IC(8).EQ.0) GO TO 108 || WNOSF443
+26	1426	OK	      IAC=320                                                           WNOSF444	IAC=320 || WNOSF444
+27	1469	OK	      WRITE(ISOUT,2310)IAC,                                             WNOSF445	WRITE (ISOUT, 2310) IAC, || WNOSF445
+28	1512	OK	     1                 J,LL,MM,LLL,DELTEE,ZBOTCM,RV,FV,TCUR,ZCUR,TP1U0T WNOSF446	1 J,LL,MM,LLL,DELTEE,ZBOTCM,RV,FV,TCUR,ZCUR,TP1U0T || WNOSF446
+29	1555	OK	      GO TO 108                                                         WNDSF447	GO TO 108 || WNDSF447
+30	1598	OK	C                                                                       WNOSF448	C || WNOSF 448
+31	1641	OK	      END                                                               WNOSF449	END || WNOSF449
+32	1983	OK	*DECK,ADVEC                                                             ADVEC  1	* DECK, ADVEC || ADVEC 1
+33	2027	OK	      SUBROUTINE ADVEC(NET,NETSU,ZBH,TI4UP,USUM,VSUM,OXSUM,DYSUM,RSUM,  ADVEC  2	SUBROUTINE ADVEC(NET,NETSU,ZBH,TI4UP,USUM,VSUM,OXSUM,DYSUM,RSUM, || ADVEC 2
+34	2063	OK	     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHO,ETA,THAX,                       ADVEC  3	1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHO,ETA,THAX, || ADVEC 3
+35	2114	OK	     2ICF,JCF,NCF,KBHF,N(A1F,LTIMF,NATF)                                ADVEC  4	2ICF, JCF, NCF, KBHF, N(A1F, LTIMF, NATF) || ADVEC 4
+36	2149	OK	C                                                                       ADVEC  5	C || ADVEC 5
+37	2198	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     ADVEC  6	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || ADVEC 6
+38	2242	OK	C                                                                       ADVEC  7	C || ADVEC 7
+39	2285	COUNT 0/71	                                                                        ADVEC  8	 || ADVEC 8
+40	2327	OK	C                                                                       ADVEC  9	C || ADVEC 9
+41	2371	OK	C     FALLOUT PARCELS ARE TRANSPORTED (VIA SR TRANP) BY ADVECTION PLUS  ADVEC 10	C FALLOUT PARCELS ARE TRANSPORTED (VIA SR TRANP) BY ADVECTION PLUS || ADVEC 10
+42	2414	OK	C     SETTLING, PARCEL TCP AND BASE ARE TRANSPORTED SEPARATELY, AND THE ADvEC 11	C SETTLING, PARCEL TCP AND BASE ARE TRANSPORTED SEPARATELY, AND THE || AD vEC 11
+43	2455	OK	C     RESULTS ARE SHEARED. THE /COMMON/ VARIABLE ZP IS REDEFINED.       ADVEC 12	C RESULTS ARE SHEARED. THE /COMMON/ VARIABLE ZP IS REDEFINED. || ADVEC 12
+44	2498	OK	C                                                                       ADVEC 13	C || ADVEC 13
+45	2541	COUNT 0/71	                                                                        ADVEC 14	 || ADVEC 14
+46	2582	OK	C                                                                       ADVEC 15	C || ADVEC 15
+47	2627	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               ADVEC 16	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || ADVEC 16
+48	2663	OK	      COMMON /PARCL/  CROSS,DOWN,OWAF,EDDY,NOATP,PMAS,FSIZ,RHOP,RWAF,   ADVEC 17	COMMON /PARCL/ CROSS,DOWN,OWAF,EDDY,NOATP,PMAS,FSIZ,RHOP,RWAF, || ADVEC 17
+49	2705	OK	     1 TP,XP,YP,ZLOW,ZP                                                 ADVEC 18	1 TP,XP,YP,ZLOW,ZP || ADVEC 18
+50	2747	OK	      COMMON /SPACE/ WIN1,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     ADVEC 19	COMMON /SPACE/ WIN1,XLLC,YLLC,ZMAX,ZMIN,TIMEX || ADVEC 19
+51	2789	COUNT 0/2	                                                                        ADVEC 20	 || ADVEC 20
+52	2840	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF),ZBH(KBHF),USUM(KBHF,NDATF,LTIMF)ADVEC 21	DIMENSION NET(ICF,JCF),NETSU(NCF),ZBH(KBHF),USUM(KBHF,NDATF,LTIMF) || ADVEC 21
+53	2876	OK	      DIMENSION VSUM(KBHF,NDATF,LTIMF),DXSUM(KBHF,NDATF,LTIMF)          ADVEC 22	DIMENSION VSUM(KBHF,NDATF,LTIMF),DXSUM(KBHF,NDATF,LTIMF) || ADVEC 22
+54	2928	OK	      DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUP(LTIMF),ZCH(KBHF)          ADVEC 23	DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUP(LTIMF),ZCH(KBHF) || ADVEC 23
+55	2971	OK	      DIMENSION CAVS(KBHF),WFZ(KBHF,NOATF,LTIMF),TSUM(KBHF)             ADVEC 24	DIMENSION CAVS(KBHF),WFZ(KBHF,NOATF,LTIMF),TSUM(KBHF) || ADVEC 24
+56	3013	OK	      DIMENSION RSUM(KBHF,NOATF,LTIMF)                                  ADVEC 25	DIMENSION RSUM(KBHF,NOATF,LTIMF) || ADVEC 25
+57	3050	OK	      DIMENSION ALT(NATF),ATP(NATF),PRS(NATF),RHO(NATF),ETA(NATF)       ADVEC 26	DIMENSION ALT(NATF),ATP(NATF),PRS(NATF),RHO(NATF),ETA(NATF) || ADVEC 26
+58	3123	COUNT 3/2	                                                                                	104
+59	3275	COUNT 0/43;COUNT 0/8	                                                                                	 || 

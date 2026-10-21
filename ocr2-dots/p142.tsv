@@ -1,0 +1,8 @@
+2	23	COUNT 0/19	                                                                                	
+3	420	COUNT 28/29	                                                                                	2090 VX(KBH, NDATA, LTIM) = VXKNL
+4	465	OK	      VY(KSH,NDATA,LTIM) = VYKNL                                                	VY(KSH,NDATA,LTIM) = VYKNL
+6	552	OK	      VZ(KBH,NDATA,LTIN) = VZKNL                                                	VZ(KBH,NDATA,LTIN) = VZKNL
+7	595	OK	 905  CONTINUE                                                                  	905 CONTINUE
+44	2528	OK	      COMMON /CNTROL/ IPOLT,ISIN,ISOUT,JPARN,MC(20),NSEQO                       	COMMON /CNTROL/ IPOLT,ISIN,ISOUT,JPARN,MC(20),NSEQO
+47	2655	OK	      DIMENSION OXSUM(KBKF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF)                 	DIMENSION OXSUM(KBKF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF)
+58	3288	COUNT 0/17	                                                                                	

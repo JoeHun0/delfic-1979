@@ -1,0 +1,12 @@
+1	1	COUNT 0/24	                                                                                	
+2	50	COUNT 0/27	                                                                                	
+7	610	COUNT 1/49	                                                                                	1
+15	953	COUNT 0/35	                                                                                	
+19	1125	OK	      LL=LL-1                                                                   	LL=LL-1
+21	1212	COUNT 4/5	                                                                                	LL=1
+22	1255	OK	  320 DELTRP =(TCUR -DELTEE-TC( LL))/(TC( LL+1) -TC( LL))                       	320 DELTRP = (TCUR - DELTEE - TC( LL)) / (TC( LL+1) - TC( LL))
+23	1298	OK	  322 DX=DX+VX( MM)*DELTEE + XC( LL)  + (XC( LL^1) -XC( LL))*DELTRF             	322  DX=DX+VX(  MM)*DELTEE  +  XC(  LL)  +  (XC(  LL^1) - XC(  LL))*DELTRF
+24	1341	COUNT 0/51	                                                                                	
+54	2928	OK	      DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUF(LTIMF),ZCH(KBHF)                  	DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUF(LTIMF),ZCH(KBHF)
+58	3123	COUNT 3/2	                                                                                	104
+59	3275	COUNT 0/43	                                                                                	

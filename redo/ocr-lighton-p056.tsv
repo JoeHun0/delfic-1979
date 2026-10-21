@@ -1,0 +1,37 @@
+1	20	COUNT 138/31	                                                                                	\text{S. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+2	45	COUNT 134/52;COUNT 320/8	                                                                                	1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. || \text{P} \text{R} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S} \text{O} \text{L} \text{E} \text{S}
+3	790	OK	*DECK,ERROR                                                             ERKOK  1	*DECK, ERROR || ERKOK 1
+4	828	OK	      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)                             ERKOS  2	SUBROUTINE ERROR (PROGRM, IRROR, ISOUT) || ERKOS 2
+5	869	OK	C     T. W. SCHHENKE                                                    ERROR  3	C T. W. SCHHENKE || ERROR 3
+6	917	OK	C     1 MARCH 1966                                                      ERROR  4	C 1 MARCH 1966 || ERROR 4
+7	953	OK	C                                                                       ERROR  5	C || ERROR 5
+8	995	COUNT 12/71;COUNT 23/6	                                                                                	\overline{C} || \dot{E} \dot{R} R C R \quad 6
+9	1045	OK	C                                                                       ERROR  7	C || ERROR 7
+10	1081	OK	C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING  ERROR  8	C THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING || ERROR 8
+11	1125	OK	C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS       ERROR  9	C FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS || ERROR 9
+12	1166	COUNT 3/7	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                                	C POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. || ---
+13	1217	OK	C                                                                       ERROR 11	C || ERROR 11
+14	1253	OK	C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER  ERROR 12	C ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER || ERROR 12
+15	1295	COUNT 1/40	                                                                        ERROR 13	C || ERROR 13
+16	1346	OK	C                                                                       ERROR 14	C || ERROR 14
+17	1382	OK	C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET        ERROR 15	C PRIOR TO CALLING ERRCR THE PARAMETER PROGRM MUST BE SET || ERROR 15
+18	1424	COUNT 1/27	                                                                        ERROR 16	C || ERROR 16
+19	1467	OK	C     PROGRAM AND PARAMETER  ERROR  MUST BE SET WITH THE NUMBER OF THE  ERROR 17	C PROGRAM AND PARAMETER ERROR MUST BE SET WITH THE NUMBER OF THE || ERROR 17
+20	1511	OK	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      ERROR 18	C FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. || ERROR 18
+21	1560	OK	C                                                                       ERROR 19	C || ERROR 19
+22	1603	COUNT 1/71	                                                                        ERROR 20	C || ERROR 20
+23	1639	OK	C                                                                       ERROR 21	C || ERROR 21
+24	1689	COUNT 55/56	                                                                        E2KOR 22	1   FORMAT(/26H ERROR SENSED IN PROGRAM A6,3GH AT OR NEAR STATEMENT || E 2KOR 22
+25	1732	OK	     1 NUMBER I6,40H .  PLEASE REFER TC THE PROGRAM LISTING.)           ERROR 23	1 NUMBER I6,40H . PLEASE REFER TC THE PROGRAM LISTING.) || ERROR 23
+26	1769	OK	C                                                                       ERROR 24	C || ERROR 24
+27	1818	COUNT 1/71	                                                                        ERROR 25	C || ERROR 25
+28	1854	COUNT 10/71	                                                                        ERROR 26	C^{\infty} || ERROR 26
+29	1904	OK	C                                                                       ERROR 27	C || ERROR 27
+30	1947	COUNT 0/15	                                                                        ERROR 28	 || ERROR 28
+31	1990	COUNT 25/24	                                                                        ERROR 29	WRITE(ISOUT,1)PROGRAM,IRR || ERROR 29
+32	2027	OK	      IF(IRROR)101,100,100                                              ERROR 30	IF(IRROR)101,100,100 || ERROR 30
+33	2068	OK	  100 RETURN                                                            ERROR 31	100 RETURN || ERROR 31
+34	2118	OK	  101 STOP                                                              ERROR J2	101 STOP || ERROR J2
+35	2154	OK	      END                                                               ERROR 33	END || ERROR 33
+36	3144	OK	                                        53                                      	53
+37	3283	COUNT 8/6;COUNT 8/6	                                                                                	\text{S} || \text{S}

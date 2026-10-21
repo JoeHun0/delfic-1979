@@ -1,0 +1,66 @@
+1	16	COUNT 3/2	                                                                                	---
+2	41	COUNT 3/22	                                                                                	---
+3	77	COUNT 3/14	                                                                                	---
+4	610	OK	 5443 IP=0                                                              RSXP 272	5443 IP=0 || RSXP 272
+5	654	OK	 5445 IP=IP+1                                                           RSXP 273	5445 IP=IP+1 || RSXP 273
+6	698	OK	C                                                                       RSXP 274	C || RSXP 274
+7	740	COUNT 54/53	                                                                        RSXP 275	C SET UP THE DPST ARRAY FOR A WAFER SUBDIVISION FROM THE PPST ARRAY || RSXP 275
+8	783	OK	C                                                                       RSXP 276	C || RSXP 276
+9	824	OK	      00 5444 J=1,8                                                     RSXP 277	00 5444 J=1,8 || RSXP 277
+10	870	OK	 5444 OPST(J,MBT)=PPST(J,IP)                                            RSXP 278	5444 OPST(J,MBT)=PPST(J,IP) || RSXP 278
+11	913	OK	 5442 GO YO (5448,5447),IFLAG                                           RSXP 279	5442 GO YO (5448,5447),IFLAG || RSXP 279
+12	956	OK	C                                                                       RSXP 280	C || RSXP 280
+13	1000	OK	C     SPECIFY FINAL OPST AFRAY FOR A WAFER WITH EQUAL BASE AND TOP RADIIRSXP 281	C SPECIFY FINAL OPST AFRAY FOR A WAFER WITH EQUAL BASE AND TOP RADII || RSXP 281
+14	1042	OK	C                                                                       RSXP 282	C || RSXP 282
+15	1085	OK	 5448 DPST(6,MBT)= DPST(2,1)-DPST(2,2)                                  RSXP 283	5448 DPST(6,MBT) = DPST(2,1)-DPST(2,2) || RSXP 283
+16	1129	OK	      DPST(2，M8T)=(DPST(2，1)+DPST(2，2))*0.5                             RSXP 284	DPST(2，M8T)=(DPST(2，1)+DPST(2，2))*0.5 || RSXP 284
+17	1171	OK	      OPST(4,MBT)=SQRT(OPST(4,1)*DPST(4,2))                             RSYP 285	OPST(4,MBT) = SQRT(OPST(4,1)*DPST(4,2)) || RSYP 285
+18	1214	OK	      DPST（7，MBT）=DPST（2，2）                                             RSXP 286	DPST（7，MBT）=DPST（2，2） || RSXP 286
+19	1256	OK	      DPST(8,MBT)=DPST(€,MBT)*3.1415927*DPST(3,1)**2                    RSXP 287	DPST(8,MBT)=DPST(€,MBT)*3.1415927*DPST(3,1)**2 || RSXP 287
+20	1300	OK	      IF(IC(6))5447.5447.5826                                           RSXP 288	IF(IC(6))5447.5447.5826 || RSXP 288
+21	1334	OK	 5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG                     RSXP 289	5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG || RSXP 289
+22	1384	OK	 5447 IF(IRAO)5022,5022,783                                             RSXP 290	5447 IF(IRAO)5022,5022,783 || RSXP 290
+23	1427	OK	C                                                                       RSXP 291	C || RSXP 291
+24	1470	OK	C                                                                       RSXP 292	C || RSXP 292
+25	1512	OK	C     INITIALIZE FOR HORIZONTAL WAFER SUBDIVISION                       RSXP 293	C INITIALIZE FOR HORIZONTAL WAFER SUBDIVISION || RSXP 293
+26	1544	COUNT 1/2	                                                                        RSXP 294	C || RSXP 294
+27	1598	OK	  783 XR=BZ2                                                            RSXP 295	783 XR=BZ2 || RSXP 295
+28	1641	OK	      YR=BZ2                                                            RSXP 296	YR=BZ2 || RSXP 296
+29	1683	OK	 506C RADIUS=DPST(3,MBT)                                                RSXP 297	506C RADIUS=DPST(3,MBT) || RSXP 297
+30	1726	OK	      RAD2=RADIUS**2                                                    RSXP 298	RAD2=RADIUS**2 || RSXP 298
+31	1769	OK	 5010 IF(RAD2-2.0*8Z2**2)5022,1004,1004                                 RSXP 299	5010 IF(RAD2-2.0*8Z2**2)5022,1004,1004 || RSXP 299
+32	1812	OK	C                                                                       RSXP 300	C || RSXP 300
+33	1854	OK	C                                                                       RSXP 3J1	C || RSXP 3J1
+34	1897	OK	C                                                                       RSXP 302	C || RSXP 302
+35	1941	OK	C     SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED      RSXP 303	C SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED || RSXP 303
+36	1983	OK	C     HORIZONTALLY                                                      RSXP 304	C HORIZONTALLY || RSXP 304
+37	2028	OK	C                                                                       RSXP 305	C || RSXP 305
+38	2071	OK	 5022 L00D=L00D+1                                                       RSXP 306	5022 L00D=L00D+1 || RSXP 306
+39	2106	OK	      GDPST（6，LODO）=DPST（2，MBT）                                         RSXP 307	GDPST（6，LODO）=DPST（2，MBT） || RSXP 307
+40	2157	OK	      GDPST（4，LODD）=DPST（4，MBT）                                         RSXP 3U8	GDPST（4，LODD）=DPST（4，MBT） || RSXP 3U8
+41	2200	OK	      GDPST（3，LODD）=DPST（ 1，MBT）                                        RSXP 309	GDPST（3，LODD）=DPST（1，MBT） || RSXP 309
+42	2236	OK	      GDPST（5，LODD）=DPST（5，MBT）                                         RSXP 310	GDPST（5，LODD）=DPST（5，MBT） || RSXP 310
+43	2286	OK	      GDPST(1,LODD)=0.                                                  RSXP 311	GDPST(1,LODD)=0. || RSXP 311
+44	2329	OK	      GOPST（2，L000）=0.                                                  RSXP 312	GOPST（2，L000）=0. || RSXP 312
+45	2371	OK	      GDPST（7，LOOD）=DPST（3，MBY）                                         RSXP 313	GDPST（7，LOOD）=DPST（3，MBY） || RSXP 313
+46	2414	OK	      GDPST（8，LOOD）=DPST（6，MBT）                                         RSXP 314	GDPST（8，LOOD）=DPST（6，MBT） || RSXP 314
+47	2457	OK	      GDPST（9，LODD）=DPST（7，MBT）                                         RSXP 315	GDPST（9，LODD）=DPST（7，MBT） || RSXP 315
+48	2493	OK	      GDPST(10,LODD)=DPST(8,MBT)                                        RSXP 316	GDPST(10,LODD)=DPST(8,MBT) || RSXP 316
+49	2543	OK	      GO TO 5030                                                        RSXP 317	GO TO 5030 || RSXP 317
+50	2586	OK	 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002                            RSXP 318	1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002 || RSXP 318
+51	2621	OK	C                                                                       RSXP 319	C || RSXP 319
+52	2669	OK	C     SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA    RSXP 320	C SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA || RSXP 320
+53	2713	OK	C                                                                       RSXP 321	C || RSXP 321
+54	2748	OK	C                                                                       RSXP 322	C || RSXP 322
+55	2798	OK	C      COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS                RSXP 323	C COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS || RSXP 323
+56	2842	OK	C                                                                       RSXP 324	C || RSXP 324
+57	2876	OK	 1004 EX=BZ2                                                            RSXP 325	1004 EX=BZ2 || RSXP 325
+58	2927	OK	      EY=8Z2                                                            RSXP 326	EY=8Z2 || RSXP 326
+59	2971	OK	      CNT=4.0                                                           RSXP 327	CNT=4.0 || RSXP 327
+60	3013	COUNT 12/13	                                                                        RSXP 328	721C EX=EX+8Z || RSXP 328
+61	3049	OK	      IF(EX**2+EY**2-RA02)7201,7201,7202                                RSXP 329	IF(EX**2+EY**2-RA02)7201,7201,7202 || RSXP 329
+62	3101	OK	 7201 CNT=CNT+4.0                                                       RSXP 330	7201 CNT=CNT+4.0 || RSXP 330
+63	3144	OK	      GO TO 7210                                                        RSXP 331	GO TO 7210 || RSXP 331
+64	3193	OK	                                         95                                     	95
+65	3292	COUNT 3/33;COUNT 3/7	                                                                                	--- || ---
+66	3344	COUNT 37/31	                                                                                	النموذج المطلوب منك هو النموذج المطلوب منك.

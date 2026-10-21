@@ -1,0 +1,17 @@
+4	627	OK	 5300 FORMAT( 14X, 22HSURFACE WIND SPEED IS E12.5. 3X, 20H MEASURED AT H        	5300 FORMAT(14X,22HSURFACE WIND SPEED IS E12.5.3X,20H MEASURED AT H
+5	678	OK	     1EIGHT E12.5/ 14X， 17HROUGHNESS LENGTH=E12.5， 3X， 32HRECIPROCAL MON        	1EIGHT E12.5/14X，17HROUGHNESS LENGTH=E12.5，3X，32HRECIPROCAL MON
+7	757	OK	     3 14X， 32HSURFACE LAYER FRICTION VELOCITY=E12.5， 3X，  7H(M/SEC)/1          	3 14X，32HSURFACE LAYER FRICTION VELOCITY=E12.5，3X，7H(M/SEC)/1
+8	800	OK	 5900 FORMAT( 1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BECA        	5900 FORMAT(1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BE CA
+9	843	OK	     1USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/ 10X. 53HCALCULATION CANNOT        	1 USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/10X. 53HCALCULATION CANNOT
+15	1110	COUNT 28/29	                                                                                	25 CALL ERROR(PROGRM-25:I SCUT)
+26	1583	OK	      XI = (1.J - 15.0*ZM*RL)**0.25                                             	XI = (1. J - 15. 0 * ZM * RL) ** 0. 25
+27	1625	OK	      CHI = -ALOG((XI**2+1.0) * (XI+1.0)**2 /8.0) + 2.0*ATAN (XI)               	CHI = -ALOG((XI**2+1.0) * (XI+1.0)**2/8.0) + 2.0*ATAN(XI)
+36	2014	OK	      USTAR = VKK*U / (ALCG(ZM/Z0) + CHI)                                       	USTAR = VKK*U / (ALCG(ZM/Z0) + CHI)
+38	2097	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,53J0)U,ZM,ZJ,RL,USTAR                        	IF(MC(2) .NE. 1) WRITE(ISOUT,53J0)U,ZM,ZJ,RL,USTAR
+40	2187	OK	  300 C = WILK                                                                  	300 C = WILK
+51	2659	OK	      DO 610 N=1,NDATX                                                          	DO 610 N=1,NDATX
+53	2743	COUNT 20/19	                                                                                	OXSUM(K,N,L) = CAVS(K)
+54	2788	COUNT 23/22	                                                                                	500 DYSUM(K,N,L) = CAVS(K)
+56	2874	COUNT 17/16	                                                                                	WRITE( ISOUT, 507C)
+57	2919	OK	      NO 710 K=1,KBHX                                                           	NO 710 K=1,KBHX
+58	2951	COUNT 54/52	                                                                                	700 WRITE(ISOUT,5100) K, ZCH(K), OXSLM(K,1,L), OYSUM(K,1,L)

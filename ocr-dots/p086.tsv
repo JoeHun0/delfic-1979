@@ -1,0 +1,61 @@
+1	0	COUNT 0/17;COUNT 0/1	                                                                                	 || 
+2	55	COUNT 0/19;COUNT 0/7	                                                                                	 || 
+3	532	COUNT 12/10	                                                                        DC5N   1	• CHECK, OK, 3N || DC5N 1
+4	576	COUNT 0/5	      SUBROUTINE DCSN                                                           	SUBROUTINE DCSN || 
+5	618	OK	C                                                                       005N   3	C || 005N 3
+6	661	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DC5N   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DC5N 4
+7	705	OK	C                                                                       DCSN   5	C || DCSN 5
+8	746	COUNT 0/71	                                                                        DCSN   6	 || DCSN 6
+9	790	OK	C                                                                       DCSN   7	C || DCSN 7
+10	833	OK	C     DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO           DCSN   8	C DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO || DCSN 8
+11	875	COUNT 25/26	                                                                        DCSN   9	CONTINUE THE CRM COMPUTATION || DCSN 9
+12	920	OK	C                                                                       DCSN  10	C || DCSN 10
+13	963	COUNT 0/71	                                                                        DCSN  11	 || DCSN 11
+14	1005	OK	C                                                                       DCSN  12	C || DCSN 12
+15	1047	COUNT 43/42	                                                                        DCSN  13	COMMON /CLOUD/ CHANGE,CHLR ,C2 ,C3 ,C6 ,DEK ,ORM ,I || DCSN 13
+16	1091	COUNT 37/36	                                                                        DCSN  14	1 OS ,OST ,OST0 ,OST1 ,OST2 ,DT ,OU ,DWT ,OX ,I || DCSN 14
+17	1133	COUNT 34/33	                                                                        DCSN  15	2 OZ ,ED ,EK ,EPS ,ES ,HLR ,KS ,KSV ,MWYA ,I || DCSN 15
+18	1177	COUNT 28/27	                                                                        DCSN  16	3 N ,NNN ,P ,PW ,R ,RA ,RL ,RM ,RZT ,I || DCSN 16
+19	1221	COUNT 34/33	                                                                        UCSN  17	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,WT ,I || UCSN 17
+20	1262	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLNT  ,SPARE                         DCSN  18	5 X ,XE ,Z ,ZBFR ,ZLNT ,SPARE || DCSN 18
+21	1305	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI  DCSN  19	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI || DCSN 19
+22	1348	OK	C                                                                       DCSN  20	C || DCSN 20
+23	1391	OK	  06E FORMAT(14H0SWITCH TC DRY)                                         DCSN  21	06E FORMAT (14H0SWITCH TC DRY) || DCSN 21
+24	1434	OK	  C77  FORMAT(14H0SWITCH TO WET)                                        DCSN  22	C77 FORMAT (14H0SWITCH TO WET) || DCSN 22
+25	1477	OK	  088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT IDCSN  23	088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT I || DCSN 23
+26	1519	COUNT 24/25	                                                                        DCSN  24	14, 8H BY THE A6, 7H SWITCH//) || DCSN 24
+27	1563	OK	C                                                                       DCSN  25	C || DCSN 25
+28	1593	COUNT 46/45	                                                                        DCSN  26	DATA WORD1, WORC3, W (RD4 /6H TEMP , 6H ZLMT ,6HR.LT. 1/1 || DCSN 26
+29	1649	OK	C                                                                       DCSN  27	C || DCSN 27
+30	1691	COUNT 0/71	                                                                        DCSN  20	 || DCSN 20
+31	1735	OK	C                                                                       DCSN  29	C || DCSN 29
+32	1777	OK	      GO TO (151,154,1531),N                                            DCSN  30	GO TO (151,154,1531),N || DCSN 30
+33	1820	OK	C                                                                       DCSN  31	C || DCSN 31
+34	1863	COUNT 1/27	                                                                        DCSN  32	C || DCSN 32
+35	1905	COUNT 1/11	                                                                        DCSN  33	C || DCSN 33
+36	1950	OK	C                                                                       DCSN  34	C || DCSN 34
+37	1992	OK	 1531 IF(ES-PW)041,041,008                                              DCSN  35	1531 IF (ES-PW) 041, 041, 008 || DCSN 35
+38	2034	OK	C                                                                       DCSN  36	C || DCSN 36
+39	2078	OK	  041  N=2                                                              DCSN  37	041 N=2 || DCSN 37
+40	2120	OK	      IF(IC(5))151,151,1041                                             DCSN  38	IF (IC (5)) 151, 151, 1041 || DCSN 38
+41	2162	OK	 1041 WRITE(ISOUT,77)                                                   DCSN  39	1041 WRITE(ISOUT,77) || DCSN 39
+42	2206	OK	       GO TO 151                                                        DCSN  40	GO TO 151 || DCSN 40
+43	2250	OK	C                                                                       DCSN  41	C || DCSN 41
+44	2292	OK	C 154 SHOULD WE SWITCH TO CRY MODE-                                     DCSN  42	C 154 SHOULD WE SWITCH TO CRY MODE- || DCSN 42
+45	2335	COUNT 1/8	                                                                        DCSN  43	C || DCSN 43
+46	2379	OK	C                                                                       DCSN  44	C || DCSN 44
+47	2419	OK	  154 IF(WT + 1.0E-0)153,153,151                                        DCSN  45	154 IF (WT + 1.0E-0) 153,153,151 || DCSN 45
+48	2463	OK	  153 N=1                                                               DCSN  46	153 N=1 || DCSN 46
+49	2505	OK	      WT=0.                                                             DCSN  47	WT=0. || DCSN 47
+50	2547	OK	      DWT=0.                                                            DCSN  48	DWT=0. || DCSN 48
+51	2591	OK	      IF(IC(5))151,151,152                                              DCSN  49	IF (IC (5)) 151, 151, 152 || DCSN 49
+52	2634	OK	  152 WRITE(ISOUT,66)                                                   DCSN  50	152 WRITE (ISOUT,66) || DCSN 50
+53	2676	OK	C                                                                       CCSN  51	C || CCSN 51
+54	2718	COUNT 1/22	                                                                        DCSN  52	C || DCSN 52
+55	2762	OK	C                                                                       DCSN  53	C || DCSN 53
+56	2805	OK	  151 IF (SMALLT - CHANGE) 014, 015, 015                                DCSN  54	151 IF (SMALLT - CHANGE) 014, 015, 015 || DCSN 54
+57	2849	OK	  C15  DST=0ST2                                                         DCSN  55	C15 DST=0ST2 || DCSN 55
+58	2892	OK	C                                                                       OCSN  56	C || OCSN 56
+59	2934	COUNT 1/56	                                                                        DCSN  57	C || DCSN 57
+60	2980	OK	C     ANOMALY IS FOUND                                                  DCSN  58	C ANOMALY IS FOUND || DCSN 58
+61	3024	OK	C                                                                       003N  59	C || 003N 59

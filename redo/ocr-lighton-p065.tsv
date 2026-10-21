@@ -1,0 +1,65 @@
+1	4	COUNT 0/15;COUNT 320/2	                                                                                	 || \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P} \text{S} \text{I} \text{I} \text{P}
+2	26	COUNT 409/16	                                                                                	\text{1. } \text{The } \text{First } \text{Line } \text{of } \text{The } \text{Second } \text{Line } \text{of } \text{The } \text{Third } \text{Line } \text{of } \text{The } \text{Fourth } \text{Line } \text{of } \text{The } \text{Fifth } \text{Line } \text{of } \text{The } \text{Sixth } \text{Line } \text{of } \text{The } \text{Seventh } \text{Line } \text{of } \text{The } \text{Eighth } \text{Line } \text{of } \text{The } \text{Ninth } \text{Line } \text{of } \text{The } \text{T
+3	580	OK	   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT)                ICM  121	40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT) || ICM 121
+4	625	OK	      IF(PHI .EQ. 0.0) PHI=1.0                                          ICM  122	IF(PHI .EQ. 0.0) PHI=1.0 || ICM 122
+5	666	OK	      READ(ISIN,10)NOSTR,KCI,IRAD                                       ICM  123	READ(ISIN,10)NOSTR,KCI,IRAD || ICM 123
+6	709	OK	      IF( NOSTR .EQ. 0 ) NOSTR=100                                      ICM  124	IF( NOSTR .EQ. 0 ) NOSTR=100 || ICM 124
+7	752	OK	      IF(KDI .EQ. 0) KDI=15+ALOG(W)                                     ICM  125	IF(KDI .EQ. 0) KDI=15+ALOG(W) || ICM 125
+8	795	OK	      READ(ISIN,3)XGZ,YGZ,TGZ                                           ICM  126	READ(ISIN,3)XGZ,YGZ,TGZ || ICM 126
+9	840	OK	      IF(IC(1)-1)210,220,230                                            ICM  127	IF(IC(1)-1) 210, 220, 230 || ICM 127
+10	874	OK	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED                    ICH  128	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED || ICH 128
+11	923	OK	  210 READ(ISIN,3) DNS, OMEAN, SD                                       ICM  129	210 READ(ISIN,3) DNS, OMEAN, SD || ICM 129
+12	966	OK	C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER                 ICM  130	C IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER || ICM 130
+13	1009	OK	      IS=0                                                              ICM  131	IS = 0 || ICM 131
+14	1052	OK	      IF(OMEAN.GT. 0.0) IS=1                                            ICM  132	IF(OMEAN.GT. 0.0) IS=1 || ICM 132
+15	1096	OK	      GO TO 23                                                          ICM  133	GO TO 23 || ICM 133
+16	1139	OK	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED                    ICM  134	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED || ICM 134
+17	1181	OK	  220 READ(ISIN,3)DNS, CAYP, EXPO                                       ICM  135	220 READ(ISIN,3)DNS, CAYP, EXPO || ICM 135
+18	1224	OK	      GO TO 23                                                          10M  136	GO TO 23 || 10M 136
+19	1267	OK	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED                      ICM  137	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED || ICM 137
+20	1309	OK	  230 PEAD(ISIN,3)DNS                                                   ICM  138	230 PEAD(ISIN, 3)DNS || ICM 138
+21	1352	OK	      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NDSTR)                        ICM  139	READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NDSTR) || ICM 139
+22	1396	COUNT 0/10	                                                                        ICM  140	 || ICM 140
+23	1439	OK	      READ(ISIN,195)DIAH(LC)                                            ICM  141	READ(ISIN,195)DIAH(LC) || ICM 141
+24	1482	OK	C                                                                       ICM  142	C || ICM 142
+25	1524	OK	C     CHECK ORDERING OF THE HISTOGRAM TABLE                             ICM  143	C CHECK ORDERING OF THE HISTOGRAM TABLE || ICM 143
+26	1568	OK	      00 215 I=2.LD                                                     ICM  144	00 215 I=2.LD || ICM 144
+27	1611	OK	      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215                              ICM  145	IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 || ICM 145
+28	1656	OK	      WRITE( ISOUT,198)                                                 ICM  146	WRITE( ISOUT,198 ) || ICM 146
+29	1697	OK	      GO TO 200                                                         ICM  147	GO TO 200 || ICM 147
+30	1741	OK	  215 CONTINUE                                                          ICM  148	215 CONTINUE || ICM 148
+31	1785	OK	   23 H08 =  HEIGHT/0.3048                                              ICH  149	23 H08 = HEIGHT/0.3048 || ICH 149
+32	1827	OK	      IF( DNS .EQ. 0.0 ) DNS = 2.6                                      ICM  150	IF( DNS .EQ. 0.0 ) DNS = 2.6 || ICM 150
+33	1870	OK	      RHOP=ONS*1000.                                                    ICM  151	RHOP=ONS*1000. || ICM 151
+34	1913	OK	C     ZSCL IS THE SCALED HCB  -  008                                    ICH  152	C ZSCL IS THE SCALED HCB - 008 || ICH 152
+35	1956	COUNT 0/25	                                                                        ICM  153	 || ICM 153
+36	1999	OK	C                                                                       ICM  154	C || ICM 154
+37	2041	OK	C     TEST THE SCALED HOB TO DETERMINE IF  SUBSURFACE, LOW AIRBURST     ICM  155	C TEST THE SCALED HOB TO DETERMINE IF SUBSURFACE, LOW AIRBURST || ICM 155
+38	2083	OK	C     OR PURE AIRBURST                                                  ICM  156	C OR PURE AIRBURST || ICM 156
+39	2126	OK	      IF(ZSCL+20.0 .LT, 0.0) GO TO 143                                  ICM  157	IF(ZSCL+20.0 .LT, 0.0) GO TO 143 || ICM 157
+40	2172	OK	      IF(ZSCL .LT. 180.0) GO TO 70                                      ICM  158	IF(ZSCL .LT. 180.0) GO TO 70 || ICM 158
+41	2213	OK	      CALL AIRBRS                                                       ICM  159	CALL AIRBRS || ICM 159
+42	2256	OK	      GO TO 95                                                          ICM  160	GO TO 95 || ICM 160
+43	2299	OK	 70   CALL TIMEE                                                        ICM  161	70 CALL TIMEE || ICM 161
+44	2340	COUNT 9/8	                                                                        ICM  162	CALL. TEMP || ICM 162
+45	2383	OK	      CALL MASS                                                         ICM  163	CALL MASS || ICM 163
+46	2426	COUNT 10/9	                                                                        ICM  1ē4	CALL. VAPOR || ICM 1ē4
+47	2469	OK	      IF(JC(1)-1)90,95,95                                               ICM  185	IF (JC(1)-1) 90,95,95 || ICM 185
+48	2506	OK	C                                                                       ICM  166	C || ICM 166
+49	2555	OK	C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE     ICM  167	C TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE || ICM 167
+50	2597	OK	C     DISTRIBUTION                                                      ICM  1E8	C DISTRIBUTION || ICM 1E8
+51	2641	OK	 9C   IF(SO)91,92,92                                                    ICM  169	9C IF(SO)91,92,92 || ICM 169
+52	2683	OK	 91   WRITE (ISOUT,2)                                                   ICM  170	91 WRITE (ISOUT, 2) || ICM 170
+53	2719	COUNT 3/6	      GO TO 200                                                                 	GO TO 200 || ---
+54	2771	OK	   92 IF(OMEAN)94,95,95                                                 ICM  172	92 IF(OMEAN) 94,95,95 || ICM 172
+55	2813	OK	 94   WRITE (ISOUT,17)                                                  ICM  173	94 WRITE (ISOUT, 17) || ICM 173
+56	2848	OK	      GO TO 2J0                                                         ICM  174	GO TO 2J0 || ICM 174
+57	2900	OK	C                                                                       ICM  175	C || ICM 175
+58	2941	OK	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM           ICM  176	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM || ICM 176
+59	2985	OK	 95   CALL OSTBN                                                        ICM  177	95 CALL OSTBN || ICM 177
+60	3028	COUNT 0/13	                                                                        ICH  178	 || ICH 178
+61	3072	COUNT 30/31	                                                                        ICM  179	C PRINT INITIAL CONDITIONS RESULTS || ICM 179
+62	3114	OK	      WRITE(ISOUT,4)W,FH, HEIGHT,HOB,ZERSTZ                             ICM  1d9	WRITE(ISOUT,4)W,FH, HEIGHT,HOB,ZERSTZ || ICM 1d9
+63	3177	OK	                                       62                                       	62
+64	3290	COUNT 203/12;COUNT 11/6	                                                                                	\text{11111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111 || \text{1011}
+65	3326	COUNT 139/14	                                                                                	\text{1. 2017. 3. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.

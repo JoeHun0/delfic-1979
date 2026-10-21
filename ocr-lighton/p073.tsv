@@ -1,0 +1,64 @@
+1	12	COUNT 0/9	                                                                                	
+2	527	COUNT 15/14	                                                                         IHR  34	20 FORMAT(20I4)                                                                 A || IHR 34
+3	570	COUNT 15/13;COUNT 6/4	                                                                                	30 FORMAT(12A6)                                                                 A || ATMR 35
+4	606	OK	   40 FORMAT(8F10.0                                                    ) TMR  36	40 FORMAT(8F10.0) || TMR 36
+5	659	OK	   44 FORMAT(1H1)                                                       ATMR  37	44 FORMAT(1H1) || ATMR 37
+6	693	OK	   46 FORMAT( 20X,20HATHOSPHERE IDENTIFICATION - 12A6//)                ATMR  38	46 FORMAT( 20X,20HATHOSPHERE IDENTIFICATION - 12A6//) || ATMR 38
+7	737	COUNT 67/66	                                                                        ATMR  39	47 FORMAT( 37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3A || ATMR 39
+8	778	COUNT 26/27	                                                                        ATMR  40	1HRLH, 11X, 3HRHO, 11X, 3FETA) || ATMR 40
+9	822	COUNT 23/24	                                                                        ATMR  41	48 FORMAT( / (6(2X,E12.5)) || ATMR 41
+10	864	OK	C                                                                       ATMR  42	C || ATMR 42
+11	914	COUNT 319/71	                                                                        ATMR  43	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{ || ATMR 43
+12	959	OK	C                                                                       ATMR  44	C || ATMR 44
+13	992	OK	      READ(ISIN,30)ATIO                                                 ATMR  45	READ(ISIN, 30)ATIO || ATMR 45
+14	1036	OK	      KATM = IC(4)                                                      ATMR  46	KATM = IC(4) || ATMR 46
+15	1087	OK	      IF(KATH .GT. 0) WRITE(ISCUT,44)                                   ATMR  47	IF(KATH .GT. 0) WRITE(ISCUT,44) || ATMR 47
+16	1125	OK	      WRITE(ISOUT,46)ATID                                               ATMR  48	WRITE(ISOUT,46)ATID || ATMR 48
+17	1166	COUNT 0/5	                                                                        ATMR  49	 || ATMR 49
+18	1216	OK	      NBRNCH=1                                                          ATMR  50	NBRNCH=1 || ATMR 50
+19	1252	COUNT 0/24	                                                                        ATMR  51	 || ATMR 51
+20	1296	OK	C                                                                       ATHR  52	C || ATHR 52
+21	1345	OK	C     READ OBJECT-TIME FORMAT                                           ATMR  53	C READ OBJECT-TIME FORMAT || ATMR 53
+22	1380	OK	C                                                                       ATMR  54	C || ATMR 54
+23	1431	OK	      READ(ISIN,30)FMT                                                  ATMR  55	READ(ISIN,30)FMT || ATMR 55
+24	1468	OK	C                                                                       ATMR  56	C || ATMR 56
+25	1509	OK	C     READ SCALE AND ADJUSTMENT FACTORS                                 ATMR  57	C READ SCALE AND ADJUSTMENT FACTORS || ATMR 57
+26	1560	OK	C                                                                       ATMR  58	C || ATMR 58
+27	1595	OK	      READ(ISIN,40)SCALE                                                ATMR  59	READ(ISIN, 40) SCALE || ATMR 59
+28	1640	OK	      00 90 I=1,6                                                       ATMR  60	00 90 I=1,6 || ATMR 60
+29	1683	OK	      IF(SCALE(I))90,91,90                                              ATMR  61	IF(SCALE(I)) 90,91,90 || ATMR 61
+30	1727	OK	   91 SCALE(I)=1.                                                       ATMR  62	91 SCALE(I)=1. || ATMR 62
+31	1771	OK	   90 CONTINUE                                                          ATMR  63	90 CONTINUE || ATMR 63
+32	1819	OK	C                                                                       ATMR  64	C || ATMR 64
+33	1854	OK	C     READ ATMOSPHERE DATA SEQUENCE INDICIES                            ATMR  65	C READ ATMOSPHERE DATA SEQUENCE INDICIES || ATMR 65
+34	1905	OK	      READ(ISIN,20)N1,N2,A3,N4,N5,N6                                    ATMR  66	READ(ISIN, 20) N1, N2, A3, N4, N5, N6 || ATMR 66
+35	1941	OK	C                                                                       ATHR  67	C || ATHR 67
+36	1983	COUNT 64/54	                                                                        ATMR  68	\mathcal{C} READ ATMOSPHERE TABLE ENTRIES, SEQUENCE AND ADJUST THEM TO THE || ATMR 68
+37	2026	OK	C     PROPER UNITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT     ATMR  69	C PROPER UNITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT || ATMR 69
+38	2069	OK	C     PROVIDED IN THE INPUT.   ETA NEED NOT BE INPUT.  EITHER PRS OR RHZATMR  70	C PROVIDED IN THE INPUT. ETA NEED NOT BE INPUT. EITHER PRS OR RHZ || ATMR 70
+39	2118	OK	C     (BUT NOT BOTH) NEEDS TO BE INPUT.                                 ATMR  71	C (BUT NOT BOTH) NEEDS TO BE INPUT. || ATMR 71
+40	2154	OK	C                                                                       ATMR  72	C || ATMR 72
+41	2205	OK	      I=0                                                               ATMR  73	I = 0 || ATMR 73
+42	2249	OK	  100 READ(ISIN,FMT)AP                                                  ATMR  74	100 READ(ISIN,FMT)AP || AT MR 74
+43	2285	COUNT 26/27;COUNT 20/6	                                                                                	IF(AP(N1).GE.ALIMIT) GO TO 15 || \Delta T_{MR} \quad 7.5
+44	2334	COUNT 0/5	                                                                        ATMR  76	 || ATMR 76
+45	2376	COUNT 0/33	                                                                        ATMR  77	 || ATMR 77
+46	2418	COUNT 0/33;COUNT 17/6	                                                                                	 || \mathcal{A}TMR\ 78
+47	2462	COUNT 0/22	                                                                        ATMR  79	 || ATMR 79
+48	2505	COUNT 0/22	                                                                        ATMR  80	 || ATMR 80
+49	2547	COUNT 0/22	                                                                        ATHR  31	 || ATHR 31
+50	2590	COUNT 0/22	                                                                        ATMR  E2	 || ATMR E2
+51	2634	OK	C                                                                       ATMR  E3	C || ATMR E3
+52	2669	COUNT 64/54	                                                                        ATMR  84	\mathcal{C} ARE SUCCESSIVE TABLE ENTRIES IN ORDER OF INCREASING ALTITUDE- || ATMR 84
+53	2719	OK	C                                                                       ATMR  85	C || ATMR 85
+54	2765	OK	      IF(I.EQ.1) GO TO 70                                               ATMR  86	IF(I.EQ.1) GO TO 70 || AT MR 86
+55	2802	OK	      IF (ALT(I)-ALT(I-1)) 45,45,70                                     ATMR  87	IF (ALT(I)-ALT(I-1)) 45,45,70 || ATMR 87
+56	2851	COUNT 12/11	                                                                        ATMR  38	45 IRROP. = -45 || ATMR 38
+57	2886	OK	      WRITE(ISOUT,40) ALT(I), ALT(I-1)                                  ATMR  09	WRITE(ISOUT,40) ALT(I), ALT(I-1) || ATMR 09
+58	2929	OK	      GO TO 139                                                         ATMR  90	GO TO 139 || ATMR 90
+59	2969	OK	   70 IF(ETA(I) .GT.0.0) GC TO 1070                                     ATMR  91	70 IF(ETA(I).GT.0.0) GC TO 1070 || ATMR 91
+60	3022	COUNT 0/41	                                                                        ATMR  92	 || ATMR 92
+61	3065	COUNT 27/26	                                                                        ATMR  93	1070 IF(PRS(I).GT.0.0) GC TO 73 || ATMR 93
+62	3111	OK	                                          70                                    	70
+63	3268	COUNT 200/33	                                                                                	77777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+64	3285	COUNT 0/63	                                                                                	

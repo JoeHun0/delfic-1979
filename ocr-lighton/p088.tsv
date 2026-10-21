@@ -1,0 +1,61 @@
+1	2	COUNT 0/15;COUNT 2/1	                                                                                	 || - —
+2	536	OK	      CALL TRPL(Z,NAT ,ALT,RLH,HLR)                                     DERIV 32	CALL TRPL(Z,NAT,ALT,RLH,HLR) || DERIV 32
+3	581	COUNT 8/7	C                                                                               	C || DEP.IV J3
+4	623	OK	C                                                                       DERIV 34	C || DERIV 34
+5	665	OK	C     COMPUTE AMBIENT AIR WATER MIXING RATIO                            DERIV 35	C COMPUTE AMBIENT AIR WATER MIXING RATIO || DERIV 35
+6	709	OK	C                                                                       DERIV 36	C || DERIV 36
+7	749	COUNT 0/64	                                                                        DERIV 37	 || DERIV 37
+8	794	OK	      TAO=3.                                                            DERIV 39	TAO = 3. || DERIV 39
+9	837	OK	C                                                                       DERIV 39	C || DERIV 39
+10	880	OK	C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR                             DERIV 40	C COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR || DERIV 40
+11	924	OK	C                                                                       DERIV 41	C || DERIV 41
+12	967	OK	      IF(T-2300.)15,15,1€                                               DERIV 42	IF(T-2300.)15,15,1€ || DERIV 42
+13	1010	OK	   15 TPR=T                                                             DERIV 43	15 TPR=T || DERIV 43
+14	1053	COUNT 0/17	                                                                        DERIV 44	 || DERIV 44
+15	1096	OK	      GO TO 17                                                          DERIV 45	GO TO 17 || DERIV 45
+16	1137	OK	   16 TPR=2300.                                                         DERIV 46	16 TPR=2300. || DERIV 46
+17	1180	COUNT 0/40	                                                                        DERIV 47	 || DERIV 47
+18	1223	COUNT 0/18	                                                                        DERIV 48	 || DERIV 48
+19	1266	OK	   17 CP=(CP+X*(1697.66+1.144174*T))/(1.+X)                             DERIV 49	17  CP = (CP + X * (1697.66 + 1.144174 * T)) / (1. + X) || DERIV 49
+20	1309	COUNT 0/46	                                                                        DERIV 50	 || DERIV 50
+21	1353	COUNT 7/5	C                                                                               	C || UERIV 51
+22	1394	OK	C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR-WATER-SOIL MIXTURE          DERIV 52	C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR-WATER-SOIL MIXTURE || DERIV 52
+23	1439	OK	C                                                                       DERIV 53	C || DERIV 53
+24	1482	COUNT 0/23	                                                                        DERIV 54	 || DERIV 54
+25	1525	OK	      CR=CP*RMIX                                                        DERIV 55	CR = CP * RMIX || DERIV 55
+26	1568	OK	      IF(THPS-T)380,381,381                                             DERIV 56	IF (THPS-T) 380, 381, 381 || DERIV 56
+27	1611	OK	  381 IF(T-848.)3810,3810,3811                                          DERIV 57	381 IF(T-848.) 3810, 3810, 3811 || DERIV 57
+28	1652	OK	 3810 CS=781.6+0.5612*T-1.881E7/T**2                                    DERIV 58	3810 CS=781.6+0.5612*T-1.881E7/T**2 || DERIV 58
+29	1696	OK	      GO TO 3812                                                        DeRIV 59	GO TO 3812 || DeRIV 59
+30	1739	OK	 3811 CS=1003.8+0.13510*T                                               DERIV 60	3811 CS=1003.8+0.13510*T || DERIV 60
+31	1780	OK	 3812 CR=CR+CS*(S+WT)/(1.+X+S+HT)                                       DERIV 61	3812 CR=CR+CS*(S+WT)/(1.+X+S+HT) || DERIV 61
+32	1823	OK	  380 QXE=(1.+XE)/(1.+29.*XE/18.)                                       DERIV 62	380 QXE=(1.+XE)/(1.+29.*XE/18.) || DERIV 62
+33	1866	COUNT 0/24	                                                                        DERIV 63	 || DERIV 63
+34	1909	OK	      QT=T/TE                                                           DERIV 64	QT = T / TE || DERIV 64
+35	1953	OK	C                                                                       DERI4 65	C || DERI 4 65
+36	1995	OK	C     COMPUTE HORIZONTAL RADIUS OF CLOUD                                DEKIV 66	C COMPUTE HORIZONTAL RADIUS OF CLOUD || DEKIV 66
+37	2038	OK	C                                                                       DERIV 67	C || DERIV 67
+38	2082	COUNT 0/31	                                                                        DERIV 68	 || DERIV 68
+39	2125	OK	C                                                                       DERIV 69	C || DERIV 69
+40	2166	OK	C     IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOUSDERIV 70	C IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOUS || DERIV 70
+41	2209	OK	C     TIME STEP                                                         DERIV 71	C TIME STEP || DERIV 71
+42	2252	OK	C        GREATER- TO 1101                                               DERIV 72	C GREATER- TO 1101 || DERIV 72
+43	2295	OK	C        LESS - TO 1100                                                 DERIV 73	C LESS - TO 1100 || DERIV 73
+44	2338	OK	      IF(KS.GT.0)GO TO 1102                                             DERIV 74	IF(KS.GT.0) GO TO 1102 || DERIV 74
+45	2382	OK	      IF(Z-ZBFR)1100,1101,1101                                          DERIV 75	IF(Z-ZBFR) 1100,1101,1101 || DERIV 75
+46	2424	OK	 1100 0Z=0.                                                             DERIV 76	1100 0Z=0. || DERIV 76
+47	2467	OK	      U=0.                                                              DERIV 77	U = 0. || DERIV 77
+48	2511	COUNT 0/5	                                                                        DERIV 78	 || DERIV 78
+49	2554	COUNT 0/5;COUNT 8/7	                                                                                	 || DEP.IV 79
+50	2599	OK	      GO TO 1102                                                        DERIV 30	GO TO 1102 || DERIV 30
+51	2642	COUNT 10/9	                                                                        DERIV 81	1.1u1 NNN=1 || DERIV 81
+52	2684	OK	C                                                                       DERIV 02	C || DERIV 02
+53	2724	COUNT 27/28;COUNT 38/7	                                                                                	C COMPUTE CLOUD S TC VOLUME RATIO || \text{UERIV} \quad \text{a} \quad \text{3}
+54	2768	COUNT 12/7	C                                                                               	C || C \bar{E} IV . 4
+55	2809	COUNT 0/24;COUNT 0/7	                                                                                	 || 
+56	2853	OK	C                                                                       95AT1 30	C || 95 AT 130
+57	2896	OK	C     COMPUTE TURBULENT KINETIC ENERGY DISSIPATION RATE                 DEKIV 67	C     COMPUTE TURBULENT KINETIC ENERGY DISSIPATION RATE || DEKIV 67
+58	2940	OK	C                                                                       DERIV d8	C || DERIV d8
+59	2980	COUNT 0/23	                                                                        UERIV 59	 || UERIV 59
+60	3025	COUNT 0/28	                                                                        DERIV 94	 || DERIV 94
+61	3069	COUNT 0/34	                                                                        OÉRIV 31	 || OÉRIV 31

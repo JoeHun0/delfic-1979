@@ -1,0 +1,8 @@
+1	41	COUNT 8/2	                                                                                	\text{S}
+23	1423	OK	    3 DPST(KC,KQ)=0.0                                                           	3 DPST(KC,KQ)=0.0
+29	1678	OK	    6 00 7 KD=1,MCX                                                             	6 00 7 KD=1,MCX
+30	1715	OK	      IF(CX(KO,7)-CX(KO,())53,53,54                                             	IF(CX(KO,7)-CX(KO,())53, 53, 54
+33	1852	COUNT 61/51	                                                                                	54 \mathcal{D}PX(1,KD) = (CX(KD,7) - CX(KD,6)) / (CX(KD,4) - CX(KD,3))
+35	1930	OK	   56 DPX(2,K0)=0.0                                                             	56 DPX(2,K0)=0.0
+39	2103	COUNT 37/26	                                                                                	58 \overline{DPX(2,KD)} = CX(KD,6)/DENOM
+46	2404	OK	   78 BZ=0.                                                                     	78  BZ=0.

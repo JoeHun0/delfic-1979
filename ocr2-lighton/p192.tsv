@@ -1,0 +1,17 @@
+3	97	COUNT 0/29	                                                                                	
+14	1156	COUNT 41/42	                                                                                	COMMON / DECAY/ IGO, JD, KDOS, TENTER, TEXIT, TIM
+15	1191	COUNT 56/55	                                                                                	COMMON /FISHIN/ A3E3N(700), A3UNDO(700), BRANCH(133), CAPFIS,
+16	1240	COUNT 48/49	                                                                                	1  DC ON (700), IBRA, INUC, MAXNUS, MULT (11), NUCLID (700)
+17	1277	COUNT 58/59	                                                                                	COMMON /OUTPUT/ FISNUM,FP(2)),FW,ITAB,JGO,MASCHN,PSIZE(20)),
+18	1327	OK	     1 FMASS(200),PACT(200)                                                     	1 FMASS(200), PACT(200)
+19	1369	OK	      COMMON /UTILTY/  KOUT,NPRNT(15)                                           	COMMON /UTILTY/ KOUT,NPRNT(15)
+25	1626	COUNT 0/27	                                                                                	
+28	1755	COUNT 0/21	                                                                                	
+33	1968	OK	      ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME)                              	ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME)
+38	2185	OK	      ABNEP = GLMP*APURAY -                                                     	ABNEP = GLMP*APURAY -
+42	2354	OK	    4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER)                                    	4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER)
+44	2441	OK	      ABNEP = GLMP^AJURAN - GLUMP/7LAM*EXP (-DLAM*TENTER)                       	ABNEP = GLMP^AJURAN - GLUMP/7LAM*EXP (-DLAM*TENTER)
+45	2483	COUNT 78/43	                                                                                	7 AN\overline{c}P = (ABURAN^*.327E-6 + A\overline{3}V\overline{c}P^*.966E-6)*FISNIM
+46	2528	OK	      DO 6 J=1,ITAB                                                             	DO 6 J=1,ITAB
+47	2570	OK	    8 FP(J) = FP(J) + ANEP*FMASS(J)                                             	8 FP(J) = FP(J) + ANEP*FMASS(J)
+51	2742	COUNT 50/48	                                                                                	1   (1)H1OUTPUT OF JPAN/5X21+MASS 239 CONTRIBUTES 1PE12.4.

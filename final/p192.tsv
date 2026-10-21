@@ -1,0 +1,56 @@
+1	10	49	NOISE	                                                                        			
+2	49	81	NOISE	                                                                        			
+3	97	135	NOISE	                                                                        			
+4	729	764	COMMENT	*DECK,URAN                                                              		lighton=*JECK,URAN ## dots=*DECK,URAN ## glm=*DECK,URAN	UQAN1
+5	764	802	AGREE	      SUBROUTINE URAN                                                   		lighton=      SUBROUTINE URAN ## dots=      SUBROUTINE URAN ## glm=      SUBROUTINE URAN	URAN2
+6	816	844	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN3
+7	856	888	COMMENT	C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS                       		lighton=C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS ## dots=C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS ## glm=C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS	URAN4
+8	901	931	COMMENT	C     MAY 1906                                                          		lighton=C     MAY 1906 ## glm=C     MAY 1906	URAN5
+9	942	971	COMMENT	CALLED BY PAM2                                                          		lighton=CALLED BY PAM2 ## dots=CALLED BY PAM2 ## glm=CALLED BY PAM2	URAN6
+10	985	1013	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN7
+11	1026	1057	COMMENT	C   DLAM          DISINTEGRATION CONSTANT OF NP233                      		lighton=C   DLAM          DISINTEGRATION CONSTANT OF NP233 ## glm=C   DLAM          DISINTEGRATION CONSTANT OF NP239	URAN8
+12	1067	1100	COMMENT	C   PLAM          DISINTEGRATION CONSTANT OF U239                       		lighton=C   PLAM          DISINTEGRATION CONSTANT OF U233 ## dots=C   PLAM          DISINTEGRATION CONSTANT OF U239 ## glm=C   PLAM          DISINTEGRATION CONSTANT OF U239	URAN9
+13	1114	1142	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN10
+14	1156	1191	HANDFREE	      COMMON /DECAY/ IGO,JD,KDOS,TENTER,TEXIT,TIME                      		glm=      COMMON /DECAY/ IGO,JD,KDOS,TENTER,TEXIT,TIME	URAN11
+15	1191	1230	HANDFREE	      COMMON /FISHIN/ ABEGN(700),ABUNDO(700),BRANCH(130),CAPFIS,        	24,26,55	dots=      COMMON /FISHIN  ABEEN(700),ABUNDO(700),BRANCH(130),CAPFIS, ## dots2=      COMMON /FISHIN  ABEGN(700),ABUNDO(700),BRAVCH(130),CAPFIS. ## glm=      COMMON /FISHIN  A9E5N(700),ABUNDO(700),BRAVCH(133),CAPFIS, ## glm2=      COMMON /FISHIN  A9E3N(700),A9UNDO(700),BRAVSH(133),CAPFIS,	UPAN12
+16	1240	1277	HANDFREE	     1DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                   		glm2=     1 .DGON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)	UPAN13
+17	1277	1318	HANDFREE	      COMMON /OUTPUT/ FISNUM,FP(200),FW,ITAB,JGO,MASCHN,PSIZE(201),     	28,39,65,66	glm=      COMMON /OUTPUT/ FISNUH,FP(2JJ),FH,ITAB,JGO,MASCHN,PSIZE(201), ## glm2=      COMMON /OUTPUT/ FISNUK,FP(2JJ),FW,ITAB,JGO,MASCHN,PSIZE(20)],	URAN14
+18	1327	1361	VOTED	     1 FMASS(200),PACT(200)                                             		lighton2=     1 FMASS(200),PACT(200) ## dots=     1 FMASS(200),PACT(200) ## dots2=     1 FMASS(2u0),PACT(200) ## glm=     1 FHASS(200),PACT(200)	URAN15
+19	1369	1402	AGREE	      COMMON /UTILTY/  KOUT,NPRNT(15)                                   		lighton2=      COMMON /UTILTY/  KOUT,NPRNT(15) ## glm=      COMMON /UTILTY/  KOUT,NPRNT(15) ## glm2=      COMMON /UTILTY/  KOUT,NPRNT(15)	URAN16
+20	1412	1448	VOTED	      LOGICAL IGO,JO,KDOS,NPRNT                                         		lighton=      LOGICAL IGO,JD,KDOS,NPRNT ## dots=      LOGICAL IGO,JO,KDOS,NPRNT ## glm=      LOGICAL IGO,JO,KDOS,NPRNT	URAN17
+21	1456	1484	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN18
+22	1496	1528	AGREE	      PLAM = 0.693147/(23.5*60.0)                                       		dots=      PLAM = 0.693147/(23.5*60.0) ## glm=      PLAM = 0.693147/(23.5*60.0)	URAN19
+23	1541	1572	COMMENT	COMPUYE VP23J DISINTEGRATION CONSTANT                                   		lighton=COMPUYE VP23J DISINTEGRATION CONSTANT ## dots=COMPUTE VP233 DISINTEGRATION CONSTANT ## glm=COMPUTE VP239 DISINTEGRATION CONSTANT	URAN20
+24	1582	1614	COMMENT	COMPUTE U239 DISINTEGRATION CONSTANT                                    		lighton=COMPUTE U239 DISINTEGRATION CONSTANT ## dots=COMPUTE U239 DISINTEGRATION CONSTANT ## glm=COMPUTE U239 DISINTEGRATION CONSTANT	URAN21
+25	1626	1658	HANDFREE	      DLAM = 0.693147/(56.0*3600.0)                                     	34	dots=      OLAM = 0.693147/(56.0*3600.0) ## glm=      DLAM = 0.693147/（56.0*3600.3） ## glm2=      OLAM = 0.693147/（56.0*3600.1)	URAN22
+26	1672	1701	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	UPAN23
+27	1712	1744	AGREE	    2 AZERO - CAPFIS'1.E4'PLAM                                          		lighton=    2 AZERO - CAPFIS'1.E4'PLAM ## glm=    2 AZERO - CAPFIS'1.E4'PLAM	URAN24
+28	1755	1787	HANDFREE	      GLMP = DLAM/(DLAM - PLAM)                                         	19,31	dots=      GLMP = DLAM/(DLAM - PLAM) ## dots2=      GLMP = OLAM/(OLAM - PLAM) ## glm=      GLMP = DLAM/（DLAM - PLAM） ## glm2=      GLMP = DLAM/（DLAM - PLAM）	UPAN25
+29	1799	1831	VOTED	      GLUMP = AZERO*;LMP                                                		lighton=      GLUMP = AZERO*;LMP ## dots=      GLUMP = AZERO*;LMD ## glm=      GLUMP = AZERO*GLMP	URAN26
+30	1843	1871	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	UPAN27
+31	1885	1915	AGREE	      IF (.NOT.JD) GO TO 3                                              		dots=      IF (.NOT.JD) GO TO 3 ## glm=      IF (.NOT.JD) GO TO 3	UPAN28
+32	1925	1957	AGREE	      ABURAN = AZERO'EXP (-PLAM*TIME)                                   		lighton=      ABURAN = AZERO'EXP (-PLAM*TIME) ## dots=      ABURAN = AZERO'EXP (-PLAM*TIME) ## glm=      ABURAN = AZERO'EXP (-PLAM*TIME)	URAN29
+33	1968	1999	HANDFREE	      ABNEP = GLMP*ABURAN - GLUMP*EXP (-DLAM*TIME)                      	37	lighton=      ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME) ## lighton2=      ABNEP : GLMP*ABURAN - GLUMP*EX> (-DLAM*TIME) ## dots=      ABNEP : GLMP*ABURAN - GLUMP*EXP (-DLAM*TIME) ## dots2=      ABNEP : GLMP*ABURAN - GLUMP*EXP (-DLAM*TINE)	URAN30
+34	2013	2042	VOTED	      GO TO 7                                                           		lighton=      GO TO 7 ## dots=      GO TO 7 ## glm=      60 70 7	UPAN31
+35	2057	2086	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	UPAN32
+36	2098	2128	AGREE	    3 IF (.NOT.KDOS) GO TO 4                                            		lighton=    3 IF (.NOT.KDOS) GO TO 4 ## dots=    3 IF (.NOT.KDOS) GO TO 4 ## glm=    3 IF (.NOT.KDOS) GO TO 4	URAN73
+37	2139	2171	AGREE	      ABURAN = AZERO/PLAY'(EXP (-PLAY*TENTER) - EXP (-PLAY*TEXIT))      		lighton=      ABURAN = AZERO/PLAY'(EXP (-PLAY*TENTER) - EXP (-PLAY*TEXIT)) ## glm=      ABURAN = AZERO/PLAY'(EXP (-PLAY*TENTER) - EXP (-PLAY*TEXIT))	URAN24
+38	2185	2215	HANDFREE	      ABNEP = GLMP*ABURAN -                                             	19	lighton=      ABNEP = GLMP^APURAY - ## lighton2=      ABNEP = GLMP*APURAY -	UPAN35
+39	2226	2258	AGREE	     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM               		lighton=     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM ## dots=     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM ## glm=     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM	URAN36
+40	2271	2300	AGREE	      GO TO 7                                                           		lighton=      GO TO 7 ## dots=      GO TO 7 ## glm=      GO TO 7	URAN37
+41	2315	2343	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN38
+42	2354	2387	VOTED	    4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER)                            		lighton2=    4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER) ## dots=    4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER) ## dots2=    4 ABURAN = AZERO/PLAN*EXP (-PLAN*TENTER)	URAN39
+43	2401	2428	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN40
+44	2441	2473	HANDFREE	      ABNEP = GLMP*ABURAN - GLUMP/DLAM*EXP (-DLAM*TENTER)               	35,39,46,50	lighton=      ABNEP = GLMP^AJURAN - GLUMP/OLAM^EXP (-OLAM^TENTER) ## lighton2=      ABNEP = GLMP^AJURAN - GLUMP/7LAM*EXP (-DLAM*TENTER)	
+45	2483	2514	HANDFREE	    7 ANEP = (ABURAN*.327E-6 + ABNEP*.966E-6)*FISNUM                    			UPAN42
+46	2528	2559	HANDFREE	      DO 8 J=1,ITAB                                                     	10,19	lighton=      00 0 J=1,ITAE ## lighton2=      DO 6 J=1,ITAB ## dots=      00 o J=1,ITAE ## dots2=      00 o J=1,ITAG	UPANL3
+47	2570	2601	HANDFREE	    8 FP(J) = FP(J) + ANEP*FMASS(J)                                     	27	lighton2=    8 FP(J) = FP(J) + ANEP*FMASS(J) ## glm=    8 FP(J) = FP(J) + ANEP+FMASS(J)	URANL4
+48	2614	2642	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	URAN45
+49	2656	2687	HANDFREE	      IF (NPRNT(12)) WRITE (KOUT,100) ANEP                              		lighton=      IF (NPRNT(12)) WRITE (KOUT,1JC) ANEP ## glm=      IF (NPRNT(12)) WRITE (KOUT,1JC) ANEP	UPAN46
+50	2702	2731	VOTED	  100 FORMAT                                                            		lighton=  100 FORMAT ## dots=  100 FORMAT ## glm=  100 FO>MAT	UPANL7
+51	2742	2774	HANDFREE	     1(15H1OUTPUT OF JPAN/5X21HMASS 239 CONTRIBUTES 1PE12.4,            			U7AN48
+52	2786	2817	HANDFREE	     223H TO EACH PARTICLE SIZE.)                                       		lighton=     2    231 TO EACH PARTICLE SIZE.1 ## dots=     2    231 TO EACH PARTICLE SIZE.) ## glm=     2    231 TO EACH PARTICLE SIZE.1	U2AN49
+53	2833	2861	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	
+54	2875	2903	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	
+55	3209	3226	NOISE	                                                                        		lighton=                                       -	
+56	3328	3374	NOISE	                                                                        			

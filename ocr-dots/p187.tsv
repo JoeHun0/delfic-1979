@@ -1,0 +1,63 @@
+1	26	COUNT 0/7	                                                                                	
+2	602	OK	*UECK,BATMAN                                                            BATMA  1	* UECK, BATMAN || BATMA 1
+3	644	OK	      SUBROUTINE BATHAN                                                 BATHA  2	SUBROUTINE BATHAN || BATHA 2
+4	687	COUNT 1/9	                                                                        BATHA  3	C || BATHA 3
+5	729	OK	C     R C TOYPKINS -- US ARMY NUCLEAR DEFENSE LAES                      BATHA  4	C R C TOYPKINS -- US ARMY NUCLEAR DEFENSE LAES || BATHA 4
+6	774	COUNT 1/11	                                                                        BATNA  5	C || BATNA 5
+7	815	COUNT 1/31	                                                                        BATHA  6	C || BATHA 6
+8	855	OK	C   THIS VERSION REPLACES SUBPOUTINES INGEN, BATHAN, DECAY, AND DOSE OF BATMA  7	C THIS VERSION REPLACES SUBPOUTINES INGEN, BATHAN, DECAY, AND DOSE OF || BATMA 7
+9	901	OK	C   THE INITIAL VERSION OF DELFIC                                       BATHA  8	C THE INITIAL VERSION OF DELFIC || BATHA 8
+10	944	OK	C                                                                       BATHA  9	C || BATHA 9
+11	988	OK	C                                                                       BATNA 10	C || BATNA 10
+12	1028	COUNT 56/55	                                                                        BATMA 11	C THE FUNCTION OF THIS SUBROUTINE IS TO COMPLETE RADICACTIVE DECAY || BATMA 11
+13	1070	OK	C   CHAINS BY MEANS OF THE BATEMAN EQUATION                             BATMA :2	C CHAINS BY MEANS OF THE BATEMAN EQUATION || BATMA :2
+14	1114	OK	CALLED BY FRATIO, GXPSR, AND MCHDEP                                     BATMA 13	CALLED BY FRATIO, GXPSR, AND MCHDEP || BATMA 13
+15	1160	OK	C                                                                       BATHA 14	C || BATHA 14
+16	1199	COUNT 1/29	                                                                        BATMA 15	C || BATMA 15
+17	1243	OK	C   ABEGN(700)    INITIAL FISSION PRODUCT ABUNCANCES IN ATOMS/10000     BATMA 16	C ABEGN(700) INITIAL FISSION PRODUCT ABUNCANCES IN ATOMS/10000 || BATMA 16
+18	1288	COUNT 1/27	                                                                        BATMA 17	C || BATMA 17
+19	1330	OK	C   ABUNDO(70C)   FISSION PRODUCT ABUNCANCES PER 1,00G FISSIONS         BATMA 18	C ABUNDO (70C) FISSION PRODUCT ABUNCANCES PER 1,00G FISSIONS || BATMA 18
+20	1373	COUNT 1/20	                                                                        BATMA 19	C || BATMA 19
+21	1417	COUNT 31/32	                                                                        BATMA 20	DISINTEGRATIONS/SEC AT TIME (JD=1) || BATMA 20
+22	1458	COUNT 31/33	                                                                        BATMA 21	DISINTEGRATIONS FROM TENTER TO EXIT || BATMA 21
+23	1501	COUNT 1/17	                                                                        BATNA 22	C || BATNA 22
+24	1543	COUNT 33/39	                                                                        BATMA 23	CONTRIBUTION OF ONE SUBCHAIN TO ABCNDO || BATMA 23
+25	1586	OK	C   CNIJ(680)     BATEMAN COEFFICIENTS FOR ONE SUBCHAIN                 BATMA 24	C CNIJ(680) BATEMAN COEFFICIENTS FOR ONE SUBCHAIN || BATMA 24
+26	1628	COUNT 4/48	                                                                        BATMA 25	C IBR || BATMA 25
+27	1672	COUNT 1/21	                                                                        BATMA 26	C || BATMA 26
+28	1714	OK	C   IFIGO         ASSIGNEC GOTO PARAMETER CORRESPONDING TO IGO          BATMA 27	C      IFIGO                 ASSIGNEC      GOTO      PARAMETER      CORRESPONDING      TO      IGO || BATMA 27
+29	1757	COUNT 5/43	                                                                        BATMA 28	C IFJD || BATMA 28
+30	1801	OK	C   IGC           (LOGICAL) TRUE GIVES ACTIVITY.                        BATHA 29	C IGC (LOGICAL) TRUE GIVES ACTIVITY. || BATHA 29
+31	1844	COUNT 1/27	                                                                        94TMA 30	C || 94TMA 30
+32	1888	OK	C   INFORM(11)    TABLE OF DAUGHTER RETRIEVAL INFORMATION FOR EACH      BATMA 31	C INFORM(11) TABLE OF DAUGHTER RETRIEVAL INFORMATION FOR EACH || BATMA 31
+33	1931	COUNT 1/45	                                                                        BATMA 32	C || BATMA 32
+34	1974	COUNT 11/12	                                                                        BATMA 33	FROM THE LEFT || BATMA 33
+35	2016	OK	C   JD            (LOGICAL) TRUE COMPUTES EXPOSURE RATE,                BATMA 34	C JD (LOGICAL) TRUE COMPUTES EXPOSURE RATE, || BATMA 34
+36	2060	COUNT 1/18	                                                                        BATMA 35	C || BATMA 35
+37	2101	COUNT 5/48	                                                                        BATMA 36	C KDOS || BATMA 36
+38	2144	COUNT 1/38	                                                                        BATMA 57	C || BATMA 57
+39	2190	COUNT 5/12	                                                                        BATMA 38	C KFJD || BATMA 38
+40	2229	OK	C   LIM(11)       SUBCHAIN TABLE OF INDICES FOR PULT TO FIND CURRENT    BATMA 39	C LIM(11) SUBCHAIN TABLE OF INDICES FOR PULT TO FIND CURRENT || BATMA 39
+41	2274	COUNT 1/14	                                                                        BATMA 4U	C || BATMA 4U
+42	2318	OK	C   LSUB          COUNTER FOR SUBCHAIN MEMBERS                          BATMA 41	C LSUB COUNTER FOR SUBCHAIN MEMBERS || BATMA 41
+43	2359	OK	C   NUC(11)       CROSS REFERENCE OF SUBCHAIN MEMBERS TO INDEX IN NUCLIDBATMA 42	C NUC(11) CROSS REFERENCE OF SUBCHAIN MEMBERS TO INDEX IN NUCLID || BATMA 42
+44	2403	OK	C   SBR(11)       SUBCHAIN BRANCHING RATIOS                             BATMA 43	C SBR(11) SUBCHAIN BRANCHING RATIOS || BATMA 43
+45	2447	COUNT 39/38	                                                                        BATMA 44	C SCA(151) FISSION YIELDS OF SUBCHAIN MEMBERS || BATMA 44
+46	2488	OK	C   SOC(15)       DISINTEGRATION CONSTANTS OF SUBCHAIN MEMBERS          BATMA 45	C SOC(15) DISINTEGRATION CONSTANTS OF SUBCHAIN MEMBERS || BATMA 45
+47	2531	COUNT 7/51	                                                                        BATMA 46	C TENTER || BATMA 46
+48	2575	COUNT 5/37	                                                                        BATMA 47	C EXIT || BATMA 47
+49	2617	COUNT 1/23	                                                                        BATMA 46	C || BATMA 46
+50	2659	COUNT 5/44	                                                                        BATMA 49	C TIME || BATMA 49
+51	2703	COUNT 30/32	                                                                        BATMA 50	DEPOSIT IS CALCULATED WITH JJ = TRUE || BATMA 50
+52	2748	OK	C                                                                       BATMA 51	C || BATMA 51
+53	2791	OK	C                                                                       BATHA 52	C || BATHA 52
+54	2832	OK	      COMMON /DECAY/ IGO,JO,KDCS,TENTER,TEXIT,TIME                      BATMA 53	COMMON /DECAY/ IGO,JO,KDCS,TENTER,TEXIT,TIME || BATMA 53
+55	2875	COUNT 57/56	                                                                        BATMA 54	COMMON /FISHIN/ ABEGN(700), A9'JNDC(70'), 3RANCH(13'), CAPFIS, || BATMA 54
+56	2919	OK	     1  OCON(7:0),19RA,1RUC,NAXNUC,NULT(1:),NUCL10(7:0)                 BATHA 55	1 OCON(7:0),19RA,1RUC,NAXNUC,NULT(1:),NUCL10(7:0) || BATHA 55
+57	2963	COUNT 29/28	                                                                        BATHA 56	COMMON / UTILITY ' KOUT, APRNT (15) || BATHA 56
+58	3006	COUNT 25/24	                                                                        BATHA 57	LOGICAL 160.JD.KOOS.APRINT || BATHA 57
+59	3048	OK	      DIMENSION  EFAC  (11)  .KBR   (11)                                BATHA 50	DIMENSION EFAC (11) . KBR (11) || BATHA 50
+60	3092	OK	     1          .INFORM(11)  .LIM   (11)  .NUC   (11)  .SUB   (11)      HATKA 59	1 .INFORM(11) .LIM (11) .NUC (11) .SUB (11) || HATKA 59
+61	3137	COUNT 0/17;COUNT 0/7	                                                                                	 || 
+62	3190	COUNT 0/3	                                                                                	
+63	3324	COUNT 0/66;COUNT 0/2	                                                                                	 || 

@@ -1,0 +1,10 @@
+1	7	COUNT 0/7	                                                                                	
+2	30	COUNT 0/27	                                                                                	
+5	546	OK	  014 IF(ABS(T)-10.)114.20.20                                                   	014 IF (ABS(T)-10.)114.20.20
+23	1319	OK	  001 MWYA = 3                                                                  	001 MWYA = 3
+39	2297	OK	       COMMON /ATHOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),            	COMMON /ATHOS/ NAT, ALT (256), ATP (256), PRS (256), RLH (256),
+41	2384	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    .        	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,ORM .
+43	2471	OK	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,        	2 DZ ,ED ,EK ,EPS ,ES ,HLF ,KS ,KSV ,MWYA ,
+51	2819	OK	      0Z=U                                                                      	0Z=U
+56	3035	COUNT 26/25	                                                                                	CALL TROU(Z,NAT,ALT,ADP,T=)
+57	3072	OK	      CALL TRPLIZ.NAT .ALT.PRS.PY                                               	CALL TRPLIZ.NAT .ALT.PRS.PY

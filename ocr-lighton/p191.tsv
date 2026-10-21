@@ -1,0 +1,46 @@
+1	1	COUNT 0/26;COUNT 8/2	                                                                                	 || \text{S}
+2	781	OK	C                                                                               	C
+3	826	COUNT 7/2	      CALL BATMAN                                                               	CALL BATMAN || <table>
+4	869	COUNT 0/9;COUNT 7/2	                                                                                	 || <table>
+5	912	COUNT 0/5;COUNT 11/1	                                                                                	 || \frac{5}{2}
+6	956	COUNT 11/1	      DO 1 I = 1,MAXMCH                                                         	DO 1 I = 1, MAXMCH || \mathcal{J}
+7	992	COUNT 0/11	                                                                        GXPSR 34	 || GXP SR 34
+8	1032	OK	C                                                                       GXPSR 35	C || GXP SR 35
+9	1085	COUNT 13/11;COUNT 11/1	                                                                                	00 1] J = 1, K.R.M || \mathcal{C}
+10	1121	COUNT 0/8	                                                                        GXPSR 37	 || G X P S R  3 7
+11	1170	COUNT 11/1	      IF (ERM(J))11,10,12                                                       	IF (ERM(J)) 11,10,12 || \mathcal{P}
+12	1208	OK	   11 MCH = MCH + 1                                                     <tabl e>	11 MCH = MCH + 1 || <table>
+13	1247	OK	COMPUTE MASS CHAIN NORMALIZATION FACTOR                                 <tabl e>	COMPUTE MASS CHAIN NORMALIZATION FACTOR || <table>
+14	1297	OK	C                                                                             41	C || 41
+15	1342	COUNT 0/41	                                                                        <tabl e>	 || <table>
+16	1385	OK	C                                                                               	C
+17	1428	OK	   10 CONTINUE                                                                  	10 CONTINUE
+18	1471	COUNT 11/1	C                                                                               	C || \mathcal{L}
+19	1515	COUNT 7/4	      DO 20 LC = 1,MCH                                                          	DO 20 LC = 1, MCH || <table>
+20	1559	COUNT 0/4	      IF (XRT(LC))20,20,21                                                      	IF (XRT(LC)) 20, 20, 21 || 
+21	1600	COUNT 7/3	   21 9NEX = 8SUBK(LC)                                                          	21 9NEX = 8SUBK(LC) || <table>
+22	1645	OK	      CRISS = CROSS**BNEX                                                       	CRISS = CROSS**BNEX
+23	1687	OK	      RADIAL = ECF(LC)/(UNIT + CKISS*ECF(LC))                           <tabl e>	RADIAL = ECF(LC)/(UNIT + CKISS*ECF(LC)) || <table>
+24	1729	COUNT 11/1	      STRAIT = RADIAL*CRISS                                                     	STRAIT = RADIAL*CRISS || \mathcal{G}
+25	1766	COUNT 0/19;COUNT 34/7	                                                                                	 || <table border="1" class="dataframe">
+26	1816	OK	      DO 40 LD = 1,ITAB                                                         	DO 40 LD = 1,ITAB
+27	1853	OK	   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD)<tabl e>	40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD) || <table>
+28	1905	COUNT 11/1	   20 CONTINUE                                                                  	20 CONTINUE || \mathcal{R}
+29	1943	COUNT 13/1	C                                                                               	C || \mathcal{M}_1
+30	1987	OK	C                                                                               	C
+31	2030	COUNT 7/4	      IF (.NOT.NPRNT(1C)) RETURN                                                	IF (.NOT.NPRNT(1C)) RETURN || <table>
+32	2069	OK	C                                                                          SK 59	C || SK 59
+33	2118	OK	      WRITE (KOUT,9C1)                                                          	WRITE (KOUT,9C1)
+34	2154	OK	      IF (JO) GO TO 101                                                 <tabl e>	IF (JO) GO TO 101 || <table>
+35	2203	COUNT 16/15	                                                                                	WRITF: (KOUT,912)
+36	2246	OK	      GO TO 102                                                                 	GO TO 102
+37	2287	COUNT 16/1	  101 WRITE (KOUT,9C2)                                                          	101 WRITE (KOUT, 9C2) || \begin{array}{c}
+38	2324	COUNT 7/6	  102 CONTINUE                                                                  	102 CONTINUE || <table>
+39	2375	COUNT 22/1	      DO 1J3 I=1,ITA8                                                           	DO 1J3 I=1, IT A8 || \mathcal{J} \mathcal{F}
+40	2410	OK	      WRITE (KOUT,903) PSIZE(I),FP(I)                                   GXPSR 67	WRITE (KOUT,903) PSIZE(I),FP(I) || G X P S R  67
+41	2459	COUNT 12/11	                                                                                	103 CONTINUE:
+42	2492	COUNT 1/2	                                                                         KPSR 69	C || KPSR 69
+43	2546	OK	      RETURN                                                                    	RETURN
+44	2576	COUNT 3/4;COUNT 18/7	                                                                                	END || \hat{G}KPSR \quad 71
+45	3156	COUNT 40/3	                                                                                	\mathbf{a} \quad \mathbf{b} \quad \mathbf{c}
+46	3308	COUNT 320/48;COUNT 8/5	                                                                                	\int_{0}^{1} \frac{1}{\sqrt{1 + \cos^2 x}} \, dx = \frac{1}{\cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos^2 x} \cdot \frac{1}{1 - \cos || \text{S}

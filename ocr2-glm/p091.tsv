@@ -1,0 +1,17 @@
+17	1128	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,UEK    ,DRM    ,        	COMMON /CLOUD/ CHANGE, CMLR ,C2 ,C3 ,C6 ,UEK ,DRM ,
+19	1207	COUNT 24/33	                                                                                	202 ED EK EPS ES HLR KS KSV MWYA
+32	1772	OK	      V8L(1)=WT                                                                 	V8L(1) = WT
+33	1816	OK	      VBL(2)=RM                                                                 	VBL(2)=RM
+34	1859	OK	      VBL(3)=U                                                                  	VBL(3)=U
+35	1901	OK	      V9L(4)=X                                                                  	V9L(4)=X
+37	1988	OK	      VBL(6)=Z                                                                  	VBL(6)=Z
+39	2073	OK	      V3L(8)=S                                                                  	V3L(8) = S
+45	2331	OK	      DV8L（3）=OU                                                                	DV8L（3）=OU
+46	2374	OK	      OVBL(4)=DX                                                                	OVBL(4)=DX
+47	2415	OK	      DV8L(5)=DT                                                                	DV8L(5)=DT
+48	2459	OK	      DV9L(6)=DZ                                                                	DV9L(6) = DZ
+50	2545	OK	      OV3L(8)=DS                                                                	OV3L(8)=DS
+56	2802	OK	      V9L(J)=V8L(J)+C•5*H*CV8L(J)                                               	V9L (J) = V8L (J) + C • 5 * H * CV8L (J)
+57	2845	COUNT 16/15	                                                                                	2. RKG（J）=DV8L（J）
+60	2972	OK	      VBL(J)=VBL(J)+.29289322*H*(DV3L(J)-RKG(J))                                	VBL (J) = VBL (J) + .29289322 * H * (DV3L (J) - RKG (J))
+61	3017	COUNT 41/42	                                                                                	4 FKG(J) = .5857644*OVB L(J) + .1213203~*FKG(J)

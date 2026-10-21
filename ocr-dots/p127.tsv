@@ -1,0 +1,63 @@
+1	28	COUNT 0/32	                                                                                	
+2	561	OK	      READ (ISIN, 1100) SCALE                                           ONEOI 51	READ (ISIN, 1100) SCALE || ONEOI 51
+3	605	OK	      READ (ISIN, 1200) N1, N2, N3                                      ONEOI 52	READ (ISIN, 1200) N1, N2, N3 || ONEOI 52
+4	647	OK	      00 50 I = 1,3                                                     ONEDI 53	00 50 I = 1,3 || ONEDI 53
+5	689	OK	  50     IF(SCALE(I).EQ. 0.0) SCALE (I) = 1.0                           ONEOI 54	50 IF(SCALE(I).EQ. 0.0) SCALE (I) = 1.0 || ONEOI 54
+6	731	COUNT 8/7	      IF(FORM .EQ. METEOR) TRNS=SCALE(5)*SCALE(3) - 180.                        	IF(FORM .EQ. METEOR) TRNS=SCALE(5)*SCALE(3) - 180. || ONEDAY 55
+7	775	OK	      IF(MC(2) .NE. 1  .AND.  SPEC .EQ. WIND) WRITE(ISCUT,1300)         ONEDI 56	IF(MC(2) .NE. 1 .AND. SPEC .EQ. WIND) WRITE(ISCUT,1300) || ONEDI 56
+8	818	OK	      IF(MC(2) .NE. 1  .AND.  SPEC .EQ. TURB) WRITE(ISCUT,1600)         ONEDI 57	IF(MC(2) .NE. 1 .AND. SPEC .EQ. TURB) WRITE(ISCUT,1600) || ONEDI 57
+9	863	OK	      KBH = 0                                                           ONEDI 58	KBH = 0 || ONEDI 58
+10	903	COUNT 59/60	                                                                        ONEOI 59	COPY IN, PRINT RAW DATA, TRANSLATE AND SCALE DATA, AND PRINT PROCESSED || ONEOI 59
+11	948	COUNT 8/7	C     DATA                                                                      	C DATA || ONEDAY 60
+12	991	OK	 100  READ (ISIN, FMT) AP                                               ONEDI 61	100 READ (ISIN, FMT) AP || ONEDI 61
+13	1033	OK	      IF(AP(N1).GE.ALIMIT)GO TO 250                                     ONEID 62	IF (AP(N1).GE.ALIMIT) GO TO 250 || ONEID 62
+14	1077	COUNT 8/7	      IF(MC( 2 )  .NE. 1   ) WRITE(ISOUT, 14GJ)AP(N1), AP(N2), AP(N3)           	IF(MC(2) .NE. 1 ) WRITE(ISOUT, 14GJ)AP(N1), AP(N2), AP(N3) || ONEDAY 63
+15	1122	OK	      KBH = KBH + 1                                                     ONEDI 64	KBH = KBH + 1 || ONEDI 64
+16	1163	COUNT 64/36	                                                                        ONEDI 65	\text{CAVS(KBH)} = (\text{AP(N1)} + \text{SCALE(4)}) * \text{SCALE(1)} || ONEDI 65
+17	1206	COUNT 24/25	                                                                        ONEDI 66	IF (FORM.EQRESOLV) GO TO 150 || ONEDI 66
+18	1248	COUNT 131/63	                                                                        ONEDI 67	\text{OX(KBH, 1, LTIH)} = \text{AP(N3)} \cdot \text{SCALE(2)} \cdot \text{SIN(RADC} \cdot \text{AP(N2)} \cdot \text{SCALE(3)} + \text{TRNS})^{-1} || ONEDI 67
+19	1291	COUNT 129/62;COUNT 8/7	                                                                                	\text{DY(KBH, 1, LTIM)} = \text{AP(N3)} \cdot \text{SCALE}(2) \cdot \cos(\text{RADC} \cdot (\text{AP(N2)} \cdot \text{SCALE}(3) + \text{TRNS})) || ONEDAY 68
+20	1336	OK	      GO TO 200                                                         ONEDI 69	GO TO 200 || ONEDI 69
+21	1379	OK	 150  0X(K9H,1,LTIM) = AP(12)*SCALE(2)                                  ONEDI 70	150 0X(K9H,1,LTIM) = AP(12)*SCALE(2) || ONEDI 70
+22	1421	COUNT 51/30;COUNT 8/7	                                                                                	\text{DY(KBH,1,LTIM)} = \text{AP(N3)} * \text{SCALE(2)} || ONEDAY 71
+23	1463	OK	  200 IF(MC( 2).NE. 1)WRITE (ISOUT, 1500)CAVS(KBH), DX(KBH, 1, LTIM),   ONEDI 72	200 IF(MC(2).NE. 1)WRITE (ISOUT, 1500)CAVS(KBH), DX(KBH, 1, LTIM), || ONEDI 72
+24	1508	OK	     1DY(K9H, 1, LTIN)                                                  ONEDI 73	1 DY (K9H, 1, LTIN) || ONEDI 73
+25	1551	OK	      GO TO 100                                                         ONEDI 74	GO TO 100 || ONEDI 74
+26	1594	OK	  250 IF(LTIR .EQ. 1) KBHX=KBH                                          ONEDI 75	250 IF(LTIR.EQ.1) KBHX=KBH || ONEDI 75
+27	1638	OK	CHECK IF THE NUMBER OF DATA VECTORS IS CONSISTENT                       ONEDI 76	CHECK IF THE NUMBER OF DATA VECTORS IS CONSISTENT || ONEDI 76
+28	1680	OK	  251 IF(LTIM .EQ. 1  .OR. KBH .EQ. KBHX) GO TO 253                     ONEDI 77	251 IF(LTIM .EQ. 1 .OR. KBH .EQ. KBHX) GO TO 253 || ONEDI 77
+29	1724	OK	      WRITE(ISOUT,1700)LTIN                                             ONEDI 78	WRITE(ISOUT,1700)LTIN || ONEDI 78
+30	1758	OK	COMMINGLE DATA TO ARRANGE IT IN ORDER OF ASCENDING ALTITUDE             ONEDI 79	COMMINGLE DATA TO ARRANGE IT IN ORDER OF ASCENDING ALTITUDE || ONEDI 79
+31	1808	OK	  253 KBHM1 = KBHX - 1                                                  ONEDI 90	253 KBHM1 = KBHX - 1 || ONEDI 90
+32	1852	OK	      DO 255 I=1,KBHM1                                                  ONEDI 81	DO 255 I=1, KBHM1 || ONEDI 81
+33	1895	OK	      IP1=I+1                                                           ONEDI 82	IP1=I+1 || ONEDI 82
+34	1937	OK	      00 255 J=IP1,KBHX                                                 ONEDI 83	00 255 J=IP1,KBHX || ONEDI 83
+35	1980	OK	      IF(CAVS(I) .LE. CAVS(J)) GO TO 255                                ONEDI 84	IF (CAVS(I) .LE. CAVS(J)) GO TO 255 || ON EDI 84
+36	2024	OK	      TEMP=CAVS(I)                                                      ONEDI 85	TEMP=CAVS(I) || ONEDI 85
+37	2065	OK	      CAVS(I)=CAVS(J)                                                   ONEDI 86	CAVS(I) = CAVS(J) || ONEDI 86
+38	2110	OK	      CAVS(J)=TEMP                                                      ONEOI 87	CAVS(J) = TEMP || ONEOI 87
+39	2154	OK	      TEMP=DX(I,1,LTIM)                                                 ONEDI 88	TEMP=DX(I,1,LTIM) || ONEDI 88
+40	2195	COUNT 0/25	                                                                        ONEDI 89	 || ONEDI 89
+41	2239	COUNT 26/17	                                                                        ONEOI 90	\mathrm{OX(J,1,LTIM)=TEMP} || ONEOI 90
+42	2282	COUNT 0/17	                                                                        ONEDI 91	 || ONEDI 91
+43	2315	COUNT 0/25	                                                                        ONEDI 92	 || ONEDI 92
+44	2368	COUNT 0/17;COUNT 8/7	                                                                                	 || ONEDAY 93
+45	2411	OK	  255 CONTINUE                                                          ONEDI 94	255 CONTINUE || ONEDI 94
+46	2452	OK	      IF(LTIM .EQ. 1 .ANC. SPEC .EQ. WIND) GO TO 259                    ONEDI 95	IF(LTIM .EQ. 1 .ANC. SPEC .EQ. WIND) GO TO 259 || ONEDI 95
+47	2495	OK	CHECK STRATA ALTITUDES AGAINST THOSE FOR THE LTIM=1 WIND DATA           ONEDI 96	CHECK STRATA ALTITUDES AGAINST THOSE FOR THE LTIM=1 WIND DATA || ONEDI 96
+48	2540	COUNT 8/7	      DO 258 I=1,KBHM1                                                          	DO 258 I=1,KBHM1 || ONEDAY 97
+49	2580	OK	      IF(CAVS(I) .GE. ZBH(I) .AND. CAVS(I) .LE. ZBH(I+1)) GO TO 258     ONEDI 98	IF(CAVS(I) .GE. ZBH(I) .AND. CAVS(I) .LE. ZBH(I+1)) GO TO 258 || ONEDI 98
+50	2624	OK	      WRITE(ISOUT,1800)LTIM                                             ONEDI 99	WRITE(ISOUT,1800)LTIM || ONEDI 99
+51	2668	OK	      CALL ERROR(PROGRH,-258,ISOUT)                                     UNEDI100	CALL ERROR(PROGRH,-258,ISOUT) || UNEDI100
+52	2711	OK	  258 CONTINUE                                                          ONEDI101	258 CONTINUE || ONEDI101
+53	2756	OK	      RETURN                                                            ONEDI1J2	RETURN || ONEDI 1J2
+54	2796	OK	CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZEW AND LOAD CENTER      UNEDI103	CONSTRUCT WIND LAYER BASE ALTITUDES IN ARRAY ZEW AND LOAD CENTER || UNEDI103
+55	2840	OK	C     ALTITUDES INTO ZCH                                                ONEDI1U4	C ALTITUDES INTO ZCH || ONEDI1U4
+56	2885	OK	  259 79H(1) = ZMIN                                                     ONEDI105	259 79H(1) = ZMIN || ONEDI105
+57	2928	COUNT 10/8	      ZCH(1)=CAVS(1)                                                            	ZCH(1) = CAVS(1) || ONE.DI.106
+58	2970	OK	      00 260 I=2,KBHX                                                   UNEOI107	00 260 I=2,KBHX || UNEOI107
+59	3012	OK	      ZCH(I)=CAVS(I)                                                    ONEDI1J8	ZCH(I) = CAVS(I) || ONEDI1J8
+60	3055	COUNT 7/8	 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1)                                            	260 ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1) || ONEO 1 09
+61	3097	OK	      ZMAX=2.0*ZCH(KBHX)-ZEH(KBHX)                                      ONEDI110	ZMAX=2.0*ZCH(KBHX)-ZEH(KBHX) || ONEDI110
+62	3153	OK	                                         124                                    	124
+63	3313	COUNT 0/23	                                                                                	

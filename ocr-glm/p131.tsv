@@ -1,0 +1,35 @@
+1	16	COUNT 3/28	                                                                        -   -  -	--- || ---
+2	52	COUNT 3/28;COUNT 3/8	                                                                                	--- || ...
+3	803	COUNT 8/7	      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                )        	IF( MC3 .GT. 0) WRITE(ISOUT,8019) || SPRVS167
+4	851	COUNT 48/41;COUNT 8/7	                                                                                	CALL DUMPER(XF,YP,ZP,TP, RWAF, RWAF, PHAS,FSIZ,0.,0, || SPRVS168
+5	897	COUNT 17/15	                                                                        SPRVS169	1 ISQUT, IPOUT, MC3) || SPRVS169
+6	950	COUNT 2/1	      GO TO1.000                                                                	GO TO 1.000 || 5.
+7	981	COUNT 50/49	                                                                        SPRVS171	COMPUTE INDEX OF MESH OR SUB-MESH CONTAINING PARCEL CENTER || SPRVS171
+8	1020	OK	 1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF)          SPRVS172	1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF) || SPRVS172
+9	1065	COUNT 48/49	                                                                        SPRVS173	CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS. || SPRVS173
+10	1113	OK	      IF(NOATP.GT.0) GO TO 1260                                         SPRVS174	IF (NOATP.GT.0) GO TO 1260 || SPRVS174
+11	1154	OK	      IF( MC3 .GT. 0) WRITE(IS(UT,8020)                                 SPRVS175	IF(MC3 .GT. 0) WRITE(IS(UT,8020) || SPRVS175
+12	1208	COUNT 8/9	                                                                                	GO TO 1000
+13	1236	COUNT 61/60	                                                                        SPRVS177	CANCEL PROCESSING OF PARCEL IF IT CANNOT REACH THE GROUND IN THE ALLOTED: || SPRVS177
+14	1295	COUNT 3/1	C     TIME                                                                      	C TIME || ---
+15	1327	OK	 1260 IF(ZLOW.LT.ZLIM) GO TO 1409                                       SPRVS179	1260 IF(ZLOW.LT.ZLIM) GO TO 1409 || SPRVS179
+16	1371	OK	      IF( MC3 .GT. 0) WRITE(ISCUT,8015)                                 SPRVS180	IF(MC3 .GT. 0) WRITE(ISCUT,8015) || SPRVS180
+17	1423	OK	      GO TO 1000                                                                	GO TO 1000
+18	1451	OK	 1409 CALL       ADVEC(NET,NETSU,ZBH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM,  SPRVS182	1409 CALL ADVEC(NET,NETSU,ZBH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM, || SPRVS182
+19	1499	OK	     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX,                       SPRVS183	1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX, || SPRVS183
+20	1544	OK	     2ICF,JCF,NCF,KBHF,N(ATF,LTIMF,NATF)                                SPRVS184	2ICF,JCF,NCF,KBHF,N(ATF,LTIMF,NATF) || SPRVS184
+21	1599	COUNT 7/5	 1000 CONTINUE                                                                  	1000 CONTINUE || SPRVS19
+22	1634	COUNT 6/4	      GO TO 100                                                                 	GO TO 100 || SPRVS1
+23	1668	OK	COPY OUT BUFFER DATA VECTORS FCR DRY DEPOSIT INCREMENTS.  WAFER         SPRVS187	COPY OUT BUFFER DATA VECTORS FCR DRY DEPOSIT INCREMENTS. WA FER || SPRVS187
+24	1718	COUNT 27/28;COUNT 8/7	                                                                                	C PROCESSING HAS BEEN COMPLETED || SPRVS188
+25	1757	COUNT 42/45	                                                                        SPRVS189	806 CALL DUMPER(0.0,J.0,0.0, J.0, 0.0, 0.0, 999, || SPRVS189
+26	1803	OK	     1ISOUT,IPOUT,MC3)                                                  SPRVS190	1ISOUT, IPOUT, MC3) || SPRV S190
+27	1843	OK	      CALL       DUMPER(0.,0.,C.,0.,   J.,   0.,   0.,  C.,0.,999,      SPRVS191	CALL DUMPER(0.,0.,C.,0., J., 0., 0., C.,0.,999, || SPRVS191
+28	1895	COUNT 2/1	     1ISOUT,IPOUT,MC3)                                                          	1ISOUT, IPOUT, MC3) || つご
+29	1939	OK	      REWIND JPARN                                                              	REWIND JPARN
+30	1980	COUNT 12/13;COUNT 2/1	                                                                                	ENOFILE IPOUT || 12
+31	2026	COUNT 2/1	      REWIND IPOUT                                                              	REWIND IPOUT || 2.
+32	2070	COUNT 5/3	      RETURN                                                                    	RETURN || SERV1
+33	2114	OK	      END                                                                       	END
+34	3148	OK	                                         128                                    	128
+35	3307	COUNT 3/17	                                                                         -   - -	--- || ---

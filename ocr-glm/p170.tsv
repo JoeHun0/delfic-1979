@@ -1,0 +1,45 @@
+1	51	COUNT 3/13	                                                                                	---
+2	788	OK	C     PARTICLE DATA TO BE CUMPED INTO LOWER CORE SC THAT IT IS          POHP  49	C PARTICLE DATA TO BE CUMPED INTO LOWER CORE SC THAT IT IS || POHP 49
+3	831	OK	C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO        POHP  50	C CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO || POHP 50
+4	877	OK	C     REJECTED PARTICLES IN IT)                                         PDMP  51	C REJECTED PARTICLES IN IT) || PDMP 51
+5	922	OK	C                                                                       PDMP  52	C || PDMP 52
+6	964	OK	      00 300 I=1，KP                                                     PDMP  53	00 300 I=1，KP || PDMP 53
+7	996	OK	      IF(KTR(I).EQ.0) GO TO 300                                         PDHP  54	IF(KTR(I).EQ.0) GO TO 300 || PDHP 54
+8	1049	OK	      JP=JP+1                                                           PDMP  55	JP = JP + 1 || PDMP 55
+9	1093	OK	      DO 2CC K=J.NE                                                     F0HP  56	DO 2CC K=J.NE || F0HP 56
+10	1135	OK	      L=4-K                                                             PDMP  57	L=4-K || PDMP 57
+11	1178	OK	      IF(KTR(L).EQ.1)GO TC 10C                                          POMP  58	IF(KTR(L).EQ.1)GO TC 10C || POMP 58
+12	1224	COUNT 8/7	                                                                        PDHP  59	JL = JL + 1. || PDHP 59
+13	1264	OK	      KK=K                                                              PDMP  60	KK=K || PDMP 60
+14	1308	OK	C                                                                       P0MP  G1	C || P0MP G1
+15	1348	OK	C     MOVE  PARCEL  DATA TC AVAILABLE STORAGE IN LOWER CORE             PDMP  62	C MOVE PARCEL DATA TC AVAILABLE STORAGE IN LOWER CORE || PDMP 62
+16	1393	OK	C                                                                       POMP  63	C || POMP 63
+17	1436	OK	      XPAR(I)=XPAR(L)                                                   PDMP  64	XPAR(I) = XPAR(L) || PDMP 64
+18	1479	OK	      YPAR(I)=YPAR(L)                                                   POHP  65	YPAR(I) = YPAR(L) || POHP 65
+19	1520	OK	      ZPAR(I)=ZPAR(L)                                                   PDMP  66	ZPAR(I) = ZPAR(L) || PDMP 66
+20	1563	OK	      TPAR(I)=TPAR(L)                                                   PDMP  67	TPAR(I) = TPAR(L) || PDMP 67
+21	1607	OK	      SIGXO(I)=SIGXO(L)                                                 PDMP  68	SIGXO(I) = SIGXO(L) || PDMP 68
+22	1650	OK	      SIGYO(I)=SIGYO(L)                                                 POMP  69	SIGYO(I) = SIGYO(L) || POMP 69
+23	1693	OK	      RO（I）=RO（L）                                                       POMP  70	RO（I）=RO（L） || POMP 70
+24	1736	OK	      PSIZ(I)=PSIZ(L)                                                   PDMP  71	PSIZ(I) = PSIZ(L) || PDMP 71
+25	1779	OK	      PMAS(I)=PMAS(L)                                                   POMP  72	PMAS(I) = PMAS(L) || POMP 72
+26	1822	OK	      GO TO 260                                                         PDMP  73	GO TO 260 || PDMP 73
+27	1865	OK	  100 JP=JP+1                                                           POMP  74	100 JP=JP+1 || POMP 74
+28	1907	OK	  200 CONTINUE                                                          PDMP  75	200 CONTINUE || PDMP 75
+29	1951	OK	  250 IRROR=-250                                                        POHP  76	250 IRROR=-250 || POHP 76
+30	1994	OK	      GO TO 2000                                                        PDMP  77	GO TO 2000 || PDMP 77
+31	2036	OK	  26（ J=KK+1                                                            PDMP  78	26 （ J=KK+1 || PDMP 78
+32	2080	OK	  300 CONTINUE                                                          PDMP  79	300 CONTINUE || PDMP 79
+33	2124	OK	      IF(JP.LE.NE) GO TO 500                                            PDHP  60	IF(JP.LE.NE) GO TO 500 || PDHP 60
+34	2165	OK	  310 IRROR=-310                                                        PQMP  81	310 IRROR=-310 || PQMP 81
+35	2211	OK	      GO TO 2000                                                        P0MP  82	GO TO 2000 || P0MP 82
+36	2253	OK	  50G IF(JL.LE.KP)GO TO 100C                                            PDMP  83	50G IF(JL.LE.KP)GO TO 100C || PDMP 83
+37	2297	COUNT 13/14	                                                                        POHP  84	510 IRROR=-510 || POHP 84
+38	2340	OK	 2000 CALL ERROR(PROGRM,IFFOR,ISOUT)                                    PDMP  85	2000 CALL ERROR(PROGRM, IFFOR, ISOUT) || PDMP 85
+39	2382	OK	 1C00 WRITE(LTAPE)KP                                                    POHP  86	1C00 WRITE(LTAPE)KP || POHP 86
+40	2414	COUNT 62/63	                                                                        POMP  67	WRITE (LTAPE) (XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I) || POMP 67
+41	2468	OK	     1 RO(I),PSIZ(I),PMAS(I),I=1,KP)                                    POHP  88	1 RO(I),PSIZ(I),PMAS(I),I=1,KP) || POHP 88
+42	2512	OK	      RETURN                                                            P0MP  89	RETURN || P0MP 89
+43	2553	OK	      END                                                               POHP  90	END || POHP 90
+44	3136	OK	                                         167                                    	167
+45	3295	COUNT 1/9;COUNT 3/5	                                                                                	. || ---

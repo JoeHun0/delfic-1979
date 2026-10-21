@@ -1,0 +1,5 @@
+52	2684	COUNT 25/29	                                                                                	2 MARRAY MBTAPE MXREQ SD INFAM
+56	2857	COUNT 17/21	                                                                                	3XMIN YMAX YMIN ZMIN
+58	2941	COUNT 48/54	                                                                                	1GAMA KTR(1J0) PMAS(1J0) PSIZ(10J) RO(100) SIGXO(100)
+60	3032	COUNT 15/16	                                                                                	3YPRMU ZPAR(100)
+61	3073	COUNT 26/30	                                                                                	COMMON /RUNDAY/ C CF6 FSUM ICTR

@@ -1,0 +1,3 @@
+19	1497	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI          	COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI
+35	2185	OK	      TMPG = A * (TME / T2M)**8 + 1500.                                         	TMPG = A * (TME / T2M)**8 + 1500.
+50	3290	COUNT 3/45	                                                                                	---

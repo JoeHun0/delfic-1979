@@ -1,0 +1,4 @@
+52	2676	COUNT 46/47	                                                                                	DATA ALIMIT ，RADC ，PROGRM ，METEOR ，RESCLV，WIND ，TURB
+53	2718	COUNT 57/59	                                                                                	1 / 999999. 0174532925, 6HTRIOIN, 4HMETE ,4HRES0,4HWIN0,4HTUR3/
+57	2889	OK	   1  FORMAT(/18X， 5HALPHA， 8X， 4H0ETA， 14X， 2HNN/ 15X， 2E12.4， 112)            	1 FORMAT(/18X，5HALPHA，8X，4H0ETA，14X，2HNN/15X，2E12.4，112)
+59	2977	COUNT 56/57	                                                                                	4 FORMAT(5X, 62HTHE DATA VECTOR AT EACH SPACE LATTICE CENTER IS COM

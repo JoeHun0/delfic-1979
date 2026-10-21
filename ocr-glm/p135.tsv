@@ -1,0 +1,64 @@
+1	18	COUNT 3/17	                                                                        --     -	--- || ---
+2	45	COUNT 3/28	                                                                        -- -    	--- || ---
+3	529	OK	      NDATO=NDATP                                                       TRANP 61	NDA TO=NDATP || TRANP 61
+4	574	OK	      NDTC1=0                                                           TRANP 62	NDTC1=0 || TRANP 62
+5	616	OK	      NDT01=0                                                           TRANP 63	NDT01=0 || TRANP 63
+6	659	OK	      KBHC1=0                                                           TRANP 64	KBHC1=0 || TRANP 64
+7	702	OK	      K8H01=0                                                           TRANP 65	K8H01=0 || TRANP 65
+8	743	OK	      LTIM=1                                                            TRANP 66	LTIM=1 || TRANP 66
+9	787	OK	 1000 CONTINUE                                                          TRANP 67	1000 CONTINUE || TRANP 67
+10	831	OK	      MODE=-1                                                           TRANP 68	MODE=-1 || TRANP 68
+11	872	OK	      IF(MC(4) .NE. 0) MODE=MODE+1                                      TRANP 69	IF(MC(4) .NE. 0) MODE=MODE+1 || TRANP 69
+12	915	OK	  50  MODE=MODE+1                                                       TRANP 70	50 MODE=MODE+1 || TRANP 70
+13	958	OK	      IF(LTIMX.GT.1)CALL CALIB(TIMUP,LTIMX,TO,1,LTIM)                   TRANP 71	IF(LTIMX.GT.1)CALL CALIB(TIMUP,LTIMX,TO,1,LTIM) || TRANP 71
+14	996	OK	CLCSEST Z8H PLANE BELOW ZC, OR EQUAL TO ZO, IS FOUND                    TRANP 72	CLCSEST Z8H PLANE BELOW ZC, OR EQUAL TO ZO, IS FOUND || TRANP 72
+15	1045	OK	      CALL CALIB(ZBH,KBHX,ZO,1,KBHO)                                    TRANP 73	CALL CALIB(ZBH,KBHX,ZO,1,KBHO) || TRANP 73
+16	1089	OK	      IF(ZO-ZBH(KBHO).GT.EPSZ)KBHO=KBHO+1                               TRANF 74	IF(ZO-ZBH(KBHO).GT.EPSZ)KBHO=KBHO+1 || TRANF 74
+17	1124	COUNT 20/21	                                                                        TRANP 75	10 WBAR=-UAVS(KBHO-1) || TRANP 75
+18	1177	OK	      IF(MCDE.EQ.0)GO TO 210                                            TRANP 76	IF(MCDE.EQ.0)GO TO 210 || TRANP 76
+19	1218	OK	CONSIDER TRANSPORT BETWEEN ADJACENT Z8H PLANES                          TRANP 77	CONSIDER TRANSPORT BETWEEN ADJACENT Z8H PLANES || TRANP 77
+20	1254	OK	      WBAR=WBAR+WFZ(KBHO-1,NDATO,LTIM)                                  TRANP 78	WBAR=WBAR+WFZ(KBHO-1,NDATO,LTIM) || TRANP 78
+21	1296	OK	      IF(WBAR)206,110,206                                               TRANP 79	IF(WBAR)206,110,206 || TRANP 79
+22	1347	OK	C     WHEN NET SETTLING SPEED IS ZERO, SET THE TIME INCREMENT TO THE    TRANP 80	C WHEN NET SETTLING SPEED IS ZERO, SET THE TIME INCREMENT TO THE || TRANP 80
+23	1384	OK	C     TIME LEFT BEFORE THE NEXT UPDATE.                                 TRANP 81	C TIME LEFT BEFORE THE NEXT UPDATE. || TRANP 81
+24	1432	OK	  110 TSEG=TIMEX-TO                                                     TRANP 82	110 TSEG=TIMEX-TO || TRANP 82
+25	1475	OK	      IF(LTIM.LT.LTIMX)TSEG=TIMUP(LTIM+1)-TO                            TRANP 33	IF(LTIM.LT.LTIMX)TSEG=TIMUP(LTIM+1)-TO || TRANP 33
+26	1510	OK	      KBHC=KBHO                                                         TRANF 34	KBHC=KBHO || TRANF 34
+27	1560	OK	      KBHO=KBHC=1                                                       TRANP 85	KBHO=KBHC=1 || TRANP 85
+28	1604	OK	      GO TO 300                                                         TRANP 86	GO TO 300 || TRANP 86
+29	1645	OK	CHECK IF KBHO ADJUSTMENT MUST BE MADE BECAUSE PARCEL IS RISING          TRANP 87	CHECK IF KBHO ADJUSTMENT MUST BE MADE BECAUSE PARCEL IS RISING || TRANP 87
+30	1690	COUNT 67/66	                                                                        TRANP 08	206 IF(WBAR.LT.0.0.0R.AES(Z0-Z3H(KBHO))).GT.EPSZ)IF(WBAR)210,210,209 || TRANP 08
+31	1735	OK	      KBHO=KBHO+1                                                       TRANP 89	KBHO=KBHO+1 || TRANP 89
+32	1775	OK	      GO TO 1C0                                                         TRANP 90	GO TO 1C0 || TRANP 90
+33	1817	COUNT 40/41	                                                                        TRANP 91	CONCLUDE KBHO,KBHC SETTING FOR A RISING PARCEL || TRANP 91
+34	1862	OK	C     KBHO(KBHC)IS THE ZBH PLANE FROM WHICH (TCWARU WHICH) THE PARCEL   TRANP 92	C KBHO(KBHC)IS THE ZBH PLANE FROM WHICH (TCWARU WHICH) THE PARCEL || TRANP 92
+35	1904	OK	C     IS MOVING.                                                        TRANP 93	C IS MOVING. || TRANP 93
+36	1947	OK	 209  IF（ZO=ZBH（KBHO）·LT·-EPSZ）KBHO=KBHO-1                              TRANP 94	209 IF（ZO=ZBH（KBHO）·LT·-EPSZ）KBHO=KBHO-1 || TRANP 94
+37	1991	OK	  210 K3HC=K3HO+IFIX(SIGN(1.0,WBAR))                                    TRANP 95	210 K3HC=K3HO+IFIX(SIGN(1.0,WBAR)) || TRANP 95
+38	2034	OK	      TSEG = (Z8H(KBHC)-Z0)/WBAR                                        TRANP 96	TSEG = (Z8H(KBHC)-Z0)/WBAR || TRANP 96
+39	2077	OK	       IF(MODE.NE.0 .OR. ABS(Z0-ZBH(KBHO)) .GT. EPSZ) GO TO 300         TRANF 97	IF (MODE.NE.0 .OR. ABS(Z0-ZBH(KBHO)) .GT. EPSZ) GO TO 300 || TRANF 97
+40	2120	OK	COMPUTE OVERALL SETTLING TIME AND AVERAGE SETTLING SPEED FROM Z0 TO ZMINTRANP 98	COMPUTE OVERALL SETTLING TIME AND AVERAGE SETTLING SPEED FROM Z0 TO ZMIN || TRANP 98
+41	2162	OK	      TSEG=TSEG+TSUM(KBHC)                                              TRANP 99	TSEG=TSEG+TSUM(KBHC) || TRANP 99
+42	2207	OK	      WBAR=（ZMIN-Z0）/TSEG                                               TRANP130	WBAR=（ZMIN-Z0）/TSEG || TRANP130
+43	2251	OK	      K8HC=1                                                            TRANP101	K8HC=1 || TRANP101
+44	2294	OK	 300  TC=TO+TSEG                                                        TRANP1:2	300 TC=TO+T SEG || TRANP1:2
+45	2337	OK	CHECK IF A TIME BOUNDARY IS CROSSED                                     TRANP1J3	CHECK IF A TIME BOUNDARY IS CROSSED || TRANP1J3
+46	2379	OK	      IF(LTIM .EQ. LTIMX) IF(TIMEX-TG)301,35L,350                       TRANP1:4	IF(LTIM.EQ.LTIMX) IF(TIMEX-TG)301,35L,350 || TRANP1:4
+47	2414	OK	      IF（TIMUP（LTIM+1）- TC） 305,350,350                                 TRANP105	IF（TIMUP（LTIM+1）-TC）305,350,350 || TRANP105
+48	2464	OK	CHANGE PARAMETERS TO LIMIT TRANSPORT TC OR LESS THAN THE TIME BOUNDARY  TRANF106	CHANGE PARAMETERS TO LIMIT TRANSPORT TC OR LESS THAN THE TIME BOUNDARY || TRANF106
+49	2508	OK	  301 TSEG=TIMEX-TO                                                     TRANP107	301 TSEG=TIMEX-TO || TRANP107
+50	2550	OK	      TLIM=TIMEX                                                        TRANP138	TLIM=TIMEX || TRANP138
+51	2593	OK	      GO TO 306                                                         TRANP119	GO TO 306 || TRANP119
+52	2636	OK	  305 TSEG = TIMUP(LTIM+1)-TO                                           TRANP110	305 TSEG = TIMUP(LTIM+1)-TO || TRANP110
+53	2677	OK	      TLIM=TIMUP（LTIM+1）                                                TRANP111	TLIM=TIMUP（LTIM+1） || TRANP111
+54	2722	OK	  306 IF(MCDE .GT. 0  .OR.  KBHO-K3HC .EQ.1) GO TO 350                  TRANP112	306 IF(MCDE .GT. 0 .OR. KBHO-K3HC .EQ.1) GO TO 350 || TRANP112
+55	2766	OK	      CALL CALI8(TSUM,KBHX,TC-TLIM,-1,KBHC)                             TRANP113	CALL CALI8(TSUM,KBHX,TC-TLIM,-1,KBHC) || TRANP113
+56	2809	OK	      IF(KBHO .GT. KBHC) GC TO 310                                      TRANP114	IF(KBHO .GT. KBHC) GC TO 310 || TRANP114
+57	2851	OK	      KBHC=KBHC-1                                                       TRANP115	KBHC=KBHC-1 || TRANP115
+58	2895	COUNT 15/16	                                                                        TRANP116	HBAR=GAVS(K8HC) || TRANP116
+59	2937	OK	      GO TO 350                                                         TRANP117	GO TO 350 || TRANP117
+60	2979	OK	  310 TSEG = TSUM(KBHO) - TSUM(KBHC)                                    TRANP118	310 TSEG = TSUM(KBHO) - TSUM(KBHC) || TRANP118
+61	3023	OK	      WBAR=（ZBH（KBHC）-Z0）/TSEG                                          TRANP119	WBAR=（ZBH（KBHC）-Z0）/TSEG || TRANP119
+62	3065	COUNT 46/45	                                                                        TRANP120	COMPUTE AVERAGE HORIZONTAL VELOCITIES UBAR AND VBAR. || TRANP120
+63	3144	COUNT 3/2	                                                                                	132
+64	3310	COUNT 3/53;COUNT 3/8	                                                                                	--- || ---

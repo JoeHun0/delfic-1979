@@ -1,0 +1,63 @@
+1	5	COUNT 3/18;COUNT 3/5	                                                                                	--- || ---
+2	60	COUNT 3/10	                                                                                	---
+3	534	OK	      IF（ZPAR（J）-ZB（ MCX ）） 114,115,115                                 WNDSF241	IF（ZPAR（J）-ZB（MCX））114,115,115 || WNDSF241
+4	579	OK	C                                                                       WNDSF242	C || WNDSF242
+5	621	COUNT 45/44	                                                                        HNDSF243	C 7.15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD || HNDSF243
+6	665	OK	 115  DX=XC(MCX)                                                        WNDSF244	115 DX=XC(MCX) || WNDSF244
+7	707	OK	      OY=YC(MCX)                                                        WNDSF245	OY=YC(MCX) || WNDSF245
+8	749	OK	C     TP(J) AND ZPAR(J) ARE OK AS IS.                                   WNDSF246	C TP(J) AND ZPAR(J) ARE OK AS IS. || WNDSF246
+9	793	OK	      GO TO 108                                                         WNDSF247	GO TO 108 || WNDSF247
+10	836	OK	C                                                                       WNDSF248	C || WNDSF248
+11	878	OK	C 114 THE PARTICLE HAS LEFT THE CLOUD                                   WNDSF249	C 114 THE PARTICLE HAS LEFT THE CLOUD || WNDSF249
+12	923	OK	C                                                                       WNDSF250	C || WNDSF250
+13	966	OK	  114 ZCUR=ZPAR(J)                                                      WNDSF251	114 ZCUR=ZPAR(J) || WNDSF251
+14	1007	OK	      IF（ ZCUR .LT. Z8RSTZ ） ZCUR=Z8RSTZ                                WNDSF252	IF（ZCUR.LT.Z8RSTZ）ZCUR=Z8RSTZ || WNDSF252
+15	1051	OK	      TCUR=TP（J）                                                        WNDSF253	TCUR=TP（J） || WNDSF253
+16	1094	OK	      DX=0.                                                             WNDSF254	DX=0. || WNDSF254
+17	1137	OK	      DY=0.                                                             WN0SF255	DY=0. || WN0SF255
+18	1180	OK	C     COMPUTE ATMOSPHERE PROPERTIES AT ZCUR                             WNDSF256	C COMPUTE ATMOSPHERE PROPERTIES AT ZCUR || WNDSF256
+19	1224	OK	      CALL TRPL(ZCUR,NAT,ALT,ATP,T)                                     WNDSF257	CALL TRPL(ZCUR,NAT,ALT,ATP,T) || WNDSF257
+20	1265	OK	      CALL TRPL(ZCUR,NAT,ALT,PRS,P)                                     WNDSF258	CALL TRPL(ZCUR,NAT,ALT,PRS,P) || WNDSF258
+21	1308	OK	      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN)                                   WNDSF259	CALL TRPL(ZCUR,NAT,ALT,RHO,DEN) || WNDSF259
+22	1352	OK	      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS)                                   WNDSF260	CALL TRPL(ZCUR,NAT,ALT,ETA,VIS) || WNDSF260
+23	1395	OK	C                                                                       WNDSF261	C || WNDSF261
+24	1437	COUNT 48/49	                                                                        WNDSF262	LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE. || WNDSF262
+25	1481	OK	C                                                                       WNDSF263	C || WNDSF263
+26	1523	OK	      00 210 K=1，MCX                                                    WNDSF264	00 210 K=1，MCX || WNDSF264
+27	1566	OK	      LL=MCXP1-K                                                        WNDSF265	LL=MCXP1-K || WNDSF265
+28	1609	OK	      IF(TC(LL).LE.TP(J)) GO TO 221                                     WNOSF266	IF(TC(LL).LE.TP(J)) GO TO 221 || WNOSF266
+29	1651	OK	  210 CONTINUE                                                          WNDSF2E7	210 CONTINUE || WNDSF2E7
+30	1695	OK	  211 IRROR=-211                                                        WNDSF268	211 IRROR=-211 || WNDSF268
+31	1738	OK	      GO TO 7734                                                        WNDSF269	GO TO 7734 || WNDSF269
+32	1781	OK	C                                                                       WN0SF270	C || WN0SF270
+33	1821	OK	C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      WNDSF271	C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE || WNDSF271
+34	1866	OK	C                                                                       WNDSF272	C || WNDSF272
+35	1907	OK	  221 DO 230 K=1，MHODO                                                  WNDSF273	221 DO 230 K=1，MHODO || WNDSF273
+36	1950	OK	      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240                       WNDSF274	IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240 || WNDSF274
+37	1993	OK	  230 CONTINUE                                                          WNOSF275	230 CONTINUE || WNOSF275
+38	2036	OK	      MM=NHODO                                                          WNDSF276	MM=NHODO || WNDSF276
+39	2079	OK	      GO TO 220                                                         WNDSF277	GO TO 220 || WNDSF277
+40	2123	OK	  240 MM=K                                                              WNDSF278	240 MM=K || WNDSF278
+41	2165	OK	C                                                                       WNDSF279	C || WNDSF279
+42	2208	COUNT 54/53	                                                                        WNDSF280	C 220 FIND CLOUD BOTTOM ALTITUDE AT THE PARTICLE DEFINITION TIME || WNDSF280
+43	2252	OK	  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL)                             WNDSF281	220 ZBOTOM= ZE(LL) + (TP(J)-TC(LL)) * VB(LL) || WNDSF281
+44	2295	COUNT 46/43	                                                                        WNDSF282	IF: (ZBOTOM-ZCUR).LE.115.**W****(J.151)) GO TO 225 || WNDSF282
+45	2339	OK	C                                                                       WNDSF203	C || WNDSF203
+46	2380	COUNT 55/56	                                                                        WNDSF284	LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE || WNDSF284
+47	2424	OK	C                                                                       WNDSF285	C || WNDSF285
+48	2467	OK	      DO 222 K=1.HCX                                                    WNDSF286	DO 222 K=1.HCX || WNDSF286
+49	2512	OK	      NN=MCXP1-K                                                        WNUSF237	NN=MCXP1-K || WNUSF237
+50	2554	OK	      IF(ZB(NN).LE.ZCUR) GC TO 224                                      HNOSF208	IF(ZB(NN).LE.ZCUR) GC TO 224 || HNOSF208
+51	2597	OK	  222 CONTINUE                                                          WNDSF289	222 CONTINUE || WNDSF289
+52	2641	OK	C                                                                       WNDSF290	C || WNDSF290
+53	2682	COUNT 27/28	                                                                        WNDSF291	COMPUTE AN AVERAGE BASE RATE, BV || WNDSF291
+54	2725	OK	C                                                                       WNDSF292	C || WNDSF292
+55	2768	OK	  224 IF(LL.GT.NN)GO TO 3224                                            WNDSF293	224 IF(LL.GT.NN)GO TO 3224 || WNDSF293
+56	2810	OK	      9V=V9（LL）                                                         WNDSF294	9V=V9（LL） || WNDSF294
+57	2853	OK	      GO TO 3227                                                        WNDSF295	GO TO 3227 || WNDSF295
+58	2898	OK	 3224 8V=0.                                                             WNDSF296	3224 8V=0. || WNDSF296
+59	2939	OK	      DO 3225 K=NN，LL                                                   WNDSF297	DO 3225 K=NN，LL || WNDSF297
+60	2980	OK	      IF(K.EQ.  MCX  ) GO TO 3226                                       WNDSF236	IF(K.EQ. MCX ) GO TO 3226 || WNDSF236
+61	3025	OK	 3225 BV=8V +VB(K3*（TC(K+1)- TC(K)）                                     WNDSF299	3225 BV=8V +VB(K3*（TC(K+1)-TC(K)） || WNDSF299
+62	3068	OK	 3226 BV= 9V/（TC（LL）-TC（NN））                                            WNDSF3J0	3226 BV= 9V/（TC（LL）-TC（NN）） || WNDSF3J0
+63	3126	OK	                                      101                                       	101

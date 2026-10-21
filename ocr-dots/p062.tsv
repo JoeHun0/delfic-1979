@@ -1,0 +1,61 @@
+1	6	COUNT 0/29	                                                                                	
+2	67	COUNT 0/42;COUNT 0/6	                                                                                	 || 
+3	746	OK	C  XE     - AMBIENT AIR WATER VAPOR MIXING RATIO                        ICRNE241	C XE - AMBIENT AIR WATER VAPOR MIXING RATIO || ICRNE241
+4	790	OK	C  XGZ    - X COORDINATE OF GROUND ZERO (METERS)                        ICRME242	C XGZ - X COORDINATE OF GROUND ZERO (METERS) || ICRME242
+5	832	OK	C  Y      - ARRAY(200),NUMBER OF IN-CLOUD PARTICLES/UNIT VOLUME OF CLOUDICRME243	C Y - ARRAY(200), NUMBER OF IN-CLOUD PARTICLES/UNIT VOLUME OF CLOUD || ICRME243
+6	876	OK	C  YGZ    - Y COORDINATE OF GROUND ZERO (METERS)                        ICRME244	C YGZ - Y COORDINATE OF GROUND ZERO (METERS) || ICRME244
+7	918	OK	C  Z      - CLOUD CENTER ALTITUDE (METERS)                              ICRME245	C Z - CLOUD CENTER ALTITUDE (METERS) || ICRME245
+8	959	COUNT 10/8	C  ZBFR   - MAXIMUM Z OF CURRENT OR PREVIOUS ENTRIES TABULATED BY CXPN          	C ZBFR - MAXIMUM Z OF CURRENT OR PREVIOUS ENTRIES TABULATED BY CXPN || ICP.ME.246
+9	997	OK	C  ZBRSTZ - Z-COORDINATE OF BURST GROUND ZERO (METERS ABOVE MSL)        ICRME247	C ZBRSTZ - Z-COORDINATE OF BURST GROUND ZERO (METERS ABOVE MSL) || ICRME247
+10	1047	COUNT 55/56	                                                                        ICRME248	C ZLMT - UPPER LIMIT FOR CLCUO CENTER ALTITUDE TO PREVENT POSSIBLE || ICRME248
+11	1084	COUNT 20/21	                                                                        ICRME249	COMPUTATIONAL FUNAWAY || ICRME249
+12	1134	COUNT 200/8	C  ZSCL   - SCALED HEIGHT OF BURST (FT/(KT)**(1.0/3.4))                         	C ZSCL - SCALED HEIGHT OF BURST (FT/(KT)**(1.0/3.4)) || 10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+13	1172	OK	C  ZV(I)  - ALTITUDE OF CENTER PLANE OF WIND PROFILE STRATUM I (M MSL)  ICRME251	C ZV(I) - ALTITUDE OF CENTER PLANE OF WIND PROFILE STRATUM I (M MSL) || ICRME251
+14	1219	OK	C  ZVSB   - IN SUBROUTINE RSXP, DISTANCE OF A FARCEL ABOVE CLOUD BASE   10RME252	C ZVSB - IN SUBROUTINE RSXP, DISTANCE OF A FARCEL ABOVE CLOUD BASE || 10RME252
+15	1264	OK	C                                                                       ICRNE253	C || ICRNE253
+16	1306	COUNT 0/71	                                                                        10KME254	 || 10KME254
+17	1349	OK	C                                                                       ICRME255	C || ICRME255
+18	1390	OK	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTHF,TMSD,XGZ,YGZ,TGZ    ICRME256	COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTHF,TMSD,XGZ,YGZ,TGZ || ICRME256
+19	1435	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI  ICRME257	COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI || ICRME257
+20	1470	OK	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     ICRME258	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || ICRME258
+21	1520	OK	C                                                                       ICRME259	C || ICRME259
+22	1564	OK	      DIMENSION CXTIM(50),CXTMP(50),NUMTAP(15)                          ICRME260	DIMENSION CXTIM(50), CXTMP(50), NUMTAP(15) || ICRME260
+23	1599	OK	      EQUIVALENCE (CXTIM(1),GDPST(601)), (CX1NP(1),GOFST(651))          ICRME261	EQUIVALENCE (CXTIM(1),GDPST(601)), (CX1NP(1),GOFST(651)) || ICRME261
+24	1650	OK	C                                                                       ICRME262	C || ICRME262
+25	1692	COUNT 0/71	                                                                        ICRME2E3	 || ICRME2E3
+26	1735	OK	C                                                                       ICRME2F4	C || ICRME2F4
+27	1777	COUNT 60/59	                                                                        ICRMÈ2E5	COPY IN BASIC AND CONTROL DATA, ESTABLISH CONDITIONS IN THE FIREBALL AT || ICRMÈ2E5
+28	1820	OK	C     INITIALIZATION TIME, SET UP FALLOUT PARTICLE SIZE DISTRIBUTION    ICRME266	C INITIALIZATION TIME, SET UP FALLOUT PARTICLE SIZE DISTRIBUTION || ICRME266
+29	1863	OK	C     TABLES AND PRINT HEADINGS AND DATA.                               10KME267	C TABLES AND PRINT HEADINGS AND DATA. || 10KME267
+30	1907	OK	      ISIN =NUMTAP( 1)                                                  ICRME268	ISIN =NUMTAP(1) || ICRME268
+31	1949	OK	      ISOUT=NUMTAP( 2)                                                  ICRME269	ISOUT=NUMTAP(2) || ICRME269
+32	1992	OK	      CALL ICM                                                          ICRNE270	CALL ICM || ICRNE270
+33	2035	OK	      IF(IC(3) .NE. 0) RETURN                                           ICRME271	IF(IC(3) .NE. 0) RETURN || ICRME271
+34	2078	OK	      IRISE=NUMTAP( 3)                                                  ICRME272	IRISE=NUMTAP( 3) || ICRME272
+35	2120	OK	      JPARN=NUMTAP( 4)                                                  ICRNE273	JPARN=NUMTAP( 4) || ICRNE273
+36	2164	OK	COPY IN ATMOSPHERE DATA                                                 ICRME274	COPY IN ATMOSPHERE DATA || ICRME274
+37	2209	COUNT 9/8	                                                                        ICRME275	CALI. ATMR || ICRME275
+38	2250	OK	COPY IN SHOT-TIME WIND DATA                                             ICRME276	COPY IN SHOT-TIME WIND DATA || ICRME276
+39	2293	OK	      CALL SHWIND                                                       ICRME277	CALL SHWIND || ICRME277
+40	2336	OK	COMPUTE INITIAL VALUES FOR THE CLOUD RISE EQUATIONS                     ICRME278	COMPUTE INITIAL VALUES FOR THE CLOUD RISE EQUATIONS || ICRME278
+41	2371	OK	      CALL CRMINT                                                       ICRME279	CALL CRMINT || ICRME279
+42	2421	OK	COMPUTE THE DYNAMIC CLOUD RISE                                          ICRME280	COMPUTE THE DYNAMIC CLOUD RISE || ICRME280
+43	2465	OK	      CALL CRM                                                          ICRME281	CALL CRM || ICRME281
+44	2507	OK	COMPUTE TIME OF FALLOUT SOLICIFICATION                                  ICRME282	COMPUTE TIME OF FALLOUT SOLICIFICATION || ICRME282
+45	2551	OK	      00 122 MA=1,MCX                                                   ICRME283	00 122 MA=1,MCX || ICRME283
+46	2593	OK	      MB=MCX-MA+1                                                       ICRME2d4	MB=MCX-MA+1 || ICRME2d4
+47	2634	OK	      CXTIM(MA)=CX(MB,1)                                                ICRME285	CXTIM(MA) = CX(MB, 1) || ICRME285
+48	2679	COUNT 35/21	                                                                        ICRME286	122 \text{ CXTMP(HA)} = \text{CX(MB, 9)} || ICRME286
+49	2723	OK	      CALL TRPL(SLOTMP,MCX,CXTMP,CXTIN,THSO)                            ICRME287	CALL TRPL(SLOTMP,MCX,CXTMP,CXTIN,THSO) || ICRME287
+50	2765	COUNT 26/27	                                                                        ICRME288	WRITE(ISOUT,513) SLDTP,TMSO || ICRME288
+51	2807	COUNT 61/64	                                                                        ICRNE289	513 FORMAT ( // // 10X,42HTIME OF SOIL SOLIDIFICATION AT TEMPERATURE 10. || ICRNE289
+52	2851	OK	     14,  8H DEG. ISF9.4, 5H SEC.)                                      ICRME290	14, 8H DEG. ISF9.4, 5H SEC.) || ICRME290
+53	2886	OK	COMPUTE FALLOUT PARCEL DISTRIBUTION IN SPACE ABOVE GZ AT STABLIZATION   ICRME291	COMPUTE FALLOUT PARCEL DISTRIBUTION IN SPACE ABOVE GZ AT STABLIZATION || ICRME291
+54	2935	OK	      CALL RSXP                                                         ICRME292	CALL RSXP || ICRME292
+55	2979	OK	COMPUTE WIND-ADJUSTED FALLOUT PARCEL COORDINATES AND TRANSLATE GZ AND   ICRME293	COMPUTE WIND-ADJUSTED FALLOUT PARCEL COORDINATES AND TRANSLATE GZ AND || ICRME293
+56	3021	COUNT 48/49	                                                                        ICRME294	C      DETONATION TIME COCCINATES. WRITE BINARY OUTPUT TAPE. || ICRME294
+57	3065	OK	      CALL WNDSFT                                                       ICRME295	CALL WNDSFT || ICRME295
+58	3108	OK	      RETURN                                                            ICRME296	RETURN || ICRME296
+59	3151	COUNT 0/5	                                                                        ICRME297	 || ICRME297
+60	3291	COUNT 0/25;COUNT 0/8	                                                                                	 || 
+61	3331	COUNT 0/33	                                                                                	

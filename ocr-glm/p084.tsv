@@ -1,0 +1,44 @@
+1	0	COUNT 3/12	                                                                                	---
+2	62	COUNT 3/49;COUNT 3/1	                                                                                	--- || ---
+3	810	OK	      IF（ TSRD .LT. TSTR  .OR.  U .GT. 0.0 ） GC TO 343                  CXPN  61	IF（TSRD .LT. TSTR .OR. U .GT. 0.0 ）GC TO 343 || CXPN 61
+4	853	OK	  243 MHYA = 3                                                          CXPN  62	243 MHYA = 3 || CXPN 62
+5	896	OK	      NSTAT=243                                                         CXPN  63	NSTAT=243 || CXPN 63
+6	940	OK	      WRITE(ISOUT,5000)NSTAT,WOR01                                      CXPN  64	WRITE(ISOUT,5000)NSTAT,WOR01 || CXPN 64
+7	982	OK	      GO TG 543                                                         CXPN  65	GO TG 543 || CXPN 65
+8	1023	OK	  343 IF（ TSRE .LT. EK  .CR.  U .GT. 0.0 ） GO TO 543                    CXPN  66	343 IF（TSRE .LT. EK .CR. U .GT. 0.0）GO TO 543 || CXPN 66
+9	1066	OK	  443 MWYA = 3                                                          CXPN  67	443 MWYA = 3 || CXPN 67
+10	1110	OK	      NSTAT=443                                                         CXPN  68	NSTAT=443 || CXPN 68
+11	1152	OK	      WRITE(ISOUT,5000)NSTAT,WORD3                                      CXPN  69	WRITE(ISOUT,5000)NSTAT,WORD3 || CXPN 69
+12	1197	OK	  543 CX (MCX, 3) = ZA - RZT                                            CXPN  7U	543 CX (MCX, 3) = ZA - RZT || CXPN 7U
+13	1240	OK	      CX (MCX, 4) = ZA + RZT                                            CXFN  71	CX (MCX, 4) = ZA + RZT || CXFN 71
+14	1282	OK	  060 MCX = MCX + 1                                                     CXPN  72	060 MCX = MCX + 1 || CXPN 72
+15	1324	OK	C                                         CHECK CAPACITY OF ARRAY CX    CXPN  73	C CHECK CAPACITY OF ARRAY CX || CXPN 73
+16	1367	OK	      IF （MCX - 50） 062， 062， 061                                       CXPN  74	IF（MCX-50）062，062，061 || CXPN 74
+17	1411	OK	  061 MWYA = 3                                                          CXPN  75	061 MWYA = 3 || CXPN 75
+18	1454	OK	      NSTAT=61                                                          CXPN  76	NSTAT=61 || CXPN 76
+19	1497	OK	      WRITE(ISOUT,5000)NSTAT,WORD2                                      CXPN  77	WRITE(ISOUT,5000)NSTAT,WORD2 || CXPN 77
+20	1540	OK	  C62 CXM = MCX                                                         CXPN  78	C62 CXM = MCX || CXPN 78
+21	1582	OK	C                                                                       CXPN  79	C || CXPN 79
+22	1625	OK	C     COMPUTE THE TIME AT WHICH THE NEXT CX ARRAY ENTRIES ARE TO BE MADECXPN  80	C COMPUTE THE TIME AT WHICH THE NEXT CX ARRAY ENTRIES ARE TO BE MADE || CXPN 80
+23	1670	OK	C                                                                       CXPN  81	C || CXPN 81
+24	1713	OK	      DLTH = DLTH + CXH * .G84946                                       CXPN  62	DLTH = DLTH + CXH *.G84946 || CXPN 62
+25	1755	OK	      TSTM = TSTM + DLTM                                                CXPN  83	TSTM = TSTM + DLTM || CXPN 83
+26	1798	OK	  065 IF (Z - Z8FR) 068, 068, 067                                       CXPN  84	065 IF (Z - Z8FR) 068, 068, 067 || CXPN 84
+27	1841	OK	  067 ZBFR = Z                                                          CXPN  85	067 ZBFR = Z || CXPN 85
+28	1884	OK	  068 GO TO (070， 070， 100)， MHYA                                       CXPN  56	068 GO TO (070，070，100)，MHYA || CXPN 56
+29	1926	OK	  070 RETURN                                                            CXPN  87	070 RETURN || CXPN 87
+30	1968	OK	C                                         COMPLETE OUTPUT CX TABLE      CXPN  88	C COMPLETE OUTPUT CX TABLE || CXPN 88
+31	2012	OK	  100 MCX = MCX - 1                                                     CXPN  89	100 MCX = MCX - 1 || CXPN 89
+32	2054	OK	      IF (CX (MCX - 1, 1) - CX (MCX, 1)) 102， 100， 102                  CXPN  90	IF (CX (MCX-1,1)-CX (MCX,1)) 102，100，102 || CXPN 90
+33	2097	OK	  102 DD 104 MK = 2. MCX                                                CXPN  91	102 DD 104 MK = 2. MCX || CXPN 91
+34	2140	OK	C                                         COMPUTE TIME INTERVAL LENGTH  CXPN  92	C COMPUTE TIME INTERVAL LENGTH || CXPN 92
+35	2182	OK	      CX （MK - 1， 2） = CX （MK， 1） - CX （MK - 1， 1）                      CXPN  93	CX（MK-1，2）=CX（MK，1）-CX（MK-1，1） || CXPN 93
+36	2225	OK	C                                         COMPUTE VERTICAL RATES        CXPN  94	C COMPUTE VERTICAL RATES || CXPN 94
+37	2270	OK	      CX （MK - 1， 6） = （CX （MK、 3） - CX （MK - 1， 3）） / CX （MK - 1， 2）   CXPN  95	CX（MK-1，6）=（CX（MK、3）-CX（MK-1，3））/CX（MK-1，2） || CXPN 95
+38	2312	OK	      CX （MK-1， 7） = （CX （MK， 4） - CX（MK-1， 4）） / CX （MK-1， 2）          CXPN  96	CX（MK-1，7）=（CX（MK，4）-CX（MK-1，4））/CX（MK-1，2） || CXPN 96
+39	2354	OK	C                                         COMPUTE RADIAL RATE           CXPN  97	C COMPUTE RADIAL RATE || CXPN 97
+40	2398	COUNT 5/6	  104 CX (MK - 1, 8) = (CX (MK, 5) - CX (MK - 1, 5)) / CX (MK - 1, 2)           	104 CX (MK-1, 8) = (CX (MK, 5) - CX (MK-1, 5)) / CX (MK-1, 2) || CXPN 8
+41	2440	OK	      DO 116 ML = 1, MCX                                                CXPN  99	DO 116 ML = 1, MCX || CXPN 99
+42	2483	OK	  106 CX （ML， 1） = CX （ML， 1） + TME                                     CXPN 1.0	106 CX（ML，1）= CX（ML，1）+ TME || CXPN 1.0
+43	2528	COUNT 6/7;COUNT 4/6	                                                                                	GO TO 17 || X=N 1
+44	2571	COUNT 5/6	      CH2                                                                       	CH2 || 1 X--1

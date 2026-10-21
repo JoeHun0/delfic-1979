@@ -1,0 +1,8 @@
+10	1135	OK	      L=4-K                                                                     	L=4-K
+12	1224	COUNT 8/7	                                                                                	JL=JL+1.
+21	1607	OK	      SIGXO(I)=SIGXO(L)                                                         	SIGXO(I) = SIGXO(L)
+31	2036	COUNT 10/9	                                                                                	26. ( J=KK+1
+37	2297	COUNT 13/14	                                                                                	510 IRROR=-510
+38	2340	OK	 2000 CALL ERROR(PROGRM,IKFRR,ISOUT)                                            	2000 CALL ERROR(PROGRM, IKFRR, ISOUT)
+40	2414	OK	      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),           	WRITE (LTAPE) (XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I) ,
+45	3295	COUNT 5/9	                                                                                	which

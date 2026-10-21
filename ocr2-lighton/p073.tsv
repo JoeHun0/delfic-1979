@@ -1,0 +1,13 @@
+1	12	COUNT 320/9	                                                                                	\text{C} \text{A} \text{N} \text{d} \text{e} \text{a} \text{t} \text{a} \text{c} \text{e} \text{d} \text{e} \text{a} \text{t} \text{a} \text{c} \text{e} \text{d} \text{e} \text{a} \text{t} \text{a} \text{c} \text{e} \text{d} \text{e} \text{a} \text{t} \text{a} \text{c} \text{e} \text{d} \text{e} \text{a} \text{t} \text{a} \text{c} \text{e} \text{d} \text{e}
+3	570	COUNT 14/13	                                                                                	30 FORMAT(12A6)
+8	778	COUNT 26/27	                                                                                	LHRLH, 11X, 3HRHO, 11X, 3FETA)
+19	1252	OK	      WATCOR=(1.-18./29.)/100.                                                  	WATCOR = (1.-18./29.) / 100.
+43	2285	OK	      IF(AP(N1) .GE. ALIMIT) GO TO 1L5                                          	IF(AP(N1).GE. ALIMIT) GO TO 1L5
+44	2334	COUNT 0/5	                                                                                	
+45	2376	COUNT 0/33	                                                                                	
+46	2418	OK	      ATP(I)=(AP(N2)+SCALE(8))*SCALE(2)                                         	ATP(I) = (AP(N2) + SCALE(8)) * SCALE(2)
+47	2462	COUNT 0/22	                                                                                	
+50	2590	COUNT 0/22	                                                                                	
+60	3022	COUNT 0/41	                                                                                	
+61	3065	COUNT 27/26	                                                                                	L070 IF(PRS(I).GT.0.0) GC TO 73
+63	3268	COUNT 0/33	                                                                                	

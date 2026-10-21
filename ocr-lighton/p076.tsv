@@ -1,0 +1,63 @@
+1	1	COUNT 0/27;COUNT 8/2	                                                                                	 || • ———— — — —
+2	522	OK	*DECK,SHWIND                                                            SHWIN  1	*DECK, SHWIND || SHWIN 1
+3	566	COUNT 17/16	                                                                        SHWIN  2	SUBROUTINE SHWINQ. || SHWIN 2
+4	609	OK	C                                                                       SHWIN  3	C || SHWIN 3
+5	649	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     SHWIN  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || SHWIN 4
+6	695	OK	C                                                                       SHWIN  5	C || SHWIN 5
+7	735	COUNT 199/71	                                                                        SHWIN  6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || SHWIN 6
+8	779	OK	C                                                                       SHWIN  7	C || SHWIN 7
+9	823	OK	C     READS IN SHOT TIME WIND DATA ABOVE GROUND ZERO                    SHWIN  8	C READS IN SHOT TIME WIND DATA ABOVE GROUND ZERO || SHWIN 8
+10	864	OK	C     THESE WINDS ARE USDE TO COMPUTE WIND SHEAR EFFECTS ON CLOUD RISE  SHWIN  9	C THESE WINDS ARE USDE TO COMPUTE WIND SHEAR EFFECTS ON CLOUD RISE || SHWIN 9
+11	907	COUNT 53/54	                                                                        SHWIN 10	C AND TO TRANSPORT THE CLOD AND FALLOUT WHILE THE CLOUD RISES AND || SHWIN 10
+12	951	OK	C     STABILIZES.                                                       SHWIN 11	C STABILIZES. || SHWIN 11
+13	993	OK	C                                                                       SHWIN 12	C || SHWIN 12
+14	1023	COUNT 12/71	                                                                        SHWIN 13	\overline{C} || SHWIN 13
+15	1080	OK	C                                                                       SHWIN 14	C || SHWIN 14
+16	1122	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),    SHWIN 15	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PRS(256), RLH(256), || SHWIN 15
+17	1164	OK	     1        RHO(256), ETA(256), NHODG, ZV(100),  VX(100), VY(100)     SHWIN 16	1 RHO(256), ETA(256), NHODG, ZV(100), VX(100), VY(100) || SHWIN 16
+18	1207	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAU,IRISE,ISIA,ISOUT,JPARN,KOI  SHWIN 17	COMMON /CONTRL/ DETIO(12),IC(20),IRAU,IRISE,ISIA,ISOUT,JPARN,KOI || SHWIN 17
+19	1250	OK	C                                                                       SHWIN 18	C || SHWIN 18
+20	1293	OK	      INTEGER FORM,METEOR,RESOLV                                        SHWIN 19	INTEGER FORM, METEOR, RESOLV || SHWIN 19
+21	1337	OK	      DIMENSION SCALE(5),AP(3),FMT(12)                                  SHWIN 20	DIMENSION SCALE(5), AP(3), FMT(12) || SHWIN 20
+22	1380	OK	      DATA ALIMIT  , RADC      , PROGRM  , METEOR , RESOLV              SHWIN 21	DATA ALIMIT , RADC , PROGRM , METEOR , RESOLV || SHWIN 21
+23	1424	OK	     1  /  999999. ,.0174532925, 6HSHWIND, 4HMETE , 4HRESO /            SHWIN 22	1 / 999999. ,.0174532925, 6HSHWIND, 4HMETE , 4HRESO / || SHWIN 22
+24	1467	OK	C                                                                       SHWIN 23	C || SHWIN 23
+25	1509	OK	    1 FORMAT(20I4)                                                      SHWIN 24	1 FORMAT(20I4) || SHWIN 24
+26	1538	OK	    1 FORMAT( 1H1, 37X, 19+SHOT-TIME WIND DATA// 19X, 8HRAW DATA, 36X, 1SHWIN 25	1 FORMAT( 1H1, 37X, 19+SHOT-TIME WIND DATA// 19X, 8HRAW DATA, 36X, 1 || SHWIN 25
+27	1596	OK	     14HPROCESSED DATA// 8X, 1HZ, 9X, 10HVX OR DIR., 3X, 11HVY OR SPEED,SHWIN 26	14HPROCESSED DATA// 8X, 1HZ, 9X, 10HVX OR DIR., 3X, 11HVY OR SPEED, || SHWIN 26
+28	1638	OK	     2 14X, 1HZ, 12X, 2HVX, 12X, 2HVY/)                                 SHWIN 27	2 14X, 1HZ, 12X, 2HVX, 12X, 2HVY/) || SHWIN 27
+29	1682	COUNT 30/7	    3 FORMAT( 3(2X,1PE12.5))                                                    	3 FORMAT( 3(2X,1PE12.5)) || \dot{S}HWIN \quad \dot{E} \dot{E}
+30	1725	COUNT 31/30;COUNT 14/7	                                                                                	4 FOP'4AT( 1H+, 47X, 3(2X,1PE12.5) ) || \text{SHWIN : 9}
+31	1766	COUNT 52/53	                                                                        SHWIN 30	5 FORMAT( 1H, 9X, 39HSHUT-TIME WINDS HAVE NOT BEEN SPECIFIED) || SHWIN 30
+32	1808	OK	    6 FORMAT( :F13.5)                                                   SHWIN 31	6 FORMAT( :F13.5 ) || SHWIN 31
+33	1853	OK	    7 FORMAT( 12A6)                                                     SHWIN 32	7 FORMAT(12A6) || SHWIN 32
+34	1896	OK	   8  FORMAT(6X, A4)                                                    SHWIN 33	8 FORMAT(6X, A4) || SHWIN 33
+35	1938	OK	C                                                                       SHWIN 34	C || SHWIN 34
+36	1980	COUNT 199/71	                                                                        SHWIN 35	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || SHWIN 35
+37	2023	OK	C                                                                       SHWIN 36	C || SHWIN 36
+38	2066	OK	      NHODO=0                                                           SHWIN 37	NHODO=0 || SHWIN 37
+39	2109	OK	      TRNS=0.                                                           SHWIN 38	TRNS=0. || SHWIN 38
+40	2151	OK	COPY IN DATA TYPE INDICATOR ANC FORMAT                                  SHWIN 39	COPY IN DATA TYPE INDICATOR ANC FORMAT || SHWIN 39
+41	2194	OK	      READ(ISIN,8) FORM                                                 SHWIN 40	READ(ISIN, 8) FORM || SHWIN 40
+42	2238	OK	      READ(ISIN,7) FMT                                                  SHWIN 41	READ(ISIN,7) FMT || SHWIN 41
+43	2280	OK	      WRITE(ISOUT,2)                                                    SHWIN 42	WRITE(ISOUT,2) || SHWIN 42
+44	2323	OK	COPY IN WIND DATA SCALE FACTORS AND DATA POINTERS                       SHWIN 43	COPY IN WIND DATA SCALE FACTORS AND DATA POINTERS || SHWIN 43
+45	2367	OK	      READ(ISIN,6) SCALE                                                SHWIN 44	READ(ISIN, 6) SCALE || SHWIN 44
+46	2409	OK	      READ(ISIN,1) N1, N2, N3                                           SHWIN 45	READ(ISIN,1) N1, N2, N3 || SHWIN 45
+47	2454	OK	      00 9 I=1,3                                                        SHWIN 46	00 9 I=1,3 || SHWIN 46
+48	2497	OK	   9  IF( SCALE(I) .EQ. 0.0 ) SCALE(I) = 1.0                            SHWIN 47	9  IF( SCALE(I) .EQ. 0.0 ) SCALE(I) = 1.0 || SHWIN 47
+49	2540	OK	      IF(FORM .EQ. METEOR) TRNS=SCALE(3)*SCALE(5) - 185.                SHWIN 48	IF (FORM .EQ. METEOR) TRNS=SCALE(3)*SCALE(5) - 185. || SHWIN 48
+50	2583	OK	COPY IN WIND DATA                                                       SHWIN 49	COPY IN WIND DATA || SHWIN 49
+51	2625	OK	  100 READ(ISIN,FMT)AP                                                  SHWIN 50	100 READ(ISIN,FMT)AP || SHWIN 50
+52	2669	OK	      IF(AP(N1) .GE. ALIMIT) GO TO 200                                  SHWIN 51	IF(AP(N1) .GE. ALIMIT) GO TO 200 || SHWIN 51
+53	2711	COUNT 0/13	                                                                        SHWIN 52	 || SHWIN 52
+54	2754	OK	COPY OUT RAW WIND DATA                                                  SHWIN 53	COPY OUT RAW WIND DATA || SHWIN 53
+55	2795	OK	      WRITE(ISOUT,3)AP(N1), AP(N2), AP(N3)                              SHWIN 54	WRITE(ISOUT,3)AP(N1), AP(N2), AP(N3) || SHWIN 54
+56	2837	OK	  10  IF(NHODO .GT. 100) CALL ERROR( PROGRM, -10, ISCUT)                SHWIN 55	10  IF(NHODO .GT. 100) CALL ERROR( PROGRM, -10, ISCUT) || SHWIN 55
+57	2883	OK	COMPUTE SCALED WIND DATA                                                SHWIN 56	COMPUTE SCALED WIND DATA || SHWIN 56
+58	2925	COUNT 0/36	                                                                        SHWIN 57	 || SHWIN 57
+59	2967	OK	      IF(FORM .EQ. RESOLV) GO TO 15                                     SHWIN 58	IF(FORM .EQ. RESOLV) GO TO 15 || SHWIN 58
+60	3013	COUNT 0/58	                                                                        SHWIN 59	 || SHWIN 59
+61	3055	COUNT 0/58	                                                                        SHWIN 5J	 || SHWIN 5J
+62	3122	OK	                                         73                                     	73
+63	3301	COUNT 0/25	                                                                                	

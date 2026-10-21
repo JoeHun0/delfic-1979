@@ -1,0 +1,63 @@
+1	20	COUNT 0/25;COUNT 0/2	                                                                                	 || 
+2	40	COUNT 0/22	                                                                                	
+3	578	COUNT 0/10	                                                                        RSXP 332	 || RSXP 332
+4	622	OK	      EY=EY+BZ                                                          RSXP 333	EY=EY+BZ || RSXP 333
+5	664	OK	      IF(EX**2+EY**2-RAD2)7201,7201,7203                                RSXP 334	IF (EX**2+EY**2-RAD2) 7201, 7201, 7203 || RSXP 334
+6	707	OK	 7203 CMA=DPST(5,MBT)/CNT                                               RSXP 335	7203 CMA=DPST(5,MBT)/CNT || RSXP 335
+7	752	OK	 1001 LOOO=LOOO+1                                                       RSXP 336	1001 LOOO=LOOO+1 || RSXP 336
+8	794	OK	      LL=1000+3                                                         RSXP 337	LL=1000+3 || RSXP 337
+9	837	OK	      DO 1750 J=LODD,LL                                                 RSXP 338	DO 1750 J=LODD,LL || RSXP 338
+10	880	COUNT 36/22	                                                                        RSXP 339	\text{GOPST}(9, J) = \text{OPST}(7, MET) || RSXP 339
+11	913	COUNT 48/27	                                                                        RSXP 340	\text{GOPST}(10, J) = \text{OPST}(8, MBT) / \text{CNT} || RSXP 340
+12	965	COUNT 21/14	                                                                        RSXP 341	\text{GOPST}(7, J) = BZ2 || RSXP 341
+13	1008	COUNT 36/22	                                                                        RSXP 342	\text{GOPST}(3, J) = \text{OPST}(6, MET) || RSXP 342
+14	1050	COUNT 0/22	                                                                        RSXP 343	 || RSXP 343
+15	1094	COUNT 36/22	                                                                        RSXP 344	\text{GOPST}(4, J) = \text{DPST}(4, MBT) || RSXP 344
+16	1137	COUNT 0/22	                                                                        RSXP 345	 || RSXP 345
+17	1172	OK	 1050 GOPST(5,J)=CMA                                                    RSXP 346	1050 GOPST (5, J) = CMA || RSXP 346
+18	1223	COUNT 23/16	                                                                        RSXP 347	\text{GDPST}(1,1000) = XR || RSXP 347
+19	1267	COUNT 33/16	                                                                        RSXP 348	\text{GOPST}(2, L, O, D, D) = \text{YR} || RSXP 348
+20	1311	OK	      L000=L000+1                                                       RSXP 349	L000=L000+1 || RSXP 349
+21	1354	COUNT 0/16	                                                                        RSXP 350	 || RSXP 350
+22	1396	COUNT 38/17	                                                                        RSXP 351	\text{GDPST}(2, \text{LODD}) = -\text{YR} || RSXP 351
+23	1439	OK	      LODD=LODD+1                                                       RSXP 352	LODD=LODD+1 || RSXP 352
+24	1482	COUNT 27/17	                                                                        R5XP 353	\text{GDPST}(1, L0DD) = -\chi R || R5XP 353
+25	1526	COUNT 31/17	                                                                        RSXP 354	\text{GOPST}(2, LODO) = -\text{YR} || RSXP 354
+26	1567	OK	      L000=L000+1                                                       RSXP 355	L000=L000+1 || RSXP 355
+27	1610	COUNT 24/17	                                                                        RSXP 356	\text{GDPST}(1, LOOC) = -XR || RSXP 356
+28	1655	COUNT 30/16	                                                                        RSXP 357	\text{GOPST}(2,1000) = \text{YR} || RSXP 357
+29	1689	OK	 5030 IF(LODD= 97)1150,1010,1010                                        RSXP 358	5030 IF(LODD= 97)1150,1010,1010 || RSXP 358
+30	1739	OK	 1100 IF(IRAD)2585,2585,1101                                            RSXP 359	1100 IF(IRAD)2585,2585,1101 || RSXP 359
+31	1784	OK	 1101 XR=XR+BZ                                                          RSXP 3ED	1101 XR=XR+BZ || RSXP 3ED
+32	1825	OK	      GO TO 1003                                                        RSXP 361	GO TO 1003 || RSXP 361
+33	1869	COUNT 26/12	                                                                        RSXP 362	1002 \text{ YR} = \text{YR} + 82 || RSXP 362
+34	1913	OK	      XR=BZ2                                                            RSXP 363	XR=BZ2 || RSXP 363
+35	1953	OK	      IF(YR-RADIUS)1063,1003,2585                                       RSXP 364	IF(YR-RADIUS)1063,1003,2585 || RSXP 364
+36	1998	OK	C                                                                       RSXP 365	C || RSXP 365
+37	2039	COUNT 1/37	                                                                        RSXP 366	C || RSXP 366
+38	2083	OK	C                                                                       RSXP 367	C || RSXP 367
+39	2125	OK	 1010 WRITE(IRISE)LOOO                                                  RSXP 368	1010 WRITE (IRISE) LOOO || RSXP 368
+40	2168	COUNT 67/66	                                                                        RSXP 369	WRITE(IRISE) (GOPST(1,J), GOPST(2,J), GOPST(3,J), GOPST(4,J), GOPST(5,J) || RSXP 369
+41	2210	OK	     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LODDRSXP 370	1), GDPST(6,J), GDPST(7,J), GDPST(8,J), GDPST(9,J), GCPST(10,J), J=1,LODD || RSXP 370
+42	2255	OK	     2)                                                                 RSXP 371	2) || RSXP 371
+43	2299	OK	      L000=0                                                            RSXP 372	L000=0 || RSXP 372
+44	2341	COUNT 9/8	                                                                        RSXP 373	GO TO 11:00 || RSXP 373
+45	2384	OK	 2585 GO TO (258 ,2586),IFLAG                                           RSXP 374	2585 GO TO (258,2586),IFLAG || RSXP 374
+46	2426	OK	 2586 IF(IP-KDIP)5445,258,258                                           RSXP 375	2586 IF(IP-KDIP)5445,258,258 || RSXP 375
+47	2468	OK	  258 CONTINUE                                                          RSXP 376	258 CONTINUE || RSXP 376
+48	2513	OK	  278 CONTINUE                                                          RSXP 377	278 CONTINUE || RSXP 377
+49	2557	OK	C                                                                       RSXP 378	C || RSXP 378
+50	2596	OK	C     LOAD FINAL RESIDUE OF GOPST DATA ON THE CRM CUTFUT TAPE           RSXP 379	C      LOAD FINAL RESIDUE OF GOPST DATA ON THE CRM CUTFUT TAPE || RSXP 379
+51	2642	OK	C                                                                       RSXP 3d6	C || RSXP 3d6
+52	2684	OK	 1030 WRITE(IRISE)LODD                                                  RSXP 361	1030 WRITE(IRISE)LODD || RSXP 361
+53	2723	COUNT 67/66	                                                                        RSXP 382	WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J) || RSXP 382
+54	2760	OK	     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LOCDRSXP 363	1), GDPST(6,J), GDPST(7,J), GDPST(8,J), GDPST(9,J), GCPST(10,J), J=1,LOCD || RSXP 363
+55	2813	OK	     21                                                                 RSXP 364	21 || RSXP 364
+56	2856	OK	      LOAD=C                                                            RSXP 365	LOAD=C || RSXP 365
+57	2899	OK	      WRITE(IRISE)LODD                                                  RSXP 386	WRITE(IRISE)LODD || RSXP 386
+58	2943	OK	      ENO FILE IRISE                                                    RSXP 387	ENO FILE IRISE || RSXP 387
+59	2985	OK	      FEWIND JRISE                                                      RSXP 368	FEWIND JRISE || RSXP 368
+60	3027	OK	      RETURN                                                            RSXP 359	RETURN || RSXP 359
+61	3071	OK	      END                                                               RSXP 390	END || RSXP 390
+62	3149	OK	                                         96                                     	96
+63	3301	COUNT 0/34;COUNT 0/6	                                                                                	 || 

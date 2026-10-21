@@ -1,0 +1,9 @@
+16	1129	OK	      DPST(2,M8T)=(DPST(2,1)+DPST(2,2))*0.5                                     	DPST(2, M8T) = (DPST(2,1) + DPST(2,2)) * 0.5
+39	2106	OK	      GDPST（6，LODO）=DPST（2，MBT）                                                 	GDPST（6，LODO）=DPST（2，MBT）
+40	2157	OK	      GOPST(4,LODD)=DPSY(4,MBY)                                                 	GOPST(4,LODD)=DPSY(4,MBY)
+42	2236	OK	      GDPST（5，LODD）=DPST（5，MBT）                                                 	GDPST（5，LODD）=DPST（5，MBT）
+44	2329	OK	      GOPST（2，L000）=0.                                                          	GOPST（2，L000）=0.
+45	2371	OK	      GDPST（7，LOOD）=OPST（3，MBT）                                                 	GDPST（7，LOOD）=OPST（3，MBT）
+46	2414	OK	      GDPST（8，LOOD）=DPST（6，MBT）                                                 	GDPST（8，LOOD）=DPST（6，MBT）
+47	2457	OK	      GDPST（9，LODD）=DPST（7，MBT）                                                 	GDPST（9，LODD）=DPST（7，MBT）
+50	2586	OK	 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002                                    	1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002

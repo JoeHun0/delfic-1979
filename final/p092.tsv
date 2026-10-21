@@ -1,0 +1,58 @@
+1	19	68	NOISE	                                                                        			
+2	96	106	NOISE	                                                                        			
+3	480	512	AGREE	    5 00 6 J=1,8                                                        		lighton=    5 00 6 J=1,8 ## dots=    5 00 6 J=1,8 ## glm=    5 00 6 J=1,8	RKGIL61
+4	522	553	HAND	      VBL(J)=VBL(J)+1.7071068*H*(DVBL(J)-RKG(J))                        	34	glm=      V8L(J)=V8L(J)+1.7071068*F*(0V9L(J)-RKG(J)) ## glm2=      V8L(J)=V8L(J)+1.7071068*F*(DV9L(J)-RKG(J))	RKGIL62
+5	563	596	AGREE	    6 RKG(J)=3.41421356*DVBL(J)-4.1213203*RKG(J)                        		lighton=    6 RKG(J)=3.41421356*DVBL(J)-4.1213203*RKG(J) ## dots=    6 RKG(J)=3.41421356*DVBL(J)-4.1213203*RKG(J) ## glm=    6 RKG(J)=3.41421356*DVBL(J)-4.1213203*RKG(J)	RKGIL63
+6	607	637	AGREE	      GO TO 10                                                          		lighton=      GO TO 10 ## dots=      GO TO 10 ## glm=      GO TO 10	RKGIL64
+7	650	683	AGREE	    7 00 8 J=1,8                                                        		lighton=    7 00 8 J=1,8 ## dots=    7 00 8 J=1,8 ## glm=    7 00 8 J=1,8	RKGIL65
+8	691	723	HAND	    8 VBL(J)=VBL(J)+.16666667*H*(DVBL(J)-2.*RKG(J))                     	34	dots=    8 VBL(J)=VBL(J)+.16666667*H*(DVBL(J)-2.*RKG(J)) ## glm=    8 VBL(J)=VBL(J)+.16666667*H*(0VBL(J)-2.*RKG(J))	RKGIL66
+9	735	765	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RKGIL67
+10	779	809	AGREE	      KYCL=2                                                            		lighton=      KYCL=2 ## dots=      KYCL=2 ## glm=      KYCL=2	RKGIL68
+11	819	851	VOTED	   10 HT=VBL(1)                                                         		lighton=   10 HT=VOL(1) ## dots=   10 WT=VBL(1) ## glm=   10 HT=VBL(1)	RKGIL69
+12	863	894	VOTED	      RM=VBL(2)                                                         		lighton=      RM=VBL(2) ## dots=      RM=VBL(2) ## glm=      RM=VBL（2）	RKGIL70
+13	907	938	VOTED	      U=VBL(3)                                                          		lighton2=      U=VBL(3) ## dots=      U=VBL(3) ## dots2=      U=VBL(3) ## glm=      U=VBL（3）	RKGIL71
+14	948	981	HAND	      X=VBL(4)                                                          	12,14	lighton2=      X=VBL(4) ## glm=      X=VBL（4）	
+15	992	1024	VOTED	      T=V9L(5)                                                          		dots=      T=V9L(5) ## dots2=      T=V9L(5) ## glm=      T=V9L（5）	RKGIL73
+16	1035	1067	HAND	      Z=VBL(6)                                                          	10,12,14	dots=      Z=VBL(6) ## dots2=      Z=VBL(6) ## glm=      Z=V8L（6） ## glm2=      Z=V8L（6）	RKGIL74
+17	1076	1107	AGREE	      EK=VBL(7)                                                         		lighton=      EK=VBL(7) ## glm=      EK=VBL(7)	RKGIL75
+18	1120	1152	VOTED	      S=VBL(8)                                                          		lighton2=      S=VBL(8) ## dots=      S=VBL(8) ## dots2=      S=VBL(8) ## glm=      S=VBL（8）	RKGIL76
+19	1163	1198	AGREE	      CALL TRPL(Z,NAT ,ALT,PRS,PQR)                                     		lighton=      CALL TRPL(Z,NAT ,ALT,PRS,PQR) ## dots=      CALL TRPL(Z,NAT ,ALT,PRS,PQR) ## glm=      CALL TRPL(Z,NAT ,ALT,PRS,PQR)	RKGIL77
+20	1198	1237	HAND	      V=287.*T*RM*(1.+X)/PQR/(1.+X+S+WT)*(1.0+X*29./18.)/(1.0+X)        		dots=      V=287.*T*RM*(1.+X)/PQR/(1.+X+S+WT)*(1.0+X*29./18.)/(1.0+X)	KKGIL78
+21	1248	1281	AGREE	      IF( U .GT. 0.0 ) RZT = ( 0.2387324 * V * SHAPE**2 )**0.3333333333 		lighton=      IF( U .GT. 0.0 ) RZT = ( 0.2387324 * V * SHAPE**2 )**0.3333333333 ## glm=      IF( U .GT. 0.0 ) RZT = ( 0.2387324 * V * SHAPE**2 )**0.3333333333	RKGIL79
+22	1292	1327	AGREE	      GO TO(20,30),KYCL                                                 		lighton=      GO TO(20,30),KYCL ## dots=      GO TO(20,30),KYCL ## glm=      GO TO(20,30),KYCL	RKGIL80
+23	1335	1367	AGREE	   30 RETURN                                                            		lighton=   30 RETURN ## dots=   30 RETURN ## glm=   30 RETURN	RKGIL81
+24	1378	1408	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	RKGIL82
+25	1723	1756	COMMENT	*DECK,RSTR                                                              		lighton=-DECK,RSTR ## dots=*DECK,RSTR ## glm=*DECK,RSTR	KSTR1
+26	1765	1796	VOTED	      SUBROUTINE RSTR                                                   		lighton=      SUBROUTINE RSTR ## dots=      SUBROUTINE RSTR ## glm=      SU9ROUTINE RSTR	RSTR2
+27	1809	1839	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR3
+28	1851	1884	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	KSTR4
+29	1893	1923	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR5
+30	1937	1967	NOISE	                                                                        			RSTR6
+31	1979	2009	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR7
+32	2022	2054	COMMENT	C     RSTR PRESERVES AND/OR RESTORES CRM VARIABLES                      		lighton=C     RSTR PRESERVES AND/OR RESTORES CRM VARIABLES ## dots=C     RSTR PRESERVES AND/OR RESTORES CRM VARIABLES ## glm=C     RSTR PRESERVES AND/OR RESTORES CRM VARIABLES	RSTR8
+33	2067	2096	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR9
+34	2107	2137	NOISE	                                                                        			RSTR10
+35	2151	2181	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR11
+36	2194	2229	VOTED	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,		lighton=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## dots=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRH    , ## glm=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,	RSTR12
+37	2229	2269	VOTED	     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,CWT    ,DX     ,		lighton=     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,CWT    ,DX     , ## dots=     1 OS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,CWT    ,DX     , ## glm=     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,CWT    ,DX     ,	RSTR13
+38	2279	2313	HAND	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,	8,49,50,51,56,57,58,59,64,65,66,67,68,72	lighton=     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLF   .,K    S,KS    V,MWY   A ## lighton2=     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLF   .,K    S,KS    V,MWY   A ## dots=     2 OZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   , ## dots2=     2 OZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,	KSTR14
+39	2313	2357	VOTED	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    ,		lighton=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    , ## lighton2=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    , ## dots2=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    ,	RSTR15
+40	2365	2398	AGREE	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,		lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	RSTR16
+41	2409	2443	AGREE	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         		lighton=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## dots=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## glm=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE	RSTR17
+42	2452	2486	VOTED	      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SD,PS(260),UIAM(201),FMASS(203)  		lighton=      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SD,PS(260),UIAM(2u1),FMASS(2J3) ## dots=      COMMON /PARTCL/ NOSTR,RHOP,OMEAN,SD,PS(200),UIAM(201),FMASS(200) ## glm=      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SD,PS(260),UIAM(201),FMASS(203)	KSIR18
+43	2494	2528	VOTED	      COMMON /TABLES/ MCX, CX(50,10), GDPST(1J,1J0)                     		lighton=      COMMON /TABLES/ MCX, CX(50,1u), GDPST(1J,1J0) ## dots=      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) ## glm=      COMMON /TABLES/ MCX, CX(50,10), GDPST(1J,1J0)	KSTR19
+44	2537	2568	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR20
+45	2579	2614	AGREE	      DIMENSION PY(200), Y(200)                                         		lighton=      DIMENSION PY(200), Y(200) ## dots=      DIMENSION PY(200), Y(200) ## glm=      DIMENSION PY(200), Y(200)	KSTR21
+46	2623	2657	VOTED	      EQUIVALENCE (Y(1),GOPST(1)), (PY(1),GOPST(401))                   		lighton=      EQUIVALENCE (Y(1),GOPST(1)), (PY(1),GOPST(401)) ## dots=      EQUIVALENCE (Y(1),GOPST(1)), (PY(1),GOPST(401)) ## glm=      EQUIVALENCE (Y(1),GOPST(1))， (PY(1),GOPST(401))	RSTR22
+47	2666	2697	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KST23
+48	2708	2739	NOISE	                                                                        			RSTR24
+49	2750	2781	COMMENT	C                                                                       			RSTR25
+50	2794	2827	AGREE	      GO TO(1,3),KSV                                                    		lighton=      GO TO(1,3),KSV ## dots=      GO TO(1,3),KSV ## glm=      GO TO(1,3),KSV	RSTR26
+51	2839	2870	VOTED	    1 PEK=EK                                                            		lighton=    1 PEK≈EK ## dots=    1 PEK=EK ## glm=    1 PEK=EK	KSTR27
+52	2880	2912	AGREE	      PRM=RM                                                            		dots=      PRM=RM ## glm=      PRM=RM	KSTR28
+53	2923	2953	AGREE	      PSS=S                                                             		dots=      PSS=S ## glm=      PSS=S	RSTR29
+54	2968	2997	AGREE	      PT=T                                                              		dots=      PT=T ## glm=      PT=T	
+55	3010	3039	AGREE	      PU=U                                                              		lighton=      PU=U ## dots=      PU=U ## glm=      PU=U	KSTR31
+56	3054	3083	AGREE	      PV=V                                                              		lighton=      PV=V ## dots=      PV=V ## glm=      PV=V	RSTR32
+57	3098	3129	AGREE	      PWT=WT                                                            		dots=      PWT=WT ## glm=      PWT=WT	KSTR33
+58	3155	3185	NOISE	                                                                        		lighton=                                         89 ## glm=                                         89	

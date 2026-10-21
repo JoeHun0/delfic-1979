@@ -1,0 +1,10 @@
+12	956	COUNT 60/61	                                                                                	33 FORMAT 15X.56HTIME OF ARRIVAL ACCOUNTED FOR BY THE APPROXIMATE, MET
+14	1041	OK	 34   FORHAT(15X.50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.)         	34 FORHAT(15X.50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.)
+21	1342	OK	      TINC=2.6*DGX                                                              	TINC=2.6*DGX
+25	1515	COUNT 6/5	                                                                                	KK_1 = 1
+28	1640	COUNT 38/18	                                                                                	\text{LEFT} = \frac{(X_{MAX} - X_1)}{0.6X}
+32	1813	OK	      IF(JC   )147,147,131                                                      	IF (JC )147,147,131
+38	2073	OK	      WRITE (ISOUT,R)                                                           	WRITE (ISOUT, R)
+46	2414	OK	      LREW=1                                                                    	LREW=1
+49	2544	OK	      WRITE(NBTAPE)XMIN,XPAX,YMIN,YMAX,OGX,OGY                                  	WRITE (NBTAPE) XMIN, XPAX, YMIN, YMAX, OGX, OGY
+61	3060	COUNT 0/8	                                                                                	

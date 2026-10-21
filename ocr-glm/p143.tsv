@@ -1,0 +1,62 @@
+1	26	COUNT 3/43;COUNT 3/8	                                                                                	--- || ---
+2	549	OK	     1ECIPROCAL ALTITUDE FUNCTION/ 15X 10HFOR UPDATEI3,  4H AT E12.5.   WILKN 48	1ECIPROCAL ALTITUDE FUNCTION/15X 10HFOR UPDATEI3, 4H AT E12.5. || WILKN 48
+3	595	OK	     2 8H SECONDS/)                                                     WILKN 49	2 8H SECONDS/) || WILKN 49
+4	627	COUNT 60/59	                                                                        WILKN 50	5300 FORMAT(14X,22HSURFACE WIND SPEED IS E12.5,3X,20H MEASURED AT HI || WILKN 50
+5	678	COUNT 61/60	                                                                        WILKN 51	1EIGHT E12.5/14X，17HROUGHNESS LENGTH=E12.5，3X，32HRECIPROCAL MONI || WILKN 51
+6	723	OK	     2IN-OBUKHOV LENGTH=E12.5， 3X， 11H(MKS UNITS)/                      WILKN 52	2IN-OBUKHOV LENGTH=E12.5，3X，11H(MKS UNITS) / || WILKN 52
+7	757	OK	     3 14X， 32HSURFACE LAYER FRICTION VELOCITY=E12.5， 3X，  7H(M/SEC)/1  WILKN 53	3 14X，32HSURFACE LAYER FRICTION VELOCITY=E12.5，3X，7H(M/SEC)/1 || WILKN 53
+8	800	OK	 5900 FORMAT( 1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BECAWILKN 54	5900 FORMAT(1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BE CA || WILKN 54
+9	843	OK	     1USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/ 10X. 53HCALCULATION CANNOTWILKN 55	1 USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/ 10X. 53HCALCULATION CANNOT || WILKN 55
+10	893	OK	     2 PROCEED UNLESS WIND DATA ARE INPUT//)                            WILKN 56	2 PROCEED UNLESS WIND DATA ARE INPUT//) || WILKN 56
+11	941	OK	C                                                                       WILKN 57	C || WILKN 57
+12	981	OK	CHECK IF ARRAY ZCH HAS BEEN CREATED                                     WILKN 58	CHECK IF ARRAY ZCH HAS BEEN CREATED || WILKN 58
+13	1022	COUNT 38/39	                                                                        WILKN 59	IF(ZCH(1) NE. ALIMIT) IF(MC(2)-1) 50,60,50 || WILKN 59
+14	1066	OK	      WRITE(ISOUT,5900)                                                 WILKN 60	WRITE(ISOUT,5900) || WILKN 60
+15	1110	COUNT 28/29	                                                                        WILKN 61	25 CALL ERROR(PROGRM-25,ISCUT) || WILKN 61
+16	1152	OK	   50 WRITE(ISOUT,5200)L，TIMUP(L)                                       WILKN 62	50 WRITE(ISOUT,5200)L，TIMUP(L) || WILKN 62
+17	1199	OK	C                                                                       WILKN 63	C || WILKN 63
+18	1239	OK	C  READ  DATA USED TO CALCLLATE USTAR (MKS UNITS)                       WILKN 64	C READ DATA USED TO CALCLLATE USTAR (MKS UNITS) || WILKN 64
+19	1285	OK	C                                                                       WILKN 65	C || WILKN 65
+20	1326	OK	   60 READ(ISIN,1000) U, ZM, Z0, RL                                     WILKN 66	60 READ(ISIN,1000) U, ZM, Z0, RL || WILKN 66
+21	1369	OK	      IF(ZJ .EQ. 0.0) GO TO 300                                         WILKN 67	IF(ZJ.EQ.0.0) GO TO 300 || WILKN 67
+22	1411	OK	      IF(RL .GE. 0.0) GO TO 100                                         WILKN 68	IF(RL .GE. 0.0) GO TO 100 || WILKN 68
+23	1456	OK	C                                                                       WILKN 69	C || WILKN 69
+24	1496	OK	C  COMPUTE CHI FOR AN UNSTABLE BOUNDARY LAYER                           WILKN 70	C COMPUTE CHI FOR AN UNSTABLE BOUNDARY LAYER || WILKN 70
+25	1544	OK	C                                                                       WILKN 71	C || WILKN 71
+26	1583	OK	      XI = (1.J - 15.0*ZH*RL)**0.25                                     WILKN 72	XI = (1. J - 15. 0 * ZH * RL) ** 0. 25 || WILKN 72
+27	1625	OK	      CHI = -ALOG((XI**2+1.0) * (XI+1.0)**2 /8.0) + 2.0*ATAN (XI)       WILKN 73	CHI = -ALOG((XI**2+1.0) * (XI+1.0)**2 /8.0) + 2.0*ATAN (XI) || WILKN 73
+28	1671	OK	     1 - 1.570796327                                                    WILKN 74	1-1.570796327 || WILKN 74
+29	1714	OK	      GO TO 200                                                         WILKN 75	GO TO 200 || WILKN 75
+30	1757	OK	  100 CONTINUE                                                          WILKN 76	100 CONTINUE || WILKN 76
+31	1801	OK	C                                                                       WILKN 77	C || WILKN 77
+32	1841	OK	C  COMPUTE CHI FOR A NEUTRAL OR STABLE BOUNDARY LAYER                   HILKN 78	C COMPUTE CHI FOR A NEUTRAL OR STABLE BOUNDARY LAYER || HILKN 78
+33	1888	OK	C                                                                       WILKN 79	C || WILKN 79
+34	1927	OK	      CHI = 4.7*ZM*RL                                                   WILKN 80	CHI = 4.7*ZM*RL || WILKN 80
+35	1972	OK	  200 CONTINUE                                                          WILKN 81	200 CONTINUE || WILKN 81
+36	2014	OK	      USTAR = VKK*U / (ALCG(ZM/Z0) + CHI)                               WILKN 82	USTAR = VKK*U / (ALCG(ZM/Z0) + CHI) || WILKN 82
+37	2057	OK	      C = USTAR**3/VKK                                                  WILKN 33	C = USTAR**3/VKK || WILKN 33
+38	2097	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,53J0)U,ZM,ZJ,RL,USTAR                WILKN 84	IF(MC(2) .NE. 1) WRITE(ISOUT,53J0)U,ZM,ZJ,RL,USTAR || WILKN 84
+39	2146	OK	      GO TO 40J                                                         WILKN 85	GO TO 40J || WILKN 85
+40	2187	OK	  300 C = WILK                                                          WILKN 26	300 C = WILK || WILKN 26
+41	2229	OK	  400 CONTINUE                                                          WILKN 87	400 CONTINUE || WILKN 87
+42	2275	OK	C                                                                       WILKN 88	C || WILKN 88
+43	2304	COUNT 35/36	                                                                        WILKN 99	COMPUTE EPS AND STORE TEMPORARILY IN CAVS || WILKN 99
+44	2363	OK	C                                                                       WILKN 90	C || WILKN 90
+45	2404	OK	      ZGZ = ZMIN                                                        WILKN 91	ZGZ = ZMIN || WILKN 91
+46	2444	OK	      DO 5J0 K=1，KBHX                                                   WILKN 92	DO 5J0 K=1，KBHX || WILKN 92
+47	2485	OK	  500 CAVS(K) = C/(ZCH(K) - ZGZ + Z0)                                   WILKN 93	500 CAVS(K) = C/(ZCH(K) - ZGZ + Z0) || WILKN 93
+48	2534	OK	C                                                                       WILKN 94	C || WILKN 94
+49	2571	OK	C  LOAD DIFFUSION PARAMETER ARRAYS                                      WILKN >5	C LOAD DIFFUSION PARAMETER ARRAYS || WILKN >5
+50	2618	OK	C                                                                       WILKN 96	C || WILKN 96
+51	2659	OK	      DO 610 N=1,NDATX                                                  WILKN 97	DO 610 N=1,NDATX || WILKN 97
+52	2702	OK	      DO 610 K=1，K8HX                                                   WILKN 98	DO 610 K=1，K8HX || WILKN 98
+53	2743	COUNT 20/19;COUNT 6/7	                                                                                	OXSUM(K,N,L) = CAVS(K) || WILKN 9
+54	2788	COUNT 23/22	                                                                        WILKN1J0	500 DYSUM(K,N,L) = CAVS(K) || WILKN1J0
+55	2829	OK	      IF(MC(2) .EQ. 1) RETURN                                           WILKN1.1	IF(MC(2) .EQ. 1) RETURN || WILKN1.1
+56	2874	COUNT 17/16	                                                                        WILKN1J2	WRITE( ISOUT, 501C) || WILKN1J2
+57	2919	OK	      NO 710 K=1,KBHX                                                   WILKN133	NO 710 K=1,KBHX || WILKN133
+58	2951	COUNT 54/52	                                                                        WILKN1.4	700 WRITE(ISOUT,5100) K, ZCH(K), OXSLM(K,1,L), OYSUM(K,1,L) || WILKN1.4
+59	3003	OK	      RETURN                                                            WILKN1J5	RETURN || WILKN1J5
+60	3049	COUNT 8/7	      FNO                                                                       	FNO || WILKN1!6
+61	3129	COUNT 3/2	                                                                                	140
+62	3295	COUNT 3/40;COUNT 3/2	                                                                                	--- || ---

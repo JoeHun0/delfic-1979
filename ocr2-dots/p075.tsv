@@ -1,0 +1,10 @@
+3	606	OK	  200 DO 210 I=1,NAT                                                            	200 DO 210 I=1,NAT
+26	1593	OK	      A3=PRS(1)                                                                 	A3=PRS(1)
+28	1678	OK	      A5=RHO(1)                                                                 	A5=RHO(1)
+36	2022	COUNT 25/20	                                                                                	ALT(I)=ALT(I-1)\uplus OALT
+39	2152	COUNT 0/7	                                                                                	
+47	2495	COUNT 83/34	                                                                                	\mathrm{PRS}(I) = \mathrm{PRS}(I-1) + \mathrm{TERP} \cdot (\mathrm{A3}-\mathrm{PRS}(I-1))
+48	2539	COUNT 69/34	                                                                                	\text{RLH}(I) = \text{RLH}(I-1) + \text{TERD} * (\text{A4}-\text{RLH}(I-1))
+49	2579	OK	      FHO(I)=HO(I-1)+TERPF+(AS+RHU(I-1))                                        	FHO(I) = HO(I-1) + TERPF + (AS+RHU(I-1))
+50	2620	COUNT 0/34	                                                                                	
+62	3272	COUNT 0/48	                                                                                	

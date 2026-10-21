@@ -1,0 +1,10 @@
+3	547	COUNT 0/34	                                                                                	
+7	720	COUNT 0/20	                                                                                	
+8	763	COUNT 0/9	                                                                                	
+9	807	OK	      IF(NOB.LT.i) NOB=1                                                        	IF(NOB.LT.i) NOB=1
+31	1752	OK	      RADIC = -8*YREL**2+0                                                      	RADIC = -8*YREL**2+0
+32	1794	OK	      IF(RADIC.GE.0.0) GO TO 160                                                	IF(RADIC.GE.0.0) GO TO 160
+37	2010	COUNT 0/18	                                                                                	
+43	2269	OK	      IF(NOL.LT.1) NOL=1                                                        	IF(NOL.LT.1) NOL=1
+53	2699	OK	  210 IRROR=-210                                                                	210  IRROR=-210
+59	2957	OK	      K = NOL + M(RMT                                                           	K = NOL + M(RMT

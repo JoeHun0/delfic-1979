@@ -1,0 +1,62 @@
+1	4	56	NOISE	                                                                        			
+2	561	592	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR154
+3	606	638	VOTED	  200 DO 210 I=1,NAT                                                    		lighton2=  200 DO 210 I=1,NAT ## dots=  200 00 210 I=1,NAT ## dots2=  200 DO 210 I=1,NAT ## glm=  200 DO 210 I=1，NAT	ATMR155
+4	648	681	AGREE	  210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I)             		lighton=  210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I) ## dots=  210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I) ## glm=  210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I)	ATMR156
+5	691	721	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR157
+6	735	766	COMMENT	C     DO THE TABLES HAVE AN ENTRY AT 5.000 METERS-                      		lighton=C     DO THE TABLES HAVE AN ENTRY AT 5.000 METERS-	ATMR158
+7	776	807	COMMENT	C     IF NOT MAKE AN ENTRY AT 5J.U. METERS FROM THE ARCC STANDARD ATMOS.		lighton=C     IF NOT MAKE AN ENTRY AT 5J.U. METERS FROM THE ARCC STANDARD ATMOS. ## glm=C     IF NOT MAKE AN ENTRY AT 5JUIC METERS FROM THE ARCC STANUARD ATMOS.	ATMR159
+8	820	850	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR160
+9	863	894	AGREE	      IF(ALT(NAT ) .GE. 5.E4) GO TO 220                                 		lighton=      IF(ALT(NAT ) .GE. 5.E4) GO TO 220 ## dots=      IF(ALT(NAT ) .GE. 5.E4) GO TO 220 ## glm=      IF(ALT(NAT ) .GE. 5.E4) GO TO 220	ATMR161
+10	906	936	VOTED	      IF(A9S(ALT(NAT )-5.E4).LE.50.)GO TO 220                           		lighton=      IF(A9S(ALT(NAT )-5.E4).LE.50.)GO TO 220 ## dots=      IF(A9S(ALT(NAT )-5.E4).LE.50.)GO TO 220 ## glm=      IF(A9S(ALT(NAT )-5.E4).LE.5U.)GO TO 220	ATMR162
+11	936	980	AGREE	      WRITE(IRISE)ATMMAX                                                		lighton=      WRITE(IRISE)ATMMAX ## dots=      WRITE(IRISE)ATMMAX ## glm=      WRITE(IRISE)ATMMAX	ATMR163
+12	993	1024	AGREE	      NAT=NAT+1                                                         		lighton=      NAT=NAT+1 ## dots=      NAT=NAT+1 ## glm=      NAT=NAT+1	ATMR164
+13	1035	1064	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR165
+14	1077	1111	COMMENT	C     INITIALIZE FOR THE TABLES EXPANSION                               		lighton=C     INITIALIZE FOR THE TABLES EXPANSION ## dots=C     INITIALIZE FOR THE TABLES EXPANSION ## glm=C     INITIALIZE FOR THE TABLES EXPANSION	ATMR166
+15	1121	1152	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR167
+16	1164	1194	AGREE	  220 REWIND IRISE                                                      		lighton=  220 REWIND IRISE ## dots=  220 REWIND IRISE ## glm=  220 REWIND IRISE	ATMR168
+17	1206	1238	AGREE	      NAT=NAT+IGO                                                       		lighton=      NAT=NAT+IGO ## dots=      NAT=NAT+IGO ## glm=      NAT=NAT+IGO	ATMR169
+18	1251	1285	AGREE	      IF(NAT -256)222,222,221                                           		lighton=      IF(NAT -256)222,222,221 ## dots=      IF(NAT -256)222,222,221 ## glm=      IF(NAT -256)222,222,221	ATMR170
+19	1293	1325	VOTED	  221 IRROR=-221                                                        		lighton=  221 IRROR=-221 ## dots=  221 IRROR=-221 ## glm=  221 IRR0R=-221	ATMR171
+20	1336	1367	VOTED	      GO TO 139                                                         		lighton=      GO TO 139 ## dots=      GO TO 130 ## glm=      GO TO 139	ATMR172
+21	1378	1411	AGREE	  222 DALT=200.                                                         		dots=  222 DALT=200. ## glm=  222 DALT=200.	ATMR173
+22	1421	1453	AGREE	      NA=1                                                              		lighton=      NA=1 ## dots=      NA=1 ## glm=      NA=1	ATMR174
+23	1464	1499	VOTED	      READ(IRISE)ALT(1),ATP(1),PRS(1),RLH(1),RHO(1),ETA(1)              		lighton=      READ(IRISE)ALT(1),ATP(1),PRS(1),RLM(1),RHO(1),ETA(1) ## dots=      READ(IRISE)ALT(1),ATP(1),PRS(1),RLH(1),RHO(1),ETA(1) ## glm=      READ(IRISE)ALT(1),ATP(1),PRS(1),RLH(1),RHO(1),ETA(1)	ATMR175
+24	1509	1540	AGREE	      A1=ALT(1)                                                         		dots=      A1=ALT(1) ## glm=      A1=ALT(1)	ATMR176
+25	1550	1582	AGREE	      A2=ATP(1)                                                         		dots=      A2=ATP(1) ## glm=      A2=ATP(1)	ATMR177
+26	1593	1624	AGREE	      A3=PRS(1)                                                         		dots=      A3=PRS(1) ## dots2=      A3=PRS(1)	ATMR178
+27	1637	1669	AGREE	      A4=RLH(1)                                                         		lighton=      A4=RLH(1) ## dots=      A4=RLH(1) ## glm=      A4=RLH(1)	ATMR179
+28	1678	1711	AGREE	      A5=RHO(1)                                                         		lighton2=      A5=RHO(1) ## dots2=      A5=RHO(1) ## glm=      A5=RHO(1)	ATMR180
+29	1721	1754	AGREE	      A6=ETA(1)                                                         		lighton=      A6=ETA(1) ## glm=      A6=ETA(1)	ATMR181
+30	1766	1796	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR182
+31	1807	1840	COMMENT	C     EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN       		lighton=C     EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN ## dots=C     EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN ## glm=C     EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN	ATMR183
+32	1840	1883	COMMENT	C     ALTITUDE FROM -1000 TO 50000 METERS BY LINEAR INTERPOLATION       		lighton=C     ALTITUDE FROM -1000 TO 50000 METERS BY LINEAR INTERPOLATION ## dots=C     .ALTITUD EFRO M-100 0T O5000 0METER SBYLINEAR INTERPOLATION ## glm=C     ALTITUDE FROM -1000 TO 50000 METERS BY LINEAR INTERPOLATION	ATMR184
+33	1894	1927	COMMENT	C     FROM THE  INPUT TABLES                                            		lighton=C     FROM THE  INPUT TABLES ## glm=C     FROM THE  INPUT TABLES	ATMR185
+34	1936	1967	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR186
+35	1980	2014	AGREE	      00 260 I=2,256                                                    		dots=      00 260 I=2,256 ## glm=      00 260 I=2,256	ATMR187
+36	2022	2055	TIE	      ALT(I)=ALT(I-1)+DALT                                              	23	dots=      ALT(I)=ALT(I-1)+DALT ## glm=      ALT(I)=ALT(I-1)+OALT	ATMR188
+37	2065	2098	AGREE	  225 IF(A1.GE.ALT(I))GO TO 250                                         		lighton=  225 IF(A1.GE.ALT(I))GO TO 250 ## dots=  225 IF(A1.GE.ALT(I))GO TO 250 ## glm=  225 IF(A1.GE.ALT(I))GO TO 250	ATMR189
+38	2108	2141	VOTED	      IF(ALT(I)-A1 .LT. 2.) GO TO 250                                   		lighton=      IF(ALT(I)-A1 .LT. 2.) GO TO 250 ## dots=      IF(ALT(I)-A1 :LT: 2.) GO TO 250 ## glm=      IF(ALT(I)-A1 .LT. 2.) GO TO 250	ATMR190
+39	2152	2185	AGREE	      NA=NA+1                                                           		lighton2=      NA=NA+1 ## glm=      NA=NA+1	ATMR191
+40	2193	2229	AGREE	      IF(NAT - NA .GE.()GC TO 240                                       		lighton=      IF(NAT - NA .GE.()GC TO 240 ## dots=      IF(NAT - NA .GE.()GC TO 240	ATMR192
+41	2238	2269	AGREE	  230 IRROR=-230                                                        		lighton=  230 IRROR=-230 ## dots=  230 IRROR=-230 ## glm=  230 IRROR=-230	ATMR193
+42	2282	2313	AGREE	      GO TO 130                                                         		lighton=      GO TO 130 ## dots=      GO TO 130 ## glm=      GO TO 130	ATMR194
+43	2324	2358	AGREE	  240 READ(IRISE)A1,A2,A3,A4,A5,A6                                      		lighton=  240 READ(IRISE)A1,A2,A3,A4,A5,A6 ## dots=  240 READ(IRISE)A1,A2,A3,A4,A5,A6 ## glm=  240 READ(IRISE)A1,A2,A3,A4,A5,A6	ATMR195
+44	2366	2397	AGREE	      GO TO 225                                                         		lighton=      GO TO 225 ## dots=      GO TO 225 ## glm=      GO TO 225	ATHR136
+45	2409	2442	AGREE	  250 TERP=  DALT     /(A1-ALT(I-1))                                    		lighton=  250 TERP=  DALT     /(A1-ALT(I-1)) ## dots=  250 TERP=  DALT     /(A1-ALT(I-1)) ## glm=  250 TERP=  DALT     /(A1-ALT(I-1))	ATMR197
+46	2451	2483	AGREE	      ATP(I)=ATP(I-1)+TERF*(A2-ATP(I-1))                                		lighton=      ATP(I)=ATP(I-1)+TERF*(A2-ATP(I-1)) ## glm=      ATP(I)=ATP(I-1)+TERF*(A2-ATP(I-1))	
+47	2495	2526	TIE	      PRS（I）=PRS（I-1）+TERP*（A3-PRS（I-1））                                	10,12,17,21,28,35,39,40	glm=      PRS（I）=PRS（I-1）+TERP*（A3-PRS（I-1）） ## glm2=      PRS(I)=PRS(I-1)+TERP*(A3-PRS(I-1))	ATMR119
+48	2539	2570	NONE	                                                                        			
+49	2579	2612	SINGLE	      FHO(I)=HO(I-1)+TERPF+(AS+RHU(I-1))                                		dots2=      FHO(I)=HO(I-1)+TERPF+(AS+RHU(I-1))	
+50	2620	2655	SINGLE	      ETA(T)=ETA(I-1)+TERF*(A6-ETA(I-1))                                		glm=      ETA(T)=ETA(I-1)+TERF*(A6-ETA(I-1))	
+51	2667	2698	VOTED	  262 CONTINUE                                                          		lighton=  262 CONTINUE ## dots=  263 CONTINUE ## glm=  262 CONTINUE	ATMR203
+52	2706	2739	AGREE	      NAT=256                                                           		lighton=      NAT=256 ## dots=      NAT=256 ## glm=      NAT=256	ATMR204
+53	2751	2783	AGREE	      NBRNCH=2                                                          		lighton=      NBRNCH=2 ## dots=      NBRNCH=2 ## glm=      NBRNCH=2	ATMR205
+54	2795	2827	AGREE	      GO TO 111                                                         		lighton=      GO TO 111 ## dots=      GO TO 111 ## glm=      GO TO 111	ATMR206
+55	2837	2870	VOTED	  27? IF(KATM .EQ. 0) RETURN                                            		lighton=  27? IF(KATM .EQ. 0) RETURN ## dots=  270 IF(KATM .EQ. 0) RETURN ## glm=  27? IF(KATM .EQ. 0) RETURN	ATMR207
+56	2879	2915	AGREE	      WRITE(ISOUT,47)                                                   		lighton=      WRITE(ISOUT,47) ## dots=      WRITE(ISOUT,47) ## glm=      WRITE(ISOUT,47)	ATMR238
+57	2923	2959	AGREE	      WRITE(ISOUT,48 )(ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I),       		lighton=      WRITE(ISOUT,48 )(ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I), ## dots=      WRITE(ISOUT,48 )(ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I), ## glm=      WRITE(ISOUT,48 )(ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I),	
+58	2959	3001	AGREE	     1   I=KATM,NAT,KATM)                                               		lighton=     1   I=KATM,NAT,KATM) ## dots=     1   I=KATM,NAT,KATM) ## glm=     1   I=KATM,NAT,KATM)	ATMR210
+59	3001	3039	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	ATMR211
+60	3052	3084	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	ATMR212
+61	3121	3150	NOISE	                                                                        		lighton=                                       72 ## dots=                                       72 ## glm=                                       72	
+62	3272	3304	NONE	                                                                        			

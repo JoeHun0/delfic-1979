@@ -1,0 +1,12 @@
+3	558	OK	      SUBRCUTINE NEST(NET,NETSU,XQ,YQ,NDATA,XL,XR,YL,YU,ICF,JCF,NCF)            	SUBRCUTINE NEST(NET,NETSU,XQ,YQ,NDATA,XL,XR,YL,YU,ICF,JCF,NCF)
+22	1367	OK	      DATA PROGRM/GHNEST  /                                                     	DATA PROGRM/GHNEST /
+24	1460	OK	      IC=(XQ-XLLC)/WINT+1.                                                      	IC = (XQ - XLLC) / WINT + 1.
+25	1502	COUNT 21/20	                                                                                	JC = (YQ - YLL.C) / WINT + 1.
+34	1890	OK	      XL=VINT*FLOAT(IC-1)+XLLC                                                  	XL = VINT * FLOAT(IC - 1) + XLLC
+35	1933	OK	      XR=VINT*FLOAT(IC)+XLLC                                                    	XR=VINT*FLOAT(IC)+XLLC
+36	1976	COUNT 25/24	                                                                                	YL=VINT*FI.OAT(JC-1)+YLLC
+37	2018	OK	      YU=VINT*FLOAT(JC)+YLLC                                                    	YU=VINT*FLOAT(JC)+YLLC
+43	2276	OK	      RETURN                                                                    	RETURN
+45	2362	COUNT 14/15	                                                                                	4 NQ=NET (IC,JC)
+48	2492	COUNT 23/15	                                                                                	IQ = \frac{(XQ - XL)}{VINT}
+51	2621	OK	      NQ=NQ+3*IQ+JQ-2*IQ*JQ                                                     	NQ=NQ+3*IQ+JQ-2*IQ*JQ

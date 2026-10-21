@@ -1,0 +1,60 @@
+1	7	COUNT 0/22;COUNT 30/2	                                                                                	 || \mathbf{1} \mathbf{2} \mathbf{3}
+2	39	COUNT 0/7	                                                                                	
+3	85	COUNT 422/38;COUNT 27/3	                                                                                	\text{Simplifying the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line } y = mx + b \text{ is } \frac{1}{2} \text{ of the equation of the line || \int_{0}^{1} \frac{1}{x^2} dx
+4	465	OK	      GO TO 5                                                           NEST  61	GO TO 5 || NEST 61
+5	508	COUNT 22/21	                                                                        NEST  62	CONCLU DE QUADRANT SEARCH || NEST 62
+6	551	OK	    8 NDATA=NETSU(NQ)                                                   NEST  63	8 NDATA=NETSU(NQ) || NEST 63
+7	595	OK	      RETURN                                                            NEST  64	RETURN || NEST 64
+8	637	OK	      END                                                               NEST  65	END || NEST 65
+9	980	OK	*DECK,ONEDIN                                                            ONEDI  1	*DECK, ONE DIN || ONEDI 1
+10	1023	OK	      SUBROUTINE ONEDIN(ZCH,ZBH,CAVS,DX   ,DY   ,LTIM,KBHF,NDATF,LTIMF, ONEDI  2	SUBROUTINE ONEDIN(ZCH,ZBH,CAVS,DX ,DY ,LTIM,KBHF,NDATF,LTIMF, || ONEDI 2
+11	1067	OK	     1 FORM,SPEC)                                                       ONEDI  3	1 FORM, SPEC) || ONEDI 3
+12	1111	OK	C                                                                       ONEDI  4	C || ONEDI 4
+13	1153	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     ONEOI  5	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || ONEOI 5
+14	1194	OK	C                                                                       ONEDI  6	C || ONEDI 6
+15	1237	COUNT 199/71	                                                                        ONEDI  7	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ONEDI 7
+16	1283	OK	C                                                                       ONEDI  8	C || ONEDI 8
+17	1324	OK	C     READS AND PROCESSES WIND/TURBULENCE DATA FOR A HORIZONTALLY       ONEDI  9	C READS AND PROCESSES WIND/TURBULENCE DATA FOR A HORIZONTALLY || ONEDI 9
+18	1366	COUNT 8/7	C     HOMOGENIOUS FIELD.  VERTICAL COMPONENTS ARE NOT CONSIDERED.               	C HOMOGENIOUS FIELD. VERTICAL COMPONENTS ARE NOT CONSIDERED. || ONF.3I 10
+19	1412	OK	C                                                                       ONEDI 11	C || ONEDI 11
+20	1451	COUNT 199/71	                                                                        ONEOI 12	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ONEOI 12
+21	1497	OK	C                                                                       ONEOI 13	C || ONEOI 13
+22	1539	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               ONEOI 14	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || ONEOI 14
+23	1582	OK	       COMMON /INDEX/ ICX,JCX,KDHX,LTIMX,NAT,NCX,NDATX                  ONEDI 15	COMMON /INDEX/ ICX, JCX, KDHX, LTIMX, NAT, NCX, NDATX || ONEDI 15
+24	1626	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     ONEOI 16	COMMON /SPACE/ WINT, XLLC, YLLC, ZMAX, ZMIN, TIMEX || ONEOI 16
+25	1671	OK	C                                                                       ONEDI 17	C || ONEDI 17
+26	1711	OK	      INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORM                         ONEDI 18	INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORM || ONEDI 18
+27	1745	OK	      DIMENSION ZCH(KBHF),ZBH(KBHF),DX(KBHF,NOATF,LTIMF),CAVS(KBHF)     ONEOI 19	DIMENSION ZCH(KBHF), ZBH(KBHF), DX(KBHF, NOATF, LTIMF), CAVS(KBHF) || ONEOI 19
+28	1796	OK	      DIMENSION FMT(12),SCALE(5), AP(3), DY(KBHF, NDATF, LTIMF)         ONEOI 20	DIMENSION FMT(12),SCALE(5), AP(3), DY(KBHF, NDATF, LTIMF) || ONEOI 20
+29	1842	OK	C                                                                       ONEOI 21	C || ONEOI 21
+30	1882	OK	      DATA ALIMIT  , RADC      , PROGRM  , METEOR ,RESCLV, WIND , TURB  ONEOI 22	DATA ALIMIT , RADC , PROGRM , METEOR ,RESCLV, WIND , TURB || ONEOI 22
+31	1918	COUNT 58/59	                                                                        UNEDI 23	1 / 999999. .0174532925, 6HONEDIN, 4HMETE ,4HR ESO,4HWIND,4HTURB/ || UNEDI 23
+32	1968	OK	      DATA IREC/8/                                                      ONEDI 24	DATA IREC/8/ || ONEDI 24
+33	2015	OK	C                                                                       ONEOI 25	C || ONEOI 25
+34	2055	OK	    1 FORMAT(  4X,  6HLEVELS,I4, 5H THRU,I4, 8F12.5)                    ONEOI 26	1 FORMAT( 4X, 6HLEVELS, I4, 5H THRU, I4, 8F12.5) || ONEOI 26
+35	2096	COUNT 42/43;COUNT 8/7	                                                                                	3 FORMAT( ////33X, 25HIND LAYER BASE ALTITUDES/) || UNE.0I 27
+36	2139	OK	    4 FORMAT(1H03X31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS)    ONEOI 28	4 FORMAT(1H03X31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS) || ONEOI 28
+37	2184	COUNT 8/7	 1000 FORMAT (12A6)                                                             	1000 FORMAT (12A6) || ONE.DI 29
+38	2226	OK	 1100 FORMAT (8F10.0)                                                   UNEDI 30	1100 FORMAT (8F10.0) || UNEDI 30
+39	2269	OK	 1200 FORMAT (20I4)                                                     ONEDI 31	1200 FORMAT (20I4) || ONEDI 31
+40	2310	OK	 1300 FORMAT(      16X, 13HRAW KIND DATA,33X,19HPROCESSED WIND DATA//8X,ONEDI 32	1300 FORMAT( 16X, 13HRAW KIND DATA,33X,19HPROCESSED WIND DATA//8X, || ONEDI 32
+41	2353	OK	     11HZ, 9X, 10HVX OR DIR., 3X, 11HVY OR SPEED, 14X, 1HZ, 12X,        ONEDI 33	11HZ, 9X, 10H VX OR DIR., 3X, 11HVY OR SPEED, 14X, 1HZ, 12X, || ONEDI 33
+42	2397	COUNT 15/16	                                                                        ONEDI 34	2 2HVX₀ 12X₁ 2HVY₁ || ONEDI 34
+43	2442	OK	 1400 FORMAT (3(2X, 1PE12.5))                                           ONEDI 35	1400 FORMAT (3(2X, 1PE12.5)) || ONEDI 35
+44	2483	OK	 1500 FORMAT (1H+ 47X, 3(2X, 1PE12.5))                                  ONEDI 36	1500 FORMAT (1H+ 47X, 3(2X, 1PE12.5)) || ONEDI 36
+45	2524	COUNT 8/7	 1600 FORMAT(  10X19HRAW TURBULENCE DATA,28X25HPROCESSED TURBULENCE DATA        	1600 FORMAT( 10X19HRAW TURBULENCE DATA,28X25HPROCESSED TURBULENCE DATA || .UNEDI 37
+46	2568	OK	     1//3X, 1HZ, 10X, 4HEPSX, 10X, 4HEPSY, 17X, 1HZ, 11X 4HEPSX, 10X,   UNEDI 38	1//3X, 1HZ, 10X, 4HEPSX, 10X, 4HEPSY, 17X, 1HZ, 11X 4HEPSX, 10X, || UNEDI 38
+47	2612	OK	     2 4HEPSY/1                                                         ONEDI 39	2 4HEPSY/1 || ONEDI 39
+48	2653	COUNT 8/7	 1700  FORMAT( 1H6, 5X, 63HNUMBER OF WIND OR TURBULENCE INPUT DATA INCON        	1700 FORMAT( 1H6, 5X, 63HNUMBER OF WIND OR TURBULENCE INPUT DATA INCON || IONEDI 40
+49	2699	OK	     1SISTENT FOR UPDATEI4)                                             ONEDI 41	1SISTENT FOR UPDATEI4) || ONEDI 41
+50	2739	COUNT 61/62	                                                                        ONEOI 42	1800 FORMAT( 1H0, 5X, 5S)IND OR TURBULENCE STRATA ALTITUDES INCONSISTE || ONEOI 42
+51	2785	OK	     1NT FOR UPDATE(4)                                                  ONEDI 43	1NT FOR UPDATE(4) || ONEDI 43
+52	2831	OK	C                                                                       ONEOI 44	C || ONEOI 44
+53	2871	OK	CHECK FORM AND SPEC                                                     ONEDI 45	CHECK FORM AND SPEC || ONEDI 45
+54	2911	OK	      IF(SPEC .EQ. WIND  .AND.  FORM .EQ. METEOR) GO TO 25              ONEDI 46	IF(SPEC .EQ. WIND .AND. FORM .EQ. METEOR) GO TO 25 || ONEDI 46
+55	2955	OK	   20 IF(SPLC .EQ. WIND  .AND.  FORM .NE. RESOLV)CALL ERROR(PROGRM,-20, UNEDI 47	20 IF(SPLC .EQ. WIND .AND. FORM .NE. RESOLV)CALL ERROR(PROGRM,-20, || UNEDI 47
+56	3000	OK	     1  ISOUT)                                                          ONEDI 48	1 I SOUT) || ONEDI 48
+57	3044	OK	COPY IN FORMAT, SCALE & FIELC POINTERS                                  UNEDI 49	COPY IN FORMAT, SCALE & FIELC POINTERS || UNEDI 49
+58	3088	OK	   25 READ (ISIN, 1000)FMT                                              ONEOI 50	25 READ (ISIN, 1000)FMT || ONEOI 50
+59	3149	OK	                                       123                                      	123
+60	3304	COUNT 302/42;COUNT 20/6	                                                                                	\text{a. } \text{S. } \text{P. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text{S. } \text || \text{القانون الأدلة}

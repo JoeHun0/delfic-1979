@@ -1,0 +1,12 @@
+6	746	OK	      no 1 I = 1,INUC                                                           	no 1 I = 1,INUC
+23	1475	OK	      NUC(1) = IN                                                               	NUC(1) = IN
+24	1518	COUNT 20/13	                                                                                	12 \text{LIN(LSUB)} = 4
+32	1855	OK	      SDG(LSUB) = OCON(KP)                                                      	SDG(LSUB) = OCON(KP)
+37	2070	COUNT 14/13	                                                                                	SBR(LSU:3) = 1.0
+40	2197	OK	   14 LB = LBR + 5 - IM                                                         	14 LB = LBR + 5 - IM
+47	2502	OK	      KI = KP                                                                   	KI = KP
+50	2633	COUNT 8/6	                                                                                	1 \in KI = 1
+58	2971	OK	      DO  2C K = KI,KDA                                                         	DO 2C K = KI, KDA
+59	3020	OK	   20 LBR = LBR + 4 - IABS(MOD(NUCLIU(K),MULT(2)))                              	20 LBR = LBR + 4 - IABS(MOD(NUCLIU(K),MULT(2)))
+60	3066	COUNT 0/15	                                                                                	
+63	3305	COUNT 133/55	                                                                                	اللهُ كَمُحَمَّدٌ مُحَمَّدٌ بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ٦٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠

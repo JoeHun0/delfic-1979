@@ -1,0 +1,19 @@
+1	12	COUNT 0/44	                                                                                	
+18	1237	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                                 	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE
+19	1288	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI          	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI
+26	1589	OK	     14, 8H BY THE A6, 7H SWITCH///)                                            	14, 8H BY THE A6, 7H SWITCH///)
+32	1847	OK	      GO TO (0C2, 02C, 04C), MNYA                                               	GO TO (0C2, 02C, 04C), MNYA
+34	1925	OK	      DO 004 MI = 1. 5C                                                         	DO 004 MI = 1. 5C
+35	1976	COUNT 0/16	                                                                                	
+38	2103	OK	      DLTM = 3.0                                                                	DLTM = 3.0
+41	2233	COUNT 0/33	                                                                                	
+42	2277	COUNT 11/6	                                                                                	\angle BFR = Z
+49	2576	OK	      IF ( "A1LT - TLT") .F5, J- , '4                                           	IF ( "A1LT - TLT" ) .F5, J- , '4
+50	2621	COUNT 19/17	                                                                                	4.  CX \ (1CX, 1) = SMALL1
+51	2663	OK	      F( 7- 2 3F^1) .42, .46, .44                                               	F (7 - 23F^1) .42, .46, .44
+52	2705	COUNT 0/10	                                                                                	
+53	2750	OK	      60  ) 743                                                                 	60   ) 743
+54	2792	COUNT 8/7	                                                                                	642 \ 7A = 7
+55	2835	COUNT 0/14	                                                                                	
+56	2876	COUNT 0/11	                                                                                	
+57	2921	COUNT 0/13	                                                                                	

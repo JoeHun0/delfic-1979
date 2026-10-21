@@ -1,0 +1,61 @@
+1	33	COUNT 7/36;COUNT 8/5	                                                                                	<table> || \text{S}
+2	594	OK	      IF(NHODO)1103,1103,1104                                           DERIV 92	IF (NHODO) 1103, 1103, 1104 || DERIV 92
+3	637	OK	 1103 VS=0.U                                                            DERIV 93	1103 VS=0.U || DERIV 93
+4	681	OK	      GO TO 1105                                                        DERIV :4	GO TO 1105 || DERIV : 4
+5	724	OK	C                                                                       DERIV 91	C || DERIV 91
+6	767	OK	C     COMPUTE WIND SHEAR CIRRECTION FACTOR                              DERIV 96	C   COMPUTE WIND SHEAR CIRRECTION FACTOR || DERIV 96
+7	810	OK	C                                                                       DERIV 97	C || DERIV 97
+8	854	OK	 1104 ZTP=Z+RZT                                                         DERIV 58	1104 ZTP = Z + RZT || DERIV 58
+9	898	COUNT 0/9	                                                                        DERIV 39	 || DERIV 39
+10	940	OK	      CALL TRPL(ZTP,NH000,ZV,VX,VXT)                                    UERIV1)0	CALL TRPL(ZTP, NH000, ZV, VX, VXT) || UERIV1)0
+11	982	OK	      CALL TRPL(ZTP,NH000,ZV,VY,VYT)                                    DERIV1i1	CALL TRPL(ZTP, NH000, ZV, VY, VYT) || DERIV1i1
+12	1025	OK	      CALL TRPL(ZBT,NH000,ZV,VX,VXB)                                    DERIV102	CALL TRPL(ZBT, NH000, ZV, VX, VXB) || DERIV102
+13	1060	OK	      CALL TRPL(ZBT,NHODO,ZV,VY,VYB)                                    DERIV1J3	CALL TRPL(ZBT,NHODO,ZV,VY,VYB) || DERIV1J3
+14	1110	COUNT 0/34	                                                                        DERIV134	 || DERIV134
+15	1154	COUNT 9/8	 11C5 RS=SV*Q7+1.5*C6*VS/R                                                      	11C5 RS=SV*Q7+1.5*C6*VS/R || DERIV1[5]
+16	1196	OK	      GO TO (100,101,100),N                                             DERIV1J6	GO TO (100,101,100),N || DERIV1J6
+17	1230	COUNT 1/2	                                                                        DERIV1J7	C || DERIV1J7
+18	1282	COUNT 9/8	C     DRY EQUATIONS                                                             	C DRY EQUATIONS || 0E R.IV1J8
+19	1324	OK	C                                                                       0EPIV109	C || 0EPIV109
+20	1368	OK	C                                                                       DERIV110	C || DERIV110
+21	1411	OK	C     COMPUTE AIR ENTRAINMENT RATE                                      DERIV111	C COMPUTE AIR ENTRAINMENT RATE || DERIV111
+22	1455	OK	C                                                                       DEP1V112	C || DEP1V112
+23	1496	COUNT 67/66	                                                                        DERIV113	100  NRM = (RM / (1. - CPAI / (CP*T*QX))) * RMIX * (RS  * RL + (QT * GX * QXE * 9.8 * U-EPS) * 1 || DERIV113
+24	1539	OK	     1RMIX/(CR*T*QX)-9.8*U/(287./QXE*TE))                               DERIV114	1RMIX/(CR*T*QX)-9.8*U/(287./QXE*TE)) || DERIV114
+25	1582	COUNT 0/8	                                                                        DERIV115	 || DERIV115
+26	1625	COUNT 9/8	C                                                                               	C || DEP.IV116
+27	1668	OK	C     SUBTRACT AWAY RATE CF MASS LOST CUE TO PARTICLES FALLING OUT CLOUDDERIV117	C     SUBTRACT AWAY RATE CF MASS LOST CUE TO PARTICLES FALLING OUT CLOUD || DERIV117
+28	1711	OK	C     BOTTOM DURING RISE                                                DERIV118	C BOTTOM DURING RISE || DERIV118
+29	1755	COUNT 15/8	C                                                                               	C || \text{DeRIV119}
+30	1799	COUNT 0/12	                                                                        DERIV120	 || DERIV120
+31	1842	OK	C                                                                       DERIV121	C || DERIV121
+32	1885	OK	C     COMPUTE TIME DERIVATIVE OF WATER VAPOR MIXING RATIO               DEPIV122	C     COMPUTE TIME DERIVATIVE OF WATER VAPOR MIXING RATIO || DEPIV122
+33	1929	OK	C                                                                       DERIV123	C || DERIV123
+34	1972	COUNT 0/35	                                                                        DERIV124	 || DERIV124
+35	2016	OK	C                                                                       DERIV125	C || DERIV125
+36	2058	OK	C     COMPUTE TIME DERIVATIVE OF CLOUD TEMPERATURE                      DERIV126	C   COMPUTE TIME DERIVATIVE OF CLOUD TEMPERATURE || DERIV126
+37	2098	COUNT 0/8	C                                                                               	C || 
+38	2142	COUNT 0/48	                                                                        DERIV128	 || DERIV128
+39	2186	COUNT 0/5	                                                                        DERIV129	 || DERIV129
+40	2227	OK	C                                                                       DERIV130	C || DERIV130
+41	2270	OK	C     NO CHANGE IN LIQUID WATER MIXING RATIO                            DERIV131	C NO CHANGE IN LIQUID WATER MIXING RATIO || DERIV131
+42	2314	OK	C                                                                       DERIV132	C || DERIV132
+43	2354	COUNT 0/6;COUNT 15/8	                                                                                	 || \text{UÉRIV133}
+44	2398	OK	      GO TO 555                                                         DERIV134	GO TO 555 || DERIV134
+45	2441	OK	C                                                                       UERIV135	C || UERIV135
+46	2483	COUNT 9/8	C     WET EQUATIONS                                                             	C WET EQUATIONS || DERIV v136
+47	2528	OK	C                                                                       DEK1V137	C || DEK1V137
+48	2572	OK	  101 01=1.+X*29./18.                                                   DER1V13A	101 01=1.+X*29./18. || DER1V13A
+49	2605	OK	      IF(T-273.)102,103,103                                             DERIV139	IF(T-273.)102,103,103 || DERIV139
+50	2655	COUNT 19/12;COUNT 0/8	                                                                                	152 \quad CL = 2.93 \pm 6 || 
+51	2699	COUNT 0/8	      GO TO 114                                                                 	GO TO 1 1 4 || 
+52	2741	COUNT 17/8	  1.3 CL=2.5÷6                                                                  	1.3 CL = 2.5 ÷ 6 || \text{24.11.1980}
+53	2784	COUNT 0/20;COUNT 40/8	                                                                                	 || \partial \in \mathcal{H} \cup \mathcal{V} 1 4 3
+54	2829	COUNT 0/15;COUNT 20/8	                                                                                	 || \dot{U} \dot{E} R I V 1 + 4
+55	2871	OK	      Q4=1.+Q2                                                          DERIV145	Q4 = 1. + Q2 || DERIV145
+56	2915	COUNT 0/14	                                                                        05RIV146	 || 05RIV146
+57	2958	COUNT 0/21;COUNT 15/8	                                                                                	 || \text{OERIV147}
+58	3000	COUNT 0/10	                                                                        DEFIV148	 || DEF IV148
+59	3042	COUNT 0/10	                                                                        DEKIV144	 || DEKIV144
+60	3088	COUNT 7/8	C                                                                               	C || 0514150
+61	3131	COUNT 177/27;COUNT 10/8	                                                                                	- 1999-01-01 17:01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 01/01/01 0 || DEP1.V1.51

@@ -1,0 +1,44 @@
+1	7	21	NONE	                                                                        			
+2	761	803	AGREE	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,		lighton=     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      , ## dots=     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      , ## glm=     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,	GCGO28
+3	803	843	AGREE	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                             		lighton=     3XMIN      ,YMAX      ,YMIN      ,ZMIN ## dots=     3XMIN      ,YMAX      ,YMIN      ,ZMIN	GOGO29
+4	843	889	AGREE	      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,		lighton=      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         , ## dots=      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,	GOGO30
+5	889	932	AGREE	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100),		lighton=     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100), ## dots=     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100), ## glm=     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100),	GOGO31
+6	932	974	VOTED	     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,		lighton=     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(130) ,YPAR(100) ,YPRML     , ## dots=     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRNL     , ## glm=     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,	GOGO32
+7	974	1010	AGREE	     3YPRMU     ,ZPAR(100)                                              		lighton=     3YPRMU     ,ZPAR(100) ## lighton2=     3YPRMU     ,ZPAR(100) ## dots2=     3YPRMU     ,ZPAR(100)	GOGO33
+8	1019	1062	AGREE	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,		lighton=      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      , ## glm=      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,	GOGO34
+9	1062	1104	AGREE	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,		lighton=     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     , ## dots=     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,	GUGO35
+10	1104	1143	VOTED	     20PMID(12) ,T1        ,T2        ,WFMAS(200)                       		lighton=     2OPMID(12) ,T1        ,T2        ,WFMAS(200) ## dots=     20PMID(12) ,T1        ,T2        ,WFMAS(200) ## glm=     20PMID(12) ,T1        ,T2        ,WFMAS(200)	GOGO36
+11	1143	1180	VOTED	      DIMENSION ONAP(NMAP)                                              		lighton=      DIMENSION ÖMAP(NMAP) ## dots=      DIMENSION ONAP(NMAP) ## glm=      DIMENSION ONAP(NMAP)	GOGO37
+12	1191	1224	AGREE	      DATA PROGRM/6HGOGO  /                                             		lighton2=      DATA PROGRM/6HGOGO  / ## dots=      DATA PROGRM/6HGOGO  / ## dots2=      DATA PROGRM/6HGOGO  / ## glm2=      DATA PROGRM/6HGOGO  /	GOGO38
+13	1232	1262	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO39
+14	1276	1307	AGREE	      IJIN=1                                                            		dots=      IJIN=1 ## glm=      IJIN=1	GOGO40
+15	1318	1353	COMMENT	C     READ A DATA BLOCK COUNT                                           		lighton=C     READ A DATA BLOCK COUNT ## glm=C     READ A DATA BLOCK COUNT	GUGO41
+16	1361	1391	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO42
+17	1406	1438	AGREE	  100 READ(KTAPE)NIJ                                                    		lighton=  100 READ(KTAPE)NIJ ## dots=  100 READ(KTAPE)NIJ ## glm=  100 READ(KTAPE)NIJ	GUGO43
+18	1448	1478	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO44
+19	1489	1526	COMMENT	C     ARE WE FINISHED PROCESSING THE DATA-                              		dots=C     ARE WE FINISHED PROCESSING THE DATA- ## glm=C     ARE WE FINISHED PROCESSING THE DATA-	GJGO45
+20	1534	1564	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO46
+21	1577	1612	AGREE	      IF(NIJ.EQ.0) GO TO 400                                            		lighton=      IF(NIJ.EQ.0) GO TO 400 ## dots=      IF(NIJ.EQ.0) GO TO 400 ## glm=      IF(NIJ.EQ.0) GO TO 400	GOGO47
+22	1621	1656	AGREE	      IF(NIJ.LE.MARRAY) GO TO 200                                       		lighton=      IF(NIJ.LE.MARRAY) GO TO 200 ## dots=      IF(NIJ.LE.MARRAY) GO TO 200 ## glm=      IF(NIJ.LE.MARRAY) GO TO 200	GOGO48
+23	1664	1696	AGREE	  150 IRROR=-150                                                        		lighton=  150 IRROR=-150 ## dots=  150 IRROR=-150 ## glm=  150 IRROR=-150	GOGO49
+24	1706	1744	AGREE	  160 CALL ERROR(PROGRM,IRROR,ISOUT)                                    		lighton=  160 CALL ERROR(PROGRM,IRROR,ISOUT) ## dots=  160 CALL ERROR(PROGRM,IRROR,ISOUT) ## glm=  160 CALL ERROR(PROGRM,IRROR,ISOUT)	GOGO50
+25	1744	1778	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO51
+26	1792	1827	COMMENT	C     READ A BLOCK OF PARCEL DATA                                       		lighton=C     READ A BLOCK OF PARCEL DATA ## glm=C     READ A BLOCK OF PARCEL DATA	GOGO52
+27	1835	1865	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO53
+28	1877	1920	TIE	  200 READ(KTAPE)(xpAP(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I),    	19,20,22	lighton=  200 READ(KTAPE)(ATAP(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I), ## dots=  200 READ(ktape)(xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I), ## dots2=  200 READ(ktape)(xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I), ## glm=  200 READ(KTAPE)(XFAR(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I), ## glm2=  200 READ(KTAPE)(XFAP(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I),	GUGO54
+29	1920	1958	VOTED	     1 RO(I),PSIZ(I),PMPS(I),L 1,NIJ)                                   		lighton2=     1 RO(I),PSIZ(I),PMPS(I),L.1,NIJ) ## dots2=     1 RO(I),PSIZ(I),PMDS(I),L 1,NIJ) ## glm=     1 RO(I),PSIZ(I),PMPS(I),. 1,NIJ)	GUGO55
+30	1958	1994	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO56
+31	2005	2045	COMMENT	C     CALL PCHECK TO BEGIN PROCESSING THE PARTICLE DATA INTO A MAP      		lighton=C     CALL PCHECK TO BEGIN PROCESSING THE PARTICLE DATA INTO A MAP ## glm=C     CALL PCHECK TO BEGIN PROCESSING THE PARTICLE OATA INTO A MAP	GOGO57
+32	2045	2078	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO58
+33	2093	2130	AGREE	      CALL PCHECK(IJIN,OMAP,NMAP)                                       		lighton=      CALL PCHECK(IJIN,OMAP,NMAP) ## dots=      CALL PCHECK(IJIN,OMAP,NMAP) ## glm=      CALL PCHECK(IJIN,OMAP,NMAP)	GOGO59
+34	2130	2168	VOTED	      IF(NZ.EQ.ICTR) GO TO 100                                          		lighton=      IF(NZ.EQ.ICTR) GO TO 100 ## dots=      IF(NZ.EQ.ICTR) GO TO 100 ## glm=      IF(NZ.EQ,ICTR) GO TO 100	GOGO60
+35	2177	2206	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO61
+36	2221	2261	COMMENT	C     CALL POMP  TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT 		lighton=C     CALL POMP  TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT ## glm=C     CALL POMP  TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT	GCGO62
+37	2261	2295	COMMENT	C     MAP CORE LOADS                                                    		lighton=C     MAP CORE LOADS ## dots=C     MAP CORE LOADS ## glm=C     MAP CORE LOADS	GOGO63
+38	2305	2335	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GOGO64
+39	2350	2384	AGREE	      IF(NIJ .GT. NE) CALL POMP                                         		lighton=      IF(NIJ .GT. NE) CALL POMP ## dots=      IF(NIJ .GT. NE) CALL POMP ## glm=      IF(NIJ .GT. NE) CALL POMP	GOGO65
+40	2392	2423	AGREE	      GOTO 100                                                          		lighton=      GOTO 100 ## dots=      GOTO 100 ## glm=      GOTO 100	GOGO66
+41	2435	2466	AGREE	  400 RETURN                                                            		lighton=  400 RETURN ## dots=  400 RETURN ## glm=  400 RETURN	GOGO67
+42	2480	2509	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	GOGO68
+43	3103	3134	NOISE	                                                                        			
+44	3277	3314	NOISE	                                                                        			

@@ -1,0 +1,10 @@
+ERM index	nuclide	1968 tape (pp.254-257, value as x.xxxE-n)	ours 1979	class	note
+40	Y-93	0.488E-06	4.80E-7 -> 4.88E-7	FIX	p177 L19 f5: 2nd 8 is a closed lower loop (broken zeros on the line are open: u, J); GLM 4.88 x2, dots 4.86 x2
+6	Ga-74	0.180E-04	1.87E-5 -> 1.80E-5	FIX (user-confirmed)	p177 L13 f1: 3rd glyph is a broken 0 keeping only its top-right arc; LightOn/dots 1.87 x4, GLM 1.80 x2
+128	Te-134	0.684E-05	6.94E-6 -> 6.84E-6	FIX (user-confirmed)	p177 L38 f3: 2nd glyph a broken 8 (open lower left); all six OCR 6.94; sheet review-sheets/erm-handcheck-te134.png
+69	Rh-109m	1.037E-06 (iso 1, .037)	6.37E-7	1968->1979 change	1979 scan clear
+166	Pm-152	0.340E-05	3.43E-6	1968->1979 change	1979 scan clear (p177 L46 f1)
+175	Eu-157	0.33?E-05 (blotted 8-like last digit)	3.36E-6 -> 3.38E-6	FIX (user-confirmed)	p177 L47 f5: closed lower loop of a broken 8; no effect on the test problem (A>150)
+172-178	A=155-159 (rest)	degraded 1968 page	7.26E-7 2.89E-7 2.71E-6 3.95E-7	1979 scan clear	1968 print too faint to compare
+132	I-135	0.156E-04	1.560E-5 (4th char unreadable)	kept 0 (best fit)	p177 L39 f2: unidentifiable on the user's copy; d=0..9 tried, 0 fits K, map sum and FP best; sheet review-sheets/erm-i135.png
+rest (171)	-	identical (A, Z, 3 digits)	-	same	1968 leading digit is an isomer-state code, not part of the value

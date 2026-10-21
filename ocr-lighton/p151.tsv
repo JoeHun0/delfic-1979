@@ -1,0 +1,64 @@
+1	15	COUNT 320/22	                                                                                	\text{1. } \text{The } \text{First } \text{Line } \text{of } \text{This } \text{Document } \text{Is } \text{As } \text{Given } \text{Below. } \text{This } \text{Line } \text{Is } \text{A } \text{Special } \text{Line } \text{Of } \text{This } \text{Document. } \text{This } \text{Line } \text{Is } \text{A } \text{Special } \text{Line } \text{Of } \text{This } \text{Document. }
+2	55	COUNT 0/11;COUNT 134/3	                                                                                	 || -   \text{ } \rightarrow \quad \text{ } \rightarrow \quad \text{ } \rightarrow \quad \text{ } \rightarrow \quad \text{ } \rightarrow \quad \text{ } \rightarrow
+3	518	OK	C     LEFT IS USED HERE A SA TEMPORARY STORAGE                          MAP  121	C LEFT IS USED HERE AS A TEMPORARY STORAGE || MAP 121
+4	560	COUNT 0/19;COUNT 3/2	                                                                                	 || 1 K T
+5	606	COUNT 16/1	      GO TO 1702                                                                	GO TO 1702 || \begin{array}{c}
+6	648	COUNT 7/5	C 1C2   PRINT CROINATE OESCRIPTION                                              	C 1C2 PRINT CROINATE OESCRIPTION || <table>
+7	686	COUNT 16/2	C                                                                               	C || \begin{array}{c}
+8	733	COUNT 17/16;COUNT 7/6	                                                                                	102 WRITE (ISOUT, 8) || <table>
+9	770	COUNT 41/43;COUNT 7/6	                                                                                	C     NREQ  1,  2,  3,  4,  5,  6,  7,  c,  9,  10,  11,  12,  13,  14,  15, || <table>
+10	823	COUNT 64/65;COUNT 7/6	                                                                                	GO TO 161, 162, 163, 177, 164, 165, 168, 169, 164, 165, 166, 167, 176, 171, 172, || <table>
+11	867	COUNT 34/6	     1      173,174,175),NREQ                                                   	1 173,174,175),NREQ || <table border="1" class="dataframe">
+12	902	COUNT 34/4	C     NREQ - 16, 17, 18                                                         	C NREQ - 16, 17, 18 || <table border="1" class="dataframe">
+13	950	COUNT 17/18;COUNT 34/5	                                                                                	161 WRITE (ISOUT, 9) || <table border="1" class="dataframe">
+14	986	COUNT 16/3	      GO TO 175                                                                 	GO TO 175 || \begin{array}{c}
+15	1036	COUNT 34/6	 162  WRITE (ISOUT,10)                                                          	162 WRITE (ISOUT, 10) || <table border="1" class="dataframe">
+16	1080	COUNT 34/5	      WRITE (ISOUT,29)                                                          	WRITE (ISOUT, 29) || <table border="1" class="dataframe">
+17	1115	COUNT 7/2	      GO TO 17J                                                                 	GO TO 17J || <table>
+18	1165	COUNT 7/5	 163  WRITE (ISOUT,11)T1                                                        	163 WRITE (ISOUT, 11) T1 || <table>
+19	1210	COUNT 34/4	      WRITE (ISOUT,291                                                          	WRITE (ISOUT, 291 || <table border="1" class="dataframe">
+20	1252	COUNT 8/7	                                                                                	GO TO 1.73
+21	1296	COUNT 7/6	 164  WRITE (ISOUT,12)T1                                                        	164 WRITE (ISOUT, 12) T1 || <table>
+22	1341	COUNT 34/4	      WRITE (ISOUT,30)                                                          	WRITE (ISOUT, 30) || <table border="1" class="dataframe">
+23	1376	COUNT 7/6	      IF(NREQ .EQ. 9) GO TO 12E4                                                	IF(NREQ.EQ.9) GO TO 12E4 || <table>
+24	1419	COUNT 34/4	 1164 WRITE(ISOUT,33)                                                           	1164 WRITE(ISOUT,33) || <table border="1" class="dataframe">
+25	1468	OK	      GO TO 170                                                                 	GO TO 170
+26	1509	COUNT 34/6	 1264 WRITE(ISOUT,34)                                                           	1264 WRITE(ISOUT,34) || <table border="1" class="dataframe">
+27	1545	OK	      GO TO 172                                                                 	GO TO 172
+28	1596	COUNT 7/6	 165  WRITE (ISOUT,13)T1,T2                                                     	165 WRITE (ISOUT,13) T1,T2 || <table>
+29	1634	COUNT 34/6	      WRITE (ISOUT,30)                                                          	WRITE (ISOUT, 30) || <table border="1" class="dataframe">
+30	1675	COUNT 7/6	      IF(NREQ-10)1164,1264,1264                                                 	IF(NREQ-10) 1164, 1264, 1264 || <table>
+31	1720	COUNT 34/5	 166  WRITE (ISOUT,14)                                                          	166 WRITE (ISOUT,14) || <table border="1" class="dataframe">
+32	1760	COUNT 34/6	      WRITE (ISOUT,31)                                                          	WRITE (ISOUT, 31) || <table border="1" class="dataframe">
+33	1811	OK	      GO TO 179                                                                 	GO TO 179
+34	1852	COUNT 34/6	 167  WRITE (ISOUT,15)T1,T2                                                     	167 WRITE (ISOUT,15) T1,T2 || <table border="1" class="dataframe">
+35	1891	COUNT 34/6	      WRITE (ISOUT,31)                                                          	WRITE (ISOUT,31) || <table border="1" class="dataframe">
+36	1939	OK	      GO TO 172                                                                 	GO TO 172
+37	1982	COUNT 7/6	 168  WRITE (ISOUT,13)T1,T2                                                     	168 WRITE (ISOUT,13) T1,T2 || <table>
+38	2020	COUNT 7/6	      WRITE (ISOUT,36)                                                          	WRITE (ISOUT, 36) || <table>
+39	2068	COUNT 7/6	      WRITE(ISOUT,17)                                                           	WRITE(ISOUT,17) || <table>
+40	2101	COUNT 7/8;COUNT 28/3	                                                                                	GO TO 170 || \mathcal{P} \quad \therefore 5.
+41	2153	COUNT 7/6	 169  WRITE·(ISOUT,12)T1                                                        	169 WRITE· (ISOUT, 12) T1 || <table>
+42	2198	COUNT 7/5	      WRITE (ISOUT,30)                                                          	WRITE (ISOUT, 30) || <table>
+43	2242	COUNT 34/6	      WRITE (ISOUT,17)                                                          	WRITE (ISOUT, 17) || <table border="1" class="dataframe">
+44	2276	COUNT 22/2	      GO YO 173                                                                 	GO YO 173 || \mathcal{H} \mathcal{F}
+45	2326	COUNT 7/6	 171  WRITE (ISOUT,18)MASCHN                                                    	171 WRITE (ISOUT, 18) MASCHN || <table>
+46	2371	COUNT 7/6	      IF(T1-TGZ .GT. 0.0) WRITE(ISOUT,32)                                       	IF(T1-TGZ .GT. 0.0) WRITE(ISOUT, 32) || <table>
+47	2409	COUNT 7/6	      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35)                                       	IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35) || <table>
+48	2453	COUNT 30/2	      GO TO 170                                                                 	GO TO 170 || \mathcal{M} \mathcal{T}^{\cdot}
+49	2500	COUNT 0/6	 172  WRITE (ISOUT,23)                                                          	172 WRITE (ISOUT, 23) || 
+50	2542	COUNT 7/3	      GO TO 170                                                                 	GO TO 170 || <table>
+51	2584	COUNT 7/6	 173  WRITE (ISOUT,24)                                                          	173 WRITE (ISOUT, 24) || <table>
+52	2629	COUNT 7/4	      GO TO 170                                                                 	GO TO 170 || <table>
+53	2669	COUNT 7/6	 174  WRITE (ISOUT,25)                                                          	174 WRITE (ISOUT, 25) || <table>
+54	2714	COUNT 7/8	                                                                         \t  au:	GO TO 170 || \tau:
+55	2757	COUNT 7/5	 175  WRITE (ISOUT,26)                                                          	175 WRITE (ISOUT, 26) || <table>
+56	2793	COUNT 10/3	      GO TO 179                                                                 	GO TO 179 || \text{ТЭГ}
+57	2842	COUNT 7/6	 176  WRITE (ISOUT,27) T1,T2                                                    	176 WRITE (ISOUT,27) T1,T2 || <table>
+58	2887	COUNT 10/4	      GO TO 170                                                                 	GO TO 170 || \text{177}
+59	2929	COUNT 23/24;COUNT 7/5	                                                                                	177 WRITE (ISOUT,28) T1,T2 || <table>
+60	2965	COUNT 15/16;COUNT 34/5	                                                                                	WRITE (ISOUT,29) || <table border="1" class="dataframe">
+61	3016	COUNT 7/8;COUNT 0/5	                                                                                	GO TO 179 || 
+62	3048	COUNT 1/2;COUNT 7/5	                                                                                	C || <table>
+63	3119	COUNT 3/2	                                                                                	148
+64	3286	COUNT 0/47;COUNT 14/8	                                                                                	 || \text{العربية}

@@ -1,0 +1,5 @@
+1	7	COUNT 0/13	                                                                                	
+7	974	OK	     3YPRMU     ,ZPAR(100)                                                      	3 YPRMU ,ZPAR(100)
+12	1191	OK	      DATA PROGRM/6HGOGO  /                                                     	DATA PROGRM/6HGOGO /
+28	1877	OK	  200 READ(ktape)(xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I),            	200 READ(ktape) (xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I),
+29	1920	COUNT 30/31	                                                                                	1 RO(I), PSIZ(I), PMDS(I), L1, NIJ)

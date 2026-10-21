@@ -1,0 +1,1 @@
+6	747	OK	      IF(K0I .EQ. 0) K0I=15+ALOG(W)                                             	IF(K0I .EQ. 0) K0I=15+ALOG(W)

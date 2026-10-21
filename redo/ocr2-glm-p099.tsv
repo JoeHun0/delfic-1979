@@ -1,0 +1,29 @@
+1	22	COUNT 3/26	                                                                                	---
+2	41	COUNT 3/18	                                                                                	---
+3	573	OK	 7202 EX=BZ2                                                                    	7202 EX=BZ2
+8	788	OK	      LL=L0D0+3                                                                 	LL=L0D0+3
+9	830	OK	      DO 1759 J=L00D,LL                                                         	DO 1759 J=L00D,LL
+10	873	OK	      GDPST(9,J)=DPST(7:MET)                                                    	GDPST(9,J) = DPST(7:MET)
+11	914	OK	      GDPST(10,J)=DPST(8,YBT)/CNT                                               	GDPST(10,J)=DPST(8,YBT)/CNT
+12	958	OK	      GDPST(7,J)=BZ2                                                            	GDPST(7,J)=BZ2
+13	1001	OK	      GDPST（8，J）=DPST（6，MET）                                                    	GDPST（8，J）=DPST（6，MET）
+14	1044	OK	      GDPST(6,J)=DPST(2,MST)                                                    	GDPST(6,J)=DPST(2,MST)
+15	1085	OK	      GDPST（4，J）=DPST（4，MBT）                                                    	GDPST（4，J）=DPST（4，MBT）
+16	1130	OK	      GDPST（3，J）=DPST（1，PBT）                                                    	GDPST（3，J）=DPST（1，PBT）
+17	1172	OK	 1050 GDPST(5，J)=CMA                                                            	1050 GDPST(5，J)=CMA
+18	1214	OK	      GDPST(1,LODD)=XR                                                          	GDPST(1,LODD)=XR
+19	1259	OK	      GDPST（2，LODD）=YR                                                          	GDPST（2，LODD）=YR
+21	1345	OK	      GDPSY(1,LOOD)=XR                                                          	GDPSY(1,LOOD)=XR
+22	1389	OK	      GDPST(2,LODD)=-YR                                                         	GDPST(2,LODD)=-YR
+23	1430	OK	      LODD=LODD+1                                                               	LODD=LODD+1
+24	1473	OK	      GDPST(1，LODD)=-XR                                                         	GDPST(1，LODD)=-XR
+25	1517	OK	      GDPST(2,L0DD)=-YR                                                         	GDPST(2,L0DD)=-YR
+27	1602	OK	      GDPST(1,LODC)=-XR                                                         	GDPST(1,LODC)=-XR
+28	1646	OK	      GDPST(2，LODD)=YR                                                          	GDPST(2，LODD)=YR
+40	2167	OK	      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J        	WRITE (IRISE) (GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J
+53	2717	OK	      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J        	WRITE (IRISE) (GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J
+54	2760	OK	     1).GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,L000        	1). GDPST(6,J), GDPST(7,J), GDPST(8,J), GDPST(9,J), GCPST(10,J), J=1, L000
+55	2802	OK	     2)                                                                         	2)
+56	2847	OK	      LOOD=C                                                                    	LOOD=C
+59	2976	OK	      FEWIND IRISE                                                              	FEWIND IRISE
+63	3296	COUNT 3/35	                                                                                	---

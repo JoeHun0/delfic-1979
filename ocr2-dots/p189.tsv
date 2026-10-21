@@ -1,0 +1,20 @@
+1	0	COUNT 0/18	                                                                                	
+4	624	OK	      IF (LSUB.GT.11) GO TC 1301                                                	IF (LSUB.GT.11) GO TC 1301
+5	668	OK	      NUC(LSUB) = NDAUT                                                         	NUC(LSUB) = NDAUT
+14	1055	OK	      SCA(LSUB) = 1.0                                                           	SCA(LSUB) = 1.0
+15	1099	COUNT 25/11	                                                                                	\text{LAST} = \text{LSUB} + 1
+17	1184	OK	      LBACK = LAST - i                                                          	LBACK = LAST - i
+26	1571	COUNT 14/13	                                                                                	SCA(1, SUB) = 0.0
+31	1785	COUNT 29/23	                                                                                	SCA(J) = SCA(J) * \Lambda B E G N(JN)
+46	2428	COUNT 41/42	                                                                                	IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)*EXIT)
+47	2474	OK	      R=J.0                                                                     	R=J.0
+48	2518	OK	      00 163 k1=1,N                                                             	00 163 k1=1,N
+51	2647	COUNT 11/10	                                                                                	00 162 K=1.5N
+52	2690	OK	      K2≡N-K+1                                                                  	K2≡N-K+1
+55	2818	COUNT 42/21	                                                                                	\text{FACTC} = \text{SDC}(K2) - \text{SDC}(K1)
+56	2860	OK	      IF(A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC)                         	IF (A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC)
+57	2905	COUNT 15/14	                                                                                	CN1J+CN1J/F AC1C
+58	2947	COUNT 31/29	                                                                                	162 IFIK2.LE.K1M0=Q♦CHIJ*5CA(K2)
+59	2990	COUNT 13/12	                                                                                	IF (J0) GO TO 163
+60	3034	OK	      IF(570( 41).cL.o.: i6CTC 3bJ                                              	IF (570 (41) .cL .o .: i 6C TC 3bJ
+61	3079	COUNT 0/10	                                                                                	

@@ -1,0 +1,13 @@
+1	1	COUNT 0/18	                                                                                	
+2	73	COUNT 0/11	                                                                                	
+4	838	COUNT 22/24	                                                                                	35 PW = P * X * 29. / (18 * 29 * X)
+8	1008	OK	      E5=611.*(T/273.)**(-5.13)*EXP((25.*(T-273.))/T)                           	E5=611.*(T/273.)**(-5.13)*EXP((25.*(T-273.))/T)
+9	1052	COUNT 29/26	                                                                                	PA - RM/V^*(1.0 + X)/(1.0 + X + S + WT)
+34	2127	OK	      SMALLT=SMALLT+0ST                                                         	SMALLT=SMALLT+0ST
+38	2297	OK	      IF(SMALLT-1.()8,87,88                                                     	IF(SMALLT-1.()8,87,88
+39	2341	OK	   87 DST=0ST1                                                                  	87 DST=0ST1
+40	2384	COUNT 34/33	                                                                                	88 R=SQRT(3.*V/(RZT*12.56637052E0))
+41	2427	COUNT 0/6	                                                                                	
+42	2456	COUNT 0/2	                                                                                	
+50	2812	OK	      GO TO (724,724,148),NWYA                                                  	GO TO (724,724,148), NWYA
+57	3280	COUNT 0/22	                                                                                	

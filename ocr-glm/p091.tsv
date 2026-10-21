@@ -1,0 +1,63 @@
+1	0	COUNT 3/16	                                                                                	---
+2	32	COUNT 3/14	                                                                                	---
+3	524	OK	*DECK,RKGILL                                                            RKGIL  1	*DECK, RKGILL || RKGIL 1
+4	569	OK	      SUBROUTINE RKGILL                                                 RKGIL  2	SUBROUTINE RKGILL || RKGIL 2
+5	612	OK	C                                                                       RKGIL  3	C || RKGIL 3
+6	655	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     RKGIL  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || RKGIL 4
+7	698	OK	C                                                                       RKGIL  5	C || RKGIL 5
+8	739	COUNT 1/71	                                                                        RKGIL  6	C || RKGIL 6
+9	783	OK	C                                                                       RKGIL  7	C || RKGIL 7
+10	826	OK	C       INTEGRATES THE CLOUD RISE DIFFERENTIAL EQUATIONS VIA THE        RKGIL  8	C INTEGRATES THE CLOUD RISE DIFFERENTIAL EQUATIONS VIA THE || RKGIL 8
+11	869	OK	C       RUNGE-KUTTA-GILL METHOD                                         RKGIL  9	C RUNGE-KUTTA-GILL METHOD || RKGIL 9
+12	913	OK	C                                                                       RKGIL 10	C || RKGIL 10
+13	955	COUNT 1/71	                                                                        RKGIL 11	C || RKGIL 11
+14	998	OK	C                                                                       RKGIL 12	C || RKGIL 12
+15	1040	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PHS(256), KLH(256),    RKGIL 13	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PHS(256), KLH(256), || RKGIL 13
+16	1085	OK	     1        RHO(256)， ETA(25€)， NH000， ZV(100)，  VX(100)， VY(100)     RKGIL 14	1 RHO(256)，ETA(25€)，NH000，ZV(100)，VX(100)，VY(100) || RKGIL 14
+17	1128	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,UEK    ,DRM    ,RKGIL 15	COMMON /CLOUD/ CHANGE, CMLR ,C2 ,C3 ,C6 ,UEK ,DRM , || RKGIL 15
+18	1173	OK	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,OT    ,DU    ,OWT    ,DX     ,RKGIL 16	1 DS ,OST ,OST0 ,OST1 ,OST2 ,OT ,DU ,OWT ,DX , || RKGIL 16
+19	1207	COUNT 24/33	                                                                        RKGIL 17	202 ED EK EPS ES HLR KS KSV MWYA || RKGIL 17
+20	1257	COUNT 18/27	                                                                        RKGIL 18	3 N NNN P PW R KA RL RM RZT || RKGIL 18
+21	1299	OK	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,HT     ,RKGIL 19	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,HT , || RKGIL 19
+22	1343	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         RKGIL 20	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE || RKGIL 20
+23	1386	OK	C                                                                       RKGIL 21	C || RKGIL 21
+24	1429	OK	      DIMENSION DVBL(8),VEL(8),RKG(8)                                   RKGIL 22	DIMENSION DVBL(8),VEL(8),RKG(8) || RKGIL 22
+25	1473	OK	C                                                                       RKGIL 23	C || RKGIL 23
+26	1513	COUNT 1/71	                                                                        RKGIL 24	C || RKGIL 24
+27	1558	OK	C                                                                       RKGIL 25	C || RKGIL 25
+28	1601	OK	      H=DST                                                             RKGIL 26	H=DST || RKGIL 26
+29	1644	OK	      KS  =0                                                            RKGIL 27	KS =0 || RKGIL 27
+30	1688	OK	      KYCL=1                                                            RKGIL 28	KYCL=1 || RKGIL 28
+31	1732	OK	C                                                                       RKGIL 29	C || RKGIL 29
+32	1772	OK	      V8L（1）=WT                                                         RKGIL 30	V8L（1）=WT || RKGIL 30
+33	1816	OK	      VBL（2）=RM                                                         RKGIL 31	VBL（2）=RM || RKGIL 31
+34	1859	OK	      V8L(3)=U                                                          RKGIL 32	V8L(3)=U || RKGIL 32
+35	1901	OK	      V9L(4)=X                                                          RKGIL 33	V9L(4)=X || RKGIL 33
+36	1944	OK	      VBL(5)=T                                                          RKGIL 34	VBL(5)=T || RKGIL 34
+37	1988	OK	      V8L（6）=Z                                                          RKGIL 35	V8L（6）=Z || RKGIL 35
+38	2030	OK	      V8L（7）=EK                                                         RKGIL 36	V8L（7）=EK || RKGIL 36
+39	2073	OK	      V9L（8）=S                                                          RKGIL 37	V9L（8）=S || RKGIL 37
+40	2117	OK	C                                                                       RKGIL 38	C || RKGIL 38
+41	2158	OK	   20 CALL DERIV                                                        RKGIL 39	20 CALL DERIV || RKGIL 39
+42	2188	OK	      IF(ABS(U).LT. 1.E-10) VBL(3)=0.                                   RKGIL 40	IF (ABS(U).LT. 1.E-10) VBL(3)=0. || RKGIL 40
+43	2247	OK	      DV3L(1)=DWT                                                       RKGIL 41	DV3L(1)=DWT || RKGIL 41
+44	2289	OK	      DV3L（2）=DRM                                                       RKGIL 42	DV3L（2）=DRM || RKGIL 42
+45	2331	OK	      DV8L（3）=OU                                                        RKGIL 43	DV8L（3）=OU || RKGIL 43
+46	2374	OK	      OVBL(4)=DX                                                        PKGIL 44	OVBL(4)=DX || PKGIL 44
+47	2415	OK	      DV8L（5）=DT                                                        KKGIL 45	DV8L（5）=DT || KKGIL 45
+48	2459	OK	      DV9L（6）=DZ                                                        RKGIL 46	DV9L（6）=DZ || RKGIL 46
+49	2503	OK	      DV3L(7)=DEK                                                       KKGIL 47	DV3L(7)=DEK || KKGIL 47
+50	2545	OK	      OV9L（8）=DS                                                        RKGIL 48	OV9L（8）=DS || RKGIL 48
+51	2588	OK	C                                                                       KKGIL 49	C || KKGIL 49
+52	2630	OK	      KS=KS+1                                                           KKGIL 50	KS=KS+1 || KKGIL 50
+53	2671	OK	      GO TO (1,3,5,7),KS                                                RKGIL 51	GO TO (1,3,5,7),KS || RKGIL 51
+54	2716	OK	C                                                                       RKGIL 52	C || RKGIL 52
+55	2761	OK	    1 00 2 J=1,8                                                        KKGIL 53	1002 J=1,8 || KKGIL 53
+56	2802	OK	      V9L(J)=V8L(J)+C.5*H*CV8L(J)                                       RKGIL 54	V9L (J) = V8L (J) + C. 5*H*CV8L (J) || RKGIL 54
+57	2845	OK	    2 RKG（J）=DVBL（J）                                                    RKGIL 55	2 RKG（J）=DVBL（J） || RKGIL 55
+58	2890	COUNT 8/7	      GO TO 10                                                                  	GO TO 10 || RKGII. 56
+59	2931	OK	    3 00 4 J=1,8                                                        RKGIL 57	3004 J=1,8 || RKGIL 57
+60	2972	OK	      VBL(J)=VBL(J)+.29285322*H*(DV3L(J)-RKG(J))                        RKGIL 58	VBL (J) = VBL (J) + .29285322 * H * (DV3L (J) - RKG (J)) || RKGIL 58
+61	3017	COUNT 41/42	                                                                        KKGIL 59	4 FKG(J) = .58576644*OVEL(J) + .1213203 * FKG(J) || KKGIL 59
+62	3063	OK	      GO TO 10                                                          RKGIL 60	GO TO 10 || RKGIL 60
+63	3118	COUNT 3/2	                                                                                	222

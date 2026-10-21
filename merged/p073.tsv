@@ -1,0 +1,64 @@
+1	12	26	NOISE	                                                                        			
+2	527	561	VOTED	   2  0FORMAT(20I4                                                     )		lighton=   2  0FORMAT(20I4                                                     ) ## dots=   2  0FORMAT(2014                                                     ) ## glm=   2  0FORMAT(20I4                                                     )	IHR34
+3	570	606	AGREE	   30 FORMAT(12 A                                                      6		lighton2=   30 FORMAT(12 A                                                      6 ## dots2=   30 FORMAT(12 A                                                      6	ATMR35
+4	606	647	AGREE	   40 FORMAT(8F10.0                                                    )		lighton=   40 FORMAT(8F10.0                                                    ) ## dots=   40 FORMAT(8F10.0                                                    ) ## glm=   40 FORMAT(8F10.0                                                    )	TMR36
+5	659	693	AGREE	   44 FORMAT(1H1)                                                       		lighton=   44 FORMAT(1H1) ## dots=   44 FORMAT(1H1) ## glm=   44 FORMAT(1H1)	ATMR37
+6	693	737	VOTED	   46 FORMAT( 20X,20HATHOSFHERE IDENTIFICATION - 12A6//)                		lighton=   46 FORMAT( 20X,20HATHOSPHERE IDENTIFICATION - 12A6//) ## dots=   46 FORMAT( 20X,20HATHOSFHERE IDENTIFICATION - 12A6//) ## glm=   46 FORMAT( 20X,20HATHOSFHERE IDENTIFICATION - 12A6//)	ATMR38
+7	737	778	AGREE	   47 FORMAT(  37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3		lighton=   47 FORMAT(  37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3 ## dots=   47 FORMAT(  37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3 ## glm=   47 FORMAT(  37X,10HATMCSPHERE,51X//7X,3HALT,11X,3HATP,11X,3HPRS,11X,3	ATMR39
+8	778	822	NONE	                                                                        			ATMR40
+9	822	864	AGREE	   48 FORMAT( /(6(2X,E12.5)))                                           		dots=   48 FORMAT( /(6(2X,E12.5))) ## glm=   48 FORMAT( /(6(2X,E12.5)))	ATMR41
+10	864	905	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR42
+11	914	947	NOISE	                                                                        			ATMR43
+12	959	992	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR44
+13	992	1036	AGREE	      READ(ISIN,30)ATIO                                                 		lighton=      READ(ISIN,30)ATIO ## dots=      READ(ISIN,30)ATIO ## glm=      READ(ISIN,30)ATIO	ATMR45
+14	1036	1076	AGREE	      KATM = IC(4)                                                      		lighton=      KATM = IC(4) ## dots=      KATM = IC(4) ## glm=      KATM = IC(4)	ATMR46
+15	1087	1125	VOTED	      IF(KATH .GT. 0) WRITE(ISCUT,44)                                   		lighton=      IF(KATH .GT. 0) WRITE(ISCUT,44) ## dots=      IF(KATH .GT. 0) WRITE(ISCUT,44) ## glm=      IF(KATM .GT. 0) WRITE(ISCUT,44)	ATMR47
+16	1125	1166	AGREE	      WRITE(ISOUT,46)ATID                                               		lighton=      WRITE(ISOUT,46)ATID ## dots=      WRITE(ISOUT,46)ATID ## glm=      WRITE(ISOUT,46)ATID	ATMR48
+17	1166	1208	AGREE	      IGO=0                                                             		dots=      IGO=0 ## glm=      IGO=0	ATMR49
+18	1216	1252	AGREE	      NBRNCH=1                                                          		lighton=      NBRNCH=1 ## dots=      NBRNCH=1 ## glm=      NBRNCH=1	ATMR50
+19	1252	1296	TIE	      WATCOR=(1.-18./29.)/100.                                          	7,14,25	lighton2=      WATCOR=(1.-18./29.)/100. ## glm=      HATCOR=（1.-18./29.）/100.	ATMR51
+20	1296	1335	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATHR52
+21	1345	1380	COMMENT	C     READ OBJECT-TIME FORMAT                                           		lighton=C     READ OBJECT-TIME FORMAT ## dots=C     READ OBJECT-TIME FORMAT ## glm=C     READ OBJECT-TIME FORMAT	ATMR53
+22	1380	1423	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR54
+23	1431	1468	AGREE	      READ(ISIN,30)FMT                                                  		lighton=      READ(ISIN,30)FMT ## dots=      READ(ISIN,30)FMT ## glm=      READ(ISIN,30)FMT	ATMR55
+24	1468	1509	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR56
+25	1509	1552	COMMENT	C     READ SCALE AND ADJUSTMENT FACTORS                                 		lighton=C     READ SCALE AND ADJUSTMENT FACTORS ## glm=C     READ SCALE AND ACJUSTMENT FACTORS	ATMR57
+26	1560	1595	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR58
+27	1595	1640	AGREE	      READ(ISIN,40)SCALE                                                		lighton=      READ(ISIN,40)SCALE ## dots=      READ(ISIN,40)SCALE ## glm=      READ(ISIN,40)SCALE	ATMR59
+28	1640	1683	AGREE	      00 90 I=1,6                                                       		lighton=      00 90 I=1,6 ## dots=      00 90 I=1,6 ## glm=      00 90 I=1,6	ATMR60
+29	1683	1727	AGREE	      IF(SCALE(I))90,91,90                                              		lighton=      IF(SCALE(I))90,91,90 ## dots=      IF(SCALE(I))90,91,90 ## glm=      IF(SCALE(I))90,91,90	ATMR61
+30	1727	1771	AGREE	   91 SCALE(I)=1.                                                       		lighton=   91 SCALE(I)=1. ## dots=   91 SCALE(I)=1. ## glm=   91 SCALE(I)=1.	ATMR62
+31	1771	1811	AGREE	   90 CONTINUE                                                          		lighton=   90 CONTINUE ## dots=   90 CONTINUE ## glm=   90 CONTINUE	ATMR63
+32	1819	1854	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR64
+33	1854	1897	COMMENT	C     READ ATMOSPHERE DATA SEQUENCE INDICIES                            		lighton=C     READ ATMOSPHERE DATA SEQUENCE INDICIES ## dots=C     READ ATMOSPHERE DATA SEQUENCE INDICIES ## glm=C     READ ATMOSPHERE DATA SEQUENCE INDICIES	ATMR65
+34	1905	1941	VOTED	      READ(ISIN,20)N1,N2,N3,N4,N5,N6                                    		lighton=      READ(ISIN,20)N1,N2,A3,N4,N5,N6 ## dots=      READ(ISIN,20)N1,N2,N3,N4,N5,N6 ## glm=      READ(ISIN,20)N1,N2,N3,N4,N5,N6	ATMR66
+35	1941	1983	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR67
+36	1983	2026	COMMENT	C\mathcal{C} READ ATMOSPHERE TABLE ENTRIES, SEQUENCE AND ADJUST THEM TO 			ATMR68
+37	2026	2069	COMMENT	C     PROPER UNITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT     		lighton=C     PROPER UNITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT ## dots=C     PROPER "NITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT ## glm=C     PROPER UNITS, AND WHERE APPROPRIATE COMPUTE THOSE ENTRIES NOT	ATMR69
+38	2069	2109	COMMENT	C     PROVIDED IN THE INPUT.   ETA NEED NOT BE INPUT.  EITHER PRS OR RHZ		lighton=C     PROVIDED IN THE INPUT.   ETA NEED NOT BE INPUT.  EITHER PRS OR RHZ	ATMR70
+39	2118	2154	COMMENT	C     (BUT NOT BOTH) NEEDS TO BE INPUT.                                 		lighton=C     (BUT NOT BOTH) NEEDS TO BE INPUT. ## dots=C     (BUT NOT BOTH) NEEDS TO BE INPUT. ## glm=C     (BUT NOT BOTH) NEEDS TO BE INPUT.	ATMR71
+40	2154	2196	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR72
+41	2205	2238	AGREE	      I=0                                                               		lighton=      I=0 ## dots=      I=0 ## glm=      I=0	ATMR73
+42	2249	2285	VOTED	  100 READ(ISIN,FMT)AP                                                  		lighton=  100 READ(ISIN,FMT)AP ## dots=  100 READ(ISIN,FHT)AP ## glm=  100 READ(ISIN,FMT)AP	ATMR74
+43	2285	2325	TIE	      IF(AP(N1) .GE. ALIMIT) GO TO 105                                  	37	lighton2=      IF(AP(N1) .GE. ALIMIT) GO TO 1L5 ## dots=      IF(AP(N1) .GE. ALIMIT) GO TO 105 ## dots2=      IF(AP(N1) .GE. ALIMIT) GO TO 105 ## glm=      IF(AP(N1) .GE. ALIMIT) GO TO 155 ## glm2=      IF(AP(N1) .GE. ALIMIT) GO TO 155	ATMR75
+44	2334	2366	AGREE	      I = I+1                                                           		dots2=      I = I+1 ## glm=      I = I+1	ATMR76
+45	2376	2409	SINGLE	      ALT(I)=(AP(N1)+SCALE(7))*SCALE(1)                                 		glm=      ALT(I)=(AP(N1)+SCALE(7))*SCALE(1)	ATMR77
+46	2418	2451	AGREE	      ATP(I)=(AP(N2)+SCALE(8))*SCALE(2)                                 		lighton2=      ATP(I)=(AP(N2)+SCALE(8))*SCALE(2) ## glm=      ATP(I)=(AP(N2)+SCALE(8))*SCALE(2)	ATMR78
+47	2462	2495	TIE	      PRS（I）=AP（N3）*SCALE（3）                                            	10,12,16,19,26,28	glm=      PRS（I）=AP（N3）*SCALE（3） ## glm2=      PRS(I)=AP(N3)*SCALE(3)	ATMR79
+48	2505	2539	AGREE	      RLH(I)=AP(N4)*SCALE(4)                                            		dots=      RLH(I)=AP(N4)*SCALE(4) ## glm=      RLH(I)=AP(N4)*SCALE(4)	ATMR80
+49	2547	2581	AGREE	      RHO(I)=AP(N5)*SCALE(5)                                            		dots=      RHO(I)=AP(N5)*SCALE(5) ## glm=      RHO(I)=AP(N5)*SCALE(5)	ATMR81
+50	2590	2624	SINGLE	      ETA(I)=AP(N6)*SCALE(6)                                            		glm=      ETA(I)=AP(N6)*SCALE(6)	ATMRE2
+51	2634	2669	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMRE3
+52	2669	2711	COMMENT	C     ARE SUCCESSIVE TABLE ENTRIES IN ORDER OF INCREASING ALTITUDE-     		dots=C     ARE SUCCESSIVE TABLE ENTRIES IN ORDER OF INCREASING ALTITUDE- ## glm=C     ARE SUCCESSIVE TABLE ENTRIES IN CRDER OF INCREASING ALTITUDE-	ATMR84
+53	2719	2754	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR85
+54	2765	2802	AGREE	      IF(I.EQ.1) GO TO 70                                               		lighton=      IF(I.EQ.1) GO TO 70 ## dots=      IF(I.EQ.1) GO TO 70 ## glm=      IF(I.EQ.1) GO TO 70	ATMR86
+55	2802	2842	AGREE	      IF (ALT(I)-ALT(I-1)) 45,45,70                                     		lighton=      IF (ALT(I)-ALT(I-1)) 45,45,70 ## dots=      IF (ALT(I)-ALT(I-1)) 45,45,70 ## glm=      IF (ALT(I)-ALT(I-1)) 45,45,70	ATMR87
+56	2851	2886	AGREE	   45 IRROR=-45                                                         		dots=   45 IRROR=-45 ## glm=   45 IRROR=-45	ATMR38
+57	2886	2929	AGREE	      WRITE(ISOUT,40) ALT(I), ALT(I-1)                                  		lighton=      WRITE(ISOUT,40) ALT(I), ALT(I-1) ## dots=      WRITE(ISOUT,40) ALT(I), ALT(I-1) ## glm=      WRITE(ISOUT,40) ALT(I), ALT(I-1)	ATMR9
+58	2929	2969	VOTED	      GO TO 130                                                         		lighton=      GO TO 139 ## dots=      GO TO 130 ## glm=      GO TO 130	ATMR90
+59	2969	3010	AGREE	   70 IF(ETA(I) .GT.0.0) GC TO 1070                                     		lighton=   70 IF(ETA(I) .GT.0.0) GC TO 1070 ## dots=   70 IF(ETA(I) .GT.0.0) GC TO 1070 ## glm=   70 IF(ETA(I) .GT.0.0) GC TO 1070	ATMR91
+60	3022	3056	NONE	                                                                        			ATMR92
+61	3065	3100	NONE	                                                                        			ATMR93
+62	3111	3141	NOISE	                                                                        		lighton=                                          70 ## dots=                                          70 ## glm=                                          70	
+63	3268	3287	NOISE	                                                                        			
+64	3287	3326	NOISE	                                                                        			

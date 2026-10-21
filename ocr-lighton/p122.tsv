@@ -1,0 +1,41 @@
+1	42	COUNT 11/12;COUNT 1/7	                                                                                	\frac{1}{2} || I
+2	797	COUNT 0/12;COUNT 25/1	                                                                                	 || \mathbf{r} \cdot \mathbf{r}
+3	842	COUNT 276/17	                                                                        GETUP 61	1 00 2 MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1, MARK = 1 || GETUP 61
+4	880	OK	   2   MARY( MARK ) = -9                                                GEYUP 62	2 MARY( MARK ) = -9 || GEYUP 62
+5	922	OK	       IF(MARX.GT.MARF) CALL ERROR(PROGRM,-2,ISCUT)                     GETUP 63	IF(MARX.GT.MARF) CALL ERROR(PROGRM,-2,ISCUT) || GETUP 63
+6	970	OK	       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX)                         GETUP 64	READ(ISIN, 1000) (MARY(MARK), MARK=1, MARX) || GETUP 64
+7	1013	OK	       WRITE(ISOUT,1001) MARX                                           GETUP 65	WRITE(ISOUT,1001) MARX || GETUP 65
+8	1051	OK	       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX)                       GETUP 66	WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX) || GETUP 66
+9	1103	COUNT 22/1	       MARK = 0                                                                 	MARK = 0 || \mathcal{D} \mathcal{F}
+10	1143	OK	       MCTR = 0                                                         GETUP 68	MCTR = 0 || GETUP 68
+11	1185	OK	  J    MARK = MARK + 1                                                  SETUP 69	J MARK = MARK + 1 || SETUP 69
+12	1224	OK	       IF( MARK - MARX ) 5, 5, 4                                        GETUP 70	IF( MARK - MARX ) 5, 5, 4 || GETUP 70
+13	1270	OK	  4    MARX = MSECT * MCTR                                              GETUP 71	4 MARX = MSECT * MCTR || GETUP 71
+14	1310	OK	       IF( MARX )  6, 14, 1                                             GETUP 72	IF( MARX ) 6, 14, 1 || GETUP 72
+15	1352	OK	  5    IF( MARY( MARK ) )  6, 7, 8                                      GETUP 73	5 IF( MARY( MARK ) ) 6, 7, 8 || GETUP 73
+16	1398	OK	  6    CALL ERROR(PROGRM,-6,ISOUT)                                      GETUP 74	6 CALL ERROR(PROGRM,-6,ISOUT) || GETUP 74
+17	1442	OK	  7    MNEG = MNEG + MSECT                                              GETUP 75	7 MNEG = MNEG + MSECT || GETUP 75
+18	1482	COUNT 0/9	                                                                        GETUP 76	 || GETUP 76
+19	1529	COUNT 0/11	                                                                        GEIUP 77	 || GEIUP 77
+20	1565	OK	       GO TO 9                                                          GETUP 78	GO TO 9 || GETUP 78
+21	1613	COUNT 1/14	                                                                        GETUP 79	8 || GETUP 79
+22	1653	OK	       NQQ = NOATA                                                      GETUP 80	NQQ = NOATA || GETUP 80
+23	1698	COUNT 0/11	                                                                        GETUP 81	 || GETUP 81
+24	1743	COUNT 44/42	                                                                        <tabl e>	IF(NDATX.GT.NDATF) CALL ERROR(PROGRM,-8,ISOUT) || <table>
+25	1789	COUNT 14/3	  9    IC = IC + 1                                                              	9 IC = IC + 1 || \text{6E IUP 8,}
+26	1821	OK	       IF( JC - JCX ) 10, 10, 13                                        GETUP 84	IF( JC - JCX ) 10, 10, 13 || GETUP 84
+27	1868	OK	  10   IF( IC - ICX ) 12, 12, 11                                        GETUP 85	10 IF( IC - ICX ) 12, 12, 11 || GETUP 85
+28	1912	OK	  11   JC = JC + 1                                                      GETUP 86	11 JC = JC + 1 || GETUP 86
+29	1959	COUNT 0/4;COUNT 13/4	                                                                                	 || \text{E I U P 87}
+30	2002	COUNT 34/5	       GO TO 9                                                                  	GO TO 9 || <table border="1" class="dataframe">
+31	2035	COUNT 23/16	                                                                        GETUP 89	12 \text{NET}(IC, JC) = NQQ || GETUP 89
+32	2082	OK	       GO TO 3                                                          GETUP 90	GO TO 3 || GETUP 90
+33	2129	COUNT 13/6	  13   NC = IC                                                                  	13 NC = IC || \text{E IUP 41}
+34	2173	COUNT 0/13;COUNT 7/4	                                                                                	 || <table>
+35	2218	COUNT 0/6;COUNT 7/3	                                                                                	 || <table>
+36	2261	COUNT 41/38	                                                                        GETUP 94	IF(NCX.GT.NCF) CALL ERROR(PROGRM,-13,ISOUT) || GETUP 94
+37	2306	OK	       GO TO 3                                                                 5	GO TO 3 || 5
+38	2346	COUNT 34/3	  14   RETURN                                                                   	14 RETURN || <table border="1" class="dataframe">
+39	2390	COUNT 3/2;COUNT 7/3	                                                                                	ENC || <table>
+40	3154	OK	                                        119                                     	119
+41	3298	COUNT 58/22;COUNT 184/8	                                                                                	\text{The following is a transcript of a computer program listing.} || \text{مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّ

@@ -1,0 +1,10 @@
+3	547	OK	      Q = F/SIGXO(IP)/SIGYC(IP)/6.28318531                                      	Q = F/SIGXO(IP)/SIGYC(IP)/6.28318531
+7	720	OK	      NOB = (YPRML - YMIN)/DGY                                                  	NOB = (YPRML - YMIN)/DGY
+8	763	OK	      NOB=NOB+1                                                                 	NOB=NOB+1
+9	807	OK	      IF(NOB.LT.1) NOB=1                                                        	IF (NOB. LT. 1) NOB=1
+31	1752	OK	      RADIC = -8*YREL**2+0                                                      	RADIC = -8*YREL**2+0
+32	1794	COUNT 24/23	                                                                                	IF(RADIOC. GE. 0. U) GO TO 160
+37	2010	OK	      XR = XL + 2.J*RADIC/CC                                                    	XR = XL + 2. J * RADIC/CC
+43	2269	OK	      IF(NOL.LT.1) NOL=1                                                        	IF(NOL.LT.1) NOL=1
+53	2699	OK	  210 IRROR=-210                                                                	210 IRROR=-210
+59	2957	OK	      K = NOL + M(RHT                                                           	K = NOL + M(RHT

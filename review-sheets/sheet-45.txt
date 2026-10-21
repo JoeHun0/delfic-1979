@@ -1,0 +1,12 @@
+529	p143	53	NONE	19	7	raw: \text{OXSUM}(K, N, L) = \text{CAVS}(K)
+530	p143	54	NONE	22	4	raw: 500 DYSUM(K,N,L) = CAVS(KS)
+531	p143	56	NONE	16	7	raw: WRITE ( ISOUT, 5070)
+532	p143	57	TIE	13	7	      NO 700 K=1,KBHX
+533	p143	58	NONE	52	4	raw: 700 WRITE(ISOUT,5100) K, ZCH(K), OXSLM(K,1,L), OYSUM(K,1,L)
+534	p144	1	NONE	6	56	raw: \text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}
+535	p144	4	TIE	28	7	      SUBROUTINE CALC(IP,CPAP,NMAP)
+536	p144	41	TIE	40	7	      COMMON /MAPDAT/ CAYF .CUTMAP    .DGX       .CGY       .IH  .IV   .
+537	p144	46	TIE	54	6	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,F.(100)   ,SIGXX(100),
+538	p144	47	TIE	53	6	     2SIGYO(100),SINA      ,TPAR(103) ,XPAR(100) ,YPAF(100) ,YPRML     ,
+539	p144	50	TIE	31	6	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,
+540	p144	51	TIE	27	6	     20PMID(12) ,T1        ,T2        ,HFMAS(2..)

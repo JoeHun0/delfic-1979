@@ -1,0 +1,11 @@
+1	1	COUNT 0/40	                                                                                	
+2	533	OK	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                             	COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)
+4	620	OK	      DIMENSION        TC(50), XC(50), YC(50), ZC(50),  VC(50),  ZT(50),        	DIMENSION TC(50), XC(50), YC(50), ZC(50), VC(50), ZT(50),
+5	663	OK	     1  ZB(50),  VB(50),  VT(50), XPAR(130), YPAR(130), TP(100),                	1 ZB(50), VB(50), VT(50), XPAR(130), YPAR(130), TP(100),
+26	1566	COUNT 17/16	                                                                                	2//((1X,10E12.5))
+29	1694	COUNT 17/16	                                                                                	2//((1X,10E12.5))
+34	1909	COUNT 13/14	                                                                                	100 IRROR=-100
+41	2208	OK	      WRITE(JPARN)XG7:YCZ,TGZ                                                   	WRITE(JPARN)XG7:YCZ,TGZ
+43	2288	COUNT 18/17	                                                                                	WRITE(JPARN)NDSTP.
+52	2681	OK	      ZC(I) = (ZB(I)+ZT(I))/2.0                                                 	ZC(I) = (ZB(I) + ZT(I))/2.0
+63	3281	COUNT 0/39	                                                                                	

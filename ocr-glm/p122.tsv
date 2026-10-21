@@ -1,0 +1,41 @@
+1	42	COUNT 3/12;COUNT 3/7	                                                                                	--- || ---
+2	797	COUNT 3/1	       MARX = ICX * JCX                                                         	MARX = ICX * JCX || ---
+3	842	COUNT 15/17	                                                                        GETUP 61	1 00 2 MARK = 1, MARF || GETUP 61
+4	880	OK	   2   MARY（ MARK ） = -9                                                GEYUP 62	2 MARY（ MARK ）= -9 || GEYUP 62
+5	922	COUNT 41/42	                                                                        GETUP 63	IF(MARX.GT.MARF) CALL ERROR(PROGRM-2,ISCUT) || GETUP 63
+6	970	OK	       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX)                         GETUP 64	READ(ISIN,1000) (MARY(MARK),MARK=1,MARX) || GETUP 64
+7	1013	OK	       WRITE(ISOUT,1001) MARX                                           GETUP 65	WRITE(ISOUT,1001) MARX || GETUP 65
+8	1051	OK	       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX)                       GETUP 66	WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX) || GETUP 66
+9	1103	COUNT 2/1	       MARK = 0                                                                 	MARK = 0 || 27
+10	1143	OK	       MCTR = 0                                                         GETUP 68	MCTR = 0 || GETUP 68
+11	1185	OK	  3    MARK = MARK + 1                                                  SETUP 69	3 MARK = MARK + 1 || SETUP 69
+12	1224	OK	       IF（ MARK = MARX ） 5， 5， 4                                        GETUP 70	IF（MARK=MARX）5，5，4 || GETUP 70
+13	1270	OK	  4    MARX = MSECT * MCTR                                              GETUP 71	4 MARX = MSECT * MCTR || GETUP 71
+14	1310	OK	       IF（ MARX ）  6, 14, 1                                             GETUP 72	IF（MARX） 6,14,1 || GETUP 72
+15	1352	OK	  5    IF（ MARY（ MARK ） ）  6, 7, 8                                      GETUP 73	5 IF（MARY（MARK）） 6,7,8 || GETUP 73
+16	1398	OK	  6    CALL ERROR(PROGRM,-6,ISOUT)                                      GETUP 74	6 CALL ERROR(PROGRM,-6,ISOUT) || GETUP 74
+17	1442	OK	  7    MNEG = MNEG + MSECT                                              GETUP 75	7 MNEG = MNEG + MSECT || GETUP 75
+18	1482	OK	       NQQ = - MNEG                                                     GETUP 76	NQQ = - MNEG || GETUP 76
+19	1529	OK	       MCTR = MCTR + 1                                                  GETUP 77	MCTR = MCTR + 1 || GETUP 77
+20	1565	OK	       GO TO 9                                                          GETUP 78	GO TO 9 || GETUP 78
+21	1613	OK	  8    NOATA = NOATA + 1                                                GETUP 79	8 NOATA = NOATA + 1 || GETUP 79
+22	1653	OK	       NQQ = NDATA                                                      GETUP 80	NQQ = NDATA || GETUP 80
+23	1698	OK	       NDATX = NDATA                                                    GETUP 81	NDATX = NDATA || GETUP 81
+24	1743	COUNT 44/42	                                                                        GETUP 82	IF(NDATX.GT.NDATF) CALL ERROR(PROGRM,-8,ISOUT) || GETUP 82
+25	1789	COUNT 7/3	  9    IC = IC + 1                                                              	9 IC = IC +1 || GETUP 8.
+26	1821	OK	       IF（ JC - JCX ） 10， 10， 13                                        GETUP 84	IF（ JC - JCX ）10，10，13 || GETUP 84
+27	1868	OK	  10   IF（ IC - ICX ） 12, 12, 11                                        GETUP 85	10 IF（ IC - ICX ）12,12,11 || GETUP 85
+28	1912	OK	  11   JC = JC + 1                                                      GETUP 86	11 JC = JC + 1 || GETUP 86
+29	1959	COUNT 6/4	       IC = 0                                                                   	IC=0 || EIUP 87
+30	2002	COUNT 6/5	       GO TO 9                                                                  	GO TO 9 || EIUP 88
+31	2035	OK	  12   NET（ IC， JC） =  NQQ                                              GETUP 89	12 NET（ IC，JC ）= NQQ || GETUP 89
+32	2082	OK	       GO TO 3                                                          GETUP 90	GO TO 3 || GETUP 90
+33	2129	OK	  13   NC = IC                                                           EIUP 91	13 NC = IC || EIUP 91
+34	2173	COUNT 6/4	       NETSU（ NC） = NQ Q                                                        	NETSU（NC）=NQQ || EIUP 92
+35	2218	COUNT 6/3	       NCX = NC                                                                 	NCX = NC || E1UF 93
+36	2261	COUNT 41/38	                                                                        GETUP 94	IF(NCX.GT.NCF) CALL ERROR(PROGRM,-13,ISOUT) || GETUP 94
+37	2306	OK	       GO TO 3                                                                 ?	GO TO 3 || ?
+38	2346	OK	  14   RETURN                                                               P 96	14 RETURN || P 96
+39	2390	COUNT 3/2	                                                                            P 97	ENC || P 97
+40	3154	OK	                                        119                                     	119
+41	3298	COUNT 3/22;COUNT 3/8	                                                                                	--- || ---

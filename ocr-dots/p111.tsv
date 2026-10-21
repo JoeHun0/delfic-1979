@@ -1,0 +1,58 @@
+1	1	COUNT 0/34;COUNT 0/3	                                                                                	 || 
+2	435	OK	COMMENCE TRACEBACK THROUGH POINTER SEQUENCE                             CNTR  31	COMMENCE TRACEBACK THROUGH POINTER SEQUENCE || CNTR 31
+3	481	COUNT 38/17	                                                                        CNTR  32	4 \text{ NG} = \text{NC} - 4 * (\text{NC}/4) + 1 || CNTR 32
+4	523	OK	      ING=+1                                                            CNTR  33	ING = +1 || CNTR 33
+5	566	OK	      JNG=-1                                                            CNTR  34	JNG=-1 || CNTR 34
+6	609	COUNT 2/6	CONVERT NSTOR TO ITS IMMEDIATELY PRECEDING POINTER                              	CONVERT NSTOR TO ITS IMMEDIATELY PRECEDING POINTER || 35
+7	650	OK	      NSTOR=-NC+3                                                       CNTR  36	NSTOR=-NC+3 || CNTR 36
+8	695	COUNT 5/6	      GO TO (8,7,6,5), NG                                                       	GO TO (8,7,6,5), NG || CTR 37
+9	739	OK	    5 ING=ING+2                                                         CNTR  38	5 ING=ING+2 || CNTR 38
+10	782	OK	      NSTOR=NSTOR+1                                                     CNT:  39	NSTOR=NSTOR+1 || CNT: 39
+11	825	OK	    6 JNG=JNG+2                                                         CNTF  40	6 JNG = JNG + 2 || CNTF 40
+12	867	OK	      NSTOR=NSTOR+1                                                     CNTF  41	NSTOR=NSTOR+1 || CNTF 41
+13	908	OK	    7 ING=ING-2                                                         CNTR  42	7 ING=ING-2 || CNTR 42
+14	953	OK	      NSTOR=NSTOR-3                                                     CNTR  43	NSTOR=NSTOR-3 || CNTR 43
+15	996	COUNT 29/27	                                                                        CNTR  44	COMPLETE QUADRANT LABELS IG AND JG || CNTR 44
+16	1038	OK	    8 IG=IG+ING*NOBLE                                                   CNTR  45	8 IG=IG+ING*NOBLE || CNTR 45
+17	1084	OK	      JG=JG+JNG*ND8LE                                                   CNTR  46	JG=JG+JNG*ND8LE || CNTR 46
+18	1127	OK	      NOBLE=2*NOBLE                                                     CNTR  47	NOBLE = 2 * NOBLE || CNTR 47
+19	1168	OK	      VINT=VINT/2.                                                      CNTR  48	VINT = VINT/2. || CNTR 48
+20	1211	OK	CONTINUE SEARCH FOR IC ANC JC                                           CNTR  49	CONTINUE SEARCH FOR IC ANC JC || CNTR 49
+21	1256	OK	      GO TO 1                                                           CNTR  50	GO TO 1 || CNTR 50
+22	1298	OK	COMPUTE XG AND YG                                                       CNTR  51	COMPUTE XG AND YG || CNTR 51
+23	1342	OK	    9 IG=IG+NOBLE                                                       CNTR  52	9 IG=IG+NOBLE || CNTR 52
+24	1384	OK	      JG=JG+NOBLE                                                       CNTR  53	JG=JG+NOBLE || CNTR 53
+25	1426	OK	      XG=WINT*FLOAT(IC-1)+VINT*FLOAT(IG)+XLLC                           CNTR  54	XG=WINT*FLOAT(IC-1) + VINT*FLOAT(IG) + XLLC || CNTR 54
+26	1469	OK	      YG=WINT*FLOAT(JC-1)+VINT*FLOAT(JG)+YLLC                           CNTR  55	YG=WINT*FLOAT(JC-1) + VINT*FLOAT(JG) + YLLC || CNTR 55
+27	1513	OK	      RETURN                                                            CNTR  56	RETURN || CNTR 56
+28	1555	OK	      END                                                               CNTR  57	END || CNTR 57
+29	1899	OK	*DECK,DATIN                                                             DATIN  1	*DECK, DATIN || DATIN 1
+30	1941	COUNT 7/6	      SUBROUTINE DATIN(NET,NETSU,ZBH,ZCH,TIHUP,USUN,VSUN,RSUM,WFZ,              	SUBROUTINE DATIN(NET,NETSU,ZBH,ZCH,TIHUP,USUN,VSUN,RSUM,WFZ, || DATING 2
+31	1984	OK	     10XSUM,DYSUM,CAVS,MARY,ICF,JCF,NCF,MARF,KBHF,NDATF,LTIMF)          DATIN  3	10XSUM,DYSUM,CAVS,MARY,ICF,JCF,NCF,MARF,KBHF,NDATF,LTIMF) || DATIN 3
+32	2028	COUNT 7/6	C                                                                               	C || DATING 4
+33	2070	COUNT 7/6	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976             	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 || DATING 5
+34	2114	OK	C                                                                       DATIN  6	C || DATIN 6
+35	2156	COUNT 0/71;COUNT 7/6	                                                                                	 || DATING 7
+36	2200	OK	C                                                                       DATIN  8	C || DATIN 8
+37	2243	COUNT 7/6	C     READS AND PROCESSES WIND DATA.  READS AND PROCESSES TURBULENCE            	C     READS AND PROCESSES WIND DATA.      READS AND PROCESSES TURBULENCE || DATING 9
+38	2286	OK	C     DATA, OR CALCULATES TURBULENCE DATA.  CALLS SUBROUTINES ONEDIN,   DATIN 10	C DATA, OR CALCULATES TURBULENCE DATA. CALLS SUBROUTINES ONEDIN, || DATIN 10
+39	2329	OK	C     TRIDIN AND WILKNS FOR ASSISTANCE.                                 DATIN 11	C TRIDIN AND WILKNS FOR ASSISTANCE. || DATIN 11
+40	2373	OK	C                                                                       DATIN 12	C || DATIN 12
+41	2416	COUNT 0/71	                                                                        DATIN 13	 || DATIN 13
+42	2459	OK	C                                                                       DATIN 14	C || DATIN 14
+43	2500	COUNT 50/49	                                                                        OATIN 15	COMMON /CONTROL/ IPOUT,ISIN,ISOUT,JPARN,NC(20),NSEQO || OATIN 15
+44	2544	OK	      COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX                   DATIN 16	COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX || DATIN 16
+45	2585	OK	C                                                                       DATIN 17	C || DATIN 17
+46	2629	OK	      INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORV,DONE,WILKS              DATIN 16	INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORV,DONE,WILKS || DATIN 16
+47	2672	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF),MARY(MARF),ZBH(KBHF),ZCH(KBHF)  DATIN 19	DIMENSION NET(ICF,JCF),NETSU(NCF),MARY(MARF),ZBH(KBHF),ZCH(KBHF) || DATIN 19
+48	2714	COUNT 43/44;COUNT 8/7	                                                                                	DIMENSION TINUP(LTIF),USUM(KBHF,NOATF,LTIMF) || DATING 20
+49	2758	OK	      DIMENSION VSUH(KBHF,NOATF,LTIMF),WFZ(KBHF,NOATF,LTIMF)            OATIN 21	DIMENSION VSUH(KBHF,NOATF,LTIMF),WFZ(KBHF,NOATF,LTIMF) || OATIN 21
+50	2801	COUNT 8/7	      DIMENSION OXSUM(KBHF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF)                 	DIMENSION OXSUM(KBHF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF) || DATING 22
+51	2844	OK	      DIMENSION RSUM(KBHF,NDATF,LTIMF)                                  DATIN 23	DIMENSION RSUM(KBHF,NDATF,LTIMF) || DATIN 23
+52	2888	OK	C                                                                       DATIN 24	C || DATIN 24
+53	2930	COUNT 45/46;COUNT 8/7	                                                                                	DATA PROGRM ,ALIMIT ,WIND ,TURB ,ONE ,METEOR,RESOLV || DATING 25
+54	2974	COUNT 8/7	     1   /6HDATIN ,999999.,4HWIND,4HTUR3,4HNO M,4HMETE,4HRESO/                  	1 /6HDATIN ,999999.,4HWIND,4HTUR3,4HNO M,4HMETE,4HRESO/ || DATING 26
+55	3017	COUNT 8/7	      DATA INPU   , WILKS                                                       	DATA INPU , WILKS || DATING 27
+56	3061	OK	     1  /4HINPU   ,4HWILK   /                                           DATIN 28	1 /4HINPU ,4HWILK / || DATIN 28
+57	3119	COUNT 3/2	                                                                                	108
+58	3287	COUNT 0/32;COUNT 0/7	                                                                                	 || 

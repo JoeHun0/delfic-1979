@@ -1,0 +1,63 @@
+1	17	COUNT 3/24	                                                                                	---
+2	539	OK	*DECK,CRMINT                                                            CRMIN  1	*DECK,CRMINT || CRMIN 1
+3	583	OK	      SU9ROUTINE CRMINT                                                 CRMIN  2	SU9ROUTINE CRMINT || CRMIN 2
+4	626	OK	C                                                                       CRMIN  3	C || CRMIN 3
+5	669	OK	C     H. G. NORMENT, ATMCSFHERIC SCIENCE ASSOCIATES - DECEMBER 1970     CRMIN  4	C H. G. NORMENT, ATMCSFHERIC SCIENCE ASSOCIATES - DECEMBER 1970 || CRMIN 4
+6	711	OK	C                                                                       CRMIN  5	C || CRMIN 5
+7	753	COUNT 1/71	                                                                        CRMIN  6	C || CRMIN 6
+8	798	OK	C                                                                       CRMIN  7	C || CRMIN 7
+9	841	OK	C     INITIALIZE CLOUD AND PARTICLE VARIABLES FOR THE CYNAMIC CLOUD RISECRMIN  8	C INITIALIZE CLOUD AND PARTICLE VARIABLES FOR THE CYNAMIC CLOUD RISE || CRMIN 8
+10	884	OK	C                                                                       CRMIN  9	C || CRMIN 9
+11	927	COUNT 2/71	                                                                        CRMIN 10	C Q || CRMIN 10
+12	970	OK	C                                                                       CRMIN 11	C || CRMIN 11
+13	1012	COUNT 52/53	                                                                        CRMIN 12	COMMON/ATMOS/NAT，ALT(256)，ATP(256)，PRS(256)，RLH(256) || CRMIN 12
+14	1046	OK	     1        RHO(256)， ETA(256)， NH000， ZV(100)，  VX(100)， VY(100)     CRMIN 13	1 RHO(256)，ETA(256)，NH000，ZV(100)，VX(100)，VY(100) || CRMIN 13
+15	1098	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TPSD,XGZ,YGZ,TGZ    CRMIN 14	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TPSD,XGZ,YGZ,TGZ || CRMIN 14
+16	1132	OK	      COMMON /CLOUD/ CHANGE,CHLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,CRMIN 15	COMMON /CLOUD/ CHANGE,CHLR ,C2 ,C3 ,C6 ,DEK ,DRM , || CRMIN 15
+17	1183	OK	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,CT    ,DU    ,OWT    ,DX     ,CRMIN 16	1 DS ,OST ,OST0 ,OST1 ,OST2 ,CT ,DU ,OWT ,DX , || CRMIN 16
+18	1226	COUNT 24/33	                                                                        CRMIN 17	2 DZ ED EK EPS ES HLR KS KSV MWYA || CRMIN 17
+19	1261	COUNT 18/27	                                                                        CRMIN 18	3 N NNN P PW R RA RL RM RZT || CRMIN 18
+20	1312	COUNT 25/33	                                                                        CRMIN 19	4 S SAVE SHAPE SMALLT,T TE U V WT || CRMIN 19
+21	1356	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         CRMIN 20	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE || CRMIN 20
+22	1391	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 CRMIN 21	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR || CRMIN 21
+23	1443	OK	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(20C)  CRMIN 22	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(20C) || CRMIN 22
+24	1478	OK	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     CRMIN 23	COMMON / TABLES/ MCX, CX(50,10), GDPST(10,100) || CRMIN 23
+25	1529	OK	C                                                                       CRMIN 24	C || CRMIN 24
+26	1570	OK	      DIMENSION Y(200),CG(200)                                          CRMIN 25	DIMENSION Y(200),CG(200) || CRMIN 25
+27	1613	OK	      EQUIVALENCE (Y(1),GDPST(1))， (CG(1),GDPST(201))                   CRMIN 26	EQUIVALENCE (Y(1),GDPST(1))，(CG(1),GDPST(201)) || CRMIN 26
+28	1655	OK	C                                                                       CRMIN 27	C || CRMIN 27
+29	1697	COUNT 1/71	                                                                        CRMIN 28	C || CRMIN 28
+30	1743	OK	C                                                                       CRMIN 29	C || CRMIN 29
+31	1783	OK	      CHANGE=130.                                                       CRMIN 30	CHANGE=130. || CRMIN 30
+32	1825	OK	      CMLR=0.                                                           CRMIN 31	CMLR=0. || CRMIN 31
+33	1870	COUNT 10/9	                                                                        CRMIN 32	SMALL LT=0. || CRMIN 32
+34	1911	OK	      WT=0.                                                             CRMIN 33	WT=0. || CRMIN 33
+35	1955	OK	      N=1                                                               CRMIN 34	N=1 || CRMIN 34
+36	1998	OK	      MWYA=1                                                            CRMIN 35	MWYA=1 || CRMIN 35
+37	2039	OK	      KS = 0                                                            CRMIN 36	KS=0 || CRMIN 36
+38	2081	OK	      DST0 = .03125                                                     CRMIN 37	DST0 = .03125 || CRMIN 37
+39	2126	OK	      DST1 = 0.25                                                       CRMIN 38	DST1 = 0.25 || CRMIN 38
+40	2168	OK	      DST2 = 2.5                                                        CRMIN 39	DST2=2.5 || CR MIN 39
+41	2212	OK	      OST=OST0                                                          CRMIN 40	OST=OST0 || CRMIN 40
+42	2255	OK	      SSAM=SSAM+VPR                                                     CRMIN 41	SSAM=SSAM+VPR || CRMIN 41
+43	2296	OK	C     COMPUTE TURBULENCE CRAG PARAMETER                                 CRMIN 42	C COMPUTE TURBULENCE CRAG PARAMETER || CRMIN 42
+44	2340	OK	C                                                                       CRMIN 43	C || CRMIN 43
+45	2385	OK	      C2 = AMAX1( 0.004, AMIN1( 0.100, 0.1 * W**(-C.3333333333) ))      CRMIN 44	C2 = AMAX1( 0.004 , AMIN1( 0.100 , 0.1 * W**(-C.3333333333) )) || CRMIN 44
+46	2426	OK	C     SET TURBULENT ENERGY DISSIPATION PARAMETER                        CRMIN 45	C SET TURBULENT ENERGY DISSIPATION PARAMETER || CRMIN 45
+47	2472	OK	C                                                                       CRMIN 46	C || CRMIN 46
+48	2515	OK	      C3=0.175                                                          CRMIN 47	C3=0.175 || CRMIN 47
+49	2556	OK	      C6=1.0                                                            CRMIN 48	C6=1.0 || CRMIN 48
+50	2600	OK	C                                                                       CRMIN 49	C || CRMIN 49
+51	2643	OK	      T=TMPG                                                            CRMIN 50	T = TMPG || CRMIN 50
+52	2686	OK	C                                                                       CRMIN 51	C || CRMIN 51
+53	2727	COUNT 57/58	                                                                        CRMIN 52	COMPUTE CLOUD CENTER HEIGHT, VOLUME, RADII, INITIAL FIXING RATIOS || CRMIN 52
+54	2772	OK	C                                                                       CRMIN 53	C || CRMIN 53
+55	2812	OK	      Z=HEIGHT+ZBRSTZ+ 90.*H**0.3333333333                              CRMIN 54	Z=HEIGHT+ZBRSTZ+90. *H**0. 3333333333 || CRMIN 54
+56	2855	OK	      CALL TRPL(Z,NAT ,ALT,ATP,TE)                                      CRMIN 55	CALL TRPL(Z,NAT ,ALT,ATP,TE) || CRMIN 55
+57	2899	OK	      CALL TRPL(Z,NAT ,ALT,PRS,P)                                       CRMIN 56	CALL TRPL(Z,NAT ,ALT,PRS,P) || CRMIN 56
+58	2941	OK	      CALL TRPL(Z,NAT ,ALT,RLH,HLR)                                     CRMIN 57	CALL TRPL(Z,NAT ,ALT,RLH,HLR) || CRMIN 57
+59	2983	OK	      XE=109.93*HLR*(TE/273.)**(-5.13)*EXP((25.*(TE-273.))/TE)/(P*29.)  CRMIN 58	XE=109.93*HLR*(TE/273.)**(-5.13)*EXP((25.*(TE-273.))/TE)/(P*29.) || CRMIN 58
+60	3031	OK	C                                                                       CRMIN 59	C || CRMIN 59
+61	3073	OK	      TAD=0.                                                            CRMIN 6G	T AD=0. || CRMIN 6G
+62	3117	OK	                                        77                                      	77
+63	3297	COUNT 3/49	                                                                                	---

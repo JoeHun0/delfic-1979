@@ -1,0 +1,12 @@
+397	p117	44	NONE	50	4	raw: 23 FORMAT( 1N1,////51X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+398	p117	45	TIE	16	6	     1                                            12X,101HT H E   D E P
+399	p117	46	SINGLE	32	6	     DE P A R T M E   N T   O F D E F E N   S E F A L LOU   T PRE D I C
+400	p117	47	TIE	47	6	     3T I O N   S Y S T E M//51X19H* * * * * * * * * *////48X,26HDIFFUSI
+401	p117	48	NONE	46	6	raw: 4VE TRANSPORT MODULE// 55X. 11HPREPARED 8Y/ 46X. 30H
+402	p117	50	TIE	46	6	     6/1// 41X,  40H*****  SUMMARY OF RUN IDENTIFIERS  *****)
+403	p117	56	NONE	39	6	raw: 1 12H THERE ARE I5, 22H PARTICLE SIZE CLASSES)
+404	p117	57	NONE	59	4	raw: 45 FORMAT(/ 15X, 36HPARTICLE PROCESSING BEGINS WITH THE I6, 12H TH P4
+405	p117	62	NONE	42	4	raw: 49 FORMAT(1H+, 34X, 21H)PLAYER-BY-LAYER METHOD)
+406	p118	7	TIE	17	7	      READ (ISIN,1)DTHID
+407	p118	12	TIE	17	7	      IF(JCX .EQ. 1) JCX=1
+408	p118	39	TIE	17	7	      TINEX=TIMEH*3600.

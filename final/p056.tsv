@@ -1,0 +1,37 @@
+1	18	42	NOISE	                                                                        			
+2	50	87	NOISE	                                                                        			
+3	792	825	COMMENT	*DECK,ERROR                                                             		lighton=*DECK,ERROR ## dots=*DECK,ERROR ## glm=*DECK,ERROR	ERROR1
+4	835	869	AGREE	      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)                             		lighton=      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT) ## dots=      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT) ## glm=      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)	ERROR2
+5	877	907	COMMENT	C     T. W. SCHHENKE                                                    		lighton=C     T. W. SCHHENKE ## glm=C     T. W. SCHWENKE	ERROR3
+6	921	951	COMMENT	C     1 MARCH 1966                                                      		lighton=C     1 MARCH 1966 ## dots=C     1 MARCH 1966 ## glm=C     1 MARCH 1966	ERROR4
+7	964	992	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR5
+8	1005	1034	NOISE	                                                                        			ERRCR6
+9	1049	1078	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR7
+10	1091	1123	COMMENT	C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING  		lighton=C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING ## glm=C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING	ERROR8
+11	1133	1164	COMMENT	C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS       		lighton=C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS ## glm=C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS	ERROR9
+12	1176	1208	COMMENT	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                        		lighton=C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. ## dots=C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. ## glm=C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.	ERROR10
+13	1222	1250	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR11
+14	1263	1293	COMMENT	C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER  		lighton=C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER ## glm=C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER	ERROR12
+15	1305	1337	COMMENT	C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING.                		lighton=C         (ERROR).  PLEASE REFER TO THE PROGRAM LISTING. ## dots=C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING. ## glm=C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING.	ERROR13
+16	1352	1379	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR14
+17	1391	1422	COMMENT	C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET        		lighton=C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET ## glm=C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET	ERROR15
+18	1434	1465	COMMENT	C                                   WITH THE BCD NAME CF THE CALLING    		glm=C                                   WITH THE BCD NAME CF THE CALLING	ERROR16
+19	1478	1509	COMMENT	C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE  		lighton=C     PROGRAM AND PARAMETER  ERROR  MUST BE SET WITH THE NUMBER OF THE ## dots=C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE ## glm=C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE	ERROR17
+20	1518	1550	COMMENT	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      		lighton=C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. ## dots=C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. ## glm=C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.	ERROR18
+21	1564	1592	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR19
+22	1606	1636	NOISE	                                                                        			ERROR20
+23	1650	1678	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR21
+24	1692	1725	AGREE	 1    FORMAT(//26H ERROR SENSED IN PROGRAM  A6,3GH  AT OR NEAR STATEMENT		lighton= 1    FORMAT(//26H ERROR SENSED IN PROGRAM  A6,3GH  AT OR NEAR STATEMENT ## glm= 1    FORMAT(//26H ERROR SENSED IN PROGRAM  A6,3GH  AT OR NEAR STATEMENT	ERROR22
+25	1735	1767	HAND	     1 NUMBER I6,40H .  PLEASE REFER TO THE PROGRAM LISTING.)           	15,39	lighton=     1 NUMBER I6,40H .  PLEASE REFER TC THE PROGRAM LISTING.) ## dots=     1 NUMBER 16,40H .  PLEASE REFER TO THE PROGRAM LISTING.)	ERROR23
+26	1779	1806	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR24
+27	1821	1851	NOISE	                                                                        			ERROR25
+28	1863	1896	NOISE	                                                                        			ERROR26
+29	1907	1935	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ERROR27
+30	1949	1980	AGREE	      IRR= IA8S(IRROR)                                                  		glm=      IRR= IA8S(IRROR) ## glm2=      IRR= IA8S(IRROR)	ERROR28
+31	1993	2025	HAND	      WRITE(ISOUT,1)PROGRM,IRR                                          			ERROR29
+32	2034	2067	VOTED	      IF(IRROR)101,100,100                                              		lighton=      IF(ERROR)101,100,100 ## dots=      IF(IRROR)101,100,100 ## glm=      IF(IRROR)101,100,100	ERROR30
+33	2077	2106	AGREE	  100 RETURN                                                            		lighton=  100 RETURN ## dots=  100 RETURN ## glm=  100 RETURN	ERROR31
+34	2120	2151	AGREE	  101 STOP                                                              		lighton=  101 STOP ## dots=  101 STOP ## glm=  101 STOP	ERROR32
+35	2162	2191	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	ERROR33
+36	3144	3176	NOISE	                                                                        		lighton=                                        53 ## dots=                                        53 ## glm=                                        53	
+37	3292	3303	NOISE	                                                                        		lighton=                                                            \t    ext{S}	

@@ -1,0 +1,55 @@
+1	14	COUNT 3/21	                                                                                	---
+2	67	COUNT 3/64	                                                                                	---
+3	831	COUNT 62/61	                                                                        DTMIN 61	50 FORMAT(28X,57HRATIC CF LAGRANGIAN TO EULERIAN TURBULENCE TIME SCALI || DTMIN 61
+4	876	OK	     1ES ISF8.3)                                                        DTHIN 62	1ES ISF8.3) || DTHIN 62
+5	919	OK	C                                                                       UTMIN 63	C || UTMIN 63
+6	960	OK	COPY IN IDENTIFICATION FOR DIFFUSIVE TRANSPORT                          DTMIN 64	COPY IN IDENTIFICATION FOR DIFFUSIVE TRANSPORT || DTMIN 64
+7	1003	OK	      READ (ISIN,1)DTHID                                                DTMIN 65	READ (ISIN,1) DTHID || DTMIN 65
+8	1044	OK	COPY IN OPTION CONTROL CODE DATA FOR DIFFUSIVE TRANSPORT                DTMIN 66	COPY IN OPTION CONTROL CODE DATA FOR DIFFUSIVE TRANSPORT || DTMIN 66
+9	1088	OK	      READ (ISIN,21)MC                                                  DTMIN 67	READ (ISIN,21) MC || DTMIN 67
+10	1132	OK	      READ(ISIN,21)ICX,JCX,NSEQO                                        DIMIN 68	READ (ISIN,21) ICX,JCX,NSEQO || DIMIN 68
+11	1174	OK	      IF（ICX ·EQ· L） ICX=1                                              OTMIN 69	IF（ICX·EQ·L）ICX=1 || OTMIN 69
+12	1219	OK	      IF(JCX .EQ. L) JCX=1                                              DTMIN 70	IF(JCX.EQ. L) JCX=1 || DTMIN 70
+13	1262	OK	      IF(NSEQO .EQ. 0)NSEQO=1                                           OTMIN 71	IF(NSEQO.EQ.0)NSEQO=1 || OTMIN 71
+14	1303	OK	      READ(ISIN,40) WINT,XLLC,YLLC,TIMEH,EDDY                           OTMIN 72	READ(ISIN,40) WINT,XLLC,YLLC,TIMEH,EDDY || OTMIN 72
+15	1350	COUNT 23/24	                                                                        DTMIN 73	IF（EODY·EQ·0.0）ECDY=4.0 || DTMIN 73
+16	1392	OK	COMPOSE ALL TAPES NEEDED FOR DIFFUSIVE TRANSPORT                        DTMIN 74	COMPOSE ALL TAPES NEEDED FOR DIFFUSIVE TRANSPORT || DTMIN 74
+17	1436	OK	      REWIND JPARN                                                      DTMIN 75	REWIND JPARN || DTMIN 75
+18	1478	OK	      REWIND IPOUT                                                      DTMIN 76	REWIND IPOUT || DTMIN 76
+19	1519	OK	COPY IN BASIC HEADER DATA FROM ICRM OUTPUT TAPE                         OTMIN 77	COPY IN BASIC HEADER DATA FROM ICRM OUTPUT TAPE || OTMIN 77
+20	1560	OK	      READ (JPAKN)FW,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN      OTMIN 78	READ (JPAKN)FW,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN || OTMIN 78
+21	1605	OK	      READ (JPARN)XGZ,YGZ,TGZ                                           DTMIN 79	READ (JPARN)XGZ,YGZ,TGZ || DTMIN 79
+22	1648	OK	      READ (JPARN)(DETID(I),I=1,12)                                     DTMIN 80	READ (JPARN) (DETID(I), I=1,12) || DTMIN 80
+23	1691	OK	      READ (JPARN)NDSTR                                                 DTMIN 81	READ (JPARN)NDSTR || DTMIN 81
+24	1733	OK	      READ (JPARN)(PS(J),CIAM(J),FMASS(J),J=1,NDSTR)                    DTMIN 82	READ (JPARN) (PS(J), CIAM(J), FMASS(J), J=1, NDSTR) || DTMIN 82
+25	1776	OK	      READ (JPARN)NAT                                                   DTMIN 83	READ (JPARN)NAT || DTMIN 83
+26	1817	OK	      READ (JPARN)(ALT(J),ATP(J),PRS(J),RLH(J),RHO(J),ETA(J),J=1,NAT)   DTMIN 84	READ (JPARN) (ALT(J),ATP(J),PRS(J),RLH(J),RHO(J),ETA(J),J=1,NAT) || DTMIN 84
+27	1861	OK	COPY OUT HEADER DATA ON TO THE DTM BINARY OUTPUT TAPE                   DTMIN 85	COPY OUT HEADER DATA ON TO THE DTM BINARY OUTPUT TAPE || DTMIN 85
+28	1905	COUNT 6/7	      WRITE(IPOUT)FH,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN              	WRITE (IPOUT) FH,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN || [ MIN 86
+29	1948	OK	      WRITE(IPOUT)XGZ,YGZ,TGZ                                           U.MIN 87	WRITE ( IPOUT ) XGZ, YGZ, TGZ || U.MIN 87
+30	1991	OK	      WRITE (IPOUT) (DETIO(J),J=1,12)                                   DTMIN 88	WRITE (IPOUT) (DETIO(J), J=1,12) || DTMIN 88
+31	2034	OK	      WRITE (IPOUT) (OTMIC(J),J=1,12)                                   DTMIN 89	WRITE (IPOUT) (OTMIC (J), J=1,12) || DTMIN 89
+32	2076	OK	      WRITE (IPOUT)NOSTR                                                DTMIN 90	WRITE (IPOUT) NOSTR || DTMIN 90
+33	2106	OK	      WRITE (IPOUT)(PS(J),DIAM(J),FMASS(J),J=1,NOSTR)                   OTMIN 91	WRITE (IPOUT) (PS(J), DIAM(J), FMASS(J), J=1, NOSTR) || OTMIN 91
+34	2163	OK	COPY OUT DIFFUSIVE TRANSPCRT HEADING                                    UTMIN 92	COPY OUT DIFFUSIVE TRANSPCRT HEADING || UTMIN 92
+35	2205	OK	      WRITE (ISOUT,23)                                                  DTMIN 93	WRITE (ISOUT,23) || DTMIN 93
+36	2248	OK	      WRITE (ISOUT,2) (DETID(J),J=1,12),(OTMIO(J),J=1,12)               DTMIN 94	WRITE (ISOUT,2) (DETID(J),J=1,12),(OTMIO(J),J=1,12) || DTMIN 94
+37	2292	OK	      WRITE (ISOUT,7)                                                   DTMIN 95	WRITE (ISOUT,7) || DTMIN 95
+38	2334	OK	      WRITE (ISOUT,8)MC                                                 DTMIN 96	WRITE (ISOUT,8)MC || DTMIN 96
+39	2377	OK	      TIMEX=TIMEH*3600.                                                 DTMIN 97	TIMEX=TIMEH*3600. || DTMIN 97
+40	2422	OK	      WRITE (ISOUT,9) TIMEX, TIMEH                                      DTMIN 38	WRITE (ISOUT,9) TIMEX, TIMEH || DTMIN 38
+41	2463	OK	      IF(MC(6) ,GT. 0) WRITE(ISOUT,50) EDDY                             DTMIN 99	IF(MC(6),GT.0)WRITE(ISOUT,50)EDDY || DTMIN 99
+42	2509	OK	      WRITE(ISOUT,14)XGZ,Y(Z,ZMIN,TGZ                                   DTMIN100	WRITE(ISOUT,14)XGZ,Y(Z,ZMIN,TGZ || DTMIN100
+43	2550	OK	      WRITE(ISOUT,27)XLLC,YLLC,WINT                                     OTMIN101	WRITE (ISOUT,27) XLLC,YLLC,WINT || OTMIN101
+44	2592	OK	      WRITE(ISOUT,10)ZMIN                                               OTMIN102	WRITE (ISOUT,10) ZMIN || OTMIN102
+45	2634	OK	      WRITE(ISOUT,43)RHOP,NDSTR                                         DTMIN1J3	WRITE(ISOUT,43)RHOP,NDSTR || DTMIN1J3
+46	2679	OK	      WRITE(ISOUT,47)                                                   DTMIN104	WRITE(ISOUT,47) || DTMIN104
+47	2721	OK	      IF(MC(4) .EQ. 0) WRITE(ISOUT,48)                                  DTMIN105	IF(MC(4) .EQ. 0) WRITE(ISOUT,48) || DTMIN105
+48	2764	OK	      IF(MC(4) .NE. 0) WRITE(ISOUT,49)                                  DTMIN106	IF(MC(4) .NE. 0) WRITE(ISOUT,49) || DTMIN106
+49	2808	OK	      IF(NSEQ0 .NE. 1) WRITE(ISOUT,45) NSEQ0                            DTMIN107	IF(NSEQ0 .NE. 1) WRITE(ISOUT,45) NSEQ0 || DTMIN107
+50	2849	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,46)                                  DTMIN108	IF(MC(2) .NE. 1) WRITE(ISOUT,46) || DTMIN108
+51	2893	OK	      RETURN                                                            DTMIN109	RETURN || DTMIN109
+52	2938	OK	      END                                                               DTMIN110	END || DTMIN110
+53	3155	OK	                                        115                                     	115
+54	3275	COUNT 3/40;COUNT 3/6	                                                                                	--- || ---
+55	3307	COUNT 3/33;COUNT 3/1	                                                                                	--- || ---

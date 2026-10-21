@@ -1,0 +1,7 @@
+4	870	OK	      SUBROUTINE CRHH                                                           	SUBROUTINE CRHH
+14	1299	COUNT 62/61	                                                                                	COMMON /CONTRL/ DETIO(12), IC(20), IRAD, IRISE, ISIN, ISOUT, JPARN, KDI
+15	1342	COUNT 41/42	                                                                                	COMMON / TABLES/ MCX, CX(50,10), GDPST(10,100)
+17	1428	COUNT 55/59	                                                                                	8 FORMAT(1H1//8X,42HCLOUD RISE AND GROWTH HISTORY FOR RUN 12A6)
+22	1639	COUNT 52/51	                                                                                	3. 8X4HTIME，5X8HINTERVAL，5X4H8ASE，8X3HT0P，6X6HRADIUS。
+25	1770	COUNT 45/44	                                                                                	6. 3H(K),5X1:H (KG/M**3)// (1XI2,1H),1X,1:E11.4)
+34	3322	COUNT 3/6	                                                                                	---

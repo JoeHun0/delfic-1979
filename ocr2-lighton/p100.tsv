@@ -1,0 +1,5 @@
+1	1	COUNT 4/43	                                                                                	text
+2	43	COUNT 10/6	                                                                                	\text{111}
+57	2849	OK	       COMYON /ATMOS/ NAT, ALT(256),  ATP(256),  PkS(256), RLH(256),            	COMYON /ATMOS/ NAT, ALT(256), ATP(256), PkS(256), RLH(256),
+59	2936	OK	      COMMON /BASIC/ W,FW,2BRSTZ,HEIGHT,ZSCL,SLOTM-,TMSD,XGZ,YGZ,TGZ            	COMMON /BASIC/ W,FW,2BRSTZ,HEIGHT,ZSCL,SLOTM-,TMSD,XGZ,YGZ,TGZ
+62	3066	COUNT 63/62	                                                                                	COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(2JJ),DI AP'(2C1),FMASS(20L)

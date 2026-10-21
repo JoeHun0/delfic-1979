@@ -1,0 +1,15 @@
+4	788	OK	      YP = Y(1)                                                                 	YP = Y(1)
+6	874	OK	      YY = Y(1)                                                                 	YY = Y(1)
+9	1003	OK	      M = 2                                                                     	M=2
+14	1220	OK	  600 00 700 I=L,K                                                              	600 00 700 I=L, K
+16	1304	COUNT 37/38	                                                                                	IF（ VEC（ XP，YP，X(I)，Y(I)） GT. VEM）GO TO 70:
+21	1519	OK	      YP = Y(M)                                                                 	YP = Y(M)
+24	1649	OK	      IF(IPNCH .GT. 0) WRITE(IPNCH,20JJ)CNT， XP，  YP，  CRDLBL， COUE             	IF(IPNCH .GT. 0) WRITE(IPNCH,20JJ)CNT，XP，YP，CRDLBL，COUE
+28	1821	OK	  765 00 710 I=1.K                                                              	765 00 710 I=1. K
+44	2507	OK	      X（I）=X（J）                                                                 	X（I）=X（J）
+45	2551	OK	      Y(I)=Y(J)                                                                 	Y ( I ) = Y ( J )
+46	2594	OK	      X（J）=CLR                                                                  	X（J）=CLR
+49	2724	OK	  765 CALL ERROR(PROGRM,-755,ISOUT)                                             	765 CALL ERROR(PROGRM,-755,ISOUT)
+56	3021	OK	 2000 FORMAT( 3F10.0, 10X, A1C, 10X, A6)                                        	2000 FORMAT( 3F10.0, 10X, A1C, 10X, A6)
+58	3112	OK	      ENG                                                                       	ENG
+60	3289	COUNT 3/19	                                                                                	---

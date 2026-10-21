@@ -1,0 +1,11 @@
+3	570	COUNT 24/25	                                                                                	SUBROUTINE MAP(OMAP,NMAP)
+14	1041	OK	      COMMON /CONDAT/       IC(201    ,IKOB      ,IPNCH     ,IPOUT     ,        	COMMON / CONDAT / IC(201 , IKOB , IPNCH , IPOUT ,
+19	1248	COUNT 18/24	                                                                                	2TGZ XGZ X1 X2 YGZ XMAX
+22	1385	COUNT 25/31	                                                                                	1MAPRUN NE NIJ NORD NREQ NTASK
+26	1558	OK	      DIMENSION JMAP(20) ,CHAP(NMAP)                                            	DIMENSION JMAP(20) , CHAP(NMAP)
+30	1731	COUNT 36/37	                                                                                	1 FM[I/6H(/1X，,6H(5X，,6H) ,6H ,6H ,6HA6 ,
+35	1945	COUNT 46/45	                                                                                	1 FORMAT(1H1,5HSTRIPI3,5X,12A6,5Xc,8HMAP TYPEI3)
+40	2155	COUNT 60/59	                                                                                	6 FORMAT(16H00DISPLAY METHOD I4,33H IS NOT AVAILABLE. USED METHOD 1.)
+45	2372	COUNT 52/53	                                                                                	14 FORMAT(15X,24HEXPOURE RATE AT TIME H+F10.1,9H SECONDS.)
+47	2461	COUNT 15/16	                                                                                	1S AND INFINITY.)
+51	2634	OK	     1PEMENTS.)                                                                 	1 PEMENTS.)

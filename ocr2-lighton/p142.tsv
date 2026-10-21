@@ -1,0 +1,8 @@
+2	23	COUNT 11/19	                                                                                	\mathcal{S}
+3	420	COUNT 28/29	                                                                                	2090  VX(KBH,NDATA,LTIM) = VXKNL
+4	465	COUNT 0/24	                                                                                	
+6	552	COUNT 0/24	                                                                                	
+7	595	OK	 9C5  CONTINUE                                                                  	9C5  CONTINUE
+44	2528	OK	      COMMON /CNTRCL/ IPOLT,ISIN,ISOUT,JPARN,MC(20),NSEQO                       	COMMON /CNTRCL/ IPOLT,ISIN,ISOUT,JPARN,MC(20),NSEQO
+47	2655	OK	      DIMENSION DXSUM(KBHF,NDATF,LTIMF),CYSUM(KBHF,NDATF,LTIMF)                 	DIMENSION DXSUM(KBHF,NDATF,LTIMF),CYSUM(KBHF,NDATF,LTIMF)
+58	3288	COUNT 0/17	                                                                                	

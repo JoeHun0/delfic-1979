@@ -1,0 +1,63 @@
+1	40	COUNT 0/3;COUNT 204/8	                                                                                	 || \text{คุณค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า ค่า
+2	554	COUNT 12/11;COUNT 27/6	                                                                                	← DECK, OT.MEX || \mathcal{J}TME\bar{X} \quad 1
+3	597	COUNT 23/22	                                                                        DJMEX  2	SUBROUTINE DTMEX(NUMTAP) || DJ MEX 2
+4	639	OK	C                                                                       DTMEX  3	C || DTMEX 3
+5	682	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DTMEX  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DTMEX 4
+6	728	OK	C                                                                       DTMEX  5	C || DTMEX 5
+7	765	COUNT 199/71;COUNT 37/6	                                                                                	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || \dot{O}T\text{M}\dot{E}\text{X} \quad 6
+8	814	OK	C                                                                       OTMEX  7	C || OTMEX 7
+9	855	COUNT 1/25	                                                                        OTMEX  8	C || OTMEX 8
+10	900	OK	C                                                                       DTMEX  9	C || DTMEX 9
+11	939	OK	C     ARRAY DIMENSIONS MUST BE SET IN THIS PROGRAM.  THESE ARE MAXIMUM  OTHER 10	C     ARRAY DIMENSIONS MUST BE SET IN THIS PROGRAM. THESE ARE MAXIMUM || OTHER 10
+12	982	OK	C     DIMENSIONS TO BE USED IN THIS RUN.  DIMENSION MAEMONICS AND THE   OTMEX 11	C DIMENSIONS TO BE USED IN THIS RUN. DIMENSION MAEMONICS AND THE || OTMEX 11
+13	1027	OK	C     DATA FIELD LENGTHS THEY CONTROL ARE AS FOLLOWS -                  OTMEX 12	C DATA FIELD LENGTHS THEY CONTROL ARE AS FOLLOWS - || OTMEX 12
+14	1070	COUNT 51/52	                                                                        DTMEX 13	C ICF, JCF- PRIMARY HORIZONTAL SPACE RESOLUTION NET INDICES || DTMEX 13
+15	1116	COUNT 1/11	                                                                        DTMEX 14	C || DTMEX 14
+16	1155	OK	C               ICF IS THE NUMBER OF  EAST-WEST  NET SUBDIVISIONS       OTMEK 15	C ICF IS THE NUMBER OF EAST-WEST NET SUBDIVISIONS || OTMEK 15
+17	1198	COUNT 1/43	                                                                        OTMEX 16	C || OTMEX 16
+18	1239	OK	C      K8HF   - ATMOSPHERE STRATA FOR WIND AND TURBULENCE DATA          DTMEX 17	C     K8HF    - ATMOSPHERE STRATA FOR WIND AND TURBULENCE DATA || DTMEX 17
+19	1282	COUNT 1/52	                                                                        DTMEX 18	C || DTMEX 18
+20	1326	COUNT 1/11	                                                                        UTMEX 19	C || UTMEX 19
+21	1368	OK	C      LTIMF  - WIND AND TLRBULENCE DATA UPDATES(INCLUDING INITIAL DATA)DTMEX 20	C     LTIMF - WIND AND TLRBULENCE DATA UPDATES (INCLUDING INITIAL DATA) || DTMEX 20
+22	1412	COUNT 1/49	                                                                        DTHEX 21	C || DTHEX 21
+23	1447	COUNT 14/7	C      MARF   - DIMENSION CF THE ARRAY (MARY) THAT RECIEVES THE FLAGS           	C MARF - DIMENSION CF THE ARRAY (MARY) THAT RECIEVES THE FLAGS || \text{OTMEX 22}
+24	1486	COUNT 1/43	                                                                        DTMEX 23	C || DTMEX 23
+25	1540	COUNT 50/51	                                                                        OTMEX 24	C     NATF - ATMOSPHERE STRATA FOR, PRES, TEMP, °C. (ALWAYS 256) || OTMEX 24
+26	1582	OK	C      NDATF  - HORIZONTAL SPACE RESOLUTION NET AND SUB-NET MESHES      OTHER 25	C     NDATF - HORIZONTAL SPACE RESOLUTION NET AND SUB-NET MESHES || OTHER 25
+27	1628	COUNT 1/39	                                                                        OTMEX 26	C || OTMEX 26
+28	1669	OK	C      NCF    - HORIZINTAL SFACE RESOLUTION NET MESH SUBDIVISIONS       DTMEX 27	C     NCF     - HORIZINTAL SFACE RESOLUTION NET MESH SUBDIVISIONS || DTMEX 27
+29	1713	COUNT 1/13	                                                                        OTHER 28	C || OTHER 28
+30	1758	OK	C                                                                       OTMEX 29	C || OTMEX 29
+31	1796	COUNT 199/65	                                                                        DTMEX 30	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DTMEX 30
+32	1844	OK	C                                                                       OTMEX 31	C || OTMEX 31
+33	1884	OK	C     ALT   - ALTITUDES FOR ATMOS. DENSITY AND VISCOSITY TABLE          OTNEX 32	C ALT - ALTITUDES FOR ATMOS. DENSITY AND VISCOSITY TABLE || OTNEX 32
+34	1925	OK	C     CAVS  - PARTICLE FALL RATE FOR EACH ATMOS. STRATUM                DTMEX 33	C CAVS - PARTICLE FALL RATE FOR EACH ATMOS. STRATUM || DTMEX 33
+35	1968	OK	C     CROSS - CROSSWIND CROSSING TRAJECTORIES CORRECTION TO DISPERSION  OTMEX 34	C     CROSS - CROSSWIND CROSSING TRAJECTORIES CORRECTION TO DISPERSION || OTMEX 34
+36	2012	OK	C     DOWN  - DOWNWIND CROSSING TRAJECTORIES CORRECTICA TO DISPERSION   OTMEX 35	C     DOWN - DOWNWIND CROSSING TRAJECTORIES CORRECTICA TO DISPERSION || OTMEX 35
+37	2055	OK	C     DWAF  - PARCEL VERT. THICKNESS BEFORE ADVECTION                   OTMEX 36	C    DWAF - PARCEL VERT. THICKNESS BEFORE ADVECTION || OTMEX 36
+38	2097	OK	C     DXSUM - TURBULENCE X COMPONENT (WEIGHTED SUM) 3-CIM. DATA ARRAY   OTHER 37	C     DXSUM - TURBULENCE X COMPONENT (WEIGHTED SUM) 3-CIM. DATA ARRAY || OTHER 37
+39	2141	COUNT 8/7	C     DYSUM - TURBULENCE Y COMPONENT (WEIGHTED SUM) 3-DIM. DATA ARRAY           	C     DYSUM - TURBULENCE Y COMPONENT (WEIGHTED SUM) 3-DIM. DATA ARRAY || OTME'X 38
+40	2184	OK	C     EDDY  - RATIO OF LAGRANGIAN TO EULERIAN TIME SCALES.  SET TO 4.0  DTMEX 39	C EDDY - RATIO OF LAGRANGIAN TO EULERIAN TIME SCALES. SET TO 4.0 || DTMEX 39
+41	2228	OK	C             BY PGM. IF INPUT AS ZERO.                                 DTMEX 40	C BY PGM. IF INPUT AS ZERO. || DTMEX 40
+42	2272	OK	C     ETA   - DYNAMIC VISCOSITY OF AIR                                  OTMEX 41	C ETA - DYNAMIC VISCOSITY OF AIR || OTMEX 41
+43	2313	OK	C     FAV   - PARTICLE SETTLING RATE AT MID ATMOSPHERE ALTITUDE         OTMEX 42	C FAV - PARTICLE SETTLING RATE AT MID ATMOSPHERE ALTITUDE || OTMEX 42
+44	2355	OK	C     HDAV  - AVERAGE HORIZONTAL DIFFUSIVITY OR TURBULENCE DISSIPATION  DTMEX 43	C     HDAV - AVERAGE HORIZONTAL DIFFUSIVITY OR TURBULENCE DISSIPATION || DTMEX 43
+45	2400	OK	C             RATE FOR EACH ATMOSPHERE UPDATE.                          DTMEX 44	C RATE FOR EACH ATMOSPHERE UPDATE. || DTMEX 44
+46	2442	OK	C     ICF   - MAX. FORMAL CIM. CORRESPONDING TO ICX                     OTMEX 45	C ICF - MAX. FORMAL CIM. CORRESPONDING TO ICX || OTMEX 45
+47	2483	OK	C     ICX   - OBJECT-TIME MAX. NUMBER CF WEST-EAST MESHES IN ARRAY NET  DTMEX 46	C     ICX - OBJECT-TIME MAX. NUMBER CF WEST-EAST MESHES IN ARRAY NET || DTMEX 46
+48	2528	COUNT 8/7	C     IPOUT - LOGICAL UNIT NUMBER OF DIFF. TRANS. MOD. OUTPUT TAPE              	C     IPOUT - LOGICAL UNIT NUMBER OF DIFF. TRANS. MOD. OUTPUT TAPE || DTMEX' 47
+49	2569	OK	C     ISIN  - LOGICAL UNIT NUMBER OF SYSTEM INPUT TAPE                  DTMEX 48	C ISIN - LOGICAL UNIT NUMBER OF SYSTEM INPUT TAPE || DTMEX 48
+50	2613	OK	C     ISOUT - LOGICAL UNIT NUMBER OF SYSTEM OUTPUT TAPE                 DTMEX 49	C ISOUT - LOGICAL UNIT NUMBER OF SYSTEM OUTPUT TAPE || DTMEX 49
+51	2658	OK	C     JPARN - LOGICAL UNIT NUMBER OF  ICRM OUTPUT TAPE                  DTMEX 50	C JPARN - LOGICAL UNIT NUMBER OF ICRM OUTPUT TAPE || DTMEX 50
+52	2700	OK	C     JCF   - MAX. FORMAL CIM. CORRESPONDING TC JCX                     DTMEX 51	C JCF - MAX. FORMAL CIM. CORRESPONDING TC JCX || DTMEX 51
+53	2741	OK	C     JCX   - OBJECT-TIME MAX. NUMBER OF SOUTH-NORTH MESHES IN ARRAY NETOTMEX 52	C     JCX - OBJECT-TIME MAX. NUMBER OF SOUTH-NORTH MESHES IN ARRAY NET || OTMEX 52
+54	2786	OK	C     KBHF  - MAX. FORMAL (IM. CORRESPONDING TO KBHX                    OTMEX 53	C KBHF - MAX. FORMAL (IM. CORRESPONDING TO KBHX || OTMEX 53
+55	2819	OK	C     KBHX  - OBJECT-TIME MAX. ATMOSPHERE LAYER INDEX FOR WIND AND TURB.OTMEX 54	C KBHX - OBJECT-TIME MAX. ATMOSPHERE LAYER INDEX FOR WIND AND TURB. || OTMEX 54
+56	2870	OK	C     LTIMF - MAX. FORMAL CIM. CORRESPONDING TO LTIMX                   DTMEX 55	C     LTIMF - MAX. FORMAL CIM. CORRESPONDING TO LTIMX || DTMEX 55
+57	2914	OK	C     LTIMX - OBJECT-TIME MAX. INDEX FOR WIND AND TURB. UPDATES         DTMEX 56	C     LTIMX - OBJECT-TIME MAX. INDEX FOR WIND AND TURB. UPDATES || DTMEX 56
+58	2958	OK	C             (INCLUDES THE INITIAL SET)                                DTMEX 57	C (INCLUDES THE INITIAL SET) || DTMEX 57
+59	2999	OK	C     MARF  - MAX. FORMAL CIM. CORRESPONDING TC MARX                    OTMEX 58	C     MARF - MAX. FORMAL CIM. CORRESPONDING TC MARX || OTMEX 58
+60	3043	OK	C     MARX  - OBJECT-TIME MAX. DIM. OF ARRAY MARY (MARX=ICY*JCX)        DTMEX 59	C     MARX - OBJECT-TIME MAX. DIM. OF ARRAY MARY (MARX=ICY*JCX) || DTMEX 59
+61	3086	OK	C     MARY  - HORIZ. ATMOS. SPACE RESOLUTION NET MESH AND SUB-MESH      OTMEX 60	C MARY - HORIZ. ATMOS. SPACE RESOLUTION NET MESH AND SUB-MESH || OTMEX 60
+62	3148	COUNT 3/2	                                                                                	111
+63	3281	COUNT 14/8;COUNT 24/4	                                                                                	\text{العربية} || مُلْكُ الْمُسْتَرْفِعِينَ

@@ -1,0 +1,46 @@
+1	1	COUNT 3/26;COUNT 3/2	                                                                                	--- || ---
+2	781	OK	C                                                                               	C
+3	826	COUNT 3/2	      CALL BATMAN                                                               	CALL BATMAN || K 3U
+4	869	COUNT 3/2	      MAXMCH = 90                                                               	MAXMCH = 90 || K 51
+5	912	COUNT 2/1	      MCH = 0                                                                   	MCH = 0 || 25
+6	956	OK	      DO 1 I = 1,MAXMCH                                                       3 	DO 1 I = 1, MAXMCH || 3
+7	992	OK	    1 XRT（I） = 0.0                                                      GXPSR 34	1 XRT（I）=0.0 || GXPSR 34
+8	1032	OK	C                                                                       GXPSR 35	C || GXPSR 35
+9	1085	OK	      00 11 J = 1,KRM                                                         2 	0011 J = 1,KRM || 2
+10	1121	OK	      K = JRM(J)                                                        GXPSR 37	K = JRM (J) || GXPSR 37
+11	1170	COUNT 2/1	      IF (ERM(J))11,10,12                                                       	IF (ERM(J))11,10,12 || >8
+12	1208	OK	   11 MCH = MCH + 1                                                     GXPSR 39	11 MCH = MCH + 1 || GXPSR 39
+13	1247	OK	COMPUTE MASS CHAIN NORMALIZATION FACTOR                                 GXPSR 40	COMPUTE MASS CHAIN NORMALIZATION FACTOR || GXPSR 40
+14	1297	OK	C                                                                             41	C || 41
+15	1342	OK	   12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J))                       GXPSR 42	12 XRT(MCH) = XRT(MCH) + ABLNUO(K) * ABS(ERM(J)) || GXPSR 42
+16	1385	OK	C                                                                               	C
+17	1428	OK	   10 CONTINUE                                                                  	10 CONTINUE
+18	1471	COUNT 2/1	C                                                                               	C || 5.
+19	1515	COUNT 6/4	      DO 20 LC = 1,MCH                                                          	DO 20 LC = 1, MCH || APSK 45
+20	1559	OK	      IF (XRT(LC))20,20,21                                              GXPS    	IF (XRT(LC))20,20,21 || GXPS
+21	1600	OK	   21 BNEX = BSUBK（LC）                                                      K 48	21 BNEX = BSUBK（LC） || K 48
+22	1645	OK	      CRISS = CROSS**BNEX                                                       	CRISS = CROSS**BNEX
+23	1687	OK	      RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC))                           GXPSR 50	RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC)) || GXPSR 50
+24	1729	OK	      STRAIT = RADIAL*CRISS                                             G       	STRAIT = RADIAL*CRISS || G
+25	1766	OK	      TNEX = FISNUM*XRT(LC)                                             GXPSR 52	TNEX = FISNUM*XRT(LC) || GXPSR 52
+26	1816	OK	      DO 40 LD = 1,ITAB                                                         	DO 40 LD = 1,ITAB
+27	1853	OK	   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD)GXPSR 54	40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD) || GXPSR 54
+28	1905	OK	   20 CONTINUE                                                              D   	20 CONTINUE || D
+29	1943	COUNT 2/1	C                                                                               	C || 1.
+30	1987	OK	C                                                                               	C
+31	2030	COUNT 7/4	      IF (.NOT.NPRNT(1C)) FETURN                                                	IF (.NOT.NPRNT(1C)) FETURN || GXPSR 58
+32	2069	OK	C                                                                          SK 59	C || SK 59
+33	2118	OK	      WRITE (KOUT,9C1)                                                          	WRITE (KOUT,9C1)
+34	2154	OK	      IF (J0) GO TO 101                                                 GXPSR 61	IF (J0) GO TO 101 || GXPSR 61
+35	2203	OK	      WRITE (KOUT,912)                                                          	WRITE (KOUT,912)
+36	2246	OK	      GO TO 102                                                                 	GO TO 102
+37	2287	COUNT 3/1	  101 WRITE (KOUT,9C2)                                                          	101 WRITE (KOUT,9C2) || 25.
+38	2324	COUNT 7/6	  102 CONTINUE                                                                  	102 CONTINUE || GXPSK 65
+39	2375	COUNT 2/1	      DO 1J3 I=1,ITAB                                                           	DO 1J3 I=1,ITAB || 55
+40	2410	OK	      WRITE (KOUT,903) PSIZE(I),FP(I)                                   GXPSR 67	WRITE (KOUT,903) PSIZE(I),FP(I) || GXPSR 67
+41	2459	OK	  103 CONTINUE                                                                  	103 CONTINUE
+42	2492	OK	C                                                                      G XPSR 69	C G || XPSR 69
+43	2546	OK	      RETURN                                                                    	RETURN
+44	2576	COUNT 3/4	                                                                        GXPSR 71	END || GXPSR 71
+45	3156	COUNT 2/3	                                                                                	, "
+46	3308	COUNT 8/48;COUNT 3/5	                                                                                	markdown || ---

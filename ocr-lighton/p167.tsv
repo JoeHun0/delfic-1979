@@ -1,0 +1,65 @@
+1	23	COUNT 0/19	                                                                                	
+2	77	COUNT 148/2	                                                                                	- 1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52.
+3	617	COUNT 32/31	                                                                        PCHEC 61	1MAPRUN  ,NE  ,NIJ  ,NORD  ,NREG  ,NTASK  ,f || PCHEC 61
+4	660	OK	     20PYI7(12) ,T1        ,T2        ,WFMAS(2J0)                       PCHEC 62	20PYI7(12) ,T1 ,T2 ,WFMAS(2J0) || PCHEC 62
+5	702	OK	      COMMON /DECAY/ IGO,JC,KO(S,TENTER,TEXIT,TIME                      PCHEC 63	COMMON /DECAY/ IGO,JC,KO(S,TENTER,TEXIT,TIME || PCHEC 63
+6	745	OK	      COMMON /OUTPUT/ FISNUM,FF(200),FW,NDSTF,JGC,MASCHN,PS(200),       PCHEC 64	COMMON /OUTPUT/ FISNUM,FF(200),FW,NDSTF,JGC,MASCHN,PS(200), || PCHEC 64
+7	789	OK	     1 FMASS(2J0),DIAM(200)                                             PCHEC 65	1 FMASS(2J0),DIAM(200) || PCHEC 65
+8	831	OK	      DIMENSION OHAP(NMAP)                                              FCHEC 66	DIMENSION OHAP (NMAP) || FCHEC 66
+9	875	OK	      LOGICAL IGO,JD,KOOS                                               PCHEC 67	LOGICAL IGO, JD, KOOS || PCHEC 67
+10	918	COUNT 21/20	                                                                        PCHEC 68	DATA PROGRAM/6HPCHECK/ || PCHEC 68
+11	960	OK	C                                                                       PCHEC 69	C || PCHEC 69
+12	1004	OK	      NE=1                                                              PCHEC 70	NE = 1 || PCHEC 70
+13	1048	OK	      IF( IJIN.EQ.0) GO TO 5C                                           PCHEC 71	IF( IJIN.EQ.0 ) GO TO 5C || PCHEC 71
+14	1091	COUNT 0/3	                                                                        PCHEC 72	 || PCHEC 72
+15	1134	COUNT 0/6	                                                                        PCHEC 73	 || PCHEC 73
+16	1177	OK	      NOSTP1=NDSTR+1                                                    PCHEC 74	NOSTP1 = NDSTR + 1 || PCHEC 74
+17	1218	OK	   5G 00 777 IP=1,NIJ                                                   PCHEC 75	5G 00 777 IP=1,NIJ || PCHEC 75
+18	1262	OK	C                                                                       PCHEC 76	C || PCHEC 76
+19	1306	OK	C     DETERMINE IF THE DEFCSIT INCREMENT IS GRCUNDED                    PCHEC 77	C DETERMINE IF THE DEFCSIT INCREMENT IS GRCUNDED || PCHEC 77
+20	1349	OK	C                                                                       PCHEC 78	C || PCHEC 78
+21	1393	OK	      IF((7PAR(IP)-ZMIN).GT.10.0) GO TO 206                             PCHEC 79	IF ((7PAR(IP)-ZMIN).GT.10.0) GO TO 206 || PCHEC 79
+22	1437	COUNT 44/42;COUNT 22/7	                                                                                	C     NREQ - 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16 || PCHEC \delta \dot{\iota}
+23	1479	OK	   75 GU TO(1)1,120,103,14,105,106,12.,120,135,106,101,112,113,120,101,|PCHEC 81	75 GU TO(1)1,120,103,14,105,106,12.,120,135,106,101,112,113,120,101,| || PCHEC 81
+24	1522	COUNT 1/18	                                                                        PCHEC 82	1 || PCHEC 82
+25	1565	OK	C     NREQ - 16, 17, 18                                                 PCHEC 83	C NREQ - 16, 17, 18 || PCHEC 83
+26	1608	OK	C                                                                       PCHEC 84	C || PCHEC 84
+27	1650	OK	C 101  COUNT OF GROUNDED WAFERS, OR MASS DEPUSITED, OR TIME OF ONSET    PCHEC 95	C 101 COUNT OF GROUNDED WAFERS, OR MASS DEPUSITED, OR TIME OF ONSET || PCHEC 95
+28	1694	OK	C     OR CESSATION, OR SMALLEST OR LARGEST PARTICLE SIZE.               PCHEC 86	C OR CESSATION, OR SMALLEST OR LARGEST PARTICLE SIZE. || PCHEC 86
+29	1737	COUNT 40/13	                                                                        PCHEC 87	101 \quad F = \partial \mathcal{M} \Delta S(IP) || PCHEC 87
+30	1780	COUNT 18/7	      GO TO 100                                                                 	GO TO 100 || \mathcal{P}CHEC \ 08
+31	1824	OK	C                                                                       PCHEC ≈9	C || PCHEC ≈ 9
+32	1864	OK	C 103  DOSE RATE AT TIME T1 SECONDS                                     PCHEC 90	C 103 DOSE RATE AT TIME T1 SECONDS || PCHEC 90
+33	1908	OK	 1C3  IF(TPAR(IP) - T1)120,120,200                                      PCHEC 91	1C3 IF(TPAR(IP) - T1) 120,120,200 || PCHEC 91
+34	1952	OK	C                                                                       PCHEC 92	C || PCHEC 92
+35	1991	OK	C 104 H+1 HR NORMALIZED DOSE RATE RESULTING FROM PARTICLES IN THE SIZE  PCHEC 93	C 104 H+1 HR NORMALIZED DOSE RATE RESULTING FROM PARTICLES IN THE SIZE || PCHEC 93
+36	2036	COUNT 21/23	                                                                        PCHEC 94	C RANGE T1 TO T2 MICROPEPS || PCHEC 94
+37	2079	OK	  104 IF(PSIZ(IP) .GE. T1  .ANC.  PSIZ(IP) .Lt. T2) GC TO 120           PCHEC 95	104 IF(PSIZ(IP) .GE. T1 .ANC. PSIZ(IP) .Lt. T2) GC TO 120 || PCHEC 95
+38	2123	OK	      CO TO 2:J                                                         PCHEC 96	CO TO 2:J || PCHEC 96
+39	2167	OK	C                                                                       PCHEC 57	C || PCHEC 57
+40	2208	OK	C 105.106  DOSE ACCUMULATED FROM TIMES T1 TO INFINITY CR T2.            PCHEC 48	C 105.106 DOSE ACCUMULATED FROM TIMES T1 TO INFINITY CR T2. || PCHEC 48
+41	2251	OK	  10E IF(TFAR(IP) .GE. T2) GO TO 2J0                                    PCHEC 99	10E IF(TFAR(IP) .GE. T2) GO TO 2J0 || PCHEC 99
+42	2295	OK	  105 IF(TPAR(IP) .GE. Y1) GO TO 107                                    PCHEC1J0	105 IF (TPAR(IP) .GE. Y1) GO TO 107 || PCHEC1J0
+43	2338	OK	      TENTER=T1-TGZ                                                     PCHEC1:1	TENTER = T1 - T GZ || PCHEC1:1
+44	2381	OK	      C=CF5                                                             PCHEC1:2	C = CF5 || PCHEC1:2
+45	2425	OK	      GO TO 121                                                         PCHEC1:3	GO TO 121 || PCHEC1:3
+46	2467	OK	  1C7 TENTER=TPAR(IP)-TGZ                                               PCHEC1C4	1C7 TENTER=TPAR(IP)-TGZ || PCHEC1C4
+47	2508	OK	      IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 1J) GO TC 12(                     PCHEC1:5	IF(NREQ .EQ. 9 .OR. NREQ .EQ. 1J) GO TC 12( || PCHEC1:5
+48	2553	COUNT 0/27	                                                                        PCHEC1:6	 || PCHEC1:6
+49	2594	COUNT 46/45	                                                                        PCHEC1:7	IF(NREQ .EQ. 6) C=C^2(1.0 - (TENTER/TEXIT)**(L.26)) || PCHEC1:7
+50	2639	COUNT 9/8	      GO TO 120                                                                 	GO TO 120 || PCHE.C1;8
+51	2682	OK	C                                                                       PCHEC1:9	C || PCHEC1:9
+52	2721	OK	C 112 TOTAL PARTICLE MASS DEPOSITED BETWEEN TIMES 11 AND 12 SECONDS     PCHE_110	C 112 TOTAL PARTICLE MASS DEPOSITED BETWEEN TIMES 11 AND 12 SECONDS || PCHE_110
+53	2764	OK	  112 IF(TPAR(IP) .GE. T1  .AND.  TPAR(IP) .LE. T2) GC TO 161           PCHEC111	112 IF(TPAR(IP).GE.T1.AND.TPAR(IP).LE.T2) GC TO 161 || PCHEC111
+54	2810	COUNT 9/7	                                                                        PCHEC112	c.o  T.J  24J || PCHEC112
+55	2855	OK	C                                                                       PCHEC113	C || PCHEC113
+56	2892	OK	C 113 MASS FROM PARTICLES IN THE SIZE RANGE T1 TO T2 MICROMETERS.       PCHEC114	C 113 MASS FROM PARTICLES IN THE SIZE RANGE T1 TO T2 MICROMETERS. || PCHEC114
+57	2935	COUNT 20/8	  113 IF(PSIZ(IP) .GE. T1  .ANC.  PSIZ(IP) .LE. T2) GC TO 101                   	113 IF (PSIZ(IP) .GE. T1 .ANC. PSIZ(IP) .LE. T2) GC TO 101 || P \hat{C} H \bar{E} C115
+58	2984	OK	      GO TC 23J                                                         PCHEC116	GO TC 23J || PCHEC116
+59	3026	COUNT 1/2;COUNT 11/8	                                                                                	C || FCH \leq C117
+60	3065	OK	C 120 FIND INDEX OF PARTICLE SIZE CLASS                                 FCHEC118	C 120 FIND INDEX OF PARTICLE SIZE CLASS || FCHEC118
+61	3111	OK	  120 IF(ICTR .NE. 0) GO TC 122                                         FCHEC119	120 IF(ICTR .NE. 0) GO TC 122 || FCHEC119
+62	3152	COUNT 43/42	                                                                        PCHEC120	121 IF(A3S(PSIZ(IP) - PS(J)) .LT. 1.JE-6) GO TO 125 || PCHEC120
+63	3210	OK	                                       164                                      	164
+64	3320	COUNT 46/35;COUNT 9/3	                                                                                	\text{الشريعة من برنامج تعلم التعلم بالتعلم بالتعلم} || \text{١.}
+65	3357	COUNT 328/21	                                                                                	محمود ا. نتیجی، مقاله کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی کتابی

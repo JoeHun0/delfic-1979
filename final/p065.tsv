@@ -1,0 +1,63 @@
+1	11	63	NOISE	                                                                        			
+2	576	616	VOTED	   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT)                		lighton=   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT) ## dots=   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRH, -40, ISOUT) ## glm=   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT)	ICM121
+3	616	654	AGREE	      IF(PHI .EQ. 0.0) PHI=1.0                                          		lighton=      IF(PHI .EQ. 0.0) PHI=1.0 ## dots=      IF(PHI .EQ. 0.0) PHI=1.0 ## glm=      IF(PHI .EQ. 0.0) PHI=1.0	ICM122
+4	654	698	VOTED	      READ(ISIN,10)NOSTR,KCI,IRAD                                       		lighton=      READ(ISIN,10)NOSTR,KCI,IRAD ## dots=      READ(ISIN,10)NOSTR,KCI,IRAD ## glm=      READ(ISIN.10)NOSTR,KCI,IRAD	ICM122
+5	698	739	VOTED	      IF( NOSTR .EQ. 0 ) NOSTR=100                                      		lighton=      IF( NOSTR .EQ. 0 ) NOSTR=100 ## dots=      IF( NOSTR .EQ. 0 ) NOSTR=100 ## glm=      IF（ NOSTR .EQ. 0 ） NOSTR=100	ICM123
+6	747	782	VOTED	      IF(KOI .EQ. 0) KOI=15+ALOG(W)                                     		lighton=      IF(KOI .EQ. 0) KOI=15+ALOG(H) ## glm=      IF(KOI .EQ. 0) KOI=15+ALOG(W) ## glm2=      IF(K0I .EQ. 0) K0I=15+ALOG(W)	10M125
+7	782	826	AGREE	      READ(ISIN,3)XGZ,YGZ,TGZ                                           		lighton=      READ(ISIN,3)XGZ,YGZ,TGZ ## dots=      READ(ISIN,3)XGZ,YGZ,TGZ ## glm=      READ(ISIN,3)XGZ,YGZ,TGZ	ICM129
+8	834	871	AGREE	      IF(IC(1)-1)210,220,230                                            		lighton=      IF(IC(1)-1)210,220,230 ## dots=      IF(IC(1)-1)210,220,230 ## glm=      IF(IC(1)-1)210,220,230	ICM127
+9	871	914	COMMENT	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED                    		lighton=C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED ## dots=C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED ## glm=C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED	10M128
+10	914	954	VOTED	  210 READ(ISIN,3) DNS, OMEAN, SD                                       		lighton=  210 READ(ISIN,3) DNS, OMEAN, SD ## dots=  210 READ(ISIN,3) DNS, OMEAN, SD ## glm=  210 READ(ISIN,3) DNS, DMEAN, SD	ICM129
+11	954	1000	COMMENT	C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER                 		lighton=C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER ## dots=C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER ## glm=C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER	ICM129
+12	1000	1036	AGREE	      IS=0                                                              		lighton=      IS=0 ## glm=      IS=0	ICM131
+13	1047	1083	VOTED	      IF(DMEAN.GT. 0.0) IS=1                                            		lighton=      IF(OMEAN.GT. 0.0) IS=1 ## dots=      IF(DMEAN.GT. 0.0) IS=1 ## glm=      IF(DMEAN.GT. 0.0) IS=1	ICM132
+14	1091	1123	AGREE	      GO TO 23                                                          		lighton=      GO TO 23 ## dots=      GO TO 23 ## glm=      GO TO 23	ICM133
+15	1134	1173	COMMENT	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED                    		lighton=C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED ## dots=C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED ## glm=C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED	ICM134
+16	1173	1214	VOTED	  220 READ(ISIN,J)ONS, CAYM, EXPO                                       		lighton=  220 READ(ISIN,J)ONS, CAYM, EXPO ## dots=  220 READ(ISIN,J)ONS, CAYM, EXPO ## glm=  220 READ(ISIN,3)DNS， CAYF， EXPO	ICM135
+17	1214	1252	AGREE	      GO TO 23                                                          		lighton=      GO TO 23 ## dots=      GO TO 23 ## glm=      GO TO 23	10M439
+18	1262	1300	COMMENT	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED                      		lighton=C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED ## dots=C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED ## glm=C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED	ICM137
+19	1300	1339	AGREE	  230 READ(ISIN,3)DNS                                                   		lighton=  230 READ(ISIN,3)DNS ## dots=  230 READ(ISIN,3)DNS ## glm=  230 READ(ISIN,3)DNS	ICM138
+20	1347	1388	AGREE	      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR)                        		lighton=      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR) ## dots=      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR) ## glm=      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR)	ICM130
+21	1388	1424	AGREE	      LD=NOSTR+1                                                        		dots=      LD=NOSTR+1 ## glm=      LD=NOSTR+1	ICM140
+22	1434	1468	AGREE	      READ(ISIN,195)DIAM(LC)                                            		lighton=      READ(ISIN,195)DIAM(LC) ## dots=      READ(ISIN,195)DIAM(LC) ## glm=      READ(ISIN,195)DIAM(LC)	ICM141
+23	1477	1506	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ICM142
+24	1519	1557	COMMENT	C     CHECK ORDERING OF THE HISTOGRAM TABLE                             		lighton=C     CHECK ORDERING OF THE HISTOGRAM TABLE ## dots=C     CHECK ORDERING OF THE HISTOGRAM TABLE ## glm=C     CHECK ORDERING OF THE HISTOGRAM TABLE	ICM143
+25	1557	1598	HAND	      DO 215 I=2,LD                                                     		lighton=      00 215 I=2,LD ## dots=      00 215 I=2,LD ## glm=      DO 215 I=2.LD	ICM144
+26	1598	1642	AGREE	      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215                              		lighton=      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 ## dots=      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 ## glm=      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215	ICM144
+27	1650	1685	AGREE	      WRITE( ISOUT,198)                                                 		lighton=      WRITE( ISOUT,198) ## dots=      WRITE( ISOUT,198) ## glm=      WRITE( ISOUT,198)	ICM146
+28	1685	1724	AGREE	      GO TO 200                                                         		lighton=      GO TO 200 ## dots=      GO TO 200 ## glm=      GO TO 200	ICM148
+29	1735	1768	AGREE	  215 CONTINUE                                                          		lighton=  215 CONTINUE ## dots=  215 CONTINUE ## glm=  215 CONTINUE	ICM148
+30	1780	1813	VOTED	   23 HO8 =  HEIGHT/0.3048                                              		lighton=   23 H08 =  HEIGHT/0.3048 ## dots=   23 HOB =  HEIGHT/0.3048 ## glm=   23 HO8 =  HEIGHT/0.3048	ICN149
+31	1821	1857	VOTED	      IF( DNS .EQ. 0.0 ) DNS = 2.6                                      		lighton=      IF( DNS .EQ. 0.0 ) DNS = 2.6 ## dots=      IF( DNS .EQ. 0.0 ) DNS = 2.6 ## glm=      IF（ DNS .EQ. 0.0 ） DNS = 2.6	ICM150
+32	1857	1898	VOTED	      RHOP=ONS*1000.                                                    		lighton=      RHOP=ONS*1000. ## dots=      RHOP=ONS*1000. ## glm=      RHOP=DNS*1000.	ICM190
+33	1908	1943	COMMENT	C     ZSCL IS THE SCALED HCB  -  008                                    		lighton=C     ZSCL IS THE SCALED HCB  -  008 ## dots=C     ZSCL IS THE SCALED HCB  -  DOB	ICM152
+34	1943	1986	AGREE	      ZSCL = HOB /((W)**(1.0/3.4))                                      		dots=      ZSCL = HOB /((W)**(1.0/3.4)) ## glm=      ZSCL = HOB /((W)**(1.0/3.4))	ICM192
+35	1994	2023	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ICM154
+36	2037	2077	COMMENT	C     TEST THE SCALED HOB TO DETERMINE IF  SUBSURFACE, LOW AIRBURST     		lighton=C     TEST THE SCALED HOB TO DETERMINE IF  SUBSURFACE, LOW AIRBURST	ICM155
+37	2077	2111	COMMENT	C     OR PURE AIRBURST                                                  		lighton=C     OR PURE AIRBURST ## dots=C     OR PURE AIRBURST ## glm=C     OR PURE AIRBURST	ICM156
+38	2121	2157	AGREE	      IF(ZSCL+20.0 .LT. 0.0) GO TO 143                                  		lighton=      IF(ZSCL+20.0 .LT. 0.0) GO TO 143 ## glm=      IF(ZSCL+20.0 .LT. 0.0) GO TO 143	ICM157
+39	2166	2201	AGREE	      IF(ZSCL .LT. 180.0) GO TO 70                                      		lighton=      IF(ZSCL .LT. 180.0) GO TO 70 ## dots=      IF(ZSCL .LT. 180.0) GO TO 70 ## glm=      IF(ZSCL .LT. 180.0) GO TO 70	ICM158
+40	2209	2240	VOTED	      CALL AIRBRS                                                       		lighton=      CALL AIRORS ## dots=      CALL AIRBRS ## glm=      CALL AIRBRS	ICM159
+41	2251	2281	AGREE	      GO TO 95                                                          		lighton=      GO TO 95 ## dots=      GO TO 95 ## glm=      GO TO 95	ICM160
+42	2294	2326	AGREE	 70   CALL TIMEE                                                        		lighton= 70   CALL TIMEE ## glm= 70   CALL TIMEE	ICM161
+43	2335	2365	AGREE	      CALL TEMP                                                         		dots=      CALL TEMP ## glm=      CALL TEMP	ICM162
+44	2378	2409	AGREE	      CALL MASS                                                         		lighton=      CALL MASS ## dots=      CALL MASS ## glm=      CALL MASS	ICM163
+45	2422	2455	AGREE	      CALL VAPOR                                                        		dots=      CALL VAPOR ## glm=      CALL VAPOR	ICM164
+46	2463	2502	VOTED	      IF(JC(1)-1)90,95,95                                               		lighton=      IF(JC(1)-1)90,95,95 ## dots=      IF(JC(1)-1)90,95,95 ## glm=      IF(IC(1)-1)90,95,95	ICM165
+47	2502	2536	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ICM166
+48	2551	2589	COMMENT	C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE     		lighton=C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE ## dots=#     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE ## glm=C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL FARTICLE SIZE	ICM167
+49	2589	2626	COMMENT	C     DISTRIBUTION                                                      		lighton=C     DISTRIBUTION ## glm=C     DISTRIBUTION	ICM168
+50	2637	2671	VOTED	 90   IF(SD)91,92,92                                                    		lighton= 9C   IF(SD)91,92,92 ## dots= 90   IF(SD)91,92,92 ## glm= 90   IF（SD）91,92,92	ICM169
+51	2680	2715	AGREE	 91   WRITE (ISOUT,2)                                                   		lighton= 91   WRITE (ISOUT,2) ## dots= 91   WRITE (ISOUT,2) ## glm= 91   WRITE (ISOUT,2)	ICM170
+52	2724	2755	AGREE	      GO TO 200                                                         		lighton=      GO TO 200 ## dots=      GO TO 200 ## glm=      GO TO 200	ICM171
+53	2767	2802	VOTED	   92 IF(OMEAN)94,95,95                                                 		lighton=   92 IF(OMEAN)94,95,95 ## dots=   92 IF(DMEAN)94,95,95 ## glm=   92 IF(OMEAN)94,95,95	ICM172
+54	2811	2844	AGREE	 94   WRITE (ISOUT,17)                                                  		lighton= 94   WRITE (ISOUT,17) ## dots= 94   WRITE (ISOUT,17) ## glm= 94   WRITE (ISOUT,17)	ICM173
+55	2853	2883	VOTED	      GO TO 200                                                         		lighton=      GO TO 2J0 ## dots=      GO TO 200 ## glm=      GO TO 200	ICM174
+56	2895	2925	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ICM175
+57	2938	2975	COMMENT	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM           		lighton=C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM ## dots=C     OMPUTEP ARTICLES IZE-VOLUME( MASS)F REQUENCYP ISTOGRAPH ## glm=C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM	ICM176
+58	2975	3011	VOTED	 95   CALL DSTBN                                                        		lighton= 95   CALL DSTBN ## dots= 95   CALL DST8N ## glm= 95   CALL DSTBN	ICM177
+59	3024	3055	AGREE	      SSAM = SSAM - VPR                                                 		dots=      SSAM = SSAM - VPR ## glm=      SSAM = SSAM - VPR	ICM178
+60	3067	3100	COMMENT	C     PRINT INITIAL CONDITIONS RESULTS                                  		lighton=C     PRINT INITIAL CONDITIONS RESULTS ## glm=C     PRINT INITIAL CONDITIONS RESULTS	ICM179
+61	3109	3145	VOTED	      WRITE(ISOUT,4)W,FH, FEIGHT,HOB,ZBRSTZ                             		lighton=      WRITE(ISOUT,4)W,FH, HEIGHT,HOB,ZBRSTZ ## dots=      WRITE(ISOUT,4)W,FH, FEIGHT,HOB,ZBRSTZ ## glm=      WRITE(ISOUT,4)W,FH, FEIGHT,H08,Z8RSTZ	ICM180
+62	3177	3207	NOISE	                                                                        			
+63	3312	3341	NOISE	                                                                        			

@@ -1,0 +1,13 @@
+1	8	COUNT 0/30	                                                                                	
+2	43	COUNT 0/25	                                                                                	
+6	678	COUNT 58/59	                                                                                	72 ES= 611.* (273./ATP(I))*5.13* EXP(25.* (ATP(I)-273. )/ATP(I))
+7	723	COUNT 86/44	                                                                                	\text{PRS(I)} = 286.79 * \text{RHO(I)} * \text{ATP(I)} + \text{ES} * \text{RLH(I)} * \text{WATCOR}
+10	852	COUNT 56/57	                                                                                	ES- 611.*(273./ATP(I))**5.13+ EXP(25.(ATP(I)-273.)/ATP(I))
+11	894	COUNT 98/48	                                                                                	\text{RHO(I)} = \frac{(\text{PRS(I)} - \text{ES} * \text{RLH(I)} * \text{WATCOR})}{(286.79 * \text{ATP(I)})}
+23	1411	COUNT 36/37	                                                                                	111 IF (ABS(ALT(1)+ 1000).LE.1.) GO TO 113
+34	1882	COUNT 57/58	                                                                                	IF(ABS(ALT(I)-ALT(I-1)-200).GT.2.) IF(NBRNCH-1) 140,140,137
+38	2053	COUNT 33/32	                                                                                	130 CALL FERROR(PROGRM, IRROR, ISOUT)
+50	2568	OK	      ALT(1)=-1000.                                                             	ALT(1) = -1000.
+52	2655	COUNT 21/22	                                                                                	15 ( WRITE(IRISE)ATHSUB
+58	2912	OK	      IF(ALT(1)   .LE. 0.0(1)GO TO 200                                          	IF(ALT(1) .LE. 0.0(1)GO TO 200
+64	3326	COUNT 0/8	                                                                                	

@@ -1,0 +1,63 @@
+1	0	COUNT 0/18;COUNT 0/1	                                                                                	 || 
+2	536	OK	C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE      BATHA121	C ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE || BATHA121
+3	583	OK	      LSUB = LSUB + 1                                                   BATMA122	LSUB = LSUB + 1 || BATMA122
+4	624	OK	      IF (LSUB.GT.11) GO TC 1301                                        BATMA123	IF (LSUB.GT.11) GO TC 1301 || BATMA123
+5	668	COUNT 16/15	                                                                        BATHA124	NUC(1.SUB) = NDAUT || BATHA124
+6	712	OK	      GO TO 12                                                          BATHA125	GO TO 12 || BATHA125
+7	755	OK	C                                                                       BATHA126	C || BATHA126
+8	797	OK	CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO           BATMA127	CC A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO || BATMA127
+9	841	OK	C   ELIMINATE  UNI-MEMBERED SUBCHAIN                                    BATMA128	C ELIMINATE UNI-MEMBERED SUBCHAIN || BATMA128
+10	883	OK	   21 IF (LSUB.EQ.1) GO TO 500                                          BATHA129	21 IF (LSUB.EQ.1) GO TO 500 || BATHA129
+11	925	OK	C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS        BATMA130	C RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS || BATMA130
+12	970	OK	      ASSIGN 23 TO LGO                                                  BATMA131	ASSIGN 23 TO LGO || BATMA131
+13	1012	OK	      JL = 0                                                            BATHA132	JL = 0 || BATHA132
+14	1055	OK	      SCA(LSUB) = 1.0                                                   BATMA133	SCA(LSUB) = 1.0 || BATMA133
+15	1099	COUNT 25/11	                                                                        BATMA134	\text{LAST} = \text{LSUB} + 1 || BATMA134
+16	1141	OK	      DO 22 L = 2,LSUB                                                  BATMA135	DO 22 L = 2,LSUB || BATMA135
+17	1184	OK	      LBACK = LAST - i                                                  BATHA136	LBACK = LAST - i || BATHA136
+18	1228	OK	      SCA(LBACK) = 1.0                                                  BATHA137	SCA(LBACK) = 1.0 || BATHA 137
+19	1270	OK	      GO TO LGO,(22,23)                                                 BATHA138	GO TO LGO, (22,23) || BATHA138
+20	1312	OK	C   FIND THE LAST BRANCH IN THE SUBCHAIN                                BATMA139	C FIND THE LAST BRANCH IN THE SUBCHAIN || BATMA139
+21	1357	OK	   23 IM = LIM(LBACK)                                                   BATMA140	23 IM = LIM(LBACK) || BATMA140
+22	1398	OK	      IF (MOD(INFORM(LBACK),MULT(IN))/MULT(IN-1))22,22,24               BATMA141	IF (MOD(INFORM(LBACK),MULT(IN))/MULT(IN-1))22,22,24 || BATMA141
+23	1442	OK	   24 JL = LBACK                                                        BATMA142	24 JL = LBACK || BATMA142
+24	1486	OK	      ASSIGN 2? TO LGO                                                  BATMA:43	ASSIGN 2? TO LGO || BATMA:43
+25	1527	OK	   22 SCA(LBACK) = SBR(LBACK)+SCA(LBACK+1)                              BATMA144	22 SCA(LBACK) = SBR(LBACK) + SCA(LBACK+1) || BATMA144
+26	1571	COUNT 19/13	                                                                        BATMA145	SCA(\text{SUB}) = 0.0 || BATMA145
+27	1615	OK	CORRECT FISSION YIELDS FOR BRANCHING                                    BATMA146	CORRECT FISSION YIELDS FOR BRANCHING || BATMA146
+28	1657	OK	      FLAG = .FALSE.                                                    BATMA147	FLAG = .FALSE. || BATMA147
+29	1700	OK	      00 25 J = 1,LSUB                                                  6A7MA148	00 25 J = 1,LSUB || 6A7MA148
+30	1744	OK	      JN = NUC(J)                                                       BATMA149	JN = NUC(J) || BATMA149
+31	1785	COUNT 29/23	                                                                        BATMA150	SCA(J) = SCA(J) * \Lambda B E G N(JN) || BATMA150
+32	1830	OK	      IF (FLAG) GO TO 25                                                BATMA151	IF (FLAG) GO TO 25 || BATMA151
+33	1871	OK	*   MAKE A NOTE IF AT LEAST ONE VALUE OF SCA IS NONTRIVIAL              BATMA152	* MAKE A NOTE IF AT LEAST ONE VALUE OF SCA IS NONTRIVIAL || BATMA152
+34	1915	OK	      IF (SCA(J))25,25,27                                               CA1MA153	IF (SCA(J)) 25,25,27 || CA1MA153
+35	1958	COUNT 0/8	   27 FLAG = .TRUE.                                                             	27 FLAG = .TRUE. || 
+36	2002	OK	   25 CONTINUE                                                          BATMA155	25 CONTINUE || BATMA155
+37	2045	OK	C                                                                       8A7MA156	C || 8A7MA156
+38	2087	COUNT 30/35	                                                                        BATMA157	COMPUTATIONS FOR TRIVIAL SUBCHAIN || BATMA157
+39	2131	OK	      IF (.NOT.FLAG) GO TO 3C                                           BATMA158	IF (.NOT.FLAG) GO TO 3C || BATMA158
+40	2174	OK	C                                                                       BATMA159	C || BATMA159
+41	2215	OK	CO  THE CENTRAL COMPUTATIONS BEGIN AT THIS POINT                        BATMA160	CO THE CENTRAL COMPUTATIONS BEGIN AT THIS POINT || BATMA160
+42	2261	OK	C                                                                       BATMA161	C || BATMA161
+43	2302	OK	      DO 200 N=1,LSU9                                                   BATMA162	DO 200 N=1,LSU9 || BATMA162
+44	2344	OK	      IF(JO) TENTER=TIME                                                BATMA163	IF (JO) TENTER=TIME || BATMA163
+45	2387	COUNT 55/27	                                                                        BATMA1E4	\mathrm{EFAC}(N) = \exp(-\mathrm{SOC}(N) * \mathrm{TENTER}) || BATMA1E4
+46	2428	OK	      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SOC(N)'TEXIT)                     BATMA1E5	IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SOC(N)'TEXIT) || BATMA1E5
+47	2474	OK	      R=J.0                                                             BATMA1E6	R=J.0 || BATMA1E6
+48	2518	OK	      00 163 k1=1,N                                                     BATMA1E7	00 163 k1=1,N || BATMA1E7
+49	2560	OK	      CNIJ=1,0                                                          BATMA168	CNIJ=1,0 || BATMA168
+50	2604	OK	      Q=0.0                                                             BATMA169	Q=0.0 || BATMA169
+51	2647	OK	      00 162 k=1,N                                                      BATHA170	00 162 k=1,N || BATHA170
+52	2690	COUNT 19/8	                                                                        BATHA171	K2 \cong N - K \diamond 1 || BATHA171
+53	2731	OK	      IF(K2:NE.N) CNIJ=CNIJ*SOC(K2)                                     BATHA172	IF(K2:NE.N) CNIJ=CNIJ*SOC(K2) || BATHA172
+54	2776	OK	      IF(K2.EQ.K1) GO TO 162                                            9k7MA173	IF(K2.EQ.K1) GO TO 162 || 9k7MA173
+55	2818	COUNT 42/21	                                                                        BATMA174	\text{FACTC} = \text{SDC}(K2) - \text{SDC}(K1) || BATMA174
+56	2860	OK	      IF(ABS1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC)                 BAT44175	IF (ABS1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC) || BAT44175
+57	2905	COUNT 15/14;COUNT 0/8	                                                                                	CWIJ=CHIJ/F ACTC || 
+58	2947	COUNT 31/29	                                                                        9ATHA177	162 IFIK2. LE. K1M0=Q♦CHIJ*SCA(K2) || 9ATHA177
+59	2990	COUNT 13/12	                                                                        6uTMA1?0	IF (J0) GO TO 163 || 6uTMA1?0
+60	3034	COUNT 0/25;COUNT 0/8	                                                                                	 || 
+61	3079	COUNT 11/10	                                                                        3478 190	0=2/5DC (41) || 3478190
+62	3127	COUNT 0/3	                                                                                	
+63	3301	COUNT 0/49;COUNT 0/2	                                                                                	 || 

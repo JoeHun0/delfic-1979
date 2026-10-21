@@ -1,0 +1,8 @@
+2	52	COUNT 0/28	                                                                                	
+4	851	COUNT 50/41	                                                                                	CALL "DUMPER(XF,YP,ZP,TP, RWAF, RWAF, PMAS,FSIZ,0.,0,"
+5	897	COUNT 17/15	                                                                                	1ISOUT,IPOUT,MC3)
+20	1544	OK	     2ICF,JCF,NCF,KBHF,NCATF,LTIMF,NATF)                                        	2ICF,JCF,NCF,KBHF,NCATF,LTIMF,NATF)
+25	1757	OK	  806 CALL       DUMPER(G..J..O..O..   J..   G..   G..  G..J..999.              	806 CALL DUMPER (G..J..O..O.. J.. G.. G.. G..J..999.
+27	1843	COUNT 206/42	                                                                                	CALL DUMPER(0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+30	1980	COUNT 12/13	                                                                                	ENDFILE IPOUT
+35	3307	COUNT 0/17	                                                                                	

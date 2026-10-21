@@ -1,0 +1,14 @@
+1	20	COUNT 0/27	                                                                                	
+2	49	COUNT 0/8	                                                                                	
+4	851	COUNT 223/66	                                                                                	\mathrm{DRM} = \mathrm{RNIX}^* (\mathrm{RM}/(1.0 - \mathrm{Q6}^*\mathrm{Q8}))^* (\mathrm{RS}^*\mathrm{RL}^* (\mathrm{QX}^*\mathrm{QT}^* 9.8^* \mathrm{Q4}^* \mathrm{U}^* \mathrm{QXE}^* \mathrm{EPS}) / \mathrm{CP}/\mathrm{T}/\mathrm{QX}^*|
+5	893	OK	     109-(9.8*U)/(287./QXE*TE))                                                 	109-(9.8*U)/(287./QXE*TE))
+6	937	COUNT 26/8	                                                                                	\mathrm{ORME}=\mathrm{ORM}
+15	1323	COUNT 96/57	                                                                                	\text{DT} = ((-QX \cdot QF \cdot Q4 \cdot 9.8 \cdot U/CP \cdot QXE - Q6 \cdot ORNE / (RMIX \cdot RN)) + EPS/CP) \cdot Q9
+23	1667	COUNT 48/45	                                                                                	DWT = -(1.0 + X + S + WT)/RM^* (WT + X - XE)/(1.0 + XE) * ORME - DX
+31	2010	COUNT 42/41	                                                                                	DU = 9.8 * (QT*QX*GXE*RMIX-1,.) - (ED1 + DRM/RN) * U
+37	2267	COUNT 33/32	                                                                                	DEK=F.D-(EK-0.5*U**2)*ORHE/RH-EPS
+41	2438	OK	      OS=-(1.+X+S+WT)*S/RV*(CMLR/(S+WT)+ORME/(1.+XE))                           	OS = -(1. + X + S + WT) * S/RV * (CMLR / (S + WT) + ORME / (1. + XE))
+45	2610	OK	      PA=RN/V*RMIX                                                              	PA=RN/V*RMIX
+46	2653	OK	      IF(EPS)=2/2,=2,9:1                                                        	IF (EPS) = 2/2, = 2, 9:1
+47	2687	COUNT 0/13	                                                                                	
+49	2782	COUNT 3/4	                                                                                	END

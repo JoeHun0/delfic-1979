@@ -1,0 +1,14 @@
+14	1077	OK	      IF(MC( 2 )  .NE. 1   ) WRITE(ISOUT, 140J)AP(N1), AP(N2), AP(N3)           	IF(MC( 2 ) .NE. 1 ) WRITE(ISOUT, 140J)AP(N1), AP(N2), AP(N3)
+16	1163	COUNT 0/36	                                                                                	
+18	1248	COUNT 0/63	                                                                                	
+19	1291	COUNT 0/62	                                                                                	
+21	1379	OK	 150  DX(K3H,1,LTIM) = AP(A2)*SCALE(2)                                          	150   DX(K3H,1,LTIM) = AP(A2)*SCALE(2)
+22	1421	COUNT 0/30	                                                                                	
+26	1594	COUNT 27/24	                                                                                	250 IF(LTI \neq .EQ. 1) KBHX=KBH
+32	1852	OK	      DO 255 I=1,K8HM1                                                          	DO 255 I=1,K8HM1
+40	2195	COUNT 0/25	                                                                                	
+41	2239	COUNT 0/17	                                                                                	
+42	2282	OK	      TEMP=DY(I,1,LTIM)                                                         	TEMP=DY(I,1,LTIM)
+43	2315	COUNT 0/25	                                                                                	
+44	2368	OK	      DY(J,1,LTIM)=TEMP                                                         	DY(J,1,LTIM)=TEMP
+56	2885	OK	  259 ZBH(1) = ZMIN                                                             	259  ZBH(1) = ZMIN

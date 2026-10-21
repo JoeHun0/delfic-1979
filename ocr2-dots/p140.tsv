@@ -1,0 +1,10 @@
+21	1336	OK	      DO 203 J=1,JTOPV                                                          	DO 203 J=1, JTOPV
+25	1508	COUNT 15/8	                                                                                	\text{NAD}(J) = J
+32	1808	OK	      TZ=ZS(J)-ZG                                                               	TZ=ZS(J)-ZG
+33	1852	OK	      CRESSZ=TZATZ                                                              	CRESSZ = TZA TZ
+36	1981	OK	      CRESSZ=CUTOFF/{ALFA2+CRESSZ}                                              	CRESSZ=CUTOFF/{ALFA2+CRESSZ}
+40	2153	OK	      CRESSR=CUTOFF/(BETA2+CRESSR)                                              	CRESSR=CUTOFF/(BETA2+CRESSR)
+42	2238	OK	      IF(CRESS%.LE.GIB) GC TO 202                                               	IF (CRESS%.LE.GIB) GC TO 202
+58	2927	OK	      KL=NAD(NADT)                                                              	KL=NAD(NADT)
+59	2968	OK	      OM=D2(KL)                                                                 	OM=D2(KL)
+64	3296	COUNT 0/9	                                                                                	

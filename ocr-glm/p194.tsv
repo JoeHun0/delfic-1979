@@ -1,0 +1,65 @@
+1	33	COUNT 3/10	                                                                                	---
+2	60	COUNT 3/53;COUNT 3/8	                                                                                	--- || ---
+3	580	OK	*DECK,MCHDEP                                                            MCHDE  1	*DECK, MCHDEP || MCHDE 1
+4	623	OK	      SUBROUTINE MCHDEP                                                 MCHDE  2	SUBROUTINE MCHDEP || MCHDE 2
+5	665	OK	C                                                                       MCHDE  3	C || MCHDE 3
+6	708	COUNT 35/36	                                                                        MCHDE  4	RC TOMPKINS - US ARMY NUCLEAR DEFENSE LABS || MCHDE 4
+7	752	OK	C      NOVEMBER 1966                                                    MCHDE  5	C NOVEMBER 1966 || MCHDE 5
+8	793	OK	CALLED BY PAM2                                                          MCHDE  6	CALLED BY PAM2 || MCHDE 6
+9	836	OK	C                                                                       MCHDE  7	C || MCHDE 7
+10	880	OK	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      MCHDE  8	COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME || MCHDE 8
+11	922	COUNT 55/56;COUNT 5/6	                                                                                	COMMON/FISHIN/ABEGN(700),ABUND(700),BRANCH(130),CAPFIS, || MCHDE
+12	966	OK	     1  DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(7J0)                 MCHDE 10	1 DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(7J0) || MCHDE 10
+13	1001	OK	      COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90)           MCHDE 11	COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90) || MCHDE 11
+14	1050	OK	      COMMON /OUTPUT/ FISNLM,FF(200),FW,ITAB,JGO,MASCHN,PSIZE(200),     MCHDE 12	COMMON/OUTPUT/FISNLM,FF(200),FW,ITAB,JGO,MASCHN,PSIZE(200), || MCHDE 12
+15	1094	OK	     1 FMASS(200),PACT(20J)                                             MCHDE 13	1 FMASS(200),PACT(20J) || MCHDE 13
+16	1138	OK	      COMMON /UTILTY/  KCUT,NPRNT(15)                                   MCHDE 14	COMMON /UTILTY/ KCUT, NPRNT(15) || MCHDE 14
+17	1180	OK	      LOGICAL IGO,JD,KOOS,NPRNT                                         MCHDE 15	LOGICAL IGO,JD,KOOS,NPRNT || MCHDE 15
+18	1223	OK	C                                                                       MCHDE 16	C || MCHDE 16
+19	1266	OK	      DIMENSION FMTA( 7),FMTB(10)                                       MCHDE 17	DIMENSION FMTA(7),FMTB(10) || MCHDE 17
+20	1309	OK	C                                                                       MCHDE 18	C || MCHDE 18
+21	1350	OK	      LOGICAL TZERO,THINLS                                              MCHDE 19	LOGICAL TZERO, THINLS || MCHDE 19
+22	1396	OK	C                                                                       MCHDE 20	C || MCHDE 20
+23	1436	OK	      DATA (FMTA(I),I=1,6) /10H(/14X31H T, 10HOTAL ABUND, 10HANCE OF MA,MCHDE 21	DATA (FMTA(I), I=1,6) /10H(/14X31H T, 10HOTAL ABUND, 10HANCE OF MA, || MCHDE 21
+24	1480	OK	     1 10HSS CHAIN I, 10H3.4H WAS 1, 10HPE12.5,9H /,                    MCHDE 22	1 10HSS CHAIN I, 10H3.4H WAS 1, 10HPE12.5,9H /, || MCHDE 22
+25	1523	COUNT 56/57	                                                                        MCHDE 23	2 (FMT8(I),I=1,9)/10H(17H10UTPU,10HT OF MCHDE,1CHP//5X13HP, || MCHDE 23
+26	1565	OK	     3 10HARTICLE SI, 10HZE6X22HACT, 104IVITY OF M, 10HASS CHAINI,      MCHDE 24	3 10HARTICLE SI, 10HZE6X22HACT, 104IVITY OF M, 10HASS CHAINI, || MCHDE 24
+27	1609	OK	     4 10H4/9X6HMETE， 10HRS18X， 9H /，                                   MCHDE 25	4 10H4/9X6HMETE，10HRS18X，9H/， || MCHDE 25
+28	1652	COUNT 38/40	                                                                        MCHDE 26	5 UNITC/10HCURIES //. UNITF/10HFISSIONS// || MCHDE 26
+29	1695	OK	      DATA CROSS,UNIT/1.0E-4,1.0/                                       MCHDE 27	DATA CROSS,UNIT/1.0E-4,1.0/ || MCHDE 27
+30	1739	OK	C                                                                       MCHDE 28	C || MCHDE 28
+31	1783	OK	  903 FORMAT                                                            MCHDE 29	903 FORMAT || MCHDE 29
+32	1823	OK	     1    （5X1PE12.4，14XE12.4）                                          MCHDE 30	1 （5X1PE12.4，14XE12.4） || MCHDE 30
+33	1867	OK	C                                                                       MCHDE 31	C || MCHDE 31
+34	1911	OK	      TZERO = .FALSE.                                                   MCHDE 32	TZERO = .FALSE. || MCHDE 32
+35	1952	OK	      TMINUS = .FALSE.                                                  KCHDE 33	TMINUS = .FALSE. || KCHDE 33
+36	1996	OK	      FHTA（ 7） = UNITC                                                  MCHDE 34	FHTA（7）=UNITC || MCHDE 34
+37	2039	OK	      FMT8(10) = UNITC                                                  MCHDE 35	FMT8(10) = UNITC || MCHDE 35
+38	2081	OK	      IF (TIME)11,1,2                                                   MCHDE 36	IF (TIME)11,1,2 || MCHDE 36
+39	2125	OK	    1 TZERO = .TRUE.                                                    MCHDE 37	1 TZERO = .TRUE. || MCHDE 37
+40	2167	OK	COMPUTE EQUIVALENT FISSIONS                                             MCHDE 38	COMPUTE EQUIVALENT FISSIONS || MCHDE 38
+41	2209	OK	      ABNDM = 1.0                                                       MCHDE 39	ABNDM = 1.0 || MCHDE 39
+42	2252	OK	      FISNUM = FISNUM*1.E4                                              MCHDE 40	FISNUM = FISNUM*1.E4 || MCHDE 40
+43	2296	OK	      FMTA（ 7） = UNITF                                                  MCHDE 41	FMTA（7）= UNITF || MCHDE 41
+44	2338	OK	      FMTB(10) = UNITF                                                  MCHDE 42	FMTB(10) = UNITF || MCHDE 42
+45	2379	OK	    2 IF (NPRNT(13)) WRITE (KOUT,FMTB) MASCHN                           MCHDE 43	2 IF (NPRNT(13)) WRITE (KOUT,FMTB) MASCHN || MCHDE 43
+46	2424	OK	      IF (TZERO) GO TO 1J                                               MGHDE 44	IF (TZERO) GO TO 1J || MGHDE 44
+47	2465	OK	COMPUTE ACTIVITY IN CURIES                                              MCHDE 45	COMPUTE ACTIVITY IN CURIES || MCHDE 45
+48	2510	OK	      CALL BATMAN                                                       MCHDE 46	CALL BATMAN || MCHDE 46
+49	2555	OK	      ABNDM = 0.0                                                       MCHDE 47	ABNDM = 0.0 || MCHDE 47
+50	2596	OK	      DO 220 K1=1,INUC                                                  MCHDE 48	DO 220 K1=1,INUC || MCHDE 48
+51	2637	OK	      IF(MASCHN.NE.IABS(NUCLID(K1))/MULT/9)) GC TO 220                  HCHDE 49	IF(MASCHN.NE.IABS(NUCLID(K1))/MULT/9)) GC TO 220 || HCHDE 49
+52	2678	OK	C     SUM THE ACTIVITIES IN ONE MASS CHAIN AND CONVERT TO CURIES        MCHDE 50	C SUM THE ACTIVITIES IN ONE MASS CHAIN AND CONVERT TO CURIES || MCHDE 50
+53	2724	OK	      ABNDM = ABNDM + ABUNCC(K1)                                        MCHDE 51	ABNDM = ABNDM + ABUNCC(K1) || MCHDE 51
+54	2767	OK	  220 CONTINUE                                                          MCHDE 52	220 CONTINUE || MCHDE 52
+55	2809	OK	      ABNDM = ABNDM/3.7E10                                              MCHDE 53	ABNDM = ABNDM/3.7E10 || MCHDE 53
+56	2854	OK	C                                                                       MCH0E 54	C || MCH0E 54
+57	2895	OK	      IF (ABNDM)9,9,10                                                  MCHDE 55	IF (ABNDM)9,9,10 || MCHDE 55
+58	2938	OK	C     THE REST IS AN ABRICGEMENT OF GXFSR                               MCHDE 56	C THE REST IS AN ABRICGEMENT OF GXFSR || MCHDE 56
+59	2981	OK	   10 DNEX = 8SUB'(MASCHN-71)                                           MCHDE 57	10 DNEX = 8SUB'(MASCHN-71) || MCHDE 57
+60	3023	OK	      CRISS = CRCSS**BNEX                                               MCHDE 58	CRISS = CRCSS**BNEX || MCHDE 58
+61	3066	OK	      RADIAL = ECF(MASCHN-71)/(UNIT + CRISS*ECF(MASCHN-71))             MCHDE 59	RADIAL = ECF(MASCHN-71)/(UNIT + CRISS*ECF(MASCHN-71)) || MCHDE 59
+62	3110	OK	      STRAIT = RADIAL*CRISS                                             MCHDE 60	STRAIT = RADIAL*CRISS || MCHDE 60
+63	3160	COUNT 3/2	                                                                                	191
+64	3271	COUNT 3/17;COUNT 2/7	                                                                                	--- || 1.
+65	3301	COUNT 3/45	                                                                                	---

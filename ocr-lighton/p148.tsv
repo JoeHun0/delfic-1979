@@ -1,0 +1,44 @@
+1	7	COUNT 152/13;COUNT 14/6	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \text{العربية}
+2	761	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,GCGO  28	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX , || GCGO 28
+3	803	COUNT 7/6	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN ,YMAX ,YMIN ,ZMIN || <table>
+4	843	COUNT 7/6	      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,        	COMMON /PARDAT/ ASQ ,BSQ ,COSA ,F , || <table>
+5	889	COUNT 7/6	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100),        	1 GAMA , KTR(100) , PMAS(100) , PSIZ(100) , RO(100) , SIGXO(100), || <table>
+6	932	OK	     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(130) ,YPAR(100) ,YPRML     ,GOGO  32	2SIGYO(100),SINA ,TPAR(100) ,XPAR(130) ,YPAR(100) ,YPRML , || GOGO 32
+7	974	COUNT 7/6	     3YPRMU     ,ZPAR(100)                                                      	3 YPRMU ,ZPAR(100) || <table>
+8	1019	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,GOGO  34	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR , || GOGO 34
+9	1062	OK	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,GUGO  35	1MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK , || GUGO 35
+10	1104	OK	     2OPMID(12) ,T1        ,T2        ,WFMAS(200)                       GOGO  36	2OPMID(12) ,T1 ,T2 ,WFMAS(200) || GOGO 36
+11	1143	COUNT 7/6	      DIMENSION ÖMAP(NMAP)                                                      	DIMENSION ÖMAP(NMAP) || <table>
+12	1191	COUNT 19/18;COUNT 34/6	                                                                                	DATA PROGRAM/6HGOGO / || <table border="1" class="dataframe">
+13	1232	COUNT 7/6	C                                                                               	C || <table>
+14	1276	COUNT 12/6	                                                                        GOGO  40	I_{1}I_{N}=1 || GOGO 40
+15	1318	OK	C     READ A DATA BLOCK COUNT                                           GUGO  41	C READ A DATA BLOCK COUNT || GUGO 41
+16	1361	COUNT 7/5	C                                                                               	C || <table>
+17	1406	OK	  100 READ(KTAPE)NIJ                                                    GUGO  43	100 READ(KTAPE) NIJ || GUGO 43
+18	1448	OK	C                                                                       GOGO  44	C || GOGO 44
+19	1489	COUNT 31/32;COUNT 7/6	                                                                                	C ARE WE FINISHED PRCCESING THE DATA- || <table>
+20	1534	OK	C                                                                       GOGO  46	C || GOGO 46
+21	1577	OK	      IF(NIJ.EQ.0) GO TO 400                                            GOGO  47	IF(NIJ.EQ.0) GO TO 400 || GOGO 47
+22	1621	OK	      IF(NIJ.LE.MARRAY) GO TO 200                                       GOGO  48	IF(NIJ.LE.MARRAY) GO TO 200 || GOGO 48
+23	1664	OK	  150 IRROR=-150                                                        GOGO  49	150 IRROR=-150 || GOGO 49
+24	1706	OK	  160 CALL ERROR(PROGRM,IRROR,ISOUT)                                    GOGO  50	160 CALL ERROR(PROGRM,IRROR,ISOUT) || GOGO 50
+25	1744	COUNT 34/6	C                                                                               	C || <table border="1" class="dataframe">
+26	1792	OK	C     READ A BLOCK OF PARCEL DATA                                       GÜGO  52	C READ A BLOCK OF PARCEL DATA || GÜGO 52
+27	1835	COUNT 7/6	C                                                                               	C || <table>
+28	1877	OK	  200 READ(KTAPE)(ATAP(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I),    GUGO  54	200 READ(KTAPE)(ATAP(I), YPAR(I), ZPAR(I), TPAR(I), SIGXO(I), SIGYO(I), || GUGO 54
+29	1920	COUNT 29/31	                                                                        GUGO  55	1 RO(I), PSIZ(I), PMPS(I), 1, NIJ) || GUGO 55
+30	1958	COUNT 7/6	C                                                                               	C || <table>
+31	2005	COUNT 12/6	C     CALL PCHECK TO BEGIN PROCESSING THE PARTICLE DATA INTO A MAP              	C     CALL PCHECK TO BEGIN PROCESSING THE PARTICLE DATA INTO A MAP || ~~~ ~~~ ~~~ ~~~
+32	2045	COUNT 34/6	C                                                                               	C || <table border="1" class="dataframe">
+33	2093	OK	      CALL PCHECK(IJIN,OMAP,NMAP)                                       GOGO  59	CALL PCHECK(IJIN,OMAP,NMAP) || GOGO 59
+34	2130	COUNT 7/6	      IF(NZ.EQ.ICTR) GO TO 100                                                  	IF(NZ.EQ.ICTR) GO TO 100 || <table>
+35	2177	COUNT 0/6	C                                                                               	C || 
+36	2221	OK	C     CALL POMP  TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT GCGO  62	C     CALL POMP TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT || GCGO 62
+37	2261	COUNT 34/6	C     MAP CORE LOADS                                                            	C MAP CORE LOADS || <table border="1" class="dataframe">
+38	2305	COUNT 7/6	C                                                                               	C || <table>
+39	2350	OK	      IF(NIJ .GT. NE) CALL POMP                                         GOGO  65	IF(NIJ .GT. NE) CALL POMP || GOGO 65
+40	2392	COUNT 34/6	      GOTO 100                                                                  	GOTO 100 || <table border="1" class="dataframe">
+41	2435	OK	  400 RETURN                                                            GOGO  67	400 RETURN || GOGO 67
+42	2480	OK	      END                                                               GÜGO  68	END || GÜGO 68
+43	3103	COUNT 3/2	                                                                                	145
+44	3277	COUNT 0/50	                                                                                	

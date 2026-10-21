@@ -1,0 +1,12 @@
+181	p084	35	SINGLE	30	7	      CX （MK - 1， 2） = CX （MK， 1） - CX （MK - 1， 1）
+182	p084	37	TIE	43	7	      CX （MK - 1， 6） = （CX （MK、 3） - CX （MK - 1， 3）） / CX （MK - 1， 2）
+183	p084	38	TIE	43	7	      CX （MK-1， 7） = （CX （MK， 4） - CX（MK-1， 4）） / CX （MK-1， 2）
+184	p084	40	SINGLE	46	3	  104 CX (MK - 1, 8) = (CX (MK, 5) - CX (MK - 1, 5)) / CX (MK - 1, 2)
+185	p084	42	SINGLE	24	3	  106 CX （ML， 1） = CX （ML， 1） + TME
+186	p084	43	TIE	7	7	      GO T: 1J7
+187	p084	44	TIE	3	7	      740
+188	p085	21	TIE	62	7	      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SU,PS(200),DIAM(201),FMASS(200)
+189	p085	22	TIE	41	7	      COMMON /TABLES/ MCX, CX(50,10), GOPST(11,100)
+190	p085	51	NONE	25	6	raw: 2 PS (I + 1), CG (\bar{I} + 1), Y (I + 1),
+191	p086	1	NONE	17	8	raw: text
+192	p086	2	NONE	19	34	raw: ---

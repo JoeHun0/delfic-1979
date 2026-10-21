@@ -1,0 +1,14 @@
+14	1077	OK	      IF(MC( 2 )  .NE. 1   ) WRITE(ISOUT, 140J)AP(N1), AP(N2), AP(N3)           	IF(MC(2) .NE.1) WRITE(ISOUT,140J)AP(N1),AP(N2),AP(N3)
+16	1163	OK	      CAVS(KBH)= (AP(N1) + SCALE(4))*SCALE(1)                                   	CAVS (KBH) = (AP(N1) + SCALE(4)) * SCALE(1)
+18	1248	COUNT 62/63	                                                                                	OX(K8H，1，LTIH) = AP(N3)*SCALE(2)*SIN(RADC*(AP(N2)*SCALE(3) + TRNS)
+19	1291	COUNT 63/62	                                                                                	DY (K8H,1,LTIM) = AP(N3)*SCALE (2)*COS (RADC*(AP(N2)*SCALE (3) + TRNS))
+21	1379	OK	 150  DX(K9H,1,LTIM) = AP(N2)*SCALE(2)                                          	150 DX(K9H,1,LTIM) = AP(N2)*SCALE(2)
+22	1421	OK	      DY(KBH,1,LTIM) = AP(N3)*SCALE(2)                                          	DY(KBH,1,LTIM) = AP(N3)*SCALE(2)
+26	1594	OK	  250 IF(LTIY .EQ. 1) KBHX=KBH                                                  	250 IF(LTIY .EQ. 1) KBHX=KBH
+32	1852	OK	      DO 255 I=1,K8HM1                                                          	DO 255 I=1,K8HM1
+40	2195	OK	      DX（I，1，LTIM）=DX（J，1，LTIM）                                                 	DX（I，1，LTIM）=DX（J，1，LTIM）
+41	2239	OK	      DX(J,1,LTIM)=TEMP                                                         	DX(J,1,LTIM)=TEMP
+42	2282	OK	      TEMP=DY(I,1,LTIM)                                                         	TEMP=DY(I,1,LTIM)
+43	2315	OK	      DY(I,1,LTIM)=DY(J,1,LTIM)                                                 	DY(I,1,LTIM)=DY(J,1,LTIM)
+44	2368	OK	      DY(J,1,LTIM)=TEMP                                                         	DY(J,1,LTIM)=TEMP
+56	2885	OK	  259 ZBH(1) = ZMIN                                                             	259 ZBH(1) = ZMIN

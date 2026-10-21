@@ -1,0 +1,63 @@
+1	78	COUNT 3/9	                                                                                	---
+2	567	OK	C 253 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE TOP OF WNDSF361	C 253 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE TOP OF || WNDSF361
+3	611	OK	C     THE HODOGRAPH STRATUM IN WHICH IT RESIDES.AND TO THE BASE OF THE  WNDSF362	C THE HODOGRAPH STRATUM IN WHICH IT RESIDES. AND TO THE BASE OF THE || WNDSF362
+4	654	OK	C     CLOUD.  USE THE SMALLER OF THESE TIMES.                           WNDSF363	C CLOUD. USE THE SMALLER OF THESE TIMES. || WNDSF363
+5	698	OK	C                                                                       WNDSF364	C || WNDSF364
+6	740	OK	  253 DELTEP= （（ZV（MM）+ ZV（MM+1））/2.0 -ZCUR）/（FV-RV）                    WNDSF365	253 DELTEP= （（ZV（MM）+ ZV（MM+1））/2.0 -ZCUR）/（FV-RV） || WNDSF365
+7	782	OK	      GO TO 254                                                         WNDSF366	GO TO 254 || WNDSF366
+8	826	OK	C                                                                       WNDSF367	C || WNDSF367
+9	869	OK	  278 TMIUDT=TCUR-DELTEE                                                WNDSF368	278 TMIUDT=TCUR-DELTEE || WNDSF368
+10	911	OK	      IF(IC(8).EQ.0)GO TO 279                                           WNDSF369	IF(IC(8).EQ.0)GO TO 279 || WNDSF369
+11	956	OK	      IAC=278                                                           WNDSF370	IAC=278 || WNDSF370
+12	999	OK	      WRITE(ISOUT,2310)IAC,                                             WNDSF371	WRITE(ISOUT,2310)IAC, || WNDSF371
+13	1033	OK	     1                 J,LL,MM,LLL,DELTEE,ZBOTOM,RV,FV,TCUR,ZCUR,TMIUDT HNDSF372	1 J,LL,MM,LLL,DELTEE,ZBOTOM,RV,FV,TCUR,ZCUR,TMIUDT || HNDSF372
+14	1084	COUNT 13/14	                                                                        WNDSF373	2310 FORMAT I5/ || WNDSF373
+15	1126	OK	     1          4I5/7(3X.E12.5))                                        WNDSF374	1 4I5/7(3X. E12. 5)) || WNDSF374
+16	1169	OK	C                                                                       WNDSF375	C || WNDSF375
+17	1212	OK	C     FIND THE POSITION OF TIME TMIUDT IN THE CLOUC RISE TABLE.         WNDSF376	C FIND THE POSITION OF TIME TMIUDT IN THE CLOUC RISE TABLE. || WNDSF376
+18	1257	OK	C                                                                       WNDSF377	C || WNDSF377
+19	1298	OK	  279 LLL=LL                                                            WNDSF378	279 LLL=LL || WNDSF378
+20	1341	OK	  28C IF(TC(LL).LE.TMIUDT) GO TO 290                                    WNDSF379	28C IF(TC(LL).LE.TMIUDT) GO TO 290 || WNDSF379
+21	1384	OK	      LL=LL-1                                                           WNDSF380	LL=LL-1 || WNDSF380
+22	1427	OK	      IF(LL.GE.1) GO TO 280                                             WNDSF381	IF(LL. GE.1) GO TO 280 || WNDSF381
+23	1470	OK	      TMIUOT= TC(1)                                                     WNDSF382	TMIUOT= TC(1) || WNDSF382
+24	1514	OK	      LL=1                                                              HNDSF383	LL=1 || HNDSF383
+25	1556	OK	      DELTEE=TCUR-TC(1)                                                 HNDSF384	DEL TEE = TCUR - TC(1) || HNDSF384
+26	1598	OK	C                                                                       WNDSF385	C || WNDSF385
+27	1640	OK	C     COMPUTE THE CLOUD BOTTOM HEIGHT,Z80TOM,AT THE TIME TMIUDT.        WNDSF386	C COMPUTE THE CLOUD BOTTOM HEIGHT,Z80TOM,AT THE TIME TMIUDT. || WNDSF386
+28	1683	OK	C                                                                       WNDSF387	C || WNDSF387
+29	1726	OK	  290 ZB0T0M=ZB（LL）+VB（LL）*（TMIUDT-TG（LL）)                              WNDSF368	290 ZB0T0M=ZB（LL）+VB（LL）*（TMIUDT-TG（LL）) || WNDSF368
+30	1769	OK	C                                                                       HNDSF389	C || HNDSF389
+31	1812	OK	C     IS THIS CLOUD BOTTOM ALTITUDE LESS THAN CR EQUAL TO THE PARTICLE  WNDSF390	C IS THIS CLOUD BOTTOM ALTITUDE LESS THAN CR EQUAL TO THE PARTICLE || WNDSF390
+32	1854	OK	C     ALTITUDE=                                                         WNDSF391	C ALTITUDE= || WNDSF391
+33	1898	OK	C        YES TO 295 OR 320                                              WNDSF392	C YES TO 295 OR 320 || WNDSF392
+34	1940	OK	C        NO  TO 300                                                     WNDSF393	C NO TO 300 || WNDSF393
+35	1983	OK	C                                                                       HNDSF394	C || HNDSF394
+36	2027	OK	  291 TMPDZ=ZBOTOM-ZCUR-(FV-RV)*DELTEE                                  WNDSF395	291 TMPDZ=ZBOTOM-ZCUR-(FV-RV)*DELTEE || WNDSF395
+37	2070	OK	      IF(ABS(TMPOZ).LE.5.0) GO TO 320                                   WNDSF396	IF(ABS(TMPOZ).LE.5.0) GO TO 320 || WNDSF396
+38	2114	OK	      IF(TMPDZ)295,320,300                                              WNDSF397	IF(TMPDZ)295,320,300 || WNDSF397
+39	2156	OK	C                                                                       WNDSF398	C || WNDSF398
+40	2197	OK	C 295 CLOUD BASE AND PARTICLE TRAJECTORIES HAVE CROSSED.  IF POSSIBLE,  WNDSF399	C 295 CLOUD BASE AND PARTICLE TRAJECTORIES HAVE CROSSED. IF POSSIBLE, || WNDSF399
+41	2241	OK	C     GO BACK TO THE STEP JUST BEFORE THE CROSSING OCCURS.              WNDSF410	C GO BACK TO THE STEP JUST BEFORE THE CROSSING OCCURS. || WNDSF410
+42	2284	OK	C                                                                       WNDSF401	C || WNDSF401
+43	2326	OK	  295 LL=LL+1                                                           WNDSF4J2	295 LL=LL+1 || WNDSF4J2
+44	2370	OK	      IF（LLL-LL）296，310，297                                             WNDSF403	IF（LLL-LL）296，310，297 || WNDSF403
+45	2413	OK	  296 LL=LLL                                                            WNDSF404	296 LL=LLL || WNDSF404
+46	2455	OK	      GO TO 313                                                         WNDSF405	GO TO 313 || WNDSF405
+47	2498	OK	  297 DELTEE= TCUR-TC(LL)                                               WNDSF4J6	297 DELTEE= TCUR-TC(LL) || WNDSF4J6
+48	2543	OK	      ZBOTOH=ZB(LL)                                                     WNDSF407	ZBOTOH=ZB(LL) || WNDSF407
+49	2584	OK	      TMPDZ=ZBOTOM-ZCUR-(FV-RV)*DELTEE                                  WNDSF408	TMPDZ=ZBOTOM-ZCUR-(FV-RV)*DELTEE || WNDSF408
+50	2628	OK	      IF(ABS(TMPDZ).LE.5.0) GO TO 311                                   WNDSF4J9	IF(ABS(TMPDZ).LE.5.0) GO TO 311 || WNDSF4J9
+51	2671	OK	      IF(TMP02)295,311,300                                              HNDSF410	IF(TMP02)295,311,300 || HNDSF410
+52	2714	OK	C                                                                       WNDSF411	C || WNDSF411
+53	2755	OK	C 300 INCREMENT PARTICLE SHIFT PARAMETERS                               HNDSF412	C 300 INCREMENT PARTICLE SHIFT PARAMETERS || HNDSF412
+54	2798	OK	  300 DX=DX+VX（ MM） *DELTEE                                             WNDSF413	300 DX=DX+VX（MM）*DELTEE || WNDSF413
+55	2833	OK	      DY=DY+VY（ MM） *DELTEE                                             WNDSF414	DY=DY+VY（MM）*DELTEE || WNDSF414
+56	2885	OK	      TCUR=TCUR-DELTEE                                                  WNDSF415	TCUR=TCUR-DELTEE || WNDSF415
+57	2929	OK	      ZCUR=ZCUR+（FV-RV）*DELTEE                                          WNDSF416	ZCUR=ZCUR+（FV-RV）*DELTEE || WNDSF416
+58	2971	OK	C     COMPUTE ATMOSPHERE PROFERTIES AT ZCUR                             HNDSF417	C COMPUTE ATMOSPHERE PROFERTIES AT ZCUR || HNDSF417
+59	3013	OK	      CALL TRPL(ZCUR,NAT,ALT,ATP,T)                                     WNDSF418	CALL TRPL(ZCUR,NAT,ALT,ATP,T) || WNDSF418
+60	3059	OK	      CALL TRPL(ZCUR,NAT,ALT,PRS,P)                                     WNDSF419	CALL TRPL(ZCUR,NAT,ALT,PRS,P) || WNDSF419
+61	3103	OK	      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN)                                   WNOSF420	CALL TRPL(ZCUR,NAT,ALT,RHO,DEN) || WNOSF420
+62	3158	OK	                                      103                                       	103
+63	3252	COUNT 3/7;COUNT 1/8	                                                                                	--- || .

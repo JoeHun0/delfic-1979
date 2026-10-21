@@ -1,0 +1,63 @@
+1	5	COUNT 0/18;COUNT 0/5	                                                                                	 || 
+2	60	COUNT 0/10	                                                                                	
+3	534	OK	      IF(ZPAR(J)-ZB( MCX )) 114,115,116                                 WNOSF241	IF(ZPAR(J)-ZB(MCX)) 114,115,116 || WNOSF241
+4	579	OK	C                                                                       WNOSF242	C || WNOSF242
+5	621	OK	C '15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD                  WNDSF243	C '15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD || WNDSF243
+6	665	OK	 115  DX=XC(MCX)                                                        WNDSF244	115 DX=XC(MCX) || WNDSF 244
+7	707	OK	      OY=YC(MCX)                                                        WNOSF245	OY=YC(MCX) || WNOSF245
+8	749	OK	C     TP(J) AND ZPAR(J) ARE OK AS IS.                                   WNDSF246	C TP(J) AND ZPAR(J) ARE OK AS IS. || WNDSF246
+9	793	OK	      GO TO 108                                                         WNDSF247	GO TO 108 || WNDSF247
+10	836	OK	C                                                                       WNDSF248	C || WNDSF248
+11	878	OK	C 114 THE PARTICLE HAS LEFT THE CLOUD                                   WNOSF249	C 114 THE PARTICLE HAS LEFT THE CLOUD || WNOSF249
+12	923	OK	C                                                                       WNOSF250	C || WNOSF250
+13	966	OK	  114 ZCUR=ZPAR(J)                                                      WNOSF251	114 ZCUR=ZPAR(J) || WNOSF251
+14	1007	OK	      IF( ZCUR .LT. ZBRSTZ ) ZCUR=ZBRSTZ                                WNDSF252	IF( ZCUR .LT. ZBRSTZ ) ZCUR=ZBRSTZ || WNDSF252
+15	1051	COUNT 11/10	                                                                        WNOSF253	TCU_R=TP(J) || WNOSF253
+16	1094	COUNT 12/5	                                                                        WNOSF254	\partial X = 0. || WNOSF254
+17	1137	OK	      DY=0.                                                             WNOSF255	DY=0. || WNOSF255
+18	1180	COUNT 33/34	                                                                        WNOSF256	COMPUTE ATMOSPHERE PROPERTIES AT ZCUR || WNOSF256
+19	1224	OK	      CALL TRPL(ZCUR,NAT,ALT,ATP,T)                                     WNDSF257	CALL TRPL(ZCUR,NAT,ALT,ATP,T) || WNDSF257
+20	1265	OK	      CALL TRPL(ZCUR,NAT,ALT,PRS,P)                                     WNOSF258	CALL TRPL(ZCUR,NAT,ALT,PRS,P) || WNOSF258
+21	1308	OK	      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN)                                   WN0SF259	CALL TRPL(ZCUR,NAT,ALT,RHO,DEN) || WN0SF259
+22	1352	OK	      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS)                                   WNOSF260	CALL TRPL(ZCUR,NAT,ALT,ETA,VIS) || WNOSF260
+23	1395	OK	C                                                                       WNOSF261	C || WNOSF261
+24	1437	OK	C     LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE.          WNOSF262	C      LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE. || WNOSF262
+25	1481	OK	C                                                                       WNOSF2E3	C || WNOSF2E3
+26	1523	OK	      00 210 K=1,MCX                                                    WNDSF264	00 210 K=1,MCX || WNDSF264
+27	1566	OK	      LL=MCXP1-K                                                        WNOSF265	LL = MCXP1-K || WNOSF265
+28	1609	OK	      IF(TC(LL).LE.TP(J)) GO TO 221                                     WNOSF266	IF(TC(LL).LE.TP(J)) GO TO 221 || WNOSF266
+29	1651	OK	  210 CONTINUE                                                          WNOSF2E7	210 CONTINUE || WNOSF2E7
+30	1695	OK	  211 IRROR=-211                                                        WNOSF2E8	211 IRROR=-211 || WNOSF2E8
+31	1738	OK	      GO TO 7734                                                        WNOSF2E9	GO TO 7734 || WNOSF2E9
+32	1781	OK	C                                                                       WNOSF270	C || WNOSF270
+33	1821	OK	C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      WNOSF271	C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE || WNOSF271
+34	1866	OK	C                                                                       WNOSF272	C || WNOSF272
+35	1907	OK	  221 DO 230 K=1,MHODO                                                  WNDSF273	221 DO 230 K=1,MHODO || WNDSF273
+36	1950	OK	      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240                       WNOSF274	IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240 || WNOSF274
+37	1993	OK	  230 CONTINUE                                                          WNOSF275	230 CONTINUE || WNOSF275
+38	2036	OK	      MM=NHODO                                                          WNOSF276	MM=NHODO || WNOSF276
+39	2079	OK	      GO TO 220                                                         WNOSF277	GO TO 220 || WNOSF277
+40	2123	OK	  240 MM=K                                                              WNDSF278	240 MM=K || WNDSF278
+41	2165	OK	C                                                                       WNOSF279	C || WNOSF279
+42	2208	COUNT 54/53	                                                                        WNOSF290	C 220 FIND CLOUD BOTTOM ALTITUDE AT THE PARTICLE DEFINITION TIME || WNOSF290
+43	2252	OK	  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL)                             WNOSF281	220 ZBOTOM= ZE(LL) + (TP(J)-TC(LL))*VB(LL) || WNOSF281
+44	2295	OK	      IF((ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225                   WNOSF282	IF((ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225 || WNOSF282
+45	2339	OK	C                                                                       WHOSF203	C || WHOSF203
+46	2380	OK	C     LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE  WNOSF284	C      LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE || WNOSF284
+47	2424	OK	C                                                                       WNOSF285	C || WNOSF285
+48	2467	OK	      00 222 K=1.HCX                                                    WNOSF286	00 222 K=1.HCX || WNOSF286
+49	2512	OK	      NN=MCXP1-K                                                        WNUSF257	NN=MCXP1-K || WNUSF257
+50	2554	COUNT 0/8	      IF(ZB(NN).LE.ZCUR) GC TO 224                                              	IF(ZB(NN).LE.ZCUR) GC TO 224 || 
+51	2597	OK	  222 CONTINUE                                                          WNDSF289	222 CONTINUE || WNDSF289
+52	2641	OK	C                                                                       WNDSF290	C || WNDSF290
+53	2682	COUNT 27/28	                                                                        WNOSF291	COMPUTE AN AVERAGE BASE RATE, BV || WNOSF291
+54	2725	OK	C                                                                       WNOSF292	C || WNOSF292
+55	2768	OK	  224 IF(LL.GT.NN)GO TO 3224                                            WNOSF293	224 IF(LL.GT.NN)GO TO 3224 || WNOSF293
+56	2810	COUNT 18/9	                                                                        WNOSF294	BV = V\beta(L\cdot L) || WNOSF294
+57	2853	OK	      GO TO 3227                                                        WNDSF295	GO TO 3227 || WNDSF295
+58	2898	OK	 3224 BV=0.                                                             WNDSF296	3224 BV=0. || WNDSF296
+59	2939	OK	      DO 3225 K=NN,LL                                                   WNDSF297	DO 3225 K=NN,LL || WNDSF297
+60	2980	OK	      IF(K.EQ.  MCX  ) GO TO 3226                                       WNOSF236	IF(K.EQ. MCX ) GO TO 3226 || WNOSF236
+61	3025	COUNT 32/31	                                                                        WNDSF299	3225 BV = BV + VB(KJ * (TC(K+1) - TC(K))) || WNDSF299
+62	3068	OK	 3226 BV= AV/(TC(LL)-TC(NN))                                            WNOSF3J0	3226 BV = AV / (TC(LL) - TC(NN)) || WNOSF3J0
+63	3126	OK	                                      101                                       	101

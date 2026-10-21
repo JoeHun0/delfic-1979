@@ -1,0 +1,12 @@
+73	p070	24	TIE	63	7	      S=3.27E+01+(8.51E-01)*Q-(2.52E-05)*(Q**3.0)+(1.78E-10)*(Q**5.0)
+74	p070	28	SINGLE	56	7	      SSAM=E*((W)**(3.0/3.4))*((180.0-ZSCL)**2.0)*(360.0+ZSCL)
+75	p070	58	NONE	17	37	raw: \text{العربية}
+76	p071	2	NONE	14	26	raw: \text{1. } \text{2. } \text{3. } \text{4. } \text{5. } \text{6. } \text{7. } \text{8. } \text{9. } \text{10. } \text{11. } \text{12. } \text{13. } \text{14. } \text{15. } \text{16. } \text{17. } \text{18. } \text{19. } \text{20. } \text{21. } \text{22. } \text{23. } \text{24. } \text{25. } \text{26. } \text{27. } \text{28. } \text{29. } \text{30.
+77	p071	32	TIE	61	7	      T2M=1.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.)))
+78	p071	33	TIE	61	7	      A=5980.*((1.145)**(Q/180.))*((W)**(-J.03948+L.J2E37*Q/180.0))
+79	p071	34	TIE	24	7	      B=-0.44734(W**(0.04360))
+80	p071	35	TIE	28	7	      TMPG=A*((TME/T2M)**e)+1500.0
+81	p071	38	SINGLE	25	7	      TMPS = 200. * ALOG10(W) + 1000.
+82	p071	42	NONE	7	4	raw: ---
+83	p072	5	TIE	15	7	      SUBROUTINE TIMEF
+84	p072	16	TIE	60	7	      COMMON /BASIC/ W,Fh,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ

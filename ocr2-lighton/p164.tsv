@@ -1,0 +1,11 @@
+1	4	COUNT 152/44	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52
+2	32	COUNT 134/14	                                                                                	1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+20	1511	COUNT 123/29	                                                                                	\mathcal{JJC} \quad \mathcal{NXMAP} \quad \mathcal{NYMAP} \quad \mathcal{NZ} \quad \mathcal{QCUT} \quad \mathcal{SSAM} \quad \mathcal{ }
+21	1555	COUNT 60/24	                                                                                	\dot{E}TGZ \quad ,XG7 \quad ,X1 \quad ,X2 \quad ,YGZ \quad ,XMAX \quad ,
+22	1599	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN    ,YMAX    ,YMIN    ,ZMIN
+23	1641	COUNT 29/28	                                                                                	COMMON /UTILITY/ KOUT,NPRNT(15)
+27	1813	OK	      DATA PRUGRM / 6HPAMAB1 /                                                  	DATA PRUGRM / 6HPAMAB1 /
+31	1983	OK	     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /        	1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /
+33	2069	COUNT 59/60	                                                                                	100 FORMAT(//10%, 45HFIISSID DOES NOT MATCH WITH ANY AVAILABLE TYPE)
+36	2201	OK	      IF(FISSIO .EQ. FISTP(I)) GO TO 200                                        	IF(FISSIO.EQ.FISTP(I)) GO TO 200
+37	2242	OK	  100 CONTINUE                                                                  	100 CONTINUE

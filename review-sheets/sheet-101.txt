@@ -1,0 +1,12 @@
+1201	p188	63	NONE	55	5	raw: اللهُ كَمُحَمَّدٌ مُحَمَّدٌ بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ. ٦٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠٠
+1202	p189	1	NONE	18	7	raw: ---
+1203	p189	5	TIE	15	7	      NUC(LSUB) = NDAUT
+1204	p189	15	TIE	11	7	      LAST = LSUB + 1
+1205	p189	26	NONE	13	7	raw: SCA(\text{SUB}) = 0.0
+1206	p189	46	TIE	42	7	      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)*TEXIT)
+1207	p189	51	SINGLE	10	7	      00 162 k=1,N
+1208	p189	56	TIE	48	7	      IF(A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC)
+1209	p189	57	NONE	14	7	raw: CNI J→CNI J/F AC?C
+1210	p189	58	NONE	29	3	raw: 162 IF ( K2 . LE . K1 ) Q = Q • CN2 J • SCA ( K2 )
+1211	p189	59	NONE	12	7	raw: IF (J0) GO TO 163
+1212	p189	60	TIE	25	7	      IF(S7C( K1).Lt.>.; v6CTC 15J

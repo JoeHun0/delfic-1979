@@ -1,0 +1,6 @@
+1	7	COUNT 0/34	                                                                                	
+29	1965	OK	      XOUT(N)=X0                                                                	XOUT(N) = X0
+37	2307	COUNT 24/10	                                                                                	\text{ROUT}(N) = \text{RO}
+38	2352	OK	      IF(N.LT.NBLK) RETURN                                                      	IF(N.LT.NBLK) RETURN
+43	2566	OK	      WRITE(IPOUT)     (XCLT(M),YOUT(M),ZOUT(M),TOUT(N),SXOT(M),SYOT(M),        	WRITE(IPOUT) (XCLT(M),YOUT(M),ZOUT(M),TOUT(N),SXOT(M),SYOT(M),
+44	2610	OK	     1ROUT(M),PSOT(M),PDEF(N),N=1,N)                                            	1ROUT(M),PSOT(M),PDEF(N),N=1,N)

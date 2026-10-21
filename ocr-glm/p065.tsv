@@ -1,0 +1,63 @@
+1	11	COUNT 3/34	                                                                        --     -	--- || ---
+2	576	OK	   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT)                ICM  121	40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT) || ICM 121
+3	616	OK	      IF(PHI .EQ. 0.0) PHI=1.0                                          ICM  122	IF(PHI .EQ. 0.0) PHI=1.0 || ICM 122
+4	654	OK	      READ(ISIN.10)NOSTR,KCI,IRAD                                       ICM  122	READ(ISIN.10)NOSTR,KCI,IRAD || ICM 122
+5	698	OK	      IF（ NOSTR .EQ. 0 ） NOSTR=100                                      ICM  123	IF（NOSTR.EQ.0）NOSTR=100 || ICM 123
+6	747	OK	      IF(KOI .EQ. 0) KOI=15+ALOG(W)                                     1CM  125	IF(KOI .EQ. 0) KOI=15+ALOG(W) || 1CM 125
+7	782	OK	      READ(ISIN,3)XGZ,YGZ,TGZ                                           ICM  129	READ(ISIN,3)XGZ,YGZ,TGZ || ICM 129
+8	834	OK	      IF(IC(1)-1)210,220,230                                            ICM  127	IF(IC(1)-1)210,220,230 || ICM 127
+9	871	OK	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED                    ICH  127	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED || ICH 127
+10	914	OK	  210 READ(ISIN,3) DNS, DMEAN, SD                                       ICM  129	210 READ(ISIN,3) DNS, DMEAN, SD || ICM 129
+11	954	OK	C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER                 ICM  129	C IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER || ICM 129
+12	1000	OK	      IS=0                                                              ICM  131	IS=0 || ICM 131
+13	1047	OK	      IF(DMEAN.GT. 0.0) IS=1                                            ICM  132	IF(DMEAN.GT.0.0) IS=1 || ICM 132
+14	1091	OK	      GO TO 23                                                          ICM  133	GO TO 23 || ICM 133
+15	1134	OK	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED                    ICM  134	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED || ICM 134
+16	1173	OK	  220 READ(ISIN,3)DNS， CAYF， EXPO                                       ICM  135	220 READ(ISIN,3)DNS，CAYF，EXPO || ICM 135
+17	1214	OK	      GO TO 23                                                          1CM  136	GO TO 23 || 1CM 136
+18	1262	OK	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED                      ICM  137	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED || ICM 137
+19	1300	OK	  230 READ(ISIN,3)DNS                                                   ICM  138	230 READ(ISIN,3)DNS || ICM 138
+20	1347	OK	      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR)                        ICM  130	READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR) || ICM 130
+21	1388	OK	      LD=NOSTR+1                                                        ICM  140	LD=NOSTR+1 || ICM 140
+22	1434	OK	      READ(ISIN,195)DIAM(LC)                                            ICM  141	READ(ISIN,195)DIAM(LC) || ICM 141
+23	1477	OK	C                                                                       ICM  142	C || ICM 142
+24	1519	OK	C     CHECK ORDERING OF THE HISTOGRAM TABLE                             ICM  143	C CHECK ORDERING OF THE HISTOGRAM TABLE || ICM 143
+25	1557	OK	      DO 215 I=2.LD                                                     ICM  144	DO 215 I=2.LD || ICM 144
+26	1598	OK	      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215                              ICM  144	IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 || ICM 144
+27	1650	OK	      WRITE( ISOUT,198)                                                 ICM  146	WRITE( ISOUT,198) || ICM 146
+28	1685	OK	      GO TO 200                                                         ICM  148	GO TO 200 || ICM 148
+29	1735	OK	  215 CONTINUE                                                          ICM  148	215 CONTINUE || ICM 148
+30	1780	OK	   23 HO8 =  HEIGHT/0.3048                                              ICN  149	23 HO8 = HEIGHT/0.3048 || ICN 149
+31	1821	OK	      IF（ DNS .EQ. 0.0 ） DNS = 2.6                                      ICM  150	IF（DNS.EQ.0.0）DNS=2.6 || ICM 150
+32	1857	OK	      RHOP=DNS*1000.                                                    ICM  190	RHOP=DNS*1000. || ICM 190
+33	1908	COUNT 22/23	                                                                        ICM  152	C ZSCL IS THE SCALED HCB D08 || ICM 152
+34	1943	OK	      ZSCL = HOB /((W)**(1.0/3.4))                                      ICM  192	ZSCL = HOB / ((W)** (1.0/3.4)) || ICM 192
+35	1994	COUNT 6/5	C                                                                               	C || ICM 154
+36	2037	COUNT 51/52	                                                                        ICM  155	TEST THE SCALED HOB TO DETERMINE IF SUBSURFACE, LOW AIRBURST || ICM 155
+37	2077	OK	C     OR PURE AIRBURST                                                  ICM  156	C OR PURE AIRBURST || ICM 156
+38	2121	OK	      IF(ZSCL+20.0 .LT. 0.0) GO TO 143                                  ICM  157	IF(ZSCL+20.0.LT.0.0) GO TO 143 || ICM 157
+39	2166	OK	      IF(ZSCL .LT. 180.0) GO TO 70                                      ICM  158	IF(ZSCL .LT. 180.0) GO TO 70 || ICM 158
+40	2209	OK	      CALL AIRBRS                                                       ICM  159	CALL AIRBRS || ICM 159
+41	2251	OK	      GO TO 95                                                          ICM  160	GO TO 95 || ICM 160
+42	2294	OK	 70   CALL TIMEE                                                        ICM  161	70 CALL TIMEE || ICM 161
+43	2335	OK	      CALL TEMP                                                         ICM  162	CALL TEMP || ICM 162
+44	2378	OK	      CALL MASS                                                         ICM  163	CALL MASS || ICM 163
+45	2422	OK	      CALL VAPOR                                                        ICM  164	CALL VAPOR || ICM 164
+46	2463	OK	      IF(IC(1)-1)90,95,95                                               ICM  165	IF(IC(1)-1)90,95,95 || ICM 165
+47	2502	OK	C                                                                       ICM  166	C || ICM 166
+48	2551	OK	C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL FARTICLE SIZE     ICM  167	C TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL FARTICLE SIZE || ICM 167
+49	2589	OK	C     DISTRIBUTION                                                      ICM  1E8	C DISTRIBUTION || ICM 1E8
+50	2637	OK	 90   IF（SD）91,92,92                                                    ICM  169	90 IF（SD）91,92,92 || ICM 169
+51	2680	OK	 91   WRITE (ISOUT,2)                                                   ICM  170	91 WRITE (ISOUT,2) || ICM 170
+52	2724	OK	      GO TO 200                                                         ICM  171	GO TO 200 || ICM 171
+53	2767	OK	   92 IF(OMEAN)94,95,95                                                 ICM  172	92 IF(OMEAN)94,95,95 || ICM 172
+54	2811	OK	 94   WRITE (ISOUT,17)                                                  ICM  173	94 WRITE (ISOUT,17) || ICM 173
+55	2853	OK	      GO TO 200                                                         ICM  174	GO TO 200 || ICM 174
+56	2895	OK	C                                                                       ICM  175	C || ICM 175
+57	2938	OK	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM           ICM  176	C COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM || ICM 176
+58	2975	OK	 95   CALL DSTBN                                                        ICM  177	95 CALL DSTBN || ICM 177
+59	3024	OK	      SSAM = SSAM - VPR                                                 ICM  178	SSAM = SSAM - VPR || ICM 178
+60	3067	OK	C     PRINT INITIAL CONDITIONS RESULTS                                  ICM  179	C PRINT INITIAL CONDITIONS RESULTS || ICM 179
+61	3109	OK	      WRITE(ISOUT,4)W,FH, FEIGHT,H08,Z8RSTZ                             ICM  180	WRITE(ISOUT,4)W,FH,FEIGHT,H08,Z8RSTZ || ICM 180
+62	3177	COUNT 2/1	                                                                                	62
+63	3312	COUNT 3/29;COUNT 3/5	                                                                                	___ || ---

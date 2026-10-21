@@ -1,0 +1,15 @@
+1	44	COUNT 0/36	                                                                                	
+2	111	COUNT 0/33	                                                                                	
+29	1969	COUNT 0/3	                                                                                	
+31	2056	OK	      CDRR = C*(RHOP-RHO)*RHO*C**3/ETA**2                                       	CDRR = C*(RHOP-RHO)*RHO*C**3/ETA**2
+35	2217	COUNT 31/23	                                                                                	V = \frac{CDRR*ETA}{(24.0*RHO*D)}
+36	2269	OK	      GO TO 5JN                                                                 	GO TO 5JN
+39	2397	COUNT 84/54	                                                                                	V = \text{ETA}/(\text{RHO}*\text{D})*\text{EXP}(-3.18657 + Y*(0.992696 + Y*(-0.153193E-2))
+40	2441	OK	     1+Y*(-0.987059E-3 + Y*(-0.578878E-3 + Y*(0.855176E-4                       	1 + Y*(-0.987059E-3 + Y*(-0.578878E-3 + Y*(0.855176E-4
+41	2484	COUNT 18/21	                                                                                	2-Y*0.327815E-5)))
+45	2654	COUNT 86/50	                                                                                	V = \text{ETA}/(\text{RHO}*\text{D})*\text{CORR}*(4.16666667E-2 + \text{CORR}*(-2.3363E-4)
+46	2700	COUNT 34/35	                                                                                	1+CORR*(2.0154E-6-CORR*6.9105E-9))
+50	2870	COUNT 75/54	                                                                                	V = \text{ETA}/(\text{RHO}*\text{D})*(10.0)**(-1.29536 + Y*(0.986 + Y*(-0.046677+
+51	2914	COUNT 14/15	                                                                                	1Y*1.1235E-3))
+57	3202	COUNT 0/1	                                                                                	
+58	3346	COUNT 0/42	                                                                                	

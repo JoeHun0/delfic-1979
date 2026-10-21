@@ -1,0 +1,11 @@
+1	18	COUNT 0/17	                                                                                	
+17	1124	OK	 100  WBAR=-CAVS(KBHO-1)                                                        	100 WBAR=-CAVS(KBHO-1)
+20	1254	COUNT 0/32	                                                                                	
+30	1690	OK	  206 IF(WBAR.LT.0.0.OR.AES(ZO-ZJH(KBHO)).GT.EPSZ)IF(WBAR)210,210,209           	206 IF(WBAR.LT.0.0.OR.AES(ZO-ZJH(KBHO)).GT.EPSZ)IF(WBAR)210,210,209
+31	1735	OK	      KBHO=KBHO+1                                                               	KBHO = KBHO + 1
+32	1775	OK	      GO TO 100                                                                 	GO TO 100
+38	2034	COUNT 0/24	                                                                                	
+42	2207	OK	      WBAR=(ZMIN-Z0)/TSEG                                                       	WBAR = (ZMIN - Z0) / TSEG
+54	2722	OK	  306 IF(MCDE .GT. 0  .OR.  KBHO-KJHC .EQ.1) GO TO 350                          	306 IF(MCDE .GT. 0 .OR. KBHO-KJHC .EQ.1) GO TO 350
+58	2895	OK	      WBAR=-CAVS(KBHC)                                                          	WBAR = -CAVS(KBHC)
+61	3023	COUNT 0/24	                                                                                	

@@ -1,0 +1,12 @@
+1	19	COUNT 0/21	                                                                                	
+2	96	COUNT 320/18	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}
+4	522	COUNT 0/42	                                                                                	
+8	691	COUNT 47/46	                                                                                	8  VBL(J) = VBL(J) + .166666667 * H * (DVBL(J) - 2. * RKG(J))
+13	907	OK	      U=VBL(3)                                                                  	U = VBL(3)
+14	948	OK	      X=VBL(4)                                                                  	X = VBL(4)
+15	992	COUNT 12/8	                                                                                	T = V \, 9L \, (5)
+16	1035	COUNT 12/8	                                                                                	Z = V \beta L (6)
+18	1120	OK	      S=VBL(8)                                                                  	S=VBL(8)
+20	1198	COUNT 0/58	                                                                                	
+38	2279	COUNT 34/33	                                                                                	2 0Z ,ED ,EK ,EPS ,ES ,HLF. ,KS ,KSV ,MWYA ,
+39	2313	OK	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,KM     ,RZT    ,        	3 N     ,NNN     ,P     ,PW     ,R     ,RA     ,RL     ,KM     ,RZT     ,

@@ -1,0 +1,10 @@
+1	1	COUNT 0/37	                                                                                	
+4	636	OK	      RETURN                                                                    	RETURN
+8	809	OK	     1,0HAF(J).ZLOW(J),VHAF(J),J=1,N)                                           	1,0HAF(J).ZLOW(J),VHAF(J),J=1,N)
+20	1327	COUNT 24/9	                                                                                	\text{OLDT} = -1.0 \text{ J}
+24	1496	OK	  105 IF(TP(J)-OLDT)106,1051,106                                                	105 IF (TP(J)-OLDT) 106,1051,106
+38	2097	OK	  108 TP(.)=TP(J)+TGZ                                                           	108 TP(.)=TP(J)+TGZ
+39	2141	OK	 109  XPAR(J)=XPAR(J)+DX+XGZ                                                    	109 XPAR(J)=XPAR(J)+DX+XGZ
+45	2400	OK	      IF(J-N)105,105,110                                                        	IF (J-N) 105, 105, 110
+51	2655	OK	     1(J),DWAF(J),7LOW(J),WHAF(J),J=1,N;                                        	1(J), DWAF(J), 7LOW(J), WHAF(J), J=1, N;
+57	2915	COUNT 15/16	                                                                                	106 OLDP=PSIZ(J)

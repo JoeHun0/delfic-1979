@@ -1,0 +1,12 @@
+6	746	OK	      NO 1 I = 1,INUC                                                           	NO 1 I = 1, INUC
+23	1475	OK	      NUC(1) = IN                                                               	NUC(1) = IN
+24	1518	OK	   12 LIN（LSUB） = 4                                                             	12 LIN（LSUB）= 4
+32	1855	OK	      SOC(LSUB) = OCON(KP)                                                      	SOC (LSUB) = OCON (KP)
+37	2070	OK	      SBR(LSU3) = 1.0                                                           	SBR (LSU3) = 1.0
+40	2197	OK	   14 LB = LBR + 5 - IM                                                         	14 LB = LBR + 5 - IM
+47	2502	OK	      KI = KP                                                                   	KI = KP
+50	2633	OK	   1( KI = 1                                                                    	1 ( KI = 1
+58	2971	OK	      DO  2C K = KI,KDA                                                         	DO 2C K = KI, KDA
+59	3020	OK	   20 LBR = LBR + 4 - IA0S(MOD(NUCLIU(K),MULT(24))                              	20 LBR = LBR + 4 - IA0S (MOD (NUCLIU(K), MULT (24))
+60	3066	COUNT 14/15	                                                                                	K92(LSU91) = LBA
+63	3305	COUNT 2/55	                                                                                	١٤

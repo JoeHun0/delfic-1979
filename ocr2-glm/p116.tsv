@@ -1,0 +1,12 @@
+10	1048	COUNT 31/37	                                                                                	DATA ICF JCF MAFF NCF NOATF K8HF LTIMF
+11	1091	OK	     1       /  1   ,  1   ,   1  ,  1   ,    1 ,  35  ,    6 /                 	1 / 1 , 1 , 1 , 1 , 1 , 35 , 6 /
+22	1565	COUNT 9/11	                                                                                	3 M=1，MARF
+26	1734	OK	      TSUM(K)=0.                                                                	TSUM(K) = 0.
+27	1779	COUNT 13/9	                                                                                	\angle B H ( K ) = 0
+30	1907	OK	      HOAV(L)=J.                                                                	HOAV (L) = J.
+37	2208	OK	      WFZ(K,N,L)=C.                                                             	WFZ (K, N, L) = C.
+38	2249	OK	      USUM(K,N,L)=0.                                                            	USUM(K,N,L)=0.
+39	2291	OK	      VSUM(K,N,L)=0.                                                            	VSUM(K,N,L)=0.
+40	2337	OK	      DXSUM(K,N,L)=0.                                                           	DXSUM(K,N,L)=0.
+48	2680	OK	     10XSUM，DYSUM，CAVS，MARY，ICF，JCF，NCF，MARF，K8HF，NDATF，LTIMF）                  	10XSUM，DYSUM，CAVS，MARY，ICF，JCF，NCF，MARF，K8HF，NDATF，LTIMF）
+60	3264	COUNT 3/8	                                                                                	---

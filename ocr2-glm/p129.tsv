@@ -1,0 +1,10 @@
+12	884	OK	 8024 FORMAT( 2X，  4HNSEQ， 6X， 2HXP， 10X， 2HYP，  14X， 2HZP， 10X， 2HTP，          	8024 FORMAT(2X，4HNSEQ，6X，2HXP，10X，2HYP，14X，2HZP，10X，2HTP，
+14	969	OK	 8025 FORMAT( 1H1, 38X, 31FPRE-TRANSPORT PARCEL PROPERTIES/)                    	8025 FORMAT( 1H1, 38X, 31FPRE-TRANSPORT PARCEL PROPERTIES/)
+32	1743	OK	      IF(WAVG(K,L).NE.C.0)GO TO 46                                              	IF (WAVG(K, L).NE. C. 0) GO TO 46
+39	2043	OK	      K8HM1=K8HX-1                                                              	K8HM1=K8HX-1
+40	2085	OK	      HAVGK=0.7                                                                 	HAVGK=0.7
+43	2214	COUNT 45/41	                                                                                	50 HAVGK=HAVGK + HAVG(K,L)  \cdot  (Z8H(K+1) - Z8H(K))
+45	2293	COUNT 30/31	                                                                                	WAVGK=WAVGK/(LTIMX (ZMAX-ZMIN))
+59	2903	OK	      00 1000 J=1，NP                                                            	00 1000 J=1，NP
+62	3033	OK	      XP=XPAR（J）                                                                	XP=XPAR（J）
+63	3075	OK	      YP=YPAR（J）                                                                	YP=YPAR（J）

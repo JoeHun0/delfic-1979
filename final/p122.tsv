@@ -1,0 +1,41 @@
+1	42	87	NOISE	                                                                        		lighton=       \f           r        a         c{1                        }{  2}	
+2	797	833	AGREE	       MARX = ICX * JCX                                                 		dots=       MARX = ICX * JCX ## glm=       MARX = ICX * JCX	
+3	842	880	HANDFREE	    1 DO 2 MARK = 1, MARF                                               		dots=   1   00 Z MARK=1 .M ARCH	GETUP61
+4	880	922	VOTED	   2   MARY( MARK ) = -9                                                		lighton=   2   MARY( MARK ) = -9 ## dots=   2   MARY( MARK ) = -9 ## glm=   2   MARY（ MARK ） = -9	GEYUP62
+5	922	970	AGREE	       IF(MARX.GT.MARF) CALL ERROR(PROGRM,-2,ISCUT)                     		lighton=       IF(MARX.GT.MARF) CALL ERROR(PROGRM,-2,ISCUT) ## dots=       IF(MARX.GT.MARF) CALL ERROR(PROGRM,-2,ISCUT)	GETUP63
+6	970	1013	AGREE	       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX)                         		lighton=       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX) ## dots=       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX) ## glm=       READ(ISIN,1000) (MARY(MARK),MARK=1,MARX)	GETUP64
+7	1013	1051	AGREE	       WRITE(ISOUT,1001) MARX                                           		lighton=       WRITE(ISOUT,1001) MARX ## dots=       WRITE(ISOUT,1001) MARX ## glm=       WRITE(ISOUT,1001) MARX	GETUP65
+8	1051	1103	AGREE	       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX)                       		lighton=       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX) ## dots=       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX) ## glm=       WRITE(ISOUT,1002) (MARY(MARK),MARK=1,MARX)	GETUP66
+9	1103	1132	AGREE	       MARK = 0                                                         		lighton=       MARK = 0 ## glm=       MARK = 0	
+10	1143	1175	AGREE	       MCTR = 0                                                         		lighton=       MCTR = 0 ## dots=       MCTR = 0 ## glm=       MCTR = 0	GETUP68
+11	1185	1224	VOTED	  3    MARK = MARK + 1                                                  		lighton=  J    MARK = MARK + 1 ## dots=  3    MARK = MARK + 1 ## glm=  3    MARK = MARK + 1	SETUP69
+12	1224	1270	VOTED	       IF( MARK = MARX ) 5, 5, 4                                        		lighton=       IF( MARK - MARX ) 5, 5, 4 ## dots=       IF( MARK = MARX ) 5, 5, 4 ## glm=       IF（ MARK = MARX ） 5， 5， 4	GETUP70
+13	1270	1310	AGREE	  4    MARX = MSECT * MCTR                                              		lighton=  4    MARX = MSECT * MCTR ## dots=  4    MARX = MSECT * MCTR ## glm=  4    MARX = MSECT * MCTR	GETUP71
+14	1310	1352	VOTED	       IF( MARX )  6, 14, 1                                             		lighton=       IF( MARX )  6, 14, 1 ## dots=       IF( MARX )  6, 14, 1 ## glm=       IF（ MARX ）  6, 14, 1	GETUP72
+15	1352	1398	VOTED	  5    IF( MARY( MARK ) )  6, 7, 8                                      		lighton=  5    IF( MARY( MARK ) )  6, 7, 8 ## dots=  5    IF( MARY( MARK ) )  6, 7, 8 ## glm=  5    IF（ MARY（ MARK ） ）  6, 7, 8	GETUP73
+16	1398	1442	AGREE	  6    CALL ERROR(PROGRM,-6,ISOUT)                                      		lighton=  6    CALL ERROR(PROGRM,-6,ISOUT) ## dots=  6    CALL ERROR(PROGRM,-6,ISOUT) ## glm=  6    CALL ERROR(PROGRM,-6,ISOUT)	GETUP74
+17	1442	1482	AGREE	  7    MNEG = MNEG + MSECT                                              		lighton=  7    MNEG = MNEG + MSECT ## dots=  7    MNEG = MNEG + MSECT ## glm=  7    MNEG = MNEG + MSECT	GETUP75
+18	1482	1520	AGREE	       NQQ = - MNEG                                                     		dots=       NQQ = - MNEG ## glm=       NQQ = - MNEG	GETUP76
+19	1529	1565	AGREE	       MCTR = MCTR + 1                                                  		dots=       MCTR = MCTR + 1 ## glm=       MCTR = MCTR + 1	GETUP77
+20	1565	1601	AGREE	       GO TO 9                                                          		lighton=       GO TO 9 ## dots=       GO TO 9 ## glm=       GO TO 9	GETUP78
+21	1613	1653	AGREE	  8    NOATA = NOATA + 1                                                		dots=  8    NOATA = NOATA + 1 ## glm=  8    NOATA = NOATA + 1	GETUP79
+22	1653	1690	VOTED	       NQQ = NOATA                                                      		lighton=       NQQ = NOATA ## dots=       NQQ = NOATA ## glm=       NQQ = NDATA	GETUP80
+23	1698	1734	AGREE	       NDATX = NDATA                                                    		dots=       NDATX = NDATA ## glm=       NDATX = NDATA	GETUP81
+24	1743	1789	HANDFREE	      IF(NDATX.GT.NDATF) CALL ERROR(PROGRM,-8,ISOUT)                    			WEUP82
+25	1789	1821	AGREE	  9    IC = IC + 1                                                      		lighton=  9    IC = IC + 1 ## glm=  9    IC = IC + 1	
+26	1821	1868	VOTED	       IF( JC - JCX ) 10, 10, 13                                        		lighton=       IF( JC - JCX ) 10, 10, 13 ## dots=       IF( JC - JCX ) 10, 10, 13 ## glm=       IF（ JC - JCX ） 10， 10， 13	GETUP84
+27	1868	1912	VOTED	  10   IF( IC - ICX ) 12, 12, 11                                        		lighton=  10   IF( IC - ICX ) 12, 12, 11 ## dots=  10   IF( IC - ICX ) 12, 12, 11 ## glm=  10   IF（ IC - ICX ） 12, 12, 11	GETUP85
+28	1912	1950	AGREE	  11   JC = JC + 1                                                      		lighton=  11   JC = JC + 1 ## glm=  11   JC = JC + 1	GETUP86
+29	1959	1991	AGREE	       IC = 0                                                           		dots2=       IC = 0 ## glm=       IC = 0 ## glm2=       IC = 0	EIUP87
+30	2002	2035	AGREE	       GO TO 9                                                          		lighton=       GO TO 9 ## dots=       GO TO 9 ## glm=       GO TO 9	EIP88
+31	2035	2082	HANDFREE	   12 NET( IC, JC ) = NQQ                                               	11,15,19	lighton2=  12   NET( IC, JC) =  NQQ ## dots=  12   NET( IC, JC) =  NQQ ## glm=  12   NET（ IC， JC） =  NQQ ## glm2=  12   NET（ IC， JC） =  NQQ	GETUP89
+32	2082	2120	AGREE	       GO TO 3                                                          		lighton=       GO TO 3 ## dots=       GO TO 3 ## glm=       GO TO 3	GETUP90
+33	2129	2163	AGREE	  13   NC = IC                                                          		lighton=  13   NC = IC ## dots=  13   NC = IC ## glm=  13   NC = IC	EIUP91
+34	2173	2209	AGREE	       NETSU（ NC） = NQ Q                                                		glm=       NETSU（ NC） = NQ Q ## glm2=       NETSU（ NC） = NQ Q	EIUP92
+35	2218	2248	AGREE	       NCX = NC                                                         		dots=       NCX = NC ## glm=       NCX = NC	E1UF93
+36	2261	2306	HANDFREE	      IF(NCX.GT.NCF) CALL ERROR(PROGRM,-13,ISOUT)                       			GETUP94
+37	2306	2333	AGREE	       GO TO 3                                                          		lighton=       GO TO 3 ## dots=       GO TO 3 ## glm=       GO TO 3	
+38	2346	2378	AGREE	  14   RETURN                                                           		lighton=  14   RETURN ## dots=  14   RETURN ## glm=  14   RETURN	
+39	2390	2419	HANDFREE	      END                                                               			
+40	3154	3187	NOISE	                                                                        		lighton=                                        119 ## dots=                                        119 ## glm=                                        119	
+41	3298	3328	NOISE	                                                                        			

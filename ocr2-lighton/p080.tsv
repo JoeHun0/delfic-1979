@@ -1,0 +1,13 @@
+1	17	COUNT 4/24	                                                                                	text
+13	1012	OK	      COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), FLH(256),             	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PRS(256), FLH(256),
+15	1098	COUNT 59/60	                                                                                	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,LOTMP,TPSD,XGZ,YGZ,TGZ
+19	1261	OK	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,        	3 N     ,NNN     ,P     ,PW     ,R     ,RA     ,RL     ,RM     ,RZT     ,
+24	1478	OK	      COMMON /TABLES/ MCX, CX(50,10), GJPST(10,100)                             	COMMON /TABLES/ MCX, CX(50,10), GJPST(10,100)
+33	1870	OK	      SMALLT=0.                                                                 	SMALLT=0.
+39	2126	COUNT 0/9	                                                                                	
+40	2168	COUNT 0/8	                                                                                	
+41	2212	OK	      OST=DST0                                                                  	OST=DST0
+45	2385	OK	      C2 = AMAX1( 0.004, AMIN1( 0.100, 0.1 * W**(-C.3333333333) ))              	C2 = AMAX1( 0.004, AMIN1( 0.100, 0.1 * W**(-C.3333333333) ))
+55	2812	OK	      Z=HEIGHT+ZBRSTZ+ 90.*W**0.3333333333                                      	Z=HEIGHT+ZBRSTZ+ 90.*W**0.3333333333
+59	2983	COUNT 0/64	                                                                                	
+63	3297	COUNT 0/49	                                                                                	

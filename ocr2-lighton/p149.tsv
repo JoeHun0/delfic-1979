@@ -1,0 +1,11 @@
+3	570	COUNT 24/25	                                                                                	SUBROUTINE MAP(OMAP, NMAP)
+14	1041	OK	      COMMON /CONDAT/       IG(20)    ,IKOB      ,IPASH     ,IPOUT     ,        	COMMON /CONDAT/          IG(20)     ,IKOB     ,IPASH     ,IPOUT     ,
+19	1248	COUNT 89/24	                                                                                	\overline{2TGZ} \quad \cdot XGZ \quad \cdot X1 \quad \cdot X2 \quad \cdot YGZ \quad \cdot XMAX \quad \cdot
+22	1385	OK	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK ,
+26	1558	OK	      DIMENSION JMAP(20) ,CMAP(NMAP)                                            	DIMENSION JMAP(20),CMAP(NMAP)
+30	1731	OK	     1    FMTI/6H(/1X, ,6H(5X,  ,6H)     ,6H)     ,6H      ,6HA6    ,           	1  FMTI/6H(/1X, ,6H(5X, ,6H) ,6H) ,6H ,6HA6 ,
+35	1945	OK	 1    FORMAT(1H1,5HTRIPI3,5X,1 2A6,5 X_c 8HMAP TYPEI3)                          	1   FORMAT(1H1,5HTRIPI3,5X, 12A6, 5X_c 8HMAP TYPEI3)
+40	2155	OK	 6    FORMAT(16H0DISPLAY METHOD I4,33H IS NOT AVAILABLE. USED METHOD 1.)        	6 FORMAT(16H0DISPLAY METHOD I4,33H IS NOT AVAILABLE. USED METHOD 1.)
+45	2372	OK	 11   FORMAT(15X,24HEXPOSURE RATE AT TIME H+F10.1,9H SECONDS.)                  	11  FORMAT(15X,24HEXPOSURE RATE AT TIME H+F10.1,9H SECONDS.)
+47	2461	COUNT 15/16	                                                                                	IS AND INFINITY.)
+51	2634	OK	     1PEMENTS.)                                                                 	1PEMENTS.)

@@ -1,0 +1,13 @@
+1	17	COUNT 0/24	                                                                                	
+13	1012	OK	      COMMON /ATHOS/ NAT, ALT(256),  ATP(256),  PRS(256), FLH(256),             	COMMON /ATHOS/ NAT, ALT (256), ATP (256), PRS (256), FLH (256),
+15	1098	OK	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TNSD,XGZ,YGZ,TGZ            	COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TNSD,XGZ,YGZ,TGZ
+19	1261	OK	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,        	3 N ,NNN ,P ,PW ,R ,RA ,RL ,RM ,RZT ,
+24	1478	OK	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                             	COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)
+33	1870	COUNT 10/9	                                                                                	SMALL LT=0.
+39	2126	COUNT 29/9	                                                                                	\text{DST}_1 = 0.25 \text{ hours}
+40	2168	COUNT 15/8	                                                                                	\text{DST2} = 2.5
+41	2212	OK	      OST=DST0                                                                  	OST=DST 0
+45	2385	COUNT 49/51	                                                                                	C2 = AMAX1( 0.004, AMIN1( 0.100, 0.1 * W**(-C.33333333) ) )
+55	2812	COUNT 34/35	                                                                                	Z=HEIGHT+ZBRSTZ+ 90.*W**0.333333333
+59	2983	COUNT 101/64	                                                                                	\text{XE} = 109.93 * \text{HLR} * (\text{TE}/273.1) * (-5.13) * \exp((25. * (\text{TE} - 273.)) / \text{TE}) / (P * 29.0)
+63	3297	COUNT 0/49	                                                                                	

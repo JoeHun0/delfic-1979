@@ -1,0 +1,62 @@
+1	6	COUNT 0/37;COUNT 0/5	                                                                                	 || 
+2	532	OK	*DECK,SUMDAT                                                            SUMOA  1	*DECK,SUMDAT || SUMOA 1
+3	576	OK	      SUBROUTINE SUMDAT(NET,NETSU,Z3H,ZCH,WAVG,HDAV,USUM,VSUM,RSUM,WFZ, SUMDA  2	SUBROUTINE SUMDAT(NET,NETSU,Z3H,ZCH,WAVG,HDAV,USUM,VSUM,RSUM,WFZ, || SUMDA 2
+4	619	OK	     1TIMUP,OXSUM,OYSUM,ICF,JCF,NCF,KBHF,NOATF,LTIMF)                   SUMDA  3	1TIMUP, OXSUM, OYSUM, ICF, JCF, NCF, KBHF, NOATF, LTIMF) || SUMDA 3
+5	664	OK	C                                                                       SUMDA  4	C || SUMDA 4
+6	705	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     SUMOA  5	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || SUMOA 5
+7	748	OK	C                                                                       SUMDA  6	C || SUMDA 6
+8	789	COUNT 0/71	                                                                        SUMDA  7	 || SUMDA 7
+9	835	OK	C                                                                       SUMDA  8	C || SUMDA 8
+10	875	OK	C    SUMS AND WEIGHTS WIND AND TURBULENCE DATA FROM ZHIN TO ZBH(KBHX)   SUMDA  9	C SUMS AND WEIGHTS WIND AND TURBULENCE DATA FROM ZHIN TO ZBH (KBHX) || SUMDA 9
+11	919	COUNT 37/38	                                                                        SUMOA 10	C FOR USE BY THE FAST TRANSPORT CALCULATIONS || SUMOA 10
+12	964	OK	C                                                                       SUMDA 11	C || SUMDA 11
+13	1006	OK	C     AREA  - AREA OF HORIZ. SPACE NET                                  SUMDA 12	C AREA - AREA OF HORIZ. SPACE NET || SUMDA 12
+14	1049	OK	C     AREAN - AREA OF A PARTICULAR MESH                                 SUMDA 13	C AREAN - AREA OF A PARTICULAR MESH || SUMDA 13
+15	1093	OK	C                                                                       SUMOA 14	C || SUMOA 14
+16	1133	COUNT 0/71	                                                                        SUMDA 15	 || SUMDA 15
+17	1179	OK	C                                                                       SUMDA 16	C || SUMDA 16
+18	1220	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               SUMDA 17	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || SUMDA 17
+19	1262	OK	       COMMON /INDEX/ ICX,JCX,KBHX,LTIrX,NAT,NCX,NDATX                  SUMOA 18	COMMON /INDEX/ ICX,JCX,KBHX,LTIrX,NAT,NCX,NDATX || SUMOA 18
+20	1305	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     SUMDA 19	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || SUMDA 19
+21	1351	OK	C                                                                       SUMOA 20	C || SUMOA 20
+22	1390	OK	      DIMENSION RSUM(KBHF,NOATF,LTIMF),HOAV(LTIMF),WAVG(KBHF,LTIMF)     SUMOA 21	DIMENSION RSUM(KBHF,NOATF,LTIMF),HOAV(LTIMF),WAVG(KBHF,LTIMF) || SUMOA 21
+23	1433	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF),ZCH(KBHF),TIMLP(LTIMF),ZBH(KEHF)SUMDA 22	DIMENSION NET(ICF,JCF),NETSU(NCF),ZCH(KBHF),TIMLP(LTIMF),ZBH(KEHF) || SUMDA 22
+24	1478	OK	      DIMENSION OXSUM(KBHF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF)         SUMDA 23	DIMENSION OXSUM(KBHF,NDATF,LTIMF),DYSUM(KBHF,NDATF,LTIMF) || SUMDA 23
+25	1521	OK	      DIMENSION USUM(KBHF,NOATF,LTIMF),VSUM(KBHF,NOATF,LTIMF)           SUMDA 24	DIMENSION USUM(KBHF,NOATF,LTIMF),VSUM(KBHF,NOATF,LTIMF) || SUMDA 24
+26	1566	OK	      DIMENSION WFZ(KBHF,NOATF,LTIMF)                                   SUMOA 25	DIMENSION WFZ(KBHF,NOATF,LTIMF) || SUMOA 25
+27	1609	OK	C                                                                       SUMDA 26	C || SUMDA 26
+28	1649	COUNT 53/54	                                                                        SUMDA 27	1 FORMAT(1HO, 5X, 17UPDATE TIME INDEX13, 23H. WIND GRID CELL IN || SUMDA 27
+29	1692	COUNT 57/58	                                                                        SUMDA 26	10EXI3, 38H WITH HORIZONTAL COORDINATES (X,Y) - (E12.5, 1H, E12.5, || SUMDA 26
+30	1726	OK	     2 (8H )METERS/                                                 )   SUMDA 29	2 (8H) METERS/) || SUMDA 29
+31	1777	OK	    2 FORMAT(  9X, 5HLAYER, 8X, 10HHORIZONTAL, 6X, 10PHORIZONTAL,       SUMDA 30	2 FORMAT( 9X, 5HLAYER, 8X, 10HHORIZONTAL, 6X, 10PHORIZONTAL, || SUMDA 30
+32	1819	COUNT 4/46	                                                                        SUMDA 31	1 7X, || SUMDA 31
+33	1863	OK	     2 8X, 6HCENTER, 8X, 1CHE.-W. WIND, 6X, 10HN.-S. WIND, 2(6X10HTURBULSUMDA 32	2 8X, 6HCENTER, 8X, 1CHE.-W. WIND, 6X, 10HN.-S. WIND, 2(6X10HTURBUL || SUMDA 32
+34	1898	OK	     3ENCE), 6X, 8HROTATION/ 8X, 8HALTITUDE, 4(7X9HCOMPONENT), 9X,      SUMOA 33	3ENCE), 6X, 8HROTATION/8X, 8HALTITUDE, 4(7X9HCOMPONENT), 9X, || SUMOA 33
+35	1950	OK	     4 SHANGLE)                                                         SUMOA 34	4 SHANGLE) || SUMOA 34
+36	1993	OK	    6 FORMAT(1H1, 40X, 21H>EIGHTED, SUMMED DATA//)                      SUMDA 35	6 FORMAT(1H1, 40X, 21H>EIGHTED, SUMMED DATA//) || SUMDA 35
+37	2035	COUNT 56/55	                                                                        SUMDA 36	8 FORMAT(723X, 6HUPCATEI4, 6H MESH14, 32H AVERAGE TURBULENCE PAI || SUMDA 36
+38	2080	COUNT 16/15	                                                                        SUMDA 37	1 RAIMETER =F12.5) || SUMDA 37
+39	2122	COUNT 62/59	                                                                        SUMOA 38	9 FORMAT(1H1, 29X, 57HTHREE DIMENSIONAL WIND AND TURBULENCE DATA BEFORE || SUMOA 38
+40	2157	COUNT 12/13	                                                                        SUMDA 39	ORE SUMMING/) || SUMDA 39
+41	2206	OK	   12 FORMAT(  9X, 5HLAYER, 8X, 10HHORIZONTAL, 6X, 10HHORIZONTAL,       SUMOA 40	12 FORMAT ( 9X, 5HLAYER, 8X, 10HHORIZONTAL, 6X, 10HHORIZONTAL, || SUMOA 40
+42	2250	OK	     1 7X, 8HVERTICAL, 8X, 9HCFOSSWIND, 7X, 8HDOWNWIND,7X10HHORIZONTAL/ SUMOA 41	1 7X, 8HVERTICAL, 8X, 9HCFOSSWIND, 7X, 8HDOWNWIND, 7X10HHORIZONTAL/ || SUMOA 41
+43	2292	OK	     2 8X, 6HCENTER, 8X, 10HE.-W. WIND, 6X, 10HN.-S. WIND, 9X,4HWIND,3X,SUMOA 42	2 8X, 6HCENTER, 8X, 10HE.-W. WIND, 6X, 10HN.-S. WIND, 9X, 4HWIND, 3X, || SUMOA 42
+44	2326	COUNT 49/50	                                                                        SUMDA 43	3 2(6X, 10HTURBULENCE), 7X, 8HROTATION/ 8X, 8HALTITUDE, || SUMDA 43
+45	2379	COUNT 31/30	                                                                        SUMOA 44	4 5 (7x, 9HC COMPONENT), 9x, 5HANGLE) || SUMOA 44
+46	2422	OK	   13 FORMAT(6E16.4)                                                    SUMDA 45	13 FORMAT (6E16.4) || SUMDA 45
+47	2466	OK	   14 FORMAT(7E16.4)                                                    SUMOA 46	14 FORMAT (7E16.4) || SUMOA 46
+48	2507	OK	   15 FORMAT(1H0, 22X,  55HTURBULENCE PARAMETER AVERAGED OVER ALL SPACE SUMOA 47	15 FORMAT(1H0, 22X, 55HTURBULENCE PARAMETER AVERAGED OVER ALL SPACE || SUMOA 47
+49	2552	OK	     1FOR UPDATE(4,3H ISE12.5)                                          SUMDA 48	1 FOR UPDATE(4,3H ISE 12.5) || SUMDA 48
+50	2594	COUNT 61/60	                                                                        SUMOA 49	16 FORMAT(1H0.22X48HAVERAGE VERTICAL WIND COMPONENT FOR EACH LAYER -) || SUMOA 49
+51	2638	OK	   17 FORMAT( 20X, 6(I5, F8.3, 1H,))                                    SUMOA 50	17 FORMAT ( 20X, 6(I5, F8.3, 1H, ) ) || SUMOA 50
+52	2683	OK	C                                                                       SUMOA 51	C || SUMOA 51
+53	2722	OK	      IF(MC(2) .EQ. 1  .OR.  MC(1) .EQ. 0) GO TO 20                     SUMDA 52	IF (MC(2) .EQ. 1 .OR. MC(1) .EQ. 0) GO TO 20 || SUMDA 52
+54	2765	COUNT 57/56	                                                                        SUMDA 53	COPY OUT THREE DIMENSIONAL WIND AND TURBULENCE DATA BEFORE SUMMING || SUMDA 53
+55	2808	OK	      WRITE(ISOUT,9)                                                    SUMDA 54	WRITE (ISOUT, 9) || SUMDA 54
+56	2851	OK	      DO 50 L=1,LTIMX                                                   SUMOA 55	DO 50 L=1,LTIMX || SUMOA 55
+57	2896	OK	      DO 5) N=1,NDATX                                                   SUMOA 56	DO 5) N=1,NDATX || SUMOA 56
+58	2937	OK	      CALL CNTR(NET,NETSU,N,XG,YG,ICF,JCF,NCF)                          SUMDA 57	CALL CNTR(NET, NETSU, N, XG, YG, ICF, JCF, NCF) || SUMDA 57
+59	2979	OK	      WRITE(ISOUT,1)L.N,XG,YG                                           SUMOA 58	WRITE(ISOUT,1)L.N,XG,YG || SUMOA 58
+60	3025	OK	      WRITE(ISOUT,12)                                                   SUMDA 59	WRITE(ISOUT,12) || SUMDA 59
+61	3069	OK	      00 50 K=1,K8HX                                                    SUMDA 60	00 50 K=1, K8HX || SUMDA 60
+62	3113	OK	                                       129                                      	129

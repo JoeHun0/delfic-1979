@@ -1,0 +1,11 @@
+1	7	COUNT 0/21	                                                                                	
+2	413	OK	      PX=X                                                                      	PX = X
+6	586	OK	    2 PY(NP)=Y(NP)                                                              	2  PY(NP) = Y(NP)
+10	758	COUNT 0/8	                                                                                	
+15	973	OK	      U=PU                                                                      	U = PU
+18	1102	OK	      X=PX                                                                      	X = P X
+19	1144	OK	      Z=PZ                                                                      	Z = P Z
+53	2906	COUNT 67/60	                                                                                	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT, \mathcal{L} ,SLOTMP, TMSD,XGZ,YGZ,TGZ
+54	2950	COUNT 63/62	                                                                                	COMMON /CONTROL/ DETID(12),IC(20),I&AD,IRISE,ISIN,ISOUT,JPARI,KUI
+55	2992	OK	      COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMPS, VPR                         	COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMPS, VPR
+56	3035	COUNT 61/62	                                                                                	COMMON /PARTCL/ NDSTF,RHCP,OMEAN,U,PS(2:0),DIAM(201),FMASS(200)

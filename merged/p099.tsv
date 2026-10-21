@@ -1,0 +1,63 @@
+1	20	40	NONE	                                                                        			
+2	40	80	NOISE	                                                                        			
+3	578	608	VOTED	 7202 EX=BZ2                                                            		lighton= 7202 EX=8Z2 ## glm= 7202 EX=BZ2 ## glm2= 7202 EX=BZ2	RSXP332
+4	622	651	AGREE	      EY=EY+BZ                                                          		dots=      EY=EY+BZ ## glm=      EY=EY+BZ	RSXP333
+5	664	696	VOTED	      IF(EX**2+EY**2-RAD2)7201,7201,7203                                		lighton=      IF(EX**2+EY**2-RAO2)7201,7201,7203 ## dots=      IF(EX**2+EY**2-RAD2)7201,7201,7203 ## glm=      IF(EX**2+EY**2-RAD2)7201,7201,7203	RSXP334
+6	707	741	AGREE	 7203 CMA=DPST(5,MBT)/CNT                                               		lighton= 7203 CMA=DPST(5,MBT)/CNT ## dots= 7203 CMA=DPST(5,MBT)/CNT ## glm= 7203 CMA=DPST(5,MBT)/CNT	RSXP335
+7	752	781	VOTED	 1C01 L000=L000+1                                                       		lighton= 1C31 L000=L000+1 ## dots= 1001 LOOO=LOOO+1 ## glm= 1C01 L000=L000+1	RSXP336
+8	794	825	VOTED	      LL=L000+3                                                         		dots=      LL=1000+3 ## glm=      LL=L000+3 ## glm2=      LL=L000+3	RSXP337
+9	837	870	TIE	      DO 1759 J=LODD,LL                                                 	13,19	lighton=      DO 1757 J=LOOO,LL ## dots=      DO 1750 J=LODD,LL ## glm=      DO 1759 J=L00D,LL ## glm2=      DO 1959 J=LODD,LL	RSXP338
+10	880	913	TIE	      GDPST(9,J)=DPST(7:MPT)                                            	26	glm=      GDPST(9,J)=DPST(7:MPT) ## glm2=      GDPST(9,J)=DPST(7:MET)	RSXP339
+11	913	954	AGREE	      GDPST(10,J)=DPST(8,YBT)/CNT                                       		glm=      GDPST(10,J)=DPST(8,YBT)/CNT ## glm2=      GDPST(10,J)=DPST(8,YBT)/CNT	RSXP340
+12	965	999	VOTED	      GOPST(7,J)=BZ2                                                    		lighton=      GDPST(7,J)=BZ2 ## glm=      GOPST（7，J）=BZ2 ## glm2=      GOPST(7,J)=BZ2	RSXP341
+13	1008	1041	AGREE	      GDPST（8，J）=DPST（6，MET）                                            		glm=      GDPST（8，J）=DPST（6，MET） ## glm2=      GDPST（8，J）=DPST（6，MET）	RSXP342
+14	1050	1084	TIE	      GDPST（6，J）=DPST（2，MET）                                            	26	glm=      GDPST（6，J）=DPST（2，MET） ## glm2=      GDPST（6，J）=DPST（2，MST）	RSXP343
+15	1094	1127	AGREE	      GDPST（4，J）=DPST（4，MBT）                                            		glm=      GDPST（4，J）=DPST（4，MBT） ## glm2=      GDPST（4，J）=DPST（4，MBT）	RSXP344
+16	1137	1172	TIE	      GDPST（3，J）=DPST（1，PBT）                                            	25	glm=      GDPST（3，J）=DPST（1，PBT） ## glm2=      GDPST（3，J）=DPST（1，MBT）	RSXP345
+17	1172	1212	VOTED	 1050 GOPST(5,J)=CMA                                                    		lighton= 1050 GOPST(5,J)=CMA ## dots= 1050 GOPST(5,J)=CMA ## glm= 1050 GDPST(5,J)=CMA	RSXP346
+18	1223	1257	VOTED	      GDPST(1，LODD)=XR                                                  		lighton=      GDPST(1,LOOO)=XR ## glm=      GDPST（1，LODD）=XR ## glm2=      GDPST(1，LODD)=XR	RSXP347
+19	1267	1301	AGREE	      GDPST（2，LODD）=YR                                                  		glm=      GDPST（2，LODD）=YR ## glm2=      GDPST（2，LODD）=YR	RSXP348
+20	1311	1340	AGREE	      L000=L000+1                                                       		dots=      L000=L000+1 ## glm=      L000=L000+1	RSXP349
+21	1354	1387	TIE	      GOPST(1,LOOD)=XR                                                  	14	glm=      GOPST(1,LOOD)=XR ## glm2=      GOPST(1，LOOD)=XR	RSXP350
+22	1396	1430	TIE	      GDPST（2，LODD）=-YR                                                 	12,14,19	glm=      GDPST（2，LODD）=-YR ## glm2=      GDPST(2,LODD)=-YR	RSXP351
+23	1439	1469	AGREE	      LODD=LODD+1                                                       		dots=      LODD=LODD+1 ## glm=      LODD=LODD+1	RSXP352
+24	1482	1515	TIE	      GDPST（1，LODD）=-XR                                                 	12,19	glm=      GDPST（1，LODD）=-XR ## glm2=      GDPST(1，LODD)=-XR	R5XP353
+25	1526	1559	AGREE	      GDPST(2,L0DD)=-YR                                                 		glm=      GDPST(2,L0DD)=-YR ## glm2=      GDPST(2,L0DD)=-YR	RSXP354
+26	1567	1598	AGREE	      L000=L000+1                                                       		dots=      L000=L000+1 ## glm=      L000=L000+1	RSXP355
+27	1610	1644	VOTED	      GDPST(1，LODC)=-XR                                                 		lighton=      GDPST(1,LOOC)=-XR ## glm=      GDPST（1，LODC）=-XR ## glm2=      GDPST(1，LODC)=-XR	RSXP356
+28	1655	1689	TIE	      GDPST（2，LODD）=YR                                                  	12,19	glm=      GDPST（2，LODD）=YR ## glm2=      GDPST(2，LODD)=YR	RSXP357
+29	1689	1728	VOTED	 5030 IF(LODD- 97)1150,1010,1010                                        		lighton= 5C30 IF(LODD- 97)1150,1010,1010 ## dots= 5030 IF(LODD= 97)1150,1010,1010 ## glm= 5030 IF（LODD- 97)1150,1010,1010	RSXP358
+30	1739	1773	AGREE	 1100 IF(IRAD)2585,2585,1101                                            		lighton= 1100 IF(IRAD)2585,2585,1101 ## dots= 1100 IF(IRAD)2585,2585,1101 ## glm= 1100 IF(IRAD)2585,2585,1101	RSXP359
+31	1784	1813	VOTED	 1101 XR=XR+8Z                                                          		lighton= 1101 XR=XR+8Z ## dots= 1101 XR=XR+BZ ## glm= 1101 XR=XR+8Z	RSXP3E0
+32	1825	1856	AGREE	      GO TO 1003                                                        		lighton=      GO TO 1003 ## dots=      GO TO 1003 ## glm=      GO TO 1003	RSXP361
+33	1869	1900	AGREE	 1002 YR=YR+8Z                                                          		glm= 1002 YR=YR+8Z ## glm2= 1002 YR=YR+8Z	RSXP362
+34	1913	1943	AGREE	      XR=BZ2                                                            		lighton=      XR=BZ2 ## dots=      XR=BZ2 ## glm=      XR=BZ2	RSXP363
+35	1953	1986	AGREE	      IF(YR-RADIUS)1063,1003,2585                                       		lighton=      IF(YR-RADIUS)1063,1003,2585 ## dots=      IF(YR-RADIUS)1063,1003,2585 ## glm=      IF(YR-RADIUS)1063,1003,2585	RSXP364
+36	1998	2026	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP365
+37	2039	2070	COMMENT	C     LOAD THE GOPST ARRAYS ON THE CRM OUTPUT TAPE                      		lighton=C     LOAD THE GOPST ARRAYS ON THE CRM OUTPUT TAPE ## glm=C     LOAD THE GDPST ARRAYS ON THE CRM OUTPUT TAPE	RSXP366
+38	2083	2112	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP367
+39	2125	2156	VOTED	 1010 WRITE(IRISE)LOOO                                                  		lighton= 1010 WRITE(IRISE)L000 ## dots= 1010 WRITE(IRISE)LOOO ## glm= 1010 WRITE(IRISE)LOOO	RSXP368
+40	2168	2202	VOTED	      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J		lighton=      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J ## dots=      WRITE(IRISE)(GOPST(1,J),GOPST(2,J),GOPST(3,J),GOPST(4,J),GOPST(5,J ## glm=      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J	RSXP369
+41	2210	2244	VOTED	     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LODD		lighton=     1),GCPST(6,J),GDPST(7,J),GDPST(8,J),GOPST(9,J),GCPST(10,J),J=1,LODD ## dots=     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LODD ## glm=     1),GDPST（6,J），GDPST（7,J），GDPST（8,J），GDPST（9,J），GCPST（10,J），J=1，LODD	RSXP370
+42	2255	2285	VOTED	     2)                                                                 		lighton=     21 ## dots=     2) ## glm=     2)	RSXP371
+43	2299	2329	VOTED	      LODD=0                                                            		dots=      L000=0 ## glm=      LODD=0 ## glm2=      LODD=0	RSXP372
+44	2341	2371	AGREE	      GO TO 1130                                                        		lighton=      GO TO 1130 ## glm=      GO TO 1130	RSXP373
+45	2384	2418	AGREE	 2585 GO TO (258 ,2586),IFLAG                                           		lighton= 2585 GO TO (258 ,2586),IFLAG ## dots= 2585 GO TO (258 ,2586),IFLAG ## glm= 2585 GO TO (258 ,2586),IFLAG	RSXP374
+46	2426	2460	VOTED	 2586 IF(IP-KDIP)5445,258,258                                           		lighton= 2586 IF(IP-KDIP)5445,258,258 ## dots= 2586 IF(IP-KDIP)5445,258,258 ## glm= 2586 IF（IP-KDIP）5445,258,258	RSXP375
+47	2468	2498	AGREE	  258 CONTINUE                                                          		lighton=  258 CONTINUE ## dots=  258 CONTINUE ## glm=  258 CONTINUE	RSXP376
+48	2513	2543	AGREE	  278 CONTINUE                                                          		lighton=  278 CONTINUE ## dots=  278 CONTINUE ## glm=  278 CONTINUE	RSXP377
+49	2557	2585	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP378
+50	2596	2628	COMMENT	C     LOAD FINAL RESIDUE CF GDPST DATA ON THE CRM CUTFUT TAPE           		lighton=C     LOAD FINAL RESIDUE CF GDPST DATA ON THE CRM CUTFUT TAPE ## dots=C     LOAD FINAL RESIDUE OF GOPST DATA ON THE CRM CUTFUT TAPE ## glm=C     LOAD FINAL RESIDUE CF GDPST DATA ON THE CRM CUTFUT TAPE	RSXP379
+51	2642	2670	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP386
+52	2684	2715	VOTED	 1030 WRITE(IRISE)LODD                                                  		lighton= 1030 WRITE(IRISE)L000 ## dots= 1030 WRITE(IRISE)LODD ## glm= 1030 WRITE(IRISE)LODD	RSXP361
+53	2723	2760	VOTED	      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J		lighton=      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GUPST(3,J),GDFST(4,J),GDPST(5,J ## dots=      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J ## glm=      WRITE(IRISE)(GDPST(1,J),GDPST(2,J),GDPST(3,J),GDPST(4,J),GDPST(5,J	RSXP382
+54	2760	2802	VOTED	     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LOCD		lighton=     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LOGD ## dots=     1),GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LOCD ## glm=     1).GDPST(6,J),GDPST(7,J),GDPST(8,J),GDPST(9,J),GCPST(10,J),J=1,LOCD	RSXP363
+55	2813	2844	VOTED	     21                                                                 		lighton=     21 ## dots=     21 ## glm=     2)	RSXP364
+56	2856	2886	VOTED	      LOOD=C                                                            		dots=      LOAD=C ## glm=      LOOD=C ## glm2=      LOOD=C	RSXP305
+57	2899	2929	VOTED	      WRITE(IRISE)LODD                                                  		lighton=      WRITE(IRISE)LOOO ## dots=      WRITE(IRISE)LODD ## glm=      WRITE(IRISE)LODD	RSXP386
+58	2943	2973	AGREE	      ENO FILE IRISE                                                    		lighton=      ENO FILE IRISE ## dots=      ENO FILE IRISE ## glm=      ENO FILE IRISE	RSXP387
+59	2985	3015	VOTED	      FEWIND IRISE                                                      		dots=      FEWIND JRISE ## glm=      REWIND IRISE ## glm2=      FEWIND IRISE	RSXP358
+60	3027	3055	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	RSXP359
+61	3071	3099	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	RSXP390
+62	3149	3180	NOISE	                                                                        		lighton=                                         96 ## dots=                                         96 ## glm=                                         96	
+63	3301	3323	NONE	                                                                        			

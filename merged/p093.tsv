@@ -1,0 +1,57 @@
+1	7	47	NOISE	                                                                        			
+2	413	446	AGREE	      PX=X                                                              		lighton2=      PX=X ## glm=      PX=X	RS1R34
+3	457	490	AGREE	      PZ=Z                                                              		dots=      PZ=Z ## glm=      PZ=Z	RSTR35
+4	499	532	AGREE	      PRZT=RZT                                                          		lighton=      PRZT=RZT ## dots=      PRZT=RZT ## glm=      PRZT=RZT	RSTR36
+5	543	576	VOTED	      00 2 NP=1,NDSTR                                                   		lighton=      00 2 NP=1,NDSTR ## dots=      00 2 NP=1,NOSTR ## glm=      00 2 NP=1,NDSTR	RSTR37
+6	586	620	AGREE	    2 PY(NP)=Y(NP)                                                      		lighton=    2 PY(NP)=Y(NP) ## lighton2=    2 PY(NP)=Y(NP) ## dots2=    2 PY(NP)=Y(NP)	RSTR36
+7	628	661	AGREE	      GO TO 5                                                           		lighton=      GO TO 5 ## dots=      GO TO 5 ## glm=      GO TO 5	RSTR39
+8	672	706	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSTR40
+9	716	748	AGREE	    3 SMALLT=SMALLT-DST                                                 		lighton=    3 SMALLT=SMALLT-DST ## glm=    3 SMALLT=SMALLT-DST	KSTR41
+10	758	791	SINGLE	      DST = DST1                                                        		glm=      DST = DST1	RS1R42
+11	802	835	AGREE	      EK=PEK                                                            		lighton=      EK=PEK ## dots=      EK=PEK ## glm=      EK=PEK	RSTR43
+12	845	877	AGREE	      RM=PRM                                                            		lighton=      RM=PRM ## dots=      RM=PRM ## glm=      RM=PRM	RSTR44
+13	887	918	AGREE	      S=PSS                                                             		lighton=      S=PSS ## dots=      S=PSS ## glm=      S=PSS	RSTR45
+14	928	962	AGREE	      T=PT                                                              		lighton=      T=PT ## dots=      T=PT ## glm=      T=PT	RSTR46
+15	973	1005	AGREE	      U=PU                                                              		lighton2=      U=PU ## glm=      U=PU	RSTR47
+16	1016	1047	AGREE	      V=PV                                                              		dots=      V=PV ## glm=      V=PV	RSTR48
+17	1058	1090	AGREE	      WT=PWT                                                            		dots=      WT=PWT ## glm=      WT=PWT	RSTR49
+18	1102	1134	AGREE	      X=PX                                                              		lighton2=      X=PX ## glm=      X=PX	
+19	1144	1176	AGREE	      Z=PZ                                                              		lighton2=      Z=PZ ## glm=      Z=PZ	RSTR51
+20	1187	1218	AGREE	      RZT=PRZT                                                          		lighton=      RZT=PRZT ## dots=      RZT=PRZT ## glm=      RZT=PRZT	RSTR52
+21	1231	1263	AGREE	      DO 4 NP=1,NDSYR                                                   		dots=      DO 4 NP=1,NDSYR ## glm=      DO 4 NP=1,NDSYR	RSTR53
+22	1273	1305	AGREE	    4 Y(NP)=PY(NP)                                                      		lighton=    4 Y(NP)=PY(NP) ## glm=    4 Y(NP)=PY(NP)	ASTR54
+23	1318	1349	AGREE	      N=3                                                               		dots=      N=3 ## glm=      N=3	RSTR55
+24	1360	1391	AGREE	    5 RETURN                                                            		lighton=    5 RETURN ## dots=    5 RETURN ## glm=    5 RETURN	RSTR56
+25	1401	1433	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	RSTR57
+26	1746	1779	COMMENT	*DECK,RSXP                                                              		dots=*DECK,RSXP ## glm=*DECK,RSXP	RSXP1
+27	1788	1821	AGREE	      SUBROUTINE RSXP                                                   		lighton=      SUBROUTINE RSXP ## dots=      SUBROUTINE RSXP ## glm=      SUBROUTINE RSXP	
+28	1833	1864	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP3
+29	1875	1907	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	RSXP4
+30	1917	1949	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP5
+31	1958	1991	NOISE	                                                                        			KSXP6
+32	2004	2036	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KSXP7
+33	2044	2078	COMMENT	C     AFTER THE DYNAMIC CLOUD RISE HAS BEEN COMPLETED, RSXF PASSES      		lighton=C     AFTER THE DYNAMIC CLOUD RISE HAS BEEN COMPLETED, RSXF PASSES ## glm=C     AFTER THE DYNAMIC CLOUD RISE HAS BEEN COMPLETED, RSXF PASSES	RSXP8
+34	2088	2119	COMMENT	C     THROUGH THE RISE HISTORY TABLE, CX, TO RESIMULATE THE RISE FOR THE		lighton=C     THROUGH THE RISE HISTORY TABLE, CX, TO RESIMULATE THE RISE FOR THE ## dots=C     THROUGH THE RISE HISTORY TABLE, CX, TO RESIMULATE THE RISE FOR THE ## glm=C     THROUGH THE RISE HISTORY TABLE, CX, TO RESIMULATE THE RISE FOR THE	RSXP9
+35	2119	2164	COMMENT	C     PURPOSE OF DEFINING A DISTRIBUTION IN SPACE ABOVE GZ OF FALLOUT   		lighton=C     PURPOSE OF DEFINING A DISTRIBUTION IN SPACE ABOVE GZ OF FALLOUT ## glm=C     PURPOSE OF DEFINING A DISTRUBUTION IN SPACE ABOVE GZ OF FALLOUT	
+36	2173	2206	COMMENT	C     PARCELS THAT ARE TO BE TRANSPORTED DOWNWIND BY SUBSEQUENT MODULES.		lighton=C     PARCELS THAT ARE TO BE TRANSPORTED DOWNWIND BY SUBSEQUENT MODULES. ## glm=C     PARCELS THAT ARE TO BE TRANSPORTED DOWNWIND BY SUBSEQUENT MODULES.	RSXP11
+37	2217	2248	COMMENT	C     RESULTS ARE WRITTEN CN TAPE IRISE.                                		lighton=C     RESULTS ARE WRITTEN CN TAPE IRISE. ## dots=C     RESULTS ARE WRITTEN ON TAPE IRISE. ## glm=C     RESULTS ARE WRITTEN CN TAPE IRISE.	RSXP12
+38	2261	2292	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP13
+39	2304	2335	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KSXP14
+40	2347	2379	COMMENT	C     OPST(1,M8T)  TIME                                                 		lighton=C     OPST(1,M8T)  TIME ## dots=C     OPST(1,MBT)  TIME ## glm=C     OPST(1,M8T)  TIME	RSXP15
+41	2390	2422	COMMENT	C     DPST(2,MBT)  ALTITUDE OF  PARCEL   CENTER OF MASS                 		lighton=C     DPST(2,MBT)  ALTITUDE OF  PARCEL   CENTER OF MASS ## dots=C     DPST(2,MBT)  ALTITUDE OF  PARCEL   CENTER OF MASS ## glm=C     DPST(2,MBT)  ALTITUCE OF  PARCEL   CENTER OF MASS	RSXP16
+42	2433	2465	COMMENT	C     OPSi(3,MBT)  RADIUS                                               		lighton=C     OPSi(3,MBT)  RADIUS ## glm=C     DPSi(3,M8T)  RADIUS	RSXP17
+43	2476	2508	COMMENT	C     DPST(4,MBT)  PARTICLE DIAMETER MICROMETERS                        		lighton=C     DPST(4,MBT)  PARTICLE DIAMETER MICROMETERS ## glm=C     DPST(4,MBT)  PARTICLE DIAMETER MICROMETERS	RSXP18
+44	2518	2552	COMMENT	C     OPST(5,MBT)  MASS OF ACTIVITY FRACTION                            		lighton=C     OPST(5,MBT)  MASS OF ACTIVITY FRACTION ## dots=C     DPST(5,MBT)  MASS OR ACTIVITY FRACTION ## glm=C     OPST(5,MBT)  MASS OR ACTIVITY FRACTION	RSXP19
+45	2560	2598	COMMENT	C     DPST(6,MBT)  PARCEL THICKNESS                                     		lighton=C     DPST(6,MBT)  PARCEL THICKNESS ## dots=C     DPST(6,M8T)  PARCEL THICKNESS ## glm=C     DPST(6,MBT)  PARCEL THICKNESS	RSXP20
+46	2598	2636	COMMENT	C     OPST(7,MBT)  ALTITUDE OF PARCEL BASE                              		lighton=C     OPST(7,MBT)  ALTITUDE OF PARCEL BASE ## dots=C     OPST(7,MBT)  ALTITUDE OF PARCEL BASE ## glm=C     OPST(7,M8T)  ALTITUCE OF PARCEL BASE	RSXP21
+47	2647	2680	COMMENT	C     OPST(8,MBT)  PARCEL VOLUME                                        		lighton=C     OPST(B,MBT)  PARCEL VOLUME ## dots=C     OPST(8,MBT)  PARCEL VOLUME ## glm=C     OPST(8,MBT)  PARCEL VOLUME	RSXP22
+48	2693	2722	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KSXP23
+49	2735	2766	NOISE	                                                                        			RSXP24
+50	2779	2808	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP25
+51	2818	2852	AGREE	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),    		lighton=       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256), ## dots=       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256), ## glm=       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),	RSAP26
+52	2861	2895	VOTED	     1        RHO(256), ETA(256), NHODO, Z'(100),  VX(100), VY(100)     		lighton=     1        RHO(256), ETA(256), NHODO, Z'(100),  VX(100), VY(100) ## dots=     1        RHO(256), ETA(256), NHODO, Z'(100),  VX(100), VY(100) ## glm=     1        RHO(256)， ETA(256)， NHODO， ZY(100)，  VX(100)， VY(100)	RSXP27
+53	2906	2940	TIE	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,40CL,SLOTMP,TNSD,XGZ,YGZ,TGZ    	43	dots=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ASCL,SLOTMP,TNSD,XGZ,YGZ,TGZ ## dots2=      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,400L,SLOTMP,TNSD,XGZ,YGZ,TGZ ## glm=      COMMON /BASIC/ W.FW.ZBRSTZ.HEIGHT.40LL.SLDTMP.TMSD.XGZ.YGZ.TGZ	RSXP28
+54	2950	2983	TIE	      COMMON /CONTRL/ DETID(12),IC(20),JRAO,IRISE,ISIN,ISOUT,JPARI,KUI  	41	dots=      COMMON /CONTRL/ DETID(12),IC(20),JRAO,IRISE,ISIN,ISOUT,JPARI,KUI ## dots2=      COMMON /CONTRL/ DETID(12),IC(20),JKAO,IRISE,ISIN,ISOUT,JPARI,KUI	H3XP29
+55	2992	3025	TIE	      COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMFS, VPA                 	42,55	lighton=      COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMFS, VPA ## lighton2=      COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMPS, VPR ## dots=      COMMON /INITL/ F, PHI, SSAM, TME, .MPG, TMFS, VPR ## glm2=      COMMON /INITL/ F, PHI, SSAM, TME, .MPG, TMFS, VPA	
+56	3035	3069	TIE	      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SU,PS(2:0),D1AP(201),FHASS(200)  	64	lighton=      COMMON /PARTCL/ NDSTF,RHCP,DMEAN,SU,PS(2:0),DIAM(201),FMASS(200) ## dots=      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SU,PS(2:0),D1AP(201),FHADE(200) ## dots2=      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SU,PS(2:0),D1AP(201),FHAUS(200)	PSXP31
+57	3100	3131	NOISE	                                                                        		lighton=                                       90 ## dots=                                       90 ## glm=                                       90	

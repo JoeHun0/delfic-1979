@@ -1,0 +1,11 @@
+4	619	COUNT 49/48	                                                                                	1TIMUP，OXSUM，OYSUM，ICF，JCF，NCF，KBHF，NDATF，LITIMF）
+23	1433	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF),ZCH(KBHF),TIMLP(LTIMF),Z8H(KEHF)        	DIMENSION NET(ICF,JCF),NETSU(NCF),ZCH(KBHF),TIMLP(LTIMF),Z8H(KEHF)
+28	1649	OK	   1  FORMAT(1H0,  5X,  17FUPDATE TIME INDEXI3,  23H.  WIND GRID CELL IN        	1 FORMAT(1H0, 5X, 17FUPDATE TIME INDEXI3, 23H. WIND GRID CELL IN
+29	1692	OK	     10EXI3, 38H WITH HORIZONTAL COORDINATES (X,Y) = (E12.5, 1H., E12.5,        	10EXI3, 38H WITH HORIZONTAL COORDINATES (X,Y) = (E12.5, 1H., E12.5,
+32	1819	OK	     1 7X.                 9HCROSSWIND, 7X, 8HDOWNWINC,6X10HHORIZONTAL/         	1 7X. 9HCROSSWIND, 7X, 8HDOWNWINC,6X10HHORIZONTAL/
+36	1993	OK	    6 FORMAT(1H1, 40X, 21HHEIGHTED, SUMMED DATA//)                              	6 FORMAT(1H1,40X,21HHEIGHTED,SUMMED DATA//)
+38	2080	OK	     1RAMETER =F12.5)                                                           	1RAMETER =F12.5)
+40	2157	OK	     10RE SUMMING/)                                                             	10RE SUMMING/)
+45	2379	COUNT 31/30	                                                                                	4. 5(7X，9HCOMPONENT)，9X，5HANGLE)
+50	2594	COUNT 61/60	                                                                                	16 FORMAT(1H0,22X48 HAVERAGE VERTICAL WIND COMPONENT FOR EACH LAYER -)
+58	2937	OK	      CALL CNTR(NET,NETSC,N,XG,YG,ICF,JCF,NCF)                                  	CALL CNTR(NET,NETSC,N,XG,YG,ICF,JCF,NCF)

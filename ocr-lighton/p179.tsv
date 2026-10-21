@@ -1,0 +1,63 @@
+1	1	COUNT 9/26	                                                                                	\text{1.}
+2	525	COUNT 54/55	                                                                        P4M1 361	4.095745E-6, 4.812500E-4, 7.461240E-5, 0.000000 , 0.000000 , || P4M1 361
+3	569	COUNT 48/49	                                                                        PAM1 362	0.000000 , 0.000000 , 0.000000 , 0.000000 , 1.28333E-34, || PAM1 362
+4	611	COUNT 51/52	                                                                        PAM1 363	6.93000E-31, 1.215789E-3, 0.000000 , 0.000000 , 0.000000 , || PAM1 363
+5	656	COUNT 29/10	                                                                        PAH1 3E4	\text{C00000000} \cdot \text{J} || PAH1 3E4
+6	699	OK	      DATA ((XLAM  (I,J),I=1,7),J=14,18)/                               PAM1 365	DATA ((XLAM (I,J), I=1,7), J=14,18)/ || PAM1 365
+7	740	COUNT 50/52	                                                                        PAM1 366	6.93003E-31, 2.310000E+1, 0.000000 , 0.90000 , 0.2JJ000 , || PAM1 366
+8	782	COUNT 8/7	     0 .0000003   , 0.000000   , 6.93000E-31, 3.071808E-3, 0.000000   ,         	0.0000003 , 0.000000 , 6.93000E-31, 3.071808E-3, 0.000000 , || PA141 367
+9	826	COUNT 48/49;COUNT 8/7	                                                                                	0.370J80 , 0.000030 , 0.000000 , 0.000000 , 2.885192E-7, || PA141 368
+10	860	OK	     6 .930000E-31, 6.930000E-31 ,3.208333E-3 ,0.00000   0 ,0.00000   0 PAM1 369	6.930000E-31, 6.930000E-31, 3.208333E-3, 0.000000, 0.000000 || PAM1 369
+11	912	COUNT 48/49	                                                                        PAM1 370	0.000000 , 5.698974E-7, 0.000000 , 0.000000 , 0.000000 , || PAM1 370
+12	955	COUNT 48/49	                                                                        P4M1 371	0.990000 , 0.000000 , 0.099999 , 6.93100E-31, 0.000000 , || P4M1 371
+13	998	COUNT 45/46	                                                                        PAM1 372	0.000000 , 0.000000 , 0.000000 , 0.000000 , 3.000000 / || PAM1 372
+14	1043	COUNT 24/23	                                                                        PAM1 373	DATA ALBFOM/ 1.6999999E+3 / || PAM1 373
+15	1088	OK	      DATA (JRM   (I),I=1,95   )/                                       PAN1 374	DATA (JRM (I), I=1,95) / || PAN1 374
+16	1128	COUNT 24/14	                                                                        PAN1 375	\mathcal{S} 4, 5, 11, 12, 17, || PAN1 375
+17	1172	COUNT 17/16	                                                                        PAM1 376	\S 18, 25, 26, 33, 39, || PAM1 376
+18	1214	COUNT 15/16	                                                                        POM1 377	40, 41, 47, 48, 49, || POM1 377
+19	1258	COUNT 15/16	                                                                        PLM1 378	56, 7J, 78, 84, 85, || PLM1 378
+20	1301	COUNT 19/18	                                                                        PAM1 379	\S 86, 87, 93, 100, 101, || PAM1 379
+21	1344	COUNT 75/21	                                                                        PAM1 380	\text{138,} \quad \text{109,} \quad \text{115,} \quad \text{122,} \quad \text{123,} || PAM1 380
+22	1379	COUNT 53/21	                                                                        PAM1 381	\text{S} \quad 128, \quad 129, \quad 136, \quad 145, \quad 146, || PAM1 381
+23	1429	COUNT 8/7	     5         147,         153,         154,         160,         161,         	5 147, 153, 154, 160, 161, || PAM:1 382
+24	1472	COUNT 20/21;COUNT 8/7	                                                                                	163, 169, 176, 177, 178, || PAM:1 383
+25	1507	COUNT 8/7	     \         begi         n{ar         ray}         {ccc         ccc}         	\begin{array}{cccccc} || PAM1. 384
+26	1557	COUNT 20/21;COUNT 8/7	                                                                                	210, 218, 224, 225, 232, || FAM1. 305
+27	1601	COUNT 31/21	                                                                        PAM1 386	\mathcal{G} 246, 241, 249, 250, 257, || PAM1 386
+28	1643	COUNT 20/22	                                                                        PAM1 387	258, 259, 267, 268, 274, || PAM1 387
+29	1687	COUNT 20/21	                                                                        PAM1 388	276, 283, 264, 291, 293, || PAM1 388
+30	1731	COUNT 20/21	                                                                        PAM1 389	294, 295, 308, 309, 310, || PAM1 389
+31	1765	COUNT 79/21	                                                                        PAM1 390	\overline{3} \quad 311, \quad \overline{3}17, \quad \overline{3}18, \quad 341, \quad 342, || PAM1 390
+32	1815	COUNT 20/21	                                                                        PAM1 391	343, 350, 357, 359, 360, || PAM1 391
+33	1859	COUNT 31/21	                                                                        PAM1 392	\mathcal{A}  361, 365, 377, 378, 379, || PAM1 392
+34	1900	COUNT 20/21	                                                                        PAM1 393	384, 392, 401, 402, 408/ || PAM1 393
+35	1946	OK	      DATA (JRM   :I),I=9e,185 )/                                       PAN1 394	DATA (JRM :I), I=9e,185 )/ || PAN1 394
+36	1988	COUNT 20/21	                                                                        PAM1 395	409, 410, 419, 424, 425, || PAM1 395
+37	2022	OK	     \         begi         n{ar         ray}         {ccc         ccc} PAM1 396	\begin{array}{cccccc} || PAM1 396
+38	2073	COUNT 45/21	                                                                        PAM1 397	\quad 442, \quad 443, \quad 447, \quad 448, \quad 451, || PAM1 397
+39	2117	COUNT 20/21	                                                                        PAM1 348	456, 457, 458, 460, 468, || PAM1 348
+40	2159	COUNT 20/21	                                                                        PAM1 399	473, 474, 475, 476, 477, || PAM1 399
+41	2203	OK	     3         483,         481,         489,         490,         491, PAM1 4.0	3 483, 481, 489, 490, 491, || PAM1 4.0
+42	2247	OK	     3         497:         49_,         498,         499,         501, PAM1 4.1	3 497: 49_, 498, 499, 501, || PAM1 4.1
+43	2290	COUNT 74/20;COUNT 8/7	                                                                                	\text{502,} \quad \text{507,} \quad \text{508,} \quad \text{509,} \quad \text{51,} || PAM1 4:12
+44	2333	COUNT 20/21	                                                                        PAM1 4.3	516, 523, 528, 529, 535, || PAM1 4.3
+45	2375	COUNT 20/21	                                                                        PAM1 4:4	536, 537, 542, 543, 544, || PAM1 4:4
+46	2417	COUNT 27/21	                                                                        PAM1 4:5	\dagger 549, 550, 551, 556, 557, || PAM1 4:5
+47	2460	COUNT 32/21;COUNT 8/7	                                                                                	\mathfrak{g} 563, 564, 571, 572, 578, || PAM1 4515
+48	2503	COUNT 20/21	                                                                        PAM1 4u'	579, 585, 586, 593, 602, || PAM1 4u'
+49	2545	COUNT 8/7	     3         508,         605,         616,         621,         622,         	3  508,  605,  616,  621,  622, || PAM1 4:el
+50	2588	COUNT 20/21	                                                                        FAM1 4J9	629, 631, 632, 638, 639, || FAM1 4J9
+51	2631	COUNT 45/21	                                                                        PAMI 420	\quad 646, \quad 652, \quad 653, \quad 659, \quad 565, || PAMI 420
+52	2665	COUNT 34/21	                                                                        PAM1 411	<table border="1" class="dataframe"> || PAM1 411
+53	2718	OK	     3         631.           L.           C.           C.           U/ FAM1 412	3 631. L. C. C. U/ || FAM1 412
+54	2765	COUNT 37/20	                                                                        PAM1 413	\text{나타나 (ISO (I) . I = 1 + 1\bar{c} \quad 3/} || PAM1 413
+55	2805	COUNT 96/11	                                                                        PAM1 414	\mathcal{R} \quad \mathcal{L}, \quad \mathcal{U}, \quad \mathcal{C}, \quad \mathcal{C}, \quad \mathcal{O}, || PAM1 414
+56	2847	COUNT 126/11	                                                                        FA:1 415	\mathcal{R} \mathcal{C}_\mathcal{R} \mathcal{R}_\mathcal{R} \mathcal{U}_\mathcal{R} \mathcal{U}_\mathcal{R} \mathcal{F}_\mathcal{R} || FA:1 415
+57	2892	COUNT 91/11	                                                                        C&MI 416	\mathcal{R} \quad \mathcal{R} \quad \mathcal{R} \quad \mathcal{R} \quad \mathcal{R} \quad \mathcal{R} || C & M I 416
+58	2936	COUNT 286/7	                                                                        FLM1 4:7	\mathcal{A} \mathcal{B} \mathcal{C} \mathcal{D} \mathcal{E} \mathcal{F} \mathcal{G} \mathcal{H} \mathcal{I} \mathcal{J} \mathcal{K} \mathcal{L} \mathcal{M} \mathcal{N} \mathcal{O} \mathcal{P} \mathcal{Q} \mathcal{R} \mathcal{S} \mathcal{T} \mathcal{U} \mathcal{V} \mathcal{W} \mathcal{X} \mathcal{Y} \mathcal{Z} || FLM1 4:7
+59	2978	COUNT 0/22;COUNT 26/7	                                                                                	 || \text{P A M I} \quad \text{← I P}
+60	3020	COUNT 77/56;COUNT 15/7	                                                                                	- 2476.753054. \quad 9671555540. \quad 3671292042. \quad 5671544015. \quad 3671646360. || \text{PAINI 4:4}
+61	3064	COUNT 107/7	     1  11177.11777 .-902477132.  735234276.3  0015775421.  3405762564.         	1  11 177. 11 777.  -9 0 2 4 7 7 1 3 2.  7 3 5 2 3 4 2 7 6.  3 0 0 1 5 7 7 5 4 2 1.  3 4 0 5 7 6 2 5 6 4. || \mathcal{R} \quad \mathcal{L} \quad \mathcal{M} \quad \mathcal{P} \quad \mathcal{R} \quad \mathcal{C} \quad \mathcal{P}
+62	3125	COUNT 333/3	                                                                                	\text{a} \quad \text{b} \quad \text{c} \quad \text{d} \quad \text{e} \quad \text{f} \quad \text{g} \quad \text{h} \quad \text{i} \quad \text{j} \quad \text{k} \quad \text{l} \quad \text{m} \quad \text{n} \quad \text{o} \quad \text{p} \quad \text{q} \quad \text{r} \quad \text{s} \quad \text{t} \quad \text{u} \quad \text{v} \quad \text{w} \quad \text{x} \quad \text{y} \quad \text{z}
+63	3293	COUNT 320/48	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N}

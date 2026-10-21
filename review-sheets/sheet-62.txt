@@ -1,0 +1,12 @@
+733	p171	49	TIE	10	4	   6) CONTINUE
+734	p171	51	TIE	16	7	      IF(I .EQ. M) GO TO ES
+735	p171	52	TIE	42	7	      IF(VEC(X(M),Y(M),X(I),Y(I)) )LE. VEE) GO TO 10]
+736	p171	58	SINGLE	13	4	   72 V(I-1)=V(I)
+737	p171	59	TIE	7	7	      X(K)=XP
+738	p172	16	TIE	38	7	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70:
+739	p172	24	TIE	52	7	      IF(IPNCH .GT. 0) WRITE(IPNCH,20JU)CNT, XP,  YP,  CROLBL, COUE
+740	p172	44	TIE	9	7	      X(I)=X(J)
+741	p172	49	TIE	31	3	  765 CALL ERROR(PROGRM,-755,ISOUT)
+742	p172	56	TIE	33	2	 2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6)
+743	p172	58	TIE	3	7	      ENG
+744	p172	60	NONE	19	7	raw: \int_{0}^{1} \sin \theta \, d\theta = \frac{1}{2} \sin \theta \, d\theta

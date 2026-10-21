@@ -1,0 +1,63 @@
+1	22	COUNT 0/8	                                                                                	
+2	522	OK	 41   FORMAT (//25X, 19HMASCHN SET EQUAL TOI5)                          UPM2  47	41 FORMAT (//25X, 19HMASCHN SET EQUAL TOI5) || UPM2 47
+3	566	OK	 44   FORMAT( 8F10.3/A10)                                               CPM2  48	44 FORMAT( 8F10.3/A10) || CPM2 48
+4	607	COUNT 61/60	                                                                        OPM2  49	45 FORMAT(/ 15X, 93HCCNTOURS ARE NOT DETERMINED BECAUSE THE REQUESTED) || OPM2 49
+5	651	OK	     1 YAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY)                     OPM2  50	1 YAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY) || OPM2 50
+6	693	COUNT 62/59	                                                                        UPM2  51	46 FORMAT(/15X, 56MTHE SPECIFIED MAF GRID INCREMENTS PRODUCE DISTORTEI || UPM2 51
+7	737	OK	     10 MAPS)                                                           OPM2  52	10 MAPS) || OPM2 52
+8	779	COUNT 61/60	                                                                        OPM2  53	47 FORMAT(/15X, 66HUNDISTORTED MAPS ARE PRODUCED BY THE GRID INCREMENT || OPM2 53
+9	824	OK	     1TS PRINTED ABOVE)                                                 UPM2  54	1TS PRINTED ABOVE) || UPM2 54
+10	866	OK	C                                                                       OPM2  55	C || OP M2 55
+11	909	OK	      IGO=.TRUE.                                                        CPM2  56	IGO = .TRUE. || CPM2 56
+12	954	OK	C                                                                       OPMΣ  57	C || OPMΣ 57
+13	992	COUNT 60/59	                                                                        OPM2  58	COPY IN MAP LIMITING COORDINATES, GRID INTERVALS, AND COMBINED GROUND || OPM2 58
+14	1036	OK	C     ROUGHNESS-SURVEY INSTRUMENT RESPONSE FACTOR.                      OPM2  59	C ROUGHNESS-SURVEY INSTRUMENT RESPONSE FACTOR. || OPM2 59
+15	1080	OK	 1191 READ(ISIN,9)XMIN,XMAX,YMIN,YMAX,CGX,CGY,GRUFF                     UPM2  60	1191 READ(ISIN, 9)XMIN, XMAX, YMIN, YMAX, CGX, CGY, GRUFF || UPM2 60
+16	1122	COUNT 23/25	                                                                        UPM2  61	IF (GRUFF .EQ. 0) GRUFF=1.0 || UPM2 61
+17	1163	OK	 1603 IF(AES(DGX) ◊ ABS(DGY))120,12),121                                00M2  62	1603 IF(AES(DGX) ◊ ABS(DGY))120,12),121 || 00M2 62
+18	1208	COUNT 16/6	 120  WRITE (ISOUT,17)                                                          	120 WRITE (ISOUT,17) || OPM \mathcal{L} 6J
+19	1251	OK	      REWIND IPOUT                                                      OPM2  04	REWIND IPOUT || OPM2 04
+20	1296	OK	      RETURN                                                            OPM2  65	RETURN || OPM2 65
+21	1341	OK	C                                                                       UPM2  66	C || UPM2 66
+22	1379	OK	COMMENCE PROCESSING FOR PAFS OF THIS DESCRIPTION                        OPM2  67	COMMENCE PROCESSING FOR PAFS OF THIS DESCRIPTION || OPM2 67
+23	1424	OK	  121 NTASK=NTASK+1                                                     UPM2  68	121 NTASK=NTASK+1 || UPM2 68
+24	1468	OK	      FSUM=0.0                                                          OPM2  69	FSUM=0.0 || OPM2 69
+25	1511	OK	C                                                                       OPM2  7C	C || OPM2 7C
+26	1554	OK	      NRQ=0                                                             UPM2  71	NRQ = 0 || UPM2 71
+27	1595	OK	CALCULATE ADJUSTED MAP GRID INCREMENTS TO ASSURE AN UNDISTORTED MAP     CPM2  72	CALCULATE ADJUSTED MAP GRID INCREMENTS TO ASSURE AN UNDISTORTED MAP || CPM2 72
+28	1639	OK	      NSP=1                                                             UPM2  73	NSP = 1 || UPM2 73
+29	1682	OK	      IF(DGY .GT. J.G) GO TO 1300                                       UPM2  74	IF(DGY.GT.J.G) GO TO 1300 || UPM2 74
+30	1724	COUNT 0/17	                                                                        OPM2  75	 || OPM2 75
+31	1765	OK	 1300 IF(DGX .EQ. 2.0*IV*OGY/IH) NSP=0                                  UPM2  76	1300 IF(DGX .EQ. 2.0*IV*OGY/IH) NSP=0 || UPM2 76
+32	1808	OK	CALCULATE NUMBER OF MAP CORE LOADS BEYOND THE FIRST, AZ.                GPM2  77	CALCULATE NUMBER OF MAP CORE LOADS BEYOND THE FIRST, AZ. || GPM2 77
+33	1855	COUNT 0/4	                                                                        OPM2  78	 || OPM2 78
+34	1894	COUNT 0/21	                                                                        UPM2  79	 || UPM2 79
+35	1940	COUNT 0/19	                                                                        OPM2  80	 || OPM2 80
+36	1982	OK	      NXMAP=NOX                                                         UPM2  61	NXMAP=NOX || UPM2 61
+37	2022	COUNT 5/6	      NST = NMAP/NYHAP                                                          	NST = NMAP/NYHAP || UPM2 2
+38	2066	OK	      IF(NXMAP .LE. NST) GC TO 1401                                     UPM2  83	IF(NXMAP.LE.NST) GC TO 1401 || UPM2 83
+39	2111	OK	      NXMAP=NST                                                         UPM2  04	NXMAP = NST || UPM2 04
+40	2151	OK	 1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14.0,ISOUT)                   OPM2  o5	1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14.0,ISOUT) || OPM2  o5
+41	2195	COUNT 0/12	                                                                        OPM2  ≤6	 || OPM2 ≤ 6
+42	2237	OK	 1401 00 1121 J=1,NOSTR                                                 UPM2  97	1401 00 1121 J=1,NOSTR || UPM2 97
+43	2279	COUNT 0/23	                                                                        OPM2  88	 || OPM2 88
+44	2323	OK	      IF(SD .GT. C.0) WFPAS(J)=WFPAS(J)*SSAM                            OPM2  54	IF(SD .GT. C.0) WFPAS(J) = WFPAS(J)*SSAM || OPM2 54
+45	2368	OK	 1121 CONTINUE                                                          OPM2  55	1121 CONTINUE || OPM2 55
+46	2409	OK	COPY OUT A LOCAL HEADING                                                OPM2  91	COPY OUT A LOCAL HEADING || OPM2 91
+47	2456	OK	      WRITE (ISOUT,23)NTASK                                             OPM2  92	WRITE (ISOUT,23)NTASK || OPM2 92
+48	2496	OK	      WRITE(ISOUT,24) XMIN,XPAY,YMIN,YMAX,DGx,CGY                       OPM2  93	WRITE(ISOUT,24) XMIN,XPAY,YMIN,YMAX,DGx,CGY || OPM2 93
+49	2539	OK	      WRITE (ISOUT,4)  GRUFF ,ZMIN                                      OPM2  ข4	WRITE (ISOUT,4) GRUFF, ZMIN || OPM2 ข 4
+50	2582	OK	      IF(NSP)1123.1123.1122                                             OPM2  95	IF(NSP) 1123.1123.1122 || OPM2 95
+51	2626	OK	 1122 WRITE(ISOUT,46)                                                   OPM2  96	1122 WRITE(ISOUT,46) || OPM2 96
+52	2669	OK	      GO TO 1211                                                        UPM2  37	GO TO 1211 || UPM2 37
+53	2712	COUNT 25/6	 1123 WRITE(ISOUT,47)                                                           	1123 WRITE(ISOUT,47) || \text{JPM2} \quad \text{= 8}
+54	2756	OK	C                                                                       OPM2  =5	C || OPM2 = 5
+55	2796	OK	 1211 CONTINUE                                                          OPM2 1.0	1211 CONTINUE || OPM2 1.0
+56	2840	COUNT 15/7	C                                                                               	C || \text{17PM2 111}
+57	2882	COUNT 0/7	 1259 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM                                      	1259 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM || 
+58	2924	OK	      IF(N7 .GT. 0) NXHAF=NST                                           0P42 1:3	IF (N7 .GT. 0) NXHAF=NST || 0P42 1:3
+59	2969	COUNT 17/18	                                                                        OPM2 1.4	COPY IN A YAP REQUFST || OPM2 1.4
+60	3011	OK	      READ(ISIN,32)NREQ,JC,ICONT,MASCHA,T1,T2,CCUT,CUTMAP               UPM2 1:5	READ(ISIN, 32) NREQ, JC, ICONT, MASCHA, T1, T2, CCUT, CUTMAP || UPM2 1:5
+61	3054	OK	      IF(ICONT .NE. 0) READ(ISIN,44 ) CONTUR,CROLBL                     OPM2 1.6	IF(ICONT .NE. 0) READ(ISIN,44 ) CONTUR,CROLBL || OPM2 1.6
+62	3106	OK	                                      157                                       	157
+63	3279	COUNT 0/11	                                                                                	

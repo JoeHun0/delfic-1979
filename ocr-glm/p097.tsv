@@ -1,0 +1,64 @@
+1	9	COUNT 3/17	                                                                                	---
+2	51	COUNT 3/26;COUNT 3/8	                                                                                	--- || ---
+3	559	OK	      IF(IC(6))2401.2401.2351                                           RSXP 212	IF(IC(6))2401.2401.2351 || RSXP 212
+4	601	OK	 2351 WRITE(ISOUT,777)(DFST(I,M8T),I=1,8),M8T,IFLAG                     RSXP 213	2351 WRITE(ISOUT,777)(DFST(I,M8T),I=1,8),M8T,IFLAG || RSXP 213
+5	643	OK	 2401 IF(DPST(2,2)-ZBRSTZ)259,259,2448                                  RSXP 214	2401 IF(DPST(2,2)-ZBRSTZ)259,259,2448 || RSXP 214
+6	688	OK	C                                                                       RSXP 215	C || RSXP 215
+7	730	OK	C     ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED                       RSXP 216	C ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED || RSXP 216
+8	772	OK	C                                                                       RSXP 217	C || RSXP 217
+9	815	OK	  259 DPST(2,2)= DPST(2,2) - (CX(MCX,1) - DPST(1,2))*DNWAF(2)           RSXP 218	259 DPST(2,2) = DPST(2,2) - (CX(MCX,1) - DPST(1,2)) *DNWAF(2) || RSXP 218
+10	859	OK	      IF(DPST(2,1) - ZBRSTZ)6020,6020,2448                              RSXP 219	IF(DPST(2,1)-ZBRSTZ)6020,6020,2448 || RSXP 219
+11	901	OK	 6020 OPST(2,1)= OPST(2,1) - (CX(MCX,1) - OPST(1,1))*DNWAF(1)           RSXP 220	6020 OPST(2,1) = OPST(2,1) - (CX(MCX,1) - OPST(1,1)) *DNWAF(1) || RSXP 220
+12	944	OK	C     DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP    RSXP 221	C DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP || RSXP 221
+13	988	OK	C     AND BOTTOM HAVE DIFFERENT RADII                                   RSXP 222	C AND BOTTOM HAVE DIFFERENT RADII || RSXP 222
+14	1030	OK	C                                                                       RSXP 223	C || RSXP 223
+15	1072	OK	 2448 AL=DPST(3,1)/DPST(3,2)                                            KSXP 224	2448 AL=DPST(3,1)/DPST(3,2) || KSXP 224
+16	1115	OK	      RB=3.1415927*DPST(3.2)**2                                         RSXP 225	RB=3.1415927*DPST(3.2)**2 || RSXP 225
+17	1158	COUNT 8/7	      KDIP=AL                                                                   	KDIP=AL || P.SXP 226
+18	1200	OK	      IF(KDIP-10)2442.2442.2443                                         RSXP 227	IF(KDIP-10)2442.2442.2443 || RSXP 227
+19	1245	OK	 2443 KDIP=10                                                           RSXP 228	2443 KDIP=10 || RSXP 228
+20	1288	OK	      GO TO 2444                                                        <SXP 229	GO TO 2444 || <SXP 229
+21	1330	OK	 2442 IF(KDIP-2)2450,2444,2444                                          RSXP 230	2442 IF(KDIP-2)2450,2444,2444 || RSXP 230
+22	1373	OK	 2450 IF（AL-1.5）2451，2452，2452                                          RSXP 231	2450 IF（AL-1.5）2451，2452，2452 || RSXP 231
+23	1416	OK	 2451 KDIP=1                                                            RSXP 132	2451 KDIP=1 || RSXP 132
+24	1459	OK	      GO TO 2444                                                        RSXP 233	GO TO 2444 || RSXP 233
+25	1502	OK	 2452 K0IP=2                                                            KSXP 234	2452 K0IP=2 || KSXP 234
+26	1544	OK	 2444 ZD=DPST(2,1)-DPST(2,2)                                            RSXP 235	2444 ZD=DPST(2,1)-DPST(2,2) || RSXP 235
+27	1588	OK	      FK=FLOAT(KDIP)                                                    RSXP 236	FK=FLOAT(KDIP) || RSXP 236
+28	1629	OK	      DZ=ZD/FK                                                          RSXP 237	DZ=ZD/FK || RSXP 237
+29	1672	OK	      ALL=0.5*ZD/ALOG(AL)                                               RSXP 238	ALL=0.5*ZD/ALOG(AL) || RSXP 238
+30	1717	OK	C                                                                       RSXP 239	C || RSXP 239
+31	1760	OK	C     SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS                    RSXP 240	C SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS || RSXP 240
+32	1804	OK	C                                                                       RSXP 241	C || RSXP 241
+33	1846	OK	      DO 2445 I=1,KDIP                                                  RSXP 242	DO 2445 I=1,KDIP || RSXP 242
+34	1889	OK	      FI=FLOAT(I)                                                       RSXP 243	FI=FLOAT(I) || RSXP 243
+35	1932	OK	      A=DPST(2,2)+(FI-1.)*DZ                                            RSXP 244	A=DPST(2,2)+(FI-1.)*DZ || RSXP 244
+36	1975	OK	      B=A+OZ                                                            RSXP 245	B=A+O Z || RSXP 245
+37	2018	OK	      A1=AL**（2.0*(B-DPST(2,2))/ZD)                                     RSXP 246	A1=AL**（2.0*(B-DPST(2,2))/ZD) || RSXP 246
+38	2059	OK	      A2=AL**（2.0*(A-DPST(2,2))/Z0)                                     RSXP 247	A2=AL**（2.0*(A-DPST(2,2))/Z0) || RSXP 247
+39	2103	OK	      PPST(2,I)=ALL*(ALOG(0.5*(A1+A2)))+DPST(2,2)                       RSXP 248	PPST(2,I) = ALL * (ALOG(0.5 * (A1+A2))) +DPST(2,2) || RSXP 248
+40	2146	OK	      PPST(3,I)=DPST(3,2)*(AL**((PPST(2,I)-DPST(2,2))/ZD))              RSXP 249	PPST(3, I) = DPST(3, 2)*(AL**((PPST(2, I)-DPST(2, 2))/ZD)) || RSXP 249
+41	2189	OK	      PPST(1,I)=OPST(1,MBT)                                             RSXP 250	PPST(1,I)=OPST(1,MBT) || RSXP 250
+42	2231	OK	      PPST（4，I）=SQRT（DPST（4，1）*DPST（4，2)）                               RSXP 251	PPST（4，I）=SQRT（DPST（4，1）*DPST（4，2)） || RSXP 251
+43	2275	OK	      PPST（5，I）=OPST（5，MBT）/FK                                          RSXP 252	PPST（5，I）=OPST（5，MBT）/FK || RSXP 252
+44	2318	OK	      PPST（6，I）=DZ                                                      RSXP 253	PPST（6，I）=DZ || RSXP 253
+45	2360	OK	      PPST（7，I）=A                                                       RSXP 254	PPST（7，I）=A || RSXP 254
+46	2403	OK	      PPST(8,I)=RB*ALL*(A1-A2)                                          RSXP 255	PPST(8, I) = RB*ALL*(A1-A2) || RSXP 255
+47	2446	OK	C                                                                       RSXP 256	C || RSXP 256
+48	2487	COUNT 41/42	                                                                        RSXP 257	C ADJUST PPST ARRAY VALUES FOR AN IMPACTED PARCEL || RSXP 257
+49	2533	OK	C                                                                       RSXP 258	C || RSXP 258
+50	2575	OK	      IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443                                RSXP 259	IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443 || RSXP 259
+51	2618	OK	      PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I))/(DNHAF(2) +          KSXP 260	PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I)) / (DNHAF(2) + || KSXP 260
+52	2662	OK	     1 (DNHAF(1) - DNHAF(2))*(PPST(2,I) - DPST(2,2))/ZD)                RSXP 261	1 (DNHAF(1) - DNHAF(2)) * (PPST(2,I) - DPST(2,2))/ZD) || RSXP 261
+53	2696	OK	      PFST(2,I)=ZBRSTZ                                                  RSXP 262	PFST(2,I) = ZBRSTZ || RSXP 262
+54	2748	OK	      PPST(6,I)=0.0                                                     RSXP 263	PPST(6,I)=0.0 || RSXP 263
+55	2791	OK	      PPST（7，I）=ZBRSTZ                                                  RSXP 264	PPST（7，I）=ZBRSTZ || RSXP 264
+56	2833	OK	      PPST（8，I）=0.0                                                     RSXP 265	PPST（8，I）=0.0 || RSXP 265
+57	2877	COUNT 7/8	                                                                        RSXP 266	G TO 2445 || RSXP 266
+58	2919	OK	 3443 IF(PPST(7,I) .GT. ZBRSTZ) GO TO 2445                              RSXP 267	3443 IF(PPST(7,I) .GT. ZBRSTZ) GO TO 2445 || RSXP 267
+59	2962	OK	      PFST(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I)                          RSXP 268	PFST(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I) || RSXP 268
+60	3003	OK	      PPST(8,I)= PPST(8,I) - 3.1415927*(ZBRSTZ- PPST(7,I))*PPST(3,I)**2 RSXP 269	PPST(8,I) = PPST(8,I) - 3.1415927* (ZBRSTZ- PPST(7,I)) *PPST(3,I)**2 || RSXP 269
+61	3049	OK	      PPST(7,I)=ZBRSTZ                                                  RSXP 270	PPST(7,I) = ZBRSTZ || RSXP 270
+62	3091	COUNT 12/11	                                                                        RSXP 271	2445 CONTINUE || RSXP 271
+63	3123	OK	                                        94                                      	94
+64	3276	COUNT 3/41	                                                                        markdown	--- || markdown

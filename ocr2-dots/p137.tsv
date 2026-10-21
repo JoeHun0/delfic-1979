@@ -1,0 +1,14 @@
+2	704	COUNT 0/7	                                                                                	
+5	834	COUNT 24/10	                                                                                	\text{PE}=2.4 \text{ * EPS}
+6	876	COUNT 58/56	                                                                                	IF((ABS(XLO-XR)).GT.SPE).AND.(ABS(XRO-XL)).GT.SPE)) GO TO 615
+8	960	OK	      CALL GETOA( VSUM,ZBH,KBHA,KBHB,NOATO,LTIM,VBARC,KBHF,NOATF,LTINF)         	CALL GETOA( VSUM,ZBH,KBHA,KBHB,NOATO,LTIM,VBARC,KBHF,NOATF,LTINF)
+10	1048	OK	      V3AR=VBARC                                                                	V3AR=VBARC
+22	1563	COUNT 13/14	                                                                                	626 NOT C1=N041
+27	1780	COUNT 0/8	                                                                                	
+29	1867	COUNT 7/5	                                                                                	r_0 = r_0
+32	1994	OK	      IF(MC:5)=EQ.1) WRITE(ISOUT,2) TO,Z0,X0,Y0,NOATO                           	IF(MC:5)=EQ.1) WRITE(ISOUT,2) TO,Z0,X0,Y0,NOATO
+40	2327	COUNT 55/54	                                                                                	IF (( (ZO-ZMIN).LE.EPSZ).CR.(( (TIMEX-TO).LE.EPST)) GO TO 720
+43	2465	OK	  720 R2=RWAF**2                                                                	720 R2=RWAF**2
+46	2591	OK	      SIGXO = ( R2**QBRT + 2.0 * DOWN * TRIP * OSPRTX**QBRT/3.0 ) ** 3          	SIGXO = ( R2**QBRT + 2.0 * DOWN * TRIP * OSPRTX**QBRT/3.0 ) ** 3
+48	2679	COUNT 45/46	                                                                                	1 ( DSPRTX/ VARL ) * * QBRT + 3.0 * ! R2/ VARL ) * * QBRT - 2.0 )
+53	2892	COUNT 47/45	                                                                                	1 ( OSPRTY / VARL ) ** GBRT + 3.0U * ( K2 / VARL ) ** QBRT - 2.0J )

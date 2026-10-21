@@ -1,0 +1,12 @@
+697	p168	46	NONE	27	7	raw: IF (XPRMU. LT. X1+DGX) GO TO 200
+698	p168	47	NONE	25	7	raw: XPRML = 2.0 * XPAR(IP) - XFRMU
+699	p168	52	NONE	23	7	raw: TF (XPRYL. LT. X2) GO TC 22C
+700	p168	53	SINGLE	9	7	      KTR(IP)=0
+701	p168	54	NONE	8	7	raw: GO TO 777
+702	p168	58	NONE	26	3	raw: 220 IF(XPRMU.GT.X2) GO TO 230
+703	p168	59	SINGLE	10	7	      KTR(IP)=1                                                        P
+704	p168	60	NONE	8	7	raw: NE = NE + 1
+705	p168	61	TIE	1	72	                                                                       μ
+706	p168	62	NONE	8	7	raw: GO TO 240
+707	p169	1	NONE	13	8	raw: ---
+708	p169	3	NONE	20	4	raw: 240 CALL CALC(IP,OMAP,NMAP)

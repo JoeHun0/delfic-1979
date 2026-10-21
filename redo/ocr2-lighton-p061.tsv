@@ -1,0 +1,16 @@
+1	1	COUNT 0/30	                                                                                	
+45	2394	COUNT 45/44	                                                                                	TSTM - TIME AT WHICH NEXT CX ARRAY ENTRIES ARE TO BE MADE
+46	2437	COUNT 50/51	                                                                                	T2M - TIME (SEC) OF THE FIREBALL SECOND TEMPERATURE MAXIMUM
+47	2480	OK	 U -      C LO UD VERTICA LVELOCITY                                             	U  - CLOUD VERTICAL VELOCITY
+48	2524	COUNT 24/12	                                                                                	\overline{V} - CLOUD VOLUME
+49	2566	COUNT 59/53	                                                                                	VBL - ARRAY(6), DUMMY VARIABLES OF INTEGRATION(SUBS, DERIV, RKGILL)
+50	2609	COUNT 32/27	                                                                                	VIS - DYNAMIC VISCOSITY (KG/(M-SEC))
+51	2652	COUNT 42/37	                                                                                	VPR - MASS OF FALLOUT VAPOR (KG) AT THE INITIAL TIME
+52	2696	COUNT 56/48	                                                                                	C  VX(I)  - ARRAY(100), X-COMPONENT OF WIND VELOCITY AT WIND PROFILE
+54	2780	COUNT 56/53	                                                                                	C  VY(I) - ARRAY(100), Y-COMPONENT OF WIND VELOCITY AT WIND PROFILE
+55	2825	OK	 S           TRATUMI ,( METER S/SEC)                                            	STRATUM I, (METERS/SEC)
+57	2911	COUNT 57/55	                                                                                	C  WNDSFT - SUBROUTINE, ACJUSTS FALLOUT PARCEL COORDINATES FOR WIND
+58	2954	COUNT 1/48	                                                                                	C
+59	2994	COUNT 12/13	                                                                                	TRANSLATION.
+60	3038	COUNT 45/34	                                                                                	\overline{C} WT - SOLID AND LIQUID WATER MIXING RATIC
+63	3306	COUNT 0/39	                                                                                	

@@ -1,0 +1,62 @@
+1	5	COUNT 3/52;COUNT 3/2	                                                                                	--- || ---
+2	561	OK	C                                                                       ATMR 154	C || ATMR 154
+3	606	OK	  200 DO 210 I=1，NAT                                                    ATMR 155	200 DO 210 I=1，NAT || ATMR 155
+4	648	OK	  210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I)             ATMR 156	210 WRITE(IRISE)ALT(I),ATP(I),PRS(I),RLH(I),RHO(I),ETA(I) || ATMR 156
+5	691	OK	C                                                                       ATMR 157	C || ATMR 157
+6	735	COUNT 36/37	                                                                        ATMR 158	DO THE TABLES HAVE AN ENTRY AT 5. JD: METERS- || ATMR 158
+7	776	OK	C     IF NOT MAKE AN ENTRY AT 5JUIC METERS FROM THE ARCC STANUARD ATMOS.ATMR 159	C IF NOT MAKE AN ENTRY AT 5 JUIC METERS FROM THE ARCC STANUARD ATMOS. || ATMR 159
+8	820	OK	C                                                                       ATMR 160	C || ATMR 160
+9	863	OK	      IF(ALT(NAT ) .GE. 5.E4) GO TO 220                                 ATMR 161	IF(ALT(NAT) .GE. 5.E4) GO TO 220 || ATMR 161
+10	906	OK	      IF(A9S(ALT(NAT )-5.E4).LE.5U.)GO TO 220                           ATMR 162	IF (A9S(ALT(NAT )-5.E4).LE.5U.)GO TO 220 || ATMR 162
+11	936	OK	      WRITE(IRISE)ATMMAX                                                ATMR 163	WRITE (IRISE) ATMMAX || ATMR 163
+12	993	OK	      NAT=NAT+1                                                         ATMR 164	NAT=NAT+1 || ATMR 164
+13	1035	OK	C                                                                       ATMR 165	C || ATMR 165
+14	1077	OK	C     INITIALIZE FOR THE TABLES EXPANSION                               ATMR 166	C INITIALIZE FOR THE TABLES EXPANSION || ATMR 166
+15	1121	OK	C                                                                       ATMR 167	C || ATMR 167
+16	1164	OK	  220 REWIND IRISE                                                      ATMR 168	220 REWIND IRISE || ATMR 168
+17	1206	OK	      NAT=NAT+IGO                                                       ATMR 169	NAT=NAT+IGO || ATMR 169
+18	1251	OK	      IF(NAT -256)222,222,221                                           ATMR 170	IF(NAT-256)222,222,221 || ATMR 170
+19	1293	OK	  221 IRR0R=-221                                                        ATMR 171	221 IRR0R=-221 || ATMR 171
+20	1336	OK	      GO TO 139                                                         ATMR 172	GO TO 139 || ATMR 172
+21	1378	OK	  222 DALT=200.                                                         ATMR 173	222 DALT=200. || ATMR 173
+22	1421	OK	      NA=1                                                              ATMR 174	NA=1 || ATMR 174
+23	1464	OK	      READ(IRISE)ALT(1),ATP(1),PRS(1),RLH(1),RHO(1),ETA(1)              ATMR 175	READ(IRISE)ALT(1),ATP(1),PRS(1),RLH(1),RHO(1),ETA(1) || ATMR 175
+24	1509	OK	      A1=ALT(1)                                                         ATMR 176	A1=ALT(1) || ATMR 176
+25	1550	OK	      A2=ATP(1)                                                         ATMR 177	A2=ATP(1) || ATMR 177
+26	1593	COUNT 10/9	                                                                        ATMR 178	A3=PR.S(1) || ATMR 178
+27	1637	OK	      A4=RLH(1)                                                         ATMR 179	A4=RLH(1) || ATMR 179
+28	1678	OK	      A5=RHO(1)                                                         ATMR 180	A5=RHO(1) || ATMR 180
+29	1721	OK	      A6=ETA(1)                                                         ATMR 181	A6=ETA(1) || ATMR 181
+30	1766	OK	C                                                                       ATMR 182	C || ATMR 182
+31	1807	OK	C     EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN       ATMR 183	C EXPAND THE TABLES TO 256 ENTRIES IN 200 METERS INTERVALS IN || ATMR 183
+32	1840	COUNT 52/53	                                                                        ATMR 184	C ALTITUDE FROM -1000 TO 50000 METERS BY LINEAR INTERPOLATION || ATMR 184
+33	1894	OK	C     FROM THE  INPUT TABLES                                            ATMR 185	C FROM THE INPUT TABLES || ATMR 185
+34	1936	OK	C                                                                       ATMR 186	C || ATMR 186
+35	1980	OK	      00 260 I=2,256                                                    ATMR 187	00 260 I=2,256 || ATMR 187
+36	2022	OK	      ALT(I)=ALT(I-1)+OALT                                              ATMR 188	ALT(I) = ALT(I-1) + OALT || ATMR 188
+37	2065	OK	  225 IF(A1.GE.ALT(I))GO TO 250                                         ATMR 189	225 IF(A1. GE. ALT(I)) GO TO 250 || ATMR 189
+38	2108	OK	      IF(ALT(I)-A1 .LT. 2.) GO TO 250                                   ATMR 190	IF(ALT(I)-A1 .LT. 2.) GO TO 250 || ATMR 190
+39	2152	OK	      NA=NA+1                                                           ATMR 191	NA=NA+1 || ATMR 191
+40	2193	COUNT 23/22	                                                                        ATMR 192	IF(NAT = NA .GE. (1)GC TO 240 || ATMR 192
+41	2238	OK	  230 IRROR=-230                                                        ATMR 193	230 IRROR=-230 || ATMR 193
+42	2282	OK	      GO TO 130                                                         ATMR 194	GO TO 130 || ATMR 194
+43	2324	OK	  240 READ(IRISE)A1,A2,A3,A4,A5,A6                                      ATMR 195	240 READ(IRISE)A1,A2,A3,A4,A5,A6 || ATMR 195
+44	2366	OK	      GO TO 225                                                         ATMR 196	GO TO 225 || ATMR 196
+45	2409	OK	  250 TERP=  DALT     /(A1-ALT(I-1))                                    ATMR 197	250 TERP= DALT /(A1-ALT(I-1)) || ATMR 197
+46	2451	COUNT 8/7	      ATP(I)=ATP(I-1)+TERF*(A2-ATP(I-1))                                        	ATP(I) = ATP(I-1) + TERF * (A2 - ATP(I-1)) || ATMR. 198
+47	2495	OK	      PRS（I）=PRS（I-1）+TERP*（A3-PRS（I-1））                                ATMR 119	PRS（I）=PRS（I-1）+TERP*（A3-PRS（I-1）） || ATMR 119
+48	2539	COUNT 33/34;COUNT 5/6	                                                                                	*LH(I) = LH(I-1) + TIRF * (A4-RLH(I-1)) || ATR 2 .
+49	2579	COUNT 33/34	                                                                        ATR. 2.1	FHO (I) = HO (I-1) + TERP + (A5-RHU (I-1)) || ATR. 2.1
+50	2620	OK	      ETA(T)=ETA(I-1)+TERF*(A6-ETA(I-1))                                ATMR 2:2	ETA (T) = ETA (I-1) + TERF * (A6-ETA (I-1)) || ATMR 2:2
+51	2667	OK	  262 CONTINUE                                                          ATMR 203	262 CONTINUE || ATMR 203
+52	2706	OK	      NAT=256                                                           ATMR 204	NAT=256 || ATMR 204
+53	2751	OK	      NBRNCH=2                                                          ATMR 205	NBRNCH=2 || ATMR 205
+54	2795	OK	      GO TO 111                                                         ATMR 206	GO TO 111 || ATMR 206
+55	2837	OK	  27? IF(KATM .EQ. 0) RETURN                                            ATMR 207	27? IF(KATM .EQ. 0) RETURN || ATMR 207
+56	2879	OK	      WRITE(ISOUT,47)                                                   ATMR 258	WRITE(ISOUT,47) || ATMR 258
+57	2923	OK	      WRITE(ISOUT,48 )(ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I),       ATMR 2.9	WRITE (ISOUT,48 ) (ALT(I),ATP(I),PRS(I),RLH(I),RHC(I),ETA(I), || ATMR 2.9
+58	2959	OK	     1   I=KATM,NAT,KATM)                                               ATMR 210	1 I=KATM,NAT,KATM) || ATMR 210
+59	3001	OK	      RETURN                                                            ATMR 211	RETURN || ATMR 211
+60	3052	OK	      END                                                               ATMR 212	END || ATMR 212
+61	3121	OK	                                       72                                       	72
+62	3272	COUNT 3/48;COUNT 3/2	                                                                                	--- || ---

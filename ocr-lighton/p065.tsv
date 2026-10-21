@@ -1,0 +1,63 @@
+1	11	COUNT 0/34;COUNT 14/3	                                                                                	 || [Redacted text]
+2	576	OK	   40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT)                ICH  121	40 IF(SLOTMP .LE. 0.0) CALL ERROR(PROGRM, -40, ISOUT) || ICH 121
+3	616	COUNT 0/6	      IF(PHI .EQ. 0.0) PHI=1.0                                                  	IF(PHI .EQ. 0.0) PHI=1.0 || 
+4	654	COUNT 7/6	      READ(ISIN,10)NOSTR,KCI,IRAD                                               	READ(ISIN,10)NOSTR,KCI,IRAD || <table>
+5	698	COUNT 34/6	      IF( NOSTR .EQ. 0 ) NOSTR=100                                              	IF( NOSTR .EQ. 0 ) NOSTR=100 || <table border="1" class="dataframe">
+6	747	COUNT 34/6	      IF(KOI .EQ. 0) KOI=15+ALOG(H)                                             	IF(KOI .EQ. 0) KOI=15+ALOG(H) || <table border="1" class="dataframe">
+7	782	COUNT 7/6	      READ(ISIN,3)XGZ,YGZ,TGZ                                                   	READ(ISIN,3)XGZ,YGZ,TGZ || <table>
+8	834	COUNT 3/6	      IF(IC(1)-1)210,220,230                                                    	IF(IC(1)-1) 210, 220, 230 || ---
+9	871	COUNT 34/6	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED                            	C 210 A LOGNORMAL PARTICLE DISTRIBUTION IS SPECIFIED || <table border="1" class="dataframe">
+10	914	COUNT 34/6	  210 READ(ISIN,3) DNS, OMEAN, SD                                               	210 READ(ISIN,3) DNS, OMEAN, SD || <table border="1" class="dataframe">
+11	954	COUNT 7/6	C     IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER                         	C IS A LOGNORMAL DISTRIBUTION SPECIFIED BY THE USER || <table>
+12	1000	COUNT 7/6	      IS=0                                                                      	IS = 0 || <table>
+13	1047	COUNT 7/6	      IF(OMEAN.GT. 0.0) IS=1                                                    	IF(OMEAN.GT. 0.0) IS=1 || <table>
+14	1091	COUNT 3/6	      GO TO 23                                                                  	GO TO 23 || ---
+15	1134	COUNT 3/6	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED                            	C 220 A POWER-LAW PARTICLE DISTRIBUTION IS SPECIFIED || ---
+16	1173	COUNT 34/6	  220 READ(ISIN,J)ONS, CAYM, EXPO                                               	220 READ(ISIN,J)ONS, CAYM, EXPO || <table border="1" class="dataframe">
+17	1214	COUNT 34/6	      GO TO 23                                                                  	GO TO 23 || <table border="1" class="dataframe">
+18	1262	COUNT 3/6	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED                              	C 230 A TABULAR PARTICLE DISTRIBUTION IS SPECIFIED || ---
+19	1300	COUNT 7/6	  230 READ(ISIN,3)DNS                                                           	230 READ(ISIN, 3)DNS || <table>
+20	1347	COUNT 7/6	      READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR)                                	READ(ISIN,195)(DIAM(I),FMASS(I),I=1,NOSTR) || <table>
+21	1388	COUNT 0/10;COUNT 7/6	                                                                                	 || <table>
+22	1434	COUNT 34/6	      READ(ISIN,195)DIAM(LC)                                                    	READ(ISIN,195)DIAM(LC) || <table border="1" class="dataframe">
+23	1477	COUNT 0/6	C                                                                               	C || 
+24	1519	COUNT 7/6	C     CHECK ORDERING OF THE HISTOGRAM TABLE                                     	C CHECK ORDERING OF THE HISTOGRAM TABLE || <table>
+25	1557	COUNT 34/6	      00 215 I=2,LD                                                             	00 215 I=2,LD || <table border="1" class="dataframe">
+26	1598	COUNT 7/6	      IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215                                      	IF(DIAM(I) .LT. DIAM(I-1)) GO TO 215 || <table>
+27	1650	COUNT 7/6	      WRITE( ISOUT,198)                                                         	WRITE( ISOUT,198) || <table>
+28	1685	COUNT 34/6	      GO TO 200                                                                 	GO TO 200 || <table border="1" class="dataframe">
+29	1735	COUNT 34/6	  215 CONTINUE                                                                  	215 CONTINUE || <table border="1" class="dataframe">
+30	1780	COUNT 3/6	   23 H08 =  HEIGHT/0.3048                                                      	23 H08 = HEIGHT/0.3048 || ---
+31	1821	OK	      IF( DNS .EQ. 0.0 ) DNS = 2.6                                      ICM  150	IF( DNS .EQ. 0.0 ) DNS = 2.6 || ICM 150
+32	1857	COUNT 34/6	      RHOP=ONS*1000.                                                            	RHOP=ONS*1000. || <table border="1" class="dataframe">
+33	1908	COUNT 0/6	C     ZSCL IS THE SCALED HCB  -  008                                            	C ZSCL IS THE SCALED HCB - 008 || 
+34	1943	COUNT 0/25;COUNT 7/6	                                                                                	 || <table>
+35	1994	COUNT 0/5	C                                                                               	C || 
+36	2037	COUNT 0/6	C     TEST THE SCALED HOB TO DETERMINE IF  SUBSURFACE, LOW AIRBURST             	C     TEST THE SCALED HOB TO DETERMINE IF SUBSURFACE, LOW AIRBURST || 
+37	2077	OK	C     OR PURE AIRBURST                                                  ICM  156	C OR PURE AIRBURST || ICM 156
+38	2121	COUNT 7/6	      IF(ZSCL+20.0 .LT. 0.0) GO TO 143                                          	IF(ZSCL+20.0 .LT. 0.0) GO TO 143 || <table>
+39	2166	COUNT 3/6	      IF(ZSCL .LT. 180.0) GO TO 70                                              	IF(ZSCL .LT. 180.0) GO TO 70 || ---
+40	2209	COUNT 34/6	      CALL AIRORS                                                               	CALL AIRORS || <table border="1" class="dataframe">
+41	2251	COUNT 7/6	      GO TO 95                                                                  	GO TO 95 || <table>
+42	2294	COUNT 3/6	 70   CALL TIMEE                                                                	70 CALL TIMEE || ---
+43	2335	COUNT 9/8;COUNT 7/6	                                                                                	CALL. TEMP || <table>
+44	2378	COUNT 34/6	      CALL MASS                                                                 	CALL MASS || <table border="1" class="dataframe">
+45	2422	COUNT 10/9;COUNT 3/6	                                                                                	CALL, VAPOR || ---
+46	2463	COUNT 7/6	      IF(JC(1)-1)90,95,95                                                       	IF(JC(1)-1)90,95,95 || <table>
+47	2502	COUNT 34/6	C                                                                               	C || <table border="1" class="dataframe">
+48	2551	COUNT 3/6	C     TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE             	C TEST FOR ACCEPTABLE SPECIFICATIONS OF LOGNORMAL PARTICLE SIZE || ---
+49	2589	COUNT 18/6	C     DISTRIBUTION                                                              	C DISTRIBUTION || \text{ICM} \quad 1E8
+50	2637	COUNT 3/6	 9C   IF(SD)91,92,92                                                            	9C IF(SD)91,92,92 || ---
+51	2680	COUNT 3/6	 91   WRITE (ISOUT,2)                                                           	91 WRITE (ISOUT,2) || ---
+52	2724	COUNT 3/6	      GO TO 200                                                                 	GO TO 200 || ---
+53	2767	COUNT 3/6	   92 IF(OMEAN)94,95,95                                                         	92 IF(OMEAN) 94,95,95 || ---
+54	2811	COUNT 3/6	 94   WRITE (ISOUT,17)                                                          	94 WRITE (ISOUT, 17) || ---
+55	2853	COUNT 3/6	      GO TO 2J0                                                                 	GO TO 2J0 || ---
+56	2895	COUNT 3/6	C                                                                               	C || ---
+57	2938	OK	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM           ICM  176	C     COMPUTE PARTICLE SIZE-VOLUME (MASS) FREQUENCY HISTOGRAM || ICM 176
+58	2975	COUNT 7/6	 95   CALL DSTBN                                                                	95 CALL DSTBN || <table>
+59	3024	COUNT 0/13;COUNT 3/6	                                                                                	 || ---
+60	3067	COUNT 3/6	C     PRINT INITIAL CONDITIONS RESULTS                                          	C PRINT INITIAL CONDITIONS RESULTS || ---
+61	3109	OK	      WRITE(ISOUT,4)W,FH, HEIGHT,HOB,ZBRSTZ                             ICM  1d9	WRITE(ISOUT,4)W,FH, HEIGHT,HOB,ZBRSTZ || ICM 1d9
+62	3177	COUNT 2/1	                                                                                	62
+63	3312	COUNT 0/29;COUNT 17/5	                                                                                	 || \text{عَلَيْهِمْ}

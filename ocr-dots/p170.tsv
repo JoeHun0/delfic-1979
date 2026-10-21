@@ -1,0 +1,45 @@
+1	51	COUNT 0/13	                                                                                	
+2	788	COUNT 1/46	                                                                        POMP  49	C || POMP 49
+3	831	OK	C     CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO        POMP  50	C CONTAINED IN A SOLIC DATA BLOCK (I.E. A DATA BLOCK WITH NO || POMP 50
+4	877	OK	C     REJECTED PARTICLES IN IT)                                         POMP  51	C REJECTED PARTICLES IN IT) || POMP 51
+5	922	OK	C                                                                       POMP  52	C || POMP 52
+6	964	OK	      00 300 I=1,KP                                                     POMP  53	00 300 I=1, KP || POMP 53
+7	996	OK	      IF(KTR(I).EQ.0) GO TO 300                                         POMP  54	IF (KTR(I).EQ.0) GO TO 300 || POMP 54
+8	1049	OK	      JP=JP+1                                                           POMP  55	JP = JP + 1 || POMP 55
+9	1093	OK	      DO 2CC K=J,NE                                                     FONP  56	DO 2CC K=J,NE || FONP 56
+10	1135	OK	      L=4-k                                                             POMP  57	L = 4 - k || POMP 57
+11	1178	OK	      IF(KTR(L).EQ.1)GO TC 100                                          POMP  58	IF (KTR(L).EQ.1)GO TC 100 || POMP 58
+12	1224	COUNT 0/7	                                                                        POMP  59	 || POMP 59
+13	1264	COUNT 0/4	                                                                        POMP  60	 || POMP 60
+14	1308	COUNT 0/6	C                                                                               	C || 
+15	1348	OK	C     MOVE  PARCEL  DATA TO AVAILABLE STORAGE IN LOWER CORE             POMP  62	C      MOVE      PARCEL      DATA      TO      AVAILABLE      STORAGE      IN      LOWER      CORE || POMP 62
+16	1393	OK	C                                                                       POMP  63	C || POMP 63
+17	1436	OK	      XPAR(I)=XPAR(L)                                                   POMP  64	XPAR(I) = XPAR(L) || POMP 64
+18	1479	OK	      YPAR(I)=YPAR(L)                                                   POMP  65	YPAR(I) = YPAR(L) || POMP 65
+19	1520	OK	      ZPAR(I)=ZPAR(L)                                                   POMP  66	ZPAR(I) = ZPAR(L) || POMP 66
+20	1563	OK	      TPAR(I)=TPAR(L)                                                   POMP  67	TPAR(I) = TPAR(L) || POMP 67
+21	1607	COUNT 31/17	                                                                        POMP  68	\text{SIGXO(I)} = \text{SIGXO(L)} || POMP 68
+22	1650	COUNT 32/17	                                                                        POMP  69	\text{SIGYO(I)} := \text{SIGYO(L)} || POMP 69
+23	1693	OK	      RO(I)=RO(L)                                                       POMP  70	RO(I)=RO(L) || POMP 70
+24	1736	OK	      PSIZ(I)=PSIZ(L)                                                   PDMP  71	PSIZ(I)=PSIZ(L) || PDMP 71
+25	1779	OK	      PMAS(I)=PMAS(L)                                                   POMP  72	PMAS(I) = PMAS(L) || POMP 72
+26	1822	OK	      GO TO 260                                                         POMP  73	GO TO 260 || POMP 73
+27	1865	COUNT 24/10	                                                                        POMP  74	100 \text{ JP} = \text{JP} + 1 || POMP 74
+28	1907	OK	  200 CONTINUE                                                          POMP  75	200 CONTINUE || POMP 75
+29	1951	OK	  250 IRROR=-250                                                        POMP  76	250 IRROR=-250 || POMP 76
+30	1994	OK	      GO TO 2030                                                        POMP  77	GO TO 2030 || POMP 77
+31	2036	COUNT 15/9	                                                                        POMP  78	26(\quad J=KK+1) || POMP 78
+32	2080	OK	  500 CONTINUE                                                          PDMP  79	500 CONTINUE || PDMP 79
+33	2124	OK	      IF(JP.LE.NE) GO TO 500                                            POMP  60	IF (JP.LE.NE) GO TO 500 || POMP 60
+34	2165	OK	  310 IRROR=-310                                                        PQMP  81	310 IRROR=-310 || PQMP 81
+35	2211	OK	      GO TO 2030                                                        POMP  82	GO TO 2030 || POMP 82
+36	2253	OK	  500 IF(JL.LE.KP)GO TO 1000                                            POMP  83	500 IF(JL.LE.KP)GO TO 1000 || POMP 83
+37	2297	COUNT 0/6	  510'IRROR=-510                                                                	510 'IRROR=-510 || 
+38	2340	COUNT 34/33	                                                                        POMP  85	2000 CALL ERROR(PROGRM, IERROR, ISOUT) || POMP 85
+39	2382	OK	 1000 WRITE(LTAPE)KP                                                    PUMP  86	1000 WRITE (LTAPE) KP || PUMP 86
+40	2414	OK	      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TPAR(I),SIGXO(I),SIGYO(I),   PUMP  67	WRITE(LTAPE) (XPAR(I), YPAR(I), ZPAR(I), TPAR(I), SIGXO(I), SIGYO(I), || PUMP 67
+41	2468	OK	     1 RO(I),PSIZ(I),PMAS(I),I=1,KP)                                    POMP  &8	1 RO(I), PSIZ(I), PMAS(I), I=1, KP) || POMP & 8
+42	2512	OK	      RETURN                                                            POMP  89	RETURN || POMP 89
+43	2553	OK	      END                                                               POMP  90	END || POMP 90
+44	3136	OK	                                         167                                    	167
+45	3295	COUNT 0/9;COUNT 0/5	                                                                                	 || 

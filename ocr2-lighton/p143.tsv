@@ -1,0 +1,17 @@
+4	627	COUNT 60/59	                                                                                	5300 FORMAT( 14X, 22H) SURFACE WIND SPEED IS E12.5, 3X, 20H MEASURED AT H
+5	678	COUNT 61/60	                                                                                	1EIGHT E12.5/ 14X, 17THROUGHNESS LENGTH=E12.5, 3X, 32HRECIPROCAL MON
+7	757	COUNT 56/57	                                                                                	3 14X, 32HSURFACE LAYER FRICTION VELOCITY=E12.5, 3X, 7H(M/SEC)/
+8	800	OK	 5900 FORMAT( 1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BECA        	5900 FORMAT( 1HJ,9X87HCANNOT COMPUTE TURBULENCE VIA WILKINS METHOD BECA
+9	843	OK	     1USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/ 10X, 53HCALCULATION CANNOT        	1USE ZCH ARRAY HAS NOT BEEN CONSTRUCTED/ 10X, 53HCALCULATION CANNOT
+15	1110	OK	   25 CALL ERROR(PROGRM,-25.I3CUT)                                              	25 CALL ERROR(PROGRM,-25.I3CUT)
+26	1583	COUNT 0/25	                                                                                	
+27	1625	COUNT 0/51	                                                                                	
+36	2014	COUNT 0/29	                                                                                	
+38	2097	COUNT 45/47	                                                                                	IF(MC(2) .NE. 1) WRITE(ISOUT,53)U,ZM,ZJ,RL,USTAR
+40	2187	OK	  300 C = WILK                                                                  	300 C = WILK
+51	2659	OK	      DO 600 N=1,NDATX                                                          	DO 600 N=1,NDATX
+53	2743	COUNT 0/19	                                                                                	
+54	2788	COUNT 23/22	                                                                                	500 DYSUM(K,N,L) = CAVS(K)
+56	2874	COUNT 17/16	                                                                                	WRITE( ISOUT, 501C)
+57	2919	OK	      no 7)0 K=1,KBHX                                                           	no 7)0 K=1,KBHX
+58	2951	COUNT 54/52	                                                                                	700 WRITE(ISOUT,5100) K, ZCH(K), DXSLM(K,1,L),DYSUM(K,1,L)

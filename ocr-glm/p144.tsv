@@ -1,0 +1,63 @@
+1	9	COUNT 3/6;COUNT 3/1	                                                                                	--- || ---
+2	33	COUNT 3/43	                                                                                	---
+3	554	OK	*DECK,CALC                                                              CALC   1	* DECK , CALC || CALC 1
+4	598	OK	      SUBROUTINE CALC(IP,CMAP,NMAP)                                     CALC   2	SUBROUTINE CALC(IP,CMAP,NMAP) || CALC 2
+5	633	OK	C                                                                       CALC   3	C || CALC 3
+6	683	OK	C     H.G.NORMENT     JUNE 25,1971                                      CALC   4	C H.G.NORMENT JUNE 25,1971 || CALC 4
+7	727	OK	C                                                                       CALC   5	C || CALC 5
+8	767	COUNT 2/71	                                                                        CA.C   6	C 1 || CA.C 6
+9	811	OK	C                                                                       CALC   7	C || CALC 7
+10	854	OK	C     THIS SUBROUTINE COMPLTES MAP CONTRIBUTIONS FOR INDIVIDUAL         CALC   8	C THIS SUBROUTINE COMPLTES MAP CONTRIBUTIONS FOR INDIVIDUAL || CALC 8
+11	896	OK	C     FALLOUT PARCELS                                                   CALC   9	C FALLOUT PARCELS || CALC 9
+12	941	OK	C                                                                       CALC  10	C || CALC 10
+13	982	COUNT 8/70	                                                                        CALC  11	GLOSSARY || CALC 11
+14	1025	OK	C                                                                       CALC  12	C || CALC 12
+15	1068	OK	C     NO8          SMALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE  CALC  13	C NO8 SMALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE || CALC 13
+16	1112	OK	C     NOL          SMALLES1 POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE  CALC  14	C NOL SMALLES1 POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE || CALC 14
+17	1154	OK	C     NOR          LARGEST  POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE  CALC  15	C NOR LARGEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE || CALC 15
+18	1196	OK	C     NOT          LARGEST  POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE  CALC  16	C NOT LARGEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE || CALC 16
+19	1239	COUNT 41/46	                                                                        CALC  17	Y COORDINATE OF THE MAP POINT ROW CURRENTLY BEING || CALC 17
+20	1282	OK	C                  CONSIDERED RELATIVE TO THE  PARCEL   Y COORDINATE    CALC  18	C CONSIDERED RELATIVE TO THE PARCEL Y COORDINATE || CALC 18
+21	1325	OK	C     XREL         X COORDINATE OF THE MAP POINT     CURRENTLY BEING    CALC  19	C XREL X COORDINATE OF THE MAP POINT CURRENTLY BEING || CALC 19
+22	1369	COUNT 40/41	                                                                        CALC  20	C CONSIDERED RELATIVE TO THE PARCEL X COURINATE || CALC 20
+23	1411	OK	C     XL           LEFT BCLNDRY X COORGINATE  CF THE FARCEL             CALC  <1	C XL LEFT BCLNDRY X COORGINATE CF THE FARCEL || CALC <1
+24	1456	OK	C                  CONTRIBUTION ELLIPSE IN THE YREL MAF ROW             CALC  22	C CONTRIBUTION ELLIPSE IN THE YREL MAF ROW || CALC 22
+25	1500	OK	C     XR           RIGHTBOLNCRY X COOROINATE  OF THE PARCEL             CALC  23	C XR RIGHTBOLNCRY X COOROINATE OF THE PARCEL || CALC 23
+26	1541	OK	C                  CONTRIBUTION ELLIPSE IN THE YKEL MAP POW             CALC  24	C CONTRIBUTION ELLIPSE IN THE YKEL MAP POW || CALC 24
+27	1585	OK	C     NHX          NUMBER CF MAP POINTS SPANNED BY A FARCEL             CALC  25	C NHX NUMBER CF MAP POINTS SPANNED BY A FARCEL || CALC 25
+28	1629	OK	C                  CONCENTRATION ELLIPSE IN A ROW                       CALC  26	C CONCENTRATION ELLIPSE IN A ROW || CALC 26
+29	1670	OK	C     VARX2        2.0*GAUSSIAN DISTBN. VARIANCE ALONG A AXIS           CALC  27	C VARX2 2.0*GAUSSIAN DISTBN. VARIANCE ALONG A AXIS || CALC 27
+30	1715	OK	C     VARY2        2.0*GAUSSIAN DISTBN. VARIANCE ALONG 8 AXIS           CALC  28	C VARY2 2.0*GAUSSIAN DISTBN. VARIANCE ALONG 8 AXIS || CALC 28
+31	1758	OK	C     F            MAGNITUCE(I.E. INTEGRATED VALUE) OF A FARCEL         CALC  29	C F MAGNITUCE(I.E. INTEGRATED VALUE) OF A FARCEL || CALC 29
+32	1798	OK	C                  PROPERTY  TO BE DISTRIBUTED ON THE MAP               CALC  30	C PROPERTY TO BE DISTRIBUTED ON THE MAP || CALC 30
+33	1842	OK	C                                                                       CALC  31	C || CALC 31
+34	1885	OK	C     ALSO SEE OPH1  GLOSSARY  AND PCHECK GLOSSARY                      CALC  32	C ALSO SEE OPH1 GLOSSARY AND PCHECK GLOSSARY || CALC 32
+35	1927	OK	C                                                                       CALC  33	C || CALC 33
+36	1969	COUNT 1/71	                                                                        CALC  34	C || CALC 34
+37	2014	OK	C                                                                       CALC  35	C || CALC 35
+38	2055	OK	      COMMON /CONDAT/       IC(2u)    ,IH08      ,IPNCH     ,IPOUT     ,CALC  36	COMMON /CONDAT/ IC(2u) ,IH08 ,IPNCH ,IPOUT , || CALC 36
+39	2098	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,CALC  37	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,L TAPE , || CALC 37
+40	2143	COUNT 25/29	                                                                        CALC  3e	2MA7RAY MBTAPE MXREQ SD INPAM || CALC 3e
+41	2184	COUNT 34/40	                                                                        CALC  39	COMMON /MAPDAT/ CAYF CUTMAP DGX CGY IH IV || CALC 39
+42	2228	COUNT 30/29	                                                                        CALC  40	1.1C .NXMAP .NYMAP .NZ .OCUT .SSAM . || CALC 40
+43	2272	COUNT 18/24	                                                                        CALC  41	2TGZ XGZ X1 X2 YG7 XMAX || CALC 41
+44	2313	COUNT 17/20	                                                                        CALC  42	3XMIN YMAX YMIN ZMIN || CALC 42
+45	2356	COUNT 25/29	                                                                        CALC  43	COMMON /PARDAT/ ASQ BSQ COSA F || CALC 43
+46	2399	OK	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,AO(100)   ,SIGXO(100),CALC  44	1 GAMA ,KTR(100) ,PMAS(100) ,PSIZ(100) ,AO(100) ,SIGXO(100), || CALC 44
+47	2441	OK	     2SIGYO(100),SINA      ,TPAR(10J) ,XPAR(100) ,YPAF(100) ,YPRML     ,CALC  45	2SIGYO(100), SINA , TPAR(10J) , XPAR(100) , YP AF(100) , YPRML , || CALC 45
+48	2487	COUNT 15/16;COUNT 4/6	                                                                                	3YPRMU ZPAR(100) || 4LC 6
+49	2530	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,CALC  47	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR , || CALC 47
+50	2572	COUNT 25/31	                                                                        CALC  49	1 MAPRUN NE NIJ NORD NREG NTASK || CALC 49
+51	2615	COUNT 28/27	                                                                        CALC  49	20PMID(12) ,T1 ,T2 ,HFMAS(21.1) || CALC 49
+52	2659	OK	      DIMENSION OMAP(NMAP)                                              CALC  50	DIMENSION OMAP(NMAP) || CALC 50
+53	2701	COUNT 17/18	                                                                        CALC  51	DATA PROGRM/6HCALC || CALC 51
+54	2745	OK	C                                                                       CALC  52	C || CALC 52
+55	2788	OK	C     INITIALIZE FOR THIS FARCEL                                        CALC  53	C INITIALIZE FOR THIS FARCEL || CALC 53
+56	2831	OK	C                                                                       LALC  54	C || LALC 54
+57	2871	OK	      VARX2= ASQ/GAMA                                                   CALC  55	VARX2= ASQ/GAMA || CALC 55
+58	2916	OK	      VARY2= BSQ/GAMA                                                   CALC  56	VARY2= BSQ/GAMA || CALC 56
+59	2957	COUNT 36/37	                                                                        CALC  57	A = SINA*COSA*(1.0/VARY2-1.0/VARX2)*2. || CALC 57
+60	3000	COUNT 15/17	                                                                        CALC  56	3 = 4.0/VRX2/VRY2 || CALC 56
+61	3045	OK	      CC= (COSA**2/VARX2 + SINA**2/VARY2)*2.:                           CALL  59	CC = (COSA**2/VARX2 + SINA**2/VARY2)*2. : || CALL 59
+62	3086	OK	      D = 2.0*GAMA*CC                                                   CALC  5U	D = 2.0*GAMA*CC || CALC 5U
+63	3143	OK	                                        141                                     	141

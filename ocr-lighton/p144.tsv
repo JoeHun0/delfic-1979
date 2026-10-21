@@ -1,0 +1,63 @@
+1	9	COUNT 107/6;COUNT 12/1	                                                                                	\text{373 477 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 7 || \mathbb{R}^3
+2	33	COUNT 0/43	                                                                                	
+3	554	COUNT 14/10	                                                                        CALC   1	\star DECK, CALC || CALC 1
+4	598	OK	      SUBROUTINE CALC(IP,CPAP,NMAP)                                     CALC   2	SUBROUTINE CALC(IP, CPAP, NMAP) || CALC 2
+5	633	OK	C                                                                       CALC   3	C || CALC 3
+6	683	OK	C     H.G.NORMENT     JUNE 25,1971                                      CALC   4	C H.G.NORMENT JUNE 25,1971 || CALC 4
+7	727	OK	C                                                                       CALC   5	C || CALC 5
+8	767	COUNT 319/71;COUNT 17/5	                                                                                	C  \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{ || CA_{\perp}C \quad 6
+9	811	OK	C                                                                       CALC   7	C || CALC 7
+10	854	COUNT 53/52	                                                                        CALC   8	C THIS SUBROUTINE COMPLETES MAP CONTRIBUTIONS FOR INDIVIDUAL || CALC 8
+11	896	OK	C     FALLOUT PARCELS                                                   CALC   9	C FALLOUT PARCELS || CALC 9
+12	941	OK	C                                                                       CALC  10	C || CALC 10
+13	982	COUNT 49/70	                                                                        CALC  11	C ******************** GLOSSARY ******************** || CALC 11
+14	1025	OK	C                                                                       CALC  12	C || CALC 12
+15	1068	OK	C     NOB          SMALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE  CALC  13	C     NOB     SMALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE || CALC 13
+16	1112	OK	C     NOL          SMALLEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE  CALC  14	C     NOL     SMALLEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE || CALC 14
+17	1154	OK	C     NOR          LARGEST  POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE  CALC  15	C NOR LARGEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE || CALC 15
+18	1196	OK	C     NOT          LARGEST  POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE  CALC  16	C NOT LARGEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE || CALC 16
+19	1239	OK	C     YREL         Y COORDINATE OF THE MAP POINT ROW CURRENTLY BEING    CALC  17	C     YREL     Y COORDINATE OF THE MAP POINT ROW CURRENTLY BEING || CALC 17
+20	1282	COUNT 1/41	                                                                        CALC  18	C || CALC 18
+21	1325	OK	C     XREL         X COORDINATE OF THE MAP POINT     CURRENTLY BEING    CALC  19	C     XREL     X COORDINATE OF THE MAP POINT     CURRENTLY BEING || CALC 19
+22	1369	COUNT 1/41	                                                                        CALC  20	C || CALC 20
+23	1411	OK	C     XL           LEFT BCLNDRY X COORDINATE  CF THE PARCEL             CALC  <1	C    XL    LEFT BCLNDRY X COORDINATE CF THE PARCEL || CALC <1
+24	1456	COUNT 1/35	                                                                        CALC  22	C || CALC 22
+25	1500	OK	C     XR           RIGHTBOLNERY X COORDINATE  OF THE PARCEL             CALC  23	C     XR     RIGHTBOLNERY X COORDINATE OF THE PARCEL || CALC 23
+26	1541	COUNT 1/35	                                                                        CALC  <4	C || CALC <4
+27	1585	OK	C     NHX          NUMBER CF MAP POINTS SPANNED BY A FARCEL             CALC  25	C     NHX     NUMBER CF MAP POINTS SPANNED BY A FARCEL || CALC 25
+28	1629	COUNT 1/27	                                                                        CALC  26	C || CALC 26
+29	1670	OK	C     VARX2        2.0*GAUSSIAN DISTBN. VARIANCE ALONG A AXIS           CALC  27	C     VARX2     2.0*GAUSSIAN DISTBN. VARIANCE ALONG A AXIS || CALC 27
+30	1715	OK	C     VARY2        2.0*GAUSSIAN DISTBN. VARIANCE ALONG B AXIS           CALC  28	C     VARY2     2.0*GAUSSIAN DISTBN. VARIANCE ALONG B AXIS || CALC 28
+31	1758	OK	C     F            MAGNITUDE(I.E. INTEGRATED VALUE) OF A FARGEL         CALC  29	C     F     MAGNITUDE(I.E. INTEGRATED VALUE) OF A FARGEL || CALC 29
+32	1798	COUNT 1/32	                                                                        CALC  50	C || CALC 50
+33	1842	COUNT 30/6	C                                                                               	C || \mathcal{ALC} \quad \mathcal{E}1
+34	1885	OK	C     ALSO SEE OPM1  GLOSSARY  AND PCHECK GLOSSARY                      CALC  32	C     ALSO SEE OPM1   GLOSSARY   AND PCHECK GLOSSARY || CALC 32
+35	1927	OK	C                                                                       LALC  33	C || LALC 33
+36	1969	COUNT 1/71	                                                                        CALC  34	C || CALC 34
+37	2014	OK	C                                                                       CALC  35	C || CALC 35
+38	2055	OK	      COMMON /CONDAT/       IC(2u)    ,IHUB      ,IPNCH     ,IPOUT     ,CALC  36	COMMON /CONDAT/ IC(2u) ,IHUB ,IPNCH ,IPOUT , || CALC 36
+39	2098	OK	     11SIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,CALC  37	11SIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,LTAPE , || CALC 37
+40	2143	OK	     2YAPRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM                 CALC  3c	2YAPRAY ,MBTAPE ,MXREQ ,SD ,INPAM || CALC 3c
+41	2184	OK	      COMMON /MAPDAT/ CAYF .CUTMAP    .DGX       .CGY       .IH  .IV   .LALC  39	COMMON /MAPDAT/ CAYF .CUTMAP .DGX .CGY .IH .IV . || LALC 39
+42	2228	COUNT 30/29	                                                                        CALC  40	1.10  ,NXMAP  ,NYMAP  ,NZ  ,OCUT  ,SSAM  , || CALC 40
+43	2272	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,CALC  41	2TGZ, XGZ, X1, X2, YGZ, XMAX, || CALC 41
+44	2313	OK	     3XMIN      •YMAX      •YMIN      •ZMIN                             LALU  42	3XMIN  • YMAX  • YMIN  • ZMIN || LALU 42
+45	2356	OK	      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,CALC  43	COMMON /PARDAT/ ASQ ,BSQ ,COSA ,F , || CALC 43
+46	2399	OK	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,R0(100)   ,SIGX0(100),CALC  44	1GAMA ,KTR(100) ,PMAS(100) ,PSIZ(100) ,R0(100) ,SIGX0(100), || CALC 44
+47	2441	OK	     2SIGYO(100),SINA      ,TPAR(133) ,XPAR(130) ,YPAF(156) ,YPKML     ,CALC  45	2SIGYO(100),SINA ,TPAR(133) ,XPAR(130) ,YPAF(156) ,YPKML , || CALC 45
+48	2487	OK	     3YPRMU     ,ZPAR(100)                                              L4LC  +6	3YPRMU ,ZPAR(100) || L4LC +6
+49	2530	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,CALC  47	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR , || CALC 47
+50	2572	OK	     1MAPRUN    ,NE        ,NIJ       ,YORD      ,NREG      ,NTASK     ,CALC  49	1 MAPRUN , NE , NIJ , YORD , NREG , NTASK , || CALC 49
+51	2615	OK	     20PMID(12) ,T1        ,T2        ,HFMAS(2..)                       CALC  49	20PMID(12),T1,T2,HFMAS(2..) || CALC 49
+52	2659	OK	      DIMENSION OMAP(NMAP)                                              CALC  50	DIMENSION OMAP(NMAP) || CALC 50
+53	2701	OK	      DATA PROGRM/6HCALC  /                                             CALC  51	DATA PROGRM/6HCALC / || CALC 51
+54	2745	OK	C                                                                       CALC  52	C || CALC 52
+55	2788	OK	C     INITIALIZE FOR THIS PARCEL                                        CALC  53	C INITIALIZE FOR THIS PARCEL || CALC 53
+56	2831	OK	C                                                                       LALC  54	C || LALC 54
+57	2871	COUNT 0/14	                                                                        LALC  55	 || LALC 55
+58	2916	COUNT 0/14	                                                                        CALC  56	 || CALC 56
+59	2957	COUNT 0/37	                                                                        CALC  57	 || CALC 57
+60	3000	COUNT 0/17	                                                                        LALC  5¢	 || LALC 5¢
+61	3045	COUNT 0/36	                                                                        CALL  59	 || CALL 59
+62	3086	COUNT 0/13	                                                                        CALC  5U	 || CALC 5U
+63	3143	OK	                                        141                                     	141

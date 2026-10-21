@@ -1,0 +1,64 @@
+1	14	COUNT 0/18;COUNT 22/1	                                                                                	 || \overline{\text{---}} .
+2	80	COUNT 37/7;COUNT 11/1	                                                                                	\text{S - - ,} \quad \text{→ - -  44,4  4.4 44 !  .} || \mathcal{R}
+3	567	OK	*DECK,ICM                                                               ICM    1	*DECK, ICM || ICM 1
+4	611	OK	      SUBROUTINE ICM                                                    ICM    2	SUBROUTINE ICM || ICM 2
+5	646	COUNT 7/4	C                                                                               	C || <table>
+6	690	COUNT 20/4	C     H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || \leftarrow \text{...}
+7	739	OK	C                                                                       ICM    5	C || ICM 5
+8	775	COUNT 199/71	                                                                        ICM    6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ICM 6
+9	826	OK	C                                                                       ICM    7	C || ICM 7
+10	861	OK	C     PROGRAM TO DETERMINE THE INITIAL CONDITIONS SPECIFICATIONS OF     ICM    8	C PROGRAM TO DETERMINE THE INITIAL CONDITIONS SPECIFICATIONS OF || ICM 8
+11	903	OK	C     TIME, TEMPERATURE, TOTAL SOIL MASS, FRACTION OF THE SOIL BURDEN INICH    9	C TIME, TEMPERATURE, TOTAL SOIL MASS, FRACTION OF THE SOIL BURDEN IN || ICH 9
+12	947	COUNT 0/5	C     THE VAPOR PHASE, ANC THE SIZE FREQUENCY DISTRIBUTION OF THE               	C THE VAPOR PHASE, ANC THE SIZE FREQUENCY DISTRIBUTION OF THE || 
+13	997	OK	C     CONDENSED PHASE SOIL OR AIRBURST PARTICLES.  IT ALSO PRINTS A     ICM   11	C CONDENSED PHASE SOIL OR AIRBURST PARTICLES. IT ALSO PRINTS A || ICM 11
+14	1040	OK	C     HEADING AND PRINTS THE CRITICAL DATA.                             ICM   12	C HEADING AND PRINTS THE CRITICAL DATA. || ICM 12
+15	1082	OK	C                                                                       ICM   13	C || ICM 13
+16	1119	COUNT 1/71	                                                                        ICM   14	C || ICM 14
+17	1162	COUNT 7/5	C                                                                               	C || <table>
+18	1212	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLUTMP,TMSD,XGZ,YGZ,TGZ    ICM   16	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLUTMP,TMSD,XGZ,YGZ,TGZ || ICM 16
+19	1257	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  ICM   17	COMMON /CONTRL/ DETID(12), IC(20), IRAD, IRISE, ISIN, ISOUT, JPARN, KDI || ICM 17
+20	1294	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 ICH   18	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || ICH 18
+21	1336	COUNT 3/5	      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SD,PS(200),DIAM(201),FMASS(200)          	COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SD,PS(200),DIAM(201),FMASS(200) || ---
+22	1380	COUNT 0/5	      EQUIVALENCE (OMEAN,CAYM),(SD,EXPO)                                        	EQUIVALENCE (OMEAN, CAYM), (SD, EXPO) || 
+23	1423	COUNT 7/5	C                                                                               	C || <table>
+24	1471	OK	      DATA PROGRM /6H ICH  /                                            IGM   22	DATA PROGRM /6H ICH / || IGM 22
+25	1515	OK	C                                                                       ICM   23	C || ICM 23
+26	1549	COUNT 9/71;COUNT 7/5	                                                                                	\tilde{C} || <table>
+27	1601	OK	C                                                                       ICM   25	C || ICM 25
+28	1644	OK	   1  FORMAT(12A6)                                                      ICM   26	1 FORMAT(12A6) || ICM 26
+29	1686	OK	   2  FORMAT( /3X, 60)THE SPECIFIED STANDARD DEVIATION IS NEGATIVE HENCEICM   27	2 FORMAT( /3X, 60)THE SPECIFIED STANDARD DEVIATION IS NEGATIVE HENCE || ICM 27
+30	1721	OK	     1 INCORRECT////                                                    ICM   28	1 INCORRECT // // || ICM 28
+31	1763	COUNT 7/5	   3  FORMAT(8F10.0)                                                            	3 FORMAT(8F10.0) || <table>
+32	1814	OK	   4  FORMAT( //25X, 28H****  BASIC PARAMETERS  ****/ 20X, 24HYIELDS - TIGM   30	4 FORMAT(//25X, 28H**** BASIC PARAMETERS ****/ 20X, 24HYIELDS - T || IGM 30
+33	1851	COUNT 57/56;COUNT 3/5	                                                                                	TOTAL (FISSION), 21X, E12.5, 2H (L12.5, 4H) KT/ 20X, 24HHEIGHT OR D. || ---
+34	1902	COUNT 57/56	                                                                        ICM   32	2EPTH OF BURST, 21X, E12,5, 2X, 6HMETERS, 2H (E12.5, 21H FEET) KELA. || ICM 32
+35	1937	COUNT 3/5	     3TIVE TO GZ/ 20X, 14HALTITUDE OF GZ, 31X E12.5, 7H METERS/ 20X,            	3TIVE TO GZ/ 20X, 14HALTITUDE OF GZ, 31X E12.5, 7H METERS/ 20X, || ---
+36	1979	COUNT 18/17;COUNT 3/5	                                                                                	4 13HSOIL (CATEGORY) || ---
+37	2029	COUNT 29/28	                                                                        ICM   35	5 FORMAT(1.H+,65X,9HSILICEOLS) || ICM 35
+38	2064	COUNT 0/5	 6    FORMAT(1H+,65X,10HCALCAREOUS)                                             	6 FORMAT(1H+, 65X, 10HCALCAREOUS) || 
+39	2115	OK	 7    FORMAT( /20X,             36HPARTICLE SIZE FREQUENCY DISTRIBUTION/ICM   37	7 FORMAT( /20X, 36HPARTICLE SIZE FREQUENCY DISTRIBUTION/ || ICM 37
+40	2158	OK	     125X32HA LOG-NORMAL DISTRIBUTION WITH -/30X,15HMEDIAN DIAMETER,20X,ICM   38	125X32HA LOG-NORMAL DISTRIBUTION WITH -/30X, 15H MEDIAN DIAMETER, 20X, || ICM 38
+41	2195	OK	     2E12.5,2X,11HMICROMETERS/30X,28HGEOMETRIC STANDARD DEVIATION, 7X,  ICM   39	2E12.5,2X,11HMICROMETERS/30X,28HGEOMETRIC STANDARD DEVIATION, 7X, || ICM 39
+42	2245	OK	     3E12.5/25X, 34HTHIS DISTRIBUTION WAS SPECIFIED BY)                 1CM   40	3E12.5/25X, 34HTHIS DISTRIBUTION WAS SPECIFIED BY) || 1CM 40
+43	2288	OK	 8    FORMAT(1H+,65X,11HTHE PRCGRAM)                                    ICM   41	8 FORMAT(1H+,65X,11HTHE PRCGRAM) || ICM 41
+44	2330	OK	 9    FORMAT(1H+,65X,8HTHE USER)                                        ICH   42	9 FORMAT(1H+,65X,8HTHE USER) || ICH 42
+45	2372	OK	 10   FORMAT(20I4)                                                      ICM   43	10 FORMAT(20I4) || ICM 43
+46	2417	COUNT 59/58	                                                                        ICM   44	11 FORMAT(/3X,58HTHE SCALED DEPTH OF BURST IS BEYONC THE SCOPE OF THE. || ICM 44
+47	2452	COUNT 7/8;COUNT 3/5	                                                                                	1 MODEL) || ---
+48	2502	OK	   12 FORMAT( 1H+, 65X, J6FNOT APPLICABLE.  THIS IS AN AIRBURST)        ICM   46	12 FORMAT( 1H+, 65X, J6FNOT APPLICABLE. THIS IS AN AIRBURST) || ICM 46
+49	2545	OK	 13   FORMAT( //25X37H****  INITIAL CLOUD PROPERTIES AT H +E12.5,14H SECICM   47	13 FORMAT( //25X37H**** INITIAL CLOUD PROPERTIES AT H +E12.5,14H SEC || ICM 47
+50	2588	OK	     10NDS  ****/ 20X,23HAVERAGE GAS TEMPEKATURE30X,E12.5,2X,14HDEGREES ICM   48	10NDS  ****/  20X,23HAVERAGE GAS TEMPEKATURE30X, E12.5,2X,14HDEGREES || ICM 48
+51	2622	COUNT 3/5	     2KELVIN/ 20X,56HAVERAGE TEMPERATURE OF CONDENSED PHASE MATERIAL IN         	2KELVIN/ 20X,56HAVERAGE TEMPERATURE OF CONDENSED PHASE MATERIAL IN || ---
+52	2675	OK	     3CLOUD,5X,E12.5,2X,14+DEGREES KELVIN/ 20X,31HMASS OF VAPORIZED SOILICH   50	3CLOUD,5X,E12.5,2X,14+DEGREES KELVIN/ 20X,31HMASS OF VAPORIZED SOIL || ICH 50
+53	2717	OK	     4 IN CLOUD,30X,F12.5,2X,9HKILOGRAMS/ 20X41HMASS CF CONDENSED PHASE ICM   51	4 IN CLOUD, 30X, F12.5, 2X, 9HKILOGRAMS/ 20X41HMASS CF CONDENSED PHASE || ICM 51
+54	2761	OK	     5MATERIAL IN CLOUC,20X,E1?.5,2X,9HKILOGRAPS)                       IGM   52	5MATERIAL IN CLOUC, 20X, E1?.5, 2X, 9HKILOGRAPS) || IGM 52
+55	2804	OK	 14   FORMAT( //25X37H**** ·INITIAL CLCUD PROPERTIES AT H +E12.5,14H SECICM   53	14   FORMAT( //25X37H**** · INITIAL CLCUD PROPERTIES AT H +E12.5,14H SEC || ICM 53
+56	2845	OK	     10NDS  ****/ 20X,23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES ICM   54	10NDS  ****/ 20X,23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES || ICM 54
+57	2889	OK	     2KELVIN/                             20X41HMASS OF CONDENSED PHASE ICH   55	2KELVIN/                                      20X41HMASS OF CONDENSED PHASE || ICH 55
+58	2933	OK	     3MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAMS)                       ICM   56	3MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAMS) || ICM 56
+59	2967	COUNT 3/5	 15   FORMAT(1X,11HLEAVING ICM)                                                 	15 FORMAT(1X,11HLEAVING ICM) || ---
+60	3019	COUNT 202/47	                                                                        ICM   58	16 FORMAT( 1H1, 5JX, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ICM 58
+61	3063	COUNT 1/15	                                                                        ICM   59	1 || ICM 59
+62	3105	OK	     2A R T M E N T   O F   D E F E N S E   F A L L C L T   P R E D I C ICM   60	2ARTMENT OF DEFENSE FALLCLT PREDIC || ICM 60
+63	3164	OK	                                        60                                      	60
+64	3292	COUNT 131/5;COUNT 50/7	                                                                                	- 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70 71 || \text{حَلْمَةٌ بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ}

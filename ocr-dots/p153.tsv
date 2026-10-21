@@ -1,0 +1,47 @@
+1	25	COUNT 0/30;COUNT 0/5	                                                                                	 || 
+2	783	OK	      JMAP(KDC)=H-K1                                                            	JMAP(KDC)=H-K1
+3	815	OK	      IF(JMAP(KDC).EQ.0)JMAP(KDC)=0                                     MAP  242	IF (JMAP(KDC).EQ.0) JMAP(KDC)=0 || MAP 242
+4	860	OK	      FMTEXP(KOC+1) = FMTI                                              MAP  243	FMTEXP(KOC+1) = FMTI || MAP 243
+5	910	COUNT 1/18	                                                                                	F
+6	946	OK	      IF (JMAP(KDC).NE.0)GO TO 1090                                     MAP  245	IF (JMAP(KDC).NE.0)GO TO 1090 || MAP 245
+7	998	OK	      JMAP(KDC)=0                                                               	JMAP(KDC)=0
+8	1038	COUNT 0/1	      FMTEXP(KDC+1) = FMTA                                                      	FMTEXP(KDC+1) = FMTA || 
+9	1083	OK	 1090 OMAP(K) = 10.0**H1                                                        	1090 OMAP(K) = 10.0**H1
+10	1119	COUNT 0/6	      IF(OMAP(K)-9.999)115,115,1091                                             	IF(OMAP(K)-9.999)115,115,1091 || 
+11	1167	COUNT 3/2	 1091 OMAP(K)=OMAP(K)/10.0                                                      	1091 OMAP(K)=OMAP(K)/10.0 || 251
+12	1205	COUNT 39/21;COUNT 5/4	                                                                                	\mathrm{JMAP(KDC)} = \mathrm{JHAP(KDC)} + 1 || MAP 25
+13	1246	COUNT 36/18	                                                                        MAP  252	\mathrm{FMTEXP}(KDC+1) = \mathrm{FM7I} || MAP 252
+14	1300	COUNT 0/1	      GO TO 115                                                                 	GO TO 115 || 
+15	1343	COUNT 5/4	  106 JMAP(KDC)=0                                                               	106 JMAP(KDC)=0 || 15 654
+16	1379	OK	      OMAP(K)=0.0                                                       MA      	OMAP(K)=0.0 || MA
+17	1426	OK	      FMTEXP(KDC+1) = FMTA                                                      	FMTEXP(KDC+1) = FMTA
+18	1469	COUNT 36/18	                                                                                	\mathrm{FNTRUT}(KDC+1) = \mathrm{FMTA}
+19	1515	COUNT 0/1	      GO TO 300                                                                 	GO TO 300 || 
+20	1555	COUNT 19/14;COUNT 0/1	                                                                                	115 GO TO N3,(300,121) || 
+21	1592	COUNT 28/24;COUNT 6/5	                                                                                	C 121 RESET SIGN OF MAP COORDINATE || MAP 260
+22	1637	COUNT 20/14;COUNT 2/1	                                                                                	121 OMAP(K) =--OMAP(K) || b]
+23	1689	COUNT 7/6;COUNT 0/1	                                                                                	30 TO 300 || 
+24	1736	COUNT 0/1	                                                                                	
+25	1762	COUNT 31/30;COUNT 6/5	                                                                                	C 151 CODE FOR TWO-LINE F11.3 DISPLAY || MAP 264
+26	1808	COUNT 0/2	  151  JMAP(KDC)=CHAP(K)/10.0                                                   	151 JMAP(KDC)=CHAP(K)/10.0 || 
+27	1860	OK	       ZMAP=JMAP(KDC)                                                           	ZMAP=JMAP(KDC)
+28	1893	COUNT 0/5	       OMAP(K)=OMAP(K)-(ZMAP*10.0)                                              	OMAP(K) = OMAP(K) - (ZMAP * 10.0) || 
+29	1937	COUNT 6/5	       FHTEXP(KDC+1)= FMTI                                                      	FHTEXP(KDC+1) = FMTI || MAP 261
+30	1986	OK	       FMTRUT(KDC+1) = FMTF                                                     	FMTRUT(KDC+1) = FMTF
+31	2022	COUNT 6/5	       FMTEXP(KDC+1)=FHTA                                                       	FMTEXP(KDC+1)=FHTA || MAP 271
+32	2074	COUNT 40/18	                                                                                	\text{FMTRUT(KOC}+1\text{)}=\text{FMTA.}
+33	2120	COUNT 0/2	  300  CONTINUE                                                                 	300 CONTINUE || 
+34	2151	COUNT 34/31;COUNT 0/3	                                                                                	WRITE(I,OUT,2 ) (J,M,A,F(K),K=1,KDC) || 
+35	2192	COUNT 33/34	                                                                         MAP  27	WRITE(IOUT,4)YY,(OMAP(K),K=KL,KH) || MAP 27
+36	2248	OK	       YY=YY-DGY                                                                	YY=YY-DGY
+37	2289	OK	       GO TO 200                                                                	GO TO 200
+38	2321	OK	  301  WRITE (MBTAPE) (OHAP(K),K=KL,KH)                                  MAP  27	301 WRITE (MBTAPE) (OHAP(K),K=KL,KH) || MAP 27
+39	2376	COUNT 14/15;COUNT 5/4	                                                                                	200 KL=KL-NXMAP || APR 27
+40	2411	COUNT 0/1	       IF (JC   .EQ.3)  GO TO 110                                               	IF (JC .EQ.3) GO TO 110 || 
+41	2458	OK	       WRITE (ISOUT,16)ABSSA                                                    	WRITE (ISOUT, 16) ABSSA
+42	2502	OK	       XCOORD=XCOORD+XCIN                                                       	XCOORD=XCOORD+XCIN
+43	2546	OK	  110  KKL=KKL+INC                                                       MAR  20	110 KKL = KKL + INC || MAR 20
+44	2591	COUNT 5/4	  111  RETURN                                                                   	111 RETURN || APR 28
+45	2636	OK	       END                                                                      	END
+46	3116	COUNT 3/2	                                                                                	150
+47	3295	COUNT 0/35;COUNT 0/1	                                                                                	 || 

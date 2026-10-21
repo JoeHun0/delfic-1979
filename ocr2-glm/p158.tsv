@@ -1,0 +1,7 @@
+10	851	COUNT 15/16	                                                                                	HOB=HEIGHT/3048
+14	1022	OK	      READ(ISIN.3)NPRNT(6),NPRNT(7),(NPRNT(I),I=9,13),NPRNT(15)                 	READ ( IS IN. 3) NPRNT(6), NPRNT(7), (NPRNT(I), I=9,13), NPRNT(15)
+24	1456	OK	      IHOB=0                                                                    	IHOB=0
+30	1711	COUNT 25/26	                                                                                	ZSCM = HOB/W** (0.333333333)
+33	1841	OK	      FW=FW*FO                                                                  	FW=FW*FO
+50	2569	COUNT 32/31	                                                                                	1. RO(I), PSIZ(I), PMAS(I), I=1, NIJ)
+55	2783	COUNT 32/31	                                                                                	1. RO(I), PSIZ(I), PMAS(I), I=1, NIJ)

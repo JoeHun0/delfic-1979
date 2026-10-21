@@ -1,0 +1,58 @@
+1	19	COUNT 0/21	                                                                                	
+2	96	COUNT 290/18	                                                                                	\text{1. } \text{2. } \text{3. } \text{4. } \text{5. } \text{6. } \text{7. } \text{8. } \text{9. } \text{10. } \text{11. } \text{12. } \text{13. } \text{14. } \text{15. } \text{16. } \text{17. } \text{18. } \text{19. } \text{20. } \text{21. } \text{22. } \text{23. } \text{24. } \text{25. } \text{26. } \text{27. } \text{28. } \text{29. } \text{30.
+3	480	OK	    5 00 6 J=1,8                                                        RKGIL 61	5 00 6 J=1,8 || RKGIL 61
+4	522	COUNT 0/42	                                                                        RKGIL 62	 || RKGIL 62
+5	563	OK	    6 RKG(J)=3.41421356*DVBL(J)-4.1213203*RKG(J)                        RKGIL 63	6 RKG(J) = 3.41421356*DVBL(J) - 4.1213203*RKG(J) || RKGIL 63
+6	607	OK	      GO TO 10                                                          RKGIL 64	GO TO 10 || RKGIL 64
+7	650	OK	    7 00 8 J=1,8                                                        RKGIL 65	7 00 8 J=1,8 || RKGIL 65
+8	691	COUNT 47/46	                                                                        RKGIL 66	8  VBL(J) = VBL(J) + .166666667 * H * (DVBL(J) - 2. * RKG(J)) || RK GIL 66
+9	735	OK	C                                                                       RKGIL 67	C || RKGIL 67
+10	779	OK	      KYCL=2                                                            RKGIL 68	KYCL = 2 || RKGIL 68
+11	819	OK	   10 HT=VOL(1)                                                         RKGIL E9	10 HT=VOL(1) || RKGIL E9
+12	863	OK	      RM=VBL(2)                                                         RKGIL 70	RM = VBL(2) || RKGIL 70
+13	907	COUNT 0/8	                                                                        RKGIL 71	 || RKGIL 71
+14	948	COUNT 0/8;COUNT 8/7	                                                                                	 || F.KGIL 72
+15	992	COUNT 13/8	                                                                        RKGIL 73	T = V \cdot 9L (5) || RKGIL 73
+16	1035	COUNT 0/8	                                                                        RKGIL 74	 || RKGIL 74
+17	1076	OK	      EK=VBL(7)                                                         KKGIL 75	EK = VBL(7) || KKGIL 75
+18	1120	COUNT 0/8	                                                                        RKGIL 76	 || RKGIL 76
+19	1163	OK	      CALL TRPL(Z,NAT ,ALT,PRS,PQR)                                     RKGIL 77	CALL TRPL(Z,NAT ,ALT,PRS,PQR) || RKGIL 77
+20	1198	COUNT 0/58	                                                                        KKGIL 78	 || KKGIL 78
+21	1248	OK	      IF( U .GT. 0.0 ) RZT = ( 0.2387324 * V * SHAPE**2 )**0.3333333333 RKGIL 79	IF( U .GT. 0.0 ) RZT = ( 0.2387324 * V * SHAPE**2 )**0.3333333333 || RKGIL 79
+22	1292	OK	      GO TO(20,30),KYCL                                                 RKGIL 89	GO TO (20,30),KYCL || RKGIL 89
+23	1335	OK	   30 RETURN                                                            RKGIL 81	30 RETURN || RKGIL 81
+24	1378	OK	      END                                                               RKGIL 82	END || RKGIL 82
+25	1723	OK	-DECK,RSTR                                                              KSTR   1	- DECK, RSTR || KSTR 1
+26	1765	OK	      SUBROUTINE RSTR                                                   RSTR   2	SUBROUTINE RSTR || RSTR 2
+27	1809	OK	C                                                                       RSTR   3	C || RSTR 3
+28	1851	COUNT 15/5	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || \kappa S T R \quad 4
+29	1893	OK	C                                                                       RSTR   5	C || RSTR 5
+30	1937	COUNT 199/71	                                                                        RSTR   6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || RSTR 6
+31	1979	OK	C                                                                       RSTR   7	C || RSTR 7
+32	2022	OK	C     RSTR PRESERVES AND/OR RESTORES CRM VARIABLES                      RSTR   8	C RSTR PRESERVES AND/OR RESTORES CRM VARIABLES || RSTR 8
+33	2067	OK	C                                                                       RSTR   9	C || RSTR 9
+34	2107	COUNT 199/71	                                                                        RSTR  10	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || RSTR 10
+35	2151	COUNT 17/6	C                                                                               	C || \dot{R}STR \quad 11
+36	2194	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,RSTR  12	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM , || RSTR 12
+37	2229	COUNT 7/6	     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,CWT    ,DX     ,        	1 DS ,DST ,DST0 ,DST1 ,DST2 ,DT ,DU ,CWT ,DX , || R.S I R 13
+38	2279	COUNT 34/33;COUNT 17/6	                                                                                	2 0Z ,ED ,EK ,EPS ,ES ,HLF. ,KS ,KSV ,MWYA , || \kappa S I R \quad 14.
+39	2313	COUNT 16/6	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,        	3 N , NNN , P , PW , R , RA , RL , RM , RZT , || \pi S \tau R \quad 15
+40	2365	OK	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,RSTR  16	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,WT , || RSTR 16
+41	2409	COUNT 38/6	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                                 	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE || \kappa \dot{S} \mathcal{T} \dot{R} \quad 17
+42	2452	OK	      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SD,PS(260),UIAM(2u1),FMASS(2J3)  KSIR  18	COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SD,PS(260),UIAM(2u1),FMASS(2J3) || KSIR 18
+43	2494	OK	      COMMON /TABLES/ MCX, CX(50,1u), GDPST(1J,1J0)                     KSTR  19	COMMON /TABLES/ MCX, CX(50,1u), GDPST(1J,1J0) || KSTR 19
+44	2537	OK	C                                                                       RSTR  20	C || RSTR 20
+45	2579	OK	      DIMENSION PY(200), Y(200)                                         KSTR  21	DIMENSION PY(200), Y(200) || KSTR 21
+46	2623	OK	      EQUIVALENCE (Y(1),GOPST(1)), (PY(1),GOPST(401))                   RSTR  22	EQUIVALENCE (Y(1), GOPST(1)), (PY(1), GOPST(401)) || RSTR 22
+47	2666	OK	C                                                                       kSTR  23	C || kSTR 23
+48	2708	COUNT 199/71	                                                                        RSTR  24	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || RSTR 24
+49	2750	COUNT 1/2	                                                                        RSTR  25	C || RSTR 25
+50	2794	OK	      GO TO(1,3),KSV                                                    RSTR  26	GO TO (1, 3), KSV || RSTR 26
+51	2839	OK	    1 PEK≈EK                                                            kSTR  27	1 PEK ≈ EK || kSTR 27
+52	2880	COUNT 7/6	                                                                        KSTR  28	PRM = R.M || KSTR 28
+53	2923	COUNT 0/5	                                                                        RSTR  29	 || RSTR 29
+54	2968	COUNT 0/4;COUNT 15/6	                                                                                	 || \leftarrow STR 30
+55	3010	COUNT 16/6	      PU=U                                                                      	PU = U || \kappa S 7 R \quad 31
+56	3054	COUNT 49/6	      PV=V                                                                      	PV = V || \mathcal{R} \check{S} \mathcal{T} \mathcal{R} \quad 32
+57	3098	COUNT 0/6	                                                                        kSTR  33	 || kSTR 33
+58	3155	OK	                                         89                                     	89

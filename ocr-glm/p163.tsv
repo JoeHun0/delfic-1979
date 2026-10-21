@@ -1,0 +1,47 @@
+1	0	COUNT 3/20;COUNT 3/2	                                                                                	--- || ---
+2	770	OK	     1 OMAP,NMAP)                                                       OPM2 227	1 OMAP, NMAP) || OPM2 227
+3	814	OK	      CALL MAP(OMAP,NMAP)                                               OPM2 228	CALL MAP(OMAP,NMAP) || OPM2 228
+4	856	OK	      GO TO 1211                                                        OPM2 229	GO TO 1211 || OPM2 229
+5	898	OK	COMPUTE A MULTIPLE CORE-LCAD MAP                                        OPM2 230	COMPUTE A MULTIPLE CORE-LCAD MAP || OPM2 230
+6	943	OK	  207 REWIND JPOUT                                                      UPM2 231	207 REWIND JPOUT || UPM2 231
+7	985	OK	      REWIND KPOUT                                                      OPH2 232	REWIND KPOUT || OPH2 232
+8	1028	OK	      KTAPE=IPOUT                                                       OPM2 233	KTAPE = I POUT || OPM2 233
+9	1071	OK	      LTAPE=JPOUT                                                       OPM2 234	LTAPE=JPOUT || OPM2 234
+10	1114	OK	      CALL GOGO(OMAP,NHAP)                                              OPH2 235	CALL GOGO(OMAP,NHAP) || OPH2 235
+11	1158	OK	      REWIND KTAPE                                                      OPH2 236	REWIND KTAPE || OPH2 236
+12	1201	OK	      WRITE(LTAPE)NUL                                                   OPM2 237	WRITE(LTAPE)NUL || OPM2 237
+13	1243	OK	      REWIND LTAPE                                                      UPM2 238	REWIND LTAPE || UPM2 238
+14	1286	OK	      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 308                       UPM2 239	IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 308 || UPM2 239
+15	1330	OK	      00 306 IMAP=1，NMAP                                                OPM2 240	00 306 IMAP=1，NMAP || OPM2 240
+16	1365	OK	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0                            OPM2 241	IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0 || OPM2 241
+17	1416	OK	  306 CONTINUE                                                          OPM2 242	306 CONTINUE || OPM2 242
+18	1459	OK	  308 CALL MAP(OMAP.NMAP)                                               OPM2 243	308 CALL MAP(OMAP.NMAP) || OPM2 243
+19	1502	OK	      00 220 INDEX=1,NZ                                                 UPM2 244	00 220 INDEX=1,NZ || UPM2 244
+20	1545	OK	CLEAR OUT THE OHAP ARRAY                                                OPM2 245	CLEAR OUT THE OHAP ARRAY || OPM2 245
+21	1589	OK	      CLROT=0.0                                                         UPM2 246	CLROT=0.0 || UPM2 246
+22	1630	OK	      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.E30                      OPH2 247	IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.E30 || OPH2 247
+23	1675	OK	      00 702 IMAP=1，NMAP                                                OPM2 248	00 702 IMAP=1，NMAP || OPM2 248
+24	1717	OK	  702 OMAP(IMAP)=CLROT                                                  OPM2 249	702 OMAP(IMAP) = CLROT || OPM2 249
+25	1761	OK	      IF(MOD(INDEX,2).EQ.1) GO TO 208                                   OPM2 250	IF (MOD (INDEX,2).EQ.1) GO TO 208 || OPM2 250
+26	1803	OK	      KTAPE=KPOU↑                                                       UPM2 251	KTAPE=KPOU↑ || UPM2 251
+27	1847	OK	      LTAPE=JPOUT                                                       OPM2 252	LTAPE=JPOUT || OPM2 252
+28	1889	OK	      GO TO 209                                                         OPM2 253	GO TO 209 || OPM2 253
+29	1932	OK	  208 KTAPE=JPOUT                                                       UPM2 254	208 KTAPE=JPOUT || UPM2 254
+30	1977	OK	      LTAPE=KPOUT                                                       OPM2 255	LTAPE=KPOUT || OPM2 255
+31	2017	OK	  209 ICTR=INDEX                                                        UPM2 256	209 ICTR=INDEX || UPM2 256
+32	2061	OK	      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP                            OPM2 257	IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP || OPM2 257
+33	2105	OK	      X1=X2                                                             UPM2 258	X1=X2 || UPM2 258
+34	2146	OK	      X2=X1+NXMAP*OGX                                                   OPM2 259	X2=X1+NXMAP*OGX || OPM2 259
+35	2189	OK	  210 CALL GOGO(OMAP,NMAP)                                              OPM2 260	210 CALL GOGO(OMAP, NMAP) || OPM2 260
+36	2233	OK	      REWIND KTAPE                                                      UPM2 261	REWIND KTAPE || UPM2 261
+37	2275	OK	      WRITE(LTAPE)NUL                                                   OPM2 262	WRITE (LTAPE) NUL || OPM2 262
+38	2319	OK	      REWIND LTAPE                                                      OPM2 263	REWIND LTAPE || OPM2 263
+39	2362	OK	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220                       OPM2 264	IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220 || OPM2 264
+40	2404	OK	      00 215.IMAP=1，NMAP                                                OPM2 265	00215. IMAP=1，NMAP || OPM2 265
+41	2447	OK	      IF(OMAP(IMAP).GE.1.E20) OMAP(IMAP)=0.0                            UPM2 266	IF(OMAP(IMAP).GE.1.E20) OMAP(IMAP) = 0.0 || UPM2 266
+42	2491	OK	  215 CONTINUE                                                          OPM2 267	215 CONTINUE || OPM2 267
+43	2533	OK	  220 CALL MAP(OMAP,NMAP)                                               OPM2 268	220 CALL MAP(OMAP,NMAP) || OPM2 268
+44	2576	OK	      GO TO 1211                                                        UPM2 269	GO TO 1211 || UPM2 269
+45	2620	OK	      END                                                               OPM2 270	END || OPM2 270
+46	3118	OK	                                       160                                      	160
+47	3277	COUNT 3/38;COUNT 3/5	                                                                                	--- || ---

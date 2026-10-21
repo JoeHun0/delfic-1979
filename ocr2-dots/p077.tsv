@@ -1,0 +1,17 @@
+1	15	COUNT 0/33	                                                                                	
+4	518	OK	      VY(NHODO)=AP(N3)*SCALE(2)                                                 	VY(NHODO)=AP(N3)*SCALE(2)
+8	680	OK	  200 IF(NHODO .GT. 0) RETURN                                                   	200 IF (NHODO .GT. 0) RETURN
+29	1894	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRA0,IRISE,ISIN,ISOUT,JPARN,K0I          	COMMON /CONTRL/ DETIO(12),IC(20),IRA0,IRISE,IS IN,ISOUT,JPARN,K0I
+30	1937	OK	      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(200),DIAR(201),FMASS(200)          	COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(200),DIAR(201),FMASS(200)
+36	2194	COUNT 15/23	                                                                                	903 FORMAT (1H1//
+37	2238	COUNT 30/36	                                                                                	1 20X30HNEGATIVE PARTICLE DENSITY
+38	2281	COUNT 205/44	                                                                                	758 FORMAT (1H124X73H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+39	2323	OK	     1* * * * * * * * * * * ***  22X, 76HPARTICLE SETTLING RATES ARE INA        	1* * * * * * * * * * * * * * 22X, 76HPARTICLE SETTLING RATES ARE IN A
+41	2411	COUNT 199/35	                                                                                	3 73H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+42	2452	COUNT 0/11	                                                                                	
+47	2667	OK	      DO 9J1 J=1,NDSTR                                                          	DO 9J1 J=1,NDSTR
+48	2710	OK	           IF(Y(J)) =902 ,91, 9 2                                               	IF (Y(J)) = 902, 91, 92
+50	2798	OK	           GO TO 9.                                                             	GO TO 9.
+51	2839	COUNT 20/19	                                                                                	C:J2 WRITE(ISOUT,=03)
+52	2881	OK	      MWYA = 3                                                                  	MWYA = 3
+58	3267	COUNT 0/46	                                                                                	

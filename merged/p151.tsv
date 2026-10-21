@@ -1,0 +1,64 @@
+1	15	43	NOISE	                                                                        			
+2	55	77	NONE	                                                                        			
+3	518	560	COMMENT	C     LEFT IS USED HERE A SA TEMPORARY STORAGE                          		lighton=C     LEFT IS USED HERE A SA TEMPORARY STORAGE ## dots=C     LEFT IS USED HERE A SA TEMPORARY STORAGE ## glm=C     LEFT IS USED HERE A SA TEMPORARY STORAGE	MAP121
+4	560	598	NONE	                                                                        			
+5	606	638	AGREE	      GO TO 1702                                                        		lighton=      GO TO 1702 ## dots=      GO TO 1702 ## glm=      GO TO 1702	
+6	648	686	COMMENT	C 1C2   PRINT CROINATE OESCRIPTION                                      		lighton=C 1C2   PRINT CROINATE OESCRIPTION ## glm=C 1C2   PRINT ORDINATE DESCRIPTION	MAP120
+7	686	720	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+8	733	770	NONE	                                                                        			MAP465
+9	770	823	COMMENT	C     NREQ  1,  2,  3,  4,  5,  6,  7,  c,  9,  10,  11,  12,  13,  14, 			MAY126
+10	823	867	TIE	      GO TO.161.162.163.177.164.165.168.169.164.165.166.167.176.171.172.	12,16,20,24,28,32,36,40,44,48,52,56,60,64,68,72	glm=      GO TO.161.162.163.177.164.165.168.169.164.165.166.167.176.171.172. ## glm2=      GO TO,161,162,163,177,164,165,168,169,164,165,166,167,176,171,172,	MAR127
+11	867	902	AGREE	     1      173,174,175),NREQ                                           		lighton=     1      173,174,175),NREQ ## dots=     1      173,174,175),NREQ ## glm=     1      173,174,175),NREQ	MAP129
+12	902	942	COMMENT	C     NREQ - 16, 17, 18                                                 		lighton=C     NREQ - 16, 17, 18 ## dots=C     NREQ - 16, 17, 18 ## glm=C     NREQ - 16, 17, 18	MAR16
+13	950	986	AGREE	 161  WRITE (ISOUT,9)                                                   		lighton= 161  WRITE (ISOUT,9) ## dots= 161  WRITE (ISOUT,9) ## glm= 161  WRITE (ISOUT,9)	MAP13
+14	986	1025	VOTED	      GO TO 175                                                         		lighton=      GO TO 175 ## dots=      GO TO 175 ## glm=      GO TO 173	
+15	1036	1072	AGREE	 162  WRITE (ISOUT,10)                                                  		lighton= 162  WRITE (ISOUT,10) ## dots= 162  WRITE (ISOUT,10) ## glm= 162  WRITE (ISOUT,10)	MAR106
+16	1080	1115	AGREE	      WRITE (ISOUT,29)                                                  		lighton=      WRITE (ISOUT,29) ## dots=      WRITE (ISOUT,29) ## glm=      WRITE (ISOUT,29)	MAP13
+17	1115	1154	VOTED	      GO TO 17J                                                         		lighton=      GO TO 17J ## dots=      GO TO 17J ## glm=      GO TO 173	1F134
+18	1165	1202	AGREE	 163  WRITE (ISOUT,11)T1                                                		lighton= 163  WRITE (ISOUT,11)T1 ## dots= 163  WRITE (ISOUT,11)T1 ## glm= 163  WRITE (ISOUT,11)T1	MAR409
+19	1210	1244	VOTED	      WRITE (ISOUT,29)                                                  		lighton=      WRITE (ISOUT,291 ## dots=      WRITE (ISOUT,29) ## glm=      WRITE (ISOUT,29)	MAP13
+20	1252	1283	NOISE	                                                                        			
+21	1296	1332	AGREE	 164  WRITE (ISOUT,12)T1                                                		lighton= 164  WRITE (ISOUT,12)T1 ## dots= 164  WRITE (ISOUT,12)T1 ## glm= 164  WRITE (ISOUT,12)T1	MAI130
+22	1341	1376	AGREE	      WRITE (ISOUT,30)                                                  		lighton=      WRITE (ISOUT,30) ## dots=      WRITE (ISOUT,30) ## glm=      WRITE (ISOUT,30)	MAP140
+23	1376	1419	AGREE	      IF(NREQ .EQ. 9) GO TO 12E4                                        		lighton=      IF(NREQ .EQ. 9) GO TO 12E4 ## glm=      IF(NREQ .EQ. 9) GO TO 12E4	MAP140
+24	1419	1459	AGREE	 1164 WRITE(ISOUT,33)                                                   		lighton= 1164 WRITE(ISOUT,33) ## dots= 1164 WRITE(ISOUT,33) ## glm= 1164 WRITE(ISOUT,33)	MAR1
+25	1468	1499	NOISE	                                                                        		lighton=      GO TO 170 ## dots=      GO TO 170 ## glm=      GO TO 170	
+26	1509	1545	AGREE	 1264 WRITE(ISOUT,34)                                                   		lighton= 1264 WRITE(ISOUT,34) ## dots= 1264 WRITE(ISOUT,34) ## glm= 1264 WRITE(ISOUT,34)	MAP140
+27	1545	1584	NOISE	                                                                        		lighton=      GO TO 172 ## dots=      GO TO 173 ## glm=      GO TO 172	
+28	1596	1634	AGREE	 165  WRITE (ISOUT,13)T1,T2                                             		lighton= 165  WRITE (ISOUT,13)T1,T2 ## dots= 165  WRITE (ISOUT,13)T1,T2 ## glm= 165  WRITE (ISOUT,13)T1,T2	MAP146
+29	1634	1675	AGREE	      WRITE (ISOUT,30)                                                  		lighton=      WRITE (ISOUT,30) ## dots=      WRITE (ISOUT,30) ## glm=      WRITE (ISOUT,30)	MAP140
+30	1675	1720	AGREE	      IF(NREQ-10)1164,1264,1264                                         		lighton=      IF(NREQ-10)1164,1264,1264 ## dots=      IF(NREQ-10)1164,1264,1264 ## glm=      IF(NREQ-10)1164,1264,1264	MAR147
+31	1720	1760	AGREE	 166  WRITE (ISOUT,14)                                                  		lighton= 166  WRITE (ISOUT,14) ## dots= 166  WRITE (ISOUT,14) ## glm= 166  WRITE (ISOUT,14)	MAR140
+32	1760	1802	AGREE	      WRITE (ISOUT,31)                                                  		lighton=      WRITE (ISOUT,31) ## dots=      WRITE (ISOUT,31) ## glm=      WRITE (ISOUT,31)	MAR149
+33	1811	1841	NOISE	                                                                        		lighton=      GO TO 179 ## dots=      GO TO 170 ## glm=      GO TO 170	
+34	1852	1891	AGREE	 167  WRITE (ISOUT,15)T1,T2                                             		lighton= 167  WRITE (ISOUT,15)T1,T2 ## dots= 167  WRITE (ISOUT,15)T1,T2 ## glm= 167  WRITE (ISOUT,15)T1,T2	MAP152
+35	1891	1931	AGREE	      WRITE (ISOUT,31)                                                  		lighton=      WRITE (ISOUT,31) ## dots=      WRITE (ISOUT,31) ## glm=      WRITE (ISOUT,31)	MAR156
+36	1939	1971	NOISE	                                                                        		lighton=      GO TO 172 ## dots=      GO TO 170 ## glm=      GO TO 17J	
+37	1982	2020	AGREE	 168  WRITE (ISOUT,13)T1,T2                                             		lighton= 168  WRITE (ISOUT,13)T1,T2 ## glm= 168  WRITE (ISOUT,13)T1,T2	MAF155
+38	2020	2059	VOTED	      WRITE (ISOUT,36)                                                  		lighton=      WRITE (ISOUT,36) ## dots=      WRITE (ISOUT,30) ## glm=      WRITE (ISOUT,36)	MAP125
+39	2068	2101	AGREE	      WRITE(ISOUT,17)                                                   		lighton=      WRITE(ISOUT,17) ## dots=      WRITE(ISOUT,17) ## glm=      WRITE(ISOUT,17)	MAP57
+40	2101	2143	NONE	                                                                        			
+41	2153	2189	VOTED	 169  WRITE (ISOUT,12)T1                                                		lighton= 169  WRITE·(ISOUT,12)T1 ## dots= 169  WRITE (ISOUT,12)T1 ## glm= 169  WRITE (ISOUT,12)T1	MAR156
+42	2198	2233	AGREE	      WRITE (ISOUT,30)                                                  		lighton=      WRITE (ISOUT,30) ## dots=      WRITE (ISOUT,30) ## glm=      WRITE (ISOUT,30)	MAP165
+43	2242	2276	AGREE	      WRITE (ISOUT,17)                                                  		lighton=      WRITE (ISOUT,17) ## dots=      WRITE (ISOUT,17) ## glm=      WRITE (ISOUT,17)	MAP161
+44	2276	2315	VOTED	      GO TO 170                                                         		lighton=      GO YO 173 ## dots=      GO TO 170 ## glm=      GO TO 170	
+45	2326	2362	AGREE	 171  WRITE (ISOUT,18)MASCHN                                            		lighton= 171  WRITE (ISOUT,18)MASCHN ## dots= 171  WRITE (ISOUT,18)MASCHN ## glm= 171  WRITE (ISOUT,18)MASCHN	MAP163
+46	2371	2409	VOTED	      IF(T1-TGZ .GT. 0.0) WRITE(ISOUT,32)                               		lighton=      IF(T1-TGZ .GT. 0.0) WRITE(ISOUT,32) ## dots=      IF(J1-TGZ .GT. 0.0) WRITE(ISOUT,32) ## glm=      IF(T1-TGZ .GT. 0.0) WRITE(ISOUT,32)	MAP164
+47	2409	2453	AGREE	      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35)                               		lighton=      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35) ## dots=      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35) ## glm=      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35)	MAR104
+48	2453	2488	AGREE	      GO TO 170                                                         		lighton=      GO TO 170 ## dots=      GO TO 170 ## glm=      GO TO 170	
+49	2500	2534	AGREE	 172  WRITE (ISOUT,23)                                                  		lighton= 172  WRITE (ISOUT,23) ## dots= 172  WRITE (ISOUT,23) ## glm= 172  WRITE (ISOUT,23)	MAP167
+50	2542	2573	AGREE	      GO TO 170                                                         		lighton=      GO TO 170 ## dots=      GO TO 170 ## glm=      GO TO 170	AP161
+51	2584	2618	AGREE	 173  WRITE (ISOUT,24)                                                  		lighton= 173  WRITE (ISOUT,24) ## dots= 173  WRITE (ISOUT,24) ## glm= 173  WRITE (ISOUT,24)	MAP169
+52	2629	2659	AGREE	      GO TO 170                                                         		lighton=      GO TO 170 ## dots=      GO TO 170 ## glm=      GO TO 170	MAP170
+53	2669	2704	AGREE	 174  WRITE (ISOUT,25)                                                  		lighton= 174  WRITE (ISOUT,25) ## dots= 174  WRITE (ISOUT,25) ## glm= 174  WRITE (ISOUT,25)	MAP171
+54	2714	2757	NONE	                                                                        			AP172
+55	2757	2793	AGREE	 175  WRITE (ISOUT,26)                                                  		lighton= 175  WRITE (ISOUT,26) ## dots= 175  WRITE (ISOUT,26) ## glm= 175  WRITE (ISOUT,26)	MAP173
+56	2793	2829	VOTED	      GO TO 179                                                         		lighton=      GO TO 179 ## dots=      GO TO 170 ## glm=      GO TO 179	
+57	2842	2878	AGREE	 176  WRITE (ISOUT,27) T1,T2                                            		lighton= 176  WRITE (ISOUT,27) T1,T2 ## dots= 176  WRITE (ISOUT,27) T1,T2 ## glm= 176  WRITE (ISOUT,27) T1,T2	MAP175
+58	2887	2917	AGREE	      GO TO 170                                                         		lighton=      GO TO 170 ## dots=      GO TO 170 ## glm=      GO TO 170	4AP17
+59	2929	2965	NONE	                                                                        			AP177
+60	2965	3004	VOTED	      WRITE (ISOUT,29)                                                  		lighton=      WRITE (ISOUT,29) ## dots=      WRITE (ISOOUT,29                                                 ) ## glm=      WRITE (ISOUT,29)	MAP178
+61	3016	3048	NONE	                                                                        			MAP179
+62	3048	3100	COMMENT	C                                                                       			7AP179
+63	3119	3150	NOISE	                                                                        			
+64	3286	3322	NOISE	                                                                        			

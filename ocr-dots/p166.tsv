@@ -1,0 +1,63 @@
+1	1	COUNT 0/14	                                                                                	
+2	539	OK	*DECK,PCHECK                                                            PCHEC  1	*DECK,PCHECK || PCHEC 1
+3	583	OK	      SUBROUTINE PCHECK(IJIN,OMAP,NMAP)                                 PCHEC  2	SUBROUTINE PCHECK(IJIN,OMAP,NMAP) || P C H E C 2
+4	626	OK	C                                                                       PCHCL  3	C || PCHCL 3
+5	666	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     PCHEC  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || PCHEC 4
+6	713	OK	C                                                                       PCHEC  5	C || PCHEC 5
+7	750	COUNT 0/71	                                                                        PCHEC  6	 || P C H E C 6
+8	800	OK	C                                                                       PCHEC  7	C || P CHEC 7
+9	839	COUNT 1/49	                                                                        PCHEC  8	C || PCHEC 8
+10	880	COUNT 1/52	                                                                        PCHEC  9	C || P C H E C   9
+11	924	OK	C     IT COMPUTES THE BOUNDRIES  OF ITS CONTRIBUTION ELLIPSE AND        PCHEC 10	C IT COMPUTES THE BOUNDRIES OF ITS CONTRIBUTION ELLIPSE AND || PCHEC 10
+12	968	OK	C     IT LABELS IT ACCORDING TO WHETHER IT WILL CONTRIBUTE TO           PCHEC 11	C IT LABELS IT ACCORDING TO WHETHER IT WILL CONTRIBUTE TO || PCHEC 11
+13	1009	OK	C     SUBSEQUENT MAP CORE LOADS OR NOT.  IF A FARCEL CONTRIBUTES TO     PCHEC 12	C SUBSEQUENT MAP CORE LOADS OR NOT. IF A FARCEL CONTRIBUTES TO || P CHEC 12
+14	1054	COUNT 1/45	                                                                        PCHEC 13	C || PCHEC 13
+15	1100	OK	C                                                                       PCHEC 14	C || P C H E C   1 4
+16	1138	COUNT 0/71	                                                                        PCHEC 15	 || PCHEC 15
+17	1185	OK	C                                                                       PCHEC 16	C || PCHEC 16
+18	1225	COUNT 8/70	                                                                        PCHEC 17	GLOSSARY || PCHEC 17
+19	1270	OK	C                                                                       PCHEC 18	C || PCHEC 18
+20	1311	COUNT 2/24	                                                                        PCHEC 19	C J || PCHEC 19
+21	1354	OK	C     KTR(IP)      INDICATES WHETHER OR NOT THE PARCEL IS TO BE         PCHEC 20	C KTR(IP) INDICATES WHETHER OR NOT THE PARCEL IS TO BE || PCHEC 20
+22	1396	COUNT 36/37	                                                                        PCHEC 21	CONSICERED IN SUBSEQUENT MAP CORE LOADS - - || P CHEC 21
+23	1439	COUNT 1/29;COUNT 8/7	                                                                                	C || PUCHEC 22
+24	1482	COUNT 1/28	                                                                        PCHEC 23	C || P C H E C 2 3
+25	1524	COUNT 6/48	                                                                        PCHEC 24	C YPRMU || PCHEC 24
+26	1566	COUNT 49/48	                                                                        PCHEC 25	C XPRMU UPPER X CCORODINATE LIMIT FOR PARCEL CONTRIBUTION || P CHEC 25
+27	1599	COUNT 6/48	                                                                        PCHEC 26	C XPRNL || P CHEC 26
+28	1652	OK	C     YPRML        LOWER Y COORDINATE LIMIT FOR  PARCEL  CONTRIBUTION   PCHEC 27	C      YPRML      LOWER Y COORDINATE LIMIT FOR PARCEL CONTRIBUTION || PCHEC 27
+29	1696	COUNT 4/45	                                                                        PCHEC 28	C ASQ || PCHEC 28
+30	1742	COUNT 12/13	                                                                        PCHEC 29	LIMIT ELLIPSE || P CHEC 29
+31	1781	OK	C     BSQ          SQUARE CF SEMI-AXIS B OF THE  PARCEL  CONTRIBUTION   PCHEC 30	C      BSQ      SQUARE CF SEMI-AXIS B OF THE PARCEL CONTRIBUTION || P C H E C 30
+32	1828	COUNT 1/13	                                                                        PQHEC 31	C || PQHEC 31
+33	1868	OK	C     SINA         SIN    OF THE  ORIENTATION ANGLE OF THE A AXIS OF    PCHEC 32	C SINA SIN OF THE ORIENTATION ANGLE OF THE A AXIS OF || PCHEC 32
+34	1912	COUNT 33/34	                                                                        PCHEC 33	THE PARCEL CONTRIBUTION LIMIT ELLIPSE || P C H E C   3 3
+35	1954	OK	C     COSA         COSINE OF THE  ORIENTATION ANGLE OF THE A AXIS OF    PCHEC 34	C COSA COSINE OF THE ORIENTATION ANGLE OF THE A AXIS OF || P C H E C   3 4
+36	2000	COUNT 33/34	                                                                        PCHEN 35	THE PARCEL CONTRIBUTION LIMIT ELLIPSE || PCHEN 35
+37	2042	COUNT 43/44	                                                                        PCHEC 36	C GAMA LOGBasE E) OF THE RATIO OF THE GAUSSIAN PARCEL || P C H E C 36
+38	2085	COUNT 38/40	                                                                        PCHEC 37	CONTRIBUTION DISTRIBUTION MODE VALUE TO CNT || P CHEC 37
+39	2128	OK	C     NC           COUNT CF AVAILABLE  PARCEL  STORAGE LOCA  (   IN     PCHEC 38	C NC COUNT CF AVAILABLE PARCEL STORAGE LOCA ( IN || P C H E C   3 8
+40	2171	COUNT 1/35	                                                                        PCHEC 39	C || PCHEC 39
+41	2218	COUNT 1/10	                                                                        PCHEC 40	C || PCHEC 40
+42	2258	COUNT 1/45	                                                                        PCHEC 41	C || PCHEC 41
+43	2298	COUNT 2/41	                                                                        PCHEC 42	C F || P CHEC 42
+44	2342	COUNT 1/32	                                                                        PCHEC 43	C || P CHEC 43
+45	2389	OK	C                                                                       PCHEC 44	C || PCHEC 44
+46	2429	OK	C     ALSO SEE OPM1 GLOSSARY                                            PCHEC 45	C ALSO SEE OPM1 GLOSSARY || P CHEC 45
+47	2474	OK	C                                                                       PCHEC 46	C || PCHEC 46
+48	2513	COUNT 0/71	                                                                        FCHEC 47	 || F C H E C 4 7
+49	2560	OK	C                                                                       PCHEC 48	C || P C H E C 48
+50	2597	OK	      COMMON /CONDAT/       IC(2J)    ,IHOB      ,IPNCH     ,IPOUT     ,POHEC 49	COMMON /CONDAT/ IC(2J) ,IHOB ,IPNCH ,IPOUT , || POHEC 49
+51	2642	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     :PCHEC 50	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE : || P C H E C 5 0
+52	2684	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INFAN                 PCHEC 51	2MARRAY ,MBTAPE ,MXREQ ,SD ,INFAN || P C H E C   5 1
+53	2726	OK	      COMMON /MAPDAT/ CAYF ,CUTMAP    ,OGX       ,OGY       ,IH  ,IV   ,PCHEC 52	COMMON /MAPDAT/ CAYF ,CUTMAP ,OGX ,OGY ,IH ,IV , || P C H E C 5 2
+54	2771	OK	     1JC        ,NXMAP     ,NYRAP     ,NZ        ,QCUT      ,SSAM      ,POKEC 53	1JC ,NXMAP ,NYRAP ,NZ ,QCUT ,SSAM , || POKEC 53
+55	2812	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XHAX      ,PCHEC 54	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XHAX , || P C H E C   5 4
+56	2857	COUNT 20/21	                                                                        PCHEC 55	3XMIN .YHAX .YNIN .ZMIN || P C H E C 55
+57	2900	OK	      COMMON /PARDAT/       ASQ       ,3SQ       ,COSA      ,F         ,PCHEC 56	COMMON /PARDAT/ ASQ ,3SQ ,COSA ,F , || P C H E C   5 6
+58	2941	OK	     1GAMA      ,KTR(1J0)  ,PMAS(1J0) ,PSIZ(10J) ,KO(100)   ,SIGXO(100),PCHEC 57	1GAMA ,KTR(1J0) ,PMAS(1J0) ,PSIZ(10J) ,KO(100) ,SIGXO(100), || P C H E C 57
+59	2984	OK	     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,PCHEC 58	2SIGYO(100),SINA ,TPAR(100),XPAR(100),YPAR(100),YPRML , || P CHEC 58
+60	3032	OK	     3YPRHU     ,ZPAR(100)                                              PCHEC 59	3 YPRHU ,ZPAR(100) || P C H E C 59
+61	3073	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      .ICTR      ,PCHEC 60	COMMON /RUNDAT/ C ,CF6 ,FSUM .ICTR , || P C H E C   60
+62	3138	OK	                                         163                                    	163
+63	3293	COUNT 0/30	                                                                                	

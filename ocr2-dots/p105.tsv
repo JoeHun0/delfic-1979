@@ -1,0 +1,6 @@
+1	13	COUNT 0/25	                                                                                	
+2	59	COUNT 0/20	                                                                                	
+9	815	OK	      IF(( ZB0T0M-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250                	IF(( ZB0T0M-ZCUR+10.().LT.(TP(J)-TC(1))* (FV+BV)) GO TO 250
+22	1374	OK	  245 00 246 K=1,MHODO                                                          	245 00 246 K=1,MHODO
+63	3138	COUNT 3/2	                                                                                	102
+64	3299	COUNT 0/22	                                                                                	

@@ -1,0 +1,5 @@
+36	2248	COUNT 37/32	                                                                                	1.04  Y C=Y O+(Y T-Y O) \cdot(X C-X O)/(X T-X O)
+42	2508	OK	      YC=YU                                                                     	YC=YU
+50	2847	COUNT 36/32	                                                                                	110  X C=X O+(X T-X O) \cdot( Y C-Y O ) /( Y T-Y O )
+52	2935	OK	  11 1XC=XC+A0ISP                                                               	111 XC=XC+A0ISP
+53	2978	OK	      YC=YC+BDISP                                                               	YC=YC+BDISP

@@ -1,0 +1,12 @@
+709	p169	4	NONE	8	4	raw: 777 CONTINUE
+710	p169	37	TIE	38	7	      COMMON /CONCAT/       IC(2J)    .IHOB      ,IPACT     ,IPOUT     ,
+711	p169	38	NONE	35	6	raw: \text{LISIN} \text{,ISOUT} \text{,JPOUT} \text{,KPOUT} \text{,KTAPЕ} \text{,LTAPЕ}
+712	p169	39	NONE	30	6	raw: 2HARRAY ,M8TAPE ,MXREQ ,SO ,IN FAN ,OUT FAN ,OUT FAN
+713	p169	42	TIE	53	6	     2SIGVO(1^3),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,
+714	p169	43	NONE	16	6	raw: 3 YPRMU . ZPAR(1(0))
+715	p169	46	TIE	27	6	     20PMID(12) ,T1        ,T2        ,AFMAS(2L0)
+716	p169	47	TIE	18	7	      DATA PROGRH/6HPOHP  /
+717	p169	50	TIE	19	7	      IF(NE.EQ.0) GO TO 1500
+718	p169	52	TIE	7	7	      M=NIJ+1
+719	p169	58	NONE	14	7	raw: \text{1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.
+720	p170	12	NONE	7	7	raw: JL = JL + 1.

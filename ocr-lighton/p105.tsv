@@ -1,0 +1,64 @@
+1	13	COUNT 0/25;COUNT 8/1	                                                                                	 || \text{S}
+2	59	COUNT 0/20;COUNT 320/8	                                                                                	 || \text{S} \text{P} \text{L} \text{E} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I}
+3	556	OK	 3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    WNDSF3J1	3227 CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) || WNDSF3J1
+4	601	OK	C                                                                       HNOSF3j2	C || HNOSF3j2
+5	641	OK	C     CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE---- WNDSF303	C     CAN THE PARTICLE BE MOVED SIGNIFICANTLY IN THE TIME AVAILABLE---- || WNDSF303
+6	685	COUNT 1/9	                                                                        WNDSF304	C || WNDSF304
+7	728	COUNT 8/9;COUNT 18/8	                                                                                	C          NO TO 315 || \mathcal{W}NDSF305
+8	770	OK	C                                                                       WNOSF3J6	C || WNOSF3J6
+9	815	OK	      IF(( Z80TOM-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250        WNDSF3J7	IF(( Z80TOM-ZCUR+10.().LT.(TP(J)-TC(1))*(FV+BV)) GO TO 250 || WNDSF3J7
+10	858	OK	  225 OELTEE=0.                                                         WNDSF338	225 OELTEE=0. || WNDSF338
+11	900	OK	      GO TO 315                                                         WNDSF309	GO TO 315 || WNDSF309
+12	943	OK	C                                                                       WNDSF310	C || WNDSF310
+13	986	OK	C    INDEX  MM IDENTIFIES THE WIND HODOGRAPH STRATUM IN WHICH THE       WNDSF311	C INDEX MM IDENTIFIES THE WIND HODOGRAPH STRATUM IN WHICH THE || WNDSF311
+14	1028	OK	C     PARTICLE IS CURRENTLY DEFINED.                                    WNDSF312	C   PARTICLE IS CURRENTLY DEFINED. || WNDSF312
+15	1073	OK	C                                                                       WNDSF313	C || WNDSF313
+16	1116	COUNT 52/51	                                                                        WNDSF314	C INDEX LL IDENTIFIES THE CLOUD RISE HISTORY TABLE ENTRY WHICH || WNDSF314
+17	1158	OK	C     REPRESENTS THE RISE IN CREMEN TDURING WHICH THE PARTICLE IS       WNDSF315	C   REPRESENTS THE RISE INCREMENT DURING WHICH THE PARTICLE IS || WNDSF315
+18	1201	OK	C     CURRENTLY DEFINED.                                                WNDSF316	C CURRENTLY DEFINED. || WNDSF316
+19	1245	OK	C                                                                       WNDSF317	C || WNDSF317
+20	1286	OK	C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      WNDSF318	C 245 LOCATE CURRENT PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE || WNDSF318
+21	1330	OK	C                                                                       WNOSF319	C || WNOSF319
+22	1374	OK	  245 00 246 K=1,MH000                                                  WNDSF320	245 00 246 K=1, MH000 || WNDSF320
+23	1415	OK	      IF((ZV(K) +ZV(K+1))/2.0 .GT. (ZCUR+ 1.0))GO TO 247                WNDSF321	IF((ZV(K) + ZV(K+1)) / 2.0 .GT. (ZCUR+ 1.0)) GO TO 247 || WNDSF321
+24	1458	OK	  246 CONTINUE                                                          WNOSF322	246 CONTINUE || WNOSF322
+25	1502	OK	      MM=NH000                                                          WNDSF323	MM = NH000 || WNDSF323
+26	1544	OK	      GO TO 250                                                         HNOSF324	GO TO 250 || HNOSF324
+27	1588	COUNT 18/8	  247 MM=K                                                                      	247 MM = K || \mathcal{H}NOSF325
+28	1631	OK	C                                                                       WNOSF326	C || WNOSF326
+29	1673	OK	  250 CONTINUE                                                          WNDSF327	250 CONTINUE || WNDSF327
+30	1718	OK	C                                                                       WNDSF328	C || WNDSF328
+31	1761	OK	C     DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD.           WNDSF329	C DETERMINE IF NET PARTICLE MOTION IS UPWARD OR DOWNWARD. || WNDSF329
+32	1803	COUNT 1/12	                                                                        HNUSF330	C || HNUSF330
+33	1846	OK	      CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR)                    WNDSF331	CALL SETTLE(PSIZ(J),RHOP,DEN,VIS,T,P,FV,IACCR) || WNDSF331
+34	1890	OK	C                                                                       WNDSF332	C || WNDSF332
+35	1932	COUNT 1/14	                                                                        WNDSF333	C || WNDSF333
+36	1976	OK	C                                                                       WNOSF334	C || WNOSF334
+37	2018	OK	      IF((ZBOTOM-ZBRSTZ) .GT.0.0) GO TO 2298                            WNDSF335	IF((ZBOTOM-ZBRSTZ).GT.0.0) GO TO 2298 || WNDSF335
+38	2060	OK	 2297 RV=0.                                                             WNDSF336	2297 RV=0. || WNDSF336
+39	2104	OK	      GO TO 2299                                                        WNOSF337	GO TO 2299 || WNOSF337
+40	2147	OK	 2298 RV=VB(LL)*( 1.0+( ZCUR-ZBOTOM)/( ZBOTOM-ZBRSTZ))                  WNOSF338	2298 RV = VB(LL) * (1.0 + (ZCUR - ZBOTOM) / (ZBOTOM - ZBRSTZ)) || WNOSF 338
+41	2190	OK	      IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL)                          WNOSF339	IF( ABS(RV) .GT. ABS(VB(LL)) ) RV=VB(LL) || WNOSF339
+42	2233	OK	 2299 IF(FV-RV .GE.0.0)GO TO 253                                        WNDSF340	2299 IF(FV-RV .GE.0.0)GO TO 253 || WNDSF340
+43	2276	OK	C                                                                       WNDSF341	C || WNDSF341
+44	2317	OK	C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE        WNOSF342	C 251 COMPUTE THE TIMES REQUIRED FOR THE PARTICLE TO MOVE TO THE || WNOSF342
+45	2359	OK	C     BOTTOM OF THE HODOGRAPH STRATUM IN WHICH IT RESIDES,AND TO THE    WNDSF343	C     BOTTOM OF THE HODOGRAPH STRATUM IN WHICH IT RESIDES, AND TO THE || WNDSF343
+46	2404	OK	C     BASE OF THE CLOUC.  USE THE SMALLER OF THESE TIMES.               WNOSF344	C BASE OF THE CLOUC. USE THE SMALLER OF THESE TIMES. || WNOSF344
+47	2446	OK	C                                                                       WNOSF345	C || WNOSF345
+48	2489	OK	  251 IF((MM-1).GT.0) GO TO 252                                         WNDSF346	251 IF((MM-1).GT.0) GO TO 252 || WNDSF346
+49	2532	OK	      DELZEE= ZBRSTZ-ZCUR                                               WNOSF347	DELZEE = ZBRSTZ-ZCUR || WNOSF347
+50	2575	OK	      GO TO 1253                                                        WNDSF348	GO TO 1253 || WNDSF348
+51	2617	OK	  252 DELZEE= (ZV(MM) +ZV(PM-1))/ 2.0-ZCUR                              WNDSF349	252 DELZEE = (ZV(MM) + ZV(PM-1)) / 2.0 - ZCUR || WNDSF349
+52	2661	OK	      IF(OELZEE .LT. -0.C1)GO TO 1253                                   WNDSF350	IF(OELZEE .LT. -0. C1)GO TO 1253 || WNDSF350
+53	2705	OK	      MM=MM-1                                                           WNOSF351	MM = MM - 1 || WNOSF351
+54	2748	OK	      GO TO 251                                                         WNDSF352	GO TO 251 || WNDSF352
+55	2792	OK	 1253 DELTSP= DELZEE/(FV-RV)                                            HNDSF353	1253 DELTSP= DELZEE/(FV-RV) || HNDSF353
+56	2832	OK	  254 DELTEE=(ZBOTOM-ZCUR)/(FV-RV+V3(LL))                               WNOSF354	254 DELTEE = (ZBOTOM - ZCUR) / (FV - RV + V3(LL)) || WNOSF354
+57	2877	OK	      IF( DELTEE.LT. DELTEF) GO TO 255                                  WNDSF355	IF( DELTEE.LT. DELTEF) GO TO 255 || WNDSF355
+58	2921	OK	      DELTEE= DELTEP                                                    WNDSF356	DELTEE = DELTEP || WNDSF356
+59	2963	OK	  255 IF(DELTEE.GE.0.0) GC TO 278                                       HNDSF357	255 IF(DELTEE.GE.0.0) GC TO 278 || HNDSF357
+60	3005	OK	  256 IRROR=-256                                                        HNUSF358	256  IRROR=- 256 || HNUSF358
+61	3050	OK	      GO TO 7734                                                        WNOSF359	GO TO 7734 || WNOSF359
+62	3092	OK	C                                                                       HNOSF360	C || HNOSF360
+63	3138	COUNT 3/2	                                                                                	102
+64	3299	COUNT 51/22;COUNT 33/7	                                                                                	The following is a transcript of a computer program listing: || \text{اللغة: استرخن الجملة المطلقة.}

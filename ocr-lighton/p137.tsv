@@ -1,0 +1,58 @@
+1	4	COUNT 0/61;COUNT 17/6	                                                                                	 || \text{[Redacted]}
+2	704	COUNT 0/7	                                                                        TRANP181	 || TRANP181
+3	748	OK	      K8H01=0                                                           TRANP192	K8H01=0 || TRANP192
+4	789	COUNT 52/53	                                                                        TRANP193	CHANNEL WAFER CENTER POSITION ALCNG APPRPIATE CELL BCUNDARY || TRANP193
+5	834	COUNT 0/10	                                                                        TRANP184	 || TRANP184
+6	876	OK	      IF((ABS(XLO-XR).GT.SPE).AND.(ABS(XRO-XL).GT.SPE)) GO TO 616       TRANP185	IF ((ABS(XLO-XR).GT.SPE).AND.(ABS(XRO-XL).GT.SPE)) GO TO 616 || TRANP185
+7	919	OK	      UBAR=0.                                                           TRANP186	UBAR=0. || TRANP186
+8	960	OK	      CALL GETOA( VSUM,ZBH,KBHA,KGHB,NCAIO,LTIM,VBARC,KBHF,NDATF,LTIMF) TRANP137	CALL GETOA( VSUM,ZBH,KBHA,KGHB, NCAIO,LTIM,VBARC,KBHF,NDA TF,LTIMF) || TRANP137
+9	1005	OK	      IF(ABS(VBARC).LE.ABS(YBAF)) GO TO 407                             TRANP18.	IF(ABS(VBARC).LE.ABS(YBAF)) GO TO 407 || TRANP18.
+10	1048	COUNT 0/10	                                                                        TRANP189	 || TRANP189
+11	1092	OK	      NDATO=NOATC                                                       TRANP130	NDA TO = NOATC || TRANP130
+12	1135	OK	      GO TO 407                                                         TRANP191	GO TO 407 || TRANP191
+13	1175	OK	 616  IF((ABS(YLO-YU).GT.SPE).AND.(ABS(YUO-YL).GT.SPE))                 TRANP192	616  IF((ABS(YLO-YU).GT.SPE).AND.(ABS(YUO-YL).GT.SPE)) || TRANP192
+14	1219	OK	     1CALL ERROR(PROGRM,E1E,ISOUT)                                      TRANF193	1CALL ERROR(PROGRM,E1E,ISOUT) || TRANF193
+15	1263	COUNT 0/7	                                                                        TRANP194	 || TRANP194
+16	1302	COUNT 9/8	      CAL: GETOA( USUM,ZBH,KBHA,KBHB,NDATO,LTIM,UBARC,KBHF,NDATF,LTIMF)         	CAL: GETOA( USUM, ZBH, KBHA, KBHB, NDATO, LTIM, UBARC, KBHF, NDATF, LTIMF) || TRANP1.35
+17	1348	OK	      IF(ABS(UBARC).LE.ABS(UBAR)) GO TO 407                             TRANP196	IF(ABS(UBARC).LE.ABS(UBAR)) GO TO 407 || TRANP196
+18	1393	OK	      UBAR=UBARC                                                        TRANP197	UBAR=UBARC || TRANP197
+19	1435	COUNT 27/11;COUNT 9/8	                                                                                	NDAT \Omega = N.DAT \mathcal{C} || TRANP.138
+20	1477	OK	      GO TO 407                                                         TRANP139	GO TO 407 || TRANP139
+21	1519	COUNT 52/53	                                                                        TRANP2J0	COMMIT PREVIOUS & CURRENT MESH AND STRATUM INDICES TO STORAGE || TRANP2J0
+22	1563	OK	 626  NOTC1=N041.                                                       TRANP2:1	626 NOT C1 = N041 . || TRANP2:1
+23	1607	OK	      NDT01=NOATC                                                       TRANP2J2	NDT01=NOATC || TRANP2J2
+24	1650	OK	      KBHC1=KBHC                                                        TRANP213	KBHC1 = KBHC || TRANP213
+25	1693	OK	      K3H0i=KBH0                                                        TRANP2J4	K3H0i=KBH0 || TRANP2J4
+26	1734	OK	CCNVERT XO,YO,ZO,TO,SIGXO,SIGYC, AND NOATO TO CURRENT VALUES            TRANF2:5	CCNVERT XO,YO,ZO,TO,SIGXO,SIGYC, AND NOATO TO CURRENT VALUES || TRANF2:5
+27	1780	COUNT 9/8	 700  Z0=ZC                                                                     	700 Z0= ZC || TRANP2.16
+28	1823	OK	      XG-XC                                                             TRANP2:7	XG - XC || TRANP2:7
+29	1867	COUNT 0/5	                                                                        TRANP2:8	 || TRANP2:8
+30	1910	OK	      TU=TC                                                             TRANP2:9	TU = TC || TRANP2:9
+31	1952	OK	      NDATO=NOATC                                                       TRANP21C	NDATO=NOATC || TRANP21C
+32	1994	OK	      IF(MC:5).EQ.1) WRITE(ISOUT,2) TO,ZO,XO,YO,NDATO                   TRANP211	IF(MC:5).EQ.1) WRITE(ISOUT,2) TO,ZO,XO,YO,NDATO || TRANP211
+33	2038	COUNT 0/11	                                                                        TRANP212	 || TRANP212
+34	2080	OK	      SIGYO=SIGYC                                                       TRANP213	SIGYO=SIGYC || TRANP213
+35	2124	COUNT 0/5	                                                                        TRANP214	 || TRANP214
+36	2166	OK	CHECK IF CURRENT POSITION IS OUTSIDE ATMOSPHERE                         TRANP215	CHECK IF CURRENT POSITION IS OUTSIDE ATMOSPHERE || TRANP215
+37	2208	OK	 708  IF(NOATO,LE.0) GO TC 720                                          TRANP216	708 IF(NOATO,LE.0) GO TC 720 || TRANP216
+38	2248	COUNT 9/8	C     IF DEPOSITION PLANE IS REACHED OR TRANSPORT TIME LIMIT IS EXCEEDED        	C IF DEPOSITION PLANE IS REACHED OR TRANSPORT TIME LIMIT IS EXCEEDED || TR.ANP217
+39	2294	OK	C     EXIT FROM TRANP, OTHERWISE RETURN TO TOP                          TRANP218	C EXIT FROM TRANP, OTHERWISE RETURN TO TOP || TRANP218
+40	2327	COUNT 52/54	                                                                        TRANP219	IF ((ZO-ZMIN).LE.EPSZ).OR.(TIMEX-TO).LE.EPST)) GO TO 720 || TRANP219
+41	2379	OK	      GO TO 1800                                                        TRANP220	GO TO 1800 || TRANP220
+42	2423	OK	COMPUTE HORIZ. DISPERSION                                               TRANF221	COMPUTE HORIZ. DISPERSION || TRANF221
+43	2465	COUNT 14/13	                                                                        TRANP222	720 R2=R.WAF*+2 || TRANP222
+44	2509	OK	      TRIP=TO-TP                                                        TRANP223	TRIP=TO-TP || TRANP223
+45	2552	COUNT 0/17	                                                                        TRANP224	 || TRANP224
+46	2591	COUNT 0/50	                                                                        TRANF225	 || TRANF225
+47	2635	OK	      IF( SIGXO .GT.   VARL ) SIGXO =    VARL * ( 2.0 * DOWN * TRIP *   TRANP226	IF( SIGXO .GT. VARL ) SIGXO = VARL * ( 2.0 * DOWN * TRIP * || TRANP226
+48	2679	COUNT 45/46	                                                                        TRANP227	1 ( DSPRTX/ VAEL ) **QBRT + 3.0 * 1 R2/ VARL ) **QBRT - 2.0 ) || TRANP227
+49	2723	COUNT 0/17	                                                                        TRANF228	 || TRANF228
+50	2767	COUNT 0/17	                                                                        TRAN7224	 || TRAN7224
+51	2806	COUNT 0/51	                                                                        TRANP230	 || TRANP230
+52	2848	OK	      IF( SIGYO .GT.   VARL ) SIGYO =    VARL * ( 2.0 * CRCSS * TRIP *  TRANP231	IF( SIGYO .GT. VARL ) SIGYO = VARL * ( 2.0 * CRCSS * TRIP * || TRANP231
+53	2892	OK	     1  ( OSPRTY/  VARL )**GBRT + 3.U * ( K2/  VARL )**QBRT - 2.J )     TRANP232	1 ( OSPRTY/ VARL )**GBRT + 3.U * ( K2/ VARL )**QBRT - 2.J ) || TRANP232
+54	2939	COUNT 0/17	                                                                        TRANP233	 || TRANP233
+55	2982	OK	      RETURN                                                            TRANP234	RETURN || TRANP234
+56	3028	COUNT 9/8	      ENO                                                                       	ENO || TRANF2.35
+57	3109	OK	                                      134                                       	134
+58	3279	COUNT 152/54;COUNT 16/7	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \text{الدكتيرية}

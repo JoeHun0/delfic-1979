@@ -1,0 +1,45 @@
+1	4	32	NOISE	                                                                        			
+2	32	66	NOISE	                                                                        			
+3	783	815	VOTED	+0ECK,PAM1A                                                             		lighton=+0ECK,PAM1A ## dots=+0ECK,PAN1A ## glm=+0ECK,PAM1A	PAM1A1
+4	826	858	AGREE	      SUBROUTINE PAM1A(FISSID)                                          		lighton=      SUBROUTINE PAM1A(FISSID) ## dots=      SUBROUTINE PAM1A(FISSID) ## glm=      SUBROUTINE PAM1A(FISSID)	PAM1A2
+5	868	897	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A3
+6	910	944	COMMENT	C     H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979      		lighton=C     H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979 ## glm=C     H. G. NURMENT. ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979	PAM1A4
+7	955	984	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A5
+8	994	1026	NOISE	                                                                        			PAN1A6
+9	1041	1069	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A7
+10	1082	1114	COMMENT	C     PART 1 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE  		lighton=C     PART 1 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE ## glm=C     PART 1 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE	PAM1A8
+11	1124	1156	COMMENT	C     ACTIVITY MODULE                                                   		lighton=C     ACTIVITY MODULE ## glm=C     ACTIVITY MODULE	PAM1A9
+12	1169	1199	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A10
+13	1210	1244	COMMENT	C     MATCHES THE FISSION TYPE INDICATOR, FISSIO,  WITH THE STORED TABLE		lighton=C     MATCHES THE FISSION TYPE INDICATOR, FISSIO,  WITH THE STORED TABLE ## dots=C     MATCHES THE FISSION TYPE INDICATOR, FISSIO,  WITH THE STORED TABLE ## glm=C     MATCHES THE FISSION TYPE INDICATOR, F1SSID,  WITH THE STORED TABLE	PAM1A11
+14	1252	1284	COMMENT	C     OF TYPES AND  STORES  THE ACTIVITY K FACTOR (R-P**2)/(HR-KT)      		dots=C     OF TYPES AND  STORES  THE ACTIVITY K FACTOR (R-P**2)/(HR-KT) ## glm=C     OF TYPES AND  STORES  THE ACTIVITY K FACTOR (R-F**2)/(HR-KT)	FAM1A12
+15	1297	1329	COMMENT	C     IN SAYF.                                                          		dots=C     IN SAYF. ## glm=C     IN GAYF.	PAM1A13
+16	1341	1372	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A14
+17	1381	1412	NOISE	                                                                        			
+18	1426	1456	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A16
+19	1467	1502	AGREE	      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,		lighton=      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   , ## dots=      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   , ## glm=      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,	PAM1A17
+20	1511	1544	HANDFREE	     1JC        ,NXMAP     ,NYMAP     ,NZ        ,QCUT      ,SSAM      ,		dots=     ,JC        ,NXMAP     ,NYMAP     ,NZ        ,QCUT      ,SSAM      ,	PAM1A18
+21	1555	1589	HANDFREE	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,			PAM1A19
+22	1599	1633	VOTED	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                             		lighton=     3XMIN      ,YMAX      ,YHIN      ,ZMIN ## lighton2=     3XMIN      ,YMAX      ,YMIN      ,ZMIN ## glm2=     3XMIN      ,YMAX      ,YMIN      ,ZMIN	PAM1A20
+23	1641	1674	AGREE	      COMMON /UTILTY/  KOUT.NPRNT(15)                                   		glm=      COMMON /UTILTY/  KOUT.NPRNT(15) ## glm2=      COMMON /UTILTY/  KOUT.NPRNT(15)	PAM1A21
+24	1686	1720	VOTED	      INTEGER FISSIO,FISTP                                              		lighton=      INTEGER FISSIO,FISTP ## dots=      INTEGER FISSIO,FISTP ## glm=      INTEGER FISSI0,FISTP	PAM1A22
+25	1728	1760	AGREE	      LOGICAL MPRNT                                                     		lighton=      LOGICAL MPRNT ## glm=      LOGICAL MPRNT	PAM1A23
+26	1769	1802	AGREE	      DIMENSION FISTP( 7), FK( 7)                                       		lighton=      DIMENSION FISTP( 7), FK( 7) ## dots=      DIMENSION FISTP( 7), FK( 7) ## glm=      DIMENSION FISTP( 7), FK( 7)	PAM1A24
+27	1813	1845	VOTED	      DATA PROGRM / 6HPAMAB1 /                                          		lighton=      DATA PRUGRM / 6HPAMAB1 / ## lighton2=      DATA PRUGRM / 6HPAMAB1 / ## dots=      DATA PROGRM / 6HPAMAB1 ; ## dots2=      DATA PROGRM / 6HPAMA81 ; ## glm2=      DATA PROGRM / 6HPAMAB1 /	PAM1A25
+28	1857	1888	VOTED	      DATA  FISTP                                                       		lighton=      DATA  FISTP ## dots=      DATA  FIRST ## glm=      DATA  FISTP	PAM1A26
+29	1898	1932	AGREE	     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE /		lighton=     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE / ## dots=     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE / ## glm=     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE /	PAM1A27
+30	1943	1973	AGREE	      DATA    FK                                                        		lighton=      DATA    FK ## glm=      DATA    FK	PAM1A28
+31	1983	2019	VOTED	     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /		lighton=     1/ 6.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 / ## lighton2=     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 / ## dots=     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 / ## dots2=     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /	PAM1A29
+32	2028	2056	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A30
+33	2069	2102	HAND	 1100 FORMAT(///10X, 45HFISSID DOES NOT MATCH WITH ANY AVAILABLE TYPE)  			PAM1A31
+34	2115	2144	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1A32
+35	2157	2188	VOTED	      00 190 I=1.7                                                      		lighton=      00 190 I=1,7 ## dots=      00 100 I=1.7 ## glm=      00 190 I=1.7	PAMIA33
+36	2201	2231	VOTED	      IF(FISSIO .EQ. FISTP(I)) GO TO 200                                		lighton=      IF(FISSIO .EQ. FISTP(I)) GO TO 20) ## lighton2=      IF(FISSIO .EQ. FISTP(I)) GO TO 200 ## glm=      IF(FISSIO .EQ. FISTP(I)) GO TO 200 ## glm2=      IF(FISSIO .EQ. FISTP(I)) GO TO 200	PAMIA34
+37	2242	2273	HANDFREE	  100 CONTINUE                                                          	5	lighton=  107 CONTINUE ## lighton2=  100 CONTINUE ## dots=  103 CONTINUE ## dots2=  103 CONTINUE ## glm=  100 CONTINUE ## glm2=  100 CONTINUE	FAM1A35
+38	2284	2316	AGREE	      WRITE( KOUT ,1100 )                                               		lighton=      WRITE( KOUT ,1100 ) ## dots=      WRITE( KOUT ,1100 ) ## glm=      WRITE( KOUT ,1100 )	PAM1A36
+39	2326	2359	VOTED	      CALL ERROR( PROGRM, -100, KOUT)                                   		lighton=      CALL ERROR( PROGRM, -10G, KOUT) ## dots=      CALL ERROR( PROGRM, -100, KOUT) ## glm=      CALL ERROR( PROGRM, -100, KOUT)	PAM1A37
+40	2371	2402	AGREE	  200 CAYF = FK(I)                                                      		lighton=  200 CAYF = FK(I) ## dots=  200 CAYF = FK(I) ## glm=  200 CAYF = FK(I)	PAM1A30
+41	2412	2442	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	PAM1A39
+42	2456	2485	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	PAM1A48
+43	3122	3152	NOISE	                                                                        		lighton=                                         161 ## dots=                                         161 ## glm=                                         161	
+44	3310	3337	NOISE	                                                                        			
+45	3337	3366	NOISE	                                                                        			

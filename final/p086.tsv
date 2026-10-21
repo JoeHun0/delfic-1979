@@ -1,0 +1,61 @@
+1	0	19	NOISE	                                                                        			
+2	55	69	NOISE	                                                                        			
+3	532	563	HAND	*DECK,DCSN                                                              	1,2,3,8,10	lighton2=•3FCK,UN3n ## glm2=-DECK,UC34	DC5N1
+4	576	606	AGREE	      SUBROUTINE DCSN                                                   		lighton=      SUBROUTINE DCSN ## dots=      SUBROUTINE DCSN ## glm=      SUBROUTINE DCSN	OUSN2
+5	618	649	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OCSN3
+6	661	695	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	DC5N4
+7	705	735	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN5
+8	746	774	NOISE	                                                                        			DCSN6
+9	790	820	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN7
+10	833	863	COMMENT	C     DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO           		lighton=C     DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO ## dots=C     DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO ## glm=C     DCSN DETERMINES AT THE END OF EACH TIME STEP WHETHER TO	DCSN8
+11	875	906	COMMENT	C     CONTINUE THE CRM COMPUTATION                                      		glm=C     CONTINUE THE CRM COMPUTATION	DCSN9
+12	920	949	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN10
+13	963	992	NOISE	                                                                        			DCSN11
+14	1005	1035	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN12
+15	1047	1080	VOTED	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    ,		lighton=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    , ## dots=      COMMON /CLOUD/ CHANGE,CHLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    , ## glm=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    ,	DCSN13
+16	1091	1123	VOTED	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,		lighton=     1 DS    ,OST   ,DST0  ,DST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     , ## dots=     1 OS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,OU    ,DWT    ,OX     , ## glm=     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,	OCSN14
+17	1133	1166	HAND	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,	8	lighton=     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## lighton2=     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## dots=     2 OZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## dots2=     2 OZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,	DCSN15
+18	1177	1209	AGREE	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,		lighton=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,	DCSN16
+19	1221	1254	AGREE	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,		lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	UCSN17
+20	1262	1294	VOTED	     5 X     ,XE    ,Z     ,ZBFR  ,ZLNT  ,SPARE                         		lighton=     5 X     ,XF    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## dots=     5 X     ,XE    ,Z     ,ZBFR  ,ZLNT  ,SPARE ## glm=     5 X     ,XE    ,Z     ,ZBFR  ,ZLNT  ,SPARE	DCSN18
+21	1305	1338	VOTED	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  		lighton=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIA,ISOUT,JPARN,KDI ## dots=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI ## glm=      COMMON /CONTRL/ DETID(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI	DCSN19
+22	1348	1380	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN20
+23	1391	1422	VOTED	  06E FORMAT(14H0SWITCH TC DRY)                                         		lighton=  06E FORMAT(14H0SWITCH TC DRY) ## dots=  06E FORMAT(14H0SWITCH TC DRY) ## glm=  066 FORMAT(14H0SWITCH TC ORY)	DCSN21
+24	1434	1464	VOTED	  C77  FORMAT(14H0SWITCH TO WET)                                        		lighton=  077  FORMAT(14H0SWITCH TO WET) ## dots=  C77  FORMAT(14H0SWITCH TO WET) ## glm=  C77  FOR4AT(14H0SWITCH TO WET)	DCSN22
+25	1477	1510	AGREE	  088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT I		lighton=  088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT I ## dots=  088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT I ## glm=  088 FORMAT(1H1, 9X, 46HCLOUD RISE IS TERMINATED IN DCSN AT STATEMENT I	DCSN23
+26	1519	1552	AGREE	     14, 8H BY THE A6, 7H SWITCH///)                                    		lighton=     14, 8H BY THE A6, 7H SWITCH///) ## lighton2=     14, 8H BY THE A6, 7H SWITCH///)	DCSN24
+27	1563	1593	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN25
+28	1593	1639	HANDFREE	      DATA WORD1,      WORD3,WORD4 /6H TEMP ,         6H ZLMT ,6HR.LT.1/	33	dots=      DATA WORD1,      WORC3,W(RD4 /6H TEMP ,         6H ZLMT ,6HR.LT.1/ ## glm=      DATA WORD1,      WORC3,W(RO4 /6H TEMP ,         6H ZLMT ,6HR.LT.1/	DCSN26
+29	1649	1677	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN27
+30	1691	1722	NOISE	                                                                        			DCSN28
+31	1735	1766	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN29
+32	1777	1810	AGREE	      GO TO (151,154,1531),N                                            		lighton=      GO TO (151,154,1531),N ## dots=      GO TO (151,154,1531),N ## glm=      GO TO (151,154,1531),N	DCSN30
+33	1820	1850	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN31
+34	1863	1893	COMMENT	C      SHOULD WE SWITCH TC WET MODE---                                  		lighton=C      SHOULD WE SWITCH TC WET MODE--- ## glm=C      SHOULD WE SWITCH TC WET MODE---	DCSN32
+35	1905	1935	COMMENT	C             YES-- TO 041                                              		glm=C             YES-- TO 041	DCSN33
+36	1950	1979	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OCSN34
+37	1992	2025	AGREE	 1531 IF(ES-PW)041,041,008                                              		lighton= 1531 IF(ES-PW)041,041,008 ## dots= 1531 IF(ES-PW)041,041,008 ## glm= 1531 IF(ES-PW)041,041,008	DCSN35
+38	2034	2065	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN36
+39	2078	2109	AGREE	  041  N=2                                                              		lighton=  041  N=2 ## dots=  041  N=2 ## glm=  041  N=2	DCSN37
+40	2120	2154	AGREE	      IF(IC(5))151,151,1041                                             		lighton=      IF(IC(5))151,151,1041 ## dots=      IF(IC(5))151,151,1041 ## glm=      IF(IC(5))151,151,1041	DCSN38
+41	2162	2195	AGREE	 1041 WRITE(ISOUT,77)                                                   		lighton= 1041 WRITE(ISOUT,77) ## dots= 1041 WRITE(ISOUT,77) ## glm= 1041 WRITE(ISOUT,77)	DCSN39
+42	2206	2235	AGREE	       GO TO 151                                                        		lighton=       GO TO 151 ## dots=       GO TO 151 ## glm=       GO TO 151	DCSN40
+43	2250	2280	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN41
+44	2292	2322	COMMENT	C 154 SHOULD WE SWITCH TO CRY MODE-                                     		lighton=C 154 SHOULD WE SWITCH TO CRY MODE- ## dots=C 154 SHOULD WE SWITCH TO CRY MODE- ## glm=C 154 SHOULD WE SWITCH TO CRY MODE-	DCSN42
+45	2335	2365	COMMENT	C       NO TO 151                                                       		lighton=C       NO TO 151 ## glm=C       NO TO 151	DCSN43
+46	2379	2409	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN44
+47	2419	2452	VOTED	  154 IF(WT + 1.0E-8)153,153,151                                        		lighton=  154 IF(WT + 1.0E-8)153,153,151 ## dots=  154 IF(WT + 1.0E-0)153,153,151 ## glm=  154 IF(WT + 1.0E-8)153,153,151	DCSN45
+48	2463	2494	AGREE	  153 N=1                                                               		lighton=  153 N=1 ## dots=  153 N=1 ## glm=  153 N=1	DCSN46
+49	2505	2536	AGREE	      WT=0.                                                             		dots=      WT=0. ## glm=      WT=0.	DCSN47
+50	2547	2579	AGREE	      DWT=0.                                                            		lighton=      DWT=0. ## dots=      DWT=0. ## glm=      DWT=0.	DCSN48
+51	2591	2623	AGREE	      IF(IC(5))151,151,152                                              		lighton=      IF(IC(5))151,151,152 ## dots=      IF(IC(5))151,151,152 ## glm=      IF(IC(5))151,151,152	DCSN49
+52	2634	2667	AGREE	  152 WRITE(ISOUT,66)                                                   		lighton=  152 WRITE(ISOUT,66) ## dots=  152 WRITE(ISOUT,66) ## glm=  152 WRITE(ISOUT,66)	DCSN50
+53	2676	2709	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CCSN51
+54	2718	2751	COMMENT	C     TEST FOR TIME STEP CHANGE                                         		lighton=C     TEST FOR TIME STEP CHANGE ## glm=C     TEST FOR TIME STEP CHANGE	DCSN52
+55	2762	2795	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN53
+56	2805	2838	AGREE	  151 IF (SMALLT - CHANGE) 014, 015, 015                                		lighton=  151 IF (SMALLT - CHANGE) 014, 015, 015 ## dots=  151 IF (SMALLT - CHANGE) 014, 015, 015 ## glm=  151 IF (SMALLT - CHANGE) 014, 015, 015	DCSN54
+57	2849	2882	HAND	  015  DST=DST2                                                         	12	lighton=  C15  DST=OST2 ## lighton2=  c15  DST=DST2 ## dots=  C15  DST=0ST2 ## dots2=  C15  DST=0ST2 ## glm=  C15  DST=DST2 ## glm2=  C15  DST=DST2	DCSN55
+58	2892	2926	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN56
+59	2934	2967	COMMENT	C     TEST FOR ANOMALOUS CLOUD RISE AND SET UP TERMINATION CONDITION IF 		lighton=C     TEST FOR ANOMALOUS CLOUD RISE AND SET UP TERMINATION CONDITION IF ## glm=C     TEST FOR ANOMALOUS CLOUD RISE AND SET UP TERMINATION CONDITION IF	DCSN57
+60	2980	3012	COMMENT	C     ANOMALY IS FOUND                                                  		lighton=C     ANIMALY IS FLUND ## dots=C     ANOMALY IS FOUND ## glm=C     ANOMALY IS FOUND	DCSN58
+61	3024	3055	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	003N59

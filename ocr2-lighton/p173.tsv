@@ -1,0 +1,4 @@
+4	648	OK	     1    (H03    ,SLOTMP ,TMSD   ,TH ,EMITN, FISSID )                          	1 (H03 ,SLOTMP ,TMSD ,TH ,EMITN, FISSID )
+59	3014	OK	      COMMON /CONDAT/       IC(2:)    .IMOS      .IPNCH     .IPAM      .        	COMMON /CONDAT/ IC(2:) .IMOS .IPNCH .IPAM .
+60	3057	COUNT 34/35	                                                                                	1KRO    .ISOUT    ,JPOUT    ,KPUT    ,KTAPE    ,LTAPE    .
+61	3091	OK	     2MARRAY    ,MBTAPE    ,MXKEQ     ,SIGMA     ,INTF                          	2MARRAY    ,MBTAPE    ,MXKEQ    ,SIGMA    ,INTF

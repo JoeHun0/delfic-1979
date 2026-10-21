@@ -1,0 +1,12 @@
+253	p094	32	NONE	51	4	raw: 54 \ \mathrm{DPX}(1, \mathrm{KD}) = ( \mathrm{CX}(100, 7) - \mathrm{CX}(100, 6) ) / ( \mathrm{CX}(100, 4) - \mathrm{CX}(100, 3) )
+254	p094	34	TIE	15	4	   56 DPX(2,KU)=0.0
+255	p094	38	TIE	26	4	   58 OPX(2,KD)=CX(KD,6)/DENOH
+256	p095	2	SINGLE	4	2	            -   -             -
+257	p095	5	TIE	42	7	      SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.
+258	p095	17	TIE	14	7	      DO 258 HB=1,KDPS
+259	p095	23	SINGLE	21	7	      MBT=2*((MB+1)/2)-MB+1
+260	p095	28	TIE	21	7	      OPST(3,MBT)=CX(MCX,5)
+261	p095	32	TIE	25	3	  202 DPST(4,MBT)=DIAM(MA+1)
+262	p095	36	SINGLE	44	7	      OPST(2 ,MBT)=CX(1,3)+(CX(1,4)-CX(1,3))/KDI*BM
+263	p095	48	TIE	25	7	      ZVSB=DPST( 2,MBT)-CX(MC,2)
+264	p095	59	TIE	29	7	      DPST（ 2，MBT）=ZLST+（UF-CN）*EXTH

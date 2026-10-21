@@ -1,0 +1,45 @@
+1	4	COUNT 152/44;COUNT 184/8	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \text{مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّدٌ مُحَمَّ
+2	32	COUNT 0/14;COUNT 10/1	                                                                                	 || \text{---}
+3	783	COUNT 7/6	+0ECK,PAM1A                                                                     	+0 ECK, PAM1A || PAM1A 1.
+4	826	OK	      SUBROUTINE PAM1A(FISSID)                                          PAM1A  2	SUBROUTINE PAM1A(FISSID) || PAM1A 2
+5	868	COUNT 7/6	C                                                                               	C || PAM10. 3
+6	910	OK	C     H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979      PAM1A  4	C H. G. NURMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979 || PAM1A 4
+7	955	COUNT 7/6	C                                                                               	C || PAM1.A 5
+8	994	COUNT 100/71	                                                                        PANIA  6	C  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  |  | || PANIA 6
+9	1041	OK	C                                                                       PAM1A  7	C || PAM1A 7
+10	1082	OK	C     PART 1 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE  PAM1A  8	C PART 1 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE || PAM1A 8
+11	1124	OK	C     ACTIVITY MODULE                                                   PAM1A  9	C ACTIVITY MODULE || PAM1A 9
+12	1169	OK	C                                                                       PAM1A 10	C || PAM1A 10
+13	1210	COUNT 58/57	                                                                        PAM10 11	C MATCHES THE FISSION TYPE INDICATOR, FISSIO, WITH THE STORED TABLE. || PAM10 11
+14	1252	COUNT 61/51	                                                                        FAM1A 12	C OF TYPES AND STORES THE ACTIVITY K FACTOR (R-\uparrow^{**2})/(HR-KT) || FAM1A 12
+15	1297	COUNT 14/8	                                                                        FAMIA 13	\hat{C} IN SAYF. || FAMIA 13
+16	1341	OK	C                                                                       PAM1A 14	C || PAM1A 14
+17	1381	COUNT 11/71;COUNT 8/7	                                                                                	\mathcal{C} || PAM1A. 15
+18	1426	OK	C                                                                       PAM1A 16	C || PAM1A 16
+19	1467	OK	      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,PAM1A 17	COMMON /MAPDAT/ CAYF .CUTMAP ,DGX ,DGY ,IH ,IV , || PAM1A 17
+20	1511	COUNT 119/29	                                                                        PAM1A 18	\mathcal{J}JC \quad , \mathcal{NXMAP} \quad , \mathcal{NYMAP} \quad , \mathcal{NZ} \quad , \mathcal{QCUT} \quad , \mathcal{SSAM} \quad , || PAM1A 18
+21	1555	COUNT 61/24	                                                                        PAM1A 19	\dot{E}TGZ \quad ,XG7. \quad ,X1 \quad ,X2 \quad ,YGZ \quad ,XMAX \quad , || PAM1A 19
+22	1599	OK	     3XMIN      ,YMAX      ,YHIN      ,ZMIN                             PAM1A 20	3XMIN    ,YMAX    ,YHIN    ,ZMIN || PAM1A 20
+23	1641	COUNT 29/28	                                                                        PAM1A 21	COMMON /UTILITY/ KOUT,NPRNT(15) || PAM1A 21
+24	1686	OK	      INTEGER FISSIO,FISTP                                              PAM1A 22	INTEGER FISSIO,FISTP || PAM1A 22
+25	1728	OK	      LOGICAL MPRNT                                                     PAM1A 23	LOGICAL MPRNT || PAM1A 23
+26	1769	OK	      DIMENSION FISTP( 7), FK( 7)                                       PAM1A 24	DIMENSION FISTP( 7 ), FK( 7 ) || PAM1A 24
+27	1813	OK	      DATA PRUGRM / 6HPAMAB1 /                                          PAM1A 25	DATA PRUGRM / 6HPAMAB1 / || PAM1A 25
+28	1857	OK	      DATA  FISTP                                                       PAMIA 26	DATA FISTP || PAMIA 26
+29	1898	OK	     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE /PAM1A 27	1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE / || PAM1A 27
+30	1943	OK	      DATA    FK                                                        PAM1A 28	DATA FK || PAM1A 28
+31	1983	OK	     1/ 6.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /PAM14 29	1/ 6.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 / || PAM14 29
+32	2028	OK	C                                                                       PAMIA 30	C || PAMIA 30
+33	2069	COUNT 59/60	                                                                        PAMIA 31	1100 FORMAT(//10X, 45HFISSID DOES NOT MATCH WITH ANY AVAILABLE TYPE) || PAMIA 31
+34	2115	OK	C                                                                       PAM1A 32	C || PAM1A 32
+35	2157	OK	      00 190 I=1,7                                                      PAMIA 33	00 190 I=1,7 || PAMIA 33
+36	2201	COUNT 14/7	      IF(FISSIO .EQ. FISTP(I)) GO TO 20)                                        	IF (FISSIO .EQ. FISTP(I)) GO TO 20) || \text{मामित 34}
+37	2242	OK	  107 CONTINUE                                                          FAM1A 35	107 CONTINUE || FAM1A 35
+38	2284	OK	      WRITE( KOUT ,1100 )                                               PAM1A 36	WRITE( KOUT ,1100 ) || PAM1A 36
+39	2326	OK	      CALL ERROR( PROGRM, -10G, KOUT)                                   PAM14 37	CALL ERROR( PROGRM, -10G, KOUT) || PAM14 37
+40	2371	COUNT 6/7	  200 CAYF = FK(I)                                                              	200 CAYF = FK(I) || PĂMĂ 30
+41	2412	OK	      RETURN                                                            PAM1A 39	RETURN || PAM1A 39
+42	2456	OK	      END                                                               PAM1A 48	END || PAM1A 48
+43	3122	OK	                                         161                                    	161
+44	3310	COUNT 0/7	                                                                                	
+45	3337	COUNT 0/6	                                                                                	

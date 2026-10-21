@@ -1,0 +1,4 @@
+4	522	OK	      V8L(J)=V8L(J)+1.7071068*F*(DV9L(J)-RKG(J))                                	V8L (J) = V8L (J) + 1. 7071068 * F * (DV9L (J) - RKG (J))
+16	1035	OK	      Z=V8L（6）                                                                  	Z=V8L（6）
+20	1198	COUNT 59/58	                                                                                	V=287. *T* *RM* (1. +X)/PQR/（1. +X+S+WT）*（1.0+X*29./18.）/(1.0+X)
+38	2279	COUNT 25/33	                                                                                	202 ED EK EPS ES HLF. KS KSV MWYA

@@ -1,0 +1,40 @@
+1	1	44	NOISE	                                                                        			
+2	772	809	COMMENT	-DECK,TRPL                                                              		lighton=-DECK,TRPL ## dots=*DECK,TRPL	TRPL1
+3	817	850	AGREE	      SUBROUTINE TRPL (                                                 		lighton=      SUBROUTINE TRPL ( ## dots=      SUBROUTINE TRPL ( ## glm=      SUBROUTINE TRPL (	TRFL2
+4	858	894	VOTED	     1  ARG, NPR, PARA, PARB, VRB)                                      		lighton=     1  ARG, NPR, PARA, PARB, VRB) ## dots=     1  ARG, NPR, PARA, PARB, VRB) ## glm=     1  ARG， NPR， PARA， PARB， VRB)	TRPL3
+5	902	936	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRPL4
+6	946	980	NOISE	                                                                        			TRPL5
+7	980	1020	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRPL6
+8	1028	1064	COMMENT	C     TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN   		lighton=C     TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN ## dots=C     TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN ## glm=C     TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN	TRPL7
+9	1072	1107	COMMENT	C     THE ONE-DIMENSIONAL ARRAY PARA AND COMPUTES FOR THE CORRESPONDING 		lighton=C     THE ONE-DIMENSIONAL ARRAY PARA AND COMPUTES FOR THE CORRESPONDING ## dots=C     THE ONE-DIMENSIONAL ARRAY PARA AND COMPUTES FOR THE CORRESPONDING ## glm=C     THE ONE-DIMENSIONAL ARRAY PARA AND COMPUTES FOR THE CORRESPONDING	TRPL8
+10	1107	1150	COMMENT	C     POSITION IN THE ONE-DIMENSIONAL ARRAY PARB, VKB. NPK IS THE       		lighton=C     POSITION IN THE ONE-DIMENSIONAL ARRAY PARB, VKB. NPK IS THE ## glm=C     POSITION IN THE ONE-DIMENSIONAL ARRAY PARB, VRB. NPK IS THE	TRPL9
+11	1158	1193	COMMENT	C     DIMENSION OF PARA AND PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE).		lighton=C     DIMENSION OF PARA ANC PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE). ## dots=C     DIMENSION OF PARA AND PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE). ## glm=C     DIMENSION OF PARA AND PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE).	TRPL10
+12	1201	1238	COMMENT	C     IF ARG IS OUTSIDE THE TABULATED VALUES OF PARA, VRB IS SELECTED   		lighton=C     IF ARG IS OUTSIDE THE TABULATED VALUES OF PARA, VRB IS SELECTED ## glm=C     IF ARG IS OUTSIDE THE TABULATED VALUES OF PARA, VR8 IS SELECTED	TRPL11
+13	1238	1278	COMMENT	C     FROM THE CORRESPONDING END OF PARB.                               		lighton=C     FROM THE CORRESPONDING END OF PARB. ## glm=C     FROM THE CORRESPONCING END OF PAR8.	TRPL12
+14	1286	1322	COMMENT	C     PARA IS ORDERED FROM LEAST (PARA (1)) TO GREATEST (PARA (NPR))    		lighton=C     PARA IS ORDERED FROM LEAST (PARA (1)) TO GREATEST (PARA (NPR)) ## dots=C     PARA IS ORDERED FROM LEAST (PARA (1)) TO GREATEST (PARA (NPR))	TRPL13
+15	1331	1365	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRPL14
+16	1373	1408	NOISE	                                                                        			TRPL15
+17	1418	1452	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRPL16
+18	1460	1495	AGREE	      DIMENSION                                                         		lighton=      DIMENSION ## dots=      DIMENSION ## glm=      DIMENSION	TRPL17
+19	1495	1539	AGREE	     1  PARA ( NPR), PARB (NPR)                                         		lighton=     1  PARA ( NPR), PARB (NPR) ## dots=     1  PARA ( NPR), PARB (NPR) ## glm=     1  PARA ( NPR), PARB (NPR)	TRPL18
+20	1539	1580	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRPL19
+21	1588	1624	NOISE	                                                                        			TRPL20
+22	1624	1666	NOISE	                                                                        			TRPL21
+23	1666	1710	COMMENT	C\sim                                                                   			TRPL22
+24	1710	1753	VOTED	  G20 IF (ARG - PARA (1)) 022, 022, 040                                 		lighton=  G20 IF (ARG - PARA (1)) 022, 022, 040 ## lighton2=  G20 IF (ARG - PARA (1)) 022, 022, 040 ## dots=  G20 IF (ARG - PARA (1)) 022, 022, 040 ## dots2=  G20 IF (ARG - PARA (1)) 022, 022, 040            . ## glm=  020 IF (ARG - PARA (1)) 022, 022, 040	TRPL23
+25	1753	1794	VOTED	  C22 MB = 1                                                            		lighton=  C22 MA = 1 ## dots=  C22 MB = 1 ## glm=  C22 MB = 1	TRPL24
+26	1794	1838	SINGLE	  024 VRB = PARB (MB)                                                   		dots=  024 VRB = PARB (MB)	TRPL25
+27	1838	1880	VOTED	  L26 RETURN                                                            		lighton=  L26 RETURN ## dots=  126 RETURN ## glm=  L26 RETURN	TRPL26
+28	1880	1925	AGREE	  640 00 054 MA =2, NPR.                                                		dots=  640 00 054 MA =2, NPR. ## glm=  640 00 054 MA =2, NPR.	TRPL7
+29	1925	1967	NONE	                                                                        			TRPL28
+30	1967	2010	AGREE	  C44 MB = N1                                                           		lighton2=  C44 MB = N1 ## glm=  C44 MB = N1	TRPL29
+31	2010	2051	AGREE	      GO TO 024                                                         		lighton=      GO TO 024 ## dots=      GO TO 024 ## glm=      GO TO 024	TRPL30
+32	2059	2095	TIE	  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /       	9	lighton=  048 VRB = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) / ## lighton2=  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) / ## dots=  048 VRS = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) / ## dots2=  048 VRO = (ARG - PARA (NA - 1)) * (PARB (NA) - PARB (NA - 1)) / ## glm=  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) / ## glm2=  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /	TRPL31
+33	2095	2138	AGREE	     1  (PARA (MA) - PARA (MA - 1)) + PARB (MA - 1)                     		lighton=     1  (PARA (MA) - PARA (MA - 1)) + PARB (MA - 1) ## glm=     1  (PARA (MA) - PARA (MA - 1)) + PARB (MA - 1)	TRPL32
+34	2138	2180	AGREE	      GO TO 026                                                         		lighton=      GO TO 026 ## dots=      GO TO 026 ## glm=      GO TO 026	
+35	2188	2224	AGREE	  L54 CONTINUE                                                          		lighton=  L54 CONTINUE ## dots=  L54 CONTINUE ## glm=  L54 CONTINUE	TRPL34
+36	2224	2266	AGREE	      MB = NPR                                                          		lighton2=      MB = NPR ## glm=      MB = NPR	TRPL35
+37	2266	2309	AGREE	      GO TO 024                                                         		dots=      GO TO 024 ## glm=      GO TO 024	TRPL36
+38	2309	2351	AGREE	      END                                                               		dots=      END ## glm=      END	TRPL37
+39	3126	3155	NOISE	                                                                        		lighton=                                       52 ## dots=                                       52 ## glm=                                       52	
+40	3290	3331	NOISE	                                                                        			

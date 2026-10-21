@@ -1,0 +1,58 @@
+1	25	COUNT 0/15	                                                                                	
+2	437	OK	      IF(OMAP(NXMAP*(I-1)+J-1) .LE. CNT) IF(CHAP(NXMAF*(I-1)+J) - CNT)  CONTO 33	IF(OMAP(NXMAP*(I-1)+J-1) .LE. CNT) IF(CHAP(NXMAF*(I-1)+J) - CNT) || CONTO 33
+3	481	OK	     1  400,200,200                                                     CONTO 34	1 400,200,200 || CONTO 34
+4	523	OK	      IF(OMAP(NXMAP*(I-1)+J) .GT. CNT) GO TO 400                        CONTO 35	IF (OMAP(NXMAP*(I-1)+J) .GT. CNT) GO TO 400 || CONTO 35
+5	567	OK	  200 K = K + 1                                                         CONTO 36	200 K = K + 1 || CONTO 36
+6	610	OK	      IF( K .GT. 300) CALL ERROR(PROGRM, -200, ISOUT)                   CONTO 37	IF( K .GT. 300) CALL ERROR(PROGRM, -200, ISOUT) || CONTO 37
+7	653	COUNT 0/15	                                                                        CONTO 38	 || CONTO 38
+8	696	OK	      X(K) = XMIN + (J-1)*DGX + (CNT - ONAP(NXMAP*(I-1)+J-1))*DGX/      CONTO 39	X(K) = XMIN + (J-1) * DGX + (CNT - ONAP(NXMAP * (I-1) + J-1)) * DGX / || CONTO 39
+9	740	OK	     1 (OMAP(NXMAP*(I-1)+J) - OMAP(NXMAP*(I-1)+J-1))                    CONTO 40	1 (OMAP(NXMAP*(I-1)+J) - OMAP(NXMAP*(I-1)+J-1)) || CONTO 40
+10	781	OK	  400 CONTINUE                                                          CONTO 41	400 CONTINUE || CONTO 41
+11	824	OK	COMPUTE CONTOUR INTERSECTIONS ALONG MAP COLUMNS                         CONTO 42	COMPUTE CONTOUR INTERSECTIONS ALONG MAP COLUMNS || CONTO 42
+12	868	OK	      DO 900 J=1,NXNAP                                                  CONTO 43	DO 900 J=1,NXNAP || CONTO 43
+13	910	OK	      00 900 I=2,NYMAP                                                  CONTO 44	00 900 I=2,NYMAP || CONTO 44
+14	954	OK	      IF(OMAP(NXMAP*(I-2)+J) .LE. CNT) IF(OMAP(NXMAP*(I-1)+J) - CNT)    CONTO 45	IF(OMAP(NXMAP*(I-2)+J) .LE. CNT) IF(OMAP(NXMAP*(I-1)+J) - CNT) || CONTO 45
+15	998	OK	     1  900.700.700                                                     CONTO 46	1 900.700.700 || CONTO 46
+16	1040	OK	      IF(OMAP(NXMAP*(I-1)+J) .GT. CNT) GO TO 900                        CONTO 47	IF (OMAP(NXMAP*(I-1)+J) .GT. CNT) GO TO 900 || CONTO 47
+17	1085	OK	  700 k = k + 1                                                         CONTO 48	700 k = k + 1 || CONTO 48
+18	1128	OK	      IF( K .GT. 300) CALL ERROR(PROGRM, -700, ISOUT)                   CONTO 49	IF ( K .GT. 300) CALL ERROR(PROGRM, -700, ISOUT) || CONTO 49
+19	1170	COUNT 23/15	                                                                        CONTO 50	X(K) = XMIN + J^2 \text{OGX} || CONTO 50
+20	1214	OK	      Y(K) = YMIN + (I-1)*OGY + (CNT - OMAP(NXMAP*(I-2)+J))*OGY/        CONTO 51	Y(K) = YMIN + (I-1)*OGY + (CNT - OMAP(NXMAP*(I-2)+J))*OGY/ || CONTO 51
+21	1258	COUNT 44/42	                                                                        CONTO 52	1 (OMAP(NXHAP\* (I-1)+J) - OMAP(NXHAP\* (I-2)+J)) || CONTO 52
+22	1299	OK	  900 CONTINUE                                                          CONTO 53	900 CONTINUE || CONTO 53
+23	1344	OK	      00 950 I=1,K                                                      CONTO 54	00 950 I=1,K || CONTO 54
+24	1386	OK	  950 WRITE(ISOUT,1000) X(I),Y(I), CNT                                  CONTO 55	950 WRITE (ISOUT,1000) X(I),Y(I), CNT || CONTO 55
+25	1429	OK	 1600 FORMAT( 3F10.0)                                                   CONTO 56	1600 FORMAT ( 3F10.0 ) || CONTO 56
+26	1471	OK	      CALL SRTCNT( X, Y, CNT, K, CRDL9L)                                CONTO 57	CALL SRTCNT( X, Y, CNT, K, CRDL9L) || CONTO 57
+27	1515	OK	  990 CONTINUE                                                          CONTO 58	990 CONTINUE || CONTO 58
+28	1558	OK	  999 RETURN                                                            CONTO 59	999 RETURN || CONTO 59
+29	1601	OK	      ENO                                                               CONTO 60	ENO || CONTO 60
+30	1943	COUNT 0/5	*DECK,GOGO                                                                      	* DECK, GOGO || 
+31	1987	COUNT 0/5	      SUBROUTINE GOGO(OMAP,NMAP)                                                	SUBROUTINE GOGO(OMAP, NMAP) || 
+32	2033	COUNT 0/5	C                                                                               	C || 
+33	2073	COUNT 1/23;COUNT 0/5	                                                                                	C || 
+34	2119	COUNT 0/5	C                                                                               	C || 
+35	2159	COUNT 0/71;COUNT 0/5	                                                                                	 || 
+36	2203	COUNT 0/5	C                                                                               	C || 
+37	2245	COUNT 54/53;COUNT 0/5	                                                                                	C THIS SUBROUTINE, WHICH IS CALLED BY CPM'2, CONTROLS READ-IN OF || 
+38	2289	COUNT 49/50;COUNT 0/5	                                                                                	C PARCEL DATA. IT ROLE PROCESSING OF THE DATA, AND CONTROLS || 
+39	2332	COUNT 42/40	                                                                        GOGO  10	C LOADING OF THE DATA ON TO TEMPORARY STORAGE TAPE. || GOGO 10
+40	2377	OK	C                                                                       GOGO  11	C || GOGO 11
+41	2418	COUNT 8/70;COUNT 0/6	                                                                                	GLOSSARY || 
+42	2461	COUNT 0/6	C                                                                               	C || 
+43	2503	COUNT 1/45	                                                                        6060  14	C || 6060 14
+44	2547	COUNT 29/30	                                                                        GOGO  15	MAP CORE LOAD IS SIGNALED TO FOLLOW || GOGO 15
+45	2588	COUNT 0/6	C     NIJ          A BLOCK COUNT OF DATA STOREC ON TAPE AND/OR IN CORE          	C      NIJ      A BLOCK COUNT OF DATA STOREC ON TAPE AND/OR IN CORE || 
+46	2632	COUNT 1/45	                                                                        GOGO  17	C || GOGO 17
+47	2677	OK	C                                                                       GOGO  18	C || GOGO 18
+48	2718	COUNT 1/20	                                                                        6060  19	C || 6060 19
+49	2764	OK	C                                                                       GOGO  20	C || GOGO 20
+50	2805	COUNT 0/71;COUNT 0/6	                                                                                	 || 
+51	2851	COUNT 0/6	C                                                                               	C || 
+52	2890	COUNT 0/6	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,        	COMMON /CONDAT/ IC(20) ,IHOB ,IPNCH ,IPOUT , || 
+53	2934	COUNT 0/6	     11SIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,        	11SIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE , || 
+54	2977	COUNT 0/6	     2NARRAY    ,M8TAPE    ,MXREQ     ,SU        ,INFAM                         	2NARRAY ,M8TAPE ,MXREQ ,SU ,INFAM || 
+55	3020	OK	      COMMON /MAPDAT/ CAYF ,CUTNAP    ,OGX       ,CGY       ,IH  ,IV   ,GOGO  26	COMMON /MAPDAT/ CAYF ,CUTNAP ,OGX ,CGY ,IH ,IV , || GOGO 26
+56	3064	OK	     1JC        ,NXMAP     ,NYMAP     ,VZ        ,QCUT      ,SSAM      ,GOGO  27	1 JC ,NXMAP ,NYMAP ,VZ ,QCUT ,SSAM , || GOGO 27
+57	3133	OK	                                        144                                     	144
+58	3285	COUNT 0/44	                                                                                	

@@ -1,0 +1,50 @@
+1	6	COUNT 3/6	                                                                                	---
+2	767	OK	*DECK,AIRBRS                                                            AIR8R  1	*DECK, AIRBRS || AIR8R 1
+3	811	OK	      SUBROUTINE AIRBRS                                                 AIRBR  2	SUBROUTINE AIRBRS || AIRBR 2
+4	854	OK	C                                                                       AIR8R  3	C || AIR8R 3
+5	896	OK	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     AIRBR  4	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || AIRBR 4
+6	940	OK	C                                                                       AIR8R  5	C || AIR8R 5
+7	981	COUNT 1/71	                                                                        AIRBR  6	C || AIRBR 6
+8	1025	OK	C                                                                       AIFBR  7	C || AIFBR 7
+9	1068	OK	C     COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR     AIRBR  8	C COMBINES FUNCTIONS OF SUBROUTINES TIME, TEMP, MASS, AND VAPOR || AIRBR 8
+10	1110	COUNT 50/49	                                                                        AIRBR  9	C FOR AN AIRBURST. ALSO SETS LOGNORMAL CEBRIS PARTICLE SIZE || AIRBR 9
+11	1152	OK	C     DISTRIBUTION PARAMETERS FOR AN AIRBURST.   A GECMETRIC STANDARD   AIRBR 10	C DISTRIBUTION PARAMETERS FOR AN AIRBURST. A GECMETRIC STANDARD || AIRBR 10
+12	1195	OK	C     DEVIATION OF 2.0 IS ASSUMED.   THE MEDIAN PARTICLE DIAMETER WAS   AIRBR 11	C DEVIATION OF 2.0 IS ASSUMED. THE MEDIAN PARTICLE DIAMETER WAS || AIRBR 11
+13	1237	OK	C     COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL., JGR75, 7565   AIRBR 12	C COMPUTED FROM EQS. (43) AND (44) OF NATHANS,ET AL.,JGR75,7565 || AIRBR 12
+14	1282	OK	C     (1973) (FOR BROWNIAN MOTION)                                      AIR8R 13	C (1973) (FOR BROWNIAN MOTION) || AIR8R 13
+15	1326	OK	C                                                                       AIK8R 14	C || AIK8R 14
+16	1367	COUNT 1/71	                                                                        AIR8R 15	C || AIR8R 15
+17	1412	OK	C                                                                       AIRBR 16	C || AIRBR 16
+18	1454	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    AIRBR 17	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ || AIRBR 17
+19	1497	OK	      COMMON /CONTRL/ OETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  AIRBR 18	COMMON /CONTRL/ OETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || AIRBR 18
+20	1541	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 AIRBR 19	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || AIRBR 19
+21	1585	OK	      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(260),UIAM(201),FMASS(200)  AIR8R 20	COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(260),UIAM(201),FMASS(200) || AIR8R 20
+22	1628	OK	C                                                                       AIRBR 21	C || AIRBR 21
+23	1670	COUNT 1/71	                                                                        AIRBR 22	C || AIRBR 22
+24	1714	OK	C                                                                       AIRBR 23	C || AIRBR 23
+25	1754	OK	C     SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL     AIRBR 24	C SET TIME OF THE SECOND THERMAL MAXIMUM AND THE DELFIC INITIAL || AIRBR 24
+26	1797	OK	C     TIME (SEC)                                                        AIR8R 25	C TIME (SEC) || AIR8R 25
+27	1842	OK	C                                                                       AIR8R 26	C || AIR8R 26
+28	1883	OK	      T2M = 0.045 * H**(0.42)                                           AIRBR 27	T2M = 0.045 * H**(0.42) || AIRBR 27
+29	1927	OK	      TME = 56. * T2M * W**(-0.30)                                      AIKBR 28	TME = 56. * T2M * W**(-0.30) || AIKBR 28
+30	1971	OK	C                                                                       AIRBR 29	C || AIRBR 29
+31	2012	OK	C     SET INITIAL CLOUD TEMPERATURE                                     AIR8R 30	C SET INITIAL CLOUD TEMPERATURE || AIR8R 30
+32	2056	OK	C                                                                       AIKBR 31	C || AIKBR 31
+33	2100	OK	      A = 6847. * H**(-0.0131)                                          AIRBR 32	A = 6847. * H**(-0.0131) || AIRBR 32
+34	2141	OK	      B = -0.4473 * H**(0.0436)                                         AIRBR 33	B = -0.4473 * H**(0.0436) || AIRBR 33
+35	2185	OK	      TMPG = A * (THE / T2M)**8 + 1500.                                 AIRBR 34	TMPG = A * (THE / T2M)**8 + 1500. || AIRBR 34
+36	2228	OK	      TMPS = TMPG                                                       AIRBR 35	TMPS = TMPG || AIRBR 35
+37	2270	OK	C                                                                       AIR3R 36	C || AIR3R 36
+38	2312	COUNT 46/47	                                                                        AIRBR 37	C SET MASS OF CONDENSEC PHASE MATERIAL IN THE CLOLC (KG) || AIRBR 37
+39	2357	OK	      SSAM = 9J.718                                                     AIRBR 36	SSAM = 9J.718 || AIRBR 36
+40	2400	OK	      VPR = 0.0                                                         AIRBR 39	VPR = 0.0 || AIRBR 39
+41	2443	OK	      IF(IC(1) .NE. 0  .OR.  DMEAN .NE. J.0) RETURN                     AIRBR 40	IF(IC(1) .NE. 0 .OR. DMEAN .NE. J.0) RETURN || AIRBR 40
+42	2488	OK	C                                                                       AIRBR 41	C || AIRBR 41
+43	2528	OK	C     SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS                  AIR8R 42	C SET DE9RIS PARTICLE SIZE DISTRIBUTION PARAMETERS || AIR8R 42
+44	2572	OK	C                                                                       AIR8R 43	C || AIR8R 43
+45	2616	OK	      SD = 2.0                                                          AIRBR 44	SD = 2.0 || AIRBR 44
+46	2657	OK	      DMEAN = 0.15                                                      AIR9R 45	DMEAN = 0.15 || AIR9R 45
+47	2701	OK	      RETURN                                                            AIRBR 46	RETURN || AIRBR 46
+48	2746	OK	      END                                                               AIKBR 47	END || AIKBR 47
+49	3124	OK	                                       64                                       	64
+50	3290	COUNT 3/45;COUNT 3/6	                                                                                	--- || ---

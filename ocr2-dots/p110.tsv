@@ -1,0 +1,8 @@
+1	5	COUNT 0/13	                                                                                	
+18	1112	OK	      EPS = 1.E-6 * NS * ABS( AN )                                              	EPS = 1.E-6 * NS * ABS( AN )
+22	1283	COUNT 21/13	                                                                                	NN=N+(\frac{1+NS}{2})
+24	1369	OK	      IF((NN.LT.NX+1).ANC.(A(NN).LT.AN+EPS)) GO TO 1                            	IF((NN.LT.NX+1).ANC.(A(NN).LT.AN+EPS)) GO TO 1
+28	1839	COUNT 49/48	                                                                                	SUBROUTINE CNTR (NET, NETSU, NDATA, XG, YG, ICF, JCF, NCF)
+39	2311	COUNT 19/18	                                                                                	DATA PROGRAM/6KCNTR /
+52	2872	OK	      DO 3 NC=1,NIX                                                             	DO 3 NC=1, NIX
+56	3046	OK	      CALL ERROR(PROGRN,-3,ISOUT)                                               	CALL ERROR(PROGRN, -3, ISOUT)

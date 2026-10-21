@@ -1,0 +1,14 @@
+4	607	OK	 45   FORMAT(/ 15X, 93HCCNTOURS ARE NOT DETERMINED BECAUSE THE REQUESTED        	45  FORMAT(/ 15X, 93HCCNTOURS ARE NOT DETERMINED BECAUSE THE REQUESTED
+5	651	OK	     1 YAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY)                             	1 YAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY)
+6	693	COUNT 62/59	                                                                                	46    FORMAT(/15X, 56M)THE SPECIFIED MAF Gk1D INCREMENTS FRUDUCE DISTCRTE
+16	1122	OK	      IF(GRUFF .EQ. 0.0) GRUFF=1.0                                              	IF (GRUFF .EQ. 0.0) GRUFF=1.0
+17	1163	OK	 1603 IF(ABS(DGX) + ABS(DGY))120,121,121                                        	1603 IF (ABS(DGX) + ABS(DGY)) 120, 121, 121
+30	1724	COUNT 0/17	                                                                                	
+34	1894	COUNT 0/21	                                                                                	
+37	2022	OK	      NST = NMAP/NYMAP                                                          	NST = NMAP/NYMAP
+40	2151	OK	 1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14.U,ISOUT)                           	1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14.U,ISOUT)
+41	2195	OK	      NZ=NOX/NXMAP                                                              	NZ = NOX / NXMAP
+42	2237	OK	 1401 00 1121 J=1,NDSTR                                                         	1401 00 1121 J=1,NDSTR
+43	2279	COUNT 0/23	                                                                                	
+44	2323	OK	      IF(SD .GT. C.0) WFMAS(J)=WFMAS(J)*SSAM                                    	IF(SD .GT. C.0)  WFMAS(J)=WFMAS(J)*SSAM
+57	2882	OK	 1269 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM                                      	1269 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM

@@ -1,0 +1,60 @@
+1	7	COUNT 0/22;COUNT 0/2	                                                                                	 || 
+2	39	COUNT 0/7	                                                                                	
+3	85	COUNT 0/38;COUNT 0/3	                                                                                	 || 
+4	465	OK	      GO TO 5                                                           NEST  61	GO TO 5 || NEST 61
+5	508	COUNT 22/21	                                                                        NEST  62	CONCLUDE QUADRANT SEARCH || NEST 62
+6	551	OK	    8 NDATA=NETSU(NQ)                                                   NEST  63	8 NDATA=NETSU(NQ) || NEST 63
+7	595	OK	      RETURN                                                            NEST  64	RETURN || NEST 64
+8	637	COUNT 0/3	                                                                        NEST  65	 || NEST 65
+9	980	OK	*DECK,ONEDIN                                                            ONEDI  1	* DECK, ONE DIN || ONEDI 1
+10	1023	OK	      SUBROUTINE ONEDIN(ZCH,ZBH,CAVS,DX   ,DY   ,LTIM,KBHF,NDATF,LTIMF, ONEDI  2	SUBROUTINE ONEDIN(ZCH,ZBH,CAVS,DX ,DY ,LTIM,KBHF,NDATF,LTIMF, || ONEDI 2
+11	1067	OK	     1 FORM,SPEC)                                                       ONEDI  3	1 FORM, SPEC) || ONEDI 3
+12	1111	OK	C                                                                       ONEDI  4	C || ONEDI 4
+13	1153	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     ONEDI  5	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || ONEDI 5
+14	1194	COUNT 7/6	C                                                                               	C || ONEDAY 6
+15	1237	COUNT 0/71	                                                                        ONEDI  7	 || ONEDI 7
+16	1283	OK	C                                                                       ONEDI  8	C || ONEDI 8
+17	1324	OK	C     READS AND PROCESSES WIND/TURBULENCE DATA FOR A HORIZONTALLY       ONEDI  9	C     READS AND PROCESSES WIND/TURBULENCE DATA FOR A HORIZONTALLY || ONEDI 9
+18	1366	COUNT 52/53;COUNT 9/7	                                                                                	C HOMOGENOUS FIELD. VERTICAL COMPONENTS ARE NOT CONSIDERED. || ONF.C.I 10
+19	1412	OK	C                                                                       ONEDI 11	C || ONEDI 11
+20	1451	COUNT 0/71	                                                                        ONEDI 12	 || ONEDI 12
+21	1497	OK	C                                                                       ONEID 13	C || ONEID 13
+22	1539	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               ONEDI 14	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || ONEDI 14
+23	1582	OK	       COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NOATX                  ONEDI 15	COMMON /INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NOATX || ONEDI 15
+24	1626	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     ONEDI 16	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || ONEDI 16
+25	1671	OK	C                                                                       ONEDI 17	C || ONEDI 17
+26	1711	COUNT 8/7	      INTEGER WIND,TURB,METEOR,RESOLV,SPEC,FORM                                 	INTEGER WIND, TURB, METEOR, RESOLV, SPEC, FORM || ONEDAY 18
+27	1745	COUNT 8/7	      DIMENSION ZCH(KBHF),ZBH(KBHF),DX(KBHF,NOATF,LTINF),CAVS(KBHF)             	DIMENSION ZCH(KBHF), ZBH(KBHF), DX(KBHF, NOATF, LTINF), CAVS(KBHF) || ONEDAY 19
+28	1796	COUNT 8/7	      DIMENSION FHT(12),SCALE(5), AP(3), DY(KBHF, NOATF, LTIMF)                 	DIMENSION FHT(12),SCALE(5), AP(3), DY(KBHF, NOATF, LTIMF) || ONEDAY 20
+29	1842	OK	C                                                                       ONEDI 21	C || ONEDI 21
+30	1882	COUNT 8/7	      DATA ALIMIT  , RADC      , PROGRM  , METEOR ,RESCLV, WIND , TURB          	DATA ALIMIT , RADC , PROGRM , METEOR , RESCLV, WIND , TURB || ONEDAY 22
+31	1918	OK	     1  /  999999. .0174532925,6 HONEDIN,4 HMETE, 4HRESO,4HWIND,4HTURB/1UNEDI 23	1 / 999999. .0174532925, 6HONEDIN, 4HMETE ,4HRESO,4HWIND,4HTURB/1 || UNEDI 23
+32	1968	OK	      DATA IREC/8/                                                      ONEDI 24	DATA IREC/8/ || ONEDI 24
+33	2015	OK	C                                                                       ONEDI 25	C || ON EDI 25
+34	2055	OK	    1 FORMAT(  4X,  6HLEVELS,I4, 5H THRU,I4, 8F12.5)                    ONEDI 26	1 FORMAT( 4X, 6HLEVELS, I4, 5H THRU, I4, 8F12.5) || ON EDI 26
+35	2096	COUNT 41/43;COUNT 8/7	                                                                                	3 FORMAT( //33X, 25HWIND LAYER BASE ALTITUDES/) || ONEDAY 27
+36	2139	COUNT 8/7	    4 FORMAT(1HO3X31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS)            	4 FORMAT(1HO3X31HMAXIMUM WIND SPACE ALTITUDE IS E12.5,7H METERS) || ONEDAY 28
+37	2184	OK	 1000 FORMAT (12A6)                                                     ONEDI 29	1000 FORMAT (12A6) || ONE DI 29
+38	2226	OK	 1100 FORMAT (8F10.0)                                                   UNEDI 30	1100 FORMAT (8F10.0) || UNEDI 30
+39	2269	OK	 1200 FORMAT (2014)                                                     ONEDI 31	1200 FORMAT (2014) || ONEDI 31
+40	2310	OK	 1300 FORMAT(      16X, 13HRAW WIND DATA,33X,19HPROCESSED WIND DATA//8X,ONEDI 32	1300 FORMAT( 16X, 13HRAW WIND DATA,33X,19HPROCESSED WIND DATA//8X, || ONEDI 32
+41	2353	COUNT 8/7	     11HZ, 9X, 10HVX OR DIR., 3X, 11HVY OR SPEED, 14X, 1HZ, 12X,                	11HZ, 9X, 10HVX OR DIR., 3X, 11HVY OR SPEED, 14X, 1HZ, 12X, || ONEDAY 33
+42	2397	OK	     2 2HVX, 12X, 2HVY/)                                                ONEDI 34	2 2HVX, 12X, 2HVY/) || ONEDI 34
+43	2442	OK	 1400 FORMAT (3(2X, 1PE12.5))                                           ONEDI 35	1400 FORMAT (3(2X, 1PE12.5)) || ONEDI 35
+44	2483	OK	 1500 FORMAT (1H+ 47X, 3(2X, 1PE12.5))                                  ONEDI 36	1500 FORMAT (1H+ 47X, 3(2X, 1PE12.5)) || ON EDI 36
+45	2524	COUNT 8/7	 1600 FORMAT(  10X19HRAW TURBULENCE DATA,28X25HPROCESSED TURBULENCE DATA        	1600 FORMAT( 10X19HRAW TURBULENCE DATA,28X25HPROCESSED TURBULENCE DATA || LONEDI 37
+46	2568	COUNT 53/54	                                                                        UNEDI 38	1/3X, 1HZ, 10X, 4HEPSX, 10X, 4HEPSY, 17X, 1HZ, 11X 4HEPSX, 10X, || UNEDI 38
+47	2612	OK	     2 4HEPSY/)                                                         ONEDI 39	2 4HEPSY/) || ONEDI 39
+48	2653	COUNT 8/7	 1700  FORMAT( 1H0, 5X, 63HNUMBER OF WIND OR TURBULENCE INPUT DATA INCON        	1700 FORMAT ( 1H0, 5X, 63HNUMBER OF WIND OR TURBULENCE INPUT DATA INCON || ONEDAY 40
+49	2699	OK	     1SISTENT FOR UPDATE(4)                                             ONEDI 41	1SISTENT FOR UPDATE(4) || ONEDI 41
+50	2739	COUNT 8/7	 1800 FORMATI C1HO ,5X ,5SHIND OR TURBULENCE STRATA ALTITUDES INCONSISTE        	1800 FORMATIC 1HO, 5X, 5SHIND OR TURBULENCE STRATA ALTITUDES INCONSISTE || ONEDAY 42
+51	2785	OK	     1NT FOR UPDATEI4)                                                  ONEDI 43	1NT FOR UPDATE I 4) || ONEDI 43
+52	2831	OK	C                                                                       ONEOI 44	C || ONEOI 44
+53	2871	OK	CHECK FORM AND SPEC                                                     ONEDI 45	CHECK FORM AND SPEC || ON EDI 45
+54	2911	OK	      IF(SPEC .EQ. WIND  .AND.  FORM .EQ. METEOR) GO TO 25              ONEDI 46	IF(SPEC .EQ. WIND .AND. FORM .EQ. METEOR) GO TO 25 || ONEDI 46
+55	2955	COUNT 8/7	   20 IF(SPLC .EQ. WIND  .AND.  FORM .NE. RESOLV)CALL ERROR(PROGRM,-20,         	20 IF(SPLC .EQ. WIND .AND. FORM .NE. RESOLV)CALL ERROR(PROGRM,-20, || ONEDAY 47
+56	3000	OK	     1  ISOUT)                                                          ONEDI 48	1 ISOUT) || ONEDI 48
+57	3044	COUNT 8/7	COPY IN FORMAT, SCALE & FIELC POINTERS                                          	COPY IN FORMAT, SCALE & FIELC POINTERS || ONEDAY 49
+58	3088	COUNT 8/7	   25 READ (ISIN, 1000)FMT                                                      	25 READ (ISIN, 1000) FMT || ONEDAY 50
+59	3149	OK	                                       123                                      	123
+60	3304	COUNT 0/42;COUNT 0/6	                                                                                	 || 

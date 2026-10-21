@@ -1,0 +1,8 @@
+10	1135	COUNT 12/5	                                                                                	L = 5 - 1 \times 2
+12	1224	COUNT 0/7	                                                                                	
+21	1607	COUNT 31/17	                                                                                	\text{SIGXO(I)} = \text{SIGXO(L)}
+31	2036	COUNT 24/9	                                                                                	26 \text{ ( } J=KK+1 \text{ )}
+37	2297	OK	  510'IRROR=-510                                                                	510 'IRROR=-510
+38	2340	COUNT 34/33	                                                                                	2000 CALL ERROR(PROGRM, IERROR, ISOUT)
+40	2414	OK	      WRITE(LTAPE)(XPAR(I),YPAR(I),ZPAR(I),TFAR(I),SIGXO(I),SIGYO(I),           	WRITE(LTAPE) (XPAR(I), YPAR(I), ZPAR(I), TFAR(I), SIGXO(I), SIGYO(I),
+45	3295	COUNT 0/9	                                                                                	

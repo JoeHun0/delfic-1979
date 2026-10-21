@@ -1,0 +1,64 @@
+1	15	COUNT 0/38;COUNT 0/3	                                                                                	 || 
+2	107	COUNT 0/52;COUNT 0/1	                                                                                	 || 
+3	590	OK	   26 IRROR=-26                                                         WNOSF121	26 IRROR=-26 || WNOSF121
+4	634	OK	      GO TO 7734                                                        WNOSF122	GO TO 7734 || WNOSF122
+5	668	OK	C                                                                       WNOSF123	C || WNOSF123
+6	718	OK	C     FIND HODOGRAPH VECTOR ALTITUDE APPROPRIATE FOR INITIAL TIME       WNDSF124	C FIND HODOGRAPH VECTOR ALTITUDE APPROPRIATE FOR INITIAL TIME || WNDSF124
+7	762	OK	 2217 j=1                                                               WNDSF125	2217 j=1 || WNDSF125
+8	805	OK	      k=1                                                               WNOSF126	k=1 || WNOSF126
+9	848	OK	 28   IF(ZC(1)-(ZV (J+1)+ZV(J))/2.0)  35,35,30                          WNOSF127	28 IF (ZC(1)-(ZV (J+1)+ZV(J))/2.0) 35,35,30 || WNOSF127
+10	883	OK	 30   IF(J-NHODO)  31,32,32                                             WNOSF128	30 IF(J-NHODO) 31,32,32 || WNOSF128
+11	926	COUNT 13/7	                                                                        WNOSF129	31 \qquad J = J + 1 || WNOSF129
+12	980	OK	      GO TO 28                                                          WNDSF130	GO TO 28 || WNDSF 130
+13	1014	OK	 32   IRROR = -32                                                       WNOSF131	32 IRROR = -32 || WNOSF131
+14	1063	OK	      GO TO 7734                                                        WNOSF132	GO TO 7734 || WNOSF132
+15	1105	OK	C                                                                       WNOSF133	C || WNOSF133
+16	1149	OK	C     COMPUTE HORIZONTAL CISPLACEMENTS VS. TIME FOR THE CLOUD BOTTOM    WNOSF134	C COMPUTE HORIZONTAL CISPLACEMENTS VS. TIME FOR THE CLOUD BOTTOM || WNOSF134
+17	1191	OK	C     CENTER.                                                           WNDSF135	C CENTER. || WNDSF135
+18	1234	COUNT 21/16	                                                                        WNDSF136	35 \quad XT=TC(1)*VX(J) || WNDSF136
+19	1278	OK	      VT=TC(1)*VY(J)                                                    WNOSF137	VT=TC(1)*VY(J) || WNOSF137
+20	1312	COUNT 8/9	                                                                        WNDSF138	XC(1)=XT || WNDSF138
+21	1362	COUNT 0/8	                                                                        WNDSF139	 || WNDSF139
+22	1406	COUNT 25/11	                                                                        WNOSF140	T\text{TEMP}=T\text{C}(1) || WNOSF140
+23	1449	OK	      ZTEMP=ZC(1)                                                       WNOSF141	ZTEMP=ZC(1) || WNOSF141
+24	1492	OK	C                                                                       WNOSF142	C || WNOSF 142
+25	1535	OK	C 122 WHICH IS LOWER, NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR         WNDSF143	C 122 WHICH IS LOWER, NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR || WNDSF143
+26	1578	OK	C                                                                       WNDSF144	C || WNDSF144
+27	1620	OK	  122 IF(J.GE.NHODO) GO TO 124                                          WNOSF145	122 IF(J.GE.NHODO) GO TO 124 || WNOSF145
+28	1663	COUNT 67/41	                                                                        WNDSF146	\text{IF} \left( \frac{(ZV(J+1) + ZV(J))}{2}, -ZC(K+1) \right) 123, 124, 124 || WNDSF146
+29	1706	COUNT 41/40	                                                                        WNDSF147	123 \ DELT = ((ZV(J+1) + ZV(J))/2) - ZTEMP)/VC(K) || WNDSF147
+30	1749	COUNT 0/24	                                                                        WNDSF148	 || WNDSF148
+31	1792	OK	      TTEMP=TTEMP+DELT                                                  WNOSF149	TTEMP=TTEMP+DELT || WNOSF149
+32	1834	COUNT 0/16	                                                                        WNDSF150	 || WNDSF150
+33	1877	COUNT 22/16	                                                                        WNOSF151	YT=YT+ \qquad VY(J)*DELT || WNOSF151
+34	1921	COUNT 0/5	                                                                        WNDSF1E2	 || WNDSF1E2
+35	1963	OK	      GO TO 122                                                         WNOSF153	GO TO 122 || WNOSF153
+36	2008	OK	C                                                                       WNOSF154	C || WNOSF154
+37	2053	COUNT 1/27	                                                                        WNOSF155	C || WNOSF155
+38	2095	OK	  124 DELT=TC(K+1)-TTEMP                                                WNOSF156	124 DELT=TC(K+1)-TTEMP || WNOSF156
+39	2137	COUNT 0/13	                                                                        WNDSF157	 || WNDSF 157
+40	2181	OK	      ZTEMP=ZC(K+1)                                                     WNOSF158	ZTEMP=ZC(K+1) || WNOSF158
+41	2221	OK	      XC(K+1)=XT+VX(J)*DELT                                             WNOSF159	XC(K+1) = XT + VX(J) * DELT || WNOSF159
+42	2265	OK	      YC(K+1)=YT+VY(J)*DELT                                             WNOSF160	YC(K+1) = YT + VY(J) * DELT || WNOSF160
+43	2308	OK	      XT=XC(K+1)                                                        WNDSF161	XT = XC(K+1) || WNDSF161
+44	2350	COUNT 0/10	                                                                        WNDSF1E2	 || WNDSF1E2
+45	2395	COUNT 0/5	                                                                        WNOSF163	 || WNOSF163
+46	2436	OK	      IF(K- MCX ) 122,125,125                                           WN05F1E4	IF(K-MCX) 122,125,125 || WN05F1E4
+47	2479	OK	C                                                                       WNOSF1E5	C || WNOSF1E5
+48	2523	OK	C 125 CLOUD TFAJECTORY IS COMPLETE                                      WNDSF166	C 125 CLOUD TFAJECTORY IS COMPLETE || WNDSF166
+49	2567	COUNT 21/20	                                                                        WNDSF167	125 WRITE (ISOUT, 60, 22) || WNDSF167
+50	2601	OK	      WRITE (ISOUT,2)(XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX)            WNDSF158	WRITE (ISOUT,2) (XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX) || WNDSF158
+51	2652	OK	C                                                                       WNOSF169	C || WNOSF169
+52	2696	OK	  104 READ(IRISE)N                                                      WNOSF170	104 READ(IRISE)N || WNOSF170
+53	2737	OK	      IF(N)102,102,103                                                  WNOSF171	IF (N) 102, 102, 103 || WNOSF171
+54	2781	OK	C                                                                       WNDSF172	C || WNDSF172
+55	2823	OK	C 102 FINAL EXIT.   ALL DATA HAVE BEEN MODIFIED.  MARK JPARIN COMPLETED.WNOSF173	C 102 FINAL EXIT. ALL DATA HAVE BEEN MODIFIED. MARK JPARIN COMPLETE D. || WNOSF173
+56	2865	OK	 102  N=0                                                               WNOSF174	102 N=0 || WNOSF174
+57	2908	OK	      IF(IC(7))2013,2014,2013                                           WNDSF175	IF (IC(7)) 2013, 2014, 2013 || WNDSF175
+58	2952	OK	 2013 WRITE(ISOUT,3013)N                                                WNOSF176	2013 WRITE(ISOUT,3013)N || WNOSF176
+59	2993	OK	 2014 WRITE(JPARN )N                                                    WNDSF177	2014 WRITE(JPARN)N || WNDSF177
+60	3037	OK	      END FILE JPARN                                                    WNDSF178	END FILE JPARN || WNDSF178
+61	3083	OK	      REWIND JPARN                                                      WNOSF179	REWIND JPARN || WNOSF179
+62	3125	OK	      REWIND IRISE                                                      WNOSF180	REWIND IRISE || WNOSF180
+63	3182	OK	                                       99                                       	99
+64	3296	COUNT 0/66;COUNT 0/8	                                                                                	 || 

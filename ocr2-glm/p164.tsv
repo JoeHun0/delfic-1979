@@ -1,0 +1,11 @@
+1	4	COUNT 8/44	                                                                                	markdown
+2	32	COUNT 3/14	                                                                                	---
+20	1511	COUNT 22/29	                                                                                	JC NXMAP NYMAP NZ GCUT SSAM
+21	1555	COUNT 17/24	                                                                                	TGZ XG7 X1 X2 YGZ XMAX
+22	1599	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN ,YMAX ,YMIN ,ZMIN
+23	1641	OK	      COMMON /UTILTY/  KOUT.NPRNT(15)                                           	COMMON /UTILTY/ KOUT.NPRNT(15)
+27	1813	OK	      DATA PROGRM / 6HPAMAB1 /                                                  	DATA PROGRM / 6HPAMAB1 /
+31	1983	COUNT 64/65	                                                                                	1/ 6.3010E9.6.0830E9.6.9733E9.7.2911E9.7.8643E9.7.9407E9.8.2111E9
+33	2069	COUNT 59/60	                                                                                	1100 FORMAT(//10X, 45HFISSID DOES NOT MATCH WITH ANY AVAILABLE TYPE)
+36	2201	OK	      IF(FISSIO .EQ. FISTP(I)) GO TO 200                                        	IF(FISSIO .EQ. FISTP(I)) GO TO 200
+37	2242	OK	  100 CONTINUE                                                                  	100 CONTINUE

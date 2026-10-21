@@ -1,0 +1,64 @@
+1	12	32	NOISE	                                                                        			
+2	64	76	NOISE	                                                                        			
+3	547	579	AGREE	      Q = F/SIGXO(IP)/SIGYC(IP)/6.28318531                              		glm=      Q = F/SIGXO(IP)/SIGYC(IP)/6.28318531 ## glm2=      Q = F/SIGXO(IP)/SIGYC(IP)/6.28318531	CALC61
+4	593	622	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC62
+5	632	665	COMMENT	C     COMPUTE SMALLEST Y INDEX OF A CONTRIBUTION                        		lighton=C     COMPUTE SMALLEST Y INDEX OF A CONTRIBUTION ## glm=C     COMPUTE SMALLEST Y INDEX OF A CONTRIBUTION	CALC63
+6	679	707	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC64
+7	720	752	HANDFREE	      NOB = (YPRML - YMIN)/DGY                                          	28	dots=      NOB = (YPRML - YMIN)/OGY ## dots2=      NOB = (YPRML - YMIN)/OGY ## glm=      NOB = (YPRML - YMIN)/DGY ## glm2=      NOB = (YPRML - YMIN)/DGY	CALC65
+8	763	794	VOTED	      NOB=NOB+1                                                         		dots=      NOB=NOB+1 ## dots2=      NOB=NOB+1 ## glm=      NO8=NO8+1 ## glm2=      NOB=NOB+1	CALC66
+9	807	838	VOTED	      IF(NOB.LT.1) NOB=1                                                		lighton=      IF(NOB.LT.1) NOB=1 ## lighton2=      IF(NOB.LT.i) NOB=1 ## dots2=      IF(NOB.LT.1) NOB=1 ## glm=      IF（NOB.LT.1） NOB=1 ## glm2=      IF(NOB.LT.1) NOB=1	CALC67
+10	850	883	AGREE	  100 IF(NOB.LE.NYMAP) GO TO 120                                        		lighton=  100 IF(NOB.LE.NYMAP) GO TO 120 ## dots=  100 IF(NOB.LE.NYMAP) GO TO 120 ## glm=  100 IF(NOB.LE.NYMAP) GO TO 120	CALC68
+11	891	923	VOTED	  11G IRROR=-110                                                        		lighton=  11G IRROR=-110 ## dots=  110 IRROR=-110 ## glm=  11G IRROR=-110	CALC69
+12	935	966	VOTED	      GO TO 400                                                         		lighton=      GO TO 460 ## dots=      GO TO 400 ## glm=      GO TO 400	CALC70
+13	981	1009	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC71
+14	1020	1052	COMMENT	C     COMPUTE LARGEST  Y INDEX OF A CONTRIBUTION                        		lighton=C     COMPUTE LARGEST  Y INDEX OF A CONTRIBUTION ## glm=C     COMPUTE LARGEST  Y INDEX OF A CONTRIBUTION	CALC72
+15	1064	1094	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC73
+16	1107	1139	VOTED	  120 NOT = (YPRMU - YMIN)/DGY                                          		lighton=  120 NOT = (YPRMU - YMIN)/DGY ## dots=  120 NOT = (YPRMU - YHIN)/DGY ## glm=  120 NOT = (YPRMU - YMIN)/DGY	CALC74
+17	1150	1181	VOTED	      IF(NOT.GT.NYMAP) NOT=NYMAP                                        		lighton=      IF(NOT.GT.NYMAP) NOT=NYMAP ## dots=      IF(NOT.GT.NYHAP) NOT=NYMAP ## glm=      IF(NOT.GT.NYMAP) NOT=NYMAP	CALC75
+18	1191	1224	AGREE	      IF(NOT.GT.0 ) GO TO 140                                           		lighton=      IF(NOT.GT.0 ) GO TO 140 ## dots=      IF(NOT.GT.0 ) GO TO 140 ## glm=      IF(NOT.GT.0 ) GO TO 140	CALC76
+19	1237	1268	AGREE	  130 IRROR=-130                                                        		lighton=  130 IRROR=-130 ## dots=  130 IRROR=-130 ## glm=  130 IRROR=-130	CALC77
+20	1279	1309	AGREE	      GO TO 400                                                         		lighton=      GO TO 400 ## dots=      GO TO 400 ## glm=      GO TO 400	CALC78
+21	1323	1353	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC79
+22	1365	1397	COMMENT	C     ENTER THE MAP ROW LCCP                                            		lighton=C     ENTER THE MAP ROW LCCP ## glm=C     ENTER THE MAP ROW LCCP	CALC80
+23	1408	1438	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC81
+24	1451	1484	VOTED	  14C DO 350 J=NO8,NOT                                                  		lighton=  14C DO 350 J=NO8,NOT ## dots=  14C DO 350 J=NOB,NOT ## glm=  14C DO 350 J=NO8,NOT	LALC82
+25	1496	1525	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC83
+26	1535	1567	COMMENT	C     COMPUTE  THE LIMITING Y COORDINATES OF THE PARCEL CONTRIBUTION    		lighton=C     COMPUTE  THE LIMITING Y COORDINATES OF THE PARCEL CONTRIBUTION ## dots=C     COMPUTE  THE LIMITING X COORDINATES OF THE PARCEL CONTRIBUTION	CALC84
+27	1579	1611	COMMENT	C     ELLIPSE IN THIS ROW                                               		lighton=C     ELLIPSE IN THIS ROW ## glm=C     ELLIPSE IN THIS ROW	CALC85
+28	1624	1653	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC86
+29	1666	1696	AGREE	      YREL = J                                                          		dots=      YREL = J ## glm=      YREL = J	CALC37
+30	1709	1740	AGREE	      YREL = YMIN + DGY*YREL - YPAR(IP)                                 		dots=      YREL = YMIN + DGY*YREL - YPAR(IP) ## glm=      YREL = YMIN + DGY*YREL - YPAR(IP)	CALC88
+31	1752	1784	AGREE	      RADIC = -8*YREL**2+0                                              		lighton2=      RADIC = -8*YREL**2+0 ## glm=      RADIC = -8*YREL**2+0 ## glm2=      RADIC = -8*YREL**2+0	CALC89
+32	1794	1827	VOTED	      IF(RADIC.GE.0.0) GO TO 160                                        		lighton=      IF(RADIC.GE.0.0) GO TO 160 ## lighton2=      IF(RADIC.GE.0.0) GO TO 160 ## dots=      IF(RADIO,GE,O,U) GO TO 160	CALC90
+33	1840	1871	AGREE	  150 RADIC=0.0                                                         		lighton=  150 RADIC=0.0 ## dots=  150 RADIC=0.0 ## glm=  150 RADIC=0.0	CALC41
+34	1881	1916	AGREE	      CALL ERROR(PROGRN,  150,ISOUT)                                    		lighton=      CALL ERROR(PROGRN,  150,ISOUT) ## dots=      CALL ERROR(PROGRN,  150,ISOUT) ## glm=      CALL ERROR(PROGRN,  150,ISOUT)	CALC92
+35	1924	1955	VOTED	  160 RAOIC=SQRT(RADIC)                                                 		lighton=  160 RADIC=SQRT(RADIC) ## dots=  160 RAOIC=SORT(RADIC) ## glm=  160 RAOIC=SQRT(RAOIC)	CALC93
+36	1966	1998	AGREE	      XL=XPAR(IP)+ (YREL*A- RADIC)/CC                                   		dots=      XL=XPAR(IP)+ (YREL*A- RADIC)/CC ## glm=      XL=XPAR(IP)+ (YREL*A- RADIC)/CC	CALC94
+37	2010	2041	AGREE	      XR = XL + 2.J*RADIC/CC                                            		glm=      XR = XL + 2.J*RADIC/CC ## glm2=      XR = XL + 2.J*RADIC/CC	CALC95
+38	2053	2082	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC96
+39	2096	2126	COMMENT	C     COMPUTE SMALLEST X INDEX OF A CONTRIBUTION                        		lighton=C     COMPUTE SMALLEST X INDEX OF A CONTRIBUTION ## glm=C     COMPUTE SMALLEST X INDEX OF A CONTRIBUTION	CALC97
+40	2141	2170	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC58
+41	2182	2213	AGREE	      NOL = (XL-X1)/DGX                                                 		dots=      NOL = (XL-X1)/DGX ## glm=      NOL = (XL-X1)/DGX	CALC49
+42	2226	2256	AGREE	      NOL=NOL+1                                                         		dots=      NOL=NOL+1 ## glm=      NOL=NOL+1	CALC1J0
+43	2269	2300	AGREE	      IF(NOL.LT.1) NOL=1                                                		lighton2=      IF(NOL.LT.1) NOL=1 ## glm=      IF(NOL.LT.1) NOL=1 ## glm2=      IF(NOL.LT.1) NOL=1	CALC141
+44	2311	2341	VOTED	      IF(NOL.GT.NXMAP) GO TO 350                                        		lighton=      IF(NOL.GT.NXMAP) GO TO 350 ## dots=      IF(NOL.GT.NXNAP) GO TO 350 ## glm=      IF(NOL.GT.NXMAP) GO TO 350	
+45	2354	2383	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC103
+46	2397	2428	COMMENT	C     COMPUTE LARGEST  X INDEX OF A CCNTRIBUTION                        		lighton=C     COMPUTE LARGEST  X INDEX OF A CCNTRIBUTION ## dots=C     COMPUTE LARGEST  X INDEX OF A CONTRIBUTION ## glm=C     COMPUTE LARGEST  X INDEX OF A CCNTRIBUTION	CALC104
+47	2440	2469	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC1J5
+48	2483	2514	AGREE	  180 NOR = (XR-X1)/DGX                                                 		dots=  180 NOR = (XR-X1)/DGX ## glm=  180 NOR = (XR-X1)/DGX	CALC1J6
+49	2527	2558	AGREE	      IF(NOR.GT.NXMAP) NOR=NXMAP                                        		lighton=      IF(NOR.GT.NXMAP) NOR=NXMAP ## dots=      IF(NOR.GT.NXMAP) NOR=NXMAP ## glm=      IF(NOR.GT.NXMAP) NOR=NXMAP	
+50	2568	2600	AGREE	      IF(NOR.LT.1) GO TO 350                                            		lighton=      IF(NOR.LT.1) GO TO 350 ## dots=      IF(NOR.LT.1) GO TO 350 ## glm=      IF(NOR.LT.1) GO TO 350	
+51	2612	2643	VOTED	  200 NWX = NOR - NDL                                                   		lighton=  200 NWX = NOR - NOL ## dots=  200 NWX = NOR - NDL ## glm=  200 NWX = NOR - NDL	CALC129
+52	2656	2689	AGREE	      IF(NWX+1)210,350,220                                              		lighton=      IF(NWX+1)210,350,220 ## dots=      IF(NWX+1)210,350,220 ## glm=      IF(NWX+1)210,350,220	CALC110
+53	2699	2730	VOTED	  210 IRROR=-210                                                        		lighton2=  210 IRROR=-210 ## dots=  210 ERROR=-210 ## dots2=  210 IRROR=-210 ## glm=  210 IRROR=-210 ## glm2=  210 IRROR=-210	CALC111
+54	2742	2772	AGREE	      GO TO 403                                                         		lighton=      GO TO 403 ## dots=      GO TO 403 ## glm=      GO TO 403	CALC112
+55	2787	2816	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC113
+56	2825	2857	COMMENT	C     COMPUTE OMAP(M) ARRAY INDEX EXTREMES FOR MAP POINTS IN THIS ROW   		lighton=C     COMPUTE OMAP(M) ARRAY INDEX EXTREMES FOR MAP POINTS IN THIS ROW	CALC114
+57	2872	2901	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC115
+58	2914	2946	VOTED	  220 MCRMT=(J-1)*NXMAP                                                 		lighton=  220 MCRMT=(J-1)*NXMAP ## dots=  220 MCRMT=(J-1)*NXMAP ## glm=  220 MCRMT=（J-1）*NXMAP	CALC116
+59	2957	2987	VOTED	      K = NOL + M(RHT                                                   		lighton2=      K = NOL + M(RMT ## dots2=      K = NOL + NCRHT ## glm=      K = NOL + M(RHT ## glm2=      K = NOL + M(RHT	CALC117
+60	2999	3028	AGREE	      L = K + NHX                                                       		dots=      L = K + NHX ## glm=      L = K + NHX	CALC118
+61	3044	3072	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CALC119
+62	3083	3115	COMMENT	C     ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS                     		lighton=C     ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS ## dots=C     ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS ## glm=C     ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS	CALC120
+63	3145	3176	NOISE	                                                                        		lighton=                                       142 ## dots=                                       142 ## glm=                                       142	
+64	3294	3320	NOISE	                                                                        			

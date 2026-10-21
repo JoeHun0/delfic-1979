@@ -1,0 +1,15 @@
+1	8	COUNT 0/36	                                                                                	
+24	1441	COUNT 63/62	                                                                                	COMMON /PARTCL/ NOSTR,RIICP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)
+30	1699	COUNT 29/26	                                                                                	TA(X)=\sqrt{\log(1.0/X^{*2})}
+31	1739	OK	      APX(X)=TA(X)-(2.515517+0.802853*TA(X)+u.010328*TA(X)**2)/                 	APX(X) = TA(X) - (2.515517 + 0.802853 * TA(X) + u. 010328 * TA(X) * *2) /
+32	1784	OK	     1(1.0+1.432788*TA(X)+0.189269*TA(X)**2+L.CU13U8*TA(X)**3)                  	1(1.0+1.432788*TA(X)+0.189269*TA(X)**2+L.CU13U8*TA(X)**3)
+34	1869	OK	      LO=NOSTR+1                                                                	LO=NOSTR+1
+40	2125	OK	  101 PS(1)=DMEAN*1.0E-6                                                        	101 PS(1)=DMEAN*1.0E-6
+42	2212	OK	      DIAM(1)=DMEAN*C5*1.0E-6                                                   	DIAM(1)=DMEAN*C5*1.0E-6
+44	2299	OK	      FMASS(1)=1.0                                                              	FMASS(1)=1.0
+46	2383	OK	  162 BARMU=ALOG(DMEAN)                                                         	162 BARMU=ALOG(DMEAN)
+47	2427	OK	      SIGMA=ALOG(SD)                                                            	SIGMA=ALOG(SD)
+56	2812	OK	      J=NOSTR-I+1                                                               	J=NOSTR-I+1
+57	2857	OK	  104 DIAM(J)=3ARMU-APX(PRU)*SIGMA                                              	104 DIAM(J)=3ARMU-APX(PRU)*SIGMA
+63	3236	COUNT 0/56	                                                                                	
+64	3277	COUNT 0/28	                                                                                	

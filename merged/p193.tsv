@@ -1,0 +1,47 @@
+1	20	50	NOISE	                                                                        			
+2	72	84	NOISE	                                                                        			
+3	663	696	COMMENT	*DECK,INDCD2                                                            		dots=*DECK,INDCD2	INDCO1
+4	708	738	VOTED	      SUBROUTINE INOCO2                                                 		lighton=      SUBROUTINE INOCO2 ## dots=      SUBROUTINE INOCO2 ## glm=      SUBROUTINE INDCO2	INDCD2
+5	750	777	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INOCO3
+6	792	822	COMMENT	C     NOVEMBER 1966                                                     		lighton=C     NOVEMBER 1966 ## dots=C     NOVEMBER 1966 ## glm=C     NOVEMBER 1966	INDCD4
+7	836	869	AGREE	      COMMON /DECAY/ IGO,JD,KDOS,IENTER,TEXIT,TIME                      		lighton=      COMMON /DECAY/ IGO,JD,KDOS,IENTER,TEXIT,TIME ## glm=      COMMON /DECAY/ IGO,JD,KDOS,IENTER,TEXIT,TIME	INDCO5
+8	878	913	VOTED	      COMMON/I NDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LMAX,XLAM(7,18		lighton=      COMMON/I NDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LMAX,XLAM(7,18 ## dots=      COMMON/I NDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LKAX,XLAM(7,18 ## glm=      COMMON/I NDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LMAX,XLAM(7,18	INDCO6
+9	921	957	NONE	                                                                        			INDCO7
+10	965	999	AGREE	     1 FMASS(200),PACT(200)                                             		lighton=     1 FMASS(200),PACT(200) ## dots=     1 FMASS(200),PACT(200) ## glm=     1 FMASS(200),PACT(200)	INDCO8
+11	1007	1040	VOTED	      COMMON /UTILTY/  KOUT,NPRNT(15)                                   		lighton2=      COMMON /UTILTY/  KOUT,NPONT(15) ## glm=      COMMON /UTILTY/  KOUT,NPRNT(15) ## glm2=      COMMON /UTILTY/  KOUT,NPRNT(15)	INOCO9
+12	1050	1085	AGREE	      LOGICAL IGO,JD,KDOS,NPRNT                                         		lighton=      LOGICAL IGO,JD,KDOS,NPRNT ## dots=      LOGICAL IGO,JD,KDOS,NPRNT ## glm=      LOGICAL IGO,JD,KDOS,NPRNT	INOCO10
+13	1093	1121	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO11
+14	1135	1166	VOTED	 1000 FORMAT                                                            		lighton= 1000 FORMAT ## dots= 1000 FORMAT ## glm= 1000 FORNAT	INOCO12
+15	1179	1210	VOTED	     1    (17H10OUTPU TO FINDCD2/5Y53HINDUCE DACTIVIT YI NTH ETRASPORTED		lighton=     1    (17H10UTPUT OF INDCD2/5Y53HINDUCED ACTIVITY IN THE TRA\SPORTED ## dots=     1    (17H10OUTPU TO FINDCD2/5Y53HINDUCE DACTIVIT YI NTH ETRANSPORTE ## glm=     1    (17H10OUTPU TO FINDCD2/5Y53HINDUCE DACTIVIT YI NTH ETRASPORTED	INDCO13
+16	1222	1256	AGREE	     2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.)             		dots=     2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.) ## dots2=     2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.)	INDCO14
+17	1264	1292	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO15
+18	1308	1337	AGREE	      SDRE = 0.0                                                        		dots=      SDRE = 0.0 ## glm=      SDRE = 0.0	INOCO16
+19	1351	1379	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO17
+20	1394	1426	AGREE	      DO 24 L = 1,LMAX                                                  		lighton=      DO 24 L = 1,LMAX ## dots=      DO 24 L = 1,LMAX ## glm=      DO 24 L = 1,LMAX	INDCO18
+21	1436	1466	AGREE	      IS = ISO(L)                                                       		lighton=      IS = ISO(L) ## dots=      IS = ISO(L) ## glm=      IS = ISO(L)	INOCO19
+22	1479	1507	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO20
+23	1523	1556	VOTED	      00 22 1 = 1,IS                                                    		lighton2=      00 22 i = 1,IS ## dots=      00 22 1 = 1,15 ## dots2=      00 22 1 = 1,IS ## glm=      00 22 1 = 1,IS ## glm2=      00 22 1 = 1,IS	INOCO21
+24	1565	1599	TIE	      DLAM = -XLAM(I,L)                                                 	7	glm=      DLAM = -XLAM(I,L) ## glm2=      OLAM = -XLAM(I,L)	INDCO22
+25	1608	1637	VOTED	      IF (.NOT.JD) GO TO 12                                             		lighton=      IF (.NOT.JO) GO TO 12 ## dots=      IF (.NOT.JD) GO TO 12 ## glm=      IF (.NOT.JD) GO TO 12	INDCO23
+26	1649	1683	TIE	      DRI = -FAC(I,L)*OLAM*FOGRNY(I,L)*EXP(OLAM*TI4E)                   	23,44	glm=      DRI = -FAC(I,L)*OLAM*FOGRNY(I,L)*EXP(OLAM*TI4E) ## glm2=      DRI = -FAC(I,L)*DLAM*FOGRNY(I,L)*EXP(DLAM*TI4E)	INDOCD24
+27	1692	1723	AGREE	      GO TO <2                                                          		lighton=      GO TO <2 ## glm=      GO TO <2	I140CO25
+28	1737	1764	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO26
+29	1779	1809	AGREE	   12 IF (.NOT.KDOS) GO TO 14                                           		lighton=   12 IF (.NOT.KDOS) GO TO 14 ## dots=   12 IF (.NOT.KDOS) GO TO 14 ## glm=   12 IF (.NOT.KDOS) GO TO 14	INDCO27
+30	1822	1857	NONE	                                                                        			INDCO28
+31	1866	1896	AGREE	      GO TO 22                                                          		lighton=      GO TO 22 ## dots=      GO TO 22 ## glm=      GO TO 22	INDCO29
+32	1908	1936	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INOCO30
+33	1951	1986	AGREE	   14 DRI = FAC(I,L)*FOGRNY(I,L)*EXP(DLAM*TENTER)                       		lighton=   14 DRI = FAC(I,L)*FOGRNY(I,L)*EXP(DLAM*TENTER) ## glm=   14 DRI = FAC(I,L)*FOGRNY(I,L)*EXP(DLAM*TENTER)	INDGCD31
+34	1995	2023	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCO32
+35	2037	2067	AGREE	   22 SDRE = SDRE + DPI                                                 		lighton=   22 SDRE = SDRE + DPI ## dots=   22 SDRE = SDRE + DPI ## glm=   22 SDRE = SDRE + DPI	INOCO33
+36	2081	2111	AGREE	   24 CONTINUE                                                          		lighton=   24 CONTINUE ## dots=   24 CONTINUE ## glm=   24 CONTINUE	INNCL34
+37	2124	2151	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INOCO35
+38	2166	2193	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	IVDCD36
+39	2210	2239	VOTED	      SORE = SORE*ALDFOM*FISNUM                                         		lighton=      SORE = SORE*AL?FOM*FISNUM ## lighton2=      SDRE = SDRE*ALDFOM*FISNUM ## dots=      SORE = SORE*ALDFOM*FISNUM	INOCO37
+40	2253	2281	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDCD38
+41	2295	2328	VOTED	      DO 26 MA = 1,ITA8                                                 		lighton=      00 26 MA = 1,ITA8 ## dots=      DO 26 MA = 1,ITA8 ## glm=      DO 26 MA = 1,ITA8	INOCD19
+42	2338	2368	TIE	   26 FP(HA) = FP(MA) + S)RE*FMASS(MA)                                  	26	lighton=   26 FP(MA) = FP(MA) + SJRE*FMASS(MA) ## lighton2=   26 FP(HA) = FP(MA) + S)RE*FMASS(MA) ## dots=   26 FP(HA) = FP(MA) + S)RE*FMASS(MA) ## dots2=   26 FP(HA) = FP(MA) + SORE*FMASS(MA) ## glm2=   26 FP(HA) = FP(MA) + SURE*FMASS(MA)	INDCO40
+43	2382	2410	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	INDOCO41
+44	2422	2456	VOTED	      IF (NPRNT(11)) WRITE (KOUT,1000) SDRE                             		lighton=      IF (NPRNT(11)) WRITE (KOUT,100J) SDRE ## dots=      IF (NPRNT(11)) WRITE (KOUT,1000) SDRE ## glm=      IF (NPRNT(11)) WRITE (KOUT,1000) SDRE	
+45	2465	2495	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	INOCO43
+46	2508	2538	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	INDCD44
+47	3138	3169	NOISE	                                                                        		lighton=                                      190 ## dots=                                      190 ## glm=                                      190	

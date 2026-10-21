@@ -1,0 +1,64 @@
+1	16	43	NOISE	                                                                        			
+2	56	71	NOISE	                                                                        			
+3	534	577	HAND	C ************************ CODE INSERTION POINTS ***********************			MAP181
+4	577	609	HANDFREE	  178 CONTINUE                                                          			
+5	618	652	HANDFREE	  179 CONTINUE                                                          			
+6	663	706	COMMENT	C ******************** CODE INSERTION POINT. ********************       			MAR10
+7	706	735	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+8	747	787	AGREE	 170  WRITE (ISOUT,20) XGZ,YGZ                                          		lighton= 170  WRITE (ISOUT,20) XGZ,YGZ ## dots= 170  WRITE (ISOUT,20) XGZ,YGZ ## glm= 170  WRITE (ISOUT,20) XGZ,YGZ	MAR400
+9	787	830	HANDFREE	 1702 IF(LEFT-NX) 1021,1022,1022                                        			MAR100
+10	830	867	AGREE	 1021 NX=LEFT                                                           		lighton= 1021 NX=LEFT ## dots= 1021 NX=LEFT ## glm= 1021 NX=LEFT	1F25
+11	876	910	VOTED	 1022 MM=NX/(INC)                                                       		lighton= 1022 MM=NX/(INC) ## dots= 1022 MM=NX/(INC) ## glm= 1022 MM=NX/（INC）	
+12	921	952	HANDFREE	      M=MM+1                                                            		glm=      M=MM+1	
+13	964	1007	COMMENT	C     LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST      		lighton=C     LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST ## glm=C     LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST	MAR130
+14	1007	1040	COMMENT	C     PRINTER STRIP                                                     		lighton=C     PRINTER STRIP ## glm=C     PRINTER STRIP	IMT171
+15	1052	1085	AGREE	      LEFT=NX-MM*(INC)                                                  		dots=      LEFT=NX-MM*(INC) ## glm=      LEFT=NX-MM*(INC)	
+16	1094	1130	AGREE	      IF (LEFT.NE.0) GO TC 2023                                         		lighton=      IF (LEFT.NE.0) GO TC 2023 ## dots=      IF (LEFT.NE.0) GO TC 2023 ## glm=      IF (LEFT.NE.0) GO TC 2023	MAR1770
+17	1130	1165	AGREE	      M = MM                                                            		lighton2=      M = MM ## glm=      M = MM ## glm2=      M = MM	
+18	1179	1211	AGREE	      LEFT = INC                                                        		lighton=      LEFT = INC ## dots=      LEFT = INC ## glm=      LEFT = INC	
+19	1221	1253	COMMENT	C     STRIPS                                                            		lighton=C     STRIPS ## dots=C     STRIPS ## glm=C     STRIPS	
+20	1263	1301	VOTED	 2023 DO 110 ISTRIP=1,N                                                 		lighton2= 2023 DO 110 ISTRIP=1,M ## dots= 2023 DO 110 ISTRIP=1,N ## dots2= 2023 00 110 ISTRIP=1,N ## glm= 2023 DO 110 ISTRIP=1,H ## glm2= 2023 DO 110 ISTRIP=1，N	MAP17
+21	1301	1341	AGREE	      MAPRUN=MAPRUN+1                                                   		lighton=      MAPRUN=MAPRUN+1 ## dots=      MAPRUN=MAPRUN+1 ## glm=      MAPRUN=MAPRUN+1	MAP190
+22	1350	1388	AGREE	      IF (JC   .EQ.3)  GO TO 1023                                       		lighton=      IF (JC   .EQ.3)  GO TO 1023 ## dots=      IF (JC   .EQ.3)  GO TO 1023 ## glm=      IF (JC   .EQ.3)  GO TO 1023	MAP177
+23	1388	1425	HANDFREE	      ABSSA(1)=XCOORD                                                   		lighton=      ABSSA(1)=xCOORU ## glm=      ABSSA(1)=XCOORD	
+24	1437	1471	VOTED	      DO 3023 IA8=2,10                                                  		lighton=      DO 3023 IA8=2,10 ## dots=      DO 3023 IAB=2,10 ## glm=      DO 3023 IA8=2,10	
+25	1479	1517	VOTED	 3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC                                      		lighton= 3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC ## dots= 3023 ABSSA(IAB)=ABSSA(IAB-1)+TINC ## glm= 3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC	MAP213
+26	1517	1562	VOTED	      WRITE (ISOUT,1)MAPRUN,CPMID,NREQ                                  		lighton=      WRITE (ISOUT,1)MAPRUA,CPMIO,NREQ ## dots=      WRITE (ISOUT,1)MAPRUN,CPMID,NREQ ## glm=      WRITE (ISOUT,1)MAPRUN,CPMID,NREQ	
+27	1562	1600	AGREE	      WRITE (ISOUT,16)ABSSA                                             		lighton=      WRITE (ISOUT,16)ABSSA ## dots=      WRITE (ISOUT,16)ABSSA ## glm=      WRITE (ISOUT,16)ABSSA	MAP20
+28	1600	1642	VOTED	 1023 KL=KKL+(NYMAP-1)*NXMAP                                            		lighton= 1023 KL=KKL+(NYMAP-1)*NXMAP ## dots= 1023 KL=KKL+(NYMAP-1)*NXMAP ## glm= 1023 KL=KKL+（NYMAP-1）*NXMAP	
+29	1642	1689	VOTED	      IF(ISTRIF-M)103,104,103                                           		lighton=      IF(ISTRIF~M)103,104,103 ## dots=      IF(ISTRIP-M)103,104,103 ## glm=      IF(ISTRIF-M)103,104,103	MAP206
+30	1689	1725	AGREE	 104  KINC=LEFT-1                                                       		lighton= 104  KINC=LEFT-1 ## dots= 104  KINC=LEFT-1 ## glm= 104  KINC=LEFT-1	
+31	1737	1768	AGREE	      VLEFT=LEFT                                                        		lighton=      VLEFT=LEFT ## dots=      VLEFT=LEFT ## glm=      VLEFT=LEFT	
+32	1779	1812	VOTED	      XCIN=VLEFT+DGX                                                    		dots=      XCIN=VLEFT+DGX ## dots2=      XCIN=VLEFT+DGX ## glm=      XCIN=VLEFT<DGX ## glm2=      XCIN=VLEFT+DGX	
+33	1821	1855	AGREE	      GO TO 1031                                                        		lighton=      GO TO 1031 ## dots=      GO TO 1031 ## glm=      GO TO 1031	
+34	1864	1898	VOTED	 1C3  KINC=INC-1                                                        		lighton2= 1C3  KINC=INC-1 ## dots= 103  KING=INC-1 ## dots2= 103  KINC=INC-1 ## glm= 1C3  KINC=INC-1 ## glm2= 1C3  KINC=INC-1	
+35	1907	1939	HANDFREE	      XCIN=XCINC                                                        		dots=      XCIN=XCINC ## glm=      XCIN=XCINC	
+36	1949	1980	HANDFREE	 1031 CONTINUE                                                          		lighton= 1931 CONTINUE ## dots= 1031 CONTINUE ## glm= 1031 CONTINUE	
+37	1994	2028	HANDFREE	      KLINK = KINC+1                                                    		dots=      KLINK = KINC+1 ## glm=      KLINK = KINC+1	
+38	2036	2077	VOTED	      IF(JC   .EQ.3) WRITE(MBTAPC)NYMAF,KLINK                           		lighton=      IF(JC   .EQ.3) WRITE(MBTAPC)NYMAF,KLINK ## dots=      IF(JC   .EQ.3) WRITE(MBTAPE)NYMAF,KLINK ## glm=      IF(JC   .EQ.3) WRITE(MBTAPC)NYMAF,KLINK	MAR217
+39	2077	2106	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+40	2121	2152	HAND	C     ROWS                                                              		lighton=C     ROWS ## dots=C     ROWS ## glm=C     ROWS	
+41	2165	2199	VOTED	      YY=YMIN+DGY*FLOAT(NYMAP)                                          		lighton=      YY=YMIN+DGY*FLOAT(NYMAP) ## dots=      YY=YMIN+OGY*FLOAT(NYMAP) ## glm=      YY=YMIN+DGY*FLOAT(NYMAP)	
+42	2208	2241	HANDFREE	      DO 200 J=1,NYMAP                                                  		lighton=      00 200 J=1,NYMAP ## dots=      00 200 J=1,NYHAP ## glm=      00 200 J=1，NYHAP	
+43	2251	2284	HANDFREE	      KH=KL+KIND                                                        	16	lighton2=      KH=KL+KINC ## dots=      KN=KL+KIND ## dots2=      KN=KL+KIND ## glm=      KH=KL+KING ## glm2=      KH=KL+KING	
+44	2295	2323	HANDFREE	      KDC=0                                                             		lighton=      KDC=0 ## dots=      KDC=0 ## glm=      KDC=0	
+45	2338	2371	HANDFREE	      DO 201 K=KL,KH                                                    	10	lighton2=      DO 701 K=KL,KH ## dots=      DO 501 K=KL,KH ## dots2=      DO 301 K=KL,KH ## glm=      DO 701 K=KL,KH ## glm2=      DO 201 K=KL,KH	
+46	2381	2419	HANDFREE	      IF(OMAP(K).LT.CUTMAP)OMAP(K)=0.0                                  	24	lighton=      IF(OMAP(K).LT.CUTMAP)OMAP(K)=0.0 ## lighton2=      IF(OMAP(K).LT.CUTMAP)OMAP(K)=0.0 ## dots=      IF(OMAP(K).LT.CUTHAP)OMAP(K)=0.0 ## dots2=      IF(OMAP(K).LT.CUTNAP)OMAP(K)=0.0 ## glm=      IF(OMAP(K).LT.CUTNAF)OMAP(K)=0.0 ## glm2=      IF(OMAP(K).LT.CUTNAF)OMAP(K)=0.0	MM766
+47	2419	2456	AGREE	 201  FSUM=FSUM+OMAP(K)                                                 		lighton= 201  FSUM=FSUM+OMAP(K) ## dots= 201  FSUM=FSUM+OMAP(K) ## glm= 201  FSUM=FSUM+OMAP(K)	
+48	2466	2493	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+49	2508	2544	COMMENT	C     NUMBERS WITHIN ROWS                                               		lighton=C     NUMBERS WITHIN ROWS ## dots=C     NUMBERS WITHIN ROWS ## glm=C     NUMBERS WITHIN ROWS	
+50	2553	2586	VOTED	      DO 390 K=KL,KH                                                    		lighton=      DO 390 K=KL,KH ## dots=      DO 300 K=KL,KH ## glm=      DO 390 K=KL，KH	AP21
+51	2596	2627	HANDFREE	      KDC=KDC+1                                                         		dots=      KDC=KDC+1 ## glm=      KDC=KDC+1	
+52	2637	2679	COMMENT	C     TRANSFER TO CODE FOR SELECTED PRESENTATION                        		lighton=C     TRANSFER TO CODE FOR SELECTED PRESENTATION ## glm=C     TRANSFER TO CODE FOR SELECTED PRESENTATION	MAP230
+53	2679	2718	VOTED	      GO TO N2.(150,151,301)                                            		lighton=      GO TO N2,(150,151,301) ## dots=      GO TO N2.(150,151,301) ## glm=      GO TO N2.（150，151，301）	MAF231
+54	2718	2750	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+55	2764	2802	COMMENT	C 150 CODE FOR POWER OF TEN DISPLAY                                     		lighton=C 150 CODE FOR POWER OF TEN DISPLAY ## dots=C 150 CODE FOR POWER OF TEN DISPLAY ## glm=C 150 CODE FOR POWER OF TEN DISPLAY	MAR202
+56	2802	2844	VOTED	 150  IF(OMAP(K))105,106,107                                            		lighton= 150  IF(OMAP(K))105,106,107 ## dots= 150  IF(OMAP(K))105,106,107 ## glm= 150  IF(OHAP(K))105,106,107	MAP234
+57	2844	2884	AGREE	 105  ASSIGN 121 TO N3                                                  		lighton= 105  ASSIGN 121 TO N3 ## dots= 105  ASSIGN 121 TO N3 ## glm= 105  ASSIGN 121 TO N3	
+58	2897	2928	AGREE	      OMAP(K)=-OMAP(K)                                                  		lighton=      OMAP(K)=-OMAP(K) ## dots=      OMAP(K)=-OMAP(K) ## glm=      OMAP(K)=-OMAP(K)	
+59	2928	2969	HANDFREE	      GO TO 109                                                         			MAP256
+60	2978	3012	VOTED	 1C7  ASSIGN 300 TO N3                                                  		lighton= 1C7  ASSIGN 300 TO N3 ## dots= 107  ASSIGN 300 TO N3 ## glm= 1C7  ASSIGN 300 TO N3	
+61	3012	3060	HANDFREE	  109 H = ALOG10(OMAP(K))                                               			MAP238
+62	3060	3114	HANDFREE	      H1=AMOD(H,1.0)                                                    			4AP259
+63	3133	3164	NOISE	                                                                        		lighton=                                       149 ## dots=                                       149 ## glm=                                       149	
+64	3309	3330	NOISE	                                                                        			

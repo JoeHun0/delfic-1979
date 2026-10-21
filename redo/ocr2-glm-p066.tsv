@@ -1,0 +1,8 @@
+1	93	COUNT 3/10	                                                                                	---
+2	121	COUNT 3/16	                                                                                	---
+5	962	COUNT 28/29	                                                                                	WRITE( ISOUT, 14 ) TME, TMPG, SSAM
+14	1349	COUNT 4/5	                                                                                	F=45
+27	1907	OK	      WRITE(ISOUT,25)                                                           	WRITE (ISOUT, 25)
+37	2335	OK	  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)                        	602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)
+50	3361	COUNT 2/1	                                                                                	2.
+51	3392	COUNT 3/11	                                                                                	---

@@ -1,0 +1,35 @@
+1	16	COUNT 0/28;COUNT 320/3	                                                                                	 || \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B} \text{B}
+2	52	COUNT 3/28;COUNT 10/8	                                                                                	716 || \text{1.1}
+3	803	COUNT 14/7	      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                )        	IF( MC3 .GT. 0) WRITE(ISOUT,8019) || \dot{J}PRVS167
+4	851	COUNT 48/41;COUNT 8/7	                                                                                	CALL DUMPER(XF,YP,ZP,TP, RWAF, RWAF, PMAS,FSIZ,0.,0, || SPRVS168
+5	897	COUNT 17/15	                                                                        SPRVS169	1ISOUT.IPOUT.MC3) || SPRVS169
+6	950	COUNT 22/1	      GO TO1.890                                                                	GO TO 1.890 || \mathcal{D} \mathcal{T}
+7	981	COUNT 51/49	                                                                        SPRVS171	COMPUTE INDEX OF MESH OR SUB-MESH CONTAINING PARCEL CENTER. || SPRVS171
+8	1020	OK	 1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF)          SPRVS172	1200 CALL NEST(NET, NETSU, XP, YP, NDATP, XL, XR, YL, YU, ICF, JCF, NCF) || SPRVS172
+9	1065	COUNT 48/49	                                                                        SPRVS173	CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS. || SPRVS173
+10	1113	OK	      IF(NOATP.GT.U) GO TO 1260                                         SPRV5174	IF(NOATP.GT.U) GO TO 1260 || SPRV5174
+11	1154	OK	      IF( MC3 .GT. 0) WRITE(IS(UT,8020)                                 SPRVS175	IF( MC3 .GT. 0) WRITE(IS(UT,8020) || SPRVS175
+12	1208	COUNT 8/9	                                                                                	GO TO 1000
+13	1236	COUNT 61/60	                                                                        SPRVS177	CANCEL PROCESSING OF PARCEL IF IT CANNOT REACH THE GROUND IN THE ALLOTED! || SPRVS177
+14	1295	COUNT 11/1	C     TIME                                                                      	C TIME || \mathcal{S}
+15	1327	OK	 1260 IF(ZLOW.LT.ZLIM) GO TO 1409                                       SPKVS179	1260 IF(ZLOW.LT.ZLIM) GO TO 1409 || SPKVS179
+16	1371	OK	      IF( MC3 .GT. 0) WRITE(ISCUT,8015)                                 SPRVS180	IF( MC3 .GT. 0) WRITE(ISCUT,8015) || SPRVS180
+17	1423	OK	      GO TO 1030                                                                	GO TO 1030
+18	1451	OK	 1409 CALL       ADVEC(NET,NETSU,ZEH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM,  SPRVS1d2	1409 CALL ADVEC(NET,NETSU,ZEH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM, || SPRVS1d2
+19	1499	OK	     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX,                       SPRVS183	1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX, || SPRVS183
+20	1544	COUNT 36/35	                                                                        SPKV5184	2ICF, JCF, NCF, KBHF, N(CATF, LTIMF, NATF) || SPKV5184
+21	1599	COUNT 17/5	 1000 CONTINUE                                                                  	1000 CONTINUE || \text{JFRNYSOL'V}
+22	1634	COUNT 13/4	      GO TO 100                                                                 	GO TO 100 || \text{SPKYSI}
+23	1668	OK	COPY OUT BUFFER DATA VECTORS FOR DRY DEPOSIT INCREMENTS.  WAFER         SPRV5187	COPY OUT BUFFER DATA VECTORS FOR DRY DEPOSIT INCREMENTS. WA FER || SPRV5187
+24	1718	COUNT 27/28;COUNT 8/7	                                                                                	C PROCESSING HAS BEEN COMPLETED || SPKV5188
+25	1757	OK	  806 CALL       DUMPER(0.,J.,0.,0.,   J.,   J.,   J.,  U.,J.,999.      SPRVS189	806 CALL DUMPER(0.,J.,0.,0., J., J., J., U.,J.,999. || SPRV S189
+26	1803	OK	     1ISOUT,IPOUT,MC3)                                                  SPKVS1JU	1ISOUT,IPOUT,MC3) || SPKV S1JU
+27	1843	OK	      CALL       DUMPER(0.,0.,C.,U.,   J.,   J.,   U.,  C.,0.,999,      SPRVS131	CALL DUMPER(0.,0.,C.,U., J., J., U., C.,0.,999, || SPRVS131
+28	1895	COUNT 16/17;COUNT 11/1	                                                                                	1ISOUT,IPOUT,MC3 || \mathcal{C}
+29	1939	OK	      REWIND JPARN                                                              	REWIND JPARN
+30	1980	COUNT 12/13;COUNT 2/1	                                                                                	ENDFILE IPOUT || 12
+31	2026	COUNT 11/1	      REWIND IPOUT                                                              	REWIND IPOUT || \mathcal{D}
+32	2070	COUNT 14/3	      RETURN                                                                    	RETURN || \text{JF KVV JL}
+33	2114	OK	      END                                                                       	END
+34	3148	OK	                                         128                                    	128
+35	3307	COUNT 4/17;COUNT 15/3	                                                                                	text || \text{العَمَّة}

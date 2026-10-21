@@ -1,0 +1,61 @@
+1	520	OK	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     RSXP  32	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || RSXP 32
+2	565	OK	C                                                                       RSXP  33	C || RSXP 33
+3	606	OK	      DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),DNWAF(2)       RSXP  34	DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),DNWAF(2) || RSXP 34
+4	651	OK	C                                                                       RSXP  35	C || RSXP 35
+5	693	COUNT 69/68	                                                                        RSXP  36	444 FORMAT(*1*/10X,*DEPOSIT INCREMENTS*//15X,*TIME*,7X,*ALT*,8X,*RAD*,1 || RSXP 36
+6	737	OK	     17X,*DIAM*,8X,*MASS*,8X,*OZ*,7X,*ZLOW*,7X,*VOL*//)                 RSXP  37	17X, *DIAM*, 8X, *MASS*, 8X, *OZ*, 7X, *ZLOW*, 7X, *VOL* //) || RSXP 37
+7	781	OK	  666 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2,*IN CLOUD*)                     RSXP  38	666 FORMAT(1X, 1PE11.3, 7E11.3, I2, 5X, I2, *IN CLOUD*) || RSXP 38
+8	823	COUNT 7/6	  777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2)                                        	777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2) || R.SXP 39
+9	858	COUNT 69/68	                                                                        RSXP  40	888 FORMAT(1X,1PE11.3,7E11.3/1X,*SUBDIVISION*,2X,I5,5X,*SIZE CLASS*,2X) || RSXP 40
+10	909	OK	     1.15/1                                                             RSXP  41	1.15/1 || RSXP 41
+11	953	OK	C                                                                       RSXP  42	C || RSXP 42
+12	993	COUNT 199/71	                                                                        RSXP  43	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || RSXP 43
+13	1040	OK	C                                                                       RSXP  44	C || RSXP 44
+14	1081	COUNT 17/6	C     INITIALIZE WAFER UP-CRIFT INTERPOLATION ARRAYS AND WAFER DATA             	C     INITIALIZE WAFER UP-CRIFT INTERPOLATION ARRAYS AND WAFER DATA || \dot{R}SXP \quad 45
+15	1122	OK	C     ARRAYS                                                            RSXP  46	C ARRAYS || RSXP 46
+16	1167	OK	C                                                                       RSXP  47	C || RSXP 47
+17	1210	COUNT 0/10	                                                                        RSXP  48	 || RSXP 48
+18	1252	OK	      00 2 K9=1,2                                                       RSXP  49	00 2 K9=1,2 || RS XP 49
+19	1296	COUNT 0/15	                                                                        RSXP  50	 || RSXP 50
+20	1341	COUNT 16/9	                                                                        RSXP  51	\text{no 3 KC=1,8} || RSXP 51
+21	1381	OK	      DO J KQ=1,2                                                       RSXP  52	DO J KQ=1,2 || RSXP 52
+22	1424	COUNT 17/16	                                                                        RSXP  53	.3 DPST(KC, KQ) = 0.0 || RSXP 53
+23	1468	OK	    4 KDPST=KDI                                                         RSXP  54	4 KDPST=KDI || RSXP 54
+24	1509	OK	      DPSTK=KDPST                                                       RSXP  55	DPSTK = KDPST || RSXP 55
+25	1553	OK	C                                                                       RSXP  56	C || RSXP 56
+26	1595	OK	C     COMPUTE WAFER UP-DRIFT INTERPOLATION ARRAYS                       RSXP  57	C   COMPUTE WAFER UP-DRIFT INTERPOLATION ARRAYS || RSXP 57
+27	1638	OK	C                                                                       RSXP  58	C || RSXP 58
+28	1681	OK	    6 00 7 K0=1,MCX                                                     RSXP  59	6 00 7 K0=1,MCX || RSXP 59
+29	1724	COUNT 30/29	                                                                        RSXP  60	IF(CX(KD,7)-CX(KD,()))53, 53, 54 || RSXP 60
+30	1767	OK	   53 DPX(1,K0)=0.0                                                     RSXP  61	53 DPX(1, K0) = 0.0 || RSXP 61
+31	1811	OK	      GO TO 55                                                          RSXP  62	GO TO 55 || RSXP 62
+32	1854	COUNT 67/51	                                                                        RSXP  63	54 \mathcal{O}PX(1,K\bar{U}) = (CX(KD,7) - CX(KD,6)) / (CX(KD,4) - CX(KD,3)) || RSXP 63
+33	1896	OK	   55 IF(CX(KD,6))56,56,57                                              KSXP  64	55 IF(CX(KD,6))56,56,57 || KSXP 64
+34	1939	OK	   56 DPX(2,KU)=0.0                                                     RSXP  ES	56 DPX(2, KU) = 0.0 || RSXP ES
+35	1983	OK	      GO TO 7                                                           RSXP  66	GO TO 7 || RSXP 66
+36	2024	OK	   57 DENOM=CX(KD,3)-ZBRSTZ                                             RSXP  67	57 DENOM=CX(KD,3)-ZBRSTZ || RSXP 67
+37	2067	COUNT 24/17	                                                                        RSXP  68	IF( \nexists ENOH)58,56,58 || RSXP 68
+38	2112	OK	   58 OPX(2,KD)=CX(KD,6)/DENOH                                          RSXP  69	58 OPX(2,KD)=CX(KD,6)/DENOH || RSXP 69
+39	2154	OK	    7 CONTINUE                                                          RSXP  70	7 CONTINUE || RSXP 70
+40	2196	OK	      IF(IC(6) .GT. 0) WRITE(ISOUT,444)                                 RSXP  71	IF(IC(6) .GT. 0) WRITE(ISOUT,444) || RSXP 71
+41	2243	OK	C                                                                       RSXP  72	C || RSXP 72
+42	2281	OK	C     SET NOMINAL WAFER EDGE LENGTH IF WAFER RADII ARE TO BE SUBDIVIDED RSXP  73	C SET NOMINAL WAFER EDGE LENGTH IF WAFER RADII ARE TO BE SUBDIVIDED || RSXP 73
+43	2327	OK	C                                                                       RSXP  74	C || RSXP 74
+44	2370	OK	      IF(IRAD)78,78,79                                                  RSXP  75	IF(IRAD) 78, 78, 79 || RSXP 75
+45	2412	OK	   76 87=0.                                                             KSXP  76	76 87=0. || KSXP 76
+46	2458	OK	      GO TO 77                                                          RSXP  77	GO TO 77 || RSXP 77
+47	2500	OK	   79 8Z=CX(MCX,5)/FLOAT(IRAD)                                          RSXP  78	79 8Z = CX(MCX, 5) / F LOAT(IRAD) || RSXP 78
+48	2541	COUNT 21/6	C     INITIALIZE TAPE IRISE                                                     	C INITIALIZE TAPE IRISE || \mathcal{R}SXP \quad 79
+49	2585	OK	   77 REWIND IRISE                                                      RSXP  00	77 REWIND IRISE || RSXP 00
+50	2628	COUNT 15/14	                                                                        RSXP  81	78882 8Z2=8Z/2.0 || RSXP 81
+51	2670	COUNT 10/9	                                                                        RSXP  82	120 L0000=0 || RSXP 82
+52	2715	OK	C                                                                       RSXP  83	C || RSXP 83
+53	2755	OK	C     COMPUTE IN-CLOUD AIR VISCOSITIES                                  RSXP  04	C COMPUTE IN-CLOUD AIR VISCOSITIES || RSXP 04
+54	2801	OK	C                                                                       RSXP  85	C || RSXP 85
+55	2841	OK	      00 6345 J=1,MCX                                                   RSXP  86	00 6345 J=1,MCX || RSXP 86
+56	2884	OK	 6C45 VISCX(J)=1.458E-6*CX(J,9)**1.5/(110.4*CX(J,9))                    RSXP  87	6C45 VISCX(J) = 1.458E-6 * CX(J, 9) ** 1.5 / (110.4 * CX(J, 9)) || RSXP 87
+57	2930	COUNT 21/6	      KCX=4CX-1                                                                 	KCX = 4CX - 1 || \mathcal{R}SXP \quad d8
+58	2975	OK	C                                                                       RSXP  89	C || RSXP 89
+59	3013	OK	C     COMPUTE A SETTLING RATE THRESHOLC, SRTHS.  SETTLING  RATES LESS   RSXP  90	C     COMPUTE A SETTLING RATE THRESHOLC, SRTHS.   SETTLING RATES LESS || RSXP 90
+60	3057	OK	C     THAN THIS VALUE ARE CONSIDERED INSIGNIFICANT AND ARE REPLACED     KSXP  91	C THAN THIS VALUE ARE CONSIDERED INSIGNIFICANT AND ARE REPLACED || KSXP 91
+61	3124	COUNT 2/1	                                                                                	91

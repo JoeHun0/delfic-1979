@@ -1,0 +1,64 @@
+1	1	COUNT 3/14;COUNT 3/2	                                                                                	--- || ---
+2	28	COUNT 3/5	                                                                                	---
+3	527	COUNT 6/4	     2SIGY0(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100  ),YPRP    L         	2SIGY0(100),SINA ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRPL || DPM1 28
+4	572	COUNT 16/17;COUNT 6/5	                                                                                	3YPRMU ZPAR(100) C || DPM1 29
+5	608	COUNT 29/28;COUNT 6/4	                                                                                	COMMON /RUNDAT/ C ,CF6 ,FSUP ,ICTR || DPM1 30
+6	657	COUNT 25/31	                                                                        OPM1  31	1MAPRUN NE NIJ NORD NREQ NTASK || OPM1 31
+7	702	OK	     20PMID(12) ,T1        ,T2        ,WFMAS(2C0)                       UPM1  32	20PMID(12) ,T1 ,T2 ,WFMAS(2C0) || UPM1 32
+8	737	COUNT 56/54	                                                                        OPM1  33	COMMON/FISHIN/ABEGN(700),ABUNDO(700),BRANCH(130),CAPFIS, || OPM1 33
+9	787	OK	     1  OCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                 OPM1  34	1 OCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700) || OPM1 34
+10	822	OK	      COMMON /OUTPUT/ FISN(M,FF(200),FW,NDSTR,JGC,MASCHN,PS(200),       UPM1  35	COMMON/OUTPUT/FISN(M,FF(200),FW,NDSTR,JGC,MASCHN,PS(200), || UPM1 35
+11	874	OK	     1 FMASS(200),DIAM(200)                                             OPM1  36	1 FMASS(200),DIAM(200) || OPM1 36
+12	917	OK	      COMMON /UTILTY/  KCUT,NPRNT(15)                                   OPM1  37	COMMON /UTILTY/ KCUT,NPRNT(15) || OPM1 37
+13	962	OK	      INTEGER FISSID                                                    OPM1  38	INTEGER FISSID || OPM1 38
+14	1003	OK	      LOGICAL NPRNT                                                     OPM1  39	LOGICAL NPRNT || OPM1 39
+15	1043	OK	      DIMENSION DETID(12),DTMID(12),NUMTAP(15)                          UPM1  40	DIMENSION DETID(12),DTMID(12),NUMTAP(15) || UPM1 40
+16	1090	OK	      DATA PROGRM /6H CPM1 /                                            OPM1  41	DATA PROGRM /6H CPM1 / || OPM1 41
+17	1134	OK	C                                                                       OPM1  42	C || OPM1 42
+18	1177	OK	 1    FORMAT(12A6)                                                      OPM1  43	1 FORMAT(12A6) || OPM1 43
+19	1220	OK	 3    FORMAT(8L1)                                                       OPM1  44	3 FORMAT(8L1) || OPM1 44
+20	1260	COUNT 20/21	                                                                        OPM1  45	FORMAT (A6,4X,2F10.3) || OPM1 45
+21	1295	OK	    5 FORMAT(/ 30X, 51HU238 INCUCED ACTIVITY - CAPTURE-TO-FISSION RATIO OPM1  46	5 FORMAT( / 30X, 51HU238 INCUCED ACTIVITY - CAPTURE-TO-FISSION RATIO || OPM1 46
+22	1349	OK	     1ISF7.3)                                                           OPM1  47	1ISF7.3) || OPM1 47
+23	1379	COUNT 61/58	                                                                        OPM1  48	6 FORMAT(/ 30X, 56HSOIL INCUGED ACTIVITY - NEUTRONS EMITTED PER FISSION || OPM1 48
+24	1434	OK	     1ION AREF7.3)                                                      UPM1  49	1ION AREF7.3) || UPM1 49
+25	1475	OK	    7 FORMAT ( /47X19HTYPE OF FISSION IS A6)                            OPM1  50	7 FORMAT ( /47X19HTYPE OF FISSION IS A6) || OPM1 50
+26	1507	COUNT 60/59	                                                                        OPM1  51	8 FORMAT (/21X55HTHE CLOUC REACHED THE SOIL CONDENSATION TEMPERATURE || OPM1 51
+27	1560	COUNT 24/25	                                                                        OPM1  52	1E OF F7.1.4H AT F8.4.5H SEC. || OPM1 52
+28	1602	OK	    9 FORMAT (/ 43X14HTOTAL YIELD IS,1PE12.4,10H KILCTCNS.,             OPM1  53	9 FORMAT (/ 43X14HTOTAL YIELD IS,1PE12.4,10H KILCTCNS., || OPM1 53
+29	1637	COUNT 43/44	                                                                        OPM1  54	/41X16HFISSION YIELD 1S,1PE12.4,10H KILCTONS.) || OP M1 54
+30	1690	OK	 10   FORMAT(// 41X, 33H****  SUMMARY OF RUN IDENTIFIERS  ****/ 41X,    CPM1  55	10 FORMAT(// 41X, 33H**** SUMMARY OF RUN IDENTIFIERS ****/ 41X, || CPM1 55
+31	1727	OK	     1 19HOUTPUT PROCESSOR - 12A6,/ 28X, 32HINITIALIZATION AND CLOUD RISOPM1  56	1 19H OUTPUT PROCESSOR - 12A6,/ 28X, 32HINITIALIZATION AND CLOUD RIS || OPM1 56
+32	1769	OK	     2E - 12A6/ 38X. 22HDIFFUSIVE TRANSPORT - 12A6)                     OPM1  57	2E-12A6/38X.22HDIFFUSIVE TRANSPORT-12A6) || OPM1 57
+33	1823	OK	 15   FORMAT(20I4)                                                      OPM1  58	15 FORMAT(20I4) || OPM1 58
+34	1855	OK	 16   FORMAT(/22X77H****  THE CONTROL VARIABLE ARRAY, IC(J), WAS GIVEN TOPM1  59	16 FORMAT(/22X77H**** THE CONTROL VARIABLE ARRAY, IC(J), WAS GIVEN T || OPM1 59
+35	1904	COUNT 28/32	                                                                        OPM1  66	1HE FOLLOWING VALUES / 19X, 2014) || OPM1 66
+36	1947	OK	 17   FORMAT ( /45X9HTHERE ARE,I4,17H PARTICLE CLASSES)                 OPM1  61	17 FORMAT ( /45X9HTHERE ARE,I4,17H PARTICLE CLASSES) || OPM1 61
+37	1981	OK	 18   FORMAT ( /41X, 22HTHE HEIGHT OF BURST IS , F9.3, 8H METERS. )     OPM1  62	18 FORMAT ( /41X, 22H THE HEIGHT OF BURST IS , F9.3, 8H METERS. ) || OPM1 62
+38	2026	OK	 21   FORMAT( /39X43HPRINTER DESCRIPTION  -  CHARACTERS PER INCH/       OPM1  63	21 FORMAT( /39X43HPRINTER DESCRIPTION - CHARACTERS PER INCH/ || OPM1 63
+39	2075	COUNT 36/39	                                                                        OPM1  64	1 42X，10NOCONTALI5，10X，10HVERTICAL I3) || OPM1 64
+40	2118	OK	 26   FORMAT( 15X， 4HYPAR， 8X，4HYPAR， 8X， 4HZPAR， 8X， 4HTPAR，  7X，      OPM1  65	26 FORMAT(15X，4HYPAR，8X，4HYPAR，8X，4HZPAR，8X，4HTPAR，7X， || OPM1 65
+41	2154	OK	     1 5HSIGX0, 7X, 5HSIGY0, 8X, 2HR0, 9X, 4HPSIZ, 8X, 4HPMAS//)        UPM1  66	1 5HSIGX0, 7X, 5HSIGY0, 8X, 2HR0, 9X, 4HPSIZ, 8X, 4HPMAS//) || UPM1 66
+42	2204	COUNT 121/47	                                                                        OPM1  67	20 FORMAT( 1H1, 50X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || OPM1 67
+43	2240	OK	     1                                        12X1C1HT H E   D E P A R TOPM1  68	1 12X1C1HT HE DEPART || OPM1 68
+44	2282	OK	     2 M E N T   O F   D E F E N S E   F A L L O U T   P R E D I C T I OOPM1  69	2 MENT OF DEFENSE FALLOUT PREDICTIO || OPM1 69
+45	2322	COUNT 50/48;COUNT 5/6	                                                                                	3 N S Y S T E M, // 51X, 19H * * * * * * * * * * * // // 48X, 23HUUUTPUT PRO || OPM 70
+46	2374	COUNT 62/63	                                                                        UPM1  71	4CESSOR MODULE//55X,11HPREPARED BY/45X,30HATMOSPHERIC SCIENCE ASSO || UPM1 71
+47	2419	OK	     5CIATES/ 53X. 14HBEDFCRD. MASS.)                                   UPM1  72	5CIATES/ 53X. 14HBEDFCRD. MASS. ) || UPM1 72
+48	2453	OK	 29   FORMAT(////45X38HLISTING OF FALLOUT PARCEL DESCRIPTIONS)          OPM1  73	29 FORMAT(////45X38HLISTING OF FALLOUT PARCEL DESCRIPTIONS) || OPM1 73
+49	2508	OK	 30   FORMAT(//10X6HBLOCK I4)                                           UPM1  74	30 FORMAT(//10X6HBLOCK I4) || UPM1 74
+50	2551	OK	 36   FORMAT(10X,9E12.4)                                                UPM1  75	36 FORMAT(10X,9E12.4) || UPM1 75
+51	2583	COUNT 54/53	                                                                        OPM1  76	37 FORMAT(1)X. 43HNUMBER OF FALLOUT PARCELS IN THIS BLOCK IS I4) || OPM1 76
+52	2626	COUNT 49/48	                                                                        OPM1  77	39 FORMAT(46H NO MAPS. THIS RUN FOR TAPE IFOUT PRINT ONLY.) || OPM1 77
+53	2669	COUNT 57/58	                                                                        OPM1  78	40 FORMAT(//25X. 63HTHIS IS AN AIRBURST. PARTICLE ACTIVITIES ARE C || OPM1 78
+54	2711	OK	     10MPUTED BY PAMA / 30X, 11HSCALED H08=E12.5, 7H (FEET))            OPM1  79	10MPUTED BY PAMA / 30X, 11HSCALED H08=E12.5, 7H (FEET)) || OPM1 79
+55	2755	COUNT 54/53	                                                                        OPM1  50	41 FORMAT( /40X, 42HSOIL INDUCED ACTIVITY IS NOT ACCOUNTED FOR) || OPM1 50
+56	2799	COUNT 59/58;COUNT 7/6	                                                                                	42 FORMAT(1H0, 11X, 53HFISSION YIELD IS ACJUSTED BY THE FRACTION-DON || 10PM1 81
+57	2843	OK	     1N FACT0RF8.5, 16H FCR SCALED HUB=1PE11.4, 13H FT H**(-1/3))       UPH1  82	1N FACT0RF8.5, 16H FCR SCALED HUB=1PE11.4, 13H FT H**(-1/3)) || UPH1 82
+58	2900	OK	C                                                                       OPM1  83	C || OPM1 83
+59	2939	OK	      NTASK=0                                                           OPM1  04	NTASK=0 || OPM1 04
+60	2981	COUNT 10/9	                                                                        OPM1  85	<OUT=ISOUT || OPM1 85
+61	3026	OK	      00 50 I=1.200                                                     OPM1  86	00 50 I=1.200 || OPM1 86
+62	3069	OK	   50 PS(I)=0.0                                                         UPM1  87	50 PS(I) = 0.0 || UPM1 87
+63	3124	COUNT 3/2	                                                                                	154
+64	3298	COUNT 3/29;COUNT 3/6	                                                                                	--- || ---

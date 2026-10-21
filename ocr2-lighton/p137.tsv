@@ -1,0 +1,14 @@
+2	704	COUNT 20/7	                                                                                	\langle \partial H C 1 = 0
+5	834	OK	      SPE=2.*EPS                                                                	SPE=2.*EPS
+6	876	COUNT 55/56	                                                                                	IF (ABS(XLO-XR).GT.SPE).AND.(ABS(XRO-XL).GT.SPE)) GO TO 615
+8	960	OK	      CALL GETOA( VSUM,ZBH,KBHA,KGHB,NCAIO,LTIM,VBARC,KBHF,NUATF,LTIMF)         	CALL GETOA( VSUM,ZBH,KBHA,KGHB, NCAIO,LTIM,VBARC,KBHF,NUATF,LTIMF)
+10	1048	OK	      V3AR=VBARC                                                                	V3AR=VBARC
+22	1563	COUNT 13/14	                                                                                	626  NOT C1=NOAT
+27	1780	OK	 700  Z0=ZC                                                                     	700   Z0=ZC
+29	1867	COUNT 7/5	                                                                                	Y_0 = Y_C
+32	1994	OK	      IF(MC:5).EQ.1) WRITE(ISOUT,2) TO,ZO,XO,YO,NDATO                           	IF(MC:5).EQ.1) WRITE(ISOUT,2) TO,ZO,XO,YO,NDATO
+40	2327	COUNT 52/54	                                                                                	IF ((ZO-ZMIN).LE.EPSZ).OR.(TIMEX-TO).LE.EPST)) GO TO 720
+43	2465	COUNT 14/13	                                                                                	720  R2=R.WAF**2
+46	2591	COUNT 0/50	                                                                                	
+48	2679	COUNT 45/46	                                                                                	1 ( DSPRTX/ VAFL ) **QBRT + 3.0 * 1 R2/ VARL ) **QBRT - 2.0 )
+53	2892	OK	     1  ( OSPRTY/  VARL )**GBRT + 3.0 * ( K2/  VARL )**QBRT - 2.0 )             	1 ( OSPRTY/ VARL )**GBRT + 3.0 * ( K2/ VARL )**QBRT - 2.0 )

@@ -1,0 +1,7 @@
+3	481	COUNT 22/17	                                                                                	4 \quad NG=NC-4*(NC/4)+1
+18	1127	OK	      NOBLE=2*NOBLE                                                             	NOBLE=2*NOBLE
+43	2500	COUNT 50/49	                                                                                	COMMON /CONTROL/ IPOUT,ISIN,ISOUT,JPARN,NC(20),NSEQO
+48	2714	COUNT 43/44	                                                                                	DIMENSION TINUP(LTIF),USUM(KBHF,NOATF,LTIMF)
+53	2930	COUNT 45/46	                                                                                	DATA PROGRM ,ALIMIT ,WIND ,TURB ,ONE ,METEOR,RESOLV
+55	3017	OK	      DATA INPU   , WILKS                                                       	DATA INPU , WILKS
+58	3287	COUNT 0/32	                                                                                	

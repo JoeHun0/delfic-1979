@@ -1,0 +1,10 @@
+17	1210	OK	      00 2 KA=1，50                                                              	002KA=1，50
+22	1424	COUNT 17/16	                                                                                	3. DPST（KC，KQ）=0.0
+29	1724	OK	      IF(CX(KD,7)-CX(KD,0))53,53,54                                             	IF(CX(KD,7)-CX(KD,0))53,53,54
+30	1767	COUNT 16/15	                                                                                	53. DPX(1,KD)=0. C
+32	1854	COUNT 52/51	                                                                                	54. OPX（1，K0）=（CX（K0，7）-CX（K0，6））/（CX（K0，4）-CX（K0，3））
+34	1939	COUNT 16/15	                                                                                	56. DPX(2,KD)=0.0
+37	2067	OK	      IF(DENOM)58,56,58                                                         	IF(DENOM)58,56,58
+38	2112	COUNT 27/26	                                                                                	58. OPX(2,KD)=CX(KD,6)/DENOM
+47	2500	OK	   79 BZ=CX(MCX,5)/FLOAT(IRAD)                                                  	79 BZ=CX(MCX,5)/FLOAT(IRAD)
+50	2628	OK	 7882 BZ2=8Z/2.0                                                                	7882 BZ2=8Z/2.0

@@ -1,0 +1,37 @@
+1	18	COUNT 3/29	                                                                                	---
+2	50	COUNT 3/53;COUNT 3/8	                                                                                	--- || ---
+3	792	OK	*DECK,ERROR                                                             ERROK  1	*DECK, ERROR || ERROK 1
+4	835	OK	      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)                             ERROR  2	SUBROUTINE ERROR (PROGRM,IRROR,ISOUT) || ERROR 2
+5	877	OK	C     T. W. SCHWENKE                                                    ERROR  3	C T. W. SCHWENKE || ERROR 3
+6	921	OK	C     1 MARCH 1966                                                      ERROR  4	C 1 MARCH 1966 || ERROR 4
+7	964	OK	C                                                                       ERROR  5	C || ERROR 5
+8	1005	COUNT 1/71	                                                                        ERRCR  6	C || ERRCR 6
+9	1049	OK	C                                                                       ERROR  7	C || ERROR 7
+10	1091	OK	C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING  ERROR  8	C THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING || ERROR 8
+11	1133	OK	C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS       ERROR  9	C FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS || ERROR 9
+12	1176	OK	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                        ERROR 10	C POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. || ERROR 10
+13	1222	OK	C                                                                       ERROR 11	C || ERROR 11
+14	1263	OK	C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER  ERROR 12	C ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER || ERROR 12
+15	1305	OK	C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING.                ERROR 13	C (IRROR). PLEASE REFER TO THE PROGRAM LISTING. || ERROR 13
+16	1352	OK	C                                                                       ERROR 14	C || ERROR 14
+17	1391	OK	C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET        ERROR 15	C PRIOR TO CALLING ERRCR THE PARAMETER PROGRM MUST BE SET || ERROR 15
+18	1434	OK	C                                   WITH THE BCD NAME CF THE CALLING    ERKOR 16	C WITH THE BCD NAME CF THE CALLING || ERKOR 16
+19	1478	OK	C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE  ERROR 17	C PROGRAM AND PARAMETER IRROR MUST BE SET WITH THE NUMBER OF THE || ERROR 17
+20	1518	OK	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      ERROR 18	C FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. || ERROR 18
+21	1564	OK	C                                                                       ERROR 19	C || ERROR 19
+22	1606	COUNT 1/71	                                                                        ERROR 20	C || ERROR 20
+23	1650	OK	C                                                                       ERROR 21	C || ERROR 21
+24	1692	OK	 1    FORMAT(//26H ERROR SENSED IN PROGRAM  A6,3GH  AT OR NEAR STATEMENTERROR 22	1 FORMAT(//26H ERROR SENSED IN PROGRAM A6,3GH AT OR NEAR STATEMENT || ERROR 22
+25	1735	COUNT 45/46	                                                                        ERROR 23	1 NUMBER I6.40H . PLEASE REFER TO THE PROGRAM LISTING. || ERROR 23
+26	1779	OK	C                                                                       ERROR 24	C || ERROR 24
+27	1821	COUNT 1/71	                                                                        ERROR 25	C || ERROR 25
+28	1863	COUNT 2/71	                                                                        ERROR 26	C Q || ERROR 26
+29	1907	OK	C                                                                       ERROR 27	C || ERROR 27
+30	1949	OK	      IRR= IA8S(IRROR)                                                  ERROR 28	IRR= IA8S(IRROR) || ERROR 28
+31	1993	COUNT 25/24	                                                                        ERROR 29	WRITE(ISOUT,1)PROGRAM,IRR || ERROR 29
+32	2034	OK	      IF(IRROR)101,100,100                                              ERROR 30	IF(IRROR)101,100,100 || ERROR 30
+33	2077	OK	  100 RETURN                                                            ERROR 31	100 RETURN || ERROR 31
+34	2120	OK	  101 STOP                                                              ERROR 32	101 STOP || ERROR 32
+35	2162	OK	      END                                                               ERROR 33	END || ERROR 33
+36	3144	OK	                                        53                                      	53
+37	3292	COUNT 3/8;COUNT 3/4	                                                                                	--- || ---

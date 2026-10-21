@@ -1,0 +1,64 @@
+1	15	COUNT 0/22	                                                                                	
+2	55	COUNT 0/11;COUNT 0/3	                                                                                	 || 
+3	518	OK	C     LEFT IS USED HERE A SA TEMPORARY STORAGE                          MAP  121	C LEFT IS USED HERE AS A TEMPORARY STORAGE || MAP 121
+4	560	COUNT 0/19;COUNT 0/2	                                                                                	 || 
+5	606	COUNT 0/1	      GO TO 1702                                                                	GO TO 1702 || 
+6	648	COUNT 29/28;COUNT 6/5	                                                                                	C 102 PRINT ORIGINATE DESCRIPTION || MAP 120
+7	686	OK	C                                                                            12 	C || 12
+8	733	COUNT 17/16	                                                                        MAP  465	102 WRITE (ISOUT,8) || MAP 465
+9	770	COUNT 41/43	                                                                        MAY  126	C NREQ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, || MAY 126
+10	823	COUNT 64/65	                                                                        MAR  127	GO TO 161,162,163,177,164,165,168,169,164,165,166,167,176,171,172, || MAR 127
+11	867	COUNT 3/6	     1      173,174,175),NREQ                                                   	1 173,174,175), NREQ || 420
+12	902	COUNT 5/4	C     NREQ - 16, 17, 18                                                         	C NREQ - 16, 17, 18 || MAR 16
+13	950	COUNT 17/18;COUNT 0/5	                                                                                	161 WRITE (ISOUT, 9) || 
+14	986	OK	      GO TO 175                                                              151	GO TO 175 || 151
+15	1036	OK	 162  WRITE (ISOUT,10)                                                  MAR  106	162 WRITE (ISOUT, 10) || MAR 106
+16	1080	OK	      WRITE (ISOUT,29)                                                  MAR  4J 	WRITE (ISOUT, 29) || MAR 4J
+17	1115	COUNT 3/2	      GO TO 17J                                                                 	GO TO 17J || 154
+18	1165	COUNT 6/5	 163  WRITE (ISOUT,11)T1                                                        	163 WRITE (ISOUT, 11) T1 || MAR 409
+19	1210	COUNT 5/4	      WRITE (ISOUT,29)                                                          	WRITE (ISOUT, 29) || NOV. 4
+20	1252	COUNT 8/7	                                                                                	GO TO 1.70
+21	1296	COUNT 7/6	 164  WRITE (ISOUT,12)T1                                                        	164 WRITE (ISOUT, 12) T1 || 110. 130
+22	1341	COUNT 0/4	      WRITE (ISOUT,30)                                                          	WRITE (ISOUT, 30) || 
+23	1376	COUNT 19/21	                                                                        MAR  14U	IF(NREQ EQ 9) GO TO 1284 || MAR 14U
+24	1419	OK	 1164 WRITE(ISOUT,33)                                                   MAR  1  	1164 WRITE(ISOUT,33) || MAR 1
+25	1468	OK	      GO TO 170                                                                 	GO TO 170
+26	1509	COUNT 3/6	 1264 WRITE(ISOUT,34)                                                           	1264 WRITE (ISOUT, 34) || 143
+27	1545	OK	      GO TO 173                                                                 	GO TO 173
+28	1596	COUNT 3/6	 165  WRITE (ISOUT,13)T1,T2                                                     	165 WRITE (ISOUT, 13) T1, T2 || 145
+29	1634	OK	      WRITE (ISOUT,30)                                                  MAP  140	WRITE (ISOUT, 30) || MAP 140
+30	1675	OK	      IF(NREQ-10)1164,1264,1264                                         MAR  147	IF (NREQ-10) 1164, 1264, 1264 || MAR 147
+31	1720	COUNT 6/5	 166  WRITE (ISOUT,14)                                                          	166 WRITE (ISOUT, 14) || MAR 140
+32	1760	OK	      WRITE (ISOUT,31)                                                  MAR  149	WRITE (ISOUT, 31) || MAR 149
+33	1811	OK	      GO TO 170                                                                 	GO TO 170
+34	1852	COUNT 7/6	 167  WRITE (ISOUT,15)T1,T2                                                     	167 WRITE (ISOUT,15) T1,T2 || 1745 154
+35	1891	OK	      WRITE (ISOUT,31)                                                  MAR  156	WRITE (ISOUT, 31) || MAR 156
+36	1939	OK	      GO TO 170                                                                 	GO TO 170
+37	1982	COUNT 22/23	                                                                        MAR  15%	168 WRITE (ISO7,13) T1,T2 || MAR 15%
+38	2020	OK	      WRITE (ISOUT,30)                                                  MAP  125	WRITE (ISOUT, 30) || MAP 125
+39	2068	COUNT 0/6	      WRITE(ISOUT,17)                                                           	WRITE (ISOUT, 17) || 
+40	2101	COUNT 7/8;COUNT 0/3	                                                                                	GO TO 170 || 
+41	2153	COUNT 20/21	                                                                        MAR  156	169 WRITE (ISOUT, 12) T1 || MAR 156
+42	2198	COUNT 0/5	      WRITE (ISOUT,30)                                                          	WRITE (ISOUT, 30) || 
+43	2242	OK	      WRITE (ISOUT,17)                                                  10.  400	WRITE (ISOUT, 17) || 10. 400
+44	2276	COUNT 0/2	      GO TO 170                                                                 	GO TO 170 || 
+45	2326	COUNT 0/6	 171  WRITE (ISOUT,18)MASCHN                                                    	171 WRITE (ISOUT, 18) MASCHN || 
+46	2371	OK	      IF(J1-TGZ .GT. 0.0) WRITE(ISOUT,32)                               MAP  164	IF(J1-TGZ .GT. 0.0) WRITE(ISOUT,32) || MAP 164
+47	2409	OK	      IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35)                               MAR  104	IF(T1-TGZ .EQ. 0.0) WRITE(ISOUT,35) || MAR 104
+48	2453	COUNT 0/2	      GO TO 170                                                                 	GO TO 170 || 
+49	2500	COUNT 3/6	 172  WRITE (ISOUT,23)                                                          	172 WRITE (ISOUT, 23) || 100
+50	2542	COUNT 0/3	      GO TO 170                                                                 	GO TO 170 || 
+51	2584	OK	 173  WRITE (ISOUT,24)                                                  MAP  169	173 WRITE (ISOUT, 24) || MAP 169
+52	2629	COUNT 7/4	      GO TO 170                                                                 	GO TO 170 || MAR. 200
+53	2669	OK	 174  WRITE (ISOUT,25)                                                  MAP  171	174 WRITE (ISOUT, 25) || MAP 171
+54	2714	COUNT 0/8	                                                                         AP  172	 || AP 172
+55	2757	COUNT 6/5	 175  WRITE (ISOUT,26)                                                          	175 WRITE (ISOUT, 26) || MAP 173
+56	2793	COUNT 0/3	      GO TO 170                                                                 	GO TO 170 || 
+57	2842	OK	 176  WRITE (ISOUT,27) T1,T2                                            17.  4.5	176 WRITE (ISOUT,27) T1,T2 || 17. 4. 5
+58	2887	COUNT 0/4	      GO TO 170                                                                 	GO TO 170 || 
+59	2929	COUNT 23/24	                                                                         AP  177	177 WRITE (ISOUT,28) T1,T2 || AP 177
+60	2965	COUNT 6/5	      WRITE (ISOOUT,29                                                 )        	WRITE (ISOOUT,29) || 747 417
+61	3016	COUNT 0/8;COUNT 0/5	                                                                                	 || 
+62	3048	COUNT 0/2;COUNT 8/5	                                                                                	 || 17APR 1/7
+63	3119	COUNT 3/2	                                                                                	148
+64	3286	COUNT 0/47;COUNT 0/8	                                                                                	 || 

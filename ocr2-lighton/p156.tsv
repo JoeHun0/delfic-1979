@@ -1,0 +1,9 @@
+8	670	OK	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPACP     ,IPOUT     ,        	COMMON /CONDAT/    IC(20)    ,IHOB    ,IPACP    ,IPOUT    ,
+10	756	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM                         	2MARRAY ,MBTAPE ,MXREQ ,SD ,INPAM
+12	842	OK	     1JC        ,NXMAP     ,NYMAP     ,NZ        ,OCUT      ,SSAM      ,        	1 JC  , NXMAP  , NYMAP  , NZ  , OCUT  , SSAM  ,
+13	886	OK	     2TGZ       ,XGZ       ,X:        ,X2        ,YGZ       ,XMAX      ,        	2TGZ  ,XGZ  ,X:  ,X2  ,YGZ  ,XMAX  ,
+14	929	OK	     3XMIN      ,YMAX      ,ZMIN      ,ZMIN                                     	3XMIN    ,YMAX    ,ZMIN    ,ZMIN
+49	2731	OK	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,        	COMMON /CONDAT/ IC(20) ,IHOB ,IPNCH ,IPOUT ,
+55	2989	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN    ,YMAX    ,YMIN    ,ZMIN
+56	3033	OK	      COMMON /PARDAT/       4SQ       ,3SQ       ,COSA      ,F         ,        	COMMON /PARDAT/  4SQ  ,3SQ  ,COSA  ,F  ,
+59	3280	COUNT 34/4	                                                                                	\text{خُفْتُ مُطَّعَةٌ لِعُطْمَحَةٍ}

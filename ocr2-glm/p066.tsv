@@ -1,0 +1,8 @@
+1	78	COUNT 3/16	                                                                                	---
+2	119	COUNT 3/20	                                                                                	---
+7	1047	OK	 3C1  WRITE (ISOUT,5)                                                           	3C1 WRITE (ISOUT,5)
+14	1349	OK	      F=.45                                                                     	F=.45
+15	1393	OK	      RPHI=1.0-PHI                                                              	RPHI=1.0-PHI
+27	1904	OK	      WRITE(ISOUT,25)                                                           	WRITE (ISOUT, 25)
+37	2339	OK	  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)                        	602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)
+50	3366	COUNT 3/2	                                                                                	---

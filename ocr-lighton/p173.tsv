@@ -1,0 +1,63 @@
+1	7	COUNT 0/19	                                                                                	
+2	563	OK	*DECK,PAN1                                                              PAM1   1	* DECK, PAN1 || PAM1 1
+3	607	OK	      SUBROUTINE PAM1                                                   PAM1   2	SUBROUTINE PAM1 || PAM1 2
+4	648	OK	     1    (HOB    ,SLOTMP ,TMSO   ,TW ,EMITN, FISSIO )                  FAM1   3	1   (HOB   ,SLOTMP ,TMSO   ,TW ,EMITN, FISSIO ) || FAM1 3
+5	693	OK	C                                                                       PAM1   4	C || PAM1 4
+6	735	OK	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS                      PAM1   5	C R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS || PAM1 5
+7	778	OK	C     TAPELESS VERSION   FEBRUARY 1973                                  FAM1   6	C TAPELESS VERSION FEBRUARY 1973 || FAM1 6
+8	824	OK	C     OCTOBER 1966                                                      RAM1   7	C OCTOBER 1966 || RAM1 7
+9	868	OK	C                                                                       PAM1   8	C || PAM1 8
+10	907	OK	C   EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY    PAM1   9	C EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY || PAM1 9
+11	950	OK	C   MODULE                                                              FAM1  iC	C MODULE || FAM1  iC
+12	995	OK	C                                                                       FAM1  :1	C || FAM1 : 1
+13	1035	COUNT 56/42	                                                                        PAM1  12	CALLED BY OPM1............................................ || PAM1 12
+14	1080	OK	C                                                                       PAM1  13	C || PAM1 13
+15	1123	COUNT 67/30	                                                                        PAM1  14	C  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣ || PAM1 14
+16	1167	OK	C                                                                       PAM1  15	C || PAM1 15
+17	1207	OK	C   CAPFIS        CAPTURE-TO-FISSION RATIO                              PAM1  16	C CAPFIS CAPTURE-TO-FISSION RATIO || PAM1 16
+18	1251	OK	C   EMITN         NUMBER OF NEUTRONS EMITTED PER FISSION                PAM1  17	C EMITN NUMBER OF NEUTRONS EMITTED PER FISSION || PAM1 17
+19	1293	OK	C   FISSIO        SIX CHARACTER IDENTIFIER OF FISSION TYPE              FAM1  10	C    FISSIO    SIX CHARACTER IDENTIFIER OF FISSION TYPE || FAM1 10
+20	1336	COUNT 48/47	                                                                        PAM1  19	C IFTAPE(10) LOGICAL ARRAY TO CONTROL FILE MANI FULATION || PAM1 19
+21	1381	COUNT 1/30	                                                                        PAM1  20	C || PAM1 20
+22	1423	COUNT 1/19	                                                                        PAM1  21	C || PAM1 21
+23	1465	COUNT 1/20	                                                                        PAM1  <2	C || PAM1 <2
+24	1510	COUNT 1/18	                                                                        FAM1  23	C || FAM1 23
+25	1552	COUNT 1/22	                                                                        PAM1  24	C || PAM1 24
+26	1593	COUNT 1/40	                                                                        PAM1  25	C || PAM1 25
+27	1639	COUNT 1/13	                                                                        F4M1  <6	C || F4M1 <6
+28	1680	OK	C   IPAM          SINARY FILE OF PAM1 OUTPUT FCK RESTARTS               PAM1  27	C IPAM SINARY FILE OF PAM1 OUTPUT FCK RESTARTS || PAM1  27
+29	1724	OK	C   ISIN          INPUT FILE (BCD) USED BY OTHER DELFIC MODULES         PAM1  28	C    ISIN    INPUT FILE (BCD) USED BY OTHER DELFIC MODULES || PAM1 28
+30	1767	OK	C   KOUT          UCD FILE OF FAM OUTPUT FOR PERIPHERAL PRINTING        PAM1  29	C KOUT UCD FILE OF FAM OUTPUT FOR PERIPHERAL PRINTING || PAM1 29
+31	1810	OK	C   KRD           INPUT FILE (BCD) CONTAINING SOIL PARAMETERS           PAM1  30	C KRD INPUT FILE (BCD) CONTAINING SOIL PARAMETERS || PAM1 30
+32	1853	COUNT 55/54	                                                                        PAMI  51	C     APRNT(20)     LOGICAL ARRAY TO CONTROL WRITING OF KOUT, TRUE = WRITE || PAMI 51
+33	1895	COUNT 1/46	                                                                        FAM1  J2	C || FAM1 J2
+34	1939	COUNT 1/10	                                                                        PAM1  33	C || PAM1 33
+35	1982	COUNT 1/46	                                                                        PAM1  34	C || PAM1 34
+36	2024	COUNT 1/40;COUNT 23/6	                                                                                	C || \dot{P}A\dot{H}1 \quad 35
+37	2068	COUNT 1/27	                                                                        PAM1  36	C || PAM1 36
+38	2109	COUNT 1/32	                                                                        PAM1  37	C || PAM1 37
+39	2154	COUNT 1/34	                                                                        PAM1  38	C || PAM1 38
+40	2196	COUNT 1/32	                                                                        PAM1  34	C || PAM1 34
+41	2239	COUNT 1/42	                                                                        PAM1  42	C || PAM1 42
+42	2282	COUNT 1/41;COUNT 7/6	                                                                                	C || PAM.1 41
+43	2324	COUNT 1/38	                                                                        PAM1  42	C || PAM1 42
+44	2367	COUNT 1/9	                                                                        PAM1  43	C || PAM1 43
+45	2410	COUNT 1/43	                                                                        PAM1  44	C || PAM1 44
+46	2454	COUNT 1/17	                                                                        FA41  45	C || FA41 45
+47	2495	COUNT 1/43	                                                                        FAM1  46	C || FAM1 46
+48	2540	COUNT 1/17	                                                                        PAM1  47	C || PAM1 47
+49	2580	COUNT 1/44;COUNT 7/6	                                                                                	C || PA111 40
+50	2625	COUNT 1/17	                                                                        PAM1  49	C || PAM1 49
+51	2666	COUNT 1/45	                                                                        PAM1  50	C || PAM1 50
+52	2711	COUNT 1/10	                                                                        PAM1  51	C || PAM1 51
+53	2752	COUNT 1/43	                                                                        PAMI  52	C || PAMI 52
+54	2799	COUNT 1/21	                                                                        PAM1  53	C || PAM1 53
+55	2841	COUNT 1/13;COUNT 25/6	                                                                                	C || \text{PAM1} \quad \text{54}
+56	2882	COUNT 53/54	                                                                        PAM1  55	C PAMID(12) RUN IDENTIFICATION FOR PARTICLE-ACTIVITY MODULE || PAM1 55
+57	2929	COUNT 100/17	                                                                        PAM1  56	C  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  • || PAM1 56
+58	2974	OK	C                                                                       PAM1  57	C || PAM1 57
+59	3014	OK	      COMMON /CONDAT/       IC(2:)    ,IMOS      ,IPNCH     ,IPAM      ,PAMI  56	COMMON /CONDAT/ IC(2:) ,IMOS ,IPNCH ,IPAM , || PAMI 56
+60	3057	COUNT 34/35;COUNT 7/6	                                                                                	1KRD  .ISOUT  ,JPOUT  ,KPUT  ,KTAPE  ,LTAPE  , || .PAM1 59
+61	3091	COUNT 35/6	     2MARRAY    ,MBTAPE    ,MXKEU     ,SIGMA     ,INTF                          	2MARRAY ,MBTAPE ,MXKEU ,SIGMA ,INTF || \overline{P \Delta \eta \Sigma} \quad 60
+62	3166	OK	                                        170                                     	170
+63	3316	COUNT 290/15	                                                                                	\text{1. } \text{2. } \text{3. } \text{4. } \text{5. } \text{6. } \text{7. } \text{8. } \text{9. } \text{10. } \text{11. } \text{12. } \text{13. } \text{14. } \text{15. } \text{16. } \text{17. } \text{18. } \text{19. } \text{20. } \text{21. } \text{22. } \text{23. } \text{24. } \text{25. } \text{26. } \text{27. } \text{28. } \text{29. } \text{30.

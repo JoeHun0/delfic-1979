@@ -1,0 +1,62 @@
+1	19	COUNT 0/31	                                                                                	
+2	554	OK	C                                                                       DATIN 29	C || DATIN 29
+3	596	COUNT 8/7	   1  FORMAT(A4, 2X, A4, 18X, I2, F10.0)                                        	1 FORMAT(A4, 2X, A4, 18X, I2, F10.0) || DATING 30
+4	629	COUNT 57/58	                                                                        DATIN 31	10 FORMAT(//15X17HATHCSPHERE UPDATE14, 22H FOR TINES LATER THAN , || DATIN 31
+5	681	OK	     1 E12.5, 6H SEC (F8.3, 7H HOURS)/)                                 DATIN 32	1 E12.5, 6H SEC (F8.3, 7H HOURS)/) || DATIN 32
+6	723	COUNT 43/48;COUNT 8/7	                                                                                	11 FORMAT(21X50H* * * * * * * WINDFIELD DATA * * * * * * *) || DATING 33
+7	764	COUNT 45/49	                                                                        DATIN 34	12 FORMAT(21X51H* * * * * * * TURBULENCE DATA * * * * * * */C || DATIN 34
+8	807	COUNT 8/7	  21  FORMAT(1HO,10X,  79HCOUNT OF UPDATA DATA SETS CCES NOT TALLY WITH         	21 FORMAT(1HO,10X, 79HCOUNT OF UPDATA DATA SETS CCES NOT TALLY WITH || DATING 35
+9	853	COUNT 8/7	     1SPECIFIED UPDATE SEQUENCE NUMBERS)                                        	1 SPECIFIED UPDATE SEQUENCE NUMBERS) || DATING 36
+10	895	COUNT 8/7	  22  FORMAT(1HO,10X, 22H A DATA SET IS MISSING)                                	22 FORMAT(1HO,10X, 22H A DATA SET IS MISSING) || DATING 37
+11	929	COUNT 8/7	   23 FORMAT(//20X,5   9HLCFOATE INDEX INCONSISTENT WITH UPDATE TIME ON         	23 FORMAT(//20X, 59HLCFOATE INDEX INCONSISTENT WITH UPDATE TIME ON || DATING 38
+12	982	COUNT 8/7	     1AN INPUT CARD)                                                            	1 AN INPUT CARD) || DATING 39
+13	1013	COUNT 59/58	                                                                        DATIN 40	25 FORMAT( 1HO, 81HFIRST UPDATE WINDS MUST BE INPUT FIRST WHEN 1-DIME1 || DATIN 40
+14	1067	OK	     INSIONAL DATA PROCESSING IS USED)                                  DATIN 41	INSIONAL DATA PROCESSING IS USED) || DATIN 41
+15	1112	COUNT 8/7	C                                                                               	C || DATING 42
+16	1152	COUNT 8/7	      00 50 L=1,LTINF                                                           	00 50 L=1,LTINF || DATING 43
+17	1195	OK	      TIMUP(L)=ALINIT                                                   DATIN 44	TIMUP(L)=ALINIT || DATIN 44
+18	1239	COUNT 8/7	      00 50 N=1,NDATF                                                           	00 50 N=1,NDATF || DATING 45
+19	1282	COUNT 8/7	      USUM(1,N,L)=ALIMIT                                                        	USUM(1,N,L)=ALIMIT || DATING 46
+20	1326	COUNT 8/7	  50  DXSUM(1,N,L)=ALIMIT                                                       	50 DXSUM(1,N,L)=ALIMIT || DATING 47
+21	1369	OK	      ZCH(1)=ALIMIT                                                     DATIN 48	ZCH(1)=ALIMIT || DATIN 48
+22	1411	OK	      IF(MC(1).EQ.0)GO TO 500                                           DATIN 49	IF(MC(1).EQ.0)GO TO 500 || DATIN 49
+23	1452	COUNT 8/7	CONSTRUCT THE HORIZONTAL SPACE RESOLUTION NET                                   	CONSTRUCT THE HORIZONTAL SPACE RESOLUTION NET || DATING 50
+24	1496	COUNT 47/48	                                                                        DATIN 51	CALL GETUPNET,NETSU,HARY,MARF,ICF,JCF,NCF,NDATF) || DATIN 51
+25	1538	OK	CONSTRUCT THE ATMOSPHERE  STRATA                                        DATIN 52	CONSTRUCT THE ATMOSPHERE STRATA || DATIN 52
+26	1583	OK	      CALL       LAYERS(ZCH,ZBH,KBHF)                                   DATIN 53	CALL LAYERS(ZCH,ZBH,KBHF) || DATIN 53
+27	1627	COUNT 9/8;COUNT 8/7	                                                                                	GO TO 10:00 || DATING 54
+28	1668	COUNT 8/7	 500  ICX=1                                                                     	500 ICX=1 || DATING 55
+29	1711	COUNT 8/7	      Jcx=1                                                                     	Jcx=1 || DATING 56
+30	1756	OK	      NDATX=1                                                           DATIN 57	NDATX=1 || DATIN 57
+31	1797	OK	      NET(1,1)=1                                                        DATIN 58	NET (1,1)=1 || DATIN 58
+32	1840	COUNT 8/7	COPY IN DATA SET SPECIFICATIONS                                                 	COPY IN DATA SET SPECIFICATIONS || DATING 59
+33	1885	OK	 1000 LTIMX=0                                                           DATIN 60	1000 LTIMX=0 || DATIN 60
+34	1926	OK	 1002 READ(ISIN,1)SPEC,FORM,LTIM,UPTIMH                                 DATIN 61	1002 READ(ISIN,1)SPEC,FORM,LTIM,UPTIMH || DATIN 61
+35	1969	COUNT 8/7	      IF(SPEC.EQ.DONE)GO TC 3000                                                	IF (SPEC.EQ.DONE) GO TC 3000 || DATING 62
+36	2010	OK	 1003 IF(LTIM.LT.1.OR.LTIM.GT.LTIMF)CALL ERROR (FROGRM,-1003,ISOUT)     DATIN 63	1003 IF(LTIM.LT.1.OR.LTIM.GT.LTIMF)CALL ERROR(FROGRM,-1003,ISOUT) || DATIN 63
+37	2054	COUNT 8/7	      UPTIMS=UPTIMH*3600.                                                       	UPTIMS=UPTIMH*3600. || DATING 64
+38	2095	OK	 1004 IF(TIMUP(LTIM) .NE. ALIMIT)IF(TIMUP(LTIM)-UPTIMS)5003,1050,5003   DATIN 65	1004 IF(TIMUP(LTIM) .NE. ALIMIT)IF(TIMUP(LTIM)-UPTIMS)5003,1050,5003 || DATIN 65
+39	2141	OK	      TIMUP(LTIN)=OPTIMS                                                DATIN 66	TIMUP(LTIN)=OPTIMS || DATIN 66
+40	2182	COUNT 8/7	 1050 IF!MC(2) .NE. 1) WRITE(ISO'T,10) LTIM,UPTIMS,UPTIMH                       	1050 IF !MC(2) .NE. 1) WRITE(ISO'T,10) LTIM,UPTIMS,UPTIMH || DATING 67
+41	2223	OK	CHECK IF UPDATE 1 WINDS ARE INFUT FIRST WHEN 1-D PROCESSING IS SPECIFIEDDATIN 68	CHECK IF UPDATE 1 WINDS ARE INFUT FIRST WHEN 1-D PROCESSING IS SPECIFIED || DATIN 68
+42	2268	OK	 1051 IF(LTIM .GT. 1 .OR. SPEC .EQ. TURB .AND. MC(1) .EQ. 0)            DATIN 69	1051 IF(LTIM .GT. 1 .OR. SPEC .EQ. TURB .AND. MC(1) .EQ. 0) || DATIN 69
+43	2311	OK	     1  IF(LTIMX-1)1052,1053,1053                                       OATIN 70	1 IF(LTIMX-1)1052,1053,1053 || OATIN 70
+44	2356	OK	      GO TO 1053                                                        OATIN 71	GO TO 1053 || OATIN 71
+45	2399	OK	 1052 WRITE(ISOUT,25)                                                   OATIN 72	1052 WRITE (ISOUT,25) || OATIN 72
+46	2432	COUNT 8/7	      CALL ERROR(PROGRM,-1052,ISOUT)                                            	CALL ERROR(PROGRM, -1052, ISOUT) || DATING 73
+47	2484	COUNT 8/7	 1053 IF(SPEC.EQ.TURS)GO TO 2000                                                	1053 IF (SPEC.EQ.TURS) GO TO 2000 || DATING 74
+48	2526	OK	 1055 IF(SPEC.NE.WIND)CALL ERROR (PROGR1,-1055,ISOUT)                   OATIN 75	1055 IF(SPEC.NE.WIND)CALL ERROR (PROGR1,-1055,ISOUT) || OATIN 75
+49	2569	COUNT 23/25	                                                                        DATIN 76	CONSTRUCT WIND DATA ARRAYS || DATIN 76
+50	2611	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,11)                                  OATIN 77	IF(MC(2) .NE. 1) WRITE(ISOUT,11) || OATIN 77
+51	2657	COUNT 27/13;COUNT 7/8	                                                                                	\text{LTIMX} = \text{LTIMX} + 1 || DATIN 78
+52	2696	COUNT 52/49	                                                                        DATIN 79	1060 IF(LTIMX.GT.LTIMF)CALL ERROR(PROGRM,-1,-60,ISCUT) || DATIN 79
+53	2740	COUNT 22/21	                                                                        OATIN 30	IF (MC (1) .NE. 0) GO 10 1100 || OATIN 30
+54	2781	COUNT 58/57	                                                                        OATIN 81	CONSTRUCT WIND DATA ARRAYS VIA THE SIMPLIFIED 1-DIMENSIONAL METHOD || OATIN 81
+55	2823	COUNT 6/7	      CALL       ONEDIN(ZCH,ZBH,CAVS,USUM ,VSUM ,LTIM,KBHF,NOATF,LTIMF,         	CALL ONEDIN(ZCH,ZBH,CAVS,USUM,VSUM,LTIM,KBHF,NOATF,LTIMF, || DATING
+56	2869	OK	     1 FORM,SPEC)                                                       UATIN 83	1 FORM, SPEC) || UATIN 83
+57	2914	OK	      00 1070 N=1,NOATX                                                 DATIN 84	00 1070 N=1,NOATX || DATIN 84
+58	2957	OK	      DO 1070 K=1,KBHX                                                  DATIN 65	DO 1070 K=1,KBHX || DATIN 65
+59	2998	COUNT 21/20	                                                                        DATIN 96	1070 WFZ (K.N, LTIM) = 0.0 || DATIN 96
+60	3042	OK	      GO TO 1200                                                        DATIN 87	GO TO 1200 || DATIN 87
+61	3083	COUNT 51/49;COUNT 8/7	                                                                                	CONSTRUCT THE WIND DATA ARRAYS VIA THE 3-DIMENSIONAL METHOD || DATING 88
+62	3153	COUNT 3/2	                                                                                	109

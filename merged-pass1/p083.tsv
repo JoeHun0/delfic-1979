@@ -1,0 +1,59 @@
+1	12	54	NONE	                                                                        			
+2	559	592	COMMENT	*DECK,CXPN                                                              		dots=*DECK,CXPN ## glm=*DECK,CXPN	CXPN1
+3	602	634	AGREE	      SUBROUTINE CXPN                                                   		lighton=      SUBROUTINE CXPN ## dots=      SUBROUTINE CXPN ## glm=      SUBROUTINE CXPN	CXFN2
+4	644	674	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN3
+5	686	719	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	CXPN4
+6	730	761	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GXPN5
+7	771	803	COMMENT	C     CXPN TABULATES THE CLOUD RISE AND EXPANSION OUTPUT TABLE ARRAY CX 		lighton=C     CXPN TABULATES THE CLOUD RISE AND EXPANSION OUTPUT TABLE ARRAY CX ## glm=C     CXPN TABULATES THE CLOUD RISE AND EXPANSION CUTFUT TABLE ARRAY CX	CXPN6
+8	815	848	COMMENT	C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF                      		lighton=C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF ## dots=C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF ## glm=C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF	CXPN7
+9	858	888	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN8
+10	900	932	COMMENT	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{			UXPN9
+11	942	975	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN10
+12	986	1021	VOTED	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    		lighton=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TCZ ## glm=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ	CXPN11
+13	1029	1063	AGREE	      C MMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,		lighton=      C MMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## glm=      C MMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,	CXPN12
+14	1072	1107	VOTED	     1 OS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,DWT    ,DX     ,		lighton=     1 OS    ,DST   ,DSf0  ,DST1  ,DST2  ,DT    ,DU    ,DWT    ,DX     , ## dots=     1 OS    ,DST   ,OSTO  ,DST1  ,DST2  ,DT    ,DU    ,DWT    ,DX     , ## glm=     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,DU    ,DWT    ,DX     ,	CXPN13
+15	1117	1152	VOTED	     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,		lighton=     2 7Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## dots=     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## glm=     2 02    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MHYA   ,	CXPN14
+16	1152	1193	AGREE	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,		lighton=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,	CXPN15
+17	1202	1237	VOTED	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,		lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALL,T,     TE,    U,     V,      WT,     1 ## glm=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	CXPN16
+18	1237	1280	SINGLE	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMΓ  ,SPARE                         		lighton=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMΓ  ,SPARE	CXPN17
+19	1288	1322	TIE	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI  	43	lighton=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI ## dots=      COMMON /CONTRL/ DETID(12),IC(20),IRAQ,IRISE,ISIN,ISOUT,JPARN,KOI	CXPN18
+20	1332	1366	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR ## dots=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR ## glm=      COMMON /INITL/ F. PHI, SSAM, TME, TMPG, TMPS, VPR	CXPN19
+21	1376	1409	VOTED	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                     		lighton=      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) ## dots=      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) ## glm=      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,1C0)	CXPN20
+22	1418	1449	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN21
+23	1461	1494	VOTED	      DATA WORD1, WORD2, WCRD3 /6HR RATE, 6H MCX  : 6H U,EK /           		lighton=      DATA WORD1, WORD2, WCRD3 /6HR RATE, 6H MCX  ; 6H U,EK / ## dots=      DATA WORD1, WORD2, WORD3 /6HR RATE, 6H MCX  : 6H U,EK / ## glm=      DATA WORD1, WORD2, WCRD3 /6HR RATE, 6H MOX  : 6H U,EK /	CXPN22
+24	1504	1535	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN23
+25	1545	1581	AGREE	 5000 FORMAT(//////10X,46HCLOU DRIS EI STERMINATE DI NCXP NA TSTATEMEN T		lighton= 5000 FORMAT(//////10X,46HCLOU DRIS EI STERMINATE DI NCXP NA TSTATEMEN T ## glm= 5000 FORMAT(//////10X,46HCLOU DRIS EI STERMINATE DI NCXP NA TSTATEMEN T	CXPN24
+26	1589	1624	SINGLE	     14, 8H BY THE A6, 7H SWITCH///)                                    		lighton=     14, 8H BY THE A6, 7H SWITCH///)	CXPN25
+27	1634	1665	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN26
+28	1676	1707	COMMENT	C  ← 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 2			CXPN27
+29	1719	1749	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN28
+30	1761	1794	COMMENT	C     PERFORM FIRST PASS INITIALIZATION                                 		lighton=C     PERFORM FIRST PASS INITIALIZATION ## dots=C     PERFORM FIRST PASS INITIALIZATION ## glm=C     PERFORM FIRST PASS INITIALIZATION	CXPN29
+31	1804	1834	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN30
+32	1847	1881	TIE	      GO TO (002, 020, 040), MHYA                                       	17,22,28,31	dots=      GO TO (002, 020, 040), MHYA ## glm=      GO TO (002， 020， 040)， MFYA	CXPN31
+33	1890	1925	AGREE	  002 DO 004 MJ = 1, 10                                                 		lighton=  002 DO 004 MJ = 1, 10 ## dots=  002 DO 004 MJ = 1, 10 ## glm=  002 DO 004 MJ = 1, 10	CXPN32
+34	1925	1966	TIE	      DO 034 MI = 1. 5c                                                 	23	lighton=      DO 034 MI = 1. 5c ## glm=      DO 034 MI = 1. 5C	CXPN33
+35	1976	2010	TIE	  CO4 CX (MI, MJ) = C.U                                                 	4,23	dots=  CO4 CX (MI, MJ) = C.U ## glm=  C04 CX (MI, MJ) = C.u	LXPN34
+36	2018	2050	AGREE	      MCX = 1                                                           		dots=      MCX = 1 ## glm=      MCX = 1	CXPN35
+37	2061	2091	AGREE	      MWYA = 2                                                          		dots=      MWYA = 2 ## glm=      MWYA = 2	CXPN36
+38	2103	2135	SINGLE	      DLTM = 3.0                                                        		glm=      DLTM = 3.0	CXPN37
+39	2148	2178	VOTED	      TSTM = SMALLT                                                     		lighton=      TSTM ≡ SMALLT ## dots=      TSTM = SMALLT ## glm=      TSTM = SMALLT	CXPN38
+40	2189	2224	AGREE	      TSRE = AMAX1(10., AMIN1( 23. + 9. * ALOG10( W ), 60. ))           		dots=      TSRE = AMAX1(10., AMIN1( 23. + 9. * ALOG10( W ), 60. )) ## glm=      TSRE = AMAX1(10., AMIN1( 23. + 9. * ALOG10( W ), 60. ))	CXPN39
+41	2233	2265	SINGLE	      TSRD=FXP(0.014778*ALCG(H)-7.0499)                                 		glm=      TSRD=FXP(0.014778*ALCG(H)-7.0499)	CXPN40
+42	2277	2308	NONE	                                                                        			CXPN41
+43	2318	2350	AGREE	      GO TO 040                                                         		lighton=      GO TO 040 ## dots=      GO TO 040 ## glm=      GO TO 040	CXPN42
+44	2363	2393	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CXPN43
+45	2405	2437	COMMENT	C     IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY                 		lighton=C     IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY ## dots=C     IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY ## glm=C     IS IT TIME TO RECORC CLOUD STATUS IN THE CX ARRAY	CXPN44
+46	2448	2478	COMMENT	C YES = TO 1.40                                                         			CXPN45
+47	2492	2523	COMMENT	C        No - 70 37C                                                    		glm=C        No - 70 37C	
+48	2534	2565	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+49	2576	2610	NONE	                                                                        			
+50	2621	2651	NONE	                                                                        			
+51	2663	2697	NONE	                                                                        			
+52	2705	2738	SINGLE	  641 74 = 23FF                                                         		glm=  641 74 = 23FF	LXPN51
+53	2750	2781	SINGLE	      GO  3 745                                                         		lighton=      GO  3 745	CXFN52
+54	2792	2824	SINGLE	  642 7A = 7                                                            		dots=  642 7A = 7	
+55	2835	2868	NONE	                                                                        			LXPN54
+56	2876	2911	SINGLE	      CX (MCX, 9) = T                                                   		glm=      CX (MCX, 9) = T	LXPN55
+57	2921	2956	SINGLE	      CX(MCX,1C)=RA                                                     		glm=      CX(MCX,1C)=RA	CXFN56
+58	2956	2995	COMMENT	C TEST TO NO CR+ COMPUTATION                                            			JXFN57
+59	3006	3037	VOTED	      TF: MCK .LE. 5 ) GO TO 543                                        		lighton=      TF: MCK .LE. 5 ) GO TO 543 ## dots=      TF: MCK .LE. 5 ) GO TO 543 ## glm=      TF: MCX .LE. 5 ) GO TO 543	CXPN58

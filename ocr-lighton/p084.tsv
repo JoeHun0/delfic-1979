@@ -1,0 +1,44 @@
+1	0	COUNT 0/12	                                                                                	
+2	62	COUNT 4/49;COUNT 45/1	                                                                                	text || \mathcal{R} = \mathcal{R} \mathcal{R} \mathcal{R}
+3	810	OK	      IF( TSRD .LT. TSTR  .OR.  U .GT. 0.0 ) GC TO 343                  CXPN  61	IF ( TSRD .LT. TSTR .OR. U .GT. 0.0 ) GC TO 343 || CXPN 61
+4	853	COUNT 10/9;COUNT 13/6	                                                                                	243 MHWYA = 3 || \text{LXPN 62}
+5	896	COUNT 11/6	      NSTAT=243                                                                 	NSTAT=243 || C \times PN 63
+6	940	OK	      WRITE(ISOUT,5000)NSTAT,WORD1                                      CXPN  64	WRITE(ISOUT,5000)NSTAT,WORD1 || CXPN 64
+7	982	OK	      GO TO 543                                                         CXPN  65	GO TO 543 || CXPN 65
+8	1023	OK	  343 IF( TSRE .LT. EK  .CR.  U .GT. 0.0 ) GO TO 543                    LXPN  66	343 IF( TSRE .LT. EK .CR. U .GT. 0.0 ) GO TO 543 || LXPN 66
+9	1066	COUNT 10/9	                                                                        CXPN  67	4443 MMYA = 3 || CXPN 67
+10	1110	OK	      NSTAT=443                                                         CXPN  68	NSTAT=443 || CXPN 68
+11	1152	OK	      WRITE(ISOUT,5000)NSTAT,WORD3                                      CXPN  69	WRITE(ISOUT,5000)NSTAT,WORD3 || CXPN 69
+12	1197	COUNT 21/19	                                                                        CXPN  7U	543 \ CX \ (MCX, 3) = ZA - RZT || C X P N 7 U
+13	1240	COUNT 0/16	                                                                        CXFN  71	 || CXFN 71
+14	1282	OK	  060 MCX = MCX + 1                                                     CXPN  72	060 MCX = MCX + 1 || CXPN 72
+15	1324	COUNT 1/23;COUNT 46/6	                                                                                	C || \mathcal{C} \times \mathcal{P} \mathcal{N} \quad 73
+16	1367	COUNT 17/6	      IF (MCX - 50) 062, 062, 061                                               	IF (MCX - 50) 062, 062, 061 || \dot{C}XFN \quad 74
+17	1411	OK	  061 MWYA = 3                                                          CXPN  75	061 MWYA = 3 || CXP N 75
+18	1454	OK	      NSTAT=61                                                          CXPN  76	NSTAT=61 || CXPN 76
+19	1497	OK	      WRITE(ISOUT,5000)NSTAT,HORD2                                      CXFN  77	WRITE(ISOUT,5000)NSTAT,HORD2 || CXFN 77
+20	1540	COUNT 0/10	                                                                        CXPN  78	 || CXP N 78
+21	1582	OK	C                                                                       CXFN  79	C || CXFN 79
+22	1625	COUNT 55/54	                                                                        CXPN  80	C     COMPUTE THE TIME AT WHICH THE NEXT CX ARRAY ENTRIES ARE TO BE MADE. || CXP N 80
+23	1670	OK	C                                                                       C×PN  81	C || C×PN 81
+24	1713	COUNT 0/21;COUNT 21/6	                                                                                	 || \mathcal{C}XPN \quad b2
+25	1755	COUNT 0/14	                                                                        CXPN  83	 || CXPN 83
+26	1798	OK	  065 IF (Z - Z8FR) 068, UEB, 067                                       CXPN  84	065 IF (Z - Z8FR) 068, UEB, 067 || CXPN 84
+27	1841	OK	  067 ZBFR = Z                                                          CXPN  85	067 ZBFR = Z || CXP N 85
+28	1884	OK	  068 GO TO (070, 070, 100), MHYA                                       CXPN  56	068 GO TO (070, 070, 100), MHYA || CXP N 56
+29	1926	OK	  070 RETURN                                                            CXPN  87	070 RETURN || CXPN 87
+30	1968	COUNT 1/22	                                                                        CXPN  88	C || C X P N  8 8
+31	2012	COUNT 13/12	                                                                        CXPN  89	100 \ MCX = MCX - 1 || CXPN 89
+32	2054	OK	      IF (CX (MCX - 1, 1) - CX (MCX, 1)) 102, 100, 102                  CXPN  30	IF (CX (MCX - 1, 1) - CX (MCX, 1)) 102, 100, 102 || CXPN 30
+33	2097	OK	  1C2 00 104 MK = 2, MCX                                                CXPN  91	1C2 00 104 MK = 2, MCX || CXP N 91
+34	2140	COUNT 1/26	                                                                        CXPN  92	C || CXPN 92
+35	2182	COUNT 0/30;COUNT 16/6	                                                                                	 || C \mathcal{X} PN 93
+36	2225	COUNT 1/21	                                                                        CXPN  94	C || CXP N 94
+37	2270	COUNT 0/43	                                                                        CXPN  95	 || CXP N 95
+38	2312	COUNT 0/43	                                                                        CXPN  96	 || CXP N 96
+39	2354	COUNT 1/18	                                                                        CXPN  97	C || CXPN 97
+40	2398	COUNT 0/46	                                                                        CXPN  48	 || CXPN 48
+41	2440	COUNT 0/13	                                                                        CXFN  99	 || CXFN 99
+42	2483	COUNT 0/24	                                                                        CXFN 1.2	 || CXFN 1.2
+43	2528	COUNT 8/7;COUNT 26/6	                                                                                	GO T:1 !7' || \mathcal{L}x = N \quad : \quad 1
+44	2571	COUNT 4/3;COUNT 0/6	                                                                                	7413 || 

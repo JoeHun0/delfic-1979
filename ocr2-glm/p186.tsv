@@ -1,0 +1,7 @@
+17	1410	OK	      CHN = CHN + A8UND                                                         	CHN = CHN + A8UND
+19	1494	OK	      MCHN = MCHN + 1                                                           	MCHN = MCHN + 1
+24	1711	OK	      BSU8K（L） = SQRT（FR（L)） = 1.0                                              	BSU8K（L）= SQRT（FR（L)）= 1.0
+25	1753	OK	      POWER = 8SUBK(L)                                                          	POWER = 8SUBK(L)
+35	2184	COUNT 7/6	                                                                                	GO TO 1.9
+39	2355	OK	571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))             	571 FORMAT (1H1, "OUTPUT OF FRATIO" / 5(6X, 4HMCHN, 6X, 2HFR, 3X))
+41	2440	COUNT 44/43	                                                                                	513 FORMAT(////5(6X,4HMCHK,4X,5HBSUBK,2X,)//)

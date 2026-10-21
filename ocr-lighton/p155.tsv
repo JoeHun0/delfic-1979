@@ -1,0 +1,63 @@
+1	1	COUNT 0/42;COUNT 8/5	                                                                                	 || \text{S}
+2	524	OK	C     MARRAY            FALLOUT PARCEL DATA ARRAYS DIMENSION            OPMEX 61	C MARRAY FALLOUT PARCEL DATA ARRAYS DIMENSION || OPMEX 61
+3	570	COUNT 14/7	C     MASCHN            MASS CHAIN NUMBER FOR A NREQ=14 REQUEST                 	C     MASCHN     MASS CHAIN NUMBER FOR A NREQ=14 REQUEST || \dot{U}PMEX\ 62
+4	611	OK	C     M8TAPE            MLLTIBURST OUTPUT TAPE                          OPMEX 63	C     M8TAPE     MLLTIBURST OUTPUT TAPE || OPMEX 63
+5	654	COUNT 8/7	C     MXREQ             MAXIMUM NUMBER OF PROCESSING REQUEST TYPES              	C     MXREQ     MAXIMUM NUMBER OF PROCESSING REQUEST TYPES || OP.MEX 64
+6	698	OK	C     NDSTR             NUMBER OF PARTICLE SIZE CLASSES (CALLED ITAB IN OPMEX 65	C     NDSTR     NUMBER OF PARTICLE SIZE CLASSES (CALLED ITAB IN || OPMEX 65
+7	739	COUNT 1/5	                                                                        OPMEX 66	C || OPMEX 66
+8	783	OK	C     NE                SEE PCHECK GLOSSARY                             UPMEX 67	C     NE     SEE PCHECK GLOSSARY || UPMEX 67
+9	828	OK	C     NIJ               PARCEL BLOCK COUNT                              OPMEX 68	C    NIJ    PARCEL BLOCK COUNT || OPMEX 68
+10	870	OK	C     NMAP              MAXIMUM NUMBER OF  MAP POINTS IN A MAP CORE LOADOPMEX 69	C     NMAP     MAXIMUM NUMBER OF MAP POINTS IN A MAP CORE LOAD || OPMEX 69
+11	914	OK	C     NOL               SMALLEST X INDEX OF A MAP POINT TO THE RIGHT OF OPMEX 70	C     NOL     SMALLEST X INDEX OF A MAP POINT TO THE RIGHT OF || OPMEX 70
+12	956	COUNT 1/40	                                                                        OPMEX 71	C || OPMEX 71
+13	998	COUNT 1/10	                                                                        OPMEX 72	C || OPMEX 72
+14	1041	OK	C     NOR               LARGEST  X INDEX OF A MAP POINT TO THE LEFT  OF OPMEX 73	C     NOR     LARGEST X INDEX OF A MAP POINT TO THE LEFT OF || OPMEX 73
+15	1086	COUNT 1/41	                                                                        OPMEX 74	C || OPMEX 74
+16	1128	COUNT 1/10	                                                                        OPMEX 75	C || OPMEX 75
+17	1171	OK	C     NORD              ROUTING PARAMETER FOR PARCEL CONTRIBUTIONS      OPMEX 76	C     NORD     ROUTING PARAMETER FOR PARCEL CONTRIBUTIONS || OPMEX 76
+18	1216	COUNT 1/14	                                                                        OPMEX 77	C || OPMEX 77
+19	1257	COUNT 1/22	                                                                        OPMEX 78	C || OPMEX 78
+20	1301	COUNT 1/31	                                                                        OPMEX 79	C || OPMEX 79
+21	1344	COUNT 1/34	                                                                        OPMEX 80	C || OPMEX 80
+22	1387	COUNT 1/20	                                                                        OPMEX 01	C || OPMEX 01
+23	1431	COUNT 1/23	                                                                        OPMEX 82	C || OPMEX 82
+24	1473	COUNT 1/27	                                                                        UPMEX 83	C || UPMEX 83
+25	1515	COUNT 1/32	                                                                        OPHEX 84	C || OPHEX 84
+26	1550	COUNT 1/31	                                                                        OPMEX 05	C || OPMEX 05
+27	1602	OK	C     NOX               TOTAL NUMBER OF MAP POINTS ON THE X AXIS,       UPMEX 86	C     NOX     TOTAL NUMBER OF MAP POINTS ON THE X AXIS, || UPMEX 86
+28	1636	COUNT 1/22	                                                                        OPMEX 97	C || OPMEX 97
+29	1688	OK	C     NREQ              COMPUTATION OPTION CODE                         OPMEX 88	C     NREQ     COMPUTATION OPTION CODE || OPMEX 88
+30	1731	OK	C     NRQ               A COUNTER FOR MAP REQUESTS                      OPMEX 89	C     NRQ     A COUNTER FOR MAP REQUESTS || OPMEX 89
+31	1773	OK	C     NST               TALLY CF PARTICLE DATA BLOCKS                   OPMEX 90	C NST TALLY CF PARTICLE DATA BLOCKS || OPMEX 90
+32	1815	COUNT 18/7	C     NTASK             A TALLY OF MAP SPECIFICATIONS                           	C     NTASK     A TALLY OF MAP SPECIFICATIONS || \dot{U}P M E X \quad 91
+33	1860	OK	C     NUMTAP( )         TAFE NLMBER ARRAY                               OPMEX 92	C NUMTAP( ) TAFE NLMBER ARRAY || OPMEX 92
+34	1902	OK	C     NXMAP             NUMBER OF MAP POINTS ON THE X AXIS IN A MAP COREOPHEX 93	C     NXMAP     NUMBER OF MAP POINTS ON THE X AXIS IN A MAP CORE || OPHEX 93
+35	1946	COUNT 1/5	                                                                        OPMEX 94	C || OPMEX 94
+36	1989	OK	C     NYMAP             NUMBER OF MAP POINTS ON THE Y AXIS IN A MAP COREOPMEX 95	C     NYMAP     NUMBER OF MAP POINTS ON THE Y AXIS IN A MAP CORE || OPMEX 95
+37	2030	COUNT 1/5	                                                                        OPMEX 96	C || OPMEX 96
+38	2073	OK	C     NZ                NUMBER OF MAP CORE LOACS REQUIRED IN ADDITION TOUPMEX 57	C     NZ     NUMBER OF MAP CORE LOACS REQUIRED IN ADDITION TO || UPMEX 57
+39	2118	COUNT 1/9	                                                                        OPMEX 98	C || OPMEX 98
+40	2160	OK	C     OMAP(J)           THE MAP ORDINATE ARRAY                          OPMEX 99	C OMAP(J) THE MAP ORDINATE ARRAY || OPMEX 99
+41	2205	COUNT 7/8	C     OPMIN( )          OUTPUT PROCESSOR IDENTIFICATION                         	C     OPMIN( )     OUTPUT PROCESSOR IDENTIFICATION || OPMEX10
+42	2247	OK	C     PS(I)             PARTICLE SIZE CLASS CENTRAL DIAMETERS(M)        OPMEX1J1	C PS(I) PARTICLE SIZE CLASS CENTRAL DIAMETERS (M) || OPMEX1J1
+43	2289	OK	C     QCUT              CUT-OFF THRESHOLD FOR AN INDIVIDUAL DEPOSIT     OPMEX1J2	C     QCUT     CUT-OFF THRESHOLD FOR AN INDIVIDUAL DEPOSIT || OPMEX1J2
+44	2332	COUNT 1/22	                                                                        OPMEX1J3	C || OPMEX1J3
+45	2376	OK	C     SLDTMP            SCIL SOLIDIFICATION TEMPERATURE(CEG. K)(FROM CRMOPMEX104	C    SLDTMP    SCIL SOLIDIFICATION TEMPERATURE(CEG. K)(FROM CRM || OPMEX104
+46	2417	COUNT 20/8	C     TEXIT             TIME RELATIVE TO SHOT TIME CORRESPONDING TC T2          	C     TEXIT     TIME RELATIVE TO SHOT TIME CORRESPONDING TC T2 || \dot{O}P M E X 1 \dot{O} 5
+47	2461	OK	C     TIME,TENTER       TIME RELATIVE TO SHOT TIME CORRESPONDING TO T1  OPMEX1J6	C     TIME,TENTER     TIME RELATIVE TO SHOT TIME CORRESPONDING TO T1 || OPMEX1J6
+48	2505	OK	C     TMSD              TIME OF SOIL SCLIDIFICATION( FROM CRM )(SEC)    UPMEX1J7	C     TMSD     TIME OF SOIL SCLIDIFICATION( FROM CRM ) (SEC) || UPMEX1J7
+49	2546	OK	C     T1,T2             REQUEST TIME ARGUMENTS OR PARTICLE SIZES        OPMEX108	C     T1,T2     REQUEST TIME ARGUMENTS OR PARTICLE SIZES || OPMEX108
+50	2589	OK	C     W                 TOTAL EXPLOSION ENERGY YIELD (KT)               UPMEX1J9	C    W    TOTAL EXPLOSION ENERGY YIELD (KT) || UPMEX1J9
+51	2633	OK	C     WFMAS(I)          TOTAL MASS OF FALLOUT IN EACH PARTICLE SIZE     OPMEX110	C    WFMAS(I)    TOTAL MASS OF FALLOUT IN EACH PARTICLE SIZE || OPMEX110
+52	2673	COUNT 1/40	                                                                        OPMEX111	C || OPMEX111
+53	2718	COUNT 1/41	                                                                        OPMEX112	C || OPMEX112
+54	2761	COUNT 1/45	                                                                        UPMEX113	C || UPMEX113
+55	2803	OK	C     XPAR,YPAR,ZPAR,   FALLOUT PARCEL DESCRIPTION DATA (ALL INDEXED)   OPMEX114	C     XPAR, YPAR, ZPAR,     FALLOUT PARCEL DESCRIPTION DATA (ALL INDEXED) || OPMEX114
+56	2847	COUNT 1/18	                                                                        OPMΞX115	C || OPMΞX115
+57	2891	OK	C       RO,PSIZ,PHAS                                                    OPMEX116	C RO,PSIZ,PHAS || OPMEX116
+58	2932	OK	C     XMAX,XMIN         MAXIMUM AND MINIMUM X COORDINATES OF THE MAP    OPMEX117	C     XMAX,XMIN     MAXIMUM AND MINIMUM X COORDINATES OF THE MAP || OPMEX117
+59	2975	OK	C     YMAX,YMIN         MAXIMUM AND MINIMUM Y COORDINATES OF THE MAP    OPMEX118	C YMAX,YMIN MAXIMUM AND MINIMUM Y COORDINATES OF THE MAP || OPMEX118
+60	3020	COUNT 45/44	                                                                        UPMEX119	C     X1,X2     X AXIS BOUNDARY COORDINATES OF THE CURRENT MAP || UPME X119
+61	3063	COUNT 1/9	                                                                        OPMEX120	C || OPME X120
+62	3114	COUNT 3/2	                                                                                	152
+63	3277	COUNT 0/48;COUNT 8/1	                                                                                	 || \text{a}

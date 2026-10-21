@@ -1,0 +1,47 @@
+1	20	COUNT 0/48;COUNT 0/5	                                                                                	 || 
+2	72	COUNT 0/23;COUNT 0/6	                                                                                	 || 
+3	663	OK	*DECK,INDCD2                                                            INDOD  1	*DECK,INDCD2 || INDOD 1
+4	708	OK	      SUBROUTINE INOCO2                                                 INDCO  2	SUBROUTINE INOCO2 || INDCO 2
+5	750	OK	C                                                                       INOCO  3	C || INOCO 3
+6	792	OK	C     NOVEMBER 1966                                                     INDCD  4	C NOVEMBER 1966 || INDCD 4
+7	836	COUNT 41/42	                                                                        INDCO  5	COMMON / DECAY / IGO, JD, KDOS, TENTER, EXIT, TIME || INDCO 5
+8	878	COUNT 66/65	                                                                        INDCO  6	COMMON/INDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LKAX,XLAM(7,18) || INDCO 6
+9	921	COUNT 59/58	                                                                        INOCO  7	COMMON /OUTPUT/ FISNUM,FP(200),FW,ITAB,JGO,MASCHN,PSIZE(200), || INOCO 7
+10	965	OK	     1 FMASS(200),PACT(200)                                             INDCO  8	1 FMASS(200), PACT(200) || INDCO 8
+11	1007	COUNT 30/28	                                                                        INOCO  9	COMMON / UTILITY / KOUT, NPRINT (15) || INOCO 9
+12	1050	OK	      LOGICAL IGO,JD,KDOS,NPRNT                                         INDCO 10	LOGICAL IGO, JD, KDOS, NPRNT || INDCO 10
+13	1093	COUNT 8/7	C                                                                               	C || INDOCD 11
+14	1135	OK	 1000 FORMAT                                                            IVDCD 12	1000 FORMAT || IVDCD 12
+15	1179	COUNT 58/57	                                                                        INDCO 13	1 (17H10OUTPUT OF INDCD2/5Y53HINDUCED ACTIVITY IN THE TRANSPORTED || INDCO 13
+16	1222	OK	     2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.)             INDCO 14	2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.) || INDCO 14
+17	1264	OK	C                                                                       INDCO 15	C || INDCO 15
+18	1308	OK	      SDRE = 0.0                                                        IVDCO 16	SDRE = 0.0 || IVDCO 16
+19	1351	OK	C                                                                       IVDCD 17	C || IVDCD 17
+20	1394	OK	      DO 24 L = 1,LMAX                                                  INOCO 18	DO 24 L = 1, LMAX || INOCO 18
+21	1436	OK	      IS = ISO(L)                                                       INOCO 19	IS = ISO(L) || INOCO 19
+22	1479	OK	C                                                                       INDCO 20	C || INDCO 20
+23	1523	OK	      00 22 1 = 1,15                                                    INOCO 21	00 22 1 = 1,15 || INOCO 21
+24	1565	COUNT 33/15	                                                                        INDCO 22	\mathrm{DLAM} = -\mathrm{XLAM}(1, L) || INDCO 22
+25	1608	OK	      IF (.NOT.JD) GO TO 12                                             1NDCD 23	IF (.NOT.JD) GO TO 12 || 1NDCD 23
+26	1649	COUNT 94/45	                                                                        INOCO 24	\text{ORI} = -\text{FAC}(I, L) * \text{OLAM} * \text{FOGRNY}(I, L) * \text{EXP}(\text{OLAM} * \text{TI4E}) || INOCO 24
+27	1692	COUNT 5/6;COUNT 8/7	                                                                                	GO TO 2 || INDOCE 25
+28	1737	OK	C                                                                       INDCO 26	C || INDCO 26
+29	1779	OK	   12 IF (.NOT.KDOS) GO TO 14                                           INDCO 27	12 IF (.NOT.KDOS) GO TO 14 || INDCO 27
+30	1822	COUNT 117/59	                                                                        IVDCD 28	\text{ORI} = \text{FAC}(I, L) \cdot \text{FOGRNY}(I, L) \cdot (\text{EXP}(\text{DLAM}*TENTEP}) - \text{EXP}(\text{DLAM}*TE(IT)) || IVDCD 28
+31	1866	OK	      GO TO 22                                                          IVDCD 29	GO TO 22 || IVDCD 29
+32	1908	COUNT 6/7	C                                                                               	C || INCD 30
+33	1951	COUNT 85/43;COUNT 11/7	                                                                                	14 \text{ DRI} = \text{FAC}(I, L) * \text{FOGRNY}(I, L) * \text{EXP}(\text{DLAN} * \text{TENTER}) || IN OCTOBER 31
+34	1995	OK	C                                                                       INOCO 32	C || INOCO 32
+35	2037	OK	   22 SDRE = SDRE + DPI                                                 INOCO 33	22 SDRE = SDRE + DPI || INOCO 33
+36	2081	OK	   24 CONTINUE                                                          INOCO 34	24 CONTINUE || INOCO 34
+37	2124	OK	C                                                                       INDCO 35	C || INDCO 35
+38	2166	OK	C                                                                       IVDCD 36	C || IVDCD 36
+39	2210	COUNT 0/7	      SORE = SORE*ALDFOM*FISNUM                                                 	SORE = SORE*ALDFOM*FISNUM || 
+40	2253	COUNT 6/7	C                                                                               	C || INDO 38
+41	2295	OK	      DO 26 MA = 1,ITA8                                                 INOCO '9	DO 26 MA = 1, ITA8 || INOCO '9
+42	2338	OK	   26 FP(HA) = FP(MA) + S)RE*FMASS(MA)                                  IVOCO 40	26 FP(HA) = FP(MA) + S)RE*FMASS(MA) || IVOCO 40
+43	2382	OK	C                                                                       INDCO 41	C || INDCO 41
+44	2422	COUNT 8/7	      IF (NPRNT(11)) WRITE (KOUT,1000) SDRE                                     	IF (NPRNT(11)) WRITE (KOUT,1000) SDRE || INDCD 4.2
+45	2465	OK	      RETURN                                                            INOCO 43	RETURN || INOCO 43
+46	2508	COUNT 8/7	      END                                                                       	END || IVDCD '44
+47	3138	OK	                                      190                                       	190

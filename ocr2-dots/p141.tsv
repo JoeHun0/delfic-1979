@@ -1,0 +1,5 @@
+43	2268	COUNT 15/8	                                                                                	L=\text{NAD}(J)
+57	2880	OK	      VYKNL=VYKNL+SY(L)*02(L)                                                   	VYKNL=VYKNL+SY(L)*02(L)
+58	2922	OK	 216  VZKNL=VZKNL+SZ(L)*D2(L)                                                   	216 VZKNL=VZKNL+SZ(L)*D2(L)
+61	3053	OK	      VZKNL=VZKNL/SUN                                                           	VZKNL=VZKNL/SUN
+63	3284	COUNT 0/43	                                                                                	

@@ -1,0 +1,12 @@
+6	746	OK	      n0 1 I = 1,INUC                                                           	n0 1 I = 1, INUC
+23	1475	COUNT 27/9	                                                                                	\mathrm{NUC}(1) = \mathrm{IN}
+24	1518	OK	   12 L:W(LSUB) = 4                                                             	12 L:W(LSUB) = 4
+32	1855	OK	      SOC(LSUB) = OCON(KP)                                                      	SOC(LSUB) = OCON(KP)
+37	2070	OK	      SBR(LSUB) = 1.0                                                           	SBR(LSUB) = 1.0
+40	2197	COUNT 35/13	                                                                                	14 \text{ LB} = \text{LBR} + 5.0 \text{ IM}
+47	2502	OK	      KI = KP                                                                   	KI = KP
+50	2633	OK	   1∈ KI = 1                                                                    	1 ∈ KI = 1
+58	2971	OK	      DO  2C K = KI.KDA                                                         	DO 2C K = KI.KDA
+59	3020	COUNT 42/40	                                                                                	2? LBR = LBR + LBR - IABSLMOD(NUCLIU(K),MULT(2N))
+60	3066	COUNT 14/15	                                                                                	KARILSUAI, = LBR
+63	3305	COUNT 0/55	                                                                                	

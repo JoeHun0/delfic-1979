@@ -1,0 +1,8 @@
+17	1030	COUNT 121/52	                                                                                	\text{OMA} = Q * \exp(-\frac{(X\text{REL} * \text{COSA})^2}{2\text{VARX}^2} - \frac{(Y\text{REL} * \text{COSA})^2}{2\text{VARX}^2})
+23	1289	OK	  400 CALL ERROR(PROGRN,IRRO R,?OUT)                                            	400 CALL ERROR(PROGRN, IRROR, ?OUT)
+26	1717	OK	      SUBROUTINE CONTOR( CCNTUR, CROLBL ,UMAF ,NHAP)                            	SUBROUTINE CONTOR( CCNTUR, CROLBL, UMAF, NHAP)
+40	2317	COUNT 14/38	                                                                                	COMMON /CONCAT/
+44	2490	OK	     1JC        .NXMAP     .NYMAP     .NZ        .GCUT      .SSAM      .        	1JC .NXMAP .NYMAP .NZ .GCUT .SSAM .
+45	2526	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,        	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX ,
+48	2662	OK	      DATA PROGRN/6HCONTOR/                                                     	DATA PROGRN/6HCONTOR/
+53	2881	COUNT 0/3	                                                                                	

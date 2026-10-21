@@ -1,0 +1,12 @@
+649	p162	59	TIE	16	7	      00 302 IMAP=1,NNAP
+650	p162	63	TIE	57	9	        (ICUNT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL,
+651	p163	1	NONE	20	5	raw: ---
+652	p163	47	NONE	38	1	raw: \text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52
+653	p164	1	NONE	44	3	raw: \text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52
+654	p164	2	NONE	14	4	raw: 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+655	p164	20	SINGLE	29	6	     ,JC        ,NXMAP     ,NYMAP     ,NZ        ,QCUT      ,SSAM      ,
+656	p164	21	NONE	24	6	raw: \dot{E}TGZ \quad ,XG7. \quad ,X1 \quad ,X2 \quad ,YGZ \quad ,XMAX \quad ,
+657	p164	33	NONE	60	2	raw: 1100 FORMAT (//10X, 45HFISSIO DOES NOT MATCH WITH ANY AVAILABLE TYPE)
+658	p164	37	TIE	11	3	  100 CONTINUE
+659	p165	29	TIE	23	7	      T6Z       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,
+660	p165	31	TIE	59	7	      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20J),

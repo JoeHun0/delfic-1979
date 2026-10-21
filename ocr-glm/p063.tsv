@@ -1,0 +1,64 @@
+1	14	COUNT 3/18;COUNT 3/1	                                                                                	--- || ---
+2	80	COUNT 3/7;COUNT 3/1	                                                                                	--- || ---
+3	567	OK	*DECK,ICH                                                               ICM    1	*DECK, ICH || ICM 1
+4	611	OK	      SUBROUTINE ICM                                                    ICM    2	SUBROUTINE ICM || ICM 2
+5	646	OK	C                                                                       ICM    3	C || ICM 3
+6	690	OK	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     ICM    4	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || ICM 4
+7	739	OK	C                                                                       ICM    5	C || ICM 5
+8	775	COUNT 1/71	                                                                        ICM    6	C || ICM 6
+9	826	OK	C                                                                       ICM    7	C || ICM 7
+10	861	OK	C     PROGRAM TO DETERMINE THE INITIAL CONDITIONS SPECIFICATIONS OF     ICM    8	C PROGRAM TO DETERMINE THE INITIAL CONDITIONS SPECIFICATIONS OF || ICM 8
+11	903	OK	C     TIME, TEMPERATURE, TOTAL SOIL MASS, FRACTION OF THE SOIL BURCEN INICH    9	C TIME, TEMPERATURE, TOTAL SOIL MASS, FRACTION OF THE SOIL BURCEN IN || ICH 9
+12	947	OK	C     THE VAPOR PHASE. AND THE SIZE FREQUENCY DISTRIBUTION OF THE       ICM   10	C THE VAPOR PHASE. AND THE SIZE FREQUENCY DISTRIBUTION OF THE || ICM 10
+13	997	OK	C     CONDENSED PHASE SOIL OR AIRBURST PARTICLES.  IT ALSO PRINTS A     ICM   11	C CONDENSED PHASE SOIL OR AIRBURST PARTICLES. IT ALSO PRINTS A || ICM 11
+14	1040	OK	C     HEADING AND PRINTS THE CRITICAL DATA.                             ICM   12	C HEADING AND PRINTS THE CRITICAL DATA. || ICM 12
+15	1082	OK	C                                                                       ICM   13	C || ICM 13
+16	1119	COUNT 1/71	                                                                        ICM   14	C || ICM 14
+17	1162	OK	C                                                                       ICM   15	C || ICM 15
+18	1212	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    ICM   16	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ || ICM 16
+19	1257	COUNT 63/62	                                                                        1CM   17	COMMON /CONTROL/ DETIO(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI || 1CM 17
+20	1294	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 ICM   18	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || ICM 18
+21	1336	OK	      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SD,PS(200),DIAM(201),FMASS(200)  ICM   19	COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SD,PS(200),DIAM(201),FMASS(200) || ICM 19
+22	1380	OK	      EQUIVALENCE (DMEAN,CAYM),(SD,EXPO)                                ICM   20	EQUIVALENCE (DMEAN, CAYM), (SD, EXPO) || ICM 20
+23	1423	OK	C                                                                       ICM   21	C || ICM 21
+24	1471	OK	      DATA PROGRM /6H ICM  /                                            IGM   22	DATA PROGRM /6H ICM / || IGM 22
+25	1515	OK	C                                                                       ICM   23	C || ICM 23
+26	1549	COUNT 1/71	                                                                        ICM   24	C || ICM 24
+27	1601	OK	C                                                                       ICM   25	C || ICM 25
+28	1644	OK	   1  FORMAT(12A6)                                                      ICM   26	1 FORMAT(12A6) || ICM 26
+29	1686	OK	   2  FORMAT( /3X, 6DHTHE SPECIFIED STANDARD DEVIATION IS NEGATIVE HENCEICM   27	2 FORMAT( /3X, 6DHTHE SPECIFIED STANDARD DEVIATION IS NEGATIVE HENCE || ICM 27
+30	1721	OK	     1 INCORRECT////                                                    ICM   28	1 INCORRECT//// || ICM 28
+31	1763	OK	   3  FORMAT(8F10.0)                                                    ICM   29	3 FORMAT(8F10.0) || ICM 29
+32	1814	OK	   4  FORMAT( //25X, 28H****  BASIC PARAMETERS  ****/ 20X, 24HYIELDS - 1ICM   30	4 FORMAT(//25X, 28H**** BASIC PARAMETERS ****/ 20X, 24HYIELDS - 1 || ICM 30
+33	1851	COUNT 58/56	                                                                        ICM   31	10TAL (FISSION), 21X, E12.5, 2H (L12.5, 4H) KT/ 20X, 24HHEIGHT OR. 0. || ICM 31
+34	1902	OK	     2EPTH OF BURST, 21X, E12.5, 2X, 6HMETERS, 2H (E12.5, 21H FEET) KELAICM   32	2EPTH OF BURST, 21X, E12.5, 2X, 6HMETERS, 2H (E12.5, 21H FEET) KELA || ICM 32
+35	1937	OK	     3TIVE TO GZ/ 20X. 14HALTITUDE OF GZ. 31X E12.5. 7H METERS/ 20X.    ICM   33	3TIVE TO GZ/20X.14HALTITUDE OF GZ.31X E12.5.7H METERS/20X. || ICM 33
+36	1979	COUNT 16/17	                                                                        ICM   34	4 13HSOIL CATEGORY || ICM 34
+37	2029	OK	 5    FORMAT(1H+,65X,9HSILICEOLS)                                       ICM   35	5 FORMAT(1H+,65X,9HSILICEOLS) || ICM 35
+38	2064	OK	 6    FORMAT(1H+,65X,10HCALCAREOUS)                                     ICM   36	6 FORMAT(1H+,65X,10HCALCAREOUS) || ICM 36
+39	2115	OK	 7    FORMAT( /20X.             36HPARTICLE SIZE FREQUENCY DISTRIBUTION/ICM   37	7 FORMAT( /20X. 36HPARTICLE SIZE FREQUENCY DISTRIBUTION/ || ICM 37
+40	2158	OK	     125X32HA LOG-NORMAL DISTRIBUTION WITH -/30X,15HMEDIAN DIAMETER,20X,ICM   38	125X32HA LOG-NORMAL DISTRIBUTION WITH -/30X,15HMEDIAN DIAMETER,20X, || ICM 38
+41	2195	COUNT 63/62	                                                                        ICM   39	2E12.5,2X,11HMICROMETERS/30X,28HGEOMETRIC STANDARDCDEVIATION,7X, || ICM 39
+42	2245	OK	     3E12.5/25X, 34HTHIS DISTRIBUTION WAS SPECIFIED BY)                 1CM   40	3E12.5/25X, 34HTHIS DISTRIBUTION WAS SPECIFIED BY) || 1CM 40
+43	2288	OK	 8    FORMAT(1H+.65X.11HTHE PRCGRAM)                                    ICM   41	8 FORMAT(1H+.65X.11HTHE PRCGRAM) || ICM 41
+44	2330	OK	 9    FORMAT(1H+,65X,8HTHE USER)                                        ICM   42	9 FORMAT(1H+,65X,8HTHE USER) || ICM 42
+45	2372	OK	 10   FORMAT(20I4)                                                      ICM   43	10 FORMAT(20I4) || ICM 43
+46	2417	COUNT 59/58	                                                                        ICM   44	11 FORMAT(/3X,58HTHE SCALED DEPTH OF BURST IS BEYONC THE SCOPE OF THE. || ICM 44
+47	2452	COUNT 7/8	                                                                        ICM   45	1 MODEL) || ICM 45
+48	2502	OK	   12 FORMAT( 1H+, 65X, 36HNOT APPLICABLE.  THIS IS AN AIRBURST)        ICM   46	12 FORMAT( 1H+, 65X, 36HNOT APPLICABLE. THIS IS AN AIRBURST) || ICM 46
+49	2545	OK	 13   FORMAT( //25X37H****  INITIAL CLOUD PROPERTIES AT H +E12.5,14H SECICM   47	13 FORMAT( //25X37H**** INITIAL CLOUD PROPERTIES AT H +E12.5,14H SEC || ICM 47
+50	2588	OK	     10NDS  ****/ 20X.23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES ICM   48	10NDS ****/ 20X.23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES || ICM 48
+51	2622	OK	     2KELVIN/ 20X,56HAVERAGE TEMPERATURE OF CONDENSED PHASE MATERIAL IN ICM   49	2KELVIN/20X,56HAVERAGE TEMPERATURE OF CONDENSED PHASE MATERIAL IN || ICM 49
+52	2675	OK	     3CLOUD,5X,E12.5,2X,14FOEGREES KELVIN/ 20X,31HMASS OF VAPORIZED SOILICH   50	3CLOUD,5X,E12.5,2X,14FOEGREES KELVIN/ 20X,31HMASS OF VAPORIZED SOIL || ICH 50
+53	2717	OK	     4 IN CLOUD,30X,E12.5,2X,9HKILOGRAMS/ 20X41HMASS CF CONDENSED PHASE ICM   51	4 IN CLOUD,30X,E12.5,2X,9HKILOGRAMS/ 20X41HMASS CF CONDENSED PHASE || ICM 51
+54	2761	OK	     5MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAPS)                       IGM   52	5 MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAPS) || IGM 52
+55	2804	COUNT 59/60	                                                                        ICM   53	14 FORMAT(//25X37H**** INITIAL CLCUD PROPERTIES AT H +E12.5.14H SEC || ICM 53
+56	2845	COUNT 62/61	                                                                        ICM   54	10NDS *****/ 20X.23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES || ICM 54
+57	2889	OK	     2KELVIN/                             20X41HMASS OF CONDENSED PHASE ICM   55	2KELVIN/ 20X41HMASS OF CONDENSED PHASE || ICM 55
+58	2933	OK	     3MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAPS)                       ICM   56	3 MATERIAL IN CLOUD,20X,E12.5,2X,9HKILOGRAPS) || ICM 56
+59	2967	OK	 15   FORMAT(1X,11HLEAVING ICM)                                         ICM   57	15 FORMAT(1X,11HLEAVING ICM) || ICM 57
+60	3019	COUNT 200/47	                                                                        ICM   58	16 FORMAT( 1H1, 5JX, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ICM 58
+61	3063	OK	     1                                            12X,101HT H E   D E P ICM   59	1 12X,101HT HE DEP || ICM 59
+62	3105	OK	     2A R T M E N T   O F   D E F E N S E   F A L L C U T   P R E D I C ICM   60	2 ARTMENT OF DEFENSE FALLCUT PREDIC || ICM 60
+63	3164	OK	                                        60                                      	60
+64	3292	COUNT 3/5;COUNT 3/7	                                                                                	--- || ---

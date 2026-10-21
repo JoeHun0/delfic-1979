@@ -1,0 +1,55 @@
+1	14	COUNT 368/21	                                                                                	\text{F} = \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F} \cdot \text{F}
+2	67	COUNT 4/64	                                                                                	text
+3	831	COUNT 62/61	                                                                        OTMIN 61	50 FORMAT(28X, 57HRATIC CF LAGRANGIAN TO EULERIAN TURBULENCE TIME SCALI || OTMIN 61
+4	876	OK	     1ES ISF8.31                                                        UTHIN 62	1ES ISF8.31 || UTHIN 62
+5	919	OK	C                                                                       UTMIN 63	C || UTMIN 63
+6	960	OK	COPY IN IDENTIFICATION FOR DIFFUSIVE TRANSPORT                          OTMIN 64	COPY IN IDENTIFICATION FOR DIFFUSIVE TRANSPORT || OTMIN 64
+7	1003	OK	      READ (ISIN,1)OTHIO                                                OTMIN 65	READ (ISIN,1)OTHIO || OTMIN 65
+8	1044	OK	COPY IN OPTION CONTROL CODE DATA FOR DIFFUSIVE TRANSPORT                OTMIN 66	COPY IN OPTION CONTROL CODE DATA FOR DIFFUSIVE TRANSPORT || OTMIN 66
+9	1088	OK	      READ (ISIN,21)MC                                                  OTMIN 67	READ (ISIN, 21) MC || OTMIN 67
+10	1132	OK	      READ(ISIN,21)ICX,JCX,NSEQO                                        07MIN 68	READ(ISIN,21)ICX,JCX,NSEQO || 07MIN 68
+11	1174	COUNT 8/7	      IF(ICX .Eq. L) ICX=1                                                      	IF (ICX .Eq. L) ICX=1 || OTHI.N 69
+12	1219	OK	      IF(JCX .EQ. 1) JCX=1                                              OTMIN 70	IF(JCX.EQ.1) JCX=1 || OTMIN 70
+13	1262	OK	      IF(NSEQO .EQ. 0)NSEQO=1                                           OTMIN 71	IF(NSEQO .EQ. 0) NSEQO=1 || OTMIN 71
+14	1303	OK	      READ(ISIN,40) WINT,XLLC,YLLC,TIMEH,EDDY                           OTMIN 72	READ(ISIN,40) WINT,XLLC,YLLC,TIMEH,EDDY || OTMIN 72
+15	1350	COUNT 23/24	                                                                        OTMIN 73	IF(EDDY .EQ. 0.0) ECOY=4.0 || OTMIN 73
+16	1392	OK	COMPOSE ALL TAPES NEEDED FOR DIFFUSIVE TRANSPORT                        DTMIN 74	COMPOSE ALL TAPES NEEDED FOR DIFFUSIVE TRANSPORT || DTMIN 74
+17	1436	OK	      REWIND JPARN                                                      DTMIN 75	RE WIND JPARN || DTMIN 75
+18	1478	OK	      REWIND IPOUT                                                      OTMIN 76	REWIND IPOUT || OTMIN 76
+19	1519	OK	COPY IN BASIC HEADER DATA FROM ICRM OUTPUT TAPE                         OTHIN 77	COPY IN BASIC HEADER DATA FROM ICRM OUTPUT TAPE || OTHIN 77
+20	1560	OK	      READ (JPARK)FW,SSAM,SLDTMP,TMSD,SD,W,HEIGHT,KHOF,RADMAX,ZMIN      OTMIN 78	READ (JPARK)FW,SSAM,SLDTMP,TMSD,SD,W,HEIGHT,KHOF,RADMAX,ZMIN || OTMIN 78
+21	1605	COUNT 29/22	                                                                        DTMIN 79	R.E.A.D (J.P.A.R.N) XGZ, YGZ, TGZ || DTMIN 79
+22	1648	OK	      READ (JPARN)(DETID(I),I=1,12)                                     DTMIN 80	READ (JPARN)(DETID(I), I=1,12) || DTMIN 80
+23	1691	OK	      READ (JPARN)NDSTR                                                 OTMIN 81	READ (JPARN)NDSTR || OTMIN 81
+24	1733	OK	      READ (JPARN)(PS(J),CIAM(J),FMASS(J),J=1,NDSTR)                    DTMIN 82	READ (JPARN)(PS(J),CIAM(J),FMASS(J),J=1,NDSTR) || DTMIN 82
+25	1776	OK	      READ (JPARN)NAT                                                   OTMIN 83	READ (JPARN)NAT || OTMIN 83
+26	1817	OK	      READ (JPARN)(ALT(J),ATP(J),PRS(J),RLH(J),RHO(J),ETA(J),J=1,NAT)   OTMIN 84	READ (JPARN)(ALT(J), ATP(J), PRS(J), RLH(J), RHO(J), ETA(J), J=1, NAT) || OTMIN 84
+27	1861	OK	COPY OUT HEADER DATA ON TO THE DTM BINARY OUTPUT TAPE                   DTMIN 85	COPY OUT HEADER DATA ON TO THE DTM BINARY OUTPUT TAPE || DTMIN 85
+28	1905	COUNT 32/7	      WRITE(IPOUT)FH,SSAM,SLDTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN              	WRITE(IPOUT)FH,SSAM,SLDTMP,TMSD,SD,W,HEIGHT,RHOP,RADMAX,ZMIN || \mathbb{C}^{\prime} \text{MIN} \ 86
+29	1948	OK	      WRITE(IPOUT)XGZ,YGZ,TGZ                                           L.MIN 87	WRITE(IPOUT)XGZ,YGZ,TGZ || L. MIN 87
+30	1991	OK	      WRITE (IPOUT) (DETIO(J),J=1,12)                                   DTMIN 98	WRITE (IPOUT) (DETIO(J), J=1,12) || DTMIN 98
+31	2034	OK	      WRITE (IPOUT) (OTMIC(J),J=1,12)                                   OTMIN 89	WRITE (IPOUT) (OTMIC (J), J=1,12) || OTMIN 89
+32	2076	COUNT 14/7	      WRITE (IPOUT)NOSTR                                                        	WRITE (IPOUT) NOSTR || \text{DTMIN 90}
+33	2106	OK	      WRITE (IPOUT)(PS(J),DIAM(J),FMASS(J),J=1,NOSTR)                   OTMIN 91	WRITE (IPOUT) (PS(J),DIAM(J),FMASS(J),J=1,NOSTR) || OTMIN 91
+34	2163	OK	COPY OUT DIFFUSIVE TRANSPCRT HEADING                                    OTMIN 92	COPY OUT DIFFUSIVE TRANSPCRT HEADING || OTMIN 92
+35	2205	OK	      WRITE (ISOUT,23)                                                  OTMIN 93	WRITE (ISOUT, 23) || OTMIN 93
+36	2248	OK	      WRITE (ISOUT,2) (DETID(J),J=1,12),(OTMIO(J),J=1,12)               DTMIN 94	WRITE (ISOUT,2) (DETID(J), J=1,12), (OTMIO(J), J=1,12) || DTMIN 94
+37	2292	OK	      WRITE (ISOUT,7)                                                   DTMIN 95	WRITE (ISOUT, 7) || DTMIN 95
+38	2334	OK	      WRITE (ISOUT,8)MC                                                 DTHIN 96	WRITE (ISOUT, 8) MC || DTHIN 96
+39	2377	COUNT 0/17	                                                                        DTMIN 97	 || DTMIN 97
+40	2422	OK	      WRITE (ISOUT,9) TIMEX, TIMEH                                      DTMIN 38	WRITE (ISOUT,9) TIMEX, TIMEH || DTMIN 38
+41	2463	OK	      IF(MC(6) ,GT, 0) WRITE(ISOUT,50) EDDY                             OTMIN 99	IF(MC(6),GT,0) WRITE(ISOUT,50) EDDY || OTMIN 99
+42	2509	OK	      WRITE(ISOUT,14)XGZ,Y(Z,ZMIN,TGZ                                   OTMIN100	WRITE(ISOUT,14)XGZ,Y(Z,ZMIN,TGZ || OTMIN100
+43	2550	OK	      WRITE(ISOUT,27)XLLC,YLLC,WINT                                     DTMIN101	WRITE(ISOUT,27)XLLC,YLLC,WINT || DTMIN101
+44	2592	OK	      WRITE(ISOUT,10)ZMIN                                               OTMIN102	WRITE (ISOUT, 10) ZMIN || OTMIN102
+45	2634	OK	      WRITE(ISOUT,43)RHOP,ADSTR                                         DTMIN1J3	WRITE(ISOUT,43)RHOP,ADSTR || DTMIN1J3
+46	2679	OK	      WRITE(ISOUT,47)                                                   DTMIN174	WRITE(ISOUT,47) || DTMIN174
+47	2721	OK	      IF(MC(4) .EQ. 0) WRITE(ISOUT,48)                                  OTMIN135	IF(MC(4) .EQ. 0) WRITE(ISOUT,48) || OTMIN135
+48	2764	OK	      IF(MC(4) .NE. 0) WRITE(ISOUT,49)                                  DTMIN106	IF(MC(4) .NE. 0) WRITE(ISOUT,49) || DTMIN106
+49	2808	OK	      IF(NSEQO .NE. 1) WRITE(ISOUT,45) NSEQO                            DTMIN107	IF(NSEQO .NE. 1) WRITE(ISOUT,45) NSEQO || DTMIN107
+50	2849	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,46)                                  OTMIN138	IF(MC(2) .NE. 1) WRITE(ISOUT,46) || OTMIN138
+51	2893	OK	      RETURN                                                            DTMIN1J9	RETURN || DTMIN1J9
+52	2938	OK	      END                                                               DTMIN110	END || DTMIN110
+53	3155	OK	                                        115                                     	115
+54	3275	COUNT 0/40;COUNT 21/6	                                                                                	 || ![image](image_1.png)
+55	3307	COUNT 320/33;COUNT 21/1	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} || ![image](image_1.png)

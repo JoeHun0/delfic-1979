@@ -1,0 +1,41 @@
+1	29	COUNT 0/34	                                                                                	
+2	125	COUNT 0/3	                                                                                	
+3	884	OK	*DECK,GETDA                                                             GETDA  1	*DECK, GETDA || GETDA 1
+4	926	OK	      SUBROUTINE GETDA(ASUM,ZBH,KBHA,KBHB,NDATA,LTIM, ABAR ,KBHF,NDATF, GÉTDÁ  2	SUBROUTINE GETDA(ASUM,ZBH,KBHA,KBHB,NDATA,LTIM, ABAR ,KBHF,NDATF, || GÉTDÁ 2
+5	970	OK	     1LTIMF)                                                            GETDA  3	1LTIMF) || GETDA 3
+6	1013	OK	C     MARCH, 1971                                                       GETDA  4	C MARCH, 1971 || GETDA 4
+7	1054	OK	C     SUBROUTINE GETDA COMPUTES THE AVERAGED QUANTITY ABAR, WHICH MAY BEGETDA  5	C SUBROUTINE GETDA COMPUTES THE AVERAGED QUANTITY ABAR, WHICH MAY BE || GETDA 5
+8	1095	OK	C     A MEASURE OF HORIZONTAL ADVECTION, ROTATION OR DISPERSION, FROM   GETDA  5	C A MEASURE OF HORIZONTAL ADVECTION, ROTATION OR DISPERSION, FROM || GETDA 5
+9	1140	OK	C     DATA STORED IN THE APPROPRIATE ARRAY ASUM.                        GETOA  7	C DATA STORED IN THE APPROPRIATE ARRAY ASUM. || GETOA 7
+10	1183	OK	C     ASUM  - 3-DIM. DATA ARRAY PREPARED IN SUBROUTINE SUMDAT.  EITHER  GETDA  8	C      ASUM - 3-DIM. DATA ARRAY PREPARED IN SUBROUTINE SUMDAT. EITHER || GETDA 8
+11	1227	COUNT 1/30	                                                                        GETDA  9	C || GETDA 9
+12	1269	OK	C     ABAR  - WTD. AVG. OVER AFRAY  ASUM FROM INOICES KBHA-1 TO KBHB-1  GETDA 10	C ABAR - WTD. AVG. OVER AFRAY ASUM FROM INOICES KBHA-1 TO KBHB-1 || GETDA 10
+13	1312	OK	C     KBHA  - INDEX OF UPPER STRATUM BASE-ALTITUDE ZBH                  GETDA 11	C KBHA - INDEX OF UPPER STRATUM BASE-ALTITUDE ZBH || GETDA 11
+14	1354	OK	C     KBHB  - INDEX OF LOWER STRATUM BASE-ALTITUDE Z8H                  GETDA 12	C KBHB - INDEX OF LOWER STRATUM BASE-ALTITUDE Z8H || GETDA 12
+15	1397	OK	C     NDATA - HORIZ. SPACE INDEX OF ARRAY ASUM                          GETDA 13	C      NDATA - HORIZ. SPACE INDEX OF ARRAY ASUM || GETDA 13
+16	1442	OK	C     LTIM  - UPDATE TIME INDEX OF ARRAY ASUM                           GETDA 14	C LTIM - UPDATE TIME INDEX OF ARRAY ASUM || GETDA 14
+17	1483	OK	      COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX                   GETDA 15	COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX || GETDA 15
+18	1526	OK	      COMMON /CNTROL/ IPOU1,ISIN,ISOUT,JPARN,MC(20),NSEQO               GETDA 16	COMMON /CNTROL/ IPOU1,ISIN,ISOUT,JPARN,MC(20),NSEQO || GETDA 16
+19	1569	OK	      DIMENSION ASUM(KBHF,NDATF,LTINF),ZBH(KBHF)                        GETDA 17	DIMENSION ASUM(KBHF,NDATF,LTINF),ZBH(KBHF) || GETDA 17
+20	1612	OK	      DATA PROGRM/6HGETDA /                                             GETOA 18	DATA PROGRM/6HGETDA / || GETOA 18
+21	1655	OK	CHECK IF KBHA-1 EXCEEDS KBHX                                            GETDA 19	CHECK IF KBHA-1 EXCEEDS KBHX || GETDA 19
+22	1699	OK	      IF(KBHA-KBHX-1) 3,2,1                                             GETDA 20	IF (KBHA - KBHX - 1) 3,2,1 || GETDA 20
+23	1743	OK	    1 I=1                                                               GETDA 21	1 I=1 || GETDA 21
+24	1787	OK	   10 CALL ERROR(PROGRH,I,ISOUT)                                        GETDA 22	10 CALL ERROR(PROGRH,I,ISOUT) || GETDA 22
+25	1828	COUNT 0/7	                                                                        GETOA 23	 || GETOA 23
+26	1871	OK	      RETURN                                                            GETOA 24	RETURN || GETOA 24
+27	1914	OK	    2 ABAR=ASUM(KBHA-1,NCATA,LTIM)                                      GETDA 25	2 ABAR=ASUM(KBHA-1,NCATA,LTIM) || GETDA 25
+28	1956	OK	      RETURN                                                            GETOA 26	RETURN || GETOA 26
+29	1998	OK	    3 ABAR=ASUM(KBHA-1,NDATA,LTIM)                                      GETDA 27	3 ABAR=ASUM(KBHA-1,NDATA,LTIM) || GETDA 27
+30	2041	OK	CHECK IF KBHB IS LESS THAN 1                                            GETDA 28	CHECK IF KBHB IS LESS THAN 1 || GETDA 28
+31	2085	OK	      IF(KBHB-1) 6,5,4                                                  GETDA 29	IF (KBHB - 1) 6,5,4 || GETDA 29
+32	2128	OK	    6 I=6                                                               GETOA 30	6 I=6 || GETOA 30
+33	2169	OK	      GO TO 10                                                          GETDA 31	GO TO 10 || GETDA 31
+34	2213	OK	CONCLUDE ABAR COMPUTATION                                               GETDA 32	CONCLUDE ABAR COMPUTATION || GETDA 32
+35	2254	OK	    4 ABAR=ABAR-ASUM(KBHB-1,NDATA,LTIM)                                 GETDA 33	4 ABAR=ABAR-ASUM(KBHB-1,NDATA,LTIM) || GETDA 33
+36	2297	OK	    5 ABAR=ABAR/(ZBH(KBHA)-ZBH(KBHB))                                   GETDA 34	5 ABAR=ABAR/(ZBH(KBHA)-ZBH(KBHB)) || GETDA 34
+37	2342	OK	      RETURN                                                            GETDA 35	RETURN || GETDA 35
+38	2383	OK	      END                                                               GETOA 36	END || GETOA 36
+39	3216	OK	                                        117                                     	117
+40	3278	COUNT 0/42;COUNT 0/8	                                                                                	 || 
+41	3326	COUNT 0/39	                                                                                	

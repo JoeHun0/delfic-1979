@@ -1,0 +1,12 @@
+505	p138	57	TIE	55	4	   1  FORMAT(/18X, 5HALPHA, 8X, 4HβETA, 14X, 2HNN/ 15X, 2E12.4, I12)
+506	p139	2	NONE	11	19	raw: ---
+507	p139	10	TIE	53	6	     1.  A RANDOM SELECTION OF ,I4, 30H VECTORS ARE EQUALLY WEIGHTED ,
+508	p139	34	NONE	56	4	raw: 13 IF(N1+N2+N3+N4+N5+N6 .LT. 21) CALL ERROR(PROGRAM,-13,ISOUT)
+509	p139	41	NONE	27	7	raw: IF (AP.(N1).GE. ALIMIT) GO TO 101
+510	p139	55	TIE	54	7	      SY(J) =AP(N7)*SCALE(2) * COS( RADC*(AP(N2)*SCALE(3) + TRNS))
+511	p140	36	TIE	28	7	      CRESSZ=CUTOFF/（ALFA2+CRESSZ）
+512	p140	40	TIE	28	7	      CRESSR=CUTOFF/(BETA2+CRESSR)
+513	p140	42	TIE	24	7	      IF(CRESS7.LE.GIB) GC TO 202
+514	p140	59	TIE	9	7	      OM=02(KL)
+515	p140	64	NONE	9	37	raw: \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: }
+516	p141	57	TIE	23	7	      VYKNL=VYKNL+SY(L)*02(L)

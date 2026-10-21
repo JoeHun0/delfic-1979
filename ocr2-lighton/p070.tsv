@@ -1,0 +1,7 @@
+1	43	COUNT 0/9	                                                                                	
+14	976	OK	      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ            	COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ
+22	1319	OK	      Q=-ZSCL                                                                   	Q=-ZSCL
+24	1406	COUNT 0/63	                                                                                	
+28	1575	COUNT 0/56	                                                                                	
+58	3274	COUNT 14/17	                                                                                	\text{العربية}
+59	3333	COUNT 0/14	                                                                                	

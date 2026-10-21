@@ -1,0 +1,60 @@
+1	12	COUNT 3/22;COUNT 3/1	                                                                                	--- || 512
+2	84	COUNT 3/25	                                                                                	---
+3	456	COUNT 44/43;COUNT 9/8	                                                                                	C ZMIN DEPOSITION PLANE ALTITUDE (M RELATIVE TO MSL) || OPMEX121.
+4	499	OK	C     ZSCL              SCALED HEIGHT OF BURST (FT/W**(1.0/3.4))        OPMEX122	C ZSCL SCALED HEIGHT OF BURST (FT/W**(1.0/3.4)) || OPMEX122
+5	540	OK	C                                                                       UPMEX123	C || UPMEX123
+6	584	COUNT 1/71	                                                                        OPMEX124	C || OPMEX124
+7	629	OK	C                                                                       OPMEX125	C || OPMEX125
+8	670	OK	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCP     ,IPOUT     ,OPMEX126	COMMON /CONDAT/ IC(20) ,IHOB ,IPNCP ,IPOUT , || OPMEX126
+9	713	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,OPMEX127	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE , || OPMEX127
+10	756	COUNT 25/29	                                                                        OPMEX128	2 MARRAY MB TAPE MXREQ SD INPAY || OPMEX128
+11	791	OK	      COMMON /MAPDAT/ CAYF ,CUTMAP    ,OGX       ,OGY       ,IH  ,IV   ,OPMEX129	COMMON /MAPDAT/ CAYF ,CUTMAP ,OGX ,OGY ,IH ,IV , || OPMEX129
+12	842	COUNT 23/29	                                                                        OPMEX130	1JC NXMAP NYMAP NZ QCUT SSAM || OPMEX130
+13	886	COUNT 25/24	                                                                        OPMEX131	2TGZ ,XGZ ,X1. ,X2 ,YGZ ,XMAX , || OPMEX131
+14	929	COUNT 16/20	                                                                        OPMEX132	3XMIN YMAX MIN ZMIN || OPMEX132
+15	971	OK	      DIMENSION NUMTAP(15),UMAP(  5000)                                 OPMEX133	DIMENSION NUMTAP(15),UMAP( 5000) || OPMEX133
+16	1014	OK	      UATA    NMAP      ,  MARRAY   ,   MXREQ   ,  IH  ,  IV            OPHEX134	UATA NMAP , MARRAY , MXREQ , IH , IV || OPHEX134
+17	1056	OK	     1   /    5000      ,   100     ,    18     ,  10  ,   6  /         QPMEX135	1 / 5000 , 100 , 18 , 10 , 6 / || QPMEX135
+18	1101	OK	C                                                                       OPMEX136	C || OPMEX136
+19	1143	OK	      ISIN =NUMTAP( 1)                                                  OPNEX137	ISIN =NUMTAP(1) || OPNEX137
+20	1186	OK	      ISOUT=NUMTAP( 2)                                                  UPMEX138	ISOUT=NUMTAP(2) || UPMEX138
+21	1229	OK	      IPOUT=NUMTAP（ 3）                                                  OPMEX139	IPOUT=NUMTAP（3） || OPMEX139
+22	1273	OK	      JPOUT=NUMTAP( 5)                                                  OPMEX140	JPOUT=NUMTAP(5) || OPMEX140
+23	1314	OK	      KPOUT=NUMTAP( 6)                                                  OPMEX141	KPOUT=NUMTAP(6) || OPMEX141
+24	1357	OK	      IPNCH=NUMTAP( 7)                                                  OPMEX142	IPNCH=NUMTAP(7) || OPMEX142
+25	1401	OK	      MBTAPE=NUMTAP(8)                                                  OPMEX143	MBTAPE=NUMTAP(8) || OPMEX143
+26	1442	OK	      INPAM=NUMTAP( 9)                                                  UPMEX144	INPAM=NUMTAP(9) || UPMEX144
+27	1487	OK	      CALL       OPH1                                                   OPMEX145	CALL OPH1 || OPMEX145
+28	1529	OK	      CALL       OPM2(OMAP,NMAP)                                        OPMEX146	CALL OPM2(OMAP,NMAP) || OPMEX146
+29	1564	OK	      RETURN                                                            OPMEX147	RETURN || OPMEX147
+30	1615	OK	      END                                                               OPMEX148	END || OPMEX148
+31	1959	OK	*DECK,OPM1                                                              OPM1   1	*DECK,OPM1 || OPM1 1
+32	2001	OK	      SUBROUTINE OPM1(NUMTAP)                                           OPM1   2	SUBROUTINE OPM1(NUMTAP) || OPM1 2
+33	2047	OK	C                                                                       OPM1   3	C || OPM1 3
+34	2087	OK	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     OPM1   4	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || OPM1 4
+35	2131	OK	C                                                                       UPM1   5	C || UPM1 5
+36	2173	COUNT 1/72;COUNT 4/5	                                                                                	C || OPM1
+37	2217	OK	C                                                                       OPM1   7	C || OPM1 7
+38	2259	OK	C     THIS PROGRAM INITIALIZES AND WRITES HEADINGS FOR THE OUTPUT       UPM1   8	C THIS PROGRAM INITIALIZES AND WRITES HEADINGS FOR THE OUTPUT || UPM1 8
+39	2303	OK	C     PROCESSOR.  THEN IT CALLS THE FIRST PART OF THE PARTICLE ACTIVITY OPM1   9	C PROCESSOR. THEN IT CALLS THE FIRST PART OF THE PARTICLE ACTIVITY || OPM1 9
+40	2344	OK	C     MODULE (PAM1 OR PAM1A) TO PRECOMPUTE UATA USED BY THE SECOND PART OPM1  10	C MODULE (PAM1 OR PAM1A) TO PRECOMPUTE UATA USED BY THE SECOND PART || OPM1 10
+41	2389	OK	C     OF THE PARTICLE ACTIVITY MODULE WHICH IS CALLED CY OPM2.          OPM1  11	C OF THE PARTICLE ACTIVITY MODULE WHICH IS CALLED CY OPM2. || OPM1 11
+42	2435	OK	C                                                                       OPH1  12	C || OPH1 12
+43	2474	OK	C     PAM1 IS USED FOR CASES WHERE THE FIREBALL INTERSECTS THE GROUND   OPM1  13	C PAM1 IS USED FOR CASES WHERE THE FIREBALL INTERSECTS THE GROUND || OPM1 13
+44	2518	OK	C     AND PARTICLE SIZE DISTRIBUTION IS LOGNORMAL.   PAM1A IS USED FOR  OPM1  14	C AND PARTICLE SIZE DISTRIBUTION IS LOGNORMAL. PAM1A IS USED FOR || OPM1 14
+45	2561	OK	C     AIRBURSTS AND FOR ARBITRARY PARTICLE SIZE-ACTIVITY DISTRIBUTIONS. OPM1  15	C AIRBURSTS AND FOR ARBITRARY PARTICLE SIZE-ACTIVITY DISTRIBUTIONS. || OPM1 15
+46	2607	OK	C                                                                       UPM1  16	C || UPM1 16
+47	2646	COUNT 1/71	                                                                        OPM1  17	C || OPM1 17
+48	2691	OK	C                                                                       OPM1  18	C || OPM1 18
+49	2731	OK	      COMMON /CONDAT/       IC(20)    ,IHO8      ,IPNCH     ,IPOUT     ,OPM1  19	COMMON /CONDAT/ IC(20) ,IHO8 ,IPNCH ,IPOUT , || OPM1 19
+50	2774	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,OPM1  20	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,LTAPE , || OPM1 20
+51	2819	OK	     2MARRAY    ,MBTAPE    ,HXREQ     ,SD        ,INFAM                 OPM1  21	2MARRAY ,MBTAPE ,HXREQ ,SD ,INFAM || OPM1 21
+52	2861	OK	      COMMON /MAPDAT/ CAYF ,CUTMAP    ,OGX       ,OGY       ,IH  ,IV   ,OPM1  22	COMMON /MAPDAT/ CAYF ,CUTMAP ,OGX ,OGY ,IH ,IV , || OPM1 22
+53	2903	COUNT 23/29	                                                                        UPM1  23	1 JC NXMAP NYMAP NZ QCUT SSAM || UPM1 23
+54	2948	COUNT 18/24	                                                                        OPM1  24	2TGZ XGZ X1 X2 YGZ XMAX || OPM1 24
+55	2989	COUNT 17/20	                                                                        OPM1  25	3XMIN YMAX YMIN ZMIN || OPM1 25
+56	3033	COUNT 25/29	                                                                        CPM1  26	COMMON /PARDAT/ ASQ 3SQ COSA F || CPM1 26
+57	3075	OK	     1GAMA      ,IP        ,PMAS(100) ,PSIZ(100) ,KO(100)   ,SIGXO(100),QPK1  27	1GAMA ,IP ,PMAS(100) ,PSIZ(100) ,KO(100) ,SIGXO(100), || QPK1 27
+58	3150	OK	                                         153                                    	153
+59	3280	COUNT 3/4;COUNT 3/8	                                                                                	--- || ---
+60	3297	COUNT 3/55	                                                                           ---  	--- || ---

@@ -1,0 +1,10 @@
+1	1	COUNT 0/27	                                                                                	
+17	1164	OK	     1        RHO(256), ETA(256), NHODC, ZV(100),  VX(100), VY(100)             	1 RHO(256), ETA(256), NHODC, ZV(100), VX(100), VY(100)
+23	1424	OK	     1  /  999999. ,.0174532925, 6HSHWIND, 4HMETE , 4HRESO /                    	1 / 999999. ,.0174532925, 6HSHWIND, 4HMETE , 4HRESO /
+30	1725	COUNT 31/30	                                                                                	4 FOD'1AT( 1H+, 47X, 3(2X,1PE12.5))
+31	1766	COUNT 52/53	                                                                                	5 FORMAT( 1H, 9X, 39HSHUT-TIME WINDS HAVE NOT BEEN SPECIFIED)
+32	1808	COUNT 14/15	                                                                                	6 FORMAT( F10.0)
+58	2925	OK	      7V(NHODO) = ( AP(N1)   + SCALE(4))*SCALE(1)                               	7V(NHODO) = ( AP(N1) + SCALE(4)) * SCALE(1)
+60	3013	COUNT 0/58	                                                                                	
+61	3055	COUNT 0/58	                                                                                	
+63	3301	COUNT 0/25	                                                                                	

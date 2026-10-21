@@ -1,0 +1,12 @@
+145	p080	40	SINGLE	8	7	      DST2 = 2.5
+146	p080	41	TIE	8	7	      OST=DST0
+147	p080	59	TIE	64	7	      XE=109.93*HLR*(TE/273.)**(-5.13)*EXP((25.*(TE-273.))/TE)/(P*29.)
+148	p081	6	NONE	46	7	raw: TAD = 10.3.8 * (THPS-TPR) + 0.06755 * (THPS*2-TPR*2).
+149	p081	15	TIE	66	7	      RNA0=PHI*FQ/(TAD+946.6*(TPR-TE)+(0.19855*(TPR*2-TE*2)+XE*(1697.661
+150	p081	16	NONE	32	6	raw: 1  ^{*} ( T - T E ) + 0 . 5 7 2 0 8 7 ^{*} ( T ^{*} 2 - T E ^{*} 2 ) )
+151	p081	17	TIE	61	7	      RNMO=FQ*(1.-PHI)/(1697.66*(T-TE)+0.572087*(T**2-TE**2)+2.5E6)
+152	p081	21	TIE	11	7	      S=SSAM/RMAO
+153	p081	22	TIE	46	7	      V=(RNAO+RHWO)*287.*T*(1.*29.*X/18.)/(P*(1.*X))
+154	p081	32	NONE	17	7	raw: U = 1.2 \times \text{SQRT}(9.8 \text{ R})
+155	p081	41	NONE	53	7	raw: RL = AMAX1（ AMAX1（ 0.12, 0.1 * W**0.1 ），0.01 * W**0.333333333 ）
+156	p081	45	SINGLE	35	7	      Q=S/(1.0+X+S)*RM/（√*RHOP*0.5235988)

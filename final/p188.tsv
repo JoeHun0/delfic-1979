@@ -1,0 +1,63 @@
+1	34	47	NOISE	                                                                        			
+2	571	601	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+3	618	649	AGREE	      LOGICAL FLAG                                                      		lighton=      LOGICAL FLAG ## dots=      LOGICAL FLAG ## glm=      LOGICAL FLAG	BATMA62
+4	657	687	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+5	701	736	COMMENT	CC  SET INITIAL VALUES                                                  		lighton=CC  SET INITIAL VALUES ## dots=CC  SET INITIAL VALUES ## glm=CC  SET INITIAL VALUES	BATMA64
+6	746	780	HAND	      DO 1 I = 1,INUC                                                   	7,8	lighton2=      no 1 I = 1,INUC ## dots2=      n0 1 I = 1,INUC ## glm=      NO 1 I = 1,INUC ## glm2=      NO 1 I = 1,INUC	BATMA65
+7	780	820	VOTED	    1 ABUNDO(I) = 0.0                                                   		lighton=    1 ABUNOO(I) = 0.0 ## dots=    1 ABUNDO(I) = C.O ## glm=    1 ABUNDO(I) = 0.0	BATMA65
+8	830	861	AGREE	      IBR = 0                                                           		dots=      IBR = 0 ## glm=      IBR = 0	BATMA67
+9	873	902	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+10	915	954	COMMENT	CC  BEGIN MAIN LOOP THROUGH THE NUCLEIC TABLE                           		lighton=CC  BEGIN MAIN LOOP THROUGH THE NUCLEIC TABLE ## glm=CC  BEGIN MAIN LOOP THROUGH THE NUCLIDE TABLE	BATMA69
+11	954	988	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+12	1002	1039	VOTED	   10 DO 500 IN = 1,INLC                                                		lighton=   10 00 500 IN = 1,INUC ## dots=   10 DO 500 IN = 1,INLC ## glm=   10 DO 500 IN = 1,INLC	BATMA71
+13	1039	1083	COMMENT	C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN                        		lighton=C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN ## dots=C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN ## glm=C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN	8ATMA71
+14	1083	1126	AGREE	      IF (NUCLID(IN))11,500,499                                         		lighton=      IF (NUCLID(IN))11,500,499 ## dots=      IF (NUCLID(IN))11,500,499 ## glm=      IF (NUCLID(IN))11,500,499	BATMA73
+15	1126	1160	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+16	1174	1214	COMMENT	C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN                          		lighton=C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN ## dots=C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN ## glm=C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN	BATMA75
+17	1214	1252	COMMENT	C         MEMBERSHIP COUNTER                                            		lighton=C         MEMBERSHIP COUNTER ## glm=C         MEMBERSHIP COUNTER	UNIMA12
+18	1260	1292	AGREE	   11 LSUB = 1                                                          		lighton=   11 LSUB = 1 ## dots=   11 LSUB = 1 ## glm=   11 LSUB = 1	BATMA77
+19	1301	1337	COMMENT	C         BRANCHING RATIC COUNTER                                       		lighton=C         BRANCHING RATIC COUNTER ## dots=C         BRANCHING RATIC COUNTER	BATMA78
+20	1346	1378	AGREE	      LBR = IBR                                                         		dots=      LBR = IBR ## glm=      LBR = IBR	BATMA79
+21	1390	1422	AGREE	      KBR(1) = LBR                                                      		dots=      KBR(1) = LBR ## glm=      KBR(1) = LBR	BATMA80
+22	1431	1465	COMMENT	C         STARTING INDEX                                                		lighton=C         STARTING INDEX ## glm=C         STARTING INDEX	BATMA81
+23	1475	1507	VOTED	      NUC(1) = IN                                                       		lighton2=      NUC(1) = IN ## dots=      NUC(1) = IN ## glm=      NUC（1） = IN ## glm2=      NUC(1) = IN	BATMA82
+24	1518	1550	HANDFREE	   12 LIM(LSUB) = 4                                                     	9,10,15	dots=   12 LIM(LSUB) = 4 ## dots2=   12 L:W(LSUB) = 4 ## glm=   12 LIN（LSUB） = 4 ## glm2=   12 LIN（LSUB） = 4	BATMA13
+25	1560	1596	COMMENT	C   PROCESS A SUBCHAIN MEMBER                                           		lighton=C   PROCESS A SUBCHAIN MEMBER ## dots=C   PROCESS A SUBCHAIN MEMBER ## glm=C   PROCESS A SUBCHAIN MEMBER	BATMA84
+26	1596	1636	AGREE	   13 KP = NUC(LSUB)                                                    		lighton=   13 KP = NUC(LSUB) ## dots=   13 KP = NUC(LSUB) ## glm=   13 KP = NUC(LSUB)	DATMA4
+27	1647	1679	AGREE	      IM = LIM(LSUB)                                                    		dots=      IM = LIM(LSUB) ## glm=      IM = LIM(LSUB)	BATM4
+28	1689	1729	AGREE	      INFO = MOD(IABS(NUCLID(KP)),MULT(5))                              		lighton=      INFO = MOD(IABS(NUCLID(KP)),MULT(5)) ## dots=      INFO = MOD(IABS(NUCLID(KP)),MULT(5)) ## glm=      INFO = MOD(IABS(NUCLID(KP)),MULT(5))	BATMA87
+29	1729	1766	AGREE	      INFORM(LSUB) = INFC                                               		lighton=      INFORM(LSUB) = INFC ## dots=      INFORM(LSUB) = INFC ## glm=      INFORM(LSUB) = INFC	BATMA88
+30	1776	1806	AGREE	      INC = 1                                                           		lighton=      INC = 1 ## dots=      INC = 1 ## glm=      INC = 1	
+31	1816	1855	COMMENT	C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS                            		lighton=C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS ## dots=C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS ## glm=C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS	JAN1495
+32	1855	1894	VOTED	      SOC(LSUB) = OCON(KP)                                              		lighton2=      SDG(LSUB) = OCON(KP) ## dots2=      SOC(LSUB) = OCON(KP) ## glm2=      SOC(LSUB) = OCON(KP)	BATMA41
+33	1902	1937	COMMENT	CHECK FOR END OF SUBCHAIN                                               		lighton=CHECK FOR END OF SUBCHAIN ## dots=CHECK FOR END OF SUBCHAIN ## glm=CHECK FOR END OF SUBCHAIN	BATMA92
+34	1945	1981	AGREE	      IF (INFO.EQ.4) GO TO 21                                           		lighton=      IF (INFO.EQ.4) GO TO 21 ## dots=      IF (INFO.EQ.4) GO TO 21 ## glm=      IF (INFO.EQ.4) GO TO 21	BATMA93
+35	1981	2021	COMMENT	CHECK FOR BRANCHING                                                     		lighton=CHECK FOR BRANCHING ## dots=CHECK FOR BRANCHING ## glm=CHECK FOR BRANCHING	BATMA93
+36	2032	2070	AGREE	      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14                              		lighton=      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14 ## dots=      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14 ## glm=      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14	BATMA95
+37	2070	2107	VOTED	      SBR(LSU3) = 1.0                                                   		dots2=      SBR(LSUB) = 1.0 ## glm=      SBR（LSU3） = 1.0 ## glm2=      SBR(LSU3) = 1.0	BATMA33
+38	2118	2148	AGREE	      GO TO 15                                                          		lighton=      GO TO 15 ## dots=      GO TO 15 ## glm=      GO TO 15	
+39	2161	2197	COMMENT	C   SET UP SUBCHAIN BRANCHING RATIOS                                    		lighton=C   SET UP SUBCHAIN BRANCHING RATIOS ## dots=C   SET UP SUBCHAIN BRANCHING RATIOS ## glm=C   SET UP SUBCHAIN BRANCHING RATIOS	BATMA98
+40	2197	2237	VOTED	   14 LB = LBR + 5 - IM                                                 		lighton=   14 LA = LBR + 5 - IM ## lighton2=   14 LB = LBR + 5 - IM ## glm=   14 LB = LBR + 5 - IM ## glm2=   14 LB = LBR + 5 - IM	DAIMA30
+41	2248	2282	VOTED	      SBR(LSU9) = BRANCH(LB)                                            		lighton=      SBR(LSU9) = BRANCH(LE) ## dots=      SBR(LSUB) = BRANCH(LB) ## glm=      SBR（LSU9） = BRANCH（LB）	BATMA1J0
+42	2282	2326	COMMENT	C   EXTRACT THE DAUGHTER INCREMENT                                      		lighton=C   EXTRACT THE DAUGHTER INCREMENT ## glm=C   EXTRACT THE DAUGHTER INCREMENT	BATMA1J0
+43	2326	2368	AGREE	   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM)                                		lighton=   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM) ## dots=   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM) ## glm=   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM)	BATMP101
+44	2368	2413	COMMENT	C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE                            		lighton=C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE ## dots=C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE ## glm=C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE	
+45	2413	2458	AGREE	      IF (MOD(INFO,MULT(2))/MULT(1).EQ.IM)GO TO 16                      		lighton=      IF (MOD(INFO,MULT(2))/MULT(1).EQ.IM)GO TO 16 ## glm=      IF (MOD(INFO,MULT(2))/MULT(1).EQ.IM)GO TO 16	BATHA1C4
+46	2458	2502	COMMENT	C   SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC CF DAUGHTER         		lighton=C   SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC CF DAUGHTER ## dots=C   SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC OF DAUGHTER	BATMA1J5
+47	2502	2536	AGREE	      KI = KP                                                           		lighton2=      KI = KP ## dots2=      KI = KP ## glm=      KI = KP ## glm2=      KI = KP	
+48	2550	2580	AGREE	      GO TO 17                                                          		lighton=      GO TO 17 ## dots=      GO TO 17 ## glm=      GO TO 17	BATMA117
+49	2591	2633	COMMENT	C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO CF DAUGHTER        		lighton=C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO CF DAUGHTER ## dots=C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO OF DAUGHTER ## glm=C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO CF DAUGHTER	
+50	2633	2665	HANDFREE	   16 KI = 1                                                            	5	dots2=   1∈ KI = 1 ## glm=   1< KI = 1 ## glm2=   1( KI = 1	BATMA129
+51	2678	2708	VOTED	      LAR = 0                                                           		lighton=      LAR = 0 ## dots=      LAR = 0 ## glm=      LBR = 0	RATMA110
+52	2721	2751	AGREE	      INC = -INC                                                        		dots=      INC = -INC ## glm=      INC = -INC	BATMAN1994
+53	2763	2795	COMMENT	COMPUTE DAUGHTER INDEX                                                  			BATHG1
+54	2806	2840	VOTED	   17 NOAUT = KP + INC*IO                                               		lighton=   17 NOAUT = KP + INC*IO ## dots=   17 NOAUT = KP ♦ INC*IO ## glm=   17 NOAUT = KP + INC*IO	BATMA13
+55	2848	2881	AGREE	      KDA = NOAUT - 1                                                   		dots=      KDA = NOAUT - 1 ## glm=      KDA = NOAUT - 1	SATMA114
+56	2890	2933	COMMENT	C   STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR   		lighton=C   STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR ## glm=C   STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR	8ATMA115
+57	2933	2971	COMMENT	C   THE BRANCHING RATIO OF THE DAUGHTER                                 		lighton=C   THE BRANCHING RATIO OF THE DAUGHTER ## dots=C   THE BRANCHING RATIO OF THE DAUGHTER ## glm=C   THE BRANCHING RATIO OF THE DAUGHTER	3ATNA116
+58	2971	3012	VOTED	      DO  2C K = KI,KDA                                                 		lighton2=      DO  2C K = KI,KDA ## dots=      DO  2C K = KI.KDA ## dots2=      DO  2C K = KI.KDA ## glm=      DO  2C K = KI,KDA ## glm2=      DO  2C K = KI,KDA	BATMA116
+59	3020	3057	HANDFREE	   20 LBR = LBR + 4 - IABS(MOD(NUCLID(K),MULT(2)))                      	25	lighton2=   20 LBR = LBR + 4 - IABS(MOD(NUCLIU(K),MULT(2))) ## glm=   20 LBR = LBx + 4 - IAOS(MOD(NUCLIU(K),NULT(24)) ## glm2=   20 LBR = LBR + 4 - IA0S(MOD(NUCLIU(K),MULT(24))	ATM116
+60	3066	3097	HANDFREE	      KBR(LSUB+1) = LBR                                                 			941M119
+61	3108	3136	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+62	3160	3189	NOISE	                                                                        		glm=                                        1+	
+63	3305	3340	NOISE	                                                                        			

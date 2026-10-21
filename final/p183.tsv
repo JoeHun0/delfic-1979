@@ -1,0 +1,39 @@
+1	11	44	NOISE	                                                                        			
+2	792	826	VOTED	      IF(EOF(INTP) .NE. J.C)  GO TO 307                                 		lighton=      IF(EOF(INTP) .NE. J.()  GO TO 307 ## lighton2=      IF(EOF(INTP) .NE. J.C)  GO TO 307 ## glm=      IF(EOF(INTP) .NE. J.C)  GO TO 307 ## glm2=      IF(EOF(INTP) .NE. J.C)  GO TO 307	PAM1601
+3	837	872	VOTED	      READ(INTP,14) (ABEGN(J),J=1,632)                                  		lighton=      READ(INTP,14) (ABEGN(J),J=1,632) ## dots=      READ(INTP,14) (ABEGN(J),J=1,632) ## glm=      READ(INTP,14) （ABEGN(J)，J=1,692）	PAM1602
+4	872	913	AGREE	        IF(NAME .EQ. FISSID) GO TO 308                                  		lighton=        IF(NAME .EQ. FISSID) GO TO 308 ## dots=        IF(NAME .EQ. FISSID) GO TO 308 ## glm=        IF(NAME .EQ. FISSID) GO TO 308	PAM1603
+5	927	957	AGREE	  306 CONTINUE                                                          		lighton=  306 CONTINUE ## dots=  306 CONTINUE ## glm=  306 CONTINUE	PAM1604
+6	970	1001	AGREE	  307 CONTINUE                                                          		lighton=  307 CONTINUE ## dots=  307 CONTINUE ## glm=  307 CONTINUE	P4M1605
+7	1009	1042	VOTED	      WRITE(KOUT.6C01) FISSIO                                           		lighton=      WRITE(KOUT,6C01) FISSIO ## dots=      WRITE(KOUT.6001) FISSIO ## glm=      WRITE(KOUT.6C01) FISSIO	PAM1636
+8	1042	1088	AGREE	 6C01 FORMAT( 1HC,  8H FISSIC=A6, 18H NOT FOUND IN FILE)                		lighton= 6C01 FORMAT( 1HC,  8H FISSIC=A6, 18H NOT FOUND IN FILE) ## dots= 6C01 FORMAT( 1HC,  8H FISSIC=A6, 18H NOT FOUND IN FILE) ## glm= 6C01 FORMAT( 1HC,  8H FISSIC=A6, 18H NOT FOUND IN FILE)	PAM1637
+9	1088	1128	VOTED	       CALL ERROR(6H PAM1 ,-6001, ISOUT)                                		lighton=       CALL ERROR(6H PAM1 ,-6001, ISOUT) ## dots=       CALL ERROR(6H PAH1 ,-6001, ISOUT) ## glm=       CALL ERROR(6H PAM1 ,-6001, ISOUT)	PAM1608
+10	1139	1172	VOTED	  3G8 REWIND INTP                                                       		lighton=  3C8 REWIND INTP ## dots=  3GB REWIND INTP ## glm=  3G8 REWIND INTP	PAM1629
+11	1181	1214	AGREE	      HSCL=HOB/TW**C.33333333                                           		dots=      HSCL=HOB/TW**C.33333333 ## glm=      HSCL=HOB/TW**C.33333333	PAM1610
+12	1224	1258	VOTED	      IF (EMITN.LE.0.0) GC TO 100                                       		lighton=      IF (EMITN.LE.C.O) GC TO 100 ## lighton2=      IF (EMITN.LE.0.0) GC TO 10) ## dots=      IF (EMITN.LE.O.O) GC TO 100 ## glm=      IF (EMITN.LE.0.0) GC TO 100 ## glm2=      IF (EMITN.LE.0.0) GC TO 100	PAM1611
+13	1272	1300	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+14	1309	1343	COMMENT	C. CONVERT HOB FROM METERS TO FEET.                                     			PAM1613
+15	1359	1387	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+16	1398	1429	VOTED	      HOB=HOB+3.28C84                                                   		lighton2=      HOB=HOB*3.28C84 ## dots=      HOB=HOB+3.28084 ## dots2=      HOB=HOB*3.28C84 ## glm=      HOB=HOB+3.28C84 ## glm2=      HOB=HOB+3.28C84	PAM1615
+17	1442	1474	AGREE	      HSCL=HSCL*3.26084                                                 		dots=      HSCL=HSCL*3.26084 ## glm=      HSCL=HSCL*3.26084	PAM1616
+18	1485	1517	VOTED	      IF (HSCL.LT.36.0) GC TO 274                                       		lighton=      IF (HSCL.LT.36.0) GC TO 274 ## dots=      IF (HSCL.LT.36.0) GO TO 274 ## glm=      IF (HSCL.LT.36.0) GC TO 274	PAM1617
+19	1529	1559	VOTED	      AL3FOM=J.0                                                        		lighton=      AL3FOM=J.0 ## dots=      AL3F0M=J.0 ## glm=      AL3FOM=J.0	PAM1618
+20	1573	1601	AGREE	      GO TO 287                                                         		lighton=      GO TO 287 ## dots=      GO TO 287 ## glm=      GO TO 287	PAMI614
+21	1612	1646	AGREE	  274 IF (HSCL)276,277,275                                              		lighton=  274 IF (HSCL)276,277,275 ## dots=  274 IF (HSCL)276,277,275 ## glm=  274 IF (HSCL)276,277,275	PAM1620
+22	1646	1688	AGREE	  275 FOM=1.-HSCL/SQRT(4.24*HSCL*HSCL-234.*HSCL+4225.)                  		lighton=  275 FOM=1.-HSCL/SQRT(4.24*HSCL*HSCL-234.*HSCL+4225.) ## glm=  275 FOM=1.-HSCL/SQRT(4.24*HSCL*HSCL-234.*HSCL+4225.)	PAM1621
+23	1701	1730	AGREE	      GO TO 286                                                         		lighton=      GO TO 286 ## dots=      GO TO 286 ## glm=      GO TO 286	PAMI622
+24	1741	1775	AGREE	  276 IF (HSCL.LT.-2.C) GO TO 278                                       		lighton=  276 IF (HSCL.LT.-2.C) GO TO 278 ## dots=  276 IF (HSCL.LT.-2.C) GO TO 278 ## glm=  276 IF (HSCL.LT.-2.C) GO TO 278	PAM1623
+25	1786	1817	AGREE	  277 FOM=1.0                                                           		dots=  277 FOM=1.0 ## glm=  277 FOM=1.0	PAM1624
+26	1828	1858	AGREE	      GO TO 286                                                         		lighton=      GO TO 286 ## dots=      GO TO 286 ## glm=      GO TO 286	PAM1625
+27	1871	1904	VOTED	  278 AL9FOM = 1.E4                                                     		lighton=  278 AL9FOM = 1.E4 ## dots=  278 ALBFOM = 1.E4 ## glm=  278 AL9FOM = 1.E4	PAM1626
+28	1914	1943	AGREE	      GO TO 287                                                         		lighton=      GO TO 287 ## dots=      GO TO 287 ## glm=      GO TO 287	PAM1621
+29	1956	1989	AGREE	  286 ALBFOM = ALBFOM*FOM                                               		lighton=  286 ALBFOM = ALBFOM*FOM ## dots=  286 ALBFOM = ALBFOM*FOM	PAM1628
+30	1999	2034	VOTED	  287 AL8FOM = AL8FOM*EMITN                                             		lighton=  287 AL8FOM = AL8FOM*EMITN ## dots=  287 ALBFOM = ALBFOM*EMITN ## glm=  287 AL8FOM = AL8FOM*EMITN	PAM1629
+31	2044	2073	AGREE	      GO TO 101                                                         		lighton=      GO TO 101 ## dots=      GO TO 101 ## glm=      GO TO 101	PAM1630
+32	2087	2118	VOTED	  100 LMAX= 0                                                           		lighton=  100 LMAX= 7 ## dots=  100 LMAX= 0 ## glm=  100 LMAX= 0	PAM10
+33	2130	2162	AGREE	  101 CONTINUE                                                          		lighton=  101 CONTINUE ## dots=  101 CONTINUE ## glm=  101 CONTINUE	PAM16
+34	2170	2200	AGREE	      CALL FRATIO                                                       		lighton=      CALL FRATIO ## dots=      CALL FRATIO ## glm=      CALL FRATIO	PAM1633
+35	2211	2245	VOTED	     1    (SLOTMP ,TMSO   ,MCHN   )                                     		lighton=     1    (SLOTMP ,TMSO   ,MCHN   ) ## dots=     1    (SLOTHP ,TMSO   ,MCHN   ) ## glm=     1    （SLDTMP ，TMSD   ，MCHN   ）	PAM1634
+36	2259	2288	AGREE	      RETURN                                                            		dots=      RETURN ## glm=      RETURN	PAMI6
+37	2302	2329	AGREE	      END                                                               		dots=      END ## glm=      END	PAM16
+38	3154	3184	NOISE	                                                                        		glm=                                      1.0	
+39	3319	3336	NOISE	                                                                        			

@@ -1,0 +1,13 @@
+1	8	COUNT 0/30	                                                                                	
+2	43	COUNT 0/25	                                                                                	
+6	678	OK	   72 ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))              	72 ES= 611.* (273./ATP(I))**5.13* EXP(25.* (ATP(I)-273. )/ATP(I))
+7	723	COUNT 0/44	                                                                                	
+10	852	COUNT 0/57	                                                                                	
+11	894	COUNT 0/48	                                                                                	
+23	1411	OK	  111 IF(ABS(ALT(1)+ 1000.).LE.1.) GO TO 113                                    	111 IF (ABS(ALT(1)+ 1000.).LE.1.) GO TO 113
+34	1882	COUNT 59/58	                                                                                	IF(ABS(ALT(I)-ALT(I-1)-2(0.)).GT.2.) IF(NBRNCH-1) 140,140,137
+38	2053	OK	  130 CALL FRROR(PROGRM,IRROR,ISOUT)                                            	130 CALL FRROR(PROGRM, IRROR, ISOUT)
+50	2568	COUNT 0/13	                                                                                	
+52	2655	COUNT 21/22	                                                                                	15( WRITE(IRISE)ATMSUB
+58	2912	OK	      IF(ALT(1)   .LE. 0.0(1)GO TO 203                                          	IF(ALT(1) .LE. 0.0(1) GO TO 203
+64	3326	COUNT 0/8	                                                                                	

@@ -1,0 +1,6 @@
+1	7	COUNT 0/34	                                                                                	
+29	1965	OK	      XOUT(N)=XO                                                                	XOUT(N) = XO
+37	2307	COUNT 0/10	                                                                                	
+38	2352	COUNT 20/19	                                                                                	J.F(N.LT.NBLK) RETURN
+43	2566	OK	      WRITE(IPOUT)     (XCLT(M),YOUT(M),ZOUT(M),TOUT(M),SXOT(M),SYOT(M),        	WRITE(IPOUT)    (XCLT(M), YOUT(M), ZOUT(M), TOUT(M), SXOT(M), SYOT(M),
+44	2610	OK	     1ROUT(M),PSOT(M),PDEF(M),M=1,N)                                            	1ROUT(M),PSOT(M),PDEF(M),M=1,N)

@@ -1,0 +1,10 @@
+7	653	OK	      Y(K) = YMIN + I*OGY                                                       	Y(K) = YMIN + I*OGY
+8	696	OK	      X(K) = XMIN + (J-1)*DGX + (CNT - ONAP(NXMAP*(I-1)+J-1))*DGX/              	X(K) = XMIN + (J-1) * DGX + (CNT - ONAP(NXMAP * (I-1) + J-1)) * DGX /
+12	868	OK	      DO 900 J=1,NXNAP                                                          	DO 900 J=1,NXNAP
+18	1128	OK	      IF( K .GT. 300) CALL ERROR(PROGRM, -700, ISOUT)                           	IF ( K .GT. 300) CALL ERROR(PROGRM, -700, ISOUT)
+19	1170	COUNT 16/15	                                                                                	X(K) = XMIN + J^*DGX
+20	1214	COUNT 65/50	                                                                                	Y(K) = YMIN + (I-1) \times DGY + (CNT - OMAP(NXMAP \times (I-2) + J)) \times DGY /
+21	1258	OK	     1  (OMAP(NXNAP*(I-1)+J) - OMAP(NXNAP*(I-2)+J))                             	1 (OMAP(NXNAP*(I-1)+J) - OMAP(NXNAP*(I-2)+J))
+53	2934	OK	     LISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,        	LISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE ,
+54	2977	OK	     2MARRAY    .MBTAPE    .MXREQ     .SU        ,INFAM                         	2MARRAY .MBTAPE .MXREQ .SU ,INFAM
+56	3064	OK	     1JC        .NXMAP     ,NYMAP     ,VZ        ,QCUT      ,SSAM      .        	1JC .NXMAP ,NYMAP ,VZ ,QCUT ,SSAM .

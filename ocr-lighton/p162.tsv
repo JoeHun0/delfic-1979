@@ -1,0 +1,65 @@
+1	18	COUNT 0/34;COUNT 32/1	                                                                                	 || \text{f} \text{m} \text{f} \text{m}
+2	82	COUNT 0/27	                                                                                	
+3	555	OK	       NRQ=NRQ+1                                                                	NRQ = NRQ + 1
+4	599	COUNT 33/2	       IF(NRQ .NE. 1) WRITE(ISOUT,3)                                            	IF(NRQ .NE. 1) WRITE(ISOUT,3) || \mathcal{R} \mathcal{M} \mathcal{C}
+5	639	COUNT 34/6	       WRITE (ISOUT,34)NRQ,NREQ,T1,T2,MASCHN ,QCUT,CUTMAP                       	WRITE (ISOUT,34) NRQ,NREQ,T1,T2,MASCHN ,QCUT,CUTMAP || <table border="1" class="dataframe">
+6	688	COUNT 7/6	       IF(ICONT .NE. 0  .ANC.  NZ .GT. 0) WRITE(ISOUT,45)                       	IF(ICONT .NE. 0 .ANC. NZ .GT. 0) WRITE(ISOUT,45) || <table>
+7	730	OK	       MAPRUN=C                                                                 	MAPRUN = C
+8	770	COUNT 0/8	                                                                                	
+9	814	OK	       JGO=1                                                                    	JGO = 1
+10	857	OK	       JD=,TRUE.                                                                	JD=,TRUE.
+11	900	OK	       KDOS=.FALSE.                                                             	KDOS=.FALSE.
+12	943	OK	       FISNUM=FW*1.45E15                                                        	FISNUM = FW * 1.45E15
+13	986	OK	       NORD=1                                                                   	NORD=1
+14	1030	OK	       C=1.0                                                                    	C = 1.0
+15	1075	OK	       CF6=1.7                                                                  	CF6 = 1.7
+16	1117	COUNT 7/6	       IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 10) NPRNT(15)=.TRUE.                     	IF(NREQ .EQ. 9 .OR. NREQ .EQ. 10) NPRNT(15)=.TRUE. || <table>
+17	1163	COUNT 7/5	       IF(NREQ .NE. 13  .AND.  NREQ .NE. 4) GO TO 980                           	IF(NREQ .NE. 13 .AND. NREQ .NE. 4) GO TO 980 || <table>
+18	1202	COUNT 0/12;COUNT 10/1	                                                                                	 || \mathbf{1}
+19	1243	COUNT 0/12;COUNT 18/4	                                                                                	 || \text{P M C} \quad 10;
+20	1278	COUNT 7/6	       GO TO 985                                                                	GO TO 985 || OPM2 18.
+21	1328	OK	   980 T1=T1*3640. ◆ TGZ                                                        	980  T1=T1*3640.  ◆  TGZ
+22	1374	COUNT 0/15	                                                                                	
+23	1408	COUNT 7/6	       TIME=T1-T6Z                                                              	TIME = T1 - T6Z || OPM2 181
+24	1458	COUNT 11/1	       TENTER=TIME                                                              	TENTER=TIME || \mathcal{O}
+25	1501	COUNT 0/11;COUNT 11/1	                                                                                	 || \mathbf{1}:
+26	1535	COUNT 50/49;COUNT 7/6	                                                                                	C     NREQ -  1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18 || OPM2 189
+27	1590	COUNT 66/58	                                                                        <tabl e>	98  GO TO (9u,70,79,70,69,68,73,78,78,73,81,80,80,71,80,80,80,80),NREG || <table>
+28	1632	COUNT 36/34;COUNT 0/4	                                                                                	68 CF6=CF6*(1.0 - (TIME/TEXIT)**(0.26)) || 
+29	1671	COUNT 33/27;COUNT 7/4	                                                                                	69    CF6=32.3344*CF6*(TIME)**(-0.26) || <table>
+30	1713	COUNT 13/12;COUNT 7/4	                                                                                	70 TIME=3609.3 || <table>
+31	1759	COUNT 16/2	      GO TO 79                                                                  	GO TO 79 || \begin{array}{c}
+32	1792	COUNT 2/6;COUNT 7/6	                                                                                	71 || OPM2 19!
+33	1843	COUNT 0/18	                                                                                	
+34	1888	COUNT 40/37;COUNT 7/5	                                                                                	IF( IH08 .GT. 0 ) CALL ERROR( PROGRM, -71, ISCUT ) || <table>
+35	1930	COUNT 12/2	      GO TO 791                                                                 	GO TO 791 || \text{VFRAC}
+36	1972	COUNT 13/12;COUNT 34/2	                                                                                	73 K00S=.TRUE. || <table border="1" class="dataframe">
+37	2015	OK	 78   JO=.FALSE.                                                                	78 JO=.FALSE.
+38	2059	COUNT 16/2	      FISNUM=FISNUM/3600.                                                       	FISNUM = FISNUM / 3600. || \begin{array}{c}
+39	2094	COUNT 7/6	 79   CONTINUE                                                                  	79 CONTINUE || <table>
+40	2146	COUNT 7/6	      IF(  JHOB .EQ. 0 .ANC.  SD .GT. 1.0 ) GO TO 790                           	IF( JHOB .EQ. 0 .ANC. SD .GT. 1.0 ) GO TO 790 || <table>
+41	2190	OK	      CALL  AM2A                                                                	CALL AM2A
+42	2234	COUNT 16/1	      GO TO 8)                                                                  	GO TO 8) || \begin{array}{c}
+43	2273	COUNT 16/1	 790  CALL P4M2                                                                 	790 CALL P4M2 || \begin{array}{c}
+44	2315	COUNT 2/13;COUNT 16/3	                                                                                	6C || \begin{array}{r}
+45	2358	COUNT 2/30;COUNT 34/4	                                                                                	90 || <table border="1" class="dataframe">
+46	2399	COUNT 34/5	C                                                                               	C || <table border="1" class="dataframe">
+47	2443	COUNT 1/71	                                                                        <tab le>	C || <table>
+48	2487	OK	C                                                                               	C
+49	2535	COUNT 16/7;COUNT 16/2	                                                                                	x_1 = x_4 \text{IN} || \begin{array}{c}
+50	2575	COUNT 27/15	                                                                                	x_2 = x_1 + N \times MAP \times DGY
+51	2618	OK	      ICTR=0                                                                    	ICTR = 0
+52	2662	COUNT 6/1	      IF(NZ)203,204,20?                                                         	IF(NZ) 203, 204, 20? || \Gamma
+53	2697	OK	  203 CALL ERROR(PROGRM,-2(3,ISOUT)                                     <tab le>	203 CALL ERROR(PROGRM,-2(3,ISOUT) || <table>
+54	2741	COUNT 34/5	COMPUTE A SINGLE CORE-LOAD MAP                                                  	COMPUTE A SINGLE CORE-LOAD MAP || <table border="1" class="dataframe">
+55	2790	OK	  2C4 KTAPE=IPOUT                                                               	2C4 KTAPE=IPOUT
+56	2832	COUNT 7/2	      CALL GOGO(OM&P,NMAP)                                                      	CALL GOGO(OM&P,NMAP) || <table>
+57	2868	COUNT 126/11;COUNT 7/6	                                                                                	\mathcal{O} \mathcal{E} \mathcal{W} \mathcal{I} \mathcal{N} \mathcal{O} \quad \mathcal{K} \mathcal{T} \mathcal{A} \mathcal{P} \mathcal{E} || <table>
+58	2919	COUNT 34/7	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305                               	IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 305 || <table border="1" class="dataframe">
+59	2961	COUNT 2/1	      00 372 IMAP=1,NNAP                                                        	00 372 IMAP=1,NNAP || : 6
+60	3004	OK	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0                            <tab le>	IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=0.0 || <table>
+61	3044	COUNT 22/2	  302 CONTINUE                                                                  	302 CONTINUE || \mathcal{C} \mathcal{C}
+62	3088	COUNT 11/1	  305 TF                                                                        	305 TF || \mathcal{L}
+63	3106	OK	        (IGUNT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL,OPM2 226	(IGUNT .NE. 0 .AND. CROLBL .NE. BLANK)CALL CONTOR(CONTUR,CROLBL, || OPM2 226
+64	3167	COUNT 3/2	                                                                                	159
+65	3302	COUNT 13/39;COUNT 8/5	                                                                                	\text{الخطوة} || \text{S}

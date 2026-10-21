@@ -1,0 +1,34 @@
+1	18	55	NOISE	                                                                        			
+2	88	101	NOISE	                                                                        			
+3	822	857	NOISE	                                                                        		dots=*DECK,CRMW ## glm=*DECK,CRMW	
+4	870	905	TIE	      SUBROUTINE CRHH                                                   	21	lighton=      SUBROUTINE CRMM ## dots=      SUBROUTINE CRHW ## glm=      SUBROUTINE CRHH ## glm2=      SUBROUTINE CRHH	
+5	905	938	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRMW2
+6	953	997	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	UKMN3
+7	997	1026	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+8	1037	1081	NOISE	                                                                        			CKMW5
+9	1081	1111	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+10	1125	1169	COMMENT	C     CRYW PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE.           		lighton=C     CRYW PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE.	CRM1
+11	1169	1196	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+12	1211	1255	NOISE	                                                                        			CRMW9
+13	1255	1285	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+14	1299	1342	NONE	                                                                        			UKMW11
+15	1342	1386	NONE	                                                                        			CRMW12
+16	1386	1414	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+17	1428	1475	NONE	                                                                        			CRMW14
+18	1475	1504	AGREE	   20 FORMAT(/                                                          		lighton=   20 FORMAT(/ ## dots=   20 FORMAT(/ ## glm=   20 FORMAT(/	
+19	1514	1554	AGREE	     1  49X19HCLOUD HISTORY TABLE//                                     		lighton=     1  49X19HCLOUD HISTORY TABLE// ## dots=     1  49X19HCLOUD HISTORY TABLE// ## glm=     1  49X19HCLOUD HISTORY TABLE//	UKZN20
+20	1554	1601	AGREE	     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL,              		lighton=     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL, ## dots=     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL,	UKMW17
+21	1601	1639	VOTED	     2  3X11HTEMPERATURE,4X, 3FGAS/                                     		lighton=     2  3X11HTEMPERATURE,4X, 3+GAS/ ## dots=     2  3X11HTEMPERATURE,4X, 3FGAS/ ## glm=     2  3X11HTEMPERATURE,4X, 3FGAS/	CRMW10
+22	1639	1685	TIE	     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS,          	62	lighton=     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS, ## dots=     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS. ## glm=     3  8X4HTIME， 5X8HINTERVAL， 5X4H8ASE， 8X3HTOP， 6X6HRADIUS，	UKMW14
+23	1685	1726	VOTED	     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/                              		lighton=     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/ ## dots=     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/ ## glm=     4  3X3(3X4HRATE， 4X)， 14X， 7HOENSITY/	CRMW20
+24	1726	1770	AGREE	     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X       		lighton=     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X ## dots=     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X	UKMW61
+25	1770	1809	SINGLE	     6  3H(K),5X13H (KG/M**3)// (1XI2, 1H), 1X    ,11E1 1.4      )      		glm=     6  3H(K),5X13H (KG/M**3)// (1XI2, 1H), 1X    ,11E1 1.4      )	CRMW22
+26	1809	1840	COMMENT	C                                                                       			CRMW13
+27	1854	1897	NOISE	                                                                        			L4MW44
+28	1897	1927	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+29	1941	1978	NOISE	                                                                        		lighton=      WRITE(ISOUT,6) DETID ## dots=      WRITE(ISOUT,6) DETID ## glm=      WRITE(ISOUT,6) DETID	
+30	1978	2028	AGREE	      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)                       		lighton=      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) ## dots=      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) ## glm=      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)	CRMW27
+31	2028	2061	NOISE	                                                                        		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	
+32	2071	2101	NOISE	                                                                        		lighton=      END ## dots=      END ## glm=      END	
+33	3166	3196	NOISE	                                                                        			
+34	3322	3335	NONE	                                                                        			

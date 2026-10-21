@@ -1,0 +1,63 @@
+1	1	COUNT 0/30;COUNT 0/4	                                                                                	 || 
+2	548	COUNT 48/45;COUNT 8/6	                                                                                	C QX - FACTOR CONVERTS CLOUD TEMPERATURE TO VIRTUAL CLOUD || ICRME181
+3	592	COUNT 1/12;COUNT 8/7	                                                                                	C || ICRME182
+4	632	OK	C  QXE    - INVERSE OF FACTOR TO CONVERT AMBIENT TEMPERATURET O         ICRME183	C QXE - INVERSE OF FACTOR TO CONVERT AMBIENT TEMPERATURE TO || ICRME 183
+5	679	COUNT 25/26;COUNT 8/7	                                                                                	VIRTUAL AMBIENT TEMPERATURE || ICPME184
+6	719	OK	C  R      - CLOUD HORIZONTAL RADIUS                                     ICRME185	C R - CLOUD HORIZONTAL RADIUS || ICRME185
+7	764	OK	C  RA     - GAS DENSITY OF CLOUD                                        ICRME186	CRA - GAS DENSITY OF CLOUD || ICRME186
+8	807	OK	C  RADC   - PI/180,  CONVERTS DEGREES TO RADIANS                        ICRME187	C RADC - PI/180, CONVERTS DEGREES TO RADIANS || ICRME187
+9	851	OK	C  RADIUS - FALLOUT  PARCEL   RADIUS USED IN SUBROUTINE RSXP            ICRME138	C RADIUS - FALLOUT PARCEL RADIUS USED IN SUBROUTINE RSXP || ICRME138
+10	892	COUNT 54/56	                                                                        ICRME139	C RHO - ARRAY (256) ATSPHERE AIR DENSITY (KGM/M**3) MATCHES ALT. || ICRME139
+11	935	OK	C  RHOP   - FALLOUT PARTICLE DENSITY (KG/M**3)                          ICRME190	C RHOP - FALLOUT PARTICLE DENSITY (KG/M**3) || ICRME190
+12	979	OK	C  RKGILL - SUBROUTINE, RUNGE-KUTTA-GILL INTEGRATION                    ICRME191	C RKGILL - SUBROUTINE, RUNGE-KUTTA-GILL INTEGRATION || ICRME191
+13	1022	OK	C  RL     - ENTRAINMENT PARAMETER                                       ICRME192	C RL - ENTRAINMENT PARAMETER || ICRME192
+14	1064	OK	C  RLH    - ARRAY(256)  ATNOSPHERE RELATIVE HUMIDITY MATCHESALT(PERCENT)ICRME193	C RLH - ARRAY(256) ATNOSPHERE RELATIVE HUMIDITY MATCHES ALT(PERCENT) || ICRME193
+15	1107	OK	C  RM     - CLOUD MASS                                                  ICRME194	C RM - CLOUD MASS || ICRME194
+16	1149	OK	C  RMAO   - INITIAL AIR MASS IN CLOUD                                   ICRME195	C RMAO - INITIAL AIR MASS IN CLOUD || ICRME195
+17	1192	OK	C  RMWO   - INITIAL WATER PASS IN CLOUD                                 ICPME196	C RMWO - INITIAL WATER PASS IN CLOUD || ICPME196
+18	1236	OK	C  RSTR   - SUBROUTINE WHICH PRESERVES AND/OR PESTORES CRM VARIABLES    ICRME197	C RSTR - SUBROUTINE WHICH PRESERVES AND/OR PESTORES CRM VARIABLES || ICRME197
+19	1277	OK	C  RSXP   - SUBROUTINE, ESTABLISHES FALLOUT PARCEL POSITIONS IN SPACE   ICRME198	C RSXP - SUBROUTINE, ESTABLISHES FALLOUT PARCEL POSITIONS IN SPACE || ICRME198
+20	1321	COUNT 1/28	                                                                        ICRME199	C || ICRME199
+21	1364	OK	C  RZT    - VERTICAL CLOUD RADIUS                                       IORME200	C RZT - VERTICAL CLOUD RADIUS || IORME200
+22	1406	COUNT 24/27;COUNT 9/8	                                                                                	CONDENSED SOIL MIXING RATIO || ICRME 2015
+23	1448	COUNT 26/55;COUNT 9/8	                                                                                	CONCENTRATE DILUTE PARTICLES || ICRME2021
+24	1492	COUNT 52/53	                                                                        ICRME203	DISTRIBUTION (SET EQUAL TO 4.0 IF NOT INPUT) (DIMENSIONLESS) || ICRME203
+25	1534	COUNT 56/51	                                                                        ICRME204	FOR A SIZE-ACTIVITY PARTICLE DISTRIBUTION. THE CCDE SETS SD=-1.0 || ICRME204
+26	1579	COUNT 61/55	                                                                        ICRME2(5	C EXPO - EXPONENTIAL PARAMETER OF THE POWER-LAW PARTICLE DISTRIBUTION. || ICRME2 (5
+27	1622	OK	C  SHAPE  - EQUAL TO RZT/R.  A CONSTANT USED TO COMPUTE CLOUD SHAPE     10RME206	C SHAPE - EQUAL TO RZT/R. A CONSTANT USED TO COMPUTE CLOUD SHAPE || 10RME206
+28	1664	COUNT 5/13	                                                                        ICRME207	C 0.01 || ICRME207
+29	1707	COUNT 9/8	C  SHWIND - SUBROUTINE, READS SHOT-TIME WIND DATA                               	C SHWIND - SUBROUTINE, READS SHOT-TIME WIND DATA || ICRME2008
+30	1751	COUNT 60/61;COUNT 9/8	                                                                                	C SLOTMP - PARTICLE SOLIDIFICATION TEMPERATURE (K) DEFAULT VALUE 220. || ICRME2019
+31	1793	OK	C  SMALLT - TIME AFTER START OF COMPUTATION                             ICRME210	C SMALLT - TIME AFTER START OF COMPUTATION || ICRME210
+32	1837	OK	C  SOILHT - LATENT HEAT OF VAPORIZATION OF CLOUD SOIL CONSTITUENT       ICRME211	C SOILHT - LATENT HEAT OF VAPORIZATION OF CLOUD SOIL CONSTITUENT || ICRME211
+33	1880	OK	C  SSAM   - TOTAL MASS (KG) OF SOIL (OR WEAPON DEBRIS FOR AN AIRBURST)  ICRME212	C SSAM - TOTAL MASS (KG) OF SOIL (OR WEAPON DEBRIS FOR AN AIRBURST) || ICRME212
+34	1922	COUNT 26/27	                                                                        ICRME213	IN THE CLOUD AT THE INITIAL TIME || ICRME213
+35	1964	OK	C  T      - CLOUD TEMPERATURE (K)                                       10RME214	C T - CLOUD TEMPERATURE (K) || 10RME214
+36	2008	COUNT 60/50	                                                                        ICRME215	C ° TEMPERATURE - ATMOSPHERIC TEMPERATURE AT CLOUD CENTER ALTITUDE (K) || ICRME 215
+37	2051	OK	C  TGZ    - TIME (SEC) OF DETONATION                                    ICRME216	C TGZ - TIME (SEC) OF DETONATION || ICRME 216
+38	2093	COUNT 51/55	                                                                        ICRME217	TIME (SEC) OF INITIAL CONDITIONS SPECIFICATION RELATIVE TO || ICRME217
+39	2137	COUNT 1/12	                                                                        ICRME218	C || ICRME218
+40	2179	OK	C  TMPG   - INITIAL VAPOR TEMPERATURE (K)                               ICRME219	C TMPG - INITIAL VAPOR TEMPERATURE (K) || ICRME219
+41	2222	COUNT 58/59	                                                                        ICRME220	C TAPS - INITIAL TEMPERATURE OF CONCENSED PHASE MATERIAL IN CLOUD (K) || ICRME220
+42	2266	COUNT 50/49	                                                                        ICRME221	C TMSO - TIME OF PARTICLE SOLIDIFICATION (SEC) WITHIN CLOUD || ICRME221
+43	2308	OK	C  TRPL   - SUBROUTINE, LINEAR INTERPOLATION                            ICRME222	C TRPL - SUBROUTINE, LINEAR INTERPOLATION || ICRME222
+44	2351	COUNT 47/46	                                                                        ICRME223	C TSRD - R-RATE CLOUD RISE TERMINATION SWITCH PARAMETER || ICRME223
+45	2394	COUNT 46/44	                                                                        ICRME224	C TSTM - TIME AT WHICH NEXT CX ARRAY ENTRIES ARE TO BE MADE || ICRME224
+46	2437	OK	 5 T2M    - TIME (SEC) OF  TH EFIREBAL LSECONDTEMPERATURE MAXIMUM       ICRME225	5 T2M - TIME (SEC) OF THE FIREBALL SECOND TEMPERATURE MAXIMUM || ICRME225
+47	2480	COUNT 24/23	                                                                        ICRME226	0 U - CLOUD VERTICAL VELOCITY || ICRME226
+48	2524	COUNT 14/12	                                                                        ICRME227	C V - CLOUD VOLUME || ICRME 227
+49	2566	COUNT 60/53	                                                                        ICRME228	C VBL - ARRAY(8), DUMMY VARIABLES OF INTEGRATION(SUBS. DERIV, RKGILL) || ICRME228
+50	2609	COUNT 33/27	                                                                        ICRME229	C VIS - DYNAMIC VISCOSITY (KG/(M-SEC)) || ICRME 229
+51	2652	COUNT 43/37;COUNT 8/7	                                                                                	C VPR - MASS OF FALLOUT VAPOR (KG) AT THE INITIAL TIME || 1CRME230
+52	2696	COUNT 56/48	                                                                        ICRME231	C VX(I) - ARRAY(100), X-COMPONENT OF WIND VELOCITY AT WIND PROFILE || ICRME231
+53	2739	COUNT 1/22	                                                                        ICRME232	C || ICRME232
+54	2780	COUNT 56/53;COUNT 8/6	                                                                                	C VY(I) - ARRAY(100), Y-COMPONENT OF WIND VELOCITY AT WIND PROFILE || 1CRME233
+55	2825	COUNT 1/21;COUNT 8/7	                                                                                	C || ICRME234
+56	2867	COUNT 9/6	 C  W      - TOTAL YIELD (KT)                                                   	C W - TOTAL YIELD (KT) || ICP. ME 235
+57	2911	COUNT 56/55;COUNT 8/5	                                                                                	C WNDST - SUBROUTINE, ADJUSTS FALLOUT PARCEL COORDINATES FOR WIND || ICRME236
+58	2954	COUNT 49/48;COUNT 8/5	                                                                                	C. TRANSPORT DURING RISE AND EXPANSION AND FOR COORDINATE || ICRME237
+59	2994	COUNT 12/13;COUNT 8/7	                                                                                	TRANSLATION. || 1CRME238
+60	3038	COUNT 8/7	 C  WT     - SOLID AND LIQUID WATER MIXING RATIC                                	C WT - SOLID AND LIQUID WATER MIXING RATIC || ICRME239
+61	3082	COUNT 8/7	 C  X      - IN-CLOUD WATER VAPOR MIXING RATIO                                  	C X - IN-CLOUD WATER VAPOR MIXING RATIO || ICRME240
+62	3148	OK	                                       58                                       	58
+63	3306	COUNT 0/39;COUNT 0/4	                                                                                	 || 

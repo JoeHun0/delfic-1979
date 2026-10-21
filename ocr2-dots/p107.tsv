@@ -1,0 +1,12 @@
+1	1	COUNT 0/24	                                                                                	
+2	50	COUNT 0/27	                                                                                	
+7	610	OK	     1                 J,LL,MM,LLL,DELTEE:ZBOTOM,RV,FV,TCUR,ZCUR,TNIUOT         	1 J,LL,MM,LLL,DELTEE:ZBOTOM,RV,FV,TCUR,ZCUR,TNIUOT
+15	953	COUNT 73/35	                                                                                	\text{DELTEE} = (Z\text{BOTOM} - Z\text{CUR}) / (VB \cdot LL) - \text{RV} + \text{FV}
+19	1125	OK	      LL=LL-1                                                                   	LL=LL-1
+21	1212	OK	      L_1=               1                                                      	L_1=1
+22	1255	COUNT 121/48	                                                                                	320 \text{ DELTRP} = \frac{(\text{TCUK} - \text{DELTEE} - \text{TC}(\text{LL}))}{(\text{TC}(\text{LL}+1) - \text{TC}(\text{LL}+1))}
+23	1298	COUNT 53/54	                                                                                	322 DX=DX+VX(M)*DELTEE + XC(LL) + (XC(LL+1) - XC(LL))*DELTRF
+24	1341	OK	      DY=DY+VY( 4M)*DELTEE + YC( LL)  + (YC( LL+1) -YC( LL))*DELTRF             	DY=DY+VY(4M)*DELTEE + YC(LL) + (YC(LL+1) - YC(LL))*DELTRF
+54	2928	OK	      DIMENSION DYSUM(KBHF,NDATF,LTIMF!,TIMUF(LTIMF),ZCH(KBHF)                  	DIMENSION DYSUM(KBHF,NDATF,LTIMF!,TIMUF(LTIMF),ZCH(KBHF)
+58	3123	COUNT 0/2	                                                                                	
+59	3275	COUNT 0/43	                                                                                	

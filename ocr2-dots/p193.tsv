@@ -1,0 +1,9 @@
+9	921	COUNT 59/58	                                                                                	COMMON /OUTPUT/ FISNUM,FP(20U),FW,ITAB,JGO,MASCHN,PSIZE(20)),
+11	1007	COUNT 29/28	                                                                                	COMMON / UTILITY / KOUT, NPQNT (15)
+16	1222	OK	     2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.)                     	2 SOIL CONTRIBUTES 1PE:2.4,23H TO EACH PARTICLE SIZE.)
+23	1523	OK	      00 22 1 = 1,IS                                                            	00 22 1 = 1,IS
+24	1565	COUNT 29/15	                                                                                	\text{OLAM} = -\text{XLAM}(I, L)
+26	1649	COUNT 94/45	                                                                                	\text{DRI} = -\text{FAC}(I, L) * \text{OLAM} * \text{FOGRNY}(I, L) * \text{EXP}(\text{OLAM} * \text{TI4E})
+30	1822	COUNT 133/59	                                                                                	\text{DRI} = \text{FAC}(I, L) \cdot \text{FOGRNY}(I, L) \cdot (\text{EXP}(\text{DLAM}\*\text{TENTEP}) - \text{EXP}(\text{DLAM}\*\text{TE}(IT)))
+39	2210	COUNT 51/23	                                                                                	\text{SORE} = \text{SORE} * \text{ALBFOM} * \text{FISNUM}
+42	2338	OK	   26 FP(HA) = FP(MA) + SORE*FMASS(MA)                                          	26 FP(HA) = FP(MA) + SORE*FMASS(MA)

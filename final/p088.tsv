@@ -1,0 +1,61 @@
+1	2	36	NOISE	                                                                        			
+2	536	571	AGREE	      CALL TRPL(Z,NAT ,ALT,RLH,HLR)                                     		lighton=      CALL TRPL(Z,NAT ,ALT,RLH,HLR) ## dots=      CALL TRPL(Z,NAT ,ALT,RLH,HLR) ## glm=      CALL TRPL(Z,NAT ,ALT,RLH,HLR)	DERIV32
+3	581	612	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV33
+4	623	652	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV34
+5	665	697	COMMENT	C     COMPUTE AMBIENT AIR WATER MIXING RATIO                            		lighton=C     COMPUTE AMBIENT AIR WATER MIXING RATIO ## glm=C     COMPUTE AMBIENT AIR WATER MIXING RATIO	OERIV35
+6	709	739	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV36
+7	749	782	HAND	      XE=109.98*HLR*(TE/273.)**(-5.13)*EXP((25.*(TE-273.))/TE)/(P*29.)  		glm2=      XE=109.98*HLR*（TE/273.）**(-5.13)*EXP（（25.*（TE-273.））/TE）/（P*29.）	DERIV37
+8	794	824	VOTED	      TAO=0.                                                            		lighton=      TAO=3. ## dots=      TAD=0. ## glm=      TAO=0.	DERIV38
+9	837	867	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV39
+10	880	911	COMMENT	C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR                             		lighton=C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR ## glm=C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR	DERIV40
+11	924	954	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV41
+12	967	1001	VOTED	      IF(T-2300.)15,15,16                                               		lighton=      IF(T-2300.)15,15,1€ ## dots=      IF(T-2300.)15,15,16 ## glm=      IF(T-2300.)15,15,16	DERIV42
+13	1010	1042	AGREE	   15 TPR=T                                                             		lighton=   15 TPR=T ## dots=   15 TPR=T ## glm=   15 TPR=T	DERIV43
+14	1053	1086	AGREE	      CP=946.6+0.1971*T                                                 		dots=      CP=946.6+0.1971*T ## glm=      CP=946.6+0.1971*T	DERIV44
+15	1096	1128	AGREE	      GO TO 17                                                          		lighton=      GO TO 17 ## dots=      GO TO 17 ## glm=      GO TO 17	DERIV45
+16	1137	1169	AGREE	   16 TPR=2300.                                                         		lighton=   16 TPR=2300. ## dots=   16 TPR=2300. ## glm=   16 TPR=2300.	DERIV46
+17	1180	1212	HAND	      TAD=-3587.5*(T-TPR)+1.0625*(T**2-TPR**2)                          		glm=      TAO=-3587.5*(T-TPR)+1.0625*(T**2-TPR**2)	DERIV47
+18	1223	1255	AGREE	      CP=-3567.5+2.125*T                                                		dots=      CP=-3567.5+2.125*T ## glm=      CP=-3567.5+2.125*T	DERIV48
+19	1266	1297	HAND	   17 CP=(CP+X*(1697.66+1.144174*T))/(1.+X)                             		lighton=   17 CP=(CP+X*(1697.66+1.144174*T))/(1.+X) ## lighton2=   17 CP=(CP+X*(1697.66+1.144174*T))/(1.+X) ## glm=   17 CP=（CP+X*（1697.66+1.144174*T））/（1.+X） ## glm2=   17 CP=(CP+X*(1697.66+1.144174*T))/(1.+X)	DERIV49
+20	1309	1341	AGREE	      CPAI=TAD+946.6*(TPR-TE)+(.09855*(TPR**2-TE**2)                    		dots=      CPAI=TAD+946.6*(TPR-TE)+(.09855*(TPR**2-TE**2) ## glm=      CPAI=TAD+946.6*(TPR-TE)+(.09855*(TPR**2-TE**2)	DERIV50
+21	1353	1384	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV51
+22	1394	1425	COMMENT	C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR-WATER-SOIL MIXTURE          		lighton=C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR-WATER-SOIL MIXTURE ## glm=C     COMPUTE SPECIFIC HEAT OF IN-CLOUC AIR-WATER-SOIL MIXTURE	DERIV52
+23	1439	1469	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV53
+24	1482	1514	HAND	      RMIX=(1.+X)/(1.+X+S+WT)                                           	8,12,17,19,29	glm=      RHIX=（1.+X）/（1.+X+S+HY） ## glm2=      RMIX=(1.+X)/(1.+X+S+HY)	DERIV54
+25	1525	1556	AGREE	      CR=CP*RMIX                                                        		lighton=      CR=CP*RMIX ## dots=      CR=CP*RMIX ## glm=      CR=CP*RMIX	DERIV55
+26	1568	1601	VOTED	      IF(THPS-T)380,381,381                                             		lighton=      IF(THPS-T)380,381,381 ## dots=      IF(THPS-T)380,381,381 ## glm=      IF（THPS-T）380，381，381	DERIV56
+27	1611	1644	VOTED	  381 IF(T-848.)3810,3810,3811                                          		lighton=  381 IF(T-848.)3810,3810,3811 ## dots=  381 IF(T-848.)3810,3810,3811 ## glm=  381 IF（T-848.）3810，3810，3811	DERIV57
+28	1652	1683	VOTED	 3810 CS=781.6+0.5612*T-1.881E7/T**2                                    		lighton= 3810 CS=781.6+0.5612*T-1.881E7/T**2 ## dots= 3810 CS=781.6+0.5612*T-1.881E7/T**2 ## glm= 3810 CS=781.6+0.5612*T→1.881E7/T**2	DERIV58
+29	1696	1726	AGREE	      GO TO 3812                                                        		lighton=      GO TO 3812 ## dots=      GO TO 3812 ## glm=      GO TO 3812	DERIV59
+30	1739	1769	VOTED	 3811 CS=1003.8+0.13510*T                                               		lighton= 3811 CS=1003.8+0.13510*T ## dots= 3611 CS=1003.8+0.13510*T ## glm= 3811 CS=1003.8+0.13510*T	DERIV60
+31	1780	1811	VOTED	 3812 CR=CR+CS*(S+WT)/(1.+X+S+HT)                                       		lighton= 3812 CR=CR+CS*(S+WT)/(1.+X+S+HT) ## dots= 3812 CR=CR+CS+(S+WT)/(1.+X+S+WT) ## glm= 3812 CR=CR+CS*（S+WT）/（1.+X+S+HT）	DERIV61
+32	1823	1854	VOTED	  380 QXE=(1.+XE)/(1.+29.*XE/18.)                                       		lighton=  380 QXE=(1.+XE)/(1.+29.*XE/18.) ## lighton2=  380 QXE=(1.+XE)/(1.+29.*XE/18.) ## dots2=  380 QXE=(1.+XE)/(1.+29.*XE/18.) ## glm=  380 QXE=（1.+XE）/（1.+29.*XE/18.）	DERIV62
+33	1866	1897	HAND	      QX=(1.+29.*X/18.)/(1.+X)                                          	10,17,23,25,30	dots=      QX=(1.+29.*X/18.)/(1.+X) ## glm=      QX=（1.+29.+X/18.）/（1.+X）	DERIV63
+34	1909	1939	AGREE	      QT=T/TE                                                           		lighton=      QT=T/TE ## dots=      QT=T/TE ## glm=      QT=T/TE	DERIV64
+35	1953	1981	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERI465
+36	1995	2026	COMMENT	C     COMPUTE HORIZONTAL RADIUS OF CLOUD                                		lighton=C     COMPUTE HORIZONTAL RADIUS OF CLOUD ## dots=C     COMPUTE HORIZONTAL RADIUS OF CLOUD ## glm=C     COMPUTE HORIZONTAL RADIUS OF CLOUD	DEKIV66
+37	2038	2068	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV67
+38	2082	2113	HAND	      R=SQRT(3.*V/(RZT*12.5663706E0))                                   		glm=      R=SQRT(3.*V/（RZT*12.5663706E0))	DERIV68
+39	2125	2154	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV69
+40	2166	2197	COMMENT	C     IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOUS		lighton=C     IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOUS ## dots=C     IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOUS ## glm=C     IS CLOUD CENTER ALTITUDE GREATER OR LESS THAN ALTITUDE OF PREVIOLS	DERIV70
+41	2209	2240	COMMENT	C     TIME STEP                                                         		lighton=C     TIME STEP ## dots=C     TIME STEP ## glm=C     TIME STEP	DERIV71
+42	2252	2283	COMMENT	C        GREATER- TO 1101                                               		lighton=C        GREATER- TO 1101 ## dots=C        GREATER- TO 1101	DERIV72
+43	2295	2325	COMMENT	C        LESS - TO 1100                                                 		lighton=C        LESS - TO 1100 ## glm=C        LESS - TO 1100	DERIV73
+44	2338	2368	VOTED	      IF(KS,GT.0)GO TO 1102                                             		lighton=      IF(KS.GT.0)GO TO 1102 ## dots=      IF(KS,GT.0)GO TO 1102 ## glm=      IF(KS,GT.0)GO TO 1102	DERIV74
+45	2382	2414	VOTED	      IF(Z-ZBFR)1100,1101,1101                                          		lighton=      IF(Z-ZBFR)1100,1101,1101 ## dots=      IF(Z-ZBFQ)1100,1101,1101 ## glm=      IF(Z-ZBFR)1100,1101,1101	DERIV75
+46	2424	2454	HAND	 1100 DZ=0.                                                             	7	lighton= 1100 0Z=0. ## lighton2= 1100 DZ=0. ## dots= 1100 OZ=0. ## dots2= 1100 OZ=0. ## glm= 1100 DZ=0. ## glm2= 1100 OZ=0.	DERIV76
+47	2467	2497	AGREE	      U=0.                                                              		lighton=      U=0. ## dots=      U=0. ## glm=      U=0.	DERIV77
+48	2511	2542	AGREE	      DU=0.                                                             		dots=      DU=0. ## glm=      DU=0.	DERIV78
+49	2554	2584	AGREE	      NNN=2                                                             		dots=      NNN=2 ## glm=      NNN=2	DERIV79
+50	2599	2629	VOTED	      GO TO 1102                                                        		lighton=      GO TO 1102 ## dots=      GO TO 1102 ## glm=      GO TO 1112	DERIV30
+51	2642	2673	HAND	 1101 NNN=1                                                             	4	lighton2= 11U1 NNN=1 ## dots= 1101 NNN=1 ## dots2= 11v1 NNN=1 ## glm= 11U1 NNN=1	DERIV81
+52	2684	2713	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV2
+53	2724	2756	COMMENT	C COMPUTE CLOUD S TC VOLUME RATIO                                       			DERIV83
+54	2768	2799	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CERIV4
+55	2809	2841	HAND	 1102 SV=12.5663706*R**2/V                                              	21	lighton2= 1102 SV=12.56037J6*K**2/V ## dots= 1102 SV=12.560376*\n\n2/√ ## glm= 1102 SV=12.56037J6*K**2/V ## glm2= 1102 SV=12.56037J6*k**2/V	
+56	2853	2884	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	95AT130
+57	2896	2928	COMMENT	C     COMPUTE TURBULENT KINETIC ENERGY DISSIPATION RATE                 		lighton=C     COMPUTE TURBULENT KINETIC ENERGY DISSIPATION RATE ## glm=C     COMPUTE TURBULENT KINETIC ENERGY DISSIPATION RATE	DEKIV67
+58	2940	2971	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV8
+59	2980	3011	HAND	      EPS=C3*(2.*EK)**1.5/RZT                                           		glm=      EPS=C3*(2.*EK;**1.E/RZT	UERIV59
+60	3025	3059	AGREE	      Q7=AMAX1(ABS(U),SQRT(2.*EK))                                      		dots=      Q7=AMAX1(ABS(U),SQRT(2.*EK)) ## glm=      Q7=AMAX1(ABS(U),SQRT(2.*EK))	DERIV94
+61	3069	3101	AGREE	      QQ=QT*QX*QXE*(1.+X+WT)/(1.+X+S+WT)                                		dots2=      QQ=QT*QX*QXE*(1.+X+WT)/(1.+X+S+WT) ## glm=      QQ=QT*QX*QXE*(1.+X+WT)/(1.+X+S+WT)	OERIV91

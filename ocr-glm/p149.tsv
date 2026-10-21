@@ -1,0 +1,63 @@
+1	11	COUNT 3/47;COUNT 3/5	                                                                                	--- || ---
+2	528	OK	*DECK.MAP                                                               MAP    1	*DECK.MAP || MAP 1
+3	570	COUNT 24/25	                                                                        MAP    2	SUBROUTINE MAP(OMAP,NMAP) || MAP 2
+4	613	OK	C                                                                       MAP    3	C || MAP 3
+5	656	OK	C     T. W. SCHWENKE  26 FEBRUARY 1967                                  MAP    4	C T. W. SCHWENKE 26 FEBRUARY 1967 || MAP 4
+6	699	OK	C     MODIFIED 1 FEBRUARY 1979 BY H. G. NORMENT                         MAP    5	C MODIFIED 1 FEBRUARY 1979 BY H. G. NORMENT || MAP 5
+7	741	OK	C                                                                       MAP    6	C || MAP 6
+8	784	COUNT 1/71	                                                                        MAP    7	C || MAP 7
+9	829	COUNT 1/2	                                                                        MAP    8	C || MAP 8
+10	870	OK	C     DELFIC MAP PRINTER                                                MAP    9	C DELFIC MAP PRINTER || MAP 9
+11	914	OK	C                                                                       MAP   10	C || MAP 10
+12	955	COUNT 1/71	                                                                        MAP   11	C || MAP 11
+13	1000	OK	C                                                                       MAP   12	C || MAP 12
+14	1041	COUNT 39/38	                                                                        MAP   13	COMMON / CONDAT/ IC(201 , IHOB , IPNCH , IPOUT , 1 || MAP 13
+15	1086	COUNT 37/36	                                                                        MAP   14	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE ,I || MAP 14
+16	1128	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INFAM                 MAP   15	2MARRAY ,MBTAPE ,MXREQ ,SD ,IN FAM || MAP 15
+17	1170	COUNT 41/40	                                                                        NAP   16	COMMON /MAPDAT/ CAYF ,CUTMAP ,DGX ,DGY ,IH ,IV ,I || NAP 16
+18	1213	COUNT 30/29	                                                                        MAP   17	1JC ,NXMAP ,NYMAP ,NZ ,GCUT ,SSAM ,I || MAP 17
+19	1248	COUNT 19/24	                                                                        MAP   18	2TGZ XGZ X1 X2 YGZ XMAX 1 || MAP 18
+20	1300	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                             MAP   19	3XMIN ,YMAX ,YMIN ,ZMIN || MAP 19
+21	1343	COUNT 31/30	                                                                        MAP   2C	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR ,I || MAP 2C
+22	1385	COUNT 26/31	                                                                        MAP   21	1MAPRUN NE NIJ NORD NREQ NTASK 1 || MAP 21
+23	1428	OK	     20PMID(12) ,T1        ,T2        ,WFMAS(200)                       MAP   22	20PMID(12) ,T1 ,T2 ,WFMAS(200) || MAP 22
+24	1471	OK	      COMMON /OUTPUT/ FISNUM,FP(200),FW,NDSTR,JGC,MASCHN,PS(200),       MAP   23	COMMON /OUTPUT/ FISNUM,FP(200),FW,NDSTR,JGC,MASCHN,PS(200), || MAP 23
+25	1516	OK	     1 FMASS(200),D7AM(200)                                             MAP   24	1 FMASS(200),D7AM(200) || MAP 24
+26	1558	OK	      DIMENSION JMAP(20) ,CMAP(NMAP)                                    MAP   25	DIMENSION JMAP(20),CMAP(NMAP) || MAP 25
+27	1602	COUNT 13/12	                                                                        MAP   26	INTEGER BI.ANK || MAP 26
+28	1644	OK	      DIMENSION FMTEXP(21),FMTRUT(21),ABSSA(10)                         MAP   27	DIMENSION FMTEXP(21),FMTRUT(21),ABSSA(10) || MAP 27
+29	1679	OK	      DATA FMTEXP(1),FMTRUT(1),FMTEXP(21),FMTRUT(21),BLANK,FMTA,FMTF,   MAP   28	DATA FMTEXP(1),FMTRUT(1),FMTEXP(21),FMTRUT(21),BLANK,FMTA,FMTF, || MAP 28
+30	1731	OK	     1    FM[I/6H(/1X， ,6H(5X，  ,6H)     ,6H)     ,6H      ,6HA6    ,   MAP   29	1 FM[I/6H(/1X，,6H(5X，,6H) ,6H) ,6H ,6HA6 , || MAP 29
+31	1766	OK	     2    6HF6.3  ,6HI6    /,DOT/6H  .   /                              MAP   30	2 6HF6.3 ,6HI6 /,DOT/6H . / || MAP 30
+32	1817	OK	C                                                                       MAP   31	C || MAP 31
+33	1860	OK	      DATA BITLUM,INC.LREH/ 6HMULTI8,19,0/                              MAP   32	DATA BITLUM, INC. LREH/ 6HMULTI8, 19, 0/ || MAP 32
+34	1903	OK	C                                                                       MAP   33	C || MAP 33
+35	1945	COUNT 46/45	                                                                        MAP   34	1 FORMAT(1H1,5HSTRIPI3,5X,12A6,5Xc.8HMAP TYPEI3) || MAP 34
+36	1989	OK	 2    FORMAT(/12X,19I6)                                                 MAP   35	2 FORMAT(/12X,19I6) || MAP 35
+37	2030	OK	 3    FORMAT(1H+， 32X， 17H1WO-LINE E FORMAT)                            MAP   36	3 FORMAT(1H+，32X，17H1WO-LINE E FORMAT) || MAP 36
+38	2074	OK	 4    FORMAT(1X,F13.0,2X,19F6.3)                                        MAP   37	4 FORMAT(1X,F13.0,2X,19F6.3) || MAP 37
+39	2118	OK	 5    FORMAT(1H+， 32X， 21HTWO-LINE F11.3 FORMAT)                        MAP   32	5 FORMAT(1H+，32X，21HTWO-LINE F11.3 FORMAT) || MAP 32
+40	2155	COUNT 60/59	                                                                        MAP   39	6 FORMAT(16H00DISPLAY METHOD I4,33H IS NOT AVAILABLE. USED METHOD 1.) || MAP 39
+41	2205	OK	 7    FORMAT(//15X, 18HTHIS MAP USES THE )                              MAP   40	7 FORMAT(//15X,18HTHIS MAP USES THE) || MAP 40
+42	2246	OK	 8    FORMAT(//15X,25HTHE QUANTITY PRESENTED IS)                        MAP   41	8 FORMAT(//15X,25HTHE QUANTITY PRESENTED IS) || MAP 41
+43	2279	OK	 9    FORMAT(15X,43HA COUNT OF CONTRIBUTING DEPOSIT INCREMENTS.)        MAP   42	9 FORMAT(15X,43HA COUNT OF CONTRIBUTING DEPOSIT INCREMENTS.) || MAP 42
+44	2329	OK	 10   FORMAT(15X,42HEXPOSURE RATE NORMALIZED TO TIME H+1 HOUR.)         MAP   43	10 FORMAT(15X,42HEXPOSURE RATE NORMALIZED TO TIME H+1 HOUR.) || MAP 43
+45	2372	COUNT 52/53	                                                                        MAP   44	14 FORMAT(15X,24HEXPOURE RATE AT TIME H+F10.1,9H SECONDS.) || MAP 44
+46	2408	OK	 12   FORMAT(15X,36HEXPOSURE ACCUMULATED BETWEEN TIME H+F1U.1,22H SECONDMAP   45	12 FORMAT(15X,36HEXPOSURE ACCUMULATED BETWEEN TIME H+F1U.1,22H SECOND || MAP 45
+47	2461	COUNT 15/16	                                                                        MAP   46	1S AND INFINITY.) || MAP 46
+48	2499	COUNT 4/5	 13   FORMAT(15X,36HEXPOSURE ACCUMULATED BETWEEN TIME H+F10.1,12H AND TI        	13 FORMAT(15X,36HEXPOSURE ACCUMULATED BETWEEN TIME H+F10.1,12H AND TI || MA 47
+49	2547	COUNT 21/22	                                                                        MAP   48	1ME H+F10.1,9H SECONDS. || MAP 48
+50	2579	COUNT 63/60	                                                                        MAP   49	14 FORMAT(15X,6JHTOTAL MASS PER UNIT AREA OF CONTRIBUTING DEPOSITING INC || MAP 49
+51	2634	OK	     1PEMENTS.)                                                         MAF   50	1 PEMENTS.) || MAF 50
+52	2664	OK	 15   FORMAT(15X,43HMASS PER UNIT AREA DEPOSITED BETWEEN TIMES F10.1,5H MAP   51	15 FORMAT(15X,43HMASS PER UNIT AREA DEPOSITED BETWEEN TIMES F10.1,5H || MAP 51
+53	2720	OK	     1AND F10.1,9H SECONDS.)                                            MAP   52	1 AND F10.1,9H SECONDS.) || MAP 52
+54	2761	OK	 16   FORMAT(/ 3X, 4H*** , 10F12.0, 3H **/)                             MAP   53	16 FORMAT(/ 3X, 4H***, 10F12.0, 3H **/) || MAP 53
+55	2795	COUNT 6/5	 17   FORMAT(15X,41HASSUMES ALL PARTICLES ARE GROUNDEC BY T1.)                  	17 FORMAT(15X,41HASSUMES ALL PARTICLES ARE GROUNDEC BY T1.) || MA.0 54
+56	2846	OK	 18   FORMAT(15X, 27HACTIVITY OUE TO MASS CHAIN I4)                     MAP   55	18 FORMAT(15X, 27HACTIVITY OUE TO MASS CHAIN I4) || MAP 55
+57	2889	OK	 19   FORMAT(15X,26HMULTIPLE BURST BINARY TAPE)                         MAP   56	19 FORMAT(15X,26H MULTIPLE BURST BINARY TAPE) || MAP 56
+58	2924	OK	 20   FORMAT(15X,31HGROUNC ZERC IS LOCATED AT  X = F10.1,8H  , Y = F10.1MAP   57	20 FORMAT(15X,31HGROUNC ZERC IS LOCATED AT X = F10.1,8H , Y = F10.1 || MAP 57
+59	2977	OK	     1)                                                                 MAP   58	1) || MAP 58
+60	3016	OK	 23   FORMAT(15X,46HTIME (SECONDS) OF CNSET OF FALLOUT DEPOSITION.)     MAP   59	23 FORMAT(15X,46HTIME (SECONDS) OF CNSET OF FALLOUT DEPOSITION.) || MAP 59
+61	3060	OK	 24   FORMAT(15X,50HTIME (SECONDS) OF CESSATION OF FALLOUT DEPOSITION.) MAP   60	24 FORMAT(15X,50HTIME (SECONDS) OF CESSATION OF FALLOUT DEPOSITION.) || MAP 60
+62	3127	OK	                                        146                                     	146
+63	3287	COUNT 3/56;COUNT 39/8	                                                                                	--- || الشركة تُستخدم هذه المعلومات لتقديم خدماتها.

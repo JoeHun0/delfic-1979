@@ -1,0 +1,65 @@
+1	11	COUNT 0/4	                                                                                	
+2	32	COUNT 0/18	                                                                                	
+3	54	COUNT 0/44;COUNT 0/2	                                                                                	 || 
+4	539	COUNT 62/60	                                                                        SPRVS 47	8017 FORMAT(1KJ,5X, 86H* * * * * SHORT-CUT TRANSPORT IS CANCELLED BECAUSE || SPRVS 47
+5	582	OK	     1SE VERTICAL WIND IS NON-ZERO * * * * *//)                         SPRVS 48	1 SE VERTICAL WIND IS NON-ZERO * * * * *//) || SPRVS 48
+6	623	OK	 8019 FORMAT( 1H+, 102X,    9H IMPACTEC)                                SPRVS 49	8019 FORMAT ( 1H+, 102X, 9H IMPACTEC) || SPRVS 49
+7	668	COUNT 40/41	                                                                        SPRVS 50	8020 FORMAT ( 1H+, 1J2X, 17HOUTSIDE WINDSPACE) || SPRVS 50
+8	711	OK	 8021 FORMAT( 1HO, 36X, 21HPARTICLE DIAMETER IS E12.5, 7H METERS)       SPRVS 51	8021 FORMAT ( 1HO, 36X, 21HPARTICLE DIAMETER IS E12.5, 7H METERS) || SPRVS 51
+9	754	OK	 9022 FORMAT( 23X,   9HFALL RATEE12.5,23H METERS/SEC AT ALTITUDEE12.5,  SPRV3 52	9022 FORMAT ( 23X, 9HFALL RATEE12.5,23H METERS/SEC AT ALTITUDEE12.5, || SPRV3 52
+10	798	OK	     1  7H METERS/ 23X, 37HUPPER LIMIT ALTITUDE FOR IMPACTION ISE12.5,  SPRVS 53	1 7H METERS/ 23X, 37HUPPER LIMIT ALTITUDE FOR IMPACTION ISE12.5, || SPRVS 53
+11	842	OK	     2  7H METERS)                                                      SPRVS 54	2 7H METERS) || SPRVS 54
+12	884	OK	 8P24 FORMAT( 2X,  4HNSEQ, 6X, 2HXP, 10X, 2HYP,  16X, 2HZP, 10X, 2HTP,  SPRVS 55	8P24 FORMAT( 2X, 4HNSEQ, 6X, 2HXP, 10X, 2HYP, 16X, 2HZP, 10X, 2HTP, || SPRVS 55
+13	926	COUNT 0/7	     1 9X, 4HPMAS, 8X, 4HRWAF, 8X, 4HZLOW, 8X, 4HDWAF/)                         	1 9X, 4HPMAS, 8X, 4HRWAF, 8X, 4HZLOW, 8X, 4HDWAF/) || 
+14	969	OK	 8025 FORMAT( 1H1, 38X, 314PRE-TRANSPORT PARCEL PROPERTIES/)            SPRVS 57	8025 FORMAT ( 1H1, 38X, 314PRE-TRANSPORT PARCEL PROPERTIES/) || SPRVS 57
+15	1003	OK	C                                                                       SPRVS 58	C || SPRVS 58
+16	1054	OK	COMPUTE TURBULENCE PARAMETER AVERAGED OVER ALL SPACE, HAV               SPRVS 59	COMPUTE TURBULENCE PARAMETER AVERAGED OVER ALL SPACE, HAV || SPRVS 59
+17	1099	OK	      HAV=0.                                                            SPKVS 60	HAV=0. || SPKVS 60
+18	1141	OK	      DO 40 L=1,LTIMX                                                   SPRVS 61	DO 40 L =1, LTIMX || SPRVS 61
+19	1184	OK	   40 HAV=HAV + HOAV(L)                                                 SPRVS 62	40 HAV=HAV + HOAV(L) || SPRVS 62
+20	1227	OK	      HAV=HAV/LTIMX                                                     SPRVS 63	HAV=HAV/LTIMX || SPRVS 63
+21	1257	OK	CHOOSE STANDARD DEVIATION OF VERTICAL TURBULENCE                        SPRVS 64	CHOOSE STANDARD DEVIATION OF VERTICAL TURBULENCE || SPRVS 64
+22	1313	OK	      SIGW=EDDY                                                         SPRVS 65	SIGW=EDDY || SPRVS 65
+23	1356	OK	      IF(MC(6) .GT. 0) SIGW=5.39*(HAV)**(1.0/3.0)                       SPRVS 66	IF(MC(6) .GT. 0) SIGW=5.39*(HAV)**(1.0/3.0) || SPRVS 66
+24	1399	OK	      MC3=MC(3)                                                         SPRVS 67	MC3=MC(3) || SPRVS 67
+25	1441	OK	      IF(MC3 .GT. 0) WRITE(ISOUT,8J25)                                  SPRVS 66	IF (MC3 .GT. 0) WRITE (ISOUT,8J25) || SPRVS 66
+26	1485	OK	      NSEQ=0                                                            SPRVS 69	NSEQ=0 || SPRVS 69
+27	1527	OK	      PSZBE=-2.0                                                        SPRVS 70	PSZBE=-2.0 || SPRVS 70
+28	1569	COUNT 18/20	                                                                        SPRVS 71	IF(MC(4).NE.0) GO 10 || SPRVS 71
+29	1612	OK	CANCEL SHORT-CUT TRANSPORT IF VERTICAL WIND IS NON-ZERO                 SPRVS 72	CANCEL SHORT-CUT TRANSPORT IF VERTICAL WIND IS NON-ZERO || SPRVS 72
+30	1655	OK	      DO 45 L=1,LTIMX                                                   SPRVS 73	DO 45 L=1, LTIMX || SPRVS 73
+31	1700	OK	      DO 45 K=1,KBHX                                                    SPRVS 74	DO 45 K=1,KBHX || SPRVS 74
+32	1743	OK	      IF(WAVG(K,L).NE.C.0)GO TO 48                                      SPRVS 75	IF (WAVG (K, L).NE. C. 0)GO TO 48 || SPRVS 75
+33	1785	OK	  45  CONTINUE                                                          SPRVS 76	45 CONTINUE || SPRVS 76
+34	1828	OK	      GO TO 47                                                          SPRVS 77	GO TO 47 || SPRVS 77
+35	1873	OK	  46  NO( 4 )=1                                                         SPRVS 78	46 NO( 4 ) = 1 || SPRVS 78
+36	1915	OK	      WRITE(ISOUT,B017)                                                 SPKVS 79	WRITE (ISOUT, B017) || SPKVS 79
+37	1960	OK	  47  CONTINUE                                                          SPRVS 80	47 CONTINUE || SPRVS 80
+38	2000	OK	COMPUTE OVERALL AVERAGE VERTICAL VELOCITY                               SPRVS 81	COMPUTE OVERALL AVERAGE VERTICAL VELOCITY || SPRVS 81
+39	2043	COUNT 31/12	                                                                        SPRVS 82	K_{\text{BHM}} = K_{\text{BHX}} - 1 || SPRVS 82
+40	2085	OK	      WAVGK=0.9                                                         SPRVS 03	WAVGK=0.9 || SPRVS 03
+41	2130	OK	      00 51 L=1,LTIMX                                                   SPRVS 84	00 51 L=1, LTIMX || SPRVS 84
+42	2172	OK	      DO 50 K=1,K8HH1                                                   SPRVS 85	DO 50 K=1, K8HH1 || SPRVS 85
+43	2214	OK	   50 HAVGK=WAVGK + HAVG(K,L)+(ZBH(K+1) - ZBH(K))                       SPRVS 86	50 HAVGK=WAVGK + HAVG(K,L) + (ZBH(K+1) - ZBH(K)) || SPRVS 86
+44	2259	OK	   51 WAVGK = WAVGK + WAVC(KBHX,L)*(ZNAK - ZBH(KBHX))                   SPRVS 57	51 WAVGK = WAVGK + WAVC(KBHX,L) * (ZNAK - ZBH(KBHX)) || SPRVS 57
+45	2293	OK	      WAVGK=WAVGK/(LTIMX*(ZMAX-ZMIN))                                   SPRVS 38	WAVGK=WAVGK/(LTIMX*(ZMAX-ZMIN)) || SPRVS 38
+46	2343	OK	COMPUTE TIMEX MARGIN FACTOR FOR AIRBORNE TEST                           SPRVS 89	COMPUTE TIMEX MARGIN FACTOR FOR AIRBORNE TEST || SPRVS 89
+47	2388	COUNT 8/7	      IF(NDATX-1)70,70,60                                                       	IF (NDATX-1) 70,70,60 || SPR.VS 30
+48	2430	OK	   60 SLOP=1.1                                                          SPRVS 91	60 SLOP=1.1 || SPRVS 91
+49	2475	OK	      GO TO 100                                                         SPRVS 92	GO TO 100 || SPRVS 92
+50	2517	OK	   70 SLOP=1.0                                                          SPRVS 93	70 SLOP=1.0 || SPRVS 93
+51	2558	OK	COPY IN PARCEL BLOCK COUNT                                              SPRVS 94	COPY IN PARCEL BLOCK COUNT || SPRVS 94
+52	2601	OK	 100  READ(JPARN)NP                                                     SPRVS 35	100 READ(JPARN)NP || SPRVS 35
+53	2646	OK	      IF(NP.LE.0) GO TO 80E                                             SPkVS 96	IF(NP.LE.0) GO TO 80E || SPkVS 96
+54	2687	OK	      IF(NP.GT.JF) CALL ERROR(FROGRM,-100,ISOUT)                        SPRVS 97	IF (NP.GT.JF) CALL ERROR(FROGRM,-100,ISOUT) || SPRVS 97
+55	2731	OK	COPY IN A BLOCK OF INPUT PARCEL PARAMETERS                              SPRVS 98	COPY IN A BLOCK OF INPUT PARCEL PARAMETERS || SPRVS 98
+56	2774	OK	      READ(JPARN)  (XPAR(J),YPAR(J),ZPAR(J),TPAR(J),PCAM(J),PSAM(J),    SPRVS 99	READ(JPARN) (XPAR(J), YPAR(J), ZPAR(J), TPAR(J), PCAM(J), PSAM(J), || SPRVS 99
+57	2817	OK	     1RWFR(J),DWFR(J),ZLWF(J),VWFR(J),J=1,NP)                           SPRVSIJO	1RWFR(J), DWFR(J), ZLWF(J), VWFR(J), J=1,NP) || SPRVSIJO
+58	2860	COUNT 47/48	                                                                        SPRVS1)1	COMMENCE PROCESSING BLOCK OF INPUT PARCELS ONE AT A TIME || SPRVS1)1
+59	2903	OK	      00 1000 J=1,NP                                                    SPRVS1J2	00 1000 J=1,NP || SPRVS1J2
+60	2947	OK	      NSEQ=NSEQ+1                                                       SPRVS103	NSEQ=NSEQ+1 || SPRVS103
+61	2987	OK	      IF(NSEQ.LT.NSEQO) GO TO 1000                                      SPKVS1J4	IF (NSEQ.LT.NSEQO) GO TO 1000 || SPKVS1J4
+62	3033	COUNT 9/10	                                                                        SPRVS105	XP=PAR(J) || SPRVS105
+63	3075	OK	      YP=YPAR(J)                                                        SPRVS1.6	YP=YPAR(J) || SPRVS1.6
+64	3129	OK	                                       126                                      	126
+65	3288	COUNT 0/34	                                                                                	

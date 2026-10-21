@@ -1,0 +1,63 @@
+1	1	39	NOISE	                                                                        			
+2	47	98	SINGLE	            -   -             -                                         		glm=            -   -             -	
+3	561	597	COMMENT	C     WITH ZERO.                                                        		lighton=C     WITH ZERO. ## glm=C     WITH ZERO.	RSXP92
+4	606	642	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP93
+5	650	685	TIE	      SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.             	15	dots=      SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600. ## dots2=      SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600. ## glm=      SRTHS = J.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFSTK/600. ## glm2=      SRTHS = J.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.	RSXP94
+6	685	728	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP95
+7	728	770	COMMENT	C     ENTER OUTSIDE WAFER CALCULATION LOOP.  THIS LOOP DEFINES PARTICLE 		lighton=C     ENTER OUTSIDE WAFER CALCULATION LOOP.  THIS LOOP DEFINES PARTICLE ## dots=C     ENTER OUTSIDE WAFER CALCULATION LOOP.  THIS LOOP DEFINES PARTICLE ## glm=C     ENTER OUTSIDE WAFER CALCULATION LOOP.  THIS LOOP DEFINES PARTICLE	RSXP96
+8	770	812	COMMENT	C     SIZE CLASSES.                                                     		glm=C     SIZE CLASSES.	RSXP97
+9	812	855	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP98
+10	863	899	AGREE	  200 DO 278 MA=1,NDSTR                                                 		lighton=  200 DO 278 MA=1,NDSTR ## dots=  200 DO 278 MA=1,NDSTR ## glm=  200 DO 278 MA=1,NDSTR	RSXP99
+11	899	941	VOTED	      KOPS=2*KDPST                                                      		lighton2=      KOPS=2*KDPST ## dots=      KOPS=2*KDPST ## dots2=      KOPS=2*KDPST ## glm=      KDPS=2*KDPST	RSXP1J0
+12	941	984	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP101
+13	992	1029	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP102
+14	1029	1070	COMMENT	E     NTERM IDDLEW AFEPC ALCULATIONL OOP.T  HIS1 .00P CEFINES CLOUD     		glm=E     NTERM IDDLEW AFEPC ALCULATIONL OOP.T  HIS1 .00P CEFINES CLOUD	RSXP103
+15	1078	1112	COMMENT	C     WAFER SUBDIVISIONS.                                               		lighton=C     WAFER SUBDIVISIONS. ## dots=C     WAFER SUBDIVISIONS. ## glm=C     WAFER SUBDIVISIONS.	RSXP114
+16	1121	1158	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP105
+17	1158	1199	TIE	      DO 258 HB=1,KDPS                                                  	15	lighton=      DO 258 H8=1,KOPS ## lighton2=      DO 258 MB=1,KDPS ## dots=      DO 258 H0=1,K0PS ## dots2=      DO 258 H0=1.KDPS ## glm=      DO 258 HB=1,KDPS ## glm2=      DO 258 HB=1,KDPS	RSXP106
+18	1208	1244	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP107
+19	1252	1287	COMMENT	C     COMPUTE WAFER TOP OR BOTTOM INDICATOR, MBT                        		lighton=C     COMPUTE WAFER TOP OR BOTTOM INDICATOR, MBT ## glm=C     COMPUTE WAFER TOP OR BOTTOM INOICATOR, MBT	RSXP1J8
+20	1287	1329	COMMENT	C         IF MB IS 00D, MBT=2       THIS SPECIFIES A WAFER BOTTOM       		lighton=C         IF MB IS 00D, MBT=2       THIS SPECIFIES A WAFER BOTTOM ## glm=C         IF MB IS ODD, MBT=2       THIS SPECIFIES A WAFER BOTTOM	RSXP109
+21	1337	1373	COMMENT	C         IF MB IS EVEN, MET=1      THIS SPECIFIES A WAFER TOP          		lighton=C         IF MB IS EVEN, MET=1      THIS SPECIFIES A WAFER TOP ## glm=C         IF MB IS EVEN, MET=1      THIS SPECIFIES A WAFER TOP	RSXP110
+22	1382	1416	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP111
+23	1424	1458	SINGLE	      MBT=2*((MB+1)/2)-MB+1                                             		glm=      MBT=2*((MB+1)/2)-MB+1	RSXP112
+24	1466	1502	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP113
+25	1510	1544	COMMENT	C     INITIAL DPST VARIABLES                                            		lighton=C     INITIAL DPST VARIABLES ## dots=C     INITIAL DPST VARIABLES ## glm=C     INITIAL DPST VARIABLES	RSXP114
+26	1544	1586	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP115
+27	1595	1629	VOTED	      DPST(1,MBT)=CX(1,1)                                               		dots=      DPST(1,MBT)=CX(1,1) ## dots2=      DPST(1,MBT)=CX(1,1) ## glm=      DPST（1，MBT）=CX（1，1）	RSXP116
+28	1638	1672	TIE	      OPST(3,MBT)=CX(MCX,5)                                             	11,13,17,21,25,27	lighton2=      OPST(3,MBT)=CX(MCX,5) ## dots2=      OPST(3,MBT)=CX(MCX,5) ## glm=      OPST（3，MBT）=CX（MCX，5） ## glm2=      OPST（3，MBT）=CX（MCX，5）	RSXP117
+29	1680	1714	AGREE	      GO TO (202,201),MBT                                               		lighton=      GO TO (202,201),MBT ## dots=      GO TO (202,201),MBT ## glm=      GO TO (202,201),MBT	RSXP118
+30	1724	1757	VOTED	  2C1 OP3T(4,M3T)=DIAM(MA)                                              		lighton=  2C1 OP3T(4,M3T)=DIAM(MA) ## dots=  201 OPST(4,M3T)=DIAM(MA) ## glm=  2C1 OP3T（4，MBT）=OIAM（MA）	RSXP119
+31	1769	1802	AGREE	      GO TO 2J3                                                         		lighton=      GO TO 2J3 ## dots=      GO TO 2J3 ## glm=      GO TO 2J3	RSXP120
+32	1810	1843	TIE	  202 DPST(4,MBT)=DIAM(MA+1)                                            	20	dots=  202 DPST(4,MBT)=DIAM(MA+1) ## dots2=  202 DPST(4,MBT)=DTAM(MA+1)	RSXP121
+33	1853	1886	VOTED	  203 DPST(5,MBT)=FMASS(MA)/DPSTK                                       		lighton=  203 DPST(5,MBT)=FMASS(MA)/DPSTK ## dots=  203 DPST(5,MBT)=FMASS(MA)/DPSTK ## glm=  203 DPST（5，MBT）=FMASS（MA）/DPSTK	RSXP122
+34	1895	1929	VOTED	      IF(SO .GT. 0.C)DPST(5,MBT)=DPST(5,MBT)*SSAM                       		lighton=      IF(SD .GT. 0.C)DPST(5,MBT)=DPST(5,MBT)*SSAM ## dots=      IF(SO .GT. 0.C)DPST(5,NBT)=DPST(5,NBT)*SSAM ## glm=      IF(SO .GT. 0.C)DPST(5,MBT)=DPST(5,MBT)*SSAM	RSXP123
+35	1938	1970	VOTED	      BM=M3/2                                                           		lighton=      8M=M3/2 ## lighton2=      BM=M3/2 ## glm=      BM=M3/2	RSXP124
+36	1980	2014	SINGLE	      OPST(2 ,MBT)=CX(1,3)+(CX(1,4)-CX(1,3))/KDI*BM                     		glm=      OPST(2 ,MBT)=CX(1,3)+(CX(1,4)-CX(1,3))/KDI*BM	RSXP125
+37	2024	2057	VOTED	      ZLST=OPST(2,MBT)                                                  		lighton=      ZLST=OPST(2,M8T) ## dots=      ZLST=OP3T(2,MBT) ## glm=      ZLST=OPST(2,HBT)	RSXP126
+38	2066	2099	AGREE	      KBASE=1                                                           		lighton=      KBASE=1 ## dots=      KBASE=1 ## glm=      KBASE=1	RSXP127
+39	2111	2142	VOTED	      J9ASE=1                                                           		lighton=      J94SE=1 ## dots=      J9ASE=1 ## glm=      J9ASE=1	RSXP128
+40	2154	2186	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP129
+41	2195	2228	COMMENT	C     ENTER.INSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES CLOUD      		lighton=C     ENTER.INSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES CLOUD ## dots=C     ENTER INSIDE WAFER CALCULATION LOOP. THIS LOOP DEFINES CLOUD	RSXP130
+42	2239	2272	COMMENT	C     PISE HISTORY TIMES IN THE CX ARRAY                                		lighton=C     PISE HISTORY TIMES IN THE CX ARRAY ## glm=C     PISE HISTORY TIMES IN THE CX ARRAY	RSXP131
+43	2284	2315	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP132
+44	2325	2357	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP133
+45	2368	2402	COMMENT	C     COMPUTE OPST TRAVEL                                               		lighton=C     COMPUTE OPST TRAVEL ## dots=C     COMPUTE OPST TRAVEL ## glm=C     COMPUTE OPST TRAVEL	RSXP134
+46	2411	2444	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP135
+47	2453	2486	VOTED	      DO 238 MC=1,KCX                                                   		lighton=      DO 238 MC=1,KCX ## dots=      00 238 MC=1,KCX ## glm=      DO 238 MC=1，KCX	RSXP136
+48	2495	2528	TIE	      ZVSB=DPST( 2,MBT)-CX(MC,2)                                        	26	dots=      ZVSB=DPST( 2,MBT)-CX(MC,2) ## dots2=      ZVSB=DPST( 2,MBT)-CX(MC,2) ## glm=      ZVSB=OPST（ 2,MBT）-C×(MC,2) ## glm2=      ZVSB=DPST( 2,MBT)-C×(MC,2)	RSXP137
+49	2539	2572	AGREE	      IF( ABS( ZVSB ) .LT.   .1 ) ZVSB = 0.0                            		lighton=      IF( ABS( ZVSB ) .LT.   .1 ) ZVSB = 0.0 ## dots=      IF( ABS( ZVSB ) .LT.   .1 ) ZVSB = 0.0	RSXP138
+50	2580	2613	VOTED	      IF(ZVS8)204,210,210                                               		lighton=      IF(ZVS8)204,210,210 ## dots=      IF(ZVSB)204,210,210 ## glm=      IF(ZVS8)204,210,210	RSXP139
+51	2624	2656	VOTED	  204 GO TO (206,208),KBASE                                             		lighton=  204 GO TO (2J6,20E),KBASE ## lighton2=  204 GO TO (206,208),KBASE ## dots=  204 GO TO (206,208),KBASE ## dots2=  204 GO TO (206,208),KBASE	RSXP140
+52	2668	2699	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP141
+53	2708	2740	COMMENT	C     ADJUST DPST RADIUS AND ALTITUDE FOR LEAVING CLOUD                 		dots=C     ADJUST DPST RADIUS AND ALTITUDE FOR LEAVING CLOUD ## glm=C     AOJUST DPST RADIUS AND ALTITUDE FOR LEAVING CLOUD	KSXP142
+54	2753	2784	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP143
+55	2798	2828	AGREE	  206 KBASE=2                                                           		lighton=  206 KBASE=2 ## dots=  206 KBASE=2 ## glm=  206 KBASE=2	RSXP144
+56	2840	2871	AGREE	      MD=MC-1                                                           		dots=      MD=MC-1 ## glm=      MD=MC-1	RSXP145
+57	2884	2915	VOTED	  207 EXTM=(ZLST-CX(MD,3))/(CX(MD,6)-UP+DN)                             		lighton=  207 EXTM=(ZLST-CX(MD,3))/(CX(MD,6)-UP+DN) ## dots=  207 EXTM=(ZLST-CX(MD,3))/(CX(MD,6)-UP+ON) ## glm=  207 EXTM=（ZLST-CX（MO,3））/（CX（MO,6）-UP+DN）	RSXP146
+58	2926	2957	VOTED	 1207 OPST(3,MBT)=CX(MO,5)+EXTM*CX(MO,8)                                		lighton= 1207 DPST(3,MBT)=CX(MO,5)+EXTM*CX(MO,8) ## dots= 1207 OPST(3,MBT)=CX(NO,5)+EXTH*CX(NO,8) ## glm= 1207 OPST(3,MBT)=CX(MD,5)+EXTM*CX(MD,8)	RSXP147
+59	2968	2999	TIE	      DPST（ 2，MBT）=ZLST+（UF-CN）*EXTH                                    	7,36	glm=      DPST（ 2，MBT）=ZLST+（UF-CN）*EXTH ## glm2=      OPST（ 2，MBT）=ZLST+（UF-CN）*EXTM	RSXP148
+60	3012	3041	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KSXP149
+61	3055	3087	COMMENT	C     IF THE WAFER IS ON THE GROUND, JUMP THE INNER LCCP.  IF NOT,      		lighton=C     IF THE WAFER IS ON THE GROUND, JUMP THE INNER LCCP.  IF NOT, ## glm=C     IF THE HAFER IS ON THE GROUND. JUMP THE INNER LCCP.  IF NOT.	RSXP150
+62	3098	3131	COMMENT	C     COMPUTE THE POSITION OF THE WAFER BELOW THE CLOCC BASE.           			RSXP151
+63	3161	3188	NOISE	                                                                        		glm=                                         92	

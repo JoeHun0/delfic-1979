@@ -1,0 +1,119 @@
+1
+
+
+                                                   * * * * * * * * * *
+
+                                                       D E L F I C
+
+            T H E   D E P A R T M E N T   O F   D E F E N S E   F A L L O U T   P R E D I C T I O N   S Y S T E M
+
+                                                   * * * * * * * * * *
+
+
+
+                                                DIFFUSIVE TRANSPORT MODULE
+
+
+                                                       PREPARED BY
+                                              ATMOSPHERIC SCIENCE ASSOCIATES
+                                                      BEDFORD, MASS.
+
+
+
+                                         *****  SUMMARY OF RUN IDENTIFIERS  *****
+          INITIALIZATION AND CLOLD RISE MODULE IDENTIFICATION -  DELFIC TEST PROBLEM - ICRM                                             
+                    DIFFUSIVE TRANSPORT MODULE IDENTIFICATION -  DELFIC TEST PROBLEM - DTM                                              
+
+               THE CONTROL VARIABLE ARRAY, MC(J), HAS BEEN GIVEN THE VALUES -
+                  0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+
+                            THE TRANSPORT TIME LIMIT IS   172800.000 SEC. (  48.00000 HOURS)
+               COORDINATES OF GROUND ZERO (XGZ,YGZ,ZGZ) ARE ( 0.00000E+00,  0.00000E+00,  0.13900E+03) (METERS)
+                                          DETONATION TIME IS 0.00000E+00 SECONDS
+
+               HORIZONTAL COORDINATES OF THE SOUTH WEST CORNER OF THE TRANSPORT SPACE ARE (-0.50000E+10, -0.50000E+10)
+                                   THE RESOLUTION NET SPACING IS  0.10000E+11 (ALL IN METERS)
+               A FLANE DEPOSITION SURFACE AT ALTITUDE   139.000 (METERS ABOVE MSL) IS ASSUMED
+
+               FALLOUT PARTICLE DENSITY IS  0.26000E+04 KG/M**3   THERE ARE   30 PARTICLE SIZE CLASSES
+
+               TRANSFORT IS BY THE 
++                                  QUICK METHOD
+1
+
+
+
+               ATMOSPHERE UPDATE   1 FOR TIMES LATER THAN  0.00000E+00 SEC (   0.000 HOURS)
+
+                     * * * * * * * * * WINDFIELD DATA * * * * * * * * *
+
+                RAW KIND DATA                                 PROCESSED WIND DATA
+
+        Z         VX OR DIR.   VY OR SPEED              Z            VX            VY
+
+   2.16000E+02   1.40000E+02   8.00000E+00
++                                                  2.16000E+02  -5.14230E+00   6.12836E+00
+   1.54800E+03   1.55000E+02   1.30000E+01
++                                                  1.54800E+03  -5.49404E+00   1.17820E+01
+   3.09700E+03   1.90000E+02   5.00000E+00
++                                                  3.09700E+03   8.68241E-01   4.92404E+00
+   5.68800E+03   2.00000E+02   1.50000E+01
++                                                  5.68800E+03   5.13030E+00   1.40954E+01
+   7.32700E+03   2.15000E+02   1.90000E+01
++                                                  7.32700E+03   1.08980E+01   1.55639E+01
+   9.30900E+03   2.20000E+02   1.60000E+01
++                                                  9.30900E+03   1.02846E+01   1.22567E+01
+   1.04880E+04   2.15000E+02   1.10000E+01
++                                                  1.04880E+04   6.30934E+00   9.01067E+00
+   1.18870E+04   2.20000E+02   1.30000E+01
++                                                  1.18870E+04   8.35624E+00   9.95858E+00
+   1.36980E+04   2.35000E+02   1.20000E+01
++                                                  1.36980E+04   9.82982E+00   6.88292E+00
+   1.62670E+04   2.50000E+02   9.00000E+00
++                                                  1.62670E+04   8.45723E+00   3.07818E+00
+   1.85260E+04   2.75000E+02   7.00000E+00
++                                                  1.85260E+04   6.97336E+00  -6.10090E-01
+   2.06650E+04   2.75000E+02   7.00000E+00
++                                                  2.06650E+04   6.97336E+00  -6.10090E-01
+   2.39020E+04   2.80000E+02   1.10000E+01
++                                                  2.39020E+04   1.08329E+01  -1.91013E+00
+   2.64930E+04   2.70000E+02   1.10000E+01
++                                                  2.64930E+04   1.10000E+01   1.97439E-08
+   3.10230E+04   2.75000E+02   2.50000E+01
++                                                  3.10230E+04   2.49049E+01  -2.17889E+00
+
+
+
+
+                                 WIND LAYER BASE ALTITUDES
+
+    LEVELS   1 THRU   8   139.00000   293.00000  2803.00000  3391.00000  7985.00000  6669.00000 11949.00000  9027.00000
+    LEVELS   9 THRU  15 14747.00000 12649.00000 19885.00000 17167.00000 24163.00000 23641.00000 29345.00000
+0   MAXIMUM WIND SPACE ALTITUDE IS  0.32701E+05 METERS
+
+
+
+               ATMOSPHERE UPDATE   1 FOR TIMES LATER THAN  0.00000E+00 SEC (   0.000 HOURS)
+
+                     * * * * * * * * * TURBULENCE DATA * * * * * * * * *
+
+               TURBULENCE PARAMETERS ARE CALCULATED BY WILKINS RECIPROCAL ALTITUDE FUNCTION
+               FOR UPDATE  1 AT  0.00000E+00 SECONDS
+
+                   K        ZCH            OXSUM          OYSUM
+                   1    0.21600E+03    0.38961E-03    0.38961E-03
+                   2    0.15480E+04    0.21292E-04    0.21292E-04
+                   3    0.30970E+04    0.10142E-04    0.10142E-04
+                   4    0.56880E+04    0.54064E-05    0.54064E-05
+                   5    0.73270E+04    0.41736E-05    0.41736E-05
+                   6    0.93090E+04    0.32715E-05    0.32715E-05
+                   7    0.10488E+05    0.28988E-05    0.28988E-05
+                   8    0.11887E+05    0.25536E-05    0.25536E-05
+                   9    0.13698E+05    0.22126E-05    0.22126E-05
+                  10    0.16267E+05    0.18601E-05    0.18601E-05
+                  11    0.18526E+05    0.16316E-05    0.16316E-05
+                  12    0.20665E+05    0.14616E-05    0.14616E-05
+                  13    0.23902E+05    0.12625E-05    0.12625E-05
+                  14    0.26493E+05    0.11383E-05    0.11383E-05
+                  15    0.31023E+05    0.97138E-06    0.97138E-06
+0                      TURBULENCE PARAMETER AVERAGED OVER ALL SPACE FOR UPDATE   1 IS 0.57080E-05

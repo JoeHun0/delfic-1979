@@ -1,0 +1,10 @@
+4	860	OK	      FMTEXP(KDC+1) = FMTI                                                      	FMTEXP(KDC+1) = FMTI
+12	1205	OK	      JMAP(KDC)=JMAP(KDC)+1                                                     	JMAP (KDC) = JMAP (KDC) + 1
+13	1246	OK	      FMTEXP(KDC+1) = FM7I                                                      	FMTEXP(KDC+1) = FM7I
+20	1555	COUNT 19/14	                                                                                	115 GO TO N3,(300,121)
+22	1637	COUNT 19/14	                                                                                	121 OMAP(K) = -OMAP(K)
+23	1689	COUNT 7/6	                                                                                	SO TO 300
+25	1762	COUNT 31/30	                                                                                	C 151 CODE FOR TWO-LINE F11.3 DISPLAY
+29	1937	OK	       FMTEXP(KDC+1)= FMTI                                                      	FMT EXP (KDC+1) = FMTI
+31	2022	OK	       FMTEXP(KOC+1)=FMTA                                                       	FMT EXP ( KOC+1 ) = FMTA
+34	2151	OK	       WRITE(ISOUT,2     ) （JMAF(K),K=1,KDC)                                    	WRITE (I SOUT,2) （JMAF(K),K=1,KDC)

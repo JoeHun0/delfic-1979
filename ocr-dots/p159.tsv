@@ -1,0 +1,61 @@
+1	28	COUNT 0/3	                                                                                	
+2	49	COUNT 0/10	                                                                                	
+3	94	COUNT 0/15	                                                                                	
+4	479	OK	C                                                                       UPM1 148	C || UPM1 148
+5	522	OK	  511 IF(IHOB .EQ. 0) IF(SO)515.515.520                                 OPM1 149	511 IF(IHOB .EQ. 0) IF(SO)515.515.520 || OPM1 149
+6	564	OK	      WRITE( ISOUT,40 ) ZSCL                                            OPM1 150	WRITE( ISOUT,40 ) ZSCL || OPM1 150
+7	608	OK	  515 CALL PAM1A(FISSIO)                                                OPM1 151	515 CALL PAM1A(FISSIO) || OPM1 151
+8	653	OK	      RETURN                                                            OPM1 152	RETURN || OPM1 152
+9	693	OK	  520 CALL PAM1                                                         OPM1 153	520 CALL PAM 1 || OPM1 153
+10	737	OK	     1    (HOB    ,SLOTMP ,TMSC   , W ,EMITN, FISSID )                  OPM1 154	1 (HOB ,SLOTMP ,TMSC , W ,EMITN, FISSID ) || OPM1 154
+11	781	OK	      RETURN                                                            0PM1 155	RETURN || 0PM1 155
+12	823	OK	      END                                                               UPM1 156	END || UPM1 156
+13	1169	OK	*DECK,OPH2                                                              CPM2   1	* DECK, OPH2 || CPM2 1
+14	1211	COUNT 24/25	                                                                        OPM2   2	SUBROUTINE OPH2(OMAF, NAP) || OPM2 2
+15	1254	OK	C                                                                       UPM2   3	C || UPM2 3
+16	1297	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     OPM2   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || OPM2 4
+17	1341	OK	C                                                                       OPM2   5	C || OPM2 5
+18	1384	COUNT 0/71	                                                                        OPM2   6	 || OPM2 6
+19	1428	OK	C                                                                       OPM2   7	C || OPM2 7
+20	1468	OK	C     SECOND HALF OF THE CLTPU1 PROCESSOR                               UPM2   &	C SECOND HALF OF THE CLTPU1 PROCESSOR || UPM2 &
+21	1512	COUNT 1/55;COUNT 0/5	                                                                                	C || 
+22	1556	OK	C                                                                       OPM2  ±0	C || OPM2 ±0
+23	1596	COUNT 0/71	                                                                        OPM2  11	 || OPM2 11
+24	1642	OK	C                                                                       OPM2  12	C || OPM2 12
+25	1685	COUNT 39/38	                                                                        OPM2  13	COMMON /CONDAT/ IC(2G) ,IHOB ,IPNCH ,IPOUT ,I || OPM2 13
+26	1719	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,OPM2  14	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE , || OPM2 14
+27	1770	OK	     2MARRAY    ,MRTAPE    ,PXREQ     ,SD        ,INFAP                 OPM2  15	2 MARRAY , MRTAPE , PXREQ , SD , IN FAP || OPM2 15
+28	1813	COUNT 41/40	                                                                        OPM2  16	COMMON /MAPOAT/ CAYF ,CUTMAP ,OGX ,OGY ,IH ,IV ,. || OPM2 16
+29	1855	OK	     1JC        ,NXHAP     ,NYHAP     ,NZ        ,QCUT      ,SSAM      ,OPM2  17	1 JC ,NXHAP ,NYHAP ,NZ ,QCUT ,SSAM , || OPM2 17
+30	1899	COUNT 25/24	                                                                        OPM2  18	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX ,1 || OPM2 18
+31	1944	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                             OPM2  19	3XMIN , YMAX , YMIN , ZMIN || OPM2 19
+32	1985	COUNT 31/30	                                                                        UPM2  20	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR ,1 || UPM2 20
+33	2028	COUNT 32/31	                                                                        UPM2  21	1 MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK ,I || UPM2 21
+34	2072	OK	     20PMID(12) ,T1        ,T2        ,WFMAS(2J0)                       UPM2  22	20PMID(12) ,T1 ,T2 ,WFMAS(2J0) || UPM2 22
+35	2113	COUNT 41/42	                                                                        UPM2  23	COMMON /DECAY, IGC, JC, KDCS, TENTER, EXIT, TIME || UPM2 23
+36	2157	OK	      COMMON /OUTPUT/ FISALM,FP(200),Fh,NDSTR,JGC,MASCHN,PS(200),       0PM2  24	COMMON /OUTPUT/ FISALM,FP(200),Fh,NDSTR,JGC,MASCHN,PS(200), || 0PM2 24
+37	2201	OK	     1 FMASS(200),DIAM(200)                                             UPM2  25	1 FMASS(200),DIAM(200) || UPM2 25
+38	2233	COUNT 28/29	                                                                        UPM2  26	COMMON /UTILTY/ KCUT,NPRNT (15) || UPM2 26
+39	2286	OK	      LOGICAL IGO,JD,KDOS,APRNT                                         OPM2  27	LOGICAL IGO, JD, KDO S, APRNT || OPM2 27
+40	2329	OK	      DIMENSION CONTUR(8), OMAP(NMAP)                                   UPM2  2d	DIMENSION CONTUR(8), OMAP(NMAP) || UPM2 2d
+41	2370	COUNT 13/36	                                                                        OPM2  29	DATA BLANK/1CH || OPM2 29
+42	2414	COUNT 0/6	      DATA QCUTA,CUTMPA/0.0001, 0.01 /                                          	DATA QCUTA,CUTMPA/0.0001, 0.01 / || 
+43	2461	OK	C                                                                       OPM2  31	C || OPM2 31
+44	2499	COUNT 42/41	                                                                        UPM2  32	2 FORMAT (//15X,23HSUM OF MAP ORIGINATES = E13.6) || UPM2 32
+45	2541	COUNT 27/29;COUNT 0/6	                                                                                	3 FORMAT (1H1///54X,11+* * * * *) || 
+46	2584	COUNT 0/6	 4    FORMAT(// 15X, 52HCCABINED GROUND ROUGHNESS-INSTRUMENT RESPONSE FA        	4 FORMAT(// 15X, 52HCCABINED GROUND ROUGHNESS-INSTRUMENT RESPONSE FA || 
+47	2626	COUNT 0/6	     1CTORF10.3,  5X, 14HALTITUDE OF GZF10.3,17H METERS ABOVE MSL)              	1CTORF10.3, 5X, 14HALTITUDE OF GZF10.3,17H METERS ABOVE MSL) || 
+48	2672	OK	 9    FORMAT(7F10.3)                                                    UPM2  36	9 FORMAT (7F10.3) || UPM2 36
+49	2715	OK	 17   FORMAT(32H OUTPUT PROCESSING IS COMPLETED.)                       UPM2  37	17 FORMAT(32H OUTPUT PROCESSING IS COMPLETED.) || UPM2 37
+50	2756	COUNT 52/54	                                                                        OPM2  38	23 FORMAT(1H1//39X27H**** OUTPUT PROCESSOR TASK 15,6H ***) || OPM2 38
+51	2799	COUNT 64/65	                                                                        UPM2  39	24 FORMAT(//15X25HGRIO LIMITS AND INTERVALS/20X4HXMIN10X4HXMAX10X4HY || UPM2 39
+52	2844	COUNT 7/6	     1MIN10X4HYMAX10X7HDELTA X,8X7HDELTA Y/15XF10.0,4XF10.1,4XF10.2,4XF1        	1MIN10X4HYMAX10X7HDELTA X,8X7HDELTA Y/15XF10.0,4XF10.1,4XF10.2,4XF1 || .0PM2 +0
+53	2887	OK	     20.1,5XF10.2,5XF10.2)                                              UPM2  41	20.1,5XF10.2,5XF10.2) || UPM2 41
+54	2930	COUNT 0/6	 32   FORMAT(4I5, 4F10.0)                                                       	32 FORMAT(4I5, 4F10.0) || 
+55	2973	OK	 33   FORMAT(25HJUNACCEPTABLE REQUEST ...I4)                            UPM2  43	33 FORMAT(25HJUNACCEPTABLE REQUEST ...I4) || UPM2 43
+56	3016	COUNT 64/63	                                                                        OPM2  44	34 FORMAT(////15X,15HREQUEST NUMBER I+////15X8HMAP TYPE13,10X5HT1 = F1 || OPM2 44
+57	3060	COUNT 7/6	     10.2.10X,5HT2 = F10.2.10X,YHMASCHN = I4// 15X,6HCCUT= ,L12.5.10X,6H        	10.2.10X,5HT2 = F10.2.10X,YHMASCHN = I4//15X,6HCCUT= ,L12.5.10X,6H || 10PM2 45
+58	3106	COUNT 16/15;COUNT 0/6	                                                                                	2CUTMAP= (.E12.5) || 
+59	3168	OK	                                       156                                      	156
+60	3334	COUNT 0/19	                                                                                	
+61	3363	COUNT 0/27	                                                                                	

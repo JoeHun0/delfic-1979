@@ -1,0 +1,54 @@
+1	3	COUNT 0/30;COUNT 8/3	                                                                                	 || \text{工}
+2	55	COUNT 11/2	                                                                                	\mathcal{L}
+3	840	OK	*DECK,D8G                                                               08G    1	* DECK, D8G || 08G 1
+4	882	OK	      SUBROUTINE DBG                                                    03G    2	SUBROUTINE DBG || 03G 2
+5	925	OK	C                                                                       08G    3	C || 08G 3
+6	969	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976     UBG    4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 || UBG 4
+7	1012	COUNT 1/2	                                                                        U8G    5	C || U8G 5
+8	1055	COUNT 199/71	                                                                        DAG    6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DAG 6
+9	1099	OK	C                                                                       DBG    7	C || DBG 7
+10	1141	OK	C     CRM DEBUG PRINTOUT                                                U8G    8	C CRM DEBUG PRINTOUT || U8G 8
+11	1183	OK	C                                                                       03G    9	C || 03G 9
+12	1227	COUNT 199/71	                                                                        DBG   10	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DBG 10
+13	1270	OK	C                                                                       08G   11	C || 08G 11
+14	1312	COUNT 43/42	                                                                        08G   12	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM ,I || 08G 12
+15	1354	COUNT 37/36	                                                                        09G   13	1 DS ,OST ,OST0 ,OST1 ,OST2 ,DT ,DU ,DWT ,OX ,| || 09G 13
+16	1399	COUNT 34/33	                                                                        08G   14	2 OZ , ED , EK , EPS , ES , HLR , KS , KSV , MWYA , i || 08G 14
+17	1439	COUNT 28/27	                                                                        08G   15	3 N     ,NNN     ,P     ,PH     ,R     ,KA     ,RL     ,RM     ,RZT     ,I || 08G 15
+18	1483	COUNT 34/33	                                                                        UBG   16	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,WT ,| || UBG 16
+19	1526	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         08G   17	5 X , XE , Z , ZBFR , ZLMT , SPARE || 08G 17
+20	1568	OK	      COMMON /CONTRL/ CETIC(12),IC(2G),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  08G   18	COMMON /CONTRL/ CETIC(12),IC(2G),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || 08G 18
+21	1611	OK	      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SU,PS(200),DIAM(201),FMASS(200)  08G   14	COMMON /PARTCL/ NDSTR,RHOP,DMEAN,SU,PS(200),DIAM(201),FMASS(200) || 08G 14
+22	1654	OK	      COMMON /TABLES/ MCX, CX(50,10), GOPST(1),1C0)                     03G   20	COMMON /TABLES/ MCX, CX(50,10), GOPST(1),1C0) || 03G 20
+23	1690	OK	C                                                                       08G   21	C || 08G 21
+24	1741	OK	      DIMENSION Y(205),CG(200)                                          03G   22	DIMENSION Y(205),CG(200) || 03G 22
+25	1785	OK	      EQUIVALENCE (Y(1),GCPST(1)), (CG(1),GDPST(201))                   08G   23	EQUIVALENCE (Y(1), GCPST(1)), (CG(1), GDPST(201)) || 08G 23
+26	1826	COUNT 6/5	C                                                                               	C || -03G 24
+27	1870	OK	  016 FORMAT (1H0 /                                                     08G   25	016 FORMAT (1H0 / || 08G 25
+28	1913	OK	     1  JX1P9E13.4 /                                                    DBG   26	1 JX1P9E13.4 / || DBG 26
+29	1955	COUNT 18/19	                                                                        08G   27	2 (10X1H*, 5X8E13.4) || 08G 27
+30	1999	OK	   17 FORMAT(21X,*PS*,11X,*CG*,11X,*Y*,11X,*PS*,11X,*CG*,11X,*Y*/16X,1P608G   28	17 FORMAT(21X,*PS*,11X,*CG*,11X,*Y*,11X,*PS*,11X,*CG*,11X,*Y*/16X,1P6 || 08G 28
+31	2043	OK	     1E13.41                                                            08G   29	1E13.41 || 08G 29
+32	2085	OK	  099 FORMAT (1H0 / 49X17+CLOU[ DEBUG PRINT //                          D8G   30	099 FORMAT (1H0 / 49X17+CLOU[ DEBUG PRINT // || D8G 30
+33	2128	OK	     1  9X2HST, 11X1HU, 12X1HX, 12X1HT, 12X1HR, 12X1HZ, 12X2HEK,        09G   31	1  9X2HST, 11X1HU, 12X1HX, 12X1HT, 12X1HR, 12X1HZ, 12X2HEK, || 09G 31
+34	2172	OK	     2  11X1HV, 12X2HWT / 10X1H*, 11X2HTE, 11X2HRM, 11X2HES,            08G   52	2  11X1HV, 12X2HWT / 10X1H*, 11X2HTE, 11X2HRM, 11X2HES, || 08G 52
+35	2215	OK	     3  11X1HP, 12X2HPW, 11X2HED, 10X3HRLH, 11X1HS/                     086   53	3  11X1HP, 12X2HPW, 11X2HED, 10X3HRLH, 11X1HS/ || 086 53
+36	2258	OK	     4  10X1H*, 10X3HEPS, 10X3HRZT , 9X4HCMLR,///)                      03G   34	4  10X1H*, 10X3HEPS, 10X3HRZT, 9X4HCMLR,///) || 03G 34
+37	2293	OK	C                                                                       09G   35	C || 09G 35
+38	2342	COUNT 1/71	                                                                        DBG   36	C || DBG 36
+39	2385	OK	C                                                                       03G   37	C || 03G 37
+40	2428	OK	      IF (AMOD (SMALLT, 13.0)) 2146, 1149, 2146                         08G   38	IF (AMOD (SMALLT, 13.0)) 2146, 1149, 2146 || 08G 38
+41	2464	OK	 1149 WRITE(ISOUT,99)                                                   DBG   39	1149 WRITE(ISOUT,99) || DBG 39
+42	2514	OK	 2146 IF (SMALLT) 1146, 1146, 3146                                      08G   40	2146 IF (SMALLT) 1146, 1146, 3146 || 08G 40
+43	2557	OK	 3146 IF(SMALLT-AINT(SMALLT))149,4146,149                               DBG   41	3146 IF(SMALLT-AINT(SMALLT))149,4146,149 || DBG 41
+44	2599	COUNT 20/5	 4146 IF(AMOD(SMALLT,2.0))1146,149,1146                                         	4146 IF(AMOD(SMALLT,2.0))1146,149,1146 || \mathcal{D}3G \quad 42
+45	2641	OK	 1146 WRITE(ISOUT,16)                                                   09G   43	1146 WRITE(ISOUT,16) || 09G 43
+46	2686	OK	     1  SMALLT, U, X, T, P, Z, EK, V, HT,                               UBG   44	1 SMALLT, U, X, T, P, Z, EK, V, HT, || UBG 44
+47	2728	OK	     2  YE, RM, ES, P, PW, EC, HLR, S,                                  08G   45	2  YE, RM, ES, P, PW, EC, HLR, S, || 08G 45
+48	2772	OK	     J  EPS, RZT , CNLR                                                 U3G   46	J EPS, RZT, CNLR || U3G 46
+49	2815	OK	      WRITE(ISOUT,17)                                                   08G   47	WRITE(ISOUT,17) || 08G 47
+50	2857	OK	     1  (PS  (I), CG (I), Y (I),                                        LAB   48	1 (PS (I), CG (I), Y (I), || LAB 48
+51	2899	COUNT 30/25	                                                                        08G   49	2 PS (I + 1), CG (\bar{Y} + 1), Y (I + 1), || 08G 49
+52	2943	OK	     3 I=1,NOSTR,2)                                                     D3G   50	3 I=1, NOSTR, 2) || D3G 50
+53	2986	OK	  149 RFTURN                                                            03G   51	149 RFTURN || 03G 51
+54	3030	COUNT 36/5	      JNJ                                                                       	JNJ || \mathfrak{f}_{i} \exists G \quad \equiv 2

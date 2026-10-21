@@ -1,0 +1,47 @@
+1	0	COUNT 0/20;COUNT 8/2	                                                                                	 || \text{f}
+2	770	OK	     1 OMAP,NMAP)                                                       OPM2 227	1 OMAP, NMAP) || OPM2 227
+3	814	OK	      CALL MAP(OMAP,NMAP)                                               OPM2 228	CALL MAP(OMAP, NMAP) || OPM2 228
+4	856	OK	      GO TO 1211                                                        OPM2 229	GO TO 1211 || OPM2 229
+5	898	OK	COMPUTE A MULTIPLE CORE-LCAD MAP                                        OPM2 230	COMPUTE A MULTIPLE CORE-LCAD MAP || OPM2 230
+6	943	COUNT 15/14	                                                                        UPM2 231	207 REWIND JPOL'T || UPM2 231
+7	985	OK	      REWIND KPOUT                                                      OPM2 232	REWIND KPOUT || OPM2 232
+8	1028	COUNT 12/11	                                                                        OPM2 233	KTAPE=!.POUT || OPM2 233
+9	1071	OK	      LTAPE=JPOUT                                                       OPM2 234	LTAPE=JPOUT || OPM2 234
+10	1114	COUNT 8/7	      CALL GOGÚ(OMAP,NHAP)                                                      	CALL GOGÚ(OMAP, NHAP) || OPM2 2.35
+11	1158	COUNT 8/7	      REWIND KTAPE                                                              	REWIND KTAPE || OPM:2 256
+12	1201	OK	      WRITE(LTAPE)NUL                                                   OPM2 237	WRITE(LTAPE) NUL || OPM2 237
+13	1243	OK	      REWIND LTAPE                                                      UPM2 238	REWIND LTAPE || UPM2 238
+14	1286	OK	      IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 208                       UPM2 239	IF((NREQ.NE.15).AND.(NREQ.NE.17)) GO TO 208 || UPM2 239
+15	1330	OK	      00 316 IMAP=1,NMAP                                                OPM2 240	00 316 IMAP=1, NMAP || OPM2 240
+16	1365	OK	      IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0                            OPM? 241	IF(OMAP(IMAP).GE.1.E30) OMAP(IMAP)=G.0 || OPM? 241
+17	1416	OK	  306 CONTINUE                                                          OPM2 242	306 CONTINUE || OPM2 242
+18	1459	OK	  308 CALL MAP(OMAP,NMAP)                                               OPM2 243	308 CALL MAP(OMAP, NMAP) || OPM2 243
+19	1502	OK	      00 220 INDEX=1,NZ                                                 UPM2 244	00 220 INDEX=1,NZ || UPM2 244
+20	1545	OK	CLEAR OUT THE OMAP ARRAY                                                OPM2 245	CLEAR OUT THE OMAP ARRAY || OPM2 245
+21	1589	COUNT 0/9;COUNT 18/7	                                                                                	 || \dot{U}P M2 \quad 246
+22	1630	OK	      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.t30                      OPH2 247	IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLKOT=1.t30 || OPH2 247
+23	1675	OK	      00 702 IMAP=1,NMAP                                                OPM2 248	00 702 IMAP=1,NMAP || OPM2 248
+24	1717	OK	  702 OMAP(IMAP)=CLROT                                                  OPM2 249	702 OMAP(IMAP) = CLROT || OPM2 249
+25	1761	OK	      IF(MOD(INDEX,2).EQ.1) GO TO 208                                   OPM2 250	IF(MOD(INDEX,2).EQ.1) GO TO 208 || OPM2 250
+26	1803	OK	      KTAPE=KPOUT                                                       UPM2 251	KTAPE=KPOUT || UPM2 251
+27	1847	OK	      LTAPE=JPOUT                                                       UPM2 252	LTAPE=JPOUT || UPM2 252
+28	1889	OK	      GO TO 209                                                         OPM2 253	GO TO 209 || OPM2 253
+29	1932	OK	  208 KTAPE=JPOUT                                                       UPM2 254	208 KTAPE=JPOUT || UPM2 254
+30	1977	OK	      LTAPE=KPOUT                                                       OPM2 255	LTAPE = KPOUT || OPM2 255
+31	2017	OK	  209 ICTR=INDEX                                                        UPM2 256	209 ICT R=INDEX || UPM2 256
+32	2061	OK	      IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP                            UPM2 257	IF(INDEX .EQ. NZ) NXMAP=NOX - NZ*NXMAP || UPM2 257
+33	2105	COUNT 7/5;COUNT 18/7	                                                                                	x_1 = x_2 || \dot{U}P M 2 \quad 258
+34	2146	COUNT 0/15	                                                                        OPM2 259	 || OPM2 259
+35	2189	OK	  210 CALL GOGO(OMAP,NMAP)                                              OPM2 :EO	210 CALL GOGO(OMAP, NMAP) || OPM2 : EO
+36	2233	COUNT 8/7	      REHIND KTAPE                                                              	REHIND KTAPE || UPM2 2:E1
+37	2275	OK	      WRITE(LTAPE)NUL                                                   OPM2 262	WRITE(LTAPE)NUL || OPM2 262
+38	2319	OK	      REWIND LTAPE                                                      OPM2 263	REWIND LTAPE || OPM2 263
+39	2362	OK	      IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220                       OPM2 2E4	IF((NREQ.NE.15).ANC.(NREQ.NE.17)) GO TO 220 || OPM2 2E4
+40	2404	OK	      00 215.IMAP=1,NMAP                                                UPM2 265	00 215. IMAP=1, NMAP || UPM2 265
+41	2447	OK	      IF(OMAP(IMAP).GE.1.E3G) OMAP(IMAP)=0.0                            UPM2 2E6	IF(OMAP(IMAP).GE.1.E3G) OMAP(IMAP)=0.0 || UPM2 2E6
+42	2491	OK	  215 CONTINUE                                                          OPM2 2ε7	215 CONTINUE || OPM2 2ε7
+43	2533	OK	  227 CALL MAP(OMAP,NMAP)                                               OPM2 2EE	227 CALL MAP(OMAP, NMAP) || OPM2 2EE
+44	2576	OK	      GO TO 1211                                                        UPM2 2E9	GO TO 1211 || UPM2 2E9
+45	2620	OK	      END                                                               UPM2 270	END || UPM2 270
+46	3118	OK	                                       160                                      	160
+47	3277	COUNT 152/38;COUNT 190/5	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \text{مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُسْتَفْعَلَةٌ مُ

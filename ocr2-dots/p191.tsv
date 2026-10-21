@@ -1,0 +1,6 @@
+7	992	OK	    1 XRT(I) = 0.0                                                              	1 XRT(I) = 0.0
+9	1085	OK	      00 1) J = 1,KRM                                                           	00 1) J = 1,KRM
+10	1121	COUNT 0/8	                                                                                	
+15	1342	COUNT 69/41	                                                                                	12 \text{ XRT (MCH)} = \text{XRT (MCH)} + \text{ABUNDO(K)} * \text{ABS(ERM(J))}
+23	1687	COUNT 76/35	                                                                                	\text{RADIAL} = \text{ECF}(LC)/((\text{UNIT} + \text{CRISS} \cdot \text{ECF}(LC)))
+44	2576	COUNT 0/4	                                                                                	

@@ -1,0 +1,63 @@
+1	4	COUNT 0/45;COUNT 10/3	                                                                                	 || \downarrow
+2	512	OK	 208  DM=02(KL)                                                         TRIDI181	208 DM=02(KL) || TRIDI181
+3	556	OK	      NADT=J                                                            TRIOI182	NADT = J || TRIOI182
+4	598	OK	 207  CONTINUE                                                          TRIOI183	207 CONTINUE || TRIOI183
+5	641	OK	C     AT THIS POINT, DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN)       TR10I184	C AT THIS POINT, DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN) || TR10I184
+6	687	OK	C                                                                       TR10I185	C || TR10I185
+7	727	OK	      IF (NN1-JTOPV)2072,2072,2073                                      TRIDI186	IF (NN1-JTOPV) 2072, 2072, 2073 || TRIDI186
+8	772	OK	C                                                                       TR101187	C || TR101187
+9	815	OK	C2072 NOW SELECT UEST NN POINTS                                         TR101108	C2072 NOW SELECT UEST NN POINTS || TR101108
+10	856	OK	C     SCAN THE SET D2(J),J=NAD(NN+1,JTOPV) UNTIL A D2(J) LESS THAN DM   TRIOI189	C     SCAN THE SET D2(J), J=NA D(NN+1, JTOPV) UNTIL A D2(J) LESS THAN DM || TRIOI189
+11	899	OK	C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NADT) WITH THE SELECTED NADTR10I190	C IS FOUND. IF ONE IS FOUND, SWITCH NAD(NADT) WITH THE SELECTED NAD || TR10I190
+12	943	COUNT 54/53	                                                                        TRIOI191	C THEN RESET DM AND NACT TO INDICATE THE MCST REMOTE OF THE NEAREST || TRIOI191
+13	986	OK	C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN    TRIOI192	C     NN POINTS. WHEN THE FULL SET D2(J), J=NAC(NN+1, JTOPV) HAS BEEN || TRIOI192
+14	1027	OK	C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY  TRIOI193	C SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED. ONLY || TRIOI193
+15	1073	OK	C     ONE SCAN IS REQUIRED.                                             TRIDI194	C ONE SCAN IS REQUIRED. || TRIDI194
+16	1115	OK	 2072 DO 210 J=NN1,JTOPV                                                TRIDI195	2072 DO 210 J=NN1,JTOPV || TRIDI195
+17	1159	OK	      KL=NAD(J)                                                         TRIOI136	KL = NAD(J) || TRIOI136
+18	1202	COUNT 24/25	                                                                        TRID1197	IF(DM-02(KL))210,210,211 || TRID1197
+19	1245	OK	 211  NTEMP=NAO(J)                                                      TRIDI198	211 NTEMP=NAO(J) || TRIDI198
+20	1288	COUNT 7/8	      NAD(J)=NAD(NADT)                                                          	NAD(J) = NAD(NADT) || TRID199
+21	1332	COUNT 0/15	                                                                        TRIDI200	 || TRIDI200
+22	1375	OK	C                                                                       TRIOI2J1	C || TRIOI2J1
+23	1416	OK	C     NOW RESET DM AND NADT TO THE NEW HOST REMOTE POINT                TRIOI2J2	C     NOW RESET DM AND NADT TO THE NEW HOST REMOTE POINT || TRIOI2J2
+24	1462	OK	      DM=02(KL)                                                         TRIOI2J3	DM = 02(KL) || TRIOI2J3
+25	1504	COUNT 9/8	      00 212 KKK=1,NN                                                           	00 212 KKK=1,NN || TR1012.14
+26	1547	OK	      KL=NAD(KKK)                                                       TRIOI215	KL = NAD(KKK) || TRIOI215
+27	1589	OK	      IF(DM-02(KL))213,212,212                                          TRIOI2J6	IF(DM-02(KL))213,212,212 || TRIOI2J6
+28	1632	OK	 213  DM=02(KL)                                                         TR1012J7	213 DM=02(KL) || TR1012J7
+29	1676	COUNT 0/8	                                                                        TRIDI218	 || TRIDI 218
+30	1720	OK	C                                                                       TRID12J9	C || TRID12J9
+31	1760	OK	C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF     TRIOI210	C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF || TRIOI210
+32	1805	OK	C     THE NEAREST NN POINTS                                             TRIOI211	C THE NEAREST NN POINTS || TRIOI211
+33	1849	OK	 212  CONTINUE                                                          TRIOI212	212 CONTINUE || TRIOI 212
+34	1890	OK	 210  CONTINUE                                                          TRIOI213	210 CONTINUE || TRIOI213
+35	1934	OK	 2073 CONTINUE                                                          TRIOI214	2073 CONTINUE || TRIOI214
+36	1978	OK	C                                                                       TRIOI215	C || TRIOI215
+37	2020	OK	C     THE NEAREST NN HAVE BEEN FOUND                                    TRIDI216	C THE NEAREST NN HAVE BEEN FOUND || TRIDI216
+38	2063	OK	C                                                                       TRIOI217	C || TRIOI217
+39	2107	OK	C                                                                       TRIDI218	C || TRIDI218
+40	2147	OK	C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS                            TRID1219	C2080 COMPUTE AND SUM THE WEIGHTING FACTORS || TRID1219
+41	2191	OK	 2080 SUM=0.0                                                           TRIOI220	2080 SUM=0.0 || TRIOI 220
+42	2234	OK	      00 214 J=1,NN                                                     TR101221	00 214 J=1,NN || TR101221
+43	2268	COUNT 0/8	                                                                        TRIOI222	 || TRIOI222
+44	2319	COUNT 0/15	                                                                        TRIOI223	 || TRIOI223
+45	2350	COUNT 3/16	                                                                        TR10I224	214 || TR10I224
+46	2403	OK	      IF(SUM/FLOAT(NN) .LE. GIB) WRITE(ISOUT,24) NN,XG,YG,ZG            TRIDI225	IF(SUM/FLOAT(NN) .LE. GIB) WRITE(ISOUT,24) NN,XG,YG,ZG || TRIDI225
+47	2449	OK	C                                                                       TRIOI226	C || TRIOI226
+48	2491	OK	C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT.              TRIOI227	C NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT. || TRIOI 227
+49	2534	OK	C     COMPUTE STORAGE INDEX                                             TRIDI228	C COMPUTE STORAGE INDEX || TRIDI 228
+50	2576	OK	C     COMPUTE AND STORE VECTOR ESTIMATE AT LATTICE CENTER POINT.        TRIOI229	C     COMPUTE AND STORE VECTOR ESTIMATE AT LATTICE CENTER POINT. || TRIOI229
+51	2623	COUNT 0/9	                                                                        TRID1230	 || TRID1230
+52	2665	COUNT 0/9	                                                                        TRIOI231	 || TRIOI231
+53	2709	COUNT 0/9	                                                                        TR101232	 || TR101232
+54	2752	OK	      no 216 J=1,NN                                                     TRIDI233	no 216 J=1, NN || TRIDI 233
+55	2794	COUNT 9/8	      L=NAD(J)                                                                  	L = NAD(J) || TRIDI2.34
+56	2836	OK	      VXKNL=VXKNL+SX(L)*D2(L)                                           TRIOI235	V X K N L = V X K N L + S X (L) * D 2 (L) || TRIOI235
+57	2880	COUNT 0/23	                                                                        TRID1236	 || TRID1236
+58	2922	COUNT 27/26	                                                                        TRIOI237	216 VZKNL = VZKNL + SZ(L.) * D2(L) || TRIOI237
+59	2965	OK	      VXKNL=VXKNL/SUM                                                   TRIOI238	V X K N L = V X K N L / S U M || TRIOI238
+60	3010	OK	      VYKNL=VYKNL/SUM                                                   TRID1239	VYKNL = VYKNL/SUM || TRID1239
+61	3053	COUNT 0/15	                                                                        TRIOI240	 || TRIOI240
+62	3101	OK	                                       138                                      	138
+63	3284	COUNT 198/43;COUNT 31/8	                                                                                	2000/00/00 11:00:00 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 || \text{مُحَمَّدٌ بَعْدَ مُحَمَّدٍ}

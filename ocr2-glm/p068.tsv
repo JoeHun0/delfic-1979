@@ -1,0 +1,3 @@
+30	1699	OK	      TA(X)=SQRT(ALOG(1.0/X**2))                                                	TA(X) = SQRT(ALOG(1.0/X**2))
+34	1869	OK	      LD=NOSTR+1                                                                	LD=NOSTR+1
+57	2857	OK	  104 DIAM(J)=3ARMU-APX(PRH)*SIGMA                                              	104 DIAM(J) = 3ARMU-AP X(PRH) *SIGMA

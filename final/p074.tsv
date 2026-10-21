@@ -1,0 +1,64 @@
+1	8	43	NOISE	                                                                        			
+2	43	69	NOISE	                                                                        			
+3	550	581	AGREE	      IF(RHO(I).GT.0.0) GC TO 72                                        		lighton=      IF(RHO(I).GT.0.0) GC TO 72 ## dots=      IF(RHO(I).GT.0.0) GC TO 72 ## glm=      IF(RHO(I).GT.0.0) GC TO 72	ATMR94
+4	594	626	AGREE	   71 IRROR=-71                                                         		lighton=   71 IRROR=-71 ## dots=   71 IRROR=-71 ## glm=   71 IRROR=-71	ATMR95
+5	636	668	VOTED	      GO TO 130                                                         		lighton=      GU TO 130 ## dots=      GO TO 130 ## glm=      GO TO 130	ATMR96
+6	678	712	AGREE	   72 ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))      		lighton=   72 ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I)) ## lighton2=   72 ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))	ATMR97
+7	723	755	HAND	      PRS(I)= 286.79* RHO(I)*ATP(I) +ES*RLH(I)*WATCOR                   		glm=      PRS(I)= 286.79* RHO(I)*ATP(I) +ES*RLH(I)*WATCOR	ATMR98
+8	766	796	VOTED	      GO TO 100                                                         		lighton=      GO TN 100 ## dots=      GO TO 100 ## glm=      GO TO 100	ATMR99
+9	809	840	AGREE	   73 IF' HO(I).GT.0.0) GO TO 100                                       		lighton=   73 IF' HO(I).GT.0.0) GO TO 100 ## dots=   73 IF' HO(I).GT.0.0) GO TO 100 ## glm=   73 IF' HO(I).GT.0.0) GO TO 100	ATMR100
+10	852	884	HAND	      ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))      		glm=      ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))	ATMR101
+11	894	930	HAND	      RHO(I)= (PRS(I)-ES*RLH(I)*WATCOR)/(286.79*ATP(I))                 	37	dots=      RHO(I)= (PRS(I)-ES*RLH(I)*WATCOR)/(286.79*ATP(I)) ## glm=      RHO(I)= (PRS(I)-ES*RLH(I)*WATCQR)/(286.79*ATP(I))	ATMR102
+12	938	970	AGREE	      GO TO 100                                                         		lighton=      GO TO 100 ## dots=      GO TO 100 ## glm=      GO TO 100	ATMR103
+13	982	1013	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR104
+14	1024	1057	VOTED	  1^5 NAT=I                                                             		lighton=  1^5 NAT=I ## dots=  1^5 NAT=I ## glm=  125 NAT=I	ATMR105
+15	1057	1101	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATNR106
+16	1111	1143	COMMENT	C     DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES            		lighton=C     DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES ## dots=C     DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES ## glm=C     DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES	ATMR107
+17	1154	1185	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR108
+18	1196	1229	AGREE	  110 IF(NAT -256)140,111,120                                           		lighton=  110 IF(NAT -256)140,111,120 ## dots=  110 IF(NAT -256)140,111,120 ## glm=  110 IF(NAT -256)140,111,120	ATMR109
+19	1240	1270	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR110
+20	1270	1313	COMMENT	C 111 THE TABLES DO NOT NEED EXPANSION.  CHECK TO DETERMINE IF THE      		dots=C 111 THE TABLES DO NOT NEED EXPANSION.  CHECK TO DETERMINE IF THE ## glm=C 111 THE TABLES DO NOT NEED EXPANSION.  CHECK TO GETERMINE IF THE	ATMR111
+21	1313	1357	COMMENT	C     THE PROPER BOUNDARIES ARE NOT THE PROPER BOUNDARIES.              			ATMR112
+22	1369	1400	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR113
+23	1411	1442	AGREE	  111 IF(ABS(ALT(1)+ 1000.).LE.1.) GO TO 113                            		lighton=  111 IF(ABS(ALT(1)+ 1000.).LE.1.) GO TO 113 ## lighton2=  111 IF(ABS(ALT(1)+ 1000.).LE.1.) GO TO 113	ATMR114
+24	1453	1485	AGREE	  112 IRROR=-112                                                        		lighton=  112 IRROR=-112 ## dots=  112 IRROR=-112 ## glm=  112 IRROR=-112	ATMR115
+25	1498	1528	VOTED	      GO TO 130                                                         		lighton=      GO TO 13C ## dots=      GO TO 130 ## glm=      GO TO 130	ATMR116
+26	1538	1570	VOTED	  113 IF(A3S(ALY(256)-5.E4).LE.5).) GO TO 115                           		lighton=  113 IF(A3S(ALY(256)-5.E4).LE.5).) GO TO 115 ## dots=  113 IF(ABS(ALT(256)-5.84).LE.5).) GO TO 115 ## glm=  113 IF(A3S(ALY(256)-5.E4).LE.51.) GO TO 115	ATMR117
+27	1583	1614	VOTED	  114 IRROR=-114                                                        		lighton=  114 IRR0R=-114 ## dots=  114 ERROR=-114 ## glm=  114 IRROR=-114	ATMR118
+28	1626	1662	VOTED	      GO TO 133                                                         		lighton=      GO TO 133 ## dots=      GO TO 130 ## glm=      GO TO 133	ATMR119
+29	1662	1699	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR120
+30	1709	1744	COMMENT	C 115 THE TABLES HAVE THE PROPER BCUNDRIES.  CHECK TO CETERMINE IF THE  		lighton=C 115 THE TABLES HAVE THE PROPER BCUNDRIES.  CHECK TO CETERMINE IF THE ## dots=C 115 THE TABLES HAVE THE PROPER BOUNDRIES.  CHECK TO DETERMINE IF THE ## glm=C 115 THE TABLES HAVE THE PROPER BCUNDRIES.  CHECK TO CETERMINE IF THE	ATMR121
+31	1754	1785	COMMENT	C     ALTITUDE INTERVALS ARE ALL.200 METERS.                            		lighton=C     ALTITUDE INTERVALS ARE ALL.200 METERS.	ATMR122
+32	1796	1827	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR123
+33	1839	1872	VOTED	  115 00 116 I=2,256                                                    		lighton=  115 00 116 I=2,256 ## dots=  115 00 116 I=2,256 ## glm=  115 00 116 I=2，256	ATMR124
+34	1882	1917	HAND	      IF(ABS(ALT(I)-ALT(I-1)-200.).GT.2.) IF(NBRNCH-1) 140,140,137      	31,32	glm=      IF（ABS（ALT（I）-ALT（I-1）-2(0.）.GT.2.） IF（NBRNCH-1） 140,140,137 ## glm2=      IF（ABS（ALT（I）-ALT（I-1）-2CO.）.GT.2.） IF（NBRNCH-1） 140,140,137	ATMR125
+35	1917	1956	AGREE	  116 CONTINUE                                                          		lighton=  116 CONTINUE ## dots=  116 CONTINUE ## glm=  116 CONTINUE	ATMR126
+36	1969	1999	AGREE	      GO TO 270                                                         		lighton=      GO TO 270 ## dots=      GO TO 270 ## glm=      GO TO 270	ATMR127
+37	2011	2042	AGREE	  120 IRROR=-120                                                        		lighton=  120 IRROR=-120 ## dots=  120 IRROR=-120 ## glm=  120 IRROR=-120	ATMR128
+38	2053	2087	VOTED	  130 CALL FRROR(PROGRM,IRROR,ISOUT)                                    		lighton=  130 CALL FRROR(PROGRM,IRROR,ISOUT) ## lighton2=  130 CALL FRROR(PROGRM,IRROR,ISOUT) ## glm=  130 CALL ERROR(PROGRM,IRROR,ISOUT)	ATMR129
+39	2098	2129	AGREE	  137 IRF   -137                                                        		lighton=  137 IRF   -137 ## dots=  137 IRF   -137 ## glm=  137 IRF   -137	ATMR130
+40	2141	2172	AGREE	      GO    130                                                         		lighton=      GO    130 ## dots=      GO    130 ## glm=      GO    130	ATMR131
+41	2184	2214	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR132
+42	2227	2259	COMMENT	C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT                  		lighton=C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT ## dots=C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT ## glm=C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT	ATMR133
+43	2269	2300	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR134
+44	2312	2343	AGREE	  140 REWIND IRISE                                                      		lighton=  140 REWIND IRISE ## dots=  140 REWIND IRISE ## glm=  140 REWIND IRISE	ATMR135
+45	2355	2385	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR136
+46	2398	2429	COMMENT	C     DO THE TABLES BEGIN AT -10J0 METERS-                              		lighton=C     DO THE TABLES BEGIN AT -10J0 METERS- ## dots=C     DO THE TABLES BEGIN AT -1000 METERS- ## glm=C     DO THE TABLES BEGIN AT -10J0 METERS-	ATMR137
+47	2439	2471	COMMENT	C     IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS.		lighton=C     IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS. ## dots=C     IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS. ## glm=C     IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS.	ATMR138
+48	2484	2514	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR139
+49	2527	2558	AGREE	      IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150                           		lighton=      IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150 ## dots=      IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150 ## glm=      IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150	ATMR140
+50	2568	2599	HAND	      ALT(1)=-1000.                                                     	18	dots=      ALT(1)=-1000. ## dots2=      ALT(1)=-1000. ## glm=      ALT(1)=-1003. ## glm2=      ALT(1)=-1003.	ATMR141
+51	2611	2642	AGREE	      GO TO 200                                                         		lighton=      GO TO 200 ## dots=      GO TO 200 ## glm=      GO TO 200	ATMR142
+52	2655	2687	HAND	  150 WRITE(IRISE)ATMSUB                                                	24	lighton=  15[ WRITE(IRISE)ATMSU8 ## lighton2=  15( WRITE(IRISE)ATMSUB ## dots=  15( WRITE(IRISE)ATMSUB ## dots2=  15( WRITE(IRISE)ATHSUB ## glm=  15( WRITE(IRISE)ATMSU8 ## glm2=  15.(WRITE(IRISE)ATMSU8	ATMR143
+53	2697	2729	AGREE	  160 IGO=IGO+1                                                         		lighton=  160 IGO=IGO+1 ## dots=  160 IGO=IGO+1 ## glm=  160 IGO=IGO+1	ATMR144
+54	2740	2772	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR145
+55	2782	2814	COMMENT	C     CO THE TABLES HAVE AN ENTRY AT     0 METERS-                      		lighton=C     CO THE TABLES HAVE AN ENTRY AT     0 METERS- ## glm=C     CO THE TABLES HAVE AN ENTRY AT     0 METERS=	ATMR146
+56	2823	2855	COMMENT	C     IF NOT MAKE AN ENTRY AT     0 METERS FROM THE ARDC STANDARD ATMOS.		lighton=C     IF NOT MAKE AN ENTRY AT     0 METERS FROM THE ARDC STANDARD ATMOS. ## dots=C     IF NOT MAKE AN ENTRY AT     0 METERS FROM THE AROC STANDARD ATMOS. ## glm=C     IF NOT MAKE AN ENTRY AT     0 METERS FROM THE ARDC STANDARD ATMOS.	ATMR147
+57	2868	2899	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR148
+58	2912	2944	VOTED	      IF(ALT(1)   .LE. 0.0(1)GO TO 200                                  		lighton2=      IF(ALT(1)   .LE. 0.0(1)GO TO 203 ## dots=      IF(ALT(1)   .LE. 0.0(1)GO TO 200 ## dots2=      IF(ALT(1)   .LE. 0.0(1)GO TO 200	ATMR149
+59	2955	2986	AGREE	      WRITE(IRISE)ATMZRO                                                		lighton=      WRITE(IRISE)ATMZRO ## dots=      WRITE(IRISE)ATMZRO ## glm=      WRITE(IRISE)ATMZRO	ATMR150
+60	2997	3027	AGREE	      IGO=IGO+1                                                         		lighton=      IGO=IGO+1 ## dots=      IGO=IGO+1 ## glm=      IGO=IGO+1	ATMR151
+61	3042	3072	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	ATMR152
+62	3084	3114	COMMENT	C     STORE THE INPUT TABLES ON TAPE                                    		lighton=C     STORE THE INPUT TABLES ON TAPE ## dots=C     STORE THE INPUT TABLES ON TAPE ## glm=C     STORE THE INPUT TABLES ON TAPE	ATMR153
+63	3140	3171	NOISE	                                                                        		lighton=                                       71 ## dots=                                       71 ## glm=                                       71	
+64	3326	3338	NOISE	                                                                        			

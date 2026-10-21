@@ -1,0 +1,64 @@
+1	16	COUNT 152/41;COUNT 10/1	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \mathbb{E}
+2	56	COUNT 9/7	                                                                                	\text{1.}
+3	534	COUNT 84/68;COUNT 7/6	                                                                                	C******************************** CODE INSERTION POINTS ******************************** || - MAP 181
+4	577	COUNT 11/12	                                                                                	178 CONTINUE
+5	618	COUNT 11/9;COUNT 16/1	                                                                                	179 CONTINUE || \begin{array}{c}
+6	663	COUNT 60/67;COUNT 7/6	                                                                                	C ******************** CODE INSERTION POINT. ******************** || <table>
+7	706	COUNT 2/1	C                                                                               	C || 15
+8	747	COUNT 7/6	 170  WRITE (ISOUT,20) XGZ,YGZ                                                  	170 WRITE (ISOUT,20) XGZ,YGZ || <table>
+9	787	COUNT 29/28;COUNT 7/6	                                                                                	1702 IF(LEFT-NX) 1021,1022,1022 || <table>
+10	830	COUNT 7/2	 1021 NX=LEFT                                                                   	1021 NX=LEFT || <table>
+11	876	COUNT 4/2	 1022 MM=NX/(INC)                                                               	1022  MM=NX/(INC) || ;7H7
+12	921	COUNT 0/6	                                                                                	
+13	964	COUNT 7/6	C     LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST              	C LEFT IS USED HERE AS THE NUMBER OF PRINT COLUMNS IN THE LAST || <table>
+14	1007	COUNT 7/3	C     PRINTER STRIP                                                             	C PRINTER STRIP || <table>
+15	1052	COUNT 15/16;COUNT 0/3	                                                                                	LEFT = NX - M * (INC) || 
+16	1094	COUNT 7/6	      IF (LEFT.NE.0) GO TC 2023                                                 	IF (LEFT.NE.0) GO TC 2023 || <table>
+17	1130	COUNT 0/4;COUNT 11/1	                                                                                	 || \mathcal{L}
+18	1179	COUNT 7/2	      LEFT = INC                                                                	LEFT = INC || <table>
+19	1221	COUNT 2/1	C     STRIPS                                                                    	C STRIPS || 1 1
+20	1263	COUNT 20/19;COUNT 7/5	                                                                                	2023 00 110 ISTRIP=1,11 || <table>
+21	1301	COUNT 7/4	      MAPRUN=MAPRUN+1                                                           	MAPRUN = MAPRUN + 1 || <table>
+22	1350	COUNT 7/6	      IF (JC   .EQ.3)  GO TO 1023                                               	IF (JC .EQ.3) GO TO 1023 || <table>
+23	1388	OK	      ABSSA(1)=xCOORU                                                           	ABSSA(1) = xCOORU
+24	1437	COUNT 34/4	      DO 3023 IA8=2,10                                                          	DO 3023 IA8=2,10 || <table border="1" class="dataframe">
+25	1479	COUNT 7/6	 3023 ABSSA(IAB)=A9SSA(IAB-1)+TINC                                              	3023 ABSSA(IAB) = A9SSA(IAB-1) + TINC || <table>
+26	1517	COUNT 7/6	      WRITE (ISOUT,1)MAPRUA,CPMIO,NREQ                                          	WRITE (ISOUT,1)MAPRUA,CPMIO,NREQ || <table>
+27	1562	COUNT 7/4	      WRITE (ISOUT,16)ABSSA                                                     	WRITE (ISOUT,16)ABSSA || <table>
+28	1600	COUNT 34/4	 1023 KL=KKL+(NYMAP-1)*NXMAP                                                    	1023 KL = KKL + (NYMAP - 1) * NXMAP || <table border="1" class="dataframe">
+29	1642	COUNT 34/6	      IF(ISTRIF~M)103,104,103                                                   	IF (ISTRIF~M) 103, 104, 103 || <table border="1" class="dataframe">
+30	1689	COUNT 2/1	 104  KINC=LEFT-1                                                               	104 K INC=LEFT-1 || . 1
+31	1737	COUNT 22/2	      VLEFT=LEFT                                                                	VLEFT=LEFT || \mathcal{G} \mathcal{L}
+32	1779	COUNT 0/14;COUNT 12/2	                                                                                	 || \mathcal{L} は
+33	1821	COUNT 11/1	      GO TO 1031                                                                	GO TO 1031 || \mathcal{R}
+34	1864	COUNT 28/13;COUNT 11/1	                                                                                	\mathcal{L}C3 \quad KINC=INC-1 || \mathcal{L}
+35	1907	COUNT 0/10	                                                                                	
+36	1949	OK	 1931 CONTINUE                                                                  	1931 CONTINUE
+37	1994	COUNT 0/12	                                                                                	
+38	2036	COUNT 34/6	      IF(JC   .EQ.3) WRITE(MBTAPC)NYMAF,KLINK                                   	IF(JC .EQ.3) WRITE(MBTAPC) NYMAF, KLINK || <table border="1" class="dataframe">
+39	2077	COUNT 2/1	C                                                                               	C || c.
+40	2121	OK	C     ROWS                                                                      	C ROWS
+41	2165	COUNT 0/2	      YY=YMIN+DGY*FLOAT(NYMAP)                                                  	YY = YMIN + DGY * FLOAT(NYMAP) || 
+42	2208	OK	      00 200 J=1,NYMAP                                                          	00 200 J=1, NYMAP
+43	2251	COUNT 13/10;COUNT 10/1	                                                                                	K \neq = K L + K I N C || \mathbb{R}
+44	2295	OK	      KDC=0                                                                     	KDC = 0
+45	2338	COUNT 13/12;COUNT 10/1	                                                                                	DO := 01 K=KL, KH || \mathbb{R}
+46	2381	COUNT 7/5	      IF(OMAP(K).LT.CUTMAP)OMAP(K)=0.0                                          	IF(OMAP(K).LT.CUTMAP)OMAP(K)=0.0 || <table>
+47	2419	COUNT 11/2	 201  FSUM=FSUM+OMAP(K)                                                         	201 FSUM=FSUM+OMAP(K) || \leftarrow 4
+48	2466	OK	C                                                                               	C
+49	2508	COUNT 7/3	C     NUMBERS WITHIN ROWS                                                       	C NUMBERS WITHIN ROWS || <table>
+50	2553	COUNT 34/2	      DO 390 K=KL,KH                                                            	DO 390 K=KL, KH || <table border="1" class="dataframe">
+51	2596	COUNT 0/9	                                                                                	
+52	2637	COUNT 34/6	C     TRANSFER TO CODE FOR SELECTED PRESENTATION                                	C TRANSFER TO CODE FOR SELECTED PRESENTATION || <table border="1" class="dataframe">
+53	2679	COUNT 7/4	      GO TO N2,(150,151,301)                                                    	GO TO N2,(150,151,301) || <table>
+54	2718	COUNT 16/3	C                                                                               	C || \begin{array}{c}
+55	2764	COUNT 34/5	C 150 CODE FOR POWER OF TEN DISPLAY                                             	C 150 CODE FOR POWER OF TEN DISPLAY || <table border="1" class="dataframe">
+56	2802	COUNT 7/5	 150  IF(OMAP(K))105,106,107                                                    	150 IF(OMAP(K)) 105, 106, 107 || <table>
+57	2844	OK	 105  ASSIGN 121 TO N3                                                       254	105 ASSIGN 121 TO N3 || 254
+58	2897	COUNT 16/1	      OMAP(K)=-OMAP(K)                                                          	OMAP(K) = -OMAP(K) || \begin{array}{c}
+59	2928	COUNT 7/8;COUNT 34/6	                                                                                	GO TO 109 || <table border="1" class="dataframe">
+60	2978	COUNT 16/1	 1C7  ASSIGN 300 TO N3                                                          	1C7 ASSIGN 300 TO N3 || \begin{array}{c}
+61	3012	COUNT 20/21;COUNT 34/6	                                                                                	109 H = ALOG10(OMAP(K)) || <table border="1" class="dataframe">
+62	3060	COUNT 14/15;COUNT 7/5	                                                                                	H1 = AMOD(H, 1.C) || <table>
+63	3133	OK	                                       149                                      	149
+64	3309	COUNT 0/31	                                                                                	

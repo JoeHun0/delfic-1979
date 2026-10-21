@@ -1,0 +1,64 @@
+1	0	10	NOISE	                                                                        			
+2	23	37	NOISE	                                                                        			
+3	540	573	COMMENT	-DECK,SRTCNT                                                            		lighton=-DECK,SRTCNT ## dots=*DECK,SRTCNT	SRTCN1
+4	583	618	AGREE	      SUBROUTINE SRTCNT( X, Y, CNT, K, CRDLBL)                          		lighton=      SUBROUTINE SRTCNT( X, Y, CNT, K, CRDLBL) ## glm=      SUBROUTINE SRTCNT( X, Y, CNT, K, CRDLBL)	SRTCN2
+5	618	654	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTGN3
+6	668	701	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979        		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979	SRTCN4
+7	713	741	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN5
+8	753	783	NOISE	                                                                        			SRTCN6
+9	796	826	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN7
+10	840	873	COMMENT	C     GIVEN AN UNORDERED SET OF CONTOUR POINTS, THE POINTS ARE          		lighton=C     GIVEN AN UNORDERED SET OF CONTOUR POINTS, THE POINTS ARE ## glm=C     GIVEN AN UNOKDERED SET OF CONTOUR POINTS. THE POINTS ARE	SRTON8
+11	882	914	COMMENT	C     SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLCSEST POINT TO  		lighton=C     SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLCSEST POINT TO ## dots=C     SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLOSEST POINT TO ## glm=C     SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLCSEST POINT TO	SRTCN9
+12	925	957	COMMENT	C     ITS PREDECESSOR.  EACH CLOSED CONTOUR IS SEGREGATED.              		lighton=C     ITS PREDECESSOR.  EACH CLOSED CONTOUR IS SEGREGATED. ## dots=C     ITS PREDECESSOR.  EACH CLOSEO CONTOUR IS SEGREGATED. ## glm=C     ITS PREDECESSOR.  EACH CLOSED CONTOUR IS SEGREGATED.	SRTCN10
+13	970	999	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN11
+14	1011	1043	COMMENT	C **************************** GLOSSARY ******************************: 			SRTCN12
+15	1056	1085	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN13
+16	1099	1132	COMMENT	C        x,y  -    POINT CCURDINATES                                    		lighton=C        x,y  -    POINT CCURDINATES	SRTCN14
+17	1140	1171	COMMENT	C        CNT  -    CONTOUR VALUE                                        		lighton=C        CNT  -    CONTOUR VALUE ## glm=C        CNT  -    CONTOUR VALUE	SRTCN15
+18	1185	1215	COMMENT	C        K    -    NUMBER CF POINTS                                     		lighton=C        K    -    NUMBER CF POINTS ## glm=C        K    -    NUMBER CF POINTS	SRTCN16
+19	1228	1260	COMMENT	C        XX,YY-    FIRST PCINT ON A CONTOUR                             		lighton=C        XX,YY-    FIRST PCINT ON A CONTOUR ## glm=C        XX.YY-    FIRST PCINT ON A CONTOUR	SRTCN17
+20	1270	1302	COMMENT	C        XP,YP-    MOST RECENTLY FOUND POINT ON A CONTCUR               		lighton=C        XP,YP-    MOST RECENTLY FOUND POINT ON A CONTCUR ## glm=C        XP.YP-    MOST RECENTLY FOUND POINT ON A CONTCUR	SRTCN18
+21	1317	1344	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN19
+22	1359	1388	NOISE	                                                                        			SRTCN20
+23	1401	1430	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SRTCN21
+24	1443	1477	VOTED	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,		lighton=      COMMON /CONDAT/       IC(2?)    ,IHOB      ,IPNCH     ,IPOUT     , ## dots=      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     , ## glm=      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,	SRTCN22
+25	1486	1521	VOTED	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,		lighton=     1ISIN      ,ISOUT     ,JPOUT     ,KPUUT     ,KTAFE     ,LTAPE     , ## dots=     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     , ## glm=     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,	SRTCN23
+26	1529	1563	TIE	     2MARRAY    ,MBTAPE    ,MXREQ     ,SO        ,INFAM                 	18,19	lighton=     2MARRAY    ,MBTAPE    ,MXREQ     ,SO        ,INFAM ## lighton2=     2MARRAY    ,MBTAPE    ,MXREQ     ,SO        ,INFAM ## dots=     2MARRAY    ,H8TAPE    ,MXREQ     ,SO        ,INFAM ## dots2=     2MARRAY    ,H8TAPE    ,MXREQ     ,SO        ,INFAM	SRTCN24
+27	1572	1606	AGREE	      DIMENSION X(300), Y(300)                                          		lighton=      DIMENSION X(300), Y(300) ## dots=      DIMENSION X(300), Y(300) ## glm=      DIMENSION X(300), Y(300)	SRTGN25
+28	1617	1651	TIE	      DATA CLR, PROGRM/ 1.E30, 6HSRTONT/                                	37	dots=      DATA CLR, PROGRM/ 1.E30, 6HSRTONT/ ## dots2=      DATA CLR, PROGRM/ 1.E30, 6HSRTCNT/	SRTCN26
+29	1651	1689	VOTED	      DATA CODE/ 6HDELFIC/                                              		lighton=      CATA CODE/ 6HDELFIC/ ## dots=      DATA CODE/ 6H0ELFIC/ ## glm=      DATA CODE/ 6HDELFIC/	SRTCN27
+30	1701	1735	NOISE	                                                                        			SRTCN28
+31	1745	1776	VOTED	      ILOOP=0                                                           		lighton=      IL00P=0 ## dots=      ILOOP=0 ## glm=      ILOOP=0	SRTCN29
+32	1787	1818	VOTED	   40 IF( K .GT. 3) GO TO 55                                            		lighton=   49 IF( K .GT. 3) GO TO 55 ## dots=   40 IF( K .GT. 3) GO TO 55 ## glm=   40 IF( K .GT. 3) GO TO 55	SRTON30
+33	1829	1862	NONE	                                                                        			SRTCN31
+34	1874	1907	TIE	      DO 5C I=1,K                                                       	7,8	lighton2=      DO 5C I=1,K ## dots=      DO SC I=1,K ## glm=      00 5C I=1,K ## glm2=      00 5C I=1,K	SRTCN32
+35	1915	1948	VOTED	      WRITE( ISOUT, 1060) CNT,X(I), Y(I)                                		lighton=      WRITE( ISOUT, 1060) CNT,X(I), Y(I) ## dots=      WRITE( ISOUT, 1000) CNT,X(I), Y(I) ## glm=      WRITE( ISOUT, 1060) CNT,X(I), Y(I)	SRTCN33
+36	1959	1994	VOTED	   50 IF(IPNCH .GT. J) WRITE(IFNCH,2000)CNT, X(I),Y(I),CRULBL, CODE     		lighton=   50 IF(IPNCH .GT. J) WRITE(IFNCH,2000)CNT, X(I),Y(I),CFULBL, CODE ## dots=   50 IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, X(I),Y(I),CRULBL, CODE ## glm=   50 IF(IPNCH .GT. J) WRITE(IPNCH,2000)CNT, X(I),Y(I),CRULBL, CODE	SRTCN34
+37	2002	2036	VOTED	      IF(IPNCH .GT. 0) WRITE(IPNCH,2)J0)CNT, X(1),Y(1),CROLBL, CODE     		lighton=      IF(IPNCH .GT. 0) WRITE(IPNCH,2)J0)CNT, X(1),Y(1),CROLBL, CODE ## dots=      IF(IPNCH .GT. 0) WRITE(IPNCH,2)J0)CNT, X(1),Y(1),CROLBL, CODE ## glm=      IF(IPNCH .GT. 1) WRITE(IPNCH,21J0)CNT. X(1),Y(1),CRDLBL, CODE	SRTCN35
+38	2036	2079	VOTED	      WRITE(ISOUT, 1000)  CNT,X(1); Y(1)                                		lighton=      WRITE(ISOUT, 1000)  CNT,X(1); Y(1) ## dots=      WRITE(ISOUT, 1000)  CNT,X(1); Y(1) ## glm=      WRITE(ISOUT, 1600)  CNT,X(1); Y(1)	SRTCN36
+39	2089	2118	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	SRTCN37
+40	2133	2163	COMMENT	CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWO-POINT CLOSURE    		lighton=CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWO-POINT CLOSURE ## dots=CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWO-POINT CLOSURE ## glm=CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWC-POINT CLOSURE	SRTCN38
+41	2175	2206	VOTED	   55 IL00P=IL00P+1                                                     		lighton2=   55 IL00P=IL00P+1 ## dots=   55 IL00°=IL00P♦1 ## dots2=   55 ILOO°=ILOOP♦1 ## glm=   55 ILOOP=ILOOP+1 ## glm2=   55 IL00P=IL00P+1	SRTCN39
+42	2218	2250	SINGLE	      IF(ILOOF .GT. M) GO TO 10G                                        		lighton2=      IF(ILOOF .GT. M) GO TO 10G	SRTCN40
+43	2261	2295	TIE	      VEY=VEC(X(1),Y(1),X(2),Y(2))                                      	9	lighton2=      VEY=VEC(X(1),Y(1),X(2),Y(2)) ## dots2=      VEM=VEC(X(1),Y(1),X(2),Y(2)) ## glm2=      VEX=VEC(X(1),Y(1),X(2),Y(2))	SRTCN41
+44	2304	2334	TIE	      H=2                                                               	7,9	dots2=      H=2 ## glm=      2=H	SRTCN42
+45	2349	2380	SINGLE	      CO +F I=3,K                                                       		dots=      CO +F I=3,K	SRTCN43
+46	2390	2422	VOTED	      IF(VEC(X(1),Y(1),X(1),Y(I)) .GT. VEM) GO TO E0                    		lighton=      IF(VEC(X(1),Y(1),X(I),Y(I)) .GT. VEM) GO TO E0 ## lighton2=      IF(VEC(X(1),Y(1),X(I),Y(I)) .GT. VEM) GO TO 60 ## dots=      IF(VEC(X(1),Y(1),X(1),Y(1)) .GT. VEH) GO TO E0 ## dots2=      IF(VEC(X(1),Y(1),X(1),Y(1)) .GT. VEH) GO TO EQ ## glm2=      IF(VEC(X(1),Y(1),X(1),Y(I)) .GT. VEM) GO TO E0	SRTCN44
+47	2432	2461	AGREE	      M=I                                                               		lighton=      M=I ## dots=      M=I ## glm=      M=I	SRTCN45
+48	2476	2509	TIE	      V=4=VE3(X(1),Y(1),X(I),Y(I))                                      	13	lighton2=      VE4=VE3(X(1),Y(1),X(I),Y(I)) ## dots2=      V=4=VE)(X(1).Y(1),X(1),Y(1)) ## glm=      V=4=VEC(X(1),Y(1),X(I),Y(I))	SRTCN46
+49	2518	2549	TIE	   6) CONTINUE                                                          	5	lighton=   6] CONTINU? ## dots=   6) CONTINUE ## dots2=   6) CONTINUE ## glm=   63 CONTINUE ## glm2=   63 CONTINUE	SRTCN47
+50	2560	2592	VOTED	      00 65 I=2.K                                                       		lighton=      00 65 1=2.κ ## lighton2=      00 65 I=2,K ## dots=      00 65 I=2.5 ## glm=      00 65 I=2.K ## glm2=      00 65 I=2.K	SRTCN48
+51	2604	2634	TIE	      IF(I .EQ. M) GO TO ES                                             	17,26,27	lighton=      IF(I .EQ. M) GO TO ES ## lighton2=      IF(I .EQ. M) GO TO 65 ## dots=      IF(I .EQ. N) GO TO ES ## dots2=      IF(I .EQ. H) GO TO ES ## glm=      IF(I .EQ. H) GO TO 65 ## glm2=      IF(I .EQ. M) GO TO 65	SRTCN49
+52	2648	2679	TIE	      IF(VEC(X(M),Y(M),X(I),Y(I)) )LE. VEE) GO TO 10]                   	35,36,37,38,40,41,42,43,45,46,48,49,51,52,53	lighton2=      IF(VEC(x(M),Y(M),X(I),Y(I)) .LE. VEM) GO TO 10] ## dots=      IF(VEC(X(M),Y(M),X(I),Y(I)) =LE. VEH) GO TO 101 ## glm=      IF(VEC(X(M),Y(M),X(I),Y(I)) ).LE .VEM )G OT O1C ## glm2=      IF(VEC(X(M),Y(M),X(I),Y(I)) ).LE .VEH )G OT O10	SRTCN50
+53	2690	2721	VOTED	   65 CONTINUE                                                          		lighton2=   65 CONTINU? ## glm=   65 CONTINUE ## glm2=   65 CONTINUE	SRTCN51
+54	2737	2764	VOTED	      XP=X(1)                                                           		dots2=      xP=x(1) ## glm=      XP=X(1) ## glm2=      XP=X(1)	SRTCN52
+55	2779	2808	AGREE	      YP=Y(1)                                                           		glm=      YP=Y(1) ## glm2=      YP=Y(1)	SRTCN53
+56	2820	2850	VOTED	      00 7. I=2.K                                                       		lighton=      00 7L I=2.κ ## lighton2=      00 7. I=2.K ## dots2=      00 7. I=2.k ## glm=      00 7. I=2.K ## glm2=      00 7. I=2.K	SRTCN54
+57	2864	2894	AGREE	      X(I-1)=X(I)                                                       		glm=      X(I-1)=X(I) ## glm2=      X(I-1)=X(I)	SRTCN55
+58	2907	2937	SINGLE	   72 V(I-1)=V(I)                                                       		glm2=   72 V(I-1)=V(I)	SRTCN56
+59	2950	2977	TIE	      X(K)=XP                                                           	7,12	glm=      X(K)=XP ## glm2=      x(K)=xP	SRTCN57
+60	2991	3019	VOTED	      Y(K)=YP                                                           		dots=      Y(K)=YD ## glm=      Y(K)=YP ## glm2=      Y(K)=YP	SRTCN58
+61	3035	3064	VOTED	      GO TO 35                                                          		lighton2=      GO TO 55 ## glm=      GO TO 35 ## glm2=      GO TO 35	SRTCN59
+62	3078	3108	COMMENT	COMMERCE CALCULATION OF A CONTOUR CLUSURE                               		lighton=COMMERCE CALCULATION OF A CONTOUR CLUSURE ## glm=COMPENCE CALCULATION OF A CONTOUR CLOSURE	SRTCH50
+63	3143	3173	NOISE	                                                                        		lighton=                                        168 ## dots=                                        168 ## glm=                                        168	
+64	3299	3323	NOISE	                                                                        			

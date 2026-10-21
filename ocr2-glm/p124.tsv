@@ -1,0 +1,9 @@
+10	1056	OK	      ZBH(K)=ZCH(K)                                                             	ZBH(K) = ZCH(K)
+12	1142	OK	      Z9H(KBHX)=ZCH(KBHX)                                                       	Z9H(KBHX) = ZCH(KBHX)
+13	1185	OK	      ZCH(KBHX)= 2.0*ZBH(KBHX) - ZCH(KBHX-1)                                    	ZCH(KBHX) = 2.0*ZBH(KBHX) - ZCH(KBHX-1)
+16	1314	OK	 250  ZBH(1)=ZMIN                                                               	250 ZBH(1)=ZMIN
+18	1398	OK	 260  ZBH(I)=2.0*ZCH(I-1) - ZBH(I-1)                                            	260 ZBH(I) = 2.0 * ZCH(I-1) - ZBH(I-1)
+24	1657	OK	      ISTOP=IGO+IREC=1                                                          	ISTOP=IGO+IREC=1
+26	1745	COUNT 48/47	                                                                                	301 WRITE(ISOUT,1)IGC,ISTOP,(ZBH(K),K=IG0,ISTOP).
+27	1786	COUNT 14/15	                                                                                	WRITE(ISOUT,4)
+29	1862	COUNT 16/17	                                                                                	ISTOP=IGO+IREC-1

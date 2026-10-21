@@ -1,0 +1,11 @@
+3	570	COUNT 24/25	                                                                                	SUBROUTINE MAP(OMAP,NMAP)
+14	1041	COUNT 14/38	                                                                                	COMMON /CONOAT/
+19	1248	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,        	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX ,
+22	1385	OK	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK ,
+26	1558	OK	      DIMENSION JNAP(20) ,CHAP(NMAP)                                            	DIMENSION JNAP(20),CHAP(NMAP)
+30	1731	COUNT 32/37	                                                                                	1 FMR1/6H(1X, .6H(5X, .6H) .6H .6HA6 ,
+35	1945	COUNT 44/45	                                                                                	1 FORMAT(1H1,5HTRIPI3,5X, 12A6, 5X; 8HMAP TYPEI3)
+40	2155	COUNT 60/59	                                                                                	6 FORMAT(16H0DISPLAY METHOD 14,33H IS NOT AVAILABLE. USED METHOD 1.0)
+45	2372	OK	 11   .FORMAT(15X,24EXPOSURE RATE AT TIME H+F10.1,9H SECONDS.)                  	11. FORMAT (15X, 24EXPOSURE RATE AT TIME H+F 10.1,9H SECONDS.)
+47	2461	COUNT 15/16	                                                                                	IS AND INFINITY.)
+51	2634	OK	     1PEMENTS.)                                                                 	1 PEMENTS.)

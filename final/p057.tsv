@@ -1,0 +1,58 @@
+1	44	96	NOISE	                                                                        			
+2	111	132	NOISE	                                                                        			
+3	851	885	COMMENT	*DECK,SETTLE                                                            		lighton=*DECK,SETTLE ## dots=*DECK,SETTLE ## glm=*DECK,SETTLE	SETTL1
+4	895	931	AGREE	      SUBROUTINE SETTLE(O,RHOP,RHO,ETA,T,P,V,I)                         		dots=      SUBROUTINE SETTLE(O,RHOP,RHO,ETA,T,P,V,I) ## glm=      SUBROUTINE SETTLE(O,RHOP,RHO,ETA,T,P,V,I)	SETTL2
+5	931	970	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SETTL3
+6	980	1015	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	SETTL4
+7	1023	1059	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SETTL5
+8	1073	1108	COMMENT	C     COMPUTES STILL-AIR SETTLING SPEED OF RIGID SPHERES ACCORDING TO   		lighton=C     COMPUTES STILL-AIR SETTLING SPEED OF RIGID SPHERES ACCORDING TO	SETTL6
+9	1108	1146	COMMENT	C     THE EQUATIONS OF BEARD (JAS33,852(1976)) FOR SMALL SPHERES        		lighton=C     THE EQUATIONS OF BEARD (JAS33,852(1976)) FOR SMALL SPHERES ## glm=C     THE EQUATIONS OF BEARD (JAS33,852(1976)) FOR SMALL SPHERES	SETTE7
+10	1146	1188	COMMENT	C     (CORR .LE. 84.175), AND DAVIES(PROC.PHYS.SOC.(LONDON)57,256(1945))		lighton=C     (CORR .LE. 84.175), AND DAVIES(PROC.PHYS.SOC.(LONDON)57,256(1945)) ## dots=C     (CORR .LE. 84.175), AND DAVIES(PROC.PHYS.SOC.(LONDON)57,256(1945)) ## glm=C     (CORR .LE. 84.175), AND DAVIES(PROC.PHYS.SOC.(LCNOON)57,256(1945))	SETTL8
+11	1188	1230	COMMENT	C     FOR LARGER SPHERES.                                               		lighton=C     FOR LARGER SPHERES. ## dots=C     FOR LARGER SPHERES. ## glm=C     FOR LARGER SPHERES.	SEITL9
+12	1238	1273	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SETTL10
+13	1282	1317	COMMENT	C     GLOSSARY (SI UNITS)                                               		lighton=C     GLOSSARY (SI UNITS) ## glm=C     GLOSSARY (SI UNITS)	SETTL11
+14	1317	1358	COMMENT	C     C       4.0*G/3.0   WHERE G IS ACCELERATION OF GRAVITY (9.8)      		lighton=C     C       4.0*G/3.0   WHERE G IS ACCELERATION OF GRAVITY (9.8) ## glm=C     C       4.0*G/3.0   WHERE G IS ACCELERATION OF GRAVITY (9.8)	SETTL12
+15	1366	1400	COMMENT	C     CORR    DAVIES NUMBER                                             		dots=C     CORR    DAVIES NUMBER ## glm=C     CORR    DAVIES NUMBER	SETTL13
+16	1412	1445	COMMENT	C     D       SPHERE DIAMETER                                           		lighton=C     D       SPHERE DIAMETER ## glm=C     D       SPHERE DIAMETER	SETTL14
+17	1445	1486	COMMENT	C     ETA     VISCOSITY                                                 		glm=C     ETA     VISCOSITY	SETTL15
+18	1496	1531	COMMENT	C     P       PRESSURE                                                  		lighton=C     P       PRESSURE ## dots=C     P       PRESSURE ## glm=C     P       PRESSURE	SETTL16
+19	1540	1573	COMMENT	C     RHO     FLUID DENSITY                                             		lighton=C     RHO     FLUID DENSITY ## glm=C     RHO     FLUID DENSITY	SETTL17
+20	1583	1617	COMMENT	C     RHOP    SPHERE DENSITY                                            		lighton=C     RHOP    SPHERE DENSITY ## glm=C     RHOP    SPHERE DENSITY	SETTL18
+21	1625	1659	COMMENT	C     T       TEMPERATURE                                               		lighton=C     T       TEMPERATURE ## dots=C     T       TEMPERATURE ## glm=C     T       TEMPERATURE	SETTL19
+22	1668	1702	COMMENT	C     V       SETTLING SPEED                                            		lighton=C     V       SETTLING SPEED ## glm=C     V       SETTLING SPEED	SETTL20
+23	1710	1744	COMMENT	C     I       ACCURACY INDICATOR                                        		lighton=C     I       ACCURACY INDICATOR ## dots=C     I       ACCURACY INDICATOR ## glm=C     I       ACCURACY INDICATOR	
+24	1755	1788	COMMENT	C             I = 0 RESULT IS ACCURATE                                  		glm=C             I = 0 RESULT IS ACCURATE	SETTL22
+25	1797	1831	COMMENT	C             I = 1 RESULT IS INAGGURATE, DAVIES NUMBER IS TOO LARGE    		glm=C             I = 1 RESULT IS INAGGURATE, DAVIES NUMBER IS TOO LARGE	SETTL23
+26	1839	1873	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SETTL24
+27	1882	1916	AGREE	      DATA C/13.066667/                                                 		lighton=      DATA C/13.066667/ ## dots=      DATA C/13.066667/ ## glm=      DATA C/13.066667/	SETTL25
+28	1926	1959	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SETTL26
+29	1969	2002	AGREE	      I = 7                                                             		lighton2=      I = 7 ## glm=      I = 7	SETTL27
+30	2012	2045	COMMENT	COMPUTE DAVIES NUMBER                                                   		lighton=COMPUTE DAVIES NUMBER ## dots=COMPUTE DAVIES NUMBER ## glm=COMPUTE DAVIES NUMBER	SETTL28
+31	2056	2089	AGREE	      CDRR = C*(RHOP-RHO)*RHO*C**3/ETA**2                               		dots2=      CDRR = C*(RHOP-RHO)*RHO*C**3/ETA**2 ## glm=      CDRR = C*(RHOP-RHO)*RHO*C**3/ETA**2	SETTL29
+32	2097	2130	COMMENT	CHECK DAVIES NUMBER VALUE FOR ROUTING                                   		lighton=CHECK DAVIES NUMBER VALUE FOR ROUTING ## dots=CHECK DAVIES NUMBER VALUE FOR ROUTING ## glm=CHECK DAVIES NUMBER VALUE FOR ROUTING	SETTL30
+33	2140	2177	VOTED	      IF(CDRR.GT.  0.3261) IF(CDRR-84.175) 1(0,100.200                  		lighton=      IF(CDRR.GT.  0.3261) IF(CDRR-84.175) 1(J,100.200 ## dots=      IF(CDRR.GT.  0.3261) IF(CDRR-84.175) 1(0,100.200 ## glm=      IF(CDRR.GT.  0.3261) IF(CDRR-84.175) 1(0,100,200	SETTL31
+34	2177	2217	COMMENT	COMPUTE VIA STOKES-LAW EQUATION                                         		lighton=COMPUTE VIA STOKES-LAW EQUATION ## dots=COMPUTE VIA STOKES-LAW EQUATION ## glm=COMPUTE VIA STOKES-LAW EQUATION	SETTL32
+35	2217	2259	HAND	      V = CDRR*ETA/(24.0*RHO*D)                                         		glm=      V = CDRR*ETA/(24.0*RHO*D)	SETTL33
+36	2269	2303	HAND	      GO TO 530                                                         	15	lighton=      GO TO 537 ## lighton2=      GO TO 530 ## dots=      GO TO 530 ## dots2=      GO TO 5JN ## glm=      GO TO 539 ## glm2=      GO TO 539	SETTL34
+37	2312	2345	COMMENT	COMPUTE VIA BEARDS EQUATION                                             		lighton=COMPUTE VIA BEARDS EQUATION ## dots=COMPUTE VIA BEARDS EQUATION ## glm=COMPUTE VIA BEARDS EQUATION	SETTL35
+38	2354	2388	AGREE	 100  Y = ALOG(CORR)                                                    		lighton= 100  Y = ALOG(CORR) ## glm= 100  Y = ALOG(CORR)	SETTL36
+39	2397	2433	HAND	      V = ETA/(RHO*D)*EXP(-3.18657 + Y*(0.992696 + Y*(-0.153193E-2      		glm=      V = ETA/(RHO*D)*EXP(-3.18657 + Y*(0.992696 + Y*(-0.153193E-2	SETTL37
+40	2441	2475	VOTED	     1+Y*(-0.987059E-3 + Y*(-0.578878E-3 + Y*(0.855176E-4               		dots=     1+y*(-0.987059E-3 + y*(-0.578878E-3 + y*(0.855176E-4 ## dots2=     1+Y*(-0.987059E-3 + Y*(-0.578878E-3 + Y*(0.855176E-4 ## glm=     1+Y*(-0.987059E-3 + Y*(-0.578878E-3 + Y*(0.855176E-4	SETTL38
+41	2484	2517	HAND	     2-Y*0.327815E-5))))))                                              		glm=     2-Y*0.327815E-5))))))	SETTL39
+42	2526	2560	AGREE	      GO TO 500                                                         		lighton=      GO TO 500 ## dots=      GO TO 500 ## glm=      GO TO 500	SETTL40
+43	2569	2604	COMMENT	COMPUTE VIA DAVIES EQUATIONS                                            		lighton=COMPUTE VIA DAVIES EQUATIONS ## dots=COMPUTE VIA DAVIES EQUATIONS ## glm=COMPUTE VIA DAVIES EQUATIONS	SETTL41
+44	2612	2646	VOTED	 200  IF(CORR.GT.140.)IF(CORR-4.5E7)400,400,300                         		lighton= 200  IF(CORR.GT.140.)IF(CORR-4.5E7)400,400,300 ## dots= 200  IF(CORR.GT.140.)IF(CORR-4.5E7)400,400,300 ## glm= 200  IF(CDRR.GT.140.)IF(CDRR-4.5E7)400,400,300	SETTL42
+45	2654	2690	HAND	      V = ETA/(RHO*D)*CORR*(4.16666667E-2 + CORR*(-2.3363E-4            		glm=      V = ETA/(RHO*D)*CORR*(4.16666667E-2 + CORR*(-2.3363E-4	SETTL43
+46	2700	2732	HAND	     1+CDRR*(2.0154E-6-CDRR*6.9105E-9)))                                			SETTL44
+47	2732	2774	AGREE	      GO TO 500                                                         		lighton=      GO TO 500 ## dots=      GO TO 500 ## glm=      GO TO 500	SETTL45
+48	2784	2817	AGREE	 300  I = 1                                                             		lighton= 300  I = 1 ## dots= 300  I = 1 ## glm= 300  I = 1	SETTL46
+49	2828	2862	AGREE	 400  Y = ALOG10(CORR)                                                  		lighton= 400  Y = ALOG10(CORR) ## glm= 400  Y = ALOG10(CORR)	SETTL47
+50	2870	2903	HAND	      V = ETA/(RHO*D)*(10.0)**(-1.29536 + Y*(0.986 + Y*(-0.046677+      		glm=      V = ETA/(RHO*D)*(10.0)**(-1.29536 + Y*(J.986 + Y*(-0.046677+	SETTL48
+51	2914	2947	HAND	     1Y*1.1235E-3)))                                                    		lighton=     1Y*1.1235E-3111	SETTL49
+52	2957	2990	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	SETTL50
+53	2998	3030	COMMENT	CORRECT SETTLING SPEED FCR SLIP                                         		lighton=CORRECT SETTLING SPEED FCR SLIP ## dots=CORRECT SETTLING SPEED FOR SLIP ## glm=CORRECT SETTLING SPEED FCR SLIP	SETTL51
+54	3043	3078	AGREE	 500  V = V*(1.0 + 54.088*ETA*SQRT(T)/F/D)                              		lighton= 500  V = V*(1.0 + 54.088*ETA*SQRT(T)/F/D) ## glm= 500  V = V*(1.0 + 54.088*ETA*SQRT(T)/F/D)	SETTL52
+55	3086	3119	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	SETTL53
+56	3129	3162	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	SETTL54
+57	3202	3233	NOISE	                                                                        			
+58	3346	3381	NOISE	                                                                        			

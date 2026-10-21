@@ -1,0 +1,29 @@
+1	22	COUNT 0/26	                                                                                	
+2	41	COUNT 0/18	                                                                                	
+3	573	OK	 7202 EX=BZ2                                                                    	7202 EX=BZ2
+8	788	OK	      LL=LODD+3                                                                 	LL=LODD+3
+9	830	OK	      DO 1750 J=LODD,LL                                                         	DO 1750 J=LODD,LL
+10	873	COUNT 36/22	                                                                                	\text{GOPST}(9, J) = \text{OPST}(7, MET)
+11	914	COUNT 48/27	                                                                                	\text{GOPST}(10, J) = \text{DPST}(8, NBT) / \text{CNT}
+12	958	COUNT 21/14	                                                                                	\text{GOPST}(7, J) = BZ2
+13	1001	COUNT 36/22	                                                                                	\text{GOPST}(8,J) = \text{DPST}(6,MET)
+14	1044	COUNT 36/22	                                                                                	\text{GOPST}(6,J) = \text{DPST}(2,MET)
+15	1085	COUNT 36/22	                                                                                	\text{GOPST}(4,J) = \text{DPST}(4,MBT)
+16	1130	COUNT 34/22	                                                                                	\text{GOPST}(3, J) = \text{DPST}(1, J)
+17	1172	COUNT 32/18	                                                                                	1050 \text{ GOPST}(5, J) = \text{CMA}
+18	1214	COUNT 23/16	                                                                                	\text{GOPST}(1, L00D) = XR
+19	1259	COUNT 37/16	                                                                                	\text{GOPST}(2, \text{LODD}) = \text{YR}
+21	1345	COUNT 29/16	                                                                                	\text{GDPST}(1,1000)=X\bar{R}
+22	1389	COUNT 38/17	                                                                                	\text{GOPST}(2, \text{LODD}) = -\text{YR}
+23	1430	OK	      L000=L000+1                                                               	L000=L000+1
+24	1473	COUNT 31/17	                                                                                	\text{GDPST}(1, L0DD) = -\text{XR}
+25	1517	COUNT 31/17	                                                                                	\text{GOPST}(2, LODO} = -\text{YR}
+27	1602	COUNT 38/17	                                                                                	\text{GOPST}(1, \text{LODC}) = -\text{XR}
+28	1646	COUNT 37/16	                                                                                	\text{GOPST}(2, \text{LODD}) = \text{YR}
+40	2167	COUNT 67/66	                                                                                	WRITE(IRISE)(GOPST(1,J),GOPST(2,J),GOPST(3,J),GOPST(4,J),GOPST(5,J)
+53	2717	COUNT 67/66	                                                                                	WRITE(IRISE)(GOPST(1,J),GOPST(2,J),GOPST(3,J),GOPST(4,J),GOPST(5,J)
+54	2760	COUNT 66/67	                                                                                	1), GDPST(6,J), GDPST(7,J), GDPST(8,J), GDPST(9,J), GCPST(10,J), J=1,100
+55	2802	OK	     2)                                                                         	2)
+56	2847	OK	      LODD=C                                                                    	LODD=C
+59	2976	OK	      FEWIND JRISE                                                              	FEWIND JRISE
+63	3296	COUNT 0/35	                                                                                	

@@ -1,0 +1,7 @@
+10	851	OK	      HOB=HEIGHT/.3048                                                          	HOB=HEIGHT/.3048
+14	1022	OK	      READ(ISIN,3)NPRNT(6),NPRAT(7),(NPRNT(I),I=9,13),NPRNT(15)                 	READ (IS IN, 3) NPRNT(6), NPRAT(7), (NPRNT(I), I=9,13), NPRNT(15)
+24	1456	COUNT 16/6	                                                                                	\mathcal{I}HOB = 0
+30	1711	OK	      ZSCM = HOB/W**(0.3333333333)                                              	ZSCM = HOB/W** (0.3333333333)
+33	1841	OK	      FW=FW*F0                                                                  	FW = FW * F0
+50	2569	OK	     1 RO(I),PSIZ(I),PMAS(I),I=1,NIJ)                                           	1  RO(I), PSIZ(I), PMAS(I), I=1, NIJ)
+55	2783	OK	     1 R0(I),PSIZ(I),PMAS(I),I=1,NIJ)                                           	1  R0(I), PSIZ(I), PMAS(I), I=1, NIJ)

@@ -1,0 +1,11 @@
+2	570	OK	      ZP=ZPAR（J）                                                                	ZP=ZPAR（J）
+5	701	OK	      PHAS=PSAM(J)                                                              	PHAS=PSAM(J)
+6	744	OK	      RWAF=RWFR(J)/2.                                                           	RWAF=RWFR(J)/2.
+7	786	OK	      DWAF=DWFR(J)                                                              	DWAF=DWFR(J)
+9	872	OK	      VHAF=VHFR(J)                                                              	VHAF=VHFR(J)
+14	1087	OK	      H=(ZMIN+ZMAX)/2.                                                          	H = (ZMIN + ZMAX) / 2.
+32	1858	COUNT 46/47	                                                                                	TMAX=TMAX+（ZBH(IZ+1)-ZBH(IZ)）/（CAVS(IZ)-HAVGK)
+35	1987	OK	      TMAX=TMAX + （ZMAX - ZBH(KBHX)）/（CAVS(KBHX) - HAVGK)                       	TMAX=TMAX+（ZMAX-ZBH(KBHX)）/（CAVS(KBHX)-HAVGK)
+37	2073	COUNT 45/46	                                                                                	IF（TMAX.GT.SLOP*TIMEX OR. TMAX.LT.J.0）ZLIM=ZMAX
+50	2632	OK	 1250 TSUM(K)=TSUM(K-1)+(ZBH(K) - ZBH(K-1))/CAVS(K-1)                           	1250 TSUM(K) = TSUM(K-1) + (ZBH(K) - ZBH(K-1))/CAVS(K-1)
+54	2805	OK	      DOWN=(FAV*ELJY/SIGH)**2                                                   	DOWN = (FAV*ELJY/SIGH)**2

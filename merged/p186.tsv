@@ -1,0 +1,46 @@
+1	30	44	NOISE	                                                                        			
+2	763	797	AGREE	      IF (NAT.GE.27.AND.NAT.LE.66) GO TO 1                              		lighton=      IF (NAT.GE.27.AND.NAT.LE.66) GO TO 1 ## dots=      IF (NAT.GE.27.AND.NAT.LE.66) GO TO 1 ## glm=      IF (NAT.GE.27.AND.NAT.LE.66) GO TO 1	FRATI50
+3	808	842	VOTED	      WRITE (KOUT,513) NAT,MASS                                         		lighton=      WRITE (KOUT,513) NAT,MASS ## dots=      WRITE (KOUT,513) NAT,MASS ## glm=      WRITE (KOUT.513) NAT,MASS	FRATI51
+4	850	881	VOTED	      ABUND = 0.0                                                       		lighton=      ABUND = 0.0 ## dots=      A5UND = 0.0 ## glm=      ABUND = 0.0	FRATI52
+5	895	925	VOTED	      GO TO 10                                                          		lighton=      GO TO 19 ## dots=      GO TO 10 ## glm=      GO TO 10	FRATI53
+6	937	970	VOTED	    1 IF (MASS.EQ.LAST)GO TO 3                                          		lighton=    1 IF (MASS.EQ.LAST)GO TO J ## dots=    1 IF (MASS.EQ.LAST)GO TO 3 ## glm=    1 IF (MASS.EQ.LAST)GO TO 3	FRATI54
+7	979	1010	AGREE	      MCHN = MCHN + 1                                                   		dots=      MCHN = MCHN + 1 ## glm=      MCHN = MCHN + 1	FRATI55
+8	1024	1055	VOTED	      IF (NOT0) FR(MCHN) = RFRC/CHN                                     		lighton=      IF (NOTO) FR(MCHN) = RFRC/CHN ## dots=      IF (NOT0) FR(MOHN) = RFRC/CHN ## glm=      IF (NOT0) FR(MCHN) = RFRC/CHN	FRATI56
+9	1066	1098	AGREE	      RFRC = 0.0                                                        		dots=      RFRC = 0.0 ## glm=      RFRC = 0.0	FRATI57
+10	1109	1140	AGREE	      CHN = 0.0                                                         		dots=      CHN = 0.0 ## glm=      CHN = 0.0	FRATI58
+11	1153	1183	VOTED	      NOT0 = .FALSE.                                                    		lighton=      NOTO = .FALSE. ## dots=      NOT0 = .FALSE. ## glm=      NOT0 = .FALSE.	FRATI59
+12	1195	1226	AGREE	    3 ABUNO = ABUNDO(MB)                                                		lighton=    3 ABUNO = ABUNDO(MB) ## dots=    3 ABUNO = ABUNDO(MB) ## glm=    3 ABUNO = ABUNDO(MB)	FRATI60
+13	1238	1268	AGREE	      LAST = MASS                                                       		lighton=      LAST = MASS ## dots=      LAST = MASS ## glm=      LAST = MASS	FRATI61
+14	1282	1316	VOTED	      IF (ABUND)10,10,4                                                 		lighton=      IF (ABUND)10,10,4 ## dots=      IF (ABUND)10,10,4 ## glm=      IF (ABUND)10.10.4	FRATI62
+15	1327	1357	AGREE	    4 NOT0 = .TRUE.                                                     		lighton=    4 NOT0 = .TRUE. ## dots=    4 NOT0 = .TRUE. ## glm=    4 NOT0 = .TRUE.	FRATI63
+16	1366	1400	VOTED	      IF (BOIL(NAT-26).GE.SLOTMP) RFRC = RFRC + ABUND                   		lighton=      IF (BOIL(NAT-26).GE.SLOTMP) RFRC = RFRC + ABUND ## dots=      IF (BOIL(NAT-26).GE.SLOTHP) RFRC = RFRC + ABUND ## glm=      IF (BOIL(NAT-26).GE.SLDTMP) RFRC = RFRC + ABUND	FRATI64
+17	1410	1440	TIE	      CHN = CHN + ABUND                                                 	20	dots=      CHN = CHN + ABUND ## dots2=      CHN = CHN + ABUND ## glm=      CHN = CHN + A8UND ## glm2=      CHN = CHN + A8UND	FRATI65
+18	1452	1483	AGREE	   10 CONTINUE                                                          		lighton=   10 CONTINUE ## dots=   10 CONTINUE ## glm=   10 CONTINUE	FRATI66
+19	1494	1525	VOTED	      MCHN = MCHN + 1                                                   		lighton2=      MCHN = MCHN + 1 ## dots=      MÖHN = MÖHN + 1 ## dots2=      MÖHN = MÖHN + 1 ## glm=      MCHN = MCHN + 1 ## glm2=      MCHN = MCHN + 1	FRATI67
+20	1537	1570	VOTED	      IF (NOT0) FR(MCHN) = RFRC/CHN                                     		lighton=      IF (NOTO) FR(MCHN) = RFRC/CHN ## dots=      IF (NOT0) FR(MOHN) = RFRC/CHN ## glm=      IF (NOT0) FR(MCHN) = RFRC/CHN	FRATI68
+21	1582	1611	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	FRATI69
+22	1624	1657	AGREE	      IF (NPRNT(6)) GO TO 22                                            		lighton=      IF (NPRNT(6)) GO TO 22 ## glm=      IF (NPRNT(6)) GO TO 22	FRATI70
+23	1666	1700	VOTED	   19 00 32 L = 1,HCHN                                                  		lighton=   19 00 32 L = 1,MCHN ## dots=   19 00 32 L = 1,HCHN ## glm=   19 00 32 L = 1，HCHN	FRATI71
+24	1711	1742	TIE	      BSUBK(L) = SQRT(FR(L)) - 1.0                                      	10,12,14,22,25,28	dots=      BSUBK(L) = SQRT(FR(L)) - 1.0 ## dots2=      ASUBK(L) = SQRT(FR(L)) - 1.0 ## glm=      BSU8K（L） = SQRT（FR（L)） - 1.0 ## glm2=      BSU8K（L） = SQRT（FR（L)） = 1.0	FRATI72
+25	1753	1783	VOTED	      POWER = 8SUBK(L)                                                  		lighton2=      POWER = 8SUBK(L) ## dots=      POKER = 8SUBK(L) ## dots2=      POKER = 8SUBK(L) ## glm=      POWER = 8SUBK(L) ## glm2=      POWER = 8SUBK(L)	FRATI73
+26	1795	1825	AGREE	      SUM = 0.0                                                         		lighton=      SUM = 0.0 ## dots=      SUM = 0.0 ## glm=      SUM = 0.0	FRATI74
+27	1838	1871	VOTED	      00 20 M = 1.ITAB                                                  		lighton=      00 20 M = 1.ITAB ## dots=      00 20 M = 1,ITAB ## glm=      00 20 M = 1.ITAB	FRATI75
+28	1880	1913	AGREE	   20 SUM = SUM + FMASS(M)*PSIZE(M)**POWER                              		lighton=   20 SUM = SUM + FMASS(M)*PSIZE(M)**POWER ## dots=   20 SUM = SUM + FMASS(M)*PSIZE(M)**POWER ## glm=   20 SUM = SUM + FMASS(M)*PSIZE(M)**POWER	FRATI76
+29	1925	1955	VOTED	   32 ECF(L) = 1.0/SUM                                                  		lighton=   32 ECF(L) = 1.0/SUM ## dots=   32 ECF(L) = 1.0/SUM ## glm=   32 ECF（L） = 1.0/SUM	FRATI77
+30	1968	1999	AGREE	      IF (NPRNT(7)) GO TO 23                                            		lighton=      IF (NPRNT(7)) GO TO 23 ## dots=      IF (NPRNT(7)) GO TO 23 ## glm=      IF (NPRNT(7)) GO TO 23	FRATI78
+31	2008	2039	AGREE	   21 IGO = .TRUE.                                                      		lighton=   21 IGO = .TRUE. ## dots=   21 IGO = .TRUE. ## glm=   21 IGO = .TRUE.	FRATI79
+32	2053	2083	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	FRATI80
+33	2098	2130	AGREE	   22 WRITE (KOUT,501)                                                  		lighton=   22 WRITE (KOUT,501) ## dots=   22 WRITE (KOUT,501) ## glm=   22 WRITE (KOUT,501)	FRATI81
+34	2140	2174	VOTED	      WRITE (KOUT,502) (J,FR(J),J=1,MCHN)                               		lighton=      WRITE (KOUT,502) (J,FR(J),J=1,MCHN) ## dots=      WRITE (KOUT,502) (J,FR(J),J=1,MCHN) ## glm=      WRITE (KOUT,502) （J，FR(J)，J=1，MCHN）	FRATI82
+35	2184	2214	NONE	                                                                        			FRATI83
+36	2227	2260	AGREE	   23 WRITE (KOUT,503)                                                  		lighton=   23 WRITE (KOUT,503) ## dots=   23 WRITE (KOUT,503) ## glm=   23 WRITE (KOUT,503)	FRATI84
+37	2269	2303	VOTED	      WRITE (KOUT,502) (K,BSUBK(K),K=1,MCHN)                            		lighton=      WRITE (KOUT,502) (K,ESUBK(K),K=1,MCHN) ## dots=      WRITE (KOUT,502) (K,BSUBK(K),K=1,NCHN) ## glm=      WRITE (KOUT,502) （K，BSUBK(K），K=1，MCHN）	FRATI85
+38	2313	2344	AGREE	      GO TO 21                                                          		lighton=      GO TO 21 ## dots=      GO TO 21 ## glm=      GO TO 21	FRATI86
+39	2355	2391	VOTED	571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))     		lighton2=5'1   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X)) ## dots=571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X)) ## dots2=571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X)) ## glm2=571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))	FRATI87
+40	2391	2431	VOTED	502   FORMAT ( 5(7X, I2, 1PE12.4))                                      		lighton=5J2   FORMAT ( 5(7X, I2, 1PE12.4)) ## dots=502   FORMAT ( 5(7X, 12, 1PE12.4)) ## glm=502   FORMAT ( 5(7X, I2, 1PE12.4))	FRATI38
+41	2440	2474	NONE	                                                                        			FRATI89
+42	2483	2518	VOTED	  513 FORMAT (44H0BOILING POINT IS NOT AVAILABLE FOR ELEMENT I3,        		lighton=  513 FORMAT (44H0BOILING POINT IS NOT AVAILABLE FOR ELEMENT I3, ## dots=  513 FORMAT (44H0BOILING POINT IS NOT AVAILABLE FOR ELEMENT IS, ## glm=  513 FORMAT (44H0BOILING FOINT IS NOT AVAILABLE FOR ELEMENT I3,	FRATI90
+43	2518	2557	AGREE	     1  6H(MASS I3.1H))                                                 		dots=     1  6H(MASS I3.1H)) ## glm=     1  6H(MASS I3.1H))	FRATI91
+44	2569	2598	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	FRATI92
+45	3127	3156	NOISE	                                                                        			
+46	3274	3313	NOISE	                                                                        			

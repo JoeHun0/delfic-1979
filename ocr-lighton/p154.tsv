@@ -1,0 +1,64 @@
+1	5	COUNT 0/50;COUNT 16/5	                                                                                	 || \text{مُحَمَّدٌ}
+2	528	OK	*DECK,OPMEX                                                             OPMEX  1	* DECK, OPMEX || OPMEX 1
+3	573	OK	      SUBROUTINE OPMEX(NUMTAP)                                          OPMEX  2	SUBROUTINE OPMEX(NUMTAP) || OPMEX 2
+4	613	OK	C                                                                       OPMEX  3	C || OPMEX 3
+5	655	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     OPMEX  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || OPMEX 4
+6	700	OK	C                                                                       OPMEX  5	C || OPMEX 5
+7	741	COUNT 200/44	                                                                        OPMEX  6	C * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || OPMEX 6
+8	786	OK	C                                                                       UPMEX  7	C || UPMEX 7
+9	828	COUNT 49/70	                                                                        OPMEX  8	C ******************** GLC S S A R Y ******************** || OPMEX 8
+10	871	OK	C                                                                       OPMEX  9	C || OPMEX 9
+11	915	OK	C     CAYF              ACTIVITY K FACTOR USED FOR AIRBURSTS AND        OPMEX 10	C     CAYF     ACTIVITY K FACTOR USED FOR AIRBURSTS AND || OPMEX 10
+12	959	COUNT 1/45	                                                                        UPMEX 11	C || UPMEX 11
+13	1002	COUNT 1/17	                                                                        OPMEX 12	C || OPMEX 12
+14	1044	OK	C     C                 ACTIVITY DECAY FACTOR (NREQ=5,6)                OPMEX 13	C    C    ACTIVITY DECAY FACTOR (NREQ=5,6) || OPMEX 13
+15	1087	OK	C     CUTMAP            CUT-OFF THRESHOLD FOR MAP ORDINATE VALUES       UPMEX 14	C CUTMAP CUT-OFF THRESHOLD FOR MAP ORDINATE VALUES || UPMEX 14
+16	1130	OK	C     DELTAX            MAXIMUM WIDTH OF A CORE-LOAD MAP                OPMEX 15	C DELTAX MAXIMUM WIDTH OF A CORE-LOAD MAP || OPMEX 15
+17	1172	OK	C     DETID( )          ICRM IDENTIFICATION                             OPMEX 16	C     DETID( )     ICRM IDENTIFICATION || OPMEX 16
+18	1216	OK	C     DGX, DGY          MAP GRID POINT SEPARATION DISTANCES IN THE      OPMEX 17	C     DGX, DGY     MAP GRID POINT SEPARATION DISTANCES IN THE || OPMEX 17
+19	1258	COUNT 1/16	                                                                        OPMEX 18	C || OPMEX 18
+20	1300	OK	C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M)OPMEX 19	C     DIAM(I)     PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M) || OPMEX 19
+21	1344	COUNT 1/18	                                                                        OPMEX 20	C || OPMEX 20
+22	1386	OK	C     OTMIO( )          OTM IDENTIFICATION                              OPMEX 21	C     OTMIO( )     OTM IDENTIFICATION || OPMEX 21
+23	1430	OK	C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE     OPMEX 22	C     FMASS(I)     FALLOUT MASS FRACTION IN EACH PARTICLE SIZE || OPMEX 22
+24	1474	COUNT 1/35	                                                                        OPMEX 23	C || OPMEX 23
+25	1518	COUNT 1/37	                                                                        UPMEX 24	C || UPMEX 24
+26	1559	COUNT 1/41	                                                                        UPMEX 25	C || UPMEX 25
+27	1602	OK	C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS          UPMEX 26	C FP(I) TOTAL RADIOACTIVITY IN EACH SIZE CLASS || UPMEX 26
+28	1645	OK	C     FSUM              SUM OF ALL MAP POINT ORDINATES                  OPMEX 27	C    FSUM    SUM OF ALL MAP POINT ORDINATES || OPMEX 27
+29	1688	OK	C     FW                FISSION YIELD (KT)                              OPMEX 28	C    FW    FISSION YIELD (KT) || OPMEX 28
+30	1731	OK	C     GRUFF             A COMBINED GROUND ROUGHNESS ANC RADIATION METER OPMEX 29	C GRUFF A COMBINED GROUND ROUGHNESS ANC RADIATION METER || OPMEX 29
+31	1773	COUNT 1/33	                                                                        OPMEX 30	C || OPMEX 30
+32	1816	OK	C     IC(J)             RUN     CCNTROL VARIABLES                       OPMEX 31	C          IC(J)          RUN          CCNTROL VARIABLES || OPMEX 31
+33	1860	OK	C       IC(1 ).GT.0     NC MAPS ARE TO BE PRODUCED                      OPMEX 32	C          IC(1 ).GT.0          NC MAPS ARE TO BE PRODUCED || OPMEX 32
+34	1902	OK	C       IC(2 ).GT.[     PRINT CONTENTS OF TAPE IPOUT                    OPMEX 33	C          IC(2 ).GT.[          PRINT CONTENTS OF TAPE IPOUT || OPMEX 33
+35	1946	OK	C     ICTR              SEE  GOGO GLOSSARY                              OPMEX 34	C ICTR SEE GOGO GLOSSARY || OPMEX 34
+36	1989	OK	C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES OPMEX 35	C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES || OPMEX 35
+37	2031	OK	C     IHOB              .GT. 0 INDICATES AN AIRBURST                    OPMEX 36	C     IHOB     .GT. 0 INDICATES AN AIRBURST || OPMEX 36
+38	2076	OK	C     IH                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH  OPMEX 37	C     IH     PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH || OPMEX 37
+39	2118	COUNT 1/34	                                                                        UPMEX 38	C || UPMEX 38
+40	2160	OK	C     IV                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH  OPMEX 39	C    IV    PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH || OPMEX 39
+41	2203	COUNT 1/31	                                                                        OPMEX 40	C || OPMEX 40
+42	2247	OK	C     INC               NUMBER OF MAP ORDINATE COLUMNS THAT CAN BE      OPMEX 41	C INC NUMBER OF MAP ORDINATE COLUMNS THAT CAN BE || OPMEX 41
+43	2289	COUNT 1/29;COUNT 8/7	                                                                                	C || LIPMEX 42
+44	2332	OK	C     INPAM             PAP INFUT DATA TAPE                             OPMEX 43	C INPAM PAP INFUT DATA TAPE || OPMEX 43
+45	2376	OK	C     IPVCH             SYSTEM PUNCH TAPE                               OPMEX 44	C IPVCH SYSTEM PUNCH TAPE || OPMEX 44
+46	2417	OK	C     IPGUT             DTM BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCELOPMEX 45	C        IPGUT        DTM BINARY OUTPUT TAPE. CONTAINS FALLOUT PARCEL || OPMEX 45
+47	2462	COUNT 1/19	                                                                        OPMEX 46	C || OPMEX 46
+48	2505	OK	C     ISOUT             SYSTEM OUTPUT TAPE NUMBER                       OPMEX 47	C ISOUT SYSTEM OUTPUT TAPE NUMBER || OPMEX 47
+49	2547	OK	C     ISIN              SYSTEM INPUT TAPE NUMBER                        OPMEX 48	C ISIN SYSTEM INPUT TAPE NUMBER || OPMEX 48
+50	2590	COUNT 24/23	                                                                        OPMEX 49	C     IRRO2     ERROR STOP TRACE WORD || OPMEX 49
+51	2634	COUNT 24/23	                                                                        UPMEX 50	C    JC    MAP PRINT FORMAT CONTROL || UPMEX 50
+52	2674	OK	C       JC=1            2 LINE E FORMAT (THIS IS USED ON INPUT DEFAULT) UPMEX 51	C        JC=1        2 LINE E FORMAT (THIS IS USED ON INPUT DEFAULT) || UPMEX 51
+53	2718	OK	C       JC=2            2 LINE F11.3 FCRMAT                             OPMEX 52	C          JC=2          2 LINE F11.3 FCRMAT || OPMEX 52
+54	2761	COUNT 46/45	                                                                        OPMEX 53	C     JD (LOGICAL)     T COMPLETE EXPOSURE RATE, F COMPUTE DOSE || OPMEX 53
+55	2803	COUNT 24/23	                                                                        OPHEX 54	C JGO PAM CONTROL PARAMETER. || OPHEX 54
+56	2846	OK	C                1      COMPUTE DISTON WITH PART.SIZE CF ALL FISS.PRODS.OPMEX 55	C 1 COMPUTE DISTON WITH PART.SIZE CF ALL FISS.PRODS. || OPMEX 55
+57	2891	OK	C                2      CCMPUTE DISTBN WITH PART.SIZE CF CNE MASS CHAIN OPMEX 56	C 2 CCMPUTE DISTBN WITH PART.SIZE CF CNE MASS CHAIN || OPMEX 56
+58	2933	OK	C                3      COMPUTE INDUCED ACTIVITY ONLY                   OPMEX 57	C 3 COMPUTE INDUCED ACTIVITY ONLY || OPMEX 57
+59	2975	COUNT 49/48	                                                                        OPMEX 58	C     KDOS (LOGICAL)     T COMPLETE DOSE FROM TIMES TENTER TO TEXIT || OPMEX 58
+60	3020	COUNT 1/38	                                                                        UPMEX 59	C || UPMEX 59
+61	3064	OK	C     KTR(I)            SEE PCHECK GLOSSARY                             UPMEX 60	C KTR(I) SEE PCHECK GLOSSARY || UPMEX 60
+62	3133	COUNT 3/2	                                                                                	151
+63	3292	COUNT 10/20;COUNT 21/3	                                                                                	\text{121} || ![image](image_1.png)
+64	3311	COUNT 103/34	                                                                                	244 183 177 6 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

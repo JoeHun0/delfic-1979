@@ -1,0 +1,5 @@
+32	1773	COUNT 60/59	                                                                                	8 FORMAT(1HC,10X, 45I!ZBH(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE ,E
+48	2462	OK	  202 K3HX=K                                                                    	202 K3H X=K
+50	2548	COUNT 26/12	                                                                                	K \partial H : 1 = K B \partial X - 1
+52	2636	OK	      IP1=I+1                                                                   	IP1 = I + 1
+55	2764	OK	      TEMP=2CH(I)                                                               	TEMP=2CH(I)

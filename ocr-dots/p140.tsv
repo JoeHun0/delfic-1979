@@ -1,0 +1,65 @@
+1	19	COUNT 0/7	                                                                                	
+2	38	COUNT 0/39	                                                                                	
+3	564	OK	      IF(SPEC .EQ. WIND) WRITE( ISOUT,20)                               TR101121	IF(SPEC .EQ. WIND) WRITE( ISOUT,20) || TR101121
+4	607	OK	      IF(SPEC .EQ. TURB) WRITE( ISOUT,21)                               TRIO1122	IF(SPEC .EQ. TURB) WRITE( ISOUT,21) || TRIO1122
+5	642	COUNT 64/63	                                                                        TRI01123	IF(SPEC .EQ. WIND)WRITE(ISOUT, 3)(J,ZS(J),XS(J),YS(J),SX(J),SY(J),1 || TRI01123
+6	692	OK	     1 SZ(J),J=1,JTOPV)                                                 TRI0I124	1 SZ(J), J=1, JTOPV) || TRI0I124
+7	735	OK	      IF(SPEC .EQ. TURB)WRITE(ISOUT,33)(J,ZS(J),XS(J),YS(J),SX(J),SY(J) TR1DI125	IF(SPEC .EQ. TURB)WRITE(ISOUT,33)(J,ZS(J),XS(J),YS(J),SX(J),SY(J) || TR1DI125
+8	777	OK	     1 ,J=1,JTOPV)                                                      TRIO1126	1 ,J=1,JTOPV) || TRIO1126
+9	819	OK	  102 IF(NN.GT.JTOPV .OR. AN.LT. 0) NN=JTOPV                            TRI01127	102 IF(NN.GT.JTOPV.OR. AN.LT. 0) NN=JTOPV || TRI01127
+10	863	OK	  115 IF(NN.LT.1) CALL ERRCR(PROGRM,-115,ISOUT)                         TRI01128	115 IF(NN.LT.1) CALL ERRCR(PROGRM,-115,ISOUT) || TRI01128
+11	899	OK	      WRITE(ISOUT,4)NN,JTOPV                                            TRI01129	WRITE (ISOUT, 4) NN, JTOPV || TRI01129
+12	949	OK	COMMENCE CALCULATION OF DATA VECTOR AT EACH SPACE LATTICE CENTER POINT  TRI01130	COMMENCE CALCULATION OF DATA VECTOR AT EACH SPACE LATTICE CENTER POINT || TRI01130
+13	992	OK	C     USING NN NEAREST INPLT VECTORS                                    TRI01131	C USING NN NEAREST INPLT VECTORS || TRI01131
+14	1034	OK	      NN1=NN+1                                                          TRI01132	NN1=NN+1 || TRI01132
+15	1078	OK	COMMENCE LOOP ON LATTICE CENTER POINTS IN THE HORIZONTAL PLANE.         TRID1133	COMMENCE LOOP ON LATTICE CENTER POINTS IN THE HORIZONTAL PLANE. || TRID1133
+16	1122	OK	      DO 906 NDATA=1,NDATX                                              TRIDI134	DO 906 NDATA=1,NDATX || TRIDI134
+17	1164	OK	      CALL CNTR(NET,NETSU,NOATA,XG,YG,ICF,JCF,NCF)                      TRIOI135	CALL CNTR(NET,NETSU,NOATA,XG,YG,ICF,JCF,NCF) || TRIOI135
+18	1207	OK	COMMENCE LOOP ON ATMOSPHERIC STRATA.                                    TRI01136	COMMENCE LOOP ON ATMOSPHERIC STRATA. || TRI01136
+19	1251	OK	      DO 905 KBH=1,KBHX                                                 TRI01137	DO 905 KBH=1,KBHX || TRI01137
+20	1292	OK	      ZG=ZCH(KBH)                                                       TRI01138	ZG=ZCH(KBH) || TRI01138
+21	1336	OK	      DO 203 J=1,JTOPV                                                  TR1DI139	DO 203 J=1, JTOPV || TR1DI139
+22	1381	OK	C                                                                       TRI01140	C || TRI01140
+23	1422	OK	C     SET ALL NAD(J) EQUAL TO J TO PROVIDE INDICES FOR THE FULL SET OF  TRI01141	C SET ALL NAD(J) EQUAL TO J TO PROVIDE INDICES FOR THE FULL SET OF || TRI01141
+24	1465	OK	C     DATA POINTS AND TO PROVIDE AN INITIAL SET OF -NEAREST- DATA POINTSTRI01142	C      DATA POINTS AND TO PROVIDE AN INITIAL SET OF -NEAREST- DATA POINTS || TRI01142
+25	1508	COUNT 17/8	                                                                        TR101143	\mathrm{NAD(J)} = J || TR101143
+26	1552	OK	C                                                                       TRI01144	C || TRI01144
+27	1595	COUNT 1/52	                                                                        TRI01145	C || TRI01145
+28	1639	OK	C     (XG,YG,ZG) AND EACH OF THE INPUT DATA VECTOR LOCATIONS.           TRIDI146	C (XG,YG,ZG) AND EACH OF THE INPUT DATA VECTOR LOCATIONS. || TRIDI146
+29	1674	OK	C     EACH OF THE DATA VECTOR LOCATIONS                                 TRI01147	C EACH OF THE DATA VECTOR LOCATIONS || TRI01147
+30	1725	OK	      TX=XS(J)-XG                                                       TRIDI148	TX=XS(J)-XG || TRIDI148
+31	1766	OK	      TY=YS(J)-YG                                                       TR101149	TY=YS(J)-YG || TR101149
+32	1808	OK	      TZ=ZS(J)-ZG                                                       TRIDI150	TZ=ZS(J)-ZG || TRIDI150
+33	1852	OK	      CRESSZ=TZATZ                                                      TRI01151	CRESSZ = TZA T Z || TRI01151
+34	1896	OK	      CUTOFF=ALFA2-CRESSZ                                               TR101152	CUTOFF=ALFA2-CRESSZ || TR101152
+35	1937	OK	      IF(CUTOFF.LE.0) GO TO 202                                         TRI01153	IF(CUTOFF.LE.0) GO TO 202 || TRI01153
+36	1981	OK	      CRESSZ=CUTOFF/(ALFA2+CRESSZ)                                      TRI01154	CRESSZ=CUTOFF/(ALFA2+CRESSZ) || TRI01154
+37	2025	OK	      CRESSR=TX*TX+TY*TY                                                TR101155	CRESSR=TX*TX+TY*TY || TR101155
+38	2066	OK	      CUTOFF=BETA2-CRESSR                                               TRI01156	CUTOFF=BETA2-CRESSR || TRI01156
+39	2109	OK	      IF(CUTOFF.LE.D) GO TO 202                                         TRIDI157	IF(CUTOFF.LE.D) GO TO 202 || TRIDI157
+40	2153	OK	      CRESSR=CUTOFF/(BETA2+CRESSR)                                      TRI01158	CRESSR=CUTOFF/(BETA2+CRESSR) || TRI01158
+41	2196	OK	      CRESSZ=CRESSZ*CRESSR                                              TRI01159	CRESSZ=CRESSZ*CRESSR || TRI01159
+42	2238	OK	      IF(CRESSZ.LE.GIB) GC TO 202                                       TRIDI160	IF (CRESSZ. LE. GIB) GC TO 202 || TRIDI160
+43	2282	OK	      D2(J)=1.0/CRESSZ                                                  TRI01161	D2(J)=1.0/CRESSZ || TRI01161
+44	2324	OK	      GO TO 203                                                         TRID1162	GO TO 203 || TRID1162
+45	2367	OK	  202 D2(J)=81G                                                         TR10J163	202 D2(J)=81G || TR10J163
+46	2411	OK	 203  CONTINUE                                                          TRIDI164	203 CONTINUE || TRIDI164
+47	2454	OK	C                                                                       TRIDI165	C || TRIDI165
+48	2498	OK	C     SET NAOT=1 TO BEGIN THE SORT PROCEDURE THAT SELECTS THE MOST      TRI01166	C SET NAOT=1 TO BEGIN THE SORT PROCEDURE THAT SELECTS THE MOST || TRI01166
+49	2541	OK	C     REMOTE OF THE SET OF -NEAREST- DATA POINTS.  NOTE THAT FOR THE 1STTRIOI157	C      REMOTE OF THE SET OF -NEAREST- DATA POINTS.  NOTE THAT FOR THE 1ST || TRIOI157
+50	2584	COUNT 1/55	                                                                        TR101168	C || TR101168
+51	2627	OK	C     REMOTE OF THE SET.                                                TRI01169	C      REMOTE OF THE SET. || TRI01169
+52	2671	OK	      NADT=1                                                            TRIOI170	NADT=1 || TRIOI170
+53	2714	OK	C                                                                       TRI01171	C || TRI01171
+54	2756	OK	C     FIND THE ADDRESS OF AND DISTANCE TO THE MOST REMOTE POINT OF THE  TRI01172	C      FIND THE ADDRESS OF AND DISTANCE TO THE MOST REMOTE POINT OF THE || TRI01172
+55	2799	OK	C     NN -NEAREST- POINTS (THE POINTS WHOSE ADDRESSES ARE GIVEN BY      TR101173	C NN -NEAREST- POINTS (THE POINTS WHOSE ADDRESSES ARE GIVEN BY || TR101173
+56	2840	OK	C     NAD(1),NAD(NN).) STORE THAT MAXIMUM DISTANCE IN THE WORD DM AND   TRI01174	C NAD(1), NAD(NN).) STORE THAT MAXIMUM DISTANCE IN THE WORD DM AND || TRI01174
+57	2882	OK	C     SET NADT SUCH THAT OK=D2(NAD(NADT)).                              TRI01175	C SET NADT SUCH THAT OK=D2(NAD(NADT)). || TRI01175
+58	2927	OK	      KL=NAD(NADT)                                                      TRI01176	KL=NAD(NADT) || TRI01176
+59	2968	OK	      OM=O2(KL)                                                         TR101177	OM=O2(KL) || TR101177
+60	3012	OK	      00 207 J=1,NN                                                     TRI01178	00 207 J=1, NN || TRI01178
+61	3057	OK	      KL=NAD(J)                                                         TRI01179	KL = NAD(J) || TRI01179
+62	3099	OK	      IF(DM-02(KL))208,207,207                                          TRI01180	IF (DM-02(KL)) 208, 207, 207 || TRI01180
+63	3141	OK	                                        137                                     	137
+64	3296	COUNT 0/9;COUNT 0/7	                                                                                	 || 
+65	3330	COUNT 0/12	                                                                                	

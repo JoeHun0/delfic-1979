@@ -1,0 +1,65 @@
+1	8	COUNT 3/36	                                                                                	---
+2	495	OK	*DECK,DSTBN                                                             DST8N  1	*DECK, DSTBN || DST8N 1
+3	539	OK	      SUBROUTINE DSTBN                                                  DSTBN  2	SUBROUTINE DSTBN || DSTBN 2
+4	581	OK	C                                                                       DSTBN  3	C || DSTBN 3
+5	623	OK	C     H. G. NORMENT, ATMCSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DSTBN  4	C H. G. NORMENT, ATMCSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DSTBN 4
+6	667	OK	C                                                                       DST8N  5	C || DST8N 5
+7	709	COUNT 1/71	                                                                        DSTBN  6	C || DSTBN 6
+8	753	OK	C                                                                       DSTBN  7	C || DSTBN 7
+9	796	OK	C     SETS UP HISTOGRAM TABLES OF  PARTICLE MASS AS A FUNCTION OF       OSTBN  8	C SETS UP HISTOGRAM TABLES OF PARTICLE MASS AS A FUNCTION OF || OSTBN 8
+10	838	OK	C     PARTICLE DIAMETER.                                                DST8N  9	C PARTICLE DIAMETER. || DST8N 9
+11	882	OK	C                                                                       DSTBN 10	C || DSTBN 10
+12	924	OK	C     LOGNORMAL DISTRIBUTION TO 100                                     OSTBN 11	C LOGNORMAL DISTRIBUTION TO 100 || OSTBN 11
+13	967	OK	C     POWER FUNCTION DISTRIBUTION TO 200                                DSTBN 12	C POWER FUNCTION DISTRIBUTION TO 200 || DSTBN 12
+14	1010	OK	C     TABULAR DISTRIBUTION TO 300                                       OSTBN 13	C TABULAR DISTRIBUTION TO 300 || OSTBN 13
+15	1054	OK	C                                                                       DST8N 14	C || DST8N 14
+16	1095	OK	C     EQUATION 26.2.23 OF NBS-AMS 55 HANDBOOK IS USED TO COMPUTE THE    DSTBN 15	C EQUATION 26.2.23 OF NBS-AMS 55 HANDBOOK IS USED TO COMPUTE THE || DSTBN 15
+17	1139	OK	C     PROBABILITY FUNCTION ARGUMENT FROM THE RATIONAL FOLYNOMIAL        DSTBN 16	C PROBABILITY FUNCTION ARGUMENT FROM THE RATIONAL FOLYNOMIAL || DSTBN 16
+18	1183	OK	C     APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION.                 DSTBN 17	C APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION. || DSTBN 17
+19	1225	COUNT 1/2	                                                                        DST8N 18	C || DST8N 18
+20	1268	COUNT 1/71	                                                                        DSTB: 19	C || DSTB:19
+21	1311	OK	C.                                                                      DSTBN 20	C. || DSTBN 20
+22	1354	OK	      COMMON /CONTRL/ DETIC(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI  DST8N 21	COMMON /CONTRL/ DETIC(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI || DST8N 21
+23	1398	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 DSTBN 22	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR || DSTBN 22
+24	1441	OK	      COMMON /PARTCL/ NOSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)  DST8N 23	COMMON /PARTCL/ NOSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) || DST8N 23
+25	1476	OK	      EQUIVALENCE (DMEAN,CAYM),(SD,EXPC)                                OSTBN 24	EQUIVALENCE (DMEAN, CAYM), (SD, EXPC) || OSTBN 24
+26	1527	OK	      DATA PROGRM， PI/ 6HOSTBN ， 3.141592654/                           DSTBN 25	DATA PROGRM，PI/6HOSTBN，3.141592654/ || DSTBN 25
+27	1570	OK	C                                                                       DSTeN 26	C || DSTeN 26
+28	1612	COUNT 1/71	                                                                        OST8N 27	C || OST8N 27
+29	1656	OK	C                                                                       DST8N 28	C || DST8N 28
+30	1699	OK	      TA(X)=SQRT（ALOG(1.0/X**2)）                                        OSTBN 29	TA(X)=SQRT（ALOG(1.0/X**2)） || OSTBN 29
+31	1739	OK	      APX(X)=TA(X)-(2.515517+0.832853*TA(X)+0.010328*TA(X)**2)/         DST8N 30	APX(X) = TA(X) - (2.515517 + 0.832853 * TA(X) + 0.010328 * TA(X)**2) / || DST8N 30
+32	1784	OK	     1(1.0+1.432788*TA(X)+0.189269*TA(X)**2+L.CU13U8*TA(X)**3)          DSTBN 31	1(1.0+1.432788*TA(X)+0.189269*TA(X)**2+L.CU13U8*TA(X)**3) || DSTBN 31
+33	1827	OK	C                                                                       DSTBN 32	C || DSTBN 32
+34	1869	OK	      LD=NOSTR+1                                                        DSTBN 53	LD=NOSTR+1 || DSTBN 53
+35	1911	OK	      IF（IC（1）-1）100，200，300                                            DSTBN 34	IF（IC（1）-1）100，200，300 || DSTBN 34
+36	1955	OK	  100 IF(DMEAN)111,111,112                                              DST8N 35	100 IF(DMEAN)111,111,112 || DST8N 35
+37	1997	OK	  111 DMEAN=0.407                                                       DSTBN 36	111 DMEAN=0.407 || DSTBN 36
+38	2040	OK	      SO=4.0                                                            OSTBN 37	SO=4.0 || OSTBN 37
+39	2083	OK	  112 IF(NDSTR-1)101,101,102                                            DSTBN 38	112 IF(NDSTR-1)101,101,102 || DSTBN 38
+40	2125	OK	  101 PS(1)=DMEAN*1.0E-6                                                DST8N 39	101 PS(1)=DMEAN*1.0E-6 || DST8N 39
+41	2169	OK	      C5=SD**5                                                          DSTBN 40	C5=SD**5 || DSTBN 40
+42	2212	OK	      DIAM(1)=DMEAN*C5*1.DE-6                                           DST8N 41	DIAM(1) = DMEAN*C5*1. DE-6 || DST8N 41
+43	2255	OK	      DIAM(2)=DMEAN/C5*1.0E-6                                           DSTBN 42	DIAM(2)=DMEAN/C5*1.0E-6 || DSTBN 42
+44	2299	OK	      FMASS(1)=1.0                                                      DSTBN 43	FMASS(1)=1.0 || DSTBN 43
+45	2343	OK	      GO TO 431                                                         OSTBN 44	GO TO 431 || OSTBN 44
+46	2383	OK	  162 BARMU=ALOG(DHEAN)                                                 DST8N 45	162 BARMU=A LOG(DHE AN) || DST8N 45
+47	2427	OK	      SIGMA=ALOG（SD）                                                    DST8N 46	SIGMA=ALOG（SD） || DST8N 46
+48	2471	OK	      BARMU=BARMU+3.*SIGMA**2                                           OST8N 47	BARMU=BARMU+3. *SIGMA**2 || OST8N 47
+49	2513	OK	      FRAC=1.0/FLOAT(NOSTR)                                             OSTBN 48	FRAC=1.0/FLOAT(NOSTR) || OSTBN 48
+50	2556	OK	      DO 1J3 ND=1,NDSTF                                                 DSTBN 49	DO 1J3 ND=1,NDSTF || DSTBN 49
+51	2599	OK	  103 FMASS(ND)=FRAC                                                    OSTBN 50	103 FMASS(ND)=FRAC || OSTBN 50
+52	2642	OK	      NH=NDSTR/2                                                        OSTON 51	NH=NDSTR/2 || OSTON 51
+53	2684	OK	      NO 104 I=1,NH                                                     DSTBN 52	NO 104 I=1,NH || DSTBN 52
+54	2726	OK	      PRB=FLOAT(I)*FRAC                                                 DSTBN 53	PRB = FLOAT(I) * FRAC || DSTBN 53
+55	2769	OK	      DIAM(I+1)=BARMU+APX(FRB)*SIGMA                                    DSTON 54	DIAM(I+1) = BARMU + APX(FRB) * SIGMA || DSTON 54
+56	2812	OK	      J=NDSTR-I+1                                                       DSTON 55	J=NDSTR-I+1 || DSTON 55
+57	2857	OK	  104 DIAM(J)=3ARMU-APX(PRH)*SIGMA                                      DSTAN 56	104 DIAM(J) = 3ARMU-AP X(PRH) *SIGMA || DSTAN 56
+58	2888	COUNT 1/2	                                                                        OSTBN 57	C || OSTBN 57
+59	2939	OK	C     FOR THE 2 EXTREME INTERVALS THE AVERAGE CIAMETER IS               OSTBN 58	C FOR THE 2 EXTREME INTERVALS THE AVERAGE CIAMETER IS || OSTBN 58
+60	2984	OK	C     ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE           DSTBN 59	C ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE || DSTBN 59
+61	3028	OK	C                                                                       OSTBN 6v	C || OSTBN 6v
+62	3073	OK	                                        65                                      	65
+63	3236	COUNT 3/56;COUNT 3/4	                                                                                	--- || ---
+64	3277	COUNT 3/28	                                                                                	---
+65	3301	COUNT 3/53	                                                                                	---

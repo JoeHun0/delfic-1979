@@ -1,0 +1,12 @@
+109	p075	50	SINGLE	34	7	      ETA(T)=ETA(I-1)+TERF*(A6-ETA(I-1))
+110	p075	62	NONE	48	1	raw: ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of ... of
+111	p076	17	TIE	48	6	     1        RHO(256), ETA(256), NHODC, ZV(100),  VX(100), VY(100)
+112	p076	30	TIE	30	5	    4 F0D14T( ^H+, 47X, 3(2X,^PE12.5))
+113	p076	31	SINGLE	53	5	    5 FORMAT( 1H,, 9X, 39HSHOT-TIME WINDS HAVE NOT BEEN SPECIFIED)
+114	p076	32	TIE	15	5	    6 FORMAT( AF13.2)
+115	p076	60	TIE	58	7	      VX(NHODO)=AP(N3)*SCALE(2)*SIN(RADC*(AP(N2)*SCALE(3) + TRNS))
+116	p076	61	SINGLE	58	7	      VY(NHODO)=AP(N3)*SCALE(2)*COS(RADC*(AP(N2)*SCALE(3) + TRNS))
+117	p077	8	TIE	23	3	  240 IF(NHODO .GT. 3) RETURN
+118	p077	30	TIE	62	7	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)
+119	p077	36	NONE	23	3	raw: 903 FORMAT (1H1////////////////////////////
+120	p077	38	NONE	44	3	raw: 758 FORMAT (1H124X73H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *

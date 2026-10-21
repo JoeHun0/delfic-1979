@@ -1,0 +1,14 @@
+1	0	COUNT 0/12	                                                                                	
+2	62	COUNT 0/49	                                                                                	
+6	940	OK	      WRITE(ISOUT,5000)NSTAT,WORD1                                              	WRITE(ISOUT,5000)NSTAT,WORD1
+9	1066	COUNT 16/9	                                                                                	443 \text{ MWYA} = 3
+13	1240	OK	      CX (MCX, 4) = ZA + RZT                                                    	CX (MCX, 4) = ZA + RZT
+24	1713	COUNT 48/21	                                                                                	\mathrm{DLTH} = \mathrm{DLTH} + \mathrm{CXH} * .084946
+25	1755	COUNT 35/14	                                                                                	\text{TSTM} = \text{TSTM} + \text{DLTM}
+35	2182	COUNT 51/30	                                                                                	\text{CX (MK - 1, 2)} = \text{CX (MK, 1)} - \text{CX (MK - 1, 1)}
+37	2270	COUNT 71/43	                                                                                	\text{CX (MK - 1, 6)} = (\text{CX (MK, 3)} - \text{CX (MK - 1, 3)}) / \text{CX (MK - 1, 2)}
+38	2312	COUNT 71/43	                                                                                	\text{CX (MK-1, 7)} = (\text{CX (MK, 4)} - \text{CX (MK-1, 4)}) / \text{CX (MK-1, 2)}
+40	2398	COUNT 74/46	                                                                                	104 \text{ CX (MK - 1, 5)} = (\text{CX (MK, 5)} - \text{CX (MK - 1, 5)}) / \text{CX (MK - 1, 2)}
+42	2483	COUNT 45/24	                                                                                	106 \text{ CX (4L, 1)} = \text{CX (1L, 1)} + \text{TME}
+43	2528	OK	      GO TO 17.                                                                 	GO TO 17.
+44	2571	COUNT 0/3	                                                                                	

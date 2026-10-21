@@ -1,0 +1,64 @@
+1	5	COUNT 0/50;COUNT 0/5	                                                                                	 || 
+2	528	OK	*DECK,OPMEX                                                             OPMEX  1	* DECK, OPMEX || OPMEX 1
+3	573	OK	      SUBROUTINE OPHEX(NUMTAP)                                          OPMEX  2	SUBROUTINE OPHEX (NUMTAP) || OPMEX 2
+4	613	OK	C                                                                       OPMEX  3	C || OPMEX 3
+5	655	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     OPMEX  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || OPMEX 4
+6	700	OK	C                                                                       OPMEX  5	C || OPMEX 5
+7	741	COUNT 215/44	                                                                        OPMEX  6	C * * * * * * * * OLTPUT PROCESSOR MODULE * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || OPMEX 6
+8	786	OK	C                                                                       UPMEX  7	C || UPMEX 7
+9	828	COUNT 8/70	                                                                        OPMEX  8	GLOSSARY || OPMEX 8
+10	871	OK	C                                                                       OPMEX  9	C || OPMEX 9
+11	915	COUNT 5/39	                                                                        OPMEX 10	C CAYF || OPMEX 10
+12	959	COUNT 1/45	                                                                        OPMEX 11	C || OPMEX 11
+13	1002	COUNT 1/17	                                                                        OPMEX 12	C || OPMEX 12
+14	1044	OK	C     C                 ACTIVITY DECAY FACTOR (NREQ=5,6)                OPMEX 13	C C ACTIVITY DECAY FACTOR (NREQ=5,6) || OPMEX 13
+15	1087	COUNT 1/43	                                                                        UPMEX 14	C || UPMEX 14
+16	1130	COUNT 1/34	                                                                        OPMEX 15	C || OPMEX 15
+17	1172	OK	C     DETID( )          ICRM IDENTIFICATION                             OPMEX 16	C DETID( ) ICRM IDENTIFICATION || OPMEX 16
+18	1216	COUNT 8/44	                                                                        OPMEX 17	C DGX, DGY || OPMEX 17
+19	1258	COUNT 1/16	                                                                        OPMEX 18	C || OPMEX 18
+20	1300	OK	C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M)OPMEX 19	C DIAM(I) PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M) || OPMEX 19
+21	1344	COUNT 17/18	                                                                        OPMEX 20	(CALLED PACT IN PAM) || OPMEX 20
+22	1386	OK	C     OTMIO( )          OTN IDENTIFICATION                              OPMEX 21	C OTMIO( ) OTN IDENTIFICATION || OPMEX 21
+23	1430	OK	C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE     OPMEK 22	C FMASS(I) FALLOUT MASS FRACTION IN EACH PARTICLE SIZE || OPMEK 22
+24	1474	COUNT 1/35	                                                                        OPMEX 23	C || OPMEX 23
+25	1518	COUNT 1/37	                                                                        OPMEX 24	C || OPMEX 24
+26	1559	COUNT 1/41	                                                                        OPMEX 25	C || OPMEX 25
+27	1602	OK	C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS          OPMEX 26	C      FP(I)      TOTAL RADIOACTIVITY IN EACH SIZE CLASS || OPMEX 26
+28	1645	COUNT 1/30	                                                                        OPMEX 27	C || OPMEX 27
+29	1688	COUNT 1/19	                                                                        OPMEX 28	C || OPMEX 28
+30	1731	OK	C     GRUFF             A COMBINED GROUND ROUGHNESS AND RADIATION METER OPMEX 29	C GRUFF A COMBINED GROUND ROUGHNESS AND RADIATION METER || OPMEX 29
+31	1773	COUNT 32/33	                                                                        OPMEX 30	RESPONSE FACTOR (DEFAULT VALUE=0.5) || OPMEX 30
+32	1816	COUNT 1/25	                                                                        OPMEX 31	C || OPMEX 31
+33	1860	COUNT 1/32	                                                                        OPMEX 32	C || OPMEX 32
+34	1902	COUNT 1/35	                                                                        OPMEX 33	C || OPMEX 33
+35	1946	COUNT 1/20	                                                                        OPMEX 34	C || OPMEX 34
+36	1989	OK	C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES OPMEX 35	C IGO (LOGICAL) T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES || OPMEX 35
+37	2031	COUNT 5/29	                                                                        OPMEX 36	C IHOB || OPMEX 36
+38	2076	COUNT 3/45	                                                                        OPMEX 37	C IH || OPMEX 37
+39	2118	COUNT 33/34	                                                                        OPMEX 38	ACFOSS A PAGE CF PRINTED OUTPLT (IH=10) || OPMEX 38
+40	2160	COUNT 1/45	                                                                        OPMEX 39	C || OPMEX 39
+41	2203	COUNT 1/31	                                                                        OPMEX 40	C || OPMEX 40
+42	2247	COUNT 1/39	                                                                        OPMEX 41	C || OPMEX 41
+43	2289	COUNT 1/29	                                                                        UPHAX 42	C || UPHAX 42
+44	2332	COUNT 6/22	                                                                        OPMEX 43	C INPAM || OPMEX 43
+45	2376	COUNT 1/21	                                                                        OPMEX 44	C || OPMEX 44
+46	2417	OK	C     IPOUT             DTM BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCELOPHEX 45	C      IPOUT      DTM BINARY OUTPUT TAPE. CONTAINS FALLOUT PARCEL || OPHEX 45
+47	2462	COUNT 18/19	                                                                        OPMEX 46	DATA FOR USE BY THE OPM || OPMEX 46
+48	2505	OK	C     ISOUT             SYSTEM OUTPUT TAPE NUMBER                       OPMEX 47	C ISOUT SYSTEM OUTPUT TAPE NUMBER || OPMEX 47
+49	2547	COUNT 5/26	                                                                        OPMEX 48	C ISIN || OPMEX 48
+50	2590	COUNT 24/23	                                                                        OPHEX 49	C      IRROR      ERROR      STOP      TRACE      WORD || OPHEX 49
+51	2634	COUNT 1/23	                                                                        OPMEX 50	C || OPMEX 50
+52	2674	COUNT 5/43	                                                                        UPMEX 51	C JC=1 || UPMEX 51
+53	2718	COUNT 1/21	                                                                        OPHEX 52	C || OPHEX 52
+54	2761	COUNT 47/45	                                                                        OPMEX 53	C      JD (LOGICAL)      T COMPLETE EXPOSURE RATE, F COMPUTED DOSE || OPMEX 53
+55	2803	OK	C     JGO               PAM CONTROL PARAMETER                           OPHEX 54	C JGO PAM CONTROL PARAMETER || OPHEX 54
+56	2846	COUNT 1/44	                                                                        OPMEX 55	C || OPMEX 55
+57	2891	COUNT 1/42	                                                                        OPHEX 56	C || OPHEX 56
+58	2933	COUNT 26/28	                                                                        OPMEX 57	COMPUTE INDUCED ACTIVITY ONLY || OPMEX 57
+59	2975	COUNT 47/48	                                                                        OPMEX 58	C      KOOS (LOGICAL)      T COMPLTE COSE FROM TIMES TENTER TO EXIT || OPMEX 58
+60	3020	COUNT 1/38	                                                                        UPMEX 59	C || UPMEX 59
+61	3064	COUNT 7/24	                                                                        UPMEX 60	C KTR(I) || UPMEX 60
+62	3133	COUNT 3/2	                                                                                	151
+63	3292	COUNT 0/20;COUNT 0/3	                                                                                	 || 
+64	3311	COUNT 0/34	                                                                                	

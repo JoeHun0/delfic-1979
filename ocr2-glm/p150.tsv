@@ -1,0 +1,10 @@
+12	956	COUNT 60/61	                                                                                	33 FORMAT(15X,56HTIME OF ARFIVAL ACCOUNTED FOR BY THE APPROXIMATE MET
+14	1041	OK	 34   FORMAT(15X,50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.)         	34 FORMAT(15X,50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.)
+21	1342	OK	      TINC=2.6°DGX                                                              	TINC=2.6°DGX
+25	1515	COUNT 6/5	                                                                                	KK1.=1
+28	1640	OK	      LEFT=(XMAX-X1)/DGX                                                        	LEFT = (X MAX - X 1) / D G X
+32	1813	OK	      IF(JC   )147,147,131                                                      	IF(JC)147,147,131
+38	2073	OK	      WRITE (ISOUT,3)                                                           	WRITE (ISOUT,3)
+46	2414	OK	      LRSW=1                                                                    	LRSW=1
+49	2544	OK	      WRITE(HBTAPE)XMIN,XMAX,YMIN,YMAX,OGX,OGY                                  	WRITE (HBTAPE) XMIN,XMAX,YMIN,YMAX,OGX,OGY
+61	3060	OK	      NX=NXMAP                                                                  	NX=NXMAP

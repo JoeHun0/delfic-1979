@@ -1,0 +1,61 @@
+1	33	COUNT 0/36;COUNT 0/5	                                                                                	 || 
+2	594	OK	      IF(NHODO)1103,1103,1104                                           DERIV 92	IF (NHODO) 1103, 1103, 1104 || DERIV 92
+3	637	OK	 1103 VS=0.0                                                            DERIV 93	1103 VS=0.0 || DERIV 93
+4	681	OK	      GO TO 1105                                                        DERIV 54	GO TO 1105 || DERIV 54
+5	724	OK	C                                                                       DERIV 95	C || DERIV 95
+6	767	OK	C     COMPUTE WIND SHEAR CORRECTION FACTOR                              DERIV 96	C COMPUTE WIND SHEAR CORRECTION FACTOR || DERIV 96
+7	810	OK	C                                                                       DERIV 97	C || DERIV 97
+8	854	OK	 1104 ZTP=Z+RZT                                                         DERIV 58	1104 ZTP=Z+RZT || DERIV 58
+9	898	OK	      ZBT=Z-RZT                                                         DERIV 39	ZBT = Z - RZT || DERIV 39
+10	940	COUNT 7/8	      CALL TRPL(ZTP,NHOOO,ZV,VX,VXT)                                            	CALL TRPL(ZTP, NHOOO, ZV, VX, VXT) || DERIV10
+11	982	OK	      CALL TRPL(ZTP,NHODO,ZV,VY,VYT)                                    DERIV1c1	CALL TRPL(ZTP,NHODO,ZV,VY,VYT) || DERIV1c1
+12	1025	OK	      CALL TRPL(ZBT,NHODO,ZV,VX,VXB)                                    DERIV102	CALL TRPL(ZBT,NHODO,ZV,VX,VXB) || DERIV102
+13	1060	OK	      CALL TRPL(ZBT,NHODO,ZV,VY,VYB)                                    0ERIV1J3	CALL TRPL(ZBT,NHODO,ZV,VY,VYB) || 0ERIV1J3
+14	1110	COUNT 59/34	                                                                        DERIV104	VS = \text{SQRT}((V_{XT} - V_{XB})^{**2} + (V_{YT} - V_{YB})^{**2}) || DERIV104
+15	1154	OK	 11C5 RS=SV*Q7+1.5*C6*VS/R                                              DERIV1(5	11C5 RS=SV*Q7+1.5*C6*VS/R || DERIV1(5
+16	1196	COUNT 10/8	      GO TO (100,101,100),N                                                     	GO TO (100,101,100),N || DERIVATION
+17	1230	COUNT 0/2;COUNT 9/8	                                                                                	 || 0 DERIV 1 07
+18	1282	COUNT 9/8	C     DRY EQUATIONS                                                             	C DRY EQUATIONS || 0ER.IV1J8
+19	1324	OK	C                                                                       DERIV109	C || DERIV109
+20	1368	OK	C                                                                       0ERIV110	C || 0 E R I V 1 1 0
+21	1411	COUNT 25/26	                                                                        DERIV111	COMPUTE AIR ENTRAINMENT RATE || DERIV111
+22	1455	OK	C                                                                       DERIV112	C || DERIV112
+23	1496	COUNT 160/66	                                                                        DERIV113	100 \text{ DRM} = (\text{RM} / (1.0 - \text{CPAI} / (\text{CP} * \text{T} * \text{QX}))) * \text{RMIX} * (\text{RS} * \text{RL} * (\text{QT} * \text{GX} * \text{QXE} * 9.8 * \text{U-EPS}) + 1) || DERIV113
+24	1539	OK	     1RMIX/(CR*T*QX)-9.8*U/(287./QXE*TE))                               DERIV114	1RMIX/(CR*T*QX)-9.8*U/(287./QXE*TE)) || DERIV114
+25	1582	COUNT 26/8	                                                                        DERIV115	\mathrm{ORME} = \mathrm{DRM} || DERIV115
+26	1625	OK	C                                                                       DERIV11b	C || DER IV 11b
+27	1668	COUNT 57/56	                                                                        DERIV117	C SUBTRACT AWAY RATE OF MASS LOST DUE TO PARTICLES FALLING OUT CLOUDS || DERIV117
+28	1711	OK	C     BOTTOM DURING RISE                                                DERIV118	C BOTTOM DURING RISE || DERIV 118
+29	1755	OK	C                                                                       02RIV119	C || 02RIV119
+30	1799	COUNT 39/12	                                                                        DERIV120	\mathrm{ORM}=\mathrm{ORM}-\mathrm{CHLR} || DERIV120
+31	1842	OK	C                                                                       DERIV121	C || DERIV121
+32	1885	COUNT 1/45	                                                                        DEPIV122	C || DEPIV122
+33	1929	OK	C                                                                       0ER1V123	C || 0ER1V123
+34	1972	COUNT 61/35	                                                                        DERIV124	\mathrm{DX} = -\frac{(1. + X + S)}{(1. + XE)} * (X - XE) * \mathrm{DRHE/RM} || DERIV124
+35	2016	OK	C                                                                       DERIV125	C || DERIV125
+36	2058	COUNT 1/40	                                                                        DERIV126	C || DERIV126
+37	2098	COUNT 9/8	C                                                                               	C || DER, IV 127
+38	2142	COUNT 90/48	                                                                        DERIV128	\text{DT} = -(R\text{HIX} * (QT * QX * QXE * 9.8 * U - \text{EPS}) * C\text{P}AI * \text{DRME/RM}) / \text{CR} || DERIV128
+39	2186	OK	      WT=0.                                                             DERIV129	WT = 0. || DERIV129
+40	2227	OK	C                                                                       DERIV130	C || DERIV130
+41	2270	OK	C     NO CHANGE IN LIQUID WATER MIXING RATIO                            DERIV131	C      NO CHANGE IN LIQUID WATER MIXING RATIO || DERIV131
+42	2314	OK	C                                                                       DERIV132	C || DERIV132
+43	2354	OK	      DWT=J.                                                            DER1V133	DWT = J. || DER1V133
+44	2398	OK	      GO TO 555                                                         DERIV134	GO TO 555 || DERIV134
+45	2441	OK	C                                                                       UERIV135	C || UERIV135
+46	2483	OK	C     WET EQUATIONS                                                     DERIV136	C WET EQUATIONS || DERIV136
+47	2528	OK	C                                                                       0Eh1V137	C || 0Eh1V137
+48	2572	OK	  101 01=1.+X+29./18.                                                   DERIV13A	101 01=1. +X+29./18. || DERIV13A
+49	2605	COUNT 22/21	                                                                        0ERIV139	IF (T-273.0) 102,103,105 || 0ERIV139
+50	2655	OK	  102 CL=2.83E6                                                         DERIV1+0	102 CL = 2.83E6 || DERIV1+0
+51	2699	COUNT 0/7;COUNT 0/8	                                                                                	 || 
+52	2741	COUNT 10/11;COUNT 0/8	                                                                                	1.3 CL=2.5ℓ || 
+53	2784	COUNT 0/20	                                                                        DEcIV143	 || DEc IV 143
+54	2829	OK	      03=18.*02/29./T                                                   DERIV¹·⁴	03=18.*02/29./T || DERIV¹·⁴
+55	2871	COUNT 9/8;COUNT 9/8	                                                                                	Q4 = 1.0 + Q2 || 0ER.IV145
+56	2915	COUNT 15/14	                                                                        DERIV146	Q5=1.0+CL+Q3/CP || DERIV146
+57	2958	COUNT 0/21	                                                                        0ÉRIV147	 || 0ÉRIV147
+58	3000	OK	      Q9=RMIX/Q5                                                        DERIV148	Q9=RMIX/Q5 || DER IV 148
+59	3042	OK	      Q8=Q9/T/QX                                                        DEKIV149	Q8=Q9/T/QX || DEKIV149
+60	3088	COUNT 10/8	C                                                                               	C || DEC. IV. 150
+61	3131	COUNT 26/27;COUNT 10/8	                                                                                	CONTRACT AND ENVIRONMENT DATE || DERIVATION

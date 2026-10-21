@@ -1,0 +1,58 @@
+1	12	COUNT 3/13;COUNT 2/1	                                                                                	--- || 2.
+2	448	OK	      IF(JD) WRITE( KOUT,1C3)                                           PAM2  61	IF(JD) WRITE( KOUT, 1C3) || PAM2 61
+3	491	OK	      IF(.NOT. JD) WRITE( KOUT,104)                                     PAH2  62	IF(.NOT. JD) WRITE( KOUT,104) || PAH2 62
+4	529	OK	      RETURN                                                            PAM2  63	RETURN || PAM2 63
+5	578	OK	    2 CALL MCHDEP                                                       PAH2  64	2 CALL MCHDEP || PAH2 64
+6	621	OK	      GO TO 5                                                           PAH2  65	GO TO 5 || PAH2 65
+7	663	OK	      END                                                               PA      	END || PA
+8	1007	OK	*DECK,FRATIO                                                            FRATI  1	*DECK, FRATIO || FRATI 1
+9	1050	OK	      SUBROUTINE FRATIO                                                 FRATI  2	SUBROUTINE FRATIO || FRATI 2
+10	1093	OK	     1    (SLDTMP,TMSD,HCHN)                                            FRATI  3	1 (SLDTMP,TMSD,HCHN) || FRATI 3
+11	1136	OK	C                                                                       FRAT1   	C || FRAT1
+12	1177	OK	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS                      FRATI  5	C R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS || FRATI 5
+13	1217	OK	C     SEPTEMBER 1966                                                    FRATI  6	C SEPTEMBER 1966 || FRATI 6
+14	1265	OK	C     REVISED NOVEMBER 1974                                             FRATI  7	C REVISED NOVEMBER 1974 || FRATI 7
+15	1307	COUNT 6/5	C                                                                               	C || FRATT 8
+16	1352	OK	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      FRATI  S	COMMON /DECAY/ IGO, JC, KDOS, TENTER, TEXIT, TIME || FRATI S
+17	1392	OK	      COMMON /FISHIN/ ABEGN(700),ABUNDO(700),BRANCH(130),CAPFIS.        FRATI 10	COMMON/FISHIN/ABEGN(700),ABUNDO(700),BRANCH(130),CAPFIS. || FRATI 10
+18	1436	OK	     1  DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                 FRATI 11	1 DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700) || FRATI 11
+19	1476	OK	      COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90)           FRATI 12	COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90) || FRATI 12
+20	1521	OK	      COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,HASCHN,PSIZE(200),     FRATI 13	COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,HASCHN,PSIZE(200), || FRATI 13
+21	1564	OK	     1 FMASS(200),PACT(200)                                             FRATI 14	1 FMASS(200),PACT(200) || FRATI 14
+22	1610	OK	      COMMON /UTILTY/  KU01,NPRNT(15)                                   FRATI 15	COMMON /UTILTY/ KU01, NPRNT(15) || FRATI 15
+23	1646	COUNT 23/24	                                                                        FRATI 16	LOGICAL IGO, JD, KOOS, PRNT || FRATI 16
+24	1688	OK	      DIMENSION FR(90)                                                  FRATI 10	DIMENSION FR(90) || FRATI 10
+25	1740	OK	      DIMENSION BOIL(40)                                                FRATI 18	DIMENSION BOIL(40) || FRATI 18
+26	1781	OK	C                                                                       FRATI 19	C || FRATI 19
+27	1823	OK	      EQUIVALENCE (FR.BSUBK)                                            FRATI 20	EQUIVALENCE (FR. BSUBK) || FRATI 20
+28	1858	COUNT 6/4	C                                                                               	C || FRATI 2
+29	1910	OK	      LOGICAL NOT0                                                      FRATI 22	LOGICAL NOT0 || FRATI 22
+30	1952	OK	C                                                                       FRATT 23	C || FRATT 23
+31	1994	COUNT 64/65	                                                                        FRATI 24	DATA 80 IL/2 3173.0,2907.0,3000.0,2976.0,1754.0,1010.0,1026.0,351.8 || FRATI 24
+32	2037	OK	     1,120.1,1650.0,3497.0,4695.0,4808.0,3300.0,1351.0,583.0,4505.0,4149FRATI 25	1,120.1,1650.0,3497.0,4695.0,4808.0,3300.0,1351.0,583.0,4505.0,4149 || FRATI 25
+33	2080	COUNT 68/67	                                                                        FRATI 26	2.0.3436.0.2451.0.1832.0.2123.0.2247.0.1832.0.1534.0.457.4.165.9.151 || FRATI 26
+34	2123	OK	     355.0,3003.0,4608.0,4367.0,4252.0,4464.0,4348.0,5*4300.0/          FRATI 27	355.0,3003.0,4608.0,4367.0,4252.0,4464.0,4348.0,5*4300.0/ || FRATI 27
+35	2165	COUNT 7/6	C                                                                               	C || FRATT 28
+36	2208	COUNT 5/4	C                                                                               	C || FRATT
+37	2252	OK	      TIME = TMSO                                                       FRATT 30	TIME = TMSO || FRATT 30
+38	2297	OK	      IGO = .FALSE.                                                     FRATI 31	IGO = .FALSE. || FRATI 31
+39	2338	OK	      JD = .TRUE.                                                       FRATI 32	JD = .TRUE. || FRATI 32
+40	2382	COUNT 11/12	                                                                        FRATI 33	KDOS = FALSE. || FRATI 33
+41	2426	OK	      MAXCHN = 90                                                       FRATI 34	MAXCHN = 90 || FRATI 34
+42	2469	OK	      DO 30 I = 1,MAXCHN                                                FRATI 35	DO 30 I = 1, MAXCHN || FRATI 35
+43	2513	OK	   30 FR(I) = 0.0                                                       FRATI 36	30 FR(I) = 0.0 || FRATI 36
+44	2554	COUNT 7/6	C                                                                               	C || FRATT 37
+45	2597	OK	      CALL BATMAN                                                       FRATI 38	CALL BATMAN || FRATI 38
+46	2640	OK	C                                                                       FRATT 39	C || FRATT 39
+47	2685	OK	      MCHN = 0                                                          FRATI 40	MCHN = 0 || FRATI 40
+48	2726	OK	      RFRC = 0.0                                                        FRATI 41	RFRC = 0.0 || FRATI 41
+49	2771	OK	      CHN = 0.0                                                         FRATI 42	CHN = 0.0 || FRATI 42
+50	2814	OK	      LAST = IA9S(NUCLID(1))/MULT(9)                                    FRATI 43	LAST = IA9S(NUCLID(1))/MULT(9) || FRATI 43
+51	2849	OK	      NOT0 = .FALSE.                                                    FRAT1 44	NOT0 = .FALSE. || FRAT1 44
+52	2897	COUNT 7/6	C                                                                               	C || FRATT 36
+53	2945	OK	      00 10 MB = 1.7NUC                                                 FRATI 46	00 10 MB = 1.7 NUC || FRATI 46
+54	2987	OK	      NAME = IASS(NUCLIO(HE))/MULT(5)                                   FRATI 47	NAME = IASS(NUCL IO(HE))/MULT(5) || FRATI 47
+55	3030	OK	      MASS = NAME/NULT(3)                                               FRATI 48	MASS = NAME/NULT(3) || FRATI 48
+56	3074	COUNT 19/21	                                                                        FAATI 49	NAT = CO4 NAME . MULT (3) || FAATI 49
+57	3139	OK	                                         182                                    	182
+58	3306	COUNT 3/62;COUNT 3/8	                                                                                	--- || ---

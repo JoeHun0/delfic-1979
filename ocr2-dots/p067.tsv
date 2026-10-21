@@ -1,0 +1,9 @@
+1	6	COUNT 0/6	                                                                                	
+19	1497	OK	      COMMON /CONTRL/ DETID(12),IC(20),IҚАД,IRISE,ISIN,ISOUT,JPARN,KDI          	COMMON /CONTRL/ DETID(12),IC(20),IҚАД,IRISE,ISIN,ISOUT,JPARN,KDI
+28	1883	COUNT 18/19	                                                                                	T2M = 0.045 * W^{0.42}
+33	2100	OK	      A = 68/7. * W**(-0.0131)                                                  	A = 68/7. * W**(-0.0131)
+34	2141	COUNT 28/21	                                                                                	\beta = -0.4473 * W^{**}(0.0436)
+35	2185	COUNT 46/25	                                                                                	\text{THPG} = A * (\text{THE} / \text{T2N}) * * B + 1500.
+36	2228	COUNT 23/9	                                                                                	\text{TMPS} = \text{TMPG}
+39	2357	OK	      SSAM = 90.718                                                             	SSAM = 90.718
+50	3290	COUNT 0/45	                                                                                	

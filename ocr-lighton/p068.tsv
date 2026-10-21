@@ -1,0 +1,65 @@
+1	8	COUNT 0/36	                                                                                	
+2	495	OK	*DECK,DSTBN                                                             DSTBN  1	*DECK, DST BN || DSTBN 1
+3	539	OK	      SUBROUTINE DSTBN                                                  OSTBN  2	SUBROUTINE DSTBN || OSTBN 2
+4	581	OK	C                                                                       DSTBN  3	C || DSTBN 3
+5	623	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     OSTBN  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || OSTBN 4
+6	667	OK	C                                                                       DST8N  5	C || DST8N 5
+7	709	COUNT 199/71	                                                                        DSTBN  6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DSTBN 6
+8	753	OK	C                                                                       OSTBN  7	C || OSTBN 7
+9	796	COUNT 17/6	C     SETS UP HISTOGRAM TABLES OF  PARTICLE MASS AS A FUNCTION OF               	C SETS UP HISTOGRAM TABLES OF PARTICLE MASS AS A FUNCTION OF || \hat{N}STBN \quad 8
+10	838	OK	C     PARTICLE DIAMETER.                                                OST8N  9	C PARTICLE DIAMETER. || OST8N 9
+11	882	OK	C                                                                       OSTBN 10	C || OSTBN 10
+12	924	OK	C     LOGNORMAL DISTRIBUTION TO 100                                     OSTBN 11	C LOGNORMAL DISTRIBUTION TO 100 || OSTBN 11
+13	967	OK	C     POWER FUNCTION DISTRIBUTION TO 2J0                                OSTBN 12	C POWER FUNCTION DISTRIBUTION TO 2J0 || OSTBN 12
+14	1010	OK	C     TABULAR DISTRIBUTION TO 300                                       OSTBN 13	C TABULAR DISTRIBUTION TO 300 || OSTBN 13
+15	1054	OK	C                                                                       DSTBN 14	C || DSTBN 14
+16	1095	OK	C     EQUATION 26.2.23 OF NBS-AMS 55 HANDBOOK IS USED TO COMPUTE THE    OSTBN 15	C EQUATION 26.2.23 OF NBS-AMS 55 HANDBOOK IS USED TO COMPUTE THE || OSTBN 15
+17	1139	OK	C     PROBABILITY FUNCTION ARGUMENT FROM THE RATIONAL POLYNOMIAL        OSTBN 16	C PROBABILITY FUNCTION ARGUMENT FROM THE RATIONAL POLYNOMIAL || OSTBN 16
+18	1183	OK	C     APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION.                 OSTBN 17	C APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION. || OSTBN 17
+19	1225	COUNT 1/2	                                                                        DST8N 18	C || DST8N 18
+20	1268	COUNT 199/71;COUNT 9/7	                                                                                	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || D.STB:1 19
+21	1311	OK	C.                                                                      DSTBN 20	C. || DSTBN 20
+22	1354	OK	      COMMON /CONTRL/ DETIC(12),IC(20),IRAC,IRISE,ISIN,ISOUT,JPARN,KDI  DST8N 21	COMMON /CONTRL/ DETIC(12), IC(20), IRAC, IRISE, ISIN, ISOUT, JPARN, KDI || DST8N 21
+23	1398	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 OSTBN 22	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR || OSTBN 22
+24	1441	COUNT 63/62	                                                                        OST8N 23	COMMON /PARTCL/ NOSTR,RIICP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) || OST8N 23
+25	1476	OK	      EQUIVALENCE (DMEAN,CAYM),(SD,EXPC)                                OSTBN 24	EQUIVALENCE (DMEAN, CAYM), (SD, EXPC) || OSTBN 24
+26	1527	OK	      DATA PROGRM, PI/ 6H0STBN , 3.141592654/                           DST8N 25	DATA PROGRM, PI/ 6H0STBN , 3.141592654/ || DST8N 25
+27	1570	OK	C                                                                       OSTON 26	C || OSTON 26
+28	1612	COUNT 199/71	                                                                        OSTON 27	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || OSTON 27
+29	1656	OK	C                                                                       OST8N 28	C || OST8N 28
+30	1699	COUNT 0/26	                                                                        OSTBN 29	 || OSTBN 29
+31	1739	COUNT 0/57	                                                                        OSTBN 30	 || OSTBN 30
+32	1784	COUNT 0/57	                                                                        OSTBN 31	 || OSTBN 31
+33	1827	OK	C                                                                       OSTBN 32	C || OSTBN 32
+34	1869	COUNT 0/10	                                                                        DSTBN 53	 || DSTBN 53
+35	1911	OK	      IF(IC(1)-1)100,200,300                                            DSTBN 34	IF(IC(1)-1) 100, 200, 300 || DSTBN 34
+36	1955	OK	  100 IF(DMEAN)111,111,112                                              OSTBN 35	100 IF(DMEAN)111,111,112 || OSTBN 35
+37	1997	OK	  111 DMEAN=0.407                                                       OSTBN 36	111 DMEAN=0.407 || OSTBN 36
+38	2040	COUNT 0/6	                                                                        OSTBN 37	 || OSTBN 37
+39	2083	OK	  112 IF(NDSTR-1)101,101,102                                            USTBN 38	112 IF(NDSTR-1) 101, 101, 102 || USTBN 38
+40	2125	COUNT 22/21	                                                                        OST8N 39	101 PS(1.) = DMEAN * 1.0E-6 || OST8N 39
+41	2169	COUNT 7/8	                                                                        OSTBN 40	C5 = 7 ** 5 || OSTBN 40
+42	2212	COUNT 0/23	                                                                        OSTBN 41	 || OSTBN 41
+43	2255	COUNT 0/23	                                                                        OSTBN 42	 || OSTBN 42
+44	2299	COUNT 0/12	                                                                        OSTBN 43	 || OSTBN 43
+45	2343	OK	      GO TO 431                                                         OSTBN 44	GO TO 431 || OSTBN 44
+46	2383	COUNT 21/20	                                                                        OSTBN 45	1L 2 BARMU=A LOG(DME. AN) || OSTBN 45
+47	2427	COUNT 0/14	                                                                        OST8N 46	 || OST8N 46
+48	2471	COUNT 26/23	                                                                        OSTON 47	BARMU = BARMU + 3 .* SIGMA^{**} 2 || OSTON 47
+49	2513	OK	      FRAC=1.0/FLOAT(NOSTR)                                             OSTON 40	FRAC = 1.0 / FLOAT(NOSTR) || OSTON 40
+50	2556	OK	      00 1J3 ND=1,NDSTF                                                 OSTON 49	00 1J3 ND=1,NDSTF || OSTON 49
+51	2599	OK	  103 FMASS(ND)=FRAC                                                    OSTON 50	103 FMASS(ND) = FRAC || OSTON 50
+52	2642	OK	      NH=NDSTR/2                                                        OSTON 51	NH = NDSTR/2 || OSTON 51
+53	2684	OK	      no 134 I=1,NH                                                     OSTEN 52	no 134 I=1,NH || OSTEN 52
+54	2726	OK	      PRB=FLOAT(I)*FRAC                                                 OSTBN 53	PRB = FLOAT(I) * FRAC || OSTBN 53
+55	2769	COUNT 0/30	                                                                        OSTON 54	 || OSTON 54
+56	2812	COUNT 0/11	                                                                        DSTAN 55	 || DSTAN 55
+57	2857	COUNT 48/31	                                                                        OSTAN 56	104 \text{DIAM}(J) = 3ARMU - AP \times (PRH) \times SIGMA || OSTAN 56
+58	2888	COUNT 1/2;COUNT 26/7	                                                                                	C || \text{JSTBN} \quad \text{SY}
+59	2939	OK	C     FOR THE 2 EXTREME INTERVALS THE AVERAGE DIAMETER IS               OSTBN 58	C FOR THE 2 EXTREME INTERVALS THE AVERAGE DIAMETER IS || OSTBN 58
+60	2984	OK	C     ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE           OSTBN 59	C ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE || OSTBN 59
+61	3028	COUNT 14/7	C                                                                               	C || \text{OSTBN 6u}
+62	3073	OK	                                        65                                      	65
+63	3236	COUNT 0/56;COUNT 21/4	                                                                                	 || ![image](image_1.png)
+64	3277	COUNT 3/28	                                                                                	...
+65	3301	COUNT 0/53	                                                                                	

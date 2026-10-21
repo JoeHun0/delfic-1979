@@ -1,0 +1,37 @@
+1	20	COUNT 0/31	                                                                                	
+2	45	COUNT 0/52;COUNT 0/8	                                                                                	 || 
+3	790	OK	*DECK,ERROR                                                             ERROK  1	*DECK, ERROR || ERROK 1
+4	828	OK	      SUBROUTINE ERROR (PROSRM,IRROR,ISOUT)                             ERROR  2	SUBROUTINE ERROR (PROSRM, IRROR, ISOUT) || ERROR 2
+5	869	COUNT 1/13	                                                                        ERROR  3	C || ERROR 3
+6	917	OK	0     1 MARCH 1966                                                      ERROR  4	0 1 MARCH 1966 || ERROR 4
+7	953	OK	C                                                                       ERROR  5	C || ERROR 5
+8	995	COUNT 0/71	                                                                        ERRCR  6	 || ERRCR 6
+9	1045	OK	C                                                                       ERROR  7	C || ERROR 7
+10	1081	COUNT 55/56	                                                                        ERROR  8	THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING || ERROR 8
+11	1125	OK	C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS       ERROR  9	C FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS || ERROR 9
+12	1166	OK	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                        ERROR 10	C POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. || ERROR 10
+13	1217	OK	C                                                                       ERROR 11	C || ERROR 11
+14	1253	OK	E         RRORS ENSEDI NP ROGRAM( PROGRAM) AT CR NEAR STATEMENT NUMBER  ERROR 12	ERROR SENSED IN PROGRAM (PROGRAM) AT CR NEAR STATEMENT NUMBER || ERROR 12
+15	1295	OK	C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING.                ERROR 13	C (IRROR). PLEASE REFER TO THE PROGRAM LISTING. || ERROR 13
+16	1346	OK	C                                                                       ERROR 14	C || ERROR 14
+17	1382	OK	O     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET        ERROR 15	O PRIOR TO CALLING ERRCR THE PARAMETER PROGRM MUST BE SET || ERROR 15
+18	1424	COUNT 26/27	                                                                        ERROR 16	WITH THE BCD NAME OF THE CALLING || ERROR 16
+19	1467	OK	C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE  ERROR 17	C PROGRAM AND PARAMETER IRROR MUST BE SET WITH THE NUMBER OF THE || ERROR 17
+20	1511	OK	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      ERROR 18	C FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. || ERROR 18
+21	1560	OK	C                                                                       ERROR 19	C || ERROR 19
+22	1603	COUNT 0/71	                                                                        ERROR 20	 || ERROR 20
+23	1639	OK	C                                                                       ERROR 21	C || ERROR 21
+24	1689	COUNT 57/56	                                                                        ERROR 22	1 FORMAT(//26H ERROR SENSED IN PROGRAM A6,30H AT OR NEAR STATEMENT) || ERROR 22
+25	1732	OK	     1 NUMBER 16,40H .  PLEASE REFER TO THE PROGRAM LISTING.)           ERROR 23	1 NUMBER 16,40H . PLEASE REFER TO THE PROGRAM LISTING.) || ERROR 23
+26	1769	OK	C                                                                       ERROR 24	C || ERROR 24
+27	1818	COUNT 0/71	                                                                        ERROR 25	 || ERROR 25
+28	1854	COUNT 0/71	                                                                        ERR0R 26	 || ERR0R 26
+29	1904	OK	C                                                                       ERROR 27	C || ERROR 27
+30	1947	COUNT 22/15	                                                                        ERROR 28	IRR = \text{IABS}(IRROR) || ERROR 28
+31	1990	COUNT 25/24	                                                                        ERROR 29	WRITE (ISOUT, 1) PROGRAM, IRR || ERROR 29
+32	2027	OK	      IF(IRROR)101,100,100                                              ERROR 30	IF (IRROR) 101,100,100 || ERROR 30
+33	2068	OK	  100 RETURN                                                            ERROR 31	100 RETURN || ERROR 31
+34	2118	OK	  101 STOP                                                              ERROR 32	101 STOP || ERROR 32
+35	2154	OK	      END                                                               ERROR 33	END || ERROR 33
+36	3144	OK	                                        53                                      	53
+37	3283	COUNT 0/6;COUNT 0/6	                                                                                	 || 

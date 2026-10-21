@@ -1,0 +1,63 @@
+1	4	49	NOISE	                                                                        			
+2	512	543	VOTED	 208  DM=02(KL)                                                         		lighton= 208  DM=02(KL) ## dots= 208  DM=D2(KL) ## glm= 208  DM=02(KL)	TRIDI181
+3	556	586	AGREE	      NADT=J                                                            		lighton=      NADT=J ## dots=      NADT=J ## glm=      NADT=J	TRIOI182
+4	598	629	AGREE	 207  CONTINUE                                                          		lighton= 207  CONTINUE ## dots= 207  CONTINUE ## glm= 207  CONTINUE	TRIOI183
+5	641	675	COMMENT	C     AT THIS POINT, DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN)       		lighton=C     AT THIS POINT, DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN) ## glm=C     AT THIS POINT. DM IS THE LARGEST D2(J) FCR J=NAD(J),NAD(NN)	TR10I184
+6	687	717	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TR10I185
+7	727	762	AGREE	      IF (NN1-JTOPV)2072,2072,2073                                      		lighton=      IF (NN1-JTOPV)2072,2072,2073 ## dots=      IF (NN1-JTOPV)2072,2072,2073 ## glm=      IF (NN1-JTOPV)2072,2072,2073	TRIDI186
+8	772	801	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIDI187
+9	815	846	COMMENT	C2072 NOW SELECT UEST NN POINTS                                         		lighton=C2072 NOW SELECT UEST NN POINTS ## dots=C2072 NOW SELECT BEST NN POINTS ## glm=C2072 NOW SELECT DEST NN POINTS	TR10I168
+10	856	890	COMMENT	C     SCAN THE SET D2(J),J=NAD(NN+1,JTOPV) UNTIL A D2(J) LESS THAN DM   		lighton=C     SCAN THE SET D2(J),J=NAD(NN+1,JTOPV) UNTIL A D2(J) LESS THAN DM ## glm=C     SCAN THE SET D2(J),J=NAD(NN+1,JTOPV) UNTIL A D2(J) LESS THAN DM	TRIOI189
+11	899	934	COMMENT	C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NAOT) WITH THE SELECTED NAD		lighton=C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NADT) WITH THE SELECTED NAD ## dots=C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NAOT) WITH THE SELECTED NAD ## glm=C     IS FOUND.  IF ONE IS FOUND, SWITCH NAD(NAOT) WITH THE SELECTED NAD	TR10I190
+12	943	976	COMMENT	C THEN RESET DM AND NACT TO INDICATE THE MCST REMOTE OF THE NEAREST     			TRIOI191
+13	986	1019	COMMENT	C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN    		lighton=C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN ## dots=C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN ## glm=C     NN POINTS.  WHEN THE FULL SET D2(J),J=NAC(NN+1,JTOPV) HAS BEEN	TRIOI192
+14	1027	1061	COMMENT	C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY  		lighton=C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY ## dots=C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY ## glm=C     SCANNED, THE SET OF NEAREST DATA POINTS HAS BEEN SELECTED.  ONLY	TRIOI193
+15	1073	1107	COMMENT	C     ONE SCAN IS REQUIRED.                                             		lighton=C     ONE SCAN IS REQUIRED. ## glm=C     ONE SCAN IS REQUIRED.	TRIDI194
+16	1115	1147	VOTED	 2072 DO 210 J=NN1,JT0PV                                                		lighton= 2072 DO 210 J=NN1,JTOPV ## dots= 2072 DO 210 J=NN1,J10PV ## glm= 2072 DO 210 J=NN1,JT0PV	TRIDI195
+17	1159	1190	VOTED	      KL=NAD(J)                                                         		lighton=      KL=NAD(J) ## dots=      KL=NAD(J) ## glm=      KL=NAD（J）	TRIOI136
+18	1202	1236	AGREE	      IF(DM-02(KL))210,210,211                                          		lighton=      IF(DM-02(KL))210,210,211 ## dots=      IF(DM-02(KL))210,210,211 ## glm=      IF(DM-02(KL))210,210,211	TRID1197
+19	1245	1278	AGREE	 211  NTEMP=NAO(J)                                                      		lighton= 211  NTEMP=NAO(J) ## dots= 211  NTEMP=NAO(J) ## glm= 211  NTEMP=NAO(J)	TRIDI198
+20	1288	1319	VOTED	      NAD(J)=NAD(NADT)                                                  		lighton=      NAD(J)=NAD(NADT) ## dots=      NAD(J)=NAD(NADT) ## glm=      NAD（J）=NAD（NADT）	TRID199
+21	1332	1364	AGREE	      NAD(NADT)=NTEMP                                                   		dots=      NAD(NADT)=NTEMP ## glm=      NAD(NADT)=NTEMP	TRIDI200
+22	1375	1404	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIOI2J1
+23	1416	1449	COMMENT	C     NOW RESET DM AND NADT TO THE NEW HOST REMOTE POINT                		lighton=C     NOW RESET DM AND NADT TO THE NEW HOST REMOTE POINT ## dots=C     NOW RESET DM AND NADT TO THE NEW MOST REMOTE POINT ## glm=C     NOW RESET DM AND NADT TO THE NEW NOST REMOTE POINT	TRIOI2J2
+24	1462	1493	VOTED	      DM=D2(KL)                                                         		lighton=      DM=02(KL) ## dots=      DM=D2(KL) ## glm=      DM=D2(KL)	TRIOI2J3
+25	1504	1538	VOTED	      00 212 KKK=1,NN                                                   		lighton=      00 212 KKK=1,NN ## dots=      DO 212 KKK=1,NN ## glm=      00 212 KKK=1，NN	TR1DI2J4
+26	1547	1578	VOTED	      KL=NAD(KKK)                                                       		lighton=      KL=NAD(KKK) ## dots=      KL=NAD(KKK) ## glm=      KL=NAD（KKK）	TRIOI215
+27	1589	1623	VOTED	      IF(DM-02(KL))213,212,212                                          		lighton=      IF(DM-02(KL))213,212,212 ## dots=      IF(OM-02(KL))213,212,212 ## glm=      IF（DM=02（KL））213，212，212	TRIOI2J6
+28	1632	1663	AGREE	 213  DM=02(KL)                                                         		lighton= 213  DM=02(KL) ## dots= 213  DM=02(KL) ## glm= 213  DM=02(KL)	TR1012J7
+29	1676	1706	AGREE	      NADT=KKK                                                          		dots=      NADT=KKK ## glm=      NADT=KKK	TRIDI218
+30	1720	1750	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRID12J9
+31	1760	1793	COMMENT	C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF     		lighton=C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF ## dots=C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MOST REMOTE OF ## glm=C     DM AND NAOT ARE SET WITH THE PARAMETERS OF THE MCST REMOTE OF	TRIOI210
+32	1805	1836	COMMENT	C     THE NEAREST NN POINTS                                             		lighton=C     THE NEAREST NN POINTS ## dots=C     THE NEAREST NN POINTS ## glm=C     THE NEAREST NN POINTS	TRIOI211
+33	1849	1879	AGREE	 212  CONTINUE                                                          		lighton= 212  CONTINUE ## dots= 212  CONTINUE ## glm= 212  CONTINUE	TRIOI212
+34	1890	1921	AGREE	 210  CONTINUE                                                          		lighton= 210  CONTINUE ## dots= 210  CONTINUE ## glm= 210  CONTINUE	TRIOI213
+35	1934	1965	AGREE	 2073 CONTINUE                                                          		lighton= 2073 CONTINUE ## dots= 2073 CONTINUE ## glm= 2073 CONTINUE	TRIOI214
+36	1978	2007	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIOI215
+37	2020	2050	COMMENT	C     THE NEAREST NN HAVE BEEN FOUND                                    		lighton=C     THE NEAREST NN HAVE BEEN FOUND ## dots=C     THE NEAREST NN HAVE BEEN FOUND ## glm=C     THE NEAREST NN HAVE BEEN FOUND	TRIDI216
+38	2063	2092	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIOI217
+39	2107	2136	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIDI218
+40	2147	2179	COMMENT	C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS                            		lighton=C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS ## dots=C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS ## glm=C2080 COMPUTE AND SUM  THE WEIGHTING FACTORS	TRID1219
+41	2191	2222	AGREE	 2080 SUM=0.0                                                           		lighton= 2080 SUM=0.0 ## dots= 2080 SUM=0.0 ## glm= 2080 SUM=0.0	TRIOI220
+42	2234	2268	VOTED	      00 214 J=1,NN                                                     		lighton=      00 214 J=1,NN ## dots=      00 214 J=1,NN ## glm=      00 214 J=1，NN	
+43	2268	2307	AGREE	      L=NAD(J)                                                          		glm=      L=NAD(J) ## glm2=      L=NAD(J)	TRIOI222
+44	2319	2350	AGREE	      C2(L)=1.0/D2(L)                                                   		dots=      C2(L)=1.0/D2(L) ## glm=      C2(L)=1.0/D2(L)	TRIOI223
+45	2350	2394	AGREE	 214  SUM=SUM+D2(L)                                                     		dots= 214  SUM=SUM+D2(L) ## glm= 214  SUM=SUM+D2(L)	TR10I224
+46	2403	2437	VOTED	      IF(SUM/FLOAT(NN) .LE. GIB) WRITE(ISOUT,24) NN,XG,YG,ZG            		lighton=      IF(SUM/FLOAT(NN) .LE. GIB) WRITE(ISOUT,24) NN,XG,YG,ZG ## dots=      IF(SUM/FLOAT(NN) .LE. GIB) WRITE(ISOUT,24) NN,XG,YG,ZG ## glm=      IF(SUM/FLOAT(NN) .LE. GI8) WRITE(ISOUT,24) NN,XG,YG,ZG	TRIDI225
+47	2449	2478	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TRIOI226
+48	2491	2523	COMMENT	C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT.              		lighton=C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT. ## dots=C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT. ## glm=C     NOW COMPUTE VECTOR ESTIMATE AT LATTICE CENTER POINT.	TRIOI227
+49	2534	2565	COMMENT	C     COMPUTE STORAGE INDEX                                             		lighton=C     COMPUTE STORAGE INDEX ## dots=C     COMPUTE STORAGE INDEX ## glm=C     COMPUTE STORAGE INDEX	TRIDI228
+50	2576	2610	COMMENT	C     COMPUTE AND STORE VECTOR ESTIMATE AT LATTICE CENTER POINT.        		lighton=C     COMPUTE AND STORE VECTOR ESTIMATE AT LATTICE CENTER POINT.	TRIOI229
+51	2623	2653	AGREE	      VXKNL=0.0                                                         		dots=      VXKNL=0.0 ## glm=      VXKNL=0.0	TRID1230
+52	2665	2694	AGREE	      VYKNL=0.0                                                         		dots=      VYKNL=0.0 ## glm=      VYKNL=0.0	TRIOI231
+53	2709	2739	AGREE	      VZKNL=0.3                                                         		dots=      VZKNL=0.3 ## glm=      VZKNL=0.3	
+54	2752	2784	VOTED	      DO 216 J=1,NN                                                     		lighton=      no 216 J=1,NN ## dots=      DO 216 J=1,NN ## glm=      DO 216 J=1，NN	TRIDI233
+55	2794	2825	AGREE	      L=NAD(J)                                                          		lighton=      L=NAD(J) ## dots=      L=NAD(J) ## glm=      L=NAD(J)	TRIDI234
+56	2836	2867	VOTED	      VXKNL=VXKNL+SX(L)*02(L)                                           		lighton=      VXKNL=VXKNL+SX(L)*D2(L) ## dots=      VXKNL=VXKNL+5X(L)*02(L) ## glm=      VXKNL=VXKNL+SX(L)*02(L)	TRIOI235
+57	2880	2911	HANDFREE	      VYKNL=VYKNL+SY(L)*D2(L)                                           	25	dots=      VYKNL=VYKNL+SY(L)*02(L) ## dots2=      VYKNL=VYKNL+SY(L)*02(L) ## glm=      VYKNL=VYKNL+SY(L)*D2(L) ## glm2=      VYKNL=VYKNL+SY(L)*D2(L)	TRID1236
+58	2922	2953	VOTED	 216  VZKNL=VZKNL+SZ(L)*D2(L)                                           		dots= 216  VZKNL=VZKNL+SZ(L)*D2(L) ## dots2= 216  VZKNL=VZKNL+SZ(L)*D2(L) ## glm= 216  VZKNL=VZKNL+SZ（L）*D2（L） ## glm2= 216  VZKNL=VZKNL+SZ(L)*D2(L)	TRIOI237
+59	2965	2995	AGREE	      VXKNL=VXKNL/SUM                                                   		lighton=      VXKNL=VXKNL/SUM ## dots=      VXKNL=VXKNL/SUM ## glm=      VXKNL=VXKNL/SUM	TRIOI238
+60	3010	3040	AGREE	      VYKNL=VYKNL/SUM                                                   		lighton=      VYKNL=VYKNL/SUM ## dots=      VYKNL=VYKNL/SUM ## glm=      VYKNL=VYKNL/SUM	TRID1239
+61	3053	3083	VOTED	      VZKNL=VZKNL/SUM                                                   		lighton2=      VZKNL=VZKNL/SUM ## dots=      VZKNL=VZKNL/SUN ## dots2=      VZKNL=VZKNL/SUN ## glm=      VZKNL=VZKNL/SUM ## glm2=      VZKNL=VZKNL/SUM	TRIOI240
+62	3101	3132	NOISE	                                                                        		lighton=                                       138 ## dots=                                       138 ## glm=                                       138	
+63	3284	3308	NOISE	                                                                        			

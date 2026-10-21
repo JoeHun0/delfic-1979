@@ -1,0 +1,43 @@
+1	5	COUNT 3/28	                                                                                	---
+2	64	COUNT 3/22;COUNT 3/5	                                                                                	--- || ---
+3	769	COUNT 11/12	                                                                        DST8N 61	PRB=FRAC 2.0 || DST8N 61
+4	813	OK	      PS(1)=BARMU+APX(PRB)*SIGMA                                        DSTBN 62	PS(1) = BARMU+APX(PRB)*SIGMA || DSTBN 62
+5	855	OK	      PS(NDSTR)=BARMU-APX(FRB)*SIGMA                                    DSTBN 63	PS(NDSTR) = BARMU - APX(FRB) *SIGMA || DSTBN 63
+6	899	OK	      DIAM(1)=2.*PS(1)-DIAM(2)                                          DSTBN 64	DIAM(1) = 2. *PS(1)-DIAM(2) || DSTBN 64
+7	941	OK	      DIAM(LD)=2.*PS(NDSTR)-DIAM(NDSTR)                                 DSTBN 65	DIAM(LD)=2. *PS(NDSTR)-DIAM(NDSTR) || DSTBN 65
+8	984	OK	C                                                                       DSTBN 66	C || DSTBN 66
+9	1027	COUNT 40/41	                                                                        DSTBN 67	CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES || DSTBN 67
+10	1058	COUNT 1/2	                                                                        DSTBN 68	C || DSTBN 68
+11	1113	OK	      J=NOSTR-1                                                         DST8N 69	J=NOSTR-1 || DST8N 69
+12	1156	OK	      IF（J-1）107，107，105                                                DST8N 70	IF（J-1）107，107，105 || DST8N 70
+13	1198	OK	  105 00 106 I=2，J                                                      DSTBN 71	10500106 I=2，J || DSTBN 71
+14	1240	OK	  106 PS(I)=0.5*(DIAM(I)+CIAM(I+1))                                     DSTBN 72	106 PS(I) = 0.5* (DIAM(I) + CIAM(I+1)) || DSTBN 72
+15	1283	OK	  107 DO 108 I=1,NDSTR                                                  DST8N 73	107 DO 108 I=1,NDSTR || DST8N 73
+16	1328	OK	      DIAM(I)=EXP(DIAM(I)) *1.0E-6                                      DSTBN 74	DIAM(I) = EXP(DIAM(I)) *1.0E-6 || DSTBN 74
+17	1370	OK	  106 PS(I)=EXP(PS(I))*1.0E-6                                           DSTBN 75	106 PS(I) = EXP(PS(I)) * 1.0E-6 || DSTBN 75
+18	1414	OK	      DIAM(LO)=EXP(DIAM(LC)) *1.0E-6                                    DSTBN 76	DIAM(LO) = EXP(DIAM(LC)) *1.0E-6 || DSTBN 76
+19	1456	OK	      GO TO 400                                                         DST8N 77	GO TO 400 || DST8N 77
+20	1498	OK	  200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT)                 DSTBN 78	200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT) || DSTBN 78
+21	1541	OK	      AN=FLOAT(NDSTR)                                                   DSTBN 79	AN=FLOAT(NDSTR) || DSTBN 79
+22	1584	OK	      FRAC=1.0/AN                                                       DSTBN 80	FRAC=1.0/AN || DSTBN 80
+23	1621	OK	      00 205 I=1,NDSTR                                                  DST8N 81	00 205 I=1, NDSTR || DST8N 81
+24	1670	OK	  205 FMASS(I)=FRAC                                                     OST8N 82	205 FMASS(I)=FRAC || OST8N 82
+25	1714	OK	      POW=1.0/(4.0-EXPO)                                                DSTBN 63	POW=1.0/(4.0-EXPO) || DSTBN 63
+26	1756	OK	      DMIN = (6.J*FRAC/(PI*RHOF*CAYM*POW))**P0k                         OSTBN 84	DMIN = (6. J * FRAC / (PI * RHOF * CAYM * POW)) * * P0k || OSTBN 84
+27	1799	OK	      DO 2J6 IJ=1,NDSTR                                                 OSTBN 85	DO 2J6 IJ=1,NDSTR || OSTBN 85
+28	1843	OK	      AJ=IJ=1                                                           DSTBN 86	AJ=IJ=1 || DSTBN 86
+29	1885	OK	  206 DIAM(IJ:-/2N-AJ)**PCW*DMIN                                        DSTBN 87	206 DIAM(IJ: -/2N-AJ) **PCW*DMIN || DSTBN 87
+30	1917	OK	      PS(NDSTR)=0MIN*0.5**POW                                           DSTBN 88	PS(NDSTR) = 0MIN*0.5**POW || DSTBN 88
+31	1972	OK	      DIAM(LO)=PS(NOSTR)**2/DIAM(NOSTR)                                 DST8N 89	DIAM(LO) = PS(NOSTR) * * 2/DIAM(NOSTR) || DST8N 89
+32	2014	OK	      NO=NOSTR-1                                                        DST8N 90	NO=NOSTR-1 || DST8N 90
+33	2056	OK	      DO 207 IJ=1,ND                                                    DSTBN 91	DO 207 IJ=1,ND || DSTBN 91
+34	2100	OK	  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1))                                  DSTBN 92	207 PS(IJ) = SQRT(DIAM(IJ)*DIAM(IJ+1)) || DSTBN 92
+35	2143	OK	      GO TO 400                                                         OSTBN 93	GO TO 400 || OSTBN 93
+36	2187	OK	  300 00 301 I=1,NDSTR                                                  DSTRN 94	300 00 301 I=1,NDSTR || DSTRN 94
+37	2229	OK	  3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.QE-6                              DST8N 95	3C1 PS(I) = SQRT(DIAM(I) * DIAM(I+1)) * 1. QE-6 || DST8N 95
+38	2271	OK	      DO 308 IJ=1,LD                                                    GSTBN 96	DO 308 IJ=1,LD || GSTBN 96
+39	2313	OK	  308 DIAM(IJ)=1.0E-6*DIAM(IJ)                                          DST8N 97	308 DIAM(IJ) =1.0E-6*DIAM(IJ) || DST8N 97
+40	2350	OK	  400 RETURN                                                            DSTBN 98	400 RETURN || DSTBN 98
+41	2400	OK	      END                                                               OSTBN 99	END || OSTBN 99
+42	3131	OK	                                        66                                      	66
+43	3296	COUNT 3/45;COUNT 3/8	                                                                                	--- || ---

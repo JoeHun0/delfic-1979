@@ -1,0 +1,15 @@
+18	1202	OK	       r1=r1*1.0E-6                                                             	r1=r1*1.0E-6
+19	1243	COUNT 0/12	                                                                                	
+25	1501	COUNT 12/11	                                                                                	RETURN=2-TGZ
+27	1590	COUNT 67/58	                                                                                	385 GO TO (90, 70, 79, 70, 69, 68, 73, 78, 78, 73, 80, 80, 80, 71, 80, 60, 80, 80).NREI
+28	1632	COUNT 32/34	                                                                                	CF6=CF6+(1.0-(TIME/EXIT)+(0.26))
+29	1671	COUNT 32/27	                                                                                	59 CF6=32.3344*CF6*(TIME)*(-0.26)
+30	1713	COUNT 11/12	                                                                                	TIME=3600.0
+32	1792	COUNT 7/6	                                                                                	11 JGO=2
+34	1888	COUNT 41/37	                                                                                	IF( _IH09 .GT. 0 ) CALL ERROR( PROGRM, -71, ISCUT )
+36	1972	COUNT 13/12	                                                                                	73 K00S=.TRUE.
+44	2315	OK	 6C   NORD=NORD+1                                                               	6C NORD=NORD+1
+49	2535	COUNT 0/7	                                                                                	
+57	2868	COUNT 13/11	                                                                                	REWINDING TAPE
+59	2961	OK	      00 302 IMAP=1,NNAP                                                        	00 302 IMAP=1,NNAP
+63	3106	OK	        TICONT •NE. 0 •AND. CROLBL •NE. BLANK)CALL CONTOR(CONTUR,CROLBL,        	TICONT •NE. 0 •AND. CROLBL •NE. BLANK)CALL CONTOR(CONTUR,CROLBL,

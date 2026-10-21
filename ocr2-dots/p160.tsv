@@ -1,0 +1,14 @@
+4	607	COUNT 58/60	                                                                                	45 FORMAT/ 15X, 93FCATOURS ARE NOT DETERMINED BECAUSE THE REQUESTED
+5	651	COUNT 41/40	                                                                                	1. MAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY)
+6	693	COUNT 62/59	                                                                                	46 FORMAT(/15X, 56HTHE SPECIFIED NAF GRID INCREMENTS PRODUCE DISTORTED
+16	1122	OK	      IF(GRUFF .EQ. J.0) GRUFF=1.0                                              	IF (GRUFF .EQ. J.0) GRUFF=1.0
+17	1163	OK	 16U3 IF(ABS(DGX) + ABS(DGY))120,121,121                                        	16U3 IF(ABS(DGX) + ABS(DGY))120,121,121
+30	1724	COUNT 53/17	                                                                                	\text{OGY} = \text{OGX} * \text{IH} / \text{IV} / 2.0 \text{ J}
+34	1894	OK	      NYNAP = (YNAX - YHIN)/CGY                                                 	NYNAP = (YNAX - YHIN)/CGY
+37	2022	COUNT 35/14	                                                                                	\text{NST} = \text{NHAP}/\text{NYHAP}
+40	2151	OK	 1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-141U,ISOUT)                           	1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-141U,ISOUT)
+41	2195	OK	      NZ=NOX/NXHAP                                                              	NZ = NOX / NXHA P
+42	2237	OK	 1401 NO 1121 J=1,NDSTR                                                         	1401 NO 1121 J=1,NDSTR
+43	2279	COUNT 44/23	                                                                                	\text{WFMAS}(J) = \text{FMASS}(J) / \text{GRUFF}
+44	2323	OK	      IF(SD .GT. C.D) WFNAS(J)=WFNAS(J)*SSAM                                    	IF(SD .GT. C.D) WFNAS(J)=WFNAS(J)*SSAM
+57	2882	OK	 1209 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM                                      	1209 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM

@@ -1,0 +1,25 @@
+1	9	COUNT 134/17	                                                                                	1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.
+2	51	COUNT 47/26	                                                                                	The following is a sample of a computer program listing:
+5	643	COUNT 37/36	                                                                                	2401 IF(DPST(2,2)-ZBRSTZ) 25 \S, 259, 2448
+10	859	COUNT 33/34	                                                                                	IF(DPST(2,1) - ZBRSTZ) ∈ 20, 6020, 2440
+33	1846	OK	      DO 2445 I=1,KDIP                                                          	DO 2445 I=1,KDIP
+35	1932	OK	      A=DPST(2,2)+(FI-1.)*OZ                                                    	A=DPST(2,2)+(FI-1.)*OZ
+36	1975	COUNT 0/6	                                                                                	
+37	2018	COUNT 0/29	                                                                                	
+38	2059	COUNT 0/29	                                                                                	
+39	2103	OK	      PPST(2,I)=ALL*(ALOG(0.5*(A1+A2)))+DPST(2,2)                               	PPST(2, I) = ALL * (ALOG(0.5 * (A1 + A2))) + DPST(2, 2)
+42	2231	OK	      PPST(4,I)=SQRT(DPST(4,1)*DPST(4,2))                                       	PPST(4, I) = SQRT(DPST(4, 1) * DPST(4, 2))
+43	2275	OK	      PPST(5,I)=OPST(5,MBT)/FK                                                  	PPST(5, I) = OPST(5, MBT) / FK
+44	2318	OK	      PPST(6,I)=DZ                                                              	PPST(6, I) = DZ
+45	2360	OK	      PPST(7,I)=A                                                               	PPST(7, I) = A
+50	2575	OK	      IF(PPST(2,I).GT.ZORSTZ) GO TO 3443                                        	IF (PPST(2,I).GT.ZORSTZ) GO TO 3443
+51	2618	COUNT 0/49	                                                                                	
+52	2662	OK	     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZC)                        	1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZC)
+54	2748	OK	      PPST(6,I)=0.C                                                             	PPST(6, I) = 0.C
+55	2791	OK	      PPST(7,I)=ZBRSTZ                                                          	PPST(7, I) = ZBRSTZ
+56	2833	OK	      PPST(8,I)=0.0                                                             	PPST(8, I) = 0.0
+57	2877	COUNT 7/8	                                                                                	G TO 2445
+60	3003	COUNT 0/61	                                                                                	
+61	3049	OK	      PPST(7,I)=ZBRSTZ                                                          	PPST(7, I) = ZBRSTZ
+62	3091	COUNT 12/11	                                                                                	2445 CONTINUE
+64	3276	COUNT 16/41	                                                                                	\text{S. 12. 1975}

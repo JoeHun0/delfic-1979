@@ -1,0 +1,8 @@
+ DELFIC TEST PROBLEM - OPM                                                      
+                                                                                
+FFFFFFFF                                                                        
+P239HE           1.4                                                            
+    -9000.    14400.    -3000.    51000.     1800.                              
+    2                                                                           
+                                                                                
+                                                                                

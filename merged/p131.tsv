@@ -1,0 +1,35 @@
+1	16	52	NOISE	                                                                        			
+2	52	78	NONE	                                                                        			
+3	803	851	AGREE	      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                )		lighton=      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                ) ## dots=      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                ) ## glm=      IF( MC  3.GT .0 )WRITE(ISOUT,8019                                )	5PRVS167
+4	851	897	NONE	                                                                        			SPRVS168
+5	897	940	NONE	                                                                        			SPRVS169
+6	950	981	VOTED	      GO TO1.000                                                        		lighton=      GO TO1.890 ## dots=      GO TO1,000 ## glm=      GO TO1.000	
+7	981	1020	COMMENT	COMPUTE INDEX OF MESH OR SUB-MESH CONTAINING PARCEL CENTER.             			SPRVS171
+8	1020	1065	VOTED	 1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF)          		lighton= 1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF) ## dots= 1200 CALL NEST(NET,NETSU,XP,YP,NOATP,XL,XR,YL,YU,ICF,JCF,NCF) ## glm= 1200 CALL NEST(NET,NETSU,XP,YP,NDATP,XL,XR,YL,YU,ICF,JCF,NCF)	SPRVS172
+9	1065	1113	COMMENT	CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS.               		lighton=CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS. ## dots=CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS. ## glm=CANCEL PROCESSING OF PARCEL IF IT IS INPUT OUTSIDE ATMOS.	SPRVS173
+10	1113	1154	VOTED	      IF(NOATP.GT.U) GO TO 1260                                         		lighton=      IF(NOATP.GT.U) GO TO 1260 ## dots=      IF(NOATP.GT.U) GO TO 1260 ## glm=      IF(NOATP.GT.0) GO TO 1260	SPRVS174
+11	1154	1196	AGREE	      IF( MC3 .GT. 0) WRITE(IS(UT,8020)                                 		lighton=      IF( MC3 .GT. 0) WRITE(IS(UT,8020) ## dots=      IF( MC3 .GT. 0) WRITE(IS(UT,8020) ## glm=      IF( MC3 .GT. 0) WRITE(IS(UT,8020)	SPRVS175
+12	1208	1236	NOISE	                                                                        		lighton=      GO TO 1000 ## dots=      GO TO 1000 ## glm=      GO TO 1000	
+13	1236	1285	COMMENT	CANCEL PROCESSING OF PARCEL IF IT CANNOT REACH THE GROUND IN THE ALLOTED		lighton=CANCEL PROCESSING OF PARCEL IF IT CANNOT REACH THE GROUND IN THE ALLOTED ## glm=CANCEL PROCESSING OF PARCEL IF IT CANNOT REACH THE GROUND IN THE ALLOTED	SPRVS177
+14	1295	1327	COMMENT	C     TIME                                                              		lighton=C     TIME ## dots=C     TIME ## glm=C     TIME	
+15	1327	1371	VOTED	 1260 IF(ZLOW.LT.ZLIM) GO TO 1409                                       		lighton= 1260 IF(ZLOW.LT.ZLIM) GO TO 1409 ## dots= 1260 IF(ZLOW.LT.ZLIM) GO 10 1409 ## glm= 1260 IF(ZLOW.LT.ZLIM) GO TO 1409	SPKVS179
+16	1371	1412	AGREE	      IF( MC3 .GT. 0) WRITE(ISCUT,8015)                                 		lighton=      IF( MC3 .GT. 0) WRITE(ISCUT,8015) ## dots=      IF( MC3 .GT. 0) WRITE(ISCUT,8015) ## glm=      IF( MC3 .GT. 0) WRITE(ISCUT,8015)	SPRVS180
+17	1423	1451	NOISE	                                                                        		lighton=      GO TO 1030 ## dots=      GO TO 1000 ## glm=      GO TO 1000	
+18	1451	1499	VOTED	 1409 CALL       ADVEC(NET,NETSU,ZBH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM,  		lighton= 1409 CALL       ADVEC(NET,NETSU,ZEH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM, ## dots= 1409 CALL       ADVEC(NET,NETSU,ZBH,TINUP,USUM,VSUM,DXSUM,DYSUM,RSUM, ## glm= 1409 CALL       ADVEC(NET,NETSU,ZBH,TIMUP,USUM,VSUM,DXSUM,DYSUM,RSUM,	SPRVS182
+19	1499	1544	AGREE	     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX,                       		lighton=     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX, ## dots=     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX, ## glm=     1WFZ,TSUM,CAVS,ZCH,ALT,ATP,PRS,RHC,ETA,TMAX,	SPRVS183
+20	1544	1587	VOTED	     2ICF,JCF,NCF,KBHF,N(ATF,LTIMF,NATF)                                		lighton2=     2ICF,JCF,NCF,KBHF,N(ATF,LTIMF,NATF) ## dots2=     2ICF,JCF,NCF,KBHF,NCATF,LTIMF,NATF) ## glm=     2ICF,JCF,NCF,KBHF,N(ATF,LTIMF,NATF) ## glm2=     2ICF，JCF，NCF，KBHF，N(ATF，LTIMF，NATF)	SPRVS184
+21	1599	1634	AGREE	 1000 CONTINUE                                                          		lighton= 1000 CONTINUE ## dots= 1000 CONTINUE ## glm= 1000 CONTINUE	SPRV515
+22	1634	1668	AGREE	      GO TO 100                                                         		lighton=      GO TO 100 ## dots=      GO TO 100 ## glm=      GO TO 100	SPKVS1
+23	1668	1718	COMMENT	COPY OUT BUFFER DATA VECTORS FOR DRY DEPOSIT INCREMENTS.  WAFER         		lighton=COPY OUT BUFFER DATA VECTORS FOR DRY DEPOSIT INCREMENTS.  WAFER ## dots=COPY OUT BUFFER DATA VECTORS FOR DRY DEPOSIT INCREMENTS.  WAFER ## glm=COPY OUT BUFFER DATA VECTORS FCR DRY DEPOSIT INCREMENTS.  WAFER	SPRV5187
+24	1718	1757	COMMENT	C PROCESSING HAS BEEN COMPLETED                                         			SPKV5188
+25	1757	1803	VOTED	  806 CALL       DUMPER(0.,J.,0.,0.,   J.,   J.,   J.,  U.,J.,999.      		lighton=  806 CALL       DUMPER(0.,J.,0.,0.,   J.,   J.,   J.,  U.,J.,999. ## lighton2=  806 CALL       DUMPER(0.,J.,0.,0.,   J.,   J.,   J.,  U.,J.,999, ## dots2=  806 CALL       DUMPER(G..J..O..O..   J..   G..   G..  G..J..999.	SPRVS189
+26	1803	1843	AGREE	     1ISOUT,IPOUT,MC3)                                                  		lighton=     1ISOUT,IPOUT,MC3) ## dots=     1ISOUT,IPOUT,MC3) ## glm=     1ISOUT,IPOUT,MC3)	SPKVS130
+27	1843	1887	VOTED	      CALL       DUMPER(0.,0.,C.,0.,   J.,   J.,   0.,  C.,0.,999,      		lighton=      CALL       DUMPER(0.,0.,C.,U.,   J.,   J.,   U.,  C.,0.,999, ## lighton2=      CALL       DUMPER(0.,0.,C.,0.,   J.,   J.,   0.,  C.,0.,999, ## glm=      CALL       DUMPER(0.,0.,C.,0.,   J.,   0.,   0.,  C.,0.,999,	SPRVS131
+28	1895	1931	AGREE	     1ISOUT,IPOUT,MC3)                                                  		dots=     1ISOUT,IPOUT,MC3) ## glm=     1ISOUT,IPOUT,MC3)	
+29	1939	1972	NOISE	                                                                        		lighton=      REWIND JPARN ## dots=      REWIND JPARN ## glm=      REWIND JPARN	
+30	1980	2014	NONE	                                                                        			
+31	2026	2058	AGREE	      REWIND IPOUT                                                      		lighton=      REWIND IPOUT ## dots=      REWIND IPOUT ## glm=      REWIND IPOUT	
+32	2070	2099	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	SERV1
+33	2114	2142	NOISE	                                                                        		lighton=      END ## dots=      END ## glm=      END	
+34	3148	3179	NOISE	                                                                        		lighton=                                         128 ## dots=                                         128 ## glm=                                         128	
+35	3307	3323	NONE	                                                                        			

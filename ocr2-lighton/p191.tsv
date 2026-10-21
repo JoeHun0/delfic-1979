@@ -1,0 +1,6 @@
+7	992	COUNT 0/11	                                                                                	
+9	1085	OK	      00 1J J = 1,KRM                                                           	00 1J J = 1,KRM
+10	1121	COUNT 0/8	                                                                                	
+15	1342	OK	   12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J))                               	12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J))
+23	1687	COUNT 0/35	                                                                                	
+44	2576	COUNT 3/4	                                                                                	END

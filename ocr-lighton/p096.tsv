@@ -1,0 +1,62 @@
+1	2	COUNT 0/49;COUNT 16/6	                                                                                	 || \text{日本語の英語の語彙}
+2	639	OK	C                                                                       RSXP 152	C || RSXP 152
+3	680	OK	      GO TO (1208,233),JBASE                                            RSXP 153	GO TO (1208,233),JBASE || RSXP 153
+4	722	COUNT 57/56;COUNT 16/7	                                                                                	1208 DPST( 2,MBT)=DPST( 2,MBT)+(CX(HQ,6)-DN)*(CX(MD,2)-EXTM) || \tilde{R}SXP\ 154
+5	756	COUNT 1/2	                                                                        RSXP 155	C || RSXP 155
+6	805	OK	C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE       RSXP 156	C     COMPUTE BELOW CLOUD AIR DENSITY, VISCOSITY AND TEMPERATURE || RSXP 156
+7	849	OK	C                                                                       RSXP 157	C || RSXP 157
+8	892	COUNT 29/28	                                                                        RSXP 158	208 UP=CX(MC,6)+ZVSB*OPX(2,MC) || RSXP 158
+9	935	OK	      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN)                          RSXP 159	CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN) || RSXP 159
+10	977	OK	        LL TRPL(OPST( 2,MET),NAT ,ALT,ETA,VIS)                          RSXP 160	LL TRPL(OPST( 2,MET),NAT ,ALT,ETA,VIS) || RSXP 160
+11	1021	OK	      CALL TRPL(OPST( 2,MBT),NAT ,ALT,ATP,TMP)                          RSXP 1E1	CALL TRPL(OPST( 2,MBT),NAT ,ALT,ATP,TMP) || RSXP 1E1
+12	1065	OK	      GO TO 212                                                         RSXP 162	GO TO 212 || RSXP 162
+13	1107	OK	C                                                                       RSXP 163	C || RSXP 163
+14	1148	OK	G     COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE       RSXP 164	G COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE || RSXP 164
+15	1194	OK	C                                                                       RSXP 165	C || RS XP 165
+16	1234	OK	  210 UP=CX(4C,6)+ZVSB*DPX(1,HC)                                        RSXP 166	210 UP = CX(4C,6) + ZVSB * DPX(1,HC) || RSXP 166
+17	1278	COUNT 0/45;COUNT 14/7	                                                                                	 || \bar{R}SXP\ 1E7
+18	1320	COUNT 0/40	                                                                        RSXP 168	 || RSXP 168
+19	1363	COUNT 0/40	                                                                        RSXP 169	 || RSXP 169
+20	1407	COUNT 0/37	                                                                        R5XP 170	 || R5XP 170
+21	1450	OK	C                                                                       RSXP 171	C || RSXP 171
+22	1493	OK	C     COMPUTE FALL SPEEDS                                               RSXP 172	C COMPUTE FALL SPEEDS || RSXP 172
+23	1538	OK	C                                                                       RSXP 173	C || RSXP 173
+24	1579	OK	  212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P)                            RSXP 174	212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P) || RSXP 174
+25	1622	OK	      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,DN,IACCR)              RSXP 175	CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,DN,IACCR) || RSXP 175
+26	1665	OK	      IF( ON .LT. SRTHS ) ON = 0.0                                      RSXP 176	IF( ON .LT. SRTHS ) ON = 0.0 || RSXP 176
+27	1708	COUNT 0/33	                                                                        RSXP 177	 || RSXP 177
+28	1752	OK	C                                                                       RSXP 178	C || RSXP 178
+29	1795	OK	C     HAS THE PARTICLE REACHED THE GROUND-                              RSXP 179	C HAS THE PARTICLE REACHED THE GROUND- || RSXP 179
+30	1836	OK	C         YES TO 220                                                    RSXP 150	C YES TO 220 || RSXP 150
+31	1878	OK	C        NO TO 230                                                      RSXP 181	C NO TO 230 || RSXP 181
+32	1922	OK	C                                                                       RSXP 192	C || RSXP 192
+33	1966	OK	      IF(ZNXT-ZBRSTZ)220,224,230                                        RSXP 103	IF(ZNXT-ZBRSTZ) 220, 224, 230 || RSXP 103
+34	2008	OK	C                                                                       KSXP 184	C || KSXP 184
+35	2050	OK	C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD                     RSXP 185	C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD || RSXP 185
+36	2094	OK	C                                                                       RSXP 196	C || RSXP 196
+37	2134	OK	  22C EXTM=(ZBRSTZ-DPST( 2,MBT))/(UP-ON)                                RSXP 187	22C EXT M = (ZBRSTZ - DPST( 2, MBT)) / (UP - ON) || RSXP 187
+38	2177	COUNT 0/28	                                                                        RSXP 180	 || RSXP 180
+39	2222	COUNT 0/18	                                                                        RSXP 189	 || RSXP 189
+40	2263	COUNT 0/13	                                                                        KSXP 140	 || KSXP 140
+41	2307	OK	      JBASE=2                                                           RSXP 191	JBASE = 2 || RSXP 191
+42	2350	OK	      MD=MC                                                             RSXP 192	MD = MC || RSXP 192
+43	2392	OK	      GO TO (1207,233),KBASE                                            RSXP 193	GO TO (1207,233),KBASE || RSXP 193
+44	2435	OK	  230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2)                                  RSXP 144	230  DPST(1, MBT) = DPST(1, MBT) + CX(MC, 2) || RSXP 144
+45	2479	COUNT 17/16	                                                                        RSXP 195	7.LST=OPST(2,MBT) || RSXP 195
+46	2521	COUNT 0/16;COUNT 8/7	                                                                                	 || R.SXP 196
+47	2564	OK	  238 CONTINUE                                                          RSXP 197	238 CONTINUE || RSXP 197
+48	2608	OK	  233 GO TO (241,2440),MBT                                              RSXP 1+8	233 GO TO (241,2440),MBT || RSXP 1+8
+49	2651	COUNT 17/7	C                                                                               	C || \kappa S x P \quad 199
+50	2691	COUNT 53/54	                                                                        RSXP 2,0	C IF BOTH TOP AND BOTTOM HAVE BEEN TREATED, ARE THE TOP AND BOTTOM || RSXP 2,0
+51	2738	OK	C     RADII THE SAME---                                                 RSXP 2:1	C RADII THE SAME--- || RSXP 2:1
+52	2781	OK	C        YES TO 5448                                                    RSYP 2.2	C YES TO 5448 || RSYP 2.2
+53	2823	COUNT 29/7	C        NO TO 2401                                                             	C NO TO 2401 || \mathcal{R}SXP \ 2j\ \mathcal{R}
+54	2867	COUNT 48/7	C                                                                               	C || \mathcal{R} \dot{S} \mathcal{X} \mathcal{P} \quad 2:4
+55	2906	OK	  241 IF(ABS10PST(3,1) - CFST(3,2)) .GT. 0.1) GO TO 2441                RSXP ću5	241 IF(ABS10PST(3,1) - CFST(3,2)) .GT. 0.1) GO TO 2441 || RSXP ću5
+56	2950	COUNT 11/10	                                                                        RSXP 216	2440 IFLAG=1 || RSXP 216
+57	2995	COUNT 0/7	      GO TO (240,256),MBT                                                       	GO TO (240, 256), MBT || 
+58	3038	COUNT 18/7	  240 IF( IC(6) .EQ. 1)                                                         	240 IF( IC(6) .EQ. 1) || RS \times P \quad 2. : 8
+59	3078	COUNT 1/45;COUNT 35/7	                                                                                	1 || \mathcal{R} \succ \mathcal{R} \quad 2, 5
+60	3127	COUNT 68/7	      GO TO 5442                                                                	GO TO 5442 || \mathfrak{M} \bar{S} : \mathfrak{L} \quad \mathfrak{L} \bar{I} \mathfrak{S}
+61	3169	COUNT 215/7	 2441 IFLAG=2                                                                   	2441 IFLAG=2 || \text{a. : } \text{b} \text{ c} \text{ d} \quad \text{e} \text{ f} \text{ g} \text{ h} \text{i} \text{j} \text{k} \text{l} \text{m} \text{n} \text{o} \text{p} \text{q} \text{r} \text{s} \text{t} \text{u} \text{v} \text{w} \text{x} \text{y} \text{z}
+62	3199	OK	                                         97                                     	97

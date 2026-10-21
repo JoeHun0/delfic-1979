@@ -1,0 +1,47 @@
+1	20	COUNT 3/48;COUNT 3/5	                                                                                	--- || ---
+2	72	COUNT 3/23;COUNT 3/6	                                                                                	--- || ---
+3	663	COUNT 11/12	                                                                        INDCD  1	DECK,INDCD2 || INDCD 1
+4	708	OK	      SUBROUTINE INDCO2                                                 INDCD  2	SUBROUTINE INDCO2 || INDCD 2
+5	750	OK	C                                                                       INOCD  3	C || INOCD 3
+6	792	OK	C     NOVEMBER 1966                                                     INDCD  4	C NOVEMBER 1966 || INDCD 4
+7	836	OK	      COMMON /DECAY/ IGO,JD,KDOS,IENTER,TEXIT,TIME                      INDCO  5	COMMON / DECAY/ IGO, JD, KDOS, I ENTER, TEXIT, TIME || INDCO 5
+8	878	COUNT 66/65	                                                                        INDCO  6	COMMON/INDUS/ALBFOM,FAC(7,18),FOGRNY(7,18),ISO(18),LMAX,XLAM(7,18) || INDCO 6
+9	921	COUNT 59/58	                                                                        INDCD  7	COMMON /OUTPUT/ FISNUM,FP(200),FW,ITAB,JGO,MASCHN,PSIZE(203), || INDCD 7
+10	965	OK	     1 FMASS(200),PACT(200)                                             INDCO  8	1 FMASS(200), PACT(200) || INDCO 8
+11	1007	OK	      COMMON /UTILTY/  KOUT,NPRNT(15)                                   INOCD  9	COMMON / UTILTY/ KOUT,NPRNT(15) || INOCD 9
+12	1050	OK	      LOGICAL IGO,JD,KDOS,NPRNT                                         INDCD 10	LOGICAL IGO, JD, KDOS, NPRNT || INDCD 10
+13	1093	OK	C                                                                       INOCD 11	C || INOCD 11
+14	1135	OK	 1000 FORNAT                                                            IVOCD 12	1000 FORNAT || IVOCD 12
+15	1179	OK	     1    (17H10OUTPU TO FINDCD2/5Y53HINDUCE DACTIVIT YI NTH ETRASPORTEDINDCD 13	1 (17H10OUTPUT OF INDCD2/5Y53HINDUCED ACTIVITY IN THE TRASPORTED || INDCD 13
+16	1222	COUNT 46/47	                                                                        INDCO 14	2 SOIL CONTRIBUTES 1PE12.4,23H TO EACH PARTICLE SIZE. || INDCO 14
+17	1264	OK	C                                                                       INDCD 15	C || INDCD 15
+18	1308	OK	      SDRE = 0.0                                                        IVDC0 16	SDRE = 0.0 || IVDC0 16
+19	1351	OK	C                                                                       INDCD 17	C || INDCD 17
+20	1394	OK	      DO 24 L = 1,LMAX                                                  INOCD 18	DO 24 L = 1, LMAX || INOCD 18
+21	1436	OK	      IS = ISO(L)                                                       INOCD 19	IS = ISO(L) || INOCD 19
+22	1479	COUNT 6/7	C                                                                               	C || INCD 20
+23	1523	OK	      00 22 1 = 1,IS                                                    INDCO 21	00221=1,IS || INDCO 21
+24	1565	OK	      DLAM = -XLAM(I,L)                                                 INDCD 22	DLAM = -XLAM(I,L) || INDCD 22
+25	1608	OK	      IF (.NOT.JD) GO TO 12                                             INDCO 23	IF (.NOT.JD) GO TO 12 || INDCO 23
+26	1649	OK	      DRI = -FAC(I,L)*OLAM*FOGRNY(I,L)*EXP(OLAM*TI4E)                   INOCD 24	DRI = -FAC(I,L)*OLAM*FOGRNY(I,L)*EXP(OLAM*TI4E) || INOCD 24
+27	1692	OK	      GO TO <2                                                          IN0C0 25	GO TO <2 || IN0C0 25
+28	1737	OK	C                                                                       INDCO 26	C || INDCO 26
+29	1779	OK	   12 IF (.NOT.KDOS) GO TO 14                                           INDCO 27	12 IF (.NOT.KDOS) GO TO 14 || INDCO 27
+30	1822	COUNT 60/59	                                                                        INDCD 28	DRI = FAC(I, L)·FOGRNY(I, L)·(EXP(OLAM*TENTER)) - EXP(OLAM*TE(IT)) || INDCD 28
+31	1866	OK	      GO TO 22                                                          INDCO 29	GO TO 22 || INDCO 29
+32	1908	OK	C                                                                       INOCD 30	C || INOCD 30
+33	1951	COUNT 8/7	   14 DRI = FAC(I,L)*FOGRNY(I,L)*EXP(DLAM*TENTER)                               	14 DRI = FAC(I,L)*FOGRNY(I,L)*EXP(DLAM*TENTER) || INDGCD 31
+34	1995	OK	C                                                                       INOC0 32	C || INOC0 32
+35	2037	OK	   22 SDRE = SDRE + DPI                                                 INOCD 33	22 SDRE = SDRE + DPI || INOCD 33
+36	2081	OK	   24 CONTINUE                                                          INOCD 34	24 CONTINUE || INOCD 34
+37	2124	OK	C                                                                       INDCD 35	C || INDCD 35
+38	2166	OK	C                                                                       IVDCD 36	C || IVDCD 36
+39	2210	COUNT 21/23	                                                                        INDCO 37	SDRE = SDRE ALDFOM FISNUM || INDCO 37
+40	2253	OK	C                                                                       INDCD 38	C || INDCD 38
+41	2295	OK	      DO 26 MA = 1,ITA8                                                 INOCD 19	DO 26 MA = 1,ITA8 || INOCD 19
+42	2338	COUNT 29/30	                                                                        INOC0 40	26 FP(HA) = FP(MA) + SRE*FMASS(MA) || INOC0 40
+43	2382	OK	C                                                                       INOCD 41	C || INOCD 41
+44	2422	COUNT 8/7	      IF (NPRNT(11)) WRITE (KOUT,1000) SDRE                                     	IF (NPRNT(11)) WRITE (KOUT,1000) SDRE || INDCD 4.2
+45	2465	OK	      RETURN                                                            INDCD 43	RETURN || INDCD 43
+46	2508	OK	      END                                                               IVDCD 44	END || IVDCD 44
+47	3138	OK	                                      190                                       	190

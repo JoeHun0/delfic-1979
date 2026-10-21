@@ -1,0 +1,20 @@
+1	0	COUNT 0/18	                                                                                	
+4	624	OK	      IF (LSUB.GT.11) GO TC 1301                                                	IF (LSUB.GT.11) GO TC 1301
+5	668	COUNT 16/15	                                                                                	NUC(1.SU8) = NDAUT
+14	1055	OK	      SCA(LSUB) = 1.0                                                           	SCA(LSUB) = 1.0
+15	1099	OK	      LAST = LSU3 + 1                                                           	LAST = LSU3 + 1
+17	1184	OK	      LBACK = LAST - L                                                          	LBACK = LAST - L
+26	1571	COUNT 0/13	                                                                                	
+31	1785	COUNT 0/23	                                                                                	
+46	2428	COUNT 0/42	                                                                                	
+47	2474	OK	      R=3.0                                                                     	R = 3.0
+48	2518	OK	      DO 163 K1=1,N                                                             	DO 163  K1=1,N
+51	2647	COUNT 16/10	                                                                                	00 162 \kappa=1_rN
+52	2690	COUNT 18/8	                                                                                	K2 \neq N - K \diamond 1
+55	2818	OK	      FACTC=SOC(K2)-SOC(K1)                                                     	FACTC = SOC(K2) - SOC(K1)
+56	2860	COUNT 51/48	                                                                                	If (A \geq S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15.FACTC)
+57	2905	COUNT 15/14	                                                                                	CNY J=CHIJ/F AC?C
+58	2947	COUNT 31/29	                                                                                	162 IF(K2.LE.K1)O=O+CN;J*SCA(K2)
+59	2990	COUNT 13/12	                                                                                	IF(JO) GO TO 163
+60	3034	OK	      IF(S7C( K1).Lt.>.; v6CTC 15J                                              	IF(S7C(K1).Lt.>.;v 6C TC 15J
+61	3079	COUNT 11/10	                                                                                	0 = 1 / SDC (K1)

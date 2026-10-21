@@ -1,0 +1,63 @@
+1	1	COUNT 0/42;COUNT 0/5	                                                                                	 || 
+2	524	OK	C     MARRAY            FALLOUT PARCEL DATA ARRAYS DIMENSION            OPMEX 61	C MARRAY FALLOUT PARCEL DATA ARRAYS DIMENSION || OPMEX 61
+3	570	COUNT 7/40	                                                                        OPMEX 62	C MASCHN || OPMEX 62
+4	611	OK	C     M8TAPE            MULTIBURST OUTPUT TAPE                          OPMEX 63	C M8TAPE MULTIBURST OUTPUT TAPE || OPMEX 63
+5	654	COUNT 1/43	                                                                        OPMEX 64	C || OPMEX 64
+6	698	OK	C     NOSTR             NUMBER OF PARTICLE SIZE CLASSES (CALLED ITAB IN OPMEX 65	C      NOSTR      NUMBER OF PARTICLE SIZE CLASSES (CALLED ITAB IN || OPMEX 65
+7	739	COUNT 1/5	                                                                        OPMEX 66	C || OPMEX 66
+8	783	COUNT 3/20	                                                                        UPMEX 67	C NE || UPMEX 67
+9	828	COUNT 1/20	                                                                        OPMEX 68	C || OPMEX 68
+10	870	COUNT 46/43	                                                                        OPMEX 69	C      NMAP      MAXIMUM NUMBER OF MAP POINTS IN A MAP CORE LOADING || OPMEX 69
+11	914	OK	C     NOL               SMALLEST X INDEX OF A MAP POINT TO THE RIGHT OF OPMEX 70	C NOL SMALLEST X INDEX OF A MAP POINT TO THE RIGHT OF || OPMEX 70
+12	956	COUNT 1/40	                                                                        OPMEX 71	C || OPMEX 71
+13	998	COUNT 9/10	                                                                        OPMEX 72	OF A PARCEL || OPMEX 72
+14	1041	COUNT 4/39	                                                                        OPMEX 73	C NOR || OPMEX 73
+15	1086	COUNT 40/41	                                                                        OPMEX 74	THE RIGHT BOUNDARY OF THE CONTRIBUTION ELLIPSE || OPMEX 74
+16	1128	OK	O                       FA P ARCEL.                                     OPMEX 75	OF A PARCEL. || OPMEX 75
+17	1171	COUNT 1/43	                                                                        OPMEX 76	C || OPMEX 76
+18	1216	COUNT 1/14	                                                                        OPMEX 77	C || OPMEX 77
+19	1257	COUNT 21/22	                                                                        OPMEX 78	1 - PARCEL COUNT (NREQ=1) || OPMEX 78
+20	1301	COUNT 1/31	                                                                        OPMEX 79	C || OPMEX 79
+21	1344	COUNT 1/34	                                                                        OPMEX 80	C || OPMEX 80
+22	1387	COUNT 1/20	                                                                        OPMEX 01	C || OPMEX 01
+23	1431	COUNT 22/23	                                                                        OPMEX 82	3 - TIME OF ONSET (NREQ=15) || OPMEX 82
+24	1473	COUNT 26/27	                                                                        UPMEX 83	4 - TIME OF CESSATION (NREQ=16) || UPMEX 83
+25	1515	COUNT 31/32	                                                                        OPMEX 84	5 - SMALLEST PARTICLE SIZE (NREQ=17) || OPMEX 84
+26	1550	COUNT 1/31	                                                                        OPMEX 65	C || OPMEX 65
+27	1602	COUNT 4/37	                                                                        OPMEX 86	C NOX || OPMEX 86
+28	1636	COUNT 43/22	                                                                        OPMEX 97	TOTAL NUMBER OF CORE LOADS INCLUDING ALL CORE LOADS || OPMEX 97
+29	1688	COUNT 5/26	                                                                        OPMEX 88	C NREQ || OPMEX 88
+30	1731	COUNT 1/26	                                                                        OPMEX 89	C || OPMEX 89
+31	1773	OK	C     NST               TALLY OF PARTICLE DATA BLOCKS                   OPMEX 90	C      NST      TALLY OF PARTICLE DATA BLOCKS || OPMEX 90
+32	1815	COUNT 1/31	                                                                        OPMEX 91	C || OPMEX 91
+33	1860	OK	C     NUMTAP( )         TAFE NLMBER ARRAY                               OPMEX 92	C NUMTAP( ) TAFE NLMBER ARRAY || OPMEX 92
+34	1902	COUNT 1/43	                                                                        OPMEX 93	C || OPMEX 93
+35	1946	COUNT 1/5	                                                                        OPMEX 94	C || OPMEX 94
+36	1989	COUNT 1/43	                                                                        OPMEX 95	C || OPMEX 95
+37	2030	COUNT 1/5	                                                                        OPMEX 96	C || OPMEX 96
+38	2073	COUNT 1/43	                                                                        OPMEX 97	C || OPMEX 97
+39	2118	COUNT 0/9	                                                                        OPMEX 98	 || OPMEX 98
+40	2160	OK	C     OMAP(J)           THE MAP ORDINATE ARRAY                          OPMEX 99	C OMAP(J) THE MAP ORDINATE ARRAY || OPMEX 99
+41	2205	OK	C     OPMID( )          OUTPUT PROCESSOR IDENTIFICATION                 OPHEX130	C OPMID( ) OUTPUT PROCESSOR IDENTIFICATION || OPHEX130
+42	2247	COUNT 1/42	                                                                        OPMEX1J1	C || OPMEX1J1
+43	2289	COUNT 5/43	                                                                        OPMEX1J2	C QCUT || OPMEX1J2
+44	2332	COUNT 1/22	                                                                        OPMEX1J3	C || OPMEX1J3
+45	2376	COUNT 7/51	                                                                        OPMEX104	C SLDTMP || OPMEX104
+46	2417	COUNT 5/45	                                                                        OPMEX105	C EXIT || OPMEX105
+47	2461	OK	C     TIME,TENTER       TIME RELATIVE TO SHOT TIME CORRESPONDING TO T1  OPMEX1J6	C TIME, TENTER TIME RELATIVE TO SHOT TIME CORRESPONDING TO T1 || OPMEX1J6
+48	2505	COUNT 38/43	                                                                        OPMEX1J7	TIME OF SOIL SCLIDIFICATION (FROM CRM ) (SEC) || OPMEX1J7
+49	2546	COUNT 6/41	                                                                        OPMEX108	C T1,T2 || OPMEX108
+50	2589	COUNT 1/31	                                                                        OPMEX109	C || OPMEX109
+51	2633	OK	C     WFMAS(I)          TOTAL MASS OF FALLOUT IN EACH PARTICLE SIZE     OPMEX110	C WFMAS(I) TOTAL MASS OF FALLOUT IN EACH PARTICLE SIZE || OPMEX110
+52	2673	COUNT 1/40	                                                                        OPMEX111	C || OPMEX111
+53	2718	COUNT 40/41	                                                                        OPMEX112	ACTIVITY FRACTION IN EACH SIZE CLASS/GRUFF FOR || OPMEX112
+54	2761	COUNT 44/45	                                                                        UPMEX113	AN ARBITRARY PARTICLE SIZE-ACTIVITY DISTRIBUTION || UPMEX113
+55	2803	OK	C     XPAR,YPAR,ZPAR,   FALLOUT PARCEL DESCRIPTION DATA (ALL INDEXED)   OPMEX114	C XPAR, YPAR, ZPAR, FALLOUT PARCEL DESCRIPTION DATA (ALL INDEXED) || OPMEX114
+56	2847	COUNT 1/18;COUNT 9/8	                                                                                	C || OPMEKX115
+57	2891	COUNT 1/13	                                                                        OPMEX116	C || OPMEX116
+58	2932	OK	C     XMAX,XMIN         MAXIMUM AND MINIMUM X COORDINATES OF THE MAP    OPMEX117	C XMAX,XMIN MAXIMUM AND MINIMUM X COORDINATES OF THE MAP || OPMEX117
+59	2975	OK	C     YMAX,YMIN         MAXIMUM AND MINIMUM Y COORDINATES OF THE MAP    OPMEX118	C YMAX,YMIN MAXIMUM AND MINIMUM Y COORDINATES OF THE MAP || OPMEX118
+60	3020	COUNT 1/44	                                                                        OPMEX119	C || OPME X119
+61	3063	COUNT 1/9	                                                                        OPMĘX120	C || OPMĘ X120
+62	3114	COUNT 3/2	                                                                                	152
+63	3277	COUNT 0/48;COUNT 0/1	                                                                                	 || 

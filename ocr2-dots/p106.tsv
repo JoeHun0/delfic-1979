@@ -1,0 +1,12 @@
+1	78	COUNT 0/9	                                                                                	
+6	740	COUNT 76/46	                                                                                	253 \text{ DELTEP} = ((25 \text{ V(MM)} + 25 \text{ V(MM+1)})/2.0 - 2\text{CUR})/(FV - RV)
+14	1084	OK	 2310 FORMAT:15/                                                                	2310 FORMAT: 15/
+15	1126	OK	     1          415/7(3X,E12.5))                                                	1 415/7(3X,E12.5))
+20	1341	OK	  28C IF(TC(LL).LE.TMIUDT) GO 10 290                                            	28C IF(TC(LL).LE.TMIUDT) GO 10 290
+21	1384	COUNT 9/7	                                                                                	L_1=L_2=1
+37	2070	OK	      IF(ABS(TMPOZ).LE.5.0) GO TO 320                                           	IF(ABS(TMPOZ).LE.5.0) GO TO 320
+48	2543	OK	      ZB0T0M=ZB(LL)                                                             	ZB0T0M=ZB(LL)
+49	2584	COUNT 74/32	                                                                                	\text{THPDZ} = \text{ZBOTOM} - \text{ZCUR} - (\text{FV} - \text{RV}) * \text{DELTEE}
+55	2833	OK	      DY=DY+VY( MM) *DELTEE                                                     	DY=DY+VY(MM) *DELTEE
+57	2929	OK	      ZCUR=ZCUR+(FV-RV)*DELTEE                                                  	ZCUR = ZCUR + (FV - RV) * DELTEE
+63	3252	COUNT 0/7	                                                                                	

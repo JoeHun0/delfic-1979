@@ -1,0 +1,7 @@
+10	851	OK	      HOB=HEIGHT/.3048                                                          	HOB=HEIGHT/.3048
+14	1022	COUNT 61/57	                                                                                	READ (IS IN, 3) NPRINT (6), NPRINT (7), (NPRINT (I), I=9, 13), NPRINT (15)
+24	1456	OK	      IHOB=0                                                                    	IHOB=0
+30	1711	COUNT 25/26	                                                                                	ZSCM = HOB/W** (0.333333333)
+33	1841	OK	      FX=FX*FO                                                                  	F X = F X * F O
+50	2569	OK	     1 RO(I),PSIZ(I),PMAS(I),I=1,NIJ)                                           	1 RO(I), PSIZ(I), PMAS(I), I=1,NIJ)
+55	2783	OK	     1 RO(I),PSIZ(I),PMAS(I),I=1,NIJ)                                           	1 RO(I), PSIZ(I), PMAS(I), I=1,NIJ)

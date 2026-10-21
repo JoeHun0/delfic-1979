@@ -1,0 +1,3 @@
+7	1003	OK	      READ (ISIN,1)DTHIO                                                        	READ (ISIN,1) DTHIO
+12	1219	COUNT 15/17	                                                                                	IF JCX .EQ. 1 JCX=1
+39	2377	OK	      TINEX=TIMEH*3600.                                                         	TINEX=TIMEH*3600.

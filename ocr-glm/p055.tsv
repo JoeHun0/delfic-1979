@@ -1,0 +1,40 @@
+1	1	COUNT 3/62;COUNT 3/1	                                                                                	--- || ---
+2	772	COUNT 9/10	                                                                        TRPL   1	DECK, TRPL || TRPL 1
+3	817	OK	      SUBROUTINE TRPL (                                                 TRPL   2	SUBROUTINE TRPL ( || TRPL 2
+4	858	OK	     1  ARG， NPR， PARA， PARB， VRB)                                      TRPL   3	1 ARG，NPR，PARA，PARB，VRB) || TRPL 3
+5	902	OK	C                                                                       TRPL   4	C || TRPL 4
+6	946	COUNT 1/71	                                                                        TRPL   5	C || TRPL 5
+7	980	OK	C                                                                       TRPL   6	C || TRPL 6
+8	1028	OK	C     TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN   TRPL   7	C TRPL USES LINEAR INTERPOLATION TO LOCATE POSITION OF ARG WITHIN || TRPL 7
+9	1072	COUNT 58/56	                                                                        TRPL   8	C THE ONE-DIMENSIONAL ARRAY PARA AND COMPUTES FOR THE CORRESPONDING || TRPL 8
+10	1107	OK	C     POSITION IN THE ONE-DIMENSIONAL ARRAY PARB, VRB. NPK IS THE       TRPL   9	C POSITION IN THE ONE-DIMENSIONAL ARRAY PARB, VRB. NPK IS THE || TRPL 9
+11	1158	OK	C     DIMENSION OF PARA AND PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE).TRPL  10	C DIMENSION OF PARA AND PARB (WHOSE ELEMENTS CORRESPOND ONE TO ONE). || TRPL 10
+12	1201	OK	C     IF ARG IS OUTSIDE THE TABULATED VALUES OF PARA, VR8 IS SELECTED   TRPL  11	C IF ARG IS OUTSIDE THE TABULATED VALUES OF PARA, VR8 IS SELECTED || TRPL 11
+13	1238	OK	C     FROM THE CORRESPONCING END OF PAR8.                               TRPL  12	C FROM THE CORRESPONCING END OF PAR8. || TRPL 12
+14	1286	COUNT 54/53	                                                                        TRPL  13	C PARA IS ORDERED FROM LEAST (PARA (1)) TO GREATEST (PARA (NPRi)) || TRPL 13
+15	1331	OK	C                                                                       TRPL  14	C || TRPL 14
+16	1373	COUNT 1/71	                                                                        TRPL  15	C || TRPL 15
+17	1418	OK	C                                                                       TRPL  16	C || TRPL 16
+18	1460	OK	      DIMENSION                                                         TRPL  17	DIMENSION || TRPL 17
+19	1495	OK	     1  PARA ( NPR), PARB (NPR)                                         TRPL  18	1 PARA (NPR), PARB (NPR) || TRPL 18
+20	1539	OK	C                                                                       TRPL  19	C || TRPL 19
+21	1588	COUNT 1/71	                                                                        TRPL  20	C || TRPL 20
+22	1624	COUNT 1/71	                                                                        TRPL  21	C || TRPL 21
+23	1666	COUNT 1/2	                                                                        TRPL  22	C || TRPL 22
+24	1710	COUNT 29/30	                                                                        TRPL  23	020 IF (ARG - PARA (1)) 022, 022, 040 || TRPL 23
+25	1753	OK	  C22 MB = 1                                                            TRPL  24	C22 MB = 1 || TRPL 24
+26	1794	COUNT 14/15	                                                                        TRPL  25	C24 VRB = ARB (MB) || TRPL 25
+27	1838	OK	  L26 RETURN                                                            TRPL  26	L26 RETURN || TRPL 26
+28	1880	COUNT 5/6	  640 00 054 MA =2, NPR.                                                        	640 00 054 MA =2, NPR. || TRPL 7
+29	1925	COUNT 27/28	                                                                        TRPL  28	IF (ARG - PARA (MA)) 048, 044, 054 || TRPL 28
+30	1967	OK	  C44 MB = N1                                                           TRPL  29	C44 MB = N1 || TRPL 29
+31	2010	OK	      GO TO 024                                                         TRPL  30	GO TO 024 || TRPL 30
+32	2059	OK	  048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) /       TRPL  31	048 VRU = (ARG - PARA (MA - 1)) * (PARB (MA) - PARB (MA - 1)) / || TRPL 31
+33	2095	OK	     1  (PARA (MA) - PARA (MA - 1)) + PARB (MA - 1)                     TRPL  32	1 (PARA (MA) - PARA (MA - 1)) + PARB (MA - 1) || TRPL 32
+34	2138	COUNT 7/6	      GO TO 026                                                                 	GO TO 026 || TRPL. 33
+35	2188	OK	  L54 CONTINUE                                                          TRPL  34	L54 CONTINUE || TRPL 34
+36	2224	COUNT 6/7	                                                                        TRPL  35	MB = NPR || TRPL 35
+37	2266	OK	      GO TO 024                                                         TRPL  36	GO TO 024 || TRPL 36
+38	2309	OK	      END                                                               TRPL  37	END || TRPL 37
+39	3126	OK	                                       52                                       	52
+40	3290	COUNT 8/37;COUNT 3/5	                                                                                	markdown || ---

@@ -1,0 +1,67 @@
+1	16	COUNT 3/13;COUNT 3/4	                                                                                	--- || ---
+2	61	COUNT 2/17	                                                                                	6.
+3	124	COUNT 3/49;COUNT 3/6	                                                                                	--- || ---
+4	635	COUNT 42/45	                                                                        ICM   61	3T I O N S Y S T E P//51X19H * * * * * * * ////43X, 36HINITI || ICM 61
+5	680	OK	     4ALIZATION AND CLOUD RISE MODULE//5  5X,1 1HPREPAREDB Y/4 6X,3  0H1ICM   62	4ALIZATION AND CLOUD RISE MODULE// 55X, 11HPREPARED BY/ 46X, 30H1 || ICM 62
+6	716	OK	     5AT4OSPHERIC SCIENCE ASSOCIATES/  54X, 14HBEDF0RD, MASS.////25X,   ICM   63	5AT4OSPHERIC SCIENCE ASSOCIATES/ 54X, 14HBEDF0RD, MASS.////25X, || ICM 63
+7	763	OK	     630H****  RUN IDENTIFICATION  ****, 3X, 12A6)                      ICM   64	630H**** RUN IDENTIFICATION ****, 3X, 12A6) || ICM 64
+8	804	COUNT 61/60	                                                                        ICM   65	17 FORMAT(/3X,60HTHE SPECIFIED MEAN PARTICLE SIZE IS NEGATIVE HENCE I: || ICM 65
+9	847	COUNT 11/13	                                                                        ICM   06	1NCORRECT// || ICM 06
+10	886	OK	   18 FORMAT(1H0, 9X, 89HPARTICLE SIZE DISTRIBUTION SUPPLIED IN TABULAR ICM   67	18 FORMAT(1H0, 9X, 89HPARTICLE SIZE DISTRIBUTION SUPPLIED IN TABULAR || ICM 67
+11	931	COUNT 36/37	                                                                        ICM   68	1FORM BY THE USER (DIAMETERS ARE IN METERS) || ICM 68
+12	973	OK	  19  FORMAT( 20X, 24HFALLCUT PARTICLE DENSITY, 21X, E12.5,  8H KG/M**3)ICM   69	19 FORMAT(20X,24HFALLCUT PARTICLE DENSITY,21X,E12.5,8H KG/M**3) || ICM 69
+13	1017	COUNT 54/55	                                                                        ICM   70	20 FORMAT(20X,23HSCALED HEIGHTS OF BURST,38X,E12.5,7H FEET) || ICM 70
+14	1061	COUNT 16/17	                                                                        ICM   71	1 E12.5, 8H METERS) || ICM 71
+15	1103	COUNT 52/53	                                                                        ICH   72	24 FORMAT /20X. 38HPARTICLE VOLUME FREQUENCY DISTRIBUTION/ || ICH 72
+16	1145	COUNT 62/61	                                                                        ICM   73	125X32HA LOG-NORMAL DISTRIBUTION WITH -/30X,15HMEDIAN DIAMETER,20X, || ICM 73
+17	1187	OK	     2E12.5.2X.11HNICROMETERS/30X.28HGEOMETRIC STANDARC DEVIATION. 7X.  ICM   74	2E12.5.2X.11HNICROMETERS/30X.28HGEOMETRIC STANDARC DEVIATION. 7X. || ICM 74
+18	1232	OK	     3E12.5)                                                            ICM   75	3E12.5) || ICM 75
+19	1280	COUNT 63/62	                                                                        ICH   76	25 FORMAT(1H09X,65HPARTICLE SIZE - MASS DISTRIBUTION TABLE (DIAMETERS. || ICH 76
+20	1319	COUNT 13/14	                                                                        ICM   77	1 ARE IN METERS) || ICM 77
+21	1360	OK	   26 FORMAT(/22X77H****  THE CONTROL VARIABLE ARRAY, IC(J), WAS GIVEN TICM   78	26 FORMAT(/22X77H**** THE CONTROL VARIABLE ARRAY, IC(J), WAS GIVEN T || ICM 78
+22	1411	COUNT 28/32	                                                                        ICM   79	1HE FOLLOWING VALUES / 19X, 2014) || ICM 79
+23	1446	COUNT 60/61	                                                                        ICM   80	27 FORMAT(20X, 36HPAFTICLE MASS FREQUENCY DISTFIBUTION/ 25X, 31HA PO || ICM 80
+24	1490	OK	     1HER-LAW DISTRIBUTION WITH -/ 30X, 15HK-TO-MASS RATIO, 20X, 2PE12.5ICM   81	1HER-LAW DISTRIBUTION WITH -/ 30X, 15HK-TO-MASS RATIO, 20X, 2PE12.5 || ICM 81
+25	1539	OK	     2/ 30X， 21HEXPONENTIAL PARAMETER， 14X， 1PE12.5)                    ICM   82	2/30X，21HEXPONENTIAL PARAMETER，14X，1PE12.5) || ICM 82
+26	1576	OK	   28 FORMAT(1H0, 11X, 63HTHE PARTICLE DISTRIBUTION ABCVE IS A SIZE-ACTIICM   93	28 FORMAT(1H0, 11X, 63HTHE PARTICLE DISTRIBUTION ABCVE IS A SIZE-ACTI || ICM 93
+27	1618	OK	     1VITY DISTRIBUTION)                                                ICM   84	1 VITY DISTRIBUTION) || ICM 84
+28	1664	COUNT 31/32	                                                                        ICM   85	192 FORMAT(//51X,19H* * * * * * * * * //) || ICM 85
+29	1704	OK	  193 FORMAT( 10X, 33HNUMBER OF PARTICLE SIZE CLASSES =15/              ICH   86	193 FORMAT(10X, 33HNUMBER OF PARTICLE SIZE CLASSES =15/ || ICH 86
+30	1749	OK	     1    1H0.20X， 8HDIAMETER， 4X，13HLOWER BOUNDRY， 5X， 8HFRACTION，     ICM   87	1 1H0.20X，8HDIAMETER，4X，13HLOWER BOUNDRY，5X，8HFRACTION， || ICM 87
+31	1791	COUNT 22/20	                                                                        ICM   88	2 5X.14HUPPER BOUNDARY/) || ICM 88
+32	1841	OK	  194 FORMAT(12X,I3,4(3X,E12.5))                                        ICM   89	194 FORMAT(12X,I3,4(3X,E12.5)) || ICM 89
+33	1878	OK	  195 FORMAT(2F10.0)                                                    ICM   90	195 FORMAT(2F10.0) || ICM 90
+34	1918	OK	  198 FORMAT(/3X,56HTHE PARTICLE SIZE DISTRIBUTION TABLE IS IMPROPERLY 0ICM   91	198 FORMAT(/3X,56HTHE PARTICLE SIZE DISTRIBUTION TABLE IS IMPROPERLY 0 || ICM 91
+35	1963	OK	     2RDERED////                                                        ICM   92	2RDERED//// || ICM 92
+36	2004	OK	 1400 FORMAT(                                            20X, 73HFRACT10ICH   93	1400 FORMAT( 20X, 73HFRACT 10 || ICH 93
+37	2053	OK	     1N OF THE TOTAL EXPLOSION ENERGY IN THE CLOUD AT THE INITIAL TIME =ICM   94	1N OF THE TOTAL EXPLOSION ENERGY IN THE CLOUD AT THE INITIAL TIME = || ICM 94
+38	2091	OK	     2FG.4/  20X. 51HFRACTION CF THIS ENERGY USED TO HEAT AIR AND SOIL =ICM   95	2FG.4/ 20X.51HFRACTION CF THIS ENERGY USED TO HEAT AIR AND SOIL = || ICM 95
+39	2134	OK	     3F6.4/  20X, 37HFRACTION  USED TO HEAT LIQUID WATER =F6.4/         ICM   96	3F6.4/ 20X, 37HFRACTION USED TO HEAT LIQUID WATER =F6.4/ || ICM 96
+40	2176	OK	     4                                             20X, 37HFALLOUT SOLIDICM   97	4 20X, 37HFALLOUT SOLID || ICM 97
+41	2225	COUNT 32/33	                                                                        ICM   98	5IFICATION TEMPERATURE = F8.3, 4H (K) || ICM 98
+42	2260	COUNT 62/61	                                                                        ICM   99	1700 FORMAT(1HQ19X30HCLOU SUBDIVISION PARAMETERS - / 23X, 52HNUMBER OF || ICM 99
+43	2311	COUNT 54/56	                                                                        ICM  100	1 CLOUD SUBDIVISIONS THE VERTICAL (KDI) = I4/ 23X, 48HPARCEL HOR || ICM 100
+44	2355	OK	     2IZONTAL SUBDIVISION FARAMETER (IRAO) =I4)                         ICM  101	2IZONTAL SUBDIVISION FARAMETER (IRAO) = I4) || ICM 101
+45	2399	OK	 1800 FORMAT(                                                           ICM  1C2	1800 FORMAT( || ICM 1C2
+46	2432	OK	     120X22HDETONATION COORDINATES,10X,3HXGZ,13X,3HYGZ,13X,3HTGZ/       ICM  103	120X22HDETONATION COORDINATES,10X,3HXGZ,13X,3HYGZ,13X,3HTGZ/ || ICM 103
+47	2484	OK	     244X.3(E13.6.3X))                                                  ICM  1:4	244X.3(E13.6.3X)) || ICM 1:4
+48	2519	OK	C                                                                       ICM  115	C || ICM 115
+49	2570	COUNT 6/7	C                                                                               	C || ICM 1J6
+50	2612	COUNT 1/71	                                                                        ICM  107	C || ICM 107
+51	2657	OK	C                                                                       ICM  168	C || ICM 168
+52	2699	OK	C     READ RUN IDENTIFIER                                               ICM  109	C READ RUN IDENTIFIER || ICM 109
+53	2741	OK	      READ (ISIN,1)DETIO                                                ICM  110	READ (ISIN,1)DETIO || ICM 110
+54	2776	OK	C     READ CONTROL PARAMETERS                                           ICM  111	C READ CONTROL PARAMETERS || ICM 111
+55	2827	OK	      READ(ISIN,10) IC                                                  ICM  112	READ(ISIN,10) IC || ICM 112
+56	2870	OK	C                                                                       ICM  113	C || ICM 113
+57	2911	OK	C     WRITE OVERALL TITLE                                               ICM  114	C WRITE OVERALL TITLE || ICM 114
+58	2955	OK	      WRITE (ISOUT,16)DETID                                             ICM  115	WRITE (ISOUT,16)DETID || ICM 115
+59	2999	OK	      WRITE(ISOUT,26) IC                                                ICM  116	WRITE(ISOUT,26) IC || ICM 116
+60	3034	OK	C     READ IN BASIC DATA                                                ICM  117	C READ IN BASIC DATA || ICM 117
+61	3081	OK	      READ(ISIN,3)H, FW, HEIGHT, Z0RSTZ, SLDTMF, PHI                    ICM  118	READ(ISIN,3)H, FW, HEIGHT, Z0RSTZ, SLDTMF, PHI || ICM 118
+62	3128	COUNT 43/44	                                                                        ICM  119	IF(SLOTMP .EQ. 0.0 AND. IC(2) .EQ. 0) SLOTMP=2200. || ICM 119
+63	3170	COUNT 43/44	                                                                        ICM  120	IF(SLDTMP .EQ. 0.0 AND. IC(2) .EQ. 1) SLDTMP=2800. || ICM 120
+64	3234	OK	                                       61                                       	61
+65	3316	COUNT 3/7;COUNT 3/8	                                                                                	--- || ---
+66	3356	COUNT 3/11	                                                                                	---
+67	3376	COUNT 3/25	                                                                                	---

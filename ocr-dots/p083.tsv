@@ -1,0 +1,59 @@
+1	12	COUNT 0/44;COUNT 0/7	                                                                                	 || 
+2	559	COUNT 0/5	*DECK,CXPN                                                                      	*DECK, CXP N || 
+3	602	OK	      SUBROUTINE CXPN                                                   CXFN   2	SUBROUTINE CXPN || C X F N 2
+4	644	COUNT 4/5	C                                                                               	C || C X P N
+5	686	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     CXPN   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || CXP N 4
+6	730	COUNT 4/5	C                                                                               	C || C X P N
+7	771	COUNT 1/56;COUNT 4/5	                                                                                	C || C X P N
+8	815	COUNT 4/5	C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF                              	C AND TESTS FOR R-RATE, U, EK, AND MCX SHUT-OFF || C X P N
+9	858	COUNT 4/5	C                                                                               	C || C X P N
+10	900	COUNT 0/71;COUNT 0/5	                                                                                	 || 
+11	942	COUNT 4/6	C                                                                               	C || C X P N
+12	986	COUNT 4/6	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TCZ            	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TCZ || C X P N
+13	1029	COUNT 43/41;COUNT 4/6	                                                                                	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM ,I || C X P N
+14	1072	COUNT 37/36	                                                                        CXPN  13	1 OS ,DST ,OSTO ,DST1 ,DST2 ,DT ,DU ,DWT ,DX ,I || C X P N 13
+15	1117	COUNT 34/33;COUNT 4/6	                                                                                	2 0Z ,ED ,EK ,EPS ,ES ,HLR ,KS ,KSV ,MWYA ,I || C X P N
+16	1152	COUNT 28/27;COUNT 4/6	                                                                                	3 N ,NNN ,P ,PW ,R ,RA ,RL ,RM ,RZT ,I || C X P N
+17	1202	OK	     4 S     ,SAVE  ,SHAPE ,SMALL,T,     TE,    U,     V,      WT,     1CXPN  16	4 S ,SAVE ,SHAPE ,SMALL,T ,TE ,U ,V ,WT ,1 || CXP N 16
+18	1237	COUNT 21/23;COUNT 4/6	                                                                                	5 X ,XE ,ZBFR ,ZLM1 ,SPARE || C X P N
+19	1288	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAQ,IRISE,ISIN,ISOUT,JPARN,KOI  CXPN  18	COMMON /CONTRL/ DETID(12),IC(20),IRAQ,IRISE,ISIN,ISOUT,JPARN,KOI || C X P N 18
+20	1332	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 CXPN  19	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || CXPN 19
+21	1376	OK	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                     CXPN  20	COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) || CXP N 20
+22	1418	COUNT 4/6	C                                                                               	C || C X P N
+23	1461	COUNT 4/6	      DATA WORD1, WORD2, WORD3 /6HR RATE, 6H MCX  : 6H U,EK /                   	DATA WORD1, WORD2, WORD3 /6HR RATE, 6H MCX : 6H U,EK / || C X P N
+24	1504	COUNT 4/6	C                                                                               	C || C X P N
+25	1545	COUNT 61/62	                                                                        CXPN  24	5000 FORMAT(////10X,46HCLOUD RISE IS TERMINATED IN CXPN AT STATEMENT I || CXP N 24
+26	1589	COUNT 24/25;COUNT 4/6	                                                                                	14, 8H BY THE A6, 7H SWITCH//) || C X P N
+27	1634	OK	C                                                                       CXPN  26	C || C X P N 2 6
+28	1676	COUNT 0/71;COUNT 4/6	                                                                                	 || C X P N
+29	1719	OK	C                                                                       CXPN  28	C || CXPN 28
+30	1761	COUNT 4/6	C     PERFORM FIRST PASS INITIALIZATION                                         	C PERFORM FIRST PASS INITIALIZATION || C X P N
+31	1804	COUNT 4/6	C                                                                               	C || C X P N
+32	1847	COUNT 4/6	      GO TO (002, 020, 040), MHYA                                               	GO TO (002, 020, 040), MHYA || C X P N
+33	1890	OK	  002 DO 004 MJ = 1, 10                                                 CXPN  32	002 DO 004 MJ = 1, 10 || CXPN 32
+34	1925	COUNT 0/12;COUNT 4/6	                                                                                	 || C X P N
+35	1976	COUNT 4/6	  CO4 CX (MI, MJ) = C.U                                                         	CO4 CX (MI, MJ) = C.U || C X P N
+36	2018	OK	      MCX = 1                                                           CXPN  35	MCX = 1 || CXPN 35
+37	2061	COUNT 4/6	      MWYA = 2                                                                  	M W Y A = 2 || C X P N
+38	2103	COUNT 15/8;COUNT 4/6	                                                                                	\text{OLTM} = 0.0 || C X P N
+39	2148	COUNT 4/6	      TSTM = SMALLT                                                             	TSTM = SMALLT || C X P N
+40	2189	OK	      TSRE = AMAX1(10., AMIN1( 23. + 9. * ALOG10( W ), 60. ))           CXPN  39	TSRE = AMAX1(10., AMIN1(23. + 9. * ALOG10(W), 60.)) || CXPN 39
+41	2233	COUNT 38/33	                                                                        CXPN  40	TSRD = \Gamma XP(0.014778 * ALCG(W) - 7.0499) || C X P N 4 0
+42	2277	COUNT 0/6	                                                                        CXPN  41	 || C X P N 4 1
+43	2318	COUNT 4/6	      GO TO 040                                                                 	GO TO 040 || C X P N
+44	2363	OK	C                                                                       CXPN  43	C || C X P N 4 3
+45	2405	OK	C     IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY                 CXPN  44	C IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY || C X P N 4 4
+46	2448	COUNT 1/10	                                                                        CXPN  45	C || C X P N 4 5
+47	2492	COUNT 0/9;COUNT 0/6	                                                                                	 || 
+48	2534	COUNT 0/6	C                                                                               	C || 
+49	2576	COUNT 355/23;COUNT 37/6	                                                                                	\text{IF } ( \text{WALLT} = \text{TUTT} ) \quad \text{if} \quad \text{JL} = \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \quad \text{and} \quad \text{JL}^* \ || C_{x} : \mathbb{R} \rightarrow \mathbb{R}
+50	2621	COUNT 0/17;COUNT 0/6	                                                                                	 || 
+51	2663	COUNT 0/21;COUNT 0/6	                                                                                	 || 
+52	2705	COUNT 0/10;COUNT 4/6	                                                                                	 || L X I N
+53	2750	COUNT 0/6	                                                                        CXFN  5?	 || CXFN 5?
+54	2792	OK	  642 7A = 7                                                            CXrN  53	642 7A = 7 || CXrN 53
+55	2835	COUNT 0/14	                                                                        LXPN  54	 || LXPN 54
+56	2876	COUNT 0/11	                                                                        LXPN  55	 || LXPN 55
+57	2921	COUNT 0/13	                                                                        CXFN  56	 || C X F N 5 6
+58	2956	COUNT 22/25	                                                                        JXFN  57	TEST TO NO CRT COMPUTATION || JXFN 57
+59	3006	COUNT 4/6	      TF: MCK .LE. 5 ) GO TO 543                                                	TF: MCK .LE. 5 ) GO TO 543 || C X P N

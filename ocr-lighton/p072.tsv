@@ -1,0 +1,61 @@
+1	3	COUNT 0/30;COUNT 121/1	                                                                                	 || \text{[Image of a black rectangle with a small white figure inside, possibly a person or object, positioned at the top left corner of the page.]}
+2	43	COUNT 320/8	                                                                                	\text{S} \text{M} \text{E} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S} \text{O} \text{S}
+3	78	COUNT 0/58;COUNT 8/1	                                                                                	 || \text{解}
+4	516	OK	*OECK,TIMEE                                                             TIMEE  1	* OECK, TIMEE || TIMEE 1
+5	559	COUNT 16/15	                                                                        TIMEE  2	SUBROUTINE TIMEF. || TIMEE 2
+6	601	OK	C                                                                       TIMEE  3	C || TIMEE 3
+7	645	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     TIMEE  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || TIMEE 4
+8	688	OK	C                                                                       TIMEE  5	C || TIMEE 5
+9	729	COUNT 199/71	                                                                        TIMEE  6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || TIMEE 6
+10	774	OK	C                                                                       TIMEE  7	C || TIMEE 7
+11	816	OK	C     SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS      TIMEE  8	C SETS TIME (RELATIVE TO DETONATION) OF THE INITIAL CONDITIONS || TIMEE 8
+12	857	OK	C     SPECIFICATIONS                                                    TIMEE  9	C SPECIFICATIONS || TIMEE 9
+13	902	OK	C                                                                       TIMEE 10	C || TIMEE 10
+14	945	COUNT 319/71	                                                                        TIMEE 11	C  \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{ || TIMEE 11
+15	988	OK	C                                                                       TIMEE 12	C || TIMEE 12
+16	1031	OK	      COMMON /BASIC/ W,Fh,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ    TIMEE 13	COMMON /BASIC/ W,Fh,ZBRS1Z,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ || TIMEE 13
+17	1073	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMFG, TMFS, VFR                 TIMEE 14	COMMON /INITL/ F, PHI, SSAM, TME, TMFG, TMFS, VFR || TIMEE 14
+18	1116	OK	C                                                                       TIMEE 15	C || TIMEE 15
+19	1158	COUNT 199/71	                                                                        TIMEE 16	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || TIMEE 16
+20	1202	OK	C                                                                       TIMEE 17	C || TIMEE 17
+21	1245	COUNT 0/19	                                                                        TIMEE 18	 || TIMEE 18
+22	1287	COUNT 0/61	                                                                        TIMEE 19	 || TIMEE 19
+23	1332	COUNT 0/25	                                                                        TIMEE 20	 || TIMEE 20
+24	1374	COUNT 6/7	      RETURN                                                                    	RETURN || TIME 21
+25	1418	OK	      ENO                                                               TIMEE 22	ENO || TIMEE 22
+26	1759	OK	*DECK,ATMR                                                              ATMR   1	*DECK, ATM R || ATMR 1
+27	1803	OK	      SUBROUTINE ATMR                                                   ATMR   2	SUBROUTINE ATM R || ATMR 2
+28	1848	OK	C                                                                       ATHR   3	C || ATHR 3
+29	1890	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     ATMR   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || ATMR 4
+30	1924	OK	C                                                                       ATHR   5	C || ATHR 5
+31	1974	COUNT 199/71	                                                                        ATMR   6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ATMR 6
+32	2017	COUNT 12/5	C                                                                               	C || \dot{A}TMR\ 7
+33	2059	OK	C     ATMR READS IN ATMOSPHERE TABLES                                   ATMR   8	C ATMR READS IN ATMOSPHERE TABLES || ATMR 8
+34	2104	OK	C                                                                       ATMR   9	C || ATMR 9
+35	2146	COUNT 51/52	                                                                        ATMR  10	C ATMOSPHERE TABLE GLCSARY- UNITS ARE FOR THE SCALED ENTRIES || ATMR 10
+36	2189	OK	C                                                                       ATMR  11	C || ATMR 11
+37	2232	OK	C   1   ALT - ALTITUDE ABCVE MSL (METERS)                               ATMR  12	C 1 ALT - ALTITUDE ABCVE MSL (METERS) || ATMR 12
+38	2274	OK	C   2   ATP - TEMPERATURE (DEGREES KELVIN)                              ATMR  13	C 2 ATP - TEMPERATURE (DEGREES KELVIN) || ATMR 13
+39	2318	OK	C   3   PRS - PRESSURE (PASCALS)                                        ATMR  14	C 3 PRS - PRESSURE (PASCALS) || ATMR 14
+40	2362	OK	C   4   RLH - RELATIVE HUMIDITY (PERCENT)                               ATMR  15	C 4 RLH - RELATIVE HUMIDITY (PERCENT) || ATMR 15
+41	2403	OK	C   5   RHO - DENSITY (KGM/M**3)                                        ATMR  16	C 5 RHO - DENSITY (KGM/M**3) || ATMR 16
+42	2448	OK	C   6   ETA - VISCOSITY (KGM/(M-SEC))                                   ATMR  17	C 6 ETA - VISCOSITY (KGM/(M-SEC)) || ATMR 17
+43	2491	OK	C                                                                       ATMR  18	C || ATMR 18
+44	2532	OK	C   KATM=IC(4) IS THE ATMOSPHER DATA PRINT CONTROL                      ATMR  19	C KATM=IC(4) IS THE ATMOSPHER DATA PRINT CONTROL || ATMR 19
+45	2577	COUNT 17/6	C                                                                               	C || \dot{A}TMR \quad 20
+46	2620	COUNT 199/71	                                                                        ATMR  21	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ATMR 21
+47	2663	OK	C                                                                       ATMR  22	C || ATMR 22
+48	2704	OK	      COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), PLH(256),     ATMK  23	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PRS(256), PLH(256), || ATMK 23
+49	2747	OK	     1        RHO(256), ETA(256), NHODO, ZV(100),  VX(100), VY(100)     ATMR  24	1 RHO(256), ETA(256), NHODO, ZV(100), VX(100), VY(100) || ATMR 24
+50	2789	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI  ATMR  25	COMMON /CONTRL/ DETID(12),IC(20),IRAU,IRISE,ISIN,ISOUT;JPARN,KDI || ATMR 25
+51	2833	OK	C                                                                       ATMR  26	C || ATMR 26
+52	2877	OK	      DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZK0(6),ATMMAX(6),AP(6)   ATMR  27	DIMENSION FMT(12),SCALE( 8),ATMSUB(6),ATMZK0(6),ATMMAX(6),AP(6) || ATMR 27
+53	2920	OK	      DIMENSION ATIO(12)                                                ATMR  28	DIMENSION ATIO(12) || ATMR 28
+54	2963	OK	      DATA PROGRM/6H ATMR /, ALIMIT/999999./                            ATMŘ  29	DATA PROGRM/6H ATMR /, ALIMIT/999999./ || ATMŘ 29
+55	3005	OK	      DATA ATMSUB/-1J00.,294.65,.1139E6,77.,1.347,.18206E-4/            ATMR  =0	DATA ATMSUB/-1J00.,294.65,.1139E6,77.,1.347,.18206E-4/ || ATMR = 0
+56	3048	COUNT 52/53	                                                                        ATЧК  :1	DATA ATMZRO/ .0,28P.15,.1J133E6, 77.,1.2250,.17894E-4/, || ATЧК :1
+57	3091	COUNT 139/55	                                                                        ATMR  52	1ATM \frac{Y}{X} / 5.0 \, \text{J} \, \text{U.}, 270.65, .7977 \, \text{J} \, \text{c} \, 2, 4. \, \text{J}, .1 \, \text{c} \, 269 \, \text{E} - 2, .17037 \, \text{E} - 4/ || ATMR 52
+58	3137	OK	C                                                                       ATMR  33	C || ATMR 33
+59	3165	OK	                                        69                                      	69
+60	3290	COUNT 20/11	                                                                        \text{S}	\text{الجَمْعِيَّةِ} || \text{S}
+61	3318	COUNT 0/54	                                                                                	

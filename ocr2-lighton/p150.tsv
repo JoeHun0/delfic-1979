@@ -1,0 +1,10 @@
+12	956	OK	 33   FORMAT(15X,56HTIME OF ARRIVAL ACCOUNTED FOR BY THE APPROXIMATE.MET        	33 FORMAT(15X,56HTIME OF ARRIVAL ACCOUNTED FOR BY THE APPROXIMATE.MET
+14	1041	OK	 34   FORMAT(15X,50HTIME OF ARRIVAL ACCOUNTED FOR BY THE EXACT METHOD.)         	34    FORMAT(15X,50HTIME OF ARRIVAL ACCOUNTED FOR BY THE EXACT METHOD.)
+21	1342	COUNT 19/12	                                                                                	TINC = 2.6^{\circ}DGX
+25	1515	COUNT 6/5	                                                                                	KK!. = 1
+28	1640	COUNT 0/18	                                                                                	
+32	1813	OK	      IF(JG   )147,147,131                                                      	IF(JG )147,147,131
+38	2073	OK	      WRITE (ISOUT,3)                                                           	WRITE (ISOUT,3)
+46	2414	OK	      LREW=1                                                                    	LREW=1
+49	2544	OK	      WRITE(METAPE)XMIN,XPAX,YMIN,YMAX,DGX,DGY                                  	WRITE(METAPE) XMIN, XPAX, YMIN, YMAX, DGX, DGY
+61	3060	OK	      NX=NXMAP                                                                  	NX = NXMAP

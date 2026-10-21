@@ -1,0 +1,64 @@
+1	8	COUNT 0/30	                                                                                	
+2	43	COUNT 1/25;COUNT 57/2	                                                                                	1 || \text{[Image of a black and white, pixelated, or corrupted image]}
+3	550	OK	      IF(RHO(I).GT.0.0) GC TO 72                                        ATMR  94	IF(RHO(I).GT.0.0) GC TO 72 || ATMR 94
+4	594	OK	   71 IRROR=-71                                                         ATMR  95	71 IRROR=-71 || ATMR 95
+5	636	OK	      GU TO 130                                                         ATMR  96	GU TO 130 || ATMR 96
+6	678	OK	   72 ES= 611.*(273./ATP(I))**5.13* EXP(25.*(ATP(I)-273. )/ATP(I))      ATMR  97	72 ES= 611.* (273./ATP(I))**5.13* EXP(25.* (ATP(I)-273. )/ATP(I)) || ATMR 97
+7	723	COUNT 0/44	                                                                        ATHR  98	 || ATHR 98
+8	766	OK	      GO TN 100                                                         ATMR  99	GO TN 100 || ATMR 99
+9	809	OK	   73 IF' HO(I).GT.0.0) GO TO 100                                       ATMR 100	73 IF' HO(I).GT.0.0) GO TO 100 || ATMR 100
+10	852	COUNT 0/57	                                                                        ATMR 101	 || ATMR 101
+11	894	COUNT 0/48	                                                                        ATMR 102	 || ATMR 102
+12	938	OK	      GO TO 100                                                         ATMR 103	GO TO 100 || ATMR 103
+13	982	OK	C                                                                       ATMR 104	C || ATMR 104
+14	1024	OK	  1^5 NAT=I                                                             ATHR 105	1^5 NAT=I || ATHR 105
+15	1057	OK	C                                                                       ATMR 106	C || ATMR 106
+16	1111	OK	C     DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES            ATMR 107	C DETERMINE IF THE TABLE MUST BE EXPANDED TO 256 ENTRIES || ATMR 107
+17	1154	OK	C                                                                       ATMR 108	C || ATMR 108
+18	1196	OK	  110 IF(NAT -256)140,111,120                                           ATMR 109	110 IF(NAT -256)140,111,120 || ATMR 109
+19	1240	OK	C                                                                       ATMR 110	C || ATMR 110
+20	1270	COUNT 61/53	                                                                        ATMR 111	\check{C} 111 THE TABLES DO NOT NEED EXPANSION. CHECK TO DETERMINE IF THE || ATMR 111
+21	1313	COUNT 46/31	                                                                        ATMR 112	C     THE PROPER BOUNDARIES ARE NOT THE PROPER BOUNDARIES. || ATMR 112
+22	1369	OK	C                                                                       ATMR 113	C || ATMR 113
+23	1411	OK	  111 IF(ABS(ALT(1)+ 1000.).LE.1.) GO TO 113                            ATMR 114	111 IF (ABS(ALT(1)+ 1000.).LE.1.) GO TO 113 || ATMR 114
+24	1453	OK	  112 IRROR=-112                                                        ATHR 115	112 IRROR=-112 || ATHR 115
+25	1498	OK	      GO TO 13C                                                         ATMR 116	GO TO 13C || ATMR 116
+26	1538	OK	  113 IF(A3S(ALY(256)-5.E4).LE.5).) GO TO 115                           ATMR 117	113 IF (A3S(ALY(256)-5.E4).LE.5).) GO TO 115 || ATMR 117
+27	1583	OK	  114 IRR0R=-114                                                        ATMR 118	114 IRR0R=-114 || ATMR 118
+28	1626	OK	      GO TO 133                                                         ATMR 119	GO TO 133 || ATMR 119
+29	1662	OK	C                                                                       ATMR 120	C || ATMR 120
+30	1709	OK	C 115 THE TABLES HAVE THE PROPER BCUNDRIES.  CHECK TO CETERMINE IF THE  ATMR 121	C 115 THE TABLES HAVE THE PROPER BCUNDRIES. CHECK TO CETERMINE IF THE || ATMR 121
+31	1754	OK	C     ALTITUDE INTERVALS ARE ALL.200 METERS.                            ATMR 122	C ALTITUDE INTERVALS ARE ALL. 200 METERS. || ATMR 122
+32	1796	OK	C                                                                       ATMR 123	C || ATMR 123
+33	1839	OK	  115 00 116 I=2,256                                                    ATMR 124	115 00 116 I=2, 256 || ATMR 124
+34	1882	COUNT 59/58	                                                                        ATMR 125	IF (ABS (ALT (I) - ALT (I-1) - 2 (0.)) .GT. 2.) IF (NBRNCH-1) 140,140,137 || ATMR 125
+35	1917	OK	  116 CONTINUE                                                          ATMR 126	116 CONTINUE || ATMR 126
+36	1969	OK	      GO TO 270                                                         ATMR 127	GO TO 270 || ATMR 127
+37	2011	OK	  120 IRROR=-120                                                        ATMR 128	120 IRROR=-120 || ATMR 128
+38	2053	OK	  130 CALL FRROR(PROGRM,IRROR,ISOUT)                                    ATHR 129	130 CALL FRROR(PROGRM,IRROR,ISOUT) || ATHR 129
+39	2098	OK	  137 IRF   -137                                                        ATMR 130	137 IRF -137 || ATMR 130
+40	2141	OK	      GO    130                                                         ATHR 131	GO 130 || ATHR 131
+41	2184	OK	C                                                                       ATMR 132	C || ATMR 132
+42	2227	OK	C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT                  ATMR 133	C 140 THE TABLES NEED EXPANSION OR INTERVAL ADJUSTMENT || ATMR 133
+43	2269	OK	C                                                                       ATMR 134	C || ATMR 134
+44	2312	OK	  140 REWIND IRISE                                                      ATMR 135	140 REWIND IRISE || ATMR 135
+45	2355	OK	C                                                                       ATHR 136	C || ATHR 136
+46	2398	OK	C     DO THE TABLES BEGIN AT -10J0 METERS-                              ATMR 137	C DO THE TABLES BEGIN AT -10J0 METERS- || ATMR 137
+47	2439	OK	C     IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS.ATMR 138	C IF NOT MAKE AN ENTRY AT -1000 METERS FROM THE ARDC STANDARD ATMOS. || ATMR 138
+48	2484	OK	C                                                                       ATMR 139	C || ATMR 139
+49	2527	OK	      IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150                           ATHR 140	IF(A9S(ALT(1)+1000.) .GT. 1.) GO TO 150 || ATHR 140
+50	2568	COUNT 0/13	                                                                        ATMR 141	 || ATMR 141
+51	2611	OK	      GO TO 200                                                         ATMR 142	GO TO 200 || ATMR 142
+52	2655	COUNT 21/22	                                                                        ATMR 143	15[ WRITE(IRISE)ATMSU8 || ATMR 143
+53	2697	OK	  160 IGO=IGO+1                                                         ATMR 144	160 IGO=IGO+1 || ATMR 144
+54	2740	OK	C                                                                       ATMR 145	C || ATMR 145
+55	2782	OK	C     CO THE TABLES HAVE AN ENTRY AT     0 METERS-                      ATHR 146	C CO THE TABLES HAVE AN ENTRY AT 0 METERS- || ATHR 146
+56	2823	OK	C     IF NOT MAKE AN ENTRY AT     0 METERS FROM THE ARDC STANDARD ATMOS.ATMR 147	C IF NOT MAKE AN ENTRY AT 0 METERS FROM THE ARDC STANDARD ATMOS. || ATMR 147
+57	2868	OK	C                                                                       ATMR 148	C || ATMR 148
+58	2912	COUNT 27/26	                                                                        ATMR 149	IF(ALT(1)) .LE. 0.C(1)GO TO 200 || ATMR 149
+59	2955	OK	      WRITE(IRISE)ATMZRO                                                ATMR 150	WRITE (IRISE) AT MZRO || ATMR 150
+60	2997	OK	      IGO=IGO+1                                                         ATMR 151	IGO=IGO+1 || ATMR 151
+61	3042	OK	C                                                                       ATMR 152	C || ATMR 152
+62	3084	OK	C     STORE THE INPUT TABLES ON TAPE                                    ATMR 153	C STORE THE INPUT TABLES ON TAPE || ATMR 153
+63	3140	OK	                                       71                                       	71
+64	3326	COUNT 0/8	                                                                                	

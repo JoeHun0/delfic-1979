@@ -1,0 +1,58 @@
+1	17	35	NOISE	                                                                        			
+2	487	519	HANDFREE	  230 KTR(IP)=0                                                         			
+3	530	569	HANDFREE	  240 CALL CALC(IP,OMAP,NMAP)                                           			P0HEC131
+4	569	605	HANDFREE	  777 CONTINUE                                                          			
+5	615	644	NOISE	                                                                        		lighton= C ## glm= C	
+6	661	692	HANDFREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	
+7	700	730	NOISE	                                                                        		lighton= C ## glm= C	
+8	748	779	HANDFREE	      END                                                               		lighton=      ENO ## dots=      END ## glm=      EN0	
+9	1087	1121	HAND	*DECK,PDMP                                                              		lighton=*DECK,POMP ## dots=*DECK,POMP ## glm=*DECK.POMP	
+10	1133	1166	VOTED	      SUBROUTINE PDMP                                                   		lighton=      SUBROUTINE POMP ## dots=      SUBROUTINE PDHP ## glm=      SUBROUTINE PDMP	
+11	1175	1204	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+12	1216	1260	COMMENT	C     THIS SUBROUTINE SOPTS OUT THOSE  PARCELS  THAT WILL CONTRIBUTE    		lighton=C     THIS SUBROUTINE SOPTS OUT THOSE  PARCELS  THAT WILL CONTRIBUTE ## glm=C     THIS SURROUTINE SOPTS OUT THOSE  PARCELS  THAT WILL CONTRIBUTE	PUMP3
+13	1260	1304	COMMENT	C     TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR       		lighton=C     TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR ## glm=C     TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR	PUMP4
+14	1304	1341	COMMENT	C TEMPORARY STORAGE                                                     			
+15	1341	1375	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PUMP6
+16	1390	1432	COMMENT	C     H.G.NORMENT     JUNE 28,1971                                      		lighton=C     H.G.NORMENT     JUNE 28,1971 ## glm=C     H.G.NORMENT     JUNE 28.1971	PUMP1
+17	1432	1461	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+18	1475	1518	COMMENT	C  GLOSSARY                                                             			PUMP9
+19	1518	1547	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+20	1562	1607	COMMENT	C     JL           COUNT CF  PARCELS  MOVED FROM UPPER TO LOWER CORE    		lighton=C     JL           COUNT CF  PARCELS  MOVED FROM UPPER TO LOWER CORE	PUMP11
+21	1607	1642	COMMENT	C                  (JL.LE.KP)                                           		glm=C                  (JL.LE.KP)	PUMP12
+22	1642	1692	COMMENT	C     JP           COUNT CF AVAILABLE  PARCEL  STORAGE LOCATIONS PASSED 		glm=C     JP           COUNT CF AVAILABLE  PARCEL  STORAGE LOCATIONS PASSED	PUMP13
+23	1692	1735	COMMENT	CIN THE PARCEL CORE STORAGE BLOCK SORT                                  			PUMP14
+24	1735	1776	COMMENT	C                  (JP.LE.NE.AND.JP.LE.KP)                              		glm=C                  (JP.LE.NE.AND.JP.LE.KP)	PUMP15
+25	1776	1820	COMMENT	C     KP           NUMBER OF  FARCELS  IN CORE THAT ARE TO BE DUMPED    		lighton=C     KP           NUMBER OF  FARCELS  IN CORE THAT ARE TO BE DUMPED ## glm=C     KP           NUMBER CF  FARCELS  IN COKE THAT ARE TO BE DUMPED	PUMP10
+26	1820	1859	COMMENT	C                  ONTO TAPE                                            		glm=C                  ONTO TAPE	PUMP17
+27	1859	1901	COMMENT	C                  (KP=NIJ-NE)                                          		glm=C                  (KP=NIJ-NE)	JMP1
+28	1901	1950	COMMENT	C     NE           COUNT OF AVAILABLE  PARCEL  STORAGE LOCATIONS IN     		lighton=C     NE           COUNT OF AVAILABLE  PARCEL  STORAGE LOCATIONS IN ## glm=C     NE           COUNT OF AVAILABLE  PARCEL  STORAGE LOCATIONS IN	PUMP19
+29	1950	1993	COMMENT	CORE. THIS IS THE NUMBER OF PARCELS REJECTED                            			PUMP20
+30	1993	2030	COMMENT	C                  IN PCHECK.                                           		glm=C                  IN PCHECK.	PUMP21
+31	2030	2078	COMMENT	C     NIJ          A BLOCK COUNT OF DATA STORED ON TAPE AND/OR IN CORE  		lighton=C     NIJ          A BLOCK COUNT OF DATA STORED ON TAPE AND/OR IN CORE ## glm=C     NIJ          A BLOCK COUNT OF DATA STORED ON TAFE AND/OR IN CORE	PUMP22
+32	2078	2106	NOISE	                                                                        			
+33	2120	2158	COMMENT	C     ALSO SEE OPMI GLOSSARY                                            		lighton=C     ALSO SEE OPMI GLOSSARY ## glm=C     ALSO SEE OPM1 GLOSSARY	PUMP2
+34	2158	2191	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MP25
+35	2207	2248	NOISE	                                                                        			PUMP26
+36	2248	2279	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+37	2295	2340	HANDFREE	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,	39	lighton=      COMMON /CONCAT/       IC(2J)    .IHOB      ,IPACT     ,IPOUT     , ## lighton2=      COMMON /CONCAT/       IC(2J)    ,IHOB      ,IPACT     ,IPOUT     ,	PUMP29
+38	2340	2380	HANDFREE	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,			PUMP25
+39	2380	2423	HANDFREE	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM                 			PUMP31
+40	2423	2466	AGREE	      COMMON /PARDAT/       ASC       ,BSQ       ,COSA      ,F          		lighton=      COMMON /PARDAT/       ASC       ,BSQ       ,COSA      ,F ## dots=      COMMON /PARDAT/       ASC       ,BSQ       ,COSA      ,F	PUMP31
+41	2466	2511	VOTED	     1GAYA      ,KTR(120)  ,PMAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100),		lighton=     1GAYA      ,KTR(120)  ,PMAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100), ## lighton2=     1GAYA      ,KTR(126)  ,PMAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100), ## dots2=     1GAYA      .KTR(100)  ,PHAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100),	PUMP33
+42	2511	2553	HANDFREE	     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,	14,35,46	lighton=     2SIGVO(1^C),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     , ## lighton2=     2SIGVO(1^3),SINA      ,TPAR(1.0) ,XPAR(1.0) ,YPAR(1.0) ,YPRML     , ## dots=     2SIGVO(173),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     , ## dots2=     2SIGVO(173),SINA      ,TPAR(1J0) ,XPAR(1J0) ,YPAR(100) ,YPRML     ,	POMP34
+43	2553	2589	HANDFREE	     3YPRMU     ,ZPAR(100)                                              			POMP35
+44	2589	2638	VOTED	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR       		lighton=      COMMON /RUNDAT/      C          ,CF6       ,FSUP      ,ICTR ## dots=      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR ## glm=      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICIR	PUMP55
+45	2638	2682	VOTED	     1MAPRUN    ,NE        ,NIJ       ,VORO      ,NREG      ,NTASK     ,		lighton=     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     , ## dots=     1MAPRUN    ,NE        ,NIJ       ,VORO      ,NREG      ,NTASK     , ## dots2=     1XAPRUN    .NE        .NIJ       .VURO      .NREG      .,NTAS     K	RUN0
+46	2682	2725	HANDFREE	     2OPMID(12) ,T1        ,T2        ,WFMAS(200)                       	17,28,39,47	lighton=     20PMID(12) ,T1        ,T2        ,NFMAS(2L0) ## lighton2=     2OPMID(12) ,T1        ,T2        ,AFMAS(2L0) ## glm=     20PMID(12) .T1        .T2        .AFMAS(240) ## glm2=     20PMID(12) .T1        .T2        .AFMAS(200)	PUMP38
+47	2725	2759	HAND	      DATA PROGRM/6HPDMP  /                                             	17,23	dots=      DATA PROGRH/6HPOHP  / ## dots2=      DATA PROGRN/6HPOMP  / ## glm2=      DATA PROGRAM/6HPDM  P	PUMP30
+48	2759	2795	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	JMP39
+49	2811	2843	AGREE	      KP=NIJ-NE                                                         		dots=      KP=NIJ-NE ## glm=      KP=NIJ-NE	
+50	2854	2891	HANDFREE	      IF(NE.EQ.0) GO TO 1000                                            	27,28	lighton=      IF(NE.EQ.0) GO TO 1555 ## lighton2=      IF(NE.EQ.0) GO TO 1CCC ## dots=      IF(NE.EQ.0) GO TO 1000 ## dots2=      IF(NE.EQ.0) GO TO 1500 ## glm=      IF(NE.EQ.0) GO TO 15CC ## glm2=      IF(NE.EQ.0) GO TO 1500	PUMP41
+51	2891	2927	AGREE	      JP=9                                                              		lighton2=      JP=9 ## glm=      JP=9 ## glm2=      JP=9	MP42
+52	2940	2970	HANDFREE	      M=NIJ+1                                                           	8	lighton=      M=NIJ+1 ## glm=      1J+1INX ## glm2=      MxNIJ+1	
+53	2986	3012	HANDFREE	      J=1                                                               		glm=      J=1	
+54	3028	3056	HANDFREE	      JL=0                                                              		dots=      JL=0 ## glm=      JL=0	
+55	3068	3095	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+56	3113	3159	COMMENT	C     SORT THROUGH THE STO'ED PARTICLE DATA BLOCK AND MOVE ALL          		lighton=C     SORT THROUGH THE STO'ED PARTICLE DATA BLOCK AND MOVE ALL ## glm=C     SORT THROUGH THE STORED PARTICLE DATA BLOCK AND MOVE ALL	POHP41
+57	3194	3225	NOISE	                                                                        			
+58	3310	3343	NOISE	                                                                        			

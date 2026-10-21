@@ -1,0 +1,63 @@
+1	5	COUNT 3/42;COUNT 3/7	                                                                                	--- || ---
+2	566	OK	*DECK,TRANP                                                             TRANP  1	*DECK, TRANP || TRANP 1
+3	609	OK	      SUBROUTINE TRANP(NET,NETSU,ZBH,TIMUP,USUM,VSUM,OXSUM,DYSUM,RSUF,  TRANP  2	SUBROUTINE TRANP (NET,NETSU,ZBH,TIMUP,USUM,VSUM,OXSUM,DYSUM,RSUF, || TRANP 2
+4	651	OK	     1HFZ，CAVS，TSUM，TMAX，XC，YO，ZO，TO，SIGXO，SIGYO，RO，NCATO，              TRANP  3	1HFZ，CAVS，TSUM，TMAX，XC，YO，ZO，TO，SIGXO，SIGYO，RO，NCATO， || TRANP 3
+5	695	OK	     2ICF，JCF，NCF，KBHF，NDATF，LTIMF)                                     TRANP  4	2ICF，JCF，NCF，KBHF，NDATF，LTIMF) || TRANP 4
+6	742	OK	C                                                                       TRANP  5	C || TRANP 5
+7	780	COUNT 5/6	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || RANP 6
+8	826	OK	C                                                                       1RANP  7	C || 1RANP 7
+9	867	COUNT 1/71	                                                                        TRANP  8	C || TRANP 8
+10	913	OK	C                                                                       TRANP  9	C || TRANP 9
+11	953	COUNT 57/56	                                                                        TRANP 14	C GIVEN COORDINATES AND SETTLING SPEEDS FOR A FALLCUT PARCEL, PLUS A || TRANP 14
+12	996	OK	C     TRANSPORT TIME LIMIT, TRANP COMPUTES THE PARCEL COORDINATES AT    TRANP 11	C TRANSPORT TIME LIMIT, TRANP COMPUTES THE PARCEL COORDINATES AT || TRANP 11
+13	1038	OK	C     ITS DEPOSITION POINT OR AT THE POINT IT LEAVES THE WIND SPACE OR  TRANP 12	C ITS DEPOSITION POINT OR AT THE POINT IT LEAVES THE WIND SPACE OR || TRANP 12
+14	1082	OK	C     AT THE POINT WHEN IT RUNS OUT OF TIME.                            TRANP 13	C AT THE POINT WHEN IT RUNS OUT OF TIME. || TRANP 13
+15	1128	OK	C                                                                       TRANP 14	C || TRANP 14
+16	1169	OK	C                                                                       TRANP 15	C || TRANP 15
+17	1210	COUNT 26/27	                                                                        TRANP 16	C MODE COMPUTATION MODE SWITCH || TRANP 16
+18	1253	COUNT 44/45	                                                                        TRANP 17	C RAPID COMPUTATION (ALL THE WAY TO DEPOSITION USING || TRANP 17
+19	1295	OK	C                  WEIGHTEC. AVERAGED WINDS)                            TRANP 18	C WEIGHTEC. AVERAGED WINDS) || TRANP 18
+20	1339	OK	C                1 LAYERWISE COMPUTATION                                TRANP 19	C 1 LAYERWISE COMPUTATION || TRANP 19
+21	1382	COUNT 27/28	                                                                        TRANP 20	C TO TIME AFTER PARCEL ADVECTION || TRANP 20
+22	1424	OK	C     XO    - PARCEL CENTER X COORDINATE AFTER ADVECTION                TRANP 21	C XO - PARCEL CENTER X COORDINATE AFTER ADVECTION || TRANP 21
+23	1468	COUNT 40/41	                                                                        TRANP 22	C YO PARCEL CENTER Y COORDINATE AFTER ADVECTION || TRANP 22
+24	1499	OK	C     ZO    - PARCEL CENTER Z COORDINATE AFTER ADVECTION                TRANP 23	C ZO - PARCEL CENTER Z COORDINATE AFTER ADVECTION || TRANP 23
+25	1553	OK	C     SIGXO - PARCEL DOWNWIND DISPERSION PARAMETER AFTER ADVECTION      TRANP 24	C SIGXO - PARCEL DOWNWIND DISPERSION PARAMETER AFTER ADVECTION || TRANP 24
+26	1596	OK	C     SIGYO - PARCEL CROSSIND DISPERSION PARAMETER AFTER ADVECTION      TRANP 25	C SIGYO - PARCEL CROSSIND DISPERSION PARAMETER AFTER ADVECTION || TRANP 25
+27	1640	OK	C     NDATO - INDEX OF HORIZONTAL SPACE RESOLUTION NET MESH             TRANP 26	C NDATO - INDEX OF HORIZONTAL SPACE RESOLUTION NET MESH || TRANP 26
+28	1681	OK	C     RO    - HIND HEADING ORIENTATION ANGLE AFTER ADVECTION            TRANP 27	C RO - HIND HEADING ORIENTATION ANGLE AFTER ADVECTION || TRANP 27
+29	1727	OK	C                                                                       TRANP 28	C || TRANP 28
+30	1767	COUNT 1/71	                                                                        TRANP 29	C || TRANP 29
+31	1813	OK	C                                                                       TRANP 30	C || TRANP 30
+32	1854	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               TRANP 31	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || TRANP 31
+33	1897	OK	       COMMON /INDEX/ ICX,JCX,+8HX,LTIMX,NAT,NCX,NOATX                  TRANP 32	COMMON /INDEX/ ICX,JCX,+8HX,LTIMX,NAT,NCX,NOATX || TRANP 32
+34	1931	OK	      COMMON /PARCL/  CROSS,DOWN,DWAF,EDDY,NOATP,PMAS,FSIZ,RHOP,RWAF,   TRANP 33	COMMON /PARCL/ CROSS,DOWN,DWAF,EDDY,NOATP,PMAS,FSIZ,RHOP,RWAF, || TRANP 33
+35	1983	OK	     1 TP,XP,YP,ZLOH,ZP                                                 TRANP 34	1 TP,XP,YP,ZLOH,ZP || TRANP 34
+36	2027	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     TRANP 35	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || TRANP 35
+37	2072	OK	C                                                                       TRANP 36	C || TRANP 36
+38	2111	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF),ZBH(KBHF),USUM(KBHF,NDATF,LTIMF)TRANP 37	DIMENSION NET(ICF,JCF),NETSU(NCF),ZBH(KBHF),USUM(KBHF,NDATF,LTIMF) || TRANP 37
+39	2155	OK	      DIMENSION VSUM(KBHF,NDATF,LTIMF),OXSUM(KBHF,NDATF,LTIMF)          TRANP 38	DIMENSION VSUM(KBHF,NDATF,LTIMF),OXSUM(KBHF,NDATF,LTIMF) || TRANP 38
+40	2197	OK	      DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUP(LTIMF),CAVS(KBHF)         TRANP 39	DIMENSION DYSUM(KBHF,NDATF,LTIMF),TIMUP(LTIMF),CAVS(KBHF) || TRANP 39
+41	2241	OK	      DIMENSION RSUM(KBHF,NDATF,LTIMF),WFZ(KBHF,NDATF,LTIMF),TSUM(KBHF) TRANP 40	DIMENSION RSUM(KBHF,NDATF,LTIMF),WFZ(KBHF,NDATF,LTIMF),TSUM(KBHF) || TRANP 40
+42	2287	OK	C                                                                       TRANF 41	C || TRANF 41
+43	2326	COUNT 33/32	                                                                        TRANP 42	DATA PROGRAM , EPSILO , EPSZ , QBRT , VARL || TRANP 42
+44	2371	COUNT 35/38	                                                                        TRANP 43	1 /6HTRANP .0005 .0.1 .333333333, 1.0E9 / || TRANP 43
+45	2417	OK	C                                                                       TRANP 44	C || TRANP 44
+46	2455	COUNT 60/58	                                                                        TRANP 45	2 FORMAT( 6H TIME=E12.4, 5H ALT=E12.4, 7H X-POS=E12.4, 7H Y-POS=E12.4 || TRANP 45
+47	2498	OK	     1.4,   6H MESH=I4,  8F REACHED)                                    TRANP 46	1.4, 6H MESH=I4, 8F REACHED) || TRANP 46
+48	2540	COUNT 59/58;COUNT 8/7	                                                                                	3. FORMAT( 6H TIME=E12.4, 5H ALT=E12.4, 7H X-POS=E12.4, 7H Y-POS=E12 || TRANP 1:7
+49	2583	OK	     1.4.   6H MESH=I4.  10H ATTEMPTED)                                 TRANP 48	1.4. 6H MESH=I4. 10H ATTEMPTED) || TRANP 48
+50	2627	OK	    4 FORMAT( 1H0. 38HPARCEL AT INITIAL POINT (XP,YP,ZF,TP) 4E12.4/     TRANP 49	4 FORMAT(1H0.38HPARCEL AT INITIAL POINT (XP,YP,ZF,TP) 4E12.4/ || TRANP 49
+51	2670	OK	     1  31H REQUIRED CHANNELLING AT POINT 4E12.4)                       TRANP 50	1 31H REQUIRED CHANNELLING AT POINT 4E12.4) || TRANP 50
+52	2716	OK	C                                                                       TRANP 51	C || TRANP 51
+53	2756	OK	      EPS=EPSILO*WINT                                                   TRANP 52	EPS = EPSILO * WINT || TRANP 52
+54	2798	OK	      EPST=EPSILO*TMAX                                                  TRANF 53	EPST=EPSILO*TMAX || TRANF 53
+55	2843	OK	      XO=XP                                                             TRANP 54	XO=XP || TRANP 54
+56	2886	OK	      YO=YP                                                             TRANP 55	YO=YP || TRANP 55
+57	2930	OK	      20=2P                                                             TRANP 56	20=2P || TRANP 56
+58	2973	OK	      TO=TP                                                             TRANP 57	TO=TP || TRANP 57
+59	3013	OK	      SIGX0=0.                                                          TRANP 58	SIGX0=0. || TRANP 58
+60	3058	OK	      SIGYO=0.                                                          TRANP 59	SIGYO=0. || TRANP 59
+61	3102	OK	      RO=0.                                                             TRANP 60	RO=0. || TRANP 60
+62	3141	OK	                                        131                                     	131
+63	3294	OK	                                                                     ------     	--- || ---

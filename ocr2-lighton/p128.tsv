@@ -1,0 +1,8 @@
+1	11	COUNT 0/11	                                                                                	
+8	705	OK	  270 WRITE(ISOUT,1)IGC,ISTOP,(ZUH(K),K=IGO,ISTOP)                              	270  WRITE (ISOUT,1)IGC,ISTOP, (ZUH(K),K=IGO,ISTOP)
+41	2421	OK	      COMMON /PARCL/  CRCSS,DOWN,OWAF,EDDY,NDATP,PMAS,PSIZ,RHOP,RWAF,           	COMMON /PARCL/ CRCSS, DOWN, OWAF, EDDY, NDATP, PMAS, PSIZ, RHOP, RWAF,
+49	2763	COUNT 66/60	                                                                                	DIMENSION WFZ(KBHF, \Lambda CATF, LTIMF), HAVG(KBHF, LTIMF), TIMLP(LTIMF)
+52	2892	OK	      DIMENSION PSAM(100),FWFR(100),DWFR(100),ZLWF(100),VWFR(100)               	DIMENSION PSAM(100),FWFR(100),DWFR(100),ZLWF(100),VWFR(100)
+56	3066	OK	 8015 FORMAT( 1H+, 102X, 8FAIRBORNE)                                            	8015 FORMAT( 1H+, 102X, 8FAIRBORNE)
+57	3111	COUNT 24/25	                                                                                	8r16 FORMAT( 1H , I4, 8E12.4)
+59	3302	COUNT 14/7	                                                                                	\text{العربية}

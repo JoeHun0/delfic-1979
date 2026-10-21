@@ -1,0 +1,5 @@
+32	1773	OK	   8  FORMAT(1HC,10X, 45!Z8H(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE ,E        	8 FORMAT(1HC,10X,45!Z8H(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE,E
+48	2462	COUNT 15/9	                                                                                	202 K  \exists H X=K
+50	2548	OK	      KBHX1=KBHX-1                                                              	KBHX1=KBHX-1
+52	2636	OK	      IP1=I+1                                                                   	IP1=I+1
+55	2764	OK	      TEMP=ZCH(I)                                                               	TEMP=ZCH(I)

@@ -1,0 +1,63 @@
+1	4	COUNT 3/41;COUNT 3/6	                                                                                	--- || ---
+2	523	OK	 25   FORMAT(15X,5CHDIAMETER (MICRONS) OF SMALLEST DEPOSITED PARTICLE.) MAP   51	25 FORMAT(15X,5CHDIAMETER (MICRONS) OF SMALLEST DEPOSITED PARTICLE.) || MAP 51
+3	567	OK	 26   FORMAT(15X,49HDIAMETER (MICRONS) OF LARGEST DEPOSITED PARTICLE.)  MAP   62	26 FORMAT(15X,49HDIAMETER (MICRONS) OF LARGEST DEPOSITED PARTICLE.) || MAP 62
+4	603	COUNT 61/60	                                                                        MAP   63	27 FORMAT(15X,56HMASS DEPOSITED (KGM/M**2) BY PARTICLES IN THE SIZE RI || MAP 63
+5	653	OK	     1ANGE  ,E12.5,4H TO ,E12.5, 8H METERS.）                            MAP   64	1 ANGE ,E12.5,4H TO ,E12.5,8H METERS.） || MAP 64
+6	697	OK	 28   FORMAT(15X,77HH+1 HCUR NORMALIZED EXPOSURE RATE RESULTING FROM PARMAP   65	28 FORMAT(15X,77HH+1 HCUR NORMALIZED EXPOSURE RATE RESULTING FROM PAR || MAP 65
+7	731	OK	     1TICLES IN THE SIZE RANGE ,E12.5.4H TO ,E12.5.8H METERS.)          MAP   66	1TICLES IN THE SIZE RANGE ,E12.5.4H TO ,E12.5.8H METERS.) || MAP 66
+8	783	OK	 29   FORMAT:15X,28HUNITS ARE ROENTGENS PER HOUR)                       MAP   67	29 FORMAT:15X,28HUNITS ARE ROENTGENS PER HOUR) || MAP 67
+9	825	OK	 30   FORMAT(15X,19HUNITS ARE ROENTGENS)                                MAP   68	30 FORMAT(15X,19HUNITS ARE ROENTGENS) || MAP 68
+10	867	OK	 31   FORMAT(15X,18HUNITS ARE KGM/M**2)                                 MAP   69	31 FORMAT(15X,18HUNITS ARE KGM/M**2) || MAP 69
+11	912	OK	 32   FORMAT(15X,21HUNITS ARE CURIES/M**2)                              MAP   70	32 FORMAT(15X,21HUNITS ARE CURIES/M**2) || MAP 70
+12	956	COUNT 60/61	                                                                        MAP   71	33 FORMAT(15X,56HTIME OF ARFIVAL ACCOUNTED FOR BY THE APPROXIMATE MET || MAP 71
+13	994	OK	     1HOD.）                                                             MAP   72	1HOD.） || MAP 72
+14	1041	OK	 34   FORMAT(15X,50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.) MAP   73	34 FORMAT(15X,50HT1HE OF ARFIVAL ACCOUNTEO FOR BY THE EXACT METHOD.) || MAP 73
+15	1083	OK	 35   FQRHAT(15X, 34HUNITS ARE EQUIVALENT FISSIONS/M**2)                MAP   74	35 FQRHAT(15X, 34HUNITS ARE EQUIVALENT FISSIONS/M**2) || MAP 74
+16	1126	OK	C                                                                       MAP   75	C || MAP 75
+17	1170	OK	 99   IF（MAPRUN） 101，100，101                                            MAP   76	99 IF（MAPRUN）101，100，101 || MAP 76
+18	1212	OK	  100 DD 1000 I=2,20                                                    MAP   77	100 DD 1000 I=2,20 || MAP 77
+19	1247	OK	      FMTEXP(I)=8LANK                                                   MAP   78	FMTEXP(I)=8LANK || MAP 78
+20	1297	OK	 1C00 FMTRUT(I)=BLANK                                                   MAP   79	1C00 FMTRUT(I)=BLANK || MAP 79
+21	1342	OK	      TINC=2.U*DGX                                                      MAP   80	TINC=2. U*DGX || MAP 80
+22	1384	OK	      XCOORD=XMIN+OGX                                                   MAP   81	XCOORD=XMIN+OGX || MAP 81
+23	1427	OK	      VINC=INC                                                          MAP   82	VINC=INC || MAP 82
+24	1471	OK	      XCINC=VINC*DGX                                                    MAP   83	XCINC=VINC*DGX || MAP 83
+25	1515	COUNT 6/5	                                                                        MAP   84	KK1.=1 || MAP 84
+26	1556	OK	      NX=NXMAP                                                          MAP   85	NX=NXMAP || MAP 85
+27	1599	OK	C     LEFT IS USED HERE AS A TEMPORARY STORAGE                          MAP   86	C LEFT IS USED HERE AS A TEMPORARY STORAGE || MAP 86
+28	1640	OK	      LEFT=（XMAX-X1）/DGX                                                MAP   87	LEFT=（XMAX-X1）/DGX || MAP 87
+29	1684	OK	C     PRINT MAP TITLE                                                   MAP   88	C PRINT MAP TITLE || MAP 88
+30	1729	OK	      WRITE (ISOUT,7)                                                   MAP   89	WRITE (ISOUT,7) || MAP 89
+31	1770	OK	C     SELECT APPROPRIATE DISPLAY OPTION CODE                            MAP   90	C SELECT APPROPRIATE DISPLAY OPTION CODE || MAP 90
+32	1813	COUNT 16/17	                                                                        MAP   91	IF(JC 147,147,131 || MAP 91
+33	1857	OK	 131  IF(JC   -6)132,132,147                                            MAP   92	131 IF(JC -6)132,132,147 || MAP 92
+34	1899	OK	 130  JC   =1                                                           MAP   93	130 JC =1 || MAP 93
+35	1930	COUNT 8/9	                                                                        MAP   94	132 N1=JC || MAP 94
+36	1987	OK	      GO TO (141,14c,143,144,145,146),N1                                MAP   95	GO TO (141,14c,143,144,145,146),N1 || MAP 95
+37	2030	OK	 141  ASSIGN 150 TO N2                                                  MAP   46	141 ASSIGN 150 TO N2 || MAP 46
+38	2073	OK	      WRITE (ISOUT,3)                                                   MAP   97	WRITE (ISOUT,3) || MAP 97
+39	2116	OK	      GO TO 102                                                         MAP   98	GO TO 102 || MAP 98
+40	2158	OK	 142  ASSIGN 151 TO N2                                                  MAP   99	142 ASSIGN 151 TO N2 || MAP 99
+41	2200	OK	      WRITE (ISOUT,5)                                                   MAP  100	WRITE (ISOUT,5) || MAP 100
+42	2244	OK	      GO TO 102                                                         MAP  101	GO TO 102 || MAP 101
+43	2285	OK	 143  WRITE(ISOUT.19)                                                   MAP  102	143 WRITE(ISOUT.19) || MAP 102
+44	2329	OK	      ASSIGN 301 TO N2                                                  MAP  103	ASSIGN 301 TO N2 || MAP 103
+45	2374	OK	      IF(LREW.NE.0) GO TO 1431                                          MAP  104	IF (LREW.NE.0) GO TO 1431 || MAP 104
+46	2414	OK	      LREH=1                                                            MAP  105	LREH=1 || MAP 105
+47	2457	OK	      REWIND HBTAPE                                                     MAP  106	REWIND HBTAPE || MAP 106
+48	2502	OK	 1431 WRITE (MBTAPE)BITLCM                                              NAF  107	1431 WRITE (MBTAPE)BITLCM || NAF 107
+49	2544	OK	      WRITE(MBTAPE)XMIN,XMAX,YMIN,YMAX,OGX,OGY                          MAP  138	WRITE (MBTAPE) XMIN, XMAX, YMIN, YMAX, OGX, OGY || MAP 138
+50	2589	OK	      GO TO 102                                                         MAP  109	GO TO 102 || MAP 109
+51	2631	OK	C                                                                       MAP  110	C || MAP 110
+52	2671	COUNT 19/68	                                                                        HAP  111	CODE INSERTION POINTS || HAP 111
+53	2715	OK	 144  CONTINUE                                                          M1P  112	144 CONTINUE || M1P 112
+54	2757	OK	 145  CONTINUE                                                          MAP  113	145 CONTINUE || MAP 113
+55	2800	OK	 146  CONTINUE                                                          MAP  114	146 CONTINUE || MAP 114
+56	2841	COUNT 19/68	                                                                        MAP  115	CODE INSERTION POINTS || MAP 115
+57	2888	OK	C                                                                       MAH  116	C || MAH 116
+58	2928	OK	 147  WRITE (ISOUT,6)N1                                                 MAP  117	147 WRITE (ISOUT,6)N1 || MAP 117
+59	2963	OK	      GO TO 130                                                         MAP  118	GO TO 130 || MAP 118
+60	3017	OK	 101  KKL=1                                                             MAP  119	101 KKL=1 || MAP 119
+61	3060	OK	      NX=NXMAP                                                          MAP  120	NX=NXMAP || MAP 120
+62	3106	OK	                                       147                                      	147
+63	3289	COUNT 3/46;COUNT 3/1	                                                                                	--- || ---

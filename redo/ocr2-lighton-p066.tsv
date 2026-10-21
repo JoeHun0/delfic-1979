@@ -1,0 +1,8 @@
+1	93	COUNT 0/10	                                                                                	
+2	121	COUNT 0/16	                                                                                	
+5	962	COUNT 28/29	                                                                                	WRITE( ISOUT, 14 ) TME, TMPG, SSAM
+14	1349	OK	      F=.45                                                                     	F = .45
+27	1907	OK	      WRITE(ISOUT,25)                                                           	WRITE(ISOUT,25)
+37	2335	OK	  602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J)                        	602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J)
+50	3361	COUNT 27/1	                                                                                	\mathcal{L} \cdot \mathcal{L}
+51	3392	COUNT 4/11	                                                                                	text

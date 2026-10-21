@@ -1,0 +1,65 @@
+1	2	COUNT 0/41;COUNT 0/7	                                                                                	 || 
+2	94	COUNT 0/29;COUNT 0/7	                                                                                	 || 
+3	597	OK	C           (2,J) - FALLOUT PARCEL    Y COORDINATE (METERS)             ICRME121	C (2, J) - FALLOUT PARCEL Y COORDINATE (METERS) || ICRME121
+4	640	COUNT 27/26	                                                                        ICRME122	C (3,J) - TIME C (ORDINATE (SEC)) || ICRME122
+5	683	OK	C           (4,J) - PARTICLE DIAMETER (METERS)                          10RME123	C (4,J) - PARTICLE DIAMETER (METERS) || 10RME123
+6	726	OK	C           (5,J) - PARCEL MASS (KG) FOR A SIZE-MASS FRACTION PARTICLE  ICRME124	C (5,J) - PARCEL MASS (KG) FOR A SIZE-MASS FRACTION PARTICLE || ICRME124
+7	768	COUNT 1/13	                                                                        ICRME125	C || ICRME125
+8	809	COUNT 1/40;COUNT 7/8	                                                                                	C || ICRM126
+9	853	COUNT 1/29	                                                                        ICRME127	C || ICRME127
+10	896	COUNT 45/46	                                                                        ICRME128	C (6,J) - Z COCCINATE OF PARCEL CENTER OF MASS (METERS) || ICRME128
+11	939	COUNT 1/41	                                                                        ICRME129	C || ICRME129
+12	982	OK	C           (8,J) - PARCEL    VERTICAL THICKNESS (METERS)               ICRME130	C (8,J) - PARCEL VERTICAL THICKNESS (METERS) || ICRME130
+13	1025	OK	C           (9,J) - ALTITUDE OF PARCEL BASE (METERS)                    ICRME131	C (9,J) - ALTITUDE OF PARCEL BASE (METERS) || ICRME131
+14	1060	OK	C           (10,J) - PARCEL    VOLUME (CUBIC METERS)                    ICRME132	C (10, J) - PARCEL VOLUME (CUBIC METERS) || ICRME132
+15	1111	OK	C  HEIGHT - HEIGHT OF BURST (METERS) ABOVE GROUND ZERO                  ICRME133	C HEIGHT - HEIGHT OF BURST (METERS) ABOVE GROUND ZERO || ICRME133
+16	1154	COUNT 1/41	                                                                        IORME134	C || IORME134
+17	1196	OK	C  HLR    - RELATIVE HUMIDITY AT ALTITUDE OF CLOUD CENTER               ICRME135	C HLR - RELATIVE HUMIDITY AT ALTITUDE OF CLOUD CENTER || ICRME135
+18	1241	OK	C  HOB    - HEIGHT(FT) OF BURST ABOVE GROUND ZERO                       ICRME136	C HOB - HEIGHT(FT) OF BURST ABOVE GROUND ZERO || ICRME136
+19	1283	OK	C  IRAD   - NUMBER OF CLOUD DISC  RADIUS SUBDIVISIONS (SEE BZ)          ICRME137	C IRAD - NUMBER OF CLOUD DISC RADIUS SUBDIVISIONS (SEE BZ) || ICRME137
+20	1325	COUNT 57/55;COUNT 7/8	                                                                                	C IRISE - LOGICAL DESIGNATION FOR TAPE USED FOR TEMPORARY STORAGE IN || 10 ME 138
+21	1368	COUNT 20/21	                                                                        ICRME139	C ATHR AND FOR RXP OUTPUT || ICRME139
+22	1412	OK	C  ISIN   - INPUT TAPE                                                  ICRME140	C ISIN - INPUT TAPE || ICRME140
+23	1454	OK	C  ISOUT  - OUTPUT TAPE                                                 ICRME141	C ISOUT - OUTPUT TAPE || ICRME141
+24	1497	OK	C  JBASE  - COMPUTED GO TO INDEX USEO IN SUBROUTINE RSXP                ICRME142	C JBASE - COMPUTED GO TO INDEX USEO IN SUBROUTINE RSXP || ICRME142
+25	1542	COUNT 1/36	                                                                        ICRME143	C || ICRME143
+26	1583	COUNT 1/36	                                                                        ICRME144	C || ICRME144
+27	1627	OK	C  JPARN  - BINARY OUTPUT TAPE, SUBROUTINE WNDSFT                       ICKME145	C  JPARN - BINARY OUTPUT TAPE, SUBROUTINE WNDSFT || ICKME145
+28	1670	OK	C  KBASE  - COMPUTED GO TO INDEX USEO IN SUBROUTINE RSXP                ICRME146	C KBASE - COMPUTED GO TO INDEX USEO IN SUBROUTINE RSXP || ICRME146
+29	1712	COUNT 1/45	                                                                        ICRME147	C || ICRME147
+30	1757	COUNT 1/27	                                                                        1CRME148	C || 1CRME148
+31	1799	OK	C  KCX    - NUMBER OF DPST RISE AND EXPANSION INTERVALS                 ICRME149	C KCX - NUMBER OF DPST RISE AND EXPANSION INTERVALS || ICRME149
+32	1841	OK	C  KDI    - NUMBER OF VERTICAL CLOUD SUBDIVISIONS FOR PARTICLE SIZE CLASICRME150	C KDI - NUMBER OF VERTICAL CLOUD SUBDIVISIONS FOR PARTICLE SIZE CLAS || ICRME150
+33	1884	COUNT 1/31	                                                                        ICRME151	C || ICRME151
+34	1927	OK	C  K[IP   - IN SUBROUTINE RSXP, NUMBER OF VERTICAL SUBDIVISIONS OF A    10KME152	C K[IP - IN SUBROUTINE RSXP, NUMBER OF VERTICAL SUBDIVISIONS OF A || 10KME152
+35	1962	COUNT 37/38	                                                                        ICRME193	PARCEL WHOSE TOP AND BASE RADII ARE NOT EQUAL || ICRME193
+36	2013	OK	C  KDPST  - SEE DPSTK                                                   ICRME154	C KDPST - SEE DPSTK || ICRME154
+37	2057	OK	C  KSV    - INDEX WHICH DETERMINES FUNCTION OF SUBROUTINE RSTR          ICRME155	C KSV - INDEX WHICH DETERMINES FUNCTION OF SUBROUTINE RSTR || ICRME155
+38	2099	OK	1           - P RESERVEV ARIABLESA TS TARTO FT IME. STEP                ICRME156	1 - PRESERVE VARIABLES AT START OF TIME. STEP || ICRME156
+39	2141	COUNT 46/43	                                                                        ICRME157	2 - RESTORE VARIABILITIES TO THOSE AT START OF TIME STEP || ICRME157
+40	2184	OK	C  LODO   - LENGTH OF FARCEL   DESCRIPTION DATA PLOCK (GDPST ARRAY IN   ICRME158	C LODO - LENGTH OF FARCEL DESCRIPTION DATA PLOCK (GDPST ARRAY IN || ICRME158
+41	2226	COUNT 1/6	                                                                        10KME159	C || 10KME159
+42	2270	OK	C  MBT    - IN SUBROUTINE RSXP, DISTINGUISHES A PARCEL TOP FROM BASE    ICRME160	C MBT      - IN SUBROUTINE RSXP, DISTINGUISHES A PARCEL TOP FROM BASE || ICRME160
+43	2314	COUNT 1/25	                                                                        ICRME1E1	C || ICRME1E1
+44	2355	COUNT 1/26	                                                                        ICRME162	C || ICRME162
+45	2398	COUNT 7/8	C  MCX    - NUMBER OF TIME POINTS (COLUMNS) OF CX ARRAY                         	C MCX - NUMBER OF TIME POINTS (COLUMNS) OF CX ARRAY || ICRM163
+46	2442	OK	C  MWYA   - 1, INITIAL ENTRY INTO CXPN                                  ICKME164	C MWYA - 1, INITIAL ENTRY INTO CXPN || I C K M E 1 6 4
+47	2484	COUNT 1/15	                                                                        ICRME165	C || ICRME165
+48	2528	COUNT 1/13	                                                                        ICRME166	C || ICRME166
+49	2572	COUNT 7/8	C  N      - CLOUD MODE SWITCH                                                   	C N - CLOUD MODE SWITCH || 10RM167
+50	2615	OK	C  NAT    " NUMBER OF ELEMENTS IN ALT AND CORRESPONDING ARRAYS          ICRME1E8	C NAT " NUMBER OF ELEMENTS IN ALT AND CORRESPONDING ARRAYS || ICRME1E8
+51	2659	COUNT 1/18	                                                                        ICRME169	C || ICRME169
+52	2700	OK	C  NOSTR  - NUMBER OF ENTRIES IN PARTICLE SIZE CLASS TABLE              ICRME170	C NOSTR - NUMBER OF ENTRIES IN PARTICLE SIZE CLASS TABLE || ICRME170
+53	2743	OK	C  NHODO  - NUMBER OF ENTRIES IN THE WIND PROFILE TABLE                 ICRME171	C NHODO - NUMBER OF ENTRIES IN THE WIND PROFILE TABLE || ICRME171
+54	2786	OK	C  P      - ATMOSPHERIC PRESSURE AT CLOUD CENTER ALTITUDE (PASCALS)     1CRME172	C P - ATMOSPHERIC PRESSURE AT CLOUD CENTER ALTITUDE (PASCALS) || 1CRME172
+55	2828	OK	C  PHI    - FRACTION OF F*W USED TO HEAT AIR AND SOIL AT THE INITIAL    ICRME173	C PHI - FRACTION OF F*W USED TO HEAT AIR AND SOIL AT THE INITIAL || ICRME173
+56	2870	COUNT 1/35	                                                                        ICRME174	C || ICRME174
+57	2912	OK	C  PPST   - ARRAY(8,10), TEMPORARY STORAGE OF FARCEL VARIABLES IN RSXP  1CKME175	C PPST - ARRAY(8,10), TEMPORARY STORAGE OF FARCEL VARIABLES IN RSXP || 1CKME175
+58	2957	OK	C  PRS    - ARRAY(256) ATMOSPHERIC PRESSURE (PASCALS) MATCHES ALT       ICRME176	C PRS - ARRAY(256) ATMOSPHERIC PRESSURE (PASCALS) MATCHES ALT || ICRME176
+59	2999	OK	C  PS     - ARRAY(200), PARTICLE SIZE CLASS MIGPOINT DIAMETER (METERS)  ICRME177	C PS - ARRAY(200), PARTICLE SIZE CLASS MIGPOINT DIAMETER (METERS) || ICRME177
+60	3041	OK	C  PW     - PARTIAL PRESSURE OF WATER VAPOR IN THE CLCUD                ICRME178	C PW - PARTIAL PRESSURE OF WATER VAPOR IN THE CLCUD || ICRME178
+61	3086	COUNT 2/53	                                                                        ICRME179	C Q || ICRME179
+62	3130	COUNT 1/8	                                                                        10081949	C || 10081949
+63	3161	COUNT 0/2	                                                                                	
+64	3304	COUNT 0/21;COUNT 0/6	                                                                                	 || 
+65	3336	COUNT 0/47	                                                                                	

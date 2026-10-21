@@ -1,0 +1,44 @@
+1	7	COUNT 0/13;COUNT 0/6	                                                                                	 || 
+2	761	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,GOGO  28	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX , || GOGO 28
+3	803	COUNT 0/6	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3 XMIN , YMAX , YMIN , ZMIN || 
+4	843	COUNT 0/6	      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,        	COMMON /PARDAT/ ASQ ,BSQ ,COSA ,F , || 
+5	889	COUNT 0/6	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,RO(100)   ,SIGXO(100),        	1GAMA ,KTR(100) ,PMAS(100) ,PSIZ(100) ,RO(100) ,SIGXO(100), || 
+6	932	COUNT 0/6	     2SIGYO(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRNL     ,        	2SIGYO(100),SINA ,TPAR(100),XPAR(100),YPAR(100),YPRNL , || 
+7	974	COUNT 6/16;COUNT 0/6	                                                                                	3 YPRMU || 
+8	1019	COUNT 29/30;COUNT 0/6	                                                                                	COMMON /RUNDAT/ ,CF6 ,FSUM ,ICTR , || 
+9	1062	COUNT 0/6	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK , || 
+10	1104	COUNT 0/6	     20PMID(12) ,T1        ,T2        ,WFMAS(200)                               	20PMID(12) ,T1 ,T2 ,WFMAS(200) || 
+11	1143	COUNT 0/6	      DIMENSION ONAP(NMAP)                                                      	DIMENSION ONAP(NMAP) || 
+12	1191	OK	      DATA PROGRM/6HGOGO  /                                             GOGO  38	DATA PROGRM/6HGOGO / || GOGO 38
+13	1232	COUNT 0/6	C                                                                               	C || 
+14	1276	COUNT 0/6	      IJIN=1                                                                    	I J I N = 1 || 
+15	1318	COUNT 1/20;COUNT 0/6	                                                                                	C || 
+16	1361	COUNT 0/5	C                                                                               	C || 
+17	1406	COUNT 0/6	  100 READ(KTAPE)NIJ                                                            	100 READ (KTAPE) NIJ || 
+18	1448	COUNT 0/6	C                                                                               	C || 
+19	1489	COUNT 0/6	C     ARE WE FINISHED PROCESSING THE DATA-                                      	C ARE WE FINISHED PROCESSING THE DATA- || 
+20	1534	COUNT 0/6	C                                                                               	C || 
+21	1577	COUNT 0/6	      IF(NIJ.EQ.0) GO TO 400                                                    	IF (NIJ.EQ.0) GO TO 400 || 
+22	1621	COUNT 0/6	      IF(NIJ.LE.MARRAY) GO TO 200                                               	IF (NIJ. LE. MARRAY) GO TO 200 || 
+23	1664	COUNT 0/6	  150 IRROR=-150                                                                	150 IRROR=-150 || 
+24	1706	COUNT 0/6	  160 CALL ERROR(PROGRM,IRROR,ISOUT)                                            	160 CALL ERROR(PROGRM, IRROR, ISOUT) || 
+25	1744	COUNT 0/6	C                                                                               	C || 
+26	1792	COUNT 1/23	                                                                        GOGO  52	C || GOGO 52
+27	1835	COUNT 0/6	C                                                                               	C || 
+28	1877	COUNT 0/6	  200 READ(ktape)(xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I),            	200 READ(ktape) (xpar(I),ypar(I),zpar(I),tpar(I),sigxo(I),sigyo(I), || 
+29	1920	COUNT 29/31;COUNT 0/6	                                                                                	1 RO(I), PSIZ(I), PMAS(I), 1, NIJ) || 
+30	1958	COUNT 0/6	C                                                                               	C || 
+31	2005	COUNT 50/51;COUNT 0/6	                                                                                	CALL PCHECK TO BEGIN PROCESSING THE PARTICLE DATA INTO A MAP || 
+32	2045	COUNT 3/6	C                                                                               	C || 5, 1
+33	2093	COUNT 0/6	      CALL PCHECK(IJIN,OMAP,NMAP)                                               	CALL PCHECK(IJIN,OMAP,NMAP) || 
+34	2130	COUNT 0/6	      IF(NZ.EQ.ICTR) GO TO 100                                                  	IF (NZ.EQ.ICTR) GO TO 100 || 
+35	2177	COUNT 0/6	C                                                                               	C || 
+36	2221	COUNT 52/53	                                                                        GOGO  62	CALL POMP TO DUMP PARTICLE DATA ON TO TAPE FOR USE IN SUBSEQUENT || GOGO 62
+37	2261	COUNT 0/6	C     MAP CORE LOADS                                                            	C MAP CORE LOADS || 
+38	2305	COUNT 0/6	C                                                                               	C || 
+39	2350	COUNT 0/6	      IF(NIJ .GT. NE) CALL POMP                                                 	IF(NIJ .GT. NE) CALL POMP || 
+40	2392	COUNT 0/6	      GOTO 100                                                                  	GOTO 100 || 
+41	2435	COUNT 0/6	  400 RETURN                                                                    	400 RETURN || 
+42	2480	OK	      END                                                               GOGO  68	END || GOGO 68
+43	3103	COUNT 3/2	                                                                                	145
+44	3277	COUNT 0/50	                                                                                	

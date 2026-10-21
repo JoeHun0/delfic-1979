@@ -1,0 +1,12 @@
+10	1048	OK	      DATA    ICF   ,JCF   ,MAFF  ,NCF   ,NOATF ,KBHF  ,LTIMF                   	DATA    ICF    ,JCF    ,MAFF    ,NCF    ,NOATF    ,KBHF    ,LTIMF
+11	1091	COUNT 19/17	                                                                                	1 / 1 , 1 , 1 , 1 , 1 , 1 , 35 , 6 /
+22	1565	OK	      CO 3 M=1,MARF                                                             	CO 3 M=1,MARF
+26	1734	OK	      TSUM(K)=0.                                                                	TSUM(K) = 0.
+27	1779	COUNT 14/9	                                                                                	\angle BH(K) = 0.
+30	1907	OK	      HDAV(L)=J.                                                                	HDAV(L) = J.
+37	2208	OK	      WFZ(K,N,L)=C.                                                             	WFZ(K, N, L) = C.
+38	2249	COUNT 0/14	                                                                                	
+39	2291	COUNT 0/14	                                                                                	
+40	2337	COUNT 0/15	                                                                                	
+48	2680	OK	     10X3UM,DYSUM,CAVS,PARY,ICF,JCF,NCF,MARF,K8HF,NDATF,LTIMF)                  	10X3UM,DYSUM,CAVS,PARY,ICF,JCF,NCF,MARF,K8HF,NDATF,LTIMF)
+60	3264	COUNT 29/8	                                                                                	\text{الجامعة الملكية المفتوحة}

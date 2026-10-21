@@ -1,0 +1,4 @@
+1	11	COUNT 0/16	                                                                                	
+2	792	COUNT 28/27	                                                                                	IF(EOF(INTP) .NE. J.(1) GO TO 307
+12	1224	COUNT 22/23	                                                                                	IF (EMITN.LE.OO) GC TO 100
+16	1398	OK	      HOB=HOB*3.28C84                                                           	HOB=HOB*3.28C84

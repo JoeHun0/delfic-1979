@@ -1,0 +1,15 @@
+1	15	COUNT 3/38	                                                                                	---
+2	107	COUNT 3/52	                                                                                	---
+10	883	OK	 30   IF(J-NHODO)  31,32,32                                                     	30 IF(J-NHODO) 31,32,32
+11	926	OK	 31   J=J+1                                                                     	31 J=J+1
+18	1234	OK	 35   XT=TC(1)*VX(J)                                                            	35  X T=T C(1)*V X(J)
+19	1278	OK	      YT=TC(1)*VY(J)                                                            	YT=TC(1)*VY(J)
+20	1312	COUNT 8/9	                                                                                	XC(1)=XT
+21	1362	OK	      YC(1)=YT                                                                  	YC(1)=YT
+28	1663	OK	      IF（（ZV(J+1） + ZV(J)）/2. -ZC(K+1))123,124,124                              	IF（（ZV(J+1）+ZV(J)）/2. -ZC(K+1))123,124,124
+30	1749	OK	      ZTEMP= (ZV(J+1)+ZV(J))/2.                                                 	ZTEMP= (ZV(J+1)+ZV(J))/2.
+32	1834	OK	      XT=XT+      VX(J)*DELT                                                    	XT=XT+ VX(J)*DELT
+34	1921	OK	      J=J+1                                                                     	J=J+1
+41	2221	OK	      XC（K+1）=XT+VX（J）*DELT                                                     	XC（K+1）=XT+VX（J）*DELT
+43	2308	OK	      XT=XC(K+1)                                                                	XT=XC(K+1)
+44	2350	OK	      YT=YC(K+1)                                                                	YT=YC(K+1)

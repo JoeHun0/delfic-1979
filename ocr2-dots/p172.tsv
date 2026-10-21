@@ -1,0 +1,15 @@
+4	788	OK	      YP = Y(1)                                                                 	YP = Y(1)
+6	874	COUNT 37/7	                                                                                	\mathcal{Y}\mathcal{Y} = \mathcal{Y}(1)
+9	1003	COUNT 12/3	                                                                                	\mathbb{Z} = 2
+14	1220	OK	  600 00 700 I=L,K                                                              	600 00 700 I=L, K
+16	1304	OK	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 700                         	IF ( VEC ( XP, YP, X(I), Y(I) ) .GT. VEM) GO TO 700
+21	1519	COUNT 27/7	                                                                                	\mathcal{Y}P = \mathcal{Y}(M)
+24	1649	COUNT 50/52	                                                                                	IF(IPNCH .GT. 0) WRITE(IFNCH,20JUCNT, XP, YP, CROBL, CODE
+28	1821	OK	  765 00 710 I=1.K                                                              	765 00 710 I=1. K
+44	2507	OK	      X(I)=X(J)                                                                 	X(I) = X(J)
+45	2551	OK	      Y(I)=Y(J)                                                                 	Y(I) = Y(J)
+46	2594	OK	      X(J)=CLR                                                                  	X(J)=CLR
+49	2724	OK	  765 CALL ERROR(PROGRN,-745,ISOUT)                                             	765 CALL ERROR(PROGRN,-745,ISOUT)
+56	3021	OK	 2600 FORMAT( 3F10.0, 10X, A10, 10X, A6)                                        	2600 FORMAT ( 3F10.0, 10X, A10, 10X, A6)
+58	3112	OK	      END                                                                       	END
+60	3289	COUNT 0/19	                                                                                	

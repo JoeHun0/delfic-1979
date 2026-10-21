@@ -1,0 +1,56 @@
+1	10	48	NOISE	                                                                        			
+2	48	72	NONE	                                                                        			
+3	458	487	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN61
+4	502	530	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN62
+5	543	578	VOTED	  014 IF(ABS(T)-10.)114,20,25                                           		lighton=  C14 IF(ABS(T)-10.)114,20,25 ## dots=  014 IF(ABS(T)-10.)114,20,25 ## glm=  014 IF(ABS(T)-10.)114,20,25	DCSN63
+6	587	618	AGREE	  114 NSTAT=14                                                          		lighton=  114 NSTAT=14 ## dots=  114 NSTAT=14 ## glm=  114 NSTAT=14	DCSN64
+7	631	662	AGREE	      WORD=WORD1                                                        		dots=      WORD=WORD1 ## glm=      WORD=WORD1	DCSN65
+8	673	702	AGREE	      GO TO 1                                                           		lighton=      GO TO 1 ## dots=      GO TO 1 ## glm=      GO TO 1	DCSN66
+9	716	745	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN67
+10	760	792	COMMENT	C     TEST FOR R.LT.1 ANCMALY                                           		lighton=C     TEST FOR R.LT.1 ANCMALY ## glm=C     TEST FOR R.LT.1 ANCHALY	DCSN68
+11	802	830	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN69
+12	846	878	TIE	  020  IF(R-1.) 125,13,13                                               	15,19	lighton=  029  IF(R-1.) 12J,13,13 ## dots=  020  IF(R-1.) 120,13,13 ## glm=  020  IF(R-1.） 125,13,13 ## glm2=  020  IF(R-1.） 125.13.13	DCSN70
+13	888	919	AGREE	  120 NSTAT=20                                                          		lighton=  120 NSTAT=20 ## dots=  120 NSTAT=20 ## glm=  120 NSTAT=20	DCSN71
+14	931	961	AGREE	      WORD=WORD4                                                        		dots=      WORD=WORD4 ## glm=      WORD=WORD4	DCSN72
+15	975	1004	AGREE	      GO TO 1                                                           		lighton=      GO TO 1 ## dots=      GO TO 1 ## glm=      GO TO 1	DCSN73
+16	1019	1047	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN74
+17	1060	1092	COMMENT	C     TEST FOR ZLMT ANOMALY                                             		lighton=C     TEST FOR ZLMT ANOMALY ## dots=C     TEST FOR ZLMT ANOMALY ## glm=C     TEST FOR ZLMT ANOMALY	DCSN75
+18	1106	1134	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DCSN76
+19	1147	1182	AGREE	  013 IF (Z - ZLMF) 008, 008, 113                                       		dots=  013 IF (Z - ZLMF) 008, 008, 113 ## glm=  013 IF (Z - ZLMF) 008, 008, 113	DCSN77
+20	1182	1220	AGREE	  113 NSTAT=13                                                          		lighton=  113 NSTAT=13 ## dots=  113 NSTAT=13 ## glm=  113 NSTAT=13	DCSN78
+21	1233	1263	AGREE	      WORD=WORD3                                                        		lighton=      WORD=WORD3 ## dots=      WORD=WORD3 ## glm=      WORD=WORD3	DCSN79
+22	1277	1310	COMMENT	C                                         COMPLETE CX TABLE             		glm=C                                         COMPLETE CX TABLE	DCSN80
+23	1318	1348	VOTED	  001 MHYA = 3                                                          		dots=  001 MWYA = 3 ## glm=  001 MHYA = 3 ## glm2=  001 MHYA = 3	DCSN81
+24	1362	1397	AGREE	      WRITE(ISOUT,88) NSTAT,WORD                                        		lighton=      WRITE(ISOUT,88) NSTAT,WORD ## dots=      WRITE(ISOUT,88) NSTAT,WORD ## glm=      WRITE(ISOUT,88) NSTAT,WORD	DCSN82
+25	1405	1435	AGREE	  008 RETURN                                                            		lighton=  008 RETURN ## dots=  008 RETURN ## glm=  008 RETURN	DCSN83
+26	1447	1476	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	DCSN84
+27	1791	1824	COMMENT	+OECK,DERIV                                                             		lighton=+OECK,DERIV ## glm=*DECK,DERIV	DERIV1
+28	1832	1864	AGREE	      SUBROUTINE DERIV                                                  		lighton=      SUBROUTINE DERIV ## dots=      SUBROUTINE DERIV ## glm=      SUBROUTINE DERIV	DERIV2
+29	1877	1904	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV3
+30	1920	1952	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	DEKIV4
+31	1963	1991	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV5
+32	2005	2033	NOISE	                                                                        			DERIV6
+33	2049	2077	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV7
+34	2091	2124	COMMENT	C     COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR 		lighton=C     COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR ## dots=C     COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR	DERIV8
+35	2138	2169	COMMENT	C     INTEGRATION OVER A TIME STEP                                      		lighton=C     INTEGRATION OVER A TIME STEP ## glm=C     INTEGRATION OVER A TIME STEP	DERIV9
+36	2181	2208	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV10
+37	2220	2251	NOISE	                                                                        			DERIV11
+38	2265	2293	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV12
+39	2307	2342	TIE	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),    	26,36,47,51,58,68	lighton=       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PkS(256), RLH(256), ## dots=       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256), ## glm=       COMMON /ATMOS/ NAT， ALT(256)，  ATP(256)，  PHS(256)， RLH(256)， ## glm2=       COMMON /ATMOS/ NAT， ALT(256)，  ATP(256)，  PRS(256)， RLH(256)，	DERIV13
+40	2350	2383	VOTED	     1        RHO(256), ETA(256), NHODO, ZV(1J0),  VX(10C), VY(1J0)     		lighton=     1        RHO(256), ETA(256), NHODO, ZV(1J0),  VX(10C), VY(1J0) ## dots=     1        RHO(256), ETA(256), NHODO, ZV(1J0),  VX(100), VY(1J0) ## glm=     1        RHO(256), ETA(256), NHODC, ZV(1J0),  VX(10C), VY(1J0)	DERIV14
+41	2393	2427	VOTED	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    ,		lighton=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    , ## dots=      COMMON /CLOUD/ CHANGE,CHLR  ,C2    ,C3    ,C6    ,DEK    ,ORM    , ## glm=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,	DERIV15
+42	2437	2470	TIE	     1 DS    ,OST   ,DST0  ,DST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,	8,22,29,50	lighton=     1 0S    ,OST   ,DST0  ,DST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     , ## dots=     1 OS    ,DST   ,DST0  ,DST1  ,DST2  ,DT    ,OU    ,DWT    ,OX     , ## glm=     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,OU    ,DWT    ,OX     , ## glm2=     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,	DERIV16
+43	2479	2513	AGREE	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,		lighton=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   , ## dots=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,	OERIV17
+44	2521	2554	VOTED	     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    ,		lighton=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    , ## glm=     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    ,	DERIV18
+45	2565	2598	TIE	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	65	lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,HT     ,	DERIV19
+46	2607	2639	AGREE	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         		lighton=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## dots=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## glm=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE	DERIV20
+47	2651	2684	VOTED	      COMMON /INITL/ F, PHI, SSAM, THE, TMPG, TMPS, VPR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR ## dots=      COMMON /INITL/ F, PHI, SSAM, THE, THPG, TNPS, VPR ## glm=      COMMON /INITL/ F. PHI. SSAM. THE. TMPG. TMPS. VPR	DERIV21
+48	2696	2724	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV22
+49	2736	2765	NOISE	                                                                        			DERIV23
+50	2780	2807	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV24
+51	2824	2851	AGREE	      DZ=U                                                              		dots=      DZ=U ## glm=      DZ=U	DERIV25
+52	2867	2894	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DEKIV26
+53	2908	2935	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	DERIV37
+54	2951	2983	COMMENT	C     OBTAIN VALUES OF AMBIENT TEMPERATURE, PRESSURE ,RELATIVE HUMIDITY 		lighton=C     OBTAIN VALUES OF AMBIENT TEMPERATURE, PRESSURE ,RELATIVE HUMIDITY ## glm=C     .ORTAI NVALUE SO FAMOUNT TEMPERATURE, RESOURCE ,RELATIVE HUMIDITY	
+55	3037	3070	TIE	      CALL TROL(Z,NAT ,ALT,A1P,T=)                                      	33	dots=      CALL TROL(Z,NAT ,ALT,A)D,T=) ## glm=      CALL TRPL(Z,NAT ,ALT,A1P,T2) ## glm2=      CALL TROL(Z,NAT ,ALT,A1P,T:)	
+56	3082	3109	TIE	      CALL TRPL(Z.NAT .AIT.PRS.P)                                       	25,33	lighton=      CALL TRPL(2.NAT .AIT.PRS.PS ## dots=      CALL TRPL(Z.NAT .AIT.PRS.P) ## glm=      CALL TRPLIZ.NAT .A11.PRS.P3 ## glm2=      CALL TRPL(Z.NAT .ALT.PRS.P)	

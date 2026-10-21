@@ -1,0 +1,58 @@
+1	1	18	NONE	                                                                        			
+2	446	482	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR46
+3	491	527	SINGLE	      VIS=1.4585-6*T**1.5/(110.4+T)                                     		glm=      VIS=1.4585-6*T**1.5/(110.4+T)	CPFR47
+4	527	569	VOTED	      DO 3 J=1,NDSTR                                                    		lighton=      DO 3 J=1,NDSTR ## dots=      DO 3 J=1,NDSTR ## glm=      DO 3 J=1,NOSTR	CPFR48
+5	569	614	VOTED	      CALL SETTLE(PS(J), R+OF, RA, VIS, T, P, CG(J), IACCR)             		lighton=      CALL SETTLE(PS(J), R+OF, RA, VIS, T, P, CG(J), IACCR) ## dots=      CALL SETTLE(PS(J), R+OP, RA, VIS, T, P, CG(J), IACCR) ## glm=      CALL SETTLE(PS(J), RFOF, RA, VIS, T, P, CG(J), IACCR)	CPFR49
+6	614	655	AGREE	      IF(MWYA.EQ. 1  .ANC.  IACCR .NE. 0) WRITE(ISCUT,758) J            		lighton=      IF(MWYA.EQ. 1  .ANC.  IACCR .NE. 0) WRITE(ISCUT,758) J ## dots=      IF(MWYA.EQ. 1  .ANC.  IACCR .NE. 0) WRITE(ISCUT,758) J	CPFR50
+7	655	697	AGREE	   3  CONTINUE                                                          		lighton=   3  CONTINUE ## dots=   3  CONTINUE ## glm=   3  CONTINUE	CPFR51
+8	707	740	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR52
+9	749	784	COMMENT	C     COMPUTE OVERALL LOSS RATE OF FALLOUT FROM THE CLOUD AND ADJUST    		lighton=C     COMPUTE OVERALL LOSS RATE OF FALLOUT FROM THE CLOUD AND ADJUST ## glm=C     COMPUTE OVERALL LOSS RATE OF FALLOUT FROM THE CLOUD AND ADJUST	CPFR53
+10	784	827	COMMENT	C     IN-CLOUD PARTICLE CONCENTRATIONS                                  		lighton=C     IN-CLOUD PARTICLE CONCENTRATIONS ## dots=#     IN-CLOUD PARTICLE CONCENTRATIONS ## glm=C     IN-CLOUD PARTICLE CONCENTRATIONS	CPFR54
+11	836	870	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR55
+12	880	914	AGREE	      CMLR=0.                                                           		lighton=      CMLR=0. ## dots=      CMLR=0. ## glm=      CMLR=0.	CPFR56
+13	914	956	SINGLE	      A=3.1415927*K**2*DST                                              		glm=      A=3.1415927*K**2*DST	CPFR57
+14	965	999	VOTED	      DO 1 J=1,NDSTR                                                    		lighton=      00 1 J=1,NDSTR ## dots=      DO 1 J=1,NDSTR ## glm=      DO 1 J=1,NDSTR	CPFR58
+15	1007	1042	AGREE	      C=0.5235988*PS(J)**3                                              		lighton=      C=0.5235988*PS(J)**3 ## glm=      C=0.5235988*PS(J)**3	CPFR59
+16	1042	1085	SINGLE	      D=A*CG（J）                                                         		glm=      D=A*CG（J）	CPFR60
+17	1093	1129	TIE	      CHLR=CHLR+C*D*Y(J)                                                	22,24	dots=      CHLR=CHLR+C*D*Y(J) ## glm=      CHLR=CHLR+C*D*Y（J）	CPFR61
+18	1129	1170	AGREE	    1 Y(J)=Y(J)*(1.-0/V)                                                		lighton=    1 Y(J)=Y(J)*(1.-0/V) ## glm=    1 Y(J)=Y(J)*(1.-0/V)	CPFR62
+19	1170	1211	AGREE	      CMLR=CMLR*RHOP/DST                                                		lighton=      CMLR=CMLR*RHOP/DST ## dots=      CMLR=CMLR*RHOP/DST ## glm=      CMLR=CMLR*RHOP/DST	CPFR63
+20	1221	1256	AGREE	  008 RETURN                                                            		lighton=  008 RETURN ## dots=  008 RETURN ## glm=  008 RETURN	CPFR64
+21	1266	1300	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	CPFR65
+22	1609	1643	COMMENT	*DECK,CRM                                                               		lighton=-DECK,CRM ## dots=*DECK,CRM ## glm=*DECK,CRM	CRM1
+23	1651	1685	AGREE	      SUBROUTINE CRM                                                    		lighton=      SUBROUTINE CRM ## dots=      SUBROUTINE CRM ## glm=      SUBROUTINE CRM	CRM2
+24	1693	1727	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM3
+25	1736	1769	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976	CRM4
+26	1781	1813	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRH5
+27	1822	1856	COMMENT	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *			CRM6
+28	1866	1898	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM7
+29	1909	1942	COMMENT	C     COMPUTE THE DYNAMIC CLOUD RISE                                    		lighton=C     COMPUTE THE DYNAMIC CLOUD RISE ## glm=C     COMPUTE THE DYNAMIC CLOUD RISE	CRM8
+30	1952	1985	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM9
+31	1994	2029	COMMENT	C     THIS CODE CLOSELY FELLOWS THAT OF HUEBSCH, *THE DEVELOPMENT OF A  		lighton=C     THIS CODE CLOSELY FELLOWS THAT OF HUEBSCH, *THE DEVELOPMENT OF A	CRM10
+32	2038	2070	COMMENT	C     WATER-SURFACE-BURST FALLOUT MODEL - THE RISE AND EXPANSION OF THE 		lighton=C     WATER-SURFACE-BURST FALLOUT MODEL - THE RISE AND EXPANSION OF THE ## dots=C     WATER-SURFACE-BURST FALLOUT MODEL - THE WISE AND EXPANSION OF THE ## glm=C     WATER-SURFACE-BURST FALLOUT MODEL - THE RISE AND EXPANSION OF THE	CAR11
+33	2080	2114	COMMENT	C ATOMIC CLOUD . USNRCL-TR-74 . (23 APRIL 1964) , ANC TURMULENCE ,      			LRM12
+34	2124	2156	COMMENT	C     TORIOIAL CIRCULATION AND DISPERSION OF FALLOUT FROM THE RISING    		lighton=C     TORIOIAL CIRCULATION AND DISPERSION OF FALLOUT FROM THE RISING ## glm=C     TORQIJAL CIRCULATION AND DISPersion OF FALLOUT FROM THE RISING	CPM13
+35	2167	2204	COMMENT	C     NUCLEAR CLOUD*, USNRDL-TR1054 (5 AUGUST 1966).  THE HUEBSCH MODEL 		lighton=C     NUCLEAR CLOUD*, USNRDL-TR1054 (5 AUGUST 1966).  THE HUEBSCH MODEL ## dots=C     NUCLEAR CLOUD®, USNRDL-TR1054 (5 AUGUST 1966).  THE HUEBSCH MODEL	CRM14
+36	2204	2242	COMMENT	C     HAS BEEN MODIFIED AS DESCRIBED BY NORMENT, *VALIDATION AND        		lighton=C     HAS BEEN MODIFIED AS DESCRIBED BY NORMENT, *VALIDATION AND	CRM15
+37	2251	2286	COMMENT	C     REFINEMENT OF THE DELFIC CLOUD RISE MODULE', DNA 4320F(15JAN1977) 		lighton=C     REFINEMENT OF THE DELFIC CLOUD RISE MODULE', DNA 4320F(15JAN1977) ## dots=C     REFINEMENT OF THE DELFIC CLOUD RISE MODULE*, DNA 4320F(15JAN1977)	CRM16
+38	2295	2328	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM17
+39	2336	2369	COMMENT	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *			CRM18
+40	2381	2413	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM19
+41	2425	2459	VOTED	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,		lighton=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## dots=      COMMON /CLOUD/ CHANGE,CHLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## glm=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,	CRM20
+42	2467	2502	VOTED	     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,OT    ,DU    ,DWT    ,OX     ,		lighton=     1 DS    ,DST   ,DST0  ,DST1  ,OST2  ,OT    ,DU    ,DWT    ,OX     , ## dots=     1 OS    ,DST   ,DST0  ,DST1  ,DST2  ,OT    ,OU    ,DWT    ,OX     , ## glm=     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,OT    ,DU    ,DWT    ,OX     ,	CRM21
+43	2510	2545	TIE	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,	65	lighton=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   , ## dots=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,HWYA   ,	CRM22
+44	2554	2588	TIE	     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    ,	30	lighton=     3 N     ,NNN   ,P     ,PH    ,R     ,RA    ,RL    ,RM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,	CRM23
+45	2588	2630	AGREE	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,		lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	CRM24
+46	2639	2672	AGREE	     5 X     ,XE    ,Z     ,ZPFR  ,ZLMT  ,SPARE                         		lighton=     5 X     ,XE    ,Z     ,ZPFR  ,ZLMT  ,SPARE ## dots=     5 X     ,XE    ,Z     ,ZPFR  ,ZLMT  ,SPARE ## glm=     5 X     ,XE    ,Z     ,ZPFR  ,ZLMT  ,SPARE	CRM25
+47	2681	2716	AGREE	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  		lighton=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## dots=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## glm=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI	CRM26
+48	2716	2759	VOTED	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)  		lighton=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) ## dots=      COMMON /PARTCL/ NOSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) ## glm=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)	CRM27
+49	2767	2801	VOTED	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     		lighton=      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) ## dots=      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) ## glm=      COMMON /TABLES/ MCX， CX(50,10)， GDPST(10,100)	CRM28
+50	2812	2843	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM29
+51	2852	2885	AGREE	      DIMENSION Y(200)                                                  		lighton=      DIMENSION Y(200) ## dots=      DIMENSION Y(200) ## glm=      DIMENSION Y(200)	CRM30
+52	2895	2928	AGREE	      EQUIVALENCE (Y(1),GCPST(1))                                       		lighton=      EQUIVALENCE (Y(1),GCPST(1)) ## dots=      EQUIVALENCE (Y(1),GCPST(1)) ## glm=      EQUIVALENCE (Y(1),GCPST(1))	CRM31
+53	2942	2974	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM32
+54	2983	3016	COMMENT	C                                                                       			CRM33
+55	3027	3060	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CRM34
+56	3069	3103	COMMENT	C     COMPUTE THE PARTIAL PRESSURE OF THE WATER VAPOR IN THE CLOUD      		lighton=C     COMPUTE THE PARTIAL PRESSURE OF THE WATER VAPOR IN THE CLOUD ## glm=C     COMPUTE THE PARTIAL PRESSURE OF THE WATER VAPOR IN THE CLOUD	CRM35
+57	3131	3162	AGREE	                                        75                              		lighton=                                        75 ## dots=                                        75 ## glm=                                        75	
+58	3275	3285	SEQONLY	                                                                        			

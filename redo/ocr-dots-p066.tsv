@@ -1,0 +1,51 @@
+1	93	COUNT 0/10;COUNT 0/2	                                                                                	 || 
+2	121	COUNT 0/16	                                                                                	
+3	879	OK	      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302                         ICM  181	IF ( ZSCL .LT. 180. ) IF (IC(2))301,301,302 || ICM 181
+4	918	OK	      WRITE(ISOUT,12)                                                   ICM  182	WRITE (ISOUT, 12) || ICM 182
+5	962	COUNT 28/29	                                                                        ICM  183	WRITE( ISOUT, 14 ) THE, TMPG, SSAM || ICM 183
+6	1005	OK	      GO TO 118                                                         ICM  184	GO TO 118 || ICM 184
+7	1048	OK	 301  WRITE (ISOUT,5)                                                   ICM  185	301 WRITE (ISOUT, 5) || ICM 185
+8	1090	COUNT 4/6	      GO TO 108                                                                 	GO TO 108 || 10 10
+9	1133	OK	 302  WRITE (ISOUT,6)                                                   ICM  187	302 WRITE (ISOUT,6) || ICM 187
+10	1175	OK	 108  WRITE(ISOUT,13)THE,THPG,THPS,VPR,SSAM                             ICM  188	108 WRITE(ISOUT,13)THE,THPG,THPS,VPR,SSAM || ICM 188
+11	1219	OK	  118 ZSCH=ZSCL*0.3048                                                  ICM  189	118 ZSCH=ZSCL*0.3048 || ICM 189
+12	1269	OK	      WRITE(ISOUT,20)ZSCL,ZSCH                                          ICM  190	WRITE (ISOUT, 20) ZSCL, ZSCH || ICM 190
+13	1306	COUNT 1/39	                                                                        ICM  191	C || ICM 191
+14	1349	COUNT 6/5	                                                                        ICM  192	F = 0.45 || ICM 192
+15	1391	OK	      RPHI=1.0-PHI                                                      ICM  193	RPHI=1.0-PHI || ICM 193
+16	1433	OK	      WRITE(ISOUT,1400) F,PHI,RPHI,SLOTMP                               ICM  194	WRITE(ISOUT,1400) F,PHI,RPHI,SLOTMP || ICM 194
+17	1477	OK	      WRITE(ISOUT,1800)XGZ,YCZ,TGZ                                      ICM  195	WRITE (ISOUT,1800)XGZ,YCZ,TGZ || ICM 195
+18	1519	OK	      WRITE(ISOUT,19) RHOP                                              ICM  196	WRITE (ISOUT, 19) RHOP || ICM 196
+19	1564	OK	      IF(IC(1)-1)309,310,311                                            ICM  197	IF (IC(1)-1) 309, 310, 311 || ICM 197
+20	1606	OK	  309 WRITE(ISOUT,7)DHEAN,SD                                            ICM  198	309 WRITE (ISOUT,7) DHEAN,SD || ICM 198
+21	1648	OK	      IF (IS)102,103,102                                                ICM  199	IF (IS) 102, 103, 102 || ICM 199
+22	1692	OK	 103  WRITE (ISOUT,8)                                                   ICM  200	103 WRITE (ISOUT,8) || ICM 200
+23	1735	OK	      GO TO 105                                                         ICM  201	GO TO 105 || ICM 201
+24	1777	OK	 102  WRITE (ISOUT,9)                                                   ICM  202	102 WRITE (ISOUT, 9) || ICM 202
+25	1820	OK	  105 BARNU = EXP(ALOG(DHEAN) ) +3.0*ALOG(SD)**2                        ICM  203	105 BARNU = EXP(ALOG(DHEAN)) + 3.0*ALOG(SD)**2 || ICM 203
+26	1863	OK	      WRITE(ISOUT,24)BARMU,SD                                           ICM  204	WRITE(ISOUT,24)BARMU,SD || ICM 204
+27	1907	COUNT 16/15	                                                                        ICM  205	WRITE (ISOUT, 250) || ICM 205
+28	1956	OK	      GO TO 315                                                         ICM  206	GO TO 315 || ICM 206
+29	1992	OK	  310 WRITE(ISOUT,27) CAYM, EXPO                                        ICM  207	310 WRITE (ISOUT,27) CAYM, EXPO || ICM 207
+30	2041	OK	      GO TO 315                                                         ICM  208	GO TO 315 || ICM 208
+31	2077	OK	  311 WRITE(ISOUT,18)                                                   ICM  209	311 WRITE (ISOUT, 18) || ICM 209
+32	2121	OK	C                                                                       ICM  210	C || ICM 210
+33	2162	COUNT 1/35	                                                                        ICM  211	C || ICM 211
+34	2215	OK	C                                                                       ICM  212	C || ICM 212
+35	2249	OK	  315 WRITE(ISOUT,193)NOSTR                                             ICM  213	315 WRITE (ISOUT, 193) NOSTR || ICM 213
+36	2299	OK	      DO 602 J=1,NOSTR                                                  ICM  214	DO 602 J=1, NOSTR || ICM 214
+37	2335	OK	  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAH(J)                ICM  215	602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAH(J) || ICM 215
+38	2381	OK	C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE       ICM  216	C CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE || ICM 216
+39	2429	OK	      IF(IC(5) .EC. 0) GO TO 603                                        ICM  217	IF (IC (5) .EC. 0) GO TO 603 || ICM 217
+40	2465	OK	      SD=-1.0                                                           ICM  218	SD = -1.0 || ICM 218
+41	2508	OK	      WRITE(ISOUT,2B)                                                   ICM  219	WRITE (ISOUT, 2B) || ICM 219
+42	2549	OK	  603 WRITE(ISOUT,1700)KCI.IRAD                                         ICM  220	603 WRITE (ISOUT,1700)KCI.IRAD || ICM 220
+43	2592	OK	      WRITE(ISOUT,192)                                                  ICM  221	WRITE (ISOUT, 192) || ICM 221
+44	2637	OK	  200 WRITE(ISOUT,15)                                                   ICM  222	200 WRITE (ISOUT, 15) || ICM 222
+45	2686	OK	      RETURN                                                            ICM  223	RETURN || ICM 223
+46	2725	OK	 143  WRITE (ISOLT,11)                                                  ICM  224	143 WRITE (ISOLT,11) || ICM 224
+47	2765	OK	      GO TO 200                                                         ICM  225	GO TO 200 || ICM 225
+48	2815	OK	      END                                                               ICM  226	END || ICM 226
+49	3225	OK	                                      63                                        	63
+50	3361	COUNT 0/1;COUNT 0/5	                                                                                	 || 
+51	3392	COUNT 0/11	                                                                                	

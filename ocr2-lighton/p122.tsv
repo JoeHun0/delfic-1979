@@ -1,0 +1,8 @@
+1	42	COUNT 0/12	                                                                                	
+3	842	COUNT 15/17	                                                                                	L     00 2 MARK = 1, MARF
+24	1743	COUNT 44/42	                                                                                	IF(NDA TX.GT.NDATF) CALL ERROR(PROGRM,-8,ISOUT)
+29	1959	COUNT 0/4	                                                                                	
+31	2035	OK	  12   NET( IC, JC) =  NQQ                                                      	12  NET( IC, JC ) = NQQ
+34	2173	COUNT 0/13	                                                                                	
+36	2261	COUNT 41/38	                                                                                	IF(NCX.GT.NCF) CALL ERROR(PROGRM,-13,ISOUT)
+39	2390	COUNT 3/2	                                                                                	END

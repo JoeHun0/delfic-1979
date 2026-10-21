@@ -1,0 +1,63 @@
+1	8	56	NOISE	                                                                        			
+2	66	86	NOISE	                                                                        			
+3	550	582	COMMENT	*DECK,PAM2A                                                             		dots=*DECK,PAM2A	PAM2A1
+4	592	623	VOTED	      SU3ROUTINE PAH2A                                                  		lighton=      SU3ROUTINE PAN2A ## dots=      SUBROUTINE PAH2A ## glm=      SU3ROUTINE PAH2A	PAM2A2
+5	636	663	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A3
+6	677	711	COMMENT	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976         			PAM2A4
+7	724	753	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A5
+8	764	795	NOISE	                                                                        			PAM2A6
+9	810	838	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A7
+10	849	880	COMMENT	C     PART 2 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE  		lighton=C     PART 2 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE ## dots=C     PART 2 OF THE AIRBURST AND USER SPECIFIED SIZE-ACTIVITY PARTICLE ## glm=C     PART 2 OF THE AIRBURST AND USER SPECIFIEC SIZE-ACTIVITY PARTICLE	PAM2A8
+11	892	922	COMMENT	C     ACTIVITY MODULE                                                   		lighton=C     ACTIVITY MODULE ## glm=C     ACTIVITY MODULE	PAM2A9
+12	936	964	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A10
+13	976	1009	COMMENT	C     COMPUTES THE PARTICLE ACTIVITY-SIZE ARRAY FP( ).   FP(I) CONSISTS 		lighton=C     COMPUTES THE PARTICLE ACTIVITY-SIZE ARRAY FP( ).   FP(I) CONSISTS ## dots=C     COMPUTES THE PARTICLE ACTIVITY-SIZE ARRAY FP( ).   FP(I) CONSISTS ## glm=C     COMPUTES THE PARTICLE ACTIVITY-SIZE ARRAY FP( ).   FP(I) CONSISTS	PAM2A11
+14	1019	1052	COMMENT	C     OF THE EXPOSURE RATE, FOR ACTIVITY CONCENTRATED IN ONE SQUARE     		lighton=C     OF THE EXPOSURE RATE, FOR ACTIVITY CONCENTRATED IN ONE SQUARE ## dots=C     OF THE EXPOSURE RATE, FOR ACTIVITY CONCENTRATED IN ONE SQUARE ## glm=C     OF THE EXPOSURE RATE, FOR ACTIVITY CONCENTRATED IN ONE SQUARE	PAM2A12
+15	1063	1096	COMMENT	C     METER OF GROUND SURFACE, ASSOCIATED WITH PARTICLES OF THE ITH     		lighton=C     METER OF GROUND SURFACE, ASSOCIATED WITH PARTICLES OF THE ITH ## dots=C     METER OF GROUND SURFACE, ASSOCIATED WITH PARTICLES OF THE 1TH ## glm=C     METER OF GROUND SURFACE, ASSOCIATEJ WITH PARTICLES OF THE ITH	PAM2A13
+16	1109	1139	COMMENT	C     SIZE CLASS.                                                       		lighton=C     SIZE CLASS. ## dots=C     SIZE CLASS. ## glm=C     SIZE CLASS.	PAM2A14
+17	1151	1179	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A15
+18	1192	1224	COMMENT	C     JD           (LOGICAL) TRUE-COMPUTE EXPOSURE RATE AT TIME TIME    		lighton=C     JD           (LOGICAL) TRUE-COMPUTE EXPOSURE RATE AT TIME TIME ## dots=C     JD           (LOGICAL) TRUE-COMPUTE EXPOSURE RATE AT TIME TIME ## glm=C     JD           (LOGICAL) TRUE-COMPUTE EXPOSURE RATE AT TIME TIME	PAM2A16
+19	1237	1268	COMMENT	C                           FALSE-COMPUTE DOSE                          		glm=C                           FALSE-COMPUTE DOSE	PAM2A17
+20	1278	1312	COMMENT	C     KDOS         (LOGICAL) TRUE-COMPLTE DOSE FROM TIME TENTER TO TEXIT		lighton=C     KDOS         (LOGICAL) TRUE-COMPLTE DOSE FROM TIME TENTER TO TEXIT ## glm=C     KDOS         (LOGICAL) TRUE-COMPLTE DOSE FROM TIME TENTER TO TEXIT	PAM2A18
+21	1322	1353	COMMENT	C                           FALSE-COMPUTE DOSE FROM TIME TENTER TO INF. 		glm=C                           FALSE-COMPUTE DOSE FROM TIME TENTER TO INF.	PAM2A19
+22	1366	1397	COMMENT	C     CAYF         ACTIVITY K FACTOR (R-M**2/HR-KT)                     		dots=C     CAYF         ACTIVITY K FACTOR (R-M**2/HR-KT) ## glm=C     CAYF         ACTIVITY K FACTOR (R-M**2/HR-KT)	PAM2A20
+23	1410	1438	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A21
+24	1449	1482	NOISE	                                                                        			PAM2A22
+25	1497	1525	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A23
+26	1536	1570	AGREE	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      		lighton=      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME ## glm=      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME	PAM2A24
+27	1579	1613	VOTED	      COMMON /MAPOAT/ CAYF ,CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,		lighton=      COMMON /MAPDAT/ CAYF ,CUTMAP    ,DGX       ,DGY       ,IH  ,IV   , ## dots=      COMMON /MAPOAT/ CAYF ,CUTHAP    ,DGX       ,DGY       ,IH  ,IV   , ## glm=      COMMON /MAPOAT/ CAYF ,CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,	PAM2A25
+28	1622	1656	VOTED	     1.3        G,NXMA     P,NYMA     P,N        Z,QCU      T,SSA      M		lighton=     1.3        G,NXMA     P,NYMA     P,N        Z,QCU      T,SSA      M ## dots=     1.3        G,NXMA     P,NYMA     P,N        Z,QCU      T,SSA      M ## glm=     1.J        C,NXMA     P,NYMA     P,N        Z,QCU      T,SSA      M	PAM2A26
+29	1664	1698	HANDFREE	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,	8,72	dots=      T6Z       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      , ## dots2=      TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      .	PAM2A27
+30	1710	1743	VOTED	     .XMIN      ,YMAX      ,YMIN      ,ZMIN                             		lighton=     .XMIN      ,YMAX      ,YMIN      ,ZMIN ## dots=     .XMIN      ,YMAX      ,YHIN      ,ZMIN ## dots2=     .XMIN      ,YMAX      ,YMIN      ,ZMIN	PAM2A28
+31	1753	1786	HANDFREE	      COMMON /OUTPUT/ FISNUM,FP(200),FW,ITAB,JGO,MASCHN,PSIZE(201),     	65	lighton=      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(2U)), ## dots=      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20U), ## dots2=      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20J), ## glm=      COMMON /OUTPUT/ FISNUM,FF(20U),FW,ITAB,JGO,MASCHN,PSIZE(20J),	PAM2A29
+32	1797	1828	VOTED	     1 FMASS(200),PACT(200)                                             		lighton=     1 FMASS(2J0),PACT(200) ## dots=     1 FMASS(200),PACT(200) ## glm=     1 F1ASS(200),PACT(200)	PAM2A30
+33	1839	1872	HANDFREE	      COMMON /UTILTY/  KOUT,NPRNT(15)                                   		glm=      COMMON /UTILTY/  KCLT,NPRNT(15)	PAM2A31
+34	1883	1915	HANDFREE	      LOGICAL IGO,JD,KDOS,NPRNT                                         	27	lighton=      LOGICAL IGO,JD,KDOS,APRNT ## lighton2=      LOGICAL IGO,JD,KDOS,APRNT ## glm=      LOGICAL IGO,JD,KDOS,NPRNT ## glm2=      LOGICAL IGO,JO,KDOS,NPRNT	PAM2AJ2
+35	1915	1957	AGREE	 1000 FORMAT( 1H1, 5X, 53HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE 		lighton= 1000 FORMAT( 1H1, 5X, 53HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE ## dots= 1000 FORMAT( 1H1, 5X, 53HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE ## glm= 1000 FORMAT( 1H1, 5X, 53HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE	PAM2A33
+36	1968	2001	VOTED	     1CLASS -// 4(6X, 5HPSIZE, 10X, 2HFP, 5X))                          		lighton=     1CLASS -// 4(6X, 5HPSIZE, 10X, 2HFP, 5X)) ## dots=     1CLASS -// 4(6X, 5HPSIZE, 10X, 2HFP, 5X)) ## glm=     1CLASS -// 4(6X， 5HPSIZE， 10X， 2HFP， 5X))	PAM2A34
+37	2011	2042	AGREE	 2000 FORMAT( 8(1PE14.4))                                               		lighton= 2000 FORMAT( 8(1PE14.4)) ## dots= 2000 FORMAT( 8(1PE14.4)) ## glm= 2000 FORMAT( 8(1PE14.4))	PAM2A35
+38	2054	2086	VOTED	 3000 FORMAT( 1H0,13X, 11HK FACTORS -, 10X, 1PE11.4,                    		lighton= 3000 FORMAT( 1HC,13X, 11HK FACTORS -, 10X, 1P£11.4, ## dots= 3000 FORMAT( 1H0,13X, 11HK FACTORS -, 10X, 1PE11.4, ## glm= 3000 FORMAT( 1H0.13X, 11HK FACTORS -, 10X, 1PE11.4,	PAM2A36
+39	2096	2129	HAND	     1  17H (R-M**2)/(HR-KT), 10X, 1PE11.4, 18H (R-MI**2)/(HR-KT))      	13,20,22,28,29,34,43,49,57,59,65	dots=     1  17H (R-M**2)/(HR-KT), 10X, 1PE11.4, 18H (R-MI**2)/(HR-KT)) ## dots2=     1  17H (R-M**2)/(HR-KT), 10X, 1PE11.4, 18H (R-MI**2)/(HR-KT)) ## glm=     1  17H （R-M**2）/（HR-KT）， 10X， 1PE11.4， 18H （R-MI**2）/（HR-KT）) ## glm2=     1  17H （R-M**2）/（HR-KT）， 10X， 1PE11.4， 18H （R-MI**2）/（HR-KT）)	PAM2A37
+40	2142	2170	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM2A33
+41	2183	2212	AGREE	      A = CAYF * FW                                                     		dots=      A = CAYF * FW ## glm=      A = CAYF * FW	PAM2A39
+42	2226	2255	VOTED	      IF( JD ) GO TO 100                                                		lighton=      IF( JD ) GO TO 100 ## dots=      IF( JD ) GO TO 100 ## glm=      IF（ JD ） GO TO 100	PAM2A40
+43	2269	2300	AGREE	      A = 32.3344 * A / TENTER**(0.26)                                  		dots=      A = 32.3344 * A / TENTER**(0.26) ## glm=      A = 32.3344 * A / TENTER**(0.26)	PAMZA41
+44	2311	2342	AGREE	      IF( KDOS ) A = A*(1.0 - (TENTER/TEXIT)**(0.26))                   		lighton2=      IF( KDOS ) A = A*(1.0 - (TENTER/TEXIT)**(0.26)) ## dots=      IF( KDOS ) A = A*(1.0 - (TENTER/TEXIT)**(0.26)) ## dots2=      IF( KDOS ) A = A*(1.0 - (TENTER/TEXIT)**(0.26))	PAM2A42
+45	2357	2387	VOTED	      GO TO 200                                                         		lighton=      GO TO 2JJ ## dots=      GO TO 200 ## glm=      GO TO 200	
+46	2400	2430	VOTED	  100 IF( TIME .EQ. 3600. ) GO TO 290                                   		lighton=  100 IF( TIME .EQ. 3600. ) GO TO 290 ## dots=  100 IF( TIME .EQ. 3600. ) GO TO 200 ## glm=  100 IF（ TIME .EQ. 3600. ） GO TO 290	PAM2A44
+47	2441	2471	AGREE	      A = A * (3600./TIME)**(1.26)                                      		glm=      A = A * (3600./TIME)**(1.26) ## glm2=      A = A * (3600./TIME)**(1.26)	PAM2A45
+48	2484	2516	AGREE	  200 CONTINUE                                                          		lighton=  200 CONTINUE ## dots=  200 CONTINUE ## glm=  200 CONTINUE	PAM2A46
+49	2529	2560	HANDFREE	      DO 300 I=1,ITAB                                                   	11	lighton=      DO 3?0 I=1,ITAB ## lighton2=      DO 3?0 I=1,ITAB ## dots=      DO 300 I=1,ITAB ## dots2=      DO 390 I=1,ITAB ## glm=      DO 320 I=1，ITAB ## glm2=      DO 320 I=1,ITAB	PAM2A47
+50	2570	2601	AGREE	  300 FP(I) = A* FMASS(I)                                               		lighton=  300 FP(I) = A* FMASS(I) ## dots=  300 FP(I) = A* FMASS(I) ## glm=  300 FP(I) = A* FMASS(I)	PAM2A48
+51	2614	2644	HANDFREE	      IF(     NPRNT(15)) RETURN                                         	23	lighton2=      IF(     NPRNT(15?) RETURN ## glm=      IF(     NPRNT(15)) RETURN	PAM2A49
+52	2658	2687	AGREE	      NTAB=ITAB/4                                                       		dots=      NTAB=ITAB/4 ## glm=      NTAB=ITAB/4	PAM2A50
+53	2699	2728	VOTED	      IF(NTAB*4 .LT. ITAB)NTAB=NTAB+1                                   		lighton=      IF(NTAB*4 .LT. ITAB)NTAB=NTAB+1 ## dots=      IF(NTAB*4 .LT. ITAB)NTAB=NTAB+1 ## glm=      IF(NTAB*4 .LT. ITA9)NTAB=NTAB+1	PAM2A51
+54	2743	2775	HANDFREE	      WRITE( KOUT ,1000 )                                               			FAMCA52
+55	2784	2818	HANDFREE	      WRITE (KOUT,2000)(PSIZE(I),FP(I),PSIZE(I+NTAB),FP(I+NTAB),        			PAM2A53
+56	2818	2860	HANDFREE	     1PSIZE(I+2*NTAB),FP(I+2*NTAB),PSIZE(I+3*NTAB),FP(I+3*NTAB),I=1,    			PAM2A54
+57	2874	2903	AGREE	     2 NTAB)                                                            		lighton=     2 NTAB) ## dots=     2 NTAB) ## glm=     2 NTAB)	PAM2A55
+58	2918	2947	AGREE	      CAYFA =CAYF  *3.861E-7                                            		lighton=      CAYFA =CAYF  *3.861E-7 ## dots=      CAYFA =CAYF  *3.861E-7	PAM2A56
+59	2958	2990	VOTED	      WRITE(K OUT,3000)CAYF ,CAYFA                                      		lighton=      WRITE(K OUT,3000)CAYF ,CAYFA ## dots=      WRITE(K OUT,3000)CAYF ,CAYFA ## glm=      WRITE(K OUT,3600)CAYF ,CAYFA	PANZA57
+60	3000	3029	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	PAM2A58
+61	3046	3074	VOTED	      END                                                               		lighton2=      END ## glm=      EN3 ## glm2=      END	TAM2A59
+62	3135	3164	NOISE	                                                                        			
+63	3321	3362	NOISE	                                                                        			

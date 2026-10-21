@@ -1,0 +1,6 @@
+7	992	OK	    1 XRT（I） = 0.0                                                              	1 XRT（I）= 0.0
+9	1085	OK	      00 11 J = 1,KRM                                                           	0011 J = 1,KRM
+10	1121	OK	      K = JRM(J)                                                                	K = JRM (J)
+15	1342	OK	   12 XRT(MCH) = XRT(MCH) + ABLNDO(K)*ABS(ERM(J))                               	12 XRT(MCH) = XRT(MCH) + ABLNDO(K) * ABS(ERM(J))
+23	1687	OK	      RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC))                                   	RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC))
+44	2576	COUNT 3/4	                                                                                	END

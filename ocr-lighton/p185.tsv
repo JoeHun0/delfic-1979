@@ -1,0 +1,58 @@
+1	12	COUNT 152/13;COUNT 12/1	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \mathbb{R}^3
+2	448	OK	      IF(JD) WRITE( KOUT,1C3)                                           PAM2  61	IF(JD) WRITE( KOUT, 1C3) || PAM2 61
+3	491	OK	      IF(.NOT. JO) WRITE( KOUT,104)                                     PAN2  02	IF(.NOT. JO) WRITE( KOUT,104) || PAN2 02
+4	529	COUNT 34/6	      RETURN                                                                    	RETURN || <table border="1" class="dataframe">
+5	578	OK	    2 CALL MCHOEP                                                       PAN2  64	2 CALL MC HOEP || PAN2 64
+6	621	OK	      GO TO 5                                                           PAM2  65	GO TO 5 || PAM2 65
+7	663	COUNT 26/2	      END                                                                       	END || \downarrow \quad \rightarrow
+8	1007	OK	*DECK,FRATIO                                                            FRATI  1	*DECK, FRATIO || FRATI 1
+9	1050	OK	      SUBROUTINE FPATIO                                                 FRATI  2	SUBROUTINE FPATIO || FRATI 2
+10	1093	OK	     1    (SLOTMP,TMSD,MCHA)                                            FRATI  3	1 (SLOTMP,TMSD,MCHA) || FRATI 3
+11	1136	OK	C                                                                       FRATI   	C || FRATI
+12	1177	OK	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS                      FRATI  S	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS || FRATI S
+13	1217	COUNT 100/6	C     SEPTEMBER 1966                                                            	C SEPTEMBER 1966 || ↓ 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+14	1265	OK	C     REVISED NOVEMBER 1974                                             FRATI  7	C REVISED NOVEMBER 1974 || FRAT I 7
+15	1307	OK	C                                                                       FRAT   T	C || FRATT
+16	1352	OK	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      FRATI  S	COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME || FRATI S
+17	1392	OK	      COMMON /FISHIN/ ABEGN(700),ABUNOC(700),BRANCH(130),CAPFIS,        FRATI 10	COMMON /FISHIN/ ABEGN(700), ABUNOC(700), BRANCH(130), CAPFIS, || FRATI 10
+18	1436	OK	     1  DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                 FRATI 11	1 DCON(700),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700) || FRATI 11
+19	1476	COUNT 57/7	      COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90)                   	COMMON /FRYLNG/ BSUBK(90),ERM(185),JRM(185),KRM,ECF(90) || \downarrow \quad \text{FRATI} \quad \downarrow \quad \downarrow
+20	1521	OK	      COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,HASCHA,PSIZE(2u0),     FRATI 13	COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,HASCHA,PSIZE(2u0), || FRATI 13
+21	1564	OK	     1 FMASS(200),PACT(200)                                             FRATI 14	1 FMASS(200),PACT(200) || FRATI 14
+22	1610	OK	      COMMON /UTILTY/  KUUI,NPRNT(15)                                   FRATI 15	COMMON /UTILTY/ KUUI, NPRNT(15) || FRATI 15
+23	1646	COUNT 23/24;COUNT 14/7	                                                                                	LOGICAL IGO, JO, KOOS, PRNT || \text{FRATI 16}
+24	1688	OK	      DIMENSION FR(90)                                                  <tabl e>	DIMENSION FR(90) || <table>
+25	1740	OK	      DIMENSION BOIL(40)                                                FRATI 16	DIMENSION BOIL (40) || FRATI 16
+26	1781	OK	C                                                                       FRATI 19	C || FRATI 19
+27	1823	OK	      EQUIVALENCE (FR,BSUBK)                                            FRATI 20	EQUIVALENCE (FR, BSUBK) || FRATI 20
+28	1858	COUNT 6/4	C                                                                               	C || FRATI 2
+29	1910	COUNT 53/7	      LOGICAL NOTO                                                              	LOGICAL NOTO || \text{F} \dot{\text{r}} \text{A} \text{T} \text{I} \quad 22
+30	1952	OK	C                                                                       FRATT 23	C || FRATT 23
+31	1994	OK	      CATA 80IL/2*3173.0,2907.0,3000.0,2976.0,1754.0,1010.0,1026.0,331.8FRATI 24	CATA 80IL/2*3173.0,2907.0,3000.0,2976.0,1754.0,1010.0,1026.0,331.8 || FRATI 24
+32	2037	OK	     1,120.1,1650.0,3497.0,4695.0,4808.0,3300.0,1351.0,583.0,4505.0,4149FRATI 25	1,120.1,1650.0,3497.0,4695.0,4808.0,3300.0,1351.0,583.0,4505.0,4149 || FRATI 25
+33	2080	COUNT 68/67	                                                                        FRATI 26	2.0,3436.0,2451.0,1832.0,2123.0,2247.0,1832.0,1534.0,457.4,165.9,151 || FRATI 26
+34	2123	OK	     355.0,3003.0,4608.0,4367.(,4252.0,4464.C,4348.0,5*4300.0/          FRATI 27	355.0,3003.0,4608.0,4367.(,4252.0,4464.C,4348.0,5*4300.0/ || FRATI 27
+35	2165	COUNT 7/6	C                                                                               	C || FRATT 78
+36	2208	COUNT 22/4	C                                                                               	C || I'm a computer scientist.
+37	2252	COUNT 8/7	      TIME = TMSO                                                               	TIME = TMSO || FRATTI 30
+38	2297	OK	      IGO = .FALSE.                                                     FRATI 31	IGO = .FALSE. || FRATI 31
+39	2338	OK	      JD ≡ .TRUE.                                                       FRATI 32	JD ≡ .TRUE. || FRATI 32
+40	2382	COUNT 13/12	                                                                        FRATI 33	KDOOS = .FALSE. || FRATI 33
+41	2426	COUNT 0/9	                                                                        FRATI 34	 || FRATI 34
+42	2469	OK	      00 30 I = 1,MAXCHN                                                FRATI 35	00 30 I = 1,MAXCHN || FRATI 35
+43	2513	COUNT 0/11	                                                                        FKATI 36	 || F K A T I 3 6
+44	2554	COUNT 8/6	C                                                                               	C || FRATTI 37
+45	2597	OK	      CALL BATHAN                                                       FRATI 38	CALL BATHAN || FRATI 38
+46	2640	OK	C                                                                       FRATI ?G	C || FRATI ?G
+47	2685	COUNT 0/6	                                                                        FRATI 43	 || FRATI 43
+48	2726	COUNT 0/8	                                                                        FRATI 41	 || FRATI 41
+49	2771	COUNT 0/7	                                                                        FRATI 42	 || FRATI 42
+50	2814	COUNT 0/28	                                                                        FRATI 43	 || FRATI 43
+51	2849	OK	      NOTO = .FALSE.                                                    <tabl e>	NOTO = .FALSE. || <table>
+52	2897	COUNT 5/6	C                                                                               	C || FRATI
+53	2945	COUNT 14/7	      00 19 MB = 1.1MUC                                                         	00 19 MB = 1.1 MUC || \text{F2ATI 46}
+54	2987	COUNT 200/7	      NAME = IASS(NUCLIO(ME))/MULT(S)                                           	NAME = IASS(NUCLIO(ME))/MULT(S) || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+55	3030	COUNT 0/17;COUNT 14/7	                                                                                	 || \text{FRAJI 48}
+56	3074	COUNT 0/21;COUNT 8/7	                                                                                	 || Fh.ATI 49
+57	3139	OK	                                         182                                    	182
+58	3306	COUNT 13/62;COUNT 16/8	                                                                                	\text{الدالة} || \text{الجُنُوبُ}

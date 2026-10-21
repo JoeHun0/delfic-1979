@@ -1,0 +1,37 @@
+1	18	COUNT 0/29	                                                                                	
+2	50	COUNT 0/53;COUNT 0/8	                                                                                	 || 
+3	792	COUNT 0/6	*DECK,ERROR                                                                     	*DECK, ERROR || 
+4	835	OK	      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)                             ERROR  2	SUBROUTINE ERROR (PROGRM, IRROR, ISOUT) || ERROR 2
+5	877	COUNT 1/13	                                                                        ERROR  3	C || ERROR 3
+6	921	OK	C     1 MARCH 1966                                                      ERROR  4	C 1 MARCH 1966 || ERROR 4
+7	964	OK	C                                                                       ERROR  5	C || ERROR 5
+8	1005	COUNT 0/71	                                                                        ERROR  6	 || ERROR 6
+9	1049	OK	C                                                                       ERROR  7	C || ERROR 7
+10	1091	COUNT 1/56	                                                                        ERROR  8	C || ERROR 8
+11	1133	COUNT 1/48	                                                                        ERROR  9	C || ERROR 9
+12	1176	OK	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                        ERROR 10	C POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. || ERROR 10
+13	1222	COUNT 0/7	C                                                                               	C || 
+14	1263	COUNT 1/52	                                                                        ERROR 12	C || ERROR 12
+15	1305	OK	C         (IRROR).  PLEASE REFER TO THE PROGRAM LISTING.                ERROR 13	C (IRROR). PLEASE REFER TO THE PROGRAM LISTING. || ERROR 13
+16	1352	OK	C                                                                       ERROR 14	C || ERROR 14
+17	1391	COUNT 1/47	                                                                        ERROR 15	C || ERROR 15
+18	1434	COUNT 1/27	                                                                        ERROR 16	C || ERROR 16
+19	1478	OK	C     PROGRAM AND PARAMETER  IRROR  MUST BE SET WITH THE NUMBER OF THE  ERROR 17	C PROGRAM AND PARAMETER IRROR MUST BE SET WITH THE NUMBER OF THE || ERROR 17
+20	1518	OK	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      ERROR 18	C FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. || ERROR 18
+21	1564	OK	C                                                                       ERROR 19	C || ERROR 19
+22	1606	COUNT 0/71	                                                                        ERROR 20	 || ERROR 20
+23	1650	OK	C                                                                       ERROR 21	C || ERROR 21
+24	1692	COUNT 55/56	                                                                        ERROR 22	1 FORMAT//26H ERROR SENSED IN PROGRAM A6,30H AT OR NEAR STATEMENT || ERROR 22
+25	1735	OK	     1 NUMBER 16,40H .  PLEASE REFER TO THE PROGRAM LISTING.)           ERROR 23	1 NUMBER 16,40H . PLEASE REFER TO THE PROGRAM LISTING.) || ERROR 23
+26	1779	OK	C                                                                       ERROR 24	C || ERROR 24
+27	1821	COUNT 0/71	                                                                        ERROR 25	 || ERROR 25
+28	1863	COUNT 0/71	                                                                        ERROR 26	 || ERROR 26
+29	1907	OK	C                                                                       ERROR 27	C || ERROR 27
+30	1949	COUNT 22/15	                                                                        ERROR 28	IRR = \text{IABS}(IRROR) || ERROR 28
+31	1993	COUNT 25/24	                                                                        ERROR 29	WRITE(ISOUT,1) PROGRAM,IRR || ERROR 29
+32	2034	OK	      IF(IRROR)101,100,100                                              ERROR 30	IF (IRROR) 101,100,100 || ERROR 30
+33	2077	OK	  100 RETURN                                                            ERROR 31	100 RETURN || ERROR 31
+34	2120	OK	  101 STOP                                                              ERROR 32	101 STOP || ERROR 32
+35	2162	OK	      END                                                               ERROR 33	END || ERROR 33
+36	3144	OK	                                        53                                      	53
+37	3292	COUNT 0/8;COUNT 0/4	                                                                                	 || 

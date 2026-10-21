@@ -1,0 +1,7 @@
+3	481	OK	    4 NG=NC-4*(NC/4)+1                                                          	4  NG=NC-4*(NC/4)+1
+18	1127	OK	      NDBLE=2*NDBLE                                                             	NDBLE=2*NDBLE
+43	2500	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO                       	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO
+48	2714	OK	      DIMENSION TIMUP(LTIMF),USUM(KBHF,NDATF,LTIMF)                             	DIMENSION TIMUP(LTIMF),USUM(KBHF,NDATF,LTIMF)
+53	2930	OK	      DATA PROGRM ,ALIMIT ,WIND  ,TURB  ,DONE  ,METEOR,RESOLV                   	DATA PROGRM ,ALIMIT ,WIND ,TURB ,DONE ,METEOR,RESOLV
+55	3017	COUNT 15/14	                                                                                	DATA INPUT , WILKS
+58	3287	COUNT 73/32	                                                                                	\text{The following is a computer program listing exactly, character by character.}

@@ -1,0 +1,63 @@
+1	37	COUNT 3/9	                                                                                	---
+2	570	OK	      ZP=ZPAR（J）                                                        SPRVS107	ZP=ZPAR（J） || SPRVS107
+3	615	OK	      TP=TPAR（J）                                                        SPRVS108	TP=TPAR（J） || SPRVS108
+4	658	OK	      PSIZ=POAM(J)                                                      SPRVS109	PSIZ=POAM(J) || SPRVS109
+5	701	OK	      PHAS=PSAM(J)                                                      SPRVS110	PHAS=PSAM(J) || SPRVS110
+6	744	OK	      RWAF=RWFR(J)/2.                                                   SPRVS111	RWAF=RWFR(J)/2. || SPRVS111
+7	786	OK	      DWAF=DWFR(J)                                                      SPRVS112	DWAF=DWFR(J) || SPRVS112
+8	830	OK	      ZLOW=ZLHF(J)                                                      SPRVS113	ZLOW=ZLHF(J) || SPRVS113
+9	872	OK	      VHAF=VHFR(J)                                                      SPRVS114	VHAF=VHFR(J) || SPRVS114
+10	914	OK	CHECK FOR NEW PARTICLE SIZE CLASS                                       SPRVS115	CHECK FOR NEW PARTICLE SIZE CLASS || SPRVS115
+11	958	OK	      IF(ABS((PSIZ-PSZBE)/FSIZ).LE.1.0E-1G) GO TO 103                   SPRVS116	IF(ABS((PSIZ-PSZBE)/FSIZ).LE.1.0E-1G) GO TO 103 || SPRVS116
+12	1001	OK	      IF( MC3 .GT. 0) WRITE(ISCUT,A021) PSIZ                            SPRVS117	IF(MC3 .GT. 0) WRITE(ISCUT,A021) PSIZ || SPRVS117
+13	1035	OK	COMPUTE MID-ATMOSPHERE FALL RATE FAV FOR NEW PARTICLE SIZE CLASS        SPRVS118	COMPUTE MID-ATMOSPHERE FALL RATE FAV FOR NEW PARTICLE SIZE CLASS || SPRVS118
+14	1087	OK	      H=（ZMIN+ZMAX）/2.                                                  SPRVS119	H=（ZMIN+ZMAX）/2. || SPRVS119
+15	1130	OK	      CALL TRPL(H,NAT,ALT,ATP,T)                                        SPRVS120	CALL TRPL(H,NAT,ALT,ATP,T) || SPRVS120
+16	1165	OK	      CALL TRPL(H,NAT,ALT,FRS,P)                                        SPRVS121	CALL TRPL(H,NAT,ALT,FRS,P) || SPRVS121
+17	1215	OK	      CALL TRPL(H,NAT,ALT,RHO,DEN)                                      SPRVS122	CALL TRPL(H,NAT,ALT,RHO,DEN) || SPRVS122
+18	1259	OK	      CALL TRPL(H,NAT,ALT,ETA,VIS)                                      SPRVS123	CALL TRPL(H,NAT,ALT,ETA,VIS) || SPRVS123
+19	1301	OK	      CALL SETTLE(PSIZ,RHOF,DEN,VIS,T,P,FAV,IACCR)                      SPRVS124	CALL SETTLE(PSIZ,RHOF,DEN,VIS,T,P,FAV,IACCR) || SPRVS124
+20	1344	OK	      FAV=FAV-WAVGK                                                     SPRVS125	FAV=FAV-WAVGK || SPRVS125
+21	1385	COUNT 9/8	COMPUTE TABLE OF PARTICLE SETTLING SPEEDS - AN ENTRY FOR EACH STRATUM           	COMPUTE TABLE OF PARTICLE SETTLING SPEEDS - AN ENTRY FOR EACH STRATUM || SPRVS1.26
+22	1430	OK	      DO 101 KKZ=1,KBHX                                                 SPRVS127	DO 101 KKZ=1,KBHX || SPRVS127
+23	1473	OK	      CALL TRPL(ZCH(KKZ),NAT,ALT,ATP,T)                                 SPRVS128	CALL TRPL(ZCH(KKZ),NAT,ALT,ATP,T) || SPRVS128
+24	1507	OK	      CALL TRPL(ZCH(KKZ3,NAT,ALT,PRS,P)                                 SPRVS129	CALL TRPL(ZCH(KKZ3,NAT,ALT,PRS,P) || SPRVS129
+25	1551	OK	      CALL TRPL(ZCH(KKZ),NAT,ALT,RHO,DEN)                               SPRVS130	CALL TRPL(ZCH(KKZ),NAT,ALT,RHO,DEN) || SPRVS130
+26	1600	COUNT 9/8	      CALL TRPL(ZCH(KKZ),NAT,ALT,ETA,VIS)                                       	CALL TRPL(ZCH(KKZ),NAT,ALT,ETA,VIS) || SPRVS1.31
+27	1643	OK	  101 CALL SETTLE(PSIZ,RHOF,CEN,VIS,T,P,CAVS(KKZ),IACCK)                SPRVS132	101 CALL SETTLE(PSIZ,RHOF,CEN,VIS,T,P,CAVS(KKZ),IACCK) || SPRVS132
+28	1678	OK	COMPUTE INITIAL ALTITUDE FCR THIS PARTICLE SIZE ABOVE WHICH DEPOSITION  SPRVS133	COMPUTE INITIAL ALTITUDE FCR THIS PARTICLE SIZE ABOVE WHICH DEPOSITION || SPRVS133
+29	1730	OK	CANNOT OCCUR                                                            SPRVS134	CANNOT OCCUR || SPRVS134
+30	1775	OK	      TMAX=TP                                                           SPRVS135	TMAX=TP || SPRVS135
+31	1817	OK	      00 1001 IZ=1,K8HM1                                                SPRVS136	00 1001 IZ=1,K8HM1 || SPRVS136
+32	1858	OK	      TMAX=TMAX.+ (ZBH(IZ+1) - ZBH(IZ))/(CAVS(IZ) - HAYGK)              SPRVS137	TMAX=TMAX. + (ZBH(IZ+1) - ZBH(IZ)) / (CAVS(IZ) - HAYGK) || SPRVS137
+33	1901	OK	      IF(TMAX.GT.SLOP*TIMEX  .OR.  TMAX .LT. 0.0 ) GO TO 1002           SPRVS138	IF (TMAX.GT.SLOP*TIMEX .OR. TMAX .LT. 0.0) GO TO 1002 || SPRVS138
+34	1946	OK	 1001 CONTINUE                                                          SPRVS139	1001 CONTINUE || SPRVS139
+35	1987	OK	      TMAX=TMAX + （ZMAX - ZBH(KBHX)）/（CAVS(KBHX) - WAVGK)               SPRVS140	TMAX=TMAX+（ZMAX-ZBH(KBHX)）/（CAVS(KBHX)-WAVGK) || SPRVS140
+36	2034	OK	      ZLIM=5.0E4                                                        SPRVS141	ZLIM=5.0E4 || SPRVS141
+37	2073	COUNT 45/46	                                                                        SPRVS142	IF (TMAX.GT.SLOP*TIMEX OR. TMAX.LT.J.0) ZLIM=ZMAX || SPRVS142
+38	2119	OK	      GO TO 1012                                                        SPRVS143	GO TO 1012 || SPRVS143
+39	2162	OK	 1002 ZLIM=ZBH(IZ+1)                                                    SPRVS144	1002 ZLIM=ZBH(IZ+1) || SPRVS144
+40	2203	OK	 1012 IF(TMAX .LT. 0.0) TMAX=TIMEX                                      SPRVS145	1012 IF(TMAX .LT. 0.0) TMAX=TIMEX || SPRVS145
+41	2246	OK	 1003 IF( MC3 .LT. 1) GO TC 1004                                        SPRVS146	1003 IF(MC3.LT.1) GO TC 1004 || SPRVS146
+42	2290	OK	      WRITE(ISOUT,8022) FAV,H,ZLIM                                      SPRVS147	WRITE (ISOUT,8022) FAV,H,ZLIM || SPRVS147
+43	2333	OK	      WRITE(ISOUT,6024)                                                 SPRVS148	WRITE (ISOUT,6024) || SPRVS148
+44	2377	OK	 1004 CONTINUE                                                          SPRVS149	1004 CONTINUE || SPRVS149
+45	2420	OK	      IF(MG( 4 ).NE.0) GO TO 1255                                       SPRVS150	IF(MG(4).NE.0) GO TO 1255 || SPRVS150
+46	2451	OK	COMPUTE DEPOSITION TIME FROM THE BASE OF EACH STRATUM FOR USE BY THE    SPRVS151	COMPUTE DEPOSITION TIME FROM THE BASE OF EACH STRATUM FOR USE BY THE || SPRVS151
+47	2504	OK	C     SHORT-CUT TRANSPORT METHOD                                        SPRVS152	C SHORT-CUT TRANSPORT METHOD || SPRVS152
+48	2550	OK	      TSUM(1)=0.0                                                       SPRVS153	TSUM(1) = 0.0 || SPRVS153
+49	2592	OK	      00 1250 K=2,KBHX                                                  SPRVS154	00 1250 K=2,KBHX || SPRVS154
+50	2632	OK	 1250 TSUM(K)=TSUM(K-1)+(Z0H(K) - Z0H(K-1))/CAVS(K-1)                   SPRVS155	1250 TSUM(K) = TSUM(K-1) + (Z0H(K) - Z0H(K-1))/CAVS(K-1) || SPRVS155
+51	2678	OK	 1255 CONTINUE                                                          SPRVS156	1255 CONTINUE || SPRVS156
+52	2716	OK	COMPUTE CROSSING-TRAJECTORIES DIFFUSIVITY CORRECTIONS FOR NEW PARTICLE  SPRV3157	COMPUTE CROSSING-TRAJECTORIES DIFFUSIVITY CORRECTIONS FOR NEW PARTICLE || SPRV3157
+53	2763	OK	C     SIZE CLASS.                                                       SPRVS158	C SIZE CLASS. || SPRVS158
+54	2805	OK	      DOWN=(FAV*ELJY/SIGH)**2                                           SPRVS159	DOWN= (FAV*ELJY/SIGH)**2 || SPRVS159
+55	2847	OK	      CROSS=1./SQRT(1.+4.*DOWN)                                         SPRVS160	CROSS=1./SQRT(1.+4.*DOWN) || SPRVS160
+56	2891	OK	      DOWN=1./SQRT(1.+DOWN)                                             SPRVS161	DOWN=1. /SQRT(1. +DOWN) || SPRVS161
+57	2936	OK	      PSZBE=PSIZ                                                        SPRVS162	PSZBE=PSIZ || SPRVS162
+58	2977	OK	  1C3 IF( MC3 .GT. U)                                                   SPRVS163	1C3 IF(MC3 .GT. U) || SPRVS163
+59	3009	OK	     1WRITE(ISOUT.8016) NSEQ,XP,YP,ZP,TP,PHAS,RWAF,ZLCW,OHAF            SPRVS164	1WRITE(ISOUT.8016) NSEQ,XP,YP,ZP,TP,PHAS,RWAF,ZLCW,OHAF || SPRVS164
+60	3062	OK	CANCEL PROCESSING OF PARCEL IF IT HAS ALREADY IMPACTED                  SPRVS165	CANCEL PROCESSING OF PARCEL IF IT HAS ALREADY IMPACTED || SPRVS165
+61	3106	OK	      IF (IFIX(DWAF).GT.0) GO TO 1200                                   SPRVS166	IF (IFIX(DWAF).GT.0) GO TO 1200 || SPRVS166
+62	3150	OK	                                      127                                       	127
+63	3276	COUNT 3/22;COUNT 3/5	                                                                                	--- || ---

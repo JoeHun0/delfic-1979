@@ -1,0 +1,63 @@
+1	7	31	NOISE	                                                                        			
+2	563	596	COMMENT	*DECK,PAN1                                                              		lighton=*DECK,PAN1 ## dots=*DECK,PAN1 ## glm=*DECK,PAN1	PAM11
+3	607	636	VOTED	      SUBROUTINE PAM1                                                   		lighton=      SUBROUTINE PAM1 ## dots=      SUBROUTINE PAN1 ## glm=      SUBROUTINE PAM1	PAM12
+4	648	682	VOTED	     1    (HOB    ,SLOTMP ,TMSO   ,TH ,EMITN, FISSIO )                  		lighton=     1    (HOB    ,SLOTMP ,TMSO   ,TW ,EMITN, FISSIO ) ## lighton2=     1    (H03    ,SLOTMP ,TMSD   ,TH ,EMITN, FISSID ) ## dots=     1    (HOB    ,SLOTHP ,THSO   ,TH ,EMITN, FISSIO ) ## dots2=     1    (HOB    ,SLOTHP ,THSO   ,TH ,EMITN, FISSIO ) ## glm2=     1    (HO8    ,SLDTMP ,TMSO   ,TH ,EMITN, FISSID )	FAM13
+5	693	721	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM14
+6	735	766	COMMENT	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS                      		lighton=C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS ## dots=C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS	PAM15
+7	778	810	COMMENT	C     TAPELESS VERSION   FEBRUARY 1973                                  		lighton=C     TAPELESS VERSION   FEBRUARY 1973 ## dots=C     TAPELESS VERSION   FEBRUARY 1973 ## glm=C     TAPELESS VERSION   FEBRUARY 1973	PAM16
+8	824	855	COMMENT	C     OCTOBER 1966                                                      		lighton=C     OCTOBER 1966 ## glm=C     OCTOBER 1966	RAM17
+9	868	897	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM18
+10	907	939	COMMENT	C   EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY    		lighton=C   EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY ## dots=C   EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY ## glm=C   EXECUTIVE PROGRAM FOR TIME-INDEPENDENT PART OF PARTICLE-ACTIVITY	PAM19
+11	950	981	COMMENT	C   MODULE                                                              		lighton=C   MODULE ## dots=C   MODULE ## glm=C   MODULE	PAM110
+12	995	1024	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	FAM111
+13	1035	1067	COMMENT	CALLED BY OPM1............................................              			PAM112
+14	1080	1108	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM113
+15	1123	1153	COMMENT	C  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  ♣  			PAM114
+16	1167	1195	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM115
+17	1207	1238	COMMENT	C   CAPFIS        CAPTURE-TO-FISSION RATIO                              		lighton=C   CAPFIS        CAPTURE-TO-FISSION RATIO ## dots=C   CAPFIS        CAPTURE-TO-FISSION RATIO ## glm=C   CAPFIS        CAPTURE-TO-FISSION RATIO	PAM116
+18	1251	1282	COMMENT	C   EMITN         NUMBER OF NEUTRONS EMITTED PER FISSION                		lighton=C   EMITN         NUMBER OF NEUTRONS EMITTED PER FISSION ## glm=C   EMITN         NUMBER CF NEUTRONS EMITTED PER FISSION	PAM117
+19	1293	1325	COMMENT	C   FISSIO        SIX CHARACTER IDENTIFIER OF FISSION TYPE              		lighton=C   FISSIO        SIX CHARACTER IDENTIFIER OF FISSION TYPE ## glm=C   FISSID        SIX CHARACTER IDENTIFIER OF FISSION TYPE	FAM110
+20	1336	1369	COMMENT	C IFTAPE(10) LOGICAL ARRAY TO CONTROL FILE MANI FULATION                			PAM119
+21	1381	1412	COMMENT	C                 (1) TRUE - SET INTP NOT EQUAL TO ISIN                 		glm=C                 (1) TRUE - SET INTP NOT EQUAL TO ISIN	PAM120
+22	1423	1453	COMMENT	C                     FALSE = SET INTP = ISIN                           		glm=C                     FALSE = SET INTP = ISIN	PAM121
+23	1465	1497	COMMENT	C                 (2) TRUE - SET KRO = INTP                             		glm=C                 (2) TRUE - SET KRO = INTP	PAM12
+24	1510	1540	COMMENT	C                     FALSE = SET K>0 = ISIN                            		glm=C                     FALSE = SET K>0 = ISIN	FAM123
+25	1552	1582	COMMENT	C                 (3) TRUE - WRITE FILE IPAM                            		glm=C                 (3) TRUE - WRITE FILE IPAM	PAM124
+26	1593	1626	COMMENT	C                 (6) TRUE - READ FILE IPAM INTO MEMOFY AND RETURN      		glm=C                 (6) TRUE - READ FILE IPAM INTO MEMOFY AND RETURN	PAM125
+27	1639	1671	COMMENT	C                 (5-1C) SFARES                                         		glm=C                 (5-1C) SFARES	FAM126
+28	1680	1712	COMMENT	C   IPAM          SINARY FILE OF PAM1 OUTPUT FCK RESTARTS               		lighton=C   IPAM          SINARY FILE OF PAM1 OUTPUT FCK RESTARTS ## glm=C   IPAM          SINARY FILE OF PAH1 OUTPUT FOR RESTARTS	PAM127
+29	1724	1756	COMMENT	C   ISIN          INPUT FILE (BCD) USED BY OTHER DELFIC MODULES         		lighton=C   ISIN          INPUT FILE (BCD) USED BY OTHER DELFIC MODULES ## glm=C   ISIN          INPUT FILE (BCD) USED BY OTHER DELFIC MODULES	PAM128
+30	1767	1799	COMMENT	C   KOUT          UCD FILE OF FAM OUTPUT FOR PERIPHERAL PRINTING        		lighton=C   KOUT          UCD FILE OF FAM OUTPUT FOR PERIPHERAL PRINTING ## glm=C   KOUT          BCD FILE OF FAH OUTPUT FOR PERIPHERAL PRINTING	PAM129
+31	1810	1841	COMMENT	C   KRD           INPUT FILE (BCD) CONTAINING SOIL PARAMETERS           		lighton=C   KRD           INPUT FILE (BCD) CONTAINING SOIL PARAMETERS ## glm=C   KRD           INPUT FILE (8CD) CONTAINING SOIL PARAMETERS	PAM130
+32	1853	1885	COMMENT	C    APRNT(20     )LOGICA LARRA YT OCONTRO LWRITIN GO FKOUT ,TRU E =WRIT		lighton=C    APRNT(20     )LOGICA LARRA YT OCONTRO LWRITIN GO FKOUT ,TRU E =WRIT ## glm=C    NPRNT(20     )LOGICA LARRA YT OCONTRO LWRITIN GO FKOUT .TRU E =WRIT	PAM151
+33	1895	1929	COMMENT	C                 (1)  SETUP - TRANSITION CAFOS (WARNING - PRODUCES SOME		glm=C                 (1)  SETUP - TRANSITION CAFOS (WARNING - PRODUCES SOME	FAM132
+34	1939	1971	COMMENT	C                          700 PAGES)                                   		glm=C                          700 PAGES)	PAM133
+35	1982	2015	COMMENT	(                 2)S  ETUP- I NTERMEDIATEF ORMO FN UCLIDET ABLE( OCTAL)		dots=(                 2)S  ETUP- I NTERMEDIATEF ORMO FN UCLIDET ABLE( OCTAL) ## glm=C                 (2)  SETUP - INTERMEDIATE FCFH OF NUCLIDE TABLE (OCTAL	PAM134
+36	2024	2056	COMMENT	C                 (3)  SETUP - FINAL FCRM OF NUCLILL TABLE (OCTAL)      		glm=C                 (3)  SETUP - FINAL FCRM OF NUCLILL TABLE (OCTAL)	PAN135
+37	2068	2098	COMMENT	C                 (4)  YIELD - FISSION YIELD TABLE                      		glm=C                 (4)  YIELD - FISSION YIELD TABLE	PAM136
+38	2109	2140	COMMENT	C                 (5)  XPEP - EXPOSURE RATE MULTIPLIEFS                 		glm=C                 (5)  XPEP - EXPOSURE RATE MULTIPLIEFS	PAM137
+39	2154	2185	COMMENT	C                 (6)  FRATIO - REFRACTORY FRACTIONS (FR)               		glm=C                 (6)  FRATIO - REFRACTORY FRACTIONS (FR)	PAM138
+40	2196	2226	COMMENT	C                 (7)  FRATIO - SQUARE ROOT OF FR (BSUBK)               		glm=C                 (7)  FRATIO - SQUARE ROOT OF FR (BSUBK)	PAM139
+41	2239	2270	COMMENT	C                 (6)  INOC01 - INFORMATION STORED FOR USE BY INOC02    		glm=C                 (6)  INOC01 - INFORMATION STORED FOR USE BY INOC02	PAM142
+42	2282	2314	COMMENT	C (v) BATMAN - NUCLEIOS ABUNLANCES (WARNING - THIS                      			PAM141
+43	2324	2354	COMMENT	C                      OPTION COMBINED WITH JO = FALSE WILL BURY YOU    		glm=C                      OPTION COMBINED WITH JO = FALSE WILL BURY YOU	PAM142
+44	2367	2397	COMMENT	C                      IN PAPER)                                        		glm=C                      IN PAPER)	PAM143
+45	2410	2442	COMMENT	C                 (1C) GXPSR - FISSION PRODUCT ACTIVITY VS PART SIZE    		glm=C                 (1C) GXPSR - FISSION PRODUCT ACTIVITY VS PART SIZE	PAM144
+46	2454	2484	COMMENT	C                      (WARNING - SEE (3))                              		glm=C                      (WARNING - SEE (3))	PA4145
+47	2495	2528	COMMENT	C                 (11) INCC02 - INDUCED ACTIVITY (SOIL) VS PART SIZE    		glm=C                 (11) INCC02 - INDUCED ACTIVITY (SOIL) VS PART SIZE	PAM146
+48	2540	2571	COMMENT	C                      (WARNING - SEE (9))                              		glm=C                      (WARNING - SEE (9))	PAM147
+49	2580	2613	COMMENT	C                 (12) URAN - INUGCED ACTIVITY (MASS 239) VS PART SIZE  		glm=C                 (12) URAN - INUGCED ACTIVITY (MASS 239) VS PART SIZE	PA1140
+50	2625	2656	COMMENT	C                      (WARNING - SEC (9))                              		glm=C                      (WARNING - SEC (9))	PAM149
+51	2666	2700	COMMENT	(                 13)M CHCE P - SELECTED MASS CHAIN ACTIVIT YV SPAR TSIZ		dots=(                 13)M CHCE P - SELECTED MASS CHAIN ACTIVIT YV SPAR TSIZ	PAM150
+52	2711	2742	COMMENT	C                 (14) SPAFE                                            		glm=C                 (14) SPAFE	PAM151
+53	2752	2785	COMMENT	C                 (15) PAM2 - DO NOT WRITE TOTAL ACTIVITY VS PARTICLE   		glm=C                 (15) PAM2 - DO NOT WRITE TOTAL ACTIVITY VS PARTICLE	PAMI52
+54	2799	2831	COMMENT	C                      SIZE (WARNING-SEE (9))                           		glm=C                      SIZE (WARNING-SEE (9))	PAM153
+55	2841	2872	COMMENT	C (16-20) SPARES                                                        			PAH134
+56	2882	2916	COMMENT	C   PAMID(12)     RUN IDENTIFICATION FOR PARTICLE-ACTIVITY MODULE       		lighton=C   PAMID(12)     RUN IDENTIFICATION FOR PARTICLE-ACTIVITY MODULE ## dots=C   PAMID(12)     RUN IDENTIFICATION FOR PARTICLE-ACTIVITY MODULE ## glm=C   PAMID(12)     RUN IDENTIFICATION FC< FARTICLE-ACTIVITY MODULE	PAM155
+57	2929	2959	COMMENT	C  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  •  			PAM156
+58	2974	3003	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM157
+59	3014	3046	HANDFREE	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPAM      ,	39,50,61,72	lighton=      COMMON /CONDAT/       IC(2:)    ,IMOS      ,IPNCH     ,IPAM      , ## lighton2=      COMMON /CONDAT/       IC(2:)    .IMOS      .IPNCH     .IPAM      . ## dots=      COMMON /CONDAT/       IC(2:1    ),IHO      3,IPNC     H,IPA      M	PAM156
+60	3057	3091	HANDFREE	     1KRD       ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,	9,28,50,61	dots=     1KRD       .ISOUT     ,JPOUT     .KPOUT     ,KTAPE     ,LTAPE     . ## dots2=     1KRO       .ISOUT     .JPOUT     .KPOUT     .KTAPE     .LTAPE     .	PAM159
+61	3091	3132	HANDFREE	     2MARRAY    ,MBTAPE    ,MXREQ     ,SIGMA     ,INTF                  	19,33	lighton=     2MARRAY    ,MBTAPE    ,MXKEU     ,SIGMA     ,INTF ## lighton2=     2MARRAY    ,MBTAPE    ,MXKEQ     ,SIGMA     ,INTF ## dots=     2MARRAY    ,M8TAPE    ,MXKED     ,SIGMA     ,INTF ## dots2=     2MARRAY    ,H8TAPE    ,MXKEQ     ,SIGMA     ,INTF	P4H160
+62	3166	3197	NOISE	                                                                        		lighton=                                        170 ## dots=                                        170 ## glm=                                        170	
+63	3316	3337	NOISE	                                                                        			

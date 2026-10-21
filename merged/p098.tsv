@@ -1,0 +1,66 @@
+1	16	26	SEQONLY	                                                                        			
+2	41	77	NOISE	                                                                        			
+3	77	124	NOISE	                                                                        			
+4	610	641	AGREE	 5443 IP=0                                                              		dots= 5443 IP=0 ## glm= 5443 IP=0	RSXP272
+5	654	685	AGREE	 5445 IP=IP+1                                                           		dots= 5445 IP=IP+1 ## glm= 5445 IP=IP+1	RSXP273
+6	698	728	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP274
+7	740	772	COMMENT	C     SET UP THE DPST ARRAY FOR A WAFER SUBDIVISION FROM THE PPST ARRAY 			RSXP275
+8	783	814	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP276
+9	824	859	VOTED	      00 5444 J=1,8                                                     		lighton2=      DO 5444 J=1,8 ## dots=      00 5444 J=1.8 ## dots2=      00 5444 J=1,8 ## glm=      00 5444 J=1,8	RSXP277
+10	870	905	VOTED	 5444 OPST(J,MBT)=PPST(J,IP)                                            		lighton= 5444 OPST(J,M8T)=PPST(J,IP) ## dots= 5444 OPST(J,NBT)=PPST(J,IP) ## glm= 5444 OPST(J,MBT)=PPST(J,IP)	RSXP278
+11	913	948	VOTED	 5442 GO TO (5448,5447),IFLAG                                           		lighton= 5442 GO TO (5448,5447),IFLAG ## dots= 5442 GO TO (5448,5447),IFLAG ## glm= 5442 GO YO (5448,5447),IFLAG	RSXP279
+12	956	986	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP280
+13	1000	1033	COMMENT	C     SPECIFY FINAL DPST AFRAY FOR A WAFER WITH EQUAL BASE AND TOP RADIi		dots=C     SPECIFY FINAL DPST AFRAY FOR A WAFER WITH EQUAL BASE AND TOP RADIi ## glm=C     SPECIFY FINAL OPST AFRAY FOR A WAFER WITH EQUAL BASE AND TOP RADII	RSXP281
+14	1042	1073	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP282
+15	1085	1119	AGREE	 5448 DPST(6,MBT)= DPST(2,1)-DPST(2,2)                                  		lighton= 5448 DPST(6,MBT)= DPST(2,1)-DPST(2,2) ## dots= 5448 DPST(6,MBT)= DPST(2,1)-DPST(2,2) ## glm= 5448 DPST(6,MBT)= DPST(2,1)-DPST(2,2)	RSXP283
+16	1129	1163	TIE	      DPST(2，M8T)=(DPST(2，1)+DPST(2，2))*0.5                             	13,26,36	glm=      DPST(2，M8T)=(DPST(2，1)+DPST(2，2))*0.5 ## glm2=      DPST(2,M8T)=(DPST(2,1)+DPST(2,2))*0.5	RSXP284
+17	1171	1205	SINGLE	      OPST(4,MBT)=SQRT(OPST(4,1)*DPST(4,2))                             		glm=      OPST(4,MBT)=SQRT(OPST(4,1)*DPST(4,2))	RSYP285
+18	1214	1248	TIE	      OPST(7,MBT)=OPST(2,2)                                             	7,11,13,17,19,23,25,27	lighton2=      OPST(7,MBT)=OPST(2,2) ## glm=      DPST（7，MBT）=DPST（2，2）	RSXP286
+19	1256	1290	SINGLE	      DPST(8,MBT)=DPST(€,MBT)*3.1415927*DPST(3,1)**2                    		glm=      DPST(8,MBT)=DPST(€,MBT)*3.1415927*DPST(3,1)**2	RSXP287
+20	1300	1334	VOTED	      IF(IC(6))5447,5447,5826                                           		lighton=      IF(IC(6))5447,5447,5826 ## dots=      IF(IC(6))5447,5447,5826 ## glm=      IF(IC(6))5447.5447.5826	RSXP288
+21	1334	1375	AGREE	 5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG                     		lighton= 5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG ## dots= 5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG ## glm= 5826 WRITE(ISOUT,666)(DPST(I,MBT),I=1,8),MBT,IFLAG	RSXP289
+22	1384	1419	VOTED	 5447 IF(IRAO)5022,5022,783                                             		lighton= 5447 IF(IRAO)5022,5022,783 ## dots= 5447 IF(IRAD)5022,5022,783 ## glm= 5447 IF(IRAO)5022,5022,783	RSXP290
+23	1427	1460	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP291
+24	1470	1501	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP292
+25	1512	1544	COMMENT	C     INITIALIZE FOR HORIZONTAL WAFER SUBDIVISION                       		dots=C     INITIALIZE FOR HORIZONTAL WAFER SUBDIVISION ## glm=C     INITIALIZE FOR HORIZONTAL WAFER SUBDIVISION	RSXP293
+26	1544	1588	COMMENT	C                                                                       		lighton=C ## glm=C	RSXP294
+27	1598	1630	AGREE	  783 XR=BZ2                                                            		lighton=  783 XR=BZ2 ## dots=  783 XR=BZ2 ## glm=  783 XR=BZ2	RSXP295
+28	1641	1673	AGREE	      YR=BZ2                                                            		dots=      YR=BZ2 ## glm=      YR=BZ2	RSXP296
+29	1683	1718	VOTED	 506C RADIUS=OPST(3,MBT)                                                		lighton= 506C RADIUS=OPST(3,MBT) ## dots= 5060 RADIUS=OPST(3,MBT) ## glm= 506C RADIUS=DPST(3,MBT)	RSXP297
+30	1726	1759	AGREE	      RAD2=RADIUS**2                                                    		lighton=      RAD2=RADIUS**2 ## glm=      RAD2=RADIUS**2	RSXP298
+31	1769	1804	VOTED	 5010 IF(RAD2-2.0*8Z2**2)5022,1004,1004                                 		lighton= 5010 IF(RAD2-2.0*8Z2**2)5022,1004,1004 ## dots= 5010 IF(RAD2-2.0*BZ2**2)5022,1004,1004 ## glm= 5010 IF(RAD2-2.0*8Z2**2)5022,1004,1004	RSXP299
+32	1812	1845	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP300
+33	1854	1886	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP3J1
+34	1897	1929	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP302
+35	1941	1974	COMMENT	C     SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED      		lighton=C     SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED ## dots=C     SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED ## glm=C     SPECIFY GDPST ARRAY FOR WAFERS THAT ARE NOT TO BE SUBDIVIDED	RSXP303
+36	1983	2017	COMMENT	C     HORIZONTALLY                                                      		lighton=C     HORIZONTALLY ## dots=C     HORIZONTALLY ## glm=C     HORIZONTALLY	RSXP304
+37	2028	2061	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP305
+38	2071	2106	VOTED	 5022 L000=L000+1                                                       		lighton= 5022 L000=L000+1 ## dots= 5022 L000=L000+1 ## glm= 5022 L00D=L00D+1	RSXP306
+39	2106	2147	TIE	      GDPST(6,LODO)=DPST(2,MBT)                                         	12,14,19,25,27,31	lighton=      GDPST(6,LODO)=OPST(2,MBT) ## lighton2=      GDPST(6,LODO)=DPST(2,MBT) ## glm=      GDPST（6，LODO）=DPST（2，MBT） ## glm2=      GDPST（6，LODO）=DPST（2，MBT）	RSXP307
+40	2157	2192	TIE	      GDPST（4，LODD）=DPST（4，MBT）                                         	8,12,14,19,24,25,27,30,31	glm=      GDPST（4，LODD）=DPST（4，MBT） ## glm2=      GOPST(4,LODD)=DPSY(4,MBY)	RSXP3U8
+41	2200	2236	TIE	      GDPST(3,LODO)=DPST( 1,MBT)                                        	12,14,18,19,25,28,32	lighton2=      GDPST(3,LODO)=DPST( 1,MBT) ## glm=      GDPST（3，LODD）=DPST（ 1，MBT）	RSXP309
+42	2236	2277	TIE	      GDPST(5,LO00)=DPST(5,MBT)                                         	17,18	lighton=      GDPST(5,L000)=DPST(5,MBT) ## lighton2=      GDPST(5,LOOO)=DPST(5,MBT) ## dots2=      GOPST(5,LO00)=DPST(5,MBT) ## glm=      GDPST（5，LODD）=DPST（5，MBT） ## glm2=      GDPST（5，LODD）=DPST（5，MBT）	RSXP310
+43	2286	2321	AGREE	      GDPST(1,LODD)=0.                                                  		lighton2=      GDPST(1,LODD)=0. ## glm=      GDPST(1,LODD)=0.	RSXP311
+44	2329	2363	TIE	      GOPST(2,L000)=0.                                                  	12,14,19	lighton2=      GDPST(2,L000)=0. ## dots2=      GOPST(2,1000)=0. ## glm=      GOPST（2，L000）=0. ## glm2=      GOPST（2，L000）=0.	RSXP312
+45	2371	2405	TIE	      GDPST（7，LOOD）=UPST（3，MBT）                                         	21	lighton2=      GDPST(7,LODD)=UPST(3,MBT) ## glm=      GDPST（7，LOOD）=DPST（3，MBY） ## glm2=      GDPST（7，LOOD）=OPST（3，MBT）	RSXP313
+46	2414	2449	TIE	      GDPST(8,LOOD)=DPST(6,MBT)                                         	12,14,19,25,27,31	lighton=      GDPST(8,LOOD)=DPST(6,MBT) ## lighton2=      GDPST(8,LODD)=DPST(6,MBT) ## glm=      GDPST（8，LOOD）=DPST（6，MBT） ## glm2=      GDPST（8，LOOD）=DPST（6，MBT）	RSXP314
+47	2457	2493	TIE	      GDPST(9,LODC)=DPST(7,MAT)                                         	12,14,18,19,25,27,29,31	lighton=      GDPST(9,LOOC)=OPST(7,MAT) ## lighton2=      GDPST(9,LODC)=DPST(7,MAT) ## glm=      GDPST（9，LODD）=DPST（7，MBT） ## glm2=      GDPST（9，LODD）=DPST（7，MBT）	RSXP315
+48	2493	2534	VOTED	      GDPST(10,LODD)=DPST(8,MBT)                                        		lighton=      GDPST(10,LOOO)=DPST(8,MET) ## lighton2=      GDPST(10,LODD)=DPST(8,MBT) ## glm=      GDPST(10,LODD)=DPST(8,MBT)	RSXP316
+49	2543	2577	AGREE	      GO TO 5030                                                        		lighton=      GO TO 5030 ## dots=      GO TO 5030 ## glm=      GO TO 5030	RSXP317
+50	2586	2621	VOTED	 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002                            		lighton= 1003 IF((XR)**2+(YR)**2-R/02)1001,1001,1002 ## lighton2= 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002 ## dots2= 1003 IF((XR)**2+(YR)**2-R/D2)1001,1001,1002 ## glm= 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002 ## glm2= 1003 IF((XR)**2+(YR)**2-RAD2)1001,1001,1002	RSXP318
+51	2621	2661	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP319
+52	2669	2705	COMMENT	C     SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA    		lighton=C     SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA ## dots=C     SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA ## glm=C     SUBDIVIDE WAFERS HORIZONTALLY AND SPECIFY THE GCFST ARRAY DATA	RSXP320
+53	2713	2748	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP321
+54	2748	2790	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP322
+55	2798	2831	COMMENT	C      COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS                		lighton=C      COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS ## dots=C      COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS ## glm=C      COUNT THE TOTAL NUMBER OF HORIZONTAL SUBDIVISIONS	RSXP323
+56	2842	2876	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP324
+57	2876	2918	VOTED	 1004 EX=8Z2                                                            		lighton= 1C04 EX=8Z2 ## dots= 1004 EX=8Z2 ## glm= 1004 EX=BZ2	RSXP325
+58	2927	2960	VOTED	      EY=8Z2                                                            		lighton=      EY=822 ## dots=      EY=BZ2 ## glm=      EY=8Z2	RSXP326
+59	2971	3004	AGREE	      CNT=4.0                                                           		lighton=      CNT=4.0 ## dots=      CNT=4.0 ## glm=      CNT=4.0	RSXP327
+60	3013	3049	AGREE	 721C EX=EX+8Z                                                          		lighton2= 721C EX=EX+8Z ## glm= 721C EX=EX+8Z	RSXP328
+61	3049	3090	VOTED	      IF(EX**2+EY**2-RA02)7201,7201,7202                                		lighton=      IF(EX**2+EY**2-RA02)7201,7201,7202 ## dots=      IF(EX**2+EY**2-RAO2)7201,7201,7202 ## glm=      IF(EX**2+EY**2-RA02)7201,7201,7202	RSXP329
+62	3101	3136	AGREE	 7201 CNT=CNT+4.0                                                       		lighton= 7201 CNT=CNT+4.0 ## dots= 7201 CNT=CNT+4.0 ## glm= 7201 CNT=CNT+4.0	RSXP330
+63	3144	3176	AGREE	      GO TO 7210                                                        		lighton=      GO TO 7210 ## dots=      GO TO 7210 ## glm=      GO TO 7210	RSXP331
+64	3193	3224	NOISE	                                                                        		lighton=                                         95 ## dots=                                         95 ## glm=                                         95	
+65	3292	3344	NOISE	                                                                        			
+66	3344	3381	NOISE	                                                                        			

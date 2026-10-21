@@ -1,0 +1,4 @@
+47	2495	OK	      PRS(I)=PRS(I-1)+TERP*(A3-PRS(I-1))                                        	PRS (I) = PRS (I-1) + TERP * (A3 - PRS (I-1))
+48	2539	COUNT 43/34	                                                                                	\times L H ( I ) = n L H ( I - 1 ) + T I R E \cdot ( A 4 - R L H ( I - 1 ) )
+49	2579	COUNT 33/34	                                                                                	FHJ (I) = HO (I-1) + TERP + (A5 - RHU (I-1))
+62	3272	COUNT 3/48	                                                                                	---

@@ -1,0 +1,4 @@
+4	648	OK	     1    (HOB    ,SLOTHP ,THSO   ,TH ,EMITN, FISSIO )                          	1 (HOB ,SLOTHP ,THSO ,TH ,EMITN, FISSIO )
+59	3014	COUNT 14/37	                                                                                	COMMON /CONDAT/
+60	3057	OK	     1KRO       .ISOUT     .JPOUT     .KPOUT     .KTAPE     .LTAPE     .        	1KRO .ISOUT .JPOUT .KPOUT .KTAPE .LTAPE .
+61	3091	OK	     2MARRAY    ,H8TAPE    ,MXKEQ     ,SIGMA     ,INTF                          	2MARRAY ,H8TAPE ,MXKEQ ,SIGMA ,INTF

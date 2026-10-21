@@ -1,0 +1,14 @@
+4	660	COUNT 59/27	                                                                                	20P\mathcal{M}I\mathcal{D}(12), T_1 \quad , T_2 \quad , WFMAS(2J0)
+5	702	COUNT 41/42	                                                                                	COMMON /DECAY/ IGO,JC,KO(S,TENTER,TEXT,TIME
+12	1004	OK	      NE=3                                                                      	NE = 3
+17	1218	OK	   50 00 777 IP=1,NIJ                                                           	50 00 777 IP=1,NIJ
+23	1479	COUNT 66/67	                                                                                	75 GU TO(1)1,120,103,14,105,106,12.,120,135,106,101,112,113,120,101,
+24	1522	OK	     1      1)1,1u1,101),NFEQ                                                   	1     1 )1,1u1,101),NFEQ
+29	1737	OK	  101 F=P4AS(IP)                                                                	101 F=P4AS(IP)
+37	2079	OK	  104 IF(PSIZ(IP) .GE. T1  .ANC.  PSIZ(IP) .Lt. T2) GC TO 120                   	104 IF(PSIZ(IP) .GE. T1 .ANC. PSIZ(IP) .Lt. T2) GC TO 120
+38	2123	OK	      GO TO 2:)                                                                 	GO TO 2:)
+47	2508	OK	      IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 1J) GO TO 12C                             	IF(NREQ .EQ. 9 .OR. NREQ .EQ. 1J) GO TO 12C
+49	2594	OK	      IF(NREQ .EQ. 6) C=C*(1.0 - (TENTER/TEXIT)**(1.26))                        	IF(NREQ .EQ. 6) C=C*(1.0 - (TENTER/TEXIT)**(1.26))
+54	2810	COUNT 8/7	                                                                                	c.o Tj 26J
+58	2984	OK	      GO TO 233                                                                 	GO TO 233
+62	3152	COUNT 43/42	                                                                                	121 IF(A3S(PSIZ(IP) - PS(J)) .LT. 1.JE-6) GO TO 125

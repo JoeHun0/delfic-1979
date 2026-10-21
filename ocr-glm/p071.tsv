@@ -1,0 +1,42 @@
+1	22	COUNT 3/41;COUNT 3/5	                                                                                	--- || ---
+2	98	COUNT 3/14;COUNT 3/7	                                                                                	--- || ---
+3	808	OK	      GO TO 130                                                         VAPOR 27	GO TO 130 || VAPOR 27
+4	850	OK	C                                                                       VAPOR 28	C || VAPOR 28
+5	892	OK	C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL VAPOR 29	C IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL || VAPOR 29
+6	936	OK	C     BOILING TEMPERATURE                                               VAPOR 30	C BOILING TEMPERATURE || VAPOR 30
+7	980	OK	 200  IF（TMPG-3100.0）120,120,115                                        VAPOR 31	200 IF（TMPG-3100.0）120,120,115 || VAPOR 31
+8	1013	OK	 115  VPR=SSAM*0.00015*(TMPG-310J.0)                                    VAPOR 32	115 VPR=SSAM*0.00015*(TMPG-310J.0) || VAPOR 32
+9	1065	OK	      GO TO 130                                                         VAPOR 33	GO TO 130 || VAPOR 33
+10	1108	OK	 120  VPR=^.C                                                           VAPOR 34	120 VPR=^.C || VAPOR 34
+11	1151	OK	 130  RETURN                                                            VAPOR 35	130 RETURN || VAPOR 35
+12	1195	OK	      END                                                               VAPOR 36	END || VAPOR 36
+13	1537	OK	*DECK,TEMP                                                              TEMP   1	* DECK, TEMP || TEMP 1
+14	1581	OK	      SUBROUTINE TEMP                                                   TEMP   2	SUBROUTINE TEMP || TEMP 2
+15	1624	OK	C                                                                       TEMP   3	C || TEMP 3
+16	1667	COUNT 55/54	                                                                        TEMP   4	C. H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 || TEMP 4
+17	1711	OK	C .                                                                     TEMP   5	C. || TEMP 5
+18	1753	COUNT 1/71	                                                                        TEMP   6	C || TEMP 6
+19	1795	COUNT 4/5	C                                                                               	C || TEMP
+20	1837	OK	C     ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN    TEMP   8	C ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN || TEMP 8
+21	1881	OK	C     THE FIREBALL  AT THE INITIAL TIME.                                TEMP   9	C THE FIREBALL AT THE INITIAL TIME. || TEMP 9
+22	1924	OK	C                                                                       TEMP  10	C || TEMP 10
+23	1967	COUNT 1/71	                                                                        TEMP  11	C || TEMP 11
+24	2011	OK	C                                                                       TEMP  12	C || TEMP 12
+25	2052	OK	      COMMON /BASIC/ W.FW.ZBRSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ    TEMP  13	COMMON/BASIC/W.FW.ZBRSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ || TEMP 13
+26	2094	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 TEMP  14	COMMON / INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR || TEMP 14
+27	2139	OK	C                                                                       TEMP  15	C || TEMP 15
+28	2181	COUNT 1/71	                                                                        TEMP  16	C || TEMP 16
+29	2225	OK	C                                                                       TEMP  17	C || TEMP 17
+30	2270	OK	C     COMPUTE VAPOR TEMPERATURE                                         TEMP  18	C COMPUTE VAPOR TEMPERATURE || TEMP 18
+31	2311	OK	      Q=ZSCL*W**(-.03921)                                               TEMP  19	Q=ZSCL*W**(-.03921) || TEMP 19
+32	2353	OK	      T2M=1.037*((0.045/0.037)**(Q/180.))*(H**(0.49-(0.07*Q/180.)))     TEMP  20	T2M=1.037*((0.045/0.037)**(Q/180.))*(H**(0.49-(0.07*Q/180.))) || TEMP 20
+33	2397	OK	      A=5980.*((1.145)**(Q/180.))*((W)**(-5.039+8+0.12637*Q/180.0))     TEMP  21	A=5980. *((1.145)**(Q/180.)) *((W)**(-5.039+8+0.12637*Q/180.0)) || TEMP 21
+34	2439	OK	      B=-0.4473*(W**(0.04360))                                          TEMP  22	B=-0.4473*(W**(0.04360)) || TEMP 22
+35	2484	OK	      TMPG=A*((TME/T2M)**e)+1500.0                                      TEMP  23	TMPG=A*((TME/T2M)**e)+1500.0 || TEMP 23
+36	2527	OK	C                                                                       TEMP  24	C || TEMP 24
+37	2565	OK	C     COMPUTE TEMPERATURE OF CONDENSED PHASE MATTER                     TEMP  25	C COMPUTE TEMPERATURE OF CONDENSED PHASE MATTER || TEMP 25
+38	2612	OK	      TMPS = 200. * ALOG10(W) + 1000.                                   TEMP  26	TMPS = 200. * ALOG10(W) + 1000. || TEMP 26
+39	2654	OK	      RETURN                                                            TEMP  27	RETURN || TEMP 27
+40	2697	OK	      END                                                               TEMP  28	END || TEMP 28
+41	3165	OK	                                       68                                       	68
+42	3338	COUNT 3/7;COUNT 3/4	                                                                                	--- || ---

@@ -1,0 +1,34 @@
+1	18	COUNT 0/63;COUNT 13/8	                                                                                	 || \text{الخطاء}
+2	88	COUNT 371/44;COUNT 203/8	                                                                                	\text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H} \quad \text{H || \text{10000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+3	822	COUNT 14/10	                                                                                	\star DECK, CRMW
+4	870	COUNT 9/1	      SUBROUTINE CRMM                                                           	SUBROUTINE CRMM || \text{1 R}
+5	905	COUNT 34/5	C                                                                               	C || <table border="1" class="dataframe">
+6	953	COUNT 34/5	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || <table border="1" class="dataframe">
+7	997	OK	C                                                                               	C
+8	1037	COUNT 1/71;COUNT 7/5	                                                                                	C || <table>
+9	1081	OK	C                                                                               	C
+10	1125	COUNT 7/5	C     CRYW PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE.                   	C     CRYW PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE. || <table>
+11	1169	OK	C                                                                               	C
+12	1211	COUNT 199/71;COUNT 7/6	                                                                                	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || <table>
+13	1255	COUNT 11/1	C                                                                               	C || \mathcal{L}
+14	1299	COUNT 62/61;COUNT 34/6	                                                                                	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI || <table border="1" class="dataframe">
+15	1342	COUNT 41/42;COUNT 7/6	                                                                                	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || <table>
+16	1386	OK	C                                                                               	C
+17	1428	COUNT 58/59;COUNT 34/6	                                                                                	8 FORMAT(1H1//8X,42HCLOUD RISE AND GROWTH HISTORY FOR RUN *** 12A6) || <table border="1" class="dataframe">
+18	1475	COUNT 10/2	   20 FORMAT(/                                                                  	20 FORMAT(/ || \text{ขวิ}
+19	1514	COUNT 34/5	     1  49X19HCLOUD HISTORY TABLE//                                             	1  49X19HCLOUD HISTORY TABLE// || <table border="1" class="dataframe">
+20	1554	COUNT 34/6	     1  5X5(3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL,                      	1  5X5 (3X5HCLOUD, 3X), 3X4HBASE, 8X3HTOP, 7X6HRADIAL, || <table border="1" class="dataframe">
+21	1601	COUNT 34/6	     2  3X11HTEMPERATURE,4X, 3+GAS/                                             	2  3X11HTEMPERATURE, 4X, 3+GAS/ || <table border="1" class="dataframe">
+22	1639	COUNT 7/6	     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS,                  	3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS, || <table>
+23	1685	COUNT 34/6	     4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/                                      	4  3X3(3X4HRATE, 4X), 14X, 7HOENSITY/ || <table border="1" class="dataframe">
+24	1726	COUNT 7/6	     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X               	5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X), 4X || <table>
+25	1770	COUNT 45/44;COUNT 7/4	                                                                                	6  3H(K), 5X13H (KG/M**2)// (1X12, 1H), 1X, 2.511.4)) || <table>
+26	1809	COUNT 1/7;COUNT 34/6	                                                                                	C || <table border="1" class="dataframe">
+27	1854	COUNT 1/71;COUNT 34/6	                                                                                	C || <table border="1" class="dataframe">
+28	1897	COUNT 15/1	C                                                                               	C || \mathcal{H} \mid
+29	1941	OK	      WRITE(ISOUT,6) DETID                                                      	WRITE(ISOUT,6) DETID
+30	1978	COUNT 34/6	      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)                               	WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) || <table border="1" class="dataframe">
+31	2028	OK	      RETURN                                                                    	RETURN
+32	2071	OK	      END                                                                       	END
+33	3166	COUNT 2/1	                                                                                	75
+34	3322	COUNT 15/6	                                                                        \text{S}	\text{الدُّونُ} || \text{S}

@@ -1,0 +1,7 @@
+17	1410	OK	      CHN = CHN + ABUND                                                         	CHN = CHN + ABUND
+19	1494	OK	      MÖHN = MÖHN + 1                                                           	MÖHN = MÖHN + 1
+24	1711	OK	      ASUBK(L) = SQRT(FR(L)) - 1.0                                              	ASUBK(L) = SQRT(FR(L)) - 1.0
+25	1753	OK	      POKER = 8SUBK(L)                                                          	POKER = 8SUBK(L)
+35	2184	COUNT 7/6	                                                                                	GQ TO 1.9
+39	2355	OK	571   FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))             	571 FORMAT (1H1, "OUTPUT OF FRATIO"/ 5(6X, 4HMCHN, 6X, 2HFR, 3X))
+41	2440	COUNT 42/43	                                                                                	503 FORMAT(//5(6X,4HMCHN,4X,5HB5UBK,2X,)//)

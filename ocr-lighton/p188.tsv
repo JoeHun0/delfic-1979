@@ -1,0 +1,63 @@
+1	34	COUNT 0/7	                                                                                	
+2	571	OK	C                                                                               	C
+3	618	COUNT 14/7	      LOGICAL FLAG                                                              	LOGICAL FLAG || \text{GATMA 62}
+4	657	COUNT 11/1	C                                                                               	C || \mathcal{U}
+5	701	OK	CC  SET INITIAL VALUES                                                  <tabl e>	CC SET INITIAL VALUES || <table>
+6	746	COUNT 40/11;COUNT 0/7	                                                                                	\pi 0 \quad 1 \quad I \quad = \quad 1, \text{INUC} || 
+7	780	OK	    1 ABUNOO(I) = 0.0                                                   <tabl e>	1 ABUNOO(I) = 0.0 || <table>
+8	830	COUNT 0/5;COUNT 7/5	                                                                                	 || <table>
+9	873	OK	C                                                                               	C
+10	915	OK	CC  BEGIN MAIN LOOP THROUGH THE NUCLEIC TABLE                           UNIUM 00	CC BEGIN MAIN LOOP THROUGH THE NUCLEIC TABLE || UNIUM 00
+11	954	OK	C                                                                               	C
+12	1002	COUNT 0/7	   10 00 500 IN = 1,INUC                                                        	10 00 500 IN = 1,INUC || 
+13	1039	OK	C   FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN                        <tabl e>	C FIND THE NEXT NUCLIDE THAT BEGINS A SUBCHAIN || <table>
+14	1083	OK	      IF (NUCLID(IN))11,500,499                                         UNITH 1C	IF (NUCLID(IN)) 11,500,499 || UNITH 1C
+15	1126	OK	C                                                                               	C
+16	1174	COUNT 15/7	C   SET PARAMETERS FOR BEGINNING OF A SUBCHAIN                                  	C SET PARAMETERS FOR BEGINNING OF A SUBCHAIN || \text{BATHMA 75}
+17	1214	OK	C         MEMBERSHIP COUNTER                                            UNIMA 12	C MEMBERSHIP COUNTER || UNIMA 12
+18	1260	OK	   11 LSUB = 1                                                          UNION 14	11 L SUB = 1 || UNION 14
+19	1301	COUNT 0/7	C         BRANCHING RATIC COUNTER                                               	C BRANCHING RATIC COUNTER || 
+20	1346	COUNT 0/7;COUNT 14/7	                                                                                	 || \text{BATHA 79}
+21	1390	COUNT 0/10	                                                                        BATHA 80	 || BATHA 80
+22	1431	COUNT 15/7	C         STARTING INDEX                                                        	C STARTING INDEX || \text{BATHMA 81}
+23	1475	COUNT 0/9;COUNT 14/7	                                                                                	 || \text{BATMA 82}
+24	1518	COUNT 0/13;COUNT 6/7	                                                                                	 || UNIV VL
+25	1560	COUNT 5/7	C   PROCESS A SUBCHAIN MEMBER                                                   	C   PROCES S   A   SUBCHAIN   MEMBER || UNION
+26	1596	OK	   13 KP = NUC(LSUB)                                                    <tabl e>	13 KP = NUC(LSUB) || <table>
+27	1647	COUNT 0/12;COUNT 11/4	                                                                                	 || \text{RATM}
+28	1689	OK	      INFO = MOD(IABS(NUCLID(KP)),MULT(5))                              UNITE 44	INFO = MOD(IABS(NUCLID(KP)),MULT(5)) || UNITE 44
+29	1729	OK	      INFORM(LSUB) = INFC                                               <tabl e>	INFORM(LSUB) = INFC || <table>
+30	1776	COUNT 10/3	      INC = 1                                                                   	INC = 1 || \text{V} = 1
+31	1816	COUNT 14/7	C   SET UP SUBCHAIN DISINTEGRATION CONSTANTS                                    	C SET UP SUBCHAIN DISINTEGRATION CONSTANTS || \text{JHINH 97}
+32	1855	COUNT 0/18	                                                                        <tabl e>	 || <table>
+33	1902	OK	CHECK FOR END OF SUBCHAIN                                               UNITE 74	CHECK FOR END OF SUBCHAIN || UNITE 74
+34	1945	OK	      IF (INFO.EQ.4) GO TO 21                                           <tabl e>	IF (INFO.EQ.4) GO TO 21 || <table>
+35	1981	OK	CHECK FOR BRANCHING                                                     <tabl e>	CHECK FOR BRANCHING || <table>
+36	2032	COUNT 14/7	      IF (MOD(INFO,MULT(1)).LT.4) GO TO 14                                      	IF (MOD(INFO, MULT(1)).LT.4) GO TO 14 || \text{BATHA 45}
+37	2070	COUNT 0/13	                                                                        <tabl e>	 || <table>
+38	2118	COUNT 21/5	      GO TO 15                                                                  	GO TO 15 || \Delta T M \Delta \quad 97
+39	2161	COUNT 15/7	C   SET UP SUBCHAIN BRANCHING RATIOS                                            	C SET UP SUBCHAIN BRANCHING RATIOS || \text{BATHMA 78}
+40	2197	OK	   14 LA = LBR + 5 - IM                                                 <tabl e>	14 LA = LBR + 5 - IM || <table>
+41	2248	COUNT 15/8	      SBR(LSU9) = BRANCH(LE)                                                    	SBR(LSU9) = BRANCH(LE) || \text{BATHA1J0}
+42	2282	OK	C   EXTRACT THE DAUGHTER INCREMENT                                      DAI741JU	C EXTRACT THE DAUGHTER INCREMENT || DAI741JU
+43	2326	COUNT 0/8	   15 ID = MOD(INFO,MULT(IM+1))/MULT(IM)                                        	15 ID = MOD(INFO, MULT(IM+1)) / MULT(IM) || 
+44	2368	COUNT 9/7	C   SEE IF THIS INCREMENT SHOULD BE NEGATIVE                                    	C SEE IF THIS INCREMENT SHOULD BE NEGATIVE || OH I ITP LLC
+45	2413	COUNT 11/8	      IF (MOD(INFO,MULT(2))/MULT(1).EQ.IM)GO TO 16                              	IF (MOD(INFO, MULT(2)) / MULT(1).EQ.IM) GO TO 16 || OM I . . . M 1 . . J
+46	2458	OK	C   SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC CF DAUGHTER         UNSTABLE	C SET PARAMETER TO LOOK AHEAD FOR BRANCHING RATIC CF DAUGHTER || UNSTABLE
+47	2502	COUNT 0/5;COUNT 13/4	                                                                                	 || \text{U7 I I I R}
+48	2550	COUNT 26/7	      GO TO 17                                                                  	GO TO 17 || \text{RATM} \Delta 1 \text{ } 7
+49	2591	COUNT 34/8	C   SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO CF DAUGHTER                	C SET PARAMETER TO LOOK BEHIND FOR BRANCHING RATIO CF DAUGHTER || \text{BATHMA} \dot{a} \dot{J} \dot{o}
+50	2633	COUNT 8/6;COUNT 15/7	                                                                                	1 \in KI = 1 || \text{9ATMA1:9}
+51	2678	COUNT 15/6	      LAR = 0                                                                   	LAR = 0 || \text{HATMA110}
+52	2721	COUNT 0/8;COUNT 37/6	                                                                                	 || \text{BATHM} \Delta 1 \uparrow \downarrow
+53	2763	COUNT 20/19;COUNT 13/6	                                                                                	COMPUTE DAUGHTER INDEX || \text{BATHES}
+54	2806	COUNT 15/8	   17 NOAUT = KP + INC*IO                                                       	17 NOAUT = KP + INC*IO || \text{BATHA1.3}
+55	2848	COUNT 0/11;COUNT 15/8	                                                                                	 || \text{SAYMA114}
+56	2890	COUNT 15/8	C   STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR           	C STEP THROUGH THE NUCLIDE TABLE TO ESTABLISH THE CORRECT INDEX FOR || \text{BATHM1:5}
+57	2933	OK	C   THE BRANCHING RATIO OF THE DAUGHTER                                 3ATNA116	C THE BRANCHING RATIO OF THE DAUGHTER || 3ATNA116
+58	2971	COUNT 0/12;COUNT 15/8	                                                                                	 || \text{JHINMADU}
+59	3020	COUNT 0/40;COUNT 371/8	                                                                                	 || \text{V} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J} \quad \text{J
+60	3066	COUNT 16/15;COUNT 152/5	                                                                                	KARZ (LSU9•1, = L8F || \text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52
+61	3108	COUNT 7/4	C                                                                               	C || \text{ }
+62	3160	COUNT 30/3	                                                                                	\mathbf{1} \leftarrow \mathbf{r}
+63	3305	COUNT 14/55;COUNT 7/4	                                                                                	\text{اللهُمْ} || السلامة

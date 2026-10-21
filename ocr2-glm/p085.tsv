@@ -1,0 +1,3 @@
+21	1611	OK	      COMMON /PARTCL/ NDSTR,RHOP,DMEAN,S0,PS(2C0),DIAP(201),FMASS(20L)          	COMMON /PARTCL/ NDSTR,RHOP,DMEAN,S0,PS(2C0),DIAP(201),FMASS(20L)
+22	1654	OK	      COMMON /TABLES/ MCX， CX(50,10)， GOPST(11,100)                             	COMMON/TABLES/MCX，CX(50,10)，GOPST(11,100)
+51	2899	COUNT 24/25	                                                                                	2 PS (I + 1), CG (I + 1), Y (I + 1),

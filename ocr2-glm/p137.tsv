@@ -1,0 +1,14 @@
+2	704	COUNT 12/7	                                                                                	\angle 3 H C 1=0
+5	834	OK	      SPE=2.*EPS                                                                	SPE=2. *EPS
+6	876	OK	      IF(（ABS（XLO-XR）.GT.SPE）.AND.（AB?（XRO-XL）.GT.SPE)） GO TO 616               	IF(（ABS（XLO-XR）.GT. SPE）.AND.（AB?（XRO-XL）.GT. SPE)）GO TO 616
+8	960	OK	      CALL GETOA: VSUM,ZBH,KBHA,KBH8,NCA10,LTIM,VBARC,KBHF,NUATF,LTIMF)         	CALL GETOA: VSUM,ZBH,KBHA,KBH8,NCA10,LTIM,VBARC,KBHF,NUATF,LTIMF)
+10	1048	OK	      V3AR=V8ARC                                                                	V3AR=V8ARC
+22	1563	COUNT 13/14	                                                                                	626 NOYC1=NOAT
+27	1780	OK	 700  ZO=ZC                                                                     	700 ZO=ZC
+29	1867	OK	      YO=YC                                                                     	YO=YC
+32	1994	OK	      IF(MC:5)·EQ.1) WRITE(ISOUT,2) T0,Z0,X0,Y0,NDATO                           	IF(MC:5)·EQ.1) WRITE(ISOUT,2) T0,Z0,X0,Y0,NDATO
+40	2327	COUNT 52/54	                                                                                	IF ((ZO-ZMIN).LE.EPSZ).OR.(TIMEX-TO).LE.EPST)) GO TO 720
+43	2465	OK	  720 R2=RWAF**2                                                                	720 R2=RWAF**2
+46	2591	OK	      SIGXO = ( R2**QBRT + 2.0 * DOWN * TRIP * DSPRTX**QBRT/3.0 ) ** 3          	SIGXO = ( R2**QBRT + 2.0 * DOWN * TRIP * DSPRTX**QBRT/3.0 ) ** 3
+48	2679	COUNT 44/46	                                                                                	1 ( DSPRTX/ VAEL ; **QBRT + 3.0 * R2/ VARL ) **QBRT - 2.0 )
+53	2892	OK	     1  ( OSPRTY/  VARL )**GBRT + 3.0 * ( K2/  VARL )**QBRT - 2.0 )             	1 ( OSPRTY/ VARL ) **GBRT + 3.0 * ( K2/ VARL ) **QBRT - 2.0 )

@@ -1,0 +1,14 @@
+4	607	COUNT 59/60	                                                                                	45 FORMAT(15X, 93FCCNTOURS ARE NOT DETERMINED BECAUSE THE REQUESTED
+5	651	COUNT 41/40	                                                                                	1. YAP EXCEEDS ALLOCATED CORE STORAGE CAPACITY)
+6	693	COUNT 61/59	                                                                                	46 FORMAT(/15X, 56HTHE SPECIFIED HAF GRID INCREMENTS FRUDUCE DISTURTE
+16	1122	COUNT 23/25	                                                                                	IF（GRUFF.EQ.0）GRUFF=1.0
+17	1163	OK	 1603 IF(ABS(OGX) + ABS(OGY))120,12J,121                                        	1603 IF (ABS(OGX) + ABS(OGY)) 120,12J,121
+30	1724	OK	      OGY=OGX*IH/IV/2.0                                                         	OGY=OGX*IH/IV/2.0
+34	1894	OK	      NYMAP = (YMAX - YMIN)/CGY                                                 	NYMAP = (YMAX - YMIN)/CGY
+37	2022	OK	      NST = NMAP/NYMAP                                                          	NST = NMAP/NYMAP
+40	2151	OK	 1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14,0,ISOUT)                           	1400 IF(NXMAP .LE. 0) CALL ERROR(PROGRM,-14,0,ISOUT)
+41	2195	OK	      NZ=NOX/NXHAP                                                              	NZ=NOX/NXHA P
+42	2237	OK	 1401 NO 1121 J=1,NDSTR                                                         	1401 NO 1121 J=1,NDSTR
+43	2279	COUNT 22/23	                                                                                	FMAS(J) = FMASS(J)/GRUFF
+44	2323	OK	      IF(SO .GT. C.0) WFMAS(J)=WFMAS(J)*SSAM                                    	IF(SO .GT. C.0) WFMAS(J) = WFMAS(J)*SSAM
+57	2882	OK	 1269 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM                                      	1269 IF(FSUM .NE. 0.0) WRITE(ISOUT,2)FSUM

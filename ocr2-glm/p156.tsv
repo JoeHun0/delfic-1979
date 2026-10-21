@@ -1,0 +1,9 @@
+8	670	OK	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCP     ,IPOUT     ,        	COMMON /CONDAT/ IC(20) ,IHOB ,IPNCP ,IPOUT ,
+10	756	COUNT 25/29	                                                                                	2 MARRAY MB TAPE MXREQ SD INPAY
+12	842	COUNT 23/29	                                                                                	1JC NXMAP NYMAP NZ QCUT SSAM
+13	886	COUNT 25/24	                                                                                	2TGZ ,XGZ ,X1. ,X2 ,YGZ ,XMAX ,
+14	929	COUNT 16/20	                                                                                	3XMIN YMAX MIN ZMIN
+49	2731	COUNT 35/38	                                                                                	COMMON /CONDAT/ IC(20) IHOB IPNCH IPOUT ,
+55	2989	COUNT 17/20	                                                                                	3XMIN YMAX YMIN ZMIN
+56	3033	COUNT 25/29	                                                                                	COMMON /PARDAT/ ASQ 3SQ COSA F
+59	3280	COUNT 3/4	                                                                                	---

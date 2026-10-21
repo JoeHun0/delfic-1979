@@ -1,0 +1,63 @@
+1	0	36	NONE	                                                                        			
+2	536	568	COMMENT	C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE      		lighton=C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE ## dots=C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE ## glm=C   ACCEPT THE DAUGHTER FOR MEMBERSHIP IN THE SUBCHAIN AND RECYCLE	BATHA121
+3	583	613	AGREE	      LSUB = LSUB + 1                                                   		dots=      LSUB = LSUB + 1 ## glm=      LSUB = LSUB + 1	BATMA122
+4	624	655	VOTED	      IF (LSUB.GT.11) GO TC 1301                                        		lighton2=      IF (LSUB.GT.11) GO TC 1301 ## dots=      IF (LSUB.GT.11) GO TC 1301 ## dots2=      IF (LSUB.GT.11) GO TC 1301 ## glm=      IF (LSU8.GT.11) GO TC 1301 ## glm2=      IF （LSU8.GT.11） GO TC 1301	BATMA123
+5	668	698	TIE	      NUC(LSUB) = NDAUT                                                 	10,14,15	dots2=      NUC(LSUB) = NDAUT ## glm=      NUC（LSU8） = NDAUT	BATHA124
+6	712	742	AGREE	      GO TO 12                                                          		lighton=      GO TO 12 ## dots=      GO TO 12 ## glm=      GO TO 12	BATHA125
+7	755	784	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	BATHA126
+8	797	829	COMMENT	CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO           		lighton=CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO ## dots=CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO ## glm=CC  A SUBCHAIN HAS NOW BEEN SET UP AND CAN BE STUDIED IN TOTO	BATMA127
+9	841	871	COMMENT	C   ELIMINATE  UNI-MEMBERED SUBCHAIN                                    		lighton=C   ELIMINATE  UNI-MEMBERED SUBCHAIN ## dots=C   ELIMINATE  UNI-MEMBERED SUBCHAIN ## glm=C   ELIMINATE  UNI-MEMBERED SUBCHAIN	BATMA128
+10	883	914	VOTED	   21 IF (LSUB.EQ.1) GO TO 500                                          		lighton=   21 IF (LSUB.EQ.1) GO TO 500 ## dots=   21 IF (LSUB.EQ.1) GO TO 500 ## glm=   21 IF (LSU8.EQ.1) GO TO 500	BATHA129
+11	925	956	COMMENT	C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS        		lighton=C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS ## dots=C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS ## glm=C   RUN BACK THROUGH THE SUBCHAIN TO ACCUMULATE BRANCHING RATIOS	BATMA130
+12	970	1000	VOTED	      ASSIGN 23 TO LGO                                                  		lighton=      ASSIGN 23 TO LGU ## dots=      ASSIGN 23 TO LGO ## glm=      ASSIGN 23 TO LGO	BATMA131
+13	1012	1042	AGREE	      JL = 0                                                            		dots=      JL = 0 ## glm=      JL = 0	BATHA1J2
+14	1055	1084	VOTED	      SCA(LSUB) = 1.0                                                   		lighton2=      SCA(LSUB) = 1.0 ## dots=      SCA(LSUB) = 1.0 ## dots2=      SCA(LSUB) = 1.0 ## glm=      SCA（LSUB） = 1.0 ## glm2=      SCA（LSUB） = 1.0	BATMA133
+15	1099	1129	TIE	      LAST = LSUB + 1                                                   	17	lighton=      LAST = LSUB + 1 ## lighton2=      LAST = LSU3 + 1 ## glm=      LAST = LSU8 + 1 ## glm2=      LAST = LSUB + 1	BATMA134
+16	1141	1173	AGREE	      DO 22 L = 2,LSUB                                                  		dots=      DO 22 L = 2,LSUB ## glm=      DO 22 L = 2,LSUB	BATMA135
+17	1184	1214	VOTED	      LBACK = LAST - L                                                  		lighton2=      LBACK = LAST - L ## dots=      LBACK = LAST - i ## dots2=      LBACK = LAST - i ## glm=      LBACK = LAST - L ## glm2=      LBACK = LAST - L	BATHA136
+18	1228	1258	AGREE	      SCA(LBACK) = 1.0                                                  		lighton=      SCA(LBACK) = 1.0 ## dots=      SCA(LBACK) = 1.0 ## glm=      SCA(LBACK) = 1.0	BATHA137
+19	1270	1303	VOTED	      GO TO LGO,(22,23)                                                 		lighton=      GO TO LGO,(22,23) ## dots=      GO TO LGO,(22,23) ## glm=      GO TO LG0,(22,23)	BATHA138
+20	1312	1342	COMMENT	C   FIND THE LAST BRANCH IN THE SUBCHAIN                                		lighton=C   FIND THE LAST BRANCH IN THE SUBCHAIN ## dots=C   FIND THE LAST BRANCH IN THE SUBCHAIN ## glm=C   FIND THE LAST BRANCH IN THE SUBCHAIN	BATHA139
+21	1357	1387	AGREE	   23 IM = LIM(LBACK)                                                   		lighton=   23 IM = LIM(LBACK) ## dots=   23 IM = LIM(LBACK) ## glm=   23 IM = LIM(LBACK)	BATMA140
+22	1398	1430	VOTED	      IF (MOD(INFORM(LBACK),MULT(IM))/MULT(IN-1))22,22,24               		lighton=      IF (MOD(INFORM(LBACK),MULT(IM))/MULT(IM-1))22,22,24 ## dots=      IF (MOD(INFORM(LBACK),MULT(IN))/MULT(IN-1))22,22,24 ## glm=      IF （MOD（INFORM（LBACK），MULT（IM））/MULT（IN-1)）22,22,24	BATMA141
+23	1442	1473	AGREE	   24 JL = LBACK                                                        		lighton=   24 JL = LBACK ## dots=   24 JL = LBACK ## glm=   24 JL = LBACK	BATMA142
+24	1486	1516	VOTED	      ASSIGN 2? TO LGO                                                  		lighton=      ASSIGN 2? TO LGO ## dots=      ASSIGN 2? TO LGO ## glm=      ASSIGN 22 TO LGO	BATMA43
+25	1527	1558	VOTED	   22 SCA(LBACK) = SBR(LBACK)+SCA(LBACK+1)                              		lighton=   22 SCA(LBACK) = SBR(LBACK)*SCA(LBACK+1) ## dots=   22 SCA(LBACK) = SBR(LBACK)+SCA(LBACK+1) ## glm=   22 SCA(LBACK) = SBR(LDACK)+SCA(LBACK+1)	BATMA144
+26	1571	1600	NONE	                                                                        			BATMA145
+27	1615	1645	COMMENT	CORRECT FISSION YIELDS FOR BRANCHING                                    		lighton=CORRECT FISSION YIELDS FOR BRANCHING ## dots=CORRECT FISSION YIELDS FOR BRANCHING	BATMA146
+28	1657	1687	AGREE	      FLAG = .FALSE.                                                    		lighton=      FLAG = .FALSE. ## dots=      FLAG = .FALSE. ## glm=      FLAG = .FALSE.	BATMA147
+29	1700	1732	VOTED	      00 25 J = 1,LSUB                                                  		lighton=      00 25 J = 1,LSUB ## dots=      00 25 J = 1,LSUB ## glm=      D0 25 J = 1,LSUB	GATMA148
+30	1744	1774	AGREE	      JN = NUC(J)                                                       		dots=      JN = NUC(J) ## glm=      JN = NUC(J)	BATMA149
+31	1785	1815	AGREE	      SCA(J) = SCA(J)*ABEGN(JN)                                         		glm=      SCA(J) = SCA(J)*ABEGN(JN) ## glm2=      SCA(J) = SCA(J)*ABEGN(JN)	BATMA150
+32	1830	1859	AGREE	      IF (FLAG) GO TO 25                                                		lighton=      IF (FLAG) GO TO 25 ## dots=      IF (FLAG) GO TO 25 ## glm=      IF (FLAG) GO TO 25	BATMA151
+33	1871	1903	COMMENT	C   MAKE A NOTE IF A; LEAST ONE VALUE CF SCA IS NONTRIVIAL              		lighton=C   MAKE A NOTE IF A; LEAST ONE VALUE CF SCA IS NONTRIVIAL ## dots=*   MAKE A NOTE IF AT LEAST ONE VALUE OF SCA IS NONTRIVIAL	BATMA152
+34	1915	1947	AGREE	      IF (SCA(J))25,25,27                                               		lighton=      IF (SCA(J))25,25,27 ## dots=      IF (SCA(J))25,25,27 ## glm=      IF (SCA(J))25,25,27	CA1MA153
+35	1958	1988	AGREE	   27 FLAG = .TRUE.                                                     		lighton=   27 FLAG = .TRUE. ## dots=   27 FLAG = .TRUE. ## glm=   27 FLAG = .TRUE.	GATMA154
+36	2002	2032	AGREE	   25 CONTINUE                                                          		lighton=   25 CONTINUE ## dots=   25 CONTINUE ## glm=   25 CONTINUE	BATMA155
+37	2045	2074	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	8A7MA156
+38	2087	2117	COMMENT	C   CMIT COMPUTATIONS FOR TRIVIAL SUBCHAIN                              		lighton=C   CMIT COMPUTATIONS FOR TRIVIAL SUBCHAIN ## glm=C   CMIT COMPUTATIONS FOR TRIVIAL SUBCHAIN	BATMA157
+39	2131	2161	AGREE	      IF (.NOT.FLAG) GO TO 3C                                           		lighton=      IF (.NOT.FLAG) GO TO 3C ## dots=      IF (.NOT.FLAG) GO TO 3C ## glm=      IF (.NOT.FLAG) GO TO 3C	BATMA158
+40	2174	2202	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	BATMA159
+41	2215	2246	COMMENT	CC  THE CENTRAL COMPUTATIONS BEGIN AT THIS PCIN?                        		lighton=CC  THE CENTRAL COMPUTATIONS BEGIN AT THIS PCIN? ## dots=CO  THE CENTRAL COMPUTATIONS BEGIN AT THIS POINT ## glm=CC  THE CENTRAL COMPUTATIONS BEGIN AT THIS POINT	BATMA160
+42	2261	2289	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	8ATMA161
+43	2302	2334	VOTED	      DO 200 N=1,LSU9                                                   		lighton=      00 200 N=1,LSU9 ## dots=      DO 200 N=1,LSU9 ## glm=      DO 200 N=1,LSU9	BATMA162
+44	2344	2374	VOTED	      IF(JO) TENTER=TIME                                                		lighton=      IF(JO) TENTER=TIME ## dots=      IF(JO) TENTER=TIME ## glm=      IF(J0) TENTER=TIME	BATMA163
+45	2387	2418	AGREE	      EFAC(N)=EXP(-SDC(N)*TENTER)                                       		lighton=      EFAC(N)=EXP(-SDC(N)*TENTER) ## glm=      EFAC(N)=EXP(-SDC(N)*TENTER)	BATMA1E4
+46	2428	2458	TIE	      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)*TEXIT)                     	45	lighton=      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)*TEXIT) ## dots=      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SOC(N)'TEXIT) ## glm=      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)-TEXIT) ## glm2=      IF(KDOS) EFAC(N) = EFAC(N)-EXP(-SDC(N)·TEXIT)	3ATMA1E5
+47	2474	2503	VOTED	      R=J.0                                                             		lighton2=      R=3.0 ## dots=      R=J.0 ## dots2=      R=J.0 ## glm=      B=J.0 ## glm2=      B=J.0	BATMA1E6
+48	2518	2548	VOTED	      DO 163 K1=1,N                                                     		lighton2=      DO 163 K1=1,N ## dots=      00 163 k1=1,N ## dots2=      00 163 k1=1,N ## glm=      DO 163 K1=1,N ## glm2=      DO 163 K1=1，N	BATMA1E7
+49	2560	2590	AGREE	      CNIJ=1,0                                                          		lighton=      CNIJ=1,0 ## dots=      CNIJ=1,0 ## glm=      CNIJ=1,0	9ATHA168
+50	2604	2633	AGREE	      Q=0.0                                                             		dots=      Q=0.0 ## glm=      Q=0.0	BATMA169
+51	2647	2679	SINGLE	      00 162 k=1,N                                                      		dots=      00 162 k=1,N	BATHA170
+52	2690	2719	VOTED	      K2=N-K+1                                                          		dots2=      K2≡N-K+1 ## glm=      K2=N-K+1 ## glm2=      K2=N=K+1	BATHA171
+53	2731	2761	VOTED	      IF(K2.NE.N) CNIJ=CNIJ*SOC(K2)                                     		lighton=      IF(K2.NE.N) CNIJ=CNIJ*SOC(K2) ## dots=      IF(K2:NE.N) CNIJ=CNIJ*SOC(K2) ## glm=      IF(K2.NE.N) CNIJ=CNIJ*SOC(K2)	BATHA172
+54	2776	2806	VOTED	      IF(K2.EQ.K1) GO TO 162                                            		lighton=      IF(K2.EQ.K1) GO TO 1E2 ## dots=      IF(K2.EQ.K1) GO TO 162 ## glm=      IF(K2.EQ.K1) GO TO 162	947MA173
+55	2818	2848	VOTED	      FACTC=SDC(K2)-SDC(K1)                                             		lighton2=      FACTC=SOC(K2)-SOC(K1) ## glm=      FACTC=SDC(K2)-SDC(K1) ## glm2=      FACTC=SDC(K2)-SDC(K1)	BATMA174
+56	2860	2893	TIE	      IF(A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC)                 	11,49	dots=      IF(ABS1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC) ## dots2=      IF(A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15,FACTC) ## glm=      IF(A3S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15.FACTC) ## glm2=      IF(A>S1FACTC).LT.1.E-15) FACTC=SIGN(1.E-15.FACTC)	B4T4A175
+57	2905	2936	NONE	                                                                        			8AY4A176
+58	2947	2980	NONE	                                                                        			98THA177
+59	2990	3020	NONE	                                                                        			64TMA176
+60	3034	3065	TIE	      IF(S7C( K1).Lt.>.; v6CTC 15J                                      	20,22,24,26	lighton2=      IF(S7C( K1).Lt.>.; v6CTC 15J ## dots2=      IF(570( 41).cL.o.: i6CTC 3bJ ## glm2=      IF(SRC( K1).LE.J1. G CTC 15J	DATMA179
+61	3079	3108	NONE	                                                                        			3AYM4190
+62	3127	3157	NOISE	                                                                        			
+63	3301	3321	NOISE	                                                                        			

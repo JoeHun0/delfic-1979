@@ -1,0 +1,10 @@
+21	1336	OK	      DO 273 J=1,JTOPV                                                          	DO 273 J=1,JTOPV
+25	1508	OK	      NAD(J)=J                                                                  	NAD(J) = J
+32	1808	COUNT 17/11	                                                                                	TZ \approx ZS(J) - ZG
+33	1852	COUNT 13/12	                                                                                	CRESSZ = TZ^4TZ
+36	1981	COUNT 0/28	                                                                                	
+40	2153	COUNT 0/28	                                                                                	
+42	2238	OK	      IF(CRESS7.LE.GIB) GC TO 202                                               	IF(CRESS7.LE.GIB) GC TO 202
+58	2927	OK	      KL=NAD(NADT)                                                              	KL = NAD(NADT)
+59	2968	OK	      OM=02(KL)                                                                 	OM=02(KL)
+64	3296	COUNT 350/9	                                                                                	\text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: } \text{الدالة: }

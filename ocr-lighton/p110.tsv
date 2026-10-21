@@ -1,0 +1,58 @@
+1	5	COUNT 0/13;COUNT 10/3	                                                                                	 || \text{---}
+2	424	OK	*DECK,CALIB                                                             CALIB  1	*DECK, CALIB || CALIB 1
+3	467	OK	      SUBROUTINE CALIB(A,NX,AN,NS,N)                                    CALIB  2	SUBROUTINE CALIB(A, NX, AN, NS, N) || CALIB 2
+4	502	COUNT 1/11	                                                                        CALIB  3	C || CALIB 3
+5	551	OK	C     SUBROUTINE CALIB DETERMINES A JUSTIFIED INDEX WHICH RELATES AN    CALIB  4	C     SUBROUTINE CALIB DETERMINES A JUSTIFIED INDEX WHICH RELATES AN || CALIB 4
+6	593	OK	C     INPUT DATA POINT TO ITS CORRESPONDING POSITION IN AN INPUT ARRAY. CALIB  5	C INPUT DATA POINT TO ITS CORRESPONDING POSITION IN AN INPUT ARRAY. || CALIB 5
+7	639	OK	C                                                                       CALIB  6	C || CALIB 6
+8	682	OK	C     A     - INPUT DATA ARRAY                                          CALIB  7	C A - INPUT DATA ARRAY || CALIB 7
+9	724	OK	C     NX    - INPUT MAXIMUM INDEX OF A                                  CALIB  8	C     NX     - INPUT MAXIMUM INDEX OF A || CALIB 8
+10	766	OK	C     AN    - INPUT DATA POINT                                          CALI8  9	C AN - INPUT DATA POINT || CALI8 9
+11	809	OK	C     NS    - INDEX JUSTIFICATION CODE.   WHEN GIVEN (BY INPUT) THE     CALI8 10	C     NS     - INDEX JUSTIFICATION CODE. WHEN GIVEN (BY INPUT) THE || CALI8 10
+12	854	OK	C           FOLLOWING VALUES, A IS DETERMINED SUCH THAT -               CALIB 11	C FOLLOWING VALUES, A IS DETERMINED SUCH THAT - || CALIB 11
+13	897	COUNT 1/15	                                                                        CALIB 12	C || CALIB 12
+14	942	COUNT 1/15	                                                                        CALIB 13	C || CALIB 13
+15	984	OK	C     N     - OUTPUT INDEX                                              CALI3 14	C N - OUTPUT INDEX || CALI3 14
+16	1027	OK	C                                                                       CALI8 15	C || CALI8 15
+17	1068	OK	      DIMENSION A(NX)                                                   CALI8 16	DIMENSION A(NX) || CALI8 16
+18	1112	COUNT 0/20	                                                                        CALIB 17	 || CALIB 17
+19	1155	OK	      N=0                                                               CALIB 18	N = 0 || CALIB 18
+20	1197	OK	COMMENCE SEARCH FOR N                                                   CALIB 19	COMMENCE SEARCH FOR N || CALIB 19
+21	1242	COUNT 8/6	                                                                        CALIB 20	1  N=N+N+1 || CALIB 20
+22	1283	COUNT 0/13	                                                                        CALIB 21	 || CALIB 21
+23	1325	OK	COMPARE A(NN) WITH AN ONLY IF  NN IS LESS THAN NX+1                     CALIB 22	COMPARE A(NN) WITH AN ONLY IF NN IS LESS THAN NX+1 || CALIB 22
+24	1369	OK	      IF((NN.LT.NX+1).ANC.(A(NN).LT.AN*EPS)) GO TO 1                    CALIB 23	IF((NN.LT.NX+1).ANC.(A(NN).LT.AN*EPS)) GO TO 1 || CALIB 23
+25	1412	OK	      RETURN                                                            CALIB 24	RETURN || CALIB 24
+26	1458	OK	      END                                                               CALIB 25	END || CALIB 25
+27	1798	OK	*DECK,CNTR                                                              CNTR   1	* DECK, CNTR || CNTR 1
+28	1839	COUNT 49/48	                                                                        CNTR   2	SUBROUTINE CNTR(NET,NETSU,NDATA,XG,YG,ICF,JCF,ACF) || CNTR 2
+29	1885	COUNT 17/11	                                                                        CNTR   3	\dot{C} MARCH, 1971 || CNTR 3
+30	1917	OK	C     SUBROUTINE CNTR DETERMINES THE X,Y COORDINATES AT THE CENTER OF A CNTR   4	C SUBROUTINE CNTR DETERMINES THE X,Y COORDINATES AT THE CENTER OF A || CNTR 4
+31	1968	OK	C     HORIZONTAL SPACE RESCLUTION  MESH OR SUB-MESH.                    CMTR   5	C HORIZONTAL SPACE RESCLUTION MESH OR SUB-MESH. || CMTR 5
+32	2012	OK	C     NDATA - ATMOS. HORIZ. SPACE NET MESH OR SUB-MESH INDEX            CNTR   6	C     NDATA - ATMOS. HORIZ. SPACE NET MESH OR SUB-MESH INDEX || CNTR 6
+33	2052	OK	C     XG    - NET MESH OR SUB-MESH CENTER POSITION X COORDINATE         CNTR   7	C     XG     - NET MESH OR SUB-MESH CENTER POSITION X COORDINATE || CNTR 7
+34	2095	OK	C     YG    - NET MESH OR SUB-MESH CENTER POSITION Y COORDINATE         CNTR   8	C     YG     - NET MESH OR SUB-MESH CENTER POSITION Y COORDINATE || CNTR 8
+35	2140	OK	      COMMON /CNTROL/ IPOU1.ISIN,1SOUT,JPARN,MC(20),NSEQO               CNTR   9	COMMON /CNTROL/ IPOU1.ISIN,1SOUT,JPARN,MC(20),NSEQO || CNTR 9
+36	2182	OK	      COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX                   CNTR  10	COMMON /INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NDATX || CNTR 10
+37	2225	OK	      COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     CNTR  11	COMMON /SPACE/ WINT,XLLC,YLLC,ZMAX,ZMIN,TIMEX || CNTR 11
+38	2270	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF)                                 CNTR  12	DIMENSION NET(ICF, JCF), NETSU(NCF) || CNTR 12
+39	2311	COUNT 19/18	                                                                        CNTR  13	DATA PROGRAM/6HCNTR / || CNTR 13
+40	2356	COUNT 0/12	                                                                        CNTR  14	 || CNTR 14
+41	2400	OK	      IG=0                                                              CNTR  15	IG = 0 || CNTR 15
+42	2443	OK	      JG=0                                                              CNTR  16	JG = 0 || CNTR 16
+43	2486	OK	      NOBLE=1                                                           CNTR  17	NOBLE=1 || CNTR 17
+44	2530	OK	      NSTOR=NDATA                                                       CNTR  18	NSTOR=NDATA || CNTR 18
+45	2571	OK	CCMMENCE SEARCH LOOPS FOR IC AND JC                                     CNTR  19	CCMMENCE SEARCH LOOPS FOR IC AND JC || CNTR 19
+46	2614	OK	    1 00 2 JC=1,JCX                                                     CNTR  20	1 00 2 JC=1, JCX || CNTR 20
+47	2656	OK	      00 2 IC=1,ICx                                                     CNTR  21	00 2 IC=1,ICx || CNTR 21
+48	2697	OK	CHECK IF NSTOR CAN BE FOLNC IN NET                                      CNTR  22	CHECK IF NSTOR CAN BE FOLNC IN NET || CNTR 22
+49	2742	OK	      IF(NET(IC,JC).EQ.NSTCR) GO TO 9                                   CNTR  23	IF(NET(IC,JC).EQ.NSTCR) GO TO 9 || CNTR 23
+50	2788	OK	   2  CONTINUE                                                          CNTR  24	2 CONTINUE || CNTR 24
+51	2829	OK	COMMENCE SEARCH LOOP FOR NC                                             CNTR  25	COMMENCE SEARCH LOOP FOR NC || CNTR 25
+52	2872	OK	      DO 3 NC=1,NIX                                                     CNTR  26	DO 3 NC=1, NIX || CNTR 26
+53	2914	COUNT 29/30	                                                                        CNTR  27	CHECK IF NSTOR CAN BE FOUND IN NETSU || CNTR 27
+54	2957	OK	      IF(NETSU(NC).EQ.NSTOR) GO TO 4                                    CNTR  28	IF(NETSU(NC).EQ.NSTOR) GO TO 4 || CNTR 28
+55	3004	COUNT 20/9	                                                                        CNTR  29	\mathfrak{J} CONTINUE || CNTR 29
+56	3046	OK	      CALL ERROR(PROGRM,-3,ISOUT)                                       CNTR  30	CALL ERROR(PROGRM,-3,ISOUT) || CNTR 30
+57	3112	OK	                                       107                                      	107
+58	3302	COUNT 0/34	                                                                                	

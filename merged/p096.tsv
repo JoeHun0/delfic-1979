@@ -1,0 +1,62 @@
+1	2	54	NOISE	                                                                        			
+2	639	667	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP152
+3	680	714	AGREE	      GO TO (1208,233),JBASE                                            		lighton=      GO TO (1208,233),JBASE ## dots=      GO TO (1208,233),JBASE ## glm=      GO TO (1208,233),JBASE	RSXP153
+4	722	756	NONE	                                                                        			RSXP154
+5	756	794	COMMENT	C                                                                       			RSXP155
+6	805	839	COMMENT	C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE       		lighton=C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE ## dots=C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE ## glm=C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE	RSXP156
+7	849	879	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP157
+8	892	926	NONE	                                                                        			RSXP158
+9	935	969	AGREE	      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN)                          		lighton=      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN) ## dots=      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN) ## glm=      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN)	RSXP159
+10	977	1011	SINGLE	      CALL TRPL(DPST( 2,HET),NAT ,ALT,ETA,VIS)                          		glm2=      CALL TRPL(DPST( 2,HET),NAT ,ALT,ETA,VIS)	RSXP160
+11	1021	1054	VOTED	      CALL TRPL(DPST( 2,MBT),NAT ,ALT,ATP,TMP)                          		lighton=      CALL TRPL(OPST( 2,MBT),NAT ,ALT,ATP,TMP) ## dots=      CALL TRPL(DPST( 2,MBT),NAT ,ALT,ATP,THP) ## glm=      CALL TRPL(DPST( 2,MBT),NAT ,ALT,ATP,TMP)	RSXP1E1
+12	1065	1095	AGREE	      GO TO 212                                                         		lighton=      GO TO 212 ## dots=      GO TO 212 ## glm=      GO TO 212	RSXP162
+13	1107	1136	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP163
+14	1148	1181	COMMENT	G     COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE       		lighton=G     COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE ## glm=C     COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE	RSXP164
+15	1194	1224	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP165
+16	1234	1267	VOTED	  210 UP=CX(4C,6)+ZVSB*DPX(1,HC)                                        		lighton=  210 UP=CX(4C,6)+ZVSB*DPX(1,HC) ## dots=  210 UP=CX(4C,6)+ZVSB*DPX(1,HC) ## glm=  210 UP=CX(MC,6)+ZVSB*DPX(1,HC)	RSXP166
+17	1278	1311	NONE	                                                                        			RSXP167
+18	1320	1355	AGREE	      DEN=CX(MC,10)+(CX(MC+1,10)-CX(MC,10))*FC                          		dots=      DEN=CX(MC,10)+(CX(MC+1,10)-CX(MC,10))*FC ## glm=      DEN=CX(MC,10)+(CX(MC+1,10)-CX(MC,10))*FC	RSXP168
+19	1363	1394	SINGLE	      VIS=VISCX(MC)+(VISCX(MC+1)-VISCX(MC))*FC                          		glm=      VIS=VISCX(MC)+(VISCX(MC+1)-VISCX(MC))*FC	RSXP169
+20	1407	1441	SINGLE	      TMP=CX（ MC,9）+（CX（ MC+1,9）-CX（ MC,9)）*FC                          		glm=      TMP=CX（ MC,9）+（CX（ MC+1,9）-CX（ MC,9)）*FC	RSXP170
+21	1450	1480	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP171
+22	1493	1524	COMMENT	C     COMPUTE FALL SPEEDS                                               		lighton=C     COMPUTE FALL SPEEDS ## glm=C     COMPUTE FALL SPEEDS	RSXP172
+23	1538	1566	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP173
+24	1579	1614	VOTED	  212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P)                            		lighton=  212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P) ## dots=  212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P) ## glm=  212 CALL TRPL(DPST( 2,MBT),NAT ,ALT,PRS,P)	RSXP174
+25	1622	1656	VOTED	      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,DN,IACCR)              		lighton=      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,DN,IACCR) ## dots=      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,ON,IACCR) ## glm=      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,DN,IACCR)	RSXP175
+26	1665	1696	VOTED	      IF( ON .LT. SRTHS ) ON = 0.0                                      		lighton=      IF( ON .LT. SRTHS ) ON = 0.0 ## dots=      IF( ON .LT. SRTHS ) ON = 0.0 ## glm=      IF（ ON .LT. SRTHS ） ON = 0.0	RSXP176
+27	1708	1742	VOTED	      ZNXT=OPST( 2,M8T)+GX(MC,2)*(UP-DN)                                		dots=      ZNXT=DPST( 2,H8T)+GX(MC,2)*(UP-DN) ## dots2=      ZNXT=OPST( 2,M8T)+GX(MC,2)*(UP-DN) ## glm=      ZNXT=OPST( 2,M8T)+GX(MC,2)*(UP-DN)	RSXP177
+28	1752	1781	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP178
+29	1795	1827	COMMENT	C     HAS THE PARTICLE REACHED THE GROUND-                              		lighton=C     HAS THE PARTICLE REACHED THE GROUND- ## glm=C     HAS THE PARTICLE REACHED THE GROUND-	RSXP179
+30	1836	1867	COMMENT	C         YES TO 220                                                    		lighton=C         YES TO 220 ## glm=C         YES TO 220	RSXP150
+31	1878	1909	COMMENT	C        NO TO 230                                                      		lighton=C        NO TO 230 ## glm=C        NO TO 230	RSXP181
+32	1922	1952	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP182
+33	1966	2000	TIE	      IF(ZNXT-ZBRSTZ)220,220,230                                        	28	lighton=      IF(ZNXT-ZBRSTZ)220,224,230 ## lighton2=      IF(ZNXT-ZBRSTZ)220,220,230 ## dots=      IF(ZNXT-ZBRSTZ)220,226,230 ## dots2=      IF(ZNXT-ZBRSTZ)220,226,230 ## glm=      IF(ZNXT-ZBRSTZ)220,220,230 ## glm2=      IF(ZNXT-ZBRSTZ)220,220,230	RSXP103
+34	2008	2036	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP184
+35	2050	2081	COMMENT	C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD                     		lighton=C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD ## dots=C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD	RSXP185
+36	2094	2123	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP186
+37	2134	2168	VOTED	  22C EXTM=(ZBRSTZ-DPST( 2,MBT))/(UP-ON)                                		lighton=  22C EXTM=(ZBRSTZ-DPST( 2,MBT))/(UP-ON) ## dots=  220 EXTM=(ZBRSTZ-DPST( 2,MBT))/(UP-ON) ## glm=  22C EXTM=（ZBRSTZ-DPST（ 2,MBT））/（UP-ON）	RSXP187
+38	2177	2211	SINGLE	      DPST(1,MBT)=DPST(1,MBT)+EXTM                                      		glm=      DPST(1,MBT)=DPST(1,MBT)+EXTM	RSXP180
+39	2222	2254	TIE	      OPST( 2,MBT)=ZBRSTZ                                               	11,14,18	lighton2=      OPST( 2,MBT)=ZBRSTZ ## glm=      OPST（ 2，MBT）=ZBRSTZ	RSXP189
+40	2263	2294	TIE	      DNWAF(MBT)=ON                                                     	12,16,18	dots=      ONWAF(MBT)=ON ## dots2=      DNWAF(MBT)=ON ## glm=      DNWAF（MBT）=DN ## glm2=      DNWAF（MBT）=DN	RSXP190
+41	2307	2338	AGREE	      JBASE=2                                                           		lighton=      JBASE=2 ## dots=      JBASE=2 ## glm=      JBASE=2	RSXP191
+42	2350	2381	AGREE	      MD=MC                                                             		lighton=      MD=MC ## dots=      MD=MC ## glm=      MD=MC	RSXP192
+43	2392	2424	AGREE	      GO TO (1207,233),KBASE                                            		lighton=      GO TO (1207,233),KBASE ## dots=      GO TO (1207,233),KBASE ## glm=      GO TO (1207,233),KBASE	RSXP193
+44	2435	2468	VOTED	  230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2)                                  		lighton=  230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2) ## dots=  230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2) ## glm=  230 DPST（1，MBT）=DPST（1，MBT）+CX（MC，2）	RSXP194
+45	2479	2511	AGREE	      7LST=OPST(2,MBT)                                                  		lighton2=      7LST=OPST(2,MBT) ## glm=      7LST=OPST(2,MBT)	RSXP195
+46	2521	2554	TIE	      OPST(2,MBT)=ZNXT                                                  	7,11,13,17	lighton2=      OPST(2,MBT)=ZNXT ## glm=      DPST（2，MBT）=ZNXT	RSXP196
+47	2564	2594	AGREE	  238 CONTINUE                                                          		lighton=  238 CONTINUE ## dots=  238 CONTINUE ## glm=  238 CONTINUE	RSXP197
+48	2608	2641	AGREE	  233 GO TO (241,2440),MBT                                              		lighton=  233 GO TO (241,2440),MBT ## dots=  233 GO TO (241,2440),MBT ## glm=  233 GO TO (241,2440),MBT	RSXP138
+49	2651	2681	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	KSXP199
+50	2691	2724	COMMENT	C     IF BOTH TOP AND BOTTOM HAVE BEEN TREATED, ARE THE TOP AND BOTTOM  		lighton=C     IF BOTH TOP AND BOTTOM HAVE BEEN TREATED, ARE THE TOP AND BOTTOM ## glm=C     IF BOTH TOP AND BOTTOM HAVE BEEN TREATED, ARE THE TOP AND BOTTOM	RSXP2J0
+51	2738	2768	COMMENT	C     RADII THE SAME---                                                 		lighton=C     RADII THE SAME--- ## glm=C     RADII THE SAME---	
+52	2781	2810	COMMENT	C        YES TO 5448                                                    		lighton=C        YES TO 5448 ## glm=C        YES TO 5448	
+53	2823	2853	COMMENT	C        NO TO 2401                                                     		lighton=C        NO TO 2401 ## glm=C        NO TO 2401	RSXP237
+54	2867	2896	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP234
+55	2906	2939	TIE	  241 IF(ABS10PST(3,1) - CFST(3,2)) .GT. 0.1) GO TO 2441                	13,14	lighton=  241 IF(ABS10PST(3,1) - CFST(3,2)) .GT. 0.1) GO TO 2441 ## lighton2=  241 IF(ABS(OPST(3,1) - CFST(3,2)) .GT. 0.1) GO TO 2441	RSXP205
+56	2950	2980	NONE	                                                                        			RSXP216
+57	2995	3027	AGREE	      GO TO (240,256),MBT                                               		lighton=      GO TO (240,256),MBT ## dots=      GO TO (240,256),MBT ## glm=      GO TO (240,256),MBT	
+58	3038	3069	AGREE	  240 IF( IC(6) .EQ. 1)                                                 		lighton=  240 IF( IC(6) .EQ. 1) ## glm=  240 IF( IC(6) .EQ. 1)	
+59	3078	3111	NONE	                                                                        			
+60	3127	3156	AGREE	      GO TO 5442                                                        		lighton=      GO TO 5442 ## dots=      GO TO 5442 ## glm=      GO TO 5442	
+61	3169	3199	AGREE	 2441 IFLAG=2                                                           		lighton= 2441 IFLAG=2 ## dots= 2441 IFLAG=2 ## glm= 2441 IFLAG=2	
+62	3199	3230	NOISE	                                                                        		lighton=                                         97 ## lighton2=                                         93 ## glm=                                         93	

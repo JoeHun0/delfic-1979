@@ -1,0 +1,58 @@
+1	15	COUNT 3/33;COUNT 3/8	                                                                                	--- || ---
+2	432	OK	      GO TO 50                                                          SHWIN 61	GO TO 50 || SHWIN 61
+3	475	OK	  15  VX(NHODO)=AP(N2)*SCALE(2)                                         SHWIN 62	15 VX(NHODO)=AP(N2)*SCALE(2) || SHWIN 62
+4	518	OK	      VY(NHODO)=AP(N3)*SCALE(2)                                         SHWIN 63	VY(NHODO) = AP(N3)*SCALE(2) || SHWIN 63
+5	555	COUNT 21/22	                                                                        SHWIN 64	COPY OUT SCALED WIND DATA || SHWIN 64
+6	599	OK	   50 WRITE(ISOUT,4)ZV(NHODO),VX(NHODO), VY(NHODO)                      SHWIN 65	50 WRITE(ISOUT,4) ZV(NHODO), VX(NHODO), VY(NHODO) || SHWIN 65
+7	647	OK	      GO TO 100                                                         SHWIN 66	GO TO 100 || SHWIN 66
+8	680	OK	  240 IF(NHOOO .GT. 3) RETURN                                           CHWIN 67	240 IF(NHOOO .GT. 3) RETURN || CHWIN 67
+9	727	OK	      WRITE(ISOUT,S)                                                    JHWIN 39	WRITE(ISOUT,S) || JHWIN 39
+10	768	OK	      RETURN                                                            SHWIN 69	RETURN || SHWIN 69
+11	820	OK	      END                                                               SHWIN 70	END || SHWIN 70
+12	1163	OK	*DECK,CPFR                                                              CPFR   1	*DECK, CPFR || CPFR 1
+13	1206	OK	      SUBROUTINE CPFR                                                   CPFR   2	SUBROUTINE CPFR || CPFR 2
+14	1251	OK	C                                                                       CPFR   3	C || CPFR 3
+15	1292	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     CPFR   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || CPFR 4
+16	1335	OK	C                                                                       CPFR   5	C || CPFR 5
+17	1379	COUNT 1/71	                                                                        CPFR   6	C || CPFR 6
+18	1420	OK	C                                                                       CPFR   7	C || CPFR 7
+19	1464	OK	C     CPFR COMPUTES PARTICLE FALLOUT RATE                               CPFR   8	C CPFR COMPUTES PARTICLE FALLOUT RATE || CPFR 8
+20	1508	OK	C                                                                       CPFR   9	C || CPFR 9
+21	1549	COUNT 1/71	                                                                        CPFR  10	C || CPFR 10
+22	1593	OK	C                                                                       CPFR  11	C || CPFR 11
+23	1638	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,CPFR  12	COMMON /CLOUD/ CHANGE,CM LR ,C2 ,C3 ,C6 ,DEK ,DRM , || CPFR 12
+24	1673	OK	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,UT    ,DU    ,DWT    ,DX     ,CPFR  13	1 DS ,OST ,OST0 ,OST1 ,OST2 ,UT ,DU ,DWT ,DX , || CPFR 13
+25	1725	COUNT 24/33	                                                                        CPFR  14	2 DZ ED EK EPS ES HLK KS KSV MWYA || CPFR 14
+26	1759	COUNT 18/27	                                                                        CPFR  15	3 N NNN P PW R RA RL RM RZT || CPFR 15
+27	1801	COUNT 25/33	                                                                        CPFR  16	4 S SAVE SHAPE SMALLT,T TE U V WT || CPFR 16
+28	1851	COUNT 18/23	                                                                        CPFR  17	5 X XE Z ZBFR ZLMT SPARE || CPFR 17
+29	1894	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  CPFR  18	COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || CPFR 18
+30	1937	OK	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)  CPFR  19	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) || CPFR 19
+31	1980	OK	      COMMON /TABLES/ MCX， CX(50,10)， GDPST(1J,100)                     CPFR  20	COMMON / TABLES/ MCX，CX(50,10)，GDPST(1J,100) || CPFR 20
+32	2024	OK	C                                                                       CPFR  21	C || CPFR 21
+33	2065	OK	      DIMENSION Y(200),CG(200)                                          CPFR  22	DIMENSION Y(200),CG(200) || CPFR 22
+34	2108	OK	      EQUIVALENCE (Y(1),GDPST(1))， (CG(1),GDPST(201))                   CPFR  23	EQUIVALENCE (Y(1),GDPST(1))，(CG(1),GDPST(201)) || CPFR 23
+35	2152	OK	C                                                                       CPFR  24	C || CPFR 24
+36	2194	COUNT 41/23	                                                                        CPFR  25	903 FORMAT (1H1//////////////////////////// || CPFR 25
+37	2238	COUNT 38/36	                                                                        CPFR  26	1 20X30HNEGATIVE PARTICLE DENSITY //////// || CPFR 26
+38	2281	COUNT 150/44	                                                                        CPFR  27	758 FORMAT(1H124X73H * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || CPFR 27
+39	2323	COUNT 35/49	                                                                        CPFR  28	1 22X, 76HP ARTICLE SETTLING RATES ARE INA || CPFR 28
+40	2367	OK	     2CCURATE.  DAVIES NUMEER IS TOO LARGE FOR THE I3, 8H TH SIZE// 24X,CPFR  29	2CCURATE. DAVIES NUMEER IS TOO LARGE FOR THE I3, 8H TH SIZE// 24X, || CPFR 29
+41	2411	COUNT 4/35	                                                                        CPFR  30	3 73H || CPFR 30
+42	2452	COUNT 9/11	                                                                        CPFR  31	4 * * * * // // || CPFR 31
+43	2496	OK	C                                                                       CPFR  32	C || CPFR 32
+44	2539	COUNT 1/71	                                                                        CPFR  33	C || CPFR 33
+45	2581	OK	C                                                                       CPFR  34	C || CPFR 34
+46	2624	OK	C                                      TEST FOR IMPOSSIBLE PARTICLE     CPFR  35	C TEST FOR IMPOSSIBLE PARTICLE || CPFR 35
+47	2667	OK	      DO 951 J=1,NDSTR                                                  CPFK  36	DO 951 J=1,NDSTR || CPFK 36
+48	2710	COUNT 16/18	                                                                        LPF-  37	IF(Y(J)) 902,91,9 || LPF- 37
+49	2755	COUNT 5/6	9:1        1CONTINU                                                             	9:11 CONTINU || LPFQ ?
+50	2798	COUNT 5/6	                                                                        LPFR  39	GO TO 9 || LPFR 39
+51	2839	COUNT 20/19	                                                                        CPFR  40	9.12 WRITE(ISOUT,:03) || CPFR 40
+52	2881	OK	      MWYA = 3                                                          CPFR  41	MWYA = 3 || CPFR 41
+53	2924	OK	      GO TO 008                                                         CPFR  42	GO TO 008 || CPFR 42
+54	2968	OK	900        CONTINUE                                                     CPFR  43	900 CONTINUE || CPFR 43
+55	3011	OK	C                                                                       CPFR  44	C || CPFR 44
+56	3054	OK	C     COMPUTE PARTICLE FALLOUT RATES                                    CPFR  45	C COMPUTE PARTICLE FALLOUT RATES || CPFR 45
+57	3110	OK	                                      74                                        	74
+58	3267	COUNT 3/46;COUNT 3/2	                                                                                	___ || ---

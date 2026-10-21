@@ -1,0 +1,64 @@
+1	0	COUNT 3/8	                                                                                	---
+2	23	COUNT 3/25;COUNT 3/1	                                                                                	--- || ---
+3	540	COUNT 11/12	                                                                        SRTCN  1	DECK, SRTCNT || SRTCN 1
+4	583	OK	      SUBROUTINE SRTCNT( X, Y, CNT, K, CRDLBL)                          SRTCN  2	SUBROUTINE SRTCNT( X, Y, CNT, K, CRDLBL) || SRTCN 2
+5	618	OK	C                                                                       SRTCN  3	C || SRTCN 3
+6	668	OK	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979        SRTCN  4	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - MARCH 1979 || SRTCN 4
+7	713	OK	C                                                                       SRTCN  5	C || SRTCN 5
+8	753	COUNT 1/71	                                                                        SRTCN  6	C || SRTCN 6
+9	796	OK	C                                                                       SRTCN  7	C || SRTCN 7
+10	840	OK	C     GIVEN AN UNOKDERED SET OF CONTOUR POINTS. THE POINTS ARE          SRTCN  8	C GIVEN AN UNOKDERED SET OF CONTOUR POINTS. THE POINTS ARE || SRTCN 8
+11	882	OK	C     SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLCSEST POINT TO  SRTCN  9	C SEQUENCED SUCH THAT EACH SUCCESSOR POINT IS THE CLCSEST POINT TO || SRTCN 9
+12	925	OK	C     ITS PREDECESSOR.  EACH CLOSED CONTOUR IS SEGREGATED.              SRTCN 10	C ITS PREDECESSOR. EACH CLOSED CONTOUR IS SEGREGATED. || SRTCN 10
+13	970	OK	C                                                                       SRTCN 11	C || SRTCN 11
+14	1011	COUNT 8/70	                                                                        SRTCN 12	GLOSSARY || SRTCN 12
+15	1056	OK	C                                                                       SRTCN 13	C || SRTCN 13
+16	1099	COUNT 20/21	                                                                        SRTCN 14	C X,Y POINT CCURDINATES || SRTCN 14
+17	1140	OK	C        CNT  -    CONTOUR VALUE                                        SRTCN 15	C CNT - CONTOUR VALUE || SRTCN 15
+18	1185	OK	C        K    -    NUMBER CF POINTS                                     SRTCN 16	C K - NUMBER CF POINTS || SRTCN 16
+19	1228	OK	C        XX.YY-    FIRST PCINT ON A CONTOUR                             SRTCN 17	C XX.YY- FIRST PCINT ON A CONTOUR || SRTCN 17
+20	1270	OK	C        XP.YP-    MOST RECENTLY FOUND POINT ON A CONTCUR               SRTCN 18	C XP.YP- MOST RECENTLY FOUND POINT ON A CONTCUR || SRTCN 18
+21	1317	OK	C                                                                       SRTCN 19	C || SRTCN 19
+22	1359	COUNT 1/70	                                                                        SRTCN 20	C || SRTCN 20
+23	1401	OK	C                                                                       SRTCN 21	C || SRTCN 21
+24	1443	OK	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,SRTCN 22	COMMON / CONDAT/ IC(20) ,IHOB ,IPNCH ,IPOUT , || SRTCN 22
+25	1486	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,SRTCN 23	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,LTAPE , || SRTCN 23
+26	1529	COUNT 25/29	                                                                        SRTCN 24	2 MARRAY MBTAPE MXREQ SO IN FAM || SRTCN 24
+27	1572	OK	      DIMENSION X(300), Y(300)                                          SRTCN 25	DIMENSION X(300), Y(300) || SRTCN 25
+28	1617	COUNT 31/30	                                                                        SRTCN 26	DATA CLR. PROGRAM/ 1.E30. 6HSRTCNT/ || SRTCN 26
+29	1651	OK	      DATA CODE/ 6HDELFIC/                                              SRTCN 27	DATA CODE/ 6HDELFIC/ || SRTCN 27
+30	1701	COUNT 36/30	                                                                        SRTCN 28	V E C ( A, B, C, D ) = ( A - C ) ^ { * * } 2 + ( B - D ) ^ { * * } 2 || SRTCN 28
+31	1745	OK	      ILOOP=0                                                           SRTCN 29	ILOOP=0 || SRTCN 29
+32	1787	OK	   40 IF( K .GT. 3) GO TO 55                                            SRTCN 30	40 IF(K.GT.3) GO TO 55 || SRTCN 30
+33	1829	COUNT 17/16	                                                                        SRTCN 31	WRITE (ISOUT, 3000) || SRTCN 31
+34	1874	OK	      00 5C I=1,K                                                       SRTCN 32	00 5C I=1,K || SRTCN 32
+35	1915	OK	      WRITE( ISOUT, 1060) CNT,X(I), Y(I)                                SRTCN 33	WRITE( ISOUT, 1060) CNT, X(I), Y(I) || SRTCN 33
+36	1959	OK	   50 IF(IPNCH .GT. J) WRITE(IPNCH,2000)CNT, X(I),Y(I),CRULBL, CODE     SRTCN 34	50 IF(IPNCH .GT. J) WRITE(IPNCH,2000)CNT, X(I),Y(I),CRULBL,CODE || SRTCN 34
+37	2002	OK	      IF(IPNCH .GT. 1) WRITE(IPNCH,21J0)CNT. X(1),Y(1),CRDLBL, CODE     SRTCN 35	IF(IPNCH .GT. 1) WRITE(IPNCH,21J0)CNT. X(1),Y(1),CRDLBL,CODE || SRTCN 35
+38	2036	OK	      WRITE(ISOUT, 1600)  CNT,X(1); Y(1)                                SRTCN 36	WRITE(ISOUT,1600) CNT,X(1); Y(1) || SRTCN 36
+39	2089	OK	      RETURN                                                            SRTCN 37	RETURN || SRTCN 37
+40	2133	OK	CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWC-POINT CLOSURE    SRTCN 38	CHECK POINTS AND REARRANGE IF NECESSARY TO AVOID A TWC-POINT CLOSURE || SRTCN 38
+41	2175	OK	   55 ILOOP=ILOOP+1                                                     SRTCN 39	55 ILOOP=ILOOP+1 || SRTCN 39
+42	2218	COUNT 22/21	                                                                        SRTCN 40	IF(ILOOF .GT. V.) GO TO 10G || SRTCN 40
+43	2261	COUNT 29/28	                                                                        SRTCN 41	VEM=VEC(X(1),Y(1),X(2),Y(i2)) || SRTCN 41
+44	2304	OK	      2=H                                                               SRTCN 42	2 = H || SRTCN 42
+45	2349	COUNT 8/9	                                                                        SRTCN 43	CO 6  I=3, K || SRTCN 43
+46	2390	COUNT 42/41	                                                                        SRTCN 44	IF(VEC(X(1),Y(1),X(1),Y(I))) .GT. VEM) GO TC EO || SRTCN 44
+47	2432	OK	      M=I                                                               SRTCN 45	M=I || SRTCN 45
+48	2476	OK	      V=4=VEC(X(1),Y(1),X(I),Y(I))                                      SRTCN 46	V=4=VEC(X(1),Y(1),X(I),Y(I)) || SRTCN 46
+49	2518	OK	   63 CONTINUE                                                          SRTCN 47	63 CONTINUE || SRTCN 47
+50	2560	OK	      00 65 I=2.K                                                       SRTCN 48	00 65 I=2. K || SRTCN 48
+51	2604	OK	      IF(I .EQ. H) GO TO 65                                             SRTCN 49	IF(I .EQ. H) GO TO 65 || SRTCN 49
+52	2648	OK	      IF(VEC(X(M),Y(M),X(I),Y(I)) ).LE .VEM )G OT O1C                   SRTCN 50	IF (VEC(X(M),Y(M),X(I),Y(I))) .LE. VEM) GO TO 1C || SRTCN 50
+53	2690	OK	   65 CONTINUE                                                          SRTCN 51	65 CONTINUE || SRTCN 51
+54	2737	OK	      XP=X(1)                                                           SRTCN 52	XP = X(1) || SRTCN 52
+55	2779	OK	      YP=Y(1)                                                           SRTCN 53	YP=Y(1) || SRTCN 53
+56	2820	OK	      00 7. I=2.K                                                       SRTCN 54	00 7. I=2. K || SRTCN 54
+57	2864	OK	      X(I-1)=X(I)                                                       SRTCN 55	X ( I - 1 ) = X ( I ) || SRTCN 55
+58	2907	COUNT 19/13	                                                                        SRTCN 56	73  \vee ( I - 1 ) = \vee ( I ) || SRTCN 56
+59	2950	OK	      X(K)=XP                                                           SRTCN 57	X (K) = X P || SRTCN 57
+60	2991	OK	      Y(K)=YP                                                           JRTCN 58	Y ( K ) = Y P || JRTCN 58
+61	3035	OK	      GO TO 35                                                          SRTCN 59	GO TO 35 || SRTCN 59
+62	3078	OK	COMPENCE CALCULATION OF A CONTOUR CLOSURE                               SRTCN 50	COMPENCE CALCULATION OF A CONTOUR CLOSURE || SRTCN 50
+63	3143	OK	                                        168                                     	168
+64	3299	COUNT 18/42;COUNT 3/8	                                                                                	the estate of the said || ---

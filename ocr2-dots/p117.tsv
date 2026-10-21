@@ -1,0 +1,16 @@
+1	6	COUNT 0/7	                                                                                	
+19	1243	OK	      COMMON /PARCL/  CROSS,DOWN,DWAF,EDDY,NUATP,PMAS,PSTZ,RHOP,RWAF,           	COMMON /PARCL/ CROSS,DOWN,DWAF,EDDY,NUATP,PMAS,PSTZ,RHOP,RWAF,
+27	1587	OK	      DATA PROGRM/6HOTNINT/                                                     	DATA PROGRM/6HOTNINT/
+30	1714	COUNT 56/58	                                                                                	2 FORMAT 10X. 54INITIALIZATION AND CLOLD RISE MODULE IDENTIFICAT
+41	2180	OK	     1 2H, E12.5,2H, E12.5,10H) (METERS)/42X16:DETONATION TIME ISE12.5,         	1 2H, E12.5, 2H, E12.5, 10H) (METERS)/42X16: DETONATION TIME ISE12.5,
+44	2316	COUNT 204/50	                                                                                	23 FORMAT( 1H1,//51X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+45	2360	COUNT 1/16	                                                                                	1
+46	2395	OK	     DE P A R T M E   N T   O F D E F E N   S E F A L LOU   T PRE D I C         	DEPARTMENT OF DEFENSE FALLOUT PREDIC
+47	2443	COUNT 200/47	                                                                                	3T I O N S Y S T E M/51X19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+48	2488	COUNT 45/46	                                                                                	4VE TRANSPORT MODULE// 55X, 11HPREPARED BY/ 46%, 30H
+50	2574	OK	     677/4 1X,4  0H+++++S  UMMARYO FR UNI DENTIFIERS+  +++++)                   	677/41X, 40H+++++ SUMMARY OF RUN IDENTIFIERS ++++++)
+53	2704	OK	     2ION NET SPACING IS E12.5, 16H (ALL IN METERS))                            	2ION NET SPACING IS E 12.5, 16H (ALL IN METERS))
+55	2790	COUNT 56/57	                                                                                	43 FORMAT(15X,28HFALLOUT PARTICLE DENSITY IS E12.5,8H KG/M**3.
+56	2834	COUNT 38/39	                                                                                	1 12H THERE ARE 15, 22H PARTICLE SIZE CLASSES)
+57	2869	COUNT 57/59	                                                                                	45 FORMAT(15X, 36HPARTICLE PROCESSING BEGINS WITH THE 16, 12H TH P4
+62	3091	COUNT 41/42	                                                                                	49 FORMAT(1H+, 34X, 21PLAYER-BY-LAYER METHOD)

@@ -1,0 +1,14 @@
+1	14	COUNT 0/18	                                                                                	
+2	80	COUNT 0/7	                                                                                	
+32	1814	OK	   4  FORMAT( //25X, 28H****  BASIC PARAMETERS  ****/ 20X, 24HYIELDS - T        	4 FORMAT( //25X, 28H**** BASIC PARAMETERS ****/ 20X, 24HYIELDS - T
+36	1979	OK	     4 13HSOIL CATEGORY)                                                        	4 13HSOIL CATEGORY)
+37	2029	COUNT 29/28	                                                                                	5 FORMAT(1H+,.65X,9HSILICEOLS)
+39	2115	OK	 7    FORMAT( /20X,             36HPARTICLE SIZE FREQUENCY DISTRIBUTION/        	7 FORMAT ( /20X, 36HPARTICLE SIZE FREQUENCY DISTRIBUTION/
+43	2288	COUNT 31/30	                                                                                	8 FORMAT (1H+,.65X.11HTHE PROGRAM)
+47	2452	OK	     1 (MODEL                               )                                   	1 (MODEL)
+50	2588	COUNT 62/61	                                                                                	10NDS ****/ 20X,23HAVERAGE GAS TEMPERATURE38X, E12.5, 2X, 14H0DEGREES
+55	2804	COUNT 59/60	                                                                                	14 FORMAT( //25X37H**** INITIAL CLOUD PROPERTIES AT H +E12.5.14H SEC
+56	2845	OK	     10NDS  ****/ 20X,23HAVERAGE GAS TEMPERATURE38X,E12.5,2X,14HDEGREES         	10NDS ****/ 20X, 23HAVERAGE GAS TEMPERATURE38X, E12.5, 2X, 14HDEGREES
+60	3019	COUNT 44/47	                                                                                	16 FORMAT ( 1H1. 50X, 19H* * * * * * * * */55X,11HD E L F I C/
+61	3063	COUNT 1/15	                                                                                	1
+64	3292	COUNT 0/5	                                                                                	

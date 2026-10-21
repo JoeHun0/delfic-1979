@@ -1,0 +1,24 @@
+1	1	COUNT 3/14	                                                                                	---
+3	527	OK	     2SIGY0(100),SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100  ),YPRP    L         	2SIGY0(100),SINA ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRPL
+4	572	COUNT 15/17	                                                                                	3YPRMU ZPAR(100)
+5	608	COUNT 30/28	                                                                                	COMMON /RUNDAT/ C ,CF6 ,FSUP ,ICTR ,
+8	737	COUNT 56/54	                                                                                	COMMON/FISHIN/ABEGN(700),ABUNDO(700),BRANCH(130),CAPFIS,
+20	1260	COUNT 20/21	                                                                                	FORMAT (A6,4X,2F10.3)
+23	1379	COUNT 57/58	                                                                                	6 FORMAT( / 30X, 56HSO1L INCUED ACTIVITY - NEUTRONS EMITTED PER FISS
+27	1560	COUNT 24/25	                                                                                	1E OF F7.1.4H AT F8.4.5H SEC.
+29	1637	COUNT 43/44	                                                                                	/41X16HFISSION YIELD 1S,1PE12.4,10H KILCTONS.)
+35	1904	COUNT 28/32	                                                                                	1HE FOLLOWING VALUES / 19X，2014)
+39	2075	COUNT 37/39	                                                                                	1 42X，10NOCZCNTALI5，10X，10HVERTICAL I3)
+40	2118	COUNT 52/53	                                                                                	26 FORMAT(15X,4HFAR,8X,4HYFAR,8X,4HZPAR,8X,4HTPAR,7X,
+41	2154	COUNT 51/50	                                                                                	1. 5HSIGX0，7X，5HSIGY0，8X，2HR0，9X，4HPSIZ，8X，4HPMAS//)
+42	2204	COUNT 120/47	                                                                                	20 FORMAT( 1H1, 50X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+43	2240	COUNT 16/17	                                                                                	12X1C1HT HE DEPART
+45	2322	COUNT 118/48	                                                                                	3 N S Y S T E M, // 51X, 19H * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+46	2374	COUNT 62/63	                                                                                	4 CESSOR MODULE//55X,11HPREPARED BY/45X,30HATMOSPHERIC SCIENCE ASSO
+51	2583	COUNT 54/53	                                                                                	37 FORMAT(1)X. 43HNUMBER OF FALLOUT PARCELS IN THIS BLOCK IS I4)
+52	2626	COUNT 47/48	                                                                                	FORMAT(46H NO MAPS. THIS RUN FOR TAPE IFOUT PRINT ONLY.)
+53	2669	COUNT 57/58	                                                                                	40 FORMAT(//25X, 63HTHIS IS AN AIRBURST. PARTICLE ACTIVITIES ARE 3
+54	2711	OK	     10MPUTED BY PAMA / 30X. 11HSCALED H08=E12.5, 7H (FEET))                    	10MPUTED BY PAMA / 30X. 11HSCALED H08=E12.5, 7H (FEET))
+55	2755	COUNT 54/53	                                                                                	+1 FORMAT( /40X, 42HSOIL INDUCED ACTIVITY IS NOT ACCOUNTED FOR)
+56	2799	OK	  4   2FORMAT(1H0 ,11X  ,53HFISSIO NYIEL DI SADJUSTE DB YTH EFRACTION-DO        	42 FORMAT(1H0, 11X, 53HFISSION YIELD IS ADJUSTED BY THE FRACTION-DO
+60	2981	COUNT 10/9	                                                                                	< OUT = IS OUT

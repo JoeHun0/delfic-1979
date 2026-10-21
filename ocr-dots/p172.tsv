@@ -1,0 +1,60 @@
+1	24	COUNT 0/16	                                                                                	
+2	70	COUNT 0/24	                                                                                	
+3	744	OK	  100 XP = X(1)                                                         SRTDN 61	100 XP = X(1) || SRTDN 61
+4	788	COUNT 38/7	                                                                        SRICN 62	\mathcal{Y}P = \mathcal{Y}(\mathcal{Y}1) || S R I C N 62
+5	830	OK	      XX = X(1)                                                         SRTCN 63	XX = X(1) || SRTCN 63
+6	874	COUNT 0/7	                                                                        SRTCN 64	 || SRTCN 64
+7	918	COUNT 0/4	                                                                        SRTCN 65	 || SRTCN 65
+8	959	OK	      VEH = VEC(XP, YP, X(2), Y(2))                                     SRTCN 66	VEH = VEC(XP, YP, X(2), Y(2)) || SRTCN 66
+9	1003	OK	      M = 2                                                             SRTCN 67	M = 2 || SRTCN 67
+10	1046	OK	      WRITE(ISOUT, 3000)                                                SRTCN 68	WRITE(ISOUT, 3000) || SRTCN 68
+11	1090	OK	      WRITE( ISOUT, 1000) CNT, XP, YP                                   SRTCN 59	WRITE( ISOUT, 1000) CNT, XP, YP || SRTCN 59
+12	1133	OK	      IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XP,  YP,  CHOLBL, CODE     SRTON 70	IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XP, YP, CHOLBL, CODE || SRTON 70
+13	1178	OK	      L = 3                                                             SRTGN 7:	L = 3 || SRTGN 7:
+14	1220	COUNT 0/13	                                                                        SRTCN 72	 || SRTCN 72
+15	1261	OK	      IF(X(I) .EQ. CLR) GO TO 700                                       SRTCN 73	IF(X(I) .EQ. CLR) GO TO 700 || SRTCN 73
+16	1304	OK	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 700                 SRTON 74	IF ( VEC( XP, YP, X(I), Y(I)) .GT. VEM) GO TO 700 || SRTON 74
+17	1349	OK	      M = I                                                             SRTCN 75	M = I || SRTCN 75
+18	1390	OK	      VEM = VEC( XP, YP, X(I), Y(I))                                    SRTCN 76	VEM = VEC(XP, YP, X(I), Y(I)) || SRTCN 76
+19	1434	OK	  700 CONTINUE                                                          SRTCN 77	700 CONTINUE || SRTCN 77
+20	1476	OK	  701 XP = X(M)                                                         SRTCN 78	701 XP = X(M) || SRTCN 78
+21	1519	COUNT 25/7	                                                                        SRTCN 79	\mathrm{YP} = \mathrm{Y(M)} || SRTCN 79
+22	1562	OK	      X(M) = CLR                                                        SRTCN 30	X(M) = CLR || SRTCN 30
+23	1605	OK	      WRITE( ISOUT, 1000) CNT, XP, YP                                   SRTCN d1	WRITE(ISOUT, 1000) CNT, XP, YP || SRTCN d1
+24	1649	COUNT 51/52	                                                                        SRTON &2	IF(IPNCH .GT. 0) WRITE(IPNCH,20JUCNT, XP, YP, CROLBL, CODE || SRTON &2
+25	1692	OK	  702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 750                     SRTCN 83	702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 750 || SRTCN 83
+26	1735	OK	      L= 1                                                              SRTCN 84	L = 1 || SRTCN 84
+27	1779	COUNT 0/7	                                                                        SRTCN 35	 || SRTCN 35
+28	1821	OK	  765 00 710 I=1.K                                                      SRTCN 36	765 00 710 I=1.K || SRTCN 36
+29	1862	OK	      IF( X(I) .EQ. CLR) GC TO 710                                      SRTCN 87	IF ( X(I) .EQ. CLR) GC TO 710 || SRTCN 87
+30	1905	OK	      VEM= VEC( XP, YP, X(I), Y(I))                                     SRTCN 88	VEM = VEC(XP, YP, X(I), Y(I)) || SRTCN 88
+31	1949	OK	      M = I                                                             SRTON 69	M = I || SRTON 69
+32	1991	OK	      GO TO 600                                                         SRTCN 9J	GO TO 600 || SRTCN 9J
+33	2034	OK	  710 CONTINUE                                                          SRTCN 91	710 CONTINUE || SRTCN 91
+34	2077	OK	      CALL ERROR( PROGRM, -710, ISOUT)                                  SRTCN 92	CALL ERROR( PROGRM, -710, ISOUT) || SRTCN 92
+35	2119	OK	  750 IF( KK .EQ. K) RETURN                                             SRTCN 93	750 IF ( KK .EQ. K ) RETURN || SRTCN 93
+36	2161	OK	COMMENCE INITIALIZATION FOR ANOTHER CLOSURE.                            SRTON 94	COMMENCE INITIALIZATION FOR ANOTHER CLOSURE. || SRTON 94
+37	2206	OK	CONDENSE REMAINING POINTS INTO LOWER CORE.                              SRTCN 95	CONDENSE REMAINING POINTS INTO LOWER CORE. || SRTCN 95
+38	2249	OK	      KP=K-KK                                                           SRTCN 96	KP = K - KK || SRTCN 96
+39	2294	OK	      KKP=KP+1                                                          SRTCN 37	KKP = KP + 1 || SRTCN 37
+40	2336	COUNT 0/7	      DO 770 I=1,KP                                                             	DO 770 I=1, KP || 
+41	2376	OK	      IF(X(I) .NE. CLR) GC TO 770                                       SRTCN 99	IF(X(I) .NE. CLR) GC TO 770 || SRTCN 99
+42	2421	OK	      00 760 J=KKP,K                                                    SRICNI.I	00 760 J=KKP,K || SRICNI.I
+43	2465	OK	      IF(X(J) .EQ. CLR) GC TO 76.                                       SRTCN1:1	IF(X(J) .EQ. CLR) GC TO 76. || SRTCN1:1
+44	2507	OK	      X(I)=X(J)                                                         SRTCN1.2	X(I) = X(J) || SRTCN1.2
+45	2551	OK	      Y(I)=Y(J)                                                         SRTCN1.3	Y(I) = Y(J) || SRTCN1.3
+46	2594	OK	      x(j)=CLR                                                          SRTCN1.4	x(j)=CLR || SRTCN1.4
+47	2636	OK	      GO TO 758                                                         SRTCN1:5	GO TO 758 || SRTCN1:5
+48	2680	OK	  760 CONTINUE                                                          SRTON1:6	760 CONTINUE || SRTON1:6
+49	2724	OK	  765 CALL ERROR(PROGRN,-745,ISOUT)                                     SRTON107	765 CALL ERROR(PROGRN, -745, ISOUT) || SRTON107
+50	2768	OK	  768 KKP=J+1                                                           SRTCN1.8	768 KKP = J + 1 || SRTC N1.8
+51	2812	OK	  770 CONTINUE                                                          SRTCN109	770 CONTINUE || SRTCN109
+52	2854	OK	      ILOOP=0                                                           SRTON1:0	ILOOP=0 || SRTON1:0
+53	2895	COUNT 0/4	                                                                        SRTCN111	 || SRTCN111
+54	2937	COUNT 0/8	      GO TO 40                                                                  	GO TO 40 || 
+55	2980	OK	 1000 FORMAT( 5X. 3F10.0)                                               SRTCN1:3	1000 FORMAT ( 5X. 3F10.0) || SRTCN1:3
+56	3021	OK	 2600 FORMAT( 3F10.0, 10X, A10, 10X, A6)                                SRTCN114	2600 FORMAT ( 3F10.0, 10X, A10, 10X, A6) || SRTC N114
+57	3064	COUNT 0/8	 3000 FORMAT(1H0)                                                               	3000 FORMAT (1H0) || 
+58	3112	OK	      END                                                               SRTCN116	END || SRTCN116
+59	3153	COUNT 3/2	                                                                                	169
+60	3289	COUNT 0/19;COUNT 0/5	                                                                                	 || 

@@ -1,0 +1,65 @@
+1	10	57	NOISE	                                                                        			
+2	119	136	NOISE	                                                                        			
+3	600	635	AGREE	     §-19609948164, 19610210308, 19610472452, 19610734596, 19610996740, 		dots=     §-19609948164, 19610210308, 19610472452, 19610734596, 19610996740, ## dots2=     §-19609948164, 19610210308, 19610472452, 19610734596, 19610996740,	PAM1541
+4	644	678	SINGLE	     § 19611258884, 19611516932,-19744428036, 19744690180, 19744952324, 		dots=     § 19611258884, 19611516932,-19744428036, 19744690180, 19744952324,	PAM1542
+5	686	721	TIE	     § 19745214468, 19745476612, 19745738756, 19746000900, 19746258948, 	71	dots=     § 19745214468, 19745476612, 19745738756, 19746000900, 19746258948, ## dots2=     § 19745214468, 19745476612, 19745738756, 19746000900, 19746258948.	PAM1543
+6	730	765	SINGLE	     §-19878645764, 19878907908, 19879173052, 19879432196, 19879694340, 		dots2=     §-19878645764, 19878907908, 19879173052, 19879432196, 19879694340,	PAM1544
+7	773	808	SINGLE	     § 19879952388,-19880218628, 19880476676,-20013125636, 20013387780, 		dots=     § 19879952388,-19880218628, 19880476676,-20013125636, 20013387780,	PAM1545
+8	808	849	NONE	                                                                        			PAM1546
+9	860	894	TIE	     -20147343364,2 0147605506,2 0147867652,2 01481297 96, 20148387844, 	18,31,44,58,71	lighton=     -20147343364,2 0147605506,2 0147867652,2 01481297 96, 20148387844, ## lighton2=     -20147343364,2 0147605506,2 0147867652,2 01481297 96, 20148387844, ## glm=     -20147343364，2 0147605506，2 0147867652，2 01481297 96， 20148387844， ## glm2=     -20147343364，2 0147605506，2 0147867652，2 01481297 96， 20148387844，	PAM1547
+10	902	937	NONE	                                                                        			PAM1548
+11	945	979	NONE	                                                                        			PAM1549
+12	989	1023	NONE	                                                                        			PAM1550
+13	1031	1066	TIE	     §-20417647650,-20417618466, 20417871876,-20550258692, 20550520836, 	51,54	dots=     §-20417647650,-20417618466, 20417871876,-20550258692, 20550520836, ## dots2=     §-20417647650,-20417618466, 20417871876,-20556256692, 20550520836,	PAM1551
+14	1066	1108	NONE	                                                                        			PAM1552
+15	1117	1151	AGREE	     S-20684738564, 20685000708, 20685262852, 20685524996, 20685783044, 		dots=     S-20684738564, 20685000708, 20685262852, 20685524996, 20685783044, ## dots2=     S-20684738564, 20685000708, 20685262852, 20685524996, 20685783044,	PAM1553
+16	1160	1195	TIE	     8-20686049284, 20686307332,-20818956292, 20819218436, 20819480580, 	6	dots=     8-20686049284, 20686307332,-20818956292, 20819218436, 20819480580, ## dots2=     §-20686049284, 20686307332,-20818956292, 20819218436, 20819480580,	PAM1554
+17	1195	1236	NONE	                                                                        			PAM1555
+18	1246	1279	AGREE	     § 20953698308, 20953960452, 20954222596, 20954484740, 20954742788, 		dots=     § 20953698308, 20953960452, 20954222596, 20954484740, 20954742788, ## dots2=     § 20953698308, 20953960452, 20954222596, 20954484740, 20954742788,	PAM1556
+19	1289	1323	TIE	     8-21087653892, 21087916036, 21088178180, 21088440324, 21088702468/ 	64	dots=     8-21087653892, 21087916036, 21088178180, 21088440324, 21088702468/ ## dots2=     8-21087653892, 21087916036, 21088178180, 21088440324, 21086702468/	PAM1557
+20	1332	1365	AGREE	      DATA (NUCLIO(I),I=666,700)/                                       		lighton=      DATA (NUCLIO(I),I=666,700)/ ## dots=      DATA (NUCLIO(I),I=666,700)/ ## glm=      DATA (NUCLIO(I),I=666,700)/	PAM1558
+21	1375	1409	NONE	                                                                        			PAM1559
+22	1418	1453	AGREE	     § 21222920196, 21223178244,-21356351492, 21356613636, 21356875760, 		dots=     § 21222920196, 21223178244,-21356351492, 21356613636, 21356875760, ## dots2=     § 21222920196, 21223178244,-21356351492, 21356613636, 21356875760,	PAM1560
+23	1453	1494	AGREE	     § 21357137924, 21357400068, 21357658116,-21496569220, 21498831364, 		dots=     § 21357137924, 21357400068, 21357658116,-21496569220, 21498831364, ## dots2=     § 21357137924, 21357400068, 21357658116,-21496569220, 21498831364,	PAM1561
+24	1503	1537	NONE	                                                                        			PAM1562
+25	1547	1580	AGREE	     §-21624766948, 21625049092, 21625311236, 21625573380, 21625835524, 		dots=     §-21624766948, 21625049092, 21625311236, 21625573380, 21625835524, ## dots2=     §-21624766948, 21625049092, 21625311236, 21625573380, 21625835524,	PAN1563
+26	1580	1622	NONE	                                                                        			PAM1564
+27	1631	1665	NONE	                                                                        			PAM1565
+28	1676	1708	AGREE	      DATA (MULT  (I),I=1,11   )/                                       		lighton=      DATA (MULT  (I),I=1,11   )/ ## dots=      DATA (MULT  (I),I=1,11   )/ ## glm=      DATA (MULT  (I),I=1,11   )/	PAM1566
+29	1716	1751	NONE	                                                                        			PAM1567
+30	1759	1793	SINGLE	     §      262144,     2097152,    16777216,   134217728,  1073741824, 		dots=     §      262144,     2097152,    16777216,   134217728,  1073741824,	PAM1568
+31	1805	1836	NONE	                                                                        			PAM1569
+32	1847	1880	VOTED	      DATA IBRA,INUC,KRM,LMAX,MAXNUC/                                   		lighton=      DATA IBRA,INUC,KRM,LMAX,MAXNUC/ ## dots=      DATA IBRA,INUC,KRM,LPAX,MAXNUC/ ## glm=      DATA IBRA,INUC,KRM,LMAX,MAXNUC/	PAM1570
+33	1888	1923	NONE	                                                                        			PAM1571
+34	1931	1964	NOISE	                                                                        			PAM1572
+35	1977	2006	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1573
+36	2020	2050	AGREE	   13 FORMAT(A6)                                                        		lighton=   13 FORMAT(A6) ## dots=   13 FORMAT(A6) ## glm=   13 FORMAT(A6)	PAM1574
+37	2064	2094	VOTED	   14 FORMAT((5E14.6))                                                  		lighton=   14 FORMAT((SE14.6)) ## dots=   14 FORMAT((5E14.6)) ## glm=   14 FORMAT((5E14.6))	PAM1575
+38	2106	2134	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1576
+39	2148	2178	COMMENT	C     SEARCH FOR KIND OF FISSICN TO USE                                 		lighton=C     SEARCH FOR KIND OF FISSICN TO USE ## glm=C     SEARCH FOR KIND OF FISSICN TO USE	PAM1577
+40	2195	2222	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1578
+41	2232	2265	VOTED	      00 300 I=1,12                                                     		lighton=      00 300 I=1,12 ## dots=      00 300 I=1,12 ## glm=      00 300 I=1.12	PAM1579
+42	2277	2307	VOTED	      IF (FISSID.EQ.TYPE(I)) GO TO 305                                  		lighton=      IF (FISSIO.EQ.TYPE(I)) GO TO 305 ## dots=      IF (FISSID.EQ.TYPE(I)) GO TO 305 ## glm=      IF (FISSID.EQ.TYPE(I)) GO TO 305	PAM1580
+43	2322	2352	COMMENT	300   CONTINUE                                                          		glm=300   CONTINUE	PAM1581
+44	2364	2393	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1582
+45	2406	2437	COMMENT	C     FISSION TYPE REQUESTED IS NOT IN TABLE--FRINT ERROR               		lighton=C     FISSION TYPE REQUESTED IS NOT IN TABLE--FRINT ERROR ## dots=C     FISSION TYPE REQUESTED IS NOT IN TABLE--PRINT ERROR ## glm=C     FISSION TYPE REQUESTED IS NOT IN TABLE--FRINT ERROR	PAM1583
+46	2453	2480	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1584
+47	2493	2526	AGREE	      WRITE (KOUT,6C00) FISSIO                                          		lighton=      WRITE (KOUT,6C00) FISSIO ## glm=      WRITE (KOUT,6C00) FISSIO	PAM1585
+48	2534	2569	TIE	 6CJ0 FORMAT(1H0, 17HFISSION DATA FOR A6, 30H TYPE FISSION IS NOT AVAILA	17,41	lighton= 6CJ0 FORMAT(1H0, 17HFISSION DATA FOR A6, 30H TYPE FISSION IS NOT AVAILA ## lighton2= 6CJ0 FORMAT(1H0, 17HFISSION DATA FOR A6, 30H TYPE FISSION IS NOT AVAILA ## glm= 6CJ0 FORMAT(1H0. 17HFISSION DATA FOR A6. 30H TYPE FISSION IS NOT AVAILA ## glm2= 6CJ0 FORMAT(1H0. 17HFISSICN DATA FOR A6. 30H TYPE FISSION IS NOT AVAILA	PAM1566
+49	2582	2613	VOTED	     18LE)                                                              		lighton=     18L5) ## dots=     18LE) ## glm=     1BLE)	PAM1587
+50	2621	2653	VOTED	      CALL ERROR(6H PAP1 ,-6300, ISOUT)                                 		lighton=      CALL ERROR(6H PAP1 ,-6300, ISOUT) ## dots=      CALL ERROR(6H PAR1 ,-6300, ISOUT) ## glm=      CALL ERROR(6H PAP1 ,-6300, ISOUT)	PAM1588
+51	2667	2695	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	FAM1589
+52	2708	2738	COMMENT	C     TYPE FISSION REQUESTED FCUNJ IN TABLES                            		lighton=C     TYPE FISSION REQUESTED FCUNJ IN TABLES ## dots=C     TYPE FISSION REQUESTED FOUND IN TABLES ## glm=C     TYPE FISSION REQUESTED FCUNJ IN TABLES	PAM1590
+53	2753	2781	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1591
+54	2793	2824	COMMENT	C     LOAD THIS DATA INTO ABEGN                                         		lighton=C     LOAD THIS DATA INTO ABEGN ## glm=C     LOAD THIS DATA INTO ABEGN	PAM1592
+55	2838	2867	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1593
+56	2880	2908	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAH1594
+57	2923	2952	VOTED	 3C5  CONTINUE                                                          		lighton= JCS  CONTINUE ## lighton2= 3C5  CONTINUE ## glm= 3C5  CONTINUE ## glm2= 3C5  CONTINUE	
+58	2970	2997	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAM1596
+59	3009	3040	COMMENT	C     LOAD TAPE  DATA FOR REQUESTED FISSION TYPE INTO ABEGN             		lighton=C     LOAD TAPE  DATA FOR REQUESTED FISSION TYPE INTO ABEGN ## dots=C     LOAD TAPE  DATA FOR REQUESTED FISSION TYPE INTO ABEGN ## glm=C     LOAD TAPE  DATA FOR REQUESTED FISSION IYFL INTO ABEGN	PAMI597
+60	3056	3082	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	PAN1594
+61	3097	3126	VOTED	      OC 3'6 I=1.12                                                     		lighton2=      OC 3'6 I=1.12 ## dots=      00 3'6 I=1.12 ## dots2=      00 3'6 I=1.12 ## glm=      OC 316 I=1.12 ## glm2=      OC 316 I=1.12	PAN1599
+62	3140	3170	SINGLE	      READ(INTP.13) NAME                                                		glm2=      READ(INTP.13) NAME	
+63	3198	3228	NOISE	                                                                        		lighton=                                        ::3	
+64	3313	3340	NONE	                                                                        			
+65	3340	3387	NOISE	                                                                        			

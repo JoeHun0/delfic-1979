@@ -1,0 +1,10 @@
+8	680	OK	  240 IF(NHOUO .GT. 3) RETURN                                                   	240 IF(NHOUO .GT. 3) RETURN
+30	1937	OK	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)          	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)
+36	2194	COUNT 25/23	                                                                                	903 FORMAT (1H1 // // // // // //
+38	2281	COUNT 19/44	                                                                                	758 FORMAT(1H124X73H
+39	2323	COUNT 35/49	                                                                                	1 22X, 76HP ARTICLE SETTLING RATES ARE INA
+41	2411	COUNT 4/35	                                                                                	3 73H
+42	2452	COUNT 10/11	                                                                                	4 * * * * / / / / /
+47	2667	OK	      DO 931 J=1,NOSTR                                                          	DO 931 J=1, NOSTR
+48	2710	COUNT 16/18	                                                                                	IF(Y(J)) 902, 91, 9
+51	2839	COUNT 20/19	                                                                                	9.12 WRITE(ISOUT,:03)

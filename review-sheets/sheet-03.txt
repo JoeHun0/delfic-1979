@@ -1,0 +1,12 @@
+25	p063	61	SINGLE	15	6	     1                                            12X,101HT H E   D E P
+26	p063	64	SINGLE	5	67	                                                                   - - -
+27	p064	1	NONE	13	49	raw: \text{S} \text{M} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N}
+28	p064	4	NONE	45	6	raw: 3T I O N S Y S T E M//51X19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+29	p064	5	TIE	56	6	     4ALIZATION AND CLOUD RISE MODULE///  55X, 11HPREPARED BY/ 46X,  30H
+30	p064	6	TIE	58	6	     5ATMOSPHERIC SCIENCE ASSOCIATES/  54X, 14HBEDFOXD, MASS.////25X,
+31	p064	9	TIE	13	6	     1NCORRECT////
+32	p064	11	SINGLE	37	6	     1FORM BY THE USER (DIAMETERS ARE IN METERS))
+33	p064	17	TIE	62	6	     2E12.5.2X.11HNICROMETERS/30X.28HGEOMETRIC STANDARC DEVIATION, 7X,
+34	p064	22	TIE	32	6	     1HE FOLLOWING VALUES  ****/ 19X, 20I4)
+35	p064	23	TIE	61	4	   27 FORMAT(/20X, 36HPARTICLE MASS FREQUENCY DISTRIBUTION/ 25X, 31HA PO
+36	p064	28	NONE	32	2	raw: 192 FORMAT(//51X,19H* * * * * * * * * *//*)

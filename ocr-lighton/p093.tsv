@@ -1,0 +1,57 @@
+1	7	COUNT 0/21	                                                                                	
+2	413	COUNT 0/4	                                                                        ASTR  34	 || ASTR 34
+3	457	COUNT 0/4	                                                                        RSTR  35	 || RSTR 35
+4	499	OK	      PRZT=RZT                                                          RSTR  36	PRZT=RZT || RSTR 36
+5	543	OK	      00 2 NP=1,NDSTR                                                   RSTR  37	00 2 NP=1,NDSTR || RSTR 37
+6	586	OK	    2 PY(NP)=Y(NP)                                                      KSTR  36	2 PY(NP) = Y(NP) || KSTR 36
+7	628	OK	      GO TO 5                                                           RSTR  39	GO TO 5 || RSTR 39
+8	672	OK	C                                                                       RSTR  40	C || RSTR 40
+9	716	OK	    3 SMALLT=SMALLT-DST                                                 KSTR  41	3 SMALLT=SMALLT-DST || KSTR 41
+10	758	COUNT 0/8	                                                                        RS1R  42	 || RS1R 42
+11	802	OK	      EK=PEK                                                            RSTR  43	EK = PEK || RSTR 43
+12	845	OK	      RM=PRM                                                            RSTR  44	RM = PRM || RSTR 44
+13	887	OK	      S=PSS                                                             RSTR  45	S = PSS || RSTR 45
+14	928	OK	      T=PT                                                              RSTR  46	T = PT || RSTR 46
+15	973	COUNT 0/4	                                                                        RSTR  47	 || RSTR 47
+16	1016	COUNT 0/4	                                                                        RSTR  48	 || RSTR 48
+17	1058	COUNT 0/6	                                                                        RSTR  49	 || RSTR 49
+18	1102	COUNT 0/4;COUNT 7/6	                                                                                	 || F.STR 50
+19	1144	COUNT 0/4	                                                                        RSTR  51	 || RSTR 51
+20	1187	OK	      RZT=PRZT                                                          RSTR  52	RZT = PRZT || RSTR 52
+21	1231	COUNT 33/13	                                                                        RSTR  53	\mathcal{D}0 \quad 4 \quad NP=1,NDSTR || RSTR 53
+22	1273	OK	    4 Y(NP)=PY(NP)                                                      ASTR  54	4 Y(NP) = PY(NP) || ASTR 54
+23	1318	COUNT 0/3	                                                                        RSTR  55	 || RSTR 55
+24	1360	OK	    5 RETURN                                                            RSTR  56	5 RETURN || RSTR 56
+25	1401	OK	      END                                                               RSTR  57	END || RSTR 57
+26	1746	COUNT 11/10	                                                                        RSXP   1	* DECK, R.SXP || RSXP 1
+27	1788	COUNT 6/5	      SUBROUTINE RSXP                                                           	SUBROUTINE RSXP || RS.<P 2
+28	1833	OK	C                                                                       RSxP   3	C || RS xP 3
+29	1875	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     KSXP   4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || KSXP 4
+30	1917	OK	C                                                                       RSXP   5	C || RS XP 5
+31	1958	COUNT 199/71	                                                                        KSXP   6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || KSXP 6
+32	2004	COUNT 6/5	C                                                                               	C || kSXP\ 7
+33	2044	OK	C     AFTER THE DYNAMIC CLOUD RISE HAS BEEN COMPLETED, RSXF PASSES      RSXP   8	C AFTER THE DYNAMIC CLOUD RISE HAS BEEN COMPLETED, RSXF PASSES || RSXP 8
+34	2088	COUNT 57/56	                                                                        RSXP   9	C THROUGH THE RISE HISTORY TABLE, CX, TO RESIMULATE THE RISE FOR THEI || RSXP 9
+35	2119	COUNT 31/6	C     PURPOSE OF DEFINING A DISTRIBUTION IN SPACE ABOVE GZ OF FALLOUT           	C PURPOSE OF DEFINING A DISTRIBUTION IN SPACE ABOVE GZ OF FALLOUT || \mathcal{R}SXP \quad \mathcal{I}J
+36	2173	COUNT 59/58	                                                                        RSXP  11	C     PARCELS THAT ARE TO BE TRANSPORTED DOWNWIND BY SUBSEQUENT MODULES.' || RSXP 11
+37	2217	OK	C     RESULTS ARE WRITTEN CN TAPE IRISE.                                RSXP  12	C RESULTS ARE WRITTEN CN TAPE IRISE. || RSXP 12
+38	2261	OK	C                                                                       RSXP  13	C || RSXP 13
+39	2304	OK	C                                                                       KSXP  14	C || KSXP 14
+40	2347	OK	C     OPST(1,M8T)  TIME                                                 RSXP  15	C OPST(1,M8T) TIME || RSXP 15
+41	2390	OK	C     DPST(2,MBT)  ALTITUDE OF  PARCEL   CENTER OF MASS                 RSXP  16	C DPST(2, MBT) ALTITUDE OF PARCEL CENTER OF MASS || RSXP 16
+42	2433	OK	C     OPSi(3,MBT)  RADIUS                                               RSXP  17	C OPSi(3,MBT) RADIUS || RSXP 17
+43	2476	OK	C     DPST(4,MBT)  PARTICLE DIAMETER MICROMETERS                        RSXP  18	C DPST(4,MBT) PARTICLE DIAMETER MICROMETERS || RSXP 18
+44	2518	COUNT 7/6	C     OPST(5,MBT)  MASS OF ACTIVITY FRACTION                                    	C     OPST(5,MBT)   MASS OF ACTIVITY FRACTION || R.SXP 19
+45	2560	OK	C     DPST(6,MBT)  PARCEL THICKNESS                                     RSXP  20	C DPST(6, MBT) PARCEL THICKNESS || RSXP 20
+46	2598	COUNT 17/6	C     OPST(7,MBT)  ALTITUDE OF PARCEL BASE                                      	C     OPST(7,MBT)   ALTITUDE OF PARCEL BASE || \dot{r} S X P \quad 21
+47	2647	OK	C     OPST(B,MBT)  PARCEL VOLUME                                        RSXP  22	C OPST(B, MBT) PARCEL VOLUME || RSXP 22
+48	2693	OK	C                                                                       KSXP  23	C || KSXP 23
+49	2735	COUNT 319/71	                                                                        RSXP  24	C  \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{C} \text{ || RSXP 24
+50	2779	OK	C                                                                       RSXP  25	C || RSXP 25
+51	2818	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),    RSAP  26	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PRS(256), RLH(256), || RSAP 26
+52	2861	COUNT 21/6	     1        RHO(256), ETA(256), NHODO, Z'(100),  VX(100), VY(100)             	1 RHO(256), ETA(256), NHODO, Z'(100), VX(100), VY(100) || \mathcal{R}SXP \quad 27
+53	2906	COUNT 67/60	                                                                        RSXP  28	COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT, \mathcal{L} ,SLOTMP,TMSD,XGZ,YGZ,TGZ || RSXP 28
+54	2950	COUNT 63/62;COUNT 51/6	                                                                                	COMMON /CONTROL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARI,KUI || \mathcal{R} \mathcal{J} \mathcal{X} \mathcal{P} \quad 29
+55	2992	COUNT 15/6	      COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMFS, VPA                         	COMMON /INITL/ F, PHI, SSAM, TME, .IPG, TMFS, VPA || \text{M. S. A. D.}
+56	3035	COUNT 51/6	      COMMON /PARTCL/ NDSTF,RHCP,DMEAN,SU,PS(2:0),DIAM(201),FMASS(200)          	COMMON /PARTCL/ NDSTF,RHCP,DMEAN,SU,PS(2:0),DIAM(201),FMASS(200) || \mathcal{R} \mathcal{S} \mathcal{X} \mathcal{P} \quad 31
+57	3100	OK	                                       90                                       	90

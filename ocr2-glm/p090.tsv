@@ -1,0 +1,7 @@
+2	49	COUNT 3/14	                                                                                	---
+4	851	OK	      DRM=RMIX*(RM/（1.C-Q6*Q8）)*(RS*RL+(QX*QT*9.8*Q4*U*QXE-EPS)/CP/T/QX*        	DRM=RMI X* (RM/（1. C-Q6*Q8）)*(RS*RL+(QX*QT*9.8*Q4*U*QXE-EPS)/CP/T/QX*
+15	1323	COUNT 55/57	                                                                                	OT=（-QX*QY*Q4*9.8*U/CP*QXE-Q6*DRME/（RMIX*RN）+EPS/CP）*Q9
+31	2010	OK	      DU =  9.8 * (QT*QX*GXE*RMIX-1;) - ( ED1 + DRM/RF ) * U                    	DU = 9.8 * (QT*QX*GXE*RMIX-1;) - (ED1 + DRM/RF) * U
+41	2438	OK	      DS=-(1.+X+S+WT)*S/RP*(CMLR/(S+WT)+DRME/(1.+XE))                           	DS= - (1. + X + S + WT) * S / RP * (CMLR / (S + WT) + DRME / (1. + XE))
+46	2653	COUNT 27/18	                                                                                	IF (EPS)  2 ^ { \circ } 2, + 0. 2, 9 1. 1
+49	2782	COUNT 3/4	                                                                                	END

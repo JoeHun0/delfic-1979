@@ -1,0 +1,63 @@
+1	9	COUNT 0/6;COUNT 0/1	                                                                                	 || 
+2	33	COUNT 0/43	                                                                                	
+3	554	OK	*DECK,CALC                                                              CALC   1	*DECK,CALC || CALC 1
+4	598	OK	      SUBROUTINE CALC(IP,CNAP,NMAP)                                     CALC   2	SUBROUTINE CALC(IP, CNAP, NMAP) || CALC 2
+5	633	COUNT 1/5	C                                                                               	C || 3
+6	683	COUNT 1/23	                                                                        CALC   4	C || CALC 4
+7	727	OK	C                                                                       CALC   5	C || CALC 5
+8	767	COUNT 0/71	                                                                        CALC   6	 || CALC 6
+9	811	OK	C                                                                       CALC   7	C || CALC 7
+10	854	OK	C     THIS SUBROUTINE COMPLTES MAP CONTRIBUTIONS FOR INDIVIDUAL         CALC   8	C THIS SUBROUTINE COMPLTES MAP CONTRIBUTIONS FOR INDIVIDUAL || CALC 8
+11	896	OK	C     FALLOUT PARCELS                                                   CALC   9	C FALLOUT PARCELS || CALC 9
+12	941	OK	C                                                                       CALC  10	C || CALC 10
+13	982	COUNT 8/70	                                                                        CALC  11	GLOSSARY || CALC 11
+14	1025	OK	C                                                                       CALC  12	C || CALC 12
+15	1068	OK	C     NOB          SHALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE  CALC  13	C NOB SHALLEST POSSIBLE Y INDEX OF A CONTRIBUTION ELLIPSE || CALC 13
+16	1112	OK	C     NOL          SMALLEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE  CALC  14	C NOL SMALLEST POSSIBLE X INDEX OF A CONTRIBUTION ELLIPSE || CALC 14
+17	1154	COUNT 4/47	                                                                        CALC  15	C NOR || CALC 15
+18	1196	COUNT 1/47	                                                                        CALC  16	C || CALC 16
+19	1239	COUNT 45/46	                                                                        CALC  17	C      REL          Y COORDINATE OF THE MAP POINT ROW CURRENTLY BEING || CALC 17
+20	1282	OK	C                  ONSIDEREDR ELATIVET OT HEP  ARCELB   Y COORDINATE    CALC  18	CONSIDERED RELATIVE TO THE PARCEL BY COORDINATE || CALC 18
+21	1325	OK	C     XREL         X COORDINATE OF THE MAP POINT     CURRENTLY BEING    CALC  19	C XREL X COORDINATE OF THE MAP POINT CURRENTLY BEING || CALC 19
+22	1369	COUNT 40/41	                                                                        CALC  20	CONSIDERED RELATIVE TO THE PARCEL X COORDINATE || CALC 20
+23	1411	COUNT 1/36	                                                                        CALC  <1	C || CALC <1
+24	1456	COUNT 34/35	                                                                        CALC  22	CONTRIBUTION ELLIPSE IN THE YREL MAF ROW || CALC 22
+25	1500	COUNT 1/37	                                                                        CALC  23	C || CALC 23
+26	1541	COUNT 33/35	                                                                        CALC  24	CONTRIBUTION ELLIPSE IN THE YEL MAP ROW || CALC 24
+27	1585	COUNT 1/37	                                                                        CALC  25	C || CALC 25
+28	1629	COUNT 26/27	                                                                        CALC  26	CONCENTRATION ELLIPSE IN A ROW || CALC 26
+29	1670	COUNT 1/43	                                                                        CALC  27	C || CALC 27
+30	1715	OK	C     VARY2        2.0*GAUSSIAN DISTBN. VARIANCE ALONG B AXIS           CALC  28	C VARY2 2.0*GAUSSIAN DISTBN. VARIANCE ALONG B AXIS || CALC 28
+31	1758	COUNT 2/41	                                                                        CALC  29	C F || CALC 29
+32	1798	COUNT 1/32	                                                                        CALC  50	C || CALC 50
+33	1842	OK	C                                                                       CALC  31	C || CALC 31
+34	1885	COUNT 1/37	                                                                        CALC  32	C || CALC 32
+35	1927	OK	C                                                                       LALC  33	C || LALC 33
+36	1969	COUNT 0/71;COUNT 0/6	                                                                                	 || 
+37	2014	OK	C                                                                       CALC  35	C || CALC 35
+38	2055	OK	      COMMON /CONDAT/       IC(2J)    ,IHUB      ,IPNCH     ,IPOUT     ,CALC  36	COMMON /CONDAT/ IC(2J) ,IHUB ,IPNCH ,IPOUT , || CALC 36
+39	2098	OK	     11SIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAPE     ,LTAPE     ,CALC  37	11SIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE , || CALC 37
+40	2143	COUNT 30/29	                                                                        CALC  3e	240ARRAY ,MBTAPE ,MXREQ ,SD ,INPAN || CALC 3e
+41	2184	OK	      COMMON /MAPDAT/ CAYF .CUTMAP    .DGX       .CGY       .IH  .IV   ,CALC  39	COMMON /MAPDAT/ CAYF .CUTMAP .DGX .CGY .IH .IV , || CALC 39
+42	2228	COUNT 30/29	                                                                        CALC  40	1.00 ,NXMAP ,NYMAP ,NZ ,OCUT ,SSAM . || CALC 40
+43	2272	OK	     2TGZ       ,XGZ       ,X1        ,X2        ,YGZ       ,XMAX      ,CALC  41	2TGZ ,XGZ ,X1 ,X2 ,YGZ ,XMAX , || CALC 41
+44	2313	COUNT 0/6	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN , YMAX , YMIN , ZMIN || 
+45	2356	OK	      COMMON /PARDAT/       ASQ       ,BSQ       ,COSA      ,F         ,CALC  43	COMMON /PARDAT/ ASQ ,BSQ ,COSA ,F , || CALC 43
+46	2399	OK	     1GAMA      ,KTR(100)  ,PMAS(100) ,PSIZ(100) ,FO(100)   ,SIGXO(100),CALD  44	1GAMA ,KTR(100) ,PMAS(100) ,PSIZ(100) ,FO(100) ,SIGXO(100), || CALD 44
+47	2441	COUNT 0/6	     2SIGYO(100).SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,        	2SIGYO(100).SINA ,TPAR(100),XPAR(100),YPAR(100),YPRML , || 
+48	2487	COUNT 6/16;COUNT 0/6	                                                                                	3 Y P R M U || 
+49	2530	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICTR      ,CALC  47	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICTR , || CALC 47
+50	2572	COUNT 0/6	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1MAPRUN ,NE ,NIJ ,NORD ,NREG ,NTASK , || 
+51	2615	OK	     20PMID(12) ,T1        ,T2        ,WFMAS(2..)                       CALC  49	20PMID(12) ,T1 ,T2 ,WFMAS(2..) || CALC 49
+52	2659	OK	      DIMENSION OMAP(NMAP)                                              CALC  50	DIMENSION OMAP(NMAP) || CALC 50
+53	2701	OK	      DATA PROGRM/6HCALC  /                                             CALC  51	DATA PROGRM/6HCALC / || CALC 51
+54	2745	OK	C                                                                       CALC  52	C || CALC 52
+55	2788	OK	C     INITIALIZE FOR THIS PARCEL                                        CALC  53	C      INITIALIZE FOR THIS PARCEL || CALC 53
+56	2831	OK	C                                                                       LALC  54	C || LALC 54
+57	2871	OK	      VARX2= ASQ/GAMA                                                   CALC  55	VAR X2 = ASQ/GAMA || CALC 55
+58	2916	OK	      VARY2= BSQ/GAMA                                                   CALC  56	VARY2= BSQ/GAMA || CALC 56
+59	2957	COUNT 65/37	                                                                        CALC  57	A = \text{SINA} * \text{COSA} * (1.0/\text{VARY2} - 1.0/\text{VARX2}) * 2.0 || CALC 57
+60	3000	COUNT 35/17	                                                                        LALC  58	\beta = 4.0 / \text{VARX2} / \text{VARY2} || LALC 58
+61	3045	COUNT 77/36	                                                                        CALL  59	\text{CC} = (\text{COSA}^{**}2/\text{VARX2} + \text{SINA}^{**}2/\text{VARY2})*2.: || CALL 59
+62	3086	OK	      0 = 2.0*GAMA*CC                                                   CALC  5U	0 = 2.0 * GAMA * CC || CALC 5U
+63	3143	OK	                                        141                                     	141

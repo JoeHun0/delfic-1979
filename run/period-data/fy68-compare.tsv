@@ -1,0 +1,4 @@
+cell	nuclide	yield_1968	ours_1979_x_paths	class	note
+#157	Br-93	.545	0.565	FIX	1979 glyph ambiguous 6/4; LightOn .545; rule prefers .545; with .545 the block total equals ORNL TAPE20 18793.03 exactly
+#302	Pd-110	.826 (card seq 2, out of place)	0.826	same	stable; 1968 tape lists it on a stray card at the start of the FY block
+#467	Te-130	60.0	60.8	1968->1979 change	kept 60.8: with it our total equals ORNL TAPE20 (1979); 60.0 would leave 0.8 short

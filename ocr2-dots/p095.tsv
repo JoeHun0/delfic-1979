@@ -1,0 +1,15 @@
+1	1	COUNT 0/24	                                                                                	
+2	47	COUNT 0/4	                                                                                	
+5	650	OK	      SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.                     	SRTHS = 3.1 * ( CX( MCX,4 ) - CX( MCX,3 ) ) / DFS 1K/600.
+11	899	OK	      KOPS=2*KDPST                                                              	KOPS=2*KDPST
+17	1158	OK	      DO 258 H0=1.KDPS                                                          	DO 258 H0=1.KDPS
+23	1424	COUNT 35/21	                                                                                	MBT = 2^{\lfloor (MB + 1)/2 \rfloor} - MB + 1
+27	1595	OK	      DPST(1,MBT)=CX(1,1)                                                       	DPST(1,MBT)=CX(1,1)
+28	1638	OK	      OPST(3,MBT)=CX(MCX,5)                                                     	OPST(3,MBT)=CX(MCX,5)
+32	1810	OK	  202 DPST(4,MBT)=DTAM(MA+1)                                                    	202 DPST(4, MBT) = DTAM(MA+1)
+35	1938	COUNT 11/7	                                                                                	\beta M = M 3/2
+36	1980	COUNT 93/44	                                                                                	\text{DPST}(2, \text{MBT}) = \text{CX}(1,3) + (\text{CX}(1,4) - \text{CX}(1,3)) / \text{KDI} * \text{BM}
+48	2495	OK	      ZVSB=DPST( 2,MBT)-CX(MC,2)                                                	ZVSB=DPST( 2,MBT)-CX(MC,2)
+51	2624	OK	  204 GO TO (206,208),KBASE                                                     	204 GO TO (206,208), KBASE
+59	2968	COUNT 97/29	                                                                                	\mathrm{DPST}(2, \mathrm{MBT}) = \mathrm{ZLST} \diamond (\mathrm{UF}-\mathrm{CN}) \diamond \mathrm{EXTH}
+63	3161	COUNT 0/2	                                                                                	

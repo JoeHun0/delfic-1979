@@ -1,0 +1,7 @@
+1	4	COUNT 0/15	                                                                                	
+2	26	COUNT 0/16	                                                                                	
+22	1396	OK	      LD=NOSTR+1                                                                	LD=NOSTR+1
+26	1568	OK	      00 215 I=2,LD                                                             	00 215 I=2,LD
+56	2848	OK	      GO TO 230                                                                 	GO TO 230
+64	3290	COUNT 0/12	                                                                                	
+65	3326	COUNT 0/14	                                                                                	

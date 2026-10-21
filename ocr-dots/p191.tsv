@@ -1,0 +1,46 @@
+1	1	COUNT 0/26;COUNT 0/2	                                                                                	 || 
+2	781	OK	C                                                                               	C
+3	826	COUNT 0/2	      CALL BATMAN                                                               	CALL BATMAN || 
+4	869	COUNT 0/2	      MAXMCH = 90                                                               	MAXMCH = 90 || 
+5	912	COUNT 0/1	      MCH = 0                                                                   	MCH = 0 || 
+6	956	COUNT 0/1	      DO 1 I = 1,MAXMCH                                                         	DO 1 I = 1,MAXMCH || 
+7	992	OK	    1 XRT(I) = 0.0                                                      GXPSR 34	1 XRT(I) = 0.0 || GXPSR 34
+8	1032	OK	C                                                                       GXPSR 35	C || GXPSR 35
+9	1085	COUNT 0/1	      00 1) J = 1,KRM                                                           	00 1) J = 1, KRM || 
+10	1121	COUNT 0/8	                                                                        GXPSR 37	 || GXPSR 37
+11	1170	COUNT 0/1	      IF (ERM(J))11,10,12                                                       	IF (ERM(J)) 11,10,12 || 
+12	1208	COUNT 25/11	                                                                        GXPSR 39	11 \text{ MCH} = \text{MCH} + 1 || GXPSR 39
+13	1247	OK	COMPUTE MASS CHAIN NORMALIZATION FACTOR                                 GXPSR 40	COMPUTE MASS CHAIN NORMALIZATION FACTOR || GXPSR 40
+14	1297	COUNT 0/2	C                                                                               	C || 
+15	1342	OK	   12 XRT(MCH) = XRT(MCH) + ABANDO(K)*ABS(ERM(J))                       GAPDK 46	12 XRT (MCH) = XRT (MCH) + ABANDO(K) * ABS(ERM(J)) || GAPDK 46
+16	1385	OK	C                                                                               	C
+17	1428	OK	   10 CONTINUE                                                                  	10 CONTINUE
+18	1471	COUNT 0/1	C                                                                               	C || 
+19	1515	COUNT 0/4	      DO 20 LC = 1,KCH                                                          	DO 20 LC = 1, KCH || 
+20	1559	COUNT 6/4	      IF (XRT(LC))20,20,21                                                      	IF (XRT (LC)) 20, 20, 21 || GARAGE
+21	1600	COUNT 0/3	   21 BNEX = BSUBK(LC)                                                          	21 BNEX = BSUBK(LC) || 
+22	1645	OK	      CRISS = CROSS**BNEX                                                       	CRISS = CROSS**BNEX
+23	1687	COUNT 76/35	                                                                        GAPDK DU	\text{RADIAL} = \text{ECF}(LC)/((\text{UNIT} + \text{CRISS} \cdot \text{ECF}(LC))) || GAPDK DU
+24	1729	COUNT 0/1	      STRAIT = RADIAL*CRISS                                                     	STRAIT = RADIAL * CRISS || 
+25	1766	OK	      TNEX = FISNUM*XRT(LC)                                             GXPSR 52	TNEX = FISNUM * XRT(LC) || GXPSR 52
+26	1816	OK	      DO 40 LD = 1,ITAB                                                         	DO 40 LD = 1,ITAB
+27	1853	OK	   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD)GXPSR 54	40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD) ** BNEX + STRAIT) * TNEX * FMASS(LD) || GXPSR 54
+28	1905	COUNT 0/1	   20 CONTINUE                                                                  	20 CONTINUE || 
+29	1943	COUNT 0/1	C                                                                               	C || 
+30	1987	OK	C                                                                               	C
+31	2030	COUNT 0/4	      IF (.NOT.NPRNT(10)) RETURN                                                	IF (.NOT.NPRNT(10)) RETURN || 
+32	2069	OK	C                                                                          SK 59	C || SK 59
+33	2118	OK	      WRITE (KOUT,901)                                                          	WRITE (KOUT,901)
+34	2154	OK	      IF (JO) GO TO 101                                                 GXP5K 61	IF (JO) GO TO 101 || GXP5K 61
+35	2203	OK	      WRITE (KOUT,912)                                                          	WRITE (KOUT,912)
+36	2246	OK	      GO TO 102                                                                 	GO TO 102
+37	2287	COUNT 0/1	  101 WRITE (KOUT,9C2)                                                          	101 WRITE (KOUT,9C2) || 
+38	2324	COUNT 0/6	  102 CONTINUE                                                                  	102 CONTINUE || 
+39	2375	COUNT 0/1	      DO 1J3 I=1,ITA8                                                           	DO 1J3 I=1, IT A8 || 
+40	2410	OK	      WRITE (KOUT,903) PSIZE(I),FP(I)                                   GXPSR 67	WRITE (KOUT,903) PSIZE(I),FP(I) || GXPSR 67
+41	2459	OK	  103 CONTINUE                                                                  	103 CONTINUE
+42	2492	COUNT 0/2;COUNT 0/6	                                                                                	 || 
+43	2546	OK	      RETURN                                                                    	RETURN
+44	2576	COUNT 0/4	                                                                        5XPSR 71	 || 5XPSR 71
+45	3156	COUNT 0/3	                                                                                	
+46	3308	COUNT 0/48;COUNT 0/5	                                                                                	 || 

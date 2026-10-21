@@ -1,0 +1,9 @@
+1	6	COUNT 0/29	                                                                                	
+2	67	COUNT 0/42	                                                                                	
+37	2209	COUNT 9/8	                                                                                	CALI. ATMR
+48	2679	OK	  122 CXTMP(MA)=CX(MB,9)                                                        	122  CXTMP(MA) = CX(MB, 9)
+50	2765	OK	      WRITE(ISOUT,513)SLDTMP,TMSD                                               	WRITE(ISOUT,513)SLDTMP,TMSD
+51	2807	COUNT 62/64	                                                                                	513 FORMAT( ////10X,42HTIME OF SOIL SOLIDIFICATION AT TEMPERATUREF10.
+59	3151	COUNT 3/5	                                                                                	FNO
+60	3291	COUNT 0/25	                                                                                	
+61	3331	COUNT 0/33	                                                                                	

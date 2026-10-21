@@ -1,0 +1,14 @@
+14	1077	OK	      IF(MC( 2 )  .NE. 1   ) WRITE(ISOUT, 14GJ)AP(N1), AP(N2), AP(N3)           	IF(MC(2) .NE. 1 ) WRITE(ISOUT, 14GJ)AP(N1), AP(N2), AP(N3)
+16	1163	COUNT 69/36	                                                                                	\text{CAVS(KBH)} = (\text{AP(N1)} + \text{SCALE(4)}) \times \text{SCALE(1)}
+18	1248	COUNT 127/63	                                                                                	\text{OX(KBH, 1, LTIH)} = \text{AP(N3)} \cdot \text{SCALE(2)} \cdot \text{SIN(RADC)} \cdot \text{AP(N2)} \cdot \text{SCALE(3)} + \text{TRNS})
+19	1291	COUNT 77/62	                                                                                	\text{OY(KBH,1,LTIN)} = \text{AP(N3)*SCALE(2)*COS(RADC*(AP(N2)*SCALE(3) + TRNS))}
+21	1379	OK	 150  0X(K9H,1,LTIM) = AP(12)*SCALE(2)                                          	150 0X(K9H,1,LTIM) = AP(12)*SCALE(2)
+22	1421	COUNT 51/30	                                                                                	\text{DY(KBH,1,LTIM)} = \text{AP(N3)} * \text{SCALE(2)}
+26	1594	OK	  250 IF(LTIN .EQ. 1) KBHX=KBH                                                  	250 IF(LTIN.EQ.1) KBHX=KBH
+32	1852	OK	      DO 255 I=1,KBHM1                                                          	DO 255 I=1, KBHM1
+40	2195	COUNT 61/25	                                                                                	\mathrm{DX}(I, 1, \mathrm{LTIM}) = \mathrm{DX}(J, 1, \mathrm{LTIM})
+41	2239	OK	      DX(J,1,LTIM)=TENP                                                         	DX(J,1,LTIM)=TENP
+42	2282	COUNT 24/17	                                                                                	\text{TEMP}=0Y(I,1,LTIM)
+43	2315	OK	      DY(I,1,LTIM)=DY(J,1,LTIM)                                                 	DY(I,1,LTIM)=DY(J,1,LTIM)
+44	2368	OK	      DY(J,1,LTIM)=TEMP                                                         	DY(J,1,LTIM)=TEMP
+56	2885	OK	  259 ZBH(1) = ZMIN                                                             	259 ZBH(1) = ZMIN

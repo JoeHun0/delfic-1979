@@ -1,0 +1,6 @@
+5	650	OK	      SRTHS = J.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.                     	SRTHS = J.1 * ( CX( MCX,4 ) - CX( MCX,3 ))/DFS1K/600.
+17	1158	OK	      DO 258 HB=1,KDPS                                                          	DO 258 HB=1,KDPS
+28	1638	OK	      OPST（3，MBT）=CX（MCX，5）                                                     	OPST（3，MBT）=CX（MCX，5）
+32	1810	COUNT 26/25	                                                                                	202 DPST(4, MBT) = 0.TAM(MA+1)
+48	2495	OK	      ZVSB=DPST( 2,MBT)-C×(MC,2)                                                	ZVS B=DPST(2,MBT)-C×(MC,2)
+59	2968	OK	      OPST（ 2，MBT）=ZLST+（UF-CN）*EXTM                                            	OPST（2，MBT）=ZLST+（UF-CN）*EXTM

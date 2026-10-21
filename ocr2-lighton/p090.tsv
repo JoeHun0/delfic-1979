@@ -1,0 +1,14 @@
+1	20	COUNT 0/27	                                                                                	
+2	49	COUNT 0/8	                                                                                	
+4	851	COUNT 0/66	                                                                                	
+5	893	OK	     1Q9-(9.8*U)/(287./QXE*TE))                                                 	1Q9-(9.8*U)/(287./QXE*TE))
+6	937	OK	      DRME=DRM                                                                  	DRME=DRM
+15	1323	COUNT 0/57	                                                                                	
+23	1667	COUNT 0/45	                                                                                	
+31	2010	COUNT 0/41	                                                                                	
+37	2267	COUNT 0/32	                                                                                	
+41	2438	COUNT 0/47	                                                                                	
+45	2610	COUNT 0/12	                                                                                	
+46	2653	OK	      IF(EPS)?^2,.?2,9:1                                                        	IF (EPS) ?^2, .?2, 9:1
+47	2687	OK	  902 EPS=1.0E-4                                                                	90 2 EPS=1.0E-4
+49	2782	COUNT 3/4	                                                                                	END

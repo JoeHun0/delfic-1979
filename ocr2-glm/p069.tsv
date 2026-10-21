@@ -1,0 +1,5 @@
+7	941	OK	      DIAM(LD)=2.*PS(NDSTR)-DIAM(NDSTR)                                         	DIAM(LD)=2. *PS(NDSTR)-DIAM(NDSTR)
+14	1240	OK	  106 PS(I)=0.5*(DIAM(I)+CIAM(I+1))                                             	106 PS(I) = 0.5* (DIAM(I) + CIAM(I+1))
+26	1756	COUNT 53/39	                                                                                	DMIN = (6. J  ^{*}  FRAC/（PI  ^{*}  RHOF  ^{*}  CAYM  ^{*}  POW))  ^{*}  P0h
+29	1885	OK	  206 DIAM(IJ:-/AN-AJ)**PCW*DMIN                                                	206 DIAM(IJ: -/AN-AJ) **PCW*DMIN
+30	1917	OK	      PS(NDSTR)=0MIN*0.5**POW                                                   	PS(NDSTR) = 0MIN*0.5**POW

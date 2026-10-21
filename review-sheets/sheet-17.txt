@@ -1,0 +1,12 @@
+193	p086	3	TIE	10	1	•3FCK,UN3n
+194	p086	17	TIE	33	6	     2 0Z    ,ED    ,EK    ,EPS   ,ES    ,HLR   ,KS    ,KSV    ,MWYA   ,
+195	p086	28	TIE	45	7	      DATA WORD1,      WORC3,W(RD4 /6H TEMP ,         6H ZLMT ,6HR.LT.1/
+196	p086	57	TIE	11	3	  C15  DST=DST2
+197	p087	2	NONE	11	5	raw: ---
+198	p087	12	TIE	20	3	  020  IF(R-1.) 125,13,13
+199	p087	39	TIE	53	8	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),
+200	p087	42	TIE	36	6	     1 DS    ,OST   ,DST0  ,DST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,
+201	p087	45	TIE	33	6	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,
+202	p087	55	TIE	26	7	      CALL TROL(Z,NAT ,ALT,A1P,T=)
+203	p087	56	TIE	25	7	      CALL TRPL(Z.NAT .AIT.PRS.P)
+204	p088	1	NONE	15	1	raw: ---

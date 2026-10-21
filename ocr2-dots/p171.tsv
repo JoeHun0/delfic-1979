@@ -1,0 +1,24 @@
+26	1529	OK	     2MARRAY    ,H8TAPE    ,MXREQ     ,SO        ,INFAM                         	2MARRAY ,H8TAPE ,MXREQ ,SO ,INFAM
+28	1617	OK	      DATA CLR, PROGRM/ 1.E30, 6HSRTCNT/                                        	DATA CLR, PROGRM/ 1.E30, 6HSRTCNT/
+33	1829	COUNT 17/16	                                                                                	WRITE (ISOUT, 3000)
+34	1874	COUNT 10/9	                                                                                	NO SC I=1,5K
+41	2175	OK	   55 ILOO°=ILOOP♦1                                                             	55 ILOO°=ILOOP♦1
+42	2218	COUNT 22/21	                                                                                	IF(ILOOF .GT. V.) GO TO 10G
+43	2261	OK	      VEM=VEC(X(1),Y(1),X(2),Y(2))                                              	VEM=VEC(X(1),Y(1),X(2),Y(2))
+44	2304	OK	      H=2                                                                       	H=2
+45	2349	COUNT 11/9	                                                                                	CO + F' + I = 3, K
+46	2390	OK	      IF(VEC(X(1),Y(1),X(1),Y(1)) .GT. VEH) GO TO EQ                            	IF(VEC(X(1),Y(1),X(1),Y(1)) .GT. VEH) GO TO EQ
+48	2476	OK	      V=4=VE)(X(1).Y(1),X(1),Y(1))                                              	V=4=VE)(X(1).Y(1),X(1),Y(1))
+49	2518	OK	   6) CONTINUE                                                                  	6) CONTINUE
+50	2560	COUNT 10/9	                                                                                	00 65 I=2.5K
+51	2604	OK	      IF(I .EQ. H) GO TO ES                                                     	IF(I.EQ.H) GO TO ES
+52	2648	COUNT 43/42	                                                                                	IF (VEC(X(N)), Y(N), X(I), Y(I)) =LE. VEH) GO TO 10J
+53	2690	COUNT 11/10	                                                                                	65 CONTINUE:
+54	2737	OK	      xP=x(1)                                                                   	xP=x(1)
+55	2779	COUNT 25/7	                                                                                	\mathbb{Y}P = \mathbb{Y}(1)
+56	2820	OK	      00 7. I=2.k                                                               	00 7. I = 2. k
+57	2864	COUNT 0/11	                                                                                	
+58	2907	COUNT 18/13	                                                                                	7) \quad v(I-1) = v(I)
+59	2950	COUNT 0/7	                                                                                	
+60	2991	COUNT 0/7	                                                                                	
+61	3035	COUNT 0/6	                                                                                	

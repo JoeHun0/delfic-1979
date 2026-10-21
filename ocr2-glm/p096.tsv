@@ -1,0 +1,9 @@
+4	722	COUNT 57/56	                                                                                	1208 DPST(2,MBT)=DPST(2,MBT)+(CX(MQ,6)-DN)*(CX(MD,2)-EXTM)
+8	892	COUNT 29/28	                                                                                	208 UP=CX(MC,6)+ZVSB*DPX(2,MC)
+10	977	OK	      CALL TRPL(DPST( 2,HET),NAT ,ALT,ETA,VIS)                                  	CALL TRPL(DPST( 2,HET),NAT ,ALT,ETA,VIS)
+17	1278	COUNT 47/45	                                                                                	FC= (OPST(1,MBT)-CX(MC,1)) / (CX(MC+1,1)-CX(MC,1))
+33	1966	OK	      IF(ZNXT-ZBRSTZ)220,220,230                                                	IF(ZNXT-ZBRSTZ)220,220,230
+40	2263	OK	      DNWAF（MBT）=DN                                                             	DNWAF（MBT）=DN
+55	2906	COUNT 47/46	                                                                                	241 IF(ABS(DPST(3.1)) - CFST(3.2)) .GT.0.1) GO TO 2441
+56	2950	COUNT 11/10	                                                                                	2440 IFLAG=1
+59	3078	COUNT 46/45	                                                                                	1 WRITE (ISOUT,777) (UPST(!,MBT),I=1,8),MBT,1FLAG

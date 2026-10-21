@@ -1,0 +1,5 @@
+6	740	OK	  253 DELTEP= （(ZV(MM)+ ZV(MM+1))/2.0 -ZCUR)/(FV-RV)                            	253 DELTEP=（(ZV(MM)+ZV(MM+1))/2.0-ZCUR)/(FV-RV)
+14	1084	COUNT 15/14	                                                                                	2310 FORMAT(15/)
+37	2070	OK	      IF(ABS(TMP0Z).LE.5.0) GO TO 320                                           	IF(ABS(TMP0Z).LE.5.0) GO TO 320
+55	2833	OK	      DY=DY+VY（ MM） *DELTEE                                                     	DY=DY+VY（MM）*DELTEE
+63	3252	COUNT 3/7	                                                                                	---

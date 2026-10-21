@@ -1,0 +1,62 @@
+1	1	COUNT 0/28;COUNT 0/4	                                                                                	 || 
+2	555	OK	   50 WRITE(ISOUT,14) ZCH(K),USUM(K,N,L),VSUM(K,A,L),hFZ(K,N,L),        SUMDA 51	50 WRITE(ISOUT,14) ZCH(K),USUM(K,N,L),VSUM(K,A,L),hFZ(K,N,L), || SUMDA 51
+3	602	OK	     1 OXSUM(K,N,L),OYSUM(K,A,L),RSUM(K,N,L)                            SUMDA 62	1 OXSUM(K,N,L),OYSUM(K,A,L),RSUM(K,N,L) || SUMDA 62
+4	635	OK	CALCULATE THE WEIGHTED SUMS OVER ATHOS. STRATA AND REWRITE ARRAYS       SUMDA 63	CALCULATE THE WEIGHTED SUMS OVER ATHOS. STRATA AND REWRITE ARRAYS || SUMDA 63
+5	684	COUNT 51/52	                                                                        SUMDA 64	C USUM, VSUM, RSUM, DXSYM, DYSUN. ALSO COMPUTE HOAV AND WAVG. || SUMDA 64
+6	731	OK	   20 AREA=ICX*JCX^(WINT**2)                                            SUMDA 65	20 AREA=ICX*JCX^ (WINT**2) || SUMDA 65
+7	772	COUNT 28/29	                                                                        SUMDA 66	IF(MC(2) =EQ. 2) WRITE(ISOUT,6) || SUMDA 66
+8	817	OK	      00 922 L=1,LTIMX                                                  SUMDA 67	00 922 L=1,LTIMX || SUMDA 67
+9	860	OK	      00 1304 LK=1,KBHX                                                 SUMDA 68	00 1304 LK=1, KBHX || SUMDA 68
+10	902	OK	 1304 WAVG(LK,L)=0.0                                                    SUMDA 69	1304 WAVG(LK,L)=0.0 || SUMDA 69
+11	946	OK	      HDAV(L)=0.                                                        SUMDA 70	HDAV(L)=0. || SUMDA 70
+12	986	COUNT 14/15	                                                                        SUMDA 71	00 921 N=1,NDATX || SUMDA 71
+13	1030	OK	      IF(MC(2).NE.2) GO TO 915                                          SUMDA 72	IF (MC(2).NE.2) GO TO 915 || SUMDA 72
+14	1072	OK	      CALL CNTR(NET,NETSU,Λ,XG,YG,ICF,JCF,NCF)                          SUMDA 73	CALL CNTR(NET, NETSU, Λ, XG, YG, ICF, JCF, NCF) || SUMDA 73
+15	1117	OK	      WRITE(ISOUT,1)L,N,XG,YG                                           SUMOA 74	WRITE(ISOUT,1)L,N,XG,YG || SUMOA 74
+16	1159	OK	      WRITE(ISOUT,2)                                                    SUMOA 75	WRITE(ISOUT,2) || SUMOA 75
+17	1202	OK	  915 ZSTEP=ZBH(2)-ZBH(1)                                               SUMOA 76	915 ZSTEP=ZBH(2)-ZBH(1) || SUMOA 76
+18	1244	OK	      USUM(1,N,L)=USUM(1,N,L)*ZSTEP                                     SUMDA 77	USUM(1,N,L)=USUM(1,N,L)*ZSTEP || SUMDA 77
+19	1286	OK	      VSUM(1,N,L)=VSUM(1,N,L)*ZSTEP                                     SUHDA 78	VSUM(1,N,L)=VSUM(1,N,L)*ZSTEP || SUHDA 78
+20	1330	OK	      RSUM(1,N,L)=RSUM(1,N,L)*ZSTEP                                     SUMDA 79	RSUM(1, N, L) = RSUM(1, N, L) * ZSTEP || SUMDA 79
+21	1374	COUNT 52/31	                                                                        SUMDA 30	\text{DXSUM}(1, N, L) = \text{DXSUM}(1, N, L) * \text{ZSTEP} || SUMDA 30
+22	1409	OK	      DYSUM(1,N,L)=DYSUM(1,N,L)*ZSTEP                                   SUMDA 81	DYSUM(1,N,L) = DYSUM(1,N,L) * ZSTEP || SUMDA 81
+23	1460	COUNT 0/35	                                                                        SUMDA 82	 || SUMDA 82
+24	1504	OK	      KBHM1=KBHX-1                                                      SUMOA 83	KBHM1=KBHX-1 || SUMOA 83
+25	1546	OK	      DO  920 K=2,KBHM1                                                 SUMOA 84	DO 920 K=2,KBHM1 || SUMOA 84
+26	1589	OK	      ZSTEP=ZBH(K+1) - ZBH(K)                                           SUMDA 85	ZSTEP=ZBH(K+1) - ZBH(K) || SUMDA 85
+27	1631	OK	      USUM(K,N,L)=USUM(K,N,L)*ZSTEP + USUM(K-1,N,L)                     SUMDA 86	USUM(K,N,L) = USUM(K,N,L) * ZSTEP + USUM(K-1,N,L) || SUMDA 86
+28	1667	COUNT 71/43	                                                                        SUMDA 87	\text{VSUM}(K, N, L) = \text{VSUM}(K, N, L) * \text{ZSTEP} + \text{VSUM}(K-1, N, L) || SUMDA 87
+29	1718	OK	      RSUM(K,N,L)=RSUM(K,N,L)*ZSTEP + RSUM(K-1,N,L)                     SUMDA 88	RSUM(K, N, L) = RSUM(K, N, L) * ZSTEP + RSUM(K-1, N, L) || SUMDA 88
+30	1753	COUNT 80/45	                                                                        SUMDA 89	\text{HAV} = \text{HAV} + (\text{OXSUM}(K,N,L) + \text{OYSUM}(K,N,L)) * \text{ZSTEP}/2.0 || SUMDA 89
+31	1796	COUNT 74/46	                                                                        SUMDA 90	\text{DXSUM}(K,N,L) = \text{DXSUM}(K,N,L) * \text{ZSTEP} + \text{DXSUM}(K-1,N,L) || SUMDA 90
+32	1847	COUNT 77/49	                                                                        SUMDA 91	920 \text{ OYSUM}(K,N,L) = \text{DYSUM}(K,N,L) * \text{ZSTEP} + \text{DYSUM}(K-1,N,L) || SUMDA 91
+33	1881	COUNT 154/62	                                                                        SUMDA 92	\text{HAV} = (\text{HAV} + (\text{DXSUM}(\text{KBHX}, \text{N}, \text{L}) + \text{DYSUM}(\text{KBHX}, \text{N}, \text{L}))) * (\text{ZMAX} - \text{ZBH}(\text{KBHX})) / 2. || SUMDA 92
+34	1934	OK	     1  )/(ZMAX-ZMIN)                                                   SUMDA 93	1 ) /(ZMAX-ZMIN) || SUMDA 93
+35	1977	OK	COPY OUT SUMMED DATA IF REQUESTED                                       SUMOA 94	COPY OUT SUMMED DATA IF REQUESTED || SUMOA 94
+36	2021	OK	      IF(MC(2).EQ.2)                                                    SUMDA 95	IF(MC(2).EQ.2) || SUMDA 95
+37	2052	COUNT 62/61	                                                                        SUMOA 96	1WRITE(ISOUT,13)(ZCH(K),USUM(K,N,L),VSUM(K,N,L),OXSUM(K,N,L!), || SUMOA 96
+38	2104	OK	     2 DYSUM(K,N,L),RSUM(K,N,L),K=1,KBHX)                               SUMDA 97	2 DYSUM(K,N,L),RSUM(K,N,L),K=1,KBHX) || SUMDA 97
+39	2138	OK	      IF(MC(2) .NE. 1  .AND.  MC(1) .EQ. 1) WRITE(ISOUT,8)L,N,HAV       SUMOA 98	IF(MC(2) .NE. 1 .AND. MC(1) .EQ. 1) WRITE(ISOUT,8)L,N,HAV || SUMOA 98
+40	2189	OK	      CALL CNTR(NET,NETSU,N,XG,YG,ICF,JCF,NCF)                          SUMDA 99	CALL CNTR(NET, NETSU, N, XG, YG, ICF, JCF, NCF) || SUMDA 99
+41	2234	COUNT 0/5	                                                                        SUMOA1JC	 || SUMOA1J C
+42	2279	COUNT 0/5	                                                                        SUMDA101	 || SUMDA101
+43	2310	OK	      CALL       NEST(NET,NETSU,XQ,YQ,NOATQ,XL,XR,YL,YU,ICF,JCF,NCF)    SUMDA102	CALL NEST(NET,NETSU,XQ,YQ,NOATQ,XL,XR,YL,YU,ICF,JCF,NCF) || SUMDA102
+44	2361	COUNT 56/21	                                                                        SUMDA113	\text{AREAN} = (\text{XR} - \text{XL}) * (\text{YU} - \text{YL}) || SUMDA113
+45	2392	OK	      HOAV(L)=HOAV(L)+ H AV*A*FEAN                                      SUMDA1:4	HOAV(L) = HOAV(L) + HAV*A*FEAN || SUMDA1:4
+46	2447	OK	      00 9210 KL=1,KBHX                                                 SUMDA1J5	00 9210 KL=1,KBHX || SUMDA1J5
+47	2489	COUNT 43/42	                                                                        SUMOA1:6	9210 WAVG(KL,L) = WAVG(KL,L) + WFZ(KL,N,L) * AREAN || SUMOA1:6
+48	2536	OK	 921  CONTINUE                                                          SUMOA1J7	921 CONTINUE || SUMOA1J7
+49	2569	COUNT 34/20	                                                                        SUMDA118	\text{HDAV(L)} = \text{HDAV(L) / AREA} || SUMDA118
+50	2620	OK	      00 9215 KL=1,KB4X                                                 SUMDA139	00 9215 KL=1,KB4X || SUMDA139
+51	2662	COUNT 51/30	                                                                        SUMDA110	9215 \text{ WAVG(KL,L)} = \text{WAVG(KL,L)} / \text{AREA} || SUMDA110
+52	2696	OK	      IF(MC(2) .NE. 1) WRITE(ISOUT,15)L,HOAV(L)                         SUMDA111	IF(MC(2) .NE. 1) WRITE(ISOUT,15)L,HOAV(L) || SUMDA111
+53	2746	OK	      IF( MC(2) .EQ. 1  .OR.  MC(1) .EQ. 0) GO TO 922                   SUMOA112	IF ( MC(2) .EQ. 1 .OR. MC(1) .EQ. 0) GO TO 922 || SUMOA112
+54	2793	OK	      WRITE(ISOUT,16)                                                   SUMDA113	WRITE (ISOUT, 16) || SUMDA113
+55	2835	OK	      00 9922 KL=i,KBHX,6                                               SUMDA114	00 9922 KL=i,KBHX,6 || SUMDA114
+56	2879	OK	      KLP5=KL+5                                                         SUMDA115	KLP5=KL+5 || SUMDA115
+57	2919	COUNT 42/34	                                                                        SUMOA116	9922 WRITE(ISOUT,17) (K, WAVG(K,L), K=KL, KLP5) || SUMOA116
+58	2966	COUNT 11/9	                                                                        SUMDA117	922 CONTINUE || SUMDA117
+59	3008	COUNT 6/5	                                                                        SUMDA118	RETURN || SUMDA118
+60	3054	COUNT 0/2	                                                                        SUMDA119	 || SUMDA119
+61	3143	OK	                                       130                                      	130
+62	3301	COUNT 0/18;COUNT 0/6	                                                                                	 || 

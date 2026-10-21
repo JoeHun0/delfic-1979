@@ -1,0 +1,9 @@
+8	670	COUNT 14/38	                                                                                	COMMON /CONDAT/
+10	756	OK	     2MARRAY    ,MBTAPE    ,HXREQ     ,SD        ,INPAY                         	2MARRAY ,MBTAPE ,HXREQ ,SD ,INPAY
+12	842	COUNT 3/29	                                                                                	LJC
+13	886	COUNT 25/24	                                                                                	2TGZ ,XGZ ,X1. ,X2 ,YGZ ,XMAX ,
+14	929	COUNT 15/20	                                                                                	3XMIN , YMAX , ZMIN
+49	2731	COUNT 14/38	                                                                                	COMMON /CONDAT/
+55	2989	OK	     3XMIN      ,YMAX      ,YHIN      ,ZHIN                                     	3XMIN , YMAX , YHIN , ZHIN
+56	3033	OK	      COMMON /PARDAT/       4SQ       .3SQ       .COSA      .F         .        	COMMON /PARDAT/ 4SQ .3SQ .COSA .F .
+59	3280	COUNT 0/4	                                                                                	

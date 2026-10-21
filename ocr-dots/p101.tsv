@@ -1,0 +1,63 @@
+1	1	COUNT 0/40	                                                                                	
+2	533	OK	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                     WNDSF 61	COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) || WNDSF 61
+3	578	OK	C                                                                       WNDSF 62	C || WNDSF 62
+4	620	COUNT 9/51	                                                                        WNOSF 63	DIMENSION || WNOSF 63
+5	663	OK	     1  ZB(50),  VB(50),  VT(50), XPAR(100), YPAR(100), TP(100),        WNOSF 64	1 ZB(50), VB(50), VT(50), XPAR(100), YPAR(100), TP(100), || WNOSF 64
+6	695	OK	     2  PSIZ(100),  PMA5(100),  ZPAR(100), RWAF(100), CWAF(100),        WNOSF 65	2 PSIZ(100), PMA5(100), ZPAR(100), RWAF(100), CWAF(100), || WNOSF 65
+7	749	OK	     3  ZLOW(100), VWAF(100)                                            WNOSF 66	3 ZLOW(100), VWAF(100) || WNOSF 66
+8	793	OK	C                                                                       WNOSF 67	C || WNOSF 67
+9	835	OK	      EQUIVALENCE (TC(1),CX(1,1)),(ZT(1),CX(1,4)),(Z8(1),CX(1,3)),      WNOSF 68	EQUIVALENCE (TC(1),CX(1,1)),(ZT(1),CX(1,4)),(Z8(1),CX(1,3)), || WNOSF 68
+10	876	OK	     1  (VB(1),CX(1,6)),(VT(1),CX(1,7)), (XPAR(1),GDPST(1)), (YPAR(1),  WNOSF 69	1 (VB(1), CX(1,6)), (VT(1), CX(1,7)), (XPAR(1), GD PST(1)), (YPAR(1), || WNOSF 69
+11	920	OK	     2  GORST(101)), (TP(1),GDPST(201)), (PSIZ(1),GDPST(301)),          WNOSF 70	2 GORST(101)), (TP(1),GDPST(201)), (PSIZ(1),GDPST(301)), || WNOSF 70
+12	964	COUNT 63/62	                                                                        WNOSF 71	3 (PMAS(1),GDPST(401)), (ZPAR(1),GDPST(501)), (RWAF(1),GDPST(601)| || WNOSF 71
+13	1006	COUNT 66/65	                                                                        WNDSF 72	4), (DWAF(1), GDPST(701)), (ZLOW(1), GDPST(801)), (VWAF(1), GDPST(901))| || WNDSF 72
+14	1049	OK	     5,(XC(1),CX(1,2)),(YC(1),CX(1,8)),(ZC(1),CX(1,9)),(VC(1),CX(1,10)) WNOSF 73	5, (XC(1), CX(1,2)), (YC(1), CX(1,8)), (ZC(1), CX(1,9)), (VC(1), CX(1,10)) || WNOSF 73
+15	1094	OK	      DATA PROGRM/6HWNOSFT/                                             WNOSF 74	DATA PROGRM/6HWNOSFT/ || WNOSF 74
+16	1137	OK	C                                                                       WNDSF 75	C || WNDSF 75
+17	1179	OK	    1 FORMAT(1X,A6,I3,4E12.5,I5)                                        WNDSF 76	1 FORMAT(1X,A6,I3,4E12.5,I5) || WNDSF 76
+18	1222	OK	 6022 FORMAT(1H124X,16HCL0DT RAJECTORY/6X,2HXC,12X,2HYC,12X,2HZC,12X,2H)WNOSF 77	6022 FORMAT (1H124X,16HCL0D TRAJECTORY/6X,2HXC,12X, 2HYC,12X,2HZC,12X,2H) || WNOSF 77
+19	1265	OK	     1TC,12X,2HVC)                                                      WNOSF 78	1TC, 12X, 2HVC) || WNOSF 78
+20	1308	OK	    2 FORMAT(5(1X,E13.6))                                               WNDSF 79	2 FORMAT(5(1X,E13.6)) || WNDSF 79
+21	1352	OK	    4 FORMAT(1X,15)                                                     WNDSF 80	4 FORMAT(1X,15) || WNDSF 80
+22	1394	OK	 3013 FORMAT( ///                                                       WNOSF 81	3013 FORMAT ( /// || WNOSF 81
+23	1436	OK	     1        10X,14HBLOCK COUNT = 15// )                               WNDSF 82	1 10X,14HBLOCK COUNT = 15// ) || WNDSF 82
+24	1480	COUNT 69/67	                                                                        WNOSF 83	1012 FORMAT(1X,*PARTICLE BLOCK BEFORE SHIFT*,/8X,*X*,11X,*Y*,11X,*T*,9X') || WNOSF 83
+25	1522	COUNT 68/67	                                                                        WNDSF 84	1, *PSIZ*, 9X, *PMAS*, 10X, *Z*, 9X, *RWAF*, 8X, *OWAF*, 8X, *ZLOW*, 8X, *VWAF*, | || WNDSF 84
+26	1566	COUNT 17/16	                                                                        WNOSF 85	2//((1X,10E12.5)) || WNOSF 85
+27	1609	OK	    3 FORMAT(1X,*PARTICLE BLOCK AFTER SHIFT *,/8X,*X*,11X,*Y*,11X,*T*,9XWNOSF 86	3 FORMAT(1X,*PARTICLE BLOCK AFTER SHIFT *,/8X,*X*,11X,*Y*,11X,*T*,9X || WNOSF 86
+28	1651	OK	     1,*PSIZ*,9X,*PMAS*,10X,*Z*,9X,*RWAF*,8X,*DWAF*,8X,*ZLOW*,8X,*VWAF*,WNDSF 87	1, *PSIZ*, 9X, *PMAS*, 10X, *Z*, 9X, *RWAF*, 8X, *DWAF*, 8X, *ZLOW*, 8X, *VWAF*, || WNDSF 87
+29	1694	OK	     2//(1X,10E12.5))                                                   WNDSF 88	2 // (1X, 10E12.5)) || WNDSF 88
+30	1738	OK	C                                                                       WNDSF 89	C || WNDSF 89
+31	1781	COUNT 0/71	                                                                        WNOSF 90	 || WNOSF 90
+32	1825	OK	C                                                                       WNDSF 31	C || WNDSF 31
+33	1868	OK	      IF(NHODO)100,100,200                                              WNOSF 92	IF (NHODO) 100,100,200 || WNOSF 92
+34	1909	COUNT 13/14	                                                                        WNOSF 93	100 IRROR=-100 || WNOSF 93
+35	1953	OK	      CALL ERROR(PROGRM,IRRCR,ISOUT)                                    WNDSF 94	CALL ERROR(PROGRM, IRRCR, ISOUT) || WNDSF 94
+36	1996	OK	C                                                                       WNDSF 95	C || WNDSF 95
+37	2038	OK	C     INITIALIZE TAPES                                                  WNOSF 96	C INITIALIZE TAPES || WNOSF 96
+38	2081	OK	  200 REWIND IRISE                                                      WNOSF 97	200 REWIND IRISE || WNOSF 97
+39	2125	OK	      PEWIND JPARN                                                      WNDSF 98	PEWIND JPARN || WNDSF 98
+40	2166	OK	      WRITE(JPARN)FW,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,CX(MCX,5),ZBRSTZ WNDSF 99	WRITE(JPARN)FW,SSAM,SLOTMP,TMSD,SD,W,HEIGHT,RHOP,CX(MCX,5),ZBRSTZ || WNDSF 99
+41	2208	OK	      WRITE(JPARN)XG7:YCZ,TGZ                                           WNOSF1J0	WRITE (JPARN) XG7:YCZ,TGZ || WNOSF1J0
+42	2253	OK	      WRITE(JPARN)(GETID(I),I=1,12)                                     WNDSF101	WRITE(JPARN)(GETID(I),I=1,12) || WNDSF101
+43	2288	OK	      WRITE(JPARN)NDSTP                                                 WNUSF102	WRITE (JPARN) NDSTP || WNUSF102
+44	2338	OK	      WRITE(JPARN)(PS(J),DIAM(J),FNASS(J),J=1,NDSTR)                    WNOSF1:3	WRITE(JPARN)(PS(J),DIAM(J),FNASS(J),J=1,NDSTR) || WNOSF 1:3
+45	2381	OK	      WRITE(JPARN)NAT                                                   WNDSF1J4	WRITE (JPARN) NAT || WNDSF1J4
+46	2423	OK	      WRITE(JPARN)(ALT(J),ATP(J),PRS(J),RLH(J),RHO(J),ETA(J),J=1,NAT)   WNOSF105	WRITE(JPARN)(ALT(J),ATP(J),PRS(J),RLH(J),RHO(J),ETA(J),J=1,NAT) || WNOSF 105
+47	2466	OK	C                                                                       WNOSF106	C || WNOSF106
+48	2510	OK	C     COMPUTE CLOUD CENTER  AND STEM DRIFT FACTOR ENTRIES IN RISE TABLE WNDSF107	C COMPUTE CLOUD CENTER AND STEM DRIFT FACTOR ENTRIES IN RISE TABLE || WNDSF107
+49	2552	OK	C                                                                       WNOSF138	C || WNOSF138
+50	2597	OK	   10 CONTINUE                                                          WNOSF1J9	10 CONTINUE || WNOSF1J9
+51	2639	OK	      00 25 I=1,NCX                                                     WNOSF110	00 25 I=1, NCX || WNOSF110
+52	2681	OK	      ZC(I) = (ZB(I)+ZT(I))/2.0                                         WNDSF111	ZC(I) = (ZB(I) + ZT(I))/2.0 || WNDSF111
+53	2725	OK	      VC(I)=(VB(I)+VT(I))/2.0                                           WNOSF112	VC(I) = (VB(I) + VT(I)) / 2.0 || WNOSF112
+54	2768	OK	 25   CONTINUE                                                          WNOSF113	25 CONTINUE || WNOSF 113
+55	2810	OK	      MCXP1 = MCX + 1                                                   WNOSF114	MCXP1 = MCX + 1 || WNOSF114
+56	2855	OK	      MHODO=NHODO-1                                                     WNOSF115	MHODO=NHODO-1 || WNOSF115
+57	2897	OK	C                                                                       WNDSF116	C || WNDSF116
+58	2939	COUNT 1/39	                                                                        WNOSF117	C || WNOSF117
+59	2981	COUNT 30/29	                                                                        WNOSF118	C STABILIZED CLOUD BOTTOM ALTITUDE || WNOSF118
+60	3026	OK	C                                                                       WNOSF119	C || WNOSF119
+61	3068	OK	      IF ((ZV(NHODO)+ZV(MPCDO))/2.0 .GE. ZB( NCX ))  GC TO 2217         WNOSF120	IF ((ZV(NHODO)+ZV(MPCDO))/2.0 .GE. ZB( NCX )) GC TO 2217 || WNOSF120
+62	3123	OK	                                        98                                      	98
+63	3281	COUNT 0/39;COUNT 0/7	                                                                                	 || 

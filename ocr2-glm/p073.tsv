@@ -1,0 +1,5 @@
+8	778	COUNT 26/27	                                                                                	LHRLH,11X,3HRHO,11X,3FETA)
+43	2285	OK	      IF(AP(N1) .GE. ALIMIT) GO TO 155                                          	IF(AP(N1) .GE. ALIMIT) GO TO 155
+47	2462	OK	      PRS(I)=AP(N3)*SCALE(3)                                                    	PRS (I) = AP(N3) * SCALE (3)
+60	3022	COUNT 42/41	                                                                                	ETA(I) = 1.458E-6*ATP(I)**1.5/(110.4*ATP(I))
+61	3065	COUNT 27/26	                                                                                	L070 IF(PRS(I).GT.0.0) GC TO 73

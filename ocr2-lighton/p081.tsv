@@ -1,0 +1,22 @@
+1	610	COUNT 5/2	                                                                                	Step 1
+2	763	OK	      IF(TMPS-848.)5,5,6                                                        	IF(TMPS-848.)5,5,6
+6	926	COUNT 0/44	                                                                                	
+7	978	OK	    7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+                    	7 SOILHT=SSAM*(TAD+781.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+
+13	1234	OK	      TPR=23.0.                                                                 	TPR = 23.0.
+14	1278	OK	   17 FQ=4.18E12*F*W-SOILHT                                                     	17 FQ=4.18E12*F*W-SOILHT
+15	1320	COUNT 0/66	                                                                                	
+16	1363	COUNT 31/32	                                                                                	1 *(T-TE) + 0.572087*(T**2-TE**2))
+17	1406	COUNT 0/61	                                                                                	
+19	1494	COUNT 11/12	                                                                                	X = RMWO / RMAO
+20	1537	OK	      RM=RMAO+RMWO+SSAM                                                         	RM = RMAO + RMWO + SSAM
+21	1579	OK	      S=SSAM/RMAO                                                               	S=SSAM/RMAO
+22	1622	COUNT 0/46	                                                                                	
+28	1878	OK	      IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))**(1.0/3.0)                     	IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))** (1.0/3.0)
+29	1922	OK	      RZT= SHAPE *R                                                             	RZT = SHAPE *R
+32	2051	COUNT 0/17	                                                                                	
+41	2438	COUNT 0/53	                                                                                	
+45	2610	COUNT 0/35	                                                                                	
+47	2688	COUNT 0/22	                                                                                	
+48	2737	COUNT 18/11	                                                                                	801  CG(J) = \ddot{u}.
+51	2867	OK	      ZLMT=10000.0*W**C.25 + HEIGHT + ZBRSTZ                                    	ZLMT=10000.0*W**C.25 + HEIGHT + ZBRSTZ
+55	3261	COUNT 0/25	                                                                                	

@@ -1,0 +1,11 @@
+1	18	COUNT 0/17	                                                                                	
+17	1124	COUNT 22/21	                                                                                	1:00 WBAR=-CAVS(KBHO-1)
+20	1254	OK	      WRAR=WBAR+WFZ(KBHO-1,NDATO,LTIM)                                          	WRAR=WBAR+WFZ(KBHO-1,NDATO,LTIM)
+30	1690	OK	  206 IF(WBAR.LT.O.O.OR.AES(ZO-Z3H(KBH0)).GT.EPSZ)IF(WBAR)210,210,209           	206 IF(WBAR.LT.O.O.OR.AES(ZO-Z3H(KBH0)).GT.EPSZ)IF(WBAR)210,210,209
+31	1735	COUNT 29/11	                                                                                	\mathrm{KBHO}=\mathrm{KBHO}+1
+32	1775	OK	      GO TO 100                                                                 	GO TO 100
+38	2034	OK	      TSEG = (ZBH(KBHC)-ZO)/WBAR                                                	TSEG = (ZBH(KBHC) - ZO)/WBAR
+42	2207	OK	      WBAR=(ZMIN-ZO)/TSEG                                                       	WBAR=(ZMIN-ZO)/TSEG
+54	2722	OK	  306 IF(MCOE .GT. 0  .OR.  KBHO-K3HC .EQ.1) GO TO 350                          	306 IF(MCOE .GT. 0 .OR. KBHO-K3HC .EQ.1) GO TO 350
+58	2895	OK	      WBAR=-CAVS(KBHC)                                                          	WBAR = -CAVS (KBHC)
+61	3023	COUNT 39/24	                                                                                	\text{WBAR} = \frac{(ZBH(KBHC) - 70)}{TSEG}

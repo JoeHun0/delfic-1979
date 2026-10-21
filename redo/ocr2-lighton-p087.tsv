@@ -1,0 +1,10 @@
+1	7	COUNT 320/7	                                                                                	\text{S} \text{I} \text{F} \text{A} \text{C} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O} \text{N} \text{O}
+2	30	COUNT 0/27	                                                                                	
+5	546	OK	  C14 IF(ABS(T)-10.)114,20,25                                                   	C14  IF (ABS(T)-10.) 114, 20, 25
+23	1319	OK	  001 MWYA = 3                                                                  	001 MWYA = 3
+39	2297	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PKS(256), RLH(256),            	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PKS(256), RLH(256),
+41	2384	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,        	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM ,
+43	2471	OK	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,        	2 DZ ,ED ,EK ,EPS ,ES ,HLF ,KS ,KSV ,MWYA ,
+51	2819	OK	      DZ=U                                                                      	DZ = U
+56	3035	COUNT 26/25	                                                                                	CALL TROL(Z,NAT ,ALT,AIP,T:)
+57	3072	OK	      CALL TRPLIZ.NAT .AIT.PRS.P3                                               	CALL TRPLIZ.NAT .AIT.PRS.P3

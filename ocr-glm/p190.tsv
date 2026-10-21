@@ -1,0 +1,58 @@
+1	8	COUNT 3/19;COUNT 3/2	                                                                                	--- || ---
+2	417	OK	  163 B=3+Q*EFAC(K1)                                                    BATMA181	163 B=3+Q*EFAC(K1) || BATMA181
+3	461	OK	      IF(8.LE.3.C) GO TO 200                                            BATMA182	IF(8.LE.3.C) GO TO 200 || BATMA182
+4	503	OK	      IF(IGQ) B=B*SDC(N)                                                BATMA183	IF(IGQ) B=B*SDC(N) || BATMA183
+5	548	OK	      NK=NUC(N)                                                         BATMA184	NK=NUC(N) || BATMA184
+6	591	OK	      ABUNDO(NK)=ABUNDO(NK)+8                                           BATMA185	ABUNDO(NK) = ABUNDO(NK) +8 || BATMA185
+7	632	OK	  200 CONTINUE                                                          BATMA186	200 CONTINUE || BATMA186
+8	676	OK	C                                                                       BATMA187	C || BATMA187
+9	719	OK	C   SET UP A NEW SUBCHAIN STARTING FROM DEEPEST UNEXFLORED BRANCH       8ATMA188	C SET UP A NEW SUBCHAIN STARTING FROM DEEPEST UNEXFLORED BRANCH || 8ATMA188
+10	758	OK	   39 IF (JL)500,499,31                                                 BATMA189	39 IF (JL)500,499,31 || BATMA189
+11	809	OK	   31 LSU6 = JL                                                         BATMA190	31 LSU6 = JL || BATMA190
+12	851	OK	      LIM（LSUB） = LIM（LSUB） - 1                                         BATMA191	LIM（LSUB）= LIM（LSUB）-1 || BATMA191
+13	893	OK	      L3R = KBR(LSUB)                                                   BATMA192	L3R = KBR(LSUB) || BATMA192
+14	935	OK	      GO TO 13                                                          BATMA193	GO TO 13 || BATMA193
+15	978	OK	C                                                                       BATMA194	C || BATMA194
+16	1021	OK	C                                                                       BATMA195	C || BATMA195
+17	1062	OK	 1301        WRITE (KOUT,1351) NUCLID(IN)                               BATMA196	1301 WRITE (KOUT,1351) NUCLID(IN) || BATMA196
+18	1107	COUNT 8/7	C                                                                               	C || BATMA197
+19	1148	OK	C   STEP UP BRANCH COUNTER IN MAIN LOOP                                 BATMA198	C STEP UP BRANCH COUNTER IN MAIN LOOP || BATMA198
+20	1183	OK	  499 IBR = IBR + 4 - MOC(IABS(NUCLID(IN)),MULT(1))                     BATMA199	499 IBR = IBR + 4 - MOC(IABS(NUCLID(IN)) ,MULT(1)) || BATMA199
+21	1230	OK	  500 CONTINUE                                                          BATMA200	500 CONTINUE || BATMA200
+22	1278	OK	      IF (NPRNT(9)) WRITE (KOUI,1000) (NUCLID(I),AEUNDO(I),I=1,INUC!    BATNA201	IF (NPRNT(9)) WRITE (KOUI,1000) (NUCLID(I),AEU ND O(I),I=1,INUC! || BATNA201
+23	1318	OK	      RETURN                                                            BATMA202	RETURN || BATMA202
+24	1364	OK	 1000 FORMAT (17H1OUTPUT OF BATMAN//8X6HNUCL1011X6HA8UNDO/              BATMA2J3	1000 FORMAT (17H1OUTPUT OF BATMAN//8X6HNUCL1011X6HA8UNDO/ || BATMA2J3
+25	1403	OK	     1    (5X012,5X1PE12,47)                                            BATMA204	1 (5X012,5X1PE12,47) || BATMA204
+26	1448	OK	 1351 FORMAT (25H05UBCHA1A BEGINNING WITH 012,8H YOO BIG)               BATMA205	1351 FORMAT (25H05UBCHA1A BEGINNING WITH 012,8H YOO BIG) || BATMA205
+27	1487	OK	      END                                                               8A7MA206	END || 8A7MA206
+28	1836	OK	*DECK,GXPSR                                                             GXPSR  1	*DECK, GXPSR || GXPSR 1
+29	1880	OK	      SUBROUTINE GXPSR                                                  GXPSR  2	SUBROUTINE GXPSR || GXPSR 2
+30	1924	OK	C                                                                       GXPSR  3	C || GXPSR 3
+31	1966	OK	C     CASSIDY - NRDL / TCPFKINS - NDL                                   GXPSR  4	C CASSIDY - NRDL / TCPFKINS - NDL || GXPSR 4
+32	2010	OK	C                                                                       GXPSR  5	C || GXPSR 5
+33	2051	OK	C     NOVEMBER 1965                                                     GXPSR  6	C NOVEMBER 1965 || GXPSR 6
+34	2093	OK	CALLED BY PAM2                                                          GXPSR  7	CALLED BY PAM2 || GXPSR 7
+35	2138	OK	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      GXPSR  8	COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME || GXPSR 8
+36	2175	OK	      COMMON /FISHIN/ ABEGN(700),ABUNOO(700),BRANCH(130),CAPFIS,        GXPSR  9	COMMON/FISHIN/ABEGN(700),ABUNOO(700),BRANCH(130),CAPFIS, || GXPSR 9
+37	2222	OK	     1  OCON(730),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700)                 GXPSR 10	1 OCON(730),IBRA,INUC,MAXNUC,MULT(11),NUCLID(700) || GXPSR 10
+38	2260	OK	      COMMON /FRYLNG/ BSUEK(90),ERM(185),JRM(185),KRM,EGF(90)           GXPSR 11	COMMON /FRYLNG/ BSUEK(90),ERM(185),JRM(185),KRM,EGF(90) || GXPSR 11
+39	2305	OK	      COMMON /OUTPUT/ FISNCM,FF(200),FW,ITA8,JGO,MASCHN,PSIZE(200),     GXPSR 12	COMMON / OUTPUT / FISNCM, FF(200), FW, ITA8, JGO, MASCHN, PSIZE(200), || GXPSR 12
+40	2350	OK	     1 FMASS(20C),PACT(200)                                             GXPSR 13	1 FMASS(20C),PACT(200) || GXPSR 13
+41	2396	OK	      COMMON /UTILTY/  KOUT,NPRNT(15)                                   GXPSR 14	COMMON /UTILTY/ KOUT,NPRNT(15) || GXPSR 14
+42	2438	OK	      LOGICAL IGO,JD,KDOS,NPRNT                                         GXPSR 15	LOGICAL IGO, JD, KDOS, NPRNT || GXPSR 15
+43	2481	OK	C                                                                       GXPSR 16	C || GXPSR 16
+44	2524	OK	      DIMENSION XRT(90)                                                 GXPSR 17	DIMENSION XRT(90) || GXPSR 17
+45	2567	OK	C                                                                       GXPSR 18	C || GXPSR 18
+46	2609	OK	      DATA CROSS.UNIT/1.1E-4.1.0/                                       GXPSR 19	DATA CROSS. UNIT/1.1E-4.1.0/ || GXPSR 19
+47	2657	OK	C                                                                       GXPSR 20	C || GXPSR 20
+48	2694	OK	  9C1 FORMAT                                                            GXPSR 21	9C1 FORMAT || GXPSR 21
+49	2739	COUNT 59/58	                                                                        GXPSR 22	1 (16H10OUTPUT OF GXPSR/5X13HPARTICLE SIZE7X24HFISSION PRODUCT AC || GXPSR 22
+50	2776	OK	     2TIVITV)                                                           GXPSR 23	2TIVITV) || GXPSR 23
+51	2825	OK	  902 FORMAT                                                            GXF3R 24	902 FORMAT || GXF3R 24
+52	2868	COUNT 31/32	                                                                        GXPSK 25	1 (AX7H MFTERS16Y11H(R*H*2)/HR//) || GXPSK 25
+53	2913	COUNT 10/9	                                                                        GXPSK 26	QJJ3 FORMAT || GXPSK 26
+54	2957	OK	     1    (5X1PE12.4.14XE12.4)                                          GXPSR 27	1 (5X1PE12.4.14XE12.4) || GXPSR 27
+55	3002	OK	  912 602437                                                            GXFSR 20	912 602437 || GXFSR 20
+56	3045	COUNT 25/26;COUNT 4/7	                                                                                	1 1917 METERS : 00:00:00 2/1/1 || G S 29
+57	3101	COUNT 1/3	                                                                                	*
+58	3279	COUNT 8/39;COUNT 3/1	                                                                                	markdown || ---

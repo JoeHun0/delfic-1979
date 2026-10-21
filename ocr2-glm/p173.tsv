@@ -1,0 +1,4 @@
+4	648	OK	     1    (HO8    ,SLDTMP ,TMSO   ,TH ,EMITN, FISSID )                          	1 (HO8 ,SLDTMP ,TMSO ,TH ,EMITN, FISSID )
+59	3014	COUNT 33/37	                                                                                	COMMON / CONDAT/ IC(2:) IH09 IPNCH IPAM
+60	3057	COUNT 29/35	                                                                                	1 KRO ISOUT JPOUT KPOUT KT AFE LT APE
+61	3091	COUNT 27/31	                                                                                	2MARRAY MBTAPE MXREQ SIGMA INTF

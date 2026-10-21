@@ -1,0 +1,58 @@
+1	15	50	NOISE	                                                                        			
+2	432	463	AGREE	      GO TO 50                                                          		lighton=      GO TO 50 ## dots=      GO TO 50 ## glm=      GO TO 50	SHWIN61
+3	475	507	AGREE	  15  VX(NHODO)=AP(N2)*SCALE(2)                                         		lighton=  15  VX(NHODO)=AP(N2)*SCALE(2) ## dots=  15  VX(NHODO)=AP(N2)*SCALE(2) ## glm=  15  VX(NHODO)=AP(N2)*SCALE(2)	SHWIN62
+4	518	555	AGREE	      VY(NHODO)=AP(N3)*SCALE(2)                                         		dots2=      VY(NHODO)=AP(N3)*SCALE(2) ## glm=      VY(NHODO)=AP(N3)*SCALE(2)	SHWIN63
+5	555	599	COMMENT	COPY OUT SCALED WIND DATA                                               			SHWIN64
+6	599	639	AGREE	   50 WRITE(ISOUT,4)ZV(NHODO),VX(NHODO), VY(NHODO)                      		dots=   50 WRITE(ISOUT,4)ZV(NHODO),VX(NHODO), VY(NHODO) ## glm=   50 WRITE(ISOUT,4)ZV(NHODO),VX(NHODO), VY(NHODO)	SHWIN65
+7	647	680	VOTED	      GO TO 100                                                         		lighton=      GO TO 130 ## dots=      GO TO 100 ## glm=      GO TO 100	SHWIN66
+8	680	727	TIE	  240 IF(NHODO .GT. 3) RETURN                                           	4,13,21	lighton=  240 IF(NH000 .GT. 5) RETURN ## lighton2=  200 IF(NHODO .GT. 3) RETURN ## dots=  200 IF(NHODO .GT. 0) RETURN ## dots2=  200 IF(NHODO .GT. 0) RETURN ## glm=  240 IF(NHOOO .GT. 3) RETURN ## glm2=  240 IF(NHOUO .GT. 3) RETURN	CHWIN67
+9	727	768	VOTED	      WRITE(ISOUT,5)                                                    		lighton=      WRITE(ISOUT,5) ## dots=      WRITE(ISOUT,5) ## glm=      WRITE(ISOUT,S)	WIN39
+10	768	807	AGREE	      RETURN                                                            		dots=      RETURN ## glm=      RETURN	SHWIN69
+11	820	851	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	SHWIN70
+12	1163	1196	COMMENT	*DECK,CPFR                                                              		lighton=*DECK,CPFR ## dots=*DECK,CPFR ## glm=*DECK,CPFR	CPFR1
+13	1206	1238	AGREE	      SUBROUTINE CPFR                                                   		lighton=      SUBROUTINE CPFR ## dots=      SUBROUTINE CPFR ## glm=      SUBROUTINE CPFR	CPFR2
+14	1251	1283	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR3
+15	1292	1327	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	CPFR4
+16	1335	1367	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR5
+17	1379	1411	NOISE	                                                                        			CPFR6
+18	1420	1454	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR7
+19	1464	1497	COMMENT	C     CPFR COMPUTES PARTICLE FALLOUT RATE                               		lighton=C     CPFR COMPUTES PARTICLE FALLOUT RATE ## dots=C     CPFR COMPUTES PARTICLE FALLOUT RATE ## glm=C     CPFR COMPUTES PARTICLE FALLOUT RATE	CPFR8
+20	1508	1539	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR9
+21	1549	1582	NOISE	                                                                        			CPFR10
+22	1593	1626	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR11
+23	1638	1673	AGREE	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,		lighton=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## dots=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    , ## glm=      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,	CPFR12
+24	1673	1716	VOTED	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,UT    ,DU    ,DWT    ,DX     ,		lighton=     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,UT    ,DU    ,OWT    ,DX     , ## dots=     1 OS    ,OST   ,OST0  ,OST1  ,OST2  ,UT    ,DU    ,DWT    ,DX     , ## glm=     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,UT    ,DU    ,DWT    ,DX     ,	CPFR13
+25	1725	1759	AGREE	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLK   ,KS    ,KSV    ,MWYA   ,		lighton=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLK   ,KS    ,KSV    ,MWYA   , ## dots=     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLK   ,KS    ,KSV    ,MWYA   ,	CPFR14
+26	1759	1801	AGREE	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,		lighton=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    , ## dots=     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,	CPFR15
+27	1801	1843	AGREE	     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,		lighton=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     , ## dots=     4 S     ,SAVE  ,SHAPE ,SMALLT,T     ,TE    ,U     ,V      ,WT     ,	CPFR16
+28	1851	1886	AGREE	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         		lighton=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE ## dots=     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE	CPFR17
+29	1894	1929	VOTED	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  		lighton=      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## lighton2=      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## dots2=      COMMON /CONTRL/ DETIO(12),IC(20),IRA0,IRISE,ISIN,ISOUT,JPARN,K0I ## glm=      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI	CPFR18
+30	1937	1972	TIE	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)  	54	lighton=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAP(201),FMASS(200) ## lighton2=      COMMON /PARTGL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) ## dots=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAR(201),FMASS(200) ## dots2=      COMMON /PARTCL/ NDSTR,RHCP,OMEAN,SD,PS(200),DIAR(201),FMASS(200) ## glm=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) ## glm2=      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)	CPFR19
+31	1980	2015	VOTED	      COMMON /TABLES/ MCX, CX(50,10), GDPST(1J,100)                     		lighton=      COMMON /TABLES/ MCX, CX(50,10), GDPST(1J,100) ## dots=      COMMON /TABLES/ NCX, CX(50,10), GOPST(1J,100) ## glm=      COMMON /TABLES/ MCX， CX(50,10)， GDPST(1J,100)	CPFR20
+32	2024	2055	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR21
+33	2065	2097	AGREE	      DIMENSION Y(200),CG(200)                                          		lighton=      DIMENSION Y(200),CG(200) ## dots=      DIMENSION Y(200),CG(200) ## glm=      DIMENSION Y(200),CG(200)	CPFR22
+34	2108	2142	VOTED	      EQUIVALENCE (Y(1),GOPST(1)), (CG(1),GOPST(201))                   		lighton=      EQUIVALENCE (Y(1),GOPST(1)), (CG(1),GOPST(201)) ## dots=      EQUIVALENCE (Y(1),GOPST(1)), (CG(1),GOPST(201)) ## glm=      EQUIVALENCE (Y(1),GDPST(1))， (CG(1),GDPST(201))	CPFR23
+35	2152	2183	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR24
+36	2194	2226	NONE	                                                                        			CPFR25
+37	2238	2270	AGREE	     1  20X30HNEGATIVE PARTICLE DENSITY                          /////) 		lighton=     1  20X30HNEGATIVE PARTICLE DENSITY                          /////) ## lighton2=     1  20X30HNEGATIVE PARTICLE DENSITY                          /////)	CPFR26
+38	2281	2312	NONE	                                                                        			CPFR27
+39	2323	2357	SINGLE	     1* * * * * * * * * * * ***  22X, 76HPARTICLE SETTLING RATES ARE INA		dots2=     1* * * * * * * * * * * ***  22X, 76HPARTICLE SETTLING RATES ARE INA	CPFR28
+40	2367	2400	VOTED	     2CCURATE.  DAVIES NUMEER IS TOO LARGE FOR THE I3, 8H TH SIZE// 24X,		lighton=     2CCURATE.  DAVIES NUMEER IS TOO LARGE FOR THE I3, 8H TH SIZE// 24X, ## dots=     2CCURATE.  DAVIES NUMEER IS TOO LARGE FOR THE 13, 8H TH SIZE// 24X, ## glm=     2CCURATE.  DAVIES NUMEER IS TOO LARGE FOR THE I3, 8H TH SIZE// 24X,	CPFR29
+41	2411	2441	NONE	                                                                        			CPFR30
+42	2452	2483	NONE	                                                                        			CPFR31
+43	2496	2526	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR32
+44	2539	2573	NOISE	                                                                        			CPFR33
+45	2581	2612	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR34
+46	2624	2658	COMMENT	C                                      TEST FOR IMPOSSIBLE PARTICLE     		glm=C                                      TEST FOR IMPOSSIBLE PARTICLE	CPFR35
+47	2667	2700	TIE	      DO 9:1 J=1,NDSTR                                                  	11	lighton=      00 9:1 J=1,NOSTR ## lighton2=      DO 9:1 J=1,NDSTR ## dots=      DO 9J1 J=1,NDSTR ## dots2=      DO 9J1 J=1,NDSTR ## glm=      DO 951 J=1,NDSTR ## glm2=      DO 931 J=1,NOSTR	UPFK15
+48	2710	2742	TIE	           IF(Y(J)) =902 ,.1, 9 1                                       	27,33	lighton2=           IF(Y(J)) 902, 9.1, 9 1 ## dots=           IF(Y(J)) =902 , 91 , 9 ## dots2=           IF(Y(J)) =902 ,91, 9 2	
+49	2755	2784	COMMENT	9:1        1CONTINU                                                     		glm=9:1        1CONTINU	LPFE34
+50	2798	2827	VOTED	           GO TO 9.                                                     		lighton2=           GO TO 9. ## dots2=           GO TO 9. ## glm=           GO TO 9	LPFR39
+51	2839	2871	SINGLE	  c)2 WRITE(ISOUT,:03)                                                  		lighton2=  c)2 WRITE(ISOUT,:03)	CPFR40
+52	2881	2911	AGREE	      MWYA = 3                                                          		lighton2=      MWYA = 3 ## dots2=      MWYA = 3 ## glm=      MWYA = 3	CPFR41
+53	2924	2955	VOTED	      GO TO 008                                                         		lighton=      GO TO 908 ## dots=      GO TO 008 ## glm=      GO TO 008	CPFR42
+54	2968	2997	VOTED	900        CONTINUE                                                     		lighton=90C        CONTINUE ## dots=900        CONTINUE ## glm=900        CONTINUE	CPFR43
+55	3011	3040	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	CPFR44
+56	3054	3085	COMMENT	C     COMPUTE PARTICLE FALLOUT RATES                                    		lighton=C     COMPUTE PARTICLE FALLOUT RATES ## glm=C     COMPUTE PARTICLE FALLOUT RATES	CPFR45
+57	3110	3140	NOISE	                                                                        		lighton=                                      74 ## dots=                                      74 ## glm=                                      74	
+58	3267	3308	NOISE	                                                                        			

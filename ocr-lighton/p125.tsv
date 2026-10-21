@@ -1,0 +1,63 @@
+1	0	COUNT 0/47	                                                                                	
+2	515	OK	*DECK,NEST                                                              NEST   1	*DECK, NEST || NEST 1
+3	558	OK	      SUBROUTINE NEST(NET,NETSU,XQ,YQ,NDATA,XL,XR,YL,YU,ICF,JCF,NCF)    NEST   2	SUBROUTINE NEST(NET,NETSU,XQ,YQ,NDATA,XL,XR,YL,YU,ICF,JCF,NCF) || NEST 2
+4	593	COUNT 0/5	C     MARCH, 1971                                                               	C MARCH, 1971 || 
+5	642	OK	C     GIVEN THE HORIZONTAL COORDINATES OF A POINT, NEST RETURNS THE     NEST   4	C GIVEN THE HORIZONTAL COORDINATES OF A POINT, NEST RETURNS THE || NEST 4
+6	676	COUNT 0/5	C     NET MESH OR SUB-MESH INDEX NOATA AND THE BOUNDARY COORDINATES OF          	C NET MESH OR SUB-MESH INDEX NOATA AND THE BOUNDARY COORDINATES OF || 
+7	731	OK	C     THE MESH OR SUB-MESH                                              NEST   6	C THE MESH OR SUB-MESH || NEST 6
+8	775	OK	C     MESH INDEX IS -999 IF INFUT POINT LIES OLTSIDE ATMOS.             NEST   7	C     MESH INDEX IS -999 IF INFUT POINT LIES OLTSIDE ATMOS. || NEST 7
+9	817	OK	C     NET   - PRIMARY HORIZONTAL SPACE RESOLUTION MESH ARRAY            NEST   8	C     NET - PRIMARY HORIZONTAL SPACE RESOLUTION MESH ARRAY || NEST 8
+10	858	OK	C     NETSU - HORIZONTAL SPACE RESOLUTION SUB-MESH ARRAY                NEST   9	C     NETSU - HORIZONTAL SPACE RESOLUTION SUB-MESH ARRAY || NEST 9
+11	901	OK	C     XQ    → INPUT POINT > COCROINATE                                  NEST  10	C     XQ     → INPUT POINT > COCROINATE || NEST 10
+12	946	OK	C     YQ    - INPUT POINT Y COORDINATE                                  NEST  11	C YQ - INPUT POINT Y COORDINATE || NEST 11
+13	987	OK	C     NDATA - OUTPUT MESH CR SUB-MESH INDEX                             NEST  12	C     NDATA - OUTPUT MESH CR SUB-MESH INDEX || NEST 12
+14	1030	OK	C     XL    - OUTPUT MESH OR SUB-MESH  LEFT BOUNDARY X COORDINATE       NESI  13	C    XL    - OUTPUT MESH OR SUB-MESH LEFT BOUNDARY X COORDINATE || NESI 13
+15	1074	OK	C     XR    - OUTPUT MESH CR SUB-MESH RIGHT BOUNDARY X COORDINATE       NEST  14	C     XR     - OUTPUT MESH CR SUB-MESH RIGHT BOUNDARY X COORDINATE || NEST 14
+16	1115	OK	C     YL    - OUTPUT MESH (R SUB-MESH LOWER BOUNDARY Y COORDINATE       NEST  15	C    YL    - OUTPUT MESH (R SUB-MESH LOWER BOUNDARY Y COORDINATE || NEST 15
+17	1158	OK	C     YU    - OUTPUT MESH OR SUB-MESH UPPER BOUNDARY Y COORDINATE       NEST  16	C YU - OUTPUT MESH OR SUB-MESH UPPER BOUNDARY Y COORDINATE || NEST 16
+18	1202	OK	      COMMON /CNTROL/ IPOLI,ISIN,ISOUT,JPARN,MC(20),NSEQO               NEST  17	COMMON /CNTROL/ IPOLI,ISIN,ISOUT,JPARN,MC(20),NSEQO || NEST 17
+19	1238	COUNT 0/6	       COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NCATX                          	COMMON /INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NCA TX || 
+20	1289	OK	      COMMON /SPACE/ WIN1,XLLC,YLLC,ZMAX,ZMIN,TIMEX                     NEST  19	COMMON /SPACE/ WIN1,XLLC,YLLC,ZMAX,ZMIN,TIMEX || NEST 19
+21	1331	OK	      DIMENSION NET(ICF,JCF),NETSU(NCF)                                 NEST  20	DIMENSION NET(ICF,JCF),NETSU(NCF) || NEST 20
+22	1367	COUNT 0/6	      DATA PROGRM/GHNEST  /                                                     	DATA PROGRM/GHNEST / || 
+23	1417	OK	COMPUTE MESH INDICES IC ANC JC FOR (XQ,YQ)                              NEST  22	COMPUTE MESH INDICES IC ANC JC FOR (XQ,YQ) || NEST 22
+24	1460	COUNT 0/20	                                                                        NEST  23	 || NEST 23
+25	1502	COUNT 0/20	                                                                        NEST  24	 || NEST 24
+26	1545	OK	COMMENCE MESH SEARCH                                                    NEST  25	COMMENCE MESH SEARCH || NEST 25
+27	1589	OK	CHECK IF IC (JC) LIES BETWEEN 1 AND ICX (JCX)                           NEST  26	CHECK IF IC (JC) LIES BETWEEN 1 AND ICX (JCX) || NEST 26
+28	1630	COUNT 65/64	                                                                        NEST  27	IF((IC.GE.1).AND.(JC.GE.1).AND.(IC.LE.ICX).AND.(JC.LE.JCX)) GO TO 1. || NEST 27
+29	1673	OK	CANCEL MESH SEARCH. (XQ,YG) LIES OUTSIDE ATMOS.                         NEST  28	CANCEL MESH SEARCH. (XQ,YG) LIES OUTSIDE ATMOS. || NEST 28
+30	1718	OK	      NDATA=-999                                                        NEST  29	NDATA = -999 || NEST 29
+31	1761	OK	      RETURN                                                            NEST  30	RETURN || NEST 30
+32	1804	OK	COMPUTE XL,XR,YL, AND YU FOR MESH                                       NEST  31	COMPUTE XL, XR, YL, AND YU FOR MESH || NEST 31
+33	1848	COUNT 0/6	    1 VINT=HINT                                                                 	1 VINT=HINT || 
+34	1890	COUNT 0/24	                                                                        NEST  33	 || NEST 33
+35	1933	COUNT 0/22	                                                                        NEST  34	 || NEST 34
+36	1976	COUNT 0/24	                                                                        N5ST  35	 || N5ST 35
+37	2018	COUNT 0/22	                                                                        NEST  36	 || NEST 36
+38	2062	OK	CHECK SIGN OF NET(IC,JC)                                                NEST  37	CHECK SIGN OF NET(IC,JC) || NEST 37
+39	2105	OK	      IF(NET(IC,JC)) 4,2,3                                              NEST  38	IF (NET(IC, JC)) 4, 2, 3 || NEST 38
+40	2139	COUNT 0/6	    2 CALL ERROR(PROGRM,-2,ISOUT)                                               	2 CALL ERROR(PROGRM,-2,ISOUT) || 
+41	2190	OK	CONCLUDE MESH SEARCH                                                    NEST  40	CONCLUDE MESH SEARCH || NEST 40
+42	2234	OK	    3 NDATA=NET(IC,JC)                                                  NEST  41	3 NDATA=NET(IC,JC) || NEST 41
+43	2276	COUNT 5/6	                                                                        NEST  42	PETER || NEST 42
+44	2318	OK	COMMENCE QUADRANT SEARCH. CBTAIN POINTER NQ                             NEST  43	COMMENCE QUADRANT SEARCH. CBTAIN POINTER NQ || NEST 43
+45	2362	COUNT 20/15	                                                                        NEST  44	4 NQ = \cdots NET(IC, JC) || NEST 44
+46	2405	OK	COMPUTE QUADRANT INDICES IG AND JQ FOR (XQ,YQ)                          NEST  45	COMPUTE QUADRANT INDICES IG AND JQ FOR (XQ,YQ) || NEST 45
+47	2449	OK	    5 VINT=VINT/2.                                                      NEST  46	5 VINT=VINT/2. || NEST 46
+48	2492	COUNT 0/15	                                                                        NEST  47	 || NEST 47
+49	2534	COUNT 0/15	                                                                        NEST  48	 || NEST 48
+50	2577	OK	CONVERT NQ TO QUADRANT LABEL                                            NEST  49	CONVERT NQ TO QUADRANT LABEL || NEST 49
+51	2621	COUNT 0/21	                                                                        NEST  50	 || NEST 50
+52	2663	OK	COMPUTE XL,XR,YL, AND YU FCR QUADRANT                                   NEST  51	COMPUTE XL, XR, YL, AND YU FCR QUADRANT || NEST 51
+53	2707	COUNT 0/22	                                                                        NEST  52	 || NEST 52
+54	2751	OK	      XL=XL+VINT*FLOAT(IG)                                              NEST  55	XL = XL + VINT * FLOAT(IG) || NEST 55
+55	2792	COUNT 0/22	                                                                        NEST  54	 || NEST 54
+56	2837	COUNT 0/20;COUNT 12/6	                                                                                	 || N \bar{e} ST 55
+57	2879	OK	CHECK SIGN OF NETSU(NQ)                                                 NEST  56	CHECK SIGN OF NETSU(NQ) || NEST 56
+58	2922	OK	      IF(NETSU(NQ)) 7,6,8                                               NEST  57	IF(NETSU(NQ)) 7,6,8 || NEST 57
+59	2966	OK	    6 CALL ERROR(PROGRM,-6,ISOUT)                                       NEST  58	6 CALL ERROR(PROGRM,-6,ISOUT) || NEST 58
+60	3008	OK	CONTINUE QUADRANT SEARCH. CBTAIN POINTER NQ                             NEST  59	CONTINUE QUADRANT SEARCH. CBTAIN POINTER NQ || NEST 59
+61	3050	OK	    7 NQ=-NETSU(NQ)                                                     NEST  60	7 NQ= -NETSU(NQ) || NEST 60
+62	3101	OK	                                        122                                     	122
+63	3254	COUNT 203/37;COUNT 14/8	                                                                                	\text{A. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G. G || \text{الشريعة}

@@ -1,0 +1,63 @@
+1	5	34	NONE	                                                                        			
+2	60	81	NOISE	                                                                        		lighton=\text  {1 .  }	
+3	534	568	VOTED	      IF(ZPAR(J)-ZB( MCX )) 114,115,115                                 		lighton=      IF(ZPAR(J)-ZB( MCX )) 114,115,115 ## dots=      IF(ZPAR(J)-ZB( MCX )) 114,115,116 ## glm=      IF（ZPAR（J）-ZB（ MCX ）） 114,115,115	WNDSF241
+4	579	609	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF242
+5	621	653	COMMENT	C '15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD                  		lighton=C '15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD ## dots=C '15 TAKE CARE OF PARTICLES THAT DONT LEAVE THE CLOUD	WNDSF243
+6	665	696	AGREE	 115  DX=XC(MCX)                                                        		lighton= 115  DX=XC(MCX) ## dots= 115  DX=XC(MCX) ## glm= 115  DX=XC(MCX)	WNDSF244
+7	707	738	AGREE	      OY=YC(MCX)                                                        		dots=      OY=YC(MCX) ## glm=      OY=YC(MCX)	HNDSF245
+8	749	781	COMMENT	C     TP(J) AND ZPAR(J) ARE OK AS IS.                                   		lighton=C     TP(J) AND ZPAR(J) ARE OK AS IS. ## dots=C     TP(J) AND ZPAR(J) ARE OK AS IS. ## glm=C     TP(J) AND ZPAR(J) ARE OK AS IS.	WNDSF246
+9	793	824	AGREE	      GO TO 108                                                         		lighton=      GO TO 108 ## dots=      GO TO 108 ## glm=      GO TO 108	WNDSF247
+10	836	867	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF248
+11	878	910	COMMENT	C 114 THE PARTICLE HAS LEFT THE CLOUD                                   		lighton=C 114 THE PARTICLE HAS LEFT THE CLOUD ## dots=C 114 THE PARTICLE HAS LEFT THE CLOUD ## glm=C 114 THE PARTICLE HAS LEFT THE CLOUD	WNDSF249
+12	923	952	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF250
+13	966	997	AGREE	  114 ZCUR=ZPAR(J)                                                      		lighton=  114 ZCUR=ZPAR(J) ## dots=  114 ZCUR=ZPAR(J) ## glm=  114 ZCUR=ZPAR(J)	WNOSF251
+14	1007	1039	VOTED	      IF( ZCUR .LT. ZBRSTZ ) ZCUR=ZBRSTZ                                		lighton=      IF( ZCUR .LT. ZBRSTZ ) ZCUR=ZBRSTZ ## dots=      IF( ZCUR .LT. ZBRSTZ ) ZCUR=ZBRSTZ ## glm=      IF（ ZCUR .LT. Z8RSTZ ） ZCUR=Z8RSTZ	WNDSF252
+15	1051	1081	TIE	      TCUR=TP(J)                                                        	14,16	lighton=      TCUR=TP(J) ## lighton2=      TCUR=TP(J) ## glm=      TCUR=TP（J） ## glm2=      TCUR=TP（J）	WNOSF253
+16	1094	1125	AGREE	      DX=0.                                                             		lighton2=      DX=0. ## glm=      DX=0.	HNDSF254
+17	1137	1167	AGREE	      DY=0.                                                             		dots=      DY=0. ## glm=      DY=0.	WNDSF255
+18	1180	1210	COMMENT	C     COMPUTE ATMOSPHERE PROPERTIES AT ZCUR                             		lighton=C     COMPUTE ATMOSPHERE PROPERTIES AT ZCUR ## glm=C     COMPUTE ATMOSPHERE PROPERTIES AT ZCUR	WNOSF256
+19	1224	1257	AGREE	      CALL TRPL(ZCUR,NAT,ALT,ATP,T)                                     		lighton=      CALL TRPL(ZCUR,NAT,ALT,ATP,T) ## dots=      CALL TRPL(ZCUR,NAT,ALT,ATP,T) ## glm=      CALL TRPL(ZCUR,NAT,ALT,ATP,T)	WNDSF257
+20	1265	1299	AGREE	      CALL TRPL(ZCUR,NAT,ALT,PRS,P)                                     		lighton=      CALL TRPL(ZCUR,NAT,ALT,PRS,P) ## dots=      CALL TRPL(ZCUR,NAT,ALT,PRS,P) ## glm=      CALL TRPL(ZCUR,NAT,ALT,PRS,P)	WNOSF258
+21	1308	1342	AGREE	      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN)                                   		lighton=      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN) ## dots=      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN) ## glm=      CALL TRPL(ZCUR,NAT,ALT,RHO,DEN)	WNDSF259
+22	1352	1386	AGREE	      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS)                                   		lighton=      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS) ## dots=      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS) ## glm=      CALL TRPL(ZCUR,NAT,ALT,ETA,VIS)	WNDSF260
+23	1395	1425	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF261
+24	1437	1469	COMMENT	C     LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE.          		lighton=C     LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE. ## dots=C     LOCATE PARTICLE DEFINITION TIME IN THE CLOUD RISE TABLE.	WNOSF262
+25	1481	1512	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF2E3
+26	1523	1556	VOTED	      00 210 K=1,MCX                                                    		lighton=      00 210 K=1,MCX ## dots=      00 210 K=1,MCX ## glm=      00 210 K=1，MCX	WNDSF264
+27	1566	1597	AGREE	      LL=MCXP1-K                                                        		lighton=      LL=MCXP1-K ## dots=      LL=MCXP1-K ## glm=      LL=MCXP1-K	HNOSF265
+28	1609	1639	AGREE	      IF(TC(LL).LE.TP(J)) GO TO 221                                     		lighton=      IF(TC(LL).LE.TP(J)) GO TO 221 ## dots=      IF(TC(LL).LE.TP(J)) GO TO 221 ## glm=      IF(TC(LL).LE.TP(J)) GO TO 221	WNOSF266
+29	1651	1682	AGREE	  210 CONTINUE                                                          		lighton=  210 CONTINUE ## dots=  210 CONTINUE ## glm=  210 CONTINUE	HNOSF2E7
+30	1695	1726	AGREE	  211 IRROR=-211                                                        		lighton=  211 IRROR=-211 ## dots=  211 IRROR=-211 ## glm=  211 IRROR=-211	WNDSF2E8
+31	1738	1769	AGREE	      GO TO 7734                                                        		lighton=      GO TO 7734 ## dots=      GO TO 7734 ## glm=      GO TO 7734	WNDSF2E9
+32	1781	1811	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF270
+33	1821	1853	COMMENT	C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE      		lighton=C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE ## dots=C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE ## glm=C 221 LOCATE INITIAL PARTICLE ALTITUDE IN THE WIND HODOGRAPH TABLE	HNDSF271
+34	1866	1896	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF272
+35	1907	1940	VOTED	  221 DO 230 K=1,MHODO                                                  		lighton=  221 00 230 K=1,MH000 ## dots=  221 DO 230 K=1,MHODO ## glm=  221 DO 230 K=1，MHODO	WNDSF273
+36	1950	1981	AGREE	      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240                       		lighton=      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240 ## dots=      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240 ## glm=      IF((ZV(K)+ZV(K+1))/2.0.GT.ZPAR(J))GO TO 240	WNDSF274
+37	1993	2026	AGREE	  230 CONTINUE                                                          		lighton=  230 CONTINUE ## dots=  230 CONTINUE ## glm=  230 CONTINUE	WNOSF275
+38	2036	2066	AGREE	      MM=NHODO                                                          		dots=      MM=NHODO ## glm=      MM=NHODO	WNOSF276
+39	2079	2109	AGREE	      GO TO 220                                                         		lighton=      GO TO 220 ## dots=      GO TO 220 ## glm=      GO TO 220	WNOSF277
+40	2123	2153	AGREE	  240 MM=K                                                              		lighton=  240 MM=K ## dots=  240 MM=K ## glm=  240 MM=K	WNDSF278
+41	2165	2195	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF279
+42	2208	2239	COMMENT	C 220 FIND CLOUD BOTTOM ALTITUDE AT THE PARTICLE DEFINITION TIME        			WNDSF290
+43	2252	2283	AGREE	  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL)                             		lighton=  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL) ## dots=  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL) ## glm=  220 ZBOTOM= ZE(LL) +(TP(J)-TC(LL))*VB(LL)	WNOSF281
+44	2295	2326	VOTED	      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225                   		lighton=      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225 ## lighton2=      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225 ## dots=      IF((ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225 ## dots2=      IF:(ZBOTOM- ZCUR).LE.115.*W**(J.151)) GO TO 225	WNDSF282
+45	2339	2368	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WHOSF203
+46	2380	2413	COMMENT	C     LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE  		lighton=C     LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE ## dots=C     LOCATE INITIAL PARTICLE ALTITUDE IN THE CLOUD RISE HISTORY TABLE	WNDSF284
+47	2424	2455	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WINDSF285
+48	2467	2500	TIE	      DO 222 K=1.HCX                                                    	7,8	lighton2=      DO 222 K=1,MCX ## dots=      00 222 K=1.HCX ## dots2=      00 222 K=1.HCX ## glm=      DO 222 K=1.HCX	WNOSF286
+49	2512	2542	VOTED	      NN=MCXP1-K                                                        		lighton=      NN=MGXP1-K ## dots=      NN=MCXP1-K ## glm=      NN=MCXP1-K	WNDSF237
+50	2554	2584	VOTED	      IF(ZB(NN).LE.ZCUR) GC TO 224                                      		lighton=      IF(Z8(NN).LE.ZCUR) GC TO 224 ## dots=      IF(ZB(NN).LE.ZCUR) GC TO 224 ## glm=      IF(ZB(NN).LE.ZCUR) GC TO 224	HNOSF208
+51	2597	2628	AGREE	  222 CONTINUE                                                          		dots=  222 CONTINUE ## glm=  222 CONTINUE	WNDSF289
+52	2641	2670	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF290
+53	2682	2714	COMMENT	C     COMPUTE AN AVERAGE BASE RATE, BV                                  		lighton=C     COMPUTE AN AVERAGE BASE RATE, BV	HNOSF291
+54	2725	2755	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	HNOSF292
+55	2768	2799	AGREE	  224 IF(LL.GT.NN)GO TO 3224                                            		lighton=  224 IF(LL.GT.NN)GO TO 3224 ## dots=  224 IF(LL.GT.NN)GO TO 3224 ## glm=  224 IF(LL.GT.NN)GO TO 3224	WNDSF293
+56	2810	2840	TIE	      BV=V3(LL)                                                         	7,11,12,15	lighton2=      BV=V3(LL) ## glm=      9V=V9（LL）	WNDSF294
+57	2853	2884	AGREE	      GO TO 3227                                                        		lighton=      GO TO 3227 ## dots=      GO TO 3227 ## glm=      GO TO 3227	WNDSF295
+58	2898	2927	VOTED	 3224 BV=0.                                                             		lighton2= 3224 BV=0. ## dots= 3224 BV=0. ## dots2= 3224 BV=0. ## glm= 3224 8V=0.	WNDSF296
+59	2939	2971	VOTED	      DO 3225 K=NN,LL                                                   		lighton2=      DO 3225 K=NN,LL ## dots=      DO 3225 K=NN,LL ## dots2=      00 3225 K=NN,LL ## glm=      DO 3225 K=NN，LL	WNDSF297
+60	2980	3011	AGREE	      IF(K.EQ.  MCX  ) GO TO 3226                                       		lighton=      IF(K.EQ.  MCX  ) GO TO 3226 ## dots=      IF(K.EQ.  MCX  ) GO TO 3226 ## glm=      IF(K.EQ.  MCX  ) GO TO 3226	WNOSF236
+61	3025	3057	TIE	 3225 BV=BV +VB(K)*(TC(K+1)- TC(K))                                     	10,18,20,35	lighton2= 3225 BV=BV +VB(K)*(TC(K+1)- TC(K)) ## glm= 3225 BV=8V +VB(K3*（TC(K+1)- TC(K)）	WNDSF299
+62	3068	3099	VOTED	 3226 BV= 9V/(TC(LL)-TC(NN))                                            		lighton= 3226 BV= 9V/(TC(LL)-TC(NN)) ## dots= 3226 BV= AV/(TC(LL)-TC(NN)) ## glm= 3226 BV= 9V/（TC（LL）-TC（NN））	WNOSF3J0
+63	3126	3157	NOISE	                                                                        		lighton=                                      101 ## dots=                                      101 ## glm=                                      101	

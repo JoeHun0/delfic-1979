@@ -1,0 +1,56 @@
+1	10	COUNT 0/31;COUNT 0/2	                                                                                	 || 
+2	49	COUNT 0/7	                                                                                	
+3	97	COUNT 0/29;COUNT 0/7	                                                                                	 || 
+4	729	COUNT 0/5	*DECK,URAN                                                                      	*DECK,URAN || 
+5	764	OK	      SUBROUTINE URAN                                                   URAN   2	SUBROUTINE URAN || URAN 2
+6	816	OK	C                                                                       URAN   3	C || URAN 3
+7	856	OK	C     R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS                       URAN   4	C R C TOMPKINS - US ARMY NUCLEAR DEFENSE LABS || URAN 4
+8	901	COUNT 1/8	                                                                        URAN   5	C || URAN 5
+9	942	OK	CALLED BY PAM2                                                          URAN   6	CALLED BY PAM2 || URAN 6
+10	985	OK	C                                                                       URAN   7	C || URAN 7
+11	1026	COUNT 5/34;COUNT 0/5	                                                                                	C OLAM || 
+12	1067	OK	C   PLAM          DISINTEGRATION CONSTANT OF U239                       URAN   9	C PLAM DISINTEGRATION CONSTANT OF U239 || URAN 9
+13	1114	OK	C                                                                       URAN  10	C || URAN 10
+14	1156	COUNT 43/42	                                                                        URAN  11	COMMON / DECAY/ IGO, JD, KDOS, TENTER, TEEXIT, TIMT || URAN 11
+15	1191	OK	      COMMON /FISHIN  ABEEN(700),ABUNDO(700),BRANCH(130),CAPFIS,        UPAN  12	COMMON /FISH IN ABEEN (700), ABUNDO (700), BRANCH (130), CAPFIS, || UPAN 12
+16	1240	COUNT 48/49	                                                                        UPAN  13	1 DC0N(700), IBRA, INUC, MAXNUC, MULT(11), NUCLID(700) || UPAN 13
+17	1277	COUNT 58/59	                                                                        URAN  14	COMMON /OUTPUT/ FISNUM,FP(2)),FW,ITAB,JGO,MASCHN,PSIZE(20)), || URAN 14
+18	1327	OK	     1 FMASS(200),PACT(200)                                             URAN  15	1 FMASS(200), PACT(200) || URAN 15
+19	1369	COUNT 30/28	                                                                        URAN  16	COMMON / UTILITY/ KOUT, NPRINT (15) || URAN 16
+20	1412	OK	      LOGICAL IGO,JO,KDOS,NPRNT                                         URAN  17	LOGICAL IGO, JO, KDOS, NPRNT || URAN 17
+21	1456	OK	C                                                                       URAN  18	C || URAN 18
+22	1496	OK	      PLAM = 0.693147/(23.5*60.0)                                       URAN  19	PLAM = 0.693147/(23.5*60.0) || URAN 19
+23	1541	OK	COMPUTE VP233 DISINTEGRATION CONSTANT                                   URAN  20	COMPUTE VP233 DISINTEGRATION CONSTANT || URAN 20
+24	1582	OK	COMPUTE U239 DISINTEGRATION CONSTANT                                    URAN  21	COMPUTE U239 DISINTEGRATION CONSTANT || URAN 21
+25	1626	OK	      OLAM = 0.693147/(56.0*3600.0)                                     URAN  22	OLAM = 0.693147 / (56.0 * 3600.0) || URAN 22
+26	1672	OK	C                                                                       UdAN  23	C || UdAN 23
+27	1712	COUNT 22/23	                                                                        URAN  24	2 AZERO - CAPFIS 1.0.4 PLAM || URAN 24
+28	1755	OK	      GLMP = DLAM/(DLAM - PLAM)                                         UPAN  25	GLMP = DLAM / (DLAM - PLAM) || U P A N 2 5
+29	1799	OK	      GLUMP = AZERO*;LMD                                                URAN  26	GLUMP = AZERO*;LMD || URAN 26
+30	1843	OK	C                                                                       UPAN  27	C || U P A N 2 7
+31	1885	OK	      IF (.NOT.JD) GO TO 3                                              UPAN  28	IF (.NOT.JD) GO TO 3 || U P A N 2 8
+32	1925	OK	      ABURAN = AZERO'EXP (-PLAM*TIME)                                   URAN  29	ABURAN = AZERO' EXP (-PLAM*TIME) || URAN 29
+33	1968	OK	      ABNEP : GLMP*ABURAN - GLUMP*EXP (-DLAM*TIME)                      URAN  30	ABNEP : GLMP*ABURAN - GLUMP*EXP (-DLAM*TIME) || URAN 30
+34	2013	OK	      GO TO 7                                                           UPAN  31	GO TO 7 || UPAN 31
+35	2057	OK	C                                                                       UPAN  32	C || UPAN 32
+36	2098	OK	    3 IF (.NOT.KDOS) GO TO 4                                            URAN  73	3 IF (.NOT.KDOS) GO TO 4 || URAN 73
+37	2139	COUNT 53/54	                                                                        URAN  ?4	ABURAN = AZERO/PLAY' (EXP (-PLAY*TENTER) - EXP (-PLAY*EXIT)) || URAN ? 4
+38	2185	COUNT 17/18	                                                                        URAN  35	ABNEP = GLMPAPURAN - || URAN 35
+39	2226	OK	     1GLUMP*(EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT))/DLAM               URAN  36	1GLUMP* (EXP (-DLAM*TENTER) - EXP (-DLAM'TEXIT)) /DLAM || URAN 36
+40	2271	OK	      GO TO 7                                                           URAN  37	GO TO 7 || URAN 37
+41	2315	OK	C                                                                       URAN  38	C || URAN 38
+42	2354	OK	    4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER)                            URAN  39	4 ABURAN = AZERO/PLAM*EXP (-PLAM*TENTER) || URAN 39
+43	2401	OK	C                                                                       URAN  40	C || URAN 40
+44	2441	COUNT 101/46	                                                                        U=AN  41	\text{ABNEP} = \text{GLMP} * \text{AJURAN} - \text{GLYP}/\text{GLAM} * \text{EXP} \text{ (-GLAM} * \text{TENTER)} || U=AN 41
+45	2483	COUNT 42/43	                                                                        UPAN  42	7 ANP : (ABURAN* .327E-6 + ARNAP* .966E-6)*FISNIM || UPAN 42
+46	2528	OK	      00 o J=1,ITAE                                                     UPAN  L3	00 o J=1, ITAE || UPAN L3
+47	2570	COUNT 54/26	                                                                        URAN  L4	8 \text{ FP(J)} = \text{FP(J)} + \text{ANEP} + \text{FMASS(J)} || URAN L4
+48	2614	OK	C                                                                       URAN  43	C || URAN 43
+49	2656	COUNT 33/32	                                                                        U3AN  46	IF (NPRINT(12)) WRITE (KOUT,1JC) ANEP || U3AN 46
+50	2702	COUNT 0/6	  100 FORMAT                                                                    	100 FORMAT || 
+51	2742	COUNT 51/48	                                                                        U7AN  LO	1 (15H10OUTPUT OF JPAN/5X214MASS 239 CONTRIBUTES 1PE12.4) || U7AN LO
+52	2786	COUNT 24/25;COUNT 0/6	                                                                                	2 231 TO EACH PARTICLE SIZE.) || 
+53	2833	COUNT 0/6	      RETURN                                                                    	RETURN || 
+54	2875	COUNT 0/6	      END                                                                       	END || 
+55	3209	COUNT 0/2	                                                                                	
+56	3328	COUNT 0/9	                                                                                	

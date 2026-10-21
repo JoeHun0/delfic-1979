@@ -1,0 +1,35 @@
+1	3	COUNT 0/47;COUNT 0/7	                                                                                	 || 
+2	42	COUNT 0/21	                                                                                	
+3	67	COUNT 0/45;COUNT 0/8	                                                                                	 || 
+4	834	OK	*DECK,CRMW                                                              CRMW   1	*DECK,CRMW || CRMW 1
+5	880	OK	      SUBROUTINE CRHW                                                   CRMW   2	SUBROUTINE CRHW || CRMW 2
+6	922	OK	C                                                                       CRMW   3	C || CRMW 3
+7	965	OK	C     H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978     CRMW   4	C H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || CRMW 4
+8	1007	OK	C                                                                       CRHW   5	C || CRHW 5
+9	1048	COUNT 0/71	                                                                        CRH4   6	 || CRH4 6
+10	1092	OK	C                                                                       CRNH   7	C || CRNH 7
+11	1136	OK	C     CR4W PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE.           CRMW   8	C      CR4W PRINTS SUMMARY OF OUTPUT OF THE CLOUD RISE MODULE. || CRMW 8
+12	1179	OK	C                                                                       CRMW   9	C || CRMW 9
+13	1222	COUNT 0/71	                                                                        CRMW  10	 || CRMW 10
+14	1267	OK	C                                                                       CRMW  11	C || CRMW 11
+15	1306	OK	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  CRHW  12	COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || CRHW 12
+16	1352	OK	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     CRMW  13	COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) || CRMW 13
+17	1396	OK	C                                                                       CRMW  14	C || CRMW 14
+18	1436	COUNT 58/59	                                                                        CRMW  15	8 FORMAT(1H1//8X,42HCLOUD RISE AND GROWTH HISTORY FOR RUN *** 12A6) || CRMW 15
+19	1481	OK	   20 FORMAT(/                                                          CRMW  16	20 FORMAT(/ || CRMW 16
+20	1523	OK	     1  49X19HCLOUD HISTORY TABLE//                                     CRMW  17	1 49X19HCLOUD HISTORY TABLE// || CRMW 17
+21	1565	COUNT 48/47;COUNT 7/6	                                                                                	1 5X5 (3X5HCLOUD, 3X1), 3X4HBASE, 8X3HTOP, 7X6HRADIAL, || CREEK 18
+22	1608	OK	     2  3X11HTEMPERATURE,4X, 3FGAS/                                     CRMW  19	2 3X11HTEMPERATURE, 4X, 3FGAS/ || CRMW 19
+23	1651	OK	     3  8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS,          CRMW  20	3 8X4HTIME, 5X8HINTERVAL, 5X4HBASE, 8X3HTOP, 6X6HRADIUS, || CRMW 20
+24	1686	OK	     4  3X3(3X4HRATE, 4X), 14X, 7HDENSITY/                              CRMW  21	4 3X3(3X4HRATE, 4X), 14X, 7HDENSITY/ || CRMW 21
+25	1737	OK	     5  5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X),4X,      CRMW  22	5 5X2(3X5H(SEC), 3X), 3(4X3H(M), 4X), 3(2X7H(M/SEC), 2X), 4X, || CRMW 22
+26	1780	COUNT 0/6	     6  3H(K),5X13H (KG/M**3)// (1X12, 1H), 1X,   1:511.4))                     	6 3H(K), 5X13H (KG/M**3)// (1X12, 1H), 1X, 1:511.4)) || 
+27	1824	COUNT 0/6	C                                                                               	C || 
+28	1865	COUNT 0/71	                                                                        LRMW  25	 || L R MW 25
+29	1909	OK	C                                                                       CRMW  26	C || CRMW 26
+30	1950	OK	      WRITE(ISOUT,6) DETID                                              CRMW  27	WRITE (ISOUT, 6) DETID || CRMW 27
+31	1994	OK	      WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX)                       CRMW  28	WRITE(ISOUT,20)(J,(CX(J,I),I=1,10),J=1,MCX) || CRMW 28
+32	2037	OK	      RETURN                                                            CRMW  29	RETURN || CRMW 29
+33	2078	OK	      ENO                                                               CRMW  30	ENO || CRMW 30
+34	3164	COUNT 2/1	                                                                                	79
+35	3303	COUNT 0/4;COUNT 0/8	                                                                                	 || 

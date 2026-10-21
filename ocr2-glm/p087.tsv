@@ -1,0 +1,8 @@
+2	48	COUNT 3/11	                                                                                	---
+12	846	OK	  020  IF(R-1.） 125.13.13                                                       	020 IF(R-1.）125.13.13
+23	1318	OK	  001 MHYA = 3                                                                  	001 MHYA = 3
+39	2307	OK	       COMMON /ATMOS/ NAT， ALT(256)，  ATP(256)，  PRS(256)， RLH(256)，            	COMMON/ATMOS/NAT，ALT(256)，ATP(256)，PRS(256)，RLH(256)，
+42	2437	OK	     1 DS    ,OST   ,OST0  ,OST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,        	1 DS ,OST ,OST0 ,OST1 ,OST2 ,DT ,DU ,DWT ,OX ,
+45	2565	COUNT 24/33	                                                                                	4 S SAVE SHAPE SMALL T TE U V HT ,
+55	3037	OK	      CALL TROL(Z,NAT ,ALT,A1P,T:)                                              	CALL TROL(Z,NAT,ALT,A1P,T:)
+56	3082	OK	      CALL TRPL(Z.NAT .ALT.PRS.P)                                               	CALL TRPL(Z.NAT .ALT.PRS.P)

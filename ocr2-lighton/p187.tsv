@@ -1,0 +1,5 @@
+55	2875	OK	      COMMON /FISHIN/ ABEGN(700),ABUNDC(702),BRANCH(135),CAPFIS,                	COMMON /FISHIN/ ABEGN(700), ABUNDC(702), BRANCH(135), CAPFIS,
+56	2919	COUNT 47/48	                                                                                	1  OCON(7:D),I4RA,INUC,MAXNUC,MULT(1:),NUCLID(7:)
+57	2963	COUNT 29/28	                                                                                	COMMON /UTILITY/ KOUT,APRNT(15)
+58	3006	OK	      LOGICAL 160.JD.KDOS.KPENT                                                 	LOGICAL 160.JD.KDOS.KPENT
+61	3137	OK	     ?          .SCL   (11)  .SOL   (11)                                        	? .SCL (11) .SOL (11)

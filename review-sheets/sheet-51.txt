@@ -1,0 +1,12 @@
+601	p157	20	SINGLE	21	2	 4    FORMAT (A6,4X,2F10.3)
+602	p157	29	TIE	44	6	     1         /41X16HFISSION YIELD 1S,1PE12.4,10H KILCTUNS.)
+603	p157	39	TIE	39	6	     1       42X,10M10.IZCNTALI5,10X,10HVERTICAL  I3)
+604	p157	40	TIE	53	2	 26   FORMAT( 15X, 4H,PAR, 8X,4HYPAR, 8X, 4HZPAR, 8X, 4HTPAR,  7X,
+605	p157	42	NONE	47	2	raw: 20 FORMAT( 1H1, 50X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+606	p157	43	SINGLE	17	6	     1                                        12X1C1HT H E   D E P A R T
+607	p157	45	NONE	48	6	raw: 3 N S Y S T E M, //51X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+608	p157	46	NONE	63	6	raw: 4 OESSOR MODULE//55X, 11HPREPARED BY/45X, 30HATMOSPHERIC SCIENCE ASSO
+609	p157	51	NONE	53	3	raw: 37 FORMAT(1)X. 43HNUMBER OF FALLOUT PARCELS IN THIS BLOCK IS I4)
+610	p157	52	SINGLE	48	3	  9   FORMAT(46H NO MAPS.  THIS RUN FOR TAPE IFOUT PRINT ONLY.)
+611	p157	53	NONE	58	4	raw: 40 FORMAT( //25X, 63HTHIS IS AN AIRBURST. PARTICLE ACTIVITIES ARE C
+612	p157	54	TIE	47	6	     1OMPUTED BY PAMA / 30X, 11HSCALED H08=E12.5, 7H (FEET))

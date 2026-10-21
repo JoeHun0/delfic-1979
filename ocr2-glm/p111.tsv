@@ -1,0 +1,7 @@
+3	481	COUNT 18/17	                                                                                	4. NG=NC-4*（NC/4）+1
+18	1127	OK	      NDBLE=2*NDBLE                                                             	NDBLE=2*NDBLE
+43	2500	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQ0                       	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQ0
+48	2714	OK	      DIMENSION TIMUP(LTIMF),USUM(KBHF,NOATF,LTIMF)                             	DIMENSION TIMUP(LTIMF),USUM(KBHF,NOATF,LTIMF)
+53	2930	COUNT 47/46	                                                                                	DATA PROGRAM ,ALIMIT ,WIND ,TURB ,DONE ,PETEOR,RESOLV
+55	3017	COUNT 13/14	                                                                                	DATA INPU WILKS
+58	3287	COUNT 3/32	                                                                                	---

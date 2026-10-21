@@ -1,0 +1,46 @@
+1	1	44	NOISE	                                                                        			
+2	781	809	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+3	826	860	AGREE	      CALL BATMAN                                                       		lighton=      CALL BATMAN ## dots=      CALL BATMAN ## glm=      CALL BATMAN	
+4	869	902	AGREE	      MAXMCH = 90                                                       		dots=      MAXMCH = 90 ## glm=      MAXMCH = 90	
+5	912	943	AGREE	      MCH = 0                                                           		dots=      MCH = 0 ## glm=      MCH = 0	
+6	956	992	AGREE	      DO 1 I = 1,MAXMCH                                                 		lighton=      DO 1 I = 1,MAXMCH ## dots=      DO 1 I = 1,MAXMCH ## glm=      DO 1 I = 1,MAXMCH	
+7	992	1032	TIE	    1 XRT(I) = 0.0                                                      	10,12	dots=    1 XRT(I) = 0.0 ## dots2=    1 XRT(I) = 0.0 ## glm=    1 XRT（I） = 0.0 ## glm2=    1 XRT（I） = 0.0	GXPSR34
+8	1032	1067	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	GXPSR35
+9	1085	1121	TIE	      00 1) J = 1,KRM                                                   	11	lighton2=      00 1J J = 1,KRM ## dots=      00 1) J = 1,KRM ## dots2=      00 1) J = 1,KRM ## glm=      00 11 J = 1,KRM ## glm2=      00 11 J = 1,KRM	
+10	1121	1158	AGREE	      K = JRM(J)                                                        		glm=      K = JRM(J) ## glm2=      K = JRM(J)	GXPSR37
+11	1170	1208	AGREE	      IF (ERM(J))11,10,12                                               		lighton=      IF (ERM(J))11,10,12 ## dots=      IF (ERM(J))11,10,12 ## glm=      IF (ERM(J))11,10,12	
+12	1208	1247	AGREE	   11 MCH = MCH + 1                                                     		lighton=   11 MCH = MCH + 1 ## glm=   11 MCH = MCH + 1	GXPSR39
+13	1247	1297	COMMENT	COMPUTE MASS CHAIN NORMALIZATION FACTOR                                 		lighton=COMPUTE MASS CHAIN NORMALIZATION FACTOR ## dots=COMPUTE MASS CHAIN NORMALIZATION FACTOR ## glm=COMPUTE MASS CHAIN NORMALIZATION FACTOR	GXPSR40
+14	1297	1326	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+15	1342	1385	TIE	   12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J))                       	33	lighton2=   12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J)) ## dots=   12 XRT(MCH) = XRT(MCH) + ABANDO(K)*ABS(ERM(J)) ## glm=   12 XRT(MCH) = XRT(MCH) + ABLNUO(K)*ABS(ERM(J)) ## glm2=   12 XRT(MCH) = XRT(MCH) + ABLNDO(K)*ABS(ERM(J))	GAPDK46
+16	1385	1410	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+17	1428	1460	NOISE	                                                                        		lighton=   10 CONTINUE ## dots=   10 CONTINUE ## glm=   10 CONTINUE	
+18	1471	1499	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+19	1515	1550	VOTED	      DO 20 LC = 1,MCH                                                  		lighton=      DO 20 LC = 1,MCH ## dots=      DO 20 LC = 1,KCH ## glm=      DO 20 LC = 1,MCH	APSK45
+20	1559	1600	AGREE	      IF (XRT(LC))20,20,21                                              		lighton=      IF (XRT(LC))20,20,21 ## dots=      IF (XRT(LC))20,20,21 ## glm=      IF (XRT(LC))20,20,21	
+21	1600	1637	VOTED	   21 BNEX = BSUBK(LC)                                                  		lighton=   21 9NEX = 8SUBK(LC) ## dots=   21 BNEX = BSUBK(LC) ## glm=   21 BNEX = BSUBK（LC）	
+22	1645	1679	NOISE	                                                                        		lighton=      CRISS = CROSS**BNEX ## dots=      CRISS = CROSS**BNEX ## glm=      CRISS = CROSS**BNEX	
+23	1687	1729	VOTED	      RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC))                           		lighton=      RADIAL = ECF(LC)/(UNIT + CKISS*ECF(LC)) ## glm=      RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC)) ## glm2=      RADIAL = ECF(LC)/(UNIT + CRISS*ECF(LC))	GXPSR50
+24	1729	1766	AGREE	      STRAIT = RADIAL*CRISS                                             		lighton=      STRAIT = RADIAL*CRISS ## dots=      STRAIT = RADIAL*CRISS ## glm=      STRAIT = RADIAL*CRISS	
+25	1766	1808	AGREE	      TNEX = FISNUM*XRT(LC)                                             		dots=      TNEX = FISNUM*XRT(LC) ## glm=      TNEX = FISNUM*XRT(LC)	GXPSR52
+26	1816	1853	NOISE	                                                                        		lighton=      DO 40 LD = 1,ITAB ## dots=      DO 40 LD = 1,ITAB ## glm=      DO 40 LD = 1,ITAB	
+27	1853	1905	AGREE	   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD)		lighton=   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD) ## dots=   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD) ## glm=   40 FP(LD) = FP(LD) + (RADIAL*PSIZE(LD)**BNEX + STRAIT)*TNEX*FMASS(LD)	GXPSR54
+28	1905	1934	AGREE	   20 CONTINUE                                                          		lighton=   20 CONTINUE ## dots=   20 CONTINUE ## glm=   20 CONTINUE	
+29	1943	1970	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+30	1987	2015	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+31	2030	2069	VOTED	      IF (.NOT.NPRNT(1C)) RETURN                                        		lighton=      IF (.NOT.NPRNT(1C)) RETURN ## dots=      IF (.NOT.NPRNT(10)) RETURN ## glm=      IF (.NOT.NPRNT(1C)) FETURN	GXPSR58
+32	2069	2100	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	SK59
+33	2118	2154	NOISE	                                                                        		lighton=      WRITE (KOUT,9C1) ## dots=      WRITE (KOUT,901) ## glm=      WRITE (KOUT,9C1)	
+34	2154	2193	VOTED	      IF (JO) GO TO 101                                                 		lighton=      IF (JO) GO TO 101 ## dots=      IF (JO) GO TO 101 ## glm=      IF (J0) GO TO 101	GXP5K61
+35	2203	2237	NOISE	                                                                        		dots=      WRITE (KOUT,912) ## glm=      WRITE (KOUT,912)	
+36	2246	2276	NOISE	                                                                        		lighton=      GO TO 102 ## dots=      GO TO 102 ## glm=      GO TO 102	
+37	2287	2324	AGREE	  101 WRITE (KOUT,9C2)                                                  		lighton=  101 WRITE (KOUT,9C2) ## dots=  101 WRITE (KOUT,9C2) ## glm=  101 WRITE (KOUT,9C2)	
+38	2324	2362	AGREE	  102 CONTINUE                                                          		lighton=  102 CONTINUE ## dots=  102 CONTINUE ## glm=  102 CONTINUE	GXPSK65
+39	2375	2410	VOTED	      DO 1J3 I=1,ITA8                                                   		lighton=      DO 1J3 I=1,ITA8 ## dots=      DO 1J3 I=1,ITA8 ## glm=      DO 1J3 I=1,ITAB	
+40	2410	2459	AGREE	      WRITE (KOUT,903) PSIZE(I),FP(I)                                   		lighton=      WRITE (KOUT,903) PSIZE(I),FP(I) ## dots=      WRITE (KOUT,903) PSIZE(I),FP(I) ## glm=      WRITE (KOUT,903) PSIZE(I),FP(I)	GXPSR67
+41	2459	2492	NOISE	                                                                        		dots=  103 CONTINUE ## glm=  103 CONTINUE	
+42	2492	2530	COMMENT	C                                                                      G		glm=C                                                                      G	KPSR69
+43	2546	2576	NOISE	                                                                        		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	
+44	2576	2618	NONE	                                                                        			5XPSR71
+45	3156	3173	NOISE	                                                                        			
+46	3308	3333	NOISE	                                                                        			

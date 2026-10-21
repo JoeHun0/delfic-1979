@@ -1,0 +1,64 @@
+1	12	COUNT 0/37	                                                                                	
+2	64	COUNT 0/10	                                                                                	
+3	547	COUNT 33/34	                                                                        CALC  61	Q = F/SIGXO(IP)/SIGY(IP)/6.28318531 || CALC 61
+4	593	OK	C                                                                       CALC  62	C || CALC 62
+5	632	COUNT 1/37	                                                                        CALC  63	C || CALC 63
+6	679	OK	C                                                                       CALC  64	C || CALC 64
+7	720	OK	      NOB = (YPRML - YMIN)/OGY                                          CALC  65	NOB = (YPRML - YMIN)/OGY || CALC 65
+8	763	OK	      NOB=NOB+1                                                         CALC  66	NOB=NOB+1 || CALC 66
+9	807	COUNT 18/17	                                                                        CALC  67	IF (NOB.LT.1) NOB:=1 || CALC 67
+10	850	OK	  100 IF(NOB.LE.NYMAP) GO TO 120                                        CALC  68	100 IF(NOB.LE.NYMAP) GO TO 120 || CALC 68
+11	891	OK	  110 IRROR=-110                                                        CALC  69	110 IRROR=-110 || CALC 69
+12	935	OK	      GO TO 400                                                         CALC  70	GO TO 400 || CALC 70
+13	981	OK	C                                                                       CALC  71	C || CALC 71
+14	1020	COUNT 1/36	                                                                        CALC  72	C || CALC 72
+15	1064	OK	C                                                                       CALC  73	C || CALC 73
+16	1107	OK	  120 NOT = (YPRMU - YHIN)/DGY                                          CALC  74	120 NOT = (YPRMU - YHIN)/DGY || CALC 74
+17	1150	OK	      IF(NOT.GT.NYHAP) NOT=NYMAP                                        CALC  75	IF (NOT .GT. NYHAP) NOT =NYMAP || CALC 75
+18	1191	OK	      IF(NOT.GT.0 ) GO TO 140                                           CALC  76	IF (NOT .GT. 0 ) GO TO 140 || CALC 76
+19	1237	OK	  130 IRROR=-130                                                        CALC  77	130 IRROR=-130 || CALC 77
+20	1279	OK	      GO TO 400                                                         CALC  78	GO TO 400 || CALC 78
+21	1323	OK	C                                                                       CALC  79	C || CALC 79
+22	1365	COUNT 1/19	                                                                        CALC  80	C || CALC 80
+23	1408	OK	C                                                                       CALC  81	C || CALC 81
+24	1451	COUNT 0/6	  14C DO 350 J=NOB,NOT                                                          	14C DO 350 J=NOB, NOT || 
+25	1496	OK	C                                                                       CALC  83	C || CALC 83
+26	1535	OK	C     COMPUTE  THE LIMITING X COORDINATES OF THE PARCEL CONTRIBUTION    CALC  84	C COMPUTE THE LIMITING X COORDINATES OF THE PARCEL CONTRIBUTION || CALC 84
+27	1579	COUNT 1/17	                                                                        CALC  85	C || CALC 85
+28	1624	OK	C                                                                       CALC  86	C || CALC 86
+29	1666	OK	      YREL = J                                                          CALC  37	YREL = J || CALC 37
+30	1709	OK	      YREL = YMIN + DGY*YREL - YPAR(IP)                                 CALC  88	YREL = YMIN + DGY*YREL - YPAR(IP) || CALC 88
+31	1752	COUNT 59/18	                                                                        CALC  89	\text{RADIC} = -8^{*\cdot\gamma\text{REL}^{*\cdot\gamma^2}+0} || CALC 89
+32	1794	OK	      IF(RADIO,GE,O,U) GO TO 160                                        CALC  90	IF (RADIO, GE, O, U) GO TO 160 || CALC 90
+33	1840	OK	  150 RADIC=0.0                                                         CALC  y1	150 RADIC=0.0 || CALC y1
+34	1881	OK	      CALL ERROR(PROGRN,  150,ISOUT)                                    CALC  92	CALL ERROR(PROGRN, 150, ISOUT) || CALC 92
+35	1924	OK	  160 RAOIC=SORT(RADIC)                                                 CALC  93	160 RAOIC=SORT (RADIC) || CALC 93
+36	1966	OK	      XL=XPAR(IP)+ (YREL*A- RADIC)/CC                                   CALC  94	XL = XPAR(IP) + (YREL*A - RADIC)/CC || CALC 94
+37	2010	COUNT 66/18	                                                                        CALC  95	\mathrm{XR} = \mathrm{XL} + 2.0 \cdot J^* \cdot \mathrm{RADIC}/\mathrm{CC} || CALC 95
+38	2053	OK	C                                                                       CALC  96	C || CALC 96
+39	2096	COUNT 1/37	                                                                        CALC  97	C || CALC 97
+40	2141	OK	C                                                                       CALC  98	C || CALC 98
+41	2182	COUNT 5/6	      NOL = (XL-X1)/DGX                                                         	NOL = (XL - X1) / DGX || CALC 9
+42	2226	OK	      NOL=NOL+1                                                         CALC 1J0	NOL = NOL + 1 || CALC 1J0
+43	2269	COUNT 18/17	                                                                        CALC 1:1	IF(NOL.LT.1) NOL:=1 || CALC 1:1
+44	2311	OK	      IF(NOL.GT.NXNAP) GO TO 350                                        CALC 1:2	IF(NOL.GT.NXNAP) GO TO 350 || CALC 1:2
+45	2354	COUNT 8/7	C                                                                               	C || CALC 1.13
+46	2397	OK	C     COMPUTE LARGEST  X INDEX OF A CONTRIBUTION                        CALC 104	C COMPUTE LARGEST X INDEX OF A CONTRIBUTION || CALC 104
+47	2440	OK	C                                                                       CALC 1J5	C || CALC 1J5
+48	2483	OK	  180 NOR = (XR-X1)/DGX                                                 CALC 1J6	180 NOR = (XR-X1)/DGX || CALC 1J6
+49	2527	OK	      IF(NOR.GT.NXMAP) NOR=NXMAP                                        CALC 1.7	IF (NOR .GT. NXMAP) NOR=NXMAP || CALC 1.7
+50	2568	OK	      IF(NOR.LT.1) GO TO 350                                            CALC 1:8	IF (NOR .LT. 1) GO TO 350 || CALC 1: 8
+51	2612	OK	  200 NWX = NOR - NDL                                                   CALC 129	200 NWX = NOR - NDL || CALC 129
+52	2656	OK	      IF(NWX+1)210,350,220                                              CALC 110	IF (NWX + 1)210,350,220 || CALC 110
+53	2699	OK	  210 ERROR=-210                                                        CALC 111	210 ERROR=-210 || CALC 111
+54	2742	OK	      GO TO 403                                                         CALC 112	GO TO 403 || CALC 112
+55	2787	OK	C                                                                       CALC 113	C || CALC 113
+56	2825	COUNT 1/54	                                                                        CALC 114	C || CALC 114
+57	2872	OK	C                                                                       CALC 115	C || CALC 115
+58	2914	OK	  220 MCRMT=(J-1)*NXMAP                                                 CALC 116	220 MCRMT = (J-1) * NXMAP || CALC 116
+59	2957	COUNT 16/11	                                                                        CALC 117	K = NOL \cdot M(RHT) || CALC 117
+60	2999	OK	      L = K + NHX                                                       CALC 118	L = K + NHX || CALC 118
+61	3044	OK	C                                                                       CALC 119	C || CALC 119
+62	3083	OK	C     ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS                     CALC 120	C ADJUST OR ADD CONTRIBUTIONS TO THE MAP POINTS || CALC 120
+63	3145	OK	                                       142                                      	142
+64	3294	COUNT 0/22;COUNT 0/4	                                                                                	 || 

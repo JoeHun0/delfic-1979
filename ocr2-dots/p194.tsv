@@ -1,0 +1,10 @@
+11	922	OK	      COMMON /FISHIN/ ABEGK(700),ABENDG(700),BRANCH(130),CAPFIS,                	COMMON /FISHIN/ ABEGK(700), ABENDG(700), BRANCH(130), CAPFIS,
+16	1138	COUNT 30/28	                                                                                	COMMON /UTILITY/ KCUT,NPRINT(15)
+25	1523	COUNT 58/57	                                                                                	2 (FMT8(I),I=1,9)/10+(17H10OUTPU, 10HT OF MCHDE, 1CHP//5%(13HP,
+28	1652	OK	     5 UNITC/ 10HCURIES  /1%. UNITF/ 10HFISSIONS/)/                             	5 UNITC/ 10HCURIES /1%. UNITF/ 10HFISSIONS/)/
+37	2039	OK	      FMTB(10) = UNITC                                                          	FMTB(10) = UNITC
+43	2296	OK	      FMTA( 7) = UNITF                                                          	FMTA(7) = UNITF
+49	2555	OK	      ABNDY = 0.0                                                               	ABNDY = 0.0
+53	2724	OK	      ABNOM = ABNOM + ABUNCO(K1)                                                	ABNOM = ABNOM + ABUNCO (K1)
+61	3066	COUNT 85/49	                                                                                	\text{RADIAL} = \text{ECF(MASCHN-71)}/(\text{UNIT} + \text{CRISS}\*\text{ECF(MASCHN-71)})
+64	3271	COUNT 0/17	                                                                                	

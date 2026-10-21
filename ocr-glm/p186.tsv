@@ -1,0 +1,46 @@
+1	30	COUNT 3/6	                                                                                	---
+2	763	OK	      IF (NAT.GE.27.AND.NAT.LE.66) GO TO 1                              FRATI 50	IF (NAT. GE. 27. AND. NAT. LE. 66) GO TO 1 || FRATI 50
+3	808	OK	      WRITE (KOUT.513) NAT,MASS                                         FRATI 51	WRITE (KOUT.513) NAT,MASS || FRATI 51
+4	850	OK	      ABUND = 0.0                                                       FRATI 52	ABUND = 0.0 || FRATI 52
+5	895	OK	      GO TO 10                                                          FRATI 53	GO TO 10 || FRATI 53
+6	937	OK	    1 IF (MASS.EQ.LAST)GO TO 3                                          FRATI 54	1 IF (MASS.EQ.LAST) GO TO 3 || FRATI 54
+7	979	OK	      MCHN = MCHN + 1                                                   FRATI 55	MCHN = MCHN + 1 || FRATI 55
+8	1024	OK	      IF (NOT0) FR(MCHN) = RFRC/CHN                                     FRATI 56	IF (NOT0) FR(MCHN) = RFRC/CHN || FRATI 56
+9	1066	OK	      RFRC = 0.0                                                        FRATI 57	RFRC = 0.0 || FRATI 57
+10	1109	OK	      CHN = 0.0                                                         FRATI 58	CHN = 0.0 || FRATI 58
+11	1153	OK	      NOT0 = .FALSE.                                                    FRATI 59	NOT0 = .FALSE. || FRATI 59
+12	1195	OK	    3 ABUNO = ABUNDO(MB)                                                FRATI 60	3 ABUNO = ABUNDO (MB) || FRATI 60
+13	1238	OK	      LAST = MASS                                                       FRATI 61	LAST = MASS || FRATI 61
+14	1282	OK	      IF (ABUND)10.10.4                                                 FRATI 62	IF (ABUND) 10.10.4 || FRATI 62
+15	1327	OK	    4 NOT0 = .TRUE.                                                     FRATI 63	4 NOT0 = .TRUE. || FRATI 63
+16	1366	OK	      IF (BOIL(NAT-26).GE.SLDTMP) RFRC = RFRC + ABUND                   FRATI 64	IF (BOIL(NAT-26).GE.SLDTMP) RFRC = RFRC + ABUND || FRATI 64
+17	1410	OK	      CHN = CHN + A8UND                                                 FRATI 65	CHN = CHN + A8UND || FRATI 65
+18	1452	OK	   10 CONTINUE                                                          FRATI 66	10 CONTINUE || FRATI 66
+19	1494	OK	      MCHN = MCHN + 1                                                   FRATI 67	MCHN = MCHN + 1 || FRATI 67
+20	1537	OK	      IF (NOT0) FR(MCHN) = RFRC/CHN                                     FRATI 68	IF (NOT0) FR(MCHN) = RFRC/CHN || FRATI 68
+21	1582	OK	C                                                                       FRATI 69	C || FRATI 69
+22	1624	OK	      IF (NPRNT(6)) GO TO 22                                            FRATI 70	IF (NPRNT(6)) GO TO 22 || FRATI 70
+23	1666	OK	   19 00 32 L = 1，HCHN                                                  FRATI 71	190032L=1，HCHN || FRATI 71
+24	1711	OK	      BSU8K（L） = SQRT（FR（L)） - 1.0                                      FRATI 72	BSU8K（L）= SQRT（FR（L)）-1.0 || FRATI 72
+25	1753	OK	      POWER = 8SUBK(L)                                                  FRATI 73	POWER = 8SUBK(L) || FRATI 73
+26	1795	OK	      SUM = 0.0                                                         FRATI 74	SUM = 0.0 || FRATI 74
+27	1838	OK	      00 20 M = 1.ITAB                                                  FRATI 75	00 20 M = 1.ITAB || FRATI 75
+28	1880	OK	   20 SUM = SUM + FMASS(M)*PSIZE(M)**POWER                              FRATI 76	20 SUM = SUM + FMASS(M) *PSIZE(M)** POWER || FRATI 76
+29	1925	OK	   32 ECF（L） = 1.0/SUM                                                  FRATI 77	32 ECF（L）=1.0/SUM || FRATI 77
+30	1968	OK	      IF (NPRNT(7)) GO TO 23                                            FRATI 78	IF (NPRNT(7)) GO TO 23 || FRATI 78
+31	2008	OK	   21 IGO = .TRUE.                                                      FRATI 79	21 IGO = .TRUE. || FRATI 79
+32	2053	OK	      RETURN                                                            FRATI 80	RETURN || FRATI 80
+33	2098	OK	   22 WRITE (KOUT,501)                                                  FRATI 81	22 WRITE (KOUT,501) || FRATI 81
+34	2140	OK	      WRITE (KOUT,502) （J，FR(J)，J=1，MCHN）                               FRATI 82	WRITE (KOUT,502) （J，FR(J)，J=1，MCHN） || FRATI 82
+35	2184	COUNT 7/6	                                                                        FRATI 83	GO TO 1.9 || FRATI 83
+36	2227	OK	   23 WRITE (KOUT,503)                                                  FRATI 84	23 WRITE (KOUT,503) || FRATI 84
+37	2269	OK	      WRITE (KOUT,502) （K，BSUBK(K），K=1，MCHN）                            FRATI 85	WRITE (KOUT,502) （K，BSUBK(K），K=1，MCHN） || FRATI 85
+38	2313	OK	      GO TO 21                                                          FRATI 86	GO TO 21 || FRATI 86
+39	2355	COUNT 56/55	                                                                        FRATI 87	571 FORMAT (1H1, "OUTPUT OF FRATIO**/ 5(6X, 4HMCHN, 6X, 2HFR, 3X)) || FRATI 87
+40	2391	OK	502   FORMAT ( 5(7X, I2, 1PE12.4))                                      FRATI 28	502 FORMAT ( 5(7X, I2, 1PE12.4) ) || FRATI 28
+41	2440	COUNT 44/43	                                                                        FRATI 89	513 FORMAT(////5(6X,4HMCHN,4X,5HBSUBK,2X,)//) || FRATI 89
+42	2483	OK	  513 FORMAT (44H0BOILING FOINT IS NOT AVAILABLE FOR ELEMENT I3,        FRATI 90	513 FORMAT (44H0BOILING FOINT IS NOT AVAILABLE FOR ELEMENT I3, || FRATI 90
+43	2518	OK	     1  6H(MASS I3.1H))                                                 FRATI 91	1 6H(MASS I3.1H)) || FRATI 91
+44	2569	OK	      END                                                               FRATI 92	END || FRATI 92
+45	3127	COUNT 3/2	                                                                                	183
+46	3274	COUNT 8/23	                                                                                	markdown

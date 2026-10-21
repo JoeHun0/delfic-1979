@@ -1,0 +1,51 @@
+1	78	119	NONE	                                                                        			
+2	119	153	NONE	                                                                        			
+3	875	919	VOTED	      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302                         		lighton=      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302 ## dots=      IF( ZSCL .LT. 180. ) IF(IC(2))301,301,302 ## glm=      IF（ ZSCL .LT. 180. ） IF（IC(2))301,301,302	ICM181
+4	919	958	AGREE	      WRITE(ISOUT,12)                                                   		lighton=      WRITE(ISOUT,12) ## dots=      WRITE(ISOUT,12) ## glm=      WRITE(ISOUT,12)	ICM182
+5	958	1005	VOTED	      WRITE( ISOUT, 14 ) TME, TMPG, SSAM                                		lighton=      WRITE( ISOUT, 14 ) TME, TMPG, SSAM ## dots=      WRITE( ISOUT, 14 ) THE, TMPG, SSAM ## glm=      WRITE( ISOUT, 14 ) TME, TMPG, SSAM	ICM102
+6	1005	1039	AGREE	      GO TO 118                                                         		lighton=      GO TO 118 ## dots=      GO TO 118 ## glm=      GO TO 118	ICM18
+7	1047	1086	TIE	 3C1  WRITE (ISOUT,5)                                                   	3	lighton= 3f1  WRITE (ISOUT,5) ## dots= 301  WRITE (ISOUT,5) ## glm= 3C1  WRITE (ISOUT,5) ## glm2= 3C1  WRITE (ISOUT,5)	ICM185
+8	1086	1124	AGREE	      GO TO 108                                                         		lighton=      GO TO 108 ## dots=      GO TO 108 ## glm=      GO TO 108	ICM186
+9	1134	1171	VOTED	 302  WRITE (ISOUT,6)                                                   		lighton= 3C2  WRITE (ISOUT,6) ## dots= 302  WRITE (ISOUT,6) ## glm= 302  WRITE (ISOUT,6)	ICM187
+10	1171	1217	VOTED	 108  WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM                             		lighton= 108  WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM ## dots= 108  WRITE(ISOUT,13)THE,TMPG,TMPS,VPR,SSAM ## glm= 108  WRITE(ISOUT,13)TME,TMPG,TMPS,VPR,SSAM	ICM187
+11	1217	1255	VOTED	  118 ZSCM=ZSCL*0.3048                                                  		lighton=  118 Z5CM=ZSCL*0.3048 ## dots=  118 ZSCM=ZSCL*D.3048 ## glm=  118 ZSCM=ZSCL*0.3048	ICM189
+12	1265	1304	VOTED	      WRITE(ISOUT,20)ZSCL,ZSCH                                          		lighton=      WRITE(ISOUT,20)ZSCL,ZSCM ## dots=      WRITE(ISOUT,20)ZSCL,ZSCH ## glm=      WRITE(ISOUT,20)ZSCL,ZSCH	ICM190
+13	1304	1349	COMMENT	C     SET FRACTION OF EXPLOSION ENERGY IN THE CLOUD                     		lighton=C     SET FRACTION OF EXPLOSION ENERGY IN THE CLOUD	ICM190
+14	1349	1382	VOTED	      F=.45                                                             		lighton=      F3.45 ## glm=      F=.45 ## glm2=      F=.45	ICM192
+15	1393	1427	AGREE	      RPHI=1.0-PHI                                                      		glm=      RPHI=1.0-PHI ## glm2=      RPHI=1.0-PHI	ICM193
+16	1436	1477	AGREE	      WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP                               		lighton=      WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP ## dots=      WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP ## glm=      WRITE(ISOUT,1400) F,PHI,RPHI,SLDTMP	ICM194
+17	1477	1518	AGREE	      WRITE(ISOUT,1800)XGZ,YCZ,TGZ                                      		lighton=      WRITE(ISOUT,1800)XGZ,YCZ,TGZ ## dots=      WRITE(ISOUT,1800)XGZ,YCZ,TGZ ## glm=      WRITE(ISOUT,1800)XGZ,YCZ,TGZ	ICM195
+18	1518	1558	VOTED	      WRITE(ISOUT,19) RHOF                                              		lighton=      WRITE(ISOUT,19) RHOF ## dots=      WRITE(ISOUT,19) RHOP ## glm=      WRITE(ISOUT,19) RHOF	ICM196
+19	1558	1604	AGREE	      IF(IC(1)-1)309,310,311                                            		lighton=      IF(IC(1)-1)309,310,311 ## dots=      IF(IC(1)-1)309,310,311 ## glm=      IF(IC(1)-1)309,310,311	ICM198
+20	1604	1647	VOTED	  309 WRITE(ISOUT,7)DHEAN,SD                                            		lighton=  309 WRITE(ISOUT,7)DMEAN,SD ## dots=  309 WRITE(ISOUT,7)DHEAN,SD ## glm=  309 WRITE(ISOUT,7)DHEA1,SD	ICM198
+21	1647	1687	AGREE	      IF (IS)102,103,102                                                		lighton=      IF (IS)102,103,102 ## dots=      IF (IS)102,103,102 ## glm=      IF (IS)102,103,102	ICM199
+22	1687	1731	VOTED	 103  WRITE (ISOUT,8)                                                   		lighton= 103  WRITE (ISOUT,8) ## dots= 103  WRITE (ISOUT,B) ## glm= 103  WRITE (ISOUT,8)	ICM199
+23	1731	1768	AGREE	      GO TO 105                                                         		lighton=      GO TO 105 ## dots=      GO TO 105 ## glm=      GO TO 105	10M600
+24	1776	1814	AGREE	 102  WRITE (ISOUT,9)                                                   		lighton= 102  WRITE (ISOUT,9) ## dots= 102  WRITE (ISOUT,9) ## glm= 102  WRITE (ISOUT,9)	ICM202
+25	1823	1864	VOTED	  105 BARNU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2)                        		lighton=  105 BARMU = EXP(ALOG(DMEAN) + 3.0*ALOG(SD)**2) ## dots=  105 BARNU = EXP(ALOG(DMEAN) ) +3.0*ALOG(SD)**2 ## glm=  105 BARNU = EXP(ALOG(DNEAN) + 3.0*ALOG(SD)**2)	ICM203
+26	1864	1904	AGREE	      WRITE(ISOUT,24)BARMU,SD                                           		lighton=      WRITE(ISOUT,24)BARMU,SD ## dots=      WRITE(ISOUT,24)BARMU,SD ## glm=      WRITE(ISOUT,24)BARMU,SD	ICM204
+27	1904	1945	AGREE	      WRITE(ISOUT,25)                                                   		glm=      WRITE(ISOUT,25) ## glm2=      WRITE(ISOUT,25)	ICM204
+28	1945	1984	AGREE	      GO TO 315                                                         		lighton=      GO TO 315 ## dots=      GO TO 315 ## glm=      GO TO 315	ICM206
+29	1993	2031	AGREE	  310 WRITE(ISOUT,27) CAYM, EXPO                                        		lighton=  310 WRITE(ISOUT,27) CAYM, EXPO ## dots=  310 WRITE(ISOUT,27) CAYM, EXPO ## glm=  310 WRITE(ISOUT,27) CAYM, EXPO	ICM207
+30	2031	2068	AGREE	      GO TO 315                                                         		lighton=      GO TO 315 ## dots=      GO TO 315 ## glm=      GO TO 315	JUN2017
+31	2079	2116	AGREE	  311 WRITE(ISOUT,18)                                                   		lighton=  311 WRITE(ISOUT,18) ## dots=  311 WRITE(ISOUT,18) ## glm=  311 WRITE(ISOUT,18)	ICM209
+32	2116	2150	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+33	2165	2205	COMMENT	C     PRINT PARTICLE SIZE DISTRIBUTION TABLE                            		lighton=C     PRINT PARTICLE SIZE DISTRIBUTION TABLE ## glm=C     PRINT PARTICLE SIZE DISTRIBUTION TABLE	ICM211
+34	2205	2238	NOISE	                                                                        		lighton=C ## dots=C ## glm=C	
+35	2251	2287	AGREE	  315 WRITE(ISOUT,193)NOSTR                                             		lighton=  315 WRITE(ISOUT,193)NOSTR ## dots=  315 WRITE(ISOUT,193)NOSTR ## glm=  315 WRITE(ISOUT,193)NOSTR	ICM213
+36	2296	2330	VOTED	      00 602 J=1,NOSTR                                                  		lighton=      00 602 J=1,NOSTR ## dots=      00 602 J=1,NOSTR ## glm=      00 602 J=1，NDSTR	ICM214
+37	2339	2379	TIE	  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)                	53	lighton=  602 WRITE(ISOUT,194)J,PS(J),DIAM(J+1),FMASS(J),DIAM(J) ## dots=  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAH(J) ## glm=  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J) ## glm2=  602 WRITE(ISOUT,194)J,PS(J),DIAH(J+1),FHASS(J),DIAP(J)	ICM215
+38	2379	2423	COMMENT	C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE       		lighton=C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE ## glm=C     CHECK IF PARTICLE DISTRIBUTION IS OF THE SIZE-ACTIVITY TYPE	ICM216
+39	2423	2462	VOTED	      IF(IC(5) .EC. 0) GO TO 603                                        		lighton=      IF(IC(5) .EG. 0) GO TO 603 ## dots=      IF(IC(5) .EC. 0) GO TO 603 ## glm=      IF(IC(5) .EC. 0) GO TO 603	ICM217
+40	2462	2498	AGREE	      SD=-1.0                                                           		dots=      SD=-1.0 ## glm=      SD=-1.0	
+41	2508	2544	VOTED	      WRITE(ISOUT,28)                                                   		lighton=      WRITE(ISOUT,28) ## dots=      WRITE(ISOUT,2B) ## glm=      WRITE(ISOUT,28)	ICM219
+42	2552	2588	AGREE	  603 WRITE(ISOUT,1700)KCI,IRAD                                         		lighton=  603 WRITE(ISOUT,1700)KCI,IRAD ## dots=  603 WRITE(ISOUT,1700)KCI,IRAD ## glm=  603 WRITE(ISOUT,1700)KCI,IRAD	ICM220
+43	2588	2631	VOTED	      WRITE(ISOUT,192)                                                  		lighton=      WRITE(ISOUT,192) ## dots=      WRITE(ISOUT,192) ## glm=      WRITE(ISOUT.192)	ICM221
+44	2631	2674	AGREE	  200 WRITE(ISOUT,15)                                                   		lighton=  200 WRITE(ISOUT,15) ## dots=  200 WRITE(ISOUT,15) ## glm=  200 WRITE(ISOUT,15)	ICM222
+45	2682	2713	AGREE	      RETURN                                                            		lighton=      RETURN ## dots=      RETURN ## glm=      RETURN	IGM223
+46	2725	2762	AGREE	 143  WRITE (ISOLT,11)                                                  		lighton= 143  WRITE (ISOLT,11) ## dots= 143  WRITE (ISOLT,11) ## glm= 143  WRITE (ISOLT,11)	ICM224
+47	2762	2799	AGREE	      GO TO 200                                                         		lighton=      GO TO 200 ## dots=      GO TO 200 ## glm=      GO TO 200	ICMC24
+48	2811	2841	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	ICM221
+49	3225	3257	NOISE	                                                                        		lighton=                                      63 ## dots=                                      63 ## glm=                                      63	
+50	3366	3377	AGREE	                                                                -      -		glm=                                                                -      - ## glm2=                                                                -      -	
+51	3391	3406	NOISE	                                                                        			

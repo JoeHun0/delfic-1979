@@ -1,0 +1,14 @@
+1	9	COUNT 0/6	                                                                                	
+4	598	OK	      SUBROUTINE CALC(IP,CNAP,NMAP)                                             	SUBROUTINE CALC(IP, CNAP, NMAP)
+40	2143	OK	     24ARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAN                         	24ARRAY ,MBTAPE ,MXREQ ,SD ,INPAN
+41	2184	OK	      COMMON /MAPDAT/ CAYF .CUTMAP    .DGX       .CGY       .IH  .IV   .        	COMMON /MAPDAT/ CAYF .CUTMAP .DGX .CGY .IH .IV .
+44	2313	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                                     	3XMIN , YMAX , YMIN , ZMIN
+46	2399	COUNT 55/54	                                                                                	1GAMA ,KTR(100) ,PHAS(100) ,PSIZ(100) ,F.O(100) ,SIGXO(100),
+47	2441	OK	     2SIGYO(100).SINA      ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML     ,        	2SIGYO(100).SINA ,TPAR(100),XPAR(100),YPAR(100),YPRML ,
+48	2487	OK	     3YPRMU     ,ZPAR(100)                                                      	3YPRMU ,ZPAR(100)
+50	2572	OK	     1MAPRUN    .NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1 MAPRUN .NE ,NIJ ,NORD ,NREG ,NTASK ,
+51	2615	COUNT 28/27	                                                                                	20PMID(12) ,T1 ,T2 ,HFMAS(21..)
+59	2957	COUNT 82/37	                                                                                	A = \text{SINA} \cdot \text{COSA} \cdot \left(1.0/\text{VARY2} - 1.0/\text{VARX2}\right)^2
+60	3000	COUNT 36/17	                                                                                	\theta = 4.0 / \text{VARX2} / \text{VARY2}
+61	3045	COUNT 102/36	                                                                                	\mathrm{CC} = (\mathrm{COSA}^{**}2/\mathrm{VAR} \times 2 + \mathrm{SINA}^{**}2/\mathrm{VAR} \times 2) \times 2. :
+62	3086	OK	      0 = 2.0*GAMA*CC                                                           	0 = 2.0 * GAMA * CC

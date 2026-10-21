@@ -1,0 +1,59 @@
+1	12	COUNT 0/44;COUNT 8/7	                                                                                	 || \text{S}
+2	559	COUNT 11/10;COUNT 15/5	                                                                                	*DECK, CXP₁₄ || \Gamma XPN \quad 1
+3	602	COUNT 45/5	      SUBROUTINE CXPN                                                           	SUBROUTINE CXPN || \mathcal{L} \times \mathcal{F} \mathcal{N} \quad 2
+4	644	OK	C                                                                       CXPN   3	C || CXPN 3
+5	686	COUNT 16/5	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978             	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || \dot{U}XPN \quad 4
+6	730	OK	C                                                                       GXPN   5	C || G X P N 5
+7	771	OK	C     CXPN TABULATES THE CLOUD RISE AND EXPANSION OUTPUT TABLE ARRAY CX CXPN   6	C     CXPN TABULATES THE CLOUD RISE AND EXPANSION OUTPUT TABLE ARRAY CX || CXPN 6
+8	815	OK	C     AND TESTS FOR R-RATE, U,EK, AND MCX SHUT-OFF                      CXPN   7	C AND TESTS FOR R-RATE, U, EK, AND MCX SHUT-OFF || CX PN 7
+9	858	OK	C                                                                       CXPN   8	C || CXP N 8
+10	900	COUNT 319/71;COUNT 17/5	                                                                                	C  \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{S} \text{ || \text{LXPN} \quad y
+11	942	OK	C                                                                       CXPN  10	C || CXPN 10
+12	986	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    CXPN  11	COMMON /BASIC/ W, FW, ZBRSTZ, HEIGHT, ZSCL, SLDTMP, TMSD, XGZ, YGZ, TGZ || CXPN 11
+13	1029	COUNT 42/41	                                                                        CXPN  12	C MMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM ,I || CXPN 12
+14	1072	COUNT 37/36	                                                                        CXPN  13	1 OS ,DST ,DSf0 ,DST1 ,DST2 ,DT ,DU ,DWT ,DX ,| || CXP N 13
+15	1117	COUNT 34/33	                                                                        CXPN  14	2 7Z ,ED ,EK ,EPS ,ES ,HLR ,KS ,KSV ,MWYA ,I || CXPN 14
+16	1152	COUNT 28/27;COUNT 200/6	                                                                                	3 N     ,NNN     ,P     ,PW     ,R     ,RA     ,RL     ,RM     ,RZT     ,I || - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+17	1202	COUNT 34/33	                                                                        CXPN  16	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,WT ,! || CXPN 16
+18	1237	COUNT 3/6	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMΓ  ,SPARE                                 	5 X ,XE ,Z ,ZBFR ,ZLMΓ ,SPARE || ---
+19	1288	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI  CXPN  18	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI || C X P N 1 8
+20	1332	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 CXPN  19	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || CXPN 19
+21	1376	COUNT 17/6	      COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100)                             	COMMON /TABLES/ MCX, CX(50,10), GOPST(10,100) || \dot{C}XPN \quad 20
+22	1418	OK	C                                                                       CXPN  21	C || CXP N 21
+23	1461	OK	      DATA WORD1, WORD2, WCRD3 /6HR RATE, 6H MCX  ; 6H U,EK /           CXPN  22	DATA WORD1, WORD2, WCRD3 /6HR RATE, 6H MCX ; 6H U,EK / || CXPN 22
+24	1504	OK	C                                                                       CXPN  23	C || CXPN 23
+25	1545	COUNT 63/62	                                                                        CXPN  24	5000 FORMAT(//////10X,46HCLOUD RISE IS TERMINATED IN CXPN AT STATEMENT I || CXPN 24
+26	1589	OK	     14, 8H BY THE A6, 7H SWITCH///)                                    CXPN  25	14, 8H BY THE A6, 7H SWITCH///) || CXPN 25
+27	1634	OK	C                                                                       CXPN  26	C || CXPN 26
+28	1676	COUNT 130/71	                                                                        CXPN  27	C  ← 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 6 || CXPN 27
+29	1719	OK	C                                                                       CXFN  28	C || CXFN 28
+30	1761	OK	C     PERFORM FIRST PASS INITIALIZATION                                 CXPN  29	C PERFORM FIRST PASS INITIALIZATION || CXPN 29
+31	1804	OK	C                                                                       CXPN  30	C || C X P N 3 0
+32	1847	COUNT 23/22	                                                                        CXPN  31	GO TO (0C2, 02C, 04C), MIFYA || CXPN 31
+33	1890	OK	  002 DO 004 MJ = 1, 10                                                 CXPN  32	002 DO 004 MJ = 1, 10 || CXPN 32
+34	1925	OK	      DO 034 MI = 1. 5c                                                 CXPN  33	DO 034 MI = 1.5c || CXP N 33
+35	1976	COUNT 0/16	                                                                        LXPN  34	 || LXPN 34
+36	2018	COUNT 0/5	                                                                        CXPN  35	 || CXPN 35
+37	2061	COUNT 0/6	                                                                        CXPN  36	 || CXPN 36
+38	2103	COUNT 0/8	                                                                        CXPN  37	 || CXP N 37
+39	2148	COUNT 18/6	      TSTM ≡ SMALLT                                                             	TSTM ≡ SMALLT || \text{CXP N} \quad 38
+40	2189	COUNT 0/43	                                                                        CXPN  39	 || CXPN 39
+41	2233	COUNT 0/33	                                                                        CXPN  40	 || C X PN 4 0
+42	2277	COUNT 17/6	                                                                        CXPN  41	\angle BFR = \angle Z || CXPN 41
+43	2318	OK	      GO TO 040                                                         CXPN  42	GO TO 040 || CXPN 42
+44	2363	OK	C                                                                       CXPN  43	C || CXPN 43
+45	2405	OK	C     IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY                 CXPN  44	C IS IT TIME TO RECORD CLOUD STATUS IN THE CX ARRAY || CX PN 44
+46	2448	COUNT 1/10	                                                                        CXFN  45	C || CXFN 45
+47	2492	COUNT 81/9;COUNT 40/6	                                                                                	\mathcal{C} \quad \mathcal{N}_{\mathcal{L}} - \mathcal{T}(\mathcal{O}) : 7(\mathcal{C}) || \text{J} \text{Y} \text{C} . \text{I} \quad 46
+48	2534	COUNT 35/6	C                                                                               	C || \mathcal{L} \times \mathcal{N} \quad +7
+49	2576	COUNT 0/23;COUNT 0/6	                                                                                	 || 
+50	2621	COUNT 0/17;COUNT 0/6	                                                                                	 || 
+51	2663	COUNT 20/21;COUNT 51/6	                                                                                	F (7 - 23F^i) .42, .4C .42 || \mathcal{L} \mathcal{S} + \mathcal{N} \quad \mathcal{E}:
+52	2705	COUNT 0/10;COUNT 47/6	                                                                                	 || \text{L} \mathcal{Y} \text{r} \cdot \text{N} \quad 51
+53	2750	OK	      GO  3 745                                                         CXFN  5?	GO  3  7  4  5 || CXFN 5?
+54	2792	COUNT 0/7	                                                                        CXrN  53	 || CXrN 53
+55	2835	COUNT 0/14	                                                                        LXPN  54	 || LXPN 54
+56	2876	COUNT 0/11	                                                                        LXFN  55	 || LXFN 55
+57	2921	COUNT 0/13;COUNT 18/6	                                                                                	 || \text{CXFN} \quad 56
+58	2956	COUNT 1/25;COUNT 52/6	                                                                                	C || \text{J} \times \text{F} \cdot \text{N} \quad \Rightarrow 7
+59	3006	COUNT 22/6	      TF: MCK .LE. 5 ) GO TO 543                                                	TF: MCK.LE.5) GO TO 543 || \hat{C} \times P N \quad 58

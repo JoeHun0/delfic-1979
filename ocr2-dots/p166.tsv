@@ -1,0 +1,5 @@
+52	2684	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INFAN                         	2MARRAY ,MBTAPE ,MXREQ ,SD ,INFAN
+56	2857	COUNT 20/21	                                                                                	3XMIN , YHAX , YMIN , ZMIN
+58	2941	OK	     1GAMA      ,KTR(1J0)  ,PHAS(1J0) ,PSIZ(10J) ,KO(100)   ,SIGXO(100),        	1GAMA ,KTR(1J0) ,PHAS(1J0) ,PSIZ(10J) ,KO(100) ,SIGXO(100),
+60	3032	OK	     3YPRHU     ,ZPAR(100)                                                      	3YPRHU ,ZPAR(100)
+61	3073	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      .ICTR      ,        	COMMON /RUNDAT/ C ,CF6 ,FSUM .ICTR ,

@@ -1,0 +1,43 @@
+1	5	COUNT 104/28	                                                                                	\text{S} \text{E} \text{C} \text{O} \text{N} \text{E} \text{S} \text{E} \text{C} \text{O} \text{N} \text{E} \text{S}
+2	64	COUNT 0/22;COUNT 320/5	                                                                                	 || \text{r} \text{e} \text{d} \text{u} \text{a} \text{r} \text{y} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.} \text{r} \text{.}
+3	769	COUNT 16/12	                                                                        OST8N 61	PRB = FRAC \cdot 2.0 || OST8N 61
+4	813	COUNT 0/26	                                                                        DSTBN 62	 || DSTBN 62
+5	855	OK	      PS(NDSTR)=BARMU-APX(FRB)*SIGMA                                    DSTBN 63	PS(NDSTR) = BARMU - APX(FRB) * SIGMA || DSTBN 63
+6	899	COUNT 0/24	                                                                        DSTBN 64	 || DSTBN 64
+7	941	COUNT 0/33	                                                                        DSTBN 65	 || DSTBN 65
+8	984	OK	C                                                                       OST8N 66	C || OST8N 66
+9	1027	OK	C     CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES                     DSTBN 67	C CALCULATE MEAN DIAMETERS FROM BOUNDARY VALUES || DSTBN 67
+10	1058	COUNT 1/2;COUNT 3/7	                                                                                	C || ---
+11	1113	OK	      J=NOSTR-1                                                         OST8N 69	J=NOSTR-1 || OST8N 69
+12	1156	OK	      IF(J-1)107,107,105                                                OST8N 79	IF (J-1) 107, 107, 105 || OST8N 79
+13	1198	OK	  1C5 00 106 I=2,J                                                      OSTBN 71	1C5 00 106 I=2,J || OSTBN 71
+14	1240	OK	  106 PS(I)=0.5*(DIAM(I)+CJAM(I+1))                                     OSTBN 72	106 PS(I) = 0.5 * (DIAM(I) + CJAM(I+1)) || OSTBN 72
+15	1283	OK	  107 00 108 I=1,NDSTR                                                  DSTBN 73	107 00 108 I=1,NDSTR || DSTBN 73
+16	1328	COUNT 0/27	                                                                        OSTBN 74	 || OSTBN 74
+17	1370	OK	  106 PS(I)=EXP(PS(I))*1.0E-6                                           OSTBN 75	106 PS(I) = EXP(PS(I)) * 1.0E-6 || OSTBN 75
+18	1414	COUNT 0/29	                                                                        OSTBN 76	 || OSTBN 76
+19	1456	OK	      GO TO 400                                                         OST9N 77	GO TO 400 || OST9N 77
+20	1498	OK	  200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT)                 DSTBN 78	200 IF(EXPO .GE. 4.0) CALL ERROR(PROGRM, -200, ISOUT) || DSTBN 78
+21	1541	OK	      AN=FLOAT(NDSTR)                                                   OSTBN 79	AN=FLOAT(NDSTR) || OSTBN 79
+22	1584	OK	      FRAC=1.0/AN                                                       DSTBN 80	FRAC = 1.0 / AN || DSTBN 80
+23	1621	OK	      00 205 I=1,NOSTR                                                  OST8N 81	00 205 I=1, NOSTR || OST8N 81
+24	1670	OK	  205 FMASS(I)=FRAC                                                     OSTON 32	205 FMASS(I) = FRAC || OSTON 32
+25	1714	COUNT 0/18	                                                                        OSTBN 63	 || OSTBN 63
+26	1756	COUNT 0/39	                                                                        OSTBN 84	 || OSTBN 84
+27	1799	OK	      DO 2J6 IJ=1,NDSTR                                                 OSTBN 85	DO 2J6 IJ=1,NDSTR || OSTBN 85
+28	1843	OK	      AJ=IJ-1                                                           OSTBN 86	AJ = IJ - 1 || OSTBN 86
+29	1885	COUNT 36/29	                                                                        OSTBN 27	206 DIAM(I, \cup : - ( \cap N-AJ) **PCW*DMIN || OSTBN 27
+30	1917	COUNT 22/23	                                                                        OSTBN 88	PS(NDSTR) = UMIN * 0.5 * POW || OSTBN 88
+31	1972	COUNT 0/33	                                                                        OST8N 89	 || OST8N 89
+32	2014	COUNT 0/10	                                                                        OST8N 90	 || OST8N 90
+33	2056	OK	      00 207 IJ=1,ND                                                    USTBN 91	00 207 IJ=1,ND || USTBN 91
+34	2100	OK	  207 PS(IJ)=SQRT(DIAM(IJ)*DIAM(IJ+1))                                  OSTBN 92	207 PS(IJ) = SQRT(DIAM(IJ) * DIAM(IJ+1)) || OSTBN 92
+35	2143	OK	      GO TO 400                                                         OSTBN 93	GO TO 400 || OSTBN 93
+36	2187	OK	  309 00 301 I=1,NDSTR                                                  OSTRN 94	309 00 301 I=1,NDSTR || OSTRN 94
+37	2229	OK	  3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.0E-6                              OSTBN 95	3C1 PS(I)=SQRT(DIAM(I)*DIAM(I+1))*1.0E-6 || OSTBN 95
+38	2271	OK	      DO 308 IJ=1,LO                                                    CSTBN 96	DO 308 IJ=1,LO || CSTBN 96
+39	2313	COUNT 46/27	                                                                        OST8N 37	308 \text{DIAM}(IJ) = 1.0E-6 \times \text{DIAM}(IJ) || OST8N 37
+40	2350	COUNT 2/7	  400 RETURN                                                                    	400 RETURN || --
+41	2400	OK	      END                                                               OSTBN 99	END || OSTBN 99
+42	3131	OK	                                        56                                      	56
+43	3296	COUNT 0/45;COUNT 131/8	                                                                                	 || 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50 51 52 53 54 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69 70

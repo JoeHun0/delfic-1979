@@ -1,0 +1,11 @@
+1	4	COUNT 0/44	                                                                                	
+2	32	COUNT 0/14	                                                                                	
+20	1511	COUNT 28/29	                                                                                	JC ,NXMAP ,NYMAP ,NZ ,QOUT ,SSAM ,
+21	1555	COUNT 4/24	                                                                                	ETGZ
+22	1599	COUNT 5/20	                                                                                	3XNIN
+23	1641	COUNT 29/28	                                                                                	COMMON /UTILITY/ KOUT,NPRNT(15)
+27	1813	OK	      DATA PROGRM / 6HPAMA81 ;                                                  	DATA PROGRM / 6HPAMA81 ;
+31	1983	OK	     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /        	1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /
+33	2069	COUNT 59/60	                                                                                	1100 FORMAT(//10%, 45HFISSID DOES NOT MATCH WITH ANY AVAILABLE TYPE)
+36	2201	COUNT 32/29	                                                                                	IF(F(ISTP(I)) EQ. FISTP(I)) GO TO 200
+37	2242	OK	  103 CONTINUE                                                                  	103 CONTINUE

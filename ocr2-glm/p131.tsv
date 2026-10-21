@@ -1,0 +1,8 @@
+2	52	COUNT 3/28	                                                                                	---
+4	851	COUNT 49/41	                                                                                	CALL DUMPER(XF,YP,ZP,TP, RWAF, RWAF, PHAS,FSIZ,0.0.0.
+5	897	COUNT 17/15	                                                                                	1 ISQUT, I POUT, MC3)
+20	1544	OK	     2ICF，JCF，NCF，KBHF，N(ATF，LTIMF，NATF)                                        	2ICF，JCF，NCF，KBHF，N(ATF，LTIMF，NATF)
+25	1757	COUNT 46/45	                                                                                	806 CALL DUMPER(0.0,J.0,0.0, J.0, J.0, U.0,U.0,999,
+27	1843	COUNT 204/42	                                                                                	CALL DUMPER(0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0
+30	1980	COUNT 12/13	                                                                                	ENDFILE IPOUT
+35	3307	COUNT 3/17	                                                                                	---

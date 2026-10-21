@@ -1,0 +1,24 @@
+1	1	COUNT 4/14	                                                                                	text
+3	527	COUNT 54/52	                                                                                	2SIGYO(100),SINA ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRPL ,(
+4	572	OK	     3YPRMU     ,ZPAR(100)                                             (        	3YPRMU ,ZPAR(100) (
+5	608	COUNT 31/28	                                                                                	COMMON /RUNDAT/ C ,CF6 ,FSUP ,ICTR , (
+8	737	COUNT 56/54	                                                                                	COMMON /FISHIN/ ABEGN(700), ABUND0(700), BRANCH(130), CAPFIS,
+20	1260	OK	 4    FORMAT (A6,4X,2F10.3)                                                     	4 FORMAT (A6, 4X, 2F10.3)
+23	1379	OK	    6 FORMAT(/ 30X, 56HSOIL INCUCED ACTIVITY - NEUTRONS EMITTED PER FISS        	6 FORMAT(/ 30X, 56HSOIL INCUCED ACTIVITY - NEUTRONS EMITTED PER FISS
+27	1560	COUNT 24/25	                                                                                	1E OF F7.1,4H AT F8.4,5H SEC.
+29	1637	OK	     1         /41X16HFISSION YIELD 1S,1PE12.4,10H KILCTUNS.)                   	1 /41X16HFISSION YIELD 1S,1PE12.4,10H KILCTUNS.)
+35	1904	OK	     1HE FOLLOWING VALUES  ****/ 19X, 20I4)                                     	1HE FOLLOWING VALUES ****/ 19X, 20I4)
+39	2075	OK	     1       42X,10N10.1ZCATALI5,10X,10HVERTICAL  I3)                           	1 42X, 10N10.1ZCATALI5, 10X, 10HVERTICAL I3)
+40	2118	COUNT 52/53	                                                                                	26  FORMAT( 15X, 4H, 4H, 8X, 4HYFAR, 8X, 4HZPAR, 8X, 4HTPAR, 7X,
+41	2154	OK	     1 5HSIGXO, 7X, 5HSIGYO, 8X, 2HR0, 9X, 4HPSIZ, 8X, 4HPMAS//)                	1 5HSIGXO, 7X, 5HSIGYO, 8X, 2HR0, 9X, 4HPSIZ, 8X, 4HPMAS//)
+42	2204	COUNT 198/47	                                                                                	28    FORMAT( 1H1,  50X,  19H*  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+43	2240	COUNT 1/17	                                                                                	1
+45	2322	COUNT 200/48	                                                                                	3 N S Y S T E M, //51X, 19H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+46	2374	COUNT 62/63	                                                                                	4CESSOR MODULE//55X,11HPREPARED BY/45X,30HATMOSPHERIC SCIENCE ASSO
+51	2583	COUNT 54/53	                                                                                	37 FORMAT(1)X, 43HNUMBER OF FALLOUT PARCELS IN THIS BLOCK IS I4)
+52	2626	OK	  9   FORMAT(46H NO MAPS.  THIS RUN FOR TAPE IFOUT PRINT ONLY.)                 	9 FORMAT(46H NO MAPS. THIS RUN FOR TAPE IFOUT PRINT ONLY.)
+53	2669	COUNT 57/58	                                                                                	40 FORMAT(//25X, 63HTHIS IS AN AIRBURST. PARTICLE ACTIVITIES ARE 3
+54	2711	OK	     1OMPUTED BY PAMA / 30X, 11HSCALED H08=E12.5, 7H (FEET))                    	1OMPUTED BY PAMA / 30X, 11HSCALED H08=E12.5, 7H (FEET))
+55	2755	COUNT 54/53	                                                                                	.1 FORMAT( /4JX, 42HSOIL INDUCED ACTIVITY IS NOT ACCOUNTED FOR)
+56	2799	COUNT 60/58	                                                                                	42 FORMAT(1H0, 11X, 53F)FISSION YIELD IS ACJUSTED BY THE FRACTION-DOW
+60	2981	COUNT 23/9	                                                                                	\text{OUT} = \text{ISOUT}

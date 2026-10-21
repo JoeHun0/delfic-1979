@@ -1,0 +1,5 @@
+1	1	COUNT 3/44	                                                                                	---
+2	43	COUNT 3/6	                                                                                	---
+57	2849	OK	       COMMON /AIMOS/ NAT, ALT(256),  ATP(256),  PKS(256), RLH(256),            	COMMON/AIMOS/NAT, ALT(256), ATP(256), PKS(256), RLH(256),
+59	2936	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMF,TMSD,XGZ,YGZ,TGZ            	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMF,TMSD,XGZ,YGZ,TGZ
+62	3066	COUNT 63/62	                                                                                	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SO,PS(2JJ),OI AP'(2C1),FMASS(2JL)

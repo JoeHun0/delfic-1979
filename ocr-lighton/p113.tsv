@@ -1,0 +1,61 @@
+1	23	COUNT 0/18	                                                                                	
+2	52	COUNT 0/13	                                                                                	
+3	671	OK	 1100 CALL       TRIDIN(NET,NETSU,ZCH,USUM ,VSUM ,WFZ,LTIM,ICF,JCF,NCF, DATIN 39	1100 CALL TRIDIN(NET,NETSU,ZCH,USUM,VSUM,WFZ,LTIM,ICF,JCF,NCF, || DATIN 39
+4	715	OK	     1KBHF,NOATF,LTIMF,FORM,SPEC)                                       DATIN 90	1KBHF, NOATF, LTIMF, FORM, SPEC) || DATIN 90
+5	757	OK	COMPUTE WIND DIRECTION ANGLE ARRAYS                                     DATIN 91	COMPUTE WIND DIRECTION ANGLE ARRAYS || DATIN 91
+6	803	OK	 1200 CONTINUE                                                          DATIN 92	1200 CONTINUE || DATIN 92
+7	847	OK	      DO 1300 N=1,NDATX                                                 DATIN 93	DO 1300 N=1,NDATX || DATIN 93
+8	888	OK	      00 1300 K=1,KBHX                                                  DATIN 94	00 1300 K=1,KBHX || DATIN 94
+9	930	OK	      IF(ABS(USUM(K,N,LTIM)).GE.1.0E-30)GO TO 1254                      DATIN 95	IF (ABS(USUM(K, N, LTIM)).GE.1.0E-30) GO TO 1254 || DATIN 95
+10	973	COUNT 43/42	                                                                        DATIN 96	IF (ABS(VSUM(K, N_pLTIM)).GE.1.0E-30) GO TO 1253 || DATIN 96
+11	1015	OK	      RSUM(K,N,LTIM)=0.C                                                CATIN 97	RSUM(K, N, LTIM) = 0.C || CATIN 97
+12	1060	OK	      GO TO 1300                                                        DATIN 98	GO TO 1300 || DATIN 98
+13	1102	OK	 1253 RSUM(K,N,LTIM)=SIGN(1.57079633,VSUM(K,N,LTIM))                    UATIN 99	1253 RSUM(K, N, LTIM) = SIGN(1.57079633, VSUM(K, N, LTIM)) || UATIN 99
+14	1144	OK	      GO TO 1300                                                        DATIN100	GO TO 1300 || DATIN100
+15	1186	OK	 1254 RSUM(K,N,LTIM)=ATAN(VSUM(K,N,LTIM)/USUM(K,N,LTIM))                DATIN1:1	1254 RSUM(K,N,LTIM)=ATAN(VSUM(K,N,LTIM)/USUM(K,N,LTIM)) || DATIN1:1
+16	1231	OK	      IF(USUM(K,N,LTIM) .LT. 0.0) RSUM(K,N,LTIM) = RSUM(K,N,LTIM) -     DATIN1J2	IF(USUM(K,N,LTIM) .LT. 0.0) RSUM(K,N,LTIM) = RSUM(K,N,LTIM) - || DATIN1J2
+17	1266	OK	     1  SIGN(3.141592654,RSUM(K,N,LTIM))                                DATIN1C3	1 SIGN(3.141592654,RSUM(K,N,LTIM)) || DATIN1C3
+18	1318	OK	 1300 CONTINUE                                                          DATIN134	1300 CONTINUE || DATIN134
+19	1363	OK	      GO TO 1002                                                        DATIN105	GO TO 1002 || DATIN105
+20	1402	OK	CONSTRUCT THE TURBULENCE DATA ARRAYS                                    DATIN106	CONSTRUCT THE TURBULENCE DATA ARRAYS || DATIN106
+21	1445	OK	 2000 IF(MC(2) .NE. 1) WRITE(ISOUT,12)                                  DATIN1J7	2000 IF(MC(2).NE.1) WRITE(ISOUT,12) || DATIN1J7
+22	1490	COUNT 25/24	                                                                        DATIN138	IF(FORM .EQ. INPUT) GC TO 2100 || DATIN138
+23	1532	OK	 2001 IF(FORM .NE. WILKS ) CALL ERROR(PROGRM,-2J01,ISOUT)               DATIN119	2001 IF(FORM .NE. WILKS ) CALL ERROR(PROGRM,-2J01,ISOUT) || DATIN119
+24	1575	OK	CALCULATE TURBULENCE DATA BY WILKINS' FUNCTION OF RECIPROCAL ALTITUDE.  DATIN11C	CALCULATE TURBULENCE DATA BY WILKINS' FUNCTION OF RECIPROCAL ALTITUDE. || DATIN11C
+25	1619	OK	C     TURBULENCE WILL BE HORIZONTALLY UNIFORM.                          DATIN111	C TURBULENCE WILL BE HORIZONTALLY UNIFORM. || DATIN111
+26	1659	OK	      CALL       WILKNS (ZCH,DXSUM,DYSUM,CAVS,TIMUP,KBHF,NDATF,LTIMF,   DATIN112	CALL WILKNS (ZCH,DXSUM,DYSUM,CAVS,TIMUP,KBHF,NDATF,LTIMF, || DATIN112
+27	1705	OK	     1 LTIM)                                                            DATIN113	1 LTIM) || DATIN113
+28	1748	OK	      GO TO 1002                                                        DATIN114	GO TO 1002 || DATIN114
+29	1790	OK	 2100 FORM=RESOLV                                                       DATIN115	2100 FORM=RESOLV || DATIN115
+30	1834	OK	      IF(MC(1) .NE. 0) GO TO 2200                                       DATIN116	IF(MC(1).NE.0) GO TO 2200 || DATIN116
+31	1877	OK	CONSTRUCT THE TURBULENCE DATA ARRAYS VIA THE SIMPLIFIED 1-DIMENSIONAL   DATIN117	CONSTRUCT THE TURBULENCE DATA ARRAYS VIA THE SIMPLIFIED 1-DIMENSIONAL || DATIN117
+32	1922	OK	C     METHOD                                                            DATIN118	C METHOD || DATIN118
+33	1963	OK	      CALL       ONEDIN(ZCH,ZBH,CAVS,DXSUM,DYSUM,LTIM,KBHF,NDATF,LTIMF, UATIN119	CALL ONEDIN(ZCH,ZBH,CAVS,DXSUM,DYSUM,LTIM,KBHF,NDATF,LTIMF, || UATIN119
+34	2007	OK	     1 FORM,SPEC)                                                       DATIN120	1 FORM,SPEC) || DATIN120
+35	2050	OK	      GO TO 1002                                                        DATIN121	GO TO 1002 || DATIN121
+36	2091	OK	CONSTRUCT THE TURBULENCE DATA ARRAYS VIA THE 3-DIMENSIONAL METHOD       OATIN122	CONSTRUCT THE TURBULENCE DATA ARRAYS VIA THE 3-DIMENSIONAL METHOD || OATIN122
+37	2135	COUNT 61/62	                                                                        DATIN123	2200 CALL TRIDIN(NET,NETSU,ZCH,DXSUM,DYSUM,DU P LT IM,ICF,JCF,NCF, || DATIN123
+38	2169	OK	     1KBHF,NDATF,LTIMF,FCRM,SPEC)                                       DATIN124	1KBHF,NDATF,LTIMF,FCRM,SPEC) || DATIN124
+39	2221	OK	      GO TO 1002                                                        DATIN125	GO TO 1002 || DATIN125
+40	2264	OK	 3C00 CONTINUE                                                          DATIN126	3C00 CONTINUE || DATIN126
+41	2306	OK	CHECK DATA FOR ERRORS                                                   DATIN127	CHECK DATA FOR ERRORS || DATIN127
+42	2350	COUNT 21/8	      LTIM=0                                                                    	LTIM=0 || \partial A \dot{=} I N 1 2 8
+43	2393	OK	      00 3100 L=1,LTIMF                                                 DATIN129	00 3100 L=1,LTIMF || DATIN129
+44	2434	OK	      IF(TIMUP(L).EQ.ALIMIT)GO TO 3100                                  DATIN130	IF(TIMUP(L).EQ.ALIMIT)GO TO 3100 || DATIN130
+45	2477	COUNT 0/11	                                                                        DATIN131	 || DATIN131
+46	2521	OK	 3100 CONTINUE                                                          DATIN132	3100 CONTINUE || DATIN132
+47	2562	OK	      IF(LTIM.EQ.LTIMX)GO TO 3200                                       DATIN133	IF(LTIM.EQ.LTIMX) GO TO 3200 || DATIN133
+48	2607	OK	      WRITE(ISOUT,21)                                                   DATIN134	WRITE(ISOUT, 21) || DATIN134
+49	2650	OK	 3105 CALL ERROR (PROGRM,-3105,ISOUT)                                   DATIN135	3105 CALL ERROR (PROGRM,-3105,ISOUT) || DATIN135
+50	2693	OK	 3200 00 3250 L=1,LTIMX                                                 QATIN136	3200 00 3250 L=1,LTIMX || QATIN136
+51	2736	OK	      DO 3250 N=1,NDATX                                                 DATIN1:7	DO 3250 N=1,NDATX || DATIN1:7
+52	2777	OK	      IF(USUM(1,N,L).EG.ALIMIT.OR.DXSUM(1,N,L).EQ.ALIMIT)GO TO 3275     DATIN138	IF(USUM(1,N,L).EG.ALIMIT.OR.DXSUM(1,N,L).EQ.ALIMIT)GO TO 3275 || DATIN138
+53	2821	OK	 3250 CONTINUE                                                          DATIN139	3250 CONTINUE || DATIN139
+54	2866	COUNT 7/6	                                                                        DATIN140	P.ETURN || DATIN140
+55	2909	COUNT 9/8	 3275 WRITE (ISOUT,22)                                                          	3275 WRITE (ISOUT,22) || OATIN:141
+56	2951	OK	 3276 CALL ERROR(PROGRM,-3276,ISOUT)                                    DATIN142	3276 CALL ERROR(PROGRM,-3276,ISOUT) || DATIN142
+57	2997	COUNT 19/18	                                                                        DATIN143	5003 WRITE(ISOUT,23) || DATIN143
+58	3037	OK	      CALL ERROR(PROGRM, -1004, ISOUT)                                  DATIN144	CALL ERROR(PROGRM, -1004, ISOUT) || DATIN144
+59	3081	OK	      END                                                               DATIN145	END || DATIN145
+60	3121	OK	                                       110                                      	110
+61	3290	COUNT 27/30;COUNT 20/7	                                                                                	THE SECRET OF THE KENTUCKY STATE || \text{الجَمْعِيَّةِ}

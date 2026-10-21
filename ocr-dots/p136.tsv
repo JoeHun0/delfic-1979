@@ -1,0 +1,64 @@
+1	5	COUNT 0/33;COUNT 0/3	                                                                                	 || 
+2	60	COUNT 0/27	                                                                                	
+3	551	OK	  350 KBHA=KBHO                                                         TRANP121	350 KBHA=KBHO || TRANP121
+4	594	OK	      KBHB=KBHC                                                         TRANP122	KBHB=KBHC || TRANP122
+5	635	OK	      IF(WBAR.LT.0.0) GO TO 405                                         TRANP123	IF (WBAR.LT.0.0) GO TO 405 || TRANP123
+6	679	OK	      KBHA=KBHC                                                         TRANP124	KBHA=KBHC || TRANP124
+7	722	OK	      KBH8=KBHO                                                         TRANP125	KBH8=KBHO || TRANP125
+8	762	OK	  405 CALL GETDA( USUM,ZBT,KBHA,KBHB,NQATO,LTIM, UBAR,KBHF,NQATF,LTIMF) TRANP126	405 CALL GETDA ( USUM, ZBT, KBHA, KBHB, NQATO, LTIM, UBAR, KBHF, NQATF, LTIMF) || TRANP126
+9	807	OK	      CALL GETDA( VSUM,ZBH,KBHA,KBHB,NDATO,LTIN, VBAR,KBHF,NDATF,LTIMF) TRANP127	CALL GETDA( VSUM, ZBH, KBHA, KBHB, NDATO, LTIN, VBAR, KBHF, NDATF, LTIMF) || TRANP127
+10	851	OK	  407 CONTINUE                                                          TRANP128	407 CONTINUE || TRANP128
+11	893	OK	COMPUTE AVERAGE HORIZONTAL DISPERSION AND WIND ORIENTATION ANGLE        TRANP129	COMPUTE AVERAGE HORIZONTAL DISPERSION AND WIND ORIENTATION ANGLE || TRANP129
+12	936	OK	      CALL GETDA(DXSUM,ZBH,KBHA,KBHB,NOATO,LTIN,DXBAR,KSHF,NOATF,LTIMF) TRANP130	CALL GETDA (DXSUM, ZBH, KBHA, KBHB, NOATO, LTIN, DXBAR, KSHF, NOATF, LTIMF) || TRANP130
+13	979	OK	      CALL GETDA(OYSUM,Z8H,KBHA,KBH9,NOATO,LTIN,DY8AR,KBHF,NOATF,LTIMF) TRANP131	CALL GETDA(OYSUM, Z8H, KBHA, KBH9, NOATO, LTIN, DY8AR, KBHF, NOATF, LTIMF) || TRANP131
+14	1022	OK	      CALL GETDA( RSUM,ZBH,KBHA,KBHB,NDATO,LTIN, RBAR,KBHF,NDATF,LTIMF) TRANP132	CALL GETDA( RSUM, ZBH, KBHA, KBHB, NDATO, LTIN, RBAR, KBHF, NDATF, LTIMF) || TRANP132
+15	1066	COUNT 16/10	                                                                        TRANP133	RC=RO+R\bar{B}AR || TRANP133
+16	1109	COUNT 50/22	                                                                        TRANP134	\text{SIGXC} = \text{SIGXO} + \text{DXBAR} + \text{TSEG} || TRANP134
+17	1150	OK	      SIGYC=SIGYO+DYBAR+TSEG                                            TRANP135	SIGYC = SIGYO + DYBAR + TS EG || TRANP135
+18	1193	OK	COMPUTE CURRENT POSITION AND TIME (XC,YC,ZC,TC)                         TRANP136	COMPUTE CURRENT POSITION AND TIME (XC,YC,ZC,TC) || TRANP136
+19	1237	OK	      TC=TO+TSEG                                                        TRANP137	TC=TO+TSEG || TRANP137
+20	1279	OK	      ZC=ZO+WBAR*TSEG                                                   TRANP138	ZC=ZO+WBAR*TSEG || TRANP138
+21	1322	OK	      XC=XO+UBAR*TSEG                                                   TRANP139	XC= XO + UBAR * TSEG || TRANP139
+22	1366	OK	      YC=YO+VBAR*TSEG                                                   TRANP140	YC=YO+VBAR*TSEG || TRANP140
+23	1407	OK	      CALL NEST(NET,NETSU,XC,YC,NOATC,XL,XR,YL,YU,ICF,JCF,NCF)          TRANP141	CALL NEST(NET, NETSU, XC, YC, NOATC, XL, XR, YL, YU, ICF, JCF, NCF) || TRANP141
+24	1443	OK	      IF(MC(5).EQ.1) WRITE(ISOUT,3) TC,ZC,XC,YC,NOATC                   TRANP142	IF(MC(5).EQ.1) WRITE(ISOUT,3) TC,ZC,XC,YC,NOATC || TRANP142
+25	1494	OK	COMPARE CURRENT MESH INDEX NOATC WITH PREVIOUS MESH INDEX NOATO         TRANP143	COMPARE CURRENT MESH INDEX NOATC WITH PREVIOUS MESH INDEX NOATO || TRANP143
+26	1537	OK	      IF(NDATC.EQ.NDATO) GC TO 700                                      TRANP144	IF (NDATC.EQ.NDATO) GC TO 700 || TRANP144
+27	1581	OK	      IF (MODE.EQ.0) GO TO 50                                           TRANP145	IF (MODE.EQ.0) GO TO 50 || TRANP145
+28	1624	OK	COMPUTE INTERPOLATED POINT                                              TRANP146	COMPUTE INTERPOLATED POINT || TRANP146
+29	1664	OK	      XT=XC                                                             TRANP14?	XT=XC || TRANP14?
+30	1708	OK	      YT=YC                                                             TRANP148	YT=YC || TRANP148
+31	1750	OK	      ZT=ZC                                                             TRANP149	ZT = ZC || TRANP149
+32	1791	OK	      CALL BOUN(NET,NETSU,XT,Y1,XO,YO,XC,YC,ICF,JCF,ACF)                TRANP150	CALL BOUN(NET,NETSU,XT,Y1,XO,YO,XC,YC,ICF,JCF,ACF) || TRANP150
+33	1835	COUNT 81/56	                                                                        TRANP151	ZC=\sqrt{\frac{((XT-XC) \times 2 + (YT-YC) \times 2}{((XT-XO) \times 2 + (YT-YO) \times 2)})} || TRANP151
+34	1879	COUNT 17/16	                                                                        TRANP152	ZC = ZT + ZC^* (ZO - ZT) || TRANP152
+35	1921	OK	      IF(ABS(WBAR).LE.1.0E-30) GO TO 510                                TRANP153	IF(ABS(WBAR).LE.1.0E-30) GO TO 510 || TRANP153
+36	1963	COUNT 21/17	                                                                        TRANP154	TSEG=(ZC \cdot ZO)/WBAR || TRANP154
+37	2007	OK	      GO TO 518                                                         TRANP155	GO TO 518 || TRANP155
+38	2049	OK	 510  IF(ABS(UBAR).LE.1.0E-30) GO TO 513                                TRANP156	510 IF (ABS(UBAR).LE.1.0E-30) GO TO 513 || TRANP156
+39	2094	OK	      TSEG=(XC-XO)/UBAR                                                 TRANP157	TSEG=(XC-XO)/UBAR || TRANP157
+40	2136	OK	      GO TO 518                                                         TRANP158	GO TO 518 || TRANP158
+41	2178	OK	 513  IF(ABS(VBAR).LE.1.0E-30) GO TO 516                                TRANP159	513 IF (ABS(VBAR).LE.1.0E-30) GO TO 516 || TRANP159
+42	2221	OK	      TSEG=(YC-YO)/VBAR                                                 TRANP160	TSEG = (YC-YO)/VBAR || TRANP160
+43	2265	OK	      GO TO 518                                                         TRANP161	GO TO 518 || TRANP161
+44	2305	OK	 516  CALL ERROR(PROGRM,516,ISCUT)                                      TRANP162	516 CALL ERROR(PROGRM, 516, ISCUT) || TRANP162
+45	2350	OK	      RETURN                                                            TRANP163	RETURN || TRANP163
+46	2393	OK	  518 CONTINUE                                                          TRANP164	518 CONTINUE || TRANP164
+47	2435	OK	      RC=RO+RBAR                                                        TRANP165	RC=RO+RBAR || TRANP165
+48	2478	COUNT 50/22	                                                                        TRANP166	\text{SIGXC}= \text{SIGXO} + \text{OXBAR} + \text{TSEG} || TRANP166
+49	2521	OK	      SIGYC=SIGYO+DYBAR+TSEG                                            TRANP167	SIGYC = SIGYO + DYBAR + TSEG || TRANP167
+50	2564	OK	 521  TC=TO+TSEG                                                        TRANP1E8	521 TC=TO+TSEG || TRANP1E8
+51	2607	COUNT 56/55	                                                                        TRANF169	CALL NEST(NET, I-ETSU, XC, YC, NDA1C, XL, XR, YL, YU, ICF, JCF, NCF) || TRANF169
+52	2651	OK	CHECK IF PARCEL CENTER POSITION IS OSCILLATING                          TRANP170	CHECK IF PARCEL CENTER POSITION IS OSCILLATING || TRANP170
+53	2694	OK	      IF((KBHO1.NE.KBHO).CR.(KBHC1.NE.K9HC).OR.(NOTC1.NE.NDATC).OR.     TRANP171	IF((KBHO1.NE.KBHO).CR.(KBHC1.NE.K9HC).OR.(NOTC1.NE.NDATC).OR. || TRANP171
+54	2735	COUNT 27/25	                                                                        TRANP172	1 (NOT TO 1. NE. NOT ATO)) GO TO 626 || TRANP172
+55	2779	OK	      IF(MC(5).EQ.1) WRITE(ISOUT,4) XP,YP,ZP,TF,XC,YC,ZC,TC             TRANP173	IF(MC(5).EQ.1) WRITE(ISOUT,4) XP,YP,ZP,TF,XC,YC,ZC,TC || TRANP173
+56	2820	OK	      CALL CNTR(NET,NETSU,NOATO,XG,YG,ICF,JCF,NCF)                      TRANP174	CALL CNTR(NET, NETSU, NOATO, XG, YG, ICF, JCF, NCF) || TRANP174
+57	2864	OK	      XQ=XG                                                             TRANP175	XQ = XG || TRANP175
+58	2909	COUNT 0/5	                                                                        TRANP176	 || TRANP176
+59	2949	OK	      CALL NEST(NET,NETSU,XG,YQ,NOATQ,XLO,XRO,YLO,YUO,ICF,JCF,NCF)      TRANP177	CALL NEST(NET,NETSU,XG,YQ,NOATQ,XLO,XRO,YLO,YUO,ICF,JCF,NCF) || TRANP177
+60	2991	COUNT 33/32	                                                                        TRANP178	# CLEAR STORED MESH AND STRATUM INDICES || TRANP178
+61	3037	OK	      NOTC1=0                                                           TRANP179	NOTC1=0 || TRANP179
+62	3079	OK	      NOT01=0                                                           TRANP190	NOT 01 = 0 || TRANP190
+63	3131	OK	                                      133                                       	133
+64	3305	COUNT 0/41	                                                                                	

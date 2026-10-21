@@ -1,0 +1,64 @@
+1	9	38	NOISE	                                                                        			
+2	51	63	NOISE	                                                                        			
+3	559	592	VOTED	      IF(IC(6))2401,2401,2351                                           		lighton=      IF(IC(6))2401,2401,2351 ## dots=      IF(IC(6))2401,2401,2351 ## glm=      IF(IC(6))2401.2401.2351	RSXP212
+4	601	635	VOTED	 2351 WRITE(ISOUT,777)(DFS1(I,MBT),I=1,8),MBT,IFLAG                     		lighton= 2351 WRITE(ISOUT,777)(DFS1(I,MBT),I=1,8),MBT,IFLAG ## dots= 2351 WRITE(ISOUT,777)(DFS1(I,MBT),I=1,8),MBT,IFLAG ## glm= 2351 WRITE(ISOUT,777)(DFST(I,M8T),I=1,8),M8T,IFLAG	RSXP213
+5	643	678	VOTED	 2401 IF(DPST(2,2)-ZBRSTZ)25(,259,2448                                  		dots= 2401 IF(DPST(2,2)-ZBRSTZ)25(,259,2448 ## dots2= 2401 IF(DPST(2,2)-ZBRSTZ)25(,259,2448 ## glm= 2401 IF(DPST(2,2)-ZBRSTZ)259,259,2448	RSXP214
+6	688	717	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP215
+7	730	762	COMMENT	C     ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED                       		lighton=C     ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED ## dots=C     ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED ## glm=C     ADJUST WAFER ALTITUDES IF THEY ARE IMPACTED	RSXP216
+8	772	803	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP217
+9	815	851	AGREE	  259 DPST(2,2)= DPST(2,2) - (CX(MCX,1) - DPST(1,2))*DNWAF(2)           		lighton=  259 DPST(2,2)= DPST(2,2) - (CX(MCX,1) - DPST(1,2))*DNWAF(2) ## dots=  259 DPST(2,2)= DPST(2,2) - (CX(MCX,1) - DPST(1,2))*DNWAF(2) ## glm=  259 DPST(2,2)= DPST(2,2) - (CX(MCX,1) - DPST(1,2))*DNWAF(2)	RSXP218
+10	859	892	HAND	      IF(DPST(2,1) - ZBRSTZ)6020,6020,2448                              	29	dots=      IF(DPST(2,1) - ZBRSTZ)E020,6020,2448 ## glm=      IF(DPST(2,1) - ZBRSTZ)6020,6020,2448	RSXP219
+11	901	936	VOTED	 6020 OPST(2,1)= OPST(2,1) - (CX(MCX,1) - OPST(1,1))*ONWAF(1)           		lighton= 6020 OPST(2,1)= OPST(2,1) - (CX(MCX,1) - OPST(1,1))*ONWAF(1) ## dots= 6020 OPST(2,1)= OPST(2,1) - (CX(MCX,1) - OPST(1,1))*ONWAF(1) ## glm= 6020 OPST(2,1)= OPST(2,1) - (CX(MCX,1) - OPST(1,1))*DNWAF(1)	RSXP220
+12	944	976	COMMENT	C     DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP    		lighton=C     DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP ## dots=C     DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP ## glm=C     DETERMINE PARAMETERS TO BE USED TO SUBDIVIDE A WAFER WHOSE TOP	RSXP221
+13	988	1020	COMMENT	C     AND BOTTOM HAVE DIFFERENT RADII                                   		lighton=C     AND BOTTOM HAVE DIFFERENT RADII ## dots=C     AND BOTTOM HAVE DIFFERENT RADII ## glm=C     AND BOTTOM HAVE DIFFERENT RADII	RSXP222
+14	1030	1060	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP223
+15	1072	1106	VOTED	 2448 AL=DPST(3,1)/DPST(3,2)                                            		lighton= 2448 AL:OPST(3,1)/OPST(3,2) ## dots= 2448 AL=DPST(3,1)/DPST(3,2) ## glm= 2448 AL=DPST(3,1)/DPST(3,2)	R5XP224
+16	1115	1147	AGREE	      RB=3.1415927*DPST(3.2)**2                                         		dots=      RB=3.1415927*DPST(3.2)**2 ## glm=      RB=3.1415927*DPST(3.2)**2	RSXP225
+17	1158	1188	AGREE	      KDIP=AL                                                           		lighton=      KDIP=AL ## dots=      KDIP=AL ## glm=      KDIP=AL	
+18	1200	1236	VOTED	      IF(KDIP-10)2442,2442,2443                                         		lighton=      IF(KDIP-10)2442,2442,2443 ## dots=      IF(KDIP-10)2442,2442,2443 ## glm=      IF(KDIP-10)2442.2442.2443	RSXP227
+19	1245	1276	AGREE	 2443 KDIP=10                                                           		dots= 2443 KDIP=10 ## glm= 2443 KDIP=10	RSXP228
+20	1288	1317	AGREE	      GO TO 2444                                                        		lighton=      GO TO 2444 ## dots=      GO TO 2444 ## glm=      GO TO 2444	
+21	1330	1364	VOTED	 2442 IF(KDIP-2)2450,2444,2444                                          		lighton= 2442 IF(KDIP-2)2450,2444,2444 ## dots= 2442 IF(KDIP-2)2450.2444,2444 ## glm= 2442 IF(KDIP-2)2450,2444,2444	RSXP230
+22	1373	1408	VOTED	 2450 IF(AL-1.5)2451,2452,2452                                          		lighton= 2450 IF(AL-1.5)2451,2452,2452 ## dots= 2450 IF(AL-1.5)2451,2452,2452 ## glm= 2450 IF（AL-1.5）2451，2452，2452	RSXP231
+23	1416	1448	AGREE	 2451 KDIP=1                                                            		lighton= 2451 KDIP=1 ## dots= 2451 KDIP=1 ## glm= 2451 KDIP=1	RSXP132
+24	1459	1490	AGREE	      GO TO 2444                                                        		lighton=      GO TO 2444 ## dots=      GO TO 2444 ## glm=      GO TO 2444	RSXP233
+25	1502	1534	VOTED	 2452 KOIP=2                                                            		lighton= 2452 KOIP=2 ## dots= 2452 KOIP=2 ## glm= 2452 K0IP=2	KSXP234
+26	1544	1580	VOTED	 2444 ZD=DPST(2,1)-DPST(2,2)                                            		lighton= 2444 Z0=DPST(2,1)-DPST(2,2) ## dots= 2444 ZD=DPST(2,1)-DPST(2,2) ## glm= 2444 ZD=DPST(2,1)-DPST(2,2)	RSXP235
+27	1588	1619	AGREE	      FK=FLOAT(KDIP)                                                    		lighton=      FK=FLOAT(KDIP) ## dots=      FK=FLOAT(KDIP) ## glm=      FK=FLOAT(KDIP)	RSXP236
+28	1629	1663	AGREE	      DZ=ZD/FK                                                          		dots=      DZ=ZD/FK ## glm=      DZ=ZD/FK	RSXP237
+29	1672	1705	AGREE	      ALL=0.5*ZD/ALOG(AL)                                               		dots=      ALL=0.5*ZD/ALOG(AL) ## glm=      ALL=0.5*ZD/ALOG(AL)	RSXP238
+30	1717	1747	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP239
+31	1760	1792	COMMENT	C     SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS                    		lighton=C     SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS ## dots=C     SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS ## glm=C     SPECIFY PPST ARRAYS FOR THE WAFER SUBDIVISIONS	RSXP240
+32	1804	1834	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP241
+33	1846	1880	HAND	      DO 2445 I=1,KDIP                                                  	7,8	lighton2=      DO 2445 I=1,KDIP ## dots=      00 2445 I=1,KDIP ## dots2=      00 2445 I=1,KDIP ## glm=      DO 2445 I=1,KDIP	RSXP242
+34	1889	1921	AGREE	      FI=FLOAT(I)                                                       		lighton=      FI=FLOAT(I) ## dots=      FI=FLOAT(I) ## glm=      FI=FLOAT(I)	RSXP243
+35	1932	1964	HAND	      A=DPST(2,2)+(FI-1.)*DZ                                            	27	lighton2=      A=DPST(2,2)+(FI-1.)*OZ ## glm=      A=DPST(2,2)+(FI-1.)*DZ	RSXP244
+36	1975	2006	HAND	      B=A+DZ                                                            	11	dots=      B=A+DZ ## glm=      B=A+OZ	RSXP245
+37	2018	2051	HAND	      A1=AL**(2.0*(B-DPST(2,2))/ZD)                                     	14	glm=      A1=AL**（2.0*(B-DPST(2,2))/ZD) ## glm2=      A1=AL**(2.0*(B-DPST(2,2))/ZD)	RSXP246
+38	2059	2094	HAND	      A2=AL**(2.0*(A-DPST(2,2))/ZD)                                     	14	glm=      A2=AL**（2.0*(A-DPST(2,2))/Z0) ## glm2=      A2=AL**(2.0*(A-DPST(2,2))/Z0)	RSXP247
+39	2103	2136	AGREE	      PPST(2,I)=ALL*(ALOG(0.5*(A1+A2)))+DPST(2,2)                       		lighton2=      PPST(2,I)=ALL*(ALOG(0.5*(A1+A2)))+DPST(2,2) ## glm=      PPST(2,I)=ALL*(ALOG(0.5*(A1+A2)))+DPST(2,2)	RSXP248
+40	2146	2180	AGREE	      PPST(3,I)=DPST(3,2)*(AL**((PPST(2,I)-DPST(2,2))/ZD))              		lighton=      PPST(3,I)=DPST(3,2)*(AL**((PPST(2,I)-DPST(2,2))/ZD)) ## glm=      PPST(3,I)=DPST(3,2)*(AL**((PPST(2,I)-DPST(2,2))/ZD))	RSXP249
+41	2189	2222	AGREE	      PPST(1,I)=OPST(1,MBT)                                             		lighton=      PPST(1,I)=OPST(1,MBT) ## glm=      PPST(1,I)=OPST(1,MBT)	RSXP250
+42	2231	2264	VOTED	      PPST(4,I)=SQRT(DPST(4,1)*DPST(4,2))                               		lighton=      PPST(4,I)=SQRT(DPST(4,1)*DPST(4,2)) ## lighton2=      PPST(4,I)=SQRT(DPST(4,1)*DPST(4,2)) ## glm=      PPST（4，I）=SQRT（DPST（4，1）*DPST（4，2)）	RSXP251
+43	2275	2308	VOTED	      PPST(5,I)=OPST(5,MBT)/FK                                          		lighton=      PPST(5,I)=OPST(5,MBT)/FK ## lighton2=      PPST(5,I)=OPST(5,MBT)/FK ## glm=      PPST（5，I）=OPST（5，MBT）/FK	RSXP252
+44	2318	2350	VOTED	      PPST(6,I)=DZ                                                      		lighton=      PPST(6,I)=0Z ## lighton2=      PPST(6,I)=DZ ## dots2=      PPST(6,1)=DZ ## glm=      PPST（6，I）=DZ	RSXP253
+45	2360	2393	VOTED	      PPST(7,I)=A                                                       		lighton=      PPST(7,I)=A ## lighton2=      PPST(7,I)=A ## glm=      PPST（7，I）=A	RSXP254
+46	2403	2437	AGREE	      PPST(8,I)=RB*ALL*(A1-A2)                                          		dots=      PPST(8,I)=RB*ALL*(A1-A2) ## glm=      PPST(8,I)=RB*ALL*(A1-A2)	RSXP255
+47	2446	2476	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP256
+48	2487	2520	COMMENT	C     ADJUST PPST ARRAY VALUES FOR AN IMPACTED PARCEL                   			RSXP257
+49	2533	2563	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP258
+50	2575	2609	HAND	      IF(PPST(2,I).GT.ZBRSTZ) GO TO 3443                                	24	lighton=      IF(PPST(2,I).GT.ZORSTZ) GO TO 3443 ## lighton2=      IF(PPST(2,I).GT.ZORSTZ) GO TO 3443 ## dots=      IF(PPST(2,I).GT.Z0RSTZ) GO TO 3443 ## dots2=      IF(PPST(2,I).GT.Z0RSTZ) GO TO 3443 ## glm=      IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443 ## glm2=      IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443	RSXP259
+51	2618	2651	HAND	      PPST(1,I) = CX(MCX,1) - (ZBRSTZ - PPST(2,I))/(DNWAF(2) +          	53,55	glm=      PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I))/(DNHAF(2) + ## glm2=      PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I))/(CNWAF(2) +	RSXP260
+52	2662	2696	HAND	     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZD)                	55	lighton=     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZC) ## lighton2=     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZC) ## dots=     1 (DNWAF(1) - ONWAF(2))*(PPST(2,1) - DPST(2,2))/20) ## dots2=     1 (DNWAF(1) - ONWAF(2))*(PPST(2,1) - DPST(2,2))/20) ## glm=     1 (DNHAF(1) - DNHAF(2))*(PPST(2,I) - DPST(2,2))/ZD) ## glm2=     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZD)	RSXP261
+53	2696	2736	VOTED	      PFST(2,I)=ZBRSTZ                                                  		lighton=      PFST(2,I)=ZBRSTZ ## dots=      PFST(2,1)=ZBRSTZ ## glm=      PFST(2,I)=ZBRSTZ	RSXP262
+54	2748	2782	HAND	      PPST(6,I)=0.0                                                     	19	lighton=      PPST(6,I)=0,C ## lighton2=      PPST(6,I)=0.C ## dots2=      PPST(6,1)=0.0 ## glm=      PPST(6,I)=0.0	RSXP2E3
+55	2791	2824	VOTED	      PPST(7,I)=ZBRSTZ                                                  		lighton=      PPST(7,I)=ZBRSTZ ## lighton2=      PPST(7,I)=ZBRSTZ ## dots2=      PPST(7,1)=ZBRSTZ ## glm=      PPST（7，I）=ZBRSTZ	RSXP264
+56	2833	2867	VOTED	      PPST(8,I)=0.0                                                     		lighton=      PPST(8,I)=0.0 ## lighton2=      PPST(8,I)=0.0 ## dots2=      PPST(8,1)=0.0 ## glm=      PPST（8，I）=0.0	RSXP265
+57	2877	2908	HAND	      GO TO 2445                                                        			RSXP266
+58	2919	2954	VOTED	 3443 IF(PPST(7,I) .GT. ZBRSTZ) GO TO 2445                              		lighton= 3443 IF(PPST(7,I) .GT. ZBRSTZ) GO TO 2445 ## dots= 3443 IF(PPST(7,1) .GT. ZBRSTZ) GO TO 2445 ## glm= 3443 IF(PPST(7,I) .GT. ZBRSTZ) GO TO 2445	RSXP267
+59	2962	2995	VOTED	      PFST(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I)                          		lighton=      PFJT(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I) ## dots=      PFST(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I) ## glm=      PFST(6,I)=PPST(6,I) - ZBRSTZ + PPST(7,I)	RSXP268
+60	3003	3038	HAND	      PPST(8,I)= PPST(8,I) - 3.1415927*(ZBRSTZ- PPST(7,I))*PPST(3,I)**2 		glm=      PPST(8,I)= PPST(8,I) - 3.1415927*(ZBRSTZ- PPST(7,I))*PPST(3,I)**2	RSXP269
+61	3049	3081	VOTED	      PPST(7,I)=ZBRSTZ                                                  		lighton2=      PPST(7,I)=ZBRSTZ ## dots2=      PPST(7,1)=ZBRSTZ ## glm=      PPST(7,I)=ZBRSTZ	RSXP270
+62	3091	3123	HANDFREE	 2445 CONTINUE                                                          			RSXP271
+63	3123	3157	NOISE	                                                                        		lighton=                                        94 ## glm=                                        94	
+64	3276	3311	NOISE	                                                                        			

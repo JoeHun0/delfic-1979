@@ -1,0 +1,49 @@
+1	20	COUNT 0/27	                                                                                	
+2	49	COUNT 0/8;COUNT 17/3	                                                                                	 || \text{[Redacted]}
+3	809	OK	C                                                                       DERIV152	C || DERIV152
+4	851	COUNT 0/66	                                                                        DERIV153	 || DERIV153
+5	893	COUNT 25/26	                                                                        DERIV154	109-(9.8*U)/(287./QXE*TE) || DERIV154
+6	937	COUNT 0/8	                                                                        DERIV155	 || DERIV155
+7	981	COUNT 9/8	C                                                                               	C || DERIV v156
+8	1021	COUNT 57/56	                                                                        DERIV157	C     SUBTRACT AWAY RATE OF MASS LOST DUE TO PARTICLES FALLING OUT CLOUDI || DERIV157
+9	1065	OK	C     BOTTOM DURING RISE                                                DERIV158	C BOTTOM DURING RISE || DERIV158
+10	1108	OK	C                                                                       DERIV159	C || DERIV159
+11	1151	COUNT 0/12	                                                                        DERIV160	 || DERIV160
+12	1193	OK	C                                                                       DERIV161	C || DERIV161
+13	1237	OK	C     COMPUTE TIME DERIVATIVE OF TEMPERATURE                            DERIV162	C COMPUTE TIME DERIVATIVE OF TEMPERATURE || DERIV162
+14	1280	OK	C                                                                       DERIV163	C || DERIV163
+15	1323	COUNT 0/57	                                                                        DERIv164	 || DERI v164
+16	1367	OK	C                                                                       DERIV165	C || DERIV165
+17	1408	OK	C     COMPUTE TIME DERIVATIVE CF WATER VAPOR MIXING RATIO               DERIV1E6	C     COMPUTE TIME DERIVATIVE CF WATER VAPOR MIXING RATIO || DERIV1E6
+18	1451	OK	C                                                                       DERIV167	C || DERIV167
+19	1495	COUNT 0/35;COUNT 9/8	                                                                                	 || DERIV v1E8
+20	1538	OK	C                                                                       DERIV189	C || DERIV189
+21	1580	OK	C     COMPUTE TIME DERIVATIVE OF LIQUID WATER MIXING RATIO              DERIV170	C     COMPUTE TIME DERIVATIVE OF LIQUID WATER MIXING RATIO || DERIV170
+22	1624	OK	C                                                                       DERIV171	C || DERIV171
+23	1667	COUNT 0/45	                                                                        DERIv172	 || DERI v172
+24	1709	OK	C                                                                       DERIV173	C || DERIV173
+25	1754	OK	  555 E01= 2.*C2*Q7*QQ/RZT                                              DERIV174	555 E01= 2.*C2*Q7*QQ/RZT || DERIV174
+26	1796	OK	      GO TO (621,1110),NNN                                              DERIV175	GO TO (621,1110),NNN || DERIV175
+27	1839	OK	  621 CONTINUE                                                          DERIv176	621 CONTINUE || DERI v176
+28	1882	OK	C                                                                       DERIV177	C || DERIV177
+29	1925	OK	C     COMPUTE CLOUD VERTICAL ACCELERATION                               DERIV178	C COMPUTE CLOUD VERTICAL ACCELERATION || DERIV178
+30	1966	OK	C                                                                       DERIV179	C || DERIV179
+31	2010	COUNT 0/41	                                                                        DERIV180	 || DERIV180
+32	2053	OK	C     COMPUTE EDDY VISCOUS RATE OF LOSS OF KINETIC ENERGY OF RISE       DERIV181	C     COMPUTE EDDY VISCOUS RATE OF LOSS OF KINETIC ENERGY OF RISE || DERIV181
+33	2096	OK	C                                                                       DERIV182	C || DERIV182
+34	2139	COUNT 16/15	                                                                        DERIV183	11110 E0=E01*U**2 || DERIV183
+35	2173	OK	C     COMPUTE TIME DERIVATIVE OF TURBULENT KINETIC ENERGY DENSITY       DERIV1E4	C     COMPUTE TIME DERIVATIVE OF TURBULENT KINETIC ENERGY DENSITY || DERIV1E4
+36	2224	OK	C                                                                       DERIV135	C || DERIV135
+37	2267	COUNT 0/32	                                                                        DERIV186	 || DERIV186
+38	2309	OK	C                                                                       DÉRIV187	C || DÉRIV187
+39	2353	OK	C     COMPUTE TIME DERIVATIVE OF SOIL MIXING RATIO                      DERIV188	C   COMPUTE TIME DERIVATIVE OF SOIL MIXING RATIO || DERIV188
+40	2397	OK	C                                                                       DERIV189	C || DERIV189
+41	2438	COUNT 0/47	                                                                        DERIV190	 || DERIV190
+42	2480	OK	C                                                                       DERIV191	C || DERIV191
+43	2524	OK	C     COMPUTE IN-CLOUD GAS DENSITY                                      DERIV192	C   COMPUTE IN-CLOUD GAS DENSITY || DERIV192
+44	2567	OK	C                                                                       DERIV193	C || DERIV193
+45	2610	COUNT 0/12	                                                                        DERIV194	 || DERIV194
+46	2653	COUNT 0/18	                                                                        DERIV195	 || DERIV195
+47	2687	COUNT 0/13;COUNT 3/8	                                                                                	 || ---
+48	2738	OK	  9.1 RETURN                                                            05RIV157	9.1 RETURN || 05RIV157
+49	2782	COUNT 3/4	                                                                        DERIV198	END || DERIV198

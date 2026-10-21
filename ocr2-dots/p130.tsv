@@ -1,0 +1,11 @@
+2	570	OK	      ZP=ZPAR(J)                                                                	ZP=ZPAR(J)
+5	701	COUNT 26/12	                                                                                	\text{PNAS} = \text{PSAM}(J)
+6	744	COUNT 29/15	                                                                                	\text{RWAF} = \text{RWFR}(J)/2.
+7	786	COUNT 19/12	                                                                                	\text{DWA F=OWFR(J)}
+9	872	COUNT 26/12	                                                                                	\text{VWAF} = \text{VWFR}(J)
+14	1087	COUNT 22/16	                                                                                	H = (Z_{MIN} + Z_{MAX}) / 2.
+32	1858	COUNT 68/47	                                                                                	\text{TMAX} = \text{TMAX} + \frac{(ZBH(IZ+1) - ZBH(IZ))}{(CAVS(IZ) - WAVGK)}
+35	1987	OK	      TMAX=TMAX + (ZMAX - ZBH(KBHX))/(CAVS(KBHX) - WAVGK)                       	TMAX=TMAX + (ZMAX - ZBH(KBHX))/(CAVS(KBHX) - WAVGK)
+37	2073	COUNT 47/46	                                                                                	IF(TMAX.GT.SLOP*TIMEX .OR. TMAX .LT. J.O ) ZLIN:=ZMAX
+50	2632	COUNT 65/49	                                                                                	1250 \text{ TSUM}(K) = \text{TSUM}(K-1) + (200H(K) - 200H(K-1))/CAVS(K-1)
+54	2805	OK	      DOWN=(FAV*ELJY/SIGH)**2                                                   	DOWN=(FAV*ELJY/SIGH)**2

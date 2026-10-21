@@ -1,0 +1,8 @@
+1	11	COUNT 3/11	                                                                                	---
+8	705	OK	  270 WRITE(ISOUT,1)IGC,ISTOP,(Z8H(K),K=IGO,ISTOP)                              	270 WRITE (ISOUT,1) IGC, ISTOP, (Z8H(K), K=IGO, ISTOP)
+41	2421	OK	      COMMON /PARCL/  CRCSS,DOWN,DHAF,EDDY,NOATP,PMAS,PSIZ,RHOP,RWAF,           	COMMON /PARCL/ CRCSS,DOWN,DHAF,EDDY,NOATP,PMAS,PSIZ,RHOP,RWAF,
+49	2763	OK	      DIMENSION HFZ(KBHF,NCATF,LTIMF),HAVG(KBHF,LTIMF),TIMLP(LTIMF)             	DIMENSION HFZ(KBHF,NCATF,LTIMF),HAVG(KBHF,LTIMF),TIMLP(LTIMF)
+52	2892	OK	      DIMENSION PSAM(100),FHFR(100),DHFR(100),ZLHF(100),VHFR(100)               	DIMENSION PSAM(100), FHFR(100), DHFR(100), ZLHF(100), VHFR(100)
+56	3066	OK	 8015 FORMAT( 1H+， 102X， 8FAIRBORNE)                                            	8015 FORMAT( 1H+，102X，8FAIRBORNE)
+57	3111	COUNT 24/25	                                                                                	8C16 FORMAT( 1H , I4, 8E12.4)
+59	3302	COUNT 3/7	                                                                                	---

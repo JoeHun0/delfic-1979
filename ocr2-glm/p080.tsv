@@ -1,0 +1,4 @@
+15	1098	OK	      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TPSD,XGZ,YGZ,TGZ            	COMMON/BASIC/W,FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TPSD,XGZ,YGZ,TGZ
+24	1478	OK	      COMMON /TABLES/ MCX， CX(50,10)， GOPST(10,100)                             	COMMON / TABLES/ MCX，CX(50,10)，GOPST(10,100)
+41	2212	OK	      OST=OST0                                                                  	OST=OST0
+59	2983	OK	      XE=109.93*HLR*（TE/273.）**(-5.13)*EXP（（25.*（TE-273.））/TE）/（P*29.）          	XE=109.93*HLR*（TE/273.）**(-5.13)*EXP（（25.*（TE-273.））/TE）/（P*29.）

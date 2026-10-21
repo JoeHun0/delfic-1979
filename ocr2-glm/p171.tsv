@@ -1,0 +1,24 @@
+26	1529	COUNT 25/29	                                                                                	2 MARRAY MBTAPE MXREQ SO IN FAM
+28	1617	COUNT 31/30	                                                                                	DATA CLR. PROGRAM/ 1.E30. 6HSRTCNT/
+33	1829	COUNT 17/16	                                                                                	WRITE (ISOUT, 3000)
+34	1874	OK	      00 5C I=1,K                                                               	00 5C I=1,K
+41	2175	OK	   55 IL00P=IL00P+1                                                             	55 IL00P=IL00P+1
+42	2218	COUNT 22/21	                                                                                	IF (ILOOF .GT. V.) GO TO 10G
+43	2261	OK	      VEX=VEC(X(1),Y(1),X(2),Y(2))                                              	VEX=VEC(X(1),Y(1),X(2),Y(2))
+44	2304	COUNT 1/3	                                                                                	2
+45	2349	COUNT 20/9	                                                                                	CO  \epsilon   \cdot  I=3, K
+46	2390	OK	      IF(VEC(X(1),Y(1),X(1),Y(I)) .GT. VEM) GO TO E0                            	IF(VEC(X(1),Y(1),X(1),Y(I)) .GT. VEM) GO TO E0
+48	2476	COUNT 37/28	                                                                                	V_{E4}=V_{E} \cup (X(1), Y(1), X(I), Y(I))
+49	2518	OK	   63 CONTINUE                                                                  	63 CONTINUE
+50	2560	OK	      00 65 I=2.K                                                               	00 65 I=2. K
+51	2604	OK	      IF(I .EQ. M) GO TO 65                                                     	IF(I .EQ. M) GO TO 65
+52	2648	OK	      IF(VEC(X(M),Y(M),X(I),Y(I)) ).LE .VEH )G OT O10                           	IF ( VEC ( X ( M ) , Y ( M ) , X ( I ) , Y ( I ) ) ) . LE . VEH) GO TO 10
+53	2690	OK	   65 CONTINUE                                                                  	65 CONTINUE
+54	2737	OK	      XP=X(1)                                                                   	XP=X(1)
+55	2779	OK	      YP=Y(1)                                                                   	YP=Y(1)
+56	2820	OK	      00 7. I=2.K                                                               	00 7. I=2. K
+57	2864	OK	      X(I-1)=X(I)                                                               	X ( I - 1 ) = X ( I )
+58	2907	OK	   72 V(I-1)=V(I)                                                               	72  V ( I - 1 ) = V ( I )
+59	2950	OK	      x(K)=xP                                                                   	x ( K ) = x P
+60	2991	OK	      Y(K)=YP                                                                   	Y ( K ) = Y P
+61	3035	OK	      GO TO 35                                                                  	GO TO 35

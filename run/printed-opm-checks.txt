@@ -1,0 +1,15 @@
+# DELFIC 1979 vol. II test problem: printed OPM values (PDF p. 51), read from the scan 20 Oct 2026. ? = uncertain.
+grid: XMIN -9000. XMAX 14400. YMIN -3000. YMAX 51000. DELTA X 1800.00 DELTA Y 1530.0? (computed for an undistorted map)
+altitude of GZ 139.000 m MSL ; ground roughness-instrument factor 1.000?
+request 1: map type 2, T1 0.00, T2 0.00?, MASCHN 0 ; QCUT .100?E-03? ; CUTMAP .1500?E-01?
+K factors from the FP table: 6.1020E+09 (R-M**2)/(HR-KT) ; 2.3560E+03 (R-MI**2)/(HR-KT)  [re-read 20 Oct: 3rd digit is a broken 0; sum of printed FP/50 = 6.1022E+09]
+table of total activity in each particle size class (PSIZE, FP):
+2.4830E-03 6.1087E+09 | 2.8751E-04 7.5157E+09 | 1.1913E-04? 9.0129E+09 | 3.7667E-05 1.2379E+10
+1.3111E-03 6.3763E+09 | 2.5163E-04 7.6715E+09 | 9.7331E-05 9.2679E+09 | 3.0753E-05 1.3280E+10
+8.9391E-04 6.5822E+09 | 2.2154E-04 7.8327E+09? | 8.6585E-05? 9.5497E+09 | 2.4732E-05 1.4506E+10
+6.8190E-04 6.7546E+09 | 1.9591E-04 8.0016E+09 | 7.6126E-05 9.8644E+09 | 1.8866E-05 1.6345E+10
+5.4839E-04 6.9130E+09 | 1.7381E-04 8.1779E+09 | 6.7022E-05? 1.0228E+10 | 1.2863E-05 1.9716E+10
+4.5499E-04 7.0648E+09 | 1.5454E-04 8.3653E+09 | 5.8659E-05 1.0629E+10 | 6.7923E-06 2.8264E+10
+3.8534E-04 7.2142E+09 | 1.3760E-04 8.5651E+09 | 5.0936E-05 1.1106E+10 |
+3.3110E-04 7.3638E+09 | 1.2257E-04 8.7799E+09 | 4.3767E-05 1.1677E+10 |
+sum of map ordinates (PDF p. 53): .2855?38E+05 (5th digit faint; ~2.855E+04 R/hr)

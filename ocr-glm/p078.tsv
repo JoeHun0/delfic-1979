@@ -1,0 +1,58 @@
+1	1	COUNT 3/14;COUNT 2/1	                                                                                	--- || 1-
+2	446	OK	C                                                                       CPFR  46	C || CPFR 46
+3	491	OK	      VIS=1.4585-6*T**1.5/(110.4+T)                                     CPFR  47	VIS=1.4585-6*T**1.5/(110.4+T) || CPFR 47
+4	527	OK	      DO 3 J=1,NOSTR                                                    CPFR  48	DO 3 J=1, NO STR || CPFR 48
+5	569	OK	      CALL SETTLE(PS(J), RFOF, RA, VIS, T, P, CG(J), IACCR)             CPFR  49	CALL SETTLE(PS(J), RFOF, RA, VIS, T, P, CG(J), IACCR) || CPFR 49
+6	614	COUNT 44/45	                                                                        CPFR  50	IF(MWYA.EQ.1 ANC. IACCR .NE.0) WRITE(ISCUT,758) J || CPFR 50
+7	655	OK	   3  CONTINUE                                                          CPFR  51	3 CONTINUE || CPFR 51
+8	707	OK	C                                                                       CPFR  52	C || CPFR 52
+9	749	OK	C     COMPUTE OVERALL LOSS RATE OF FALLOUT FROM THE CLOUD AND ADJUST    CPFR  53	C COMPUTE OVERALL LOSS RATE OF FALLOUT FROM THE CLOUD AND ADJUST || CPFR 53
+10	784	OK	C     IN-CLOUD PARTICLE CONCENTRATIONS                                  CPFR  54	C IN-CLOUD PARTICLE CONCENTRATIONS || CPFR 54
+11	836	OK	C                                                                       CPFR  55	C || CPFR 55
+12	880	OK	      CMLR=0.                                                           CPFR  56	CMLR=0. || CPFR 56
+13	914	OK	      A=3.1415927*K**2*DST                                              CPFR  57	A=3.1415927*K**2*DST || CPFR 57
+14	965	OK	      DO 1 J=1,NDSTR                                                    CPFR  58	DO 1 J=1,NDSTR || CPFR 58
+15	1007	OK	      C=0.5235988*PS(J)**3                                              CPFR  59	C=0.5235988*PS(J)**3 || CPFR 59
+16	1042	OK	      D=A*CG（J）                                                         CPFR  60	D=A*CG（J） || CPFR 60
+17	1093	OK	      CHLR=CHLR+C*D*Y（J）                                                CPFR  61	CHLR=CHLR+C*D*Y（J） || CPFR 61
+18	1129	OK	    1 Y(J)=Y(J)*(1.-0/V)                                                CPFR  62	1 Y(J)=Y(J)*(1.-0/V) || CPFR 62
+19	1170	OK	      CMLR=CMLR*RHOP/DST                                                CPFR  63	CMLR=CMLR*RHOP/DST || CPFR 63
+20	1221	OK	  008 RETURN                                                            CPFR  64	008 RETURN || CPFR 64
+21	1266	OK	      END                                                               CPFR  65	END || CPFR 65
+22	1609	OK	*DECK,CRM                                                               CRM    1	* DECK, CRM || CRM 1
+23	1651	OK	      SUBROUTINE CRM                                                    CRM    2	SUBROUTINE CRM || CRM 2
+24	1693	OK	C                                                                       CRM    3	C || CRM 3
+25	1736	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976     CRM    4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 || CRM 4
+26	1781	OK	C                                                                       CRH    5	C || CRH 5
+27	1822	COUNT 1/70	                                                                        CRM    6	C || CRM 6
+28	1866	OK	C                                                                       CRM    7	C || CRM 7
+29	1909	OK	C     COMPUTE THE DYNAMIC CLOUD RISE                                    CRM    8	C COMPUTE THE DYNAMIC CLOUD RISE || CRM 8
+30	1952	OK	C                                                                       CRM    9	C || CRM 9
+31	1994	COUNT 54/55	                                                                        CRM   40	C THIS CODE CLOSELY FCLLOWS THAT OF HUEBSCH, THE DEVELOPMENT OF A || CRM 40
+32	2038	OK	C     WATER-SURFACE-BURST FALLOUT MODEL - THE RISE AND EXPANSION OF THE CAR   11	C WATER-SURFACE-BURST FALLOUT MODEL - THE RISE AND EXPANSION OF THE || CAR 11
+33	2080	COUNT 54/56	                                                                        URM   12	C ATOMIC CLOUD . USNRCL-TR-74 . (23 APRIL 1964) , ANC TURMULENCE , || URM 12
+34	2124	OK	C     TORQIJAL CIRCULATION AND DISPersion OF FALLOUT FROM THE RISING    CPH   13	C TORQIJAL CIRCULATION AND DISPersion OF FALLOUT FROM THE RISING || CPH 13
+35	2167	COUNT 55/57	                                                                        CRM   14	NUCLEAR CLOUD, USNRDL-TR1054 (5 AUGUST 1966). THE HUEBSCH MODEL || CRM 14
+36	2204	COUNT 50/51	                                                                        CRM   15	C HAS BEEN MODIFIED AS DESCRIBED BY NORMENT, VALIDATION AND || CRM 15
+37	2251	COUNT 57/58	                                                                        CRM   16	C REFINEMENT OF THE DELFIC CLOUD RISE MODULE, DNA 4320F(15JAN1977) || CRM 16
+38	2295	OK	C                                                                       CRM   17	C || CRM 17
+39	2336	COUNT 1/71	                                                                        CRM   18	C || CRM 18
+40	2381	OK	C                                                                       CRM   19	C || CRM 19
+41	2425	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,CRH   20	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM , || CRH 20
+42	2467	OK	     1 DS    ,DST   ,DST0  ,DST1  ,DST2  ,OT    ,DU    ,DWT    ,OX     ,CRM   21	1 DS ,DST ,DST0 ,DST1 ,DST2 ,OT ,DU ,DWT ,OX , || CRM 21
+43	2510	COUNT 24/33	                                                                        CRM   22	2 DZ ED EK EPS ES HLR KS KSV MWYA || CRM 22
+44	2554	COUNT 18/27	                                                                        CRM   23	3 N NNN P PH R RA RL RM RZT || CRM 23
+45	2588	COUNT 25/33	                                                                        CRM   24	4 S SAVE SHAPE SMALLT,T TE U V HT || CRM 24
+46	2639	OK	     5 X     ,XE    ,Z     ,ZPFR  ,ZLMT  ,SPARE                         CRM   25	5 X ,XE ,Z ,ZPFR ,ZLMT ,SPARE || CRM 25
+47	2681	OK	      COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  CRM   26	COMMON /CONTRL/ DETID(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI || CRM 26
+48	2716	OK	      COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200)  CRM   27	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) || CRM 27
+49	2767	OK	      COMMON /TABLES/ MCX， CX(50,10)， GDPST(10,100)                     CRM   28	COMMON/TABLES/MCX，CX(50,10)，GDPST(10,100) || CRM 28
+50	2812	OK	C                                                                       CRM   29	C || CRM 29
+51	2852	OK	      DIMENSION Y(200)                                                  CRM   30	DIMENSION Y(200) || CRM 30
+52	2895	OK	      EQUIVALENCE (Y(1),GCPST(1))                                       CRM   31	EQUIVALENCE (Y(1),GCPST(1)) || CRM 31
+53	2942	OK	C                                                                       CRM   32	C || CRM 32
+54	2983	COUNT 1/71	                                                                        CRM   33	C || CRM 33
+55	3027	OK	C                                                                       CRM   34	C || CRM 34
+56	3069	OK	C     COMPUTE THE PARTIAL PRESSURE OF THE WATER VAPOR IN THE CLOUD      CRM   35	C COMPUTE THE PARTIAL PRESSURE OF THE WATER VAPOR IN THE CLOUD || CRM 35
+57	3131	OK	                                        75                                      	75
+58	3275	OK	                                                                          -- -  	---

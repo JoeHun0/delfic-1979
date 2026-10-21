@@ -1,0 +1,62 @@
+1	2	COUNT 0/49;COUNT 0/6	                                                                                	 || 
+2	639	OK	C                                                                       RSXP 152	C || RSXP 152
+3	680	OK	      GO TO (1208,233),JBASE                                            RSXP 193	GO TO (1208,233), JBASE || RSXP 193
+4	722	COUNT 127/56	                                                                        RSXP 154	1208 \text{ DPST}(2, \text{MBT}) = \text{DPST}(2, \text{MBT}) + (\text{CX}(\text{MD}, 6) - \text{DN}) * (\text{CX}(\text{MD}, 2) - \text{EXTM}) || RSXP 154
+5	756	COUNT 0/2	                                                                        RSXP 155	 || RSXP 155
+6	805	OK	C     COMPUTE BELOW CLOUD AIR DENSITY , VISCOSITY AND TEMPERATURE       RSXP 156	C COMPUTE BELOW CLOUD AIR DENSITY, VISCOSITY AND TEMPERATURE || RSXP 156
+7	849	OK	C                                                                       RSXP 157	C || RSXP 157
+8	892	COUNT 29/28	                                                                        RSXP 158	208 UP=CX(MC,6)+ZWSB*DPX(2,MC) || RSXP 158
+9	935	OK	      CALL TRPL(OPST( 2,MET),NAT ,ALT,RHO,DEN)                          RSXP 159	CALL TRPL(OPST( 2, MET), NAT ,ALT, RHO, DEN) || RSXP 159
+10	977	OK	        LL TRPL(DPST( 2,MET),NAT ,ALT,ETA,VIS)                          RSXP 160	LL TRPL(DPST( 2,MET),NAT ,ALT,ETA,VIS) || RSXP 160
+11	1021	OK	      CALL TRPL(DPST( 2,MBT),NAT ,ALT,ATP,THP)                          RSXP 1E1	CALL TRPL(DPST( 2,MBT),NAT ,ALT,ATP,THP) || RSXP 1E1
+12	1065	OK	      GO TO 212                                                         RSXP 162	GO TO 212 || RSXP 162
+13	1107	OK	C                                                                       RSXP 163	C || RSXP 163
+14	1148	COUNT 52/53	                                                                        RSXP 164	COMPUTE INSIDE CLOUD GAS DENSITY, VISCOSITY AND TEMPERATURE || RSXP 164
+15	1194	COUNT 8/7	C                                                                               	C || RSXP 16:5
+16	1234	OK	  210 UP=CX(4C,6)+ZVSB*DPX(1,HC)                                        RSXP 166	210 UP=CX(4C,6)+ZVSB*DPX(1,HC) || RSXP 166
+17	1278	COUNT 47/45	                                                                        RSXP 167	FC = (DPST(1,HBT) - CX(MC,1)) / (CX(MC+1,1) - CX(MC,1)) || RSXP 167
+18	1320	OK	      DEN=CX(MC,10)+(CX(MC+1,10)-CX(MC,10))*FC                          RSXP 168	DEN=CX(MC,10)+(CX(MC+1,10)-CX(MC,10))*FC || RSXP 168
+19	1363	COUNT 46/40	                                                                        RSXP 169	VIS = VIS_{X(MC)} + (VIS_{X(MC+1)} - VIS_{X(MC)}) * FC || RSXP 169
+20	1407	COUNT 0/37	                                                                        RSXP 170	 || RSXP 170
+21	1450	OK	C                                                                       RSXP 171	C || RSXP 171
+22	1493	COUNT 17/18	                                                                        RSXP 172	COMPUTE FALL SPEEDS || RSXP 172
+23	1538	OK	C                                                                       RSXP 173	C || RSXP 173
+24	1579	OK	  212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P)                            RSXP 174	212 CALL TRPL(OPST( 2,MET),NAT ,ALT,FRS,P) || RSXP 174
+25	1622	OK	      CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,ON,IACCR)              RSXP 175	CALL SETTLE(OPST(4,MET),RHOP,OEN,VIS,TMP,P,ON,IACCR) || RSXP 175
+26	1665	OK	      IF( ON .LT. SRTHS ) ON = 0.0                                      RSXP 176	IF( ON .LT. SRTHS ) ON = 0.0 || RSXP 176
+27	1708	OK	      ZNXT=DPST( 2,H8T)+GX(MC,2)*(UP-DN)                                RSXP 177	ZNXT=DPST( 2,H8T)+GX(MC,2)*(UP-DN) || RSXP 177
+28	1752	OK	C                                                                       RSXP 178	C || RSXP 178
+29	1795	COUNT 1/32	                                                                        RSXP 179	C || RSXP 179
+30	1836	COUNT 1/9	                                                                        RSXP 150	C || RSXP 150
+31	1878	COUNT 1/8	                                                                        RSXP 181	C || RSXP 181
+32	1922	OK	C                                                                       RSXP 182	C || RSXP 182
+33	1966	OK	      IF(ZNXT-ZBRSTZ)220,226,230                                        RSXP 103	IF (ZNXT-ZBRSTZ) 220, 226, 230 || RSXP 103
+34	2008	OK	C                                                                       RSXP 184	C || RSXP 184
+35	2050	OK	C     COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD                     RSXP 185	C COMPUTE OPST TIME OF ARRIVAL ON FALLOUT FIELD || RSXP 185
+36	2094	OK	C                                                                       RSXP 186	C || RSXP 186
+37	2134	OK	  220 EXTM=(ZBRSTZ-DPST( 2,MBT))/(UP-ON)                                RSXP 187	220 EXTM=(ZBRSTZ-DPST( 2,MBT))/ (UP-ON) || RSXP 187
+38	2177	COUNT 73/28	                                                                        RSXP 180	\mathrm{DPST}(1, \mathrm{MBT}) = \mathrm{DPST}(1, \mathrm{MBT}) + \mathrm{EXTM} || RSXP 180
+39	2222	COUNT 45/18	                                                                        RSXP 189	\mathrm{OPST}(2, \mathrm{MBT}) = \mathrm{ZBRSTZ} || RSXP 189
+40	2263	OK	      ONWAF(MBT)=ON                                                     RSXP 190	ONWAF (MBT) = ON || RSXP 190
+41	2307	OK	      JBASE=2                                                           RSXP 191	JBASE=2 || RSXP 191
+42	2350	OK	      MD=MC                                                             RSXP 192	MD=MC || RSXP 192
+43	2392	OK	      GO TO (1207,233),KBASE                                            RSXP 193	GO TO (1207,233), KBASE || RSXP 193
+44	2435	OK	  230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2)                                  RSXP 194	230 DPST(1,MBT)=DPST(1,MBT)+CX(MC,2) || RSXP 194
+45	2479	COUNT 17/16	                                                                        RSXP 195	7.LST=0PST(2,M0T) || RSXP 195
+46	2521	COUNT 25/16	                                                                        RSXP 196	\text{OPST}(2, MBT) = ZN(X)T || RSXP 196
+47	2564	OK	  238 CONTINUE                                                          RSXP 197	238 CONTINUE || RSXP 197
+48	2608	OK	  233 GO TO (241,2440),MBT                                              RSXP 138	233 GO TO (241,2440), MBT || RSXP 138
+49	2651	OK	C                                                                       KSXP 199	C || KSXP 199
+50	2691	COUNT 1/54	                                                                        RSXP 2,0	C || RSXP 2,0
+51	2738	COUNT 1/16	                                                                        RSXP 2:1	C || RSXP 2:1
+52	2781	COUNT 1/10	                                                                        RSXP 2.2	C || RSXP 2.2
+53	2823	COUNT 1/9;COUNT 6/7	                                                                                	C || RSXP 2)
+54	2867	OK	C                                                                       RSXP 2:4	C || RSXP 2:4
+55	2906	COUNT 48/46	                                                                        RSXP ÉUS	241 IF(ABS(10PST(3,1)) - CFST(3,2)) .61. 0.1) GO TO 2441 || R S X P É U S
+56	2950	COUNT 11/10	                                                                        RSXP 216	2440 IFLAG=1 || RSXP 216
+57	2995	OK	      GO TO (240,256),MBT                                               RSXP 2.7	GO TO (240,256), MBT || RSXP 2.7
+58	3038	COUNT 16/17	                                                                        RS&P 2:0	240 IF IC(6) .EQ. 1) || RS&P 2:0
+59	3078	COUNT 46/45;COUNT 8/7	                                                                                	1 WRITE(ISOUT,777)(OPST(1,MBT),I=1,6),MBT,IFLAG || R>x_p 2,9
+60	3127	COUNT 0/7	      GO TO 5442                                                                	GO TO 5442 || 
+61	3169	COUNT 0/7	 2441 IFLAG=2                                                                   	2441 IFLAG=2 || 
+62	3199	COUNT 0/2	                                                                                	

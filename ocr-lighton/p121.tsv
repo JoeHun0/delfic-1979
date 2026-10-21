@@ -1,0 +1,64 @@
+1	5	COUNT 152/22;COUNT 62/1	                                                                                	\text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52 || \text{[Image of a black rectangular shape with a small black dot inside]}
+2	47	COUNT 0/29;COUNT 333/7	                                                                                	 || \text{A} \quad \text{B} \quad \text{C} \quad \text{D} \quad \text{E} \quad \text{F} \quad \text{G} \quad \text{H} \quad \text{I} \quad \text{J} \quad \text{K} \quad \text{L} \quad \text{M} \quad \text{N} \quad \text{O} \quad \text{P} \quad \text{Q} \quad \text{R} \quad \text{S} \quad \text{T} \quad \text{U} \quad \text{V} \quad \text{W} \quad \text{X} \quad \text{Y} \quad \text{Z}
+3	540	OK	*DECK,GETUP                                                             GETUP  1	*DECK, GETUP || GETUP 1
+4	583	OK	      SUBROUTINE GETUP(NET,NETSU,MARY,MARF,ICF,JCF,NCF,NDATF)           GETUP  2	SUBROUTINE GETUP(NET,NETSU,MARY,MARF,ICF,JCF,NCF,NDATF) || GETUP 2
+5	625	OK	C                                                                       GETUP  3	C || GETUP 3
+6	669	OK	C     MARCH, 1971                                                       GETUP  4	C MARCH, 1971 || GETUP 4
+7	714	OK	C                                                                       GETUP  5	C || GETUP 5
+8	756	OK	C                                                                       GETUP  6	C || GETUP 6
+9	798	OK	C     SUBROUTINE  GETUP  PREPARES THE HORIZONTAL SPACE CONTROL NET      GETUP  7	C     SUBROUTINE GETUP PREPARES THE HORIZONTAL SPACE CONTROL NET || GETUP 7
+10	841	COUNT 51/50	                                                                        GETUP  8	C     ARRAYS NET( IC, IC ) AND NETSU ( NC ) FROM DATA PROVIDED BY THE( || GETUP 8
+11	883	OK	C     USER IN THE GRID SPECIFICATION ARRAY MARY( MARK ).                GETUP  9	C     USER IN THE GRID SPECIFICATION ARRAY MARY( MARK ). || GETUP 9
+12	927	OK	C                                                                       GETUP 10	C || GETUP 10
+13	969	COUNT 45/46	                                                                        GETUP 11	C THE SUBSCRIPTS IC AND JC OF THE TWO-CIMENSICAL ARRAY || GETUP 11
+14	1011	OK	C     NET( IC, JC )  LOCATE ( SYMBOLICALLY ) THE CENTERS OF CONTIGLOUS  GETUP 12	C     NET( IC, JC ) LOCATE ( SYMBOLICALLY ) THE CENTERS OF CONTIGLOUS || GETUP 12
+15	1053	OK	C     UNIT MESH SQUARES ( CF DIMENSION  WINT ) RELATIVE TO THE UNIT     GETUP 13	C UNIT MESH SQUARES ( CF DIMENSION WINT ) RELATIVE TO THE UNIT || GETUP 13
+16	1098	COUNT 54/53	                                                                        GETUP 14	C SQUARE IN THE SOUTH-WEST CORNER OF THE NET. FOR THIS SOUTH-WEST || GETUP 14
+17	1140	OK	C     CORNER UNIT  MESH   IC = JC = 1.  IC  IS INCREMENTED IN THE       GETUP 15	C CORNER UNIT MESH IC = JC = 1. IC IS INCREMENTED IN THE || GETUP 15
+18	1184	OK	C     EASTERLY DIRECTION AND  JC  IS INCREMENTED IN THE NORTHERLY       GETUP 16	C EASTERLY DIRECTION AND JC IS INCREMENTED IN THE NORTHERLY || GETUP 16
+19	1228	COUNT 8/7	C     DIRECTION.                                                                	C DIRECTION. || GETUP .17
+20	1271	OK	C                                                                       GETUP 18	C || GETUP 18
+21	1315	OK	C     ON FIRST PASS THROUGH THE ELEMENTS OF  MARY( MARK )  EACH POSITIVEGETUP 19	C ON FIRST PASS THROUGH THE ELEMENTS OF MARY( MARK ) EACH POSITIVE || GETUP 19
+22	1356	OK	C     INTEGER FLAGS A PARTICULAR NON-SUBDIVIDED UNIT MESH SQUARE.  A 0  GETUP 20	C INTEGER FLAGS A PARTICULAR NON-SUBDIVIDED UNIT MESH SQUARE. A 0 || GETUP 20
+23	1399	OK	C     FLAGS A PARTICULAR SUBDIVIDED UNIT MECH SQUARE.                   GETUP 21	C     FLAGS A PARTICULAR SUBDIVIDED UNIT MECH SQUARE. || GETUP 21
+24	1442	OK	C     A UNIQUE VALUE OF NDATA ( THE ARRAY INDEX WHICH REFERENCES ALL OF GETUP 22	C A UNIQUE VALUE OF NDATA ( THE ARRAY INDEX WHICH REFERENCES ALL OF || GETUP 22
+25	1485	OK	C     THE ATMOSPHERIC DATA ARRAY ELEMENTS ASSOCIATED WITH THIS UNIT     GETUP 23	C THE ATMOSPHERIC DATA ARRAY ELEMENTS ASSOCIATED WITH THIS UNIT || GETUP 23
+26	1527	OK	C     SQUARE ) IS STORED IN  NET( IC, JC ).                             GETUP 24	C SQUARE ) IS STORED IN NET( IC, JC ). || GETUP 24
+27	1572	OK	C                                                                       GETUP 25	C || GETUP 25
+28	1614	OK	C     WHEN ZERO IS FOUND IN AN ELEMENT OF  MARY( MARK ) ,               GETUP 26	C WHEN ZERO IS FOUND IN AN ELEMENT OF MARY( MARK ), || GETUP 26
+29	1656	OK	C     NC  ( THE ARRAY INDEX WHICH REFERENCES A STARTING LOCATION IN THE GETUP 27	C     NC  ( THE ARRAY INDEX WHICH REFERENCES A STARTING LOCATION IN THE || GETUP 27
+30	1699	OK	C     ARRAY  NETSU ( NC )  ) IS STORED IN  NET( IC, JC )  AS A NEGATIVE GETUP 28	C     ARRAY NETSU ( NC ) ) IS STORED IN NET( IC, JC ) AS A NEGATIVE || GETUP 28
+31	1743	OK	C     INTEGER  -NC.                                                     GETUP 29	C INTEGER -NC. || GETUP 29
+32	1787	OK	C                                                                       GETUP 30	C || GETUP 30
+33	1830	OK	C     MARY( MARK )  IS ERASED AND RELOADED.  ON SECOND PASS THROUGH     GETUP 31	C MARY( MARK ) IS ERASED AND RELOADED. ON SECOND PASS THROUGH || GETUP 31
+34	1873	OK	C     THE ELEMENTS OF  MARY( MARK ), THE  ELEMENT  NC   OF THE ARRAY    GETUP 32	C     THE ELEMENTS OF MARY( MARK ), THE ELEMENT NC OF THE ARRAY || GETUP 32
+35	1907	OK	C     NETSU ( M3 )  WILL BE LOADED WITH CONTROL DATA PERTAINING TO THE  GETUP 33	C NETSU ( M3 ) WILL BE LOADED WITH CONTROL DATA PERTAINING TO THE || GETUP 33
+36	1957	OK	C     LOWER-LEFT QUADRANT OF THE SUBDIVIDED MESH SQUARE.  THE SUCCEEDINGGETUP 34	C LOWER-LEFT QUADRANT OF THE SUBDIVIDED MESH SQUARE. THE SUCCEEDING || GETUP 34
+37	2001	OK	C     THREE ELEMENTS ( NETSU ( NC+1 ), NETSU ( NC+2 ), NETSU ( NC+3 ) ) GETUP 35	C THREE ELEMENTS ( NETSU ( NC+1 ), NETSU ( NC+2 ), NETSU ( NC+3 ) ) || GETUP 35
+38	2043	OK	C     WILL BE LOADED WITH CONTROL DATA PERTAINING TO THE OTHER THREE    GETUP 36	C WILL BE LOADED WITH CONTROL DATA PERTAINING TO THE OTHER THREE || GETUP 36
+39	2086	OK	C     QUADRANTS, PROCEEDING CLOCKWISE FROM THE FIRST QUADRANT.  THESE   GETUP 37	C QUADRANTS, PROCEEDING CLOCKWISE FROM THE FIRST QUADRANT. THESE || GETUP 37
+40	2129	OK	C     CONTROL DATA WILL BE ADDITIONAL  NDATA  OR  NC  VALUES FLAGGED BY GETUP 38	C CONTROL DATA WILL BE ADDITIONAL NDATA OR NC VALUES FLAGGED BY || GETUP 38
+41	2171	OK	C     MARY( MARK ).                                                     GETUP 39	C MARY( MARK ). || GETUP 39
+42	2215	OK	C                                                                       GETUP 40	C || GETUP 40
+43	2258	COUNT 8/7	C     PROCESSING CONTINUES UNTIL NO ADDITIONAL ELEMENTS  NC  ARE FLAGGED        	C   PROCESSING CONTINUES UNTIL NO ADDITIONAL ELEMENTS NC ARE FLAGGED || !GETUP 41
+44	2301	OK	C     BY  MARY( MARK ).                                                 GETUP 42	C BY MARY( MARK ). || GETUP 42
+45	2344	OK	C                                                                       GETUP 43	C || GETUP 43
+46	2384	OK	      COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO               GETUP 44	COMMON /CNTROL/ IPOUT,ISIN,ISOUT,JPARN,MC(20),NSEQO || GETUP 44
+47	2429	OK	      COMMON /INDEX/ ICX,JCX,KBHX,LTIMX,NAT,NCX,NDATX                   GETUP 45	COMMON /INDEX/ ICX, JCX, KBHX, LTIMX, NAT, NCX, NDATX || GETUP 45
+48	2472	OK	      DIMENSION       NET(ICF,JCF),     NETSU(   NCF),      MARY(  MARF)GETUP 46	DIMENSION     NET(ICF, JCF),     NETSU(NCF),     MARY(MARF) || GETUP 46
+49	2517	OK	      DATA PROGRM/6HGETUP /                                             GETUP 47	DATA PROGRM/6HGETUP / || GETUP 47
+50	2560	OK	C                                                                       GETUP 48	C || GETUP 48
+51	2602	OK	 1000 FORMAT( 36I2 )                                                    GETUP 49	1000 FORMAT( 36I2 ) || GETUP 49
+52	2644	COUNT 8/7	 10J1 FORMAT( 1H0, 25X, 31HARRAY MARY HAS BEEN LOADED WITH,I5, 22H ELEME        	10J1 FORMAT( 1H0, 25X, 31HARRAY MARY HAS BEEN LOADED WITH,I5, 22H ELEME || .GETUP 50
+53	2688	COUNT 16/17	                                                                        GËTUP 51	1NT(S) AS FOLLOWS/ || GËTUP 51
+54	2731	OK	 1002 FORMAT(25X,36I2)                                                  GETUP 52	1002 FORMAT(25X,36I2) || GETUP 52
+55	2776	OK	C                                                                       GETUP 53	C || GETUP 53
+56	2818	COUNT 0/7	                                                                        GETUP 54	 || GETUP 54
+57	2862	COUNT 0/12	                                                                        GETUP 55	 || GETUP 55
+58	2905	OK	      NDATA = 0                                                         GETUP 56	NDATA = 0 || GETUP 56
+59	2947	COUNT 0/4	                                                                        GETUP 57	 || GETUP 57
+60	2989	COUNT 0/4;COUNT 8/7	                                                                                	 || GETLIP 58
+61	3033	OK	      IF(ICX.GT.ICF) CALL ERROR(PROGRM,-1,ISOUT)                        GETUP 59	IF(ICX.GT.ICF) CALL ERROR(PROGRM,-1,ISOUT) || GETUP 59
+62	3075	OK	      IF(JCX.GT.JCF) CALL ERROR(PROGRM,-1,ISOUT)                        GETUP 60	IF(JCX.GT.JCF) CALL ERROR(PROGRM,-1,ISOUT) || GETUP 60
+63	3126	OK	                                       118                                      	118
+64	3279	COUNT 168/38;COUNT 14/5	                                                                                	137934307 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 31327 3132 || \text{الدكتير}

@@ -1,0 +1,8 @@
+37	2018	OK	      A1=AL**(2.0*(B-DPST(2,2))/ZD)                                             	A1=AL**(2.0*(B-DPST(2,2))/ZD)
+38	2059	OK	      A2=AL**(2.0*(A-DPST(2,2))/Z0)                                             	A2=AL**(2.0*(A-DPST(2,2))/Z0)
+50	2575	OK	      IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443                                        	IF(PPST(2,I).GT.Z8RSTZ) GO TO 3443
+51	2618	OK	      PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I))/(CNWAF(2) +                  	PPST(1,I) = CX(MCX,1) - (Z8RSTZ - PPST(2,I)) / (CNWAF(2) +
+52	2662	OK	     1 (DNWAF(1) - DNWAF(2))*(PPST(2,I) - DPST(2,2))/ZD)                        	1 (DNWAF(1) - DNWAF(2)) * (PPST(2,I) - DPST(2,2))/ZD)
+57	2877	COUNT 7/8	                                                                                	G TO 2445
+62	3091	COUNT 12/11	                                                                                	2445 CONTINUE
+64	3276	COUNT 8/41	                                                                                	markdown

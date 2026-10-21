@@ -1,0 +1,42 @@
+1	22	69	NOISE	                                                                        			
+2	98	108	NOISE	                                                                        			
+3	808	838	VOTED	      GO TO 133                                                         		lighton=      GO TO 133 ## dots=      GO TO 133 ## glm=      GO TO 130	VAPOR27
+4	850	882	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR28
+5	892	923	COMMENT	C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL 		lighton=C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL ## dots=C     IS THE COMPUTED VAPOR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL ## glm=C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE CALCAREOUS SOIL	VAPOR29
+6	936	967	COMMENT	C     BOILING TEMPERATURE                                               		lighton=C     BOILING TEMPERATURE ## dots=C     BOILING TEMPERATURE ## glm=C     BOILING TEMPERATURE	VAPOR30
+7	980	1013	VOTED	 200  IF(TMPG-3100.0)120,120,115                                        		lighton= 200  IF(TMPG-3109.0)120,120,115 ## dots= 200  IF(TMPG-3100.0)120,120,115 ## glm= 200  IF（TMPG-3100.0）120,120,115	VAPOR31
+8	1013	1052	VOTED	 115  VPR=SSAM*0.00015*(TMFG-310J.0)                                    		lighton= 115  VPR=SSAM*0.00015*(TMFG-310u.0) ## dots= 115  VPR=SSAM*0.00015*(TMFG-310J.0) ## glm= 115  VPR=SSAM*0.00015*(TMPG-310J.0)	VAPOR32
+9	1065	1095	AGREE	      GO TO 130                                                         		lighton=      GO TO 130 ## dots=      GO TO 130 ## glm=      GO TO 130	VAPOR33
+10	1108	1139	VOTED	 120  VPR=1.0                                                           		lighton= 120  VPR=1.0 ## dots= 120  VPR=1.0 ## glm= 120  VPR=^.C	VAPOR34
+11	1151	1182	VOTED	 130  RETURN                                                            		lighton= 13C  RETURN ## dots= 130  RETURN ## glm= 130  RETURN	VAPOR35
+12	1195	1226	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	VAPOR36
+13	1537	1570	COMMENT	*DECK,TEMP                                                              		lighton=*DECK,TEMP ## dots=*DECK,TEMP ## glm=*DECK,TEMP	TEMP1
+14	1581	1611	AGREE	      SUBROUTINE TEMP                                                   		lighton=      SUBROUTINE TEMP ## dots=      SUBROUTINE TEMP ## glm=      SUBROUTINE TEMP	TEMP2
+15	1624	1654	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP3
+16	1667	1700	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1976	TEMP4
+17	1711	1740	COMMENT	C .                                                                     		lighton=C . ## glm=C .	TEMP5
+18	1753	1783	NOISE	                                                                        			TEMP6
+19	1795	1824	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	
+20	1837	1869	COMMENT	C     ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN    		lighton=C     ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN ## dots=C     ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN ## glm=C     ESTIMATES TEMPERATURES OF CONDENSED AND VAPOR PHASE FALLOUT IN	TEMP8
+21	1881	1913	COMMENT	C     THE FIREBALL  AT THE INITIAL TIME.                                		lighton=C     THE FIREBALL  AT THE INITIAL TIME. ## glm=C     THE FIREBALL  AT THE INITIAL TIME.	TEMP9
+22	1924	1953	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP10
+23	1967	1998	NOISE	                                                                        			TEMP11
+24	2011	2042	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP12
+25	2052	2085	VOTED	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ    		lighton=      COMMON /BASIC/ W,FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,THSD,XGZ,YGZ,TGZ ## glm=      COMMON /BASIC/ W.FW.ZBRSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ	TEMP13
+26	2094	2128	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR ## dots=      COMMON /INITL/ F, PHI, SSAM, THE, TMPG, TMPS, VFR ## glm=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR	TEMP14
+27	2139	2169	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP15
+28	2181	2211	NOISE	                                                                        			TEMP16
+29	2225	2256	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP17
+30	2270	2301	COMMENT	C     COMPUTE VAPOR TEMPERATURE                                         		lighton=C     COMPUTE VAPOR TEMPERATURE ## dots=C     COMPUTE VAPOR TEMPERATURE ## glm=C     COMPUTE VAPOR TEMPERATURE	TEMP18
+31	2311	2341	AGREE	      Q=ZSCL*W**(-.03921)                                               		dots=      Q=ZSCL*W**(-.03921) ## glm=      Q=ZSCL*W**(-.03921)	TEMP19
+32	2353	2385	HAND	      T2M=0.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.)))     	44	dots=      T2M=1.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.))) ## dots2=      T2M=1.037*(10.045/0.037)**(Q/180.)*(W**((0.49-(0.07*Q/180.))) ## glm=      T2M=1.037*((0.045/0.037)**(Q/180.))*(H**(0.49-(0.07*Q/180.))) ## glm2=      T2M=1.037*((0.045/0.037)**(Q/180.))*(W**(0.49-(0.07*Q/180.)))	TEMP20
+33	2397	2429	HAND	      A=5980.*((1.145)**(Q/180.))*((W)**(-0.03948+0.02637*Q/180.0))     	43,48,51,53,55	lighton2=      A=5980.*((1.145)**(Q/180.))*((W)**(-J.03948+L.J2E37*Q/180.0)) ## glm=      A=5980.*((1.145)**(Q/180.))*((W)**(-5.039+8+0.12637*Q/180.0))	TEMP21
+34	2439	2471	HAND	      B=-0.4473*(W**(0.04360))                                          	16	dots2=      B=-0.44734(W**(0.04360)) ## glm=      B=-0.4473*(W**(0.04360))	TEMP22
+35	2484	2516	HAND	      TMPG=A*((TME/T2M)**B)+1500.0                                      	26	glm=      TMPG=A*((TME/T2M)**e)+1500.0 ## glm2=      TMPG=A*((TME/T2M)**B)+1500.0	TEMP23
+36	2527	2557	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	TEMP24
+37	2565	2600	COMMENT	C     COMPUTE TEMPERATURE OF CONDENSED PHASE MATTER                     		lighton=C     COMPUTE TEMPERATURE OF CONDENSED PHASE MATTER ## glm=C     COMPUTE TEMPERATURE OF CONDENSED PHASE MATTER	TEMP25
+38	2612	2643	HAND	      TMPS = 200. * ALOG10(W) + 1000.                                   		glm=      TMPS = 200. * ALOG10(W) + 1000.	TEMP26
+39	2654	2686	AGREE	      RETURN                                                            		dots=      RETURN ## glm=      RETURN	TEMP27
+40	2697	2728	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	TEMP28
+41	3165	3196	NOISE	                                                                        		lighton=                                       68 ## dots=                                       68 ## glm=                                       68	
+42	3338	3362	NOISE	                                                                        			

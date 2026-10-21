@@ -1,0 +1,14 @@
+1	33	COUNT 0/36	                                                                                	
+14	1110	COUNT 0/34	                                                                                	
+23	1496	COUNT 162/66	                                                                                	100  \text{NRM} = (\text{RM} / (1. - \text{CPAI} / (\text{CP} * \text{T} * \text{QX})) ) * \text{RMIX} * (\text{RS} \quad * \text{RL} + (\text{QT} * \text{CX} * \text{QXE} * 9.8 * \text{U-EPS}) *
+25	1582	OK	      DRME = DRM                                                                	DRME = DRM
+30	1799	COUNT 0/12	                                                                                	
+34	1972	COUNT 0/35	                                                                                	
+38	2142	COUNT 0/48	                                                                                	
+49	2605	COUNT 30/21	                                                                                	\mathrm{IF}(T-273.)102,103,103
+51	2699	OK	      GO TO 104                                                                 	GO TO 104
+52	2741	OK	  1.3 CL=2.536                                                                  	1.3 CL=2.536
+53	2784	COUNT 25/20	                                                                                	1.04 \quad n2 = CL * X / (287. * T)
+54	2829	OK	      03=18.*02/29./T                                                           	03=18.*02/29./T
+56	2915	OK	      Q5=1.+CL+Q3/CP                                                            	Q5 = 1. + CL + Q3 / CP
+57	2958	COUNT 0/21	                                                                                	

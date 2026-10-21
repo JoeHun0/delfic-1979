@@ -1,0 +1,65 @@
+1	10	COUNT 3/16	                                                                                	---
+2	119	COUNT 3/26	                                                                         -   -- 	--- || ---
+3	600	COUNT 61/62	                                                                        PAH1 541	-19609948164，19610210308，19610472452，19610734596，19610996740， || PAH1 541
+4	644	COUNT 61/62	                                                                        PAM1 542	19611258884，19611516932，-19744428036，19744690180，19744952324， || PAM1 542
+5	686	COUNT 60/61	                                                                        PAH1 543	19745214468，19745476E12，19745738756，19746000900，19746258948， || PAH1 543
+6	730	COUNT 61/62	                                                                        PAM1 544	-19878645764，19878907908，19879173052，19879432196，19879694340， || PAM1 544
+7	773	COUNT 62/63	                                                                        PAM1 545	19879952388,-19880218628,19380476676,-20013125€36,20013387780, || PAM1 545
+8	808	COUNT 60/61	                                                                        PAM1 546	20013649924, 20013912068, 20014174212, 20014436356, 20014694404, || PAM1 546
+9	860	OK	     -20147343364，2 0147605506，2 0147867652，2 01481297 96， 20148387844， PAM1 5+7	- 20147343364，20147605506，20147867652，20148129796，20148387844， || PAM1 5+7
+10	902	COUNT 62/63	                                                                        PAM1 548	-20148654084，20148912132，-20281823236，20282085380，20282347524， || PAM1 548
+11	945	COUNT 61/62	                                                                        PAM1 549	20282609668，20282871112，20283133956，20283392004，-20416J40964， || PAM1 549
+12	989	COUNT 59/61	                                                                        PAM1 550	2041630310, 20416565252, 20416827396, 20417089540, 20417347588, || PAM1 550
+13	1031	COUNT 63/64	                                                                        PAM1 551	- 2 0 4 1 7 6 4 7 6 5 0,-2 0 4 1 7 6 1 8 4 6 6,2 0 4 1 7 8 7 1 8 7 6,-2 0 5 5 0 2 5 8 6 9 2,2 0 5 5 0 5 2 0 8 3 6, || PAM1 551
+14	1066	COUNT 60/61	                                                                        PAM1 552	20550782980, 20551045124, 20551307268, 20551569412, 20551827460, || PAM1 552
+15	1117	COUNT 61/62	                                                                        PAM1 553	- 20684738564，20685000708，20685262852，20685524996，20685783044， || PAM1 553
+16	1160	COUNT 62/63	                                                                        PAM1 554	- 20686049284，20686307332，-20818956292，20819218436，20819480580， || PAM1 554
+17	1195	COUNT 61/62	                                                                        PAM1 555	20819742724, 20820004868, 20820267012, 20820525060,-20953436164, || PAM1 555
+18	1246	COUNT 60/61	                                                                        PAM1 556	20953698308，20953960452，2J954222596，20954484740，20954742788， || PAM1 556
+19	1289	COUNT 60/62	                                                                        PAM1 557	21087653892，21087916036，21088178180，21088440324，21086702468/ || PAM1 557
+20	1332	OK	      DATA (NUCLIO(I),I=666,700)/                                       PAM1 558	DATA (NUCLIO(I), I=666,700) / || PAM1 558
+21	1375	COUNT 61/62	                                                                        PAM1 559	21088960516,-21221871620，21222133764，21222395908，21222658052， || PAM1 559
+22	1418	COUNT 61/62	                                                                        PAM1 560	21222920196，21223178244，-21356351492，21356613636，21356875760， || PAM1 560
+23	1453	COUNT 61/62	                                                                        PAM1 561	21357137924, 21357400068, 21357658116,-21490569220, 2149J831364, || PAM1 561
+24	1503	COUNT 61/62	                                                                        PAM1 562	21491093508，21491355652，21491613700，-21491879940，21492137988， || PAM1 562
+25	1547	COUNT 61/62	                                                                        PAN1 563	- 21624706948，21625049092，21625311236，21625573380，21625835524， || PAN1 563
+26	1580	COUNT 30/31	                                                                        PAM1 564	21626097668, 21626355716, 0, 0, 0, || PAM1 564
+27	1631	COUNT 12/11	                                                                        PAM1 565	0, 0, 0, 0, 0, 0 / || PAM1 565
+28	1676	OK	      DATA (MULT  (I),I=1,11   )/                                       PAM1 566	DATA (MULT (I), I=1,11 )/ || PAM1 566
+29	1716	COUNT 20/21	                                                                        PAM1 567	8, 64, 512, 4096, 32768, || PAM1 567
+30	1759	COUNT 45/46	                                                                        PAM1 568	262144, 2097152, 16777216, 134217728, 1073741824, || PAM1 568
+31	1805	COUNT 11/12	                                                                        PAM1 569	8589934592/ || PAM1 569
+32	1847	OK	      DATA IBRA,INUC,KRM,LMAX,MAXNUC/                                   PAM1 570	DATA IBRA, INUC, KRM, LMAX, MAXNUC/ || PAM1 570
+33	1888	COUNT 19/20	                                                                        PAM1 571	128, 692, 181, 18, 700/ || PAM1 571
+34	1931	COUNT 8/72	                                                                        PAM1 572	C******* || PAM1 572
+35	1977	OK	C                                                                       PAM1 573	C || PAM1 573
+36	2020	OK	   13 FORMAT(A6)                                                        PAM1 574	13 FORMAT(A6) || PAM1 574
+37	2064	OK	   14 FORMAT((5E14.6))                                                  PAM1 575	14 FORMAT((5E14.6)) || PAM1 575
+38	2106	OK	C                                                                       PAM1 576	C || PAM1 576
+39	2148	OK	C     SEARCH FOR KIND OF FISSICN TO USE                                 PAM1 577	C SEARCH FOR KIND OF FISSICN TO USE || PAM1 577
+40	2195	OK	C                                                                       PAM1 578	C || PAM1 578
+41	2232	OK	      00 300 I=1.12                                                     PAM1 579	00 300 I=1.12 || PAM1 579
+42	2277	OK	      IF (FISSID.EQ.TYPE(I)) GO TO 305                                  PAM1 580	IF (FISSID.EQ.TYPE(I)) GO TO 305 || PAM1 580
+43	2322	OK	300   CONTINUE                                                          PAM1 581	300 CONTINUE || PAM1 581
+44	2364	OK	C                                                                       PAM1 582	C || PAM1 582
+45	2406	COUNT 8/7	C     FISSION TYPE REQUESTED IS NOT IN TABLE--FRINT ERROR                       	C FISSION TYPE REQUESTED IS NOT IN TABLE--FRINT ERROR || PAM1. 583
+46	2453	OK	C                                                                       PAM1 584	C || PAM1 584
+47	2493	OK	      WRITE (KOUT,6C00) FISSIO                                          PAM1 585	WRITE (KOUT,6C00) FISSIO || PAM1 585
+48	2534	OK	 6CJ0 FORMAT(1H0. 17HFISSION DATA FOR A6. 30H TYPE FISSION IS NOT AVAILAPAM1 566	6CJ0 FORMAT(1H0. 17HFISSION DATA FOR A6. 30H TYPE FISSION IS NOT AVAILA || PAM1 566
+49	2582	OK	     1BLE)                                                              PAM1 587	1 BLE) || PAM1 587
+50	2621	OK	      CALL ERROR(6H PAP1 ,-6300, ISOUT)                                 PAM1 588	CALL ERROR(6H PAP1 ,-6300, ISOUT) || PAM1 588
+51	2667	OK	C                                                                       FAM1 589	C || FAM1 589
+52	2708	OK	C     TYPE FISSION REQUESTED FCUNJ IN TABLES                            PAM1 590	C TYPE FISSION REQUESTED FCUNJ IN TABLES || PAM1 590
+53	2753	OK	C                                                                       PAM1 591	C || PAM1 591
+54	2793	OK	C     LOAD THIS DATA INTO ABEGN                                         PAM1 592	C LOAD THIS DATA INTO ABEGN || PAM1 592
+55	2838	OK	C                                                                       PAH1 593	C || PAH1 593
+56	2880	OK	C                                                                       PAH1 594	C || PAH1 594
+57	2923	OK	 3C5  CONTINUE                                                          PAH1 5,5	3C5 CONTINUE || PAH1 5,5
+58	2970	OK	C                                                                       PAM1 596	C || PAM1 596
+59	3009	OK	C     LOAD TAPE  DATA FOR REQUESTED FISSION IYFL INTO ABEGN             PAH1 597	C LOAD TAPE DATA FOR REQUESTED FISSION IYFL INTO ABEGN || PAH1 597
+60	3056	OK	C                                                                       PAH1 594	C || PAH1 594
+61	3097	OK	      OC 316 I=1.12                                                     PAN1 599	OC 316 I=1.12 || PAN1 599
+62	3140	COUNT 18/17	                                                                        PAM1 6.0	RECORD INTP. 131 NAME || PAM1 6.0
+63	3198	COUNT 4/3	                                                                                	2.23
+64	3313	COUNT 4/7;COUNT 3/4	                                                                                	49/6 || ---
+65	3340	COUNT 1/43	                                                                                	/

@@ -1,0 +1,62 @@
+1	41	56	NONE	                                                                        			
+2	520	556	VOTED	      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100)                     		lighton=      COMMON /TABLES/ MCX, CX(50,10), GDPST(10,100) ## dots=      COMMON /TABLES/ NCX, CX(50,10), GOPST(10,100) ## glm=      COMMON /TABLES/ MCX， CX(50,10)， GDPST(10,100)	RSXP32
+3	564	596	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP33
+4	606	642	VOTED	      DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),DNWAF(2)       		lighton=      DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),DNWAF(2) ## dots=      DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),ONWAF(2) ## glm=      DIMENSION DPST(8,2),CPX(2,50),VISCX(50),PPST(8,10),DNWAF(2)	RSXP34
+5	642	683	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP35
+6	691	729	VOTED	  444 FORMAT(*1*/10X,*DEPOSIT INCREMENTS*//15X,*TIME*,7X,*ALT*,8X,*RAD*,		lighton=  444 FORMAT(*1*/10X,*DEPOSIT INCREMENTS*//15X,*TIME*,7X,*ALT*,8X,*RAD*, ## dots=  444 FORMAT(*1*/10X,*DEPOSIT INCREMENTS*/15X,*TIME*,7X,*ALT*,8X,*RAD*,! ## glm=  444 FORMAT(*1*/10X,*DEPOSIT INCREMENTS*//15X,*TIME*,7X,*ALT*,8X,*RAD*,	RSXP36
+7	729	771	AGREE	     17X,*DIAM*,8X,*MASS*,8X,*DZ*,7X,*ZLOW*,7X,*VOL*//)                 		lighton=     17X,*DIAM*,8X,*MASS*,8X,*DZ*,7X,*ZLOW*,7X,*VOL*//) ## glm=     17X,*DIAM*,8X,*MASS*,8X,*DZ*,7X,*ZLOW*,7X,*VOL*//)	RSXP37
+8	771	816	AGREE	  666 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2,*IN CLOUD*)                     		lighton=  666 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2,*IN CLOUD*) ## dots=  666 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2,*IN CLOUD*) ## glm=  666 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2,*IN CLOUD*)	RSXP38
+9	816	859	AGREE	  777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2)                                		lighton=  777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2) ## dots=  777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2) ## glm=  777 FORMAT(1X,1PE11.3,7E11.3,I2,5X,I2)	RSXP39
+10	859	900	VOTED	  888 FORMAT(1X,1PE11.3,7E11.3/1X,*SUBDIVISION*,2X,I5,5X,*SIZE CLASS*,2X		lighton=  888 FORMAT(1X,1PE11.3,7E11.3/1X,*SUBDIVISION*,2X,I5,5X,*SIZE CLASS*,2X ## dots=  888 FORMAT(1X,1PE11.3,7E11.3/1X,*SUBDIVISION*,2X,15.5X,*SIZE CLASS*,2X ## glm=  888 FORMAT(1X,1PE11.3,7E11.3/1X,*SUB0IVISION*,2X,I5,5X,*SIZE CLASS*,2X	RSXP40
+11	908	945	VOTED	     1,15/)                                                             		lighton=     1.15/1 ## dots=     1,15/) ## glm=     1,I5/)	RSXP41
+12	945	984	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP42
+13	992	1027	COMMENT	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *			RSXP43
+14	1038	1071	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP44
+15	1071	1115	COMMENT	C     INITIALIZE WAFER UP-CRIFT INTERPOLATION ARRAYS AND WAFER DATA     		glm=C     INITIALIZE WAFER UP-CRIFT INTERPOLATION ARRAYS AND WAFER DATA	RSXP45
+16	1115	1156	COMMENT	C     ARRAYS                                                            		glm=C     ARRAYS	RSXP46
+17	1164	1199	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP47
+18	1208	1245	AGREE	      DO 2 KA=1,50                                                      		dots=      DO 2 KA=1,50 ## glm=      DO 2 KA=1,50	RSXP48
+19	1245	1286	VOTED	      00 2 K9=1,2                                                       		lighton=      00 2 K9=1,2 ## dots=      00 2 KB=1,2 ## glm=      00 2 K9=1,2	RSXP49
+20	1294	1330	AGREE	    2 DPX(KB,KA)=0.0                                                    		dots=    2 DPX(KB,KA)=0.0 ## glm=    2 DPX(KB,KA)=0.0	RSXP50
+21	1338	1375	AGREE	      DO 3 KC=1,8                                                       		dots=      DO 3 KC=1,8 ## glm=      DO 3 KC=1,8	RSXP51
+22	1375	1415	AGREE	      DO 3 KQ=1,2                                                       		lighton=      DO 3 KQ=1,2 ## dots=      DO 3 KQ=1,2 ## glm=      DO 3 KQ=1,2	RSXP52
+23	1423	1460	SINGLE	    3 DPST(KC,KQ)=0.0                                                   		dots=    3 DPST(KC,KQ)=0.0	RSXP53
+24	1460	1501	AGREE	    4 KDPST=KDI                                                         		lighton=    4 KDPST=KDI ## dots=    4 KDPST=KDI ## glm=    4 KDPST=KDI	RSXP54
+25	1501	1542	AGREE	      DPSTK=KDPST                                                       		lighton=      DPSTK=KDPST ## dots=      DPSTK=KDPST ## glm=      DPSTK=KDPST	RSXP55
+26	1551	1585	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP56
+27	1585	1629	COMMENT	C     COMPUTE WAFER UP-DRIFT INTERPOLATION ARRAYS                       		lighton=C     COMPUTE WAFER UP-DRIFT INTERPOLATION ARRAYS	RSXP57
+28	1629	1670	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP58
+29	1678	1715	TIE	    6 00 7 K0=1,MCX                                                     	13	lighton=    6 00 7 K0=1,MCX ## dots=    6 00 7 KO=1,MCX ## glm=    6 D0 7 KD=1.MCX	RSXP59
+30	1715	1759	SINGLE	      IF(CX(KD,7)-CX(KD,())53,53,54                                     		glm=      IF(CX(KD,7)-CX(KD,())53,53,54	RSXP60
+31	1759	1802	VOTED	   53 DPX(1,KD)=0.0                                                     		lighton=   53 DPX(1,KD)=0.C ## dots=   53 DPX(1,KD)=0.0 ## glm=   53 DPX(1,KD)=0.0	RSXP61
+32	1802	1844	AGREE	      GO TO 55                                                          		lighton=      GO TO 55 ## dots=      GO TO 55 ## glm=      GO TO 55	RSXP62
+33	1852	1890	NONE	                                                                        			RSXP63
+34	1890	1930	AGREE	   55 IF(CX(KD,6))56,56,57                                              		lighton=   55 IF(CX(KD,6))56,56,57 ## dots=   55 IF(CX(KD,6))56,56,57 ## glm=   55 IF(CX(KD,6))56,56,57	KSXP64
+35	1930	1975	TIE	   56 DPX(2,KO)=0.0                                                     	14	dots=   56 DPX(2,KO)=0.0 ## glm=   56 DPX(2,K0)=0.0	RSXP65
+36	1975	2015	AGREE	      GO TO 7                                                           		lighton=      GO TO 7 ## dots=      GO TO 7 ## glm=      GO TO 7	RSXP66
+37	2015	2059	AGREE	   57 DENOM=CX(KD,3)-ZBRSTZ                                             		lighton=   57 DENOM=CX(KD,3)-ZBRSTZ ## dots=   57 DENOM=CX(KD,3)-ZBRSTZ ## glm=   57 DENOM=CX(KD,3)-ZBRSTZ	RSXP67
+38	2059	2103	VOTED	      IF(DENOM)58,56,58                                                 		lighton=      IF(DENOM)58,56,58 ## dots=      IF(DENOM)58,56,58 ## glm=      IF(DENOH)58,56,58	RSXP68
+39	2103	2147	SINGLE	   58 OPX(2,KD)=CX(KD,6)/DENOM                                          		glm=   58 OPX(2,KD)=CX(KD,6)/DENOM	RSXP69
+40	2147	2186	AGREE	    7 CONTINUE                                                          		lighton=    7 CONTINUE ## dots=    7 CONTINUE ## glm=    7 CONTINUE	RSXP70
+41	2186	2230	AGREE	      IF(IC(6) .GT. 0) WRITE(ISOUT,444)                                 		lighton=      IF(IC(6) .GT. 0) WRITE(ISOUT,444) ## dots=      IF(IC(6) .GT. 0) WRITE(ISOUT,444) ## glm=      IF(IC(6) .GT. 0) WRITE(ISOUT,444)	RSXP71
+42	2230	2273	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP72
+43	2273	2315	COMMENT	C     SET NOMINAL WAFER EDGE LENGTH IF WAFER RADII ARE TO BE SUBDIVIDED 		lighton=C     SET NOMINAL WAFER EDGE LENGTH IF WAFER RADII ARE TO BE SUBDIVIDED ## glm=C     SET NOMINAL WAFER EDGE LENGTH IF WAFER RADII ARE TO BE SUBDIVIDED	RSXP73
+44	2323	2358	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP74
+45	2366	2404	VOTED	      IF(IRAD)78,78,79                                                  		lighton=      IF(IRAD)78,78,79 ## dots=      IF(IRAD)78,78,79 ## glm=      IF(IRAD)78,76,79	RSXP75
+46	2404	2445	SINGLE	   76 8Z=0.                                                             		lighton=   76 8Z=0.	KSXP76
+47	2454	2490	AGREE	      GO TO 77                                                          		lighton=      GO TO 77 ## dots=      GO TO 77 ## glm=      GO TO 77	RSXP77
+48	2490	2534	AGREE	   79 BZ=CX(MCX,5)/FLOAT(IRAD)                                          		lighton=   79 BZ=CX(MCX,5)/FLOAT(IRAD) ## dots=   79 BZ=CX(MCX,5)/FLOAT(IRAD) ## glm=   79 BZ=CX(MCX,5)/FLOAT(IRAD)	RSXP78
+49	2534	2575	COMMENT	C     INITIALIZE TAPE IRISE                                             		lighton=C     INITIALIZE TAPE IRISE ## dots=C     INITIALIZE TAPE IRISE ## glm=C     INITIALIZE TAPE IRISE	RSXP79
+50	2575	2617	AGREE	   77 REWIND IRISE                                                      		lighton=   77 REWIND IRISE ## dots=   77 REWIND IRISE ## glm=   77 REWIND IRISE	RSXP0
+51	2617	2662	VOTED	 7882 BZ2=BZ/2.0                                                        		lighton= 7882 8Z2=8Z/2.0 ## dots= 7882 BZ2=BZ/2.0 ## glm= 7882 BZ2=BZ/2.0	RSXP81
+52	2662	2704	VOTED	  120 L0DD=0                                                            		lighton=  120 L000=0 ## dots=  120 L0DD=0 ## glm=  120 L0DD=0	RSXP82
+53	2704	2746	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP83
+54	2746	2790	COMMENT	C     COMPUTE IN-CLOUD AIR VISCOSITIES                                  		lighton=C     COMPUTE IN-CLOUD AIR VISCOSITIES	RSXP84
+55	2790	2832	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP85
+56	2832	2875	VOTED	      00 6045 J=1,MCX                                                   		lighton=      00 6045 J=1,MCX ## dots=      00 6045 J=1,MCX ## glm=      00 6045 J=1，MCX	RSXP86
+57	2875	2921	VOTED	 6 C45VISCX(J)=1.458E-6*CX(J,9)**1.5/(110.4*CX(J,9))                    		lighton= 6 C45VISCX(J)=1.458E-6*CX(J,9)**1.5/(110.4*CX(J,9)) ## dots= 6 045VISCX(J)=1.458E-6*CX(J,9)**1.5/(110.4*CX(J,9)) ## glm= 6 C45VISCX(J)=1.458E-6*CX(J,9)**1.5/(110.4+CX(J,9))	RSXP7
+58	2921	2961	AGREE	      KCX=MCX-1                                                         		dots=      KCX=MCX-1 ## glm=      KCX=MCX-1	RSXP68
+59	2961	3005	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	RSXP89
+60	3005	3050	COMMENT	C COMPUTE A SETTLING RATE THRESHOLC, SRTHS. SETTLING RATES LESS         			RSXP90
+61	3050	3092	COMMENT	C     THAN THIS VALUE ARE CONSIDERED INSIGNIFICANT AND ARE REPLACED     		lighton=C     THAN THIS VALUE ARE CONSIDERED INSIGNIFICANT AND ARE REPLACED ## glm=C     THAN THIS VALUE ARE CONSIDERED INSIGNIFICANT AND ARE REPLACED	KSXP91
+62	3124	3154	AGREE	                                         91                             		lighton=                                         91 ## dots=                                         91 ## glm=                                         91	

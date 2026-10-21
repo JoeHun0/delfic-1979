@@ -1,0 +1,8 @@
+17	1030	OK	      OMA = Q*EXP( - (XREL*COSA + YREL*SINA)**2/VARX2 - (YREL*COSA              	OMA = Q*EXP(- (XREL*COSA + YREL*SINA)**2/VARX2 - (YREL*COSA
+23	1289	COUNT 32/31	                                                                                	400 CALL ERROR(PROGRM, IRROR, TSOUT)
+26	1717	OK	      SUBROUTINE CONTOR( CCNTUR, CROLBL ,UMAF ,NMAP)                            	SUBROUTINE CONTOR( CCNTUR, CROLBL , UMAF , NMAP)
+40	2317	COUNT 34/38	                                                                                	COMMON / CON CAT/ IC(20) IHOB IPNCH IPJUY
+44	2490	COUNT 23/29	                                                                                	1 JC NXMAP NYMAP NZ GCUT SSAM
+45	2526	COUNT 18/24	                                                                                	2TGZ XGZ X1 X2 YGZ XMAX
+48	2662	OK	      DATA PROGRM/6HCONTOR/                                                     	DATA PROGRM/6HCONTOR/
+53	2881	OK	      K = ?                                                                     	K = ?

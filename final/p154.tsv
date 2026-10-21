@@ -1,0 +1,64 @@
+1	5	51	NOISE	                                                                        			
+2	528	561	COMMENT	*DECK,OPMEX                                                             		lighton=*DECK,OPMEX ## dots=*DECK,OPMEX ## glm=*DECK,OPMEX	OPMEX1
+3	573	603	VOTED	      SUBROUTINE OPMEX(NUMTAP)                                          		lighton=      SUBROUTINE OPMEX(NUMTAP) ## dots=      SUBROUTINE OPHEX(NUMTAP) ## glm=      SUBROUTINE OPMEX(NUMTAP)	OPMEX2
+4	613	642	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OPMEX3
+5	655	691	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	OPMEX4
+6	700	729	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OPMEX5
+7	741	774	COMMENT	C * * * * * * * * OLTPUT PROCESSOR MODULE * * * * * * * * * * * * * * * 			OPMEX6
+8	786	815	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	UPMEX7
+9	828	861	COMMENT	C ******************** GLC S S A R Y ********************               			OPMEX8
+10	871	900	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	OPMEX9
+11	915	948	COMMENT	C     CAYF              ACTIVITY K FACTOR USED FOR AIRBURSTS AND        		lighton=C     CAYF              ACTIVITY K FACTOR USED FOR AIRBURSTS AND ## glm=C     CAYF              ACTIVITY K FACTOR USED FOR AIRBURSTS AND	OPMEX10
+12	959	991	COMMENT	C                       ARBITRARY PARTICLE SIZE-ACTIVITY DISTRIBUTIONS. 		glm=C                       ARBITRARY PARTICLE SIZE-ACTIVITY DISTRIBUTIONS.	OPMEX11
+13	1002	1033	COMMENT	C                       （R=M**2）/（HR-KT）                                		glm=C                       （R=M**2）/（HR-KT）	OPMEX12
+14	1044	1078	COMMENT	C     C                 ACTIVITY DECAY FACTOR (NREQ=5,6)                		lighton=C     C                 ACTIVITY DECAY FACTOR (NREQ=5,6) ## dots=C     C                 ACTIVITY DECAY FACTOR (NREQ=5,6)	OPMEX13
+15	1087	1119	COMMENT	C     CUTMAP            CUT-OFF THRESHOLD FOR MAP ORDINATE VALUES       		lighton=C     CUTMAP            CUT-OFF THRESHOLD FOR MAP ORDINATE VALUES ## glm=C     CUTMAP            CUT-OFF THRESHOLD FOR MAF ORDINATE VALUES	UPMEX14
+16	1130	1161	COMMENT	C     DELTAX            MAXIMUM WIDTH OF A CORE-LOAD MAP                		lighton=C     DELTAX            MAXIMUM WIDTH OF A CORE-LOAD MAP ## glm=C     DELTAX            MAXIMUM WIDTH OF A CURE-LOAD PAP	OPMEX15
+17	1172	1204	COMMENT	C     DETID( )          ICRM IDENTIFICATION                             		lighton=C     DETID( )          ICRM IDENTIFICATION ## dots=C     DETID( )          ICRM IDENTIFICATION ## glm=C     DETID( )          ICRM IDENTIFICATION	OPMEX16
+18	1216	1248	COMMENT	C     DGX, DGY          MAP GRID POINT SEPARATION DISTANCES IN THE      		lighton=C     DGX, DGY          MAP GRID POINT SEPARATION DISTANCES IN THE ## glm=C     DGX, DGY          MAP GRID POINT SEPARATION UISTANCES IN THE	OPMEX17
+19	1258	1289	COMMENT	C                       X AND Y DIRECTIONS                              		glm=C                       X AND Y DIRECTIONS	OPMEX18
+20	1300	1333	COMMENT	C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M)		lighton=C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M) ## dots=C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M) ## glm=C     DIAM(I)           PARTICLE SIZE CLASS UPPER BOUNDARY DIAMETERS (M)	OPMEX19
+21	1344	1376	COMMENT	C                       (CALLEC PACT IN PAM)                            		glm=C                       (CALLEC PACT IN PAM)	OPMEX20
+22	1386	1418	COMMENT	C     OTMIO( )          OTM IDENTIFICATION                              		lighton=C     OTMIO( )          OTM IDENTIFICATION ## dots=C     OTMIO( )          OTN IDENTIFICATION ## glm=C     OTMIO( )          OTP IDENTIFICATION	OPMEX21
+23	1430	1462	COMMENT	C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE     		lighton=C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE ## dots=C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE ## glm=C     FMASS(I)          FALLOUT MASS FRACTION IN EACH PARTICLE SIZE	OPMEX22
+24	1474	1506	COMMENT	C                       CLASS FOR A LCGNORMAL SIZE DISTBN.  FOR AN      		glm=C                       CLASS FOR A LCGNORMAL SIZE DISTBN.  FOR AN	OPMEX23
+25	1518	1549	COMMENT	C AREITRARY SIZE-ACTIVITY DISTRIBUTION. IT IS THE                       			UPMEX24
+26	1559	1592	COMMENT	C                       ACTIVITY FRACTION IN EACH PARTICLE SIZE CLASS.  		glm=C                       ACTIVITY FRACTION IN EACH PARTICLE SIZE CLASS.	UPMEX25
+27	1602	1635	COMMENT	C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS          		lighton=C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS ## dots=C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS ## glm=C     FP(I)             TOTAL RADIOACTIVITY IN EACH SIZE CLASS	UPMEX26
+28	1645	1677	COMMENT	C     FSUM              SUM OF ALL MAP POINT ORDINATES                  		lighton=C     FSUM              SUM OF ALL MAP POINT ORDINATES ## glm=C     FSUM              SUM OF ALL MAP POINT ORDINATES	OPMEX27
+29	1688	1719	COMMENT	C     FW                FISSION YIELD (KT)                              		lighton=C     FW                FISSION YIELD (KT) ## glm=C     FH                FISSION YIELD (KT)	OPMEX28
+30	1731	1763	COMMENT	C     GRUFF             A COMBINED GROUND ROUGHNESS AND RADIATION METER 		lighton=C     GRUFF             A COMBINED GROUND ROUGHNESS ANC RADIATION METER ## dots=C     GRUFF             A COMBINED GROUND ROUGHNESS AND RADIATION METER ## glm=C     GRUFF             A COMBINED GROUND ROUGHNESS AND RADIATION METER	OPMEX29
+31	1773	1805	COMMENT	C                       RESPONSE FACTOR (DEFAULT VALUE=0.5)             		glm=C                       RESPONSE FACTOR (DEFAULT VALUE=0.5)	OPMEX30
+32	1816	1848	COMMENT	C     IC(J)             RUN     CCNTROL VARIABLES                       		lighton=C     IC(J)             RUN     CCNTROL VARIABLES ## glm=C     IC(J)             RUN     CONTROL VARIABLES	OPMEX31
+33	1860	1891	COMMENT	C       IC(1 ).GT.0     NC MAPS ARE TO BE PRODUCED                      		lighton=C       IC(1 ).GT.0     NC MAPS ARE TO BE PRODUCED ## glm=C       IC(1 ).GT.0     NC MAPS ARE TO BE PRODUCED	OPMEX32
+34	1902	1934	COMMENT	C       IC(2 ).GT.[     PRINT CONTENTS OF TAPE IPOUT                    		lighton=C       IC(2 ).GT.[     PRINT CONTENTS OF TAPE IPOUT ## glm=C       IC(2 ).GT.[     PRINT CONTENTS OF TAPE IPOUT	OPMEX33
+35	1946	1977	COMMENT	C     ICTR              SEE  GOGO GLOSSARY                              		lighton=C     ICTR              SEE  GOGO GLOSSARY ## glm=C     ICTR              SEE  GOGO GLOSSARY	OPMEX34
+36	1989	2023	COMMENT	C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES 		lighton=C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES ## dots=C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES ## glm=C     IGO (LOGICAL)     T COMPUTE ACTIVITY, F COMPUTE ATOMIC ABUNDANCES	OPMEX35
+37	2031	2063	COMMENT	C     IHOB              .GT. 0 INDICATES AN AIRBURST                    		lighton=C     IHOB              .GT. 0 INDICATES AN AIRBURST ## glm=C     IHOB              .GT. 0 INDICATES AN AIFBURST	OPMEX36
+38	2076	2106	COMMENT	C     IH                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH  		lighton=C     IH                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH ## glm=C     IH                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH	OPMEX37
+39	2118	2149	COMMENT	C                       ACFOSS A PAGE CF PRINTED OUTPLT (IH=10)         		glm=C                       ACFOSS A PAGE CF PRINTED OUTPLT (IH=10)	UPMEX38
+40	2160	2191	COMMENT	C     IV                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH  		lighton=C     IV                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH ## glm=C     IV                PRINTER DESCRIPTION-- NUMBER OF CHARCTERS/INCH	OPMEX39
+41	2203	2235	COMMENT	C                       DCHN   A PAGE CF PRINTED OUTPUT (IV=6)          		glm=C                       DCHN   A PAGE CF PRINTED OUTPUT (IV=6)	OPMEX40
+42	2247	2278	COMMENT	C     INC               NUMBER OF MAP ORDINATE COLUMNS THAT CAN BE      		lighton=C     INC               NUMBER OF MAP ORDINATE COLUMNS THAT CAN BE ## glm=C     INC               NUMBER OF MAP ORDINATE COLUMNS THAT CAN BE	OPMEX41
+43	2289	2320	COMMENT	C                       ACCOMOCATED BY THE PRINTER PAPER                		glm=C                       ACCOMOCATED BY THE PRINTER PAPER	LIPMEX42
+44	2332	2363	COMMENT	C     INPAM             PAP INFUT DATA TAPE                             		lighton=C     INPAM             PAP INFUT DATA TAPE ## glm=C     INPAM             PAP INFUT DATA TAPE	OPMEX43
+45	2376	2407	COMMENT	C     IPVCH             SYSTEM PUNCH TAPE                               		lighton=C     IPVCH             SYSTEM PUNCH TAPE ## glm=C     IPNCH             SYSTEM PUNCH TAPE	OPMEX44
+46	2417	2449	COMMENT	C     IPGUT             DTM BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCEL		lighton=C     IPGUT             DTM BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCEL ## dots=C     IPOUT             DTM BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCEL ## glm=C     IPGUT             DTF BINARY OUTPUT TAPE.  CONTAINS FALLOUT PARCEL	OPHEX45
+47	2462	2492	COMMENT	C                       DATA FOR USE BY THE OPM                         		glm=C                       DATA FOR USE BY THE OPM	OPMEX46
+48	2505	2535	COMMENT	C     ISOUT             SYSTEM OUTPUT TAPE NUMBER                       		lighton=C     ISOUT             SYSTEM OUTPUT TAPE NUMBER ## dots=C     ISOUT             SYSTEM OUTPUT TAPE NUMBER ## glm=C     ISOUT             SYSTEM OUTPUT TAPE NUMBER	OPMEX47
+49	2547	2578	COMMENT	C     ISIN              SYSTEM INPUT TAPE NUMBER                        		lighton=C     ISIN              SYSTEM INPUT TAPE NUMBER ## glm=C     ISIN              SYSTEM INPUT TAPE NUMBER	OPMEX48
+50	2590	2621	COMMENT	C      IRROR      ERROR      STOP      TRACE      WORD                  			OPHEX49
+51	2634	2665	COMMENT	C    JC    MAP PRINT FORMAT CONTROL                                     			UPMEX50
+52	2674	2706	COMMENT	C       JC=1            2 LINE E FORMAT (THIS IS USED ON INPUT DEFAULT) 		lighton=C       JC=1            2 LINE E FORMAT (THIS IS USED ON INPUT DEFAULT) ## glm=C       JC=1            2 LINE E FORMAT (THIS IS USEC ON INPUT DEFAULT)	UPMEX51
+53	2718	2750	COMMENT	C       JC=2            2 LINE F11.3 FCRMAT                             		lighton=C       JC=2            2 LINE F11.3 FCRMAT ## glm=C       JC=2            2 LINE F11.3 FORMAT	OPHEX52
+54	2761	2794	COMMENT	C      JD (LOGICAL)      T COMPLETE EXPOSURE RATE, F COMPUTED DOSE      			OPMEX53
+55	2803	2834	COMMENT	C     JGO               PAM CONTROL PARAMETER                           		dots=C     JGO               PAM CONTROL PARAMETER ## glm=C     JGO               PAM CONTROL PARAMETER	OPHEX54
+56	2846	2878	COMMENT	C                1      COMPUTE DISTON WITH PART.SIZE CF ALL FISS.PRODS.		lighton=C                1      COMPUTE DISTON WITH PART.SIZE CF ALL FISS.PRODS. ## glm=C                1      COMPUTE DISTBN WITH PART.SIZE CF ALL F1SS.PRODS.	OPMEX55
+57	2891	2922	COMMENT	C                2      CCMPUTE DISTBN WITH PART.SIZE CF CNE MASS CHAIN 		lighton=C                2      CCMPUTE DISTBN WITH PART.SIZE CF CNE MASS CHAIN ## glm=C                2      COMPUTE DIST8N WITH PART.SIZE CF CNE MASS CHAIN	OPHEX56
+58	2933	2964	COMMENT	C                3      COMPUTE INDUCED ACTIVITY ONLY                   		lighton=C                3      COMPUTE INDUCED ACTIVITY ONLY ## glm=C                3      COMPUTE INDUCED ACTIVITY ONLY	OPMEX57
+59	2975	3006	COMMENT	C     KDOS (LOGICAL)     T COMPLETE DOSE FROM TIMES TENTER TO TEXIT     			OPMEX58
+60	3020	3051	COMMENT	C                       F COMPUTE DOSE FROM TIMES TENTER TO INFINITY    		glm=C                       F COMPUTE DOSE FROM TIMES TENTER TO INFINITY	UPMEX59
+61	3064	3094	COMMENT	C     KTR(I)            SEE PCHECK GLOSSARY                             		lighton=C     KTR(I)            SEE PCHECK GLOSSARY ## glm=C     KTR(I)            SEE PCHECK GLOSSARY	UPMEX60
+62	3133	3164	NOISE	                                                                        			
+63	3292	3311	NOISE	                                                                        			
+64	3311	3347	NOISE	                                                                        			

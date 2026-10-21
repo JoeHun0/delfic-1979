@@ -1,0 +1,10 @@
+8	849	COUNT 30/29	                                                                                	CALL ERROR(PROGRM, IERROR, ISOUT)
+12	1020	OK	      IF(T1 .GT. C.0) GO TO 404                                                 	IF(T1 .GT. C.0) GO TO 404
+13	1062	OK	      QCUT  = QCUTA*2.08E13                                                     	QCUT = QCUTA*2.08E13
+15	1149	OK	  404 QCUT  = QCUTA*1.6E-4                                                      	404 QCUT = QCUTA*1.6E-4
+35	2009	COUNT 46/52	                                                                                	IF(NREQ EQ 3 AND T1 GT 1.0) CUTMAP=CLTMAP*T1**(-1.26)
+38	2138	OK	      IF((NREQ.EQ. 6 .OR. NREQ .EQ. 7 .OR. NREQ .EG. 10).AND.(T1.GT. 1.0        	IF((NREQ.EQ. 6 .OR. NREQ .EQ. 7 .OR. NREQ .EG. 10).AND.(T1.GT. 1.0
+39	2170	OK	     1   .AND. T2 .NE. U.D))CUTMAP=CUTMAP*(1.C-(T1/T2)**(C.2E))                 	1 .AND. T2 .NE. U.D))CUTMAP=CUTMAP*(1.C-(T1/T2)**(C.2E))
+42	2308	OK	  600 IF(IHOB .EQ. 0  .ANC.  SO .GT. 0.0) IF(NREQ-14)1210,69J,1210              	600 IF(IHOB .EQ. 0 .ANC. SO .GT. 0.0) IF(NREQ-14)1210,69J,1210
+54	2826	OK	      IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLROT=1.E30                              	IF((NREQ.EQ.15).OR.(NREQ.EQ.17)) CLROT=1.E30
+62	3295	COUNT 0/21	                                                                                	

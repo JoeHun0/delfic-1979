@@ -1,0 +1,10 @@
+7	653	COUNT 0/15	                                                                                	
+8	696	COUNT 0/52	                                                                                	
+12	868	OK	      DO 900 J=1,NXMAP                                                          	DO 900 J=1,NXMAP
+18	1128	OK	      IF( K .GT. 3:0) CALL ERROR(PROGRM, -70L, ISOUT)                           	IF( K .GT. 3:0) CALL ERROR(PROGRM, -70L, ISOUT)
+19	1170	COUNT 0/15	                                                                                	
+20	1214	COUNT 0/50	                                                                                	
+21	1258	OK	     1  (OMAP(NXMAP*(I-1)+J) - OMAP(NXMAP*(I-2)+J))                             	1  (OMAP(NXMAP*(I-1)+J) - OMAP(NXMAP*(I-2)+J))
+53	2934	OK	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,        	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAFE ,LTAPE ,
+54	2977	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SU        ,INFAM                         	2MARRAY ,MBTAPE ,MXREQ ,SU ,INFAM
+56	3064	COUNT 39/29	                                                                                	1 JC . NX MAP , NY MAP , YZ , QCUT , SS \mathcal{A} M ,

@@ -1,0 +1,59 @@
+1	43	75	NOISE	                                                                        			
+2	460	494	COMMENT	*DECK,MASS                                                              		lighton=*DECK,MASS ## dots=*DECK,MASS ## glm=*DECK,MASS	MASS1
+3	505	536	VOTED	      SUBROUTINE HASS                                                   		lighton=      SUBROUTINE HASS ## dots=      SUBROUTINE MASS ## glm=      SUBROUTINE HASS	MASS2
+4	547	576	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS3
+5	590	625	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORHENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978	MASS4
+6	633	663	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS5
+7	674	711	NOISE	                                                                        			MASS6
+8	719	749	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS7
+9	761	795	COMMENT	C     ESTIMATES  MASS OF FALLOUT IN THE FIREBALL FOR A SURFACE, LOW     		lighton=C     ESTIMATES  MASS OF FALLOUT IN THE FIREBALL FOR A SURFACE, LOW ## dots=C     ESTIMATES  MASS OF FALLOUT IN THE FIREBALL FOR A SURFACE, LOW ## glm=C     ESTIMATES  MASS OF FALLOUT IN THE FIREBALL FCR A SURFACE, LOW	MASS8
+10	803	834	COMMENT	C     AIRBURST OR SHALLOW SUBSURFACE BURST.                             		lighton=C     AIRBURST OR SHALLOW SUBSURFACE BURST. ## dots=C     AIRBURST OR SHALLOW SUBSURFACE BURST. ## glm=C     AIRBURST OR SHALLOW SUBSURFACE BURST.	MASS9
+11	847	879	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS10
+12	891	922	NOISE	                                                                        			MASS11
+13	934	964	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS12
+14	976	1010	VOTED	      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSO,XGZ,YGZ,TGZ    		lighton2=      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLDTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSO,XGZ,YGZ,TGZ ## dots2=      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSO,XGZ,YGZ,TGZ	MASS13
+15	1020	1053	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR ## dots=      COMMON /INITL/ F, PHI, SSAM, THE, THPG, TMPS, VFR ## glm=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VFR	MASS14
+16	1063	1092	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS15
+17	1104	1136	NOISE	                                                                        			MASS16
+18	1148	1178	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	MASS17
+19	1190	1221	COMMENT	C     H08  OR 008                                                       		lighton=C     H08  OR 008 ## dots=C     HOB  OR DOB ## glm=C     H08  OR D08	MASS18
+20	1233	1267	VOTED	      IF(HEIGHT)230,240,240                                             		lighton=      IF(HEIGHT)230,240,240 ## dots=      IF(HEIGHT)230,240,240 ## glm=      IF（HEIGHT）230.240.240	MASS19
+21	1277	1309	AGREE	 230  D=2.181595                                                        		lighton= 230  D=2.181595 ## dots= 230  D=2.181595 ## glm= 230  D=2.181595	MASS20
+22	1319	1351	HAND	      Q=-ZSCL                                                           	10	lighton2=      Q=-ZSCL ## dots=      Q=-ZSCL ## dots2=      Q=-2SCL ## glm=      Q=-2SCL	MASS21
+23	1362	1395	AGREE	      R=1.125E+02+(7.55E-01)*Q-(9.6E-06)*(Q**3.0)-(9.11E-12)*(Q**5.0)   		dots=      R=1.125E+02+(7.55E-01)*Q-(9.6E-06)*(Q**3.0)-(9.11E-12)*(Q**5.0) ## glm=      R=1.125E+02+(7.55E-01)*Q-(9.6E-06)*(Q**3.0)-(9.11E-12)*(Q**5.0)	MASS22
+24	1406	1439	HAND	      S=3.27E+01+(8.51E-01)*Q-(2.52E-05)*(Q**3.0)+(1.78E-10)*(Q**5.0)   	18,27,42,49,51,60,62,69	dots=      S=3.27E+01+(8.51E-01)*Q-(2.52E-05)*(Q**3.0)+(1.78E-10)*(Q**5.0) ## glm=      S=3.27E+01+（8.51E-01）*Q-(2.52E-05)*（Q**3.0）+（1.78E-10）*（Q**5.0）	MASS23
+25	1447	1480	AGREE	      SSAM= D*((W)**(3.0/3.4))*(R**2.0)*S                               		dots=      SSAM= D*((W)**(3.0/3.4))*(R**2.0)*S ## glm=      SSAM= D*((W)**(3.0/3.4))*(R**2.0)*S	MASS24
+26	1491	1522	AGREE	      GO TO 250                                                         		lighton=      GO TO 250 ## dots=      GO TO 250 ## glm=      GO TO 250	MASS25
+27	1533	1567	AGREE	 240  E=0.07740685                                                      		lighton= 240  E=0.07740685 ## dots= 240  E=0.07740685 ## glm= 240  E=0.07740685	MASS26
+28	1575	1608	HAND	      SSAM=E*((W)**(3.0/3.4))*((180.0-ZSCL)**2.0)*(360.0+ZSCL)          		glm=      SSAM=E*((W)**(3.0/3.4))*((180.0-ZSCL)**2.0)*(360.0+ZSCL)	MASS27
+29	1619	1650	AGREE	 250  RETURN                                                            		lighton= 250  RETURN ## dots= 250  RETURN ## glm= 250  RETURN	MASS28
+30	1662	1692	AGREE	      END                                                               		lighton=      END ## dots=      END ## glm=      END	MASS29
+31	2005	2040	COMMENT	*DECK,VAPOR                                                             		lighton=*DECK,VAPOR ## dots=*DECK,VAPOR ## glm=*DECK,VAPOR	VAPOR1
+32	2050	2083	AGREE	      SUBROUTINE VAPOR                                                  		lighton=      SUBROUTINE VAPOR ## dots=      SUBROUTINE VAPOR ## glm=      SUBROUTINE VAPOR	VAPOR2
+33	2092	2122	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR3
+34	2134	2167	COMMENT	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     		lighton=C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## dots=C     H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978 ## glm=C     H. G. NORMENT. ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978	VAPOR4
+35	2178	2209	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR5
+36	2219	2250	NOISE	                                                                        			VAPOR6
+37	2263	2294	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR7
+38	2306	2338	COMMENT	C     ESTIMATES PORTION OF FALLOUT MASS (CALC. BY SR MASS) IN THE       		lighton=C     ESTIMATES PORTION OF FALLOUT MASS (CALC. BY SR MASS) IN THE ## dots=C     ESTIMATES PORTION OF FALLOUT MASS (CALC. BY SR PASS) IN THE ## glm=C     ESTIMATES PORTION CF FALLOUT MASS (CALC. BY SR PASS) IN THE	VAPOR8
+39	2349	2379	COMMENT	C     VAPOR STATE AT THE INITIAL TIME                                   		lighton=C     VAPOR STATE AT THE INITIAL TIME ## dots=C     VAPOR STATE AT THE INITIAL TIME ## glm=C     VAPOR STATE AT THE INITIAL TIME	VAPOR9
+40	2392	2423	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR10
+41	2435	2468	NOISE	                                                                        			VAPOR11
+42	2478	2510	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR12
+43	2520	2555	VOTED	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ    		lighton=      COMMON /BASIC/ W,FH,ZBRSTZ,HEIGHT,ZSCL,SLOTMP,TMSD,XGZ,YGZ,TGZ ## dots=      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,ZSCL,SLOTHP,THSD,XGZ,YGZ,TGZ ## glm=      COMMON /BASIC/ W.FW.Z8RSTZ.HEIGHT.ZSCL.SLDTMP.TMSD.XGZ.YGZ.TGZ	VAPOR13
+44	2564	2598	VOTED	      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI  		lighton=      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KDI ## dots=      COMMON /CONTRL/ DETIO(12),IC(20),IRAD,IRISE,ISIN,ISOUT,JPARN,KOI ## glm=      COMMON /CONTRL/ DETIO(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI	VAPOR14
+45	2607	2642	VOTED	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 		lighton=      COMMON /INITL/ F, PHI, SSAM, TMÉ, TMPG, TMPS, VPR ## dots=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR ## glm=      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR	VAPOR15
+46	2642	2682	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR16
+47	2691	2724	NOISE	                                                                        			VAPOR17
+48	2724	2766	COMMENT	C                                                                       		glm=C	VAPOR18
+49	2777	2812	COMMENT	C     BRANCH ON THE  BASI SO FSOI LCATEGOR   Y-SILICOUS TO 100,         		dots=C     BRANCH ON THE  BASI SO FSOI LCATEGOR   Y-SILICOUS TO 100,	VAPOR19
+50	2821	2855	COMMENT	C     CALCAREOUS TO 200                                                 		lighton=C     CALCAREOUS TO 200 ## dots=C     CALCAREOUS TO 200 ## glm=C     CALCAREOUS TO 200	VAPOR20
+51	2864	2898	VOTED	      IF(IC(2))100,100,200                                              		lighton=      IF(IC(2))100,100,200 ## dots=      IF(IC(2))100,100,200 ## glm=      IF(1C(2))100,100,200	VAPOR21
+52	2907	2938	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	VAPOR22
+53	2951	2982	COMMENT	C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL  		lighton=C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL ## dots=C     IS THE COMPUTED VAPOR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL ## glm=C     IS THE COMPUTED VAPCR TEMPERATURE HIGHER THAN THE SILICEOUS SOIL	VAPOR23
+54	2995	3026	COMMENT	C     BOILING TEMPERATURE                                               		lighton=C     BOILING TEMPERATURE ## dots=C     BOILING TEMPERATURE ## glm=C     BOILING TEMPERATURE	VAPOR24
+55	3037	3072	VOTED	 100  IF(TMPG-3000.0)120,120,110                                        		lighton= 10C  IF(TMPG-3000.0)120,120,110 ## dots= 100  IF(TMPG-3000.0)120,120,110 ## glm= 100  IF（TMPG-3000.0）120,120,110	VAPOR25
+56	3082	3113	VOTED	 110  VPR=SSAY*0.00015*(TMPG-3000.0)                                    		lighton= 110  VPR=SSAY*0.00015*(TMPG-3000).0 ## dots= 110  VPR=SSAY*0.00015*(TMPG-300J.0) ## glm= 110  VPR=SSA4*0.00015*(TMPG-3000.0)	VAPOR26
+57	3141	3171	NOISE	                                                                        		lighton=                                       67 ## dots=                                       67 ## glm=                                       67	
+58	3274	3315	NOISE	                                                                        			
+59	3333	3349	NOISE	                                                                        			

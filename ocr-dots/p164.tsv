@@ -1,0 +1,45 @@
+1	4	COUNT 0/44;COUNT 0/8	                                                                                	 || 
+2	32	COUNT 0/14;COUNT 0/1	                                                                                	 || 
+3	783	OK	+0ECK,PAN1A                                                             PAM1A  1	+0 ECK, PAN1A || PAM1A 1
+4	826	OK	      SUBROUTINE PAM1A(FISSID)                                          PAM1A  2	SUBROUTINE PAM1A(FISSID) || PAM1A 2
+5	868	OK	C                                                                       PAM1A  3	C || PAM1A 3
+6	910	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979      PAM1A  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979 || PAM1A 4
+7	955	OK	C                                                                       PAM1A  5	C || PAM1A 5
+8	994	COUNT 0/71	                                                                        PAN1A  6	 || PAN1A 6
+9	1041	OK	C                                                                       PAM1A  7	C || PAM1A 7
+10	1082	COUNT 1/56	                                                                        PAM1A  8	C || PAM1A 8
+11	1124	COUNT 1/15	                                                                        PAM1A  9	C || PAM1A 9
+12	1169	OK	C                                                                       PAM1A 10	C || PAM1A 10
+13	1210	OK	C     MATCHES THE FISSION TYPE INDICATOR, FISSIO,  WITH THE STORED TABLEPAM1A 11	C MATCHES THE FISSION TYPE INDICATOR, FISSIO, WITH THE STORED TABLE || PAM1A 11
+14	1252	OK	C     OF TYPES AND  STORES  THE ACTIVITY K FACTOR (R-P**2)/(HR-KT)      FAM1A 12	C OF TYPES AND STORES THE ACTIVITY K FACTOR (R-P**2)/(HR-KT) || FAM1A 12
+15	1297	OK	C     IN SAYF.                                                          PAM1A 13	C IN SAYF. || PAM1A 13
+16	1341	OK	C                                                                       PAM1A 14	C || PAM1A 14
+17	1381	COUNT 0/71;COUNT 8/7	                                                                                	 || PAM1A. 15
+18	1426	OK	C                                                                       PAM1A 16	C || PAM1A 16
+19	1467	OK	      COMMON /MAPDAT/ CAYF .CUTMAP    ,DGX       ,DGY       ,IH  ,IV   ,PAM1A 17	COMMON /MAPDAT/ CAYF .CUTMAP ,DGX ,DGY ,IH ,IV , || PAM1A 17
+20	1511	OK	     ,JC        ,NXMAP     ,NYMAP     ,NZ        ,QCUT      ,SSAM      ,PAM1A 18	,JC ,NXMAP ,NYMAP ,NZ ,QCUT ,SSAM , || PAM1A 18
+21	1555	COUNT 4/24	                                                                        PAM1A 19	ETGZ || PAM1A 19
+22	1599	COUNT 5/20	                                                                        PAM1A 20	3XHIN || PAM1A 20
+23	1641	COUNT 29/28	                                                                        PAM1A 21	COMMON /UTILITY/ KOUT,NPRNT (15) || PAM1A 21
+24	1686	OK	      INTEGER FISSIO,FISTP                                              PAM1A 22	INTEGER FISSIO,FISTP || PAM1A 22
+25	1728	COUNT 13/12	                                                                        PAM1A 23	LOGICAL MPRINT || PAM1A 23
+26	1769	OK	      DIMENSION FISTP( 7), FK( 7)                                       PAM1A 24	DIMENSION FISTP( 7), FK( 7) || PAM1A 24
+27	1813	OK	      DATA PROGRM / 6HPAMAB1 ;                                          PAM1A 25	DATA PROGRM / 6HPAMAB1 ; || PAM1A 25
+28	1857	OK	      DATA  FIRST                                                       PAM1A 26	DATA FIRST || PAM1A 26
+29	1898	OK	     1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE /PAM1A 27	1/ 6HU233HE,6HP239HE,6HP239FI,6HU235HE,6HU235FI,6HU238TN,6HU238HE / || PAM1A 27
+30	1943	COUNT 4/6	                                                                        PAM1A 28	DATA || PAM1A 28
+31	1983	OK	     1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 /PAM1A 29	1/ 5.3010E9,6.0830E9,6.9733E9,7.2911E9,7.8643E9,7.9407E9,8.2111E9 / || PAM1A 29
+32	2028	OK	C                                                                       PAM1A 30	C || PAM1A 30
+33	2069	COUNT 59/60	                                                                        PAM1A 31	1100 FORMAT (//10X, 45HFISSIO DOES NOT MATCH WITH ANY AVAILABLE TYPE) || PAM1A 31
+34	2115	OK	C                                                                       PAM1A 32	C || PAM1A 32
+35	2157	OK	      00 100 I=1.7                                                      PAM1A 33	00 100 I=1.7 || PAM1A 33
+36	2201	COUNT 32/29;COUNT 0/7	                                                                                	IF(F(FISSIO).EQ. FISTP(I)) GO TO 200 || 
+37	2242	OK	  103 CONTINUE                                                          PAM1A 35	103 CONTINUE || PAM1A 35
+38	2284	OK	      WRITE( KOUT ,1100 )                                               PAM1A 36	WRITE( KOUT ,1100 ) || PAM1A 36
+39	2326	OK	      CALL ERROR( PROGRM, -100, KOUT)                                   PAM1A 37	CALL ERROR( PROGRM, -100, KOUT) || PAM1A 37
+40	2371	OK	  200 CAYF = FK(I)                                                      PAM1A 30	200 CAYF = FK(I) || PAM1A 30
+41	2412	OK	      RETURN                                                            PAM1A 39	RETURN || PAM1A 39
+42	2456	COUNT 0/7	      END                                                                       	END || 
+43	3122	OK	                                         161                                    	161
+44	3310	COUNT 0/7	                                                                                	
+45	3337	COUNT 0/6	                                                                                	

@@ -1,0 +1,21 @@
+4	629	COUNT 57/58	                                                                                	10 FORMAT(//15X17HATMCSPHERE UPDATEI4, 22H FOR TIMES LATER THAN ,
+6	723	COUNT 46/48	                                                                                	11 FORMAT(21X50H* * * * * * * * WINDFIELD DATA * * * * * * * */)
+7	764	COUNT 205/49	                                                                                	12 FORMAT(21X51H* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+8	807	COUNT 58/57	                                                                                	21 FORMAT(1HD,10X, 79HCOUNT OF UPDATE DATA SETS CCES NOT TALLY WITH !
+10	895	OK	  22  FORMAT(1HD,10X, 22H A DATA SET IS MISSING)                                	22  FORMAT(1HD,10X, 22H A DATA SET IS MISSING)
+11	929	COUNT 57/58	                                                                                	23 FORMAT(//20X, 59HLFDATE INDEX INCONSISTENT WITH UPDATE TIME ON
+13	1013	OK	   25 FORMAT( 1H0, 81HFIRST UPDATE WINDS MUST BE INPUT FIRST WHEN 1-DIME        	25 FORMAT( 1H0, 81HFIRST UPDATE WINDS MUST BE INPUT FIRST WHEN 1-DIME
+16	1152	OK	      00 50 L=1,LTIMF                                                           	00 50 L=1,LTIMF
+17	1195	COUNT 0/15	                                                                                	
+24	1496	OK	      CALL       GETUP(NET,NETSU,MARY,MARF,ICF,JCF,NCF,NDATF)                   	CALL GETUP(NET,NETSU,MARY,MARF,ICF,JCF,NCF,NDATF)
+27	1627	OK	      GO TO 1000                                                                	GO TO 1000
+29	1711	OK	      JCX=1                                                                     	JCX=1
+31	1797	OK	      NET(1,1)=1                                                                	NET(1,1)=1
+37	2054	OK	      UPTIMS=UPTIMH*36C0.                                                       	UPTIMS=UPTIMH*36C0.
+39	2141	COUNT 0/18	                                                                                	
+40	2182	OK	 1050 IF!MC(2) .NE. 1) WRITE(ISOUT,10) LTIM,UPTIMS,UPTIMH                       	1050 IF !MC(2) .NE. 1) WRITE(ISOUT,10) LTIM,UPTIMS,UPTIMH
+51	2657	COUNT 0/13	                                                                                	
+52	2696	COUNT 51/49	                                                                                	L060  IF(LTIMX.GT.LTIMF)CALL ERROR(PROGRM,-1.60,ISCUT)
+53	2740	COUNT 22/21	                                                                                	IF(MC(1) .NE. 0) GO TO 1103
+58	2957	OK	      DO 1070 K=1,KBHX                                                          	DO 1070 K=1,KBHX
+59	2998	COUNT 21/20	                                                                                	LC70  WFZ(K.N,LTIM)=u.ü

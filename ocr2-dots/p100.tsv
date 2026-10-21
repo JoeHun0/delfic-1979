@@ -1,0 +1,5 @@
+1	1	COUNT 0/43	                                                                                	
+2	43	COUNT 0/6	                                                                                	
+57	2849	OK	       COM4ON /ATMOS/ NAT, ALT(256),  ATP(256),  PRS(256), RLH(256),            	COM4ON /ATMOS/ NAT, ALT(256), ATP(256), PRS(256), RLH(256),
+59	2936	COUNT 59/60	                                                                                	COMMON / BASIC / W,FW,2BRSTZ,HEIGHT,ZSCL,SLOTM, TMSD,XGZ,YGZ,TCZ
+62	3066	COUNT 63/62	                                                                                	COMMON /PARTCL/ NDSTR,RHCP,DMEAN,SD,PS (2JJ),OI AT' (2C1),FMASS (2JL)

@@ -1,0 +1,64 @@
+1	15	61	NONE	                                                                        			
+2	107	120	NONE	                                                                        			
+3	590	625	AGREE	   26 IRROR=-26                                                         		lighton=   26 IRROR=-26 ## dots=   26 IRROR=-26 ## glm=   26 IRROR=-26	WNOSF121
+4	634	668	AGREE	      GO TO 7734                                                        		lighton=      GO TO 7734 ## dots=      GO TO 7734 ## glm=      GO TO 7734	WNOSF122
+5	668	710	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNOSF123
+6	718	754	COMMENT	C     FINO HODOGRAPH VECTOR ALTITUDE APPROPRIATE FOR INITIAL TIME       		lighton=C     FINO HODOGRAPH VECTOR ALTITUDE APPROPRIATE FOR INITIAL TIME ## dots=C     FIND HODOGRAPH VECTOR ALTITUDE APPROPRIATE FOR INITIAL TIME	WNDSF124
+7	762	797	VOTED	 2217 J=1                                                               		lighton= 2217 J=1 ## dots= 2217 j=1 ## glm= 2217 J=1	WNDSF125
+8	805	839	VOTED	      K=1                                                               		lighton=      K=1 ## dots=      k=1 ## glm=      K=1	WNDSF126
+9	848	883	VOTED	 28   IF(ZC(1)-(ZV (J+1)+ZV(J))/2.0)  35,35,30                          		lighton= 28   IF(ZC(1)-(ZV (J+1)+ZV(J))/2.0)  35,35,30 ## dots= 28   IF(ZC(1)-(ZV (J+1)+ZV(J))/2.0)  35,35,30 ## glm= 28   IF（ZC（1）-（ZV （J+1）+ZV（J））/2.0）  35,35,30	WNOSF127
+10	883	926	TIE	 30   IF(J-NHODO)  31,32,32                                             	9,17	dots= 30   IF(J-NHODO)  31,32,32 ## glm= 30   IF（J-NHODO）  31,32,32	HNDSF128
+11	926	968	SINGLE	 31   J=J+1                                                             		glm= 31   J=J+1	HNDSF129
+12	980	1014	AGREE	      GO TO 28                                                          		lighton=      GO TO 28 ## dots=      GO TO 28 ## glm=      GO TO 28	WNDSF130
+13	1014	1055	AGREE	 32   IRROR = -32                                                       		lighton= 32   IRROR = -32 ## dots= 32   IRROR = -32 ## glm= 32   IRROR = -32	WNOSF131
+14	1063	1097	AGREE	      GO TO 7734                                                        		lighton=      GO TO 7734 ## dots=      GO TO 7734 ## glm=      GO TO 7734	WNOSF132
+15	1105	1140	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF133
+16	1149	1183	COMMENT	C     COMPUTE HORIZONTAL DISPLACEMENTS VS. TIME FOR THE CLOUD BOTTOM    		lighton=C     COMPUTE HORIZONTAL DISPLACEMENTS VS. TIME FOR THE CLOUD BOTTOM ## dots=C     COMPUTE HORIZONTAL CISPLACEMENTS VS. TIME FOR THE CLOUD BOTTOM	WNDSF134
+17	1191	1225	COMMENT	C     CENTER.                                                           		lighton=C     CENTER. ## dots=C     CENTER. ## glm=C     CENTER.	WNDSF135
+18	1234	1268	SINGLE	 35   XT=TC(1)*VX(J)                                                    		glm= 35   XT=TC(1)*VX(J)	WNDSF136
+19	1278	1312	TIE	      VT=TC(1)*VY(J)                                                    	7	dots=      VT=TC(1)*VY(J) ## glm=      YT=TC(1)*VY(J)	HNOSF137
+20	1312	1353	NONE	                                                                        			WNDSF138
+21	1362	1396	SINGLE	      YC（1）=YT                                                          		glm=      YC（1）=YT	WNDSF139
+22	1406	1440	AGREE	      TTEMP=TC(1)                                                       		lighton=      TTEMP=TC(1) ## glm=      TTEMP=TC(1)	WNOSF140
+23	1449	1483	AGREE	      ZTEMP=ZC(1)                                                       		lighton=      ZTEMP=ZC(1) ## dots=      ZTEMP=ZC(1) ## glm=      ZTEMP=ZC(1)	WNOSF141
+24	1492	1526	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF142
+25	1535	1569	COMMENT	C 122 WHICH IS LOWER, NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR         		lighton=C 122 WHICH IS LOWER, NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR ## dots=C 122 WHICH IS LOWER, NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR ## glm=C 122 WHICH IS LOWER. NEXT CLOLD POSIT OR NEXT HODOGRAPH VECTOR	WNDSF143
+26	1578	1612	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF144
+27	1620	1655	AGREE	  122 IF(J.GE.NHODO) GO TO 124                                          		lighton=  122 IF(J.GE.NHODO) GO TO 124 ## dots=  122 IF(J.GE.NHODO) GO TO 124 ## glm=  122 IF(J.GE.NHODO) GO TO 124	WNOSF145
+28	1663	1698	TIE	      IF((ZV(J+1) * ZV(J))/2. -ZC(K+1))123,124,124                      	19	lighton=      IF((ZV(J+1) * ZV(J))/2. -ZC(K+1))123,124,124 ## glm=      IF((ZV(J+1) + ZV(J))/2. -ZC(K+1))123,124,124	WNDSF146
+29	1706	1740	AGREE	  123 DELT=((ZV(J+1)+ ZV(J))/2.- ZTEMP)/VC(K)                           		lighton=  123 DELT=((ZV(J+1)+ ZV(J))/2.- ZTEMP)/VC(K) ## glm=  123 DELT=((ZV(J+1)+ ZV(J))/2.- ZTEMP)/VC(K)	WNDSF147
+30	1749	1782	SINGLE	      ZTEMP= (ZV(J+1)+ZV(J))/2.                                         		glm=      ZTEMP= (ZV(J+1)+ZV(J))/2.	WNDSF148
+31	1792	1826	AGREE	      TTEMP=TTEMP+DELT                                                  		lighton=      TTEMP=TTEMP+DELT ## dots=      TTEMP=TTEMP+DELT ## glm=      TTEMP=TTEMP+DELT	HNDSF149
+32	1834	1867	SINGLE	      XT=XT+      VX(J)*DELT                                            		glm=      XT=XT+      VX(J)*DELT	WNDSF150
+33	1877	1910	AGREE	      YT=YT+      VY(J)*DELT                                            		lighton=      YT=YT+      VY(J)*DELT ## glm=      YT=YT+      VY(J)*DELT	WNOSF151
+34	1921	1953	SINGLE	      J=J+1                                                             		glm=      J=J+1	WNDSF152
+35	1963	1997	AGREE	      GO TO 122                                                         		lighton=      GO TO 122 ## dots=      GO TO 122 ## glm=      GO TO 122	WNDSF153
+36	2008	2041	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF154
+37	2053	2086	COMMENT	C     NEXT CLOUD CELL CENTER IS LOWER                                   		lighton=C     NEXT CLOUD CELL CENTER IS LOWER ## glm=C     NEXT CLOUD CELL CENTER IS LOWER	HNOSF155
+38	2095	2127	AGREE	  124 DELT=TC(K+1)-TTEMP                                                		lighton=  124 DELT=TC(K+1)-TTEMP ## dots=  124 DELT=TC(K+1)-TTEMP ## glm=  124 DELT=TC(K+1)-TTEMP	WNDSF156
+39	2137	2171	AGREE	      TTEMP=TC(K+1)                                                     		lighton=      TTEMP=TC(K+1) ## glm=      TTEMP=TC(K+1)	WNDSF157
+40	2181	2213	AGREE	      ZTEMP=ZC(K+1)                                                     		lighton=      ZTEMP=ZC(K+1) ## dots=      ZTEMP=ZC(K+1) ## glm=      ZTEMP=ZC(K+1)	HNDSF158
+41	2221	2255	TIE	      XC(K+1)=XT+VX(J)*DELT                                             	9,13,20,22	dots=      XC(K+1)=XT+VX(J)*DELT ## glm=      XC（K+1）=XT+VX（J）*DELT	HNOSF159
+42	2265	2298	VOTED	      YC(K+1)=YT+VY(J)*DELT                                             		lighton=      YC(K+1)=YT+VY(J)*DELT ## dots=      YC(K+1)=YT+VY(J)*DELT ## glm=      YC（K+1）=YT+VY（J）*DELT	WNOSF160
+43	2308	2342	TIE	      XT=XC(K+1)                                                        	12,16	dots=      XT=XC(K+1) ## glm=      XT=XC（K+1）	WNDSF161
+44	2350	2384	SINGLE	      YT=YC(K+1)                                                        		glm=      YT=YC(K+1)	WNDSF1E2
+45	2395	2427	AGREE	      K=K+1                                                             		lighton=      K=K+1 ## glm=      K=K+1	WNOSF1E3
+46	2436	2471	VOTED	      IF(K- MCX ) 122,125,125                                           		lighton=      IF(K- MCX ) 122,125,125 ## dots=      IF(K- MCX ) 122,125,125 ## glm=      IF（K- MCX ） 122，125，125	HNUSF1E4
+47	2479	2513	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF1E5
+48	2523	2556	COMMENT	C 125 CLOUD TFAJECTORY IS COMPLETE                                      		lighton=C 125 CLOUD TFAJECTORY IS COMPLETE ## dots=C 125 CLOUD TFAJECTORY IS COMPLETE ## glm=C 125 CLOUD TFAJECTORY IS COMPLETE	WNDSF166
+49	2567	2601	AGREE	  125 WRITE(ISOUT,6022)                                                 		lighton=  125 WRITE(ISOUT,6022) ## glm=  125 WRITE(ISOUT,6022)	WNDSF167
+50	2601	2643	AGREE	      WRITE (ISOUT,2)(XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX)            		lighton=      WRITE (ISOUT,2)(XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX) ## dots=      WRITE (ISOUT,2)(XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX) ## glm=      WRITE (ISOUT,2)(XC(J),YC(J),ZC(J),TC(J),VC(J),J=1,MCX)	WNDSF158
+51	2652	2685	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF169
+52	2696	2727	AGREE	  104 READ(IRISE)N                                                      		lighton=  104 READ(IRISE)N ## dots=  104 READ(IRISE)N ## glm=  104 READ(IRISE)N	HNOSF170
+53	2737	2769	VOTED	      IF(N)102,102,103                                                  		lighton=      IF(N)102.102.103 ## dots=      IF(N)102,102,103 ## glm=      IF(N)102,102,103	HNDSF171
+54	2781	2812	COMMENT	C                                                                       		lighton=C ## dots=C ## glm=C	WNDSF172
+55	2823	2855	COMMENT	C 102 FINAL EXIT.   ALL DATA HAVE BEEN MODIFIED.  MARK JPARIN COMPLETED.		lighton=C 102 FINAL EXIT.   ALL DATA HAVE BEEN MODIFIED.  MARK JPARIN COMPLETED. ## dots=C 102 FINAL EXIT.   ALL DATA HAVE BEEN MODIFIED.  MARK JPARIN COMPLETED. ## glm=C 102 FINAL EXIT.   ALL DATA HAVE BEEN MODIFIED.  MARK JPARIN COMPLETED.	WNOSF173
+56	2865	2897	AGREE	 102  N=0                                                               		lighton= 102  N=0 ## dots= 102  N=0 ## glm= 102  N=0	WNDSF174
+57	2908	2942	AGREE	      IF(IC(7))2013,2014,2013                                           		lighton=      IF(IC(7))2013,2014,2013 ## dots=      IF(IC(7))2013,2014,2013 ## glm=      IF(IC(7))2013,2014,2013	WNDSF175
+58	2952	2985	VOTED	 2C13 WRITE(ISOUT,3013)N                                                		lighton= 2C13 WRITE(ISOUT,3013)N ## dots= 2013 WRITE(ISOUT,3013)N ## glm= 2C13 WRITE(ISOUT,3013)N	WNOSF176
+59	2993	3028	VOTED	 2014 WRITE(JPARN )N                                                    		lighton= 2C14 WRITE(JPARN )N ## dots= 2014 WRITE(JPARN )N ## glm= 2014 WRITE(JPARN )N	WNDSF177
+60	3037	3070	AGREE	      END FILE JPARN                                                    		lighton=      END FILE JPARN ## dots=      END FILE JPARN ## glm=      END FILE JPARN	WNDSF178
+61	3083	3116	AGREE	      REWIND JPARN                                                      		lighton=      REWIND JPARN ## dots=      REWIND JPARN ## glm=      REWIND JPARN	WNOSF179
+62	3125	3159	AGREE	      REWIND IRISE                                                      		lighton=      REWIND IRISE ## dots=      REWIND IRISE ## glm=      REWIND IRISE	WNOSF180
+63	3182	3213	AGREE	                                       99                               		lighton=                                       99 ## dots=                                       99 ## glm=                                       99	
+64	3296	3348	COMMENT	Cmarkdown                                                               			

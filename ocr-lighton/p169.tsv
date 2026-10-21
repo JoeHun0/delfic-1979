@@ -1,0 +1,58 @@
+1	17	COUNT 0/13;COUNT 8/2	                                                                                	 || \text{S}
+2	487	COUNT 12/7	                                                                                	239 KYR(IP) = j
+3	530	COUNT 25/20;COUNT 14/7	                                                                                	240 CALL CALC(IP,OMAP,NMAP) || \text{RUNC131}
+4	569	COUNT 11/8;COUNT 11/1	                                                                                	777 CONTINUE || \mathcal{F}
+5	615	OK	 C                                                                              	C
+6	661	OK	      RETURN                                                                    	RETURN
+7	700	OK	 C                                                                              	C
+8	748	OK	      ENO                                                                       	ENO
+9	1087	OK	*DECK,POMP                                                                      	* DECK, POMP
+10	1133	COUNT 22/1	      SUBROUTINE POMP                                                           	SUBROUTINE POMP || \mathcal{J} \mathcal{M}
+11	1175	COUNT 22/1	C                                                                               	C || \mathcal{R} \mathcal{J}
+12	1216	COUNT 7/5	C     THIS SUBROUTINE SOPTS OUT THOSE  PARCELS  THAT WILL CONTRIBUTE            	C THIS SUBROUTINE SOPTS OUT THOSE PARCELS THAT WILL CONTRIBUTE || <table>
+13	1260	COUNT 7/5	C     TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR               	C TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR || <table>
+14	1304	COUNT 17/18;COUNT 11/1	                                                                                	C TEMPORARY STORAGE || \mathcal{F}
+15	1341	COUNT 34/4	C                                                                               	C || <table border="1" class="dataframe">
+16	1390	COUNT 7/5	C     H.G.NORMENT     JUNE 28,1971                                              	C H.G.NORMENT JUNE 28, 1971 || <table>
+17	1432	OK	C                                                                               	C
+18	1475	COUNT 9/70;COUNT 34/6	                                                                                	C  GLOSSARY || <table border="1" class="dataframe">
+19	1518	OK	C                                                                               	C
+20	1562	COUNT 7/6	C     JL           COUNT CF  PARCELS  MOVED FROM UPPER TO LOWER CORE            	C    JL    COUNT CF PARCELS MOVED FROM UPPER TO LOWER CORE || <table>
+21	1607	COUNT 1/11;COUNT 34/5	                                                                                	C || <table border="1" class="dataframe">
+22	1642	COUNT 3/47;COUNT 34/6	                                                                                	C JP || <table border="1" class="dataframe">
+23	1692	COUNT 1/32;COUNT 34/6	                                                                                	C || <table border="1" class="dataframe">
+24	1735	COUNT 1/24;COUNT 34/6	                                                                                	C || <table border="1" class="dataframe">
+25	1776	COUNT 7/6	C     KP           NUMBER OF  FARCELS  IN CORE THAT ARE TO BE DUMPED            	C     KP     NUMBER OF FARCELS IN CORE THAT ARE TO BE DUMPED || <table>
+26	1820	COUNT 1/9;COUNT 7/4	                                                                                	C || <table>
+27	1859	COUNT 1/12;COUNT 7/4	                                                                                	C || <table>
+28	1901	COUNT 34/6	C     NE           COUNT OF AVAILABLE  PARCEL  STORAGE LOCATIONS IN             	C     NE     COUNT OF AVAILABLE PARCEL STORAGE LOCATIONS IN || <table border="1" class="dataframe">
+29	1950	COUNT 1/38;COUNT 34/6	                                                                                	C || <table border="1" class="dataframe">
+30	1993	COUNT 1/10;COUNT 7/5	                                                                                	C || <table>
+31	2030	COUNT 34/6	C     NIJ          A BLOCK COUNT OF DATA STORED ON TAPE AND/OR IN CORE          	C     NIJ     A BLOCK COUNT OF DATA STORED ON TAPE AND/OR IN CORE || <table border="1" class="dataframe">
+32	2078	COUNT 1/2	                                                                                	c
+33	2120	COUNT 7/4	C     ALSO SEE OPMI GLOSSARY                                                    	C ALSO SEE OPMI GLOSSARY || <table>
+34	2158	COUNT 34/3	C                                                                               	C || <table border="1" class="dataframe">
+35	2207	COUNT 199/71;COUNT 34/6	                                                                                	C  • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • • || <table border="1" class="dataframe">
+36	2248	OK	C                                                                               	C
+37	2295	COUNT 7/6	      COMMON /CONCAT/       IC(2J)    .IHOB      ,IPACT     ,IPOUT     ,        	COMMON /CONCAT/ IC (2J) .IHOB ,IPACT ,IPOUT , || <table>
+38	2340	COUNT 77/35;COUNT 34/6	                                                                                	\text{LISIN} \text{,ISOUT} \text{,JPOUT} \text{,KPOUT} \text{,KTAPЕ} \text{,LTAPЕ} || <table border="1" class="dataframe">
+39	2380	COUNT 29/30;COUNT 7/6	                                                                                	2MARRAY ,MBTAPE ,MXREQ ,SO ,INFAM || <table>
+40	2423	COUNT 7/6	      COMMON /PARDAT/       ASC       ,BSQ       ,COSA      ,F                  	COMMON /PARDAT/  ASC  ,BSQ  ,COSA  ,F || <table>
+41	2466	COUNT 7/6	     1GAYA      ,KTR(120)  ,PMAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100),        	1GAYA ,KTR(120) ,PMAS(100) ,PSIZ(100) ,PO(100) ,SIGXO(100), || <table>
+42	2511	COUNT 54/53;COUNT 34/6	                                                                                	2SIGVO(1^C),SINA ,TPAR(100) ,XPAR(100) ,YPAR(100) ,YPRML ,| || <table border="1" class="dataframe">
+43	2553	COUNT 6/16;COUNT 7/6	                                                                                	J YPQMU || <table>
+44	2589	COUNT 34/6	      COMMON /RUNDAT/      C          ,CF6       ,FSUP      ,ICTR               	COMMON /RUNDAT/ C ,CF6 ,FSUP ,ICTR || <table border="1" class="dataframe">
+45	2638	COUNT 7/6	     1MAPRUN    ,NE        ,NIJ       ,NORD      ,NREG      ,NTASK     ,        	1 MAPRUN , NE , NIJ , NORD , NREG , NTASK , || <table>
+46	2682	COUNT 7/6	     20PMID(12) ,T1        ,T2        ,NFMAS(2L0)                               	20PMID(12), T1          , T2          , NFMAS(2L0) || <table>
+47	2725	COUNT 19/18;COUNT 34/3	                                                                                	nata program/6hpomp / || <table border="1" class="dataframe">
+48	2759	COUNT 34/5	C                                                                               	C || <table border="1" class="dataframe">
+49	2811	COUNT 15/9;COUNT 22/1	                                                                                	KP = NIJ - N\bar{E} || \mathcal{R} \mathcal{L}
+50	2854	COUNT 7/4	      IF(NE.EQ.0) GO TO 1555                                                    	IF (NE.EQ.0) GO TO 1555 || <table>
+51	2891	COUNT 0/4;COUNT 7/2	                                                                                	 || <table>
+52	2940	OK	      M=NIJ+1                                                                  J	M=NIJ+1 || J
+53	2986	COUNT 16/3	                                                                                	\mathcal{J} \neq 1
+54	3028	COUNT 0/4	                                                                                	
+55	3068	OK	C                                                                               	C
+56	3113	COUNT 7/6	C     SORT THROUGH THE STO'ED PARTICLE DATA BLOCK AND MOVE ALL                  	C     SORT THROUGH THE STO'ED PARTICLE DATA BLOCK AND MOVE ALL || <table>
+57	3194	COUNT 3/2	                                                                                	166
+58	3310	COUNT 138/14;COUNT 10/5	                                                                                	\text{1. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. || \text{1 2 3}

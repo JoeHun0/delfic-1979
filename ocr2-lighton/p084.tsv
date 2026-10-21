@@ -1,0 +1,14 @@
+1	0	COUNT 0/12	                                                                                	
+2	62	COUNT 320/49	                                                                                	\text{S} \text{M} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N} \text{E} \text{S} \text{O} \text{N}
+6	940	OK	      WRITE(ISOUT,5000)NSTAT,WORD1                                              	WRITE(ISOUT,5000)NSTAT,WORD1
+9	1066	OK	  443 MWYA = 3                                                                  	443 MWYA = 3
+13	1240	COUNT 0/16	                                                                                	
+24	1713	OK	      DLTM = DLTM + CXM * .084946                                               	DLTM = DLTM + CXM * .084946
+25	1755	OK	      TSTM = TSTM + DLTM                                                        	TSTM = TSTM + DLTM
+35	2182	COUNT 0/30	                                                                                	
+37	2270	COUNT 0/43	                                                                                	
+38	2312	COUNT 0/43	                                                                                	
+40	2398	COUNT 0/46	                                                                                	
+42	2483	COUNT 38/24	                                                                                	106 CX (\text{ML}, 1) = CX (\text{ML}, 1) + TME
+43	2528	OK	      GO T: 1J7                                                                 	GO T:1 J7
+44	2571	OK	      740                                                                       	740

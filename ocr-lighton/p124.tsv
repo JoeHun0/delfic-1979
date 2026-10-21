@@ -1,0 +1,35 @@
+1	7	COUNT 202/9	                                                                                	\text{R}^2 = 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+2	28	COUNT 0/17	                                                                                	
+3	81	COUNT 4/50	                                                                                	text
+4	800	OK	      WRITE(ISOUT,8)EPSZ                                                LAYER 61	WRITE(ISOUT,8)EPSZ || LAYER 61
+5	842	OK	  234 CALL ERROR(PROGRM,-234,ISOUT)                                     LAYER 62	234 CALL ERROR(PROGRM,-234,ISOUT) || LAYER 62
+6	884	OK	  235 ZCH(1)=ZMIN                                                       LAYER 63	235 ZCH(1) = ZMIN || LAYER 63
+7	927	OK	CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH ANC LOAD BASE        LAYER 64	CONSTRUCT WIND LAYER CENTER ALTITUDES IN ARRAY ZCH ANC LOAD BASE || LAYER 64
+8	971	OK	C     ALTITUDES INTO ZBH                                                LAYER 65	C ALTITUDES INTO ZBH || LAYER 65
+9	1012	OK	      DO 240 K=1,K8HM1                                                  LAYER 66	DO 240 K=1,K8HM1 || LAYER 66
+10	1056	COUNT 33/13	                                                                        LAYER 57	?B\mathcal{H}(K) = ZC\mathcal{H}(K) || LAYER 57
+11	1099	OK	  240 ZCH(K)= (ZCH(K) + ZCF(K+1))/2.0                                   LAYER 68	240  ZCH(K) = (ZCH(K) + ZCF(K+1)) / 2.0 || LAYER 68
+12	1142	COUNT 0/19;COUNT 7/8	                                                                                	 || LAYER 69
+13	1185	COUNT 0/35	                                                                        LAYER 70	 || LAYER 70
+14	1228	OK	      GO TO 300                                                         LAYER 71	GO TO 300 || LAYER 71
+15	1270	OK	CONSTRUCT WIND LAYER  BASE  ALTITUDES IN ARRAY ZBH                      LAYER 72	CONSTRUCT WIND LAYER BASE ALTITUDES IN ARRAY ZBH || LAYER 72
+16	1314	COUNT 3/14	                                                                        LAYER 73	250 || LAYER 73
+17	1358	OK	      DO 260 I=2,K8HX                                                   LAYER 74	DO 260 I=2,K8HX || LAYER 74
+18	1398	COUNT 36/31	                                                                        LAYER 75	260 \quad Z8H(I) = 2.0 * ZCH(I-1) - ZBH(I-1) || LAYER 75
+19	1443	OK	 300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX)                                      LAYER 76	300  ZMAX=2.0*ZCH(KBHX)-ZBH(KBHX) || LAYER 76
+20	1486	OK	COPY OUT WIND LAYER DATA                                                LAYER 77	COPY OUT WIND LAYER DATA || LAYER 77
+21	1528	OK	      WRITE (ISOUT,6)ZMAX                                               LAYER 78	WRITE (ISOUT,6)ZMAX || LAYER 78
+22	1571	OK	      WRITE(ISOUT,3)                                                    LAYER 79	WRITE(ISOUT,3) || LAYER 79
+23	1615	OK	      00 301 IGO=1,KDHX,IREC                                            LAYER 80	00 301 IGO=1,KDHX,IREC || LAYER 80
+24	1657	COUNT 0/16	                                                                        LAYER 81	 || LAYER 81
+25	1700	OK	      IF(ISTOP.GT.KBHX) IS10P=KBHX                                      LAYER 82	IF(ISTOP.GT.KBHX) IS 10P=KBHX || LAYER 82
+26	1745	COUNT 48/47	                                                                        LAYER 83	301 WRITE(ISOUT,1)IGC,ISTOP,(ZBH(K),K=IGO,ISTOP). || LAYER 83
+27	1786	COUNT 14/15	                                                                        LAYER 84	WRITE(ISOUT,4) || LAYER 84
+28	1829	COUNT 8/7	      00 313 IGO=1,K8HX,IREC                                                    	00 313 IGO=1,K8HX,IREC || LAYER 0.5
+29	1862	COUNT 16/17	                                                                        LAYER 86	ISTOP=IGO*IREC-1 || LAYER 86
+30	1914	OK	      IF(ISTOP.GT.KBHX) ISTOP=KBHX                                      LAYER 87	IF(ISTOP.GT.KBHX) ISTOP=KBHX || LAYER 87
+31	1957	OK	  303 WRITE(ISOUT,1)IGC,ISTOP,(ZCH(K),K=IGO,ISTOP)                      LAYER 08	303 WRITE(ISOUT,1)IGC,ISTOP, (ZCH(K), K=IGO,ISTOP) || LAYER 08
+32	2001	OK	      RETURN                                                            LAYER 89	RETURN || LAYER 89
+33	2042	OK	      END                                                               LAYER 90	END || LAYER 90
+34	3146	COUNT 3/2	                                                                                	121
+35	3293	COUNT 39/47;COUNT 15/8	                                                                                	\text{العَلَيْهِ الرَّحْمَٰنِ الرَّحِيمِ} || \text{الجَمْعِ}

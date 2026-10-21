@@ -1,0 +1,11 @@
+1	7	COUNT 0/21	                                                                                	
+2	413	COUNT 31/4	                                                                                	\mathbf{P}\mathbf{X}=\mathbf{X}
+6	586	OK	    2 PY(NP)=Y(NP)                                                              	2 PY(NP)=Y(NP)
+10	758	COUNT 27/8	                                                                                	\mathrm{DST} = \mathrm{DST}_1
+15	973	COUNT 9/4	                                                                                	U \equiv PU
+18	1102	COUNT 0/4	                                                                                	
+19	1144	COUNT 0/4	                                                                                	
+53	2906	OK	      COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,400L,SLOTMP,TNSD,XGZ,YGZ,TGZ            	COMMON /BASIC/ W.FW,ZBRSTZ,HEIGHT,400L,SLOTMP, TNSD,XGZ,YGZ,TGZ
+54	2950	OK	      COMMON /CONTRL/ DETID(12),IC(20),JKAO,IRISE,ISIN,ISOUT,JPARI,KUI          	COMMON /CONTRL/ DETID(12),IC(20),JKAO,IRISE,IS IN,ISOUT,JPARI,KUI
+55	2992	COUNT 42/41	                                                                                	COMMON /INITL/ F, PHI, SSAM, TME, ..JPG, TMFS, VPR
+56	3035	OK	      COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SU,PS(2:0),D1AP(201),FHAUS(200)          	COMMON /PARTCL/ NOSTR,RHCP,OMEAN,SU,PS (2:0),D1AP (201),FHAUS (200)

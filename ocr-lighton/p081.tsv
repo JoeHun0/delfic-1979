@@ -1,0 +1,55 @@
+1	610	COUNT 10/2	                                                                                	\mathbf{1}
+2	763	OK	      IF(TMP5-848.)5,5,6                                                CRMIN 61	IF(TMP5-848.)5,5,6 || CRMIN 61
+3	799	OK	    5 TPR=TMPS                                                          CRHIN 62	5 TPR = TMP S || CR HIN 62
+4	848	OK	      GO TO 7                                                           CRHIN 63	GO TO 7 || CR HIN 63
+5	893	OK	    6 TPR=848.                                                          CRMIN 64	6 TPR = 848. || CRMIN 64
+6	926	COUNT 47/44	                                                                        CRMIN 65	TAD = 10.3.8*(TMPS-TPR) + 0.06755*(TMPS**2-TPR**2). || CRMIN 65
+7	978	OK	    7 SOILHT=SSAM*(TAD+701.6*(TPR-TE)+0.2856*(TPR**2-TE**2)+            CRMIN 66	7 SOILHT= SSAM* (TAD+701.6* (TPR-TE) + 0.2856* (TPR**2-TE**2) + || CRMIN 66
+8	1022	COUNT 26/25	                                                                        CRHIN 67	11.381E+7^*(1./TPR-1./TE)) || CRHIN 67
+9	1065	OK	      TAD=0.                                                            CRMIN 68	TAD = 0. || CR MIN 68
+10	1107	OK	      TPR=T                                                             CRMIN 69	TPR = T || CRMIN 69
+11	1149	OK	      IF(TPR-2300.)17,17,16                                             CRMIN 70	IF(TPR-2300.) 17, 17, 16 || CRMIN 70
+12	1186	OK	   16 TAD= -5587.5*(TPR-2300.) + 1.0625*(TPR**2-(2300.)**2)             CRHIN 71	16 TAD = -5587.5*(TPR-2300.) + 1.0625*(TPR**2-(2300.)**2) || CRHIN 71
+13	1234	OK	      TPR=23\%.                                                         CRMIN 72	TPR = 23\%. || CRMIN 72
+14	1278	OK	   17 FQ=4.18E12*F*H-SOILHT                                             CRHIN 73	17 FQ=4.18E12*F*H-SOILHT || CRHIN 73
+15	1320	COUNT 0/66	                                                                        CRMIN 74	 || CRMIN 74
+16	1363	COUNT 31/32	                                                                        CRHIN 75	1 * (T - TE) + 0.572087 * (T** 2 - TE** 2) ) || CRHIN 75
+17	1406	COUNT 0/61	                                                                        CRNIN 76	 || CRNIN 76
+18	1452	OK	     1  +RMAO*XE                                                        CRMIN 77	1 +RMAO*XE || CRMIN 77
+19	1494	COUNT 0/12	                                                                        CRMIN 78	 || CRMIN 78
+20	1537	COUNT 0/17	                                                                        CRMIN 79	 || CRMIN 79
+21	1579	COUNT 10/11	                                                                        CRMIN ED	=SSAM/RMAO || CRMINED
+22	1622	COUNT 0/46	                                                                        CRMIN 81	 || CRMIN 81
+23	1665	OK	      R=0.                                                              CRMIN 82	R = 0. || CRMIN 82
+24	1707	COUNT 46/45	                                                                        CRMIN 83	C SET SHAPE SO THAT THE CLOUD IS AN OBLATE ELLIPSOID WITH || CRMIN 83
+25	1749	OK	C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADII CRMIN 84	C     ECCENTRICITY=0.75     COMPUTE HORIZONTAL AND VERTICAL CLOUD RADII || CRMIN 84
+26	1793	OK	      SHAPE = 0.66144                                                   CRMIN 85	SHAPE = 0.66144 || CRMIN 85
+27	1835	OK	C                                                                       CRMIN 86	C || CRMIN 86
+28	1878	OK	      IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))**(1.0/3.0)             CRMIN 87	IF(V.GT.0.0) R=(3.*V/(12.5663706* SHAPE ))** (1.0/3.0) || CRMIN 87
+29	1922	COUNT 0/11	                                                                        CÇHIN 88	 || CÇ HIN 88
+30	1966	OK	C     COMPUTE INITIAL RISE VELOCITY                                     CRMIN 89	C COMPUTE INITIAL RISE VELOCITY || CRMIN 89
+31	2008	OK	C                                                                       CRMIN 90	C || CRMIN 90
+32	2051	COUNT 0/17	                                                                        CRHIN 41	 || CRHIN 41
+33	2094	COUNT 44/43	                                                                        CQMIN 92	C   COMPUTE INITIAL TURBULENT KINETIC ENERGY DENSITY || CQ MIN 92
+34	2129	COUNT 50/7	C                                                                               	C || \text{C} \mathcal{R} \text{H} \mathcal{E} \text{N} \ 9 \ 3
+35	2180	COUNT 28/11;COUNT 27/7	                                                                                	EK = \hat{u} \cdot 5 \cdot u \cdot 2 || C\mathcal{R} MIN 9 \mathcal{L}
+36	2223	COUNT 58/7	C     COMPUTE INITIAL TURBULENT ENERGY LOSS RATE                                	C   COMPUTE INITIAL TURBULENT ENERGY LOSS RATE || \mathcal{C} \mathcal{P} \mathcal{H} \mathcal{I} \mathcal{N} \ 95
+37	2265	OK	C                                                                       CRMIN 96	C || CR MIN 96
+38	2307	COUNT 0/23	                                                                        CRMIN 97	 || CRMIN 97
+39	2352	COUNT 56/7	C     COMPUTE ENTRAINMENT PARAMETER                                             	C COMPUTE ENTRAINMENT PARAMETER || \text{C} \text{R} \text{N} \text{I} \text{N} \text{I} \text{N}
+40	2394	OK	C                                                                       CRHIN 59	C || CR HIN 59
+41	2438	COUNT 0/53;COUNT 10/8	                                                                                	 || C.O. MZML00
+42	2474	OK	C                                                                       CRMINIC1	C || CRMINIC1
+43	2523	OK	C     COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS                  CRHIN:02	C COMPUTE INITIAL IN-CLOUD PARTICLE CONCENTRATIONS || CRHI N: 02
+44	2566	COUNT 9/8	C                                                                               	C || CR PIZN° C 3
+45	2610	COUNT 0/35	                                                                        C?MIN:C4	 || C? MIN: C 4
+46	2645	COUNT 9/8	      DO 801 J=1,NDSTR                                                          	DO 801 J=1,NDSTR || CR MINI 0.5
+47	2688	COUNT 0/22;COUNT 9/8	                                                                                	 || CRMI.N106
+48	2737	COUNT 18/11	                                                                        CRMIN107	801 CG(J) = \ddot{u}. || CRMIN107
+49	2772	OK	C     UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY                      CRMIN:C8	C UPPER LIMIT FOR Z TO PREVENT PROGRAM RUNAWAY || CR MIN: C 8
+50	2823	OK	C                                                                       CRHIN109	C || CR HIN109
+51	2867	COUNT 33/34	                                                                        CRMIN110	ZLMT=10000.0*W*C.25 + HEIGHT + ZBRSTZ || CRMIN110
+52	2909	OK	      RETURN                                                            CRMIN:11	RETURN || CRMIN:11
+53	2952	OK	      END                                                               CRMIN:12	END || CR MIN: 12
+54	3110	OK	                                       78                                       	78
+55	3261	COUNT 0/25;COUNT 8/4	                                                                                	 || \text{S}

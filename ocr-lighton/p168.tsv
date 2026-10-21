@@ -1,0 +1,64 @@
+1	532	COUNT 0/5	                                                                                	
+2	575	COUNT 7/8	       IF(J.LE.NOSTR)GO TO 121                                                  	IF(J.LE.NOSTR) GO TO 121 || PCHC121
+3	616	COUNT 28/27	                                                                        PCHEC122	CALL ERROR(PROGRM , -120, ISOUT) || PCHEC122
+4	659	COUNT 18/17;COUNT 15/8	                                                                                	122 00 123 I=1.,NDSTR || \text{PCHEC123}
+5	699	OK	         K=NOSTP1-I                                                     PCHEC124	K = NOSTP1 - I || PCHEC124
+6	740	COUNT 30/29;COUNT 21/8	                                                                                	IF(DIAM(K) .GE. PSIZ(IP)) GO TO 124 || \rho \text{CHEC1} \sim 5
+7	787	OK	   123 CONTINUE                                                         PCHEC126	123 CONTINUE || PCHE C126
+8	834	COUNT 28/25;COUNT 15/8	                                                                                	CALL ERROR(PROGRM,-123,ISOUT) || \text{R U H E L I C R}
+9	874	OK	   124 J=K                                                              PCHELICE	124 J=K || PCHELICE
+10	918	COUNT 38/36	                                                                        FGMC4129	125 IF(NREQ .EQ. 9 .OR. NREQ .EQ. 13) CALL FAM2 || FGMC 4129
+11	965	COUNT 21/18;COUNT 8/5	                                                                                	IF(NREQ.NE.14)GO TO 130 || 'LMEUJSL
+12	1002	COUNT 30/26;COUNT 32/8	                                                                                	F=FP( J )*PMAS(IF)/FMASS( J )/SSAM || P \bar{C} H \bar{E} C \lambda s \bar{1}
+13	1048	COUNT 14/7	       GO TO 190                                                                	GO TO 190 || \text{2317347}
+14	1091	COUNT 30/26;COUNT 8/7	                                                                                	130 F=FP( J )*PMAS(IP)/WFMAS( J ) * C || + CHE C1 JJ
+15	1133	OK	 C                                                                       CHEC134	C || CHE C134
+16	1173	COUNT 199/69	                                                                        PJHEC135	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || P JHEC135
+17	1218	OK	 C                                                                      PUNÉCI16	C || PUNÉCI 16
+18	1261	COUNT 11/10	                                                                        PCHEC177	100 CONTINUE || PCHEC177
+19	1302	OK	 C                                                                      PCHEC1J8	C || PCHEC1J8
+20	1347	COUNT 51/48;COUNT 18/8	                                                                                	C     COMPUTE GAMA AND DETERMINE THE LIMITING COORDINATES OF THE || \rho \text{LHEC1!9}
+21	1392	COUNT 1/29	                                                                        PJHCLI+C	C || P J H C L I + C
+22	1434	OK	 C                                                                       CHEL141	C || CHEL141
+23	1480	COUNT 20/19	                                                                        PCHEC142	IF(F.LT.QCUT) GO TO 200 || PCHEC142
+24	1520	COUNT 48/46	                                                                        PCMEC143	GAMA = ALOG(F/SIGXC(IP)/SIGYO(IP)/QCUT/ε.28318531) || PCMEC143
+25	1564	COUNT 22/25	                                                                         CH_CI44	IF(GAMA.LT.0.0) GO TO 200 || CH_CI 44
+26	1605	COUNT 0/16	                                                                        PCHEC1+5	 || PCHEC1+5
+27	1642	COUNT 0/16	                                                                        PCMEC146	 || PCME C146
+28	1685	COUNT 24/25	                                                                        FCMCC147	ASQ = 2. J*GAMA*SIGX0(IF) *2 || FCMCC147
+29	1733	COUNT 0/25;COUNT 33/8	                                                                                	 || \rho \bar{C} \bar{H} \bar{E} C \quad 42
+30	1774	COUNT 0/44;COUNT 28/8	                                                                                	 || P \mathcal{C} He \mathcal{L} 1 4 9
+31	1819	COUNT 0/24	                                                                        PLMTC15C	 || PLMTC15C
+32	1860	OK	C                                                                       PCMEC151	C || PCMEC151
+33	1904	COUNT 0/7	C     DOES THE PARTICLE CCATRIBUTE TO THE MAP WITHIN ITS VERTICAL               	C DOES THE PARTICLE CCATRIBUTE TO THE MAP WITHIN ITS VERTICAL || 
+34	1948	COUNT 15/7	C     (Y AXIS) LIMITS -                                                         	C (Y AXIS) LIMITS - || \text{UHt. C1 5J}
+35	1984	COUNT 1/2;COUNT 7/6	                                                                                	C || CHEC154
+36	2019	COUNT 8/7	      IF(YPRMU.GT.YNIN + CGY.AND.YPRML.LT .YMAX )G OT O27              5        	IF(YPRMU.GT.YNIN + CGY.AND.YPRML.LT.YMAX) GO TO 275 || > CHEC: 55
+37	2071	COUNT 12/14;COUNT 8/6	                                                                                	200 KTR(IP)=1 || PÜHEC156
+38	2109	COUNT 7/8;COUNT 8/7	                                                                                	NE = NE + 1 || > CHEC1=7
+39	2152	COUNT 7/8;COUNT 68/6	                                                                                	GO TO 777 || \mathcal{P}C\mathcal{H}\mathcal{E}C\mathcal{I}\mathcal{S}\mathcal{J}
+40	2193	COUNT 204/2;COUNT 8/7	                                                                                	205 YD3MII-YDADITD1100071000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 || - CHEC134
+41	2215	COUNT 56/7	  205 XPRMU=XPAR(IP)+SQRT(ASQ*COSA**2 + 35Q*SINA**2                    )        	205 XPRMU=XPAR(IP)+SQRT(ASQ*COSA**2 + 35Q*SINA**2) || \text{W} \text{W} \text{E} \text{L} \text{L} \text{J} \text{J}
+42	2259	COUNT 1/2;COUNT 60/5	                                                                                	C || \text{M} \quad \text{V} \quad \text{A} \quad \text{C} \quad \text{J}
+43	2297	COUNT 54/55;COUNT 6/7	                                                                                	C DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYOND THE LEFT || - L M L + 3
+44	2340	COUNT 27/28;COUNT 9/7	                                                                                	C     BOUNDARY OF THIS MAP CORE LOAD - || - L U T E L I L C
+45	2388	COUNT 59/2	C                                                                               	C || \vee \vee \mathbb{C} \mathbb{U} \mathbb{J} \mathbb{C} . \mathbb{J}
+46	2419	COUNT 26/27;COUNT 17/4	                                                                                	IF(XPRMU.LT.X1+DGX) GO TO 200 || \begin{array}{ll}
+47	2461	COUNT 0/25;COUNT 17/3	                                                                                	 || \begin{array}{cc}
+48	2505	COUNT 1/2;COUNT 11/1	                                                                                	C || \frac{2}{(}
+49	2541	COUNT 6/5	C     DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYON DTH ERIGH    T        	C DOES THE PARTICLE CONTRIBUTION LIE COMPLETELY BEYOND THE RIGHT || - CH = L 1
+50	2598	COUNT 27/28;COUNT 8/6	                                                                                	C BOUNDARY OF THIS MAP CORE LOAD - || 'UHE L I 9C
+51	2635	COUNT 1/2	                                                                        )4EC105 	C || ) 4 E C 1 0 5
+52	2664	COUNT 22/23;COUNT 8/7	                                                                                	TF(XPRML.LT.X2) GO TC 22C || 'CHEC170
+53	2719	COUNT 0/9	                                                                        CMEC171 	 || CMEC171
+54	2752	COUNT 7/8;COUNT 8/7	                                                                                	GO TO 777 || > CHEL172
+55	2795	COUNT 1/2;COUNT 21/7	                                                                                	C || \text{CH} = \text{C173}
+56	2833	COUNT 45/13;COUNT 8/7	                                                                                	C WILL THIS CONTRTRITER ALSO CONTRTRITER TO CLOSE OUT || 'CHEC1/4
+57	2868	COUNT 59/48;COUNT 25/7	                                                                                	C WILL THIS CONTRIBUTER ALSO CONTRIBUTE TO SUBSEQUENT MAP CORE LUACSP || \text{CH}_2\text{C}_{175}
+58	2920	COUNT 25/26;COUNT 8/7	                                                                                	220 IF(XPRMU.GT.X2) GO TO 230 || 'CHEC176
+59	2968	COUNT 9/10;COUNT 8/7	                                                                                	KTR(IP) = 1 || 'CHÉLI 77
+60	3007	COUNT 7/8	                                                                        CHEC170 	NE=NE+1 || CHEC170
+61	3049	COUNT 11/1;COUNT 8/7	                                                                                	\mathcal{P} || 'CMEC179
+62	3079	COUNT 7/8;COUNT 52/7	                                                                                	GO TO 240 || \text{C} \neq \text{E} \text{C} \text{I} \text{J} \text{E}
+63	3133	OK	                                       165                                      	165
+64	3302	COUNT 0/40	                                                                                	

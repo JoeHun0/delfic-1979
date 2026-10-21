@@ -1,0 +1,65 @@
+1	8	COUNT 0/36	                                                                                	
+2	495	OK	*DECK,OSTBN                                                             DSTBN  1	*DECK, OST BN || DSTBN 1
+3	539	OK	      SUBROUTINE OSTBN                                                  DSTBN  2	SUBROUTINE OSTBN || DSTBN 2
+4	581	OK	C                                                                       DSTBN  3	C || DSTBN 3
+5	623	OK	C     H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DSTBN  4	C H. G. NORMENT, ATMOSFHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DSTBN 4
+6	667	OK	C                                                                       DST8N  5	C || DST8N 5
+7	709	COUNT 0/71	                                                                        DSTBN  6	 || DSTBN 6
+8	753	OK	C                                                                       DSTBN  7	C || DSTBN 7
+9	796	COUNT 5/6	C     SETS UP HISTOGRAM TABLES OF  PARTICLE MASS AS A FUNCTION OF               	C SETS UP HISTOGRAM TABLES OF PARTICLE MASS AS A FUNCTION OF || STBN 8
+10	838	OK	C     PARTICLE DIAMETER.                                                DST8N  9	C PARTICLE DIAMETER. || DST8N 9
+11	882	OK	C                                                                       DST8N 10	C || DST8N 10
+12	924	OK	C     LOGNORMAL DISTRIBUTION TO 100                                     DSTBN 11	C LOGNORMAL DISTRIBUTION TO 100 || DSTBN 11
+13	967	OK	C     POWER FUNCTION DISTRIBUTION TO 200                                OSTBN 12	C POWER FUNCTION DISTRIBUTION TO 200 || OSTBN 12
+14	1010	COUNT 1/25	                                                                        OSTBN 13	C || OSTBN 13
+15	1054	OK	C                                                                       DSTBN 14	C || DSTBN 14
+16	1095	COUNT 1/53	                                                                        DSTBN 15	C || DSTBN 15
+17	1139	COUNT 1/53	                                                                        DSTBN 16	C || DSTBN 16
+18	1183	OK	C     APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION.                 DSTON 17	C APPROXIMATION TO THE NORMAL PROBABILITY FUNCTION. || DSTON 17
+19	1225	COUNT 0/2	                                                                        DSTON 18	 || DST ON 18
+20	1268	COUNT 0/71;COUNT 8/7	                                                                                	 || DSTB:J 19
+21	1311	COUNT 0/2	                                                                        DSTBN 20	 || DSTBN 20
+22	1354	COUNT 8/7	      COMMON /CONTRL/ DETIC(12),IC(20),IRAO,IRISE,ISIN,ISOUT,JPARN,KDI          	COMMON /CONTRL/ DETIC(12), IC(20), IRAO, IRISE, ISIN, ISOUT, JPARN, KDI || DST 08N 21
+23	1398	OK	      COMMON /INITL/ F, PHI, SSAM, THE, TMPG, TMPS, VFR                 DSTBN 22	COMMON /INITL/ F, PHI, SSAM, THE, TMPG, TMPS, VFR || DSTBN 22
+24	1441	COUNT 63/62	                                                                        DSTON 23	COMMON /PARTCL/ NOSTR,RIICP,DMEAN,SD,PS(200),DIAM(201),FMASS(200) || DSTON 23
+25	1476	OK	      EQUIVALENCE (DHEAN,CAYM),(SD,EXPC)                                OSTBN 24	EQUIVALENCE (DHEAN, CAYM), (SD, EXPC) || OSTBN 24
+26	1527	OK	      DATA PROGRM, PI/ 6HOSTBN , 3.141592654/                           DSTBN 25	DATA PROGRM, PI/ 6HOSTBN , 3.141592654/ || DSTBN 25
+27	1570	COUNT 8/7	C                                                                               	C || DOSTEN 26
+28	1612	COUNT 0/71	                                                                        0ST0N 27	 || 0 ST 0 N 2 7
+29	1656	OK	C                                                                       DST8N 28	C || DST8N 28
+30	1699	COUNT 29/26	                                                                        OSTBN 29	TA(X)=\sqrt{\log(1.0/X^{*2})} || OSTBN 29
+31	1739	COUNT 94/57	                                                                        DSTBN 30	\mathrm{APX}(X) = \mathrm{TA}(X) - (2.515517 + 0.802853 * \mathrm{TA}(X) + u.610328 * \mathrm{TA}(X) ** 2) / 2 || DSTBN 30
+32	1784	COUNT 56/57	                                                                        DSTON 31	1 (1.0 + 1.432788 * TA(X) + 0.189269 * TA(X) ** 2 + 0.01308 * TA(X) ** 3) || DSTON 31
+33	1827	OK	C                                                                       DSTON 32	C || DSTON 32
+34	1869	OK	      L0=NOSTR+1                                                        DSTBN 53	L0=NOSTR+1 || DSTBN 53
+35	1911	OK	      IF(IC(1)-1)100,200,300                                            DSTBN 34	IF (IC (1) - 1) 100, 200, 300 || DSTBN 34
+36	1955	OK	  100 IF(DMEAN)111,111,112                                              DST8N 35	100 IF (DMEAN) 111,111,112 || DST 8N 35
+37	1997	OK	  111 DMEAN=0.407                                                       DSTON 36	111 DMEAN=0.407 || DSTON 36
+38	2040	OK	      SO=4.0                                                            OSTBN 37	SO=4.0 || OSTBN 37
+39	2083	OK	  112 IF(NDSTR-1)101,101,102                                            DSTON 38	112 IF(NDSTR-1)101,101,102 || DSTON 38
+40	2125	COUNT 22/21	                                                                        DST0N 39	101 PS(1)=DMEAN\*1.0E-6 || DST 0N 39
+41	2169	OK	      C5=SD**5                                                          DSTBN 40	C5=SD**5 || DSTBN 40
+42	2212	OK	      DIAM(1)=DMEAN*C5*1.0E-6                                           OSTON 41	DIAM(1) = DMEAN * C5 * 1.0E-6 || OSTON 41
+43	2255	OK	      DIAM(2)=DMEAN/C5*1.0E-6                                           DSTBN 42	DIAM(2) = DMEAN/C5 * 1.0E-6 || DSTBN 42
+44	2299	COUNT 27/12	                                                                        DSTBN 43	\text{FMASS}(1) = 1.0 \text{ G} || DSTBN 43
+45	2343	COUNT 8/7	                                                                        OSTBN 44	GO TO 4:00 || OSTBN 44
+46	2383	OK	  162 BARMU=ALOG(DMEAN)                                                 DSTON 45	162 BARMU=ALOG(DME AN) || DSTON 45
+47	2427	COUNT 28/14	                                                                        DST8N 46	\text{SIGMA}=\text{ALOG}(SD) || DST8N 46
+48	2471	COUNT 6/7	      BARMU=BARMU+3.*SIGMA**2                                                   	BARMU=BARMU+3.*SIGMA**2 || 080N 47
+49	2513	OK	      FRAC=1.0/FLOAT(NOSTR)                                             OSTON 48	FRAC=1.0/FLOAT(NOSTR) || OSTON 48
+50	2556	OK	      DO 1)3 ND=1,NDSTP                                                 DST8N 49	DO 1)3 ND=1,NDSTP || DST8N 49
+51	2599	OK	  103 FMASS(ND)=FRAC                                                    DST8N 50	103 FMASS(ND)=FRAC || DST 8N 50
+52	2642	OK	      NH=NDSTR/2                                                        OSTÁN 51	NH=NDSTR/2 || OSTÁN 51
+53	2684	COUNT 8/7	      NO 104 I=1,NH                                                             	NO 104 I=1,NH || DOSTAN 52
+54	2726	OK	      PRB=FLOAT(I)*FRAC                                                 DST8N 53	PRB=FLOAT(I)*FRAC || DST8N 53
+55	2769	OK	      DIAM(I+1)=BARMU+APX(FRB)*SIGMA                                    DSTON 54	DIAM(I+1) = BARMU+APX(FRB)*SIGMA || DSTON 54
+56	2812	OK	      J=NOSTR-I+1                                                       DSTON 55	J=NOSTR-I+1 || DSTON 55
+57	2857	OK	  104 DIAM(J)=3ARMU-APX(PRB)*SIGMA                                      DSTAN 56	104 DIAM(J)=3ARMU-AP X(PRB)*SIGMA || DSTAN 56
+58	2888	COUNT 0/2	                                                                        03TBN 57	 || 03TBN 57
+59	2939	OK	C     FOR THE 2 EXTREME INTERVALS THE AVERAGE DIAMETER IS               OSTON 58	C FOR THE 2 EXTREME INTERVALS THE AVERAGE DIAMETER IS || OSTON 58
+60	2984	OK	C     ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE           OSTBN 59	C ASSUMED TO BE AT HALF A MASS FRACTION FROM ZERO AND ONE || OSTBN 59
+61	3028	OK	C                                                                       0518N 6v	C || 0518N 6v
+62	3073	OK	                                        65                                      	65
+63	3236	COUNT 0/56;COUNT 0/4	                                                                                	 || 
+64	3277	COUNT 0/28	                                                                                	
+65	3301	COUNT 0/53	                                                                                	

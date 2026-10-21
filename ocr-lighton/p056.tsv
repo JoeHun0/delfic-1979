@@ -1,0 +1,37 @@
+1	18	COUNT 80/29	                                                                                	\text{SOLUTION OF THE EQUATION OF THE FIRST ORDER OF THE DEPARTMENT OF THE STATE OF CALIFORNIA}
+2	50	COUNT 15/53;COUNT 320/8	                                                                                	# 1. Introduction || \text{S} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S} \text{O} \text{R} \text{I} \text{S}
+3	792	OK	*DECK,ERROR                                                             ERROR  1	*DECK, ERROR || ERROR 1
+4	835	OK	      SUBROUTINE ERROR (PROGRM,IRROR,ISOUT)                             ERROR  2	SUBROUTINE ERROR (PROGRM, IRROR, ISOUT) || ERROR 2
+5	877	OK	C     T. W. SCHHENKE                                                    ERROR  3	C T. W. SCHHENKE || ERROR 3
+6	921	OK	C     1 MARCH 1966                                                      ERROR  4	C 1 MARCH 1966 || ERROR 4
+7	964	OK	C                                                                       ERROR  5	C || ERROR 5
+8	1005	COUNT 199/71	                                                                        ERRCR  6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ERRCR 6
+9	1049	OK	C                                                                       ERROR  7	C || ERROR 7
+10	1091	COUNT 14/6	C     THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING          	C THIS PROGRAM WRITES A GENERALIZED ERROR COMMENT OF THE FOLLOWING || E \tilde{N} ROR 8
+11	1133	COUNT 19/6	C     FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS               	C FORM ON TAPE ISOUT AND THEN RETURNS IF THE SIGN OF IRROR IS || \tilde{E} R R O R \quad 9
+12	1176	OK	C     POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE.                        ERKOR 10	C POSITIVE OR STOPS IF ITS SIGN IS NEGATIVE. || ERKOR 10
+13	1222	OK	C                                                                       ERROR 11	C || ERROR 11
+14	1263	OK	C         ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER  ERROR 12	C ERROR SENSED IN PROGRAM (PROGRM) AT CR NEAR STATEMENT NUMBER || ERROR 12
+15	1305	OK	C         (ERROR).  PLEASE REFER TO THE PROGRAM LISTING.                ERROR 13	C (ERROR). PLEASE REFER TO THE PROGRAM LISTING. || ERROR 13
+16	1352	OK	C                                                                       ERROR 14	C || ERROR 14
+17	1391	OK	C     PRIOR TO CALLING ERRCR  THE PARAMETER  PROGRM  MUST BE SET        ERROR 15	C PRIOR TO CALLING ERRCR THE PARAMETER PROGRM MUST BE SET || ERROR 15
+18	1434	COUNT 1/27	                                                                        ERROR 16	C || ERROR 16
+19	1478	OK	C     PROGRAM AND PARAMETER  ERROR  MUST BE SET WITH THE NUMBER OF THE  ERROR 17	C     PROGRAM AND PARAMETER ERROR MUST BE SET WITH THE NUMBER OF THE || ERROR 17
+20	1518	OK	C     FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION.      ERROR 18	C FORTRAN STATEMENT WHICH BEST IDENTIFIES THE ERROR CONDITION. || ERROR 18
+21	1564	OK	C                                                                       ERROR 19	C || ERROR 19
+22	1606	COUNT 199/71	                                                                        ERROR 20	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ERROR 20
+23	1650	OK	C                                                                       ERROR 21	C || ERROR 21
+24	1692	OK	 1    FORMAT(//26H ERROR SENSED IN PROGRAM  A6,3GH  AT OR NEAR STATEMENTE2KOR 22	1 FORMAT(//26H ERROR SENSED IN PROGRAM A6,3GH AT OR NEAR STATEMENT || E 2KOR 22
+25	1735	OK	     1 NUMBER I6,40H .  PLEASE REFER TC THE PROGRAM LISTING.)           ERROR 23	1 NUMBER I6,40H . PLEASE REFER TC THE PROGRAM LISTING.) || ERROR 23
+26	1779	COUNT 24/7	C                                                                               	C || E \kappa \ddot{\kappa} OR 24
+27	1821	COUNT 199/71	                                                                        ERROR 25	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ERROR 25
+28	1863	COUNT 199/71	                                                                        ERROR 26	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || ERROR 26
+29	1907	OK	C                                                                       ERROR 27	C || ERROR 27
+30	1949	COUNT 0/15	                                                                        ERROR 28	 || ERROR 28
+31	1993	COUNT 25/24	                                                                        ERROR 29	WRITE(ISOUT,1)PROGRAM,IRR || ERROR 29
+32	2034	OK	      IF(ERROR)101,100,100                                              ERROR 30	IF (ERROR) 101, 100, 100 || ERROR 30
+33	2077	OK	  100 RETURN                                                            ERROR 31	100 RETURN || ERROR 31
+34	2120	OK	  101 STOP                                                              ERROR J2	101 STOP || ERROR J2
+35	2162	OK	      END                                                               ERROR 33	END || ERROR 33
+36	3144	OK	                                        53                                      	53
+37	3292	COUNT 8/4	                                                            \t    ext{S}        	\text{S} || \text{S}

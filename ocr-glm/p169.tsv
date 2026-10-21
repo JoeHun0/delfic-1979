@@ -1,0 +1,58 @@
+1	17	COUNT 3/13;COUNT 3/2	                                                                                	--- || ---
+2	487	COUNT 12/7	                                                                                	230 KTR(IP) = 0
+3	530	COUNT 25/20;COUNT 8/7	                                                                                	240 CALL CALC(IP,OMAP,NMAP) || PCHEC131
+4	569	COUNT 11/8;COUNT 3/1	                                                                                	777 CONTINUE || ---
+5	615	OK	 C                                                                              	C
+6	661	OK	      RETURN                                                                    	RETURN
+7	700	OK	 C                                                                              	C
+8	748	OK	      EN0                                                                       	EN0
+9	1087	OK	*DECK.POMP                                                                      	* DECK. POMP
+10	1133	COUNT 2/1	      SUBROUTINE PDMP                                                           	SUBROUTINE PDMP || JM
+11	1175	COUNT 2/1	C                                                                               	C || 79
+12	1216	OK	C     THIS SURROUTINE SOPTS OUT THOSE  PARCELS  THAT WILL CONTRIBUTE    PUMP   3	C THIS SURROUTINE SOPTS OUT THOSE PARCELS THAT WILL CONTRIBUTE || PUMP 3
+13	1260	OK	C     TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR       PUMP   4	C TO SUBSEQUENT MAP CORE LOAJS, AND DUMPS THEM ON TO TAPE FOR || PUMP 4
+14	1304	COUNT 17/18;COUNT 3/1	                                                                                	C TEMPORARY STORAGE || ---
+15	1341	COUNT 5/4	C                                                                               	C || PUMP 6
+16	1390	OK	C     H.G.NORMENT     JUNE 28.1971                                      PUMP   1	C H.G.NORMENT JUNE 28.1971 || PUMP 1
+17	1432	OK	C                                                                               	C
+18	1475	COUNT 8/70;COUNT 5/6	                                                                                	GLOSSARY || PUMP 9
+19	1518	OK	C                                                                               	C
+20	1562	COUNT 39/42	                                                                        PUMP  11	COUNT CF PARCELS MOVED FROM UPPER TO LOWER CORE || PUMP 11
+21	1607	COUNT 6/5	C                  (JL.LE.KP)                                                   	C (JL.LE.KP) || PDMP 13
+22	1642	OK	C     JP           COUNT CF AVAILABLE  PARCEL  STORAGE LOCATIONS PASSED PUMP  13	C JP COUNT CF AVAILABLE PARCEL STORAGE LOCATIONS PASSED || PUMP 13
+23	1692	COUNT 31/32	                                                                        PUMP  14	IN THE PARCEL CORE STORAGE BLCCK SORT || PUMP 14
+24	1735	OK	C                  (JP.LE.NE.AND.JP.LE.KP)                              POMP  15	C (JP.LE.NE.AND.JP.LE.KP) || POMP 15
+25	1776	OK	C     KP           NUMBER CF  FARCELS  IN COKE THAT ARE TO BE DUMPED    PUMP  10	C KP NUMBER CF FARCELS IN COKE THAT ARE TO BE DUMPED || PUMP 10
+26	1820	COUNT 6/4	C                  ONTO TAPE                                                    	C ONTO TAPE || PUMP 17
+27	1859	OK	C                  (KP=NIJ-NE)                                           JMP  1 	C (KP=NI J-NE) || JMP 1
+28	1901	OK	C     NE           COUNT OF AVAILABLE  PARCEL  STORAGE LOCATIONS IN     PUMP  19	C NE COUNT OF AVAILABLE PARCEL STORAGE LOCATIONS IN || PUMP 19
+29	1950	COUNT 37/38	                                                                        PUMP  20	CORE. THIS IS THE NUMBER OF PARCELS REJECTED || PUMP 20
+30	1993	COUNT 6/5	C                  IN PCHECK.                                                   	C IN PCHECK. || PUMP 21
+31	2030	OK	C     NIJ          A BLOCK COUNT OF DATA STORED ON TAFE AND/OR IN CORE  PUMP  22	C NIJ A BLOCK COUNT OF DATA STORED ON TAFE AND/OR IN CORE || PUMP 22
+32	2078	COUNT 1/2	                                                                                	c
+33	2120	COUNT 5/4	C     ALSO SEE OPM1 GLOSSARY                                                    	C ALSO SEE OPM1 GLOSSARY || PUMP 2
+34	2158	COUNT 4/3	C                                                                               	C || MP 25
+35	2207	COUNT 1/71	                                                                        PUMP  <0	C || PUMP < 0
+36	2248	OK	C                                                                               	C
+37	2295	COUNT 34/38	                                                                        PUMP  20	COMMON /CONCAT/ IC(2J) IHO8 IPNCH IPOUT || PUMP 20
+38	2340	COUNT 30/35	                                                                        PDMP  30	LISIN ISOUT JPOUT KPOUT KTAPE LTAPE || PDMP 30
+39	2380	COUNT 25/30	                                                                        PDMP  30	2MARRAY MBTAPE MXREQ SO IN FAM || PDMP 30
+40	2423	COUNT 25/28	                                                                        PDMP  31	COMMON /PARDAT/ ASC BSQ COSA F || PDMP 31
+41	2466	COUNT 48/54	                                                                        POMP  32	1 GAYA KIR(100) PMAS(100) PSIZ(100) PO(100) SIGXO(100) || POMP 32
+42	2511	COUNT 51/53	                                                                        POHP  33	2SIGY0(1C), SINA ,TPAR(1J0) ,XPAR(1JC) ,YPAR(1C0) ,YPRML || POHP 33
+43	2553	COUNT 15/16	                                                                        POMP  35	3 YPRMU ZPAR(1CU) || POMP 35
+44	2589	OK	      COMMON /RUNDAT/      C          ,CF6       ,FSUM      ,ICIR       PUMP  35	COMMON /RUNDAT/ C ,CF6 ,FSUM ,ICIR || PUMP 35
+45	2638	COUNT 25/31	                                                                        POMP  36	1 MAPRUN NE NIJ NURD NREG NTASK || POMP 36
+46	2682	OK	     20PMID(12) .T1        .T2        .AFMAS(240)                       POMP  37	20PMID(12) .T1 .T2 .AFMAS(240) || POMP 37
+47	2725	COUNT 17/18;COUNT 5/3	                                                                                	DATA PROGRM/6HPDMP || RUN 30
+48	2759	OK	C                                                                        JMP  39	C || JMP 39
+49	2811	COUNT 2/1	      KP=NIJ-NE                                                                 	KP=NIJ-NE || Bi
+50	2854	COUNT 6/4	      IF(NE.EQ.0) GO TO 15CC                                                    	IF(NE.EQ.0) GO TO 15CC || PUMP 41
+51	2891	COUNT 4/2	      JP=9                                                                      	JP=9 || MP 42
+52	2940	OK	      1J+1INX                                                                  4	1 J+1 I N X || 4
+53	2986	OK	      J=1                                                                       	J=1
+54	3028	OK	      JL=0                                                                      	JL=0
+55	3068	OK	C                                                                               	C
+56	3113	OK	C     SORT THROUGH THE STORED PARTICLE DATA BLOCK AND MOVE ALL          POHP  41	C SORT THROUGH THE STORED PARTICLE DATA BLOCK AND MOVE ALL || POHP 41
+57	3194	COUNT 3/2	                                                                                	166
+58	3310	COUNT 3/14;COUNT 3/5	                                                                                	--- || ---

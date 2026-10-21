@@ -1,0 +1,58 @@
+1	18	COUNT 3/15	                                                                                	---
+2	386	OK	C                                                                       CALC 121	C || CALC 121
+3	430	OK	      GO TO (224,224,221,221,222,222),NORO                              CALC 122	GO TO (224,224,221,221,222,222),NORO || CALC 122
+4	472	OK	  221 OMA=TPAR(IP)                                                      CALC 123	221 OMA=TPAR(IP) || CALC 123
+5	516	OK	      GO TO 224                                                         CALC 124	GO TO 224 || CALC 124
+6	559	OK	  222 OMA=PSIZ(IP)*1.0E6                                                CALC 125	222 OMA=PSIZ(IP)*1.0E6 || CALC 125
+7	602	OK	  224 DO 300 M=K.L                                                      CALC 126	224 DO 300 M=K.L || CALC 126
+8	644	OK	      GO TO (225,245,230,240,230,240),NORD                              CALC 127	GO TO (225,245,230,240,230,240) ,NORD || CALC 127
+9	689	OK	  225 OMAP(M)=OMAP(M)+1.[                                               CALC 128	225 OMAP(M) = OMAP(M) +1. [ || CALC 128
+10	731	OK	      GO TO 300                                                         CALC 129	GO TO 300 || CALC 129
+11	776	OK	  230 OMAP(M) = AMIN1(OMA,OMAP(M))                                      CALC 130	230 OMAP(M) = AMIN1(OMA,OMAP(M)) || CALC 130
+12	819	OK	      GO TO 390                                                         CALC 131	GO TO 390 || CALC 131
+13	860	OK	  240 OMAP(M) = AMAX1(OMA,OMAP(M))                                      CALC 132	240 OMAP(M) = AMAX1(OMA, OMAP(M)) || CALC 132
+14	894	COUNT 7/8	                                                                        CALC 133	GO TO 300 || CALC 133
+15	947	OK	  245 XREL=M   -MCRMT                                                   CALC 134	245 XREL=M -MCRMT || CALC 134
+16	988	OK	      XREL = X1   + DGX*XREL - XPAR(IP)                                 CALC 135	XREL = X1 + DGX*XREL - XPAR(IP) || CALC 135
+17	1030	OK	      OMA = Q*EXP( - (XREL*COSA + YREL*SINA)**2/VARX2 - (YREL*COSA      CALC 136	OMA = Q*EXP(- (XREL*COSA + YREL*SINA)**2/VARX2 - (YREL*COSA || CALC 136
+18	1071	OK	     1 - XREL*SINA)**2/VARY2)                                           CALC 137	1 - XREL*SINA) **2/VARY2) || CALC 137
+19	1117	OK	  250 OMAP(M) = OMAP(M) + CMA                                           CALC 138	250 OMAP(M) = OMAP(M) + CMA || CALC 138
+20	1160	OK	  300 CONTINUE                                                          CALC 139	300 CONTINUE || CALC 139
+21	1204	OK	  350 CONTINUE                                                          CALC 140	350 CONTINUE || CALC 140
+22	1247	OK	      RETURN                                                            CALC 141	RETURN || CALC 141
+23	1289	COUNT 32/31	                                                                        CALC 142	400 CALL ERROR(PROGRM, IRROR, TSOUT) || CALC 142
+24	1334	OK	      END                                                               CALC 143	END || CALC 143
+25	1676	OK	*DECK,CONTOR                                                            CONTO  1	* DECK , CONTOR || CONTO 1
+26	1717	OK	      SUBROUTINE CONTOR( CCNTUR, CRDLBL ,UMAP ,NHAP)                    CONTO  2	SUBROUTINE CONTOR(CCNTUR,CRDLBL,UMAP,NHAP) || CONTO 2
+27	1763	COUNT 1/2	                                                                        CONTO  3	C || CONTO 3
+28	1797	OK	C     H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979      CONTO  4	C H. G. NORMENT. ATMOSPHERIC SCIENCE ASSOCIATES - JANUARY 1979 || CONTO 4
+29	1851	OK	C                                                                       CONTO  5	C || CONTO 5
+30	1889	COUNT 1/71	                                                                        CONTO  6	C || CONTO 6
+31	1936	OK	C                                                                       CONTO  7	C || CONTO 7
+32	1974	OK	C     DETERMINE UNORDERED SETS OF POINTS ( A MAXIMUM CF 300 IS ALLOWED) CUNTO  8	C DETERMINE UNORDERED SETS OF POINTS (A MAXIMUM CF 300 IS ALLOWED) || CUNTO 8
+33	2017	OK	C     THAT LIE ON THE CONTCURS SPECIFIED BY ARRAY CONTUR.   LINEAR      CONTO  9	C THAT LIE ON THE CONTCURS SPECIFIED BY ARRAY CONTUR. LINEAR || CONTO 9
+34	2060	OK	C     INTERPOLATION BETWEEN MAP POINTS IS USED.   SK SRTCNT IS CALLED TOCONTO 10	C INTERPOLATION BETWEEN MAP POINTS IS USED. SK SRTCNT IS CALLED TO || CONTO 10
+35	2104	OK	C     ORDER THE POINTS IN SEQUENCE AROUND THE CLOSED SECTIONS OF THE    CONTO 11	C ORDER THE POINTS IN SEQUENCE AROUND THE CLOSED SECTIONS OF THE || CONTO 11
+36	2149	OK	C     CONTOURS.                                                         CUNTO 12	C CON TOURS. || CUNTO 12
+37	2194	OK	C                                                                       CONTO 13	C || CONTO 13
+38	2233	COUNT 1/71	                                                                        CONTO 14	C || CONTO 14
+39	2279	OK	C                                                                       CONTO 15	C || CONTO 15
+40	2317	COUNT 34/38	                                                                        CONTO 16	COMMON / CON CAT/ IC(20) IHOB IPNCH IPJUY || CONTO 16
+41	2363	COUNT 35/36	                                                                        CONTO 17	1ISIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE || CONTO 17
+42	2406	OK	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM                 CONTO 18	2 MARRAY , MB TAPE , MXREQ , SD , IN PAM || CONTO 18
+43	2440	OK	      COMMON /MAPOAT/ CAYF ,CUTMAP    ,OGX       ,OGY       ,IH  ,IV   ,CONTO 19	COMMON /MAPOAT/ CAYF ,CUTMAP ,OGX ,OGY ,IH ,IV , || CONTO 19
+44	2490	COUNT 23/29	                                                                        CONTO 20	1 JC NXMAP NYMAP NZ GCUT SSAM || CONTO 20
+45	2526	COUNT 18/24	                                                                        CONTO 21	2TGZ XGZ X1 X2 YGZ XMAX || CONTO 21
+46	2577	OK	     3XMIN      ,YMAX      ,YMIN      ,ZMIN                             CONTO 22	3XMIN ,YMAX ,YMIN ,ZMIN || CONTO 22
+47	2618	OK	      DIMENSION OMAP(NMAP),CONTUR( 8),X(300),Y(360)                     CONTO 23	DIMENSION OMAP(NMAP),CONTUR(8),X(300),Y(360) || CONTO 23
+48	2662	OK	      DATA PROGRM/6HCONTOR/                                             CONTO 24	DATA PROGRM/6HCONTOR/ || CONTO 24
+49	2709	OK	C                                                                       CONTO 25	C || CONTO 25
+50	2752	OK	      D0 990 L=1,8                                                      CONTO 26	D0 990 L=1,8 || CONTO 26
+51	2791	OK	      IF( CONTUR(L) .EQ. C.0) GO TO 999                                 CUNTO 27	IF( CONTUR(L) .EQ. C.0) GO TO 999 || CUNTO 27
+52	2835	OK	      CNT = CONTUR(L)                                                   CONTO 28	CNT = CONTUR(L) || CONTO 28
+53	2881	OK	      K = ?                                                             CONTO 29	K = ? || CONTO 29
+54	2921	OK	COMPUTE CONTOUR INTERSECTIONS ALONG MAP ROWS                            CONTO 30	COMPUTE CONTOUR INTERSECTIONS ALONG MAP ROWS || CONTO 30
+55	2968	OK	      DO 400 I=1,NYMAP                                                  CUNTO 31	DO 400 I=1, NYMAP || CUNTO 31
+56	3011	OK	      DO 400 J=2，NXMAP                                                  CONTO 32	DO 400 J=2，NXMAP || CONTO 32
+57	3068	COUNT 3/2	                                                                                	143
+58	3247	COUNT 3/46	                                                                                	---

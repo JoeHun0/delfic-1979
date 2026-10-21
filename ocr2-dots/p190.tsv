@@ -1,0 +1,12 @@
+1	8	COUNT 0/19	                                                                                	
+2	417	OK	  163 8=3+Q*EFAC(K1)                                                            	163 8=3+Q*EFAC(K1)
+12	851	COUNT 37/21	                                                                                	\lim(\text{LSUB}) = \lim(\text{LSUB}) - 1
+13	893	OK	      LBR = KBR(LSUB)                                                           	LBR = KBR(LSUB)
+24	1364	COUNT 54/53	                                                                                	1:00 FORMAT (17H10OUTPUT OF BATMAN//8X6HNUCL1011X6HABUNDO/
+25	1403	OK	     1    (5x012,5x1PE12,4))                                                    	1 (5x012, 5x1PE12, 4))
+50	2776	OK	     STIVITY)                                                                   	STIVITY)
+52	2868	OK	     1    (AX7H AFTERS16Y11H(R+N+*2)/HR,/)                                      	1 (AX7H AFTERS 16Y11H(R+N+*2)/HR,/)
+53	2913	OK	  903 FORMAT                                                                    	903 FORMAT
+54	2957	OK	     1    (5V:PE12.4.14VE16.4)                                                  	1 (5V:PE12.4.14VE16.4)
+55	3002	COUNT 0/9	                                                                                	
+56	3045	OK	     :    19174 METERS:PEÇUNO·002//!                                            	: 19174 METERS:PEÇUNO·002//!

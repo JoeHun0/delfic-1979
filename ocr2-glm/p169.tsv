@@ -1,0 +1,16 @@
+1	17	COUNT 3/13	                                                                                	---
+3	530	COUNT 25/20	                                                                                	240 CALL CALC(IP,OMAP,NMAP)
+4	569	COUNT 11/8	                                                                                	777 CONTINUE
+37	2295	COUNT 35/38	                                                                                	COMMON / CONCAT/ IC(2J) IH08 IPNCH IPOUT ,
+38	2340	COUNT 30/35	                                                                                	1ISIN ISOUT JPOUT KPOUT KTAPE LTAPE
+39	2380	COUNT 25/30	                                                                                	2MARRAY MBTAPE MXREQ SO IN FAP
+41	2466	COUNT 48/54	                                                                                	1GA4A KIR(150) PMAS(101) PSIZ(100) PO(100) SIGXO(100)
+42	2511	COUNT 15/53	                                                                                	2SIGYO(1C), SINA
+43	2553	COUNT 15/16	                                                                                	3 YPRMU ZPAR(1C0)
+45	2638	COUNT 25/31	                                                                                	1 MAPRUN NE NIJ NURD NREC NTASK
+46	2682	OK	     20PMID(12) .T1        .T2        .AFMAS(200)                               	20PMID(12) .T1 .T2 .AFMAS(200)
+47	2725	OK	      DATA PROGRAM/6HPDM  P                                                     	DATA PROGRAM/6HPDMP
+50	2854	OK	      IF(NE.EQ.0) GO TO 1500                                                    	IF (NE. EQ. 0) GO TO 1500
+51	2891	OK	      JP=9                                                                      	JP=9
+52	2940	OK	      MxNIJ+1                                                                   	MxNIJ+1
+58	3310	COUNT 3/14	                                                                                	---

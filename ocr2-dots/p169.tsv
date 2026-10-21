@@ -1,0 +1,16 @@
+1	17	COUNT 0/13	                                                                                	
+3	530	COUNT 25/20	                                                                                	240 CALL CALC(IP,ONAP,NMNP)
+4	569	COUNT 11/8	                                                                                	777 CONTINUE
+37	2295	COUNT 14/38	                                                                                	COMMON /CONCAT/
+38	2340	COUNT 36/35	                                                                                	11SIN ,ISOUT ,JPOUT ,KPOUT ,KTAPE ,LTAPE :
+39	2380	COUNT 29/30	                                                                                	2HARRAY ,H8TAPE ,H8REQ ,SO ,IN FAN
+41	2466	OK	     1GAYA      .KTR(100)  ,PHAS(100) ,PSIZ(100) ,PO(100)   ,SIGXO(100),        	1GAYA .KTR(100) ,PHAS(100) ,PSIZ(100) ,PO(100) ,SIGXO(100),
+42	2511	OK	     2SIGVO(173),SINA      ,TPAR(1J0) ,XPAR(1J0) ,YPAR(100) ,YPRML     ,        	2SIGVO(173),SINA ,TPAR(1J0),XPAR(1J0),YPAR(100),YPRML ,
+43	2553	COUNT 0/16	                                                                                	
+45	2638	COUNT 32/31	                                                                                	1XAPRUN .NE .NIJ .VURO .NREG .,NTASK ,
+46	2682	COUNT 26/27	                                                                                	20PMID(12) .T1 .T2 .NFMAS(20)
+47	2725	OK	      DATA PROGRN/6HPOMP  /                                                     	DATA PROGRN/6HPOMP /
+50	2854	OK	      IF(NE.EQ.0) GO TO 1500                                                    	IF (NE.EQ.0) GO TO 1500
+51	2891	COUNT 0/4	                                                                                	
+52	2940	COUNT 0/7	                                                                                	
+58	3310	COUNT 0/14	                                                                                	

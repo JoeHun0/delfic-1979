@@ -1,0 +1,8 @@
+2	39	COUNT 3/11	                                                                                	---
+10	862	OK	     1.  A RANDOM SELECTION OF ,I4, 30H VECTORS ARE EQUALLY WEIGHTED .          	1. A RANDOM SELECTION OF ,I4, 30H VECTORS ARE EQUALLY WEIGHTED.
+34	1896	COUNT 57/56	                                                                                	13 IF(N1+N2+N3+N4+N5+N6 .LT. 21) CALL ERROR(PROGRAM,-13,ISOUT)
+41	2196	COUNT 28/27	                                                                                	IF(AP.(N1).GE. ALIMIT) GO TO 101
+50	2583	OK	      XS(J) = (AP(N5) + SCALE(7))*SCALE(6)                                      	XS(J) = (AP(N5) + SCALE(7)) * SCALE(6)
+54	2754	OK	      SX(J) =AP(N3)*SCALE(2) * SIN( RAOC*(AP(N2)*SCALE(3) + TRNS))              	SX(J) = AP(N3)*SCALE(2) * SIN(RAOC*(AP(N2)*SCALE(3) + TRNS))
+55	2799	OK	      SY(J) =AP(N7)*SCALE(2) + COS( RADC*(AP(N2)*SCALE(3) + TRNS))              	SY(J) = AP(N7)*SCALE(2) + COS(RADC*(AP(N2)*SCALE(3) + TRNS))
+56	2841	OK	      GO TO 123                                                                 	GO TO 123

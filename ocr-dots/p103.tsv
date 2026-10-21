@@ -1,0 +1,63 @@
+1	1	COUNT 0/37;COUNT 0/3	                                                                                	 || 
+2	550	OK	      RETURN                                                            WNDSF181	RETURN || WNDSF181
+3	593	OK	 7734 CALL ERROR(PROGRM,IRROR,ISOUT)                                    WNDSF182	7734 CALL ERROR(PROGRM, IRROR, ISOUT) || WNDSF182
+4	636	OK	      RETURN                                                            WNOSF183	RETURN || WNOSF183
+5	680	OK	C                                                                       WNDSF184	C || WNDSF184
+6	722	OK	C 103 READ A BLOCK OF N PARTICLE DESCRIPTIONS                           WNOSF185	C 103 READ A BLOCK OF N PARTICLE DESCRIPTIONS || WNOSF 185
+7	764	COUNT 69/68	                                                                        WNOSF136	103 READ(IRISE) (XPAR(J), YPAR(J), TP(J), PSIZ(J), PMAS(J), ZPAR(J), RWAF(J) | || WNOSF136
+8	809	OK	     1,OWAF(J).ZLOW(J),VWAF(J),J=1,N)                                   WNOSF187	1, OWAF(J) . ZLOW(J), VWAF(J), J=1,N) || WNOSF187
+9	852	OK	      IF(IC(7))2015,2010,2015                                           WNOSF188	IF (IC(7)) 2015, 2010, 2015 || WNOSF188
+10	893	OK	 2015 WRITE(ISOUT,3013)N                                                WNOSF199	2015 WRITE (ISOUT, 3013) N || WNOSF 199
+11	936	OK	      WRITE(ISOUT,1012)(XPAR(I),YPAR(I),TP(I),PSIZ(I),PMAS(I),ZPAR(I),  WNDSF19D	WRITE(ISOUT,1012)(XPAR(I),YPAR(I),TP(I),PSIZ(I),PMAS(I),ZPAR(I), || WNDSF19D
+12	979	OK	     1RWAF(I),OWAF(I),ZLCH(I),VHAF(I),I=1,N)                            WNDSF191	1RWAF(I), OWAF(I), ZLCH(I), VHAF(I), I=1,N) || WNDSF191
+13	1022	OK	C                                                                       WNOSF192	C || WNOSF192
+14	1065	OK	C     NOW PREPARE TO SHIFT PARTICLES HORIZONTALLY IN ACCORDANCE WITH THEWNDSF193	C NOW PREPARE TO SHIFT PARTICLES HORIZONTALLY IN ACCORDANCE WITH THE || WNDSF193
+15	1109	COUNT 56/55	                                                                        WNDSF194	C POSITION OF THE CLOUD AT THE TIME WHEN THE PARTICLE LEFT THE CLOUD. || WNDSF 194
+16	1151	OK	C                                                                       WNOSF195	C || WNOSF195
+17	1194	COUNT 1/43	                                                                        WNDSF196	C || WNDSF196
+18	1238	OK	 2010 OLDZ=-99999.0                                                     WNOSF197	2010 OLDZ=-99999.0 || WNOSF197
+19	1281	OK	      OLDPS=-1.0                                                        WNOSF193	OLDPS=-1.0 || WNOSF193
+20	1327	OK	      OLDT=-1.0                                                         WNOSF199	OLDT=-1.0 || WNOSF199
+21	1371	COUNT 0/8	      j=1                                                                       	j=1 || 
+22	1409	COUNT 7/8	C 105 WAS THE CURRENT (J-TH) PARTICLE DEFINED AT THE SAME TIME AS THE           	C 105 WAS THE CURRENT (J-TH) PARTICLE DEFINED AT THE SAME TIME AS THE || WOSF201
+23	1453	COUNT 1/22;COUNT 0/8	                                                                                	C || 
+24	1496	OK	  105 IF(TP(J)-OLDT)106,1051,106                                        WNOSF273	105 IF(TP(J)-OLDT) 106,1051,106 || WNOSF 273
+25	1538	OK	C                                                                       WNOSF204	C || WNOSF204
+26	1581	OK	C1051 IS THE CURRENT (J-TH) PARTICLE THE SAME SIZE AS THE PREVIOUS ONE. WNOSF205	C1051 IS THE CURRENT (J-TH) PARTICLE THE SAME SIZE AS THE PREVIOUS ONE. || WNOSF 205
+27	1625	COUNT 1/9	                                                                        WNOSF206	C || WNOSF 206
+28	1668	OK	 1051 IF(PSIZ(J)-OLDPS)106,107,106                                      WNOSF207	1051 IF(PSIZ(J)-OLDPS)106,107,106 || WNOSF 207
+29	1712	OK	C                                                                       WNDSF208	C || WNDSF208
+30	1754	OK	C 107 IS THE J-TH PARTICLE AT THE SAME ALTITUDE AS THE PREVIOUS ONE.    WNOSF2J9	C 107 IS THE J-TH PARTICLE AT THE SAME ALTITUDE AS THE PREVIOUS ONE. || WNOSF2J9
+31	1796	COUNT 1/9	                                                                        WNOSF210	C || WNOSF 210
+32	1840	OK	 107  IF(ZPAR(J)-OLDZ)10E.108.106                                       WNOSF211	107 IF(ZPAR(J)-OLDZ)10E.108.106 || WNOSF211
+33	1885	OK	C                                                                       WNOSF212	C || WNOSF212
+34	1925	OK	C 108 THE PARTICLE WILL HAVE THE SAME HORIZONTAL DISPLACEMENTS AS THE   WNOSF213	C 108 THE PARTICLE WILL HAVE THE SAME HORIZONTAL DISPLACEMENTS AS THE || WNOSF213
+35	1967	COUNT 1/53	                                                                        WNDSF214	C || WNDSF 214
+36	2011	COUNT 1/53;COUNT 0/8	                                                                                	C || 
+37	2053	OK	C     PELATIVE TO COORDINATE SYSTEM ORIGIN                              WNOSF216	C PELATIVE TO COORDINATE SYSTEM ORIGIN || WNOSF216
+38	2097	COUNT 0/18	                                                                        WNUSF217	 || WNUSF 217
+39	2141	OK	 109  XPAR(J)=XPAR(J)+0X+XGZ                                            WNOSF218	109 XPAR(J) = XPAR(J) + 0X + XGZ || WNOSF218
+40	2182	OK	      YPAR(J)=YPAR(J)+DY+YGZ                                            WNUSF219	YPAR(J) = YPAR(J) + DY + YGZ || WNUSF219
+41	2227	OK	C                                                                       WNDSF220	C || WNDSF220
+42	2268	OK	C     INCREMENT AND TEST J TO CONSIDER THE NEXT PARTICLE OR RETURN TO   WN05F221	C INCREMENT AND TEST J TO CONSIDER THE NEXT PARTICLE OR RETURN TO || WN05F221
+43	2310	OK	C     FETCH THE NEXT BLOCK OF PARTICLE DATA.                            WNOSF222	C FETCH THE NEXT BLOCK OF PARTICLE DATA. || WNOSF 222
+44	2356	OK	      J=J+1                                                             WNOSF223	J = J + 1 || WNOSF223
+45	2400	OK	      IF(J-N)105,105,110                                                WNOSF224	IF (J-N) 105, 105, 110 || WNOSF224
+46	2444	OK	C                                                                       WNOSF225	C || WNOSF225
+47	2484	OK	C 110 PUT THE MODIFIED DATA ON THE TAPE JPAPIN AND THEN RETURN TO       WNOSF226	C 110 PUT THE MODIFIED DATA ON THE TAPE JPAPIN AND THEN RETURN TO || WNOSF 226
+48	2528	COUNT 1/23	                                                                        WNOSF227	C || WNOSF227
+49	2570	OK	  113 WRITE(JPARN )N                                                    WNOSF228	113 WRITE(JPARN)N || WNOSF228
+50	2611	OK	      WRITE (JPARN )(XPAR(J),YFAR(J),ZFAR(J),TF(J),PSIZ(J),PMAS(J),RWAF WNDSF229	WRITE (JPARN ) (XPAR(J),YFAR(J),ZFAR(J),TF(J),PSIZ(J),PMAS(J),RWAF || WNDSF 229
+51	2655	OK	     1(J),DWAF(J),7LOW(J),WHAF(J),J=1,N;                                WNOSF250	1(J), DWAF(J), 7LOW(J), WHAF(J), J=1, N; || WNOSF250
+52	2696	OK	      IF(IC(7))185,104,185                                              WNOSF231	IF (IC (7)) 185, 104, 185 || WNOSF231
+53	2741	OK	  185 WRITE (ISCUT,4)N                                                  WNDSF232	185 WRITE (ISCUT,4)N || WNDSF 232
+54	2783	OK	      WRITE(ISOUT,3)(XPAR(I),YPAR(I),TF(I),PSIZ(I),PMAS(I),ZPAR(I),     WNUSFZ33	WRITE(ISOUT,3) (XPAR(I), YPAR(I), TF(I), PSIZ(I), PMAS(I), ZPAR(I), || WNUSFZ33
+55	2827	OK	     1RWAF(I),DWAF(I),ZLCH(I),VWAF(I),I=1,N)                            WNOSF234	1RWAF(I), DWAF(I), ZLCH(I), VWAF(I), I=1,N) || WNOSF234
+56	2871	OK	  190 GO TO 104                                                         WNOSF235	190 GO TO 104 || WNOSF235
+57	2915	COUNT 15/16	                                                                        WNDSF236	106 OLDP=PSIZ(J) || WNDSF236
+58	2957	OK	      OLDZ=ZPAR(J)                                                      WNOSF237	OLD Z = ZPAR(J) || WNOSF 237
+59	2999	OK	      OLDT=TP(J)                                                        WNOSF238	OLDT=TP(J) || WNOSF 238
+60	3044	COUNT 0/8	C                                                                               	C || 
+61	3086	COUNT 0/8	C     DIO J-TH PARTICLE LEAVE THE CLOUD.   NL TO 115                            	C DIO J-TH PARTICLE LEAVE THE CLOUD. NL TO 115 || 
+62	3151	OK	                                      100                                       	100
+63	3278	COUNT 0/71;COUNT 0/8	                                                                                	 || 

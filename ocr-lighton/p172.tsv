@@ -1,0 +1,60 @@
+1	24	COUNT 0/16	                                                                                	
+2	70	COUNT 4/24	                                                                                	text
+3	744	COUNT 15/10	                                                                        SRTCN 61	100 \times P = X(1) || SRTCN 61
+4	788	COUNT 0/7;COUNT 0/7	                                                                                	 || 
+5	830	COUNT 0/7	                                                                        SRTCN 63	 || SRTCN 63
+6	874	COUNT 0/7	                                                                        SRTCN 04	 || SRTCN 04
+7	918	OK	      KK = 1                                                            SRTCN 65	KK = 1 || SRTCN 65
+8	959	COUNT 0/24	                                                                        SRTCN 06	 || SRTCN 06
+9	1003	COUNT 0/3	                                                                        SRTCN 67	 || SRTCN 67
+10	1046	OK	      WRITE(ISOUT, 3000)                                                SRTCN 68	WRITE(ISOUT, 3000) || SRTCN 68
+11	1090	OK	      WRITE( ISOUT, 1000) CNT, XP, YP                                   SRTCN 59	WRITE( ISOUT, 1000) CNT, XP, YP || SRTCN 59
+12	1133	OK	      IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XF,  YP,  CRDLBL, CODE     SRTCN 70	IF(IPNCH .GT. 0) WRITE(IFNCH,2000)CNT, XF, YP, CRDLBL, CODE || SRTCN 70
+13	1178	COUNT 0/3	                                                                        SRTCN 7:	 || SRTCN 7:
+14	1220	COUNT 19/13	                                                                        SRTCN 72	6000 00 7000 I = L \cdot K || SRTCN 72
+15	1261	OK	      IF(X(I) .EQ. CLR) GO TO 700                                       SRTCN 73	IF(X(I) .EQ. CLR) GO TO 700 || SRTCN 73
+16	1304	OK	      IF( VEC( XP, YP, X(I), Y(I))  .GT. VEM) GO TO 70:                 SRTCN 74	IF( VEC( XP, YP, X(I), Y(I)) .GT. VEM) GO TO 70: || SRTCN 74
+17	1349	COUNT 0/3	                                                                        SRTCN 75	 || SRTCN 75
+18	1390	COUNT 0/24	                                                                        SRTCN 76	 || SRTCN 76
+19	1434	OK	  700 CONTINUE                                                          SRTCN 77	700 CONTINUE || SRTCN 77
+20	1476	OK	  701 XP = X(M)                                                         SRTCN 78	701 XP = X(M) || SRTCN 78
+21	1519	COUNT 0/7	                                                                        SRTCN 79	 || SRTCN 79
+22	1562	COUNT 0/8	                                                                        SRTCN 50	 || SRTCN 50
+23	1605	OK	      WRITE( ISOUT, 1G00) CNT, XP, YP                                   SRTCN d1	WRITE( ISOUT, 1G00) CNT, XP, YP || SRTCN d1
+24	1649	OK	      IF(IPNCH .GT. 0) WRITE(IFNCH,20JU)CNT, XP,  YP,  CROLBL, COUE     SRTCN ε2	IF(IPNCH .GT. 0) WRITE(IFNCH,20JU)CNT, XP, YP, CROLBL, COUE || SRTCN ε2
+25	1692	OK	  702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 75L                     SRTCN 83	702 IF( VEC( XP, YP, XX, YY ) .EQ. 3.0) GO TC 75L || SRTC N 83
+26	1735	OK	      L= 1                                                              SRTCN 84	L = 1 || SRTCN 84
+27	1779	COUNT 14/7	      KK = KK + 1                                                               	KK = KK + 1 || \text{ORTCN J5}
+28	1821	OK	  745 00 710 I=1,K                                                      SRTCN J6	745 00 710 I=1,K || SRTCN J6
+29	1862	OK	      IF( X(I) .EQ. CLR) GC TO 710                                      SRTCN 87	IF( X(I) .EQ. CLR) GC TO 710 || SRTCN 87
+30	1905	COUNT 0/24	                                                                        SRTCN 88	 || SRTCN 88
+31	1949	COUNT 0/3	                                                                        SRTÜN 69	 || SRTÜN 69
+32	1991	OK	      GO TO 600                                                         SRTCN 9J	GO TO 600 || SRTCN 9J
+33	2034	OK	  710 CONTINUE                                                          SRTCN 41	710 CONTINUE || SRTCN 41
+34	2077	OK	      CALL ERROR( PROGRM, -710, ISOUT)                                  SRTCN 92	CALL ERROR( PROGRM, -710, ISOUT) || SRTCN 92
+35	2119	OK	  750 IF( KK .EQ. K) RETURN                                             SRTCN 43	750 IF( KK .EQ. K) RETURN || SRTCN 43
+36	2161	COUNT 23/7	COMMENCE INITIALIZATION FOR ANOTHER CLOSURE.                                    	COMMENCE INITIALIZATION FOR ANOTHER CLOSURE. || \dot{S}RTCN \Rightarrow 4
+37	2206	OK	CONDENSE REMAINING POINTS INTO LOWER CORE.                              SRTCN 95	CONDENSE REMAINING POINTS INTO LOWER CORE. || SRTC N 95
+38	2249	OK	      KP=K-KK                                                           SPTCN 96	KP = K - KK || SPTCN 96
+39	2294	OK	      KKP=KP+1                                                          SRTCN 37	KKP = KP + 1 || SRTCN 37
+40	2336	OK	      DO 770 I=1,KP                                                     SRTCN 3d	DO 770 I=1,KP || SRTCN 3d
+41	2376	COUNT 18/7	      IF(X(I) .NE. CLR) GC TO 77)                                               	IF(X(I) .NE. CLR) GC TO 77) || \mathcal{SRTCN} \ 99
+42	2421	COUNT 13/8	      DO 76C J=KKP,K                                                            	DO 76C J=KKP, K || SRiCN_1 \cdot i
+43	2465	OK	      IF(X(J) .EQ. CLR) GC TO 76.                                       SRTCN1:1	IF(X(J) .EQ. CLR) GC TO 76. || SRTCN1:1
+44	2507	COUNT 0/9;COUNT 18/8	                                                                                	 || \mathcal{SRTCN1.2}
+45	2551	COUNT 0/9	                                                                        SRTCN1.3	 || SRTCN1.3
+46	2594	COUNT 0/8	                                                                        SRTCNI.4	 || SRTCNI.4
+47	2636	COUNT 18/8	      GO TO 758                                                                 	GO TO 758 || \mathcal{S}RTCN1:5
+48	2680	OK	  760 CONTINUE                                                          SRTCN1:6	760 CONTINUE || SRTCN1:6
+49	2724	OK	  765 CALL ERROR(PROGRM,-755,ISOUT)                                     SRTCNI17	765 CALL ERROR(PROGRM,-755,ISOUT) || SRTCNI17
+50	2768	OK	  768 KKP=J+1                                                           SRTGN1.8	768 KKP=J+1 || SRTG N1.8
+51	2812	OK	  77C CONTINUE                                                          SRTCN1:9	77C CONTINUE || SRTC N1:9
+52	2854	OK	      ILOOP=0                                                           SRTCN1:G	ILOOP = 0 || SRTC N1: G
+53	2895	OK	      K=KP                                                              SRTCN111	K = KP || SRTCN111
+54	2937	COUNT 21/8	      GO TO 40                                                                  	GO TO 40 || \partial R T \Gamma . N i 1 2
+55	2980	OK	 1000 FORMAT( 5X, 3F10.0)                                               SRTCN1:3	1000 FORMAT( 5X, 3F10.0) || SRTCN1:3
+56	3021	COUNT 9/8	 2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6)                                        	2L00 FORMAT( 3F10.0, 10X, A1C, 10X, A6) || SRTGN:114
+57	3064	OK	 3CCO FORMAT(1H0)                                                       SRTUN115	3CCO FORMAT(1H0) || SRTUN115
+58	3112	COUNT 10/8	      ENÜ                                                                       	ENÜ || SR.TCN11.6
+59	3153	COUNT 3/2	                                                                                	169
+60	3289	COUNT 62/19;COUNT 37/5	                                                                                	\int_{0}^{1} \sin \theta \, d\theta = \frac{1}{2} \sin \theta \, d\theta || \text{خَتْمَتْمَمْ نَمْحَطَلْ مَسْتَمْ}

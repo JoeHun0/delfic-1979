@@ -1,0 +1,61 @@
+1	30	COUNT 3/21	                                                                                	---
+2	80	COUNT 3/13	                                                                                	---
+3	748	OK	      DIMENSION ALT(256),ATP(256),PRS(256),RLH(256),RHC(256),ETA(256)   DYMEX121	DIMENSION ALT(256),ATP(256),PRS(256),RLH(256),RHC(256),ETA(256) || DYMEX121
+4	783	OK	      DIMENSION NET(     1,     1),NETSU(     1),WAVG(    35,     6)    DTMEX122	DIMENSION NET( 1, 1),NETSU( 1),WAVG( 35, 6) || DTMEX122
+5	833	OK	      DIMENSION  USUM（    35,     1,     6）， VSUM（    35,     1,     6) DTMEX123	DIMENSION USUM（ 35, 1, 6），VSUM（ 35, 1, 6) || DTMEX123
+6	876	OK	      DIMENSION DXSUM(    35,     1,     6),DYSUM(    35,     1,     6) DTMEX124	DIMENSION DXSUM( 35, 1, 6),DYSUM( 35, 1, 6) || DTMEX124
+7	919	OK	      DIMENSION  RSUM(    35,     1,     6),CAVS(    35),HDAV(     6)   DTMEX125	DIMENSION RSUM( 35, 1, 6), CAVS( 35), HDAV( 6) || DTMEX125
+8	962	OK	      DIMENSION ZBH(  35), ZCH(  35), TIMUP(   6), MARY(   1)           DTMEX126	DIMENSION ZBH(35), ZCH(35), TIMUP(6), MARY(1) || DTMEX126
+9	1005	OK	      DIMENSION   WFZ(    35,     1,     6),TSUM(    35)                DTMEX127	DIMENSION WFZ( 35, 1, 6), TSUM( 35) || DTMEX127
+10	1048	COUNT 31/37	                                                                        OTHEX128	DATA ICF JCF MAFF NCF NOATF K8HF LTIMF || OTHEX128
+11	1091	OK	     1       /  1   ,  1   ,   1  ,  1   ,    1 ,  35  ,    6 /         OTMEX129	1 / 1 , 1 , 1 , 1 , 1 , 35 , 6 / || OTMEX129
+12	1133	OK	      NATF=256                                                          OTMEX130	NATF=256 || OTMEX130
+13	1177	OK	      ISIN =NUHTAP( 1)                                                  OTMEX131	ISIN =NUHTAP(1) || OTMEX131
+14	1219	OK	      ISOUT=NUMTAP（ 2）                                                  OTMEX132	ISOUT=NUMTAP（2） || OTMEX132
+15	1262	OK	      IPOUT=NUMTAP( 3)                                                  DTMEX133	IPOUT=NUMTAP(3) || DTMEX133
+16	1306	OK	      JPARN=NUMTAP( 4)                                                  DTMEX134	JPARN=NUMTAP(4) || DTMEX134
+17	1349	OK	      DO 1 N=1,NCF                                                      DTMEX135	DO 1 N=1,NCF || DTMEX135
+18	1391	OK	    1 NETSU(N)=0                                                        DTMEX136	1 NETSU(N)=0 || DTMEX136
+19	1434	OK	      00 2 J=1，JCF                                                      DTMEX137	002 J=1，JCF || DTMEX137
+20	1476	OK	      DO 2 I=1,ICF                                                      DTMEX138	DO 2 I=1,ICF || DTMEX138
+21	1520	OK	    2 NET(I,J)=0                                                        DTMEX139	2 NET (I, J) = 0 || DTMEX139
+22	1565	COUNT 9/11	                                                                        OTMEX140	3 M=1，MARF || OTMEX140
+23	1607	OK	    3 MARY(M)=0                                                         OTMEX141	3 MARY(M) =0 || OTMEX141
+24	1650	OK	      DO 4 K=1，KBHF                                                     DTMEX142	DO 4 K=1，KBHF || DTMEX142
+25	1694	OK	      CAVS(K)=0.                                                        OTMEX143	CAVS(K) = 0. || OTMEX143
+26	1734	OK	      TSUM(K)=0.                                                        DTMEX144	TSUM(K) = 0. || DTMEX144
+27	1779	OK	      ZBH（K）=0.                                                         DTMEX145	ZBH（K）=0. || DTMEX145
+28	1822	COUNT 11/10	                                                                        DTMEX146	4. ZCH(K) = 0. || DTMEX146
+29	1864	OK	      DO 5 L=1，LTIMF                                                    DTNEX147	DO 5 L=1，LTIMF || DTNEX147
+30	1907	OK	      HDAV（L）=J.                                                        DTMEX148	HDAV（L）=J. || DTMEX148
+31	1950	OK	      TIMUP(L)=0.                                                       DTMEX149	TIMUP(L) = 0. || DTMEX149
+32	1991	OK	      DO 5 K=1,KBHF                                                     DTMEX150	DO 5 K=1,KBHF || DTMEX150
+33	2025	COUNT 14/15	                                                                        DTMEX151	5 WAVG(K, L) = 0.0 || DTMEX151
+34	2080	OK	      00 6 L=1，LTIMF                                                    DTMEX152	006 L=1，LTIMF || DTMEX152
+35	2122	OK	      DO 6 N=1,NDATF                                                    DTMEX153	DO 6 N=1,NDATF || DTMEX153
+36	2165	OK	      DO 6 K=1，KBHF                                                     DTMEX154	DO 6 K=1，KBHF || DTMEX154
+37	2208	OK	      HFZ（K，N，L）=C.                                                     DTMEX155	HFZ（K，N，L）=C. || DTMEX155
+38	2249	OK	      USUM（K，N，L）=0.                                                    DTMEX156	USUM（K，N，L）=0. || DTMEX156
+39	2291	OK	      VSUM（K，N，L）=0.                                                    DTMEX157	VSUM（K，N，L）=0. || DTMEX157
+40	2337	OK	      DXSUM(K,N,L)=0.                                                   DTMEX158	DXSUM(K,N,L)=0. || DTMEX158
+41	2378	OK	      DYSUM(K,N,L)=0.                                                   DTMEX159	DYSUM(K,N,L)=0. || DTMEX159
+42	2421	OK	    6 RSUM(K,N,L)=0.                                                    DTMEX160	6 RSUM(K,N,L)=0. || DTMEX160
+43	2463	OK	COMMENCE READING DATA INPUTS FROM TAPES ISIN AND JFARN                  DTMEX161	COMMENCE READING DATA INPUTS FROM TAPES ISIN AND JFARN || DTMEX161
+44	2505	OK	      CALL       DTMINT(ALT,ATP,PRS,RLH,RHO,ETA,NATF)                   DTMEX162	CALL DTMINT(ALT,ATP,PRS,RLH,RHO,ETA,NATF) || DTMEX162
+45	2549	OK	CONSTRUCT AND FILL IN THE ATMOSPHERIC LATTICE AND UPDATE STRUCTURE      DTMEX163	CONSTRUCT AND FILL IN THE ATMOSPHERIC LATTICE AND UPDATE STRUCTURE || DTMEX163
+46	2593	OK	COPY IN AND PROCESS WIND AND TURBULENCE DATA                            DTMEX164	COPY IN AND PROCESS WIND AND TURBULENCE DATA || DTMEX164
+47	2635	OK	      CALL       DATIN(NET,NETSU,Z8H,ZCH,TIMUP,USUM,VSUM,RSUM,WFZ,      DTMEX165	CALL DATIN(NET,NETSU,Z8H,ZCH,TIMUP,USUM,VSUM,RSUM,WFZ, || DTMEX165
+48	2680	OK	     10XSUM,DYSUM,CAVS,MARY,ICF,JCF,NCF,MARF,K8HF,NDATF,LTIMF)          DTMEX166	10XSUM,DYSUM,CAVS,MARY,ICF,JCF,NCF,MARF,K8HF,NDATF,LTIMF) || DTMEX166
+49	2715	COUNT 42/41	                                                                        DTMEX167	COMPUTE WEIGHTED SUMS OF WIND AND TURBULENCE DATA || DTMEX167
+50	2764	OK	      CALL       SUMOAT(NET,NETSU,ZBH,ZCH,HAVG,HDAV,USUM,VSUM,RSUM,HFZ, DTMEX168	CALL SUMOAT(NET,NETSU,ZBH,ZCH,HAVG,HDAV,USUM,VSUM,RSUM,HFZ, || DTMEX168
+51	2808	OK	     1TIMUP,DXSUM,DYSUM,ICF,JCF,NCF,KBHF,NDATF,LTIMF)                   DTMEX169	1TIMUP,DXSUM,DYSUM,ICF,JCF,NCF,KBHF,NDATF,LTIMF) || DTMEX169
+52	2851	OK	CALCULATE THE DIFFUSIVE TRANSPORT OF PARCELS ACCEPTED FROM TAPE JPARN   DTMEX170	CALCULATE THE DIFFUSIVE TRANSPORT OF PARCELS ACCEPTED FROM TAPE JPARN || DTMEX170
+53	2893	OK	COPY OUT RESULTS ONTO TAPE IPOUT                                        DTMEX171	COPY OUT RESULTS ONTO TAPE IPOUT || DTMEX171
+54	2935	OK	      CALL       SPRVS(NET,NETSU,ZBH,ZCH,TIMUP,USUM,VSUM,DXSUM,DYSUM,   DTMEX172	CALL SPRVS(NET,NETSU,ZBH,ZCH,TIMUP,USUM,VSUM,DXSUM,DYSUM, || DTMEX172
+55	2978	OK	     1RSUM,HFZ,CAVS,HDAV,TSUM,HAVG,ALT,ATP,PKS,RLH,RHO,ETA,             DTMEX173	1 RSUM, HFZ, CAVS, HDAV, TSUM, HAVG, ALT, ATP, PKS, RLH, RHO, ETA, || DTMEX173
+56	3013	OK	     2ICF,JCF,NCF,KBHF,NDATF,LTIMF,NATF)                                DTMEX174	2ICF,JCF,NCF,KBHF,NDATF,LTIMF,NATF) || DTMEX174
+57	3066	OK	      RETURN                                                            DTMEX175	RETURN || DTMEX175
+58	3111	OK	      END                                                               DTMEX176	END || DTMEX176
+59	3150	COUNT 3/2	                                                                                	113
+60	3264	COUNT 3/8;COUNT 3/7	                                                                                	--- || ---
+61	3292	COUNT 250/62	                                                                                	The image contains a block of text that appears to be a paragraph or a section of a document. The text is written in a formal, academic style, and it seems to be discussing a topic related to research or academic work. However, the specific content of the text is not clearly visible in the provided image.

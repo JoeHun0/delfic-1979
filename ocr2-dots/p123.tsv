@@ -1,0 +1,5 @@
+32	1773	OK	   8  FORMAT(1HC,10%, 45HZBP(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE ,E        	8 FORMAT(1HC,10%, 45HZBP(1)AND ZMIN DO NOT AGREE WITHIN TOLERANCE ,E
+48	2462	OK	  202 KÄHX=K                                                                    	202 KÄHX=K
+50	2548	COUNT 0/12	                                                                                	
+52	2636	COUNT 18/7	                                                                                	IP<sub>1</sub>=I+1
+55	2764	OK	      TEMP=ZCH(I)                                                               	TEMP=ZCH(I)

@@ -1,0 +1,5 @@
+36	2248	COUNT 33/32	                                                                                	1.04  YC = YO + (YT - YO) * (XC - XO) / (XT - XO)
+42	2508	OK	      YC=YU                                                                     	YC = YU
+50	2847	OK	  110 XC=XO+(XT-XO)*(YC-YO)/(YT-YO)                                             	110  XC = XO + (XT - XO) * (YC - YO) / (YT - YO)
+52	2935	OK	  11 1XC=XC+A0ISP                                                               	111 XC=XC+A0ISP
+53	2978	COUNT 37/11	                                                                                	\forall C = YC \leftrightarrow \exists D ISP

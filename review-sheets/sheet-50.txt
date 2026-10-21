@@ -1,0 +1,12 @@
+589	p153	34	TIE	31	8	       WRITE(I,OUT,2     ) (JMAF(K),K=1,KDC)
+590	p154	63	NONE	20	28	raw: \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac{1}{2} \times \frac
+591	p156	8	TIE	38	7	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPACP     ,IPOUT     ,
+592	p156	10	TIE	29	6	     2MARRAY    ,MBTAPE    ,MXREQ     ,SD        ,INPAM
+593	p156	14	TIE	20	6	     3XMIN      ,YMAX      ,?MIN      ,ZMIN
+594	p156	49	TIE	38	7	      COMMON /CONDAT/       IC(20)    ,IHOB      ,IPNCH     ,IPOUT     ,
+595	p156	55	TIE	20	6	     3XMIN      ,YMAX      ,YHIN      ,ZMIN
+596	p156	56	TIE	29	7	      COMMON /PARDAT/       4SQ       ,3SQ       ,COSA      ,F         ,
+597	p156	59	NONE	4	68	raw: \text{خُفْتُ مُطَّعَةٌ لِعُطْمَحَةٍ}
+598	p157	1	NONE	14	2	raw: text
+599	p157	5	NONE	28	7	raw: COMMON /RUNDAT/ C ,CF6 ,FSUP ,ICTR , (
+600	p157	8	NONE	54	7	raw: COMMON /FISHIN/ ABEGN(700), ABUND0(700), BRANCH(130), CAPFIS,

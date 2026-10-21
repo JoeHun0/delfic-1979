@@ -1,0 +1,56 @@
+1	10	COUNT 0/23;COUNT 8/1	                                                                                	 || \text{S}
+2	48	COUNT 0/11;COUNT 34/2	                                                                                	 || \text{a} \cdot \text{b} \cdot \text{c}
+3	458	OK	C                                                                       DCSN  ó1	C || DCSN  ó1
+4	502	COUNT 25/6	C                                                                               	C || \text{DCSN} \quad \text{E2}
+5	543	COUNT 3/6	  C14 IF(ABS(T)-10.)114,20,25                                                   	C14 IF (ABS(T) - 10.) 114, 20, 25 || ---
+6	587	OK	  114 NSTAT=14                                                          DCSN  64	114 NSTAT=14 || DCSN 64
+7	631	COUNT 11/10	                                                                        DCSN  65	WORD=WORD01 || DCSN 65
+8	673	OK	      GO TO 1                                                           DCSN  66	GO TO 1 || DCSN 66
+9	716	OK	C                                                                       DCSN  67	C || DCSN 67
+10	760	OK	C     TEST FOR R.LT.1 ANCMALY                                           DCSN  68	C TEST FOR R.LT.1 ANCMALY || DCSN 68
+11	802	OK	C                                                                       DCSN  69	C || DCSN 69
+12	846	OK	  029  IF(R-1.) 12J,13,13                                               DCSN  70	029 IF(R-1.) 12J,13,13 || DCSN 70
+13	888	OK	  120 NSTAT=20                                                          DCSN  71	120 NSTAT=20 || DCSN 71
+14	931	COUNT 11/10	                                                                        DCSN  72	WORD=WORD04 || DCSN 72
+15	975	OK	      GO TO 1                                                           DCSN  73	GO TO 1 || DCSN 73
+16	1019	OK	C                                                                       DCSN  74	C || DCSN 74
+17	1060	OK	C     TEST FOR ZLMT ANOMALY                                             DCSN  75	C TEST FOR ZLMT ANOMALY || DCSN 75
+18	1106	OK	C                                                                       DCSN  76	C || DCSN 76
+19	1147	COUNT 25/24	                                                                        DCSN  77	C13 IF (Z - ZLMT) 008, 008, 1.13 || DCSN 77
+20	1182	OK	  113 NSTAT=13                                                          DCSN  78	113 NSTAT=13 || DCSN 78
+21	1233	OK	      WORD=WORD3                                                        DCSN  79	WORD=WORD3 || DCSN 79
+22	1277	COUNT 1/16	                                                                        DCSN  80	C || DCSN 80
+23	1318	COUNT 10/9;COUNT 7/6	                                                                                	001 MHWYA = 3 || DC>SN 81
+24	1362	OK	      WRITE(ISOUT,88) NSTAT,WORD                                        DCSN  82	WRITE(ISOUT,88) NSTAT,WORD || DCSN 82
+25	1405	OK	  008 RETURN                                                            DCSN  83	008 RETURN || DCSN 83
+26	1447	OK	      END                                                               DCSN  84	END || DCSN 84
+27	1791	OK	+OECK,DERIV                                                             DERIV  1	+OECK, DERIV || DERIV 1
+28	1832	OK	      SUBROUTINE DERIV                                                  DERIV  2	SUBROUTINE DERIV || DERIV 2
+29	1877	OK	C                                                                       DERIV  3	C || DERIV 3
+30	1920	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DERIV  4	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DERIV 4
+31	1963	OK	C                                                                       DERIV  5	C || DERIV 5
+32	2005	COUNT 199/71	                                                                        DERIV  6	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DERIV 6
+33	2049	OK	C                                                                       DERIV  7	C || DERIV 7
+34	2091	OK	C     COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR DERIV  8	C COMPUTES DIFFERENTIALS OF THE CLOUD PROPERTIES IN PREPARATION FOR || DERIV 8
+35	2138	OK	C     INTEGRATION OVER A TIME STEP                                      DERIV  9	C INTEGRATION OVER A TIME STEP || DERIV 9
+36	2181	OK	C                                                                       DERIV 10	C || DERIV 10
+37	2220	COUNT 200/71	                                                                        DERIV 11	C * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DERIV 11
+38	2265	OK	C                                                                       DERIV 12	C || DERIV 12
+39	2307	OK	       COMMON /ATMOS/ NAT, ALT(256),  ATP(256),  PkS(256), RLH(256),    DERIV 13	COMMON /ATMOS/ NAT, ALT(256), ATP(256), PkS(256), RLH(256), || DERIV 13
+40	2350	OK	     1        RHO(256), ETA(256), NHODO, ZV(1J0),  VX(10C), VY(1J0)     DERIV 14	1 RHO(256), ETA(256), NHODO, ZV(1J0), VX(10C), VY(1J0) || DERIV 14
+41	2393	COUNT 43/42	                                                                        DERIV 15	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,ORM ,| || DERIV 15
+42	2437	OK	     1 0S    ,OST   ,DST0  ,DST1  ,OST2  ,DT    ,DU    ,DWT    ,OX     ,DERIV 16	1 0S ,OST ,DST0 ,DST1 ,OST2 ,DT ,DU ,DWT ,OX , || DERIV 16
+43	2479	OK	     2 DZ    ,ED    ,EK    ,EPS   ,ES    ,HLF   ,KS    ,KSV    ,MWYA   ,OERIV 17	2 DZ ,ED ,EK ,EPS ,ES ,HLF ,KS ,KSV ,MWYA , || OERIV 17
+44	2521	OK	     3 N     ,NNN   ,P     ,PW    ,R     ,RA    ,RL    ,RM     ,RZT    ,DERIV 18	3 N , NNN , P , PW , R , RA , RL , RM , RZT , || DERIV 18
+45	2565	COUNT 34/33	                                                                        DERIV 19	4 S ,SAVE ,SHAPE ,SMALLT,T ,TE ,U ,V ,WT ,! || DERIV 19
+46	2607	OK	     5 X     ,XE    ,Z     ,ZBFR  ,ZLMT  ,SPARE                         DERIV 20	5 X ,XE ,Z ,ZBFR ,ZLMT ,SPARE || DERIV 20
+47	2651	OK	      COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR                 DERIV 21	COMMON /INITL/ F, PHI, SSAM, TME, TMPG, TMPS, VPR || DERIV 21
+48	2696	OK	C                                                                       DERIV 22	C || DERIV 22
+49	2736	COUNT 199/71	                                                                        DERIV 23	C  * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * || DERIV 23
+50	2780	OK	C                                                                       DERIV 24	C || DERIV 24
+51	2824	COUNT 0/4	                                                                        DERIV 25	 || DERIV 25
+52	2867	OK	C                                                                       DEKIV 26	C || DEKIV 26
+53	2908	OK	C                                                                       DEFIV :7	C || DEFIV :7
+54	2951	COUNT 59/7	C     OBTAIN VALUES OF AMBIENT TEMPERATURE, PRESSURE ,RELATIVE HUMIDITY         	C     OBTAIN VALUES OF AMBIENT TEMPERATURE, PRESSURE, RELATIVE HUMIDITY || \mathcal{C} \in \mathbb{R} \times \mathbb{V} \quad \mathcal{J} \in
+55	3037	COUNT 25/26;COUNT 57/7	                                                                                	CALL TROL(Z,NAT,ALT,AIP,T) || \mathcal{S} \mathcal{E} : \mathcal{I} \mathcal{V} : \mathcal{L}
+56	3082	COUNT 29/7	      CALL TRPL(2.NAT .AIT.PRS.PS                                               	CALL TRPL(2.NAT .AIT.PRS.PS || \text{f i f o d T i i} \quad \text{a a}

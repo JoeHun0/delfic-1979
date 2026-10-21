@@ -1,0 +1,39 @@
+1	11	COUNT 0/16;COUNT 0/2	                                                                                	 || 
+2	792	COUNT 28/27;COUNT 0/7	                                                                                	IF (EOF (INTP) .NE. J.(1) GO TO 307 || 
+3	837	OK	      READ(INTP,14) (ABEGN(J),J=1,632)                                  PAM1 602	READ (INTP, 14) (ABEGN(J), J=1,632) || PAM1 602
+4	872	OK	        IF(NAME .EQ. FISSID) GO TO 308                                  PAM1 603	IF (NAME .EQ. FISSID) GO TO 308 || PAM1 603
+5	927	OK	  306 CONTINUE                                                          PAM1 604	306 CONTINUE || PAM1 604
+6	970	OK	  307 CONTINUE                                                          PAM1 605	307 CONTINUE || PAM1 605
+7	1009	OK	      WRITE(KOUT.6001) FISSIO                                           PAM1 6:6	WRITE (KOUT.6001) FISSIO || PAM1 6:6
+8	1042	OK	 6C01 FORMAT( 1HC,  8H FISSIC=A6, 18H NOT FOUND IN FILE)                PAM1 637	6C01 FORMAT ( 1HC, 8H FISSIC=A6, 18H NOT FOUND IN FILE) || PAM1 637
+9	1088	OK	       CALL ERROR(6H PAH1 ,-6001, ISOUT)                                PAM1 608	CALL ERROR(6H PAH1 ,-6001, ISOUT) || PAM1 608
+10	1139	COUNT 0/7	  3GB REWIND INTP                                                               	3GB REWIND INTP || 
+11	1181	OK	      HSCL=HOB/TW**C.33333333                                           PAM1 610	HSCL=HOB/TW**C.33333333 || PAM1 610
+12	1224	OK	      IF (EMITN.LE.O.O) GC TO 100                                       PAM1 611	IF (EMITN.LE.O.O) GC TO 100 || PAM1 611
+13	1272	COUNT 0/1	C                                                                               	C || 
+14	1309	COUNT 27/28;COUNT 0/7	                                                                                	CONVERT HOB FROM METERS TO FEET. || 
+15	1359	COUNT 0/3	C                                                                               	C || 
+16	1398	OK	      HOB=HOB+3.28084                                                   PAM1 615	HOB=HOB+3. 28084 || PAM1 615
+17	1442	OK	      HSCL=HSCL*3.26084                                                 PAM1 616	HSCL=HSCL*3.26084 || PAM1 616
+18	1485	OK	      IF (HSCL.LT.36.0) GO TO 274                                       PAM1 617	IF (HSCL.LT.36.0) GO TO 274 || PAM1 617
+19	1529	OK	      AL3F0M=J.0                                                        PAM1 618	AL3F0M=J.0 || PAM1 618
+20	1573	COUNT 0/7	      GO TO 287                                                                 	GO TO 287 || 
+21	1612	OK	  274 IF (HSCL)276,277,275                                              PAM1 620	274 IF (HSCL)276,277,275 || PAM1 620
+22	1646	COUNT 53/51	                                                                        PAM1 621	275 FOM=1.0-HSCL/SQRT(4.24*HSCL*HSCL-234.0*HSCL+4225.) || PAM1 621
+23	1701	COUNT 0/7	      GO TO 286                                                                 	GO TO 286 || 
+24	1741	OK	  276 IF (HSCL.LT.-2.C) GO TO 278                                       PAM1 623	276 IF (HSCL.LT.-2.C) GO TO 278 || PAM1 623
+25	1786	OK	  277 FOM=1.0                                                           PAM1 624	277 FOM=1.0 || PAM1 624
+26	1828	OK	      GO TO 286                                                         PAM1 625	GO TO 286 || PAM1 625
+27	1871	OK	  278 ALBFOM = 1.E4                                                     PAM1 626	278 ALBFOM = 1.E4 || PAM1 626
+28	1914	OK	      GO TO 287                                                         PAM1 b27	GO TO 287 || PAM1 b27
+29	1956	OK	  286 ALBFOM = ALBFOM*FOM                                               PAM1 628	286 ALBFOM = ALBFOM*FOM || PAM1 628
+30	1999	OK	  287 ALBFOM = ALBFOM*EMITN                                             PAM1 629	287 ALBFOM = ALBFOM*EMITN || PAM1 629
+31	2044	COUNT 7/6	      GO TO 101                                                                 	GO TO 101 || PAM1 63U
+32	2087	COUNT 0/5	  100 LMAX= 0                                                                   	100 LMAX= 0 || 
+33	2130	COUNT 5/4	  101 CONTINUE                                                                  	101 CONTINUE || PAM1 b
+34	2170	OK	      CALL FRATIO                                                       PAM1 633	CALL FRATIO || PAM1 633
+35	2211	OK	     1    (SLOTHP ,TMSO   ,MCHN   )                                     PAM1 634	1 (SLOTHP ,TMSO ,MCHN ) || PAM1 634
+36	2259	COUNT 0/5	      RETURN                                                                    	RETURN || 
+37	2302	COUNT 0/4	      END                                                                       	END || 
+38	3154	COUNT 0/3	                                                                                	
+39	3319	COUNT 0/26;COUNT 0/2	                                                                                	 || 

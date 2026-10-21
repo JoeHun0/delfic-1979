@@ -1,0 +1,4 @@
+1	0	COUNT 3/20	                                                                                	---
+34	2146	OK	      X2=X1+NXMAP*OGX                                                           	X2=X1+NXMAP*OGX
+36	2233	OK	      REWIND KTAPE                                                              	REWIND KTAPE
+47	3277	COUNT 3/38	                                                                                	---

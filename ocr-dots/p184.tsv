@@ -1,0 +1,63 @@
+1	1	COUNT 0/13;COUNT 0/3	                                                                                	 || 
+2	588	OK	*DECK,PAM2                                                              PAM2   1	* DECK, PAM2 || PA M2 1
+3	631	COUNT 0/5	      SUBROUTINE PAH2                                                           	SUBROUTINE PAH2 || 
+4	673	OK	C                                                                       PAM2   3	C || PAM2 3
+5	714	COUNT 0/5	C     R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS                              	C R C TOMPKINS -- US ARMY NUCLEAR DEFENSE LABS || 
+6	755	OK	C   EXECUTIVE PROGRAM FOR THE TIME-DEPENDENT PART OF THE PARTICLE       PAM2   5	C EXECUTIVE PROGRAM FOR THE TIME-DEPENDENT PART OF THE PARTICLE || PAM2 5
+7	800	COUNT 1/12	                                                                        PAM2   6	C || PAM2 6
+8	842	COUNT 15/16	                                                                        FAM2   7	C ACTIVITY MODULE || FAM2 7
+9	887	COUNT 0/5	CALLED BY OPM2 AND PCHECK                                                       	CALLED BY OPM2 AND PCHECK || 
+10	930	OK	C                                                                       PAM2   9	C || PAM2 9
+11	967	COUNT 1/29	                                                                        PAM2  10	C || PAM2 10
+12	1017	OK	C                                                                       PAM2  11	C || PAM2 11
+13	1046	OK	C   FP(2J0)       ACTIVITY DENSITY IN EACH PARTICLE SIZE FRACTION       PAM?  12	C      FP(2J0)          ACTIVITY DENSITY IN EACH PARTICLE SIZE FRACTION || PAM? 12
+14	1098	COUNT 5/32	                                                                        PAM2  13	C ITAB || PAM2 13
+15	1141	COUNT 44/43	                                                                        PAM2  14	C      MASCHN                      MASS NUMBER REQUESTED FOR OUTPUT WITH JGO = 2 || PAM2 14
+16	1175	OK	C   SV(200)       FRACTION OF TOTAL SURFACE IN EACH PARTICLE SIZE CLASS PAM2  :5	C SV(200) FRACTION OF TOTAL SURFACE IN EACH PARTICLE SIZE CLASS || PAM2:5
+17	1225	OK	C                 DIVIDED BY FRACTION OF TOTAL VOLUME                   PAM2  16	C DIVIDED BY FRACTION OF TOTAL VOLUME || PAM2 16
+18	1274	OK	C                                                                       PAM2  17	C || PAM2 17
+19	1310	COUNT 1/24	                                                                        PAMZ  18	C || PAMZ 18
+20	1360	OK	C                                                                       PAM2  19	C || PAM2 19
+21	1399	OK	      COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME                      PAM2  20	COMMON /DECAY/ IGO,JC,KDOS,TENTER,TEXIT,TIME || PAM2 20
+22	1433	OK	      COMMON /FISHIN/ ABEGK(700),ABUNDO(70G),BRANCH(130),CAPFIS,        PAM2  21	COMMON /FISHIN/ ABEGK(700), ABUNDO(70G), BRANCH(130), CAPFIS, || PAM2 21
+23	1484	OK	     1  DCON(700),IBRA,IAUC,MAXNUC,MULT(11),NUCLID(700)                 PAM2  22	1 DCON(700), IBRA, IAUC, MAXNUC, MULT(11), NUCLID(700) || PAM2 22
+24	1518	COUNT 67/66	                                                                        PAM2  23	COMMON/INDUS/ALBFON, FAC(7,18), FOGRNY(7,18), ISO(18), LMAX, XLAM(7,18) | || PAM2 23
+25	1562	OK	      COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,MASCHN,PSIZE(200),     PAM2  24	COMMON /OUTPUT/ FISNUM,FF(200),FW,ITAB,JGO,MASCHN,PSIZE(200), || PAM2 24
+26	1616	OK	     1 FMASS(200),PACT(200)                                             PAM2  25	1 FMASS(200), PACT(200) || PAM2 25
+27	1658	OK	      COMMON /UTILTY,  KCUT,NPRNT(15)                                   PAM2  26	COMMON /UTILTY, KCUT,NPRNT (15) || PAM2 26
+28	1700	OK	      LOGICAL IGO,JD,KDOS,APRNT                                         PAM2  27	LOGICAL IGO, JD, KDOS, APRNT || PAM2 27
+29	1745	OK	C                                                                       PAM2  28	C || PAM2 28
+30	1783	COUNT 58/59	                                                                        PAM2  29	100 FORMAT ( // / 35X, 51HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE || PAM2 29
+31	1820	OK	     1CLASS//   4(6X, 5HPSIZE, 10X, 2HFP, 5X))                          PAM2  30	1CLASS// 4(6X, 5HPSIZE, 10X, 2HFP, 5X)) || PAM2 30
+32	1871	OK	  101 FORMAT( 8(1PE14.4))                                               PAM2  31	101 FORMAT ( 8(1PE14.4)) || PAM2 31
+33	1912	OK	  102 FORMAT(1H03X40HK FACTORS COMPUTEC FROM THE FP TABLE -  ,   1PE11.4PAM2  32	102 FORMAT(1H03X40HK FACTORS COMPUTEC FROM THE FP TABLE -, 1PE11.4 || PAM2 32
+34	1958	OK	     1,27X,1PE11.4)                                                     PAM2  33	1,27X,1PE11.4) || PAM2 33
+35	1990	OK	  103 FORMAT(1H+, 55X, 1EH(R-M**2)/(HR-KT), 22X, 17H(R-MI**2)/(HR-KT))  PAM2  34	103 FORMAT(1H+, 55X, 1EH(R-M**2)/(HR-KT), 22X, 17H(R-MI**2)/(HR-KT)) || PAM2 34
+36	2041	OK	  104 FORMAT(1H+, 55X, 11H(R-M**2)/KT, 27X, 12H(R-MI**2)/KT)            PAM2  35	104 FORMAT(1H+, 55X, 11H(R-M**2)/KT, 27X, 12H(R-MI**2)/KT) || PAM2 35
+37	2087	OK	C                                                                       PAM2  36	C || PAM2 36
+38	2129	OK	      00 101 = 1,200                                                    PAM2  37	00 101 = 1,200 || PAM2 37
+39	2174	OK	   10 FP(I) = 0.0                                                       PAM2  38	10 FP(I) = 0.0 || PAM2 38
+40	2216	OK	C                                                                       PAM2  39	C || PAM2 39
+41	2258	OK	      GO TO (1,2,3),JGO                                                 PAM2  40	GO TO (1,2,3), JGO || PAM2 40
+42	2303	OK	C                                                                       PAM2  41	C || PAM2 41
+43	2343	OK	    1 CALL GXPSR                                                        PAM2  42	1 CALL GXPSR || PAM2 42
+44	2387	OK	      IF (CAPFIS)3,3,4                                                  PAM2  43	IF (CAPFIS)3,3,4 || PAM2 43
+45	2431	OK	    4 CALL URAN                                                         P4M2  44	4 CALL URAN || P4M2 44
+46	2472	OK	    3 IF (LMAX)5,5,6                                                    PAM2  45	3 IF (LMAX)5,5,6 || PAM2 45
+47	2516	OK	    6 CALL INDOCC                                                       PAM2  46	6 CALL INDOCC || PAM2 46
+48	2560	OK	    5 IF(NPRNT(15)) RETURN                                              PAM2  47	5 IF (NPRNT(15)) RETURN || PAM2 47
+49	2603	OK	      NTA8=ITAB/4                                                       PAM2  40	NTA8=ITAB/4 || PAM2 40
+50	2645	OK	      IF(NTAB*4).LT. ITAB)NTAB=NTAB+1                                   PAM2  49	IF(NTAB*4) .LT. ITAB)NTAB=NTAB+1 || PAM2 49
+51	2688	OK	      WRITE (KOUT,100)                                                  PAM2  50	WRITE (KOUT, 100) || PAM2 50
+52	2721	COUNT 56/53	                                                                        PAM2  51	WRITE (KOUT,101) (PSIZE(I),FP(1),PSIZE(I+NTAB),FP(I+NTAB), || PAM2 51
+53	2763	COUNT 63/61	                                                                        RAM2  52	1 PSIZE(I+2*NTAB),FF(I+2*NTAB),PSIZE(I+3*NTAB),FP(I+3*NTAB),I=1, || RAM2 52
+54	2818	OK	     2 NTA9)                                                            PA12  53	2 NTA9) || PA12 53
+55	2858	OK	      IF(JGO .EQ. 2) RETURN                                             PAH2  54	IF (JGO .EQ. 2) RETURN || PAH2 54
+56	2903	COUNT 10/9	                                                                        PAM2  55	CAYF4C= 1.0 || PAM2 55
+57	2947	COUNT 11/10	                                                                        P4M2  56	00 7 I=1, IYAG || P4M2 56
+58	2990	COUNT 20/18;COUNT 0/6	                                                                                	7 CAYFAC = CAYFAC + FP(I) || 
+59	3030	COUNT 16/14;COUNT 0/6	                                                                                	CAYFAC = CAYFAC/FH || 
+60	3078	COUNT 21/19;COUNT 0/6	                                                                                	CAYFA = CAYFAC • 3.861E-7 || 
+61	3119	COUNT 27/23;COUNT 0/6	                                                                                	WRITE (KOUT. 1C2) CAYFAC.CAYFA || 
+62	3172	COUNT 0/2	                                                                                	
+63	3295	COUNT 0/14;COUNT 0/7	                                                                                	 || 

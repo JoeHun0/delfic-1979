@@ -1,0 +1,12 @@
+541	p144	59	NONE	37	7	raw: A = \text{SINA} * \text{COSA} * (1.0/\text{VARY2} - 1.0/\text{VARX2}) * 2.0
+542	p144	60	NONE	17	7	raw: \beta = 4. 0 / \sqrt {A R X 2} / \sqrt {A R Y 2}
+543	p144	61	SINGLE	36	7	      CC= (COSA**2/VARX2 + SINA**2/VARY2)*2.:
+544	p144	62	TIE	13	7	      0 = 2.0*GAMA*CC
+545	p145	7	TIE	20	7	      NOB = (YPRML - YMIN)/OGY
+546	p146	23	SINGLE	31	3	  400 CALL ERROR(PROGRN,IRRO R,?OUT)
+547	p146	44	TIE	29	6	     1JC        ,NXMAP     ,NYMAP     ,NZ        ,GCUT      ,SSAM      ,
+548	p147	8	TIE	52	7	      X(K) = XMIN + (J-1)*DGX + (CNT - ONAP(NXMAP*(I-1)+J-1))*DGX/
+549	p147	18	TIE	40	7	      IF( K .GT. 300) CALL ERROR(PROGRM, -70L, ISOUT)
+550	p147	53	TIE	36	6	     1ISIN      ,ISOUT     ,JPOUT     ,KPOUT     ,KTAFE     ,LTAPE     ,
+551	p147	56	TIE	29	6	     1JC        •NXMAP     ,NYMAP     ,VZ        ,QCUT      ,SSAM      ,
+552	p148	1	NONE	13	19	raw: \text{1. 2. 3. 4. 5. 6. 7. 8. 9. 10. 11. 12. 13. 14. 15. 16. 17. 18. 19. 20. 21. 22. 23. 24. 25. 26. 27. 28. 29. 30. 31. 32. 33. 34. 35. 36. 37. 38. 39. 40. 41. 42. 43. 44. 45. 46. 47. 48. 49. 50. 51. 52

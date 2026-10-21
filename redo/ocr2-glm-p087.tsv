@@ -1,0 +1,10 @@
+1	7	COUNT 3/7	                                                                                	---
+2	30	COUNT 3/27	                                                                                	---
+5	546	OK	  C14 IF(ABS(T)=10.)114,20,20                                                   	C14 IF (ABS(T) = 10.) 114, 20, 20
+23	1319	OK	  001 MHYA = 3                                                                  	001 MHYA = 3
+39	2297	OK	       COMMON /ATMOS/ NAT， ALT(256)，  ATP(256)，  PRS(256)， RLH(256)，            	COMMON/ATMOS/NAT，ALT(256)，ATP(256)，PRS(256)，RLH(256)，
+41	2384	OK	      COMMON /CLOUD/ CHANGE,CMLR  ,C2    ,C3    ,C6    ,DEK    ,DRM    ,        	COMMON /CLOUD/ CHANGE,CMLR ,C2 ,C3 ,C6 ,DEK ,DRM ,
+43	2471	COUNT 24/33	                                                                                	2 DZ ED EK EPS ES HLF KS KSV MHYA
+51	2819	OK	      DZ=U                                                                      	DZ=U
+56	3035	COUNT 26/25	                                                                                	CALL TRPL(Z,NAT ,ALI,A1P,T2)
+57	3072	OK	      CALL TRPL(2.NAT .ALT.PRS.P3                                               	CALL TRPL(2.NAT .ALT.PRS.P3

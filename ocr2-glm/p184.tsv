@@ -1,0 +1,17 @@
+1	1	COUNT 3/13	                                                                                	---
+22	1433	OK	      COMMON /FISHIN/ ABEGN(700),ABUNDO(70G),BRANCH(130),CAPFIS,                	COMMON/FISHIN/ABEGN(700),ABUNDO(70G),BRANCH(130),CAPFIS,
+27	1658	OK	      COMMON /UTILTY/  KCUT,NPRNT(15)                                           	COMMON /UTILTY/ KCUT,NPRNT(15)
+30	1783	COUNT 58/59	                                                                                	100 FORMAT(///35X, 51HTABLE OF TOTAL ACTIVITY IN EACH PARTICLE SIZE
+38	2129	OK	      00 101 = 1,260                                                            	00 101 = 1,260
+47	2516	OK	    6 CALL INDGC2                                                               	6 CALL INDGC2
+49	2603	OK	      NTA8=ITA8/4                                                               	NTA8=ITA8/4
+50	2645	COUNT 28/30	                                                                                	IF (NTAB% .LT. ITAB) NTAB = NTAB+1
+52	2721	COUNT 57/53	                                                                                	WRITE (KOUT,101) (PSIZE(I),FP(I),PSIZE(I+NTAB),FP(I+NTAB))。
+53	2763	COUNT 64/61	                                                                                	1. PSIZE（I+2*NTAB），FF（I+2*NTAB），PSIZE（1+3*NTAB），FP（I+3*NTAB），I=1，
+56	2903	COUNT 10/9	                                                                                	CAYFAC=1.0
+57	2947	COUNT 11/10	                                                                                	00 7 I=1，IYAQ
+58	2990	COUNT 26/18	                                                                                	7. CAYFAC  \times  CAYFAC  +  FP (I)
+59	3030	COUNT 16/14	                                                                                	CAYFAC = CAYFAC/FH
+60	3078	COUNT 21/19	                                                                                	CAYFA = CAYFAC·3.861E-7
+61	3119	COUNT 27/23	                                                                                	WRITE (KOUT. 1C2) CAYFAC. CAYFA
+63	3295	COUNT 8/14	                                                                                	markdown

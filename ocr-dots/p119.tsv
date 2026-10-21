@@ -1,0 +1,54 @@
+1	7	COUNT 0/34;COUNT 0/2	                                                                                	 || 
+2	803	OK	*DECK,DUMPER                                                            DUMPE  1	*DECK, DUMPER || DUMPE 1
+3	848	OK	      SUBROUTINE DUMPER(XO,YO,ZO,TO,SIGXO,SIGYO,PMAS,PSIZ,RO,INCOMP,    DUMPE  2	SUBROUTINE DUMPER(XO,YO,ZO,TO,SIGXO,SIGYO,PMAS,PSIZ,RO,INCOMP, || DUMPE 2
+4	887	OK	     1ISOUT,IPOUT,NC3)                                                  DUMPE  3	1ISOUT,IPOUT,NC3) || DUMPE 3
+5	933	OK	C                                                                       DUMPE  4	C || DUMPE 4
+6	976	OK	C     H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978     DUMPE  5	C H. G. NORMENT, ATMOSPHERIC SCIENCE ASSOCIATES - DECEMBER 1978 || DUMPE 5
+7	1019	OK	C                                                                       DUMPE  6	C || DUMPE 6
+8	1061	COUNT 0/71	                                                                        DUMPE  7	 || DUMPE 7
+9	1106	OK	C                                                                       DUMPE  8	C || DUMPE 8
+10	1147	OK	C     SUBROUTINE GUMPER WRITES THE NBLK RECORDS -                       DUMPE  9	C SUBROUTINE GUMPER WRITES THE NBLK RECORDS - || DUMPE 9
+11	1191	COUNT 1/37	                                                                        DUMPE 10	C || DUMPE 10
+12	1235	OK	C     ONTO TAPE IPOUT, AND IF MC(3) IS NOT ZERO, ONTO TAPE ISOUT.       DUMPE 11	C ONTO TAPE IPOUT, AND IF MC(3) IS NOT ZERO, ONTO TAPE ISOUT. || DUMPE 11
+13	1271	OK	C                                                                       DUMPE 12	C || DUMPE 12
+14	1319	COUNT 0/71	                                                                        DUMPE 13	 || DUMPE 13
+15	1364	OK	C                                                                       DUMPE 14	C || DUMPE 14
+16	1405	OK	      DIMENSION XOUT(100),YOUT(100),ZOUT(100),TOUT(100),ROUT(100)       DUMPE 15	DIMENSION XOUT(100),YOUT(100),ZOUT(100),TOUT(100),ROUT(100) || DUMPE 15
+17	1443	OK	      DIMENSION SYOT(100),SXOT(100),PSOT(100),PDEP(100)                 DUMPE 16	DIMENSION SYOT(100), SXOT(100), PSOT(100), PDEP(100) || DUMPE 16
+18	1494	OK	      DATA N/O/, NBLK/100/                                              CUMPE 17	DATA N/O/, NBLK/100/ || CUMPE 17
+19	1527	OK	  807 FORMAT(5X,9E12.4)                                                 DUMPE 18	807 FORMAT(5X,9E12.4) || DUMPE 18
+20	1579	COUNT 59/60	                                                                        DUMPE 19	817 FORMAT 1H0, 23X, 8HBLOCK OFIS, 52H TRANSPORTED PARCEL PROPERTIES || DUMPE 19
+21	1622	OK	     1 WRITTEN ON IPOUT TAPE/ 12X, 2HXO, 10X, 2HYO, 10X, 2HZO, 10X,     DUMPE 20	1 WRITTEN ON IPOUT TAPE/ 12X, 2HXO, 10X, 2HYO, 10X, 2HZO, 10X, || DUMPE 20
+22	1659	OK	     2 2HTO, 8X, 5HSIGXO, 7X, 5HSIGYO, 9X, 2HRO, 9X, 4HPSI7, 8X,4HPMAS/)DUMPE 21	2 2HTO, 8X, 5HSIGXO, 7X, 5HSIGYO, 9X, 2HRO, 9X, 4HPSI7, 8X, 4HPMAS/) || DUMPE 21
+23	1701	OK	 8023 FORMAT( 1H0, 14X, 59PRESUME PRE-TRANSPORT PARCEL PROPERTY LIST FORDUMPE 22	8023 FORMAT ( 1H0, 14X, 59PRESUME PRE-TRANSPORT PARCEL PROPERTY LIST FOR || DUMPE 22
+24	1752	OK	     1 PARTICLE SIZEE12.5, 7H METERS)                                   DUMPE 23	1 PARTICLE SIZEE12.5, 7H METERS) || DUMPE 23
+25	1787	OK	 8024 FORMAT( 2X,  4HNSEQ, 6X, 2HXP, 10X, 2HYP,  10X, 2HZP, 10X, 2HTP,  DUMPE 24	8024 FORMAT ( 2X, 4HNSEQ, 6X, 2HXP, 10X, 2HYP, 10X, 2HZP, 10X, 2HTP, || DUMPE 24
+26	1830	OK	     1 3X, 4HPMAS, 8X, 4HRWAF, 7X, 4HZLOW, 8X, 4HDWAF/)                 DUMPE 25	1 3X, 4HPMAS, 8X, 4HRWAF, 7X, 4HZLOW, 8X, 4HDWAF/) || DUMPE 25
+27	1873	OK	      IF(INCOMP.GT.0) GO TC 80E3                                        DUMPE 26	IF(INCOMP.GT.0) GO TC 80E3 || DUMPE 26
+28	1922	OK	      N = N + 1                                                         DUMPE 27	N = N + 1 || DUMPE 27
+29	1965	OK	      XOUT(N)=X0                                                        DUMPE 28	XOUT(N) = X0 || DUMPE 28
+30	2008	OK	      YOUT(N)=YO                                                        DUMPE 29	YOUT(N) = YO || DUMPE 29
+31	2050	COUNT 11/10	                                                                        DUMPE 30	70OUT(N) = 70 || DUMPE 30
+32	2093	OK	      TOUT(N)=TO                                                        DUMPE 31	TOUT(N) = TO || DUMPE 31
+33	2138	COUNT 27/13	                                                                        DUMPE 32	\text{SXOT(N)} = \text{SIGXO} || DUMPE 32
+34	2179	OK	      SYOT(N)=SIGYO                                                     DUMPE 33	SYOT(N) = SIGYO || DUMPE 33
+35	2222	OK	      PSOT(N)=PSIZ                                                      CUMPE 34	PSOT(N) = PSIZ || CUMPE 34
+36	2267	OK	      PDEP(N)=PMAS                                                      DUMPE 35	PDEP(N) = PMAS || DUMPE 35
+37	2307	COUNT 24/10	                                                                        DUMPE 36	\text{ROUT}(N) = \text{RO} || DUMPE 36
+38	2352	OK	      IF(N.LT.NBLK) RETURN                                              DUMPE 37	IF(N.LT.NBLK) RETURN || DUMPE 37
+39	2395	OK	COPY OUT BUFFER DATA VECTORS ONTO TAPE IPOUT IF THEY ARE FULL           DUMPE 38	COPY OUT BUFFER DATA VECTORS ONTO TAPE IPOUT IF THEY ARE FULL || DUMPE 38
+40	2428	COUNT 17/18	                                                                        COMPE 39	8063 WRITE(IPOUT) N || COMPE 39
+41	2479	OK	      IF( MC3 .GT. 1) WRITE(ISOUT,817) N                                DUMPE 40	IF( MC3 .GT. 1) WRITE(ISOUT,817) N || DUMPE 40
+42	2524	OK	      IF(N.EQ.0) RETURN                                                 DUMPE 41	IF (N.EQ.0) RETURN || DUMPE 41
+43	2566	COUNT 62/61	                                                                        DUMPE 42	WRITE(IPOUT) (XCLT(M),YOUT(M),ZOUT(M),TOUT(N),SXOT(M),SYOT(M),I || DUMPE 42
+44	2610	OK	     1ROUT(M),PSOT(M),PDEP(N),N=1,N)                                    DUMPE 43	1 ROUT(M), PSOT(M), PDEP(N), N=1,N) || DUMPE 43
+45	2653	OK	      IF(MC3 .LE. 1) GO TO 8064                                         DUMPE 44	IF (MC3 .LE. 1) GO TO 8064 || DUMPE 44
+46	2695	COUNT 66/65	                                                                        DUMPE 45	WRITE(ISOUT,BC7) (XOUT(M),YOUT(M),ZOUT(M),TOUT(M),SXOT(M),SYOT(M),I || DUMPE 45
+47	2740	OK	     1ROUT(M),PSOT(M),PDEF(M),M=1,N)                                    DUMPE 46	1 ROUT(M), PSOT(M), PDEF(M), M=1,N) || DUMPE 46
+48	2782	OK	      WRITE(ISOUT,8023) PSIZ                                            OUMPE 47	WRITE (ISOUT,8023) PSIZ || OUMPE 47
+49	2824	OK	      WRITE(ISOUT,8024)                                                 DUMPE 48	WRITE(ISOUT,8024) || DUMPE 48
+50	2869	OK	 3064 N=0                                                               DUMPE 49	3064 N=0 || DUMPE 49
+51	2912	OK	      RETURN                                                            DUMPE 50	RETURN || DUMPE 50
+52	2953	OK	      END                                                               DUMPE 51	END || DUMPE 51
+53	3152	OK	                                       116                                      	116
+54	3306	COUNT 0/55;COUNT 0/5	                                                                                	 || 

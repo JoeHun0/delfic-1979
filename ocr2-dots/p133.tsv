@@ -1,0 +1,27 @@
+3	602	COUNT 39/38	                                                                                	1 OXSUM(K,N,L),OYSUM(K,N,L),RSUM(K,N,L) :
+10	902	OK	 1304 WAVG(LK,L)=0.0                                                            	1304 WAVG(LK,L)=0.0
+11	946	OK	      HDAV(L)=0.                                                                	HDAV(L)=0.
+12	986	COUNT 14/15	                                                                                	00 921 N=1,NDATX
+14	1072	OK	      CALL CNTR(NET,NETSU,A,XG,YG,ICF,JCF,NCF)                                  	CALL CNTR(NET,NETSU,A,XG,YG,ICF,JCF,NCF)
+21	1374	COUNT 52/31	                                                                                	\text{OXSUM}(1,N,L) = \text{OXSUM}(1,N,L) * \text{ZSTEP}
+23	1460	COUNT 0/35	                                                                                	
+28	1667	COUNT 71/43	                                                                                	\text{VSUM}(K, N, L) = \text{VSUM}(K, N, L) * \text{ZSTEP} + \text{VSUM}(K-1, N, L)
+30	1753	COUNT 0/45	                                                                                	
+31	1796	COUNT 74/46	                                                                                	\text{DXSUM}(K,N,L) = \text{DXSUM}(K,N,L) * \text{ZSTEP} + \text{DXSUM}(K-1,N,L)
+32	1847	COUNT 77/49	                                                                                	920 \text{ OYSUM}(K,N,L) = \text{DYSUM}(K,N,L) * \text{ZSTEP} + \text{DYSUM}(K-1,N,L)
+33	1881	COUNT 154/62	                                                                                	\text{HAV} = (\text{HAV} + (\text{DXSUM}(\text{KBHX}, \text{N}, \text{L}) + \text{OYSUM}(\text{KBHX}, \text{N}, \text{L}))) * (\text{ZMAX} - \text{ZBH}(\text{KBHX})) / 2.
+37	2052	OK	     1WRITE(ISOUT,13)(ZCH(K),USUM(K,N,L),VSUM(K,N,L),OXSUM(K,N,L),              	1WRITE(ISOUT,13)(ZCH(K),USUM(K,N,L),VSUM(K,N,L),OXSUM(K,N,L),
+39	2138	OK	      IF(MC(2) .NE. 1  .AND.  MC(1) .EQ. 1) WRITE(ISOUT,8)L,N,HAV               	IF(MC(2) .NE. 1 .AND. MC(1) .EQ. 1) WRITE(ISOUT,8)L,N,HAV
+41	2234	COUNT 0/5	                                                                                	
+42	2279	COUNT 0/5	                                                                                	
+44	2361	COUNT 56/21	                                                                                	\text{AREA}N = (\text{XR}-\text{XL}) * (\text{YU}-\text{YL})
+45	2392	OK	      HOAV(L)=HOAV(L)+ H AV*A*FEAN                                              	HOAV(L) = HOAV(L) + HAV*A*FEAN
+47	2489	COUNT 43/42	                                                                                	9210 WAVG(KL,L) = WAVG(KL,L) + WFZ(KL,N,L) * AREAN
+49	2569	OK	      HDAV(L)=HDAV(L)/AREA                                                      	HDAV(L) = HDAV(L)/AREA
+50	2620	OK	      00 9215 KL=1,KB%X                                                         	00 9215 KL=1,KB%X
+55	2835	OK	      00 9922 KL=1,KBHX,6                                                       	00 9922 KL=1,KBHX,6
+57	2919	COUNT 42/34	                                                                                	3922 WRITE(ISOUT,17) (K, WAVG(K,L), K=KL, KLP5)
+58	2966	COUNT 11/9	                                                                                	322 CONTINUE
+59	3008	COUNT 6/5	                                                                                	RETURN
+60	3054	COUNT 0/2	                                                                                	
+62	3301	COUNT 0/18	                                                                                	

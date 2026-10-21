@@ -1,0 +1,5 @@
+10	973	OK	      IF(ABS(VSUN(K,N,LTIM)).GE.1.0E-30)GO TO 1253                              	IF (ABS(VSUN(K,N,LTIM)).GE.1.0E-30) GO TO 1253
+22	1490	OK	      IF(FORM .EQ. INPU) GO TO 2100                                             	IF(FORM .EQ. INPU) GO TO 2100
+37	2135	OK	 2200 CALL       TRIDIN(NE7,NETSU,ZCH,DXSUM,DYSUM,DUP,LTIM,ICF,JCF,NCF,         	2200 CALL TRIDIN(NE7,NETSU,ZCH,DXSUM,DYSUM,DU P,LTIM,ICF,JCF,NCF,
+57	2997	COUNT 19/18	                                                                                	5003 WRITE(ISOUT,23)
+61	3290	COUNT 0/30	                                                                                	

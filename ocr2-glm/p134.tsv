@@ -1,0 +1,8 @@
+33	1897	COUNT 44/45	                                                                                	COMMON / INDEX/ ICX, JCX, BHX, LTIMX, NAT, NCX, NOA TX
+43	2326	COUNT 33/32	                                                                                	DATA PROGRAM ，EPSILO ，EPSZ ，QBRT ，VARL
+44	2371	COUNT 35/38	                                                                                	1 /6HTRANP .0005 .0.1 .333333333, 1.0E9 /
+54	2798	OK	      EPST=EPSILO*TMAX                                                          	EPST=EPSILO*TMAX
+55	2843	OK	      XO=XP                                                                     	XO=XP
+57	2930	OK	      ZO=ZP                                                                     	ZO=ZP
+61	3102	OK	      RO=0.                                                                     	RO=0.
+63	3294	OK	                                                                     ---        	---

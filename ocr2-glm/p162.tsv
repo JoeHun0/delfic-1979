@@ -1,0 +1,15 @@
+18	1202	OK	       T1=T1*1.0E-6                                                             	T1=T1*1.0E-6
+19	1243	OK	       T2=T2*1.0E-6                                                             	T2=T2*1.0E-6
+25	1501	COUNT 12/11	                                                                                	TEXIT=T2-TGZ
+27	1590	COUNT 67/58	                                                                                	985 GO TO (9u, 70, 79, 70, 69, 68, 73, 78, 78, 73, 8L, 60, 8U, 71, 8U, 60, 8U, 8U). NREL
+28	1632	COUNT 35/34	                                                                                	68 CF6=CF6*(1.0 - (TIME/TEXIT)*(0.26))
+29	1671	COUNT 33/27	                                                                                	59 CF6=32.3344*CF6*(TIME)**(-0.26)
+30	1713	COUNT 11/12	                                                                                	TIME=3600.0
+32	1792	COUNT 7/6	                                                                                	1. JG0=2
+34	1888	COUNT 40/37	                                                                                	IF( IH08 .GT. 0 ) CALL ERROR( PROGRM, -71, ISCUT )
+36	1972	COUNT 13/12	                                                                                	73 KOOS=.TRUE.
+44	2315	OK	 6C   NORO=NORO+1                                                               	6 C NORO=NORO+1
+49	2535	OK	      X1=X4IN                                                                   	X1=X4IN
+57	2868	OK	      REWIND KTAPE                                                              	REWIND KTAPE
+59	2961	OK	      00 302 IMAP=1,NMAP                                                        	00 302 IMAP=1, NMAP
+63	3106	COUNT 53/57	                                                                                	(ICONT NE. 0 AND CROLBL NE. 3LANK)CALL CONTOR(CONTUR, CROLBL,

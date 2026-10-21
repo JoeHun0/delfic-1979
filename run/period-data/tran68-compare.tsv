@@ -1,0 +1,15 @@
+card	nuclide	1968 tape (DASA-1800-V pp.208-220)	ours 1979	class	note
+#281	Zr-106	1.0E-2 s -> Nb-106	1 s (DCON 6.931470E-1)	FIX	p175 L39 f2 -> 6.931470E+1: sign glyph is a + missing its upper stroke (minus signs on the line are plain bars); dots read E+1
+#378	Ru-116	1.0E-2 s -> Rh-116	0.1 s (DCON 6.931470E+0)	FIX	p175 L57 f2 -> 6.931470E+1: scan and all six OCR readings show E+1 (broken 1); the E+0 was ours
+#42	Ge-77	11.33 h	11.30 h	1968->1979 change	DCON 1.703901E-5 = ln2/11.30 h exactly
+#373-374	In-115m	4.51 h	4.511 h	1968->1979 change	rounding/revision
+#498	Sb-128	8.6 h	8.608 h -> 8.6 h	FIX (dconcheck + user)	p176 L18 f4 2.238847E-5 (6 for 8)
+#506-507	Sb-129	4.6 h	4.589 h	kept (user reads 9)	not an exact ln2/T; 8 would give 4.6 h exactly; open
+#531-532	I-131	8.05 d	8.058 d -> 8.05 d	FIX (Crocker 1967 + 1968)	p176 L25 f1 9.965882E-7 (5 for 6)
+#685	Nd-151	13.0 min	13.597 min -> 13.0 min	FIX (user + glyph check)	p176 L55 f1 is 8.886500E-4 = ln2/780 s; four broken glyphs, see JUDGEMENT-CALLS 21 Oct
+#703	Nd-153	10 or 18 s (degraded)	18 s	same?	ours exactly ln2/18; kept
+#124 #375 #594	Rb-87 In-115 La-138	4.3E10 y, 6E14 y, 1.1E11 y	lambda 1.0E-15 /s	design	DELFIC cap on long half-lives
+#451	Sn-123m	125 d	1.25 d	original oddity	known (Crocker comparison); 1979 scan reads 1.25 d
+#695-696	Eu-152m	0.25 -> Sm-152, 0.75 -> Gd-152	0.75 / 0.25	original oddity	known (Crocker comparison); 1979 reversed vs 1968
+#76 #338	Br-81, Mo-112	stable Br-81 listed before the A=81 chain; 112Mo inside A=111	-	order only	
+all other 744 cards	-	identical: nuclide, half-life (value, unit, exponent), branch fraction, daughter	-	same	checked by GLM/LightOn/text-layer readers or on the page image

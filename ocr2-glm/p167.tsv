@@ -1,0 +1,14 @@
+4	660	OK	     20PNIO(12) ,T1        ,T2        ,WFMAS(2J0)                               	20PNIO(12) ,T1 ,T2 ,WFMAS(2J0)
+5	702	OK	      COMMON /DECAY/ IGO,JC,KD(S,TENTER,TEXIT,TIME                              	COMMON /DECAY/ IGO, JC, KD(S, TENTER, TEXIT, TIME
+12	1004	OK	      NE=3                                                                      	NE=3
+17	1218	OK	   5C DD 777 IP=1,NIJ                                                           	5C DD 777 IP=1,NIJ
+23	1479	OK	   75 GO TO(171,120,103,104,105,106,120,120,115,106,101,112,113,120,101,        	75 GO TO(171,120,103,104,105,106,120,120,115,106,101,112,113,120,101,
+24	1522	OK	     1      (11.101.101).NFEQ                                                   	1 (11.101.101).NFEQ
+29	1737	OK	  101 F=PYAS(IP)                                                                	101 F=PYAS(IP)
+37	2079	OK	  104 IF(PSIZ(IP) .GE. T1  .ANC.  PSIZ(IP) .LE. T2) GC TO 120                   	104 IF(PSIZ(IP) .GE. T1 .ANC. PSIZ(IP) .LE. T2) GC TO 120
+38	2123	OK	      GO TO 233                                                                 	GO TO 233
+47	2508	OK	      IF(NREQ .EQ. 9  .OR.  NREQ .EQ. 1J) GO TC 12C                             	IF(NREQ .EQ. 9 .OR. NREQ .EQ. 1J) GO TC 12C
+49	2594	COUNT 50/45	                                                                                	IF(NREQ .EQ. 6) C=C  ^{>}  (1.0 - (TENTER/TEXIT)  ^{*}  (L.26))
+54	2810	OK	      GO TO 243                                                                 	GO TO 243
+58	2984	OK	      GO TO 203                                                                 	GO TO 203
+62	3152	COUNT 43/42	                                                                                	121 IF (A3S(PSIZ(IP) - PS(J)) .LT. 1. JE-6) GO TO 125

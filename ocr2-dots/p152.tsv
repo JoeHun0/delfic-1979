@@ -1,0 +1,14 @@
+1	16	COUNT 0/41	                                                                                	
+3	534	COUNT 19/68	                                                                                	CODE INSERTION POINTS
+5	618	COUNT 11/9	                                                                                	179 CONTINUE
+9	787	COUNT 29/28	                                                                                	1702 IF(LEFT-NX) 1021,1022,1022
+17	1130	COUNT 0/4	                                                                                	
+20	1263	OK	 2023 00 110 ISTRIP=1,N                                                         	2023 00 110 ISTRIP=1,N
+32	1779	OK	      XCIN=VLEFT+DGX                                                            	XCIN=VLEFT+DGX
+34	1864	OK	 103  KINC=INC-1                                                                	103 KINC=INC-1
+43	2251	OK	      KN=KL+KIND                                                                	KN=KL+KIND
+45	2338	OK	      DO 301 K=KL,KH                                                            	DO 301 K=KL,KH
+46	2381	OK	      IF(OMAP(K).LT.CUTNAP)OMAP(K)=0.0                                          	IF (OMAP(K).LT.CUTNAP) OMAP(K)=0.0
+59	2928	COUNT 7/8	                                                                                	GO TO 109
+61	3012	COUNT 20/21	                                                                                	109 H = ALOG10(ONAP(K))
+62	3060	COUNT 14/15	                                                                                	41=AMOD(H,1.0)
