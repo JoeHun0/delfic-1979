@@ -49,6 +49,8 @@ grep "K FACTORS\|SUM OF MAP" opm.out
 
 From a fresh checkout, build in this order: `python3 -I tools/build.py .` and `sh run/mk-icrm.sh` (ICRM),
 then `python3 -I tools/build.py . --deck dtm` and `sh run/mk.sh` (DTM/OPM).
+`tools/build.py .` reports 21 "error lines" for the ICRM deck: these are CDC dialect (`*...*` strings in FORMATs,
+linear subscripts on 2-D arrays) that `tools/port.py` translates; the ported code compiles cleanly.
 Compile flags: `-std=legacy -fdefault-real-8 -fdefault-integer-8 -fno-automatic -finit-local-zero`
 (8-byte words for the CDC 6600's 60-bit ones, static locals as on the CDC).
 
