@@ -303,3 +303,5 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
 22 Oct (user hand-check of review-sheets/ornl-tranp-label100.png: "a zero"): TRANP p135 L17 label 160 -> 100, and its only branch p135 L32 GO TO 160 ->
   GO TO 100 (the same broken middle glyph; most OCR runs read 100 there, ORNL 100). Replaces the 20 Oct context call 160. cardfix.tsv rows p135 L17/L32
   (backup cardfix.tsv.bak-label100). Label only: no effect (output identical).
+22 Oct (user hand-check of review-sheets/ornl-tranp-goto100.png): the GO TO on p135 L32 "looks more like a 0 but not sure". Consistent with the
+  label the user read as a zero (p135 L17); both stay 100 (no change).
