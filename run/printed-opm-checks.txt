@@ -12,4 +12,4 @@ table of total activity in each particle size class (PSIZE, FP):
 4.5499E-04 7.0648E+09 | 1.5454E-04 8.3653E+09 | 5.8659E-05 1.0629E+10 | 6.7923E-06 2.8264E+10
 3.8534E-04 7.2142E+09 | 1.3760E-04 8.5651E+09 | 5.0936E-05 1.1106E+10 |
 3.3110E-04 7.3638E+09 | 1.2257E-04 8.7799E+09 | 4.3767E-05 1.1677E+10 |
-sum of map ordinates (PDF p. 53): .2855?8E+05, 5th digit broken: 3 or 0 (we read .285538; ORNL TM-2022/2602 .285508, TM-2010/220 .285505; the last digit is a clear 8). Hand-check sheet review-sheets/ornl-mapsum-digit.png (22 Oct)
+sum of map ordinates (PDF p. 53): .285508E+05. The 5th digit is broken (read 3 until 22 Oct). ORNL TM-2022/2602 reads .285508 and TM-2010/220 .285505; the last digit is a clear 8. Settled from the book's own map and FP table: run/map-sum/README.md; sheet review-sheets/ornl-mapsum-digit.png

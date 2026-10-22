@@ -305,3 +305,13 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   (backup cardfix.tsv.bak-label100). Label only: no effect (output identical).
 22 Oct (user hand-check of review-sheets/ornl-tranp-goto100.png): the GO TO on p135 L32 "looks more like a 0 but not sure". Consistent with the
   label the user read as a zero (p135 L17); both stay 100 (no change).
+22 Oct (printed sum of map ordinates, PDF p. 53, 5th digit broken; the user could not decide 3 or 0 and asked whether it is testable):
+  READ .285508E+05 (was .285538E+05). Test, run/map-sum/ (README.md, predict.sh, estimate.py): OPM's map is linear in FP per class, so our
+  transport run with FP overridden by the book's printed FP table predicts the book's map: sum .285518E+05 (FP rounding +-0.03, worst 0.2).
+  The book's map, typed by ORNL (TM-2022/2602 Listing 23) and its 105 large cells checked on our scan: ~76 print exactly the predicted digits,
+  13 one unit higher, 7 one lower, 3 two-three lower, 11 unreadable; the clear differences cancel. ORNL's typing has two gross misreads
+  (36000 col 2 9.843 for 9.043; 27000 col 2 9.552 for 9.957). Estimated book sum 28549.8 .. 28551.3 (+-0.5) from the cells, 28551.8 from
+  the FP table. 3 (28553.8) is 2-4 too high; 0 (28550.8) fits; 1 (28551.8) would fit the sum but not the glyph (no stem, no flat foot).
+  The glyph itself (top and bottom arcs, centre dot, open left) fits 0 as well as 3; this printer's 0 also has a centre dot (see +05).
+  The reading moves print AWAY from our run (ours/book 1.00006 -> 1.00016), so it is not a fit to the model. Sheet updated:
+  review-sheets/ornl-mapsum-digit.png. No deck change.

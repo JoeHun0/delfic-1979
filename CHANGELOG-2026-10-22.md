@@ -26,9 +26,11 @@ Effect on the test problem: none (K 6.1026E+09, sum of map ordinates .285554E+05
 | 12 | SETTLE (ICRM) | p057 L31–49 | `CORR` → `CDRR` (8 cards) | rename.tsv |
 | 13 | FORMAT texts | p117 L30/38/60, p118 L3, p121 L52, p123 L29/31, p126 L40, p129 L4/6, p132 L37/42, p134 L50, p139 L11, p142 L54, p143 L8 | CLOLD→CLOUD, FLANE→PLANE, TRANSFORT→TRANSPORT, RATIC CF→RATIO OF, LOACED→LOADED, WINC→WIND, MA)IMUM→MAXIMUM, RAW KIND→RAW WIND, 1HJ→1H0 (×2) and the 8017 text, IMPACTEC→IMPACTED, UPCATE→UPDATE, CFOSSWIND→CROSSWIND, DOWNWINC→DOWNWIND, ZF→ZP, PCINT→POINT, OXSUM/OYSUM→DXSUM/DYSUM | cardfix.tsv |
 
+Reference value re-read (not a deck change): the book's printed sum of map ordinates is .285508E+05, not .285538E+05
+(broken 5th digit; tested against the book's own map and FP table, `run/map-sum/README.md`). Ours/book becomes 1.00016.
+
 Confirmed by the user, no change: TRANP p136 L32 `YT` (a malformed T, not Y1).
 
-Open (hand-check sheets `review-sheets/ornl-*.png`, nothing changed yet): LAYERS 10X/19X (p123 L26), ONEDIN 3X/8X (p126 L46), DUMPER 3X/9X (p119 L26), and the printed
-map-sum digit .2855?8 (3 or 0).
+Open (hand-check sheets `review-sheets/ornl-*.png`, nothing changed yet): LAYERS 10X/19X (p123 L26), ONEDIN 3X/8X (p126 L46), DUMPER 3X/9X (p119 L26).
 
 `tools/cardsheet.py` gained `--chars` (sample letters instead of digits, e.g. `--chars T1`), and its title line now widens the sheet.

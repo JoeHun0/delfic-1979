@@ -80,7 +80,8 @@ Run the whole chain with `run/dicrm`, then `run/mk.sh`, then `./ddtm < dtm-test-
 to printed precision (K within 0.01%).
 - Map cells agree with print to the last printed digit or so (0.980 before the Rh-109 fix, 1.004 before Sb-122, 1.002–1.007 before As-83).
 - The plume shape, extent and zero cells agree.
-- The sum of map ordinates is .285554E+05 against a printed .285538E+05 (1.00006).
+- The sum of map ordinates is .285554E+05 against a printed .285508E+05 (1.00016). The printed 5th digit is broken; it was read as 3
+  (.285538) until 22 Oct, when the book's own map and FP table showed it must be 0 (`run/map-sum/README.md`).
 - The PSIZE table is identical.
 - FP is 0.9993–1.0001 of print by class.
 - K is 6.1026E+09 against a printed 6.1020E+09 (1.0001).
@@ -210,7 +211,7 @@ yields and ERMs. Read with the local OCR models and on the page images, matched 
   None of these affect the test problem, whose solidification temperature is 2200 K.
 
 Te-134 is a chain-start ERM (it sets the A=134 normalisation), and it closed most of the remaining gap: K is now 6.1026E+09
-(1.0001 of print) and the sum of map ordinates .285554E+05 (1.00006). In the map row at y = 27000 m, eight of the ten cells match
+(1.0001 of print) and the sum of map ordinates .285554E+05 (1.00006 of the then-read .285538; 1.00016 of .285508, the 22 Oct reading). In the map row at y = 27000 m, eight of the ten cells match
 print to ±1 in the last digit (the others: +0.3% and +0.5%).
 
 All values changed on 21 Oct 2026 are listed in `CHANGELOG-2026-10-21.md`, with locations and backups.
@@ -239,7 +240,9 @@ modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf
   `626 NDTC1=NDATO`: the glyph is unreadable on both copies, so this is a context call. Reading `NDATC` would make every channelling event end in ERROR 616.
 - **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
   - three FORMAT spacings (LAYERS 10X/19X, ONEDIN 3X/8X, DUMPER 3X/9X);
-  - the printed map-sum digit: .2855?8, 3 (ours) or 0 (ORNL .285508). TM-2010/220's .285505 does not fit the clear final 8.
+- **The printed map sum is .285508E+05** (not .285538). Its broken 5th digit was tested against the book itself: our transport
+  with the book's FP table reproduces the book's map cell for cell and puts its sum at 28549.8-28551.8, which rules out 3 (28553.8)
+  (`run/map-sum/`). ORNL's typed book map also had two gross misreads (36000 col 2, 27000 col 2).
 - `src/settle.f` and the other per-routine files in `src/` (`advec.f`, `wnosft.f`, …, all 20 Oct 16:43) are raw-OCR output of the early
   `tools/assemble.py` pass. Nothing builds from them; the canonical decks are `src/icrm.f` and `src/dtm.f`.
 

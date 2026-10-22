@@ -49,7 +49,7 @@ Result:
 - BOIL (FRATIO's DATA card, 1968 report PDF p. 113): Br 331.8 confirmed; 2*3175 -> 2*3173 and 1754 -> 1764 fixed (user-
   confirmed); BOIL(11) 1650 kept (user reading; 1968 prints 1656). No effect on the test problem (solidification at 2200 K). Rh-109m and Pm-152 changed between 1968 and 1979 (1979 scan clear).
 - Effect on the test problem: K 6.1063E+09 -> 6.1026E+09 (print 6.1020E+09, x1.0001), almost all from Te-134 (a chain-start
-  ERM); FP by class 0.9993..1.0001 of print; sum of map ordinates .285554E+05 (print .285538E+05).
+  ERM); FP by class 0.9993..1.0001 of print; sum of map ordinates .285554E+05 (print .285508E+05, read .285538 until 22 Oct; see run/map-sum/).
 
 # DCON recheck (21 Oct 2026)
 

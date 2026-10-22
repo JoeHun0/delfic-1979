@@ -30,10 +30,8 @@ decide, we kept our reading. None of these is reached by the test problem (one m
 
 ## Other open points
 
-- **The printed sum of map ordinates** (PDF p. 53) is .2855?8E+05 with the 5th digit broken. We read 3 (.285538). ORNL
-  quotes .285508 (TM-2022/2602) and .285505 (TM-2010/220). The last digit is a clear 8. With 0, our run is 1.00016 of print.
-
-- **The last 0.01% of K** (6.1026E+09 against 6.1020E+09; map sum 1.00006). It could be one more misread table
+- **The last 0.01% of K** (6.1026E+09 against 6.1020E+09; map sum 1.00016 of the printed .285508E+05, whose broken 5th digit was
+  settled from the book's own map and FP table, `run/map-sum/README.md`). It could be one more misread table
   cell, the CDC's 60-bit arithmetic, or the printed K itself (its third digit is a broken 0; the printed FP
   table sums to 6.1022E+09).
 - **21 of 310 cloud-history cells** differ from print (`run/compare-cloud-history.tsv`). Most are faded print

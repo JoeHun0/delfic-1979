@@ -3,7 +3,7 @@
                            book (CDC 1979)   ORNL 1979 code     ours            ours/book
 K factor (R-m2/hr-kt)      6.1020E+09        6.0830E+09         6.1026E+09      1.0001
 K factor (R-mi2/hr-kt)     2.3560E+03        2.3486E+03         2.3562E+03      1.0001
-sum of map ordinates       .285538E+05       .284241E+05        .285554E+05     1.0001
+sum of map ordinates       .285508E+05       .284241E+05        .285554E+05     1.0002
 FP by class                                  book - 3.2E+07     0.9993 .. 1.0001 of book
 PSIZE                      identical to 5 digits
 map row 27000:  book .111 4.778 9.957 2.039 1.837 1.825 1.103 2.837 2.654 .853(-1)
@@ -26,3 +26,6 @@ Whole PAM tape checked against Tompkins 1968 (DASA-1800-V): Br-93 yield, Zr-106/
   code, FORMAT texts, the CNTR/SETTLE names). Rerun: K 6.1026E+09 and sum of map ordinates .285554E+05 unchanged; OPM output identical.
   The book's map sum prints .2855?8E+05 with the 5th digit broken: we read 3; ORNL quotes .285508 (TM-2022/2602) and .285505 (TM-2010/220).
   If 0, ours is 1.00016 of the book. On a hand-check sheet (review-sheets/ornl-mapsum-digit.png).
+22 Oct: the book's map sum is .285508E+05, not .285538 (broken 5th digit). The book's own FP table, fed into our transport,
+  reproduces the book's map cell for cell and puts the sum at 28549.8-28551.8; a 3 (28553.8) does not fit (run/map-sum/README.md).
+  Ours/book is therefore 1.00016 (table above updated).
