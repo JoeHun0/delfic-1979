@@ -281,3 +281,8 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
 22 Oct (user hand-check of review-sheets/ornl-tranp-y1.png): TRANP p136 L32 CALL BOUN(...,XT,YT,...): "looks like a malformed T". YT confirmed by
   the user (no change to the deck; the 20 Oct compile-pass fix Y1 -> YT stands). ORNL's y1 and the LightOn/dots readings are misreads of a T that
   lost its right arm. Not an original bug.
+22 Oct (user hand-check of review-sheets/ornl-tranp-v3ar.png): TRANP p137 L10 V3AR=VBARC -> VBAR=VBARC. The user reads the second glyph as a B (its left
+  stroke is lost on our scan; all five OCR runs read 3, ORNL TM-2022/2602 reads vbar). Confirmed by the user; this withdraws the 20 Oct entry
+  "V3AR=VBARC kept as printed ... Original bug": VBAR is raised to VBARC during channelling, as UBAR=UBARC is in the parallel branch (p137 L18).
+  cardfix.tsv row p137 L10 (backup cardfix.tsv.bak-vbar). Effect: none on the test problem (K 6.1026E+09, map sum .285554E+05, OPM and DTM output
+  identical; layer-by-layer parcel tape identical); channelling only happens in multi-cell nets.

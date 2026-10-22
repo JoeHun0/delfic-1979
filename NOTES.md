@@ -139,7 +139,6 @@ compile-driven proofreading. Each was checked on the scan.
 - NUCLID: two 8→6 slips (Se-84, Sm-159). The Sm-159 one made BATMAN loop on itself.
 
 Kept as printed:
-- `V3AR=VBARC` in TRANP is an original bug (reopened 22 Oct: ORNL's typed listing reads `VBAR=VBARC`; on a hand-check sheet).
 - TRANP's dummy `XC`.
 - `ZSCL=HOB/W**(1.0/3.4)`.
 
@@ -235,9 +234,9 @@ modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf
 - **Effect: none on the test problem.** K 6.1026E+09 and the sum of map ordinates .285554E+05 are unchanged, and the OPM and ICRM output are identical.
   The DTM output changes only in five text lines, which now match the book. A layer-by-layer run (MC(4)=1) gives a bit-identical parcel tape: the test
   problem has one met cell, so the fixed multi-cell paths still have no test.
-- **Confirmed by the user:** TRANP `BOUN(…,XT,YT,…)` is `YT`, a malformed T (ORNL's `y1` is a misread).
+- **Confirmed by the user:** TRANP `BOUN(…,XT,YT,…)` is `YT`, a malformed T (ORNL's `y1` is a misread). TRANP p137 L10 is
+  `VBAR=VBARC` (a B, not 3; fixed, so the former "original bug" `V3AR=VBARC` was our misread).
 - **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
-  - `V3AR` vs `VBAR`;
   - the faded `NDTC1=NDATC` vs ORNL's `NDATO`;
   - label 160 vs 100;
   - three FORMAT spacings (LAYERS 10X/19X, ONEDIN 3X/8X, DUMPER 3X/9X);
