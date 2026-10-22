@@ -17,9 +17,25 @@ changes the printed test problem at printed precision unless noted, but several 
 | 6 | BOIL(11), p185 L32 (FRATIO DATA card) | 1650.0 | The 1968 report's copy of the same card prints 1656.0, and a glyph vote says 6; our reader and all OCR read 1650. | only runs whose solidification temperature lies between 1650 and 1656 K |
 
 Sheets showing each of these with digit samples from the same page are in `review-sheets/` (`dcon-recheck.png`,
-`dcon-in115m.png`, `erm-*.png`, `boil-*.png`).
+`dcon-in115m.png`, `erm-*.png`, `boil-*.png`; for the DTM code cards below, `ornl-*.png`).
+
+## Doubtful characters in the DTM code (from the ORNL listing cross-check, 22 Oct 2026)
+
+ORNL/TM-2022/2602 prints its own typed copy of the 1979 DTM. Where it and our reading disagree and the scan cannot
+decide, we kept our reading. None of these is reached by the test problem (one met cell, homogeneous winds).
+
+| # | Card | We read | Alternatives and evidence | Matters for |
+|---|---|---|---|---|
+| 7 | TRANP p136 L32 | `CALL BOUN(…,XT,YT,…)` | ORNL and two OCR models read `Y1`. The glyph has a stem and a left arm but no foot (the 1s on the page have feet). `Y1` would be an undefined variable. | layer-by-layer transport, multi-cell nets |
+| 8 | TRANP p137 L10 | `V3AR=VBARC` | ORNL reads `VBAR=VBARC`. The glyph is open on the left like a 3. All OCR read 3. | channelling in multi-cell nets |
+| 9 | TRANP p137 L22 | `626 NDTC1=NDATC` | The last glyph is nearly gone. ORNL reads `NDATO`, which with the next card's clear `NDTO1=NDATC` stores the crossed pair for the oscillation test. | channelling |
+| 10 | TRANP p135 L17, L32 | label and `GO TO` 160 | The middle glyph is broken in both. Most OCR runs and ORNL read 100. | none (consistent pair) |
+| 11 | LAYERS p123 L26, ONEDIN p126 L46, DUMPER p119 L26 | `10X`, `//3X`, `1 3X` | ORNL reads 19X, 8X and 9X. The ONEDIN wind header uses 8X over the same data format, and SPRVS's copy of DUMPER's FORMAT 8024 prints 9X. | printed column layout only |
 
 ## Other open points
+
+- **The printed sum of map ordinates** (PDF p. 53) is .2855?8E+05 with the 5th digit broken. We read 3 (.285538). ORNL
+  quotes .285508 (TM-2022/2602) and .285505 (TM-2010/220). The last digit is a clear 8. With 0, our run is 1.00016 of print.
 
 - **The last 0.01% of K** (6.1026E+09 against 6.1020E+09; map sum 1.00006). It could be one more misread table
   cell, the CDC's 60-bit arithmetic, or the printed K itself (its third digit is a broken 0; the printed FP

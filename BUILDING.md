@@ -43,6 +43,7 @@ processor with the particle activity module (OPM/PAM).
 | `NOTES.md` | the full history and method |
 | `JUDGEMENT-CALLS.txt` | every reading decided from context rather than the glyph alone, with its evidence |
 | `CHANGELOG-2026-10-21.md` | the values changed during the last checking round, old → new |
+| `CHANGELOG-2026-10-22.md` | DTM/SETTLE misreads found against ORNL's typed listing (TM-2022/2602), old → new |
 | `OPEN-QUESTIONS.md` | what is still uncertain |
 
 ## How the transcription was checked

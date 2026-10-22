@@ -1,0 +1,225 @@
+p075	?	ATMR: card 'IF(ALT(1) .LE. 0.0(1)GO TO 200' printed with a stray '(1'; read as IF(ALT(1).LE.0.0) GO TO 200
+CRMINT: CHANGE=1?0. printed with a broken middle digit; read 100. (J-like glyph = 0 elsewhere)
+CXPN: DLTM = ?.? both digits the same broken glyph as the 0 after the point; read 0.0 (check against printed CX time intervals)
+DCSN: DATA statement has a faded gap between WORD1, and WORD3 (probably WORD2 and its value); WORD2 is not used in DCSN, so the visible 3 names/3 values are kept
+CRMW: 'WRITE(ISOUT,6) DETID' printed; read FORMAT 8 (the run-title format; 6 is only a continuation digit in CRMW) - CHECK
+CRM and DERIV: 'PA=RM/V*...' read RA= (cloud air density; RA is in COMMON /CLOUD/, used by CPFR and stored as CX(,10); PA appears nowhere else; R/P look alike in this print)
+RSXP: 'BM=M3/2' read BM=MB/2 (MB is the wafer loop index of DO 258; B prints like 3)
+RSXP: label targets 1150/1130/1063 do not exist; read 1100, 1100, 1003 (0/5/3/6 glyph damage)
+WNDSFT: '320 DELTRP =' read DELTRF (the variable used in the next two statements; P/F alike)
+RSXP: label of 'GDPST(5,J)=CMA' printed 1050-like; it must be 1759 (DO 1759 J=LODD,LL ends there)
+CRM: faded 'GO TO ?5' read GO TO 35 (label 35 is the loop head PW=...; no label 45 exists)
+DCSN: 'IF(ABS(T)-10.)114,20,2?' read 114,20,20 (no label 25)
+RSXP: label printed '76' on 'BZ=0.' read 78 (IF(IRAD)78,78,79 branches there; no other 78)
+RSXP: GO TO (240,25?),MBT read 258 (label 258 CONTINUE; no 256)
+WNDSFT: label '113' on WRITE(JPARN)N read 110 (IF(J-N)105,105,110 branches there)
+ICM FORMAT 198: 56H count does not match the text as transcribed (58 chars incl. spacing); set 58H. Error-message format only.
+CRMINT: SOILHT card '1.3?1E+7' read 1.881E+7 — the second digit is a 3/8 glyph; 1.881E7 is the constant of the soil heat capacity CS=781.6+0.5612*T-1.881E7/T**2 in DERIV, whose integral CRMINT computes, and it reproduces the printed test output exactly (was the 0.55% volume offset)
+p190 L56 FORMAT faded: 13 cells after METERS read as 10H(R*M**2)//) (Hollerith count fits)
+p174/p187/p190 DCON(730)/(7:0) = DCON(700): four clean copies print 700
+p194 L28 UNITC/UNITF Hollerith = 'CURIES  /)' and 'FISSIONS/)': cell grid shows 10 chars each ending in /) — the unit word closes FMTB's 9H field and the format
+p113 L37 TRIDIN 6th arg read DUM (glyph between DUP/DUM; scalar dummy either way, not declared)
+p135 L17 label 1?0 = 160 (GO TO 160 on same page); p137 L22 626 NDTC1=NDATC (last glyph faded; NDTC1 pairs with NDATC)
+p143 L51-54: labels print 6J0 / 610 / 6?0 (DO N, DO K, terminal); read all as 600 (one shared terminal) — DO 610 has no 610 anywhere; semantics identical either way. L56 WRITE(ISOUT,50?0) = 5000 (only 5000/5100/5200/5300/5900 FORMATs exist)
+p162 L27 computed GO TO targets 8L/6J/8u/6U = 80 (no label 60 in OPMEX; 80 NORD=NORD+1 prints as '6C'); L35 GO TO 79) = 790 (no label 791); L50 X2=X1+NXMAP*DGX (printed glyph Y-like; X extent uses DGX)
+p165 L29 continuation mark in col 6 faded: forced '2' (MAPDAT third card); p167 L23 computed GO TO 1)1/1J5 = 101/105 (labels on page: 101 103 104 105 106 107 112 113 120)
+p167 L49 / p162 L28 exponent (0.26): glyph broken; 0.26 = 1.26-1 from integrating t^-1.26, and p162 L29 32.3344 = 3600^0.26/0.26 confirms
+p184 L56 CAYFAC= ).0 read 0.0 (it is the accumulator of the DO 7 sum); p185 L31 BOIL 8th value 331.8 (Br b.p. 332 K; OCR 351.8); p184 L47/p193 L4 routine INDCD2 (deck card and format text '1OUTPUT OF INDCD2')
+TABLES p174 L52 f5 DCON 1.7?3901E-5: 3rd digit broken (0 or 2) — UNRESOLVED, settle from nuclide half-life
+TABLES p175 L5 f4 DCON 3.650017E-3: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L15 f2 DCON 1.001150E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L56 f1 DCON 1.865736E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L56 f3 DCON 4.260100E-5: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p175 L59 f5 DCON 2.507210E-4: broken glyph, kept the reading — resolved: 2.567211E-4 (45 min; same digits as p175 L61 f3 2.567211E-3)
+TABLES p176 L3 f4 DCON 3.274714E-8: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L7 f3 DCON 8.705801E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L32 f4 DCON 0.351169E-3: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L33 f1 DCON 6.171180E-7: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L34 f2 DCON 7.522050E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L49 f4 DCON 6.447086E-9: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L55 f1 DCON 8.436500E-4: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES p176 L55 f3 DCON 2.745553E-1: broken glyph, kept the reading — UNRESOLVED, check against the nuclide half-life
+TABLES DCON resolved by nuclide half-life (NUCLID same index, decoded AAA ZZZ M): Ge-77 1.703901E-5 (11.3 h); Br-85 3.850817E-3 (3 min, print 3.65L017);
+  Kr-87 1.481083E-4 (78 min); Sr-89 1.588621E-7 (50.5 d, print 1.5o8621); Sr-90 7.844465E-10 and Cs-137 7.522050E-10 (two-digit exponents, 28/29.2 y);
+  Y-91 1.383196E-7 (58 d, faded); Cd-115m 1.865706E-7 (43 d); Sn-119m 3.274504E-8 (245 d); Sn-121m 8.785801E-10 (25 y); Cs-136 6.171181E-7 (13 d);
+  A=145 card p176 L46 Ba 2 s/La 9 s/Ce 3 min/Pr 5.98 h/Nd stable (faded); Pm-147 8.447886E-9 (2.6 y); Sm-151 2.745553E-10 (80 y, print as is);
+  Ba-137m 4.443250E-3 (156 s); Y-91m 2.310490E-4 (50 min); p176 L32 f4 8.351169E-3 (83 s).
+  STILL UNRESOLVED (minor): In-115m p175 L56 f3 4.26?13?E-5 -> 4.268130E-5; Nd-151 p176 L55 f1 8.4965??E-4 -> 8.496507E-4.
+TABLES DCON p175 L29 Tc-99 1.045929E-13 (2.1e5 y, E-13 two-digit exponent); p175 L42 Pd-107 3.137786E-15 (7e6 y), Rh-107 5.251114E-4 (22 min); p175 L41 Ru-107 2.511402E-3 (4.6 min); p175 L43 Rh-108 3.850817E-2 (18 s)
+TABLES NUCLID: faint/garbled entries rebuilt from the packing (A*8^9+Z*8^6+M*8^5+low) with A/Z/M from chain neighbours and DCON half-lives; low code assumed 10004 (radioactive) / 00004 (stable) where the print is unreadable — A=109 chain p180 L61-62, A=72/73 p179 L60-61, A=142-145 p181. DCON Ce-144 p176 L45 f1 = 2.814924E-8 (285 d; exponent glyph broken, read E-6).
+TABLES NUCLID low codes 07760/04064/07722/10314/07474/07772/06510/07775/10002 normalised to 10004 (each one digit away; 6/8 and broken-0 confusions). Kept: x1042 (Br-87..90, I-137..139, I-128 11042), isomer codes 12301/13201/30004, Eu-152 12042/21042, Sb-122 20532.
+TABLES ISO(18) faint (p179 L55-58): set to the number of non-zero XLAM entries per isotope = 4 7 3 3 1 1 5 2 4 2 7 1 3 2 2 4 1 1 (legible glyphs: 1st = 4, 11th = 7). MULT = 8**1..8**11 (exact powers of 8, print agrees).
+TABLES ERM p177 L24 f3 printed -?.6?E-6 with broken first and third digits: read -8.660000E-6 (first glyph same shape as the 8 of L26 f4 8.900000E-7; OCR 66/68) — UNCERTAIN
+TABLES ERM uncertain glyphs (3-significant-digit prior): p177 L39 f2 -1.560000E-5 (4th char broken, could be -1.565), L42 f4 -4.950000E-6 (print -4.95?000), L47 f5 -3.360000E-6 (6 or 8), L48 f5 -2.030000E-6 (first decimal broken)
+TABLES XLAM uses ln2 = 0.693: confirmed K-40 1.689219E-17 (1.3e9 y), Cl-36 7.129820E-14 (3.08e5 y), Fe-59 1.743659E-7 (46 d), Si-31 7.347328E-5 (2.62 h), Ti-51 1.991379E-3 (5.8 min), 5.276864E-8 (152 d), 1.358824E-3 (8.5 min), Cl-38 3.080000E-4, 2.005208E-8 (400 d)
+TABLES XLAM p179 L3 f5 printed 1.28333E-34 (XLAM(1,13)); 0.693/1.28333E-4 would be a round 1.5 h, so possibly a deck typo — kept as printed
+TABLES JRM: strictly increasing nuclide indices: 46->48, -268->268, 49?->493 (Xe-133, completes A=133 set), 678->638, 601->691 (last of KRM=181). p179 L43 f5 printed '51?' with the third digit faded: 514 (I-136) chosen among 512-514 — UNCERTAIN
+OPM1 (p156 L57) /PARDAT/ prints GAMA,IP,PMAS(100) where CALC/PDMP print GAMA,KTR(100),PMAS(100): transcribed as printed (members after IP are offset by 99 words in OPM1)
+p188 L59 BATMAN  20 LBR = LBR + 4 - IABS(MOD(NUCLID(K),MULT(1))) : subscript smeared on the scan (OCR "2"). MULT(1)
+  is the low octal digit = 4 - number of branch entries, as in statement 499 and the .LT.4 test; MULT(2) sends LBR
+  negative on the x1042 delayed-neutron precursors (BRANCH(-97) crash). Taken as MULT(1).
+p137 L10 TRANP   V3AR=VBARC kept as printed: the scan clearly shows 3 (open) next to B (closed) in VBARC. Original bug:
+  VBAR is not raised to VBARC during channelling.
+p134 L4  TRANP   header dummy XC (not XO) kept as printed: TRANP ends each segment with XO=XC, so it returns the same value.
+20 Oct: the 10002 (Se-84, p180 L19) and 07760 (Sm-159, p182 L22) normalisations had not reached tablefix; applied now (11283206148, 21356875780 = previous entry + 8**6). The 07760 one made BATMAN loop Sm-159 onto itself.
+p183 L3 PAM1 READ(INTP,14) (ABEGN(J),J=1,692): middle digit ambiguous 3/9 on the scan; INUC=692 and the P239HE block is 139 cards (692/5).
+20 Oct (Rh-109): NUCLID p180 L62 f2 Rh-109 = 14641533954 (low code 12002: branches to Pd-109m +1 / Pd-109 +2), replacing the rebuilt 14641532932 (assumed 10004). Evidence:
+  (1) DATA IBRA=128 but the NUCLID low codes consumed only 126 BRANCH entries; entries 127-128 (p174 L43 f2/f3 = 0.73/0.27) were a complete orphan pair.
+  (2) A missing 2-way node shifts every later pair by one nuclide (pair sums stay 1, which is why the sum check never saw it). Shifted, the physics fits:
+      Pd-111m IT 0.68 (was 0.01), In-115m IT/beta 0.95/0.05 (was 0.09/0.91), Te-127m IT 0.98 (was 0.22), Te-129m IT 0.68 (was 0.173), I-131->Xe-131m 0.008 (was 0.2),
+      I-133->Xe-133m 0.024, Te-133m IT 0.13 (was 0.72), Cs-137->Ba-137m 0.92 (was 0.04), I-138 delayed-n 0.03 (was 0.92), Eu-152m 0.75/0.25, Eu-152 EC/beta 0.73/0.27.
+      The Ag-115m..Cd-121 sets, which did not sum to 1, regroup as [.5 .5][.72 .14 .14][.09 .91][.95 .05][.5 .5][.6 .1 .3][.219 .78 .001][.5 .5][.05 .5 .45], all = 1.
+      Ru-103 0.995 -> Rh-103m fits unshifted, so the missing node lies between Ru-103 (#240) and Pd-111m (#308); Rh-109 is the natural 2-way node there.
+  (3) Scan: the card is very faint, but the last two glyphs of field 2 are an S-shaped 5 and a blob 4 (same shape as the card's other 4s) = ...954 (12002), not ...932.
+  (4) Pd-113 (#324, the other natural candidate) prints clearly ...65988 = 10004, so it is not the node.
+  Effect: K 5.9760E+09 -> 6.1482E+09 (print 6.1020E+09, x1.0076); map cells 0.980 -> 1.004 +-0.003 of print; sum of map ordinates .280023E+05 -> .286675E+05 (print .2855?38E+05).
+  Residual +0.76% sits in the small particles (FP by class 1.0035 largest .. 1.0145 smallest); a two-chain fit at the noise floor puts it at the A=138 group (Xe-138/Cs-138, -7%) plus +0.3% at b~-0.2..-0.4. Not resolved.
+Checked and as printed (20 Oct, no change): every ERM card p177 L12-49 against the scan (proof sheets); Rb-89 1.10E-5 and I-134 1.22E-5 zoomed (the only single-digit ERM changes near +2.1%);
+  yield card p207 L8 (Xe-138 = Cs-138 = .103500E+03, I-138 = Ba-138 = .525000E+02 as printed); Pd-113 NUCLID p181 L7 f4.
+GXPSR/FRATIO chain drift kept as original: GXPSR counts mass chains by negative ERM, FRATIO by mass in NUCLID; ERM has no group for A=80, 98, 110, 113, 114, so from GXPSR chain 9 on
+  each chain uses the BSUBK of a lighter mass. K is unaffected (the RADIAL/STRAIT terms sum to exactly 1 per chain); with mass-correct alignment the FP-by-class shape departs from print by up to 20%, with the drift it matches to sd 0.0009, so the 1979 run had it too.
+Checked as printed (20 Oct, main session, no change): BOIL DATA p184 (all 40 values incl. continuation digits 4149.0, 1555.0) and GXPSR CROSS=1.0E-4 (broken 0) on the scan;
+  Cs-138 ERM p177 L40 f4 9.790000E-6 zoomed (7 with top bar, not 1); BRANCH pair-to-nuclide assignment dumped from BATMAN after the Rh-109 fix: all 128 entries on physical nuclides.
+20 Oct (Sb-122): NUCLID p181 L24 f2 Sb-122 = 16387940898 (low code 21042: EC -2 to Sn-122 with 0.03, beta -1... i.e. +1 to Te-122 with 0.97), replacing 16387940698 (20532).
+  Evidence: (1) 20532 sends the first option to #404 = Pd-123, the HEAD of the next mass chain, so every A=123 nuclide was walked twice and counted twice (Ag-123 m=2,
+  Cd-123 2, In-123m/In-123 2, Sn-123 4); with 21042 the A=123 independent yields sum to 110, in line with A=122 (105) and A=124 (113), instead of 219. (2) 20532's second
+  option has increment 0 (a self-loop) and is never walked, so Sb-122 and Sb-122m kept 3% of their atoms. (3) 21042 is the Eu-152 pattern (EC -2 / beta +1). (4) Scan: the
+  glyph is a broken 6/8 (open top, closed bottom), ambiguous; the two numbers differ in that one digit. Effect: K 6.1482E+09 -> 6.1362E+09 (print 6.1020E+09, x1.0056).
+Residual +0.56% (20 Oct, main session): localized by shape to a fully volatile (b=-1) group, -2.6E-8 in sum(ABUNDO*ERM); see run/compare-opm.txt for what is excluded.
+  Checked as printed on the scan: ERM J=20 Se-83 1.490000E-5, J=23 Br-84 -9.170000E-6, J=28 Kr-87 -4.100000E-6, J=29 Kr-88 -7.680000E-6 (p177 L15-17); JRM J=16-40
+  (p179 L19-23: 56 70 78 84 85 / 86 87 93 100 101 / 108 109 115 122 123 / 128 129 136 145 146 / 147 153 154 160 161); yields Br-88 .672000E+02, Br-89 .573900E+02 (p205 L47-48).
+21 Oct (As-83): NUCLID p180 L17 f3 As-83 = 11148727298 (positive), replacing -11148727298. The scan shows no minus sign (a faint dot after the comma; the minus signs
+  on L16 above are solid). As-83 is fed by Ge-83 (code 10004, +1), so it cannot be a chain head; the false head counted the A=83 chain twice (BATMAN multiplicities
+  As 2, Se-83m 2, Se-83 4, Br-83 6). Without it they are 1, 1, 2, 3, and the true independent yields Ge 3.5, As 13.2, Se 12.4, Br 2.83 lie on the deck's exact Gaussian
+  (ln-curvature -1.39, -1.42 vs the deck-wide -1.386 = 2 ln 2; with the false head As-83 was a -26 MAD outlier). Effect: K 6.1362E+09 -> 6.1045E+09 (print 6.1020E+09,
+  x1.0004); FP by class 0.9985..1.0029 of print; sum of map ordinates .285183E+05 (print .285508E+05). Found with ORNL/TM-2010/220 (pendrive copy in
+  ~/glasstone-test-data/other/delfic-ornl/) which documents the 1979 path-divided yields.
+Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 (ORNL/TM-2010/220 Table 4).
+21 Oct (yield block, no change): the P239HE block was reverse-engineered (run/yield-model/README.md). Every cell that breaks the generating rule was zoomed on the scan
+  (p205 L34-43, p206 L22-56) and reads exactly as transcribed, incl. clear exponents (Zn-80 E+00, Ge-84 E+00, Ge-85 E-01, Cd-125 E+00); the A=72-79 cards (p205 L23-34)
+  are printed zeros. These are hand-set values of the 1979 original and stay as printed. The 20.49 gap to ORNL's TAPE20 total is therefore most likely a difference between
+  ORNL's electronic file and the printed 1979 listing, not a transcription error.
+21 Oct (user hand-check of review-sheets/yield-rule-check.png): P239HE yields
+  Se-81m p205 L36 f5 = .996200E+00 (read .396200E+00). Confirmed by the user; it also restores the deck's 50/50 isomer split (Se-81 .4981 x 2 paths = .9962)
+    and puts the A=81 Se total on the generating rule (1.99 vs 1.95).
+  Ge-84 p205 L40 f5 = .168000E+00 (read .160000E+00). Confirmed by the user. Exponent kept as printed (E+00: last digit a clean 0, first a broken 0).
+  Original-deck anomalies kept as printed: Ge-84 .168E+00 and Zn-80 .620E+00 each have the rule's mantissa (169, 619) but an exponent one too high/low;
+    most likely typing slips in the 1979 deck itself.
+  Effect: K 6.1045E+09 -> 6.1046E+09; yield total 18772.54 -> 18773.14 (ORNL TAPE20 18793.03, gap 19.89).
+21 Oct (user hand-check of review-sheets/yield-irregulars-2.png): Br-89 p205 L48 f2 = .573000E+02 (read .573900E+02). Confirmed by the user; it is now a plain
+  3-digit cell like the rest of the deck. The other cells on that sheet (Se-83m/Se-83 split 0.370, Ru/Pd-113, Sn/Te-130, Rb-91 .135190E+03, cards p205 L56 and L61)
+  were confirmed as printed. Effect: K 6.1046E+09 -> 6.1045E+09; yield total 18773.05 (ORNL TAPE20 18793.03, gap 19.98).
+21 Oct (Sn-130): P239HE yield p206 L55 f4 Sn-130 = .809000E+02 (read .609000E+02; first digit a broken 8 with a closed upper loop). Flagged by a per-cell glyph check
+  (leave-own-card-out kNN preferred 8), confirmed by the user on their copy. Evidence: all five A=130 cells then follow the deck's generating rule (rms 0.353 -> 0.005; the
+  In-130/Sb-130/I-130 "hand-set" anomalies disappear), and the block total becomes 18793.05 against ORNL TAPE20's 18793.03 (ORNL/TM-2010/220 Table 4): the 20-unit gap
+  was this cell. Effect: K unchanged (6.1045E+09; no ERM in A=130 before I-130), FP by class 0.9985..1.0029 -> 0.9996..1.0005 of print (A=130's Freiling ratio changes),
+  sum of map ordinates .285181E+05 -> .285620E+05 (print .285538E+05).
+21 Oct (Crocker 1967 decay-data comparison, run/period-data/): two DCON exponent misreads found and fixed, both checked on the scan:
+  104Tc p175 L36 f2 6.418028E-0 -> 6.418028E-4 (exponent '4' broken; T = 18.0 min = Crocker). 131Sn p176 L23 f2 1.050223E+2 -> 1.050223E-2 (sign a faint broken
+  minus; T = 66 s, Crocker 79 s). Effect: K 6.1045E+09 -> 6.1063E+09 (print 6.1020E+09, x1.0007; the 131Sn change delays 131Sb ingrowth), FP by class 1.0000..1.0008.
+  Kept as printed after checking the scan: 123mSn 1.25 d (Crocker 129 d), 152mEu branch 0.75/0.25 (reversed vs Crocker), 126mSb 0.99/0.01 (Crocker 0.15/0.85),
+  111mPd 0.68/0.32 (Crocker 0.933/0.067), 147Ba 1 s (Crocker estimate 10 s).
+21 Oct (Tompkins 1968 DASA-1800-V PAM tape, run/period-data/ fy68/tran68/erm68-compare.tsv): the 1968 tape matches the 1979 tables almost everywhere; four
+  transcription errors found, each checked on the 1979 scan:
+  Br-93 P239HE p205 L54 f2 = .545000E+00 (read .565; glyph ambiguous 6/4, LightOn .545, the generating rule prefers .545, 1968 true yield .545 x 1 path).
+    With it the P239HE total is 18793.0345 = ORNL TAPE20 18793.03.
+  Zr-106 DCON p175 L39 f2 = 6.931470E+1 (read E-1): the sign is a + that lost its upper stroke (the minus signs on the same line are plain bars); dots read E+1,
+    LightOn/GLM E-1; 1968 tape 1.0E-2 s, the placeholder of its neighbours.
+  Ru-116 DCON p175 L57 f2 = 6.931470E+1 (table had E+0, against the scan and all six OCR readings, which show E+1 with a broken 1); 1968 1.0E-2 s.
+  Y-93 ERM p177 L19 f5 = 4.880000E-7 (read 4.80): the 2nd 8 is a closed lower loop, the broken zeros on the line are open (u, J); GLM 4.88 x2, dots 4.86 x2;
+    1968 0.488E-06.
+  Kept as printed (1979 scan clear, values differ from 1968): Te-130 yield 60.8 (1968 60.0; ORNL's total needs 60.8); half-lives Ge-77 11.30 h (11.33),
+    In-115m 4.511 h, Sb-128 8.608 h, Sb-129 4.589 h, I-131 8.058 d, Nd-151 13.597 min (1968 13.0; scan 8.4965?7E-4); ERM Rh-109m 6.37E-7 (1968 .037E-06),
+    Pm-152 3.43E-6 (1968 .340E-05). Nd-153 18 s: 1968 digit ambiguous 10/18, ours exactly ln2/18.
+  Open, for the user's hand-check: ERM Ga-74 p177 L13 f1 1.870000E-5 (1968 0.180E-04; 3rd glyph only a top-right arc, broken 0 or 7) and ERM Te-134
+    p177 L38 f3 -6.940000E-6 (1968 0.684E-05; 2nd glyph closed top loop, open lower left, 9 or broken 8). Kept as read until checked.
+  Effect: K 6.1063E+09 -> 6.1064E+09 (print 6.1020E+09, x1.0007), FP by class 1.0000..1.0008, sum of map ordinates .285736E+05 -> .285741E+05.
+21 Oct (user hand-check of review-sheets/erm-handcheck.png): ERM Ga-74 p177 L13 f1 = 1.800000E-5 (read 1.87; the 3rd glyph is a broken 0 keeping only its
+  top-right arc). Confirmed by the user ("more like 1.80"); agrees with the 1968 tape (0.180E-04). Effect: K, FP and map unchanged at printed precision.
+  Te-134 (p177 L38 f3) still open; sheet with 0-9 samples from the same page: review-sheets/erm-handcheck-te134.png.
+21 Oct (user hand-check of review-sheets/erm-handcheck-te134.png, disputed glyph beside 0-9 samples from p177): ERM Te-134 p177 L38 f3 = -6.840000E-6
+  (read -6.94; the 2nd glyph is a broken 8 missing its lower-left stroke). Confirmed by the user; agrees with the 1968 tape (0.684E-05). It is a chain-start
+  ERM (A=134), so it sets that chain's normalisation. Effect: K 6.1064E+09 -> 6.1026E+09 (print 6.1020E+09, x1.0001), 2.3562E+03 R-mi2/hr-kt (print 2.3560E+03),
+  FP by class 0.9993..1.0001 of print, sum of map ordinates .285741E+05 -> .285554E+05 (print .285538E+05, x1.00006).
+21 Oct (sensitivity of every remaining uncertain reading; run/k-residual/alt.py on a scratch copy, nothing changed in the deck):
+  ICRM CRMINT CHANGE=1?0. (time after which the step length changes): 100. reproduces 287/308 legible printed cloud-history cells; 110. 284, 120. 269,
+    130.-160. 247-257, 170.-190. 200-206. Kept 100. (now confirmed by the output). DLTM=0.0 is confirmed by the printed row times.
+  ERM I-135 p177 L39 f2 -1.560000E-5 (4th char broken): 1968 tape 0.156E-04, so 1.560; 1.565 would give K x1.0002. Ba-142 L42 f4 -4.950000E-6: 1968 0.495E-05.
+  ERM Rh-106m L24 f3 -8.66 (UNCERTAIN): 1968 0.86?E-05; 6.66 or 8.68 change nothing at printed precision (negligible independent yield).
+  ERM L47 f5 (Eu-157 3.36, 1968 0.33?) and L48 f5 (2.03): A >= 155, where the P239HE yields are zero: no effect on the test problem.
+  XLAM(1,13) 1.28333E-34 (possible typo for E-4), BOIL Br 331.8 vs 351.8, DCON In-115m 4.26?13?E-5 and Nd-151 8.4965?7E-4: no effect at printed precision.
+  JRM 51? = 514 (I-136): the 1968 ERM card at that place is 136 53. Yield card p206 L17 (marked ?, A=107): all five cells match the 1968 true yields.
+  Conclusion: no open reading changes the test-problem results at printed precision. The readings that mattered were all fixed with evidence
+  (Rh-109, Sb-122, As-83, SOILHT 1.881E7, Sn-130, Tc-104/Sn-131, Te-134; see the entries above).
+21 Oct (user hand-check of review-sheets/icrm-change.png and icrm-dltm.png): CRMINT p080 L31 CHANGE=100. confirmed by the user (LightOn/GLM read 130; the middle
+  glyph is a 0 missing its left side, no middle notch like the 3s). CXPN p083 L38 DLTM = 0.0: the user reads 0.0 or 9.0, 0.0 more likely (LightOn/GLM read 3.0).
+  Output test (run/k-residual/alt.py, hist.py): 0.0 reproduces 287/308 legible printed cloud-history cells and the printed intervals 0.1875, 0.4375, 0.875 s;
+  3.0 gives 7/288, 9.0 gives 6/248 (first interval 9.25 s). Kept 0.0. Sheets made with the new tools/cardsheet.py.
+21 Oct (I-135 ERM p177 L39 f2, 4th character): unidentifiable on the user's copy too (review-sheets/erm-i135.png). The user's rule: try every digit and keep 0
+  unless one fits the print better. -1.56d000E-5 for d = 0..9 (run/k-residual/alt.py): K 1.00010 .. 1.00031 of print, sum of map ordinates 1.00006 .. 1.00028,
+  FP-by-class rms 0.00017 .. 0.00033, all rising with d; the y=27000 row is unchanged (7/10 cells within 1.5 units). d = 0 fits best on every measure: kept
+  -1.560000E-5 (1968 tape 0.156E-04, 3 digits). Note the test is one-sided: every d > 0 raises the ERM, and K is already 0.01% above print.
+21 Oct (user hand-check of review-sheets/erm-eu157.png): ERM Eu-157 p177 L47 f5 = -3.380000E-6 (read -3.36; the 3rd glyph is the closed lower loop of a broken 8
+  with a remnant tick on top). Confirmed by the user; the 1968 tape reads 0.33?E-05 with a blotted 8-like last digit. No effect on the test problem (A > 150,
+  where the P239HE yields are zero): K 6.1026E+09 and sum of map ordinates .285554E+05 unchanged. It matters for fuels with yields above A=150.
+21 Oct (ERM Rh-106m p177 L24 f3, user asked to try 8.66 / 8.68 / 8.88): identical OPM output for all three (K 6.1026E+09, map .285554E+05, FP unchanged).
+  Reason: Rh-106m (NUCLID #267) is its own chain head with zero P239HE yield and nothing decays into it (Ru-106 feeds Rh-106 ground), so ABUNDO = 0 and its
+  ERM never enters this test problem; the output cannot decide the digits. Glyphs + 1968 card (1.86?E-05: 8 and 6 clear, 3rd digit blotted) rule out 8.88;
+  8.66 vs 8.68 stays open, kept -8.660000E-6 as read. It would only matter with a yield set that gives Rh-106m an independent yield.
+21 Oct (ERM Ba-142 p177 L42 f4, 4th char; unreadable on the user's copy): only the bottom edge of a glyph survives (60 ink pixels against ~200-240 for a whole
+  digit; all six OCR readings put a '.' there). Shape cannot identify it: the ink-box kNN (tools/cellknn.py, 7444 glyphs of pp. 174-177) votes 6 but the
+  fragment is blown up to full size; scored by stroke position instead, 1, 2 and 0 lead. Controls: cellknn reads a clear 9 as 9, Te-134's disputed glyph as 8
+  (the user's reading) and I-135's 4th char as 0 (9/9 neighbours, corr 0.82, confirming 1.560). Estimate from the surroundings: every one of the 181 ERMs is
+  printed x.xx0000 and positions 5-7 of this field are zeros; 1968 tape 0.495E-05; the output test prefers 0 (weakly). Kept -4.950000E-6.
+21 Oct (ERM Gd-161 p177 L48 f5; the user reads -2.00 or -2.03): kept -2.030000E-6. tools/cellknn.py: 1st decimal = 0 (9/9 neighbours, corr 0.70), 2nd decimal
+  = 3 (9/9, corr 0.74), so 2.00 is ruled out; LightOn x2 and GLM read 2.030000; 1968 tape 0.203E-05. No effect on the test problem (A > 150).
+21 Oct (XLAM(1,13) p179 L3 f5 1.28333E-34, earlier "possibly a deck typo for E-4"): RESOLVED, original and intentional. The 1968 tape's soil-activation cards
+  (Tompkins p. 263 = PDF 258: target A, flag, abundance, capture cross-section, PRODUCT half-life, unit 1 s / 2 min / 3 h / 4 d / 5 y, element) give Mg-24
+  (.7870, .03 b) -> Mg-25 stable written "1.500+30" in hours: 0.693/(1.5E30 x 3600 s) = 1.28333E-34 exactly. DELFIC marks stable products with a 1E30
+  half-life (usually 1.000+30 s = 6.93000E-31); the same holds for XLAM(2,1) 7.46124E-35 = Fe-56 -> Fe-57 stable, written "2.58 +30" h on the tape.
+  Mg-26 -> Mg-27 9.500 min = 1.215789E-3 (our next value). The print is a clean E-34 (review-sheets/xlam-mg24.png). E-4 would have made stable Mg-25 a 1.5 h
+  nuclide. Kept as printed.
+21 Oct (BOIL, p185 L31-32; compared with the same DATA BOIL card printed in the 1968 report, Tompkins DASA-1800-V PDF p. 113, FRATIO listing):
+  Br BOIL(9) 331.8 (p185 L31, OCR split 331.8/351.8): the 1968 card prints a clean 331.8; kept (Br b.p. 332 K).
+  FIXED (card fix p185 L31, confirmed by the user "100%"): 2*3175.0 -> 2*3173.0 (BOIL(1),(2); last digit a clear 3) and 1754.0 -> 1764.0 (BOIL(6); broken 6
+    with a closed lower loop). Both equal the 1968 card; a kNN glyph vote against AGREE code cards p182-188 gives 3 (0.79) and 6 (0.78); controls 7 and 5 correct.
+  BOIL(11) p185 L32 1650.0 kept: the user reads 1650 (more likely) and LightOn/GLM/dots all read 1650; the 1968 card prints 1656.0 and the kNN vote prefers 6
+    (0.74 vs 0 0.65). 1650 and 1656 give identical output.
+  Effect of all BOIL changes on the test problem: none. BOIL is only compared with the solidification temperature (2200 K here), and every changed value stays
+  on the same side. K 6.1026E+09, sum of map ordinates .285554E+05.
+21 Oct (DCON Nd-151 p176 L55 f1): 8.496507E-4 -> 8.886500E-4 (= 0.693147/780 s, 13.0 min, exactly the 1968 tape's Nd-151). Four broken glyphs
+  (review-sheets/dcon-nd151.png, with --shift 0.3: the line sits a third of a column right of the fitted grid). The user reads them 8 / 8-or-9 /
+  unidentifiable / 0-or-9; tools/cellknn.py gives 8 (6/9), 8 (6/9, 0.72 vs 9 0.65), 0 (9/9), 0 (6/9), with the field's clear 8, 6, 5 as controls. Of the 40
+  values the user's readings allow, only 8.886500 is exactly ln2/T for a round T (next best 1e-6 off, ten times the 7-digit printing resolution). The first
+  table pass had read ...6500 (8.436500E-4); the "resolved by nuclide half-life" row 8.496507E-4 (815.8 s) was wrong. Nd-151 was therefore not revised
+  between 1968 and 1979 (correcting tran68-compare.tsv). Effect on the test problem: none (K 6.1026E+09, map .285554E+05).
+21 Oct (DCON In-115m p175 L56 f3 4.26?130E-5): 4th character unreadable on the user's copy too; the user says keep 8. Last character = 0 (cellknn 9/9,
+  0.83, --shift 0.3). Of the ten candidates 4.26d130E-5, d = 8 lies closest to a round half-life (16240 s, 3.9e-6 off; next best d = 6, 2.0e-5), and gives
+  4.511 h against the 1968 tape's 4.51 h. Kept 4.268130E-5. No effect on the test problem.
+21 Oct (recheck of the DCON cells, run/period-data/dconcheck.py -> dcon-check.tsv; sheet review-sheets/dcon-recheck.png made with tools/pairsheet.py):
+  test per cell: is the value exactly 0.693147/T for a round T, does it match the 1968 tape, and what does a kNN glyph vote (auto grid shift) read.
+  584 cells, 569 clean. Seven were not exact while one digit away from the exact 1968 value; the user's guesses (9 8 5 9 5 5 8 8 for rows 1-8) decide:
+  FIXED (user + exact 1968 value): Sb-128 p176 L18 f4 2.236847E-5 -> 2.238847E-5 (8.6 h); Cs-137 p176 L34 f2 7.522050E-10 -> 7.522090E-10 (29.2 y; vote 9,
+    1.00); Ge-80 p174 L57 f2 2.772586E-2 -> 2.772588E-2 (25 s).
+  KEPT as read by the user, against the arithmetic (and for three of them the vote): Sb-129 p176 L20 f1 4.195670E-5 (not exact; 8 would give 4.6 h, vote 8
+    0.67); I-131 p176 L25 f1 9.955882E-7 (8 -> 8.05 d exact with 6, vote 6 0.78); Sm-151 p176 L55 f3 2.745553E-10 (6 -> 80 y); Pd-109m p175 L46 f3
+    2.457956E-3 (68 -> 282 s, vote 6 0.78). Ag-116 4.620980E-3 (exact 2.5 min) confirmed 8. Open for a better copy: these four.
+  Remaining flags are design or noise: Rb-87/In-115/La-138 caps, Se-79 and Rb-93 last-digit rounding ties, Y-100/Cs-144/Rh-118/Rb-88 vote misalignments.
+  Effect: none at printed precision (K 6.1026E+09, sum of map ordinates .285554E+05).
+21 Oct (user revised row 5 of review-sheets/dcon-recheck.png: 9 8 5 9 6 5 8 8): Sm-151 p176 L55 f3 2.745553E-10 -> 2.745563E-10 (= 0.693147/80 y exactly,
+  the 1968 value). Still kept as read (not exact): Sb-129, I-131, Pd-109m. No effect on the test problem.
+21 Oct (ENDF/B-IV 1974 decay data as an era check; run/period-data/endf4.py -> endf4-compare.tsv; extract in
+  ~/glasstone-test-data/other/delfic-period-data/endfb-iv-fp/): 587 of 692 DELFIC nuclides matched. Test (the user's rule): ENDF/B-IV's half-life, as is or
+  rounded to 2-4 digits, as a 7-digit DCON string; a match only at the doubtful characters confirms the alternative, a whole-number difference means another
+  source. 110 nuclides are digit-identical. Near misses: five differ only in the exponent (Ni-77, Ga-82, Nb-99, Sr-100, Xe-144), all equal to the 1968 tape,
+  so DELFIC's own values (mostly the 0.01 s placeholder). Pd-109m: ENDF/B-IV 281.4 s -> 4.7 min gives 2.457968E-3, differing from ours (2.457956E-3) only
+  at characters 6 and 7, the doubtful ones; the 1968 tape (282 s) gives the same. Sb-129, I-131, In-115m: 4-5 characters differ (other half-lives), no
+  evidence either way.
+21 Oct CHANGED (user: "change it but note what you changed"): DCON Pd-109m p175 L46 f3 2.457956E-3 -> 2.457968E-3 (= 0.693147/282 s = 4.7 min).
+  tablefix.tsv rows 50, 218 and 651 (all p175 L46 f3) edited; backup tablefix.tsv.bak-pd109m. Evidence: our value is not an exact ln2/T; the 1968 tape (282 s)
+  and ENDF/B-IV (281.4 s -> 4.7 min) both give 2.457968E-3, which differs from ours only at characters 6-7, the two doubtful glyphs (vote at 6: 6, 0.78).
+  This overrides the user's earlier guess "5" for that glyph. Effect: none at printed precision (K 6.1026E+09, sum of map ordinates .285554E+05).
+21 Oct CHANGED (user: "do it"): DCON I-131 p176 L25 f1 9.955882E-7 -> 9.965882E-7 (= 0.693147/8.05 d). tablefix.tsv rows 92 and 834 edited; backup
+  tablefix.tsv.bak-i131. Evidence: Crocker 1967 (A=131 chain, 8.05 D) and the 1968 tape (8.05 d) both give 9.965882E-7, differing from ours only at the
+  4th character, the doubtful glyph (vote 6, 0.78); only 6 makes the value an exact ln2/T. ENDF/B-IV (8.041 d) is a different value. Overrides the user's
+  earlier guess "5". Effect: none at printed precision. Sb-129 remains open (Crocker 4.5 h, 1968 4.6 h, ours 4.589 h).

@@ -139,7 +139,7 @@ compile-driven proofreading. Each was checked on the scan.
 - NUCLID: two 8→6 slips (Se-84, Sm-159). The Sm-159 one made BATMAN loop on itself.
 
 Kept as printed:
-- `V3AR=VBARC` in TRANP is an original bug.
+- `V3AR=VBARC` in TRANP is an original bug (reopened 22 Oct: ORNL's typed listing reads `VBAR=VBARC`; on a hand-check sheet).
 - TRANP's dummy `XC`.
 - `ZSCL=HOB/W**(1.0/3.4)`.
 
@@ -215,3 +215,35 @@ Te-134 is a chain-start ERM (it sets the A=134 normalisation), and it closed mos
 print to ±1 in the last digit (the others: +0.3% and +0.5%).
 
 All values changed on 21 Oct 2026 are listed in `CHANGELOG-2026-10-21.md`, with locations and backups.
+
+## Cross-check: ORNL's typed DTM listing, TM-2022/2602 (22 Oct 2026)
+
+ORNL/TM-2022/2602 (Krupcale 2023, PDF pp. 85–114, Listings 1–19) prints its own lowercase typed copy of the 1979 DTM routines
+(ADVEC … WILKNS, plus SETTLE): an independent transcription of the same printed listing. Compared line by line with
+`src/dtm.f` (and `src/icrm.f` for SETTLE), every disagreement checked on the scan. ORNL's copy has its own typos and
+modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf`, π/2 as 1.5709796327, a dropped
+`IF(J.GT.JTOPF)` card), so the scan decided every case.
+- **Our misreads, fixed: 11 code cards, 16 FORMAT cards and two renames.** All compiled cleanly, and almost all sit in code the test problem
+  never runs (multi-cell nets, channelling, error paths):
+  - NEST `NQ=-NET(IC,JC)` (the minus was missing);
+  - TRANP `GO TO 510` / label 510 (we had 513 / 519), `301,350,350`, `1.0E-30`, `ERROR(PROGRM,616,…)` (was `E1E`), `NDATO=NDATC`;
+  - ADVEC `.LT. 0.0` and DUMPER flag `0` (was `0.1` and `J`);
+  - SPRVS `IACCR` and `0.,0,`;
+  - the names CNTR `NDBLE` and SETTLE `CDRR`;
+  - 16 FORMAT texts (`CLOUD`, `PLANE`, `TRANSPORT`, `RAW WIND`, `DXSUM/DYSUM`, which match the book's printed output, plus `1H0` carriage
+    controls and the SPRVS 8017 text).
+- **Effect: none on the test problem.** K 6.1026E+09 and the sum of map ordinates .285554E+05 are unchanged, and the OPM and ICRM output are identical.
+  The DTM output changes only in five text lines, which now match the book. A layer-by-layer run (MC(4)=1) gives a bit-identical parcel tape: the test
+  problem has one met cell, so the fixed multi-cell paths still have no test.
+- **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
+  - TRANP `BOUN(…,XT,YT,…)` vs ORNL's `Y1`;
+  - `V3AR` vs `VBAR`;
+  - the faded `NDTC1=NDATC` vs ORNL's `NDATO`;
+  - label 160 vs 100;
+  - three FORMAT spacings (LAYERS 10X/19X, ONEDIN 3X/8X, DUMPER 3X/9X);
+  - the printed map-sum digit: .2855?8, 3 (ours) or 0 (ORNL .285508). TM-2010/220's .285505 does not fit the clear final 8.
+- `src/settle.f` and the other per-routine files in `src/` (`advec.f`, `wnosft.f`, …, all 20 Oct 16:43) are raw-OCR output of the early
+  `tools/assemble.py` pass. Nothing builds from them; the canonical decks are `src/icrm.f` and `src/dtm.f`.
+
+The details, with the evidence for each card, are in `JUDGEMENT-CALLS.txt` (22 Oct) and `CHANGELOG-2026-10-22.md`.
+

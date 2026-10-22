@@ -223,3 +223,58 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   tablefix.tsv.bak-i131. Evidence: Crocker 1967 (A=131 chain, 8.05 D) and the 1968 tape (8.05 d) both give 9.965882E-7, differing from ours only at the
   4th character, the doubtful glyph (vote 6, 0.78); only 6 makes the value an exact ln2/T. ENDF/B-IV (8.041 d) is a different value. Overrides the user's
   earlier guess "5". Effect: none at printed precision. Sb-129 remains open (Crocker 4.5 h, 1968 4.6 h, ours 4.589 h).
+22 Oct (DTM listing cross-check against ORNL/TM-2022/2602, Krupcale 2023, PDF pp. 85-114, Listings 1-19: ORNL's own lowercase typed copy of the 1979
+  DTM routines ADVEC..WILKNS plus SETTLE). Compared line by line with src/dtm.f and src/icrm.f (SETTLE) after normalising case and spaces; every
+  disagreement checked on the 300-dpi scan (tools/zoom.py crops, OCR votes in final/). The scan decides, not ORNL. ~45 disagreements: about half are ORNL
+  modernisations (CHARACTER declarations, quoted strings for nH fields, /INDEXX/ for /INDEX/, SAVE, debug WRITEs and FORMATs 9000-9003 in NEST,
+  DIMENSION DZSUM/CAVS/RLH, an added RETURN, a split '920 CONTINUE', TRIDIN's FMT moved to CHARACTER); the rest are classified below.
+  OUR MISREADS, FIXED (cardfix.tsv block "22 Oct 2026", rename.tsv, rename-dtm.tsv; backups *.bak-ornl2602):
+    ADVEC  p108 L46  IF(XOU-XOL .LT. 0.1) -> 0.0  (the glyph after the point is the left half of a broken 0, '[' with a serif to the right; a 1 has its
+                     flag to the left and a foot)
+    ADVEC  p108 L57  DUMPER(...,ROUTN,J,  -> ,0,   (J-shaped broken zero; ADVEC has no J; DUMPER's INCOMP flag)
+    NEST   p125 L45  4 NQ=NET(IC,JC) -> NQ=-NET(IC,JC)  (a short minus is on the scan in its own column; label 4 is reached only when NET<0 and NQ indexes
+                     NETSU, cf. '7 NQ=-NETSU(NQ)')
+    SPRVS  p130 L27  SETTLE(...,IACCH) -> IACCR  (the last glyph has R's diagonal leg; IACCR is the name on p130 L19)
+    SPRVS  p131 L4   DUMPER(...,0.,0., -> 0.,0,  (no point after the second 0; the INCOMP argument is an integer)
+    TRANP  p135 L46  IF(TIMEX-TC)301,301,350 -> 301,350,350  (the scan prints '35' + a broken 0; OCR had 351, which the compile pass turned into 301)
+    TRANP  p136 L35  GO TO 513 -> GO TO 510  (a clean '510' on the scan; the cardfix row 510->513 is withdrawn) and p136 L38 label 519 -> 510 (the third
+                     glyph is a broken 0; no statement branches to 519). Effect: with |WBAR| <= 1E-30 the interpolation now tries UBAR before VBAR.
+    TRANP  p136 L41  1.0E-33 -> 1.0E-30  (']' = right half of a broken 0, no middle cusp as in the 3 before it)
+    TRANP  p137 L14  CALL ERROR(PROGRM,E1E,ISOUT) -> 616  (both outer glyphs are rounded 6s; the error number is the statement label, as 516)
+    TRANP  p137 L19  NDATO=NDATO -> NDATO=NDATC  (open C at the end, closed O at the start; mirrors 'NDATO=NDATC' 8 lines above)
+    CNTR   p110 L43, p111 L16-24  NOBLE -> NDBLE  (flat-sided D on all 6 cards; rename-dtm.tsv used to rename the OCR's NDBLE to NOBLE)
+    SETTLE p057 L31-49 (ICRM deck)  CORR -> CDRR in all 8 code cards (flat-sided D; the O's of RHO/ALOG on the same cards are round). The glossary comment
+                     says CORR; the code says CDRR. Name only.
+    FORMAT text (broken glyphs; the first five are confirmed by the book's own printed test output, PDF pp. 48-49): DTMINT p117 L30 CLOLD -> CLOUD,
+                     L38 FLANE -> PLANE, L60 TRANSFORT -> TRANSPORT; ONEDIN p126 L40 RAW KIND -> RAW WIND; WILKNS p142 L54 OXSUM/OYSUM -> DXSUM/DYSUM;
+                     and DTMINT p118 L3 RATIC CF -> RATIO OF; GETUP p121 L52 LOACED -> LOADED; LAYERS p123 L29 WINC -> WIND, L31 MA)IMUM -> MAXIMUM;
+                     SPRVS p129 L4 1HJ -> 1H0 and the 86H text re-aligned ('* * * * * SHORT-CUT TRANSPORT IS CANCELLED BECAU', the OCR had shifted the
+                     blanks and dropped a star; the count still fits), p129 L6 IMPACTEC -> IMPACTED; SUMDAT p132 L37 UPCATE -> UPDATE, L42 CFOSSWIND ->
+                     CROSSWIND, DOWNWINC -> DOWNWIND; TRANP p134 L50 ZF -> ZP; TRIDIN p139 L11 PCINT -> POINT; WILKNS p143 L8 1HJ -> 1H0.
+  Effect on the test problem: none. K 6.1026E+09, sum of map ordinates .285554E+05, FP by class and the OPM output identical; ICRM output identical;
+  the DTM output differs only in the five corrected text lines, which now read as the book prints them. A layer-by-layer run (DTM deck with MC(4)=1)
+  gives a bit-identical parcel tape before and after: the test problem has one met cell and homogeneous winds, so the fixed NEST/TRANP multi-cell
+  and channelling paths never run. They matter for horizontally resolved (multi-cell) wind data.
+  OURS CORRECT, ORNL TYPO OR ORNL CHANGE (scan agrees with us): ADVEC p108 L39 1.0E-30 (ORNL -20; the first glyph has 3's middle cusp); BOUN p109 L47
+    .GT. (ORNL .ge.); GETUP p121 L61 .GT. (ORNL .ge.); LAYERS p124 L25 .GT. (ORNL .ge.); LAYERS p123 L29 43X (ORNL 48x; a clean 3); DATIN p113 L37 DUM
+    (ORNL dzsum, its own addition); TRIDIN p138 L54 JTOPF (ORNL jtipf), p139 L6/L14 1HZ (ORNL 1hx), p139 L37 WRITE(ISOUT,32) (ORNL 31; a clean 32),
+    p139 L48 IF(J.GT.JTOPF) CALL ERROR (ORNL omits the card), p138 L50 FMT(12); WILKNS p143 L28 1.570796327 (ORNL 1.5709796327), p143 L34 CHI (ORNL
+    cji); SUMDAT p132 L38 F12.5 (ORNL e12.5; no lower bar); SUMDAT p133 L32 '920 DYSUM...' (ORNL split off a 920 CONTINUE); TRANP p134 L4 dummy XC
+    (ORNL xo; an open C like the C of CAVS on the same card; kept as before).
+  OPEN, sent to the user as hand-check sheets (review-sheets/ornl-*.png); kept as now read until the user decides:
+    ornl-tranp-y1.png      TRANP p136 L32 CALL BOUN(...,XT,YT,...): we have YT (compile-pass fix); LightOn and dots read Y1, GLM YT, ORNL y1. The glyph has
+                           a stem and a left arm only, with no foot (1s on this page have feet); our lean is a T that lost its right arm.
+                           Y1 would be an undefined variable: an original bug.
+    ornl-tranp-v3ar.png    TRANP p137 L10 V3AR=VBARC (kept as an original bug on 20 Oct); all 5 OCR runs read V3AR; ORNL reads vbar=vbarc.
+    ornl-tranp-ndtc1.png   TRANP p137 L22 626 NDTC1=NDAT? : the last glyph is almost gone. We have NDATC (20 Oct context call); ORNL ndato. With the next card's
+                           clear NDTO1=NDATC, ORNL's reading stores the crossed pair for the oscillation test (NDTC1 vs the next NDATC, NDTO1 vs NDATO).
+    ornl-tranp-label100.png + ornl-tranp-goto100.png  TRANP p135 L17 label and L32 GO TO, '1?0': we have 160 (20 Oct context call); OCR mostly 100,
+                           ORNL 100. The pair stays consistent either way (no effect).
+    ornl-layers-10x.png    LAYERS p123 L26 FORMAT( 1?X: ours 10X (dots, GLM), ORNL 19x.
+    ornl-onedin-3x.png     ONEDIN p126 L46 //3X,1HZ: all OCR 3, ORNL 8x; the wind header 1300 has //8X,1HZ over the same data format. Our lean is 8.
+    ornl-dumper-3x.png     DUMPER p119 L26 '1 3X, 4HPMAS': all OCR 3, ORNL 9x; SPRVS's copy of FORMAT 8024 (p129 L13) prints a clear 9X (but the two copies
+                           also differ at 7X/8X before ZLOW, which both we and ORNL read).
+    ornl-mapsum-digit.png  The printed sum of map ordinates (PDF p. 53): .2855?8E+05 with the 5th digit broken (top and bottom arcs, a centre dot, open
+                           left). We read 3 (.285538); ORNL TM-2022/2602 quotes .285508, TM-2010/220 .285505 (the 6th digit is a clear 8, so .285505
+                           does not fit). The 0 of the exponent on the same line also has a centre dot. If 0, our run is 1.00016 of print instead of 1.00006.
+  Also: the 20 Oct entries "p135 L17 label 1?0 = 160" and "p137 L22 626 NDTC1=NDATC" are reopened by the sheets above.

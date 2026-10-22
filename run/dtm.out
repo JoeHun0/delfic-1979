@@ -21,7 +21,7 @@
 
 
                                          *****  SUMMARY OF RUN IDENTIFIERS  *****
-          INITIALIZATION AND CLOLD RISE MODULE IDENTIFICATION -  DELFIC TEST PROBLEM - ICRM                                             
+          INITIALIZATION AND CLOUD RISE MODULE IDENTIFICATION -  DELFIC TEST PROBLEM - ICRM                                             
                     DIFFUSIVE TRANSPORT MODULE IDENTIFICATION -  DELFIC TEST PROBLEM - DTM                                              
 
                THE CONTROL VARIABLE ARRAY, MC(J), HAS BEEN GIVEN THE VALUES -
@@ -33,11 +33,11 @@
 
                HORIZONTAL COORDINATES OF THE SOUTH WEST CORNER OF THE TRANSPORT SPACE ARE (-0.50000E+10, -0.50000E+10)
                                    THE RESOLUTION NET SPACING IS  0.10000E+11 (ALL IN METERS)
-               A FLANE DEPOSITION SURFACE AT ALTITUDE   139.000 (METERS ABOVE MSL) IS ASSUMED
+               A PLANE DEPOSITION SURFACE AT ALTITUDE   139.000 (METERS ABOVE MSL) IS ASSUMED
 
                FALLOUT PARTICLE DENSITY IS  0.26000E+04 KG/M**3   THERE ARE   30 PARTICLE SIZE CLASSES
 
-               TRANSFORT IS BY THE 
+               TRANSPORT IS BY THE 
 +                                  QUICK METHOD
 1
 
@@ -47,7 +47,7 @@
 
                      * * * * * * * * * WINDFIELD DATA * * * * * * * * *
 
-                RAW KIND DATA                                 PROCESSED WIND DATA
+                RAW WIND DATA                                 PROCESSED WIND DATA
 
         Z         VX OR DIR.   VY OR SPEED              Z            VX            VY
 
@@ -100,7 +100,7 @@
                TURBULENCE PARAMETERS ARE CALCULATED BY WILKINS RECIPROCAL ALTITUDE FUNCTION
                FOR UPDATE  1 AT  0.00000E+00 SECONDS
 
-                   K        ZCH            OXSUM          OYSUM
+                   K        ZCH            DXSUM          DYSUM
                    1    0.21600E+03    0.38961E-03    0.38961E-03
                    2    0.15480E+04    0.21292E-04    0.21292E-04
                    3    0.30970E+04    0.10142E-04    0.10142E-04

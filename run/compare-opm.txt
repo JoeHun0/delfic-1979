@@ -22,3 +22,7 @@ No single glyph explains it; the chains with structure outliers (A=80, A=130) ca
 Decay data checked against Crocker 1967 (run/period-data/): 104Tc and 131Sn DCON exponents fixed 21 Oct.
 Whole PAM tape checked against Tompkins 1968 (DASA-1800-V): Br-93 yield, Zr-106/Ru-116 DCON exponents, Y-93, Ga-74, Te-134 and Eu-157 ERMs
   fixed 21 Oct (run/period-data/). Te-134 (6.94 for 6.84, a chain-start ERM) took K from 1.0007 to 1.0001 of the book.
+22 Oct: DTM listing checked against ORNL/TM-2022/2602's typed copy (Listings 1-19); 27 misread cards fixed (NEST, TRANP, ADVEC, SPRVS
+  code, FORMAT texts, the CNTR/SETTLE names). Rerun: K 6.1026E+09 and sum of map ordinates .285554E+05 unchanged; OPM output identical.
+  The book's map sum prints .2855?8E+05 with the 5th digit broken: we read 3; ORNL quotes .285508 (TM-2022/2602) and .285505 (TM-2010/220).
+  If 0, ours is 1.00016 of the book. On a hand-check sheet (review-sheets/ornl-mapsum-digit.png).

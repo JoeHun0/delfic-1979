@@ -148,3 +148,4 @@ MPCDO	MHODO
 TF	TP
 DELTEF	DELTEP
 TP1U0T	TMIUDT
+CORR	CDRR	# 22 Oct: SETTLE p057 L31-49, the scan prints CDRR in all 8 code cards (flat-sided D; ORNL TM-2022/2602 agrees); the glossary comment says CORR
