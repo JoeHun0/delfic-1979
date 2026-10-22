@@ -318,3 +318,8 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
 22 Oct (user hand-check of review-sheets/ornl-layers-10x.png): LAYERS p123 L26 FORMAT( 10X, -> FORMAT( 19X, ("looks more like 19 from the width";
   the second glyph is damaged, dots/GLM read 0, ORNL 19x). cardfix.tsv row p123 L26 (backup cardfix.tsv.bak-layers19x). Column layout of
   LAYERS' level printout only, which the test problem does not print: DTM and OPM output identical.
+22 Oct (user hand-check of review-sheets/ornl-onedin-3x.png): ONEDIN p126 L46 FORMAT 1600 '1//3X, 1HZ' -> '1//8X, 1HZ'. The user: "looks more like
+  an 8 but not sure". Supporting context: the wind header 1300 has //8X,1HZ over the same data format (1400), so 8X puts the Z heading over the
+  Z column as there; the glyph has a closed lower loop with a broken top (a broken 8 per this scan's glyph notes). All OCR read 3; ORNL 8x.
+  cardfix.tsv row p126 L46 (backup cardfix.tsv.bak-onedin8x). Header spacing of the raw turbulence-data printout only, not printed in the
+  test problem: DTM and OPM output identical.

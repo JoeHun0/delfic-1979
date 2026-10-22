@@ -24,6 +24,7 @@ Effect on the test problem: none (K 6.1026E+09, sum of map ordinates .285554E+05
 | 11c | TRANP | p137 L22 | `626 NDTC1=NDATC` → `NDTC1=NDATO` (context call: the glyph is unreadable on both copies; NDATC would make channelling always end in ERROR 616) | cardfix.tsv (.bak-ndtc1) |
 | 11d | TRANP | p135 L17, L32 | label and `GO TO` 160 → 100 (user's hand-check: a zero) | cardfix.tsv (.bak-label100) |
 | 11e | LAYERS | p123 L26 | `FORMAT( 10X,` → `FORMAT( 19X,` (user's hand-check: the width fits 19) | cardfix.tsv (.bak-layers19x) |
+| 11f | ONEDIN | p126 L46 | FORMAT 1600 `//3X, 1HZ` → `//8X, 1HZ` (user leans 8; wind header 1300 uses 8X over the same data) | cardfix.tsv (.bak-onedin8x) |
 | 12 | SETTLE (ICRM) | p057 L31–49 | `CORR` → `CDRR` (8 cards) | rename.tsv |
 | 13 | FORMAT texts | p117 L30/38/60, p118 L3, p121 L52, p123 L29/31, p126 L40, p129 L4/6, p132 L37/42, p134 L50, p139 L11, p142 L54, p143 L8 | CLOLD→CLOUD, FLANE→PLANE, TRANSFORT→TRANSPORT, RATIC CF→RATIO OF, LOACED→LOADED, WINC→WIND, MA)IMUM→MAXIMUM, RAW KIND→RAW WIND, 1HJ→1H0 (×2) and the 8017 text, IMPACTEC→IMPACTED, UPCATE→UPDATE, CFOSSWIND→CROSSWIND, DOWNWINC→DOWNWIND, ZF→ZP, PCINT→POINT, OXSUM/OYSUM→DXSUM/DYSUM | cardfix.tsv |
 
@@ -32,6 +33,6 @@ Reference value re-read (not a deck change): the book's printed sum of map ordin
 
 Confirmed by the user, no change: TRANP p136 L32 `YT` (a malformed T, not Y1).
 
-Open (hand-check sheets `review-sheets/ornl-*.png`, nothing changed yet): ONEDIN 3X/8X (p126 L46), DUMPER 3X/9X (p119 L26).
+Open (hand-check sheets `review-sheets/ornl-*.png`, nothing changed yet): DUMPER 3X/9X (p119 L26).
 
 `tools/cardsheet.py` gained `--chars` (sample letters instead of digits, e.g. `--chars T1`), and its title line now widens the sheet.

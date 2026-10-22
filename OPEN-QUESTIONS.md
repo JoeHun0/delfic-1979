@@ -26,7 +26,7 @@ decide, we kept our reading. None of these is reached by the test problem (one m
 
 | # | Card | We read | Alternatives and evidence | Matters for |
 |---|---|---|---|---|
-| 11 | ONEDIN p126 L46, DUMPER p119 L26 | `//3X`, `1 3X` | ORNL reads 8X and 9X. The ONEDIN wind header uses 8X over the same data format, and SPRVS's copy of DUMPER's FORMAT 8024 prints 9X. | printed column layout only |
+| 11 | DUMPER p119 L26 | `1 3X` | ORNL reads 9X. The ONEDIN wind header uses 8X over the same data format, and SPRVS's copy of DUMPER's FORMAT 8024 prints 9X. | printed column layout only |
 
 ## Other open points
 
