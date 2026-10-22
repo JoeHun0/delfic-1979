@@ -291,3 +291,15 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   "eack" (SUMDAT p132 L50, print EACK), "1ho". So ORNL typed from the same or an equally degraded copy; an ORNL reading is a second reader of the
   same print, not an independent source. The user's question (is Y1 right because ORNL has it?) is therefore answered by the glyph and the context:
   YT stays (the user reads a malformed T; no foot like the page's 1s; XT=XC, YT=YC are set two cards above and YT is used on the next card).
+22 Oct (user hand-check of review-sheets/ornl-tranp-ndtc1.png: "unidentifiable"): TRANP p137 L22 626 NDTC1=NDATC -> NDTC1=NDATO, a CONTEXT CALL
+  (the glyph is almost entirely gone on our scan and on the user's copy). Evidence: after 626 the code sets NDATO=NDATC, so NDTO1=NDATC always equals
+  the next step's NDATO. With NDTC1=NDATC, channelling would trigger only when a step ends in the cell it started in; CNTR/NEST then return that
+  same cell's bounds, neither boundary test can match, and the code always ends in CALL ERROR(PROGRM,616,...). With NDTC1=NDATO it triggers when
+  the parcel heads back into the cell it came from (A->B->A), and the channelling code looks for the boundary those two adjacent cells share,
+  as the comments say ("CHECK IF PARCEL CENTER POSITION IS OSCILLATING", "COMMIT PREVIOUS & CURRENT MESH ... INDICES"). ORNL TM-2022/2602 also
+  reads ndato (from the same print). Replaces the 20 Oct context call NDATC ("NDTC1 pairs with NDATC"). cardfix.tsv row p137 L22 (backup
+  cardfix.tsv.bak-ndtc1). Effect: none on the test problem (K 6.1026E+09, map sum .285554E+05, DTM/OPM output and the layer-by-layer parcel tape
+  identical); it matters only for multi-cell nets.
+22 Oct (user hand-check of review-sheets/ornl-tranp-label100.png: "a zero"): TRANP p135 L17 label 160 -> 100, and its only branch p135 L32 GO TO 160 ->
+  GO TO 100 (the same broken middle glyph; most OCR runs read 100 there, ORNL 100). Replaces the 20 Oct context call 160. cardfix.tsv rows p135 L17/L32
+  (backup cardfix.tsv.bak-label100). Label only: no effect (output identical).

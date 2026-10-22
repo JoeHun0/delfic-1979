@@ -235,10 +235,9 @@ modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf
   The DTM output changes only in five text lines, which now match the book. A layer-by-layer run (MC(4)=1) gives a bit-identical parcel tape: the test
   problem has one met cell, so the fixed multi-cell paths still have no test.
 - **Confirmed by the user:** TRANP `BOUN(…,XT,YT,…)` is `YT`, a malformed T (ORNL's `y1` is a misread). TRANP p137 L10 is
-  `VBAR=VBARC` (a B, not 3; fixed, so the former "original bug" `V3AR=VBARC` was our misread).
+  `VBAR=VBARC` (a B, not 3; fixed, so the former "original bug" `V3AR=VBARC` was our misread). The TRANP label on p135 L17/L32 is 100.
+  `626 NDTC1=NDATO`: the glyph is unreadable on both copies, so this is a context call. Reading `NDATC` would make every channelling event end in ERROR 616.
 - **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
-  - the faded `NDTC1=NDATC` vs ORNL's `NDATO`;
-  - label 160 vs 100;
   - three FORMAT spacings (LAYERS 10X/19X, ONEDIN 3X/8X, DUMPER 3X/9X);
   - the printed map-sum digit: .2855?8, 3 (ours) or 0 (ORNL .285508). TM-2010/220's .285505 does not fit the clear final 8.
 - `src/settle.f` and the other per-routine files in `src/` (`advec.f`, `wnosft.f`, …, all 20 Oct 16:43) are raw-OCR output of the early
