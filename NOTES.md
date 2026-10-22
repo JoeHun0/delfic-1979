@@ -238,8 +238,8 @@ modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf
 - **Confirmed by the user:** TRANP `BOUN(…,XT,YT,…)` is `YT`, a malformed T (ORNL's `y1` is a misread). TRANP p137 L10 is
   `VBAR=VBARC` (a B, not 3; fixed, so the former "original bug" `V3AR=VBARC` was our misread). The TRANP label on p135 L17/L32 is 100.
   `626 NDTC1=NDATO`: the glyph is unreadable on both copies, so this is a context call. Reading `NDATC` would make every channelling event end in ERROR 616.
-- **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
-  - one FORMAT spacing (DUMPER 3X/9X; LAYERS 19X and ONEDIN 8X were settled by the user's hand-check);
+- **FORMAT spacings, from the user's hand-checks:** LAYERS `19X`, ONEDIN 1600 `//8X`, DUMPER 8024 `9X`. With these, every hand-check sheet
+  from this comparison (`review-sheets/ornl-*.png`) is answered.
 - **The printed map sum is .285508E+05** (not .285538). Its broken 5th digit was tested against the book itself: our transport
   with the book's FP table reproduces the book's map cell for cell and puts its sum at 28549.8-28551.8, which rules out 3 (28553.8)
   (`run/map-sum/`). ORNL's typed book map also had two gross misreads (36000 col 2, 27000 col 2).

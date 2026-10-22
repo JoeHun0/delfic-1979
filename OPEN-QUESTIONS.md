@@ -17,16 +17,8 @@ changes the printed test problem at printed precision unless noted, but several 
 | 6 | BOIL(11), p185 L32 (FRATIO DATA card) | 1650.0 | The 1968 report's copy of the same card prints 1656.0, and a glyph vote says 6; our reader and all OCR read 1650. | only runs whose solidification temperature lies between 1650 and 1656 K |
 
 Sheets showing each of these with digit samples from the same page are in `review-sheets/` (`dcon-recheck.png`,
-`dcon-in115m.png`, `erm-*.png`, `boil-*.png`; for the DTM code cards below, `ornl-*.png`).
-
-## Doubtful characters in the DTM code (from the ORNL listing cross-check, 22 Oct 2026)
-
-ORNL/TM-2022/2602 prints its own typed copy of the 1979 DTM. Where it and our reading disagree and the scan cannot
-decide, we kept our reading. None of these is reached by the test problem (one met cell, homogeneous winds).
-
-| # | Card | We read | Alternatives and evidence | Matters for |
-|---|---|---|---|---|
-| 11 | DUMPER p119 L26 | `1 3X` | ORNL reads 9X. SPRVS's copy of the same FORMAT 8024 (p129 L13) prints a clear 9X. | printed column layout only |
+`dcon-in115m.png`, `erm-*.png`, `boil-*.png`). The DTM code cards questioned by the ORNL listing comparison (22 Oct 2026)
+were all settled; see `CHANGELOG-2026-10-22.md` and `review-sheets/ornl-*.png`.
 
 ## Other open points
 

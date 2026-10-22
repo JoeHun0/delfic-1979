@@ -323,3 +323,7 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   Z column as there; the glyph has a closed lower loop with a broken top (a broken 8 per this scan's glyph notes). All OCR read 3; ORNL 8x.
   cardfix.tsv row p126 L46 (backup cardfix.tsv.bak-onedin8x). Header spacing of the raw turbulence-data printout only, not printed in the
   test problem: DTM and OPM output identical.
+22 Oct (user hand-check of review-sheets/ornl-dumper-3x.png): DUMPER p119 L26 FORMAT 8024 '1 3X, 4HPMAS' -> '1 9X, 4HPMAS' ("looks more like 9").
+  SPRVS's copy of the same FORMAT 8024 (p129 L13) prints a clear 9X; ORNL 9x; all OCR read 3. The two copies still differ before ZLOW
+  (DUMPER 7X, SPRVS 8X), as printed. cardfix.tsv row p119 L26 (backup cardfix.tsv.bak-dumper9x). Header spacing only: output identical.
+  With this, every hand-check sheet from the ORNL listing comparison is answered.
