@@ -26,7 +26,6 @@ decide, we kept our reading. None of these is reached by the test problem (one m
 
 | # | Card | We read | Alternatives and evidence | Matters for |
 |---|---|---|---|---|
-| 7 | TRANP p136 L32 | `CALL BOUN(…,XT,YT,…)` | ORNL and two OCR models read `Y1`. The glyph has a stem and a left arm but no foot (the 1s on the page have feet). `Y1` would be an undefined variable. | layer-by-layer transport, multi-cell nets |
 | 8 | TRANP p137 L10 | `V3AR=VBARC` | ORNL reads `VBAR=VBARC`. The glyph is open on the left like a 3. All OCR read 3. | channelling in multi-cell nets |
 | 9 | TRANP p137 L22 | `626 NDTC1=NDATC` | The last glyph is nearly gone. ORNL reads `NDATO`, which with the next card's clear `NDTO1=NDATC` stores the crossed pair for the oscillation test. | channelling |
 | 10 | TRANP p135 L17, L32 | label and `GO TO` 160 | The middle glyph is broken in both. Most OCR runs and ORNL read 100. | none (consistent pair) |

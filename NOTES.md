@@ -235,8 +235,8 @@ modernisations (CHARACTER, quoted strings, /INDEXX/, debug WRITEs, `cji`, `jtipf
 - **Effect: none on the test problem.** K 6.1026E+09 and the sum of map ordinates .285554E+05 are unchanged, and the OPM and ICRM output are identical.
   The DTM output changes only in five text lines, which now match the book. A layer-by-layer run (MC(4)=1) gives a bit-identical parcel tape: the test
   problem has one met cell, so the fixed multi-cell paths still have no test.
+- **Confirmed by the user:** TRANP `BOUN(…,XT,YT,…)` is `YT`, a malformed T (ORNL's `y1` is a misread).
 - **Open, on hand-check sheets** (`review-sheets/ornl-*.png`):
-  - TRANP `BOUN(…,XT,YT,…)` vs ORNL's `Y1`;
   - `V3AR` vs `VBAR`;
   - the faded `NDTC1=NDATC` vs ORNL's `NDATO`;
   - label 160 vs 100;

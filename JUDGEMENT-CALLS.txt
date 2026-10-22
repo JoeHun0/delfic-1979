@@ -278,3 +278,6 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
                            left). We read 3 (.285538); ORNL TM-2022/2602 quotes .285508, TM-2010/220 .285505 (the 6th digit is a clear 8, so .285505
                            does not fit). The 0 of the exponent on the same line also has a centre dot. If 0, our run is 1.00016 of print instead of 1.00006.
   Also: the 20 Oct entries "p135 L17 label 1?0 = 160" and "p137 L22 626 NDTC1=NDATC" are reopened by the sheets above.
+22 Oct (user hand-check of review-sheets/ornl-tranp-y1.png): TRANP p136 L32 CALL BOUN(...,XT,YT,...): "looks like a malformed T". YT confirmed by
+  the user (no change to the deck; the 20 Oct compile-pass fix Y1 -> YT stands). ORNL's y1 and the LightOn/dots readings are misreads of a T that
+  lost its right arm. Not an original bug.
