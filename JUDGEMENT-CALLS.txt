@@ -286,3 +286,8 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   "V3AR=VBARC kept as printed ... Original bug": VBAR is raised to VBARC during channelling, as UBAR=UBARC is in the parallel branch (p137 L18).
   cardfix.tsv row p137 L10 (backup cardfix.tsv.bak-vbar). Effect: none on the test problem (K 6.1026E+09, map sum .285554E+05, OPM and DTM output
   identical; layer-by-layer parcel tape identical); channelling only happens in multi-cell nets.
+22 Oct (how much weight ORNL's readings carry): TM-2022/2602 cites the DTIC manual itself ([3], Norment 1979 Vol. II) as its source, and its listing
+  copies our scan's broken-glyph artefacts in FORMAT texts: "ratic of" (DTMINT p118 L3, print RATIC CF), "specifiec" (TRIDIN p139 L9, print SPECIFIEC),
+  "eack" (SUMDAT p132 L50, print EACK), "1ho". So ORNL typed from the same or an equally degraded copy; an ORNL reading is a second reader of the
+  same print, not an independent source. The user's question (is Y1 right because ORNL has it?) is therefore answered by the glyph and the context:
+  YT stays (the user reads a malformed T; no foot like the page's 1s; XT=XC, YT=YC are set two cards above and YT is used on the next card).
