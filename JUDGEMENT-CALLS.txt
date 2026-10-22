@@ -315,3 +315,6 @@ Open, activity-neutral: P239HE yield total 18772.54 vs ORNL TAPE20.DAT 18793.03 
   The glyph itself (top and bottom arcs, centre dot, open left) fits 0 as well as 3; this printer's 0 also has a centre dot (see +05).
   The reading moves print AWAY from our run (ours/book 1.00006 -> 1.00016), so it is not a fit to the model. Sheet updated:
   review-sheets/ornl-mapsum-digit.png. No deck change.
+22 Oct (user hand-check of review-sheets/ornl-layers-10x.png): LAYERS p123 L26 FORMAT( 10X, -> FORMAT( 19X, ("looks more like 19 from the width";
+  the second glyph is damaged, dots/GLM read 0, ORNL 19x). cardfix.tsv row p123 L26 (backup cardfix.tsv.bak-layers19x). Column layout of
+  LAYERS' level printout only, which the test problem does not print: DTM and OPM output identical.
